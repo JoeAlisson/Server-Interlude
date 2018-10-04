@@ -1,41 +1,25 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 
 /**
  * @author FBIagent
  */
-
 package com.l2jbr.gameserver.datatables;
 
 import com.l2jbr.gameserver.model.L2ExtractableItem;
 import com.l2jbr.gameserver.model.L2ExtractableProductItem;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 import static java.util.Objects.isNull;
 
 public class ExtractableItemsData {
-    private LinkedHashMap<Integer, L2ExtractableItem> _items;
+
+    private static final Logger logger = LoggerFactory.getLogger(ExtractableItemsData.class);
+    private static final String EXTRACTABLE_ITEMS_FILE = "./data/extractable_items.csv";
+
+    private HashMap<Integer, L2ExtractableItem> _items;
 
     private static ExtractableItemsData INSTANCE = null;
 
@@ -47,14 +31,14 @@ public class ExtractableItemsData {
     }
 
     public ExtractableItemsData() {
-        _items = new LinkedHashMap<>();
+        _items = new HashMap<>();
 
         Scanner s;
 
         try {
-            s = new Scanner(new File("./data/extractable_items.csv"));
+            s = new Scanner(new File(EXTRACTABLE_ITEMS_FILE));
         } catch (Exception e) {
-            System.out.println("Extractable items data: Can not find './data/extractable_items.csv'");
+            logger.error("Extractable items data: Can not find {}", EXTRACTABLE_ITEMS_FILE);
             return;
         }
 
@@ -78,8 +62,7 @@ public class ExtractableItemsData {
             try {
                 itemID = Integer.parseInt(lineSplit[0]);
             } catch (Exception e) {
-                System.out.println("Extractable items data: Error in line " + lineCount + " -> invalid item id or wrong seperator after item id!");
-                System.out.println("		" + line);
+                logger.warn("Extractable items data: Error in line {} -> invalid item id or wrong seperator after item id! \n {}", lineCount, line);
                 ok = false;
             }
 
@@ -131,8 +114,7 @@ public class ExtractableItemsData {
             }
 
             if (fullChances > 100) {
-                System.out.println("Extractable items data: Error in line " + lineCount + " -> all chances together are more then 100!");
-                System.out.println("		" + line);
+                logger.warn("Extractable items data: Error in line {} -> all chances together are more then 100!.\n{}", lineCount, line);
                 continue;
             }
             L2ExtractableItem product = new L2ExtractableItem(itemID, product_temp);
@@ -140,7 +122,8 @@ public class ExtractableItemsData {
         }
 
         s.close();
-        System.out.println("Extractable items data: Loaded " + _items.size() + " extractable items!");
+        logger.info("Loaded {} extractable items!", _items.size() );
+
     }
 
     public L2ExtractableItem getExtractableItem(int itemID) {

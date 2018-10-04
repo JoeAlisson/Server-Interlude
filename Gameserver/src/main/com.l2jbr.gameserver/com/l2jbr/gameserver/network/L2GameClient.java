@@ -147,8 +147,8 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     }
 
     public void sendPacket(L2GameServerPacket gsp) {
-        gsp.runImpl();
         writePacket(gsp);
+        gsp.runImpl();
     }
 
     public L2PcInstance markToDeleteChar(int charslot) {
