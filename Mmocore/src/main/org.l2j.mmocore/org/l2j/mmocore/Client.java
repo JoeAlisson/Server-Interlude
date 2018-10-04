@@ -17,6 +17,7 @@ public abstract class Client<T extends Connection<?>> {
     private Queue<WritablePacket<? extends Client<T>>> packetsToWrite = new ConcurrentLinkedQueue<>();
     private int dataSentSize;
     private AtomicBoolean writing = new AtomicBoolean(false);
+    private volatile boolean isClosing;
 
     public Client(T connection) {
         this.connection = connection;
@@ -78,6 +79,10 @@ public abstract class Client<T extends Connection<?>> {
     }
 
     public void close(WritablePacket<? extends Client<T>> packet) {
+        if(isClosing) {
+            return;
+        }
+        isClosing = true;
         logger.debug("Closing client connection {} with packet {}", this, packet);
         packetsToWrite.clear();
         putClientOnPacket(packet);
@@ -87,8 +92,9 @@ public abstract class Client<T extends Connection<?>> {
 
     protected final void disconnect() {
         logger.debug("Client {} disconnecting", this);
-        connection.close();
         onDisconnection();
+        connection.close();
+
     }
 
     int getDataSentSize() {
@@ -100,7 +106,7 @@ public abstract class Client<T extends Connection<?>> {
     }
 
     public boolean isConnected() {
-        return connection.isOpen();
+        return connection.isOpen() && !isClosing;
     }
 
     /**

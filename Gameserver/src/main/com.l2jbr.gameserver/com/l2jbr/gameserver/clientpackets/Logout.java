@@ -118,6 +118,8 @@ public final class Logout extends L2GameClientPacket
 		RegionBBSManager.getInstance().changeCommunityBoard();
 		
 		player.deleteMe();
+        // Close the connection with the client
+        player.closeNetConnection();
 		notifyFriends(player);
 	}
 	

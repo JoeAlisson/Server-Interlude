@@ -10192,9 +10192,6 @@ public final class L2PcInstance extends L2PlayableInstance {
             _log.error( "deleteMe()", t);
         }
 
-        // Close the connection with the client
-        closeNetConnection();
-
         // remove from flood protector
         FloodProtector.getInstance().removePlayer(getObjectId());
 

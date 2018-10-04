@@ -22,7 +22,7 @@ public final class ConnectionHandler<T extends Client<Connection<T>>> extends Th
     private final AsynchronousChannelGroup group;
     private final AsynchronousServerSocketChannel listener;
     private final ConnectionConfig<T> config;
-    private boolean shutdown;
+    private volatile boolean shutdown;
     private boolean cached;
 
     ConnectionHandler(ConnectionConfig<T> config) throws IOException {
@@ -31,6 +31,8 @@ public final class ConnectionHandler<T extends Client<Connection<T>>> extends Th
         group = createChannelGroup(config.threadPoolSize);
         listener = group.provider().openAsynchronousServerSocketChannel(group);
         listener.bind(config.address);
+        listener.setOption(StandardSocketOptions.SO_REUSEADDR, true);
+
     }
 
     private void initalizeResourcePool() {
@@ -67,7 +69,7 @@ public final class ConnectionHandler<T extends Client<Connection<T>>> extends Th
     private void closeConnection() {
         try {
             listener.close();
-            group.awaitTermination(config.shutdownWaitTime, TimeUnit.SECONDS);
+            group.awaitTermination(config.shutdownWaitTime, TimeUnit.MILLISECONDS);
             group.shutdownNow();
         } catch (Exception e) {
             logger.warn(e.getLocalizedMessage(),e);
@@ -88,8 +90,8 @@ public final class ConnectionHandler<T extends Client<Connection<T>>> extends Th
                 Connection<T> connection = new Connection<>(channel, config.readHandler, config.writeHandler);
                 T client = config.clientFactory.create(connection);
                 connection.setClient(client);
-                connection.read();
                 client.onConnected();
+                connection.read();
                 logger.debug("Connection accepted. Attached to client {}", client);
             } catch (IOException e) {
                 logger.error(e.getLocalizedMessage(), e);
