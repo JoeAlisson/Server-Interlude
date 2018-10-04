@@ -47,13 +47,13 @@ import static java.util.Objects.nonNull;
  * @author yellowperil & Fulminus
  */
 public class MercTicketManager {
-    protected static Logger _log = LoggerFactory.getLogger(CastleManager.class.getName());
+    protected static Logger _log = LoggerFactory.getLogger(CastleManager.class);
 
     private static MercTicketManager _instance;
 
     public static  MercTicketManager getInstance() {
         if (isNull(_instance)) {
-            System.out.println("Initializing MercTicketManager");
+            _log.info("Initializing MercTicketManager");
             _instance = new MercTicketManager();
             _instance.load();
         }

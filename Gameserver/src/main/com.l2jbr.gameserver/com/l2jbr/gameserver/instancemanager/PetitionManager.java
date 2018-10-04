@@ -43,7 +43,7 @@ import static java.util.Objects.isNull;
  * @author Tempy
  */
 public final class PetitionManager {
-    protected static final Logger _log = LoggerFactory.getLogger(PetitionManager.class.getName());
+    protected static final Logger _log = LoggerFactory.getLogger(PetitionManager.class);
     private static PetitionManager _instance;
 
     private final Map<Integer, Petition> _pendingPetitions;
@@ -75,7 +75,7 @@ public final class PetitionManager {
 
     public static PetitionManager getInstance() {
         if (isNull(_instance)) {
-            System.out.println("Initializing PetitionManager");
+            _log.info("Initializing PetitionManager");
             _instance = new PetitionManager();
         }
 

@@ -21,6 +21,8 @@ package com.l2jbr.gameserver.model.entity;
 import com.l2jbr.commons.Config;
 import com.l2jbr.gameserver.Announcements;
 import com.l2jbr.gameserver.ThreadPoolManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static java.util.Objects.isNull;
 
@@ -29,15 +31,16 @@ import static java.util.Objects.isNull;
  */
 public class TvTManager implements Runnable {
 	/** The one and only instance of this class<br> */
+	private  static Logger logger  = LoggerFactory.getLogger(TvTManager.class);
 	private static TvTManager _instance = null;
 
 	private TvTManager() {
 		if (Config.TVT_EVENT_ENABLED) {
 			ThreadPoolManager.getInstance().scheduleGeneral(this, 0);
-			System.out.println("TvTEventEngine[TvTManager.TvTManager()]: Started.");
+			logger.info("TvTEventEngine[TvTManager.TvTManager()]: Started.");
 		}
 		else {
-			System.out.println("TvTEventEngine[TvTManager.TvTManager()]: Engine is disabled.");
+			logger.info("TvTEventEngine[TvTManager.TvTManager()]: Engine is disabled.");
 		}
 	}	/**
 	 * New instance only by getInstance()<br>
@@ -69,7 +72,7 @@ public class TvTManager implements Runnable {
 			if (!TvTEvent.startParticipation())
 			{
 				Announcements.getInstance().announceToAll("TvT Event: Event was canceled.");
-				System.out.println("TvTEventEngine[TvTManager.run()]: Error spawning event npc for participation.");
+				logger.warn("TvTEventEngine[TvTManager.run()]: Error spawning event npc for participation.");
 				continue;
 			}
 			Announcements.getInstance().announceToAll("TvT Event: Registration opened for " + Config.TVT_EVENT_PARTICIPATION_TIME + " minute(s).");
@@ -79,7 +82,7 @@ public class TvTManager implements Runnable {
 			if (!TvTEvent.startFight())
 			{
 				Announcements.getInstance().announceToAll("TvT Event: Event canceled due to lack of Participation.");
-				System.out.println("TvTEventEngine[TvTManager.run()]: Lack of registration, abort event.");
+				logger.info("TvTEventEngine[TvTManager.run()]: Lack of registration, abort event.");
 				continue;
 			}
 			TvTEvent.sysMsgToAllParticipants("TvT Event: Teleporting participants to an arena in " + Config.TVT_EVENT_START_LEAVE_TELEPORT_DELAY + " second(s).");

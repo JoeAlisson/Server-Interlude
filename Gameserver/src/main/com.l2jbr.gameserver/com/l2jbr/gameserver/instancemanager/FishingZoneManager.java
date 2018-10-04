@@ -1,53 +1,30 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.instancemanager;
 
 import com.l2jbr.gameserver.model.zone.type.L2FishingZone;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;
 
 
 public class FishingZoneManager {
-    // =========================================================
+
+    private static Logger logger = LoggerFactory.getLogger(FishingZoneManager.class);
     private static FishingZoneManager _instance;
+    private List<L2FishingZone> _fishingZones;
+
 
     public static final FishingZoneManager getInstance() {
         if (_instance == null) {
-            System.out.println("Initializing FishingZoneManager");
+            logger.info("Initializing FishingZoneManager");
             _instance = new FishingZoneManager();
         }
         return _instance;
     }
 
-    // =========================================================
+    private FishingZoneManager() { }
 
-    // =========================================================
-    // Data Field
-    private List<L2FishingZone> _fishingZones;
-
-    // =========================================================
-    // Constructor
-    public FishingZoneManager() {
-    }
-
-    // =========================================================
-    // Property - Public
 
     public void addFishingZone(L2FishingZone fishingZone) {
         if (_fishingZones == null) {

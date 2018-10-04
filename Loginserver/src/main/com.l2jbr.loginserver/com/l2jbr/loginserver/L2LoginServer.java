@@ -22,7 +22,6 @@ import com.l2jbr.commons.Server;
 import com.l2jbr.commons.status.Status;
 import com.l2jbr.loginserver.status.LoginStatus;
 import org.l2j.mmocore.ConnectionBuilder;
-import org.l2j.mmocore.ConnectionHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -103,7 +102,7 @@ public class L2LoginServer {
                 }
             }
         } else {
-            System.out.println("Telnet server is currently disabled.");
+            _log.info("Telnet server is currently disabled.");
         }
 
         InetSocketAddress bindAddress;

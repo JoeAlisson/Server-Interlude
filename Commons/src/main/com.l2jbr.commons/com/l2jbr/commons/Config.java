@@ -2497,13 +2497,13 @@ public final class Config {
 
                 if (TVT_EVENT_PARTICIPATION_NPC_ID == 0) {
                     TVT_EVENT_ENABLED = false;
-                    System.out.println("TvTEventEngine[Config.load()]: invalid config property -> TvTEventParticipationNpcId");
+                    _log.warn("TvTEventEngine[Config.load()]: invalid config property -> TvTEventParticipationNpcId");
                 } else {
                     String[] propertySplit = L2JModSettings.getProperty("TvTEventParticipationNpcCoordinates", "0,0,0").split(",");
 
                     if (propertySplit.length < 3) {
                         TVT_EVENT_ENABLED = false;
-                        System.out.println("TvTEventEngine[Config.load()]: invalid config property -> TvTEventParticipationNpcCoordinates");
+                        _log.warn("TvTEventEngine[Config.load()]: invalid config property -> TvTEventParticipationNpcCoordinates");
                     } else {
                         TVT_EVENT_PARTICIPATION_NPC_COORDINATES[0] = Integer.parseInt(propertySplit[0]);
                         TVT_EVENT_PARTICIPATION_NPC_COORDINATES[1] = Integer.parseInt(propertySplit[1]);
@@ -2521,7 +2521,7 @@ public final class Config {
 
                         if (propertySplit.length < 3) {
                             TVT_EVENT_ENABLED = false;
-                            System.out.println("TvTEventEngine[Config.load()]: invalid config property -> TvTEventTeam1Coordinates");
+                            _log.warn("TvTEventEngine[Config.load()]: invalid config property -> TvTEventTeam1Coordinates");
                         } else {
                             TVT_EVENT_TEAM_1_COORDINATES[0] = Integer.parseInt(propertySplit[0]);
                             TVT_EVENT_TEAM_1_COORDINATES[1] = Integer.parseInt(propertySplit[1]);
@@ -2532,7 +2532,7 @@ public final class Config {
 
                             if (propertySplit.length < 3) {
                                 TVT_EVENT_ENABLED = false;
-                                System.out.println("TvTEventEngine[Config.load()]: invalid config property -> TvTEventTeam2Coordinates");
+                                _log.warn("TvTEventEngine[Config.load()]: invalid config property -> TvTEventTeam2Coordinates");
                             } else {
                                 TVT_EVENT_TEAM_2_COORDINATES[0] = Integer.parseInt(propertySplit[0]);
                                 TVT_EVENT_TEAM_2_COORDINATES[1] = Integer.parseInt(propertySplit[1]);
@@ -2543,7 +2543,7 @@ public final class Config {
                                     String[] rewardSplit = reward.split(",");
 
                                     if (rewardSplit.length != 2) {
-                                        System.out.println("TvTEventEngine[Config.load()]: invalid config property -> TvTEventReward \"" + reward + "\"");
+                                        _log.warn("TvTEventEngine[Config.load()]: invalid config property -> TvTEventReward \"" + reward + "\"");
                                     } else {
                                         try {
                                             TVT_EVENT_REWARDS.add(new int[]
@@ -2553,7 +2553,7 @@ public final class Config {
                                                     });
                                         } catch (NumberFormatException nfe) {
                                             if (!reward.equals("")) {
-                                                System.out.println("TvTEventEngine[Config.load()]: invalid config property -> TvTEventReward \"" + reward + "\"");
+                                                _log.error("TvTEventEngine[Config.load()]: invalid config property -> TvTEventReward \"" + reward + "\"");
                                             }
                                         }
                                     }
@@ -2569,7 +2569,7 @@ public final class Config {
                                         TVT_EVENT_DOOR_IDS.add(Integer.valueOf(door));
                                     } catch (NumberFormatException nfe) {
                                         if (!door.equals("")) {
-                                            System.out.println("TvTEventEngine[Config.load()]: invalid config property -> TvTEventDoorsCloseOpenOnStartEnd \"" + door + "\"");
+                                            _log.error("TvTEventEngine[Config.load()]: invalid config property -> TvTEventDoorsCloseOpenOnStartEnd \"" + door + "\"");
                                         }
                                     }
                                 }

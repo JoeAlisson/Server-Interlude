@@ -44,6 +44,8 @@ import com.l2jbr.gameserver.serverpackets.RelationChanged;
 import com.l2jbr.gameserver.serverpackets.SiegeInfo;
 import com.l2jbr.gameserver.serverpackets.SystemMessage;
 import com.l2jbr.gameserver.serverpackets.UserInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Calendar;
 import java.util.LinkedList;
@@ -88,7 +90,9 @@ public class Siege {
     // id=285 msg=[Clan $s1 has succeeded in engraving the ruler!]
     // - id=287 msg=[The opponent clan has begun to engrave the ruler.]
 
-    public static enum TeleportWhoType {
+
+
+    public  enum TeleportWhoType {
         All,
         Attacker,
         DefenderNotOwner,
@@ -96,8 +100,6 @@ public class Siege {
         Spectator
     }
 
-    // ===============================================================
-    // Schedule task
     public class ScheduleEndSiegeTask implements Runnable {
         private final Castle _castleInst;
 
@@ -179,8 +181,8 @@ public class Siege {
         }
     }
 
-    // =========================================================
-    // Data Field
+
+    private static Logger logger = LoggerFactory.getLogger(Siege.class);
     // Attacker and Defender
     private final List<L2SiegeClan> _attackerClans = new LinkedList<>(); // L2SiegeClan
 
@@ -199,8 +201,7 @@ public class Siege {
     private SiegeGuardManager _siegeGuardManager;
     protected Calendar _siegeRegistrationEndDate;
 
-    // =========================================================
-    // Constructor
+
     public Siege(Castle[] castle) {
         _castle = castle;
         _siegeGuardManager = new SiegeGuardManager(getCastle());
@@ -208,8 +209,6 @@ public class Siege {
         startAutoTask();
     }
 
-    // =========================================================
-    // Siege phases
 
     /**
      * When siege ends<BR>
@@ -394,8 +393,6 @@ public class Siege {
         }
     }
 
-    // =========================================================
-    // Method - Public
 
     /**
      * Announce to player.<BR>
@@ -747,7 +744,7 @@ public class Siege {
     public void startAutoTask() {
         correctSiegeDateTime();
 
-        System.out.println("Siege of " + getCastle().getName() + ": " + getCastle().getSiegeDate().getTime());
+        logger.info("Siege of {} : {}", getCastle().getName(), getCastle().getSiegeDate().getTime());
 
         loadSiegeClan();
 
