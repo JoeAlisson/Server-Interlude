@@ -122,9 +122,15 @@ public class Util {
         return isNull(value) || value.isEmpty();
     }
 
+    public static boolean isNotEmpty(String value) {
+        return nonNull(value) && !value.isEmpty();
+    }
+
     public static boolean isNullOrEmpty(Collection<?> collection) {
         return isNull(collection) || collection.isEmpty();
     }
+
+
 
     public static String capitalize(String text) {
         if(isNullOrEmpty(text)){

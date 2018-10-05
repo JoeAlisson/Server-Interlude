@@ -19,5 +19,6 @@ module com.l2jbr.commons {
     exports com.l2jbr.commons.database;
     exports com.l2jbr.commons.database.model;
     exports com.l2jbr.commons.database.annotation;
+    exports com.l2jbr.commons.configuration;
 
 }
