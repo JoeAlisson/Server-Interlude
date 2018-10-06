@@ -2708,7 +2708,6 @@ public final class Config {
                 DEVELOPER = Boolean.parseBoolean(serverSettings.getProperty("Developer", "false"));
                 ASSERT = Boolean.parseBoolean(serverSettings.getProperty("Assert", "false"));
 
-                ACCEPT_NEW_GAMESERVER = Boolean.parseBoolean(serverSettings.getProperty("AcceptNewGameServer", "True"));
                 REQUEST_ID = Integer.parseInt(serverSettings.getProperty("RequestServerID", "0"));
                 ACCEPT_ALTERNATE_ID = Boolean.parseBoolean(serverSettings.getProperty("AcceptAlternateID", "True"));
 

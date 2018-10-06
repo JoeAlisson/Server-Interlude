@@ -86,20 +86,17 @@ public class NewCrypt
 		return check == chksum;
 	}
 	
-	public static void appendChecksum(byte[] raw)
-	{
-		NewCrypt.appendChecksum(raw, 0, raw.length);
+	public static void appendChecksum(byte[] raw) {
+		appendChecksum(raw, 0, raw.length);
 	}
 	
-	public static void appendChecksum(byte[] raw, final int offset, final int size)
-	{
+	public static void appendChecksum(byte[] raw, final int offset, final int size) {
 		long chksum = 0;
 		int count = size - 4;
 		long ecx;
 		int i;
 		
-		for (i = offset; i < count; i += 4)
-		{
+		for (i = offset; i < count; i += 4) {
 			ecx = raw[i] & 0xff;
 			ecx |= (raw[i + 1] << 8) & 0xff00;
 			ecx |= (raw[i + 2] << 0x10) & 0xff0000;
@@ -195,13 +192,11 @@ public class NewCrypt
 		System.arraycopy(result, 0, raw, offset, size);
 	}
 	
-	public byte[] crypt(byte[] raw) throws IOException
-	{
+	public byte[] crypt(byte[] raw) throws IOException {
 		int count = raw.length / 8;
 		byte[] result = new byte[raw.length];
 		
-		for (int i = 0; i < count; i++)
-		{
+		for (int i = 0; i < count; i++) {
 			_crypt.processBlock(raw, i * 8, result, i * 8);
 		}
 		

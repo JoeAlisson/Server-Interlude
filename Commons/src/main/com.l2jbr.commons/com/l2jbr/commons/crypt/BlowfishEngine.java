@@ -1127,26 +1127,22 @@ public class BlowfishEngine
 		return "Blowfish";
 	}
 	
-	public final int processBlock(byte[] in, int inOff, byte[] out, int outOff) throws IOException
-	{
-		if (workingKey == null)
-		{
+	public final int processBlock(byte[] in, int inOff, byte[] out, int outOff) throws IOException {
+		if (workingKey == null) {
 			throw new IllegalStateException("Blowfish not initialised");
 		}
-		if ((inOff + BLOCK_SIZE) > in.length)
-		{
+
+		if ((inOff + BLOCK_SIZE) > in.length) {
 			throw new IOException("input buffer too short");
 		}
-		if ((outOff + BLOCK_SIZE) > out.length)
-		{
+
+		if ((outOff + BLOCK_SIZE) > out.length) {
 			throw new IOException("output buffer too short");
 		}
-		if (encrypting)
-		{
+
+		if (encrypting) {
 			encryptBlock(in, inOff, out, outOff);
-		}
-		else
-		{
+		} else {
 			decryptBlock(in, inOff, out, outOff);
 		}
 		return BLOCK_SIZE;
@@ -1238,19 +1234,14 @@ public class BlowfishEngine
 	}
 	
 	/**
-	 * Encrypt the given input starting at the given offset and place the result in the provided buffer starting at the given offset. The input will be an exact multiple of our blocksize.
-	 * @param src
-	 * @param srcIndex
-	 * @param dst
-	 * @param dstIndex
+	 * Encrypt the given input starting at the given offset and place the result in the provided buffer starting at the given offset.
+     * The input will be an exact multiple of our blocksize.
 	 */
-	private void encryptBlock(byte[] src, int srcIndex, byte[] dst, int dstIndex)
-	{
+	private void encryptBlock(byte[] src, int srcIndex, byte[] dst, int dstIndex) {
 		int xl = bytesTo32bits(src, srcIndex);
 		int xr = bytesTo32bits(src, srcIndex + 4);
 		xl ^= P[0];
-		for (int i = 1; i < ROUNDS; i += 2)
-		{
+		for (int i = 1; i < ROUNDS; i += 2) {
 			xr ^= func(xl) ^ P[i];
 			xl ^= func(xr) ^ P[i + 1];
 		}
@@ -1261,10 +1252,6 @@ public class BlowfishEngine
 	
 	/**
 	 * Decrypt the given input starting at the given offset and place the result in the provided buffer starting at the given offset. The input will be an exact multiple of our blocksize.
-	 * @param src
-	 * @param srcIndex
-	 * @param dst
-	 * @param dstIndex
 	 */
 	private void decryptBlock(byte[] src, int srcIndex, byte[] dst, int dstIndex)
 	{
@@ -1281,8 +1268,7 @@ public class BlowfishEngine
 		bits32ToBytes(xl, dst, dstIndex + 4);
 	}
 	
-	private int bytesTo32bits(byte[] b, int i)
-	{
+	private int bytesTo32bits(byte[] b, int i) {
 		return ((b[i + 3] & 0xff) << 24) | ((b[i + 2] & 0xff) << 16) | ((b[i + 1] & 0xff) << 8) | ((b[i] & 0xff));
 	}
 	

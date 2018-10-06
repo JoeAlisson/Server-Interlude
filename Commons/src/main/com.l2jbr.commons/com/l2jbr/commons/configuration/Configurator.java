@@ -39,23 +39,21 @@ public class Configurator {
         loader.addSettingsClass(className, fileConfigurationPath);
     }
 
-    public static <T extends Settings> Optional<T> getSettings(Class<T> settingsClass) {
+    public static <T extends Settings> T getSettings(Class<T> settingsClass) {
         return getSettings(settingsClass, false);
     }
 
-    public static <T extends Settings> Optional<T> getSettings(Class<T> settingsClass, boolean forceReload) {
+    public static <T extends Settings> T getSettings(Class<T> settingsClass, boolean forceReload) {
         if(isNull(settingsClass)) {
-            logger.warn("Can't load settings from Null class");
-            return Optional.empty();
+            throw new IllegalArgumentException("Can't load settings from Null class");
         }
 
         var instance = getInstance();
 
         if(!forceReload && instance.hasSettings(settingsClass)) {
-            return Optional.of(instance.get(settingsClass));
+            return instance.get(settingsClass);
         }
-
-        return Optional.ofNullable(instance.getFromLoader(settingsClass));
+        return instance.getFromLoader(settingsClass);
     }
 
     private <T extends Settings> T getFromLoader(Class<T> settingsClass) {

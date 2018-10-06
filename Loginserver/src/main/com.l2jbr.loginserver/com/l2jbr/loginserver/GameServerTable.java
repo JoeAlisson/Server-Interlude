@@ -17,12 +17,12 @@
  */
 package com.l2jbr.loginserver;
 
-import com.l2jbr.commons.database.DatabaseAccess;
 import com.l2jbr.commons.database.GameserverRepository;
-import com.l2jbr.commons.database.model.GameServers;
+import com.l2jbr.commons.database.model.GameServer;
 import com.l2jbr.commons.util.Rnd;
 import com.l2jbr.commons.xml.XMLDocumentFactory;
-import com.l2jbr.loginserver.gameserverpackets.ServerStatus;
+import com.l2jbr.loginserver.network.GameServerConnection;
+import com.l2jbr.loginserver.network.gameserverpackets.ServerStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
@@ -33,13 +33,14 @@ import java.io.File;
 import java.math.BigInteger;
 import java.security.*;
 import java.security.spec.RSAKeyGenParameterSpec;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
+
+import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
+import static java.util.Objects.isNull;
 
 
 /**
@@ -116,7 +117,7 @@ public class GameServerTable {
     }
 
     private void loadRegisteredGameServers() {
-        GameserverRepository repository = DatabaseAccess.getRepository(GameserverRepository.class);
+        GameserverRepository repository = getRepository(GameserverRepository.class);
         repository.findAll().forEach(gameServer -> {
             int id = gameServer.getId();
             GameServerInfo gsi = new GameServerInfo(id, stringToHex(gameServer.getHexid()));
@@ -151,25 +152,20 @@ public class GameServerTable {
     }
 
     public boolean register(int id, GameServerInfo gsi) {
-        // avoid two servers registering with the same id
-        synchronized (_gameServerTable) {
-            if (!_gameServerTable.containsKey(id)) {
-                _gameServerTable.put(id, gsi);
-                gsi.setId(id);
-                return true;
-            }
+        if(isNull(_gameServerTable.putIfAbsent(id, gsi))) {
+            gsi.setId(id);
+            return true;
         }
         return false;
     }
 
     public void registerServerOnDB(GameServerInfo gsi) {
-        this.registerServerOnDB(gsi.getHexId(), gsi.getId(), gsi.getExternalHost());
+        registerServerOnDB(gsi.getHexId(), gsi.getId(), gsi.getExternalHost());
     }
 
     public void registerServerOnDB(byte[] hexId, int id, String externalHost) {
-        GameServers gameServer = new GameServers(id, hexToString(hexId), externalHost);
-        GameserverRepository repository = DatabaseAccess.getRepository(GameserverRepository.class);
-        repository.save(gameServer);
+        GameServer gameServer = new GameServer(id, hexToString(hexId), externalHost);
+        getRepository(GameserverRepository.class).save(gameServer);
     }
 
     public String getServerNameById(int id) {
@@ -199,16 +195,16 @@ public class GameServerTable {
         // auth
         private int _id;
         private final byte[] _hexId;
-        private boolean _isAuthed;
+        private volatile boolean _isAuthed;
 
         // status
-        private GameServerThread _gst;
+        private GameServerConnection _gst;
         private int _status;
 
         // network
-        private String _internalIp;
-        private String _externalIp;
-        private String _externalHost;
+        private String internalIp;
+        private String externalIp;
+        private String externalHost;
         private int _port;
 
         // config
@@ -218,7 +214,7 @@ public class GameServerTable {
         private boolean _isShowingBrackets;
         private int _maxPlayers;
 
-        public GameServerInfo(int id, byte[] hexId, GameServerThread gst) {
+        public GameServerInfo(int id, byte[] hexId, GameServerConnection gst) {
             _id = id;
             _hexId = hexId;
             _gst = gst;
@@ -249,11 +245,11 @@ public class GameServerTable {
             return _isAuthed;
         }
 
-        public void setGameServerThread(GameServerThread gst) {
+        public void setGameServerThread(GameServerConnection gst) {
             _gst = gst;
         }
 
-        public GameServerThread getGameServerThread() {
+        public GameServerConnection getGameServerThread() {
             return _gst;
         }
 
@@ -272,28 +268,28 @@ public class GameServerTable {
             return _gst.getPlayerCount();
         }
 
-        public void setInternalIp(String internalIp) {
-            _internalIp = internalIp;
+        public void setInternalHost(String internalIp) {
+            this.internalIp = internalIp;
         }
 
         public String getInternalHost() {
-            return _internalIp;
+            return internalIp;
         }
 
         public void setExternalIp(String externalIp) {
-            _externalIp = externalIp;
+            this.externalIp = externalIp;
         }
 
         public String getExternalIp() {
-            return _externalIp;
+            return externalIp;
         }
 
         public void setExternalHost(String externalHost) {
-            _externalHost = externalHost;
+            this.externalHost = externalHost;
         }
 
         public String getExternalHost() {
-            return _externalHost;
+            return externalHost;
         }
 
         public int getPort() {

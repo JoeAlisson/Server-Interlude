@@ -24,7 +24,7 @@ import com.l2jbr.commons.database.DatabaseAccess;
 import com.l2jbr.commons.database.model.Account;
 import com.l2jbr.loginserver.GameServerTable;
 import com.l2jbr.loginserver.L2LoginServer;
-import com.l2jbr.loginserver.LoginController;
+import com.l2jbr.loginserver.network.LoginController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

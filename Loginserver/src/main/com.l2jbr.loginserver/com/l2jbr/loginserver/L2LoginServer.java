@@ -3,6 +3,7 @@ package com.l2jbr.loginserver;
 import com.l2jbr.commons.Config;
 import com.l2jbr.commons.Server;
 import com.l2jbr.commons.status.Status;
+import com.l2jbr.loginserver.network.*;
 import com.l2jbr.loginserver.status.LoginStatus;
 import org.l2j.mmocore.ConnectionBuilder;
 import org.slf4j.Logger;
@@ -13,6 +14,8 @@ import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 import java.security.GeneralSecurityException;
 import java.sql.SQLException;
+
+import static java.util.Objects.nonNull;
 
 /**
  * @author KenM
@@ -109,11 +112,24 @@ public class L2LoginServer {
         _log.info("Login Server ready on {}:{}", bindAddress.getHostString(),  Config.PORT_LOGIN);
     }
 
-    Status getStatusServer() {
+    public static void sendMessageToStatusServer(String msg) {
+        if(nonNull(_instance) &&  nonNull(_instance._statusServer)) {
+            _instance._statusServer.sendMessageToTelnets(msg);
+        }
+    }
+
+    public static void removeGameserver(GameServerConnection gameServerConnection, String ip) {
+        if(nonNull(_instance) && nonNull(_instance._gameServerListener)) {
+            _instance._gameServerListener.removeGameServer(gameServerConnection);
+            _instance._gameServerListener.removeFloodProtection(ip);
+        }
+    }
+
+    public Status getStatusServer() {
         return _statusServer;
     }
 
-    GameServerListener getGameServerListener() {
+    public GameServerListener getGameServerListener() {
         return _gameServerListener;
     }
 

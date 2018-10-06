@@ -7,5 +7,6 @@ module com.l2jbr.loginserver {
     requires org.slf4j;
     requires spring.data.commons;
 
+
     exports com.l2jbr.loginserver;
 }
