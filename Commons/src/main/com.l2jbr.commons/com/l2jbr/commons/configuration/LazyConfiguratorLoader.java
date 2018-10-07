@@ -27,7 +27,7 @@ class LazyConfiguratorLoader {
 
             addSettingsClass(className, fileConfigurationPath);
         }
-        logger.info("Settings classes loaded: {}" + settingsClasses.size());
+        logger.info("Settings classes loaded: {}", settingsClasses.size());
     }
 
     void addSettingsClass(String className, String fileConfigurationPath) {

@@ -261,7 +261,7 @@ public class GameServerTable {
             return _status;
         }
 
-        public int getCurrentPlayerCount() {
+        public int getOnlinePlayersCount() {
             if (_gst == null) {
                 return 0;
             }

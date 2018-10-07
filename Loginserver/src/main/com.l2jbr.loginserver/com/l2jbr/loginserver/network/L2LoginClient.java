@@ -121,8 +121,7 @@ public final class L2LoginClient extends Client<Connection<L2LoginClient>>
 		return _blowfishKey;
 	}
 	
-	public byte[] getScrambledModulus()
-	{
+	public byte[] getScrambledModulus() {
 		return _scrambledPair._scrambledModulus;
 	}
 	
@@ -155,8 +154,7 @@ public final class L2LoginClient extends Client<Connection<L2LoginClient>>
 		_lastServer = lastServer;
 	}
 	
-	public int getLastServer()
-	{
+	public int getLastServer() {
 		return _lastServer;
 	}
 	
@@ -205,7 +203,6 @@ public final class L2LoginClient extends Client<Connection<L2LoginClient>>
     public void onConnected() {
         sendPacket(new Init(this));
     }
-
 
 	@Override
 	protected void onDisconnection()

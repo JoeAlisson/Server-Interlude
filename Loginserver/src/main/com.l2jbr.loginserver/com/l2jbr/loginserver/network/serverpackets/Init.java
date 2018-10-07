@@ -1,30 +1,21 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.loginserver.network.serverpackets;
 
 import com.l2jbr.loginserver.network.L2LoginClient;
 
 /**
- * Format: dd b dddd s d: session id d: protocol revision b: 0x90 bytes : 0x80 bytes for the scrambled RSA public key 0x10 bytes at 0x00 d: unknow d: unknow d: unknow d: unknow s: blowfish key
+ * Format: dd b dddd s
+ * d: session id
+ * d: protocol revision
+ * b: 0x90 bytes : 0x80 bytes for the scrambled RSA public key
+ * 				   0x10 bytes at 0x00
+ * d: unknow
+ * d: unknow
+ * d: unknow
+ * d: unknow
+ * s: blowfish key
  */
-public final class Init extends L2LoginServerPacket
-{
+public final class Init extends L2LoginServerPacket {
+
 	private final int _sessionId;
 	
 	private final byte[] _publicKey;
@@ -48,7 +39,7 @@ public final class Init extends L2LoginServerPacket
 		writeByte(0x00); // init packet id
 		
 		writeInt(_sessionId); // session id
-		writeInt(0x0000c621); // protocol revision
+		writeInt(0xc621); // protocol revision
 		
 		writeBytes(_publicKey); // RSA Public Key
 		

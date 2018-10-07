@@ -27,6 +27,6 @@ public abstract class L2LoginServerPacket extends WritablePacket<L2LoginClient> 
 
     @Override
     protected int packetSize() {
-        return 14; // HEADER + CHECKSUM + PADDING
+        return 22; // HEADER + CHECKSUM + PADDING
     }
 }

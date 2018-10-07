@@ -4,14 +4,12 @@ import com.l2jbr.commons.Base64;
 import com.l2jbr.commons.Config;
 import com.l2jbr.commons.database.AccountRepository;
 import com.l2jbr.commons.database.model.Account;
-import com.l2jbr.commons.lib.Log;
 import com.l2jbr.commons.util.Rnd;
 import com.l2jbr.loginserver.GameServerTable;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
 import com.l2jbr.loginserver.network.crypt.ScrambledKeyPair;
 import com.l2jbr.loginserver.network.gameserverpackets.ServerStatus;
 import com.l2jbr.loginserver.network.serverpackets.LoginFail.LoginFailReason;
-import com.l2jbr.loginserver.settings.LoginServerSettings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -274,7 +272,7 @@ public class LoginController {
     public int getOnlinePlayerCount(int serverId) {
         GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(serverId);
         if ((gsi != null) && gsi.isAuthed()) {
-            return gsi.getCurrentPlayerCount();
+            return gsi.getOnlinePlayersCount();
         }
         return 0;
     }
@@ -306,7 +304,7 @@ public class LoginController {
         Collection<GameServerInfo> serverList = GameServerTable.getInstance().getRegisteredGameServers().values();
         for (GameServerInfo gsi : serverList) {
             if (gsi.isAuthed()) {
-                total += gsi.getCurrentPlayerCount();
+                total += gsi.getOnlinePlayersCount();
             }
         }
         return total;
@@ -329,7 +327,7 @@ public class LoginController {
         GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(serverId);
         int access = client.getAccessLevel();
         if ((gsi != null) && gsi.isAuthed()) {
-            boolean loginOk = ((gsi.getCurrentPlayerCount() < gsi.getMaxPlayers()) && (gsi.getStatus() != ServerStatus.STATUS_GM_ONLY)) || (access >= Config.GM_MIN);
+            boolean loginOk = ((gsi.getOnlinePlayersCount() < gsi.getMaxPlayers()) && (gsi.getStatus() != ServerStatus.STATUS_GM_ONLY)) || (access >= Config.GM_MIN);
 
             if (loginOk && (client.getLastServer() != serverId)) {
                 AccountRepository accountRepository = getRepository(AccountRepository.class);

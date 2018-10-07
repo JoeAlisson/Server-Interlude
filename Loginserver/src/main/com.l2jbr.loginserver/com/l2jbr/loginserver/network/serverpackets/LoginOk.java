@@ -25,31 +25,31 @@ import com.l2jbr.loginserver.network.SessionKey;
  */
 public final class LoginOk extends L2LoginServerPacket
 {
-	private final int _loginOk1, _loginOk2;
+	private final int accountId, authKey;
 	
 	public LoginOk(SessionKey sessionKey)
 	{
-		_loginOk1 = sessionKey.loginOkID1;
-		_loginOk2 = sessionKey.loginOkID2;
+		accountId = sessionKey.accountId;
+		authKey = sessionKey.authKey;
 	}
 	
 	@Override
 	protected void write()
 	{
 		writeByte(0x03);
-		writeInt(_loginOk1);
-		writeInt(_loginOk2);
+		writeInt(accountId);
+		writeInt(authKey);
+		writeBytes(new byte[8]);
+		writeInt(0x000003ea); // billing type: 1002 Free, x200 paid time, x500 flat rate pre paid, others subscription
+		writeInt(0x00); // paid time
 		writeInt(0x00);
+		writeInt(0x00); // warning mask
+		writeBytes(new byte[16]); // forbidden servers
 		writeInt(0x00);
-		writeInt(0x000003ea);
-		writeInt(0x00);
-		writeInt(0x00);
-		writeInt(0x00);
-		writeBytes(new byte[16]);
 	}
 
 	@Override
 	protected int packetSize() {
-		return super.packetSize() + 49;
+		return super.packetSize() + 53;
 	}
 }
