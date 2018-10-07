@@ -4,7 +4,6 @@ import com.l2jbr.commons.Config;
 import com.l2jbr.commons.Server;
 import com.l2jbr.commons.status.Status;
 import com.l2jbr.loginserver.network.*;
-import com.l2jbr.loginserver.status.LoginStatus;
 import org.l2j.mmocore.ConnectionBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,44 +14,37 @@ import java.net.UnknownHostException;
 import java.security.GeneralSecurityException;
 import java.sql.SQLException;
 
-import static com.l2jbr.commons.settings.TelnetSettings.isTelnetEnabled;
 import static com.l2jbr.loginserver.settings.LoginServerSettings.*;
 import static java.util.Objects.nonNull;
 
 /**
  * @author KenM
  */
-public class L2LoginServer {
+public class AuthServer {
 
     public static final int PROTOCOL_REV = 0x0102;
     private static final String LOG4J_CONFIGURATION = "log4j.configurationFile";
 
-    private static L2LoginServer _instance;
+    private static AuthServer _instance;
     private static Logger _log;
     private GameServerListener _gameServerListener;
-    private Status _statusServer;
 
     public static void main(String[] args) {
         configureLogger();
-        _instance = new L2LoginServer();
+        Server.serverMode = Server.MODE_LOGINSERVER;
+        Config.load();
+        _instance = new AuthServer();
     }
 
-    public static L2LoginServer getInstance() {
+    public static AuthServer getInstance() {
         return _instance;
     }
 
-    public L2LoginServer() {
-        Server.serverMode = Server.MODE_LOGINSERVER;
-        Config.load();
-
+    public AuthServer() {
         try {
             LoginController.load();
         } catch (GeneralSecurityException e) {
-            _log.error("FATAL: Failed initializing LoginController. Reason: {}", e.getMessage());
-
-            if (Config.DEVELOPER) {
-                e.printStackTrace();
-            }
+            _log.error("FATAL: Failed initializing LoginController. Reason: {}", e.getLocalizedMessage());
             System.exit(1);
         }
 
@@ -80,17 +72,6 @@ public class L2LoginServer {
             System.exit(1);
         }
 
-        if (isTelnetEnabled()) {
-            try {
-                _statusServer = new LoginStatus();
-                _statusServer.start();
-            } catch (IOException e) {
-                _log.error("Failed to start the Telnet Server. Reason: {}", e.getLocalizedMessage());
-            }
-        } else {
-            _log.info("Telnet server is currently disabled.");
-        }
-
         InetSocketAddress bindAddress;
         if (!loginListenHost().equals("*")) {
             bindAddress = new InetSocketAddress(loginListenHost(), loginListenPort());
@@ -111,21 +92,11 @@ public class L2LoginServer {
         _log.info("Login Server ready on {}:{}", bindAddress.getHostString(), loginListenPort());
     }
 
-    public static void sendMessageToStatusServer(String msg) {
-        if (nonNull(_instance) && nonNull(_instance._statusServer)) {
-            _instance._statusServer.sendMessageToTelnets(msg);
-        }
-    }
-
     public static void removeGameserver(GameServerConnection gameServerConnection, String ip) {
         if (nonNull(_instance) && nonNull(_instance._gameServerListener)) {
             _instance._gameServerListener.removeGameServer(gameServerConnection);
             _instance._gameServerListener.removeFloodProtection(ip);
         }
-    }
-
-    public Status getStatusServer() {
-        return _statusServer;
     }
 
     public GameServerListener getGameServerListener() {
@@ -205,6 +176,6 @@ public class L2LoginServer {
         if (logConfigurationFile == null || logConfigurationFile.isEmpty()) {
             System.setProperty(LOG4J_CONFIGURATION, "log4j.xml");
         }
-        _log = LoggerFactory.getLogger(L2LoginServer.class);
+        _log = LoggerFactory.getLogger(AuthServer.class);
     }
 }

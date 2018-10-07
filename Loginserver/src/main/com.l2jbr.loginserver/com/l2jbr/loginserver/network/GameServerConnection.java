@@ -1,9 +1,9 @@
 package com.l2jbr.loginserver.network;
 
 import com.l2jbr.commons.crypt.NewCrypt;
+import com.l2jbr.loginserver.AuthServer;
 import com.l2jbr.loginserver.GameServerTable;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
-import com.l2jbr.loginserver.L2LoginServer;
 import com.l2jbr.loginserver.network.gameserverpackets.*;
 import com.l2jbr.loginserver.network.loginserverpackets.*;
 import com.l2jbr.loginserver.network.serverpackets.ServerBasePacket;
@@ -122,7 +122,7 @@ public class GameServerConnection extends Thread {
                 _gsi.setDown();
                 logger.info("Server [{}] {} is now set as disconnect", getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
             }
-            L2LoginServer.removeGameserver(this, ip);
+            AuthServer.removeGameserver(this, ip);
         }
     }
 
@@ -362,7 +362,7 @@ public class GameServerConnection extends Thread {
     }
 
     private void broadcastToStatusServer(String msg) {
-        L2LoginServer.sendMessageToStatusServer(msg);
+        AuthServer.sendMessageToStatusServer(msg);
     }
 
     public void kickPlayer(String account) {

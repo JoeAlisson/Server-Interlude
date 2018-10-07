@@ -1,6 +1,6 @@
 package com.l2jbr.loginserver.network.loginserverpackets;
 
-import com.l2jbr.loginserver.L2LoginServer;
+import com.l2jbr.loginserver.AuthServer;
 import com.l2jbr.loginserver.network.serverpackets.ServerBasePacket;
 
 /**
@@ -16,7 +16,7 @@ public class InitLS extends ServerBasePacket {
 	
 	public InitLS(byte[] publickey) {
 		writeByte(0x00);
-		writeInt(L2LoginServer.PROTOCOL_REV);
+		writeInt(AuthServer.PROTOCOL_REV);
 		writeInt(publickey.length);
 		writeBytes(publickey);
 	}

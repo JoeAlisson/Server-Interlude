@@ -2678,8 +2678,6 @@ public final class Config {
                 serverSettings.load(is);
                 is.close();
 
-                GAME_SERVER_LOGIN_HOST = serverSettings.getProperty("LoginHostname", "*");
-                GAME_SERVER_LOGIN_PORT = Integer.parseInt(serverSettings.getProperty("LoginPort", "9013"));
 
 
                 DEBUG = Boolean.parseBoolean(serverSettings.getProperty("Debug", "false"));
