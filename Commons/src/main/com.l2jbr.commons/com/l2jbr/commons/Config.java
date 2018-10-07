@@ -61,22 +61,7 @@ public final class Config {
      * Game Server ports
      */
     public static int PORT_GAME;
-    /**
-     * Login Server port
-     */
-    public static int PORT_LOGIN;
-    /**
-     * Login Server bind ip
-     */
-    public static String LOGIN_BIND_ADDRESS;
-    /**
-     * Number of login tries before IP ban gets activated, default 10
-     */
-    public static int LOGIN_TRY_BEFORE_BAN;
-    /**
-     * Number of seconds the IP ban will last, default 10 minutes
-     */
-    public static int LOGIN_BLOCK_AFTER_BAN;
+
     /**
      * Hostname of the Game Server
      */
@@ -1759,11 +1744,6 @@ public final class Config {
      */
     public static boolean GMAUDIT;
 
-    /**
-     * Allow auto-create account ?
-     */
-    public static boolean AUTO_CREATE_ACCOUNTS;
-
     public static boolean FLOOD_PROTECTION;
     public static int FAST_CONNECTION_LIMIT;
     public static int NORMAL_CONNECTION_TIME;
@@ -2701,8 +2681,6 @@ public final class Config {
                 GAME_SERVER_LOGIN_HOST = serverSettings.getProperty("LoginHostname", "*");
                 GAME_SERVER_LOGIN_PORT = Integer.parseInt(serverSettings.getProperty("LoginPort", "9013"));
 
-                LOGIN_BIND_ADDRESS = serverSettings.getProperty("LoginserverHostname", "*");
-                PORT_LOGIN = Integer.parseInt(serverSettings.getProperty("LoginserverPort", "2106"));
 
                 DEBUG = Boolean.parseBoolean(serverSettings.getProperty("Debug", "false"));
                 DEVELOPER = Boolean.parseBoolean(serverSettings.getProperty("Developer", "false"));
@@ -2711,8 +2689,7 @@ public final class Config {
                 REQUEST_ID = Integer.parseInt(serverSettings.getProperty("RequestServerID", "0"));
                 ACCEPT_ALTERNATE_ID = Boolean.parseBoolean(serverSettings.getProperty("AcceptAlternateID", "True"));
 
-                LOGIN_TRY_BEFORE_BAN = Integer.parseInt(serverSettings.getProperty("LoginTryBeforeBan", "10"));
-                LOGIN_BLOCK_AFTER_BAN = Integer.parseInt(serverSettings.getProperty("LoginBlockAfterBan", "600"));
+
                 GM_MIN = Integer.parseInt(serverSettings.getProperty("GMMinLevel", "100"));
 
                 DATAPACK_ROOT = new File(serverSettings.getProperty("DatapackRoot", ".")).getCanonicalFile(); // FIXME: in login?
@@ -2730,8 +2707,6 @@ public final class Config {
                 SHOW_LICENCE = Boolean.parseBoolean(serverSettings.getProperty("ShowLicence", "true"));
                 IP_UPDATE_TIME = Integer.parseInt(serverSettings.getProperty("IpUpdateTime", "15"));
                 FORCE_GGAUTH = Boolean.parseBoolean(serverSettings.getProperty("ForceGGAuth", "false"));
-
-                AUTO_CREATE_ACCOUNTS = Boolean.parseBoolean(serverSettings.getProperty("AutoCreateAccounts", "True"));
 
                 FLOOD_PROTECTION = Boolean.parseBoolean(serverSettings.getProperty("EnableFloodProtection", "True"));
                 FAST_CONNECTION_LIMIT = Integer.parseInt(serverSettings.getProperty("FastConnectionLimit", "15"));

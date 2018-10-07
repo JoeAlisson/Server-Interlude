@@ -10,7 +10,6 @@ import static java.util.Objects.requireNonNullElseGet;
 public class LoginServerSettings implements Settings {
 
     private SettingsFile settings;
-    private static LoginServerSettings instance;
 
     @Override
     public void load(SettingsFile settingsFile) {
@@ -23,6 +22,26 @@ public class LoginServerSettings implements Settings {
 
     public static int gameServerListenPort() {
         return  getInstance().settings.getInteger("LoginPort", 9013);
+    }
+
+    public static String loginListenHost() {
+        return getInstance().settings.getString("LoginserverHostname", "*");
+    }
+
+    public static int loginListenPort() {
+        return getInstance().settings.getInteger("LoginserverPort", 2106);
+    }
+
+    public static boolean isAutoCreateAccount(){
+        return getInstance().settings.getBoolean("AutoCreateAccounts", false);
+    }
+
+    public static int loginTryBeforeBan(){
+        return getInstance().settings.getInteger("LoginTryBeforeBan", 10);
+    }
+
+    public static int loginBlockAfterBan() {
+        return getInstance().settings.getInteger("LoginBlockAfterBan", 600);
     }
 
     public static boolean isFloodProtectionEnabled() {
@@ -50,9 +69,6 @@ public class LoginServerSettings implements Settings {
     }
 
     private static LoginServerSettings getInstance() {
-        if(isNull(instance)) {
-            instance = getSettings(LoginServerSettings.class);
-        }
-        return instance;
+        return getSettings(LoginServerSettings.class);
     }
 }

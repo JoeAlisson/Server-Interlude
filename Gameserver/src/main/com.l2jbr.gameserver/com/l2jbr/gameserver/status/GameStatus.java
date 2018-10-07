@@ -1,17 +1,20 @@
 package com.l2jbr.gameserver.status;
 
 import com.l2jbr.commons.Server;
+import com.l2jbr.commons.settings.TelnetSettings;
 import com.l2jbr.commons.status.Status;
 import com.l2jbr.commons.util.Rnd;
 
 import java.io.IOException;
 import java.net.Socket;
 
+import static com.l2jbr.commons.settings.TelnetSettings.telnetPort;
+
 
 public class GameStatus extends Status {
 
     public GameStatus() throws IOException {
-        super(Server.MODE_GAMESERVER);
+        super(telnetPort(), TelnetSettings.telnetPassword());
 
         if (_statusPw == null) {
             System.out.println("Server's Telnet Function Has No Password Defined!");

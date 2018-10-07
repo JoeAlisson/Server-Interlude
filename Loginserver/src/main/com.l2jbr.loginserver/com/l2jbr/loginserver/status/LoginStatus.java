@@ -1,21 +1,23 @@
 package com.l2jbr.loginserver.status;
 
-import com.l2jbr.commons.Server;
 import com.l2jbr.commons.status.Status;
 
 import java.io.IOException;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import static com.l2jbr.commons.settings.TelnetSettings.telnetPassword;
+import static com.l2jbr.commons.settings.TelnetSettings.telnetPort;
 
 public class LoginStatus extends Status {
 
     private final List<LoginStatusThread> _loginStatus;
 
     public LoginStatus() throws IOException {
-        super(Server.MODE_LOGINSERVER);
-        _loginStatus = new LinkedList<>();
+        super(telnetPort(), telnetPassword());
+        _loginStatus = new ArrayList<>();
     }
 
     @Override
@@ -28,7 +30,7 @@ public class LoginStatus extends Status {
 
     @Override
     public void sendMessageToTelnets(String msg) {
-        List<LoginStatusThread> lsToRemove = new LinkedList<>();
+        List<LoginStatusThread> lsToRemove = new ArrayList<>();
         for (LoginStatusThread ls : _loginStatus) {
             if (ls.isInterrupted()) {
                 lsToRemove.add(ls);
@@ -36,5 +38,6 @@ public class LoginStatus extends Status {
                 ls.printToTelnet(msg);
             }
         }
+        lsToRemove.forEach(_loginStatus::remove);
     }
 }

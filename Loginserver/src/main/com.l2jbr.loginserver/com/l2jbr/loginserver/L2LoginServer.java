@@ -15,6 +15,8 @@ import java.net.UnknownHostException;
 import java.security.GeneralSecurityException;
 import java.sql.SQLException;
 
+import static com.l2jbr.commons.settings.TelnetSettings.isTelnetEnabled;
+import static com.l2jbr.loginserver.settings.LoginServerSettings.*;
 import static java.util.Objects.nonNull;
 
 /**
@@ -69,7 +71,7 @@ public class L2LoginServer {
         try {
             _gameServerListener = new GameServerListener();
             _gameServerListener.start();
-            _log.info("Listening for GameServers on " + Config.GAME_SERVER_LOGIN_HOST + ":" + Config.GAME_SERVER_LOGIN_PORT);
+            _log.info("Listening for GameServers on {} : {}", gameServerListenHost(), gameServerListenPort());
         } catch (IOException e) {
             _log.error("FATAL: Failed to start the Game Server Listener. Reason: " + e.getMessage());
             if (Config.DEVELOPER) {
@@ -78,48 +80,45 @@ public class L2LoginServer {
             System.exit(1);
         }
 
-        if (Config.IS_TELNET_ENABLED) {
+        if (isTelnetEnabled()) {
             try {
                 _statusServer = new LoginStatus();
                 _statusServer.start();
             } catch (IOException e) {
-                _log.error("Failed to start the Telnet Server. Reason: " + e.getMessage());
-                if (Config.DEVELOPER) {
-                    e.printStackTrace();
-                }
+                _log.error("Failed to start the Telnet Server. Reason: {}", e.getLocalizedMessage());
             }
         } else {
             _log.info("Telnet server is currently disabled.");
         }
 
         InetSocketAddress bindAddress;
-        if (!Config.LOGIN_BIND_ADDRESS.equals("*")) {
-            bindAddress =  new InetSocketAddress(Config.LOGIN_BIND_ADDRESS, Config.PORT_LOGIN);
+        if (!loginListenHost().equals("*")) {
+            bindAddress = new InetSocketAddress(loginListenHost(), loginListenPort());
         } else {
-            bindAddress = new InetSocketAddress(Config.PORT_LOGIN);
+            bindAddress = new InetSocketAddress(loginListenPort());
         }
 
         try {
             final L2LoginPacketHandler lph = new L2LoginPacketHandler();
             final SelectorHelper sh = new SelectorHelper();
 
-            var connectionHandler = ConnectionBuilder.create(bindAddress, sh,lph,sh).threadPoolSize(2).build();
+            var connectionHandler = ConnectionBuilder.create(bindAddress, sh, lph, sh).threadPoolSize(2).build();
             connectionHandler.start();
         } catch (IOException e) {
             _log.error("FATAL: Failed to open ConnectionHandler. Reason: " + e.getMessage(), e);
             System.exit(1);
         }
-        _log.info("Login Server ready on {}:{}", bindAddress.getHostString(),  Config.PORT_LOGIN);
+        _log.info("Login Server ready on {}:{}", bindAddress.getHostString(), loginListenPort());
     }
 
     public static void sendMessageToStatusServer(String msg) {
-        if(nonNull(_instance) &&  nonNull(_instance._statusServer)) {
+        if (nonNull(_instance) && nonNull(_instance._statusServer)) {
             _instance._statusServer.sendMessageToTelnets(msg);
         }
     }
 
     public static void removeGameserver(GameServerConnection gameServerConnection, String ip) {
-        if(nonNull(_instance) && nonNull(_instance._gameServerListener)) {
+        if (nonNull(_instance) && nonNull(_instance._gameServerListener)) {
             _instance._gameServerListener.removeGameServer(gameServerConnection);
             _instance._gameServerListener.removeFloodProtection(ip);
         }

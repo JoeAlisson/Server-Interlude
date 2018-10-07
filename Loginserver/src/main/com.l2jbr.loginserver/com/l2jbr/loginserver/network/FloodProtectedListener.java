@@ -85,7 +85,7 @@ public abstract class FloodProtectedListener extends Thread {
                     try {
                         _serverSocket.close();
                     } catch (IOException io) {
-                        logger.info( "", io);
+                        logger.info(io.getLocalizedMessage(), io);
                     }
                     break;
                 }

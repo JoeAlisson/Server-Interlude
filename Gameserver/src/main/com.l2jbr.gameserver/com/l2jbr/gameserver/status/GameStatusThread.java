@@ -45,6 +45,9 @@ import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.Instant;
+import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.NoSuchElementException;
 import java.util.Properties;
@@ -60,7 +63,7 @@ public class GameStatusThread extends Thread
 	private final PrintWriter _print;
 	private final BufferedReader _read;
 	
-	private final int _uptime;
+	private final long _uptime;
 	
 	private void telnetOutput(int type, String text)
 	{
@@ -161,7 +164,7 @@ public class GameStatusThread extends Thread
 		return result;
 	}
 	
-	public GameStatusThread(Socket client, int uptime, String StatusPW) throws IOException
+	public GameStatusThread(Socket client, long uptime, String StatusPW) throws IOException
 	{
 		_cSocket = client;
 		_uptime = uptime;
@@ -933,14 +936,9 @@ public class GameStatusThread extends Thread
 		return GmListTable.getInstance().getAllGms(true).size();
 	}
 	
-	private String getUptime(int time)
-	{
-		int uptime = (int) System.currentTimeMillis() - time;
-		uptime = uptime / 1000;
-		int h = uptime / 3600;
-		int m = (uptime - (h * 3600)) / 60;
-		int s = ((uptime - (h * 3600)) - (m * 60));
-		return h + "hrs " + m + "mins " + s + "secs";
+	private String getUptime(long time) {
+        Duration duration = Duration.between(Instant.ofEpochMilli(time), Instant.now());
+        return String.format("%d hrs %d mins %d secs",  duration.toHoursPart(), duration.toMinutesPart(), duration.toSecondsPart());
 	}
 	
 	private String gameTime()

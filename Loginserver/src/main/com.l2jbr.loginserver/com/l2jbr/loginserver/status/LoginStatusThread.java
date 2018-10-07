@@ -31,10 +31,17 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
+import java.net.UnknownHostException;
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.Properties;
+
+import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
+import static com.l2jbr.commons.settings.TelnetSettings.telnetHostsAllowed;
+import static java.util.Objects.isNull;
 
 
 public class LoginStatusThread extends Thread {
@@ -64,58 +71,25 @@ public class LoginStatusThread extends Thread {
     }
 
     private boolean isValidIP(Socket client) {
-        boolean result = false;
-        InetAddress ClientIP = client.getInetAddress();
-
         // convert IP to String, and compare with list
-        String clientStringIP = ClientIP.getHostAddress();
+        String clientStringIP = client.getInetAddress().getHostAddress();
 
         telnetOutput(1, "Connection from: " + clientStringIP);
 
-        // read and loop thru list of IPs, compare with newIP
-        if (Config.DEVELOPER) {
-            telnetOutput(2, "");
-        }
-
-        try {
-            Properties telnetSettings = new Properties();
-            InputStream telnetIS = new FileInputStream(new File(Config.TELNET_FILE));
-            telnetSettings.load(telnetIS);
-            telnetIS.close();
-
-            String HostList = telnetSettings.getProperty("ListOfHosts", "127.0.0.1,localhost");
-
-            if (Config.DEVELOPER) {
-                telnetOutput(3, "Comparing ip to list...");
+        var hosts = telnetHostsAllowed().stream().map(ip -> {
+            try {
+                return InetAddress.getByName(ip).getHostAddress();
+            } catch (UnknownHostException e) {
+                telnetOutput(1, "Error: " + e);
+                _log.warn(e.getLocalizedMessage(), e);
+                return "";
             }
+        });
 
-            // compare
-            String ipToCompare = null;
-            for (String ip : HostList.split(",")) {
-                if (!result) {
-                    ipToCompare = InetAddress.getByName(ip).getHostAddress();
-                    if (clientStringIP.equals(ipToCompare)) {
-                        result = true;
-                    }
-                    if (Config.DEVELOPER) {
-                        telnetOutput(3, clientStringIP + " = " + ipToCompare + "(" + ip + ") = " + result);
-                    }
-                }
-            }
-        } catch (IOException e) {
-            if (Config.DEVELOPER) {
-                telnetOutput(4, "");
-            }
-            telnetOutput(1, "Error: " + e);
-        }
-
-        if (Config.DEVELOPER) {
-            telnetOutput(4, "Allow IP: " + result);
-        }
-        return result;
+        return  hosts.anyMatch(p -> Objects.equals(p, clientStringIP));
     }
 
-    public LoginStatusThread(Socket client, int uptime) throws IOException {
+    public LoginStatusThread(Socket client, long uptime) throws IOException {
         _cSocket = client;
 
         _print = new PrintWriter(_cSocket.getOutputStream());
@@ -128,7 +102,7 @@ public class LoginStatusThread extends Thread {
             _print.print("Login: ");
             _print.flush();
             String tmpLine = _read.readLine();
-            if (tmpLine == null) {
+            if (isNull(tmpLine)) {
                 _print.println("Error.");
                 _print.println("Disconnected...");
                 _print.flush();
@@ -150,7 +124,7 @@ public class LoginStatusThread extends Thread {
             _print.print("Password: ");
             _print.flush();
             tmpLine = _read.readLine();
-            if (tmpLine == null) {
+            if (isNull(tmpLine)) {
                 _print.println("Error.");
                 _print.println("Disconnected...");
                 _print.flush();
@@ -175,16 +149,11 @@ public class LoginStatusThread extends Thread {
         }
     }
 
-    /**
-     * @param password
-     * @return
-     */
     private boolean validPassword(String password) {
         byte[] expectedPass = Base64.decode(_pass);
-        MessageDigest md;
         try {
-            md = MessageDigest.getInstance("SHA");
-            byte[] raw = password.getBytes("UTF-8");
+            MessageDigest md = MessageDigest.getInstance("SHA");
+            byte[] raw = password.getBytes(StandardCharsets.UTF_8);
             byte[] hash = md.digest(raw);
             for (int i = 0; i < expectedPass.length; i++) {
                 if (hash[i] != expectedPass[i]) {
@@ -193,18 +162,14 @@ public class LoginStatusThread extends Thread {
             }
             return true;
         } catch (NoSuchAlgorithmException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException uee) {
-
+            _log.error(e.getLocalizedMessage(), e);
         }
         return false;
     }
 
 
     private boolean validLogin(String login) {
-        AccountRepository repository = DatabaseAccess.getRepository(AccountRepository.class);
-        Optional<Account> optionalAccount = repository.findById(login);
+        Optional<Account> optionalAccount = getRepository(AccountRepository.class).findById(login);
         if(optionalAccount.isPresent()) {
             Account account = optionalAccount.get();
             if(!account.isGM()) {
@@ -221,12 +186,14 @@ public class LoginStatusThread extends Thread {
     public void run() {
         String _usrCommand = "";
         try {
-            while ((_usrCommand.compareTo("quit") != 0) && (_usrCommand.compareTo("exit") != 0)) {
+            while (!_usrCommand.equalsIgnoreCase("quit") && !_usrCommand.equalsIgnoreCase("exit")) {
                 _usrCommand = _read.readLine();
-                if (_usrCommand == null) {
+
+                if (isNull(_usrCommand)) {
                     _cSocket.close();
                     break;
                 }
+
                 if (_usrCommand.equals("help")) {
                     _print.println("The following is a list of all available commands: ");
                     _print.println("help                - shows this help.");
@@ -244,7 +211,7 @@ public class LoginStatusThread extends Thread {
                     try {
                         _usrCommand = _usrCommand.substring(8);
                         if (LoginController.getInstance().removeBanForAddress(_usrCommand)) {
-                            _log.warn("IP removed via TELNET by host: " + _cSocket.getInetAddress().getHostAddress());
+                            _log.warn("IP removed via TELNET by host: {}", _cSocket.getInetAddress().getHostAddress());
                             _print.println("The IP " + _usrCommand + " has been removed from the hack protection list!");
                         } else {
                             _print.println("IP not found in hack protection list...");
@@ -279,7 +246,7 @@ public class LoginStatusThread extends Thread {
             }
             telnetOutput(1, "Connection from " + _cSocket.getInetAddress().getHostAddress() + " was closed by client.");
         } catch (IOException e) {
-            e.printStackTrace();
+            _log.error(e.getLocalizedMessage(), e);
         }
     }
 
