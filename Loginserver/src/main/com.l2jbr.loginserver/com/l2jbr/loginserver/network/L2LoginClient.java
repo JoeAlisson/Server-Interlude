@@ -216,11 +216,11 @@ public final class L2LoginClient extends Client<Connection<L2LoginClient>>
 		
 		if (getState() != LoginClientState.AUTHED_LOGIN)
 		{
-			AuthController.getInstance().removeLoginClient(this);
+			AuthController.getInstance().removeAuthedClient(this.getAccount());
 		}
 		else if (!hasJoinedGS())
 		{
-			AuthController.getInstance().removeAuthedLoginClient(getAccount());
+			AuthController.getInstance().removeAuthedClient(getAccount());
 		}
 	}
 

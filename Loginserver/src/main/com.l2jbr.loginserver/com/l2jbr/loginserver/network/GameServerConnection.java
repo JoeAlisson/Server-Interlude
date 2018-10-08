@@ -239,7 +239,7 @@ public class GameServerConnection extends Thread {
             PlayerAuthResponse authResponse;
             if (Objects.equals(par.getKey(), key)) {
                 logger.debug("auth request: OK");
-                AuthController.getInstance().removeAuthedLoginClient(par.getAccount());
+                AuthController.getInstance().removeAuthedClient(par.getAccount());
                 authResponse = new PlayerAuthResponse(par.getAccount(), true);
             } else {
                 logger.debug("auth request: NO");

@@ -33,8 +33,8 @@ public class SelectorHelper implements PacketExecutor<L2LoginClient>, ClientFact
     @Override
     public boolean accept(AsynchronousSocketChannel channel) {
         try {
-            InetSocketAddress socketAddress = (InetSocketAddress) channel.getRemoteAddress();
-            return !AuthController.getInstance().isBannedAddress(socketAddress.getAddress());
+            var socketAddress = (InetSocketAddress) channel.getRemoteAddress();
+            return !AuthController.getInstance().isBannedAddress(socketAddress.getAddress().getHostAddress());
         } catch (IOException e) {
             return false;
         }

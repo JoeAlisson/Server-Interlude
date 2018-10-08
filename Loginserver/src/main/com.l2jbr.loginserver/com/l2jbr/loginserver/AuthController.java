@@ -16,27 +16,26 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.crypto.Cipher;
-import java.io.*;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.security.KeyPairGenerator;
 import java.security.MessageDigest;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.spec.RSAKeyGenParameterSpec;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
-import static com.l2jbr.loginserver.settings.LoginServerSettings.isAutoCreateAccount;
-import static com.l2jbr.loginserver.settings.LoginServerSettings.loginBlockAfterBan;
-import static com.l2jbr.loginserver.settings.LoginServerSettings.loginTryBeforeBan;
+import static com.l2jbr.loginserver.settings.LoginServerSettings.*;
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
 public class AuthController {
+
     private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
     private static final Logger loginLogger = LoggerFactory.getLogger("loginHistory");
     private static final int LOGIN_TIMEOUT = 60 * 1000;
@@ -45,25 +44,22 @@ public class AuthController {
     private static AuthController _instance;
 
     private final Map<String, L2LoginClient> _loginServerClients = new ConcurrentHashMap<>();
-    private final Map<InetAddress, BanInfo> _bannedIps = new ConcurrentHashMap<>();
     private final Map<String, FailedLoginAttempt> _hackProtection;
+    private final BanManager banManager;
 
     private ScrambledKeyPair[] _keyPairs;
     private byte[][] _blowfishKeys;
 
-
     private AuthController() throws GeneralSecurityException {
         logger.info("Loading Auth Controller...");
-        loadBanFile();
+        banManager = BanManager.load();
 
         _hackProtection = new LinkedHashMap<>();
 
         _keyPairs = new ScrambledKeyPair[10];
 
-        KeyPairGenerator keygen = null;
-
-        keygen = KeyPairGenerator.getInstance("RSA");
-        RSAKeyGenParameterSpec spec = new RSAKeyGenParameterSpec(1024, RSAKeyGenParameterSpec.F4);
+        var keygen = KeyPairGenerator.getInstance("RSA");
+        var spec = new RSAKeyGenParameterSpec(1024, RSAKeyGenParameterSpec.F4);
         keygen.initialize(spec);
 
         // generate the initial set of keys
@@ -78,78 +74,11 @@ public class AuthController {
         generateBlowFishKeys();
     }
 
-    public static void load() throws GeneralSecurityException {
-        if (_instance == null) {
+    static void load() throws GeneralSecurityException {
+        if (isNull(_instance)) {
             _instance = new AuthController();
-        } else {
-            throw new IllegalStateException("AuthController can only be loaded a single time.");
         }
     }
-
-    private void loadBanFile() {
-        File bannedFile = new File("./banned_ip.cfg");
-        if (bannedFile.exists() && bannedFile.isFile()) {
-            FileInputStream fis;
-            try {
-                fis = new FileInputStream(bannedFile);
-            } catch (FileNotFoundException e) {
-                logger.warn("Failed to load banned IPs file (" + bannedFile.getName() + ") for reading. Reason: " + e.getMessage());
-                if (Config.DEVELOPER) {
-                    e.printStackTrace();
-                }
-                return;
-            }
-
-            LineNumberReader reader = new LineNumberReader(new InputStreamReader(fis));
-
-            String line;
-            String[] parts;
-            try {
-
-                while ((line = reader.readLine()) != null) {
-                    line = line.trim();
-                    // check if this line isn't a comment line
-                    if ((line.length() > 0) && (line.charAt(0) != '#')) {
-                        // split comments if any
-                        parts = line.split("#");
-
-                        // discard comments in the line, if any
-                        line = parts[0];
-
-                        parts = line.split(" ");
-
-                        String address = parts[0];
-
-                        long duration = 0;
-
-                        if (parts.length > 1) {
-                            try {
-                                duration = Long.parseLong(parts[1]);
-                            } catch (NumberFormatException e) {
-                                logger.warn("Skipped: Incorrect ban duration (" + parts[1] + ") on (" + bannedFile.getName() + "). Line: " + reader.getLineNumber());
-                                continue;
-                            }
-                        }
-
-                        try {
-                            AuthController.getInstance().addBanForAddress(address, duration);
-                        } catch (UnknownHostException e) {
-                            logger.warn("Skipped: Invalid address (" + parts[0] + ") on (" + bannedFile.getName() + "). Line: " + reader.getLineNumber());
-                        }
-                    }
-                }
-            } catch (IOException e) {
-                logger.warn("Error while reading the bans file (" + bannedFile.getName() + "). Details: " + e.getMessage());
-                if (Config.DEVELOPER) {
-                    e.printStackTrace();
-                }
-            }
-            logger.info("Loaded " + AuthController.getInstance().getBannedIps().size() + " IP Bans.");
-        } else {
-            logger.info("IP Bans file (" + bannedFile.getName() + ") is missing or is a directory, skipped.");
-        }
-    }
-
 
     /**
      * This is mostly to force the initialization of the Crypto Implementation, avoiding it being done on runtime when its first needed.<BR>
@@ -159,7 +88,6 @@ public class AuthController {
      * @throws GeneralSecurityException if a underlying exception was thrown by the Cipher
      */
     private void testCipher(RSAPrivateKey key) throws GeneralSecurityException {
-        // avoid worst-case execution, KenM
         Cipher rsaCipher = Cipher.getInstance("RSA/ECB/nopadding");
         rsaCipher.init(Cipher.DECRYPT_MODE, key);
     }
@@ -191,24 +119,12 @@ public class AuthController {
         return key;
     }
 
-    public void removeAuthedLoginClient(String account) {
+    public void removeAuthedClient(String account) {
         _loginServerClients.remove(account);
-    }
-
-    public boolean isAccountInLoginServer(String account) {
-        return _loginServerClients.containsKey(account);
     }
 
     public L2LoginClient getAuthedClient(String account) {
         return _loginServerClients.get(account);
-    }
-
-    public  enum AuthLoginResult {
-        INVALID_PASSWORD,
-        ACCOUNT_BANNED,
-        ALREADY_ON_LS,
-        ALREADY_ON_GS,
-        AUTH_SUCCESS
     }
 
     public AuthLoginResult tryAuthLogin(String account, String password, L2LoginClient client) {
@@ -236,66 +152,8 @@ public class AuthController {
         return ret;
     }
 
-    /**
-     * Adds the address to the ban list of the login server, with the given duration.
-     *
-     * @param address    The Address to be banned.
-     * @param expiration Timestamp in miliseconds when this ban expires
-     * @throws UnknownHostException if the address is invalid.
-     */
-    public void addBanForAddress(String address, long expiration) throws UnknownHostException {
-        InetAddress netAddress = InetAddress.getByName(address);
-        _bannedIps.put(netAddress, new BanInfo(netAddress, expiration));
-    }
-
-    /**
-     * Adds the address to the ban list of the login server, with the given duration.
-     *
-     * @param address  The Address to be banned.
-     * @param duration is miliseconds
-     */
-    public void addBanForAddress(InetAddress address, long duration) {
-        _bannedIps.put(address, new BanInfo(address, currentTimeMillis() + duration));
-    }
-
-    public boolean isBannedAddress(InetAddress address) {
-        BanInfo bi = _bannedIps.get(address);
-        if (bi != null) {
-            if (bi.hasExpired()) {
-                _bannedIps.remove(address);
-                return false;
-            }
-            return true;
-        }
-        return false;
-    }
-
-    public Map<InetAddress, BanInfo> getBannedIps() {
-        return _bannedIps;
-    }
-
-    /**
-     * Remove the specified address from the ban list
-     *
-     * @param address The address to be removed from the ban list
-     * @return true if the ban was removed, false if there was no ban for this ip
-     */
-    public boolean removeBanForAddress(InetAddress address) {
-        return nonNull(_bannedIps.remove(address));
-    }
-
-    /**
-     * Remove the specified address from the ban list
-     *
-     * @param address The address to be removed from the ban list
-     * @return true if the ban was removed, false if there was no ban for this ip or the address was invalid.
-     */
-    public boolean removeBanForAddress(String address) {
-        try {
-            return removeBanForAddress(InetAddress.getByName(address));
-        } catch (UnknownHostException e) {
-            return false;
-        }
+    public boolean isBannedAddress(String address) {
+        return banManager.isBanned(address);
     }
 
     public SessionKey getKeyForAccount(String account) {
@@ -355,15 +213,11 @@ public class AuthController {
         return 0;
     }
 
-    /**
-     * @param client
-     * @param serverId
-     * @return
-     */
+
     public boolean isLoginPossible(L2LoginClient client, int serverId) {
         GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(serverId);
         int access = client.getAccessLevel();
-        if ((gsi != null) && gsi.isAuthed()) {
+        if (nonNull(gsi) && gsi.isAuthed()) {
             boolean loginOk = ((gsi.getOnlinePlayersCount() < gsi.getMaxPlayers()) && (gsi.getStatus() != ServerStatus.STATUS_GM_ONLY)) || (access >= Config.GM_MIN);
 
             if (loginOk && (client.getLastServer() != serverId)) {
@@ -412,7 +266,6 @@ public class AuthController {
             var optionalAccount = repository.findById(user);
 
             if (optionalAccount.isPresent()) {
-                logger.debug("account exists");
                 var account = optionalAccount.get();
 
                 if (account.isBanned()) {
@@ -468,11 +321,7 @@ public class AuthController {
 
             if (failedCount >= loginTryBeforeBan()) {
                 logger.info("Banning {} for seconds due to {} invalid user/pass attempts", address, loginBlockAfterBan(), failedCount);
-                try {
-                    this.addBanForAddress(address, loginBlockAfterBan() * 1000);
-                } catch (UnknownHostException e) {
-                    logger.warn("Skipped: Invalid address ({})", address);
-                }
+                 banManager.addBannedAdress(address, currentTimeMillis() + loginBlockAfterBan() * 1000);
             }
         } else {
             _hackProtection.remove(address);
@@ -484,6 +333,14 @@ public class AuthController {
 
     public static AuthController getInstance() {
         return _instance;
+    }
+
+    public enum AuthLoginResult {
+        INVALID_PASSWORD,
+        ACCOUNT_BANNED,
+        ALREADY_ON_LS,
+        ALREADY_ON_GS,
+        AUTH_SUCCESS
     }
 
     class FailedLoginAttempt {
@@ -516,25 +373,6 @@ public class AuthController {
 
         int getCount() {
             return _count;
-        }
-    }
-
-    class BanInfo {
-        private final InetAddress _ipAddress;
-        // Expiration
-        private final long _expiration;
-
-        public BanInfo(InetAddress ipAddress, long expiration) {
-            _ipAddress = ipAddress;
-            _expiration = expiration;
-        }
-
-        public InetAddress getAddress() {
-            return _ipAddress;
-        }
-
-        public boolean hasExpired() {
-            return (currentTimeMillis() > _expiration) && (_expiration > 0);
         }
     }
 
