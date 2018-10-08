@@ -5,9 +5,9 @@ import org.l2j.authserver.AuthServer;
 import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.GameServerManager;
 import org.l2j.authserver.controller.AuthController;
-import org.l2j.authserver.network.gameserverpackets.*;
-import org.l2j.authserver.network.loginserverpackets.*;
-import org.l2j.authserver.network.serverpackets.ServerBasePacket;
+import org.l2j.authserver.network.packet.game2auth.*;
+import org.l2j.authserver.network.packet.auth2game.*;
+import org.l2j.authserver.network.packet.ServerBasePacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

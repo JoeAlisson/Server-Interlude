@@ -41,7 +41,7 @@ public class AuthServer {
         final L2LoginPacketHandler lph = new L2LoginPacketHandler();
         final SelectorHelper sh = new SelectorHelper();
 
-        connectionHandler = ConnectionBuilder.create(bindAddress, sh, lph, sh).threadPoolSize(2).build();
+        connectionHandler = ConnectionBuilder.create(bindAddress, AuthClient::new, lph, sh).threadPoolSize(2).build();
         connectionHandler.start();
         logger.info("Login Server ready on {}:{}", bindAddress.getHostString(), loginListenPort());
     }

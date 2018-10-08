@@ -19,8 +19,8 @@
 package org.l2j.authserver.network;
 
 import com.l2jbr.commons.Config;
-import org.l2j.authserver.network.serverpackets.LoginOk;
-import org.l2j.authserver.network.serverpackets.PlayOk;
+import org.l2j.authserver.network.packet.auth2client.LoginOk;
+import org.l2j.authserver.network.packet.auth2client.PlayOk;
 
 
 /**

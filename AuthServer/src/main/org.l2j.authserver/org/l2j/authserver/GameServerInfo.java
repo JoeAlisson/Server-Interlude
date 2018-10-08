@@ -2,7 +2,7 @@ package org.l2j.authserver;
 
 import com.l2jbr.commons.database.model.GameServer;
 import org.l2j.authserver.network.GameServerConnection;
-import org.l2j.authserver.network.gameserverpackets.ServerStatus;
+import org.l2j.authserver.network.packet.game2auth.ServerStatus;
 
 import static com.l2jbr.commons.util.Util.stringToHex;
 

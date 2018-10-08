@@ -1,10 +1,10 @@
 package org.l2j.authserver.network;
 
 import org.l2j.authserver.network.AuthClient.LoginClientState;
-import org.l2j.authserver.network.clientpackets.AuthGameGuard;
-import org.l2j.authserver.network.clientpackets.RequestAuthLogin;
-import org.l2j.authserver.network.clientpackets.RequestServerList;
-import org.l2j.authserver.network.clientpackets.RequestServerLogin;
+import org.l2j.authserver.network.packet.client2auth.AuthGameGuard;
+import org.l2j.authserver.network.packet.client2auth.RequestAuthLogin;
+import org.l2j.authserver.network.packet.client2auth.RequestServerList;
+import org.l2j.authserver.network.packet.client2auth.RequestServerLogin;
 import org.l2j.mmocore.DataWrapper;
 import org.l2j.mmocore.PacketHandler;
 import org.l2j.mmocore.ReadablePacket;
