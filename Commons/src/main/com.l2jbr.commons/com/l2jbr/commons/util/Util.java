@@ -15,6 +15,7 @@
 package com.l2jbr.commons.util;
 
 import java.lang.reflect.Field;
+import java.math.BigInteger;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -102,6 +103,17 @@ public class Util {
             builder.insert(0, "0");
         }
         return builder.toString();
+    }
+
+    public static byte[] stringToHex(String string) {
+        return new BigInteger(string, 16).toByteArray();
+    }
+
+    public static String hexToString(byte[] hex) {
+        if (isNull(hex)) {
+            return "null";
+        }
+        return new BigInteger(hex).toString(16);
     }
 
     public static Optional<Field> getField(String fieldName, Class<?> clazz) {

@@ -1,9 +1,8 @@
 package org.l2j.authserver.network.gameserverpackets;
 
+import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.GameServerManager;
 import org.l2j.authserver.network.clientpackets.ClientBasePacket;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import static java.util.Objects.nonNull;
 
@@ -11,8 +10,6 @@ import static java.util.Objects.nonNull;
  * @author -Wooden-
  */
 public class ServerStatus extends ClientBasePacket {
-
-    protected static Logger _log = LoggerFactory.getLogger(ServerStatus.class);
 
 	private static final int SERVER_LIST_STATUS = 0x01;
 	private static final int SERVER_LIST_CLOCK = 0x02;
@@ -32,7 +29,7 @@ public class ServerStatus extends ClientBasePacket {
 	public ServerStatus(byte[] data, int serverId) {
 		super(data);
 		
-		GameServerManager.GameServerInfo gsi = GameServerManager.getInstance().getRegisteredGameServerById(serverId);
+		GameServerInfo gsi = GameServerManager.getInstance().getRegisteredGameServerById(serverId);
 		if (nonNull(gsi)) {
 			int size = readInt();
 			for (int i = 0; i < size; i++) {

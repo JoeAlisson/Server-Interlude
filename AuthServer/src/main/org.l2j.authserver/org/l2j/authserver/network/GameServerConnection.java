@@ -2,6 +2,7 @@ package org.l2j.authserver.network;
 
 import com.l2jbr.commons.crypt.NewCrypt;
 import org.l2j.authserver.AuthServer;
+import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.GameServerManager;
 import org.l2j.authserver.controller.AuthController;
 import org.l2j.authserver.network.gameserverpackets.*;
@@ -43,7 +44,7 @@ public class GameServerConnection extends Thread {
 
     private final String ip;
 
-    private GameServerManager.GameServerInfo _gsi;
+    private GameServerInfo _gsi;
 
     private final Set<String> _accountsOnGameServer = new HashSet<>();
 
@@ -263,7 +264,7 @@ public class GameServerConnection extends Thread {
         int id = gameServerAuth.getDesiredID();
         byte[] hexId = gameServerAuth.getHexID();
 
-        GameServerManager.GameServerInfo gsi = gameServerManager.getRegisteredGameServerById(id);
+        GameServerInfo gsi = gameServerManager.getRegisteredGameServerById(id);
         if (nonNull(gsi)) {
             if (Arrays.equals(gsi.getHexId(), hexId)) {
                 if (gsi.isAuthed()) {
@@ -275,7 +276,7 @@ public class GameServerConnection extends Thread {
                 // there is already a server registered with the desired id and different hex id
                 // try to registerClient this one with an alternative id
                 if (acceptNewGameServerEnabled() && gameServerAuth.acceptAlternateID()) {
-                    gsi = new GameServerManager.GameServerInfo(id, hexId, this);
+                    gsi = new GameServerInfo(id, hexId, this);
                     if (gameServerManager.registerWithFirstAvaliableId(gsi)) {
                         attachGameServerInfo(gsi, gameServerAuth);
                         gameServerManager.registerServerOnDB(gsi);
@@ -288,7 +289,7 @@ public class GameServerConnection extends Thread {
             }
         } else {
             if (acceptNewGameServerEnabled()) {
-                gsi = new GameServerManager.GameServerInfo(id, hexId, this);
+                gsi = new GameServerInfo(id, hexId, this);
                 if (gameServerManager.register(id, gsi)) {
                     attachGameServerInfo(gsi, gameServerAuth);
                     gameServerManager.registerServerOnDB(gsi);
@@ -315,7 +316,7 @@ public class GameServerConnection extends Thread {
      * @param gsi            The GameServerInfo to be attached.
      * @param gameServerAuth The server info.
      */
-    private void attachGameServerInfo(GameServerManager.GameServerInfo gsi, GameServerAuth gameServerAuth) {
+    private void attachGameServerInfo(GameServerInfo gsi, GameServerAuth gameServerAuth) {
         setGameServerInfo(gsi);
         gsi.setGameServerThread(this);
         gsi.setPort(gameServerAuth.getPort());
@@ -405,7 +406,7 @@ public class GameServerConnection extends Thread {
         return nonNull(_gsi) && _gsi.isAuthed();
     }
 
-    private void setGameServerInfo(GameServerManager.GameServerInfo gsi) {
+    private void setGameServerInfo(GameServerInfo gsi) {
         _gsi = gsi;
     }
 

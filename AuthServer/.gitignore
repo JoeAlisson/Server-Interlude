@@ -3,3 +3,5 @@ build/
 
 # IntelliJ
 out/
+
+config/

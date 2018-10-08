@@ -5,11 +5,11 @@ import com.l2jbr.commons.database.annotation.Table;
 import org.springframework.data.annotation.Id;
 
 @Table("gameservers")
-public class GameServer extends Entity<Integer> {
+public class GameServer {
 
     @Id
     @Column("server_id")
-    private Integer serverId;
+    private int serverId;
     private String hexid;
     private String host;
 
@@ -21,8 +21,7 @@ public class GameServer extends Entity<Integer> {
         this.host = host;
     }
 
-    @Override
-    public Integer getId() {
+    public int getId() {
         return serverId;
     }
 

@@ -1,6 +1,7 @@
 package org.l2j.authserver.network.clientpackets;
 
 import com.l2jbr.commons.Config;
+import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.controller.AuthController;
 import org.l2j.authserver.controller.AuthResult;
 import org.l2j.authserver.network.AuthClient;
@@ -9,7 +10,6 @@ import org.l2j.authserver.network.serverpackets.AccountKicked.AccountKickedReaso
 import org.l2j.authserver.network.serverpackets.LoginFail.LoginFailReason;
 import org.l2j.authserver.network.serverpackets.LoginOk;
 import org.l2j.authserver.network.serverpackets.ServerList;
-import org.l2j.authserver.GameServerManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -61,7 +61,7 @@ public class RequestAuthLogin extends L2LoginClientPacket {
             decUserData = rsaCipher.doFinal(userData, 0x00, 0x80);
 
             if(useNewAuth) {
-                decAuthData =  rsaCipher.doFinal(authData, 0x00, 0x80);;
+                decAuthData =  rsaCipher.doFinal(authData, 0x00, 0x80);
             }
 
         } catch (Exception e) {
@@ -110,7 +110,7 @@ public class RequestAuthLogin extends L2LoginClientPacket {
                 }
                 break;
             case ALREADY_ON_GS:
-                GameServerManager.GameServerInfo gsi;
+                GameServerInfo gsi;
                 if ((gsi = lc.getAccountOnGameServer(user)) != null) {
                     client.close(LoginFailReason.REASON_ACCOUNT_IN_USE);
 
