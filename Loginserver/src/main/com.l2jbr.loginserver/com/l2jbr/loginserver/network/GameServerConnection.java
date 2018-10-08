@@ -117,13 +117,12 @@ public class GameServerConnection extends Thread {
 
             String msg = String.format("GameServer %s : Connection Lost: %s", serverName , e.getLocalizedMessage());
             logger.info(msg);
-            broadcastToStatusServer(msg);
         } finally {
             if (isAuthed()) {
                 _gsi.setDown();
                 logger.info("Server [{}] {} is now set as disconnect", getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
             }
-            AuthServer.removeGameserver(this, ip);
+            AuthServer.getInstance().removeGameserver(this, ip);
         }
     }
 
@@ -187,7 +186,6 @@ public class GameServerConnection extends Thread {
             AuthResponse ar = new AuthResponse(_gsi.getId());
             sendPacket(ar);
             logger.debug("Authed: id: {}", _gsi.getId());
-            broadcastToStatusServer(String.format("GameServer [%d] %s is connected", getServerId(), GameServerTable.getInstance().getServerNameById(getServerId())));
         }
     }
 
@@ -198,8 +196,6 @@ public class GameServerConnection extends Thread {
             for (String account : newAccounts) {
                 _accountsOnGameServer.add(account);
                 logger.debug("Account {} logged in GameServer: [{}] {}",  account, getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
-
-                broadcastToStatusServer(String.format("Account %s logged in GameServer %d", account, getServerId()));
             }
         } else {
             forceClose(LoginServerFail.NOT_AUTHED);
@@ -211,8 +207,6 @@ public class GameServerConnection extends Thread {
             PlayerLogout plo = new PlayerLogout(data);
             _accountsOnGameServer.remove(plo.getAccount());
             logger.debug("Player {} logged out from gameserver [{}] {}", plo.getAccount(), getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
-
-            broadcastToStatusServer(String.format("Player %s disconnect from GameServer  %d", plo.getAccount(), getServerId()));
         } else {
             forceClose(LoginServerFail.NOT_AUTHED);
         }
@@ -280,7 +274,7 @@ public class GameServerConnection extends Thread {
                 }
             } else {
                 // there is already a server registered with the desired id and different hex id
-                // try to register this one with an alternative id
+                // try to registerClient this one with an alternative id
                 if (acceptNewGameServerEnabled() && gameServerAuth.acceptAlternateID()) {
                     gsi = new GameServerInfo(id, hexId, this);
                     if (gameServerTable.registerWithFirstAvaliableId(gsi)) {
@@ -360,10 +354,6 @@ public class GameServerConnection extends Thread {
             _out.write(data);
             _out.flush();
         }
-    }
-
-    private void broadcastToStatusServer(String msg) {
-        AuthServer.sendMessageToStatusServer(msg);
     }
 
     public void kickPlayer(String account) {

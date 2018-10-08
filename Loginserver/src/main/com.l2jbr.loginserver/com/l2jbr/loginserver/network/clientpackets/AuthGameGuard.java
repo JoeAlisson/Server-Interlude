@@ -1,6 +1,6 @@
 package com.l2jbr.loginserver.network.clientpackets;
 
-import com.l2jbr.loginserver.network.L2LoginClient.LoginClientState;
+import com.l2jbr.loginserver.network.AuthClient.LoginClientState;
 import com.l2jbr.loginserver.network.serverpackets.GGAuth;
 import com.l2jbr.loginserver.network.serverpackets.LoginFail.LoginFailReason;
 

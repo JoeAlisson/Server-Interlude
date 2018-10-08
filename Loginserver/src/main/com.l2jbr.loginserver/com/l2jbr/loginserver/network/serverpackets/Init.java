@@ -1,6 +1,6 @@
 package com.l2jbr.loginserver.network.serverpackets;
 
-import com.l2jbr.loginserver.network.L2LoginClient;
+import com.l2jbr.loginserver.network.AuthClient;
 
 /**
  * Format: dd b dddd s
@@ -21,7 +21,7 @@ public final class Init extends L2LoginServerPacket {
 	private final byte[] _publicKey;
 	private final byte[] _blowfishKey;
 	
-	public Init(L2LoginClient client)
+	public Init(AuthClient client)
 	{
 		this(client.getScrambledModulus(), client.getBlowfishKey(), client.getSessionId());
 	}

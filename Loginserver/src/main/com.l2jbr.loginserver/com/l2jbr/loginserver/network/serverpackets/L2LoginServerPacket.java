@@ -17,13 +17,13 @@
  */
 package com.l2jbr.loginserver.network.serverpackets;
 
-import com.l2jbr.loginserver.network.L2LoginClient;
+import com.l2jbr.loginserver.network.AuthClient;
 import org.l2j.mmocore.WritablePacket;
 
 /**
  * @author KenM
  */
-public abstract class L2LoginServerPacket extends WritablePacket<L2LoginClient> {
+public abstract class L2LoginServerPacket extends WritablePacket<AuthClient> {
 
     @Override
     protected int packetSize() {

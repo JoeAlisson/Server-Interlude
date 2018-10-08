@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * @author KenM
  */
-public class SelectorHelper implements PacketExecutor<L2LoginClient>, ClientFactory<L2LoginClient>, ConnectionFilter {
+public class SelectorHelper implements PacketExecutor<AuthClient>, ClientFactory<AuthClient>, ConnectionFilter {
     private final ThreadPoolExecutor _generalPacketsThreadPool;
 
     public SelectorHelper() {
@@ -21,13 +21,13 @@ public class SelectorHelper implements PacketExecutor<L2LoginClient>, ClientFact
     }
 
     @Override
-    public void execute(ReadablePacket<L2LoginClient> packet) {
+    public void execute(ReadablePacket<AuthClient> packet) {
         _generalPacketsThreadPool.execute(packet);
     }
 
     @Override
-    public L2LoginClient create(Connection<L2LoginClient> connection) {
-        return new L2LoginClient(connection);
+    public AuthClient create(Connection<AuthClient> connection) {
+        return new AuthClient(connection);
     }
 
     @Override

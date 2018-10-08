@@ -1,7 +1,6 @@
 package com.l2jbr.loginserver.network;
 
 import com.l2jbr.commons.Config;
-import com.l2jbr.commons.util.Rnd;
 import com.l2jbr.loginserver.AuthController;
 import com.l2jbr.loginserver.network.crypt.LoginCrypt;
 import com.l2jbr.loginserver.network.crypt.ScrambledKeyPair;
@@ -22,54 +21,54 @@ import java.security.interfaces.RSAPrivateKey;
 /**
  * Represents a client connected into the LoginServer
  */
-public final class L2LoginClient extends Client<Connection<L2LoginClient>>
-{
-	private static Logger _log = LoggerFactory.getLogger(L2LoginClient.class);
-	
-	public enum LoginClientState
-	{
-		CONNECTED,
-		AUTHED_GG,
-		AUTHED_LOGIN
-	}
-	
-	private LoginClientState _state;
-	
-	// Crypt
-	private final LoginCrypt _loginCrypt;
-	private final ScrambledKeyPair _scrambledPair;
-	private final byte[] _blowfishKey;
-	
-	private String _account;
-	private int _accessLevel;
-	private int _lastServer;
-	private boolean _usesInternalIP;
-	private SessionKey _sessionKey;
-	private final int _sessionId;
-	private boolean _joinedGS;
-	
-	private final long _connectionStartTime;
+public final class AuthClient extends Client<Connection<AuthClient>> {
 
-	public L2LoginClient(Connection<L2LoginClient> con)
-	{
+    private static Logger _log = LoggerFactory.getLogger(AuthClient.class);
+
+    private final long _connectionStartTime;
+
+    private LoginCrypt _loginCrypt;
+    private ScrambledKeyPair _scrambledPair;
+    private byte[] _blowfishKey;
+    private int _sessionId;
+    private boolean _joinedGS;
+    private SessionKey _sessionKey;
+
+    private String _account;
+    private int _accessLevel;
+    private int _lastServer;
+    private boolean _usesInternalIP;
+    private LoginClientState _state;
+
+    public AuthClient(Connection<AuthClient> con) {
 		super(con);
 		_state = LoginClientState.CONNECTED;
 		String ip = getHostAddress();
-		
+
 		// TODO unhardcode this
-		if (ip.startsWith("192.168") || ip.startsWith("10.0") || ip.startsWith("127.0.0.1"))
-		{
+		if (ip.startsWith("192.168") || ip.startsWith("10.0") || ip.startsWith("127.0.0.1")) {
 			_usesInternalIP = true;
 		}
-		
-		_scrambledPair = AuthController.getInstance().getScrambledRSAKeyPair();
-		_blowfishKey = AuthController.getInstance().getBlowfishKey();
-		_sessionId = Rnd.nextInt();
+
 		_connectionStartTime = System.currentTimeMillis();
-		_loginCrypt = new LoginCrypt();
-		_loginCrypt.setKey(_blowfishKey);
+
+		AuthController.getInstance().registerClient(this);
 	}
-	
+    public void setKeyPar(ScrambledKeyPair keyPair) {
+        _scrambledPair = keyPair;
+    }
+    public void setBlowfishKey(byte[] blowfishKey) {
+        _blowfishKey = blowfishKey;
+    }
+
+    public void setSessionId(int sessionId) {
+        _sessionId = sessionId;
+    }
+
+    public void setCrypter(LoginCrypt crypt) {
+        _loginCrypt =  crypt;
+    }
+
 	public boolean usesInternalIP()
 	{
 		return _usesInternalIP;
@@ -232,4 +231,10 @@ public final class L2LoginClient extends Client<Connection<L2LoginClient>>
 		}
 		return "[" + (address.equals("") ? "disconnect" : address) + "]";
 	}
+
+    public enum LoginClientState {
+        CONNECTED,
+        AUTHED_GG,
+        AUTHED_LOGIN;
+    }
 }

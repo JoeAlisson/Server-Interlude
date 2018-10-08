@@ -1,6 +1,6 @@
 package com.l2jbr.loginserver.network.clientpackets;
 
-import com.l2jbr.loginserver.network.L2LoginClient;
+import com.l2jbr.loginserver.network.AuthClient;
 import org.l2j.mmocore.ReadablePacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 /**
  * @author KenM
  */
-public abstract class L2LoginClientPacket extends ReadablePacket<L2LoginClient> {
+public abstract class L2LoginClientPacket extends ReadablePacket<AuthClient> {
 
 	private static Logger _log = LoggerFactory.getLogger(L2LoginClientPacket.class.getName());
 	

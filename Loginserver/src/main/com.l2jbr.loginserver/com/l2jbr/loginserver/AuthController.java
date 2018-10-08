@@ -7,8 +7,9 @@ import com.l2jbr.commons.database.model.Account;
 import com.l2jbr.commons.util.Rnd;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
 import com.l2jbr.loginserver.network.GameServerConnection;
-import com.l2jbr.loginserver.network.L2LoginClient;
+import com.l2jbr.loginserver.network.AuthClient;
 import com.l2jbr.loginserver.network.SessionKey;
+import com.l2jbr.loginserver.network.crypt.LoginCrypt;
 import com.l2jbr.loginserver.network.crypt.ScrambledKeyPair;
 import com.l2jbr.loginserver.network.gameserverpackets.ServerStatus;
 import com.l2jbr.loginserver.network.serverpackets.LoginFail.LoginFailReason;
@@ -22,10 +23,7 @@ import java.security.KeyPairGenerator;
 import java.security.MessageDigest;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.spec.RSAKeyGenParameterSpec;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
@@ -43,8 +41,8 @@ public class AuthController {
 
     private static AuthController _instance;
 
-    private final Map<String, L2LoginClient> _loginServerClients = new ConcurrentHashMap<>();
-    private final Map<String, FailedLoginAttempt> _hackProtection;
+    private final Map<String, AuthClient> _loginServerClients = new ConcurrentHashMap<>();
+    private final Map<String, FailedLoginAttempt> _hackProtection = new HashMap<>();
     private final BanManager banManager;
 
     private ScrambledKeyPair[] _keyPairs;
@@ -54,13 +52,22 @@ public class AuthController {
         logger.info("Loading Auth Controller...");
         banManager = BanManager.load();
 
-        _hackProtection = new LinkedHashMap<>();
+        initializeScrambledKeys();
+        generateBlowFishKeys();
+    }
 
-        _keyPairs = new ScrambledKeyPair[10];
+    static void load() throws GeneralSecurityException {
+        if (isNull(_instance)) {
+            _instance = new AuthController();
+        }
+    }
 
+    private void initializeScrambledKeys() throws GeneralSecurityException {
         var keygen = KeyPairGenerator.getInstance("RSA");
         var spec = new RSAKeyGenParameterSpec(1024, RSAKeyGenParameterSpec.F4);
         keygen.initialize(spec);
+
+        _keyPairs = new ScrambledKeyPair[10];
 
         // generate the initial set of keys
         for (int i = 0; i < 10; i++) {
@@ -69,15 +76,6 @@ public class AuthController {
         logger.info("Cached 10 KeyPairs for RSA communication");
 
         testCipher((RSAPrivateKey) _keyPairs[0]._pair.getPrivate());
-
-        // Store keys for blowfish communication
-        generateBlowFishKeys();
-    }
-
-    static void load() throws GeneralSecurityException {
-        if (isNull(_instance)) {
-            _instance = new AuthController();
-        }
     }
 
     /**
@@ -111,7 +109,7 @@ public class AuthController {
     }
 
 
-    public SessionKey assignSessionKeyToClient(String account, L2LoginClient client) {
+    public SessionKey assignSessionKeyToClient(String account, AuthClient client) {
         SessionKey key;
 
         key = new SessionKey(Rnd.nextInt(), Rnd.nextInt(), Rnd.nextInt(), Rnd.nextInt());
@@ -123,11 +121,11 @@ public class AuthController {
         _loginServerClients.remove(account);
     }
 
-    public L2LoginClient getAuthedClient(String account) {
+    public AuthClient getAuthedClient(String account) {
         return _loginServerClients.get(account);
     }
 
-    public AuthLoginResult tryAuthLogin(String account, String password, L2LoginClient client) {
+    public AuthLoginResult tryAuthLogin(String account, String password, AuthClient client) {
         AuthLoginResult ret = AuthLoginResult.INVALID_PASSWORD;
         if (loginValid(account, password, client)) {
             // login was successful, verify presence on Gameservers
@@ -157,7 +155,7 @@ public class AuthController {
     }
 
     public SessionKey getKeyForAccount(String account) {
-        L2LoginClient client = _loginServerClients.get(account);
+        AuthClient client = _loginServerClients.get(account);
         if (nonNull(client)) {
             return client.getSessionKey();
         }
@@ -214,7 +212,7 @@ public class AuthController {
     }
 
 
-    public boolean isLoginPossible(L2LoginClient client, int serverId) {
+    public boolean isLoginPossible(AuthClient client, int serverId) {
         GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(serverId);
         int access = client.getAccessLevel();
         if (nonNull(gsi) && gsi.isAuthed()) {
@@ -231,7 +229,7 @@ public class AuthController {
         return false;
     }
 
-    void setAccountAccessLevel(String login, short acessLevel) {
+    public void setAccountAccessLevel(String login, short acessLevel) {
         if(getRepository(AccountRepository.class).updateAccessLevel(login, acessLevel) < 1) {
             logger.warn("Could not set accessLevel of account {}", login);
         }
@@ -244,11 +242,11 @@ public class AuthController {
      *
      * @return a scrambled keypair
      */
-    public ScrambledKeyPair getScrambledRSAKeyPair() {
+    private ScrambledKeyPair getScrambledRSAKeyPair() {
         return _keyPairs[Rnd.nextInt(10)];
     }
 
-    private boolean loginValid(String user, String password, L2LoginClient client) {
+    private boolean loginValid(String user, String password, AuthClient client) {
         boolean ok = false;
         String address = client.getHostAddress();
 
@@ -335,6 +333,14 @@ public class AuthController {
         return _instance;
     }
 
+    public void registerClient(AuthClient client) {
+        client.setKeyPar(getScrambledRSAKeyPair());
+        client.setBlowfishKey(getBlowfishKey());
+        client.setSessionId(Rnd.nextInt());
+        client.setCrypter(new LoginCrypt());
+
+    }
+
     public enum AuthLoginResult {
         INVALID_PASSWORD,
         ACCOUNT_BANNED,
@@ -382,8 +388,8 @@ public class AuthController {
             for (; ; ) {
 
                 synchronized (_loginServerClients) {
-                    for (Map.Entry<String, L2LoginClient> e : _loginServerClients.entrySet()) {
-                        L2LoginClient client = e.getValue();
+                    for (Map.Entry<String, AuthClient> e : _loginServerClients.entrySet()) {
+                        AuthClient client = e.getValue();
                         if ((client.getConnectionStartTime() + LOGIN_TIMEOUT) >= currentTimeMillis()) {
                             client.close(LoginFailReason.REASON_ACCESS_FAILED);
                         }

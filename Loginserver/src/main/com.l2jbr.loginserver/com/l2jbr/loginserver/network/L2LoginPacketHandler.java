@@ -1,6 +1,6 @@
 package com.l2jbr.loginserver.network;
 
-import com.l2jbr.loginserver.network.L2LoginClient.LoginClientState;
+import com.l2jbr.loginserver.network.AuthClient.LoginClientState;
 import com.l2jbr.loginserver.network.clientpackets.AuthGameGuard;
 import com.l2jbr.loginserver.network.clientpackets.RequestAuthLogin;
 import com.l2jbr.loginserver.network.clientpackets.RequestServerList;
@@ -15,15 +15,15 @@ import org.slf4j.LoggerFactory;
  * Handler for packets received by Login Server
  * @author KenM
  */
-public final class L2LoginPacketHandler implements PacketHandler<L2LoginClient> {
+public final class L2LoginPacketHandler implements PacketHandler<AuthClient> {
 
     private static final Logger logger = LoggerFactory.getLogger(L2LoginPacketHandler.class);
 
 	@Override
-	public ReadablePacket<L2LoginClient> handlePacket(DataWrapper data, L2LoginClient client) {
+	public ReadablePacket<AuthClient> handlePacket(DataWrapper data, AuthClient client) {
         int opcode = Byte.toUnsignedInt(data.get());
 
-        ReadablePacket<L2LoginClient> packet = null;
+        ReadablePacket<AuthClient> packet = null;
         LoginClientState state = client.getState();
 
         switch (state) {

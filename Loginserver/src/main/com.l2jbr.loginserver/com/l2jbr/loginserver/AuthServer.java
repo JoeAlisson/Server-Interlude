@@ -23,7 +23,7 @@ public class AuthServer {
     private static AuthServer _instance;
     private static Logger logger;
 
-    private final ConnectionHandler<L2LoginClient> connectionHandler;
+    private final ConnectionHandler<AuthClient> connectionHandler;
     private GameServerListener _gameServerListener;
 
     public AuthServer() throws Exception {

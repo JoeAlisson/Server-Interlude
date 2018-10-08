@@ -3,8 +3,8 @@ package com.l2jbr.loginserver.network.clientpackets;
 import com.l2jbr.commons.Config;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
 import com.l2jbr.loginserver.AuthController;
-import com.l2jbr.loginserver.network.L2LoginClient;
-import com.l2jbr.loginserver.network.L2LoginClient.LoginClientState;
+import com.l2jbr.loginserver.network.AuthClient;
+import com.l2jbr.loginserver.network.AuthClient.LoginClientState;
 import com.l2jbr.loginserver.AuthController.AuthLoginResult;
 import com.l2jbr.loginserver.network.serverpackets.AccountKicked;
 import com.l2jbr.loginserver.network.serverpackets.AccountKicked.AccountKickedReason;
@@ -103,7 +103,7 @@ public class RequestAuthLogin extends L2LoginClientPacket {
                 client.close(new AccountKicked(AccountKickedReason.REASON_PERMANENTLY_BANNED));
                 break;
             case ALREADY_ON_LS:
-                L2LoginClient oldClient;
+                AuthClient oldClient;
                 if ((oldClient = lc.getAuthedClient(user)) != null) {
                     // kick the other client
                     oldClient.close(LoginFailReason.REASON_ACCOUNT_IN_USE);
