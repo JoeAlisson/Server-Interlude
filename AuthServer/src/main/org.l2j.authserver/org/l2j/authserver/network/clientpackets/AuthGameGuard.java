@@ -1,0 +1,42 @@
+package org.l2j.authserver.network.clientpackets;
+
+import org.l2j.authserver.network.serverpackets.GGAuth;
+import org.l2j.authserver.network.serverpackets.LoginFail.LoginFailReason;
+import org.l2j.authserver.network.AuthClient;
+
+import java.util.Objects;
+
+/**
+ * @author -Wooden- Format: ddddd
+ */
+public class AuthGameGuard extends L2LoginClientPacket {
+
+	private int _sessionId;
+
+    /**
+	 * @see L2LoginClientPacket#readImpl()
+	 */
+	@Override
+	protected boolean readImpl()
+	{
+		if (availableData() >= 20) {
+			_sessionId = readInt();
+            int _data1 = readInt();
+            int _data2 = readInt();
+            int _data3 = readInt();
+            int _data4 = readInt();
+			return true;
+		}
+		return false;
+	}
+	
+	@Override
+	public void run() {
+		if (Objects.equals(_sessionId, client.getSessionId())) {
+			client.setState(AuthClient.LoginClientState.AUTHED_GG);
+			client.sendPacket(new GGAuth(_sessionId));
+		} else {
+			client.close(LoginFailReason.REASON_ACCESS_FAILED);
+		}
+	}
+}

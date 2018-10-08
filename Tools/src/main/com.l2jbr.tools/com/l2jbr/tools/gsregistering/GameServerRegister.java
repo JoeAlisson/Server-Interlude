@@ -23,7 +23,7 @@ import com.l2jbr.commons.database.DatabaseAccess;
 import com.l2jbr.commons.database.GameserverRepository;
 import com.l2jbr.commons.Server;
 import com.l2jbr.gameserver.LoginServerThread;
-import com.l2jbr.loginserver.GameServerManager;
+import org.l2j.authserver.GameServerManager;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
