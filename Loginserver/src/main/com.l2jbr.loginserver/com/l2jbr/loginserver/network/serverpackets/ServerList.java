@@ -1,7 +1,7 @@
 package com.l2jbr.loginserver.network.serverpackets;
 
 import com.l2jbr.commons.Config;
-import com.l2jbr.loginserver.GameServerTable;
+import com.l2jbr.loginserver.GameServerManager;
 import com.l2jbr.loginserver.network.gameserverpackets.ServerStatus;
 
 import java.net.InetAddress;
@@ -34,7 +34,7 @@ public final class ServerList extends L2LoginServerPacket {
 
     @Override
     public void write() {
-        var servers = GameServerTable.getInstance().getRegisteredGameServers();
+        var servers = GameServerManager.getInstance().getRegisteredGameServers();
         writeByte(0x04);
         writeByte(servers.size());
         writeByte(client.getLastServer());
@@ -97,7 +97,7 @@ public final class ServerList extends L2LoginServerPacket {
 
     @Override
     protected int packetSize() {
-        int servers = GameServerTable.getInstance().getRegisteredGameServers().size();
+        int servers = GameServerManager.getInstance().getRegisteredGameServers().size();
         return super.packetSize() + 6 + servers * 24;
     }
 }

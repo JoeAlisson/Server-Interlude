@@ -5,8 +5,8 @@ import com.l2jbr.commons.Config;
 import com.l2jbr.commons.database.AccountRepository;
 import com.l2jbr.commons.database.model.Account;
 import com.l2jbr.commons.util.Rnd;
-import com.l2jbr.loginserver.GameServerTable;
-import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
+import com.l2jbr.loginserver.GameServerManager;
+import com.l2jbr.loginserver.GameServerManager.GameServerInfo;
 import com.l2jbr.loginserver.network.AuthClient;
 import com.l2jbr.loginserver.network.GameServerConnection;
 import com.l2jbr.loginserver.network.SessionKey;
@@ -165,7 +165,7 @@ public class AuthController {
     }
 
     public int getOnlinePlayerCount(int serverId) {
-        GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(serverId);
+        GameServerInfo gsi = GameServerManager.getInstance().getRegisteredGameServerById(serverId);
         if ((gsi != null) && gsi.isAuthed()) {
             return gsi.getOnlinePlayersCount();
         }
@@ -173,7 +173,7 @@ public class AuthController {
     }
 
     private boolean isAccountInAnyGameServer(String account) {
-        Collection<GameServerInfo> serverList = GameServerTable.getInstance().getRegisteredGameServers().values();
+        Collection<GameServerInfo> serverList = GameServerManager.getInstance().getRegisteredGameServers().values();
         for (GameServerInfo gsi : serverList) {
             GameServerConnection gst = gsi.getGameServerThread();
             if ((nonNull(gst)) && gst.hasAccountOnGameServer(account)) {
@@ -184,7 +184,7 @@ public class AuthController {
     }
 
     public GameServerInfo getAccountOnGameServer(String account) {
-        Collection<GameServerInfo> serverList = GameServerTable.getInstance().getRegisteredGameServers().values();
+        Collection<GameServerInfo> serverList = GameServerManager.getInstance().getRegisteredGameServers().values();
         for (GameServerInfo gsi : serverList) {
             GameServerConnection gst = gsi.getGameServerThread();
             if ((gst != null) && gst.hasAccountOnGameServer(account)) {
@@ -196,7 +196,7 @@ public class AuthController {
 
     public int getTotalOnlinePlayerCount() {
         int total = 0;
-        Collection<GameServerInfo> serverList = GameServerTable.getInstance().getRegisteredGameServers().values();
+        Collection<GameServerInfo> serverList = GameServerManager.getInstance().getRegisteredGameServers().values();
         for (GameServerInfo gsi : serverList) {
             if (gsi.isAuthed()) {
                 total += gsi.getOnlinePlayersCount();
@@ -206,7 +206,7 @@ public class AuthController {
     }
 
     public int getMaxAllowedOnlinePlayers(int id) {
-        GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(id);
+        GameServerInfo gsi = GameServerManager.getInstance().getRegisteredGameServerById(id);
         if (gsi != null) {
             return gsi.getMaxPlayers();
         }
@@ -214,7 +214,7 @@ public class AuthController {
     }
 
     public boolean isLoginPossible(AuthClient client, int serverId) {
-        GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(serverId);
+        GameServerInfo gsi = GameServerManager.getInstance().getRegisteredGameServerById(serverId);
         int access = client.getAccessLevel();
         if (nonNull(gsi) && gsi.isAuthed()) {
             boolean loginOk = ((gsi.getOnlinePlayersCount() < gsi.getMaxPlayers()) && (gsi.getStatus() != ServerStatus.STATUS_GM_ONLY)) || (access >= Config.GM_MIN);

@@ -21,18 +21,14 @@ package com.l2jbr.tools.gsregistering;
 import com.l2jbr.commons.Config;
 import com.l2jbr.commons.database.DatabaseAccess;
 import com.l2jbr.commons.database.GameserverRepository;
-import com.l2jbr.commons.database.L2DatabaseFactory;
 import com.l2jbr.commons.Server;
 import com.l2jbr.gameserver.LoginServerThread;
-import com.l2jbr.gameserver.model.entity.database.Games;
-import com.l2jbr.loginserver.GameServerTable;
+import com.l2jbr.loginserver.GameServerManager;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.math.BigInteger;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.Map;
 
 
@@ -50,15 +46,15 @@ public class GameServerRegister
 		LineNumberReader _in = new LineNumberReader(new InputStreamReader(System.in));
 		try
 		{
-			GameServerTable.load();
+			GameServerManager.load();
 		}
 		catch (Exception e)
 		{
-			System.out.println("FATAL: Failed loading GameServerTable. Reason: " + e.getMessage());
+			System.out.println("FATAL: Failed loading GameServerManager. Reason: " + e.getMessage());
 			e.printStackTrace();
 			System.exit(1);
 		}
-		GameServerTable gameServerTable = GameServerTable.getInstance();
+		GameServerManager gameServerManager = GameServerManager.getInstance();
 		System.out.println("Welcome to L2J GameServer Regitering");
 		System.out.println("Enter The id of the server you want to registerClient");
 		System.out.println("Type 'help' to get a list of ids.");
@@ -69,9 +65,9 @@ public class GameServerRegister
 			_choice = _in.readLine();
 			if (_choice.equalsIgnoreCase("help"))
 			{
-				for (Map.Entry<Integer, String> entry : gameServerTable.getServerNames().entrySet())
+				for (Map.Entry<Integer, String> entry : gameServerManager.getServerNames().entrySet())
 				{
-					System.out.println("Server: ID: " + entry.getKey() + "\t- " + entry.getValue() + " - In Use: " + (gameServerTable.hasRegisteredGameServerOnId(entry.getKey()) ? "YES" : "NO"));
+					System.out.println("Server: ID: " + entry.getKey() + "\t- " + entry.getValue() + " - In Use: " + (gameServerManager.hasRegisteredGameServerOnId(entry.getKey()) ? "YES" : "NO"));
 				}
 				System.out.println("You can also see servername.xml");
 			}
@@ -82,7 +78,7 @@ public class GameServerRegister
 				if (_choice.equals("y"))
 				{
 					GameServerRegister.cleanRegisteredGameServersFromDB();
-					gameServerTable.getRegisteredGameServers().clear();
+					gameServerManager.getRegisteredGameServers().clear();
 				}
 				else
 				{
@@ -94,7 +90,7 @@ public class GameServerRegister
 				try
 				{
 					int id = Integer.parseInt(_choice);
-					int size = gameServerTable.getServerNames().size();
+					int size = gameServerManager.getServerNames().size();
 					
 					if (size == 0)
 					{
@@ -102,21 +98,21 @@ public class GameServerRegister
 						System.exit(1);
 					}
 					
-					String name = gameServerTable.getServerNameById(id);
+					String name = gameServerManager.getServerNameById(id);
 					if (name == null)
 					{
 						System.out.println("No name for id: " + id);
 						continue;
 					}
 					
-					if (gameServerTable.hasRegisteredGameServerOnId(id))
+					if (gameServerManager.hasRegisteredGameServerOnId(id))
 					{
 						System.out.println("This id is not free");
 					}
 					else
 					{
 						byte[] hexId = LoginServerThread.generateHex(16);
-						gameServerTable.registerServerOnDB(hexId, id, "");
+						gameServerManager.registerServerOnDB(hexId, id, "");
 						Config.saveHexid(id, new BigInteger(hexId).toString(16), "hexid(server " + id + ").txt");
 						System.out.println("Server Registered hexid saved to 'hexid(server " + id + ").txt'");
 						System.out.println("Put this file in the /config folder of your gameserver and rename it to 'hexid.txt'");

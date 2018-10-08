@@ -1,7 +1,7 @@
 package com.l2jbr.loginserver.network.gameserverpackets;
 
-import com.l2jbr.loginserver.GameServerTable;
-import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
+import com.l2jbr.loginserver.GameServerManager;
+import com.l2jbr.loginserver.GameServerManager.GameServerInfo;
 import com.l2jbr.loginserver.network.clientpackets.ClientBasePacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +33,7 @@ public class ServerStatus extends ClientBasePacket {
 	public ServerStatus(byte[] data, int serverId) {
 		super(data);
 		
-		GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(serverId);
+		GameServerInfo gsi = GameServerManager.getInstance().getRegisteredGameServerById(serverId);
 		if (nonNull(gsi)) {
 			int size = readInt();
 			for (int i = 0; i < size; i++) {

@@ -1,10 +1,10 @@
 package com.l2jbr.loginserver.network;
 
 import com.l2jbr.commons.crypt.NewCrypt;
+import com.l2jbr.loginserver.GameServerManager;
 import com.l2jbr.loginserver.controller.AuthController;
 import com.l2jbr.loginserver.AuthServer;
-import com.l2jbr.loginserver.GameServerTable;
-import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
+import com.l2jbr.loginserver.GameServerManager.GameServerInfo;
 import com.l2jbr.loginserver.network.gameserverpackets.*;
 import com.l2jbr.loginserver.network.loginserverpackets.*;
 import com.l2jbr.loginserver.network.serverpackets.ServerBasePacket;
@@ -57,7 +57,7 @@ public class GameServerConnection extends Thread {
         } catch (IOException e) {
             logger.error(e.getLocalizedMessage(), e);
         }
-        KeyPair pair = GameServerTable.getInstance().getKeyPair();
+        KeyPair pair = GameServerManager.getInstance().getKeyPair();
         _privateKey = (RSAPrivateKey) pair.getPrivate();
         _publicKey = (RSAPublicKey) pair.getPublic();
         _blowfish = new NewCrypt("_;v.]05-31!|+-%xT!^[$\00");
@@ -112,7 +112,7 @@ public class GameServerConnection extends Thread {
             String serverName = _connectionIPAddress;
 
             if(getServerId() != -1) {
-                serverName = String.format("[%d] %s", getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
+                serverName = String.format("[%d] %s", getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
             }
 
             String msg = String.format("GameServer %s : Connection Lost: %s", serverName , e.getLocalizedMessage());
@@ -120,7 +120,7 @@ public class GameServerConnection extends Thread {
         } finally {
             if (isAuthed()) {
                 _gsi.setDown();
-                logger.info("Server [{}] {} is now set as disconnect", getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
+                logger.info("Server [{}] {} is now set as disconnect", getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
             }
             AuthServer.getInstance().removeGameserver(this, ip);
         }
@@ -195,7 +195,7 @@ public class GameServerConnection extends Thread {
             List<String> newAccounts = pig.getAccounts();
             for (String account : newAccounts) {
                 _accountsOnGameServer.add(account);
-                logger.debug("Account {} logged in GameServer: [{}] {}",  account, getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
+                logger.debug("Account {} logged in GameServer: [{}] {}",  account, getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
             }
         } else {
             forceClose(LoginServerFail.NOT_AUTHED);
@@ -206,7 +206,7 @@ public class GameServerConnection extends Thread {
         if (isAuthed()) {
             PlayerLogout plo = new PlayerLogout(data);
             _accountsOnGameServer.remove(plo.getAccount());
-            logger.debug("Player {} logged out from gameserver [{}] {}", plo.getAccount(), getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
+            logger.debug("Player {} logged out from gameserver [{}] {}", plo.getAccount(), getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
         } else {
             forceClose(LoginServerFail.NOT_AUTHED);
         }
@@ -259,12 +259,12 @@ public class GameServerConnection extends Thread {
     }
 
     private void handleAuthProcess(GameServerAuth gameServerAuth) {
-        GameServerTable gameServerTable = GameServerTable.getInstance();
+        GameServerManager gameServerManager = GameServerManager.getInstance();
 
         int id = gameServerAuth.getDesiredID();
         byte[] hexId = gameServerAuth.getHexID();
 
-        GameServerInfo gsi = gameServerTable.getRegisteredGameServerById(id);
+        GameServerInfo gsi = gameServerManager.getRegisteredGameServerById(id);
         if (nonNull(gsi)) {
             if (Arrays.equals(gsi.getHexId(), hexId)) {
                 if (gsi.isAuthed()) {
@@ -277,9 +277,9 @@ public class GameServerConnection extends Thread {
                 // try to registerClient this one with an alternative id
                 if (acceptNewGameServerEnabled() && gameServerAuth.acceptAlternateID()) {
                     gsi = new GameServerInfo(id, hexId, this);
-                    if (gameServerTable.registerWithFirstAvaliableId(gsi)) {
+                    if (gameServerManager.registerWithFirstAvaliableId(gsi)) {
                         attachGameServerInfo(gsi, gameServerAuth);
-                        gameServerTable.registerServerOnDB(gsi);
+                        gameServerManager.registerServerOnDB(gsi);
                     } else {
                         forceClose(LoginServerFail.REASON_NO_FREE_ID);
                     }
@@ -290,9 +290,9 @@ public class GameServerConnection extends Thread {
         } else {
             if (acceptNewGameServerEnabled()) {
                 gsi = new GameServerInfo(id, hexId, this);
-                if (gameServerTable.register(id, gsi)) {
+                if (gameServerManager.register(id, gsi)) {
                     attachGameServerInfo(gsi, gameServerAuth);
-                    gameServerTable.registerServerOnDB(gsi);
+                    gameServerManager.registerServerOnDB(gsi);
                 } else {
                     forceClose(LoginServerFail.REASON_ID_RESERVED);
                 }
@@ -392,7 +392,7 @@ public class GameServerConnection extends Thread {
             _gsi.setInternalHost(ip);
         }
 
-        logger.info("Updated Gameserver [{}] {} IP's:", getServerId(), GameServerTable.getInstance().getServerNameById(getServerId()));
+        logger.info("Updated Gameserver [{}] {} IP's:", getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
         if ((oldInternal == null) || !oldInternal.equalsIgnoreCase(gameInternalHost)) {
             logger.info("InternalIP: {}", gameInternalHost);
         }

@@ -1,40 +1,19 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.loginserver;
 
 import com.l2jbr.commons.database.GameserverRepository;
 import com.l2jbr.commons.database.model.GameServer;
 import com.l2jbr.commons.util.Rnd;
-import com.l2jbr.commons.xml.XMLDocumentFactory;
 import com.l2jbr.loginserver.network.GameServerConnection;
 import com.l2jbr.loginserver.network.gameserverpackets.ServerStatus;
+import com.l2jbr.loginserver.xml.ServerNameReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
 
 import java.io.File;
 import java.math.BigInteger;
 import java.security.*;
 import java.security.spec.RSAKeyGenParameterSpec;
-import java.sql.SQLException;
-import java.util.LinkedHashMap;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
@@ -42,42 +21,35 @@ import java.util.concurrent.ConcurrentHashMap;
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
 
-
 /**
  * @author KenM
  */
-public class GameServerTable {
-    private static Logger _log = LoggerFactory.getLogger(GameServerTable.class.getName());
-    private static GameServerTable _instance;
+public class GameServerManager {
 
-    // Server Names Config
-    private static Map<Integer, String> _serverNames = new LinkedHashMap<>();
-
-    // Game Server Table
-    private final Map<Integer, GameServerInfo> _gameServerTable = new ConcurrentHashMap<>();
-
-    // RSA Config
+    private static final Logger _log = LoggerFactory.getLogger(GameServerManager.class);
     private static final int KEYS_SIZE = 10;
+
+    private static GameServerManager _instance;
+    private static Map<Integer, String> _serverNames = new HashMap<>();
+
+    private final Map<Integer, GameServerInfo> gameservers = new ConcurrentHashMap<>();
     private KeyPair[] _keyPairs;
 
-    public static void load() throws SQLException, GeneralSecurityException {
-        if (_instance == null) {
-            _instance = new GameServerTable();
-        } else {
-            throw new IllegalStateException("Load can only be invoked a single time.");
+    public static void load() throws GeneralSecurityException {
+        if (isNull(_instance)) {
+            _instance = new GameServerManager();
         }
     }
 
-    public static GameServerTable getInstance() {
+    public static GameServerManager getInstance() {
         return _instance;
     }
 
-    public GameServerTable() throws SQLException, NoSuchAlgorithmException, InvalidAlgorithmParameterException {
+    public GameServerManager() throws NoSuchAlgorithmException, InvalidAlgorithmParameterException {
         loadServerNames();
-        _log.info("Loaded " + _serverNames.size() + " server names");
 
         loadRegisteredGameServers();
-        _log.info("Loaded " + _gameServerTable.size() + " registered Game Servers");
+        _log.info("Loaded " + gameservers.size() + " registered Game Servers");
 
         loadRSAKeys();
         _log.info("Cached " + _keyPairs.length + " RSA keys for Game Server communication.");
@@ -96,22 +68,13 @@ public class GameServerTable {
 
     private void loadServerNames() {
         try {
+            var serverNameReader = new ServerNameReader();
             File f = new File("servername.xml");
-            Document doc = XMLDocumentFactory.getInstance().loadDocument(f);
-
-            Node n = doc.getFirstChild();
-            for (Node d = n.getFirstChild(); d != null; d = d.getNextSibling()) {
-                if (d.getNodeName().equalsIgnoreCase("server")) {
-                    NamedNodeMap attrs = d.getAttributes();
-
-                    int id = Integer.parseInt(attrs.getNamedItem("id").getNodeValue());
-                    String name = attrs.getNamedItem("name").getNodeValue();
-
-                    _serverNames.put(id, name);
-                }
-            }
+            serverNameReader.read(f);
+            _serverNames  = serverNameReader.getServerNames();
+            _log.info("Loaded {} server names", _serverNames.size());
         } catch (Exception e) {
-            _log.warn("GameServerTable: servername.xml could not be loaded.");
+            _log.warn("servername.xml could not be loaded.");
         }
 
     }
@@ -121,28 +84,28 @@ public class GameServerTable {
         repository.findAll().forEach(gameServer -> {
             int id = gameServer.getId();
             GameServerInfo gsi = new GameServerInfo(id, stringToHex(gameServer.getHexid()));
-            _gameServerTable.put(id, gsi);
+            gameservers.put(id, gsi);
         });
     }
 
     public Map<Integer, GameServerInfo> getRegisteredGameServers() {
-        return _gameServerTable;
+        return gameservers;
     }
 
     public GameServerInfo getRegisteredGameServerById(int id) {
-        return _gameServerTable.get(id);
+        return gameservers.get(id);
     }
 
     public boolean hasRegisteredGameServerOnId(int id) {
-        return _gameServerTable.containsKey(id);
+        return gameservers.containsKey(id);
     }
 
     public boolean registerWithFirstAvaliableId(GameServerInfo gsi) {
         // avoid two servers registering with the same "free" id
-        synchronized (_gameServerTable) {
+        synchronized (gameservers) {
             for (Entry<Integer, String> entry : _serverNames.entrySet()) {
-                if (!_gameServerTable.containsKey(entry.getKey())) {
-                    _gameServerTable.put(entry.getKey(), gsi);
+                if (!gameservers.containsKey(entry.getKey())) {
+                    gameservers.put(entry.getKey(), gsi);
                     gsi.setId(entry.getKey());
                     return true;
                 }
@@ -152,7 +115,7 @@ public class GameServerTable {
     }
 
     public boolean register(int id, GameServerInfo gsi) {
-        if(isNull(_gameServerTable.putIfAbsent(id, gsi))) {
+        if(isNull(gameservers.putIfAbsent(id, gsi))) {
             gsi.setId(id);
             return true;
         }

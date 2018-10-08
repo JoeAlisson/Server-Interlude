@@ -1,7 +1,7 @@
 package com.l2jbr.loginserver.network.clientpackets;
 
 import com.l2jbr.commons.Config;
-import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
+import com.l2jbr.loginserver.GameServerManager.GameServerInfo;
 import com.l2jbr.loginserver.controller.AuthController;
 import com.l2jbr.loginserver.controller.AuthResult;
 import com.l2jbr.loginserver.network.AuthClient;

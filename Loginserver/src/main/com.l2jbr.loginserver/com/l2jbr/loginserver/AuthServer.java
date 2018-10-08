@@ -29,7 +29,7 @@ public class AuthServer {
 
     public AuthServer() throws Exception {
         AuthController.load();
-        GameServerTable.load();
+        GameServerManager.load();
 
         _gameServerListener = new GameServerListener();
         _gameServerListener.start();

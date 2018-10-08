@@ -50,7 +50,7 @@ public abstract class XMLReader<T> implements ValidationEventHandler {
         return fileDir.listFiles((dir, name) -> name.endsWith(".xml"));
     }
 
-    private void read(File... files) {
+    public void read(File... files) {
         if(files == null || files.length < 1) {
             return;
         }
