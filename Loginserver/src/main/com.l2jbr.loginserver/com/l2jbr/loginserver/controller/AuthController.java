@@ -1,18 +1,19 @@
-package com.l2jbr.loginserver;
+package com.l2jbr.loginserver.controller;
 
 import com.l2jbr.commons.Base64;
 import com.l2jbr.commons.Config;
 import com.l2jbr.commons.database.AccountRepository;
 import com.l2jbr.commons.database.model.Account;
 import com.l2jbr.commons.util.Rnd;
+import com.l2jbr.loginserver.GameServerTable;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
-import com.l2jbr.loginserver.network.GameServerConnection;
 import com.l2jbr.loginserver.network.AuthClient;
+import com.l2jbr.loginserver.network.GameServerConnection;
 import com.l2jbr.loginserver.network.SessionKey;
-import com.l2jbr.loginserver.network.crypt.LoginCrypt;
+import com.l2jbr.loginserver.network.crypt.AuthCrypt;
 import com.l2jbr.loginserver.network.crypt.ScrambledKeyPair;
 import com.l2jbr.loginserver.network.gameserverpackets.ServerStatus;
-import com.l2jbr.loginserver.network.serverpackets.LoginFail.LoginFailReason;
+import com.l2jbr.loginserver.network.serverpackets.LoginFail;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,6 +26,7 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.spec.RSAKeyGenParameterSpec;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ScheduledFuture;
 
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
 import static com.l2jbr.loginserver.settings.LoginServerSettings.*;
@@ -41,9 +43,11 @@ public class AuthController {
 
     private static AuthController _instance;
 
-    private final Map<String, AuthClient> _loginServerClients = new ConcurrentHashMap<>();
+    private final Set<AuthClient> connectedClients = new HashSet<>();
+    private final Map<String, AuthClient> authedClients = new ConcurrentHashMap<>();
     private final Map<String, FailedLoginAttempt> _hackProtection = new HashMap<>();
     private final BanManager banManager;
+    private ScheduledFuture<?> scheduledPurge;
 
     private ScrambledKeyPair[] _keyPairs;
     private byte[][] _blowfishKeys;
@@ -56,7 +60,7 @@ public class AuthController {
         generateBlowFishKeys();
     }
 
-    static void load() throws GeneralSecurityException {
+    public static void load() throws GeneralSecurityException {
         if (isNull(_instance)) {
             _instance = new AuthController();
         }
@@ -69,7 +73,6 @@ public class AuthController {
 
         _keyPairs = new ScrambledKeyPair[10];
 
-        // generate the initial set of keys
         for (int i = 0; i < 10; i++) {
             _keyPairs[i] = new ScrambledKeyPair(keygen.generateKeyPair());
         }
@@ -78,13 +81,6 @@ public class AuthController {
         testCipher((RSAPrivateKey) _keyPairs[0]._pair.getPrivate());
     }
 
-    /**
-     * This is mostly to force the initialization of the Crypto Implementation, avoiding it being done on runtime when its first needed.<BR>
-     * In short it avoids the worst-case execution time on runtime by doing it on loading.
-     *
-     * @param key Any private RSA Key just for testing purposes.
-     * @throws GeneralSecurityException if a underlying exception was thrown by the Cipher
-     */
     private void testCipher(RSAPrivateKey key) throws GeneralSecurityException {
         Cipher rsaCipher = Cipher.getInstance("RSA/ECB/nopadding");
         rsaCipher.init(Cipher.DECRYPT_MODE, key);
@@ -98,53 +94,59 @@ public class AuthController {
                 _blowfishKeys[i][j] = (byte) (Rnd.nextInt(255) + 1);
             }
         }
-        logger.info("Stored " + _blowfishKeys.length + " keys for Blowfish communication");
+        logger.info("Stored {} keys for Blowfish communication", _blowfishKeys.length);
     }
 
-    /**
-     * @return Returns a random key
-     */
-    public byte[] getBlowfishKey() {
+    private byte[] getBlowfishKey() {
         return _blowfishKeys[(int) (Math.random() * BLOWFISH_KEYS)];
     }
 
+    public void registerClient(AuthClient client) {
+        client.setKeyPar(getScrambledRSAKeyPair());
+        client.setBlowfishKey(getBlowfishKey());
+        client.setSessionId(Rnd.nextInt());
+        client.setCrypter(new AuthCrypt());
 
-    public SessionKey assignSessionKeyToClient(String account, AuthClient client) {
-        SessionKey key;
+        if(isNull(scheduledPurge) || !scheduledPurge.isCancelled()) {
+            scheduledPurge = ThreadPoolManager.getInstance().scheduleAtFixedRate(PurgeThread::new, LOGIN_TIMEOUT, 2 * LOGIN_TIMEOUT);
+        }
+    }
 
-        key = new SessionKey(Rnd.nextInt(), Rnd.nextInt(), Rnd.nextInt(), Rnd.nextInt());
-        _loginServerClients.put(account, client);
-        return key;
+
+    public void assignSessionKeyToClient(String account, AuthClient client) {
+        var key = new SessionKey(Rnd.nextInt(), Rnd.nextInt(), Rnd.nextInt(), Rnd.nextInt());
+        client.setSessionKey(key);
+        authedClients.put(account, client);
     }
 
     public void removeAuthedClient(String account) {
-        _loginServerClients.remove(account);
+        authedClients.remove(account);
     }
 
     public AuthClient getAuthedClient(String account) {
-        return _loginServerClients.get(account);
+        return authedClients.get(account);
     }
 
-    public AuthLoginResult tryAuthLogin(String account, String password, AuthClient client) {
-        AuthLoginResult ret = AuthLoginResult.INVALID_PASSWORD;
+    public AuthResult tryAuthLogin(String account, String password, AuthClient client) {
+        AuthResult ret = AuthResult.INVALID_PASSWORD;
         if (loginValid(account, password, client)) {
             // login was successful, verify presence on Gameservers
-            ret = AuthLoginResult.ALREADY_ON_GS;
+            ret = AuthResult.ALREADY_ON_GS;
             if (!isAccountInAnyGameServer(account)) {
                 // account isnt on any GS verify LS itself
-                ret = AuthLoginResult.ALREADY_ON_LS;
+                ret = AuthResult.ALREADY_ON_LS;
 
                 // dont allow 2 simultaneous login
-                synchronized (_loginServerClients) {
-                    if (!_loginServerClients.containsKey(account)) {
-                        _loginServerClients.put(account, client);
-                        ret = AuthLoginResult.AUTH_SUCCESS;
+                synchronized (authedClients) {
+                    if (!authedClients.containsKey(account)) {
+                        authedClients.put(account, client);
+                        ret = AuthResult.AUTH_SUCCESS;
                     }
                 }
             }
         } else {
             if (client.getAccessLevel() < 0) {
-                ret = AuthLoginResult.ACCOUNT_BANNED;
+                ret = AuthResult.ACCOUNT_BANNED;
             }
         }
         return ret;
@@ -155,7 +157,7 @@ public class AuthController {
     }
 
     public SessionKey getKeyForAccount(String account) {
-        AuthClient client = _loginServerClients.get(account);
+        AuthClient client = authedClients.get(account);
         if (nonNull(client)) {
             return client.getSessionKey();
         }
@@ -170,7 +172,7 @@ public class AuthController {
         return 0;
     }
 
-    public boolean isAccountInAnyGameServer(String account) {
+    private boolean isAccountInAnyGameServer(String account) {
         Collection<GameServerInfo> serverList = GameServerTable.getInstance().getRegisteredGameServers().values();
         for (GameServerInfo gsi : serverList) {
             GameServerConnection gst = gsi.getGameServerThread();
@@ -211,7 +213,6 @@ public class AuthController {
         return 0;
     }
 
-
     public boolean isLoginPossible(AuthClient client, int serverId) {
         GameServerInfo gsi = GameServerTable.getInstance().getRegisteredGameServerById(serverId);
         int access = client.getAccessLevel();
@@ -235,13 +236,6 @@ public class AuthController {
         }
     }
 
-    /**
-     * <p>
-     * This method returns one of the cached {@link ScrambledKeyPair ScrambledKeyPairs} for communication with Login Clients.
-     * </p>
-     *
-     * @return a scrambled keypair
-     */
     private ScrambledKeyPair getScrambledRSAKeyPair() {
         return _keyPairs[Rnd.nextInt(10)];
     }
@@ -333,29 +327,13 @@ public class AuthController {
         return _instance;
     }
 
-    public void registerClient(AuthClient client) {
-        client.setKeyPar(getScrambledRSAKeyPair());
-        client.setBlowfishKey(getBlowfishKey());
-        client.setSessionId(Rnd.nextInt());
-        client.setCrypter(new LoginCrypt());
+    private class FailedLoginAttempt {
 
-    }
-
-    public enum AuthLoginResult {
-        INVALID_PASSWORD,
-        ACCOUNT_BANNED,
-        ALREADY_ON_LS,
-        ALREADY_ON_GS,
-        AUTH_SUCCESS
-    }
-
-    class FailedLoginAttempt {
-        private int _count;
+        private int _count = 1;
         private long _lastAttempTime;
         private String _lastPassword;
 
         FailedLoginAttempt(String lastPassword) {
-            _count = 1;
             _lastAttempTime = currentTimeMillis();
             _lastPassword = lastPassword;
         }
@@ -382,26 +360,23 @@ public class AuthController {
         }
     }
 
-    class PurgeThread extends Thread {
+    private class PurgeThread implements Runnable{
         @Override
         public void run() {
-            for (; ; ) {
-
-                synchronized (_loginServerClients) {
-                    for (Map.Entry<String, AuthClient> e : _loginServerClients.entrySet()) {
-                        AuthClient client = e.getValue();
-                        if ((client.getConnectionStartTime() + LOGIN_TIMEOUT) >= currentTimeMillis()) {
-                            client.close(LoginFailReason.REASON_ACCESS_FAILED);
-                        }
+            Set<AuthClient> toRemove =  new HashSet<>();
+            synchronized (connectedClients) {
+                connectedClients.forEach(client -> {
+                    if (isNull(client) || client.getConnectionStartTime() + LOGIN_TIMEOUT >= currentTimeMillis()) {
+                        toRemove.add(client);
                     }
-                }
-
-                try {
-                    Thread.sleep(2 * LOGIN_TIMEOUT);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                });
+                connectedClients.removeAll(toRemove);
+                if(connectedClients.isEmpty()) {
+                    scheduledPurge.cancel(false);
                 }
             }
+
+            toRemove.stream().filter(Objects::nonNull).forEach(authClient -> authClient.close(LoginFail.LoginFailReason.REASON_ACCESS_FAILED_TRYA1));
         }
     }
 }

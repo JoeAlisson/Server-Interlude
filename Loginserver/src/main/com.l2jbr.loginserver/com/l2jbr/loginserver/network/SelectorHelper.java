@@ -1,6 +1,6 @@
 package com.l2jbr.loginserver.network;
 
-import com.l2jbr.loginserver.AuthController;
+import com.l2jbr.loginserver.controller.AuthController;
 import org.l2j.mmocore.*;
 
 import java.io.IOException;

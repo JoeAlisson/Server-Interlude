@@ -19,7 +19,7 @@
 package com.l2jbr.loginserver.network.clientpackets;
 
 import com.l2jbr.commons.Config;
-import com.l2jbr.loginserver.AuthController;
+import com.l2jbr.loginserver.controller.AuthController;
 import com.l2jbr.loginserver.network.SessionKey;
 import com.l2jbr.loginserver.network.serverpackets.LoginFail.LoginFailReason;
 import com.l2jbr.loginserver.network.serverpackets.PlayFail.PlayFailReason;

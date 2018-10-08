@@ -26,7 +26,7 @@ import java.io.IOException;
 /**
  * @author KenM
  */
-public class LoginCrypt
+public class AuthCrypt
 {
 	private static final byte[] STATIC_BLOWFISH_KEY =
 	{

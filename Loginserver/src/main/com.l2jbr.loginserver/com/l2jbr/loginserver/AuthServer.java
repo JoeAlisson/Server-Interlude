@@ -2,6 +2,7 @@ package com.l2jbr.loginserver;
 
 import com.l2jbr.commons.Config;
 import com.l2jbr.commons.Server;
+import com.l2jbr.loginserver.controller.AuthController;
 import com.l2jbr.loginserver.network.*;
 import org.l2j.mmocore.ConnectionBuilder;
 import org.l2j.mmocore.ConnectionHandler;

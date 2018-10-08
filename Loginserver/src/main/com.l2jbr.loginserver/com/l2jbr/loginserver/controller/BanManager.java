@@ -1,4 +1,4 @@
-package com.l2jbr.loginserver;
+package com.l2jbr.loginserver.controller;
 
 import com.l2jbr.commons.util.Util;
 import org.slf4j.Logger;

@@ -1,8 +1,8 @@
 package com.l2jbr.loginserver.network;
 
 import com.l2jbr.commons.Config;
-import com.l2jbr.loginserver.AuthController;
-import com.l2jbr.loginserver.network.crypt.LoginCrypt;
+import com.l2jbr.loginserver.controller.AuthController;
+import com.l2jbr.loginserver.network.crypt.AuthCrypt;
 import com.l2jbr.loginserver.network.crypt.ScrambledKeyPair;
 import com.l2jbr.loginserver.network.serverpackets.Init;
 import com.l2jbr.loginserver.network.serverpackets.L2LoginServerPacket;
@@ -27,7 +27,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 
     private final long _connectionStartTime;
 
-    private LoginCrypt _loginCrypt;
+    private AuthCrypt _authCrypt;
     private ScrambledKeyPair _scrambledPair;
     private byte[] _blowfishKey;
     private int _sessionId;
@@ -65,8 +65,8 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
         _sessionId = sessionId;
     }
 
-    public void setCrypter(LoginCrypt crypt) {
-        _loginCrypt =  crypt;
+    public void setCrypter(AuthCrypt crypt) {
+        _authCrypt =  crypt;
     }
 
 	public boolean usesInternalIP()
@@ -79,7 +79,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
     public boolean decrypt(byte[] data, int offset, int size) {
         boolean decrypted;
         try  {
-            decrypted = _loginCrypt.decrypt(data, offset, size);
+            decrypted = _authCrypt.decrypt(data, offset, size);
         }
         catch (IOException e) {
             _log.error(e.getLocalizedMessage(), e);
@@ -99,7 +99,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
     public int encrypt(byte[] data, int offset, int size) {
         int encryptedSize = -1;
 	    try {
-	       encryptedSize = _loginCrypt.encrypt(data, offset, size);
+	       encryptedSize = _authCrypt.encrypt(data, offset, size);
         } catch (IOException e) {
 	        _log.error(e.getLocalizedMessage(), e);
 	        return encryptedSize;

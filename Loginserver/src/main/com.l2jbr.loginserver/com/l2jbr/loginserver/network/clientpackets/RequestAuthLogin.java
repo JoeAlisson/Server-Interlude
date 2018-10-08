@@ -2,10 +2,10 @@ package com.l2jbr.loginserver.network.clientpackets;
 
 import com.l2jbr.commons.Config;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
-import com.l2jbr.loginserver.AuthController;
+import com.l2jbr.loginserver.controller.AuthController;
+import com.l2jbr.loginserver.controller.AuthResult;
 import com.l2jbr.loginserver.network.AuthClient;
 import com.l2jbr.loginserver.network.AuthClient.LoginClientState;
-import com.l2jbr.loginserver.AuthController.AuthLoginResult;
 import com.l2jbr.loginserver.network.serverpackets.AccountKicked;
 import com.l2jbr.loginserver.network.serverpackets.AccountKicked.AccountKickedReason;
 import com.l2jbr.loginserver.network.serverpackets.LoginFail.LoginFailReason;
@@ -83,13 +83,13 @@ public class RequestAuthLogin extends L2LoginClientPacket {
 
 
         AuthController lc = AuthController.getInstance();
-        AuthLoginResult result = lc.tryAuthLogin(user, password, client);
+        AuthResult result = lc.tryAuthLogin(user, password, client);
 
         switch (result) {
             case AUTH_SUCCESS:
                 client.setAccount(user);
                 client.setState(LoginClientState.AUTHED_LOGIN);
-                client.setSessionKey(lc.assignSessionKeyToClient(user, client));
+                lc.assignSessionKeyToClient(user, client);
                 if (Config.SHOW_LICENCE) {
                     client.sendPacket(new LoginOk(getClient().getSessionKey()));
                 } else {

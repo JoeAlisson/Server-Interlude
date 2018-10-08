@@ -1,7 +1,7 @@
 package com.l2jbr.loginserver.network;
 
 import com.l2jbr.commons.crypt.NewCrypt;
-import com.l2jbr.loginserver.AuthController;
+import com.l2jbr.loginserver.controller.AuthController;
 import com.l2jbr.loginserver.AuthServer;
 import com.l2jbr.loginserver.GameServerTable;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
