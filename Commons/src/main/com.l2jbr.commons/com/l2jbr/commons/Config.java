@@ -2678,15 +2678,12 @@ public final class Config {
                 serverSettings.load(is);
                 is.close();
 
-
-
                 DEBUG = Boolean.parseBoolean(serverSettings.getProperty("Debug", "false"));
                 DEVELOPER = Boolean.parseBoolean(serverSettings.getProperty("Developer", "false"));
                 ASSERT = Boolean.parseBoolean(serverSettings.getProperty("Assert", "false"));
 
                 REQUEST_ID = Integer.parseInt(serverSettings.getProperty("RequestServerID", "0"));
                 ACCEPT_ALTERNATE_ID = Boolean.parseBoolean(serverSettings.getProperty("AcceptAlternateID", "True"));
-
 
                 GM_MIN = Integer.parseInt(serverSettings.getProperty("GMMinLevel", "100"));
 

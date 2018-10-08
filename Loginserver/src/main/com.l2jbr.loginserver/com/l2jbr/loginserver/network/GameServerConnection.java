@@ -1,6 +1,7 @@
 package com.l2jbr.loginserver.network;
 
 import com.l2jbr.commons.crypt.NewCrypt;
+import com.l2jbr.loginserver.AuthController;
 import com.l2jbr.loginserver.AuthServer;
 import com.l2jbr.loginserver.GameServerTable;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
@@ -220,7 +221,7 @@ public class GameServerConnection extends Thread {
     private void onReceiveChangeAccessLevel(byte[] data) {
         if (isAuthed()) {
             ChangeAccessLevel cal = new ChangeAccessLevel(data);
-            LoginController.getInstance().setAccountAccessLevel(cal.getAccount(), (short) cal.getLevel());
+            AuthController.getInstance().setAccountAccessLevel(cal.getAccount(), (short) cal.getLevel());
             logger.info("Changed {} access level to {}", cal.getAccount(), cal.getLevel());
         } else {
             forceClose(LoginServerFail.NOT_AUTHED);
@@ -233,12 +234,12 @@ public class GameServerConnection extends Thread {
 
             logger.debug("auth request received for Player {}", par.getAccount());
 
-            SessionKey key = LoginController.getInstance().getKeyForAccount(par.getAccount());
+            SessionKey key = AuthController.getInstance().getKeyForAccount(par.getAccount());
 
             PlayerAuthResponse authResponse;
             if (Objects.equals(par.getKey(), key)) {
                 logger.debug("auth request: OK");
-                LoginController.getInstance().removeAuthedLoginClient(par.getAccount());
+                AuthController.getInstance().removeAuthedLoginClient(par.getAccount());
                 authResponse = new PlayerAuthResponse(par.getAccount(), true);
             } else {
                 logger.debug("auth request: NO");

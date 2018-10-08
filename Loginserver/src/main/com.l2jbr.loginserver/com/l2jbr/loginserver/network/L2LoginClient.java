@@ -2,6 +2,7 @@ package com.l2jbr.loginserver.network;
 
 import com.l2jbr.commons.Config;
 import com.l2jbr.commons.util.Rnd;
+import com.l2jbr.loginserver.AuthController;
 import com.l2jbr.loginserver.network.crypt.LoginCrypt;
 import com.l2jbr.loginserver.network.crypt.ScrambledKeyPair;
 import com.l2jbr.loginserver.network.serverpackets.Init;
@@ -61,8 +62,8 @@ public final class L2LoginClient extends Client<Connection<L2LoginClient>>
 			_usesInternalIP = true;
 		}
 		
-		_scrambledPair = LoginController.getInstance().getScrambledRSAKeyPair();
-		_blowfishKey = LoginController.getInstance().getBlowfishKey();
+		_scrambledPair = AuthController.getInstance().getScrambledRSAKeyPair();
+		_blowfishKey = AuthController.getInstance().getBlowfishKey();
 		_sessionId = Rnd.nextInt();
 		_connectionStartTime = System.currentTimeMillis();
 		_loginCrypt = new LoginCrypt();
@@ -215,11 +216,11 @@ public final class L2LoginClient extends Client<Connection<L2LoginClient>>
 		
 		if (getState() != LoginClientState.AUTHED_LOGIN)
 		{
-			LoginController.getInstance().removeLoginClient(this);
+			AuthController.getInstance().removeLoginClient(this);
 		}
 		else if (!hasJoinedGS())
 		{
-			LoginController.getInstance().removeAuthedLoginClient(getAccount());
+			AuthController.getInstance().removeAuthedLoginClient(getAccount());
 		}
 	}
 

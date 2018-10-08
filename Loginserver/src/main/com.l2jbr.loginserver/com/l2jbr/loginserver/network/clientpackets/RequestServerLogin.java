@@ -19,7 +19,7 @@
 package com.l2jbr.loginserver.network.clientpackets;
 
 import com.l2jbr.commons.Config;
-import com.l2jbr.loginserver.network.LoginController;
+import com.l2jbr.loginserver.AuthController;
 import com.l2jbr.loginserver.network.SessionKey;
 import com.l2jbr.loginserver.network.serverpackets.LoginFail.LoginFailReason;
 import com.l2jbr.loginserver.network.serverpackets.PlayFail.PlayFailReason;
@@ -80,7 +80,7 @@ public class RequestServerLogin extends L2LoginClientPacket
 		// If we didn't showed the license we can't check these values
 		if (!Config.SHOW_LICENCE || sk.checkLoginPair(_skey1, _skey2))
 		{
-			if (LoginController.getInstance().isLoginPossible(getClient(), _serverId))
+			if (AuthController.getInstance().isLoginPossible(getClient(), _serverId))
 			{
 				getClient().setJoinedGS(true);
 				getClient().sendPacket(new PlayOk(sk));

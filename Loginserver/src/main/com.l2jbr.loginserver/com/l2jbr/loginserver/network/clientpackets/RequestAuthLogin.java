@@ -2,10 +2,10 @@ package com.l2jbr.loginserver.network.clientpackets;
 
 import com.l2jbr.commons.Config;
 import com.l2jbr.loginserver.GameServerTable.GameServerInfo;
+import com.l2jbr.loginserver.AuthController;
 import com.l2jbr.loginserver.network.L2LoginClient;
 import com.l2jbr.loginserver.network.L2LoginClient.LoginClientState;
-import com.l2jbr.loginserver.network.LoginController;
-import com.l2jbr.loginserver.network.LoginController.AuthLoginResult;
+import com.l2jbr.loginserver.AuthController.AuthLoginResult;
 import com.l2jbr.loginserver.network.serverpackets.AccountKicked;
 import com.l2jbr.loginserver.network.serverpackets.AccountKicked.AccountKickedReason;
 import com.l2jbr.loginserver.network.serverpackets.LoginFail.LoginFailReason;
@@ -15,7 +15,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.crypto.Cipher;
-import java.security.GeneralSecurityException;
 
 /**
  * Format: x 0 (a leading null) x: the rsa encrypted block with the login an password
@@ -83,7 +82,7 @@ public class RequestAuthLogin extends L2LoginClientPacket {
         }
 
 
-        LoginController lc = LoginController.getInstance();
+        AuthController lc = AuthController.getInstance();
         AuthLoginResult result = lc.tryAuthLogin(user, password, client);
 
         switch (result) {
