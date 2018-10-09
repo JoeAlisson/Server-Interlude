@@ -8,7 +8,7 @@
     <xs:element name="servers_list">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="item" type="serverInfo" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="server" type="serverInfo" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
 

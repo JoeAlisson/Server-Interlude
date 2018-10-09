@@ -32,7 +32,7 @@ class BanManager {
     }
 
     private void loadBanFile() {
-        Path path = Paths.get("./banned_ip.cfg");
+        Path path = Paths.get("banned_ip.cfg");
         if (Files.isRegularFile(path)) {
             try {
                 Files.readAllLines(path).stream().filter(Util::isNotEmpty).forEach(this::addBannedAddress);

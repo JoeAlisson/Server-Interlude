@@ -5,6 +5,7 @@ import com.l2jbr.commons.Config;
 import com.l2jbr.commons.database.AccountRepository;
 import com.l2jbr.commons.database.model.Account;
 import com.l2jbr.commons.util.Rnd;
+import com.l2jbr.commons.util.Util;
 import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.GameServerManager;
 import org.l2j.authserver.network.AuthClient;
@@ -30,6 +31,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
+import static com.l2jbr.commons.util.Util.isNullOrEmpty;
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -105,9 +107,11 @@ public class AuthController {
         client.setKeyPar(getScrambledRSAKeyPair());
         client.setBlowfishKey(getBlowfishKey());
         client.setSessionId(Rnd.nextInt());
-        client.setCrypter(new AuthCrypt());
+        var cripter = new AuthCrypt();
+        cripter.setKey(client.getBlowfishKey());
+        client.setCrypter(cripter);
 
-        if(isNull(scheduledPurge) || !scheduledPurge.isCancelled()) {
+        if(isNull(scheduledPurge) || scheduledPurge.isCancelled()) {
             scheduledPurge = ThreadPoolManager.getInstance().scheduleAtFixedRate(PurgeThread::new, LOGIN_TIMEOUT, 2 * LOGIN_TIMEOUT);
         }
     }
@@ -120,7 +124,14 @@ public class AuthController {
     }
 
     public void removeAuthedClient(String account) {
-        authedClients.remove(account);
+        if(isNullOrEmpty(account)) {
+            return;
+        }
+
+        var client = authedClients.remove(account);
+        if(nonNull(client)) {
+            removeClient(client);
+        }
     }
 
     public AuthClient getAuthedClient(String account) {
@@ -325,6 +336,12 @@ public class AuthController {
 
     public static AuthController getInstance() {
         return _instance;
+    }
+
+    public void removeClient(AuthClient client) {
+        if(nonNull(client)) {
+            connectedClients.remove(client);
+        }
     }
 
     private class FailedLoginAttempt {

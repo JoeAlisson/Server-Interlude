@@ -1134,7 +1134,7 @@ public final class Config {
     /**
      * Properties file for login server configurations
      */
-    public static final String LOGIN_CONFIGURATION_FILE = "./config/loginserver.properties";
+    public static final String LOGIN_CONFIGURATION_FILE = "./config/authserver.properties";
     /**
      * Properties file for the ID factory
      */
@@ -2710,20 +2710,7 @@ public final class Config {
                 MAX_CONNECTION_PER_IP = Integer.parseInt(serverSettings.getProperty("MaxConnectionPerIP", "50"));
             } catch (Exception e) {
                 e.printStackTrace();
-                throw new Error("Failed to Load " + CONFIGURATION_FILE + " File.");
-            }
-
-            // telnet
-            try {
-                Properties telnetSettings = new Properties();
-                InputStream is = new FileInputStream(new File(TELNET_FILE));
-                telnetSettings.load(is);
-                is.close();
-
-                IS_TELNET_ENABLED = Boolean.valueOf(telnetSettings.getProperty("EnableTelnet", "false"));
-            } catch (Exception e) {
-                e.printStackTrace();
-                throw new Error("Failed to Load " + TELNET_FILE + " File.");
+                throw new Error("Failed to Load " + LOGIN_CONFIGURATION_FILE + " File.");
             }
 
         } else {

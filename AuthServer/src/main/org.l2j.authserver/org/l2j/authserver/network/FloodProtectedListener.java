@@ -47,10 +47,7 @@ public abstract class FloodProtectedListener extends Thread {
                     if (nonNull(fConnection)) {
                         fConnection.connectionNumber++;
                         long currentTime = currentTimeMillis();
-                        if (((fConnection.connectionNumber > floodFastConnectionLimit()) &&
-                                ((currentTime - fConnection.lastConnection) < floodNormalConnectionTime())) ||
-                                ((currentTime - fConnection.lastConnection) < floodFastConnectionTime()) ||
-                                (fConnection.connectionNumber > maxConnectionPerIP())) {
+                        if (isPotentialFlood(fConnection, currentTime)) {
 
                             fConnection.lastConnection = currentTime;
                             connection.close();
@@ -61,8 +58,9 @@ public abstract class FloodProtectedListener extends Thread {
                             fConnection.isFlooding = true;
                             continue;
                         }
-                        if (fConnection.isFlooding) // if connection was flooding server but now passed the check
-                        {
+
+                        // if connection was flooding server but now passed the check
+                        if (fConnection.isFlooding) {
                             fConnection.isFlooding = false;
                             logger.info("{} is not considered as flooding anymore.", connection.getInetAddress().getHostAddress() );
                         }
@@ -85,12 +83,19 @@ public abstract class FloodProtectedListener extends Thread {
                     try {
                         _serverSocket.close();
                     } catch (IOException io) {
-                        logger.info(io.getLocalizedMessage(), io);
+                        logger.warn(io.getLocalizedMessage(), io);
                     }
                     break;
                 }
             }
         }
+    }
+
+    private boolean isPotentialFlood(ForeignConnection fConnection, long currentTime) {
+        return ((fConnection.connectionNumber > floodFastConnectionLimit()) &&
+                ((currentTime - fConnection.lastConnection) < floodNormalConnectionTime())) ||
+                ((currentTime - fConnection.lastConnection) < floodFastConnectionTime()) ||
+                (fConnection.connectionNumber > maxConnectionPerIP());
     }
 
     static class ForeignConnection {
@@ -126,8 +131,7 @@ public abstract class FloodProtectedListener extends Thread {
         try {
             _serverSocket.close();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            logger.warn(e.getLocalizedMessage(), e);
         }
     }
 }

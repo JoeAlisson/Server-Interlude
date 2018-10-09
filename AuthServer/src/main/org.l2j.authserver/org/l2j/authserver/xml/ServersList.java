@@ -2,18 +2,18 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.10.08 às 01:56:57 PM BRT 
+// Gerado em: 2018.10.08 às 08:08:13 PM BRT 
 //
 
 
 package org.l2j.authserver.xml;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -26,7 +26,7 @@ import java.util.List;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="item" type="{http://la2j.org}serverInfo" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="server" type="{http://la2j.org}serverInfo" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -37,26 +37,26 @@ import java.util.List;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "item"
+    "server"
 })
 @XmlRootElement(name = "servers_list")
 public class ServersList {
 
-    protected List<ServerInfo> item;
+    protected List<ServerInfo> server;
 
     /**
-     * Gets the value of the item property.
+     * Gets the value of the server property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the item property.
+     * This is why there is not a <CODE>set</CODE> method for the server property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getItem().add(newItem);
+     *    getServer().add(newItem);
      * </pre>
      * 
      * 
@@ -66,11 +66,11 @@ public class ServersList {
      * 
      * 
      */
-    public List<ServerInfo> getItem() {
-        if (item == null) {
-            item = new ArrayList<ServerInfo>();
+    public List<ServerInfo> getServer() {
+        if (server == null) {
+            server = new ArrayList<ServerInfo>();
         }
-        return this.item;
+        return this.server;
     }
 
 }

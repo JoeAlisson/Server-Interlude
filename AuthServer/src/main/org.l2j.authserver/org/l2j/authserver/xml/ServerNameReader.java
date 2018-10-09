@@ -21,7 +21,7 @@ public class ServerNameReader extends XMLReader<ServersList> {
 
     @Override
     protected void processEntity(ServersList entity) {
-        entity.getItem().forEach(info -> serverNames.put(info.getId(), info.getName()));
+        entity.getServer().forEach(info -> serverNames.put(info.getId(), info.getName()));
     }
 
     @Override
@@ -31,7 +31,7 @@ public class ServerNameReader extends XMLReader<ServersList> {
 
     @Override
     protected String getSchemaFilePath() {
-        return "./servername.xsd";
+        return "servername.xsd";
     }
 
     @Override

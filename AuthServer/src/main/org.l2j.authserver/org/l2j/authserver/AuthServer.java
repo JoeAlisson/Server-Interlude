@@ -56,6 +56,7 @@ public class AuthServer {
     public void shutdown(boolean restart) {
         connectionHandler.shutdown();
         connectionHandler.setDaemon(true);
+        _gameServerListener.close();
         getRuntime().exit(restart ? 2 : 0);
     }
 

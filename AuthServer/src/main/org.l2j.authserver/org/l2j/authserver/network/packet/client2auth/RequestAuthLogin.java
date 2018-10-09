@@ -65,8 +65,8 @@ public class RequestAuthLogin extends L2LoginClientPacket {
             }
 
         } catch (Exception e) {
-            client.close(LoginFail.LoginFailReason.REASON_SYSTEM_ERROR);
             logger.warn(e.getLocalizedMessage(), e);
+            client.close(LoginFail.LoginFailReason.REASON_SYSTEM_ERROR);
             return;
         }
 
@@ -79,7 +79,6 @@ public class RequestAuthLogin extends L2LoginClientPacket {
             user = new String(decUserData, 0x5E, 14).trim().toLowerCase();
             password = new String(decUserData, 0x6C, 16).trim();
         }
-
 
         AuthController lc = AuthController.getInstance();
         AuthResult result = lc.tryAuthLogin(user, password, client);

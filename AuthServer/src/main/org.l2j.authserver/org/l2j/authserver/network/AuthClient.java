@@ -54,9 +54,11 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 
 		AuthController.getInstance().registerClient(this);
 	}
+
     public void setKeyPar(ScrambledKeyPair keyPair) {
         _scrambledPair = keyPair;
     }
+
     public void setBlowfishKey(byte[] blowfishKey) {
         _blowfishKey = blowfishKey;
     }
@@ -116,8 +118,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 		_state = state;
 	}
 	
-	public byte[] getBlowfishKey()
-	{
+	public byte[] getBlowfishKey() {
 		return _blowfishKey;
 	}
 	
@@ -201,7 +202,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 
     @Override
     public void onConnected() {
-        sendPacket(new Init(this));
+        sendPacket(new Init());
     }
 
 	@Override
@@ -215,7 +216,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 		
 		if (getState() != LoginClientState.AUTHED_LOGIN)
 		{
-			AuthController.getInstance().removeAuthedClient(this.getAccount());
+			AuthController.getInstance().removeClient(this);
 		}
 		else if (!hasJoinedGS())
 		{
