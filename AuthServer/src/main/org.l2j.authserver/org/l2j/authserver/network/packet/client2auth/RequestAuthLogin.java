@@ -26,7 +26,7 @@ public class RequestAuthLogin extends L2LoginClientPacket {
 
     @Override
     public boolean readImpl() {
-        if (availableData() >= 255) {
+        if (availableData() >= 256) {
             useNewAuth = true;
             readBytes(userData);
             readBytes(authData);
