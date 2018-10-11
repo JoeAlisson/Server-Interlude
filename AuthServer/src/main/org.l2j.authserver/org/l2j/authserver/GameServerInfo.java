@@ -4,12 +4,17 @@ import com.l2jbr.commons.database.model.GameServer;
 import org.l2j.authserver.network.GameServerConnection;
 import org.l2j.authserver.network.packet.game2auth.ServerStatus;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import static com.l2jbr.commons.util.Util.stringToHex;
 
 public class GameServerInfo {
 
-    private int _id;
     private final byte[] _hexId;
+    private final Set<String> accounts = new HashSet<>();
+
+    private int _id;
     private volatile boolean _isAuthed;
 
     private GameServerConnection connection;
@@ -28,6 +33,7 @@ public class GameServerInfo {
     private boolean _isShowingBrackets;
     private int _maxPlayers;
 
+
     public GameServerInfo(GameServer gameServer) {
         this(gameServer.getId(), stringToHex(gameServer.getHexid()), null);
     }
@@ -40,10 +46,7 @@ public class GameServerInfo {
     }
 
     public int getOnlinePlayersCount() {
-        if (connection == null) {
-            return 0;
-        }
-        return connection.getPlayerCount();
+        return accounts.size();
     }
 
     public void setDown() {
@@ -51,6 +54,22 @@ public class GameServerInfo {
         setPort(0);
         setGameServerThread(null);
         setStatus(ServerStatus.STATUS_DOWN);
+    }
+
+    public void sendKickPlayer(String account) {
+        connection.kickPlayer(account);
+    }
+
+    public void addAccount(String account) {
+        accounts.add(account);
+    }
+
+    public void removeAccount(String account) {
+        accounts.remove(account);
+    }
+
+    public boolean accountIsConnected(String account) {
+        return accounts.contains(account);
     }
 
     public void setId(int id) {

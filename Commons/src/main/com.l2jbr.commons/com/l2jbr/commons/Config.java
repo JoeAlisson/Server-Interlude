@@ -1630,10 +1630,7 @@ public final class Config {
      * Store skills cooltime on char exit/relogin
      */
     public static boolean STORE_SKILL_COOLTIME;
-    /**
-     * Show licence or not just after login (if false, will directly go to the Server List
-     */
-    public static boolean SHOW_LICENCE;
+
     /**
      * Force GameGuard authorization in loginserver
      */
@@ -2698,8 +2695,7 @@ public final class Config {
                 DATABASE_PASSWORD = serverSettings.getProperty("Password", "");
                 DATABASE_MAX_CONNECTIONS = Integer.parseInt(serverSettings.getProperty("MaximumDbConnections", "10"));
                 DATABASE_MAX_IDLE_TIME = Integer.parseInt(serverSettings.getProperty("MaximumDbIdleTime", "0"));
-                
-                SHOW_LICENCE = Boolean.parseBoolean(serverSettings.getProperty("ShowLicence", "true"));
+
                 IP_UPDATE_TIME = Integer.parseInt(serverSettings.getProperty("IpUpdateTime", "15"));
                 FORCE_GGAUTH = Boolean.parseBoolean(serverSettings.getProperty("ForceGGAuth", "false"));
 

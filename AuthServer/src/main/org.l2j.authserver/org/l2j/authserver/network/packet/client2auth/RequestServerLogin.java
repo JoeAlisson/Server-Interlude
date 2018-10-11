@@ -18,7 +18,6 @@
  */
 package org.l2j.authserver.network.packet.client2auth;
 
-import com.l2jbr.commons.Config;
 import org.l2j.authserver.controller.AuthController;
 import org.l2j.authserver.network.SessionKey;
 import org.l2j.authserver.network.packet.L2LoginClientPacket;
@@ -79,7 +78,7 @@ public class RequestServerLogin extends L2LoginClientPacket
 		SessionKey sk = getClient().getSessionKey();
 		
 		// If we didn't showed the license we can't check these values
-		if (!Config.SHOW_LICENCE || sk.checkLoginPair(_skey1, _skey2))
+		if (sk.checkLoginPair(_skey1, _skey2))
 		{
 			if (AuthController.getInstance().isLoginPossible(getClient(), _serverId))
 			{

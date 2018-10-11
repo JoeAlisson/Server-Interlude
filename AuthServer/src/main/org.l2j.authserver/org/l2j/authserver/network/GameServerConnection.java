@@ -46,8 +46,6 @@ public class GameServerConnection extends Thread {
 
     private GameServerInfo _gsi;
 
-    private final Set<String> _accountsOnGameServer = new HashSet<>();
-
     public GameServerConnection(Socket con) {
         socket = con;
         ip = con.getInetAddress().getHostAddress();
@@ -194,7 +192,7 @@ public class GameServerConnection extends Thread {
             PlayerInGame pig = new PlayerInGame(data);
             List<String> newAccounts = pig.getAccounts();
             for (String account : newAccounts) {
-                _accountsOnGameServer.add(account);
+                _gsi.addAccount(account);
                 logger.debug("Account {} logged in GameServer: [{}] {}",  account, getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
             }
         } else {
@@ -205,7 +203,7 @@ public class GameServerConnection extends Thread {
     private void onReceivePlayerLogOut(byte[] data) {
         if (isAuthed()) {
             PlayerLogout plo = new PlayerLogout(data);
-            _accountsOnGameServer.remove(plo.getAccount());
+            _gsi.removeAccount(plo.getAccount());
             logger.debug("Player {} logged out from gameserver [{}] {}", plo.getAccount(), getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
         } else {
             forceClose(LoginServerFail.NOT_AUTHED);
@@ -300,14 +298,6 @@ public class GameServerConnection extends Thread {
                 forceClose(LoginServerFail.REASON_WRONG_HEXID);
             }
         }
-    }
-
-    public boolean hasAccountOnGameServer(String account) {
-        return _accountsOnGameServer.contains(account);
-    }
-
-    public int getPlayerCount() {
-        return _accountsOnGameServer.size();
     }
 
     /**

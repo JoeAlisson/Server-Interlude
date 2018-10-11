@@ -6,12 +6,12 @@ import java.security.interfaces.RSAPublicKey;
 
 public class ScrambledKeyPair {
 
-	public KeyPair _pair;
-	public byte[] _scrambledModulus;
+	private KeyPair pair;
+	private byte[] scrambledModulus;
 	
-	public ScrambledKeyPair(KeyPair pPair) {
-		_pair = pPair;
-		_scrambledModulus = scrambleModulus(((RSAPublicKey) _pair.getPublic()).getModulus());
+	public ScrambledKeyPair(final KeyPair pPair) {
+		pair = pPair;
+		scrambledModulus = scrambleModulus(((RSAPublicKey) pair.getPublic()).getModulus());
 	}
 	
 	private byte[] scrambleModulus(BigInteger modulus) {
@@ -42,4 +42,12 @@ public class ScrambledKeyPair {
 		}
 		return scrambledMod;
 	}
+
+    public byte[] getScrambledModulus() {
+        return scrambledModulus;
+    }
+
+    public KeyPair getPair() {
+        return pair;
+    }
 }

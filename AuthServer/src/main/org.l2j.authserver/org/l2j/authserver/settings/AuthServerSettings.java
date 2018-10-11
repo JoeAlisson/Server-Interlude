@@ -68,7 +68,7 @@ public class AuthServerSettings implements Settings {
     }
 
     public static String usernameTemplate() {
-        return getInstance().settings.getString("UsernameTemplate", "[A-Za-z0-9_]{5-32}");
+        return getInstance().settings.getString("UsernameTemplate", "[A-Za-z0-9_]{5,32}");
     }
 
     private static AuthServerSettings getInstance() {

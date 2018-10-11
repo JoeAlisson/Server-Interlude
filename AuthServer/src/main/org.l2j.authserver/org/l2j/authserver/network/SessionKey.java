@@ -18,10 +18,8 @@
  */
 package org.l2j.authserver.network;
 
-import com.l2jbr.commons.Config;
 import org.l2j.authserver.network.packet.auth2client.LoginOk;
 import org.l2j.authserver.network.packet.auth2client.PlayOk;
-
 
 /**
  * <p>
@@ -32,8 +30,7 @@ import org.l2j.authserver.network.packet.auth2client.PlayOk;
  * </p>
  * @author -Wooden-
  */
-public class SessionKey
-{
+public class SessionKey  {
 	public int playOkID1;
 	public int playOkID2;
 	public int accountId;
@@ -67,13 +64,7 @@ public class SessionKey
 	 * @param key
 	 * @return
 	 */
-	public boolean equals(SessionKey key)
-	{
-		// when server doesnt show licence it deosnt send the LoginOk packet, client doesnt have this part of the key then.
-		if (Config.SHOW_LICENCE)
-		{
-			return ((playOkID1 == key.playOkID1) && (accountId == key.accountId) && (playOkID2 == key.playOkID2) && (authKey == key.authKey));
-		}
-		return ((playOkID1 == key.playOkID1) && (playOkID2 == key.playOkID2));
+	public boolean equals(SessionKey key) {
+		return ((playOkID1 == key.playOkID1) && (accountId == key.accountId) && (playOkID2 == key.playOkID2) && (authKey == key.authKey));
 	}
 }

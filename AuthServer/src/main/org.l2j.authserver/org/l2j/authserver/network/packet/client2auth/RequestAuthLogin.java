@@ -1,19 +1,13 @@
 package org.l2j.authserver.network.packet.client2auth;
 
-import com.l2jbr.commons.Config;
-import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.controller.AuthController;
-import org.l2j.authserver.controller.AuthResult;
-import org.l2j.authserver.network.AuthClient;
 import org.l2j.authserver.network.packet.L2LoginClientPacket;
-import org.l2j.authserver.network.packet.auth2client.AccountKicked;
-import org.l2j.authserver.network.packet.auth2client.LoginFail;
-import org.l2j.authserver.network.packet.auth2client.LoginOk;
-import org.l2j.authserver.network.packet.auth2client.ServerList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.crypto.Cipher;
+
+import static org.l2j.authserver.network.packet.auth2client.LoginFail.LoginFailReason.REASON_SYSTEM_ERROR;
 
 /**
  * Format: x 0 (a leading null) x: the rsa encrypted block with the login an password
@@ -65,7 +59,7 @@ public class RequestAuthLogin extends L2LoginClientPacket {
             }
         } catch (Exception e) {
             logger.warn(e.getLocalizedMessage(), e);
-            client.close(LoginFail.LoginFailReason.REASON_SYSTEM_ERROR);
+            client.close(REASON_SYSTEM_ERROR);
             return;
         }
 
@@ -80,45 +74,5 @@ public class RequestAuthLogin extends L2LoginClientPacket {
         }
 
         AuthController.getInstance().authenticate(client, user, password);
-        AuthController lc = AuthController.getInstance();
-        AuthResult result = lc.tryAuthLogin(user, password, client);
-
-        switch (result) {
-            case AUTH_SUCCESS:
-                client.setAccount(user);
-                client.setState(AuthClient.LoginClientState.AUTHED_LOGIN);
-                lc.assignSessionKeyToClient(user, client);
-                if (Config.SHOW_LICENCE) {
-                    client.sendPacket(new LoginOk(getClient().getSessionKey()));
-                } else {
-                    getClient().sendPacket(new ServerList());
-                }
-                break;
-            case INVALID_PASSWORD:
-                client.close(LoginFail.LoginFailReason.REASON_USER_OR_PASS_WRONG);
-                break;
-            case ACCOUNT_BANNED:
-                client.close(new AccountKicked(AccountKicked.AccountKickedReason.REASON_PERMANENTLY_BANNED));
-                break;
-            case ALREADY_ON_LS:
-                AuthClient oldClient;
-                if ((oldClient = lc.getAuthedClient(user)) != null) {
-                    // kick the other client
-                    oldClient.close(LoginFail.LoginFailReason.REASON_ACCOUNT_IN_USE);
-                    lc.removeAuthedClient(user);
-                }
-                break;
-            case ALREADY_ON_GS:
-                GameServerInfo gsi;
-                if ((gsi = lc.getAccountOnGameServer(user)) != null) {
-                    client.close(LoginFail.LoginFailReason.REASON_ACCOUNT_IN_USE);
-
-                    // kick from there
-                    if (gsi.isAuthed()) {
-                        gsi.getGameServerThread().kickPlayer(user);
-                    }
-                }
-                break;
-        }
     }
 }

@@ -1,11 +1,13 @@
 package org.l2j.authserver.network;
 
 import com.l2jbr.commons.Config;
+import com.l2jbr.commons.database.model.Account;
 import org.l2j.authserver.controller.AuthController;
 import org.l2j.authserver.network.crypt.AuthCrypt;
 import org.l2j.authserver.network.crypt.ScrambledKeyPair;
-import org.l2j.authserver.network.packet.auth2client.Init;
 import org.l2j.authserver.network.packet.L2LoginServerPacket;
+import org.l2j.authserver.network.packet.auth2client.AccountKicked;
+import org.l2j.authserver.network.packet.auth2client.Init;
 import org.l2j.authserver.network.packet.auth2client.LoginFail;
 import org.l2j.authserver.network.packet.auth2client.LoginFail.LoginFailReason;
 import org.l2j.authserver.network.packet.auth2client.PlayFail;
@@ -16,7 +18,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.security.interfaces.RSAPrivateKey;
+import java.security.PrivateKey;
+
+import static java.util.Objects.nonNull;
 
 /**
  * Represents a client connected into the LoginServer
@@ -34,9 +38,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
     private boolean _joinedGS;
     private SessionKey _sessionKey;
 
-    private String _account;
-    private int _accessLevel;
-    private int _lastServer;
+    private Account account;
     private boolean _usesInternalIP;
     private LoginClientState _state;
 
@@ -123,40 +125,27 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 	}
 	
 	public byte[] getScrambledModulus() {
-		return _scrambledPair._scrambledModulus;
+		return _scrambledPair.getScrambledModulus();
 	}
 	
-	public RSAPrivateKey getRSAPrivateKey()
-	{
-		return (RSAPrivateKey) _scrambledPair._pair.getPrivate();
+	public PrivateKey getRSAPrivateKey() {
+		return  _scrambledPair.getPair().getPrivate();
 	}
 	
-	public String getAccount()
-	{
-		return _account;
+	public Account getAccount() {
+		return account;
 	}
 	
-	public void setAccount(String account)
-	{
-		_account = account;
+	public void setAccount(Account account) {
+		this.account = account;
 	}
 	
-	public void setAccessLevel(int accessLevel) {
-		_accessLevel = accessLevel;
-	}
-	
-	public int getAccessLevel()
-	{
-		return _accessLevel;
-	}
-	
-	public void setLastServer(int lastServer)
-	{
-		_lastServer = lastServer;
+	public int getAccessLevel() {
+		return nonNull(account) ? account.getAccessLevel() : -1;
 	}
 	
 	public int getLastServer() {
-		return _lastServer;
+		return nonNull(account) ? account.getLastServer(): -1;
 	}
 	
 	public int getSessionId() {
@@ -200,6 +189,10 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 		close(new PlayFail(reason));
 	}
 
+	public void close(AccountKicked.AccountKickedReason reason) {
+        close(new AccountKicked(reason));
+	}
+
     @Override
     public void onConnected() {
         sendPacket(new Init());
@@ -220,7 +213,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 		}
 		else if (!hasJoinedGS())
 		{
-			AuthController.getInstance().removeAuthedClient(getAccount());
+			AuthController.getInstance().removeAuthedClient(getAccount().getId());
 		}
 	}
 
@@ -228,12 +221,12 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 	public String toString() {
 		String address =  getHostAddress();
 		if (getState() == LoginClientState.AUTHED_LOGIN) {
-			return "[" + getAccount() + " (" + (address.equals("") ? "disconnect" : address) + ")]";
+			return "[" + getAccount().getId() + " (" + (address.equals("") ? "disconnect" : address) + ")]";
 		}
 		return "[" + (address.equals("") ? "disconnect" : address) + "]";
 	}
 
-    public enum LoginClientState {
+	public enum LoginClientState {
         CONNECTED,
         AUTHED_GG,
         AUTHED_LOGIN;
