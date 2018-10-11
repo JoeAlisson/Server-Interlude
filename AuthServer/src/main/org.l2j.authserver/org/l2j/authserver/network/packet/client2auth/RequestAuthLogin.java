@@ -63,7 +63,6 @@ public class RequestAuthLogin extends L2LoginClientPacket {
             if(useNewAuth) {
                 decAuthData =  rsaCipher.doFinal(authData, 0x00, 0x80);
             }
-
         } catch (Exception e) {
             logger.warn(e.getLocalizedMessage(), e);
             client.close(LoginFail.LoginFailReason.REASON_SYSTEM_ERROR);
@@ -80,6 +79,7 @@ public class RequestAuthLogin extends L2LoginClientPacket {
             password = new String(decUserData, 0x6C, 16).trim();
         }
 
+        AuthController.getInstance().authenticate(client, user, password);
         AuthController lc = AuthController.getInstance();
         AuthResult result = lc.tryAuthLogin(user, password, client);
 

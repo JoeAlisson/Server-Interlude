@@ -23,17 +23,23 @@ import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.security.KeyPairGenerator;
 import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.spec.RSAKeyGenParameterSpec;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
+import java.util.regex.Pattern;
 
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
+import static com.l2jbr.commons.util.Util.hash;
 import static com.l2jbr.commons.util.Util.isNullOrEmpty;
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static org.l2j.authserver.network.packet.auth2client.LoginFail.LoginFailReason.*;
+import static org.l2j.authserver.settings.AuthServerSettings.isAutoCreateAccount;
+import static org.l2j.authserver.settings.AuthServerSettings.usernameTemplate;
 
 public class AuthController {
 
@@ -41,6 +47,7 @@ public class AuthController {
     private static final Logger loginLogger = LoggerFactory.getLogger("loginHistory");
     private static final int LOGIN_TIMEOUT = 60 * 1000;
     private static final int BLOWFISH_KEYS = 20;
+    private static final Pattern USERNAME_PATTERN = Pattern.compile(usernameTemplate());
 
     private static AuthController _instance;
 
@@ -137,6 +144,51 @@ public class AuthController {
         return authedClients.get(account);
     }
 
+    public void authenticate(AuthClient client, String username, String password) {
+        if(!isValidUserName(username)) {
+            client.close(REASON_ACCOUNT_INFO_INCORR);
+            return;
+        }
+
+        var accountOptional = getRepository(AccountRepository.class).findByLogin(username);
+        if(accountOptional.isPresent()) {
+           verifyAccountInfo(client, accountOptional.get(), password);
+        } else if(isAutoCreateAccount()) {
+            createNewAccount(client, username, password);
+        } else {
+            client.close(REASON_USER_OR_PASS_WRONG);
+        }
+    }
+
+    private void createNewAccount(AuthClient client, String username, String password) {
+    }
+
+    private void verifyAccountInfo(AuthClient client, Account account, String password) {
+        try {
+            if(hash(password).equals(account.getPassword())) {
+                if(account.isBanned() || account.getAccessLevel() < 0) {
+                    client.close(REASON_ACCESS_FAILED);
+                } else {
+                    verifyAccountInUse(client, account);
+                }
+            } else {
+                client.close(REASON_USER_OR_PASS_WRONG);
+            }
+        } catch (NoSuchAlgorithmException e) {
+            logger.error(e.getLocalizedMessage(), e);
+            client.close(REASON_SYSTEM_ERROR);
+        }
+    }
+
+    private void verifyAccountInUse(AuthClient client, Account account) {
+
+
+    }
+
+    private boolean isValidUserName(String username) {
+        return USERNAME_PATTERN.matcher(username).matches();
+    }
+
     public AuthResult tryAuthLogin(String account, String password, AuthClient client) {
         AuthResult ret = AuthResult.INVALID_PASSWORD;
         if (loginValid(account, password, client)) {
@@ -160,6 +212,89 @@ public class AuthController {
             }
         }
         return ret;
+    }
+
+    private boolean loginValid(String user, String password, AuthClient client) {
+        boolean ok = false;
+        String address = client.getHostAddress();
+
+        // player disconnect meanwhile
+        if (address.isEmpty()) {
+            return false;
+        }
+
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA");
+            byte[] raw = password.getBytes(StandardCharsets.UTF_8);
+            byte[] hash = md.digest(raw);
+
+            var repository = getRepository(AccountRepository.class);
+            var optionalAccount = repository.findById(user);
+
+            if (optionalAccount.isPresent()) {
+                var account = optionalAccount.get();
+
+                if (account.isBanned()) {
+                    client.setAccessLevel(account.getAccessLevel());
+                    return false;
+                }
+
+                byte[] expected = Base64.decode(account.getPassword());
+
+                ok = Arrays.equals(expected, hash);
+
+                if (ok) {
+                    client.setAccessLevel(account.getAccessLevel());
+                    client.setLastServer(account.getLastServer());
+                    account.setLastActive(currentTimeMillis());
+                    account.setLastIP(address);
+                    repository.save(account);
+                }
+            } else if (isAutoCreateAccount()) {
+                if ((user.length() >= 2) && (user.length() <= 14)) {
+                    String pwd = Base64.encodeBytes(hash);
+                    long lastActive = currentTimeMillis();
+                    Account account = new Account(user, pwd, lastActive, address);
+
+                    if (repository.save(account).isPersisted()) {
+                        logger.debug("created new account for {}", user);
+                        return true;
+                    }
+                }
+
+                logger.debug("Invalid username creation/use attempt: {}", user);
+                return false;
+            } else {
+                logger.debug("account missing for user {}", user);
+            }
+        } catch (Exception e) {
+            logger.warn("Could not check password", e);
+            ok = false;
+        }
+
+        if (!ok) {
+            loginLogger.info("Failed login {} : {}", user, address);
+
+            FailedLoginAttempt failedAttempt = _hackProtection.get(address);
+            int failedCount;
+            if (isNull(failedAttempt)) {
+                _hackProtection.put(address, new FailedLoginAttempt(password));
+                failedCount = 1;
+            } else {
+                failedAttempt.increaseCounter(password);
+                failedCount = failedAttempt.getCount();
+            }
+
+            if (failedCount >= AuthServerSettings.loginTryBeforeBan()) {
+                logger.info("Banning {} for seconds due to {} invalid user/pass attempts", address, AuthServerSettings.loginBlockAfterBan(), failedCount);
+                banManager.addBannedAdress(address, currentTimeMillis() + AuthServerSettings.loginBlockAfterBan() * 1000);
+            }
+        } else {
+            _hackProtection.remove(address);
+            loginLogger.info("Success Login {} : {}", user, address);
+        }
+
+        return ok;
     }
 
     public boolean isBannedAddress(String address) {
@@ -248,89 +383,6 @@ public class AuthController {
 
     private ScrambledKeyPair getScrambledRSAKeyPair() {
         return _keyPairs[Rnd.nextInt(10)];
-    }
-
-    private boolean loginValid(String user, String password, AuthClient client) {
-        boolean ok = false;
-        String address = client.getHostAddress();
-
-        // player disconnect meanwhile
-        if (address.isEmpty()) {
-            return false;
-        }
-
-        try {
-            MessageDigest md = MessageDigest.getInstance("SHA");
-            byte[] raw = password.getBytes(StandardCharsets.UTF_8);
-            byte[] hash = md.digest(raw);
-
-            var repository = getRepository(AccountRepository.class);
-            var optionalAccount = repository.findById(user);
-
-            if (optionalAccount.isPresent()) {
-                var account = optionalAccount.get();
-
-                if (account.isBanned()) {
-                    client.setAccessLevel(account.getAccessLevel());
-                    return false;
-                }
-
-                byte[] expected = Base64.decode(account.getPassword());
-
-                ok = Arrays.equals(expected, hash);
-
-                if (ok) {
-                    client.setAccessLevel(account.getAccessLevel());
-                    client.setLastServer(account.getLastServer());
-                    account.setLastActive(currentTimeMillis());
-                    account.setLastIP(address);
-                    repository.save(account);
-                }
-            } else if (AuthServerSettings.isAutoCreateAccount()) {
-                if ((user.length() >= 2) && (user.length() <= 14)) {
-                    String pwd = Base64.encodeBytes(hash);
-                    long lastActive = currentTimeMillis();
-                    Account account = new Account(user, pwd, lastActive, address);
-
-                    if (repository.save(account).isPersisted()) {
-                        logger.debug("created new account for {}", user);
-                        return true;
-                    }
-                }
-
-                logger.debug("Invalid username creation/use attempt: {}", user);
-                return false;
-            } else {
-                logger.debug("account missing for user {}", user);
-            }
-        } catch (Exception e) {
-            logger.warn("Could not check password", e);
-            ok = false;
-        }
-
-        if (!ok) {
-            loginLogger.info("Failed login {} : {}", user, address);
-
-            FailedLoginAttempt failedAttempt = _hackProtection.get(address);
-            int failedCount;
-            if (isNull(failedAttempt)) {
-                _hackProtection.put(address, new FailedLoginAttempt(password));
-                failedCount = 1;
-            } else {
-                failedAttempt.increaseCounter(password);
-                failedCount = failedAttempt.getCount();
-            }
-
-            if (failedCount >= AuthServerSettings.loginTryBeforeBan()) {
-                logger.info("Banning {} for seconds due to {} invalid user/pass attempts", address, AuthServerSettings.loginBlockAfterBan(), failedCount);
-                 banManager.addBannedAdress(address, currentTimeMillis() + AuthServerSettings.loginBlockAfterBan() * 1000);
-            }
-        } else {
-            _hackProtection.remove(address);
-            loginLogger.info("Success Login {} : {}", user, address);
-        }
-
-        return ok;
     }
 
     public static AuthController getInstance() {

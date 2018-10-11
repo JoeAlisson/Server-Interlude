@@ -67,6 +67,10 @@ public class AuthServerSettings implements Settings {
         return  getInstance().settings.getBoolean("AcceptNewGameServer", false);
     }
 
+    public static String usernameTemplate() {
+        return getInstance().settings.getString("UsernameTemplate", "[A-Za-z0-9_]{5-32}");
+    }
+
     private static AuthServerSettings getInstance() {
         return getSettings(AuthServerSettings.class);
     }

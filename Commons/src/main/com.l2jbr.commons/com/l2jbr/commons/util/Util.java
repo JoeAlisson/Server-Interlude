@@ -16,10 +16,14 @@ package com.l2jbr.commons.util;
 
 import java.lang.reflect.Field;
 import java.math.BigInteger;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.time.temporal.TemporalAccessor;
+import java.util.Base64;
 import java.util.Collection;
 import java.util.Locale;
 import java.util.Optional;
@@ -32,7 +36,6 @@ public class Util {
     private static final DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDateTime( FormatStyle.SHORT )
             .withLocale( Locale.getDefault() )
             .withZone( ZoneId.systemDefault() );
-
 
     public static boolean isInternalIP(String ipAddress) {
         return (ipAddress.startsWith("192.168.") || ipAddress.startsWith("10.") ||
@@ -142,8 +145,6 @@ public class Util {
         return isNull(collection) || collection.isEmpty();
     }
 
-
-
     public static String capitalize(String text) {
         if(isNullOrEmpty(text)){
             return "";
@@ -163,4 +164,9 @@ public class Util {
         return formatter.format(temporal);
     }
 
+    public static String hash(String value) throws NoSuchAlgorithmException {
+        MessageDigest md = MessageDigest.getInstance("SHA3-256");
+        byte[] raw = value.getBytes(StandardCharsets.UTF_8);
+        return Base64.getEncoder().encodeToString(md.digest(raw));
+    }
 }

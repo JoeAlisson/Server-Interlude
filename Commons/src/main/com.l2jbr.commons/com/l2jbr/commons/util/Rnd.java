@@ -1,27 +1,13 @@
-/* This program is free software: you can redistribute it and/or modify it under
- * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version.
- * 
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
- * details.
- * 
- * You should have received a copy of the GNU General Public License along with
- * this program. If not, see <http://www.gnu.org/licenses/>.
- */
 package com.l2jbr.commons.util;
 
+import java.nio.charset.StandardCharsets;
 import java.security.SecureRandom;
 import java.util.Random;
-
 
 /**
  * @author Forsaiken
  */
-public final class Rnd
-{
+public final class Rnd {
 	/**
 	 * This class extends {@link Random} but do not compare and store atomically.<br>
 	 * Instead it`s using a simple volatile flag to ensure reading and storing the whole 64bit seed chunk.<br>
@@ -29,8 +15,7 @@ public final class Rnd
 	 * @author Forsaiken
 	 * @see Random
 	 */
-	public static final class NonAtomicRandom extends Random
-	{
+	public static final class NonAtomicRandom extends Random  {
 		private static final long serialVersionUID = 1L;
 		private volatile long _seed;
 		
@@ -45,8 +30,7 @@ public final class Rnd
 		}
 		
 		@Override
-		public final int next(final int bits)
-		{
+		public final int next(final int bits)  {
 			return (int) ((_seed = ((_seed * MULTIPLIER) + ADDEND) & MASK) >>> (48 - bits));
 		}
 		
@@ -60,8 +44,7 @@ public final class Rnd
 	/**
 	 * @author Forsaiken
 	 */
-	public static final class RandomContainer
-	{
+	public static final class RandomContainer  {
 		private final Random _random;
 		
 		protected RandomContainer(final Random random)
@@ -190,7 +173,7 @@ public final class Rnd
 	/**
 	 * @author Forsaiken
 	 */
-	public static enum RandomType
+	public enum RandomType
 	{
 		/**
 		 * For best random quality.
@@ -389,13 +372,22 @@ public final class Rnd
 	{
 		rnd.nextBytes(array);
 	}
+
+    /**
+     * Get a random String with the given size
+     */
+	public static String nextString(int size) {
+	    byte[] bytes = new byte[size];
+	    nextBytes(bytes);
+	    return new String(bytes, StandardCharsets.UTF_8);
+    }
 	
 	/**
 	 * Get a random double number from 0 to 1
 	 * @return A random double number from 0 to 1
 	 * @see Random#nextDouble()
 	 */
-	public static final double nextDouble()
+	public static  double nextDouble()
 	{
 		return rnd.nextDouble();
 	}
@@ -405,7 +397,7 @@ public final class Rnd
 	 * @return A random integer number from 0 to 1
 	 * @see Random#nextFloat()
 	 */
-	public static final float nextFloat()
+	public static  float nextFloat()
 	{
 		return rnd.nextFloat();
 	}
@@ -415,7 +407,7 @@ public final class Rnd
 	 * @return A random gaussian double number from 0 to 1
 	 * @see Random#nextGaussian()
 	 */
-	public static final double nextGaussian()
+	public static  double nextGaussian()
 	{
 		return rnd.nextGaussian();
 	}
@@ -425,7 +417,7 @@ public final class Rnd
 	 * @return A random integer number from Integer.MIN_VALUE to Integer.MAX_VALUE
 	 * @see Random#nextInt()
 	 */
-	public static final int nextInt()
+	public static int nextInt()
 	{
 		return rnd.nextInt();
 	}
@@ -435,7 +427,7 @@ public final class Rnd
 	 * @return
 	 * @see #get(int n)
 	 */
-	public static final int nextInt(final int n)
+	public static int nextInt(final int n)
 	{
 		return get(n);
 	}
@@ -445,7 +437,7 @@ public final class Rnd
 	 * @return A random integer number from Long.MIN_VALUE to Long.MAX_VALUE
 	 * @see Random#nextLong()
 	 */
-	public static final long nextLong()
+	public static long nextLong()
 	{
 		return rnd.nextLong();
 	}
