@@ -1,6 +1,5 @@
 package org.l2j.authserver.network;
 
-import org.l2j.authserver.network.AuthClient.LoginClientState;
 import org.l2j.authserver.network.packet.client2auth.AuthGameGuard;
 import org.l2j.authserver.network.packet.client2auth.RequestAuthLogin;
 import org.l2j.authserver.network.packet.client2auth.RequestServerList;
@@ -11,20 +10,23 @@ import org.l2j.mmocore.ReadablePacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static java.lang.Byte.toUnsignedInt;
+
 /**
  * Handler for packets received by Login Server
+ *
  * @author KenM
  */
-public final class L2LoginPacketHandler implements PacketHandler<AuthClient> {
+public final class AuthPacketHandler implements PacketHandler<AuthClient> {
 
-    private static final Logger logger = LoggerFactory.getLogger(L2LoginPacketHandler.class);
+    private static final Logger logger = LoggerFactory.getLogger(AuthPacketHandler.class);
 
-	@Override
-	public ReadablePacket<AuthClient> handlePacket(DataWrapper data, AuthClient client) {
-        int opcode = Byte.toUnsignedInt(data.get());
+    @Override
+    public ReadablePacket<AuthClient> handlePacket(DataWrapper data, AuthClient client) {
+        var opcode = toUnsignedInt(data.get());
 
         ReadablePacket<AuthClient> packet = null;
-        LoginClientState state = client.getState();
+        var state = client.getState();
 
         switch (state) {
             case CONNECTED:
@@ -44,8 +46,7 @@ public final class L2LoginPacketHandler implements PacketHandler<AuthClient> {
             case AUTHED_LOGIN:
                 if (opcode == 0x05) {
                     packet = new RequestServerList();
-                }
-                else if (opcode == 0x02) {
+                } else if (opcode == 0x02) {
                     packet = new RequestServerLogin();
                 } else {
                     debugOpcode(opcode, data, state);
@@ -53,9 +54,9 @@ public final class L2LoginPacketHandler implements PacketHandler<AuthClient> {
                 break;
         }
         return packet;
-	}
+    }
 
-	private void debugOpcode(int opcode, DataWrapper data, LoginClientState state) {
-	    logger.warn("Unknown Opcode: {} for state {}\n {}",  Integer.toHexString(opcode), state, data.expose());
-	}
+    private void debugOpcode(int opcode, DataWrapper data, AuthClientState state) {
+        logger.warn("Unknown Opcode: {} for state {}\n {}", Integer.toHexString(opcode), state, data.expose());
+    }
 }

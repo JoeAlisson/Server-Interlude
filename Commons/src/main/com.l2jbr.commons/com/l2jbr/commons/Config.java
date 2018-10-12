@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.commons;
 
 import org.slf4j.Logger;
@@ -37,7 +19,6 @@ import java.util.Properties;
  */
 public final class Config {
     protected static final Logger _log = LoggerFactory.getLogger(Config.class.getName());
-
 
     /**
      * Debug/release mode
@@ -951,6 +932,7 @@ public final class Config {
     public static boolean JAIL_IS_PVP;
     public static boolean JAIL_DISABLE_CHAT;
     public static String LANGUAGE;
+    public static int SERVER_TYPE;
 
     /**
      * Enumeration describing values for Allowing the use of L2Walker client
@@ -1893,7 +1875,17 @@ public final class Config {
                     throw new Error("MinProtocolRevision is bigger than MaxProtocolRevision in server configuration file.");
                 }
 
-                LANGUAGE = serverSettings.getProperty("language", "en_US");
+                LANGUAGE = serverSettings.getProperty("Language", "en_US");
+
+                String serverTypes = serverSettings.getProperty("SeverType", "Classic");
+                for (String type : serverTypes.split(";")) {
+                    try {
+                        ServerType serverType = ServerType.valueOf(type.trim().toUpperCase());
+                        SERVER_TYPE |= serverType.getId();
+                    } catch(Exception e) {
+                        _log.warn(e.getLocalizedMessage(), e);
+                    }
+                }
             } catch (Exception e) {
                 e.printStackTrace();
                 throw new Error("Failed to Load " + CONFIGURATION_FILE + " File.");

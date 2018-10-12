@@ -32,10 +32,11 @@ public class AuthRequest extends GameServerBasePacket
 	 * @param reserveHost
 	 * @param maxplayer
 	 */
-	public AuthRequest(int id, boolean acceptAlternate, byte[] hexid, String externalHost, String internalHost, int port, boolean reserveHost, int maxplayer)
+	public AuthRequest(int id, boolean acceptAlternate, byte[] hexid, String externalHost, String internalHost, int port, boolean reserveHost, int maxplayer, int serverType)
 	{
 		writeC(0x01);
 		writeC(id);
+		writeD(serverType);
 		writeC(acceptAlternate ? 0x01 : 0x00);
 		writeC(reserveHost ? 0x01 : 0x00);
 		writeS(externalHost);
@@ -44,6 +45,7 @@ public class AuthRequest extends GameServerBasePacket
 		writeD(maxplayer);
 		writeD(hexid.length);
 		writeB(hexid);
+
 	}
 	
 	@Override

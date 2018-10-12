@@ -36,8 +36,13 @@ public abstract class ClientBasePacket {
 		return result;
 	}
 	
-	public double readF()
+	public double readDouble()
 	{
+		long result = readLong();
+		return Double.longBitsToDouble(result);
+	}
+
+	protected long readLong() {
 		long result = data[_off++] & 0xff;
 		result |= (data[_off++] << 8) & 0xff00;
 		result |= (data[_off++] << 0x10) & 0xff0000;
@@ -46,7 +51,7 @@ public abstract class ClientBasePacket {
 		result |= ((long) data[_off++] << 0x28) & 0xff0000000000L;
 		result |= ((long) data[_off++] << 0x30) & 0xff000000000000L;
 		result |= ((long) data[_off++] << 0x38) & 0xff00000000000000L;
-		return Double.longBitsToDouble(result);
+		return result;
 	}
 	
 	protected String readString()

@@ -27,9 +27,8 @@ import org.slf4j.LoggerFactory;
  * Format: cccddb c desired ID c accept alternative ID c reserve Host s ExternalHostName s InetranlHostName d max players d hexid size b hexid
  * @author -Wooden-
  */
-public class GameServerAuth extends ClientBasePacket
-{
-	protected static Logger _log = LoggerFactory.getLogger(GameServerAuth.class.getName());
+public class GameServerAuth extends ClientBasePacket {
+
 	private final byte[] _hexId;
 	private final int _desiredId;
 	private final boolean _hostReserved;
@@ -38,11 +37,13 @@ public class GameServerAuth extends ClientBasePacket
 	private final int port;
 	private final String _externalHost;
 	private final String _internalHost;
-	
+	private final int _serverType;
+
 
 	public GameServerAuth(byte[] data) {
 		super(data);
 		_desiredId = readByte();
+		_serverType = readInt();
 		_acceptAlternativeId = readByte() != 0;
 		_hostReserved = readByte() != 0;
 		_externalHost = readString();
@@ -90,4 +91,8 @@ public class GameServerAuth extends ClientBasePacket
 	public int getPort() {
 		return port;
 	}
+
+    public int getServerType() {
+        return _serverType;
+    }
 }

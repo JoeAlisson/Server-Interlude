@@ -38,7 +38,7 @@ public class AuthServer {
         var bindAddress = loginListenHost().equals("*") ? new InetSocketAddress(loginListenPort()) :
                 new InetSocketAddress(loginListenHost(), loginListenPort()) ;
 
-        final L2LoginPacketHandler lph = new L2LoginPacketHandler();
+        final AuthPacketHandler lph = new AuthPacketHandler();
         final SelectorHelper sh = new SelectorHelper();
 
         connectionHandler = ConnectionBuilder.create(bindAddress, AuthClient::new, lph, sh).threadPoolSize(2).build();

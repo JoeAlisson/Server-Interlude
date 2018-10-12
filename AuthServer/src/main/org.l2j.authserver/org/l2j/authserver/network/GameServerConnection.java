@@ -148,10 +148,18 @@ public class GameServerConnection extends Thread {
             case 0x6:
                 onReceiveServerStatus(data);
                 break;
+            case 0x07:
+                onReceiveAccountInfo(data);
+                break;
             default:
                 logger.warn("Unknown Opcode ({}) from GameServer, closing socket.", Integer.toHexString(packetType).toUpperCase());
                 forceClose(LoginServerFail.NOT_AUTHED);
         }
+    }
+
+    private void onReceiveAccountInfo(byte[] data) {
+        AccountInfo info = new AccountInfo(data);
+        AuthController.getInstance().addAccountCharactersInfo(getServerId(), info.getAccount(), info.getPlayers());
     }
 
     private int readData(int dataSize, byte[] data) throws IOException {
@@ -313,6 +321,7 @@ public class GameServerConnection extends Thread {
         setHosts(gameServerAuth.getExternalHost(), gameServerAuth.getInternalHost());
         gsi.setMaxPlayers(gameServerAuth.getMaxPlayers());
         gsi.setAuthed(true);
+        gsi.setServerType(gameServerAuth.getServerType());
     }
 
     private void forceClose(int reason) {
@@ -350,6 +359,15 @@ public class GameServerConnection extends Thread {
         KickPlayer kp = new KickPlayer(account);
         try {
             sendPacket(kp);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void requestAccountInfo(String account) {
+        RequestAccountInfo packet = new RequestAccountInfo(account);
+        try {
+            sendPacket(packet);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -406,4 +424,6 @@ public class GameServerConnection extends Thread {
         }
         return -1;
     }
+
+
 }

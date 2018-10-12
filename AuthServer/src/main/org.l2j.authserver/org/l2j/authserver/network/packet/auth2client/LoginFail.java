@@ -48,7 +48,7 @@ public final class LoginFail extends L2LoginServerPacket {
 		REASON_NO_MESSAGE(0),
 		REASON_SYSTEM_ERROR(1), //There is a system error. Please log in again later
 		REASON_PASS_WRONG(2), //The password you have entered is incorrect. Confirm your ...
-		REASON_USER_OR_PASS_WRONG(3),
+		// REASON_USER_OR_PASS_WRONG(3), Brokens the client
 		REASON_ACCESS_FAILED_TRYA1(4), //Access failed. Please try again later.
 		REASON_ACCOUNT_INFO_INCORR(5), //Your account information is incorrect. For more details ...
 		REASON_ACCESS_FAILED_TRYA2(6), //Access failed. Please try again later.

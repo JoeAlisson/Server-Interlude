@@ -32,11 +32,11 @@ public final class Init extends L2LoginServerPacket {
         writeInt(0x07BDE0F7);
 
         writeBytes(client.getBlowfishKey());
-        writeByte(0x00);
+        writeInt(0x00);
     }
 
     @Override
     protected int packetSize() {
-        return super.packetSize() + 172;
+        return super.packetSize() + 175;
     }
 }

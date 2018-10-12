@@ -9,29 +9,31 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * ServerList Format: cc [cddcchhcdc]
- * c: server list size (number of servers)
- * c: last server
- * [ (repeat for each servers)
- * c: server id (ignored by client?)
- * d: server ip
- * d: server port
- * c: age limit (used by client?)
- * c: pvp or not (used by client?)
- * h: current number of players
- * h: max number of players
- * c: 0 if server is down
- * d: 2nd bit: clock
- *    3rd bit: wont display server name
- *    4th bit: test server (used by client?)
- * c: 0 if you don't want to display brackets in front of sever name
- * ]
+ *
+ *  * TYPE_BARE=0 - Indicates that each game server will have its basic information specified.
+ *  *
+ *  * TYPE_C0=1 - Indicates that each game server will have its additional and dynamic information specified.
+ *  *
+ *  * TYPE_NAMED=2 - Indicates that each game server will have its name specified.
+ *  *
+ *  * TYPE_C1=3 - Indicates that each game server will have its type mask specified.
+ *  *
+ *  * TYPE_C2=4 - Indicates that each game server will have its bracket flag specified.
+ *  *
+ *  * TYPE_FREYA=5 - Indicates that each game server will have player's character count(s) specified.
+ *
  *
  * Server will be considered as
  *  Good when the number of online players is less than half the maximum.
  *  as Normal between half and 4/5 and Full when there's more than 4/5 of the maximum number of players
  */
 public final class ServerList extends L2LoginServerPacket {
+
+    private final byte listType;
+
+    public ServerList(byte listType) {
+        this.listType = listType;
+    }
 
     @Override
     public void write() {
@@ -72,33 +74,20 @@ public final class ServerList extends L2LoginServerPacket {
             }
 
             writeByte(ServerStatus.STATUS_DOWN == status ? 0x00 : 0x01);
-
-            var bits = 0;
-
-            if (server.isTestServer()) {
-                bits |= 0x04;
-            }
-
-            if (server.isShowingClock()) {
-                bits |= 0x02;
-            }
-
-            writeInt(1 << 10);
+            writeInt(server.getServerType());
             writeByte(server.isShowingBrackets() ? 0x01 : 0x00); // Region
         }
-        writeShort(8);
-        writeByte(servers.size());
+
+        writeShort(0xa4);
         for (var server : servers.values()) {
             writeByte(server.getId());
-            writeByte(1);
-            writeByte(1);
-            writeByte(13213);
+            writeByte(client.getPlayersOnServer(server.getId()));
         }
     }
 
     @Override
     protected int packetSize() {
-        int servers = GameServerManager.getInstance().getRegisteredGameServers().size();
-        return super.packetSize() + 6 + servers * 24;
+        var serverSize = GameServerManager.getInstance().getRegisteredGameServers().size();
+        return super.packetSize() + 5 + serverSize * 22;
     }
 }

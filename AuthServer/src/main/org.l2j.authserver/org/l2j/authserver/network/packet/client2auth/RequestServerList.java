@@ -38,7 +38,7 @@ public class RequestServerList extends L2LoginClientPacket
 	{
 		if (getClient().getSessionKey().checkLoginPair(accountId, authId))
 		{
-			getClient().sendPacket(new ServerList());
+			getClient().sendPacket(new ServerList(listType));
 		}
 		else
 		{

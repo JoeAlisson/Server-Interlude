@@ -58,6 +58,11 @@ public abstract class GameServerBasePacket
 	protected void writeF(double org)
 	{
 		long value = Double.doubleToRawLongBits(org);
+		writeQ(value);
+
+	}
+
+	protected void writeQ(long value) {
 		_bao.write((int) (value & 0xff));
 		_bao.write((int) ((value >> 8) & 0xff));
 		_bao.write((int) ((value >> 16) & 0xff));

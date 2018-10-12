@@ -1,6 +1,5 @@
 package org.l2j.authserver.network.packet.auth2client;
 
-import org.l2j.authserver.network.SessionKey;
 import org.l2j.authserver.network.packet.L2LoginServerPacket;
 
 /**
@@ -10,7 +9,7 @@ public final class LoginOk extends L2LoginServerPacket {
 
 	@Override
 	protected void write() {
-		SessionKey sessionKey = client.getSessionKey();
+		var sessionKey = client.getSessionKey();
 		writeByte(0x03);
 		writeInt(sessionKey.accountId);
 		writeInt(sessionKey.authKey);

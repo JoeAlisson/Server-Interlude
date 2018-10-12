@@ -32,6 +32,7 @@ public class GameServerInfo {
     private boolean _isShowingClock;
     private boolean _isShowingBrackets;
     private int _maxPlayers;
+    private int serverType;
 
 
     public GameServerInfo(GameServer gameServer) {
@@ -58,6 +59,10 @@ public class GameServerInfo {
 
     public void sendKickPlayer(String account) {
         connection.kickPlayer(account);
+    }
+
+    public void requestAccountInfo(String account) {
+        connection.requestAccountInfo(account);
     }
 
     public void addAccount(String account) {
@@ -174,5 +179,13 @@ public class GameServerInfo {
 
     public boolean isShowingBrackets() {
         return _isShowingBrackets;
+    }
+
+    public void setServerType(int serverType) {
+        this.serverType = serverType;
+    }
+
+    public int getServerType() {
+        return serverType;
     }
 }

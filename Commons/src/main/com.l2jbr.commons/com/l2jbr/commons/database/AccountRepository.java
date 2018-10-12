@@ -22,8 +22,5 @@ public interface AccountRepository extends CrudRepository<Account, String> {
     @Query("UPDATE accounts SET lastServer=:server WHERE login=:login")
     int updateLastServer(@Param("login") String login, @Param("server") int server);
 
-    @Query("SELECT * FROM accounts WHERE login=:login")
-    Optional<Account> findByLogin(@Param("login") String login);
-
 }
 

@@ -26,6 +26,7 @@ import com.l2jbr.gameserver.gameserverpackets.*;
 import com.l2jbr.gameserver.loginserverpackets.*;
 import com.l2jbr.gameserver.model.L2World;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jbr.gameserver.model.entity.database.repository.CharacterRepository;
 import com.l2jbr.gameserver.network.L2GameClient;
 import com.l2jbr.gameserver.network.L2GameClient.GameClientState;
 import com.l2jbr.gameserver.serverpackets.AuthLoginFail;
@@ -49,7 +50,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
+import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
 
 
@@ -59,6 +62,7 @@ public class LoginServerThread extends Thread {
     private static LoginServerThread _instance;
 
     private static final int REVISION = 0x0102;
+    private final int _serverType;
     private RSAPublicKey _publicKey;
     private final String _hostname;
     private final int _port;
@@ -110,6 +114,7 @@ public class LoginServerThread extends Thread {
         _waitingClients = new LinkedList<>();
         _accountsInGameServer = new ConcurrentHashMap<>();
         _maxPlayer = Config.MAXIMUM_ONLINE_USERS;
+        _serverType = Config.SERVER_TYPE;
     }
 
     public static LoginServerThread getInstance() {
@@ -179,7 +184,7 @@ public class LoginServerThread extends Thread {
 
                     int packetType = decrypt[0] & 0xff;
                     switch (packetType) {
-                        case 00:
+                        case 0x00:
                             InitLS init = new InitLS(decrypt);
                             if (Config.DEBUG) {
                                 _log.info("Init received");
@@ -212,18 +217,18 @@ public class LoginServerThread extends Thread {
                             if (Config.DEBUG) {
                                 _log.info("Changed blowfish key");
                             }
-                            AuthRequest ar = new AuthRequest(_requestID, _acceptAlternate, _hexID, _gameExternalHost, _gameInternalHost, _gamePort, _reserveHost, _maxPlayer);
+                            AuthRequest ar = new AuthRequest(_requestID, _acceptAlternate, _hexID, _gameExternalHost, _gameInternalHost, _gamePort, _reserveHost, _maxPlayer, _serverType);
                             sendPacket(ar);
                             if (Config.DEBUG) {
                                 _log.info("Sent AuthRequest to login");
                             }
                             break;
-                        case 01:
+                        case 0x01:
                             LoginServerFail lsf = new LoginServerFail(decrypt);
                             _log.info("Damn! Registeration Failed: " + lsf.getReasonString());
                             // login will close the connection here
                             break;
-                        case 02:
+                        case 0x02:
                             AuthResponse aresp = new AuthResponse(decrypt);
                             _serverID = aresp.getServerId();
                             _serverName = aresp.getServerName();
@@ -260,7 +265,7 @@ public class LoginServerThread extends Thread {
                                 sendPacket(pig);
                             }
                             break;
-                        case 03:
+                        case 0x03:
                             PlayerAuthResponse par = new PlayerAuthResponse(decrypt);
                             String account = par.getAccount();
                             WaitingClient wcToRemove = null;
@@ -291,9 +296,13 @@ public class LoginServerThread extends Thread {
                                 _waitingClients.remove(wcToRemove);
                             }
                             break;
-                        case 04:
+                        case 0x04:
                             KickPlayer kp = new KickPlayer(decrypt);
                             doKickPlayer(kp.getAccount());
+                            break;
+                        case 0x05:
+                            RequestAccountInfo accountInfo = new RequestAccountInfo(decrypt);
+                            responseAccountInfo(accountInfo.getAccount());
                             break;
                     }
                 }
@@ -317,6 +326,17 @@ public class LoginServerThread extends Thread {
                 //
             }
         }
+    }
+
+    private void responseAccountInfo(String account) {
+        var playersInAccount = getRepository(CharacterRepository.class).countByAccount(account);
+        AccountInfo info = new AccountInfo(account, playersInAccount);
+        try {
+            sendPacket(info);
+        } catch (IOException e) {
+            _log.error(e.getLocalizedMessage(), e);
+        }
+
     }
 
     public void addWaitingClientAndSendRequest(String acc, L2GameClient client, SessionKey key) {

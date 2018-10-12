@@ -10,7 +10,6 @@ import org.l2j.authserver.network.AuthClient;
 import org.l2j.authserver.network.SessionKey;
 import org.l2j.authserver.network.crypt.AuthCrypt;
 import org.l2j.authserver.network.crypt.ScrambledKeyPair;
-import org.l2j.authserver.network.packet.auth2client.LoginFail;
 import org.l2j.authserver.network.packet.auth2client.LoginOk;
 import org.l2j.authserver.network.packet.game2auth.ServerStatus;
 import org.slf4j.Logger;
@@ -34,7 +33,7 @@ import static com.l2jbr.commons.util.Util.isNullOrEmpty;
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static org.l2j.authserver.network.AuthClient.LoginClientState.AUTHED_LOGIN;
+import static org.l2j.authserver.network.AuthClientState.AUTHED_LOGIN;
 import static org.l2j.authserver.network.packet.auth2client.AccountKicked.AccountKickedReason.REASON_PERMANENTLY_BANNED;
 import static org.l2j.authserver.network.packet.auth2client.LoginFail.LoginFailReason.*;
 import static org.l2j.authserver.settings.AuthServerSettings.*;
@@ -44,7 +43,6 @@ public class AuthController {
     private static final Logger logger = LoggerFactory.getLogger(AuthController.class);
     private static final Logger loginLogger = LoggerFactory.getLogger("loginHistory");
     private static final int LOGIN_TIMEOUT = 60 * 1000;
-    private static final int BLOWFISH_KEYS = 20;
     private static final Pattern USERNAME_PATTERN = Pattern.compile(usernameTemplate());
     private static final String ACCOUNT_LOGIN_FAILED = "Account Login Failed {} : {}";
 
@@ -130,13 +128,13 @@ public class AuthController {
             return;
         }
 
-        var accountOptional = getRepository(AccountRepository.class).findByLogin(username);
+        var accountOptional = getRepository(AccountRepository.class).findById(username);
         if(accountOptional.isPresent()) {
            verifyAccountInfo(client, accountOptional.get(), password);
         } else if(isAutoCreateAccount()) {
             createNewAccount(client, username, password);
         } else {
-            client.close(REASON_PASS_WRONG);
+            client.close(REASON_ACCOUNT_INFO_INCORR);
         }
     }
 
@@ -153,7 +151,7 @@ public class AuthController {
                     processAuth(client, account);
                 }
             } else {
-                client.close(REASON_USER_OR_PASS_WRONG);
+                client.close(REASON_ACCOUNT_INFO_INCORR);
                 addLoginFailed(account, password, client);
                 loginLogger.info(ACCOUNT_LOGIN_FAILED, account.getId(), "Wrong Username or Password");
             }
@@ -181,20 +179,29 @@ public class AuthController {
     }
 
     private void processAuth(AuthClient client, Account account) {
+        requestAccountInfo(account);
         updateClientInfo(client, account);
-        client.sendPacket(new LoginOk());
         authedClients.put(account.getId(), client);
+        client.sendPacket(new LoginOk());
         bruteForceProtection.remove(account.getId());
         getRepository(AccountRepository.class).save(account);
         loginLogger.info("Account Logged {}", account.getId());
     }
 
+    private void requestAccountInfo(Account account) {
+        GameServerManager.getInstance().getRegisteredGameServers().values().forEach(gameServer -> {
+            if(nonNull(gameServer) && gameServer.isAuthed()) {
+                gameServer.requestAccountInfo(account.getId());
+            }
+        });
+    }
+
     private void updateClientInfo(AuthClient client, Account account) {
         client.setAccount(account);
-        account.setLastActive(currentTimeMillis());
-        account.setLastIP(client.getHostAddress());
         assignSessionKeyToClient(client);
         client.setState(AUTHED_LOGIN);
+        account.setLastActive(currentTimeMillis());
+        account.setLastIP(client.getHostAddress());
     }
 
     private void createNewAccount(AuthClient client, String username, String password) {
@@ -205,6 +212,14 @@ public class AuthController {
         } catch (NoSuchAlgorithmException e) {
             logger.error(e.getLocalizedMessage(), e);
         }
+    }
+
+    public void addAccountCharactersInfo(int serverId, String account, int players) {
+        AuthClient client = authedClients.get(account);
+        if (nonNull(client)) {
+            client.addCharactersOnServer(serverId, players);
+        }
+
     }
 
     public SessionKey getKeyForAccount(String account) {
@@ -329,7 +344,7 @@ public class AuthController {
                 }
             }
 
-            toRemove.stream().filter(Objects::nonNull).forEach(authClient -> authClient.close(LoginFail.LoginFailReason.REASON_ACCESS_FAILED_TRYA1));
+            toRemove.stream().filter(Objects::nonNull).forEach(authClient -> authClient.close(REASON_ACCESS_FAILED_TRYA1));
         }
     }
 }
