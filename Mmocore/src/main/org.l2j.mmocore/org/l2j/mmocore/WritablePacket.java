@@ -6,9 +6,7 @@ import static java.util.Objects.nonNull;
 
 public abstract class WritablePacket<T extends Client<Connection<T>>> extends AbstractPacket<T> {
 
-    protected WritablePacket() {
-        data = new byte[packetSize()];
-    }
+    protected WritablePacket() { }
 
 	/**
 	 * Write <B>byte</B> to the buffer. <BR>
@@ -135,6 +133,7 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
 	}
 
     int writeData() {
+		data = new byte[packetSize()];
 		dataIndex += ReadHandler.HEADER_SIZE;
         write();
         return dataIndex;
