@@ -50,12 +50,12 @@ public abstract class Inventory extends ItemContainer {
         public void notifyUnequiped(int slot, L2ItemInstance inst);
     }
 
-    public static final int PAPERDOLL_UNDER = 0;
-    public static final int PAPERDOLL_LEAR = 1;
-    public static final int PAPERDOLL_REAR = 2;
+    public static final int PAPERDOLL_PENDANT = 0;
+    public static final int PAPERDOLL_REAR = 1;
+    public static final int PAPERDOLL_LEAR = 2;
     public static final int PAPERDOLL_NECK = 3;
-    public static final int PAPERDOLL_LFINGER = 4;
-    public static final int PAPERDOLL_RFINGER = 5;
+    public static final int PAPERDOLL_RFINGER = 4;
+    public static final int PAPERDOLL_LFINGER = 5;
     public static final int PAPERDOLL_HEAD = 6;
     public static final int PAPERDOLL_RHAND = 7;
     public static final int PAPERDOLL_LHAND = 8;
@@ -65,9 +65,24 @@ public abstract class Inventory extends ItemContainer {
     public static final int PAPERDOLL_FEET = 12;
     public static final int PAPERDOLL_BACK = 13;
     public static final int PAPERDOLL_LRHAND = 14;
-    public static final int PAPERDOLL_FACE = 15;
-    public static final int PAPERDOLL_HAIR = 16;
-    public static final int PAPERDOLL_DHAIR = 17;
+    public static final int PAPERDOLL_HAIR = 15;
+    public static final int PAPERDOLL_DHAIR = 16;
+    public static final int PAPERDOLL_RBRACELET = 17;
+    public static final int PAPERDOLL_LBRACELET = 18;
+    public static final int PAPERDOLL_DECO1 = 19;
+    public static final int PAPERDOLL_DECO2 = 20;
+    public static final int PAPERDOLL_DECO3 = 21;
+    public static final int PAPERDOLL_DECO4 = 22;
+    public static final int PAPERDOLL_DECO5 = 23;
+    public static final int PAPERDOLL_DECO6 = 24;
+    public static final int PAPERDOLL_BELT = 25;
+    public static final int PAPERDOLL_BROOCH = 26;
+    public static final int PAPERDOLL_JEWEL1 = 27;
+    public static final int PAPERDOLL_JEWEL2 = 28;
+    public static final int PAPERDOLL_JEWEL3 = 29;
+    public static final int PAPERDOLL_JEWEL4 = 30;
+    public static final int PAPERDOLL_JEWEL5 = 31;
+    public static final int PAPERDOLL_JEWEL6 = 32;
 
     // Speed percentage mods
     public static final double MAX_ARMOR_WEIGHT = 12000;
@@ -724,8 +739,8 @@ public abstract class Inventory extends ItemContainer {
         int location = item.getEquipSlot();
 
         switch (location) {
-            case PAPERDOLL_UNDER:
-                slot = UNDERWEAR;
+            case PAPERDOLL_PENDANT:
+                slot = PENDANT;
                 break;
             case PAPERDOLL_LEAR:
                 slot = LEFT_EAR;
@@ -745,8 +760,8 @@ public abstract class Inventory extends ItemContainer {
             case PAPERDOLL_HAIR:
                 slot = HAIR;
                 break;
-            case PAPERDOLL_FACE:
-                slot = FACE;
+            case PAPERDOLL_DECO1:
+                slot = DECO;
                 break;
             case PAPERDOLL_DHAIR:
                 slot = DHAIR;
@@ -861,12 +876,12 @@ public abstract class Inventory extends ItemContainer {
             case HAIR:
                 pdollSlot = PAPERDOLL_HAIR;
                 break;
-            case FACE:
-                pdollSlot = PAPERDOLL_FACE;
+            case DECO:
+                pdollSlot = PAPERDOLL_DECO1;
                 break;
             case DHAIR:
                 setPaperdollItem(PAPERDOLL_HAIR, null);
-                setPaperdollItem(PAPERDOLL_FACE, null);// this should be the same as in DHAIR
+                setPaperdollItem(PAPERDOLL_DHAIR, null);// this should be the same as in DHAIR
                 pdollSlot = PAPERDOLL_DHAIR;
                 break;
             case HEAD:
@@ -894,8 +909,8 @@ public abstract class Inventory extends ItemContainer {
             case FEET:
                 pdollSlot = PAPERDOLL_FEET;
                 break;
-            case UNDERWEAR:
-                pdollSlot = PAPERDOLL_UNDER;
+            case PENDANT:
+                pdollSlot = PAPERDOLL_PENDANT;
                 break;
             case TWO_HAND:
                 setPaperdollItem(PAPERDOLL_LHAND, null);
@@ -1053,33 +1068,33 @@ public abstract class Inventory extends ItemContainer {
                 if (setPaperdollItem(PAPERDOLL_DHAIR, null) != null) {
                     setPaperdollItem(PAPERDOLL_DHAIR, null);
                     setPaperdollItem(PAPERDOLL_HAIR, null);
-                    setPaperdollItem(PAPERDOLL_FACE, null);
+                    setPaperdollItem(PAPERDOLL_DECO1, null);
                 } else {
                     setPaperdollItem(PAPERDOLL_HAIR, null);
                 }
                 setPaperdollItem(PAPERDOLL_HAIR, item);
                 break;
-            case FACE:
+            case DECO:
                 if (setPaperdollItem(PAPERDOLL_DHAIR, null) != null) {
                     setPaperdollItem(PAPERDOLL_DHAIR, null);
                     setPaperdollItem(PAPERDOLL_HAIR, null);
-                    setPaperdollItem(PAPERDOLL_FACE, null);
+                    setPaperdollItem(PAPERDOLL_DECO1, null);
                 } else {
-                    setPaperdollItem(PAPERDOLL_FACE, null);
+                    setPaperdollItem(PAPERDOLL_DECO1, null);
                 }
-                setPaperdollItem(PAPERDOLL_FACE, item);
+                setPaperdollItem(PAPERDOLL_DECO1, item);
                 break;
             case DHAIR:
                 if (setPaperdollItem(PAPERDOLL_HAIR, null) != null) {
                     setPaperdollItem(PAPERDOLL_HAIR, null);
-                    setPaperdollItem(PAPERDOLL_FACE, null);
+                    setPaperdollItem(PAPERDOLL_DECO1, null);
                 } else {
-                    setPaperdollItem(PAPERDOLL_FACE, null);
+                    setPaperdollItem(PAPERDOLL_DECO1, null);
                 }
                 setPaperdollItem(PAPERDOLL_DHAIR, item);
                 break;
-            case UNDERWEAR:
-                setPaperdollItem(PAPERDOLL_UNDER, item);
+            case PENDANT:
+                setPaperdollItem(PAPERDOLL_PENDANT, item);
                 break;
             case BACK:
                 setPaperdollItem(PAPERDOLL_BACK, item);

@@ -34,7 +34,7 @@ public final class RequestWithdrawalPledge extends L2GameClientPacket
 {
 	private static final String _C__26_REQUESTWITHDRAWALPLEDGE = "[C] 26 RequestWithdrawalPledge";
 	
-	// static Logger _log = LoggerFactory.getLogger(RequestWithdrawalPledge.class.getName());
+	// static Logger logger = LoggerFactory.getLogger(RequestWithdrawalPledge.class.getName());
 	
 	@Override
 	protected void readImpl()

@@ -7,10 +7,10 @@ import org.l2j.authserver.network.packet.ServerBasePacket;
  */
 public class PlayerAuthResponse extends ServerBasePacket {
 
-	public PlayerAuthResponse(String account, boolean response) {
+	public PlayerAuthResponse(String account, int response) {
 		writeByte(0x03);
 		writeString(account);
-		writeByte(response ? 1 : 0);
+		writeByte(response);
 	}
 	
 	@Override

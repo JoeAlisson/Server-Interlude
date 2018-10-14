@@ -2,7 +2,7 @@ package com.l2jbr.gameserver.templates;
 
 public enum BodyPart {
     NONE(0x0000),
-    UNDERWEAR(0x0001),
+    PENDANT(0x0001),
     RIGHT_EAR(0x0002),
     LEFT_EAR(0x0004),
     EAR(0X0006),
@@ -21,12 +21,23 @@ public enum BodyPart {
     TWO_HAND(0x4000),
     FULL_ARMOR(0x8000),
     HAIR(0x010000),
-    WOLF(0x020000),
-    HATCHLING(0x100000),
-    STRIDER(0x200000),
-    BABYPET(0x400000),
-    FACE(0x040000),
-    DHAIR(0x080000);
+    FORMAL_WEAR(0x020000),
+    DHAIR(0x040000),
+    HAIRALL(0x080000),
+    RIGHT_BRACELET(0x100000),
+    LEFT_BRACELET(0x200000),
+    DECO(0x0400000),
+    SLOT_BELT(0x10000000),
+    SLOT_BROOCH(0x20000000),
+    SLOT_JEWEL(0x40000000),
+    //  NOT USED todo REMOVE FROM DB
+    UNDERWEAR(-1),
+    WOLF(-1),
+    HATCHLING(-1),
+    STRIDER(-1),
+    FACE(-1),
+    BABYPET(-1)
+    ;
 
     private final int id;
 

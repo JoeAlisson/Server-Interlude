@@ -163,14 +163,11 @@ public class Weapon extends ItemTemplate {
             type1 = ItemTypeGroup.TYPE1_WEAPON_ACCESSORY;
 
             switch (bodypart) {
-                case WOLF:
-                    type2 = ItemTypeGroup.TYPE2_PET_WOLF;
+                case FORMAL_WEAR:
+                    type2 = ItemTypeGroup.WEAR;
                     break;
-                case HATCHLING:
-                    type2 = ItemTypeGroup.TYPE2_PET_HATCHLING;
-                    break;
-                case BABYPET:
-                    type2 = ItemTypeGroup.TYPE2_PET_BABY;
+                case RIGHT_BRACELET:
+                    type2 = ItemTypeGroup.BRACELET;
                     break;
                 default:
                     type2 = ItemTypeGroup.TYPE2_PET_STRIDER;

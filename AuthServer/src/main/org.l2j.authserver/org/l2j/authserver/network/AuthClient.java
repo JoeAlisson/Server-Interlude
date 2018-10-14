@@ -19,7 +19,6 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.security.PrivateKey;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static java.util.Objects.nonNull;
@@ -39,12 +38,12 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
     private ScrambledKeyPair _scrambledPair;
     private byte[] _blowfishKey;
     private int _sessionId;
-    private boolean _joinedGS;
     private SessionKey _sessionKey;
 
     private Account account;
     private boolean _usesInternalIP;
     private AuthClientState _state;
+    private boolean isJoinedGameSever;
 
 
     public AuthClient(Connection<AuthClient> con) {
@@ -117,13 +116,12 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 	protected void onDisconnection() {
         _log.info("DISCONNECTED: {}", toString());
 
-		if (getState() != AUTHED_LOGIN) {
-			AuthController.getInstance().removeClient(this);
-		}
+        AuthController.getInstance().removeClient(this);
 
-		else if (!hasJoinedGS()) {
-			AuthController.getInstance().removeAuthedClient(getAccount().getId());
-		}
+        if(!isJoinedGameSever && nonNull(account)) {
+            AuthController.getInstance().removeAuthedClient(account.getId());
+        }
+
 	}
 
     public void addCharactersOnServer(int serverId, int players) {
@@ -132,6 +130,10 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
 
     public int getPlayersOnServer(int serverId) {
         return charactersOnServer.getOrDefault(serverId, 0);
+    }
+
+    public void joinGameserver() {
+        isJoinedGameSever = true;
     }
 
     AuthClientState getState()
@@ -175,15 +177,6 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
         return _sessionId;
     }
 
-    private boolean hasJoinedGS() {
-        return _joinedGS;
-    }
-
-    public void setJoinedGS(boolean val)
-    {
-        _joinedGS = val;
-    }
-
     public void setSessionKey(SessionKey sessionKey)
     {
         _sessionKey = sessionKey;
@@ -210,7 +203,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
         _sessionId = sessionId;
     }
 
-    public void setCrypter(AuthCrypt crypt) {
+    public void setCrypt(AuthCrypt crypt) {
         _authCrypt =  crypt;
     }
 
@@ -227,4 +220,5 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
         }
         return "[" + (address.equals("") ? "disconnect" : address) + "]";
     }
+
 }

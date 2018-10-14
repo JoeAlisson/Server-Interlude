@@ -47,7 +47,7 @@ public final class RequestPledgePowerGradeList extends L2GameClientPacket
 		{
 			RankPrivs[] privs = clan.getAllRankPrivs();
 			player.sendPacket(new PledgePowerGradeList(privs));
-			// _log.warn("plegdepowergradelist send, privs length: "+privs.length);
+			// logger.warn("plegdepowergradelist send, privs length: "+privs.length);
 		}
 	}
 	

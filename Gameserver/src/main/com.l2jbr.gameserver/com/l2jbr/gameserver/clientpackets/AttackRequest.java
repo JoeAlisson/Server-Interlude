@@ -82,9 +82,9 @@ public final class AttackRequest extends L2GameClientPacket
 		{
 			if ((target.getObjectId() != activeChar.getObjectId()) && (activeChar.getPrivateStoreType() == 0) && (activeChar.getActiveRequester() == null))
 			{
-				// _log.info("Starting ForcedAttack");
+				// logger.info("Starting ForcedAttack");
 				target.onForcedAttack(activeChar);
-				// _log.info("Ending ForcedAttack");
+				// logger.info("Ending ForcedAttack");
 			}
 			else
 			{

@@ -29,7 +29,7 @@ public final class ObserverReturn extends L2GameClientPacket
 {
 	private static final String OBSRETURN__C__04 = "[C] b8 ObserverReturn";
 	
-	// private static Logger _log = LoggerFactory.getLogger(Action.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(Action.class.getName());
 	
 	@Override
 	protected void readImpl()

@@ -29,7 +29,7 @@ public final class RequestWithDrawalParty extends L2GameClientPacket
 {
 	private static final String _C__2B_REQUESTWITHDRAWALPARTY = "[C] 2B RequestWithDrawalParty";
 	
-	// private static Logger _log = LoggerFactory.getLogger(RequestWithDrawalParty.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestWithDrawalParty.class.getName());
 	
 	@Override
 	protected void readImpl()

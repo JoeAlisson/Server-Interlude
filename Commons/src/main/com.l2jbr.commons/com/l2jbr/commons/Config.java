@@ -1878,7 +1878,7 @@ public final class Config {
                 LANGUAGE = serverSettings.getProperty("Language", "en_US");
 
                 String serverTypes = serverSettings.getProperty("SeverType", "Classic");
-                for (String type : serverTypes.split(";")) {
+                for (String type : serverTypes.split(",")) {
                     try {
                         ServerType serverType = ServerType.valueOf(type.trim().toUpperCase());
                         SERVER_TYPE |= serverType.getId();

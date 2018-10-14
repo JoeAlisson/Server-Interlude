@@ -29,7 +29,7 @@ import com.l2jbr.gameserver.serverpackets.SystemMessage;
 public final class RequestStopPledgeWar extends L2GameClientPacket
 {
 	private static final String _C__4F_REQUESTSTOPPLEDGEWAR = "[C] 4F RequestStopPledgeWar";
-	// private static Logger _log = LoggerFactory.getLogger(RequestStopPledgeWar.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestStopPledgeWar.class.getName());
 	
 	private String _pledgeName;
 	
@@ -76,7 +76,7 @@ public final class RequestStopPledgeWar extends L2GameClientPacket
 			return;
 		}
 		
-		// _log.info("RequestStopPledgeWar: By leader or authorized player: " + playerClan.getLeaderName() + " of clan: "
+		// logger.info("RequestStopPledgeWar: By leader or authorized player: " + playerClan.getLeaderName() + " of clan: "
 		// + playerClan.getName() + " to clan: " + _pledgeName);
 		
 		// L2PcInstance leader = L2World.getInstance().getPlayer(clan.getLeaderName());

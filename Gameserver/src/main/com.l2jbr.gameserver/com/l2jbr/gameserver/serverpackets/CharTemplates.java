@@ -25,7 +25,7 @@ import java.util.List;
 
 
 /**
- * This class ...
+ * This class ... NewCharacterSuccess
  *
  * @version $Revision: 1.3.2.1.2.7 $ $Date: 2005/03/27 15:29:39 $
  */
@@ -40,37 +40,33 @@ public class CharTemplates extends L2GameServerPacket {
 
     @Override
     protected final void writeImpl() {
-        writeByte(0x17);
+        writeByte(0x0D);
         writeInt(_chars.size());
 
         for (PlayerTemplate temp : _chars) {
             writeInt(temp.getRace().ordinal());
             writeInt(temp.getPlayerClass().getId());
-            writeInt(0x46);
+            writeInt(0x46); // Max Str
             writeInt(temp.getStrength());
-            writeInt(0x0a);
-            writeInt(0x46);
+            writeInt(0x0a); // Min Str
+            writeInt(0x46); // Max Dex
             writeInt(temp.getDexterity());
-            writeInt(0x0a);
-            writeInt(0x46);
+            writeInt(0x0a); // Min Dex
+            writeInt(0x46); // Max Con
             writeInt(temp.getConstitution());
-            writeInt(0x0a);
-            writeInt(0x46);
+            writeInt(0x0a); // Min CON
+            writeInt(0x46); // Max Int
             writeInt(temp.getIntellienge());
-            writeInt(0x0a);
-            writeInt(0x46);
+            writeInt(0x0a); // Min Int
+            writeInt(0x46); // Max Wit
             writeInt(temp.getWitness());
-            writeInt(0x0a);
-            writeInt(0x46);
+            writeInt(0x0a); // Min Wit
+            writeInt(0x46); // Max Men
             writeInt(temp.getMentality());
-            writeInt(0x0a);
+            writeInt(0x0a); // Min Men
         }
     }
 
-    /*
-     * (non-Javadoc)
-     * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-     */
     @Override
     public String getType() {
         return _S__23_CHARTEMPLATES;

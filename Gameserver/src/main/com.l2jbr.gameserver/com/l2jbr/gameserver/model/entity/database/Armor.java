@@ -31,7 +31,7 @@ public class Armor extends ItemTemplate {
         switch (bodyPart) {
             case NECK:
             case HAIR:
-            case FACE:
+            case DECO:
             case DHAIR:
             case EAR:
             case FINGER:
@@ -45,14 +45,11 @@ public class Armor extends ItemTemplate {
 
         if(ItemType.PET_ARMOR == armorType) {
             switch (bodyPart) {
-                case WOLF:
-                    type2 = ItemTypeGroup.TYPE2_PET_WOLF;
+                case FORMAL_WEAR:
+                    type2 = ItemTypeGroup.WEAR;
                     break;
-                case HATCHLING:
-                    type2 = ItemTypeGroup.TYPE2_PET_HATCHLING;
-                    break;
-                case BABYPET:
-                    type2 = ItemTypeGroup.TYPE2_PET_BABY;
+                case RIGHT_BRACELET:
+                    type2 = ItemTypeGroup.BRACELET;
                     break;
                 default:
                     type2 = ItemTypeGroup.TYPE2_PET_STRIDER;

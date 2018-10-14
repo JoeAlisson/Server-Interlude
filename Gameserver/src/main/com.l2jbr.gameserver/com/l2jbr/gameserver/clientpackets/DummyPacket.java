@@ -24,7 +24,7 @@ package com.l2jbr.gameserver.clientpackets;
  */
 public final class DummyPacket extends L2GameClientPacket
 {
-	// private static Logger _log = LoggerFactory.getLogger(DummyPacket.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(DummyPacket.class.getName());
 	
 	@Override
 	protected void readImpl()

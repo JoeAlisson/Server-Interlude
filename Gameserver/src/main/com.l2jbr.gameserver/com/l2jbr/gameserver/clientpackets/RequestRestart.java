@@ -139,7 +139,7 @@ public final class RequestRestart extends L2GameClientPacket
 		sendPacket(response);
 		
 		// send char list
-		CharSelectInfo cl = new CharSelectInfo(client.getAccountName(), client.getSessionId().playOkID1);
+		CharSelectInfo cl = new CharSelectInfo(client.getAccountName(), client.getSessionId().sessionId);
 		sendPacket(cl);
 		client.setCharSelection(cl.getCharInfo());
 	}

@@ -98,7 +98,7 @@ public class SummonItemsData {
             _summonitems.put(itemID, summonitem);
         }
 
-        _log.warn("Summon items data: Loaded " + _summonitems.size() + " summon items.");
+        _log.info("Summon items data: Loaded " + _summonitems.size() + " summon items.");
         if (Config.DEBUG) {
             _log.warn("Summon items data: " + commentLinesCount + " comments skipped.");
         }

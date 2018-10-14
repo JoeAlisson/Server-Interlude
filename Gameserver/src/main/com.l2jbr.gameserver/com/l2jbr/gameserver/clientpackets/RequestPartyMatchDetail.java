@@ -31,7 +31,7 @@ import com.l2jbr.gameserver.serverpackets.PartyMatchDetail;
 public final class RequestPartyMatchDetail extends L2GameClientPacket
 {
 	private static final String _C__71_REQUESTPARTYMATCHDETAIL = "[C] 71 RequestPartyMatchDetail";
-	// private static Logger _log = LoggerFactory.getLogger(RequestPartyMatchDetail.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestPartyMatchDetail.class.getName());
 	
 	private int _objectId;
 	@SuppressWarnings("unused")

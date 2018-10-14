@@ -178,7 +178,7 @@ public class Heroes {
 					}
 					player.sendPacket(iu);
 					
-					items = player.getInventory().unEquipItemInBodySlotAndRecord(BodyPart.FACE);
+					items = player.getInventory().unEquipItemInBodySlotAndRecord(BodyPart.DECO);
 					iu = new InventoryUpdate();
 					for (L2ItemInstance item : items)
 					{

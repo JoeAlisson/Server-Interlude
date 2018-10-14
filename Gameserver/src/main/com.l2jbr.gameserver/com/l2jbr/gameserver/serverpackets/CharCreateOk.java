@@ -20,7 +20,7 @@ package com.l2jbr.gameserver.serverpackets;
 
 
 /**
- * This class ...
+ * This class ... CharacterCreateSuccessPacket
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
 public class CharCreateOk extends L2GameServerPacket
@@ -30,7 +30,7 @@ public class CharCreateOk extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeByte(0x19);
+		writeByte(0x0F);
 		writeInt(0x01);
 	}
 	

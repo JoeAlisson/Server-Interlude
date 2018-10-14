@@ -27,7 +27,7 @@ import com.l2jbr.gameserver.serverpackets.RecipeItemMakeInfo;
 public final class RequestRecipeItemMakeInfo extends L2GameClientPacket
 {
 	private static final String _C__AE_REQUESTRECIPEITEMMAKEINFO = "[C] AE RequestRecipeItemMakeInfo";
-	// private static Logger _log = LoggerFactory.getLogger(RequestSellItem.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestSellItem.class.getName());
 	
 	private int _id;
 	private L2PcInstance _activeChar;

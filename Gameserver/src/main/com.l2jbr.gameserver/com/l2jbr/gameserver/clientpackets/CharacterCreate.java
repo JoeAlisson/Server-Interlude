@@ -42,6 +42,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
+import static java.util.Objects.isNull;
+
 /**
  * This class ...
  * @version $Revision: 1.9.2.3.2.8 $ $Date: 2005/03/27 15:29:30 $
@@ -86,47 +88,38 @@ public final class CharacterCreate extends L2GameClientPacket
 	}
 	
 	@Override
-	protected void runImpl()
-	{
-		if ((CharNameTable.accountCharNumber(getClient().getAccountName()) >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT) && (Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT != 0))
-		{
-			if (Config.DEBUG)
-			{
-				_log.debug("Max number of characters reached. Creation failed.");
-			}
+	protected void runImpl() {
+		if ((CharNameTable.accountCharNumber(getClient().getAccountName()) >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT) && (Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT != 0)) {
+
+			_log.debug("Max number of characters reached. Creation failed.");
+
 			CharCreateFail ccf = new CharCreateFail(CharCreateFail.REASON_TOO_MANY_CHARACTERS);
 			sendPacket(ccf);
 			return;
 		}
-		else if (CharNameTable.doesCharNameExist(_name))
-		{
-			if (Config.DEBUG)
-			{
-				_log.debug("charname: " + _name + " already exists. creation failed.");
-			}
+
+		if (CharNameTable.doesCharNameExist(_name)) {
+
+            _log.debug("charname: {} already exists. creation failed.",  _name);
+
 			CharCreateFail ccf = new CharCreateFail(CharCreateFail.REASON_NAME_ALREADY_EXISTS);
 			sendPacket(ccf);
 			return;
 		}
-		else if ((_name.length() < 3) || (_name.length() > 16) || !Util.isAlphaNumeric(_name) || !isValidName(_name))
-		{
-			if (Config.DEBUG)
-			{
-				_log.debug("charname: " + _name + " is invalid. creation failed.");
-			}
+
+		if ((_name.length() < 3) || (_name.length() > 16) || !Util.isAlphaNumeric(_name) || !isValidName(_name)) {
+		    _log.debug("charname: {} is invalid. creation failed.",  _name );
 			CharCreateFail ccf = new CharCreateFail(CharCreateFail.REASON_16_ENG_CHARS);
 			sendPacket(ccf);
 			return;
 		}
 		
-		if (Config.DEBUG)
-		{
-			_log.debug("charname: " + _name + " classId: " + _classId);
-		}
+
+		_log.debug("charname: {}  classId: {}", _name , _classId);
+
 		
 		PlayerTemplate template = CharTemplateTable.getInstance().getTemplate(_classId);
-		if ((template == null) || (template.getClassLevel() > 0))
-		{
+		if ((isNull(template)) || (template.getClassLevel() > 0)) {
 			CharCreateFail ccf = new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED);
 			sendPacket(ccf);
 			return;
@@ -235,7 +228,7 @@ public final class CharacterCreate extends L2GameClientPacket
 		
 		// send char list
 		
-		CharSelectInfo cl = new CharSelectInfo(client.getAccountName(), client.getSessionId().playOkID1);
+		CharSelectInfo cl = new CharSelectInfo(client.getAccountName(), client.getSessionId().sessionId);
 		client.sendPacket(cl);
 		client.setCharSelection(cl.getCharInfo());
 		if (Config.DEBUG)

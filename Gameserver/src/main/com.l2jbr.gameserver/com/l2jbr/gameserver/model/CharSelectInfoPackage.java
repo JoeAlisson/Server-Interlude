@@ -48,8 +48,15 @@ public class CharSelectInfoPackage
 	private final int[][] _paperdoll;
 	private int _karma = 0;
 	private int _augmentationId = 0;
-	
-	/**
+	private int x;
+	private int y;
+	private int z;
+	private int pk;
+    private int pvp;
+    private int accessLevel;
+    private int nobles;
+
+    /**
 	 * @param objectId
 	 * @param name
 	 */
@@ -195,10 +202,13 @@ public class CharSelectInfoPackage
 		return _paperdoll[slot][0];
 	}
 	
-	public int getPaperdollItemId(int slot)
-	{
+	public int getPaperdollItemId(int slot) {
 		return _paperdoll[slot][1];
 	}
+
+    public int getPaperdollEnchantEffect(int slot) {
+        return _paperdoll[slot][2];
+    }
 	
 	public int getLevel()
 	{
@@ -298,4 +308,60 @@ public class CharSelectInfoPackage
 	{
 		return _augmentationId;
 	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setZ(int z) {
+		this.z = z;
+	}
+
+	public int getZ() {
+		return z;
+	}
+
+	public int getPk() {
+		return pk;
+	}
+
+	public void setPk(int pkkills) {
+		this.pk = pkkills;
+	}
+
+    public void setPvp(int pvpkills) {
+        this.pvp = pvpkills;
+    }
+
+    public int getPvP() {
+        return pvp;
+    }
+
+    public int getAccessLevel() {
+        return accessLevel;
+    }
+
+    public void setAccessLevel(int accesslevel) {
+        this.accessLevel = accesslevel;
+    }
+
+    public int getNobles() {
+        return nobles;
+    }
+
+    public void setNobles(int nobles) {
+	    this.nobles = nobles;
+    }
 }

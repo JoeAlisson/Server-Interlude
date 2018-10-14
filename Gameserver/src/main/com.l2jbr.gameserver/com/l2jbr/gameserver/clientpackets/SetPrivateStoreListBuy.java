@@ -35,7 +35,7 @@ public final class SetPrivateStoreListBuy extends L2GameClientPacket
 {
 	private static final String _C__91_SETPRIVATESTORELISTBUY = "[C] 91 SetPrivateStoreListBuy";
 	
-	// private static Logger _log = LoggerFactory.getLogger(SetPrivateStoreListBuy.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(SetPrivateStoreListBuy.class.getName());
 	
 	private int _count;
 	private int[] _items; // count * 3

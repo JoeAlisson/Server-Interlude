@@ -168,7 +168,7 @@ public final class RequestRestartPoint extends L2GameClientPacket
 			}
 			catch (Throwable e)
 			{
-				// _log.error( "", e);
+				// logger.error( "", e);
 			}
 		}
 	}

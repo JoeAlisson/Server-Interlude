@@ -29,7 +29,7 @@ public final class RequestRecipeShopManageQuit extends L2GameClientPacket
 {
 	private static final String _C__B3_RequestRecipeShopManageQuit = "[C] b2 RequestRecipeShopManageQuit";
 	
-	// private static Logger _log = LoggerFactory.getLogger(RequestRecipeShopManageQuit.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestRecipeShopManageQuit.class.getName());
 	
 	@Override
 	protected void readImpl()

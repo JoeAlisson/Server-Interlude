@@ -50,7 +50,7 @@ public class ConditionTargetBodyPart extends Condition
 		switch (bodypart)
 		{
 			case Inventory.PAPERDOLL_CHEST:
-				return (armorPart == BodyPart.CHEST || armorPart == BodyPart.FULL_ARMOR || armorPart == BodyPart.UNDERWEAR);
+				return (armorPart == BodyPart.CHEST || armorPart == BodyPart.FULL_ARMOR || armorPart == BodyPart.PENDANT);
 			case Inventory.PAPERDOLL_LEGS:
 				return (armorPart == BodyPart.LEGS || armorPart == BodyPart.FULL_ARMOR);
 			case Inventory.PAPERDOLL_HEAD:

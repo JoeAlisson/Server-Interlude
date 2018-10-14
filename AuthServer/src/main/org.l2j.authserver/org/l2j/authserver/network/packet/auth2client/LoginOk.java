@@ -11,7 +11,7 @@ public final class LoginOk extends L2LoginServerPacket {
 	protected void write() {
 		var sessionKey = client.getSessionKey();
 		writeByte(0x03);
-		writeInt(sessionKey.accountId);
+		writeInt(sessionKey.authAccountId);
 		writeInt(sessionKey.authKey);
 		writeBytes(new byte[8]);
 		writeInt(0x000003ea); // billing type: 1002 Free, x200 paid time, x500 flat rate pre paid, others subscription

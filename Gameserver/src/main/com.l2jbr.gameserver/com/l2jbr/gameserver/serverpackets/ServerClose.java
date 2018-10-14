@@ -32,9 +32,9 @@ public class ServerClose extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeByte(0x26);
+		writeByte(0xB0);
 	}
-	
+
 	/**
 	 * @see com.l2jbr.gameserver.serverpackets.L2GameServerPacket#getType()
 	 */

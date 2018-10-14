@@ -32,7 +32,7 @@ import com.l2jbr.gameserver.serverpackets.ActionFailed;
  */
 public final class RequestPetGetItem extends L2GameClientPacket
 {
-	// private static Logger _log = LoggerFactory.getLogger(RequestPetGetItem.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestPetGetItem.class.getName());
 	private static final String _C__8f_REQUESTPETGETITEM = "[C] 8F RequestPetGetItem";
 	
 	private int _objectId;

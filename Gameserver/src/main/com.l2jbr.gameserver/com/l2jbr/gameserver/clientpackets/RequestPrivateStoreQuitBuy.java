@@ -29,7 +29,7 @@ public class RequestPrivateStoreQuitBuy extends L2GameClientPacket
 {
 	private static final String _C__93_REQUESTPRIVATESTOREQUITBUY = "[C] 93 RequestPrivateStoreQuitBuy";
 	
-	// private static Logger _log = LoggerFactory.getLogger(RequestPrivateStoreQuitBuy.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestPrivateStoreQuitBuy.class.getName());
 	
 	@Override
 	protected void readImpl()

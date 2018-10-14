@@ -252,11 +252,11 @@ public abstract class ItemTemplate extends Entity<Integer> {
     }
 
     public boolean isForWolf() {
-        return type2 == ItemTypeGroup.TYPE2_PET_WOLF;
+        return type2 == ItemTypeGroup.WEAR;
     }
 
     public boolean isForHatchling() {
-        return type2 == ItemTypeGroup.TYPE2_PET_HATCHLING;
+        return type2 == ItemTypeGroup.BRACELET;
     }
 
     public boolean isForStrider() {

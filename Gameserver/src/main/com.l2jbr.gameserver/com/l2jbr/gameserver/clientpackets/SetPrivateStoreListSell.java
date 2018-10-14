@@ -34,7 +34,7 @@ import com.l2jbr.gameserver.serverpackets.SystemMessage;
 public class SetPrivateStoreListSell extends L2GameClientPacket
 {
 	private static final String _C__74_SETPRIVATESTORELISTSELL = "[C] 74 SetPrivateStoreListSell";
-	// private static Logger _log = LoggerFactory.getLogger(SetPrivateStoreListSell.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(SetPrivateStoreListSell.class.getName());
 	
 	private int _count;
 	private boolean _packageSale;

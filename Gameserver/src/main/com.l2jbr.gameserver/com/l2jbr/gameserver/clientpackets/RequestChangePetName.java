@@ -37,7 +37,7 @@ import com.l2jbr.gameserver.serverpackets.SystemMessage;
 public final class RequestChangePetName extends L2GameClientPacket
 {
 	private static final String REQUESTCHANGEPETNAME__C__89 = "[C] 89 RequestChangePetName";
-	// private static Logger _log = LoggerFactory.getLogger(RequestChangePetName.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestChangePetName.class.getName());
 	
 	private String _name;
 	

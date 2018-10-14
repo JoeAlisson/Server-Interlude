@@ -1,88 +1,70 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.clientpackets;
 
-import com.l2jbr.commons.Config;
 import com.l2jbr.gameserver.LoginServerThread;
 import com.l2jbr.gameserver.LoginServerThread.SessionKey;
-import com.l2jbr.gameserver.network.L2GameClient;
+import com.l2jbr.gameserver.network.SystemMessageId;
+import com.l2jbr.gameserver.serverpackets.LoginResult;
+import com.l2jbr.gameserver.serverpackets.ServerClose;
+import com.l2jbr.gameserver.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
-/**
- * This class ...
- * @version $Revision: 1.9.2.3.2.4 $ $Date: 2005/03/27 15:29:30 $
- */
-public final class AuthLogin extends L2GameClientPacket
-{
-	private static final String _C__08_AUTHLOGIN = "[C] 08 AuthLogin";
-	private static Logger _log = LoggerFactory.getLogger(AuthLogin.class.getName());
-	
-	// loginName + keys must match what the loginserver used.
-	private String _loginName;
-	/*
-	 * private final long _key1; private final long _key2; private final long _key3; private final long _key4;
-	 */
-	private int _playKey1;
-	private int _playKey2;
-	private int _loginKey1;
-	private int _loginKey2;
-	
-	@Override
-	protected void readImpl()
-	{
-		_loginName = readString().toLowerCase();
-		_playKey2 = readInt();
-		_playKey1 = readInt();
-		_loginKey1 = readInt();
-		_loginKey2 = readInt();
-	}
-	
-	@Override
-	protected void runImpl()
-	{
-		SessionKey key = new SessionKey(_loginKey1, _loginKey2, _playKey1, _playKey2);
-		if (Config.DEBUG)
-		{
-			_log.info("user:" + _loginName);
-			_log.info("key:" + key);
-		}
-		
-		L2GameClient client = getClient();
-		
-		// avoid potential exploits
-		if (client.getAccountName() == null)
-		{
-			client.setAccountName(_loginName);
-			LoginServerThread.getInstance().addGameServerLogin(_loginName, client);
-			LoginServerThread.getInstance().addWaitingClientAndSendRequest(_loginName, client, key);
-		}
-	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.clientpackets.ClientBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _C__08_AUTHLOGIN;
-	}
+public final class AuthLogin extends L2GameClientPacket {
+
+    private static final String _C__08_AUTHLOGIN = "[C] 08 AuthLogin";
+    private static Logger _log = LoggerFactory.getLogger(AuthLogin.class.getName());
+
+    // account + keys must match what the loginserver used.
+    private String account;
+
+    private int sessionId;
+    private int accountId;
+    private int authAccountId;
+    private int authKey;
+    private int localization;
+
+    @Override
+    protected void readImpl() {
+        account = readString().toLowerCase();
+        accountId = readInt();
+        sessionId = readInt();
+        authAccountId = readInt();
+        authKey = readInt();
+        localization = readInt();
+    }
+
+    @Override
+    protected void runImpl() {
+        SessionKey key = new SessionKey(authAccountId, authKey, sessionId, accountId);
+        // avoid potential exploits
+        if (isNull(client.getAccountName())) {
+            client.setAccountName(account);
+            var oldClient = LoginServerThread.getInstance().addGameServerLogin(account, client);
+            if (nonNull(oldClient)) {
+                var loggedPlayer = oldClient.getActiveChar();
+                if (nonNull(loggedPlayer)) {
+                    loggedPlayer.sendPacket(new SystemMessage(SystemMessageId.ANOTHER_PERSON_HAS_LOGGED_IN_WITH_THE_SAME_ACCOUNT));
+                    loggedPlayer.logout();
+                } else {
+                    oldClient.close(new ServerClose());
+                }
+                client.close(LoginResult.ACOUNT_ALREADY_IN_USE);
+                LoginServerThread.getInstance().removeServerLogin(account);
+            } else {
+                LoginServerThread.getInstance().addWaitingClientAndSendRequest(account, client, key);
+            }
+        }
+    }
+
+    /*
+     * (non-Javadoc)
+     * @see com.l2jbr.gameserver.clientpackets.ClientBasePacket#getType()
+     */
+    @Override
+    public String getType() {
+        return _C__08_AUTHLOGIN;
+    }
 }

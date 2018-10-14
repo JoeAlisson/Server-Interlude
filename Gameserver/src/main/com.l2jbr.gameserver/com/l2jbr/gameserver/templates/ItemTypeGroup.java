@@ -11,8 +11,8 @@ public enum ItemTypeGroup {
     TYPE2_QUEST(3),
     TYPE2_MONEY(4),
     TYPE2_OTHER (5),
-    TYPE2_PET_WOLF(6),
-    TYPE2_PET_HATCHLING(7),
+    WEAR(6),
+    BRACELET(7),
     TYPE2_PET_STRIDER(8),
     TYPE2_PET_BABY(9);
 

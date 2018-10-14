@@ -21,6 +21,7 @@ import org.l2j.mmocore.Connection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Future;
@@ -60,7 +61,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     private final ReentrantLock _activeCharLock = new ReentrantLock();
 
     private final long _connectionStartTime;
-    private final List<Integer> _charSlotMapping = new LinkedList<>();
+    private final List<Integer> _charSlotMapping = new ArrayList<>();
 
     // Task
     protected/* final */ ScheduledFuture<?> _autoSaveInDB;
@@ -326,9 +327,6 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     }
 
 
-    /**
-     * @see com.l2jbr.mmocore.MMOClient#onDisconnection()
-     */
     @Override
     protected void onDisconnection() {
         _log.info("Cliente Disconnected {}", this);

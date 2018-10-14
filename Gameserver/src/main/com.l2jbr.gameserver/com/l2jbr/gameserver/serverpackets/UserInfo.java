@@ -131,7 +131,7 @@ public class UserInfo extends L2GameServerPacket
 		writeInt(_activeChar.getInventory().getPaperdollObjectId(Inventory.PAPERDOLL_BACK));
 		writeInt(_activeChar.getInventory().getPaperdollObjectId(Inventory.PAPERDOLL_LRHAND));
 		writeInt(_activeChar.getInventory().getPaperdollObjectId(Inventory.PAPERDOLL_HAIR));
-		writeInt(_activeChar.getInventory().getPaperdollObjectId(Inventory.PAPERDOLL_FACE));
+		writeInt(_activeChar.getInventory().getPaperdollObjectId(Inventory.PAPERDOLL_DECO1));
 		
 		writeInt(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_DHAIR));
 		writeInt(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_REAR));
@@ -149,7 +149,7 @@ public class UserInfo extends L2GameServerPacket
 		writeInt(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_BACK));
 		writeInt(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
 		writeInt(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
-		writeInt(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_FACE));
+		writeInt(_activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_DECO1));
 		
 		// c6 new h's
 		writeShort(0x00);

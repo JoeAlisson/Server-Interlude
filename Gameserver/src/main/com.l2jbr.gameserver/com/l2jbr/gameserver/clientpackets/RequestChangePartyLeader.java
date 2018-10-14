@@ -29,7 +29,7 @@ public final class RequestChangePartyLeader extends L2GameClientPacket
 {
 	
 	private static final String _C__EE_REQUESTCHANGEPARTYLEADER = "[C] EE RequestChangePartyLeader";
-	// private static Logger _log = LoggerFactory.getLogger(RequestJoinParty.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestJoinParty.class.getName());
 	
 	private String _name;
 	

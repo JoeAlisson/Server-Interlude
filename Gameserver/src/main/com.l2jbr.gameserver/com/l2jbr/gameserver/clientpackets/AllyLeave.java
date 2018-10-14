@@ -29,7 +29,7 @@ public final class AllyLeave extends L2GameClientPacket
 {
 	private static final String _C__84_ALLYLEAVE = "[C] 84 AllyLeave";
 	
-	// private static Logger _log = LoggerFactory.getLogger(AllyLeave.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(AllyLeave.class.getName());
 	
 	@Override
 	protected void readImpl()

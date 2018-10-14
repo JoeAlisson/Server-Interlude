@@ -92,7 +92,7 @@ public final class Action extends L2GameClientPacket
 		if (obj == null)
 		{
 			// pressing e.g. pickup many times quickly would get you here
-			// _log.warn("Character: " + activeChar.getName() + " request action with non existent ObjectID:" + _objectId);
+			// logger.warn("Character: " + activeChar.getName() + " request action with non existent ObjectID:" + _objectId);
 			getClient().sendPacket(new ActionFailed());
 			return;
 		}

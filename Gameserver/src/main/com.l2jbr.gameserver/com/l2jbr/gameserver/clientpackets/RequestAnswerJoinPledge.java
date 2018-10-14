@@ -31,7 +31,7 @@ import com.l2jbr.gameserver.serverpackets.*;
 public final class RequestAnswerJoinPledge extends L2GameClientPacket
 {
 	private static final String _C__25_REQUESTANSWERJOINPLEDGE = "[C] 25 RequestAnswerJoinPledge";
-	// private static Logger _log = LoggerFactory.getLogger(RequestAnswerJoinPledge.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestAnswerJoinPledge.class.getName());
 	
 	private int _answer;
 	

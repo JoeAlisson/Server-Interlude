@@ -98,7 +98,7 @@ public class AuthController {
         client.setSessionId(Rnd.nextInt());
         var cripter = new AuthCrypt();
         cripter.setKey(blowfishKey);
-        client.setCrypter(cripter);
+        client.setCrypt(cripter);
 
         if(isNull(scheduledPurge) || scheduledPurge.isCancelled()) {
             scheduledPurge = ThreadPoolManager.getInstance().scheduleAtFixedRate(new PurgeThread(), LOGIN_TIMEOUT, 2 * LOGIN_TIMEOUT);
@@ -115,11 +115,7 @@ public class AuthController {
         if(isNullOrEmpty(account)) {
             return;
         }
-
-        var client = authedClients.remove(account);
-        if(nonNull(client)) {
-            removeClient(client);
-        }
+        authedClients.remove(account);
     }
 
     public void authenticate(AuthClient client, String username, String password) {
@@ -165,6 +161,7 @@ public class AuthController {
         var authedClient = authedClients.get(account.getId());
         if(nonNull(authedClient)) {
             authedClient.close(REASON_ACCOUNT_IN_USE);
+            authedClients.remove(account.getId());
             return true;
         }
 
@@ -237,9 +234,7 @@ public class AuthController {
             boolean loginOk = ((gsi.getOnlinePlayersCount() < gsi.getMaxPlayers()) && (gsi.getStatus() != ServerStatus.STATUS_GM_ONLY)) || (access >= Config.GM_MIN);
 
             if (loginOk && (client.getLastServer() != serverId)) {
-                AccountRepository accountRepository = getRepository(AccountRepository.class);
-
-                if(accountRepository.updateLastServer(client.getAccount().getId(), serverId) < 1) {
+                if(getRepository(AccountRepository.class).updateLastServer(client.getAccount().getId(), serverId) < 1) {
                     logger.warn("Could not set lastServer of account {} ", client.getAccount().getId());
                 }
             }

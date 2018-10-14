@@ -28,7 +28,7 @@ import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 public class RequestRecipeShopMessageSet extends L2GameClientPacket
 {
 	private static final String _C__B1_RequestRecipeShopMessageSet = "[C] b1 RequestRecipeShopMessageSet";
-	// private static Logger _log = LoggerFactory.getLogger(RequestRecipeShopMessageSet.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestRecipeShopMessageSet.class.getName());
 	
 	private String _name;
 	

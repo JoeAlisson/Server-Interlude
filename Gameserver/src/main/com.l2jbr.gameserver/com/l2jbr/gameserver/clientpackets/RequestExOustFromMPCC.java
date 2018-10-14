@@ -28,7 +28,7 @@ import com.l2jbr.gameserver.serverpackets.SystemMessage;
  */
 public final class RequestExOustFromMPCC extends L2GameClientPacket
 {
-	// private static Logger _log = LoggerFactory.getLogger(RequestExOustFromMPCC.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestExOustFromMPCC.class.getName());
 	private static final String _C__D0_0F_REQUESTEXOUSTFROMMPCC = "[C] D0:0F RequestExOustFromMPCC";
 	private String _name;
 	

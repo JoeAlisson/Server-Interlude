@@ -28,7 +28,7 @@ import com.l2jbr.gameserver.serverpackets.CharSelectInfo;
 public final class CharacterRestore extends L2GameClientPacket
 {
 	private static final String _C__62_CHARACTERRESTORE = "[C] 62 CharacterRestore";
-	// private static Logger _log = LoggerFactory.getLogger(CharacterRestore.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(CharacterRestore.class.getName());
 	
 	// cd
 	private int _charSlot;
@@ -50,7 +50,7 @@ public final class CharacterRestore extends L2GameClientPacket
 		{
 			
 		}
-		CharSelectInfo cl = new CharSelectInfo(getClient().getAccountName(), getClient().getSessionId().playOkID1, 0);
+		CharSelectInfo cl = new CharSelectInfo(getClient().getAccountName(), getClient().getSessionId().sessionId, 0);
 		sendPacket(cl);
 		getClient().setCharSelection(cl.getCharInfo());
 	}

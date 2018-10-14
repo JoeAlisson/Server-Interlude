@@ -28,7 +28,7 @@ import com.l2jbr.gameserver.model.L2Character;
 public final class RequestTargetCanceld extends L2GameClientPacket
 {
 	private static final String _C__37_REQUESTTARGETCANCELD = "[C] 37 RequestTargetCanceld";
-	// private static Logger _log = LoggerFactory.getLogger(RequestTargetCanceld.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestTargetCanceld.class.getName());
 	
 	private int _unselect;
 	

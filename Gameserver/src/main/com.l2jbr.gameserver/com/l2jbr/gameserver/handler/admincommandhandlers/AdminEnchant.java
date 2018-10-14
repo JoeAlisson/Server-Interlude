@@ -128,7 +128,7 @@ public class AdminEnchant implements IAdminCommandHandler
 			}
 			else if (command.startsWith("admin_setun"))
 			{
-				armorType = Inventory.PAPERDOLL_UNDER;
+				armorType = Inventory.PAPERDOLL_PENDANT;
 			}
 			else if (command.startsWith("admin_setba"))
 			{

@@ -31,7 +31,7 @@ public final class RequestRecipeShopManagePrev extends L2GameClientPacket
 {
 	private static final String _C__B7_RequestRecipeShopPrev = "[C] b7 RequestRecipeShopPrev";
 	
-	// private static Logger _log = LoggerFactory.getLogger(RequestPrivateStoreManage.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestPrivateStoreManage.class.getName());
 	
 	@Override
 	protected void readImpl()

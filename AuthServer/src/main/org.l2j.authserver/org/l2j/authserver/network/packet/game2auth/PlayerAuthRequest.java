@@ -14,11 +14,11 @@ public class PlayerAuthRequest extends ClientBasePacket {
 	public PlayerAuthRequest(byte[] data) {
 		super(data);
 		_account = readString();
-		int playKey1 = readInt();
-		int playKey2 = readInt();
-		int loginKey1 = readInt();
-		int loginKey2 = readInt();
-		_sessionKey = new SessionKey(loginKey1, loginKey2, playKey1, playKey2);
+		int sessionId = readInt();
+		int serverAccountId = readInt();
+		int authAccountId = readInt();
+		int authKey = readInt();
+		_sessionKey = new SessionKey(authAccountId, authKey, sessionId, serverAccountId);
 	}
 
 	public String getAccount()

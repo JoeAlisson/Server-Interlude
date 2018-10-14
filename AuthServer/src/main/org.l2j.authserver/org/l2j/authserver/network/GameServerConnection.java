@@ -26,6 +26,7 @@ import java.util.*;
 import static com.l2jbr.commons.util.Util.printData;
 import static java.lang.Byte.toUnsignedInt;
 import static java.util.Objects.nonNull;
+import static org.l2j.authserver.network.packet.auth2game.LoginServerFail.NOT_AUTHED;
 import static org.l2j.authserver.settings.AuthServerSettings.acceptNewGameServerEnabled;
 
 /**
@@ -153,7 +154,7 @@ public class GameServerConnection extends Thread {
                 break;
             default:
                 logger.warn("Unknown Opcode ({}) from GameServer, closing socket.", Integer.toHexString(packetType).toUpperCase());
-                forceClose(LoginServerFail.NOT_AUTHED);
+                forceClose(NOT_AUTHED);
         }
     }
 
@@ -204,7 +205,7 @@ public class GameServerConnection extends Thread {
                 logger.debug("Account {} logged in GameServer: [{}] {}",  account, getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
             }
         } else {
-            forceClose(LoginServerFail.NOT_AUTHED);
+            forceClose(NOT_AUTHED);
         }
     }
 
@@ -214,7 +215,7 @@ public class GameServerConnection extends Thread {
             _gsi.removeAccount(plo.getAccount());
             logger.debug("Player {} logged out from gameserver [{}] {}", plo.getAccount(), getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
         } else {
-            forceClose(LoginServerFail.NOT_AUTHED);
+            forceClose(NOT_AUTHED);
         }
     }
 
@@ -224,7 +225,7 @@ public class GameServerConnection extends Thread {
             AuthController.getInstance().setAccountAccessLevel(cal.getAccount(), (short) cal.getLevel());
             logger.info("Changed {} access level to {}", cal.getAccount(), cal.getLevel());
         } else {
-            forceClose(LoginServerFail.NOT_AUTHED);
+            forceClose(NOT_AUTHED);
         }
     }
 
@@ -238,19 +239,18 @@ public class GameServerConnection extends Thread {
 
             PlayerAuthResponse authResponse;
             if (Objects.equals(par.getKey(), key)) {
-                logger.debug("auth request: OK");
                 AuthController.getInstance().removeAuthedClient(par.getAccount());
-                authResponse = new PlayerAuthResponse(par.getAccount(), true);
+                authResponse = new PlayerAuthResponse(par.getAccount(), 1);
             } else {
                 logger.debug("auth request: NO");
                 logger.debug("session key from self: {}", key);
                 logger.debug("session key sent: {}", par.getKey());
 
-                authResponse = new PlayerAuthResponse(par.getAccount(), false);
+                authResponse = new PlayerAuthResponse(par.getAccount(), 0);
             }
             sendPacket(authResponse);
         } else {
-            forceClose(LoginServerFail.NOT_AUTHED);
+            forceClose(NOT_AUTHED);
         }
     }
 
@@ -260,7 +260,7 @@ public class GameServerConnection extends Thread {
 
             new ServerStatus(data, getServerId());
         } else {
-            forceClose(LoginServerFail.NOT_AUTHED);
+            forceClose(NOT_AUTHED);
         }
     }
 

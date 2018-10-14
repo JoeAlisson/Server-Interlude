@@ -51,11 +51,8 @@ public final class NewCharacter extends L2GameClientPacket
 		}
 		
 		CharTemplates ct = new CharTemplates();
-		
-		PlayerTemplate template = CharTemplateTable.getInstance().getTemplate(0);
-		ct.addChar(template);
-		
-		template = CharTemplateTable.getInstance().getTemplate(PlayerClass.FIGHTER); // HUMAN FIGHTER
+
+		var template = CharTemplateTable.getInstance().getTemplate(PlayerClass.FIGHTER); // HUMAN FIGHTER
 		ct.addChar(template);
 		
 		template = CharTemplateTable.getInstance().getTemplate(PlayerClass.MAGE); // HUMAN MAGE

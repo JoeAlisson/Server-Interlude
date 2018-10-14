@@ -29,7 +29,7 @@ import com.l2jbr.gameserver.serverpackets.PrivateStoreMsgBuy;
 public final class SetPrivateStoreMsgBuy extends L2GameClientPacket
 {
 	private static final String _C__94_SETPRIVATESTOREMSGBUY = "[C] 94 SetPrivateStoreMsgBuy";
-	// private static Logger _log = LoggerFactory.getLogger(SetPrivateStoreMsgBuy.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(SetPrivateStoreMsgBuy.class.getName());
 	
 	private String _storeMsg;
 	

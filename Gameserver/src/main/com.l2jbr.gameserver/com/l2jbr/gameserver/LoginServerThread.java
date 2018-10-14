@@ -28,9 +28,8 @@ import com.l2jbr.gameserver.model.L2World;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.model.entity.database.repository.CharacterRepository;
 import com.l2jbr.gameserver.network.L2GameClient;
-import com.l2jbr.gameserver.network.L2GameClient.GameClientState;
-import com.l2jbr.gameserver.serverpackets.AuthLoginFail;
 import com.l2jbr.gameserver.serverpackets.CharSelectInfo;
+import com.l2jbr.gameserver.serverpackets.LoginResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,10 +49,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Collectors;
 
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
+import static com.l2jbr.gameserver.network.L2GameClient.GameClientState.AUTHED;
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
 
 public class LoginServerThread extends Thread {
@@ -88,6 +88,7 @@ public class LoginServerThread extends Thread {
     private int _serverID;
     private final boolean _reserveHost;
     private int _maxPlayer;
+    // TODO use Map
     private final List<WaitingClient> _waitingClients;
     private final Map<String, L2GameClient> _accountsInGameServer;
     private int _status;
@@ -276,22 +277,23 @@ public class LoginServerThread extends Thread {
                                     }
                                 }
                             }
-                            if (wcToRemove != null) {
+                            if (nonNull(wcToRemove)) {
                                 if (par.isAuthed()) {
-                                    if (Config.DEBUG) {
-                                        _log.info("Login accepted player " + wcToRemove.account + " waited(" + (GameTimeController.getGameTicks() - wcToRemove.timestamp) + "ms)");
-                                    }
+                                    _log.debug("Login accepted player {} waited({} ms)", wcToRemove.account, (GameTimeController.getGameTicks() - wcToRemove.timestamp));
+
+                                    wcToRemove.gameClient.setState(AUTHED);
+                                    wcToRemove.gameClient.sendPacket(LoginResult.SUCCESS);
                                     PlayerInGame pig = new PlayerInGame(par.getAccount());
                                     sendPacket(pig);
-                                    wcToRemove.gameClient.setState(GameClientState.AUTHED);
+
                                     wcToRemove.gameClient.setSessionId(wcToRemove.session);
-                                    CharSelectInfo cl = new CharSelectInfo(wcToRemove.account, wcToRemove.gameClient.getSessionId().playOkID1);
+                                    CharSelectInfo cl = new CharSelectInfo(wcToRemove.account, wcToRemove.gameClient.getSessionId().sessionId);
                                     wcToRemove.gameClient.sendPacket(cl);
                                     wcToRemove.gameClient.setCharSelection(cl.getCharInfo());
                                 } else {
-                                    _log.warn("session key is not correct. closing connection");
-                                    wcToRemove.gameClient.sendPacket(new AuthLoginFail(1));
-                                    wcToRemove.gameClient.closeNow();
+                                    _log.warn("Auth server disconnected. closing connection");
+                                    wcToRemove.gameClient.close(LoginResult.ACCESS_FAILED_TRY_LATER);
+                                    removeServerLogin(account);
                                 }
                                 _waitingClients.remove(wcToRemove);
                             }
@@ -340,9 +342,6 @@ public class LoginServerThread extends Thread {
     }
 
     public void addWaitingClientAndSendRequest(String acc, L2GameClient client, SessionKey key) {
-        if (Config.DEBUG) {
-            System.out.println(key);
-        }
         WaitingClient wc = new WaitingClient(acc, client, key);
         synchronized (_waitingClients) {
             _waitingClients.add(wc);
@@ -373,6 +372,7 @@ public class LoginServerThread extends Thread {
     }
 
     public void sendLogout(String account) {
+        removeServerLogin(account);
         PlayerLogout pl = new PlayerLogout(account);
         try {
             sendPacket(pl);
@@ -384,8 +384,12 @@ public class LoginServerThread extends Thread {
         }
     }
 
-    public void addGameServerLogin(String account, L2GameClient client) {
-        _accountsInGameServer.put(account, client);
+    public L2GameClient addGameServerLogin(String account, L2GameClient client) {
+        return _accountsInGameServer.putIfAbsent(account, client);
+    }
+
+    public void removeServerLogin(String account) {
+        _accountsInGameServer.remove(account);
     }
 
     public void sendAccessLevel(String account, int level) {
@@ -532,22 +536,24 @@ public class LoginServerThread extends Thread {
         }
     }
 
-    public static class SessionKey {
-        public int playOkID1;
-        public int playOkID2;
-        public int loginOkID1;
-        public int loginOkID2;
 
-        public SessionKey(int loginOK1, int loginOK2, int playOK1, int playOK2) {
-            playOkID1 = playOK1;
-            playOkID2 = playOK2;
-            loginOkID1 = loginOK1;
-            loginOkID2 = loginOK2;
+
+    public static class SessionKey {
+        public int sessionId;
+        public int accountId;
+        public int authAccountId;
+        public int authKey;
+
+        public SessionKey(int authAccountId, int authKey, int sessionId, int accountId) {
+            this.sessionId = sessionId;
+            this.accountId = accountId;
+            this.authAccountId = authAccountId;
+            this.authKey = authKey;
         }
 
         @Override
         public String toString() {
-            return "PlayOk: " + playOkID1 + " " + playOkID2 + " LoginOk:" + loginOkID1 + " " + loginOkID2;
+            return "server Keys: " + sessionId + " " + accountId + " auth Keys:" + authAccountId + " " + authKey;
         }
     }
 

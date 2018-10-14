@@ -21,6 +21,8 @@ package org.l2j.authserver.network;
 import org.l2j.authserver.network.packet.auth2client.LoginOk;
 import org.l2j.authserver.network.packet.auth2client.PlayOk;
 
+import java.util.Objects;
+
 /**
  * <p>
  * This class is used to represent session keys used by the client to authenticate in the gameserver
@@ -31,40 +33,42 @@ import org.l2j.authserver.network.packet.auth2client.PlayOk;
  * @author -Wooden-
  */
 public class SessionKey  {
-	public int playOkID1;
-	public int playOkID2;
-	public int accountId;
+	public int gameServerSessionId;
+	public int gameserverAccountId;
+	public int authAccountId;
 	public int authKey;
 	
-	public SessionKey(int accountId, int authKey, int playOK1, int playOK2)
+	public SessionKey(int authAccountId, int authKey, int gameServerSession, int gameserverAccountId)
 	{
-		playOkID1 = playOK1;
-		playOkID2 = playOK2;
-		this.accountId = accountId;
+		gameServerSessionId = gameServerSession;
+		this.gameserverAccountId = gameserverAccountId;
+		this.authAccountId = authAccountId;
 		this.authKey = authKey;
 	}
 	
 	@Override
 	public String toString()
 	{
-		return "PlayOk: " + playOkID1 + " " + playOkID2 + " LoginOk:" + accountId + " " + authKey;
+		return "PlayOk: " + gameServerSessionId + " " + gameserverAccountId + " LoginOk:" + authAccountId + " " + authKey;
 	}
 	
 	public boolean checkLoginPair(int accountId, int authKey) {
-		return this.accountId == accountId && this.authKey == authKey;
+		return this.authAccountId == accountId && this.authKey == authKey;
 	}
-	
-	/**
-	 * <p>
-	 * Returns true if keys are equal.
-	 * </p>
-	 * <p>
-	 * Only checks the PlayOk part of the session key if server doesnt show the licence when player logs in.
-	 * </p>
-	 * @param key
-	 * @return
-	 */
-	public boolean equals(SessionKey key) {
-		return ((playOkID1 == key.playOkID1) && (accountId == key.accountId) && (playOkID2 == key.playOkID2) && (authKey == key.authKey));
-	}
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        SessionKey that = (SessionKey) o;
+        return gameServerSessionId == that.gameServerSessionId &&
+                gameserverAccountId == that.gameserverAccountId &&
+                authAccountId == that.authAccountId &&
+                authKey == that.authKey;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(gameServerSessionId, gameserverAccountId, authAccountId, authKey);
+    }
 }

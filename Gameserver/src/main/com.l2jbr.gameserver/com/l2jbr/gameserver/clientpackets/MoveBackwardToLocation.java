@@ -36,7 +36,7 @@ import java.nio.BufferUnderflowException;
  */
 public class MoveBackwardToLocation extends L2GameClientPacket
 {
-	// private static Logger _log = LoggerFactory.getLogger(MoveBackwardToLocation.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(MoveBackwardToLocation.class.getName());
 	// cdddddd
 	private int _targetX;
 	private int _targetY;

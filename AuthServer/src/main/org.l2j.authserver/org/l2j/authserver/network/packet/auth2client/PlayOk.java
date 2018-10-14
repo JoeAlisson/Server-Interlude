@@ -1,43 +1,25 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.authserver.network.packet.auth2client;
 
-import org.l2j.authserver.network.SessionKey;
 import org.l2j.authserver.network.packet.L2LoginServerPacket;
 
 public final class PlayOk extends L2LoginServerPacket {
-	private final int _playOk1, _playOk2;
-	
-	public PlayOk(SessionKey sessionKey) {
-		_playOk1 = sessionKey.playOkID1;
-		_playOk2 = sessionKey.playOkID2;
-	}
-	
-	@Override
-	protected void write() {
-		writeByte(0x07);
-		writeInt(_playOk1);
-		writeInt(_playOk2);
-	}
+    private final int serverId;
 
-	@Override
-	protected int packetSize() {
-		return super.packetSize() + 9;
-	}
+    public PlayOk(int serverId) {
+        this.serverId = serverId;
+    }
+
+    @Override
+    protected void write() {
+        var sessionKey = client.getSessionKey();
+        writeByte(0x07);
+        writeInt(sessionKey.gameServerSessionId);
+        writeInt(sessionKey.gameserverAccountId);
+        writeByte(serverId);
+    }
+
+    @Override
+    protected int packetSize() {
+        return super.packetSize() + 10;
+    }
 }

@@ -29,7 +29,7 @@ public final class RequestQuestList extends L2GameClientPacket
 {
 	private static final String _C__63_REQUESTQUESTLIST = "[C] 63 RequestQuestList";
 	
-	// private static Logger _log = LoggerFactory.getLogger(RequestQuestList.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestQuestList.class.getName());
 	
 	@Override
 	protected void readImpl()

@@ -74,8 +74,8 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 				
 				case TYPE2_SHIELD_ARMOR:
 				case TYPE2_ACCESSORY:
-				case TYPE2_PET_WOLF:
-				case TYPE2_PET_HATCHLING:
+				case WEAR:
+				case BRACELET:
 				case TYPE2_PET_STRIDER:
 				case TYPE2_PET_BABY:
 				{
@@ -109,8 +109,8 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 				
 				case TYPE2_SHIELD_ARMOR:
 				case TYPE2_ACCESSORY:
-				case TYPE2_PET_WOLF:
-				case TYPE2_PET_HATCHLING:
+				case WEAR:
+				case BRACELET:
 				case TYPE2_PET_STRIDER:
 				case TYPE2_PET_BABY:
 				{

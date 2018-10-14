@@ -32,7 +32,7 @@ public final class RequestRecipeShopManageList extends L2GameClientPacket
 {
 	private static final String _C__B0_RequestRecipeShopManageList = "[C] b0 RequestRecipeShopManageList";
 	
-	// private static Logger _log = LoggerFactory.getLogger(RequestPrivateStoreManage.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(RequestPrivateStoreManage.class.getName());
 	
 	@Override
 	protected void readImpl()
