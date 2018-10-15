@@ -52,6 +52,7 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                         break;
                     default:
                         printDebug(opcode, data, state, client);
+                        break;
                 }
                 break;
             case AUTHED:
@@ -121,7 +122,6 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                         }
                         break;
-
                     default:
                         printDebug(opcode, data, state, client);
                         break;

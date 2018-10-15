@@ -31,7 +31,6 @@ import com.l2jbr.gameserver.model.entity.database.SkillInfo;
 import com.l2jbr.gameserver.network.L2GameClient;
 import com.l2jbr.gameserver.serverpackets.CharCreateFail;
 import com.l2jbr.gameserver.serverpackets.CharCreateOk;
-import com.l2jbr.gameserver.serverpackets.CharSelectInfo;
 import com.l2jbr.gameserver.templates.ItemTypeGroup;
 import com.l2jbr.gameserver.util.Util;
 import org.slf4j.Logger;
@@ -225,16 +224,6 @@ public final class CharacterCreate extends L2GameClientPacket
 		
 		L2GameClient.saveCharToDisk(newChar);
 		newChar.deleteMe(); // release the world of this character and it's inventory
-		
-		// send char list
-		
-		CharSelectInfo cl = new CharSelectInfo(client.getAccountName(), client.getSessionId().sessionId);
-		client.sendPacket(cl);
-		client.setCharSelection(cl.getCharInfo());
-		if (Config.DEBUG)
-		{
-			_log.debug("Character init end");
-		}
 	}
 	
 	/*

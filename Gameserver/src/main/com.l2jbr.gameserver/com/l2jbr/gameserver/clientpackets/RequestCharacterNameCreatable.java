@@ -39,7 +39,7 @@ public class RequestCharacterNameCreatable extends L2GameClientPacket {
 			sendPacket(ExIsCharNameCreatable.NAME_ALREADY_EXISTS);
 			return;
 		}
-		sendPacket(ExIsCharNameCreatable.SUCCESS);
+		sendPacket(new ExIsCharNameCreatable(-1));
 	}
 
 	@Override

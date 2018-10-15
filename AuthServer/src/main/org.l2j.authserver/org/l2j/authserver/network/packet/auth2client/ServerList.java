@@ -88,6 +88,6 @@ public final class ServerList extends L2LoginServerPacket {
     @Override
     protected int packetSize() {
         var serverSize = GameServerManager.getInstance().getRegisteredGameServers().size();
-        return super.packetSize() + 5 + serverSize * 22;
+        return super.packetSize() + 5 + serverSize * 24;
     }
 }
