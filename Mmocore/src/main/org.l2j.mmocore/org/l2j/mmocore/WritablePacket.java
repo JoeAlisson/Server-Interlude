@@ -18,7 +18,7 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
             data[dataIndex++] = value;
         } catch (IndexOutOfBoundsException e) {
 	        byte[] tmp =  new byte[(int) (data.length * 1.2)];
-	        arraycopy(data, 0, tmp, 0, dataIndex);
+	        arraycopy(data, 0, tmp, 0, data.length);
 	        data = tmp;
 	        data[dataIndex] = value;
         }

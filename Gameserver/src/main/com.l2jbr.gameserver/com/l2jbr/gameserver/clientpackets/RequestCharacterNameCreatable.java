@@ -6,6 +6,7 @@ import com.l2jbr.gameserver.serverpackets.ExIsCharNameCreatable;
 
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
 import static com.l2jbr.commons.util.Util.isNullOrEmpty;
+import static com.l2jbr.gameserver.serverpackets.ExIsCharNameCreatable.*;
 
 public class RequestCharacterNameCreatable extends L2GameClientPacket {
 
@@ -21,25 +22,25 @@ public class RequestCharacterNameCreatable extends L2GameClientPacket {
 	protected void runImpl() {
 	    var repository = getRepository(CharacterRepository.class);
 		if(repository.countByAccount(client.getAccountName()) > Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT) {
-		    sendPacket(ExIsCharNameCreatable.TOO_MANY_CHARACTERS);
+		    sendPacket(new ExIsCharNameCreatable(TOO_MANY_CHARACTERS));
 		    return;
         }
 
 		if(isNullOrEmpty(_charname)) {
-			sendPacket(ExIsCharNameCreatable.ENTER_CHAR_NAME__MAX_16_CHARS);
+			sendPacket(new ExIsCharNameCreatable(ENTER_CHAR_NAME__MAX_16_CHARS));
 			return;
 		}
 
 		if(!_charname.matches(Config.CNAME_TEMPLATE)) {
-			sendPacket(ExIsCharNameCreatable.WRONG_NAME);
+			sendPacket(new ExIsCharNameCreatable(WRONG_NAME));
 			return;
 		}
 
 		if(repository.existsByName(_charname)) {
-			sendPacket(ExIsCharNameCreatable.NAME_ALREADY_EXISTS);
+			sendPacket(new ExIsCharNameCreatable(NAME_ALREADY_EXISTS));
 			return;
 		}
-		sendPacket(new ExIsCharNameCreatable(-1));
+		sendPacket(new ExIsCharNameCreatable(SUCCESS));
 	}
 
 	@Override

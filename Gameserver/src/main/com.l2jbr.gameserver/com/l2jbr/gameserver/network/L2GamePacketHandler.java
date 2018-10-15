@@ -89,11 +89,11 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                             /*case 0x3A:
                                 //msg = new RequestAllFortressInfo();
-                                break;
+                                break;*/
                             case 0xA6:
                                 msg = new RequestEx2ndPasswordCheck();
                                 break;
-                            case 0xA7:
+                            /*case 0xA7:
                                 msg = new RequestEx2ndPasswordVerify();
                                 break;
                             case 0xA8:
