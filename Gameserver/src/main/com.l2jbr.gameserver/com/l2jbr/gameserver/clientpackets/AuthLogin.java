@@ -9,6 +9,8 @@ import com.l2jbr.gameserver.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.l2jbr.gameserver.serverpackets.LoginResult.ACOUNT_ALREADY_IN_USE;
+import static com.l2jbr.gameserver.serverpackets.LoginResult.FAILED;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
@@ -51,7 +53,7 @@ public final class AuthLogin extends L2GameClientPacket {
                 } else {
                     oldClient.close(new ServerClose());
                 }
-                client.close(LoginResult.ACOUNT_ALREADY_IN_USE);
+                client.close(new LoginResult(FAILED, ACOUNT_ALREADY_IN_USE));
                 LoginServerThread.getInstance().removeServerLogin(account);
             } else {
                 LoginServerThread.getInstance().addWaitingClientAndSendRequest(account, client, key);

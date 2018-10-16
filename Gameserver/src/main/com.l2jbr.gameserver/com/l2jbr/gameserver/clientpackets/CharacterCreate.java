@@ -132,10 +132,9 @@ public final class CharacterCreate extends L2GameClientPacket
 		// newChar.setMaxLoad(template.baseLoad);
 		
 		// send acknowledgement
+		initNewChar(getClient(), newChar);
 		CharCreateOk cco = new CharCreateOk();
 		sendPacket(cco);
-		
-		initNewChar(getClient(), newChar);
 	}
 	
 	private boolean isValidName(String text)

@@ -52,6 +52,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
 import static com.l2jbr.gameserver.network.L2GameClient.GameClientState.AUTHED;
+import static com.l2jbr.gameserver.serverpackets.LoginResult.ACCESS_FAILED_TRY_LATER;
+import static com.l2jbr.gameserver.serverpackets.LoginResult.FAILED;
+import static com.l2jbr.gameserver.serverpackets.LoginResult.SUCCESS;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
@@ -282,7 +285,7 @@ public class LoginServerThread extends Thread {
                                     _log.debug("Login accepted player {} waited({} ms)", wcToRemove.account, (GameTimeController.getGameTicks() - wcToRemove.timestamp));
 
                                     wcToRemove.gameClient.setState(AUTHED);
-                                    wcToRemove.gameClient.sendPacket(LoginResult.SUCCESS);
+                                    wcToRemove.gameClient.sendPacket(new LoginResult(SUCCESS, 0));
                                     PlayerInGame pig = new PlayerInGame(par.getAccount());
                                     sendPacket(pig);
 
@@ -292,7 +295,7 @@ public class LoginServerThread extends Thread {
                                     wcToRemove.gameClient.setCharSelection(cl.getCharInfo());
                                 } else {
                                     _log.warn("Auth server disconnected. closing connection");
-                                    wcToRemove.gameClient.close(LoginResult.ACCESS_FAILED_TRY_LATER);
+                                    wcToRemove.gameClient.close(new LoginResult(FAILED, ACCESS_FAILED_TRY_LATER));
                                     removeServerLogin(account);
                                 }
                                 _waitingClients.remove(wcToRemove);
