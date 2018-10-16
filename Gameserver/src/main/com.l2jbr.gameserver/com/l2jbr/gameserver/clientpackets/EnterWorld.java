@@ -19,23 +19,16 @@
 package com.l2jbr.gameserver.clientpackets;
 
 import com.l2jbr.commons.Base64;
-import com.l2jbr.commons.Config;
 import com.l2jbr.commons.database.DatabaseAccess;
-import com.l2jbr.gameserver.*;
-import com.l2jbr.gameserver.cache.HtmCache;
-import com.l2jbr.gameserver.communitybbs.Manager.RegionBBSManager;
-import com.l2jbr.gameserver.datatables.MapRegionTable;
-import com.l2jbr.gameserver.handler.AdminCommandHandler;
-import com.l2jbr.gameserver.instancemanager.*;
-import com.l2jbr.gameserver.model.*;
+import com.l2jbr.gameserver.TaskPriority;
+import com.l2jbr.gameserver.instancemanager.CoupleManager;
+import com.l2jbr.gameserver.model.L2Clan;
+import com.l2jbr.gameserver.model.L2World;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.model.entity.database.Wedding;
 import com.l2jbr.gameserver.model.entity.database.repository.CharacterFriendRepository;
-import com.l2jbr.gameserver.model.entity.*;
-import com.l2jbr.gameserver.model.quest.Quest;
 import com.l2jbr.gameserver.network.SystemMessageId;
 import com.l2jbr.gameserver.serverpackets.*;
-import com.l2jbr.gameserver.util.FloodProtector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -80,7 +73,19 @@ public class EnterWorld extends L2GameClientPacket
 			getClient().closeNow();
 			return;
 		}
-		
+
+        sendPacket(new ExLightingCandleEvent(ExLightingCandleEvent.DISABLED));
+        sendPacket(new ExEnterWorldPacket());
+        sendPacket(new ExConnectedTimeAndGettableReward());
+        sendPacket(new ExOneDayReceiveRewardList(activeChar));
+        sendPacket(new ExConnectedTimeAndGettableReward());
+        sendPacket(new ExPeriodicHenna(activeChar));
+        sendPacket(new HennaInfoPacket(activeChar));
+        sendPacket(new EtcStatusUpdate(activeChar));
+        sendPacket(new UIPacket(activeChar));
+        sendPacket(new SystemMessage(SystemMessageId.WELCOME_TO_THE_WORLD_OF_LINEAGE_II));
+
+        /**
 		// Register in flood protector
 		FloodProtector.getInstance().registerNewPlayer(activeChar.getObjectId());
 		
@@ -344,7 +349,7 @@ public class EnterWorld extends L2GameClientPacket
 		 * if(Config.GAMEGUARD_ENFORCE) - disabled by KenM will be reenabled later activeChar.sendPacket(new GameGuardQuery());
 		 */
 		
-		TvTEvent.onLogin(activeChar);
+		/*TvTEvent.onLogin(activeChar);*/
 
 	}
 	

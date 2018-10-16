@@ -5,6 +5,9 @@ package com.l2jbr.gameserver.network;
  */
 public enum SystemMessageId {
 
+	// Message: Welcome to the World of Lineage II.
+	WELCOME_TO_THE_WORLD_OF_LINEAGE_II(34),
+
 	// Message: Another person has logged in with the same account.
 	ANOTHER_PERSON_HAS_LOGGED_IN_WITH_THE_SAME_ACCOUNT(421),
 	/**

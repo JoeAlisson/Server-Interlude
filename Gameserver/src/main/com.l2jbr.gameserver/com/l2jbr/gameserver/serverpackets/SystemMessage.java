@@ -124,16 +124,16 @@ public class SystemMessage extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeByte(0x64);
+		writeByte(0x62);
 		
-		writeInt(_messageId);
-		writeInt(_types.size());
+		writeShort(_messageId);
+		writeByte(_types.size());
 		
 		for (int i = 0; i < _types.size(); i++)
 		{
 			int t = _types.get(i);
 			
-			writeInt(t);
+			writeByte(t);
 			
 			switch (t)
 			{

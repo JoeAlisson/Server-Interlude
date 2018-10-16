@@ -18,10 +18,9 @@
  */
 package com.l2jbr.gameserver.clientpackets;
 
-import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.serverpackets.ExSendManorList;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -31,28 +30,15 @@ import java.util.List;
  * @author l3x
  */
 public class RequestManorList extends L2GameClientPacket {
-    private static final String _C__FE_08_REQUESTMANORLIST = "[S] FE:08 RequestManorList";
+    private static final String _C__FE_08_REQUESTMANORLIST = "[S] 0xd0:0x01 RequestManorList";
+
 
     @Override
-    protected void readImpl() {
-    }
+    protected void readImpl() { }
 
     @Override
     protected void runImpl() {
-        L2PcInstance player = getClient().getActiveChar();
-        List<String> manorsName = new LinkedList<>();
-        manorsName.add("gludio");
-        manorsName.add("dion");
-        manorsName.add("giran");
-        manorsName.add("oren");
-        manorsName.add("aden");
-        manorsName.add("innadril");
-        manorsName.add("goddard");
-        manorsName.add("rune");
-        manorsName.add("schuttgart");
-        ExSendManorList manorlist = new ExSendManorList(manorsName);
-        player.sendPacket(manorlist);
-
+        sendPacket(new ExSendManorList());
     }
 
     @Override

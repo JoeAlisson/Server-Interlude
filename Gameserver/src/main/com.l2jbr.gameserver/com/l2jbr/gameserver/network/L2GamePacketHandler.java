@@ -67,7 +67,7 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                         msg = new CharacterDelete();
                         break;
                     case 0x12:
-                        msg = new CharacterSelected();
+                        msg = new CharacterSelected(); // TODO Request Game Start
                         break;
                     case 0x13:
                         msg = new NewCharacter();
@@ -769,11 +769,11 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                         switch (id3) {
                             /*case 0x00:
                                 // msg = new ?();
-                                break;
+                                break;*/
                             case 0x01:
-                                //msg = new RequestManorList();
+                                msg = new RequestManorList();
                                 break;
-                            case 0x02:
+                          /*  case 0x02:
                                 //msg = new RequestProcureCropList();
                                 break;
                             case 0x03:
@@ -885,11 +885,11 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                             /*case 0x20:
                                 //msg = new RequestExMoveToLocationInAirShip();
-                                break;
+                                break; */
                             case 0x21:
                                 msg = new RequestKeyMapping();
                                 break;
-                            case 0x22:
+                         /*   case 0x22:
                                 msg = new RequestSaveKeyMapping();
                                 break;
                             case 0x23:
@@ -957,11 +957,11 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                             case 0x39:
                                 msg = new RequestAllCastleInfo();
-                                break;
+                                break; */
                             case 0x3A:
-                                //msg = new RequestAllFortressInfo();
+                               // msg = new RequestAllFortressInfo();
                                 break;
-                            case 0x3B:
+                            /*case 0x3B:
                                 msg = new RequestAllAgitInfo();
                                 break;
                             case 0x3C:

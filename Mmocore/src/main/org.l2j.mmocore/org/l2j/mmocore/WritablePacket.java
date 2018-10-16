@@ -1,6 +1,7 @@
 package org.l2j.mmocore;
 
 import static java.lang.Double.doubleToRawLongBits;
+import static java.lang.Math.max;
 import static java.lang.System.arraycopy;
 import static java.util.Objects.nonNull;
 
@@ -133,7 +134,7 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
 	}
 
     int writeData() {
-		data = new byte[packetSize()];
+		data = new byte[max(2, packetSize())];
 		dataIndex += ReadHandler.HEADER_SIZE;
         write();
         return dataIndex;

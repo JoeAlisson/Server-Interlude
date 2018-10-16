@@ -1,66 +1,27 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.clientpackets;
 
-import com.l2jbr.commons.Config;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.network.L2GameClient.GameClientState;
 import com.l2jbr.gameserver.serverpackets.ActionFailed;
-import com.l2jbr.gameserver.serverpackets.CharSelected;
+import com.l2jbr.gameserver.serverpackets.CharacterSelectedPacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static java.util.Objects.isNull;
 
-/**
- * This class ...
- * @version $Revision: 1.5.2.1.2.5 $ $Date: 2005/03/27 15:29:30 $
- */
-public class CharacterSelected extends L2GameClientPacket
-{
+public class CharacterSelected extends L2GameClientPacket  {
 	private static final String _C__0D_CHARACTERSELECTED = "[C] 0D CharacterSelected";
 	private static Logger _log = LoggerFactory.getLogger(CharacterSelected.class.getName());
-	
-	// cd
+
 	private int _charSlot;
-	
-	@SuppressWarnings("unused")
-	private int _unk1; // new in C4
-	@SuppressWarnings("unused")
-	private int _unk2; // new in C4
-	@SuppressWarnings("unused")
-	private int _unk3; // new in C4
-	@SuppressWarnings("unused")
-	private int _unk4; // new in C4
-	
+
 	@Override
-	protected void readImpl()
-	{
+	protected void readImpl()  {
 		_charSlot = readInt();
-		_unk1 = readShort();
-		_unk2 = readInt();
-		_unk3 = readInt();
-		_unk4 = readInt();
 	}
 	
 	@Override
-	protected void runImpl()
-	{
+	protected void runImpl() {
 		// if there is a playback.dat file in the current directory, it will
 		// be sent to the client instead of any regular packets
 		// to make this work, the first packet in the playback.dat has to
@@ -70,45 +31,35 @@ public class CharacterSelected extends L2GameClientPacket
 		
 		// we should always be abble to acquire the lock
 		// but if we cant lock then nothing should be done (ie repeated packet)
-		if (getClient().getActiveCharLock().tryLock())
-		{
-			try
-			{
+		if (client.getActiveCharLock().tryLock()) {
+			try {
 				// should always be null
 				// but if not then this is repeated packet and nothing should be done here
-				if (getClient().getActiveChar() == null)
-				{
+				if (isNull(client.getActiveChar())) {
 					// The L2PcInstance must be created here, so that it can be attached to the L2GameClient
-					if (Config.DEBUG)
-					{
-						_log.debug("selected slot:" + _charSlot);
-					}
+					_log.debug("selected slot: {}", _charSlot);
 					
 					// load up character from disk
-					L2PcInstance cha = getClient().loadCharFromDisk(_charSlot);
-					if (cha == null)
-					{
-						_log.error("Character could not be loaded (slot:" + _charSlot + ")");
+					L2PcInstance cha = client.loadCharFromDisk(_charSlot);
+					if (isNull(cha)) {
+						_log.error("Character could not be loaded (slot: {})", _charSlot);
 						sendPacket(new ActionFailed());
 						return;
 					}
-					if (cha.getAccessLevel() < 0)
-					{
+					if (cha.getAccessLevel() < 0)  {
 						cha.closeNetConnection();
 						return;
 					}
 					
-					cha.setClient(getClient());
-					getClient().setActiveChar(cha);
+					cha.setClient(client);
+					client.setActiveChar(cha);
 					
-					getClient().setState(GameClientState.IN_GAME);
-					CharSelected cs = new CharSelected(cha, getClient().getSessionId().sessionId);
-					sendPacket(cs);
+					client.setState(GameClientState.IN_GAME);
+					sendPacket(new CharacterSelectedPacket(cha));
 				}
 			}
-			finally
-			{
-				getClient().getActiveCharLock().unlock();
+			finally {
+				client.getActiveCharLock().unlock();
 			}
 		}
 	}
