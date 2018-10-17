@@ -44,7 +44,7 @@ public class CharMoveToLocation extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeByte(0x01);
+		writeByte(0x2F);
 		
 		writeInt(_charObjId);
 		
