@@ -61,7 +61,7 @@ class ResourcePool {
         } else if( size == config.bufferMediumSize) {
             poolSize = config.bufferMediumPoolSize;
         } else if( size == config.bufferLargePoolSize) {
-            poolSize = config.bufferPoolSize;
+            poolSize = config.bufferLargePoolSize;
         }
         return poolSize;
     }
