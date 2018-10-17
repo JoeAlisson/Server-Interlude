@@ -185,7 +185,7 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		writeString(_activeChar.getTitle());
 		writeInt(_activeChar.getClanId()); // pledge id
 		writeInt(_activeChar.getClanCrestId()); // pledge crest id
-		writeInt(_activeChar.getAllyId()); // ally id
+		writeInt(_activeChar.getAllianceId()); // ally id
 		writeByte(_activeChar.getMountType()); // mount type
 		writeByte(_activeChar.getPrivateStoreType());
 		writeByte(_activeChar.hasDwarvenCraft() ? 1 : 0);

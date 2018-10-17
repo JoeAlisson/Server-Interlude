@@ -22,7 +22,7 @@ import com.l2jbr.gameserver.model.L2Clan;
 import com.l2jbr.gameserver.model.L2World;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.network.SystemMessageId;
-import com.l2jbr.gameserver.serverpackets.AskJoinPledge;
+import com.l2jbr.gameserver.serverpackets.AskJoinPledgePacket;
 import com.l2jbr.gameserver.serverpackets.SystemMessage;
 
 
@@ -74,7 +74,7 @@ public final class RequestJoinPledge extends L2GameClientPacket
 		sm.addString(activeChar.getClan().getName());
 		target.sendPacket(sm);
 		sm = null;
-		AskJoinPledge ap = new AskJoinPledge(activeChar.getObjectId(), activeChar.getClan().getName());
+		AskJoinPledgePacket ap = new AskJoinPledgePacket(activeChar.getObjectId(), activeChar.getClan().getName());
 		target.sendPacket(ap);
 	}
 	

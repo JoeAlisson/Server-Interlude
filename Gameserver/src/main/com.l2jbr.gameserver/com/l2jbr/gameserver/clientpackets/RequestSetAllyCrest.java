@@ -74,9 +74,9 @@ public final class RequestSetAllyCrest extends L2GameClientPacket
 			return;
 		}
 		
-		if (activeChar.getAllyId() != 0)
+		if (activeChar.getAllianceId() != 0)
 		{
-			L2Clan leaderclan = ClanTable.getInstance().getClan(activeChar.getAllyId());
+			L2Clan leaderclan = ClanTable.getInstance().getClan(activeChar.getAllianceId());
 			
 			if ((activeChar.getClanId() != leaderclan.getClanId()) || !activeChar.isClanLeader())
 			{
@@ -103,7 +103,7 @@ public final class RequestSetAllyCrest extends L2GameClientPacket
 			
 			for (L2Clan clan : ClanTable.getInstance().getClans())
 			{
-				if (clan.getAllyId() == activeChar.getAllyId())
+				if (clan.getAllyId() == activeChar.getAllianceId())
 				{
 					clan.setAllyCrestId(newId);
 					for (L2PcInstance member : clan.getOnlineMembers(""))

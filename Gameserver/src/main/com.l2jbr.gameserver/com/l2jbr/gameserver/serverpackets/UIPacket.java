@@ -71,7 +71,7 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 			clan_crest_id = clan == null ? 0 : clan.getCrestId();
 			large_clan_crest_id = clan == null ? 0 : clan.getCrestLargeId();
 			//
-			ally_id = player.getAllyId();
+			ally_id = player.getAllianceId();
 			ally_crest_id = player.getAllyCrestId();
 
 		if(player.getAppearance().getInvisible() && player.isGM())
@@ -180,7 +180,7 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		gm_commands = player.isGM() || player.getAccessLevel() >= Config.GM_ALTG_MIN_LEVEL ? 1 : 0;
 		// builder level активирует в клиенте админские команды
 		clan_id = player.getClanId();
-		ally_id = player.getAllyId();
+		ally_id = player.getAllianceId();
 		private_store =  player.getPrivateStoreType();
 		can_crystalize = player.getSkillLevel(SkillConstants.CRYSTALLIZE) > 0 ? 1 : 0;
 		pk_kills = player.getPkKills();

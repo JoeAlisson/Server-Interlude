@@ -12,8 +12,6 @@ import com.l2jbr.gameserver.model.entity.database.repository.AugmentationsReposi
 import com.l2jbr.gameserver.model.entity.database.repository.CharacterRepository;
 import com.l2jbr.gameserver.model.entity.database.repository.CharacterSubclassesRepository;
 import com.l2jbr.gameserver.network.L2GameClient;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,8 +20,6 @@ import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.nonNull;
 
 public class CharSelectInfo extends L2GameServerPacket {
-
-    private static final String _S__1F_CHARSELECTINFO = "[S] 1F CharSelectInfo";
 
     private final String account;
 
@@ -316,10 +312,5 @@ public class CharSelectInfo extends L2GameServerPacket {
         charInfopackage.setLastAccess(character.getLastAccess());
 
         return charInfopackage;
-    }
-
-    @Override
-    public String getType() {
-        return _S__1F_CHARSELECTINFO;
     }
 }

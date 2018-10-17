@@ -4203,7 +4203,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @return the ally id
      */
-    public int getAllyId() {
+    public int getAllianceId() {
         if (_clan == null) {
             return 0;
         }

@@ -5,37 +5,23 @@ import org.l2j.mmocore.WritablePacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
  * @author KenM
  */
-public abstract class L2GameServerPacket extends WritablePacket<L2GameClient>
-{
-	private static final Logger _log = LoggerFactory.getLogger(L2GameServerPacket.class.getName());
+public abstract class L2GameServerPacket extends WritablePacket<L2GameClient>  {
+	private static final Logger _log = LoggerFactory.getLogger(L2GameServerPacket.class);
 	
 	@Override
-	protected void write()
-	{
-		try
-		{
+	protected void write() {
+		try {
 			writeImpl();
-		}
-		catch (Throwable t)
-		{
-			_log.error("Client: " + getClient().toString() + " - Failed writing: " + getType() + ";");
-			t.printStackTrace();
+		} catch (Throwable t) {
+			_log.error("Client: {} - Failed writing {}", client, getClass().getSimpleName());
+			_log.error(t.getLocalizedMessage(), t);
 		}
 	}
 	
-	public void runImpl()
-	{
-		
-	}
+	public void runImpl() {  }
 	
 	protected abstract void writeImpl();
-	
-	/**
-	 * @return A String with this packet name for debugging purposes
-	 */
-	public abstract String getType();
 }

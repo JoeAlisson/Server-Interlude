@@ -23,7 +23,7 @@ import com.l2jbr.gameserver.model.L2Party;
 import com.l2jbr.gameserver.model.L2World;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.network.SystemMessageId;
-import com.l2jbr.gameserver.serverpackets.AskJoinParty;
+import com.l2jbr.gameserver.serverpackets.AskJoinPartyPacket;
 import com.l2jbr.gameserver.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -144,7 +144,7 @@ public final class RequestJoinParty extends L2GameClientPacket
 		if (!target.isProcessingRequest())
 		{
 			requestor.onTransactionRequest(target);
-			target.sendPacket(new AskJoinParty(requestor.getName(), _itemDistribution));
+			target.sendPacket(new AskJoinPartyPacket(requestor.getName(), _itemDistribution));
 			requestor.getParty().increasePendingInvitationNumber();
 			
 			if (Config.DEBUG)
@@ -182,7 +182,7 @@ public final class RequestJoinParty extends L2GameClientPacket
 			requestor.setParty(new L2Party(requestor, _itemDistribution));
 			
 			requestor.onTransactionRequest(target);
-			target.sendPacket(new AskJoinParty(requestor.getName(), _itemDistribution));
+			target.sendPacket(new AskJoinPartyPacket(requestor.getName(), _itemDistribution));
 			requestor.getParty().increasePendingInvitationNumber();
 			
 			if (Config.DEBUG)

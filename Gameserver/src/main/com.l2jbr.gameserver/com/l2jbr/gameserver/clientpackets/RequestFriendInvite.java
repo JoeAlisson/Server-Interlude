@@ -23,7 +23,7 @@ import com.l2jbr.gameserver.model.L2World;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.model.entity.database.repository.CharacterFriendRepository;
 import com.l2jbr.gameserver.network.SystemMessageId;
-import com.l2jbr.gameserver.serverpackets.AskJoinFriend;
+import com.l2jbr.gameserver.serverpackets.AskAddFriendPacket;
 import com.l2jbr.gameserver.serverpackets.SystemMessage;
 import com.l2jbr.gameserver.util.Util;
 import org.slf4j.Logger;
@@ -86,7 +86,7 @@ public final class RequestFriendInvite extends L2GameClientPacket
                 activeChar.onTransactionRequest(friend);
                 sm = new SystemMessage(SystemMessageId.S1_REQUESTED_TO_BECOME_FRIENDS);
                 sm.addString(_name);
-                AskJoinFriend ajf = new AskJoinFriend(activeChar.getName());
+                AskAddFriendPacket ajf = new AskAddFriendPacket(activeChar.getName());
                 friend.sendPacket(ajf);
                 friend.sendPacket(sm);
             } else {

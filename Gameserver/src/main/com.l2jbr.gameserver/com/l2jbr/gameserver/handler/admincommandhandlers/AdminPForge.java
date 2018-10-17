@@ -87,11 +87,11 @@ public class AdminPForge implements IAdminCommandHandler {
                     } else if (val.toLowerCase().equals("$clanid")) {
                         val = String.valueOf(activeChar.getCharId());
                     } else if (val.toLowerCase().equals("$allyid")) {
-                        val = String.valueOf(activeChar.getAllyId());
+                        val = String.valueOf(activeChar.getAllianceId());
                     } else if (val.toLowerCase().equals("$tclanid")) {
                         val = String.valueOf(((L2PcInstance) activeChar.getTarget()).getCharId());
                     } else if (val.toLowerCase().equals("$tallyid")) {
-                        val = String.valueOf(((L2PcInstance) activeChar.getTarget()).getAllyId());
+                        val = String.valueOf(((L2PcInstance) activeChar.getTarget()).getAllianceId());
                     } else if (val.toLowerCase().equals("$x")) {
                         val = String.valueOf(activeChar.getX());
                     } else if (val.toLowerCase().equals("$y")) {

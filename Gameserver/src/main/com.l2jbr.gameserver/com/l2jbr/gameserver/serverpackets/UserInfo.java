@@ -247,7 +247,7 @@ public class UserInfo extends L2GameServerPacket
 		
 		writeInt(_activeChar.getClanId());
 		writeInt(_activeChar.getClanCrestId());
-		writeInt(_activeChar.getAllyId());
+		writeInt(_activeChar.getAllianceId());
 		writeInt(_activeChar.getAllyCrestId()); // ally crest id
 		// 0x40 leader rights
 		// siege flags: attacker - 0x180 sword over name, defender - 0x80 shield, 0xC0 crown (|leader), 0x1C0 flag (|leader)

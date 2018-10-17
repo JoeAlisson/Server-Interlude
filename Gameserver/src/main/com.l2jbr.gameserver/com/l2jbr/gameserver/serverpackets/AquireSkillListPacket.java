@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import java.util.LinkedList;
@@ -29,24 +11,22 @@ import java.util.List;
  *
  * @version $Revision: 1.3.2.1.2.5 $ $Date: 2005/03/27 15:29:57 $
  */
-public class AquireSkillList extends L2GameServerPacket {
-    // private static Logger _log = LoggerFactory.getLogger(AquireSkillList.class.getName());
+public class AquireSkillListPacket extends L2GameServerPacket {
+
     public enum skillType {
         Usual,
         Fishing,
         Clan
     }
 
-    private static final String _S__A3_AQUIRESKILLLIST = "[S] 8a AquireSkillList";
-
     private final List<Skill> _skills;
     private final skillType _fishingSkills;
 
     private class Skill {
         public int id;
-        public int nextLevel;
-        public int maxLevel;
-        public int spCost;
+        int nextLevel;
+        int maxLevel;
+        int spCost;
         public int requirements;
 
         public Skill(int pId, int pNextLevel, int pMaxLevel, int pSpCost, int pRequirements) {
@@ -58,7 +38,7 @@ public class AquireSkillList extends L2GameServerPacket {
         }
     }
 
-    public AquireSkillList(skillType type) {
+    public AquireSkillListPacket(skillType type) {
         _skills = new LinkedList<>();
         _fishingSkills = type;
     }
@@ -69,7 +49,8 @@ public class AquireSkillList extends L2GameServerPacket {
 
     @Override
     protected final void writeImpl() {
-        writeByte(0x8a);
+        writeByte(0x90);
+        writeShort(_skills.size());
         writeInt(_fishingSkills.ordinal()); // c4 : C5 : 0: usuall 1: fishing 2: clans
         writeInt(_skills.size());
 
@@ -82,12 +63,8 @@ public class AquireSkillList extends L2GameServerPacket {
         }
     }
 
-    /*
-     * (non-Javadoc)
-     * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-     */
     @Override
-    public String getType() {
-        return _S__A3_AQUIRESKILLLIST;
+    protected int packetSize() {
+        return _skills.size() * 20 + 13;
     }
 }

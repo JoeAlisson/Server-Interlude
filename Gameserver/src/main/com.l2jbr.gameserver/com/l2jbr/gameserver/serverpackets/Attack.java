@@ -1,111 +1,43 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.L2Character;
 import com.l2jbr.gameserver.model.L2Object;
 import com.l2jbr.gameserver.templates.CrystalType;
 
+public class Attack extends L2GameServerPacket  {
 
-/**
- * sample 06 8f19904b 2522d04b 00000000 80 950c0000 4af50000 08f2ffff 0000 - 0 damage (missed 0x80) 06 85071048 bc0e504b 32000000 10 fc41ffff fd240200 a6f5ffff 0100 bc0e504b 33000000 10 3.... format dddc dddh (ddc)
- * @version $Revision: 1.3.2.1.2.4 $ $Date: 2005/03/27 15:29:39 $
- */
-public class Attack extends L2GameServerPacket
-{
-	private class Hit
-	{
-		protected int _targetId;
-		protected int _damage;
-		protected int _flags;
-		
-		Hit(L2Object target, int damage, boolean miss, boolean crit, boolean shld)
-		{
-			_targetId = target.getObjectId();
-			_damage = damage;
-			if (soulshot)
-			{
-				_flags |= 0x10 | _grade.ordinal();
-			}
-			if (crit)
-			{
-				_flags |= 0x20;
-			}
-			if (shld)
-			{
-				_flags |= 0x40;
-			}
-			if (miss)
-			{
-				_flags |= 0x80;
-			}
-			
-		}
-	}
-	
-	// dh
-	
-	private static final String _S__06_ATTACK = "[S] 06 Attack";
-	protected final int _attackerObjId;
+	private final int _attackerObjId;
 	public final boolean soulshot;
-	protected CrystalType _grade;
+    private final int tx;
+    private final int ty;
+    private final int tz;
+    private CrystalType _grade;
 	private final int _x;
 	private final int _y;
 	private final int _z;
 	private Hit[] _hits;
 	
-	/**
-	 * @param attacker the attacker L2Character
-	 * @param ss true if using SoulShots
-	 * @param grade
-	 */
-	public Attack(L2Character attacker, boolean ss, CrystalType grade)
-	{
+
+	public Attack(L2Character attacker, boolean useShots, CrystalType grade) {
 		_attackerObjId = attacker.getObjectId();
-		soulshot = ss;
+		soulshot = useShots;
 		_grade = grade;
 		_x = attacker.getX();
 		_y = attacker.getY();
 		_z = attacker.getZ();
 		_hits = new Hit[0];
+        var target = attacker.getTarget();
+        tx = target.getX();
+        ty = target.getY();
+        tz = target.getZ();
 	}
-	
-	/**
-	 * Add this hit (target, damage, miss, critical, shield) to the Server-Client packet Attack.<BR>
-	 * <BR>
-	 * @param target
-	 * @param damage
-	 * @param miss
-	 * @param crit
-	 * @param shld
-	 */
-	public void addHit(L2Object target, int damage, boolean miss, boolean crit, boolean shld)
-	{
+
+	public void addHit(L2Object target, int damage, boolean miss, boolean crit, boolean shld) {
 		// Get the last position in the hits table
 		int pos = _hits.length;
-		
-		// Create a new Hit object
 		Hit[] tmp = new Hit[pos + 1];
-		
-		// Add the new Hit object to hits table
-		for (int i = 0; i < _hits.length; i++)
-		{
+
+		for (int i = 0; i < _hits.length; i++) {
 			tmp[i] = _hits[i];
 		}
 		tmp[pos] = new Hit(target, damage, miss, crit, shld);
@@ -121,14 +53,15 @@ public class Attack extends L2GameServerPacket
 	}
 	
 	@Override
-	protected final void writeImpl()
-	{
-		writeByte(0x05);
+	protected final void writeImpl()  {
+		writeByte(0x33);
 		
 		writeInt(_attackerObjId);
 		writeInt(_hits[0]._targetId);
+		writeInt(0); // Additional Shots effect
 		writeInt(_hits[0]._damage);
-		writeByte(_hits[0]._flags);
+		writeInt(_hits[0]._flags);
+		writeInt(soulshot ? _grade.ordinal() : 0x00);
 		writeInt(_x);
 		writeInt(_y);
 		writeInt(_z);
@@ -137,13 +70,41 @@ public class Attack extends L2GameServerPacket
 		{
 			writeInt(_hits[i]._targetId);
 			writeInt(_hits[i]._damage);
-			writeByte(_hits[i]._flags);
+			writeInt(_hits[i]._flags);
+			writeInt(soulshot ? _grade.ordinal() : 0x00);
 		}
+
+		writeInt(tx);
+		writeInt(ty);
+		writeInt(tz);
 	}
-	
-	@Override
-	public String getType()
-	{
-		return _S__06_ATTACK;
-	}
+
+    @Override
+    protected int packetSize() {
+        return _hits.length * 20 + 63 ;
+    }
+
+    private class Hit {
+        int _targetId;
+        int _damage;
+        int _flags;
+
+        Hit(L2Object target, int damage, boolean miss, boolean crit, boolean shld)  {
+            _targetId = target.getObjectId();
+            _damage = damage;
+            if (soulshot) {
+                _flags |= 0x10 | _grade.ordinal();
+            }
+            if (crit)  {
+                _flags |= 0x20;
+            }
+            if (shld) {
+                _flags |= 0x40;
+            }
+            if (miss) {
+                _flags |= 0x80;
+            }
+
+        }
+    }
 }

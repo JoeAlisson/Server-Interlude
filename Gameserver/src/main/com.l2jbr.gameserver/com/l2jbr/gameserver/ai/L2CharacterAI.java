@@ -321,7 +321,7 @@ public class L2CharacterAI<T extends L2Character.AIAccessor> extends AbstractAI<
 	@Override
 	protected void onEvtStunned(L2Character attacker) {
         L2Character actor = getActor();
-		actor.broadcastPacket(new AutoAttackStop(actor.getObjectId()));
+		actor.broadcastPacket(new AutoAttackStopPacket(actor.getObjectId()));
 		if (AttackStanceTaskManager.getInstance().getAttackStanceTask(actor)) {
 			AttackStanceTaskManager.getInstance().removeAttackStanceTask(actor);
 		}
@@ -336,7 +336,7 @@ public class L2CharacterAI<T extends L2Character.AIAccessor> extends AbstractAI<
 	@Override
 	protected void onEvtSleeping(L2Character attacker) {
 	    L2Character actor = getActor();
-		actor.broadcastPacket(new AutoAttackStop(actor.getObjectId()));
+		actor.broadcastPacket(new AutoAttackStopPacket(actor.getObjectId()));
 		if (AttackStanceTaskManager.getInstance().getAttackStanceTask(actor)) {
 			AttackStanceTaskManager.getInstance().removeAttackStanceTask(actor);
 		}
@@ -480,7 +480,7 @@ public class L2CharacterAI<T extends L2Character.AIAccessor> extends AbstractAI<
 
         L2Character actor = getActor();
 		if (!AttackStanceTaskManager.getInstance().getAttackStanceTask(actor)) {
-			actor.broadcastPacket(new AutoAttackStop(actor.getObjectId()));
+			actor.broadcastPacket(new AutoAttackStopPacket(actor.getObjectId()));
 		}
 
 		onEvtThink();
@@ -861,7 +861,7 @@ public class L2CharacterAI<T extends L2Character.AIAccessor> extends AbstractAI<
     public void clientStartAutoAttack() {
         L2Character actor = getActor();
         if (!isAutoAttacking()) {
-            actor.broadcastPacket(new AutoAttackStart(actor.getObjectId()));
+            actor.broadcastPacket(new AutoAttackStartPacket(actor.getObjectId()));
             setAutoAttacking(true);
         }
         AttackStanceTaskManager.getInstance().addAttackStanceTask(actor);
@@ -874,7 +874,7 @@ public class L2CharacterAI<T extends L2Character.AIAccessor> extends AbstractAI<
                 AttackStanceTaskManager.getInstance().addAttackStanceTask(actor);
             }
         } else if (isAutoAttacking()) {
-            actor.broadcastPacket(new AutoAttackStop(actor.getObjectId()));
+            actor.broadcastPacket(new AutoAttackStopPacket(actor.getObjectId()));
         }
         setAutoAttacking(false);
     }

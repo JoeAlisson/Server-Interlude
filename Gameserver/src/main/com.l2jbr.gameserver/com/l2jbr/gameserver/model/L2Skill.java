@@ -1388,7 +1388,7 @@ public abstract class L2Skill {
                                 }
 
                                 if (!srcInArena && !(trg.isInsideZone(L2Character.ZONE_PVP) && !trg.isInsideZone(L2Character.ZONE_SIEGE))) {
-                                    if ((src.getAllyId() == trg.getAllyId()) && (src.getAllyId() != 0)) {
+                                    if ((src.getAllianceId() == trg.getAllianceId()) && (src.getAllianceId() != 0)) {
                                         continue;
                                     }
 
@@ -1414,7 +1414,7 @@ public abstract class L2Skill {
                                 }
 
                                 if (!srcInArena && !(trg.isInsideZone(L2Character.ZONE_PVP) && !trg.isInsideZone(L2Character.ZONE_SIEGE))) {
-                                    if ((src.getAllyId() == trg.getAllyId()) && (src.getAllyId() != 0)) {
+                                    if ((src.getAllianceId() == trg.getAllianceId()) && (src.getAllianceId() != 0)) {
                                         continue;
                                     }
 
@@ -1596,7 +1596,7 @@ public abstract class L2Skill {
                             if ((newTarget == null) || !(newTarget instanceof L2PcInstance)) {
                                 continue;
                             }
-                            if (((((L2PcInstance) newTarget).getAllyId() == 0) || (((L2PcInstance) newTarget).getAllyId() != player.getAllyId())) && ((((L2PcInstance) newTarget).getClan() == null) || (((L2PcInstance) newTarget).getClanId() != player.getClanId()))) {
+                            if (((((L2PcInstance) newTarget).getAllianceId() == 0) || (((L2PcInstance) newTarget).getAllianceId() != player.getAllianceId())) && ((((L2PcInstance) newTarget).getClan() == null) || (((L2PcInstance) newTarget).getClanId() != player.getClanId()))) {
                                 continue;
                             }
                             if (player.isInDuel() && ((player.getDuelId() != ((L2PcInstance) newTarget).getDuelId()) || ((player.getParty() != null) && !player.getParty().getPartyMembers().contains(newTarget)))) {
@@ -1840,7 +1840,7 @@ public abstract class L2Skill {
                             }
 
                             if (!srcInArena && !(trg.isInsideZone(L2Character.ZONE_PVP) && !trg.isInsideZone(L2Character.ZONE_SIEGE))) {
-                                if ((src.getAllyId() == trg.getAllyId()) && (src.getAllyId() != 0)) {
+                                if ((src.getAllianceId() == trg.getAllianceId()) && (src.getAllianceId() != 0)) {
                                     continue;
                                 }
 
@@ -1863,7 +1863,7 @@ public abstract class L2Skill {
                             }
 
                             if (!srcInArena && !(trg.isInsideZone(L2Character.ZONE_PVP) && !trg.isInsideZone(L2Character.ZONE_SIEGE))) {
-                                if ((src.getAllyId() == trg.getAllyId()) && (src.getAllyId() != 0)) {
+                                if ((src.getAllianceId() == trg.getAllianceId()) && (src.getAllianceId() != 0)) {
                                     continue;
                                 }
 

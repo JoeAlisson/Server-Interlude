@@ -20,11 +20,6 @@ public class Ex2ndPasswordCheckPacket extends L2GameServerPacket
     }
 
     @Override
-    public String getType() {
-        return "[S] Ex2ndPasswordCheckPacket";
-    }
-
-    @Override
     protected int packetSize() {
         return 13;
     }

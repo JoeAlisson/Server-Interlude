@@ -682,7 +682,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
         }
 
         List<ClanSkillInfo> skills = SkillTreeTable.getInstance().getAvailablePledgeSkills(player);
-        AquireSkillList asl = new AquireSkillList(AquireSkillList.skillType.Clan);
+        AquireSkillListPacket asl = new AquireSkillListPacket(AquireSkillListPacket.skillType.Clan);
         int counts = 0;
 
         for (ClanSkillInfo s : skills) {

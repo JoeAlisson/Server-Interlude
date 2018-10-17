@@ -45,10 +45,6 @@ public class CharacterSelectedPacket extends L2GameServerPacket {
         writeInt(0); // Opcode Shuffling seed
     }
 
-    @Override
-    public String getType() {
-        return "[S] 0B Character Selected Packet";
-    }
 
     @Override
     protected int packetSize() {

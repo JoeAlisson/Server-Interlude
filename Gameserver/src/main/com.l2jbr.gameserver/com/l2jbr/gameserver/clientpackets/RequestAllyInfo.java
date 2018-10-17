@@ -18,7 +18,7 @@
  */
 package com.l2jbr.gameserver.clientpackets;
 
-import com.l2jbr.gameserver.serverpackets.AllyInfo;
+import com.l2jbr.gameserver.serverpackets.AllianceInfoPacket;
 
 
 /**
@@ -38,7 +38,7 @@ public final class RequestAllyInfo extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		AllyInfo ai = new AllyInfo(getClient().getActiveChar());
+		AllianceInfoPacket ai = new AllianceInfoPacket(getClient().getActiveChar());
 		sendPacket(ai);
 	}
 	

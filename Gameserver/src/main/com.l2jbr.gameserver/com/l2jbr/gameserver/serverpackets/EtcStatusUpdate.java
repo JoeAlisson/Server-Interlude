@@ -5,7 +5,7 @@ import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.skills.effects.EffectCharge;
 
 public class EtcStatusUpdate extends L2GameServerPacket  {
-	private static final String _S__F3_ETCSTATUSUPDATE = "[S] F3 EtcStatusUpdate";
+
 
 	private static final int NO_CHAT_FLAG = 1 << 0;
 	private static final int DANGER_AREA_FLAG = 1 << 1;
@@ -53,9 +53,4 @@ public class EtcStatusUpdate extends L2GameServerPacket  {
     protected int packetSize() {
         return  13;
     }
-
-    @Override
-	public String getType() {
-		return _S__F3_ETCSTATUSUPDATE;
-	}
 }

@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-// this packet cause onedayreward menu displaying
 public class ExConnectedTimeAndGettableReward extends L2GameServerPacket {
 
 	@Override
@@ -18,10 +17,5 @@ public class ExConnectedTimeAndGettableReward extends L2GameServerPacket {
 		writeInt(0x00);       // unk 9
 		writeInt(0x00);       // unk 10
 		writeInt(0x00);       // unk 11
-	}
-
-	@Override
-	public String getType() {
-		return "";
 	}
 }

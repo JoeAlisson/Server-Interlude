@@ -22,7 +22,7 @@ import com.l2jbr.gameserver.model.L2Clan;
 import com.l2jbr.gameserver.model.L2World;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.network.SystemMessageId;
-import com.l2jbr.gameserver.serverpackets.AskJoinAlly;
+import com.l2jbr.gameserver.serverpackets.AskJoinAlliancePacket;
 import com.l2jbr.gameserver.serverpackets.SystemMessage;
 
 
@@ -78,7 +78,7 @@ public final class RequestJoinAlly extends L2GameClientPacket
 		sm.addString(activeChar.getName());
 		target.sendPacket(sm);
 		sm = null;
-		AskJoinAlly aja = new AskJoinAlly(activeChar.getObjectId(), activeChar.getClan().getAllyName());
+		AskJoinAlliancePacket aja = new AskJoinAlliancePacket(activeChar.getObjectId(), activeChar.getClan().getAllyName());
 		target.sendPacket(aja);
 		return;
 	}

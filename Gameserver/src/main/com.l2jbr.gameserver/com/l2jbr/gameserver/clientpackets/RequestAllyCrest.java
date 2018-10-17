@@ -20,7 +20,7 @@ package com.l2jbr.gameserver.clientpackets;
 
 import com.l2jbr.commons.Config;
 import com.l2jbr.gameserver.cache.CrestCache;
-import com.l2jbr.gameserver.serverpackets.AllyCrest;
+import com.l2jbr.gameserver.serverpackets.AllianceCrestPacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -57,7 +57,7 @@ public final class RequestAllyCrest extends L2GameClientPacket
 		
 		if (data != null)
 		{
-			AllyCrest ac = new AllyCrest(_crestId, data);
+			AllianceCrestPacket ac = new AllianceCrestPacket(_crestId, data);
 			sendPacket(ac);
 		}
 		else

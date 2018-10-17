@@ -1270,7 +1270,7 @@ public class L2Clan {
         if (activeChar == null) {
             return false;
         }
-        if ((activeChar.getAllyId() == 0) || !activeChar.isClanLeader() || (activeChar.getClanId() != activeChar.getAllyId())) {
+        if ((activeChar.getAllianceId() == 0) || !activeChar.isClanLeader() || (activeChar.getClanId() != activeChar.getAllianceId())) {
             activeChar.sendPacket(new SystemMessage(SystemMessageId.FEATURE_ONLY_FOR_ALLIANCE_LEADER));
             return false;
         }
@@ -1301,7 +1301,7 @@ public class L2Clan {
             return false;
         }
         L2Clan targetClan = target.getClan();
-        if (target.getAllyId() != 0) {
+        if (target.getAllianceId() != 0) {
             SystemMessage sm = new SystemMessage(SystemMessageId.S1_CLAN_ALREADY_MEMBER_OF_S2_ALLIANCE);
             sm.addString(targetClan.getName());
             sm.addString(targetClan.getAllyName());
@@ -1334,7 +1334,7 @@ public class L2Clan {
 
         int numOfClansInAlly = 0;
         for (L2Clan clan : ClanTable.getInstance().getClans()) {
-            if (clan.getAllyId() == activeChar.getAllyId()) {
+            if (clan.getAllyId() == activeChar.getAllianceId()) {
                 ++numOfClansInAlly;
             }
         }

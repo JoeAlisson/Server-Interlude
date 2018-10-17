@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.commons.Config;
@@ -26,14 +8,8 @@ import com.l2jbr.gameserver.model.L2SiegeClan;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.model.entity.Castle;
 
+public class Die extends L2GameServerPacket {
 
-/**
- * sample 0b 952a1048 objectId 00000000 00000000 00000000 00000000 00000000 00000000 format dddddd rev 377 format ddddddd rev 417
- * @version $Revision: 1.3.2.1.2.5 $ $Date: 2005/03/27 18:46:18 $
- */
-public class Die extends L2GameServerPacket
-{
-	private static final String _S__0B_DIE = "[S] 06 Die";
 	private final int _charObjId;
 	private final boolean _fake;
 	private boolean _sweepable;
@@ -112,11 +88,5 @@ public class Die extends L2GameServerPacket
 		
 		writeInt(_sweepable ? 0x01 : 0x00); // sweepable (blue glow)
 		writeInt(_access >= REQUIRED_LEVEL ? 0x01 : 0x00); // 6d 04 00 00 00 - to FIXED
-	}
-	
-	@Override
-	public String getType()
-	{
-		return _S__0B_DIE;
 	}
 }

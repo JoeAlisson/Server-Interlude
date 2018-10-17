@@ -18,7 +18,7 @@
  */
 package com.l2jbr.gameserver.clientpackets;
 
-import com.l2jbr.gameserver.serverpackets.BeginRotation;
+import com.l2jbr.gameserver.serverpackets.ExRotationPacket;
 
 
 /**
@@ -46,7 +46,7 @@ public final class StartRotating extends L2GameClientPacket
 		{
 			return;
 		}
-		BeginRotation br = new BeginRotation(getClient().getActiveChar(), _degree, _side);
+		ExRotationPacket br = new ExRotationPacket(getClient().getActiveChar(), _degree, _side);
 		getClient().getActiveChar().broadcastPacket(br);
 	}
 	

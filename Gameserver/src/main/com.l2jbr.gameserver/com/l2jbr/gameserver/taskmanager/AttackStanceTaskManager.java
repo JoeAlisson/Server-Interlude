@@ -27,7 +27,7 @@ package com.l2jbr.gameserver.taskmanager;
 
 import com.l2jbr.gameserver.ThreadPoolManager;
 import com.l2jbr.gameserver.model.L2Character;
-import com.l2jbr.gameserver.serverpackets.AutoAttackStop;
+import com.l2jbr.gameserver.serverpackets.AutoAttackStopPacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -83,7 +83,7 @@ public class AttackStanceTaskManager {
             if (_attackStanceTasks != null) {
                 for (L2Character actor : _attackStanceTasks.keySet()) {
                     if ((current - _attackStanceTasks.get(actor)) > 15000) {
-                        actor.broadcastPacket(new AutoAttackStop(actor.getObjectId()));
+                        actor.broadcastPacket(new AutoAttackStopPacket(actor.getObjectId()));
                         actor.getAI().setAutoAttacking(false);
                         _attackStanceTasks.remove(actor);
                     }

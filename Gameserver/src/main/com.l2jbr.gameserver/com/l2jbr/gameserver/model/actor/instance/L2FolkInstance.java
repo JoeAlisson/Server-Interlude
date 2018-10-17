@@ -84,7 +84,7 @@ public class L2FolkInstance extends L2NpcInstance {
         }
 
         List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(player, playerClass);
-        AquireSkillList asl = new AquireSkillList(AquireSkillList.skillType.Usual);
+        AquireSkillListPacket asl = new AquireSkillListPacket(AquireSkillListPacket.skillType.Usual);
         int counts = 0;
 
         for (SkillInfo s : skills) {
