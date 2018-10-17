@@ -133,6 +133,18 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
 		writeChar('\000');
 	}
 
+	protected final void writeSizedString(final String text) {
+	    if(nonNull(text)) {
+	        final int len = text.length();
+	        writeShort(len);
+	        writeString(text);
+	        dataIndex -= 2; // the termination char is not necessary
+        } else {
+	        writeShort(0);
+        }
+    }
+
+
     int writeData() {
 		data = new byte[max(2, packetSize())];
 		dataIndex += ReadHandler.HEADER_SIZE;
