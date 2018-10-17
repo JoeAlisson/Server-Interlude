@@ -135,7 +135,7 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		obj_id = player.getObjectId();
 		vehicle_obj_id = player.isInBoat() ? player.getBoat().getObjectId() : 0x00;
 		_race = player.getRace().ordinal();
-		sex = player.getAppearance().getSex() ? 0 : 1;
+		sex = player.getAppearance().getSex() ? 1 : 0;
 		base_class = player.getBaseClass();
 		level = player.getLevel();
 		_exp = player.getExp();
@@ -280,7 +280,7 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		if(containsMask(UserInfoType.BASIC_INFO))
 		{
 			writeShort(UserInfoType.BASIC_INFO.getBlockLength() + (_name.length() * 2));
-			writeString(_name);
+			writeSizedString(_name);
 			writeByte(gm_commands);
 			writeByte(_race);
 			writeByte(sex);
@@ -422,7 +422,7 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		if(containsMask(UserInfoType.CLAN))
 		{
 			writeShort(UserInfoType.CLAN.getBlockLength() + (_title.length() * 2));
-			writeString(_title);
+			writeSizedString(_title);
 			writeShort(pledge_type);
 			writeInt(clan_id);
 			writeInt(large_clan_crest_id);
