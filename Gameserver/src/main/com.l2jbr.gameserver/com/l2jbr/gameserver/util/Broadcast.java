@@ -50,7 +50,7 @@ public final class Broadcast
 	{
 		if (Config.DEBUG)
 		{
-			_log.debug("players to notify:" + character.getKnownList().getKnownPlayers().size() + " packet:" + mov.getType());
+			_log.debug("players to notify: {} packet {}", character.getKnownList().getKnownPlayers().size(), mov);
 		}
 		
 		for (L2PcInstance player : character.getKnownList().getKnownPlayers().values())
@@ -80,7 +80,7 @@ public final class Broadcast
 	{
 		if (Config.DEBUG)
 		{
-			_log.debug("players to notify:" + character.getKnownList().getKnownPlayers().size() + " packet:" + mov.getType());
+			_log.debug("players to notify: {} packet {}",  character.getKnownList().getKnownPlayers().size(), mov);
 		}
 		
 		for (L2PcInstance player : character.getKnownList().getKnownPlayers().values())
@@ -193,7 +193,7 @@ public final class Broadcast
 	{
 		if (Config.DEBUG)
 		{
-			_log.debug("Players to notify: " + L2World.getInstance().getAllPlayersCount() + " (with packet " + mov.getType() + ")");
+			_log.debug("Players to notify: {} with packet {}", L2World.getInstance().getAllPlayersCount(), mov);
 		}
 		
 		for (L2PcInstance onlinePlayer : L2World.getInstance().getAllPlayers())

@@ -24,4 +24,9 @@ public abstract class L2GameServerPacket extends WritablePacket<L2GameClient>  {
 	public void runImpl() {  }
 	
 	protected abstract void writeImpl();
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
 }
