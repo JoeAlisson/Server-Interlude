@@ -10,11 +10,6 @@ public class ExEnterWorldPacket extends L2GameServerPacket {
 	}
 
 	@Override
-	public String getType() {
-		return "[S] 0xFE 0x1C7 Ex EnterWorld";
-	}
-
-	@Override
 	protected int packetSize() {
 		return 9;
 	}

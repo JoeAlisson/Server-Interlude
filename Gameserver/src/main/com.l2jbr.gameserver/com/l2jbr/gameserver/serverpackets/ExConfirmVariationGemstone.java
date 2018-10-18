@@ -2,7 +2,6 @@ package com.l2jbr.gameserver.serverpackets;
 
 public class ExConfirmVariationGemstone extends L2GameServerPacket
 {
-	
 	private final int _gemstoneObjId;
 	private final int _unk1;
 	private final int _gemstoneCount;
@@ -29,5 +28,4 @@ public class ExConfirmVariationGemstone extends L2GameServerPacket
 		writeInt(_unk2);
 		writeInt(_unk3);
 	}
-
 }

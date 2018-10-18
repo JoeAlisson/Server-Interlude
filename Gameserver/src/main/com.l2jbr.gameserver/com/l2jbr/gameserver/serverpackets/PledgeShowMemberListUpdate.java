@@ -22,13 +22,11 @@ import com.l2jbr.gameserver.model.L2Clan;
 import com.l2jbr.gameserver.model.L2ClanMember;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 
-
 /**
  * @author -Wooden-
  */
 public class PledgeShowMemberListUpdate extends L2GameServerPacket
 {
-	private static final String _S__54_PLEDGESHOWMEMBERLISTUPDATE = "[S] 54 PledgeShowMemberListUpdate";
 	private final L2PcInstance _activeChar;
 	private final int _pledgeType;
 	private int _hasSponsor;
@@ -96,15 +94,4 @@ public class PledgeShowMemberListUpdate extends L2GameServerPacket
 		writeInt(_pledgeType);
 		writeInt(_hasSponsor);
 	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__54_PLEDGESHOWMEMBERLISTUPDATE;
-	}
-	
 }

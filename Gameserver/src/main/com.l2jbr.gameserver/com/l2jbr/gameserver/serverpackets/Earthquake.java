@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-
 public class Earthquake extends L2GameServerPacket
 {
 

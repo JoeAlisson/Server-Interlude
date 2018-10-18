@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.commons.Config;
@@ -27,7 +9,6 @@ import com.l2jbr.gameserver.network.SystemMessageId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
  * Seven Signs Record Update packet type id 0xf5 format: c cc (Page Num = 1 -> 4, period) 1: [ddd cc dd ddd c ddd c] 2: [hc [cd (dc (S))] 3: [ccc (cccc)] 4: [(cchh)]
  * @author Tempy
@@ -35,8 +16,7 @@ import org.slf4j.LoggerFactory;
 public class SSQStatus extends L2GameServerPacket
 {
 	private static Logger _log = LoggerFactory.getLogger(SSQStatus.class.getName());
-	
-	private static final String _S__F5_SSQStatus = "[S] F5 RecordUpdate";
+
 	private final L2PcInstance _activevChar;
 	private final int _page;
 	
@@ -415,15 +395,5 @@ public class SSQStatus extends L2GameServerPacket
 				}
 				break;
 		}
-	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__F5_SSQStatus;
 	}
 }

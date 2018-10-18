@@ -1,25 +1,6 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.actor.instance.L2NpcInstance;
-
 
 /**
  * sample 06 8f19904b 2522d04b 00000000 80 950c0000 4af50000 08f2ffff 0000 - 0 damage (missed 0x80) 06 85071048 bc0e504b 32000000 10 fc41ffff fd240200 a6f5ffff 0100 bc0e504b 33000000 10 3.... format dddc dddh (ddc)
@@ -86,15 +67,5 @@ public class MonRaceInfo extends L2GameServerPacket
 			 */
 			writeInt(0);
 		}
-	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__DD_MonRaceInfo;
 	}
 }

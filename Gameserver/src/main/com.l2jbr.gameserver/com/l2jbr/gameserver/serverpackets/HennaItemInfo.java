@@ -1,17 +1,3 @@
-/*
- * This program is free software: you can redistribute it and/or modify it under
- * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version.
- * 
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
- * details.
- * 
- * You should have received a copy of the GNU General Public License along with
- * this program. If not, see <http://www.gnu.org/licenses/>.
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
@@ -20,8 +6,6 @@ import com.l2jbr.gameserver.model.entity.database.Henna;
 
 public class HennaItemInfo extends L2GameServerPacket
 {
-	private static final String _S__E3_HennaItemInfo = "[S] E3 HennaItemInfo";
-	
 	private final L2PcInstance _activeChar;
 	private final Henna _henna;
 	
@@ -55,11 +39,5 @@ public class HennaItemInfo extends L2GameServerPacket
 		writeByte(_activeChar.getDEX() + _henna.getStatDEX()); // equip DEX
 		writeInt(_activeChar.getWIT()); // current WIT
 		writeByte(_activeChar.getWIT() + _henna.getStatWIT()); // equip WIT
-	}
-
-	@Override
-	public String getType()
-	{
-		return _S__E3_HennaItemInfo;
 	}
 }

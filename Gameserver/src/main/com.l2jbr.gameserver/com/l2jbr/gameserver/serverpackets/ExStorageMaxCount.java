@@ -20,7 +20,6 @@ package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 
-
 /**
  * Format: (ch)ddddddd d: Number of Inventory Slots d: Number of Warehouse Slots d: Number of Freight Slots (unconfirmed) (200 for a low level DWARF) d: Private Sell Store Slots (unconfirmed) (4 for a low level DWARF) d: Private Buy Store Slots (unconfirmed) (5 for a low level DWARF) d: Dwarven
  * Recipe Book Slots d: Normal Recipe Book Slots
@@ -28,7 +27,6 @@ import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
  */
 public class ExStorageMaxCount extends L2GameServerPacket
 {
-	private static final String _S__FE_2E_EXSTORAGEMAXCOUNT = "[S] FE:2E ExStorageMaxCount";
 	private final L2PcInstance _activeChar;
 	private final int _inventory;
 	private final int _warehouse;
@@ -50,10 +48,6 @@ public class ExStorageMaxCount extends L2GameServerPacket
 		_recipe = _activeChar.GetCommonRecipeLimit();
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -67,17 +61,5 @@ public class ExStorageMaxCount extends L2GameServerPacket
 		writeInt(_privateBuy);
 		writeInt(_receipeD);
 		writeInt(_recipe);
-		
 	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.BasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__FE_2E_EXSTORAGEMAXCOUNT;
-	}
-	
 }

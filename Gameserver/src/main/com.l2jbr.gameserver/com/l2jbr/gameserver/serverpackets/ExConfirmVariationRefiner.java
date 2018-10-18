@@ -1,8 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-/**
- * Format: (ch)ddddd
- */
 public class ExConfirmVariationRefiner extends L2GameServerPacket
 {
 	private final int _refinerItemObjId;
@@ -31,5 +28,4 @@ public class ExConfirmVariationRefiner extends L2GameServerPacket
 		writeInt(_gemstoneCount);
 		writeInt(_unk2);
 	}
-
 }

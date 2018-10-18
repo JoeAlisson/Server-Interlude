@@ -22,5 +22,4 @@ public class ExConfirmVariationItem extends L2GameServerPacket
 		writeInt(_unk1);
 		writeInt(_unk2);
 	}
-
 }

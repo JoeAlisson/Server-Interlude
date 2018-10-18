@@ -1,34 +1,10 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.L2Summon;
 import com.l2jbr.gameserver.model.actor.instance.L2PetInstance;
 
-
-/**
- * This class ...
- * @version $Revision: 1.6.2.5.2.12 $ $Date: 2005/03/31 09:19:16 $
- */
 public class PetInfo extends L2GameServerPacket
 {
-	private static final String _S__CA_PETINFO = "[S] b1 PetInfo";
 	private final L2Summon _summon;
 	private final int _x, _y, _z, _heading;
 	private final boolean _isSummoned;
@@ -154,11 +130,5 @@ public class PetInfo extends L2GameServerPacket
 		writeByte(0); // team aura (1 = blue, 2 = red)
 		writeInt(_summon.getSoulShotsPerHit()); // How many soulshots this servitor uses per hit
 		writeInt(_summon.getSpiritShotsPerHit()); // How many spiritshots this servitor uses per hit
-	}
-	
-	@Override
-	public String getType()
-	{
-		return _S__CA_PETINFO;
 	}
 }

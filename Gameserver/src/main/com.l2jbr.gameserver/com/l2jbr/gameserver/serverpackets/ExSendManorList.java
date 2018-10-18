@@ -9,7 +9,6 @@ import java.util.List;
  * @author l3x
  */
 public class ExSendManorList extends L2GameServerPacket {
-    private static final String _S__FE_1B_EXSENDMANORLIST = "[S] FE:22 ExSendManorList";
 
     private static  final List<String> manors = new ArrayList<>();
 
@@ -37,11 +36,6 @@ public class ExSendManorList extends L2GameServerPacket {
             writeString(manors.get(i));
         }
 
-    }
-
-    @Override
-    public String getType() {
-        return _S__FE_1B_EXSENDMANORLIST;
     }
 
     @Override

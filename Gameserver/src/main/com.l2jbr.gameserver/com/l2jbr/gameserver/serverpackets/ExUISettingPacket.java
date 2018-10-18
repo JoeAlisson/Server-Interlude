@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 
 public class ExUISettingPacket extends L2GameServerPacket {
@@ -19,11 +18,6 @@ public class ExUISettingPacket extends L2GameServerPacket {
 		writeShort(0x71);
 		writeInt(data.length);
 		writeBytes(data);
-	}
-
-	@Override
-	public String getType() {
-		return "[S] EX UI Settting";
 	}
 
     @Override

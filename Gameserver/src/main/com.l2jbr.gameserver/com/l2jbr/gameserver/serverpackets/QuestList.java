@@ -1,27 +1,8 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.model.quest.Quest;
 import com.l2jbr.gameserver.model.quest.QuestState;
-
 
 /**
  * sample for rev 377: 98 05 00 number of quests ff 00 00 00 0a 01 00 00 39 01 00 00 04 01 00 00 a2 00 00 00 format h (d) h (dddh) rev 377 format h (dd) h (dddd) rev 417
@@ -29,16 +10,9 @@ import com.l2jbr.gameserver.model.quest.QuestState;
  */
 public class QuestList extends L2GameServerPacket
 {
-	private static final String _S__98_QUESTLIST = "[S] 80 QuestList";
-	
 	private Quest[] _quests;
 	private L2PcInstance _activeChar;
-	
-	public QuestList()
-	{
-		
-	}
-	
+
 	@Override
 	public void runImpl()
 	{
@@ -90,15 +64,5 @@ public class QuestList extends L2GameServerPacket
 				writeInt(qs.getInt("cond"));
 			}
 		}
-	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__98_QUESTLIST;
 	}
 }

@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.commons.Config;
@@ -23,7 +5,6 @@ import com.l2jbr.gameserver.model.L2ItemInstance;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 
 /**
  * sample 27 00 00 01 00 // item count 04 00 // itemType1 0-weapon/ring/earring/necklace 1-armor/shield 4-item/questitem/adena c6 37 50 40 // objectId cd 09 00 00 // itemId 05 00 00 00 // count 05 00 // itemType2 0-weapon 1-shield/armor 2-ring/earring/necklace 3-questitem 4-adena 5-item 00 00 //
@@ -34,7 +15,6 @@ import org.slf4j.LoggerFactory;
 public class ItemList extends L2GameServerPacket
 {
 	private static Logger _log = LoggerFactory.getLogger(ItemList.class.getName());
-	private static final String _S__27_ITEMLIST = "[S] 1b ItemList";
 	private final L2ItemInstance[] _items;
 	private final boolean _showWindow;
 	
@@ -107,15 +87,5 @@ public class ItemList extends L2GameServerPacket
 			
 			writeInt(temp.getMana());
 		}
-	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__27_ITEMLIST;
 	}
 }

@@ -2,10 +2,7 @@ package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.L2Object;
 
-
-public class DeleteObject extends L2GameServerPacket
-{
-	private static final String _S__1E_DELETEOBJECT = "[S] 12 DeleteObject";
+public class DeleteObject extends L2GameServerPacket {
 	private final int _objectId;
 	
 	public DeleteObject(L2Object obj)

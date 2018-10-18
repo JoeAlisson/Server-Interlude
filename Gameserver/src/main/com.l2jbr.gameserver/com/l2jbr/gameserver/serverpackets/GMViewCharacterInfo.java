@@ -1,40 +1,13 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.Inventory;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 
 
-/**
- * TODO Add support for Eval. Score dddddSdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddffffddddSddd rev420 dddddSdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddffffddddSdddcccddhh rev478
- * dddddSdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddffffddddSdddcccddhhddd rev551
- * @version $Revision: 1.2.2.2.2.8 $ $Date: 2005/03/27 15:29:39 $
- */
 public class GMViewCharacterInfo extends L2GameServerPacket
 {
-	private static final String _S__8F_GMVIEWCHARINFO = "[S] 8F GMViewCharacterInfo";
 	private final L2PcInstance _activeChar;
-	
-	/**
-	 * @param character
-	 */
+
 	public GMViewCharacterInfo(L2PcInstance character)
 	{
 		_activeChar = character;
@@ -210,11 +183,5 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		
 		writeInt(_activeChar.getAppearance().getNameColor());
 		writeInt(_activeChar.getAppearance().getTitleColor());
-	}
-	
-	@Override
-	public String getType()
-	{
-		return _S__8F_GMVIEWCHARINFO;
 	}
 }

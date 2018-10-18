@@ -27,7 +27,6 @@ import org.slf4j.LoggerFactory;
 import java.util.LinkedList;
 import java.util.List;
 
-
 /**
  * 0x53 WareHouseDepositList dh (h dddhh dhhh d)
  *
@@ -39,7 +38,6 @@ public class WareHouseDepositList extends L2GameServerPacket {
     public static final int CASTLE = 3; // not sure
     public static final int FREIGHT = 4; // not sure
     private static Logger _log = LoggerFactory.getLogger(WareHouseDepositList.class.getName());
-    private static final String _S__53_WAREHOUSEDEPOSITLIST = "[S] 41 WareHouseDepositList";
     private final L2PcInstance _activeChar;
     private final int _playerAdena;
     private final List<L2ItemInstance> _items;
@@ -98,14 +96,5 @@ public class WareHouseDepositList extends L2GameServerPacket {
                 writeLong(0x00);
             }
         }
-    }
-
-    /*
-     * (non-Javadoc)
-     * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-     */
-    @Override
-    public String getType() {
-        return _S__53_WAREHOUSEDEPOSITLIST;
     }
 }

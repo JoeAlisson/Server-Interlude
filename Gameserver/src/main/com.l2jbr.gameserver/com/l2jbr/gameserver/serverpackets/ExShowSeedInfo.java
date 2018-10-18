@@ -23,14 +23,12 @@ import com.l2jbr.gameserver.model.entity.database.SeedProduction;
 import java.util.LinkedList;
 import java.util.List;
 
-
 /**
  * format(packet 0xFE) ch ddd [dddddcdcd] c - id h - sub id d - manor id d d - size [ d - seed id d - left to buy d - started amount d - sell price d - seed level c d - reward 1 id c d - reward 2 id ]
  *
  * @author l3x
  */
 public class ExShowSeedInfo extends L2GameServerPacket {
-    private static final String _S__FE_1C_EXSHOWSEEDINFO = "[S] FE:1C ExShowSeedInfo";
     private List<SeedProduction> _seeds;
     private final int _manorId;
 
@@ -63,8 +61,4 @@ public class ExShowSeedInfo extends L2GameServerPacket {
         }
     }
 
-    @Override
-    public String getType() {
-        return _S__FE_1C_EXSHOWSEEDINFO;
-    }
 }

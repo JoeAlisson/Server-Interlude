@@ -25,5 +25,4 @@ public class ExAutoSoulShot extends L2GameServerPacket
 		writeInt(_itemId);
 		writeInt(_type);
 	}
-
 }

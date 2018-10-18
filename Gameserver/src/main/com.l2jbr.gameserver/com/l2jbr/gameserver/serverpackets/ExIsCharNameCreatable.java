@@ -26,11 +26,6 @@ public class ExIsCharNameCreatable extends L2GameServerPacket {
 		writeInt(_errorCode);
 	}
 
-	@Override
-	public String getType() {
-		return "[S] EX_IS_CHARNAME_CREATABLE";
-	}
-
     @Override
     protected int packetSize() {
         return super.packetSize() + 7;

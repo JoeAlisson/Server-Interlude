@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.commons.Config;
@@ -25,16 +7,10 @@ import com.l2jbr.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jbr.gameserver.model.actor.instance.L2NpcInstance;
 import com.l2jbr.gameserver.model.actor.instance.L2PetInstance;
 
-
-/**
- * This class ...
- * @version $Revision: 1.7.2.4.2.9 $ $Date: 2005/04/11 10:05:54 $
- */
 public class NpcInfo extends L2GameServerPacket
 {
 	// ddddddddddddddddddffffdddcccccSSddd dddddc
 	// ddddddddddddddddddffffdddcccccSSddd dddddccffd
-	private static final String _S__22_NPCINFO = "[S] 16 NpcInfo";
 	private final L2Character _activeChar;
 	private final int _x, _y, _z, _heading;
 	private final int _idTemplate;
@@ -50,10 +26,7 @@ public class NpcInfo extends L2GameServerPacket
 	private String _name = "";
 	private String _title = "";
 	
-	/**
-	 * @param cha
-	 * @param attacker
-	 */
+
 	public NpcInfo(L2NpcInstance cha, L2Character attacker)
 	{
 		_activeChar = cha;
@@ -193,11 +166,5 @@ public class NpcInfo extends L2GameServerPacket
 		writeDouble(_collisionHeight);
 		writeInt(0x00); // C4
 		writeInt(0x00); // C6
-	}
-	
-	@Override
-	public String getType()
-	{
-		return _S__22_NPCINFO;
 	}
 }

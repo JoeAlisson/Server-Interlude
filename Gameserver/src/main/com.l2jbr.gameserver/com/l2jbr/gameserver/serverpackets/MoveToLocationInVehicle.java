@@ -22,7 +22,6 @@ import com.l2jbr.gameserver.model.L2Position;
 import com.l2jbr.gameserver.model.L2Character;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 
-
 /**
  * @author Maktakien
  */
@@ -32,12 +31,7 @@ public class MoveToLocationInVehicle extends L2GameServerPacket
 	private int _boatId;
 	private L2Position _destination;
 	private L2Position _origin;
-	
-	/**
-	 * @param actor
-	 * @param destination
-	 * @param origin
-	 */
+
 	public MoveToLocationInVehicle(L2Character actor, L2Position destination, L2Position origin)
 	{
 		if (!(actor instanceof L2PcInstance))
@@ -60,11 +54,7 @@ public class MoveToLocationInVehicle extends L2GameServerPacket
 		 * _pci.sendMessage("_destination : x " + x +" y " + y + " z " + z); _pci.sendMessage("_boat : x " + _pci.getBoat().getX() +" y " + _pci.getBoat().getY() + " z " + _pci.getBoat().getZ()); _pci.sendMessage("-----------");
 		 */
 	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
+
 	@Override
 	protected void writeImpl()
 	{
@@ -78,15 +68,4 @@ public class MoveToLocationInVehicle extends L2GameServerPacket
 		writeInt(_origin.y);
 		writeInt(_origin.z);
 	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.BasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return "[S] 71 MoveToLocationInVehicle";
-	}
-	
 }

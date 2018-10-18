@@ -5,7 +5,6 @@ import com.l2jbr.gameserver.model.L2ItemInstance;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 public class EquipUpdate extends L2GameServerPacket {
 
 	private static Logger _log = LoggerFactory.getLogger(EquipUpdate.class.getName());

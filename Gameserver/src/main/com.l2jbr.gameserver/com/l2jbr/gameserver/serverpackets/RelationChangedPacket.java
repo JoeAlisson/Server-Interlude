@@ -24,16 +24,16 @@ public class RelationChangedPacket extends L2GameServerPacket {
 	public static final int RELATION_ALLY_MEMBER = 0x10000; // clan is in alliance
 	public static final int RELATION_IN_DOMINION_WAR = 0x80000; // Territory Wars
 
-	public static final int USER_RELATION_CLAN_MEMBER = 0x20;
-	public static final int USER_RELATION_CLAN_LEADER = 0x40;
+	static final int USER_RELATION_CLAN_MEMBER = 0x20;
+	static final int USER_RELATION_CLAN_LEADER = 0x40;
 	public static final int USER_RELATION_IN_SIEGE = 0x80;
 	public static final int USER_RELATION_ATTACKER = 0x100;
 	public static final int USER_RELATION_IN_DOMINION_WAR = 0x1000;
 
 	// Masks
-	public static final byte SEND_DEFAULT = (byte) 0x01;
-	public static final byte SEND_ONE = (byte) 0x02;
-	public static final byte SEND_MULTI = (byte) 0x04;
+	private static final byte SEND_DEFAULT = (byte) 0x01;
+	private static final byte SEND_ONE = (byte) 0x02;
+	private static final byte SEND_MULTI = (byte) 0x04;
 
 	private byte _mask = (byte) 0x00;
 
@@ -82,11 +82,6 @@ public class RelationChangedPacket extends L2GameServerPacket {
 			writeInt(_datas.get(0).objectId);
 	}
 
-	@Override
-	public String getType() {
-		return "[S] RelationChanged";
-	}
-
 	private void writeRelation(RelationChangedData data)
 	{
 		
@@ -103,6 +98,6 @@ public class RelationChangedPacket extends L2GameServerPacket {
 		public boolean isAutoAttackable;
 		public int relation;
 		public int karma;
-		public int pvpFlag;
+		int pvpFlag;
 	}
 }

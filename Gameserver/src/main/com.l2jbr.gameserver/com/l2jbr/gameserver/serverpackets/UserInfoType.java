@@ -30,21 +30,16 @@ public enum UserInfoType implements IUpdateTypeComponent
 	COLOR(0x14, 10),
 	INVENTORY_LIMIT(0x15, 9),
 	UNK_3(0x16, 9);
-	
-	/** Int mask. */
+
 	private final int _mask;
 	private final int _blockLength;
 	
-	private UserInfoType(int mask, int blockLength)
+	UserInfoType(int mask, int blockLength)
 	{
 		_mask = mask;
 		_blockLength = blockLength;
 	}
-	
-	/**
-	 * Gets the int mask.
-	 * @return the int mask
-	 */
+
 	@Override
 	public final int getMask()
 	{

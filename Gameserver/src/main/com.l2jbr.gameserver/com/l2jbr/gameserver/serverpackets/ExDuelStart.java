@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-
 /**
  * Format: ch d
  * @author KenM

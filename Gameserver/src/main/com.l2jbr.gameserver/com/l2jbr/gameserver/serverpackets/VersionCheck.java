@@ -4,7 +4,6 @@ import com.l2jbr.commons.Config;
 
 public final class VersionCheck extends L2GameServerPacket {
 
-    private static final String _S__01_KEYPACKET = "[S] 01 VersionCheck";
     private static final int CLASSIC_SERVER = 1024;
 
     private final byte[] key;
@@ -29,15 +28,4 @@ public final class VersionCheck extends L2GameServerPacket {
         writeByte((Config.SERVER_TYPE & CLASSIC_SERVER) == CLASSIC_SERVER ? 1 : 0);
         writeByte(0x00); // Queued Login
 	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.L2GameServerPacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__01_KEYPACKET;
-	}
-	
 }

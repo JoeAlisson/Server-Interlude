@@ -1,35 +1,11 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.L2ItemInstance;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.model.entity.database.Weapon;
 
-
-/**
- * Sdh(h dddhh [dhhh] d) Sdh ddddd ddddd ddddd ddddd
- * @version $Revision: 1.1.2.1.2.5 $ $Date: 2007/11/26 16:10:05 $
- */
 public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 {
-	private static final String _S__95_GMViewWarehouseWithdrawList = "[S] 95 GMViewWarehouseWithdrawList";
 	private final L2ItemInstance[] _items;
 	private final String _playerName;
 	private final L2PcInstance _activeChar;
@@ -119,11 +95,5 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 				}
 			}
 		}
-	}
-	
-	@Override
-	public String getType()
-	{
-		return _S__95_GMViewWarehouseWithdrawList;
 	}
 }

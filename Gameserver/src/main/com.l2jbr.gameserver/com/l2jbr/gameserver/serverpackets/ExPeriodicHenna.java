@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jbr.gameserver.model.entity.database.Henna;
 
@@ -29,10 +28,5 @@ public class ExPeriodicHenna extends L2GameServerPacket
 			writeInt(0x00);	// Premium symbol left time
 			writeInt(0x00);	// Premium symbol active
 		}
-	}
-
-	@Override
-	public String getType() {
-		return "";
 	}
 }

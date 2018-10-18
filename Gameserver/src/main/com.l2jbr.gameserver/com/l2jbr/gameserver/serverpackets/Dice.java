@@ -2,7 +2,7 @@ package com.l2jbr.gameserver.serverpackets;
 
 public class Dice extends L2GameServerPacket
 {
-	private static final String _S__D4_Dice = "[S] D4 Dice";
+
 	private final int _charObjId;
 	private final int _itemId;
 	private final int _number;

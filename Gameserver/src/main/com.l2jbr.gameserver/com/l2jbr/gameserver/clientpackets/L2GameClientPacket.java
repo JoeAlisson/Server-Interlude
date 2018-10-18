@@ -14,25 +14,23 @@ import static java.util.Objects.nonNull;
  * Packets received by the game server from clients
  * @author KenM
  */
-public abstract class L2GameClientPacket extends ReadablePacket<L2GameClient>
-{
+public abstract class L2GameClientPacket extends ReadablePacket<L2GameClient> {
 	private static final Logger logger = LoggerFactory.getLogger(L2GameClientPacket.class);
-	
+
 	@Override
 	protected boolean read() {
 		try {
 			readImpl();
 			return true;
-		}
-		catch (Throwable t) {
-			logger.error("Client: {}  Failed read {}", client,  getClass().getSimpleName());
+		} catch (Throwable t) {
+			logger.error("Client: {}  Failed read {}", client, getClass().getSimpleName());
 			logger.error(t.getLocalizedMessage(), t);
 		}
 		return false;
 	}
-	
+
 	protected abstract void readImpl();
-	
+
 	@Override
 	public void run() {
 		try {
@@ -40,8 +38,7 @@ public abstract class L2GameClientPacket extends ReadablePacket<L2GameClient>
 			if ((GameTimeController.getGameTicks() - client.packetsSentStartTick) > 10) {
 				client.packetsSentStartTick = GameTimeController.getGameTicks();
 				client.packetsSentInSec = 0;
-			}
-			else {
+			} else {
 				client.packetsSentInSec++;
 				if (client.packetsSentInSec > 12) {
 					if (client.packetsSentInSec < 100) {
@@ -50,7 +47,7 @@ public abstract class L2GameClientPacket extends ReadablePacket<L2GameClient>
 					return;
 				}
 			}
-			
+
 			runImpl();
 			if ((this instanceof MoveBackwardToLocation) || (this instanceof AttackRequest) || (this instanceof RequestMagicSkillUse))
 			// could include pickup and talk too, but less is better
@@ -61,19 +58,21 @@ public abstract class L2GameClientPacket extends ReadablePacket<L2GameClient>
 					getClient().getActiveChar().onActionRequest();
 				}
 			}
-		}
-		catch (Throwable t) {
-			logger.error("Client: {}  Failed running {}", client,  getClass().getSimpleName());
+		} catch (Throwable t) {
+			logger.error("Client: {}  Failed running {}", client, getClass().getSimpleName());
 			logger.error(t.getLocalizedMessage(), t);
 		}
 	}
-	
+
 	protected abstract void runImpl();
-	
+
 	protected final void sendPacket(L2GameServerPacket gsp) {
-		if(nonNull(client)) {
+		if (nonNull(client)) {
 			client.sendPacket(gsp);
 		}
 	}
 
+	public String getType() {
+		return getClass().getName();
+	}
 }

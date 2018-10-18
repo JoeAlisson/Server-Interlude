@@ -10,9 +10,6 @@ import com.l2jbr.gameserver.skills.SkillConstants;
 
 import static java.util.Objects.nonNull;
 
-/**
- * @reworked by Bonux
- */
 public class UIPacket extends AbstractMaskPacket<UserInfoType> {
     private final int x;
     private final int y;
@@ -499,10 +496,5 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 			writeShort(0x00);
 			writeByte(0x00);
 		}
-	}
-
-	@Override
-	public String getType() {
-		return "[S] UIPacket";
 	}
 }

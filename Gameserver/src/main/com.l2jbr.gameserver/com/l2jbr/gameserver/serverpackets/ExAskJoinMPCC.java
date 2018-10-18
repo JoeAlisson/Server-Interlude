@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-
 /**
  * @author chris_00 Asks the player to join a CC
  */
@@ -19,7 +18,5 @@ public class ExAskJoinMPCC extends L2GameServerPacket {
 		writeByte(0xFE);
 		writeShort(0x27);
 		writeString(_requestorName); // name of CCLeader
-		
 	}
-
 }

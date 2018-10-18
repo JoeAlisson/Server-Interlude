@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.commons.Config;
@@ -25,7 +7,6 @@ import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 /**
  * the HTML parser in the client knowns these standard and non-standard tags and attributes VOLUMN UNKNOWN UL U TT TR TITLE TEXTCODE TEXTAREA TD TABLE SUP SUB STRIKE SPIN SELECT RIGHT PRE P OPTION OL MULTIEDIT LI LEFT INPUT IMG I HTML H7 H6 H5 H4 H3 H2 H1 FONT EXTEND EDIT COMMENT COMBOBOX CENTER
  * BUTTON BR BODY BAR ADDRESS A SEL LIST VAR FORE READONL ROWS VALIGN FIXWIDTH BORDERCOLORLI BORDERCOLORDA BORDERCOLOR BORDER BGCOLOR BACKGROUND ALIGN VALU READONLY MULTIPLE SELECTED TYP TYPE MAXLENGTH CHECKED SRC Y X QUERYDELAY NOSCROLLBAR IMGSRC B FG SIZE DECO COLOR DEFFON DEFFIXEDFONT WIDTH VALUE
@@ -34,18 +15,10 @@ import org.slf4j.LoggerFactory;
  */
 public class NpcHtmlMessage extends L2GameServerPacket
 {
-	// d S
-	// d is usually 0, S is the html text starting with <html> and ending with </html>
-	//
-	private static final String _S__1B_NPCHTMLMESSAGE = "[S] 0f NpcHtmlMessage";
 	private static Logger _log = LoggerFactory.getLogger(RequestBypassToServer.class.getName());
 	private final int _npcObjId;
 	private String _html;
-	
-	/**
-	 * @param npcObjId
-	 * @param text
-	 */
+
 	public NpcHtmlMessage(int npcObjId, String text)
 	{
 		_npcObjId = npcObjId;
@@ -138,11 +111,5 @@ public class NpcHtmlMessage extends L2GameServerPacket
 		writeInt(_npcObjId);
 		writeString(_html);
 		writeInt(0x00);
-	}
-	
-	@Override
-	public String getType()
-	{
-		return _S__1B_NPCHTMLMESSAGE;
 	}
 }

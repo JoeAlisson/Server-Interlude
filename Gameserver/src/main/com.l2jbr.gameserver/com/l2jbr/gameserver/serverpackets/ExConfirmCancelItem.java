@@ -4,13 +4,13 @@ public class ExConfirmCancelItem extends L2GameServerPacket
 {
 	private final int _itemObjId;
 	private final int _price;
-	
+
 	public ExConfirmCancelItem(int itemObjId, int price)
 	{
 		_itemObjId = itemObjId;
 		_price = price;
 	}
-	
+
 	@Override
 	protected void writeImpl()
 	{
@@ -23,5 +23,4 @@ public class ExConfirmCancelItem extends L2GameServerPacket
 		writeLong(_price);
 		writeInt(0x01);
 	}
-
 }

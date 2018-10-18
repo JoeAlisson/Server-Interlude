@@ -28,9 +28,4 @@ public class LoginResult extends L2GameServerPacket {
         writeInt(_reason1);
         writeInt(_reason2);
     }
-
-    @Override
-    public String getType() {
-        return "0x0A_LOGIN_RESULT";
-    }
 }

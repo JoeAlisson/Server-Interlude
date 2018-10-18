@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 
 public class HennaInfoPacket extends L2GameServerPacket
@@ -45,9 +44,4 @@ public class HennaInfoPacket extends L2GameServerPacket
 			writeInt(0x00);	// Premium symbol active
 		//}
 	}
-
-    @Override
-    public String getType() {
-        return "";
-    }
 }

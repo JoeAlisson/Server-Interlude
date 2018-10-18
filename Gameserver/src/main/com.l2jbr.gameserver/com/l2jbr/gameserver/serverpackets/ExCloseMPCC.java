@@ -5,14 +5,10 @@ package com.l2jbr.gameserver.serverpackets;
  */
 public class ExCloseMPCC extends L2GameServerPacket
 {
-	
-
 	@Override
 	protected void writeImpl()
 	{
 		writeByte(0xfe);
 		writeShort(0x26);
 	}
-
-	
 }

@@ -3,7 +3,6 @@ package com.l2jbr.gameserver.serverpackets;
 
 public class ExDuelAskStart extends L2GameServerPacket {
 
-	
 	private final String _requestorName;
 	private final int _partyDuel;
 	
@@ -22,5 +21,4 @@ public class ExDuelAskStart extends L2GameServerPacket {
 		writeString(_requestorName);
 		writeInt(_partyDuel);
 	}
-
 }

@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 
 import java.util.ArrayList;
@@ -8,7 +7,6 @@ import java.util.Calendar;
 import java.util.List;
 
 public class ExOneDayReceiveRewardList extends L2GameServerPacket {
-
 
 	private final int _dayRemainTime;
 	private final int _weekRemainTime;
@@ -47,10 +45,5 @@ public class ExOneDayReceiveRewardList extends L2GameServerPacket {
 			writeInt(0); // mission progress
 			writeInt(0); // mission required progress
 		}
-	}
-
-	@Override
-	public String getType() {
-		return "";
 	}
 }

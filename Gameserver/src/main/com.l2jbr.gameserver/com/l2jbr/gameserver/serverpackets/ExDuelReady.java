@@ -1,6 +1,5 @@
 package com.l2jbr.gameserver.serverpackets;
 
-
 /**
  * Format: ch d
  * @author KenM
@@ -19,7 +18,6 @@ public class ExDuelReady extends L2GameServerPacket  {
 	{
 		writeByte(0xfe);
 		writeShort(0x4c);
-		
 		writeInt(_unk1);
 	}
 

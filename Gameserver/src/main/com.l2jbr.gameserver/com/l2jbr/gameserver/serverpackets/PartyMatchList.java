@@ -1,25 +1,6 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
-
 
 /**
  * sample af 02 00 00 00 count 71 b3 70 4b object id 44 00 79 00 66 00 65 00 72 00 00 00 name 14 00 00 00 level 0f 00 00 00 class id 00 00 00 00 sex ?? 00 00 00 00 clan id 02 00 00 00 ?? 6f 5f 00 00 x af a9 00 00 y f7 f1 ff ff z c1 9c c0 4b object id 43 00 6a 00 6a 00 6a 00 6a 00 6f 00 6e 00 00 00
@@ -28,12 +9,8 @@ import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
  */
 public class PartyMatchList extends L2GameServerPacket
 {
-	private static final String _S__AF_PARTYMATCHLIST = "[S] 96 PartyMatchList";
 	private final L2PcInstance[] _matchingPlayers;
-	
-	/**
-	 * @param allPlayers
-	 */
+
 	public PartyMatchList(L2PcInstance[] allPlayers)
 	{
 		_matchingPlayers = allPlayers;
@@ -64,15 +41,5 @@ public class PartyMatchList extends L2GameServerPacket
 			writeInt(_matchingPlayers[i].getY());
 			writeInt(_matchingPlayers[i].getZ());
 		}
-	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__AF_PARTYMATCHLIST;
 	}
 }

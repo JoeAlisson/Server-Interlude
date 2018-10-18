@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package com.l2jbr.gameserver.serverpackets;
 
 import com.l2jbr.commons.Config;
@@ -23,7 +5,6 @@ import com.l2jbr.gameserver.model.L2ItemInstance;
 import com.l2jbr.gameserver.model.actor.instance.L2PcInstance;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 
 /**
  * 0x42 WarehouseWithdrawalList dh (h dddhh dhhh d)
@@ -36,7 +17,6 @@ public class WareHouseWithdrawalList extends L2GameServerPacket
 	public static final int CASTLE = 3; // not sure
 	public static final int FREIGHT = 4; // not sure
 	private static Logger _log = LoggerFactory.getLogger(WareHouseWithdrawalList.class.getName());
-	private static final String _S__54_WAREHOUSEWITHDRAWALLIST = "[S] 42 WareHouseWithdrawalList";
 	private L2PcInstance _activeChar;
 	private int _playerAdena;
 	private L2ItemInstance[] _items;
@@ -100,14 +80,5 @@ public class WareHouseWithdrawalList extends L2GameServerPacket
 			}
 		}
 	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see com.l2jbr.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _S__54_WAREHOUSEWITHDRAWALLIST;
-	}
+
 }

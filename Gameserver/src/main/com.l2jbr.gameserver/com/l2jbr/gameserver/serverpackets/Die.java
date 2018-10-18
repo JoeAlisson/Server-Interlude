@@ -17,10 +17,7 @@ public class Die extends L2GameServerPacket {
 	private com.l2jbr.gameserver.model.L2Clan _clan;
 	private static final int REQUIRED_LEVEL = Config.GM_FIXED;
 	L2Character _activeChar;
-	
-	/**
-	 * @param cha
-	 */
+
 	public Die(L2Character cha)
 	{
 		_activeChar = cha;

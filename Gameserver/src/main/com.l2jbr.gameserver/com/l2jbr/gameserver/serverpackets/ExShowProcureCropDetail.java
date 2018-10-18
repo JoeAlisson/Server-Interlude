@@ -51,10 +51,4 @@ public class ExShowProcureCropDetail extends L2GameServerPacket {
             writeByte(crop.getReward()); // reward type
         }
     }
-
-    @Override
-    public String getType() {
-        return _S__FE_22_EXSHOWPROCURECROPDETAIL;
-    }
-
 }

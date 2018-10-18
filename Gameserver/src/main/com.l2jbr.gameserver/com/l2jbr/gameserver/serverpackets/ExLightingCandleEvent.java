@@ -22,9 +22,4 @@ public class ExLightingCandleEvent extends L2GameServerPacket
 		writeShort(0x117);
 		writeShort(_value);	// Available
 	}
-
-	@Override
-	public String getType() {
-		return "[S] 0xFE 0x117 EX Lighting Candle Event ";
-	}
 }

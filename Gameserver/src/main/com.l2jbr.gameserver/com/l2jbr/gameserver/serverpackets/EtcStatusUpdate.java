@@ -6,7 +6,6 @@ import com.l2jbr.gameserver.skills.effects.EffectCharge;
 
 public class EtcStatusUpdate extends L2GameServerPacket  {
 
-
 	private static final int NO_CHAT_FLAG = 1 << 0;
 	private static final int DANGER_AREA_FLAG = 1 << 1;
 	private static final int CHARM_OF_COURAGE_FLAG = 1 << 2;
