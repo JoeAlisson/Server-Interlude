@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PlayerTemplate classId="10" name="Human Mystic" race="HUMAN"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org player.xsd">
+    <baseStats strength="22" constitution="27" dexterity="21" mentality="39" wisdom="20" intelligence="41"/>
+    <physicDefense chest="15" legs="8" helmet="12" boots="7" gloves="8" pendant="3"/>
+    <physicAttack attack="3" criticalRate="40" speed="300" randomDamage="10" range="20"/>
+    <magicDefense necklace="13" leftEarring="9" rightEarring="9" rightRing="5" leftRing="5"/>
+    <magicAttack attack="6" criticalRate="50" speed="333" range="20"/>
+    <damage distance="26" width="120"/>
+    <collision maleRadius="7.5" maleHeight="22.8" femaleRadius="6.5" femaleHeight="22.5"/>
+    <baseSpeed walk="78" run="124" swim="50" fastSwim="50"/>
+    <abnormalResist magic="10" physic="10"/>
+    <attributes safeFallHeight="200" breath="100"/>
+    <startingItem id="34604" count="9000"/>
+    <startingItem id="34611" count="2000"/>
+    <startingItem id="34603" count="5000"/>
+    <startingItem id="34610" count="1000"/>
+    <startingItem id="6" equipped="true"/>
+    <startingItem id="425" equipped="true"/>
+    <startingItem id="461" equipped="true"/>
+    <startingLocation>
+        <location x="-88832" y="248256" z="-3570"/>
+        <location x="-88944" y="248208" z="-3570"/>
+        <location x="-89040" y="248128" z="-3570"/>
+        <location x="-89200" y="248000" z="-3570"/>
+        <location x="-91008" y="249248" z="-3570"/>
+        <location x="-90848" y="249360" z="-3570"/>
+        <location x="-90912" y="249312" z="-3570"/>
+        <location x="-89696" y="247664" z="-3570"/>
+        <location x="-89755" y="247606" z="-3570"/>
+        <location x="-89840" y="247536" z="-3570"/>
+        <location x="-90378" y="249698" z="-3570"/>
+        <location x="-90256" y="249792" z="-3570"/>
+        <location x="-89968" y="249936" z="-3570"/>
+        <location x="-90096" y="249856" z="-3570"/>
+    </startingLocation>
+</PlayerTemplate>
