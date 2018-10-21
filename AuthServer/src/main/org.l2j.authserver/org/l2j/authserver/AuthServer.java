@@ -1,7 +1,7 @@
 package org.l2j.authserver;
 
-import com.l2jbr.commons.Config;
-import com.l2jbr.commons.Server;
+import org.l2j.commons.Config;
+import org.l2j.commons.Server;
 import org.l2j.authserver.controller.AuthController;
 import org.l2j.authserver.network.*;
 import org.l2j.mmocore.ConnectionBuilder;
@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import java.net.InetSocketAddress;
 
-import static com.l2jbr.commons.util.Util.isNullOrEmpty;
+import static org.l2j.commons.util.Util.isNullOrEmpty;
 import static java.lang.Runtime.getRuntime;
 import static java.util.Objects.nonNull;
 import static org.l2j.authserver.settings.AuthServerSettings.*;

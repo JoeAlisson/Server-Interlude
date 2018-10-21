@@ -16,13 +16,13 @@
  *
  * http://www.gnu.org/copyleft/gpl.html
  */
-package com.l2jbr.tools.gsregistering;
+package org.l2j.tools.gsregistering;
 
-import com.l2jbr.commons.Config;
-import com.l2jbr.commons.database.DatabaseAccess;
-import com.l2jbr.commons.database.GameserverRepository;
-import com.l2jbr.commons.Server;
-import com.l2jbr.gameserver.LoginServerThread;
+import org.l2j.commons.Config;
+import org.l2j.commons.database.DatabaseAccess;
+import org.l2j.commons.database.GameserverRepository;
+import org.l2j.commons.Server;
+import org.l2j.gameserver.LoginServerThread;
 import org.l2j.authserver.GameServerManager;
 
 import java.io.IOException;
@@ -58,7 +58,7 @@ public class GameServerRegister
 		System.out.println("Welcome to L2J GameServer Regitering");
 		System.out.println("Enter The id of the server you want to registerClient");
 		System.out.println("Type 'help' to get a list of ids.");
-		System.out.println("Type 'clean' to unregister all currently registered gameservers on this LoginServer.");
+		System.out.println("Type 'clean' to unregister allTemplates currently registered gameservers on this LoginServer.");
 		while (!_choiceOk)
 		{
 			System.out.println("Your choice:");

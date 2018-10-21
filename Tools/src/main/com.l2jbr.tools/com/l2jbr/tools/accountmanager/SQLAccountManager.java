@@ -16,15 +16,15 @@
  *
  * http://www.gnu.org/copyleft/gpl.html
  */
-package com.l2jbr.tools.accountmanager;
+package org.l2j.tools.accountmanager;
 
-import com.l2jbr.commons.Base64;
-import com.l2jbr.commons.Config;
-import com.l2jbr.commons.Server;
-import com.l2jbr.commons.database.AccountRepository;
-import com.l2jbr.commons.database.DatabaseAccess;
-import com.l2jbr.commons.database.model.Account;
-import com.l2jbr.gameserver.model.entity.database.repository.*;
+import org.l2j.commons.Base64;
+import org.l2j.commons.Config;
+import org.l2j.commons.Server;
+import org.l2j.commons.database.AccountRepository;
+import org.l2j.commons.database.DatabaseAccess;
+import org.l2j.commons.database.model.Account;
+import org.l2j.gameserver.model.entity.database.repository.*;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

@@ -5,15 +5,15 @@ plugins {
     id "application"
 }
 
-ext.moduleName = 'com.l2jbr.gameserver'
-mainClassName = "com.l2jbr.gameserver.GameServer"
+ext.moduleName = 'org.l2j.gameserver'
+mainClassName = "org.l2j.gameserver.GameServer"
 
-version '1.4'
+version '0.1'
 
 sourceSets {
     main {
         java {
-            srcDirs = ['src/main/com.l2jbr.gameserver']
+            srcDirs = ['src/main/org.l2j.gameserver']
         }
         resources {
             srcDirs = ['src/main/resources']
@@ -48,12 +48,12 @@ def generalManifest = manifest {
 }
 
 jar {
-    baseName 'l2j-gameserver'
+    baseName 'gameserver'
 
     exclude('config/**')
     manifest {
         from(generalManifest)
-        attributes('Main-Class': 'com.l2jbr.gameserver.GameServer')
+        attributes('Main-Class': 'org.l2j.gameserver.GameServer')
     }
 }
 

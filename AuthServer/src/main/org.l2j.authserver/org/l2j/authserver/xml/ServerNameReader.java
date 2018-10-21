@@ -1,6 +1,6 @@
 package org.l2j.authserver.xml;
 
-import com.l2jbr.commons.xml.XMLReader;
+import org.l2j.commons.xml.XMLReader;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

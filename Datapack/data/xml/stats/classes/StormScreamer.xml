@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="110" name="Storm Screamer" classLevel="76" parent="40" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org classInfo.xsd">
+    <level value="76" hp="3039.0" mp="1540.8" cp="1823.4" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3100.42" mp="1574.0" cp="1860.252" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3162.21" mp="1607.4" cp="1897.326" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3224.37" mp="1641.0" cp="1934.622" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3286.9" mp="1674.8" cp="1972.14" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3349.8" mp="1708.8" cp="2009.88" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3413.07" mp="1743.0" cp="2047.842" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3476.71" mp="1777.4" cp="2086.026" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3540.72" mp="1812.0" cp="2124.432" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3605.1" mp="1846.8" cp="2163.06" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

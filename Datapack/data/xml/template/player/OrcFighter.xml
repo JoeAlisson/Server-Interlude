@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PlayerTemplate classId="44" name="Orc Fighter" race="ORC"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org player.xsd">
+    <baseStats strength="40" constitution="47" dexterity="26" mentality="27" wisdom="12" intelligence="18"/>
+    <physicDefense chest="31" legs="18" helmet="12" boots="7" gloves="8" pendant="3"/>
+    <physicAttack attack="4" criticalRate="40" speed="300" randomDamage="10" range="20"/>
+    <magicDefense necklace="13" leftEarring="9" rightEarring="9" rightRing="5" leftRing="5"/>
+    <magicAttack attack="6" criticalRate="50" speed="333" range="20"/>
+    <damage distance="26" width="120"/>
+    <collision maleRadius="11" maleHeight="28" femaleRadius="7.0" femaleHeight="27.0"/>
+    <baseSpeed walk="70" run="130" swim="50" fastSwim="50"/>
+    <abnormalResist magic="10" physic="15"/>
+    <attributes safeFallHeight="200" breath="90"/>
+    <startingItem id="34604" count="9000"/>
+    <startingItem id="34611" count="2000"/>
+    <startingItem id="34603" count="5000"/>
+    <startingItem id="34610" count="1000"/>
+    <startingItem id="2368" equipped="true"/>
+    <startingItem id="2369"/>
+    <startingItem id="1146" equipped="true"/>
+    <startingItem id="1147" equipped="true"/>
+    <startingLocation>
+        <location x="-56936" y="-112448" z="-679"/>
+        <location x="-57281" y="-112427" z="-679"/>
+        <location x="-56928" y="-112880" z="-679"/>
+        <location x="-57248" y="-112864" z="-679"/>
+        <location x="-58192" y="-113408" z="-679"/>
+        <location x="-58256" y="-113856" z="-679"/>
+        <location x="-57824" y="-113408" z="-679"/>
+        <location x="-57824" y="-113744" z="-679"/>
+        <location x="-57280" y="-114688" z="-679"/>
+        <location x="-56880" y="-114752" z="-679"/>
+        <location x="-57248" y="-114320" z="-679"/>
+        <location x="-56896" y="-114320" z="-679"/>
+        <location x="-56192" y="-113792" z="-679"/>
+        <location x="-56448" y="-113792" z="-679"/>
+        <location x="-56096" y="-113424" z="-679"/>
+        <location x="-56432" y="-113456" z="-679"/>
+    </startingLocation>
+</PlayerTemplate>

@@ -2,7 +2,7 @@ Want to contribute? Great! First, read this page (including the small print at t
 
 ### Before you contribute
 Before we can use your code, you must know that L2jBrasil Project is licensed under the
-[GNU General Public License v3.0](https://github.com/L2jBrasil/Server-Interlude/blob/master/LICENSE)
+[GNU General Public License v3.0](https://github.org.l2jasil/Server-Interlude/blob/master/LICENSE)
 , and you must agree with terms. Understand that license is necessary mainly because you 
 own the copyright to your changes, even after your contribution becomes part of our
 codebase, so we need your permission to use and distribute your code under our LICENSE.
@@ -11,10 +11,10 @@ know that your code infringes on other people's patents/licenses. You don't have
 the LICENSE, it will be done when you submit your code for review and a member has
 approved it, you can denny but you must do it before we can put your code into our codebase.
 Before you start working on a larger contribution, you should get in touch with
-us first through the [issue tracker](https://github.com/L2jBrasil/Server-Interlude/issues) with your idea so that we can help out and
+us first through the [issue tracker](https://github.org.l2jasil/Server-Interlude/issues) with your idea so that we can help out and
 possibly guide you. Coordinating up front makes it much easier to avoid
 frustration later on.
 
 ### Code reviews
 All submissions, including submissions by project members, require review. We
-use [GitHub pull requests](https://github.com/L2jBrasil/Server-Interlude/issues) for this purpose.
+use [GitHub pull requests](https://github.org.l2jasil/Server-Interlude/issues) for this purpose.

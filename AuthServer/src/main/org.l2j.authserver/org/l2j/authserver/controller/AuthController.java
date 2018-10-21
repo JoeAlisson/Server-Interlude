@@ -1,9 +1,9 @@
 package org.l2j.authserver.controller;
 
-import com.l2jbr.commons.Config;
-import com.l2jbr.commons.database.AccountRepository;
-import com.l2jbr.commons.database.model.Account;
-import com.l2jbr.commons.util.Rnd;
+import org.l2j.commons.Config;
+import org.l2j.commons.database.AccountRepository;
+import org.l2j.commons.database.model.Account;
+import org.l2j.commons.util.Rnd;
 import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.GameServerManager;
 import org.l2j.authserver.network.AuthClient;
@@ -27,9 +27,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.regex.Pattern;
 
-import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
-import static com.l2jbr.commons.util.Util.hash;
-import static com.l2jbr.commons.util.Util.isNullOrEmpty;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
+import static org.l2j.commons.util.Util.hash;
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -37,6 +36,7 @@ import static org.l2j.authserver.network.AuthClientState.AUTHED_LOGIN;
 import static org.l2j.authserver.network.packet.auth2client.AccountKicked.AccountKickedReason.REASON_PERMANENTLY_BANNED;
 import static org.l2j.authserver.network.packet.auth2client.LoginFail.LoginFailReason.*;
 import static org.l2j.authserver.settings.AuthServerSettings.*;
+import static org.l2j.commons.util.Util.isNullOrEmpty;
 
 public class AuthController {
 

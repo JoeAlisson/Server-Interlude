@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://la2j.org"
+           xmlns="http://la2j.org"
+           elementFormDefault="qualified">
+
+    <xs:element name="classInfo" type="ClassInfo"/>
+
+    <xs:complexType name="ClassInfo">
+        <xs:sequence>
+            <xs:element name="level" type="LevelInfo"  minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="classId" type="xs:int" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="classLevel" type="xs:int" use="required"/>
+        <xs:attribute name="parent" type="xs:int" default="-1"/>
+    </xs:complexType>
+
+    <xs:complexType name="LevelInfo">
+    <xs:attribute name="value" type="xs:int" use="required"/>
+    <xs:attribute name="hp" type="xs:float" use="required"/>
+    <xs:attribute name="mp" type="xs:float" use="required"/>
+    <xs:attribute name="cp" type="xs:float" use="required"/>
+    <xs:attribute name="hpRegen" type="xs:float" use="required"/>
+    <xs:attribute name="mpRegen" type="xs:float" use="required"/>
+    <xs:attribute name="cpRegen" type="xs:float" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

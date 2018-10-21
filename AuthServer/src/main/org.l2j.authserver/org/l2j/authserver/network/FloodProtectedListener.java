@@ -1,6 +1,6 @@
 package org.l2j.authserver.network;
 
-import com.l2jbr.commons.Config;
+import org.l2j.commons.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +11,7 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.l2jbr.commons.configuration.Configurator.getSettings;
+import static org.l2j.commons.configuration.Configurator.getSettings;
 import static org.l2j.authserver.settings.AuthServerSettings.*;
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.nonNull;

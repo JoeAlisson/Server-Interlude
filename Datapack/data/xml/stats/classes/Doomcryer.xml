@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="116" name="Doomcryer" classLevel="76" parent="52" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org classInfo.xsd">
+    <level value="76" hp="3359.9" mp="1540.8" cp="1679.95" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3427.96" mp="1574.0" cp="1713.98" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3496.43" mp="1607.4" cp="1748.215" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3565.31" mp="1641.0" cp="1782.655" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3634.6" mp="1674.8" cp="1817.3" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3704.3" mp="1708.8" cp="1852.15" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3774.41" mp="1743.0" cp="1887.205" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3844.93" mp="1777.4" cp="1922.465" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3915.86" mp="1812.0" cp="1957.93" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3987.2" mp="1846.8" cp="1993.6" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

@@ -62,7 +62,7 @@ class Quest (JQuest) :
      self.NPC = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
      self.Items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
      self.Mob = [0, 1, 2]
-     self.classid = 0
+     self.classId = 0
      self.prevclass = 0
      self.qn = "SagasSuperclass"
      self.X = [0, 1, 2]
@@ -189,9 +189,9 @@ class Quest (JQuest) :
            st.addExpAndSp(2299404,0)
            st.giveItems(57,5000000)
            st.giveItems(6622,1)
-           player.setClassId(self.classid)
+           player.setClassId(self.classId)
            if not player.isSubClassActive() and player.getBaseClass() == self.prevclass :
-               player.setBaseClass(self.classid)
+               player.setBaseClass(self.classId)
            player.broadcastUserInfo()
            self.Cast(self.FindTemplate(self.NPC[0]),player,4339,1)
        else :
@@ -490,9 +490,9 @@ class Quest (JQuest) :
                       st.addExpAndSp(2299404,0)
                       st.giveItems(57,5000000)
                       st.giveItems(6622,1)
-                      player.setClassId(self.classid)
+                      player.setClassId(self.classId)
                       if not player.isSubClassActive() and player.getBaseClass() == self.prevclass :
-                          player.setBaseClass(self.classid)
+                          player.setBaseClass(self.classId)
                       player.broadcastUserInfo()
                       self.Cast(self.FindTemplate(self.NPC[0]),player,4339,1)
                   else :

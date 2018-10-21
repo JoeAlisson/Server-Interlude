@@ -1,6 +1,6 @@
 package org.l2j.authserver.network;
 
-import com.l2jbr.commons.crypt.NewCrypt;
+import org.l2j.commons.crypt.NewCrypt;
 import org.l2j.authserver.AuthServer;
 import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.GameServerManager;
@@ -23,7 +23,7 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 import java.util.*;
 
-import static com.l2jbr.commons.util.Util.printData;
+import static org.l2j.commons.util.Util.printData;
 import static java.lang.Byte.toUnsignedInt;
 import static java.util.Objects.nonNull;
 import static org.l2j.authserver.network.packet.auth2game.LoginServerFail.NOT_AUTHED;

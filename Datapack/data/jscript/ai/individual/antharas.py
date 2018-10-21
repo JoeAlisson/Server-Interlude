@@ -9,8 +9,8 @@ class antharas(JQuest) :
         JQuest.__init__(self,id,name,descr)
 
     def onKill(self,npc,player,isPet):
-        objId=npc.getObjectId()
-        npc.broadcastPacket(PlaySound(1, "BS01_D", 1, objId, npc.getX(), npc.getY(), npc.getZ()))
+        objectId=npc.getObjectId()
+        npc.broadcastPacket(PlaySound(1, "BS01_D", 1, objectId, npc.getX(), npc.getY(), npc.getZ()))
         #teleport cube antharas.
         self.addSpawn(31859,177615,114941,-7709,0,False,900000)
         return

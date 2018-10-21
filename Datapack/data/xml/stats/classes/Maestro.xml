@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="118" name="Maestro" classLevel="76" parent="57" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org classInfo.xsd">
+    <level value="76" hp="3293.2" mp="1155.6" cp="2634.56" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3362.92" mp="1180.5" cp="2690.336" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3433.06" mp="1205.55" cp="2746.448" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3503.62" mp="1230.75" cp="2802.896" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3574.6" mp="1256.1" cp="2859.68" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3646.0" mp="1281.6" cp="2916.8" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3717.82" mp="1307.25" cp="2974.256" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3790.06" mp="1333.05" cp="3032.048" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3862.72" mp="1359.0" cp="3090.176" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3935.8" mp="1385.1" cp="3148.64" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

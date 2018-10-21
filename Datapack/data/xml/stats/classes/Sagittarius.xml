@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="92" name="Sagittarius" classLevel="76" parent="9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org classInfo.xsd">
+    <level value="76" hp="2729.9" mp="1155.6" cp="1910.93" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="2786.34" mp="1180.5" cp="1950.438" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="2843.12" mp="1205.55" cp="1990.184" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="2900.24" mp="1230.75" cp="2030.168" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="2957.7" mp="1256.1" cp="2070.39" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3015.5" mp="1281.6" cp="2110.85" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3073.64" mp="1307.25" cp="2151.548" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3132.12" mp="1333.05" cp="2192.484" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3190.94" mp="1359.0" cp="2233.658" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3250.1" mp="1385.1" cp="2275.07" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

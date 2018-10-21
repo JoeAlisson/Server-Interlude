@@ -1,6 +1,6 @@
 package org.l2j.authserver.network.packet.auth2client;
 
-import com.l2jbr.commons.Config;
+import org.l2j.commons.Config;
 import org.l2j.authserver.GameServerManager;
 import org.l2j.authserver.network.packet.L2LoginServerPacket;
 import org.l2j.authserver.network.packet.game2auth.ServerStatus;

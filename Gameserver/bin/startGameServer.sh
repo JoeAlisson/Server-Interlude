@@ -5,7 +5,7 @@
 #  2 reboot attempt
 
 while :; do
-	java -Xms512m -Xmx1024m -cp './lib/*' com.l2jbr.gameserver.GameServer
+	java -Xms512m -Xmx1024m -cp './lib/*' org.l2j.gameserver.GameServer
 	[ $? -ne 2 ] && break
 	sleep 10
 done

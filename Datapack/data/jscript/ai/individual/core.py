@@ -15,24 +15,24 @@ class core(JQuest) :
         self.FirstAttacked = False
 
     def onAttack (self,npc,player,damage,isPet):
-        objId=npc.getObjectId()
+        objectId=npc.getObjectId()
         if self.FirstAttacked:
            if Rnd.get(100) : return
-           npc.broadcastPacket(CreatureSay(objId,0,"Core","Removing intruders."))
+           npc.broadcastPacket(CreatureSay(objectId,0,"Core","Removing intruders."))
         else :
            self.FirstAttacked = True
-           npc.broadcastPacket(CreatureSay(objId,0,"Core","A non-permitted target has been discovered."))
-           npc.broadcastPacket(CreatureSay(objId,0,"Core","Starting intruder removal system."))
+           npc.broadcastPacket(CreatureSay(objectId,0,"Core","A non-permitted target has been discovered."))
+           npc.broadcastPacket(CreatureSay(objectId,0,"Core","Starting intruder removal system."))
         return 
 
     def onKill(self,npc,player,isPet):
         npcId = npc.getNpcId()
         if npcId == self.Core:
-            objId=npc.getObjectId()
-            npc.broadcastPacket(PlaySound(1, "BS02_D", 1, objId, npc.getX(), npc.getY(), npc.getZ()))
-            npc.broadcastPacket(CreatureSay(objId,0,"Core","A fatal error has occurred."))
-            npc.broadcastPacket(CreatureSay(objId,0,"Core","System is being shut down..."))
-            npc.broadcastPacket(CreatureSay(objId,0,"Core","......"))
+            objectId=npc.getObjectId()
+            npc.broadcastPacket(PlaySound(1, "BS02_D", 1, objectId, npc.getX(), npc.getY(), npc.getZ()))
+            npc.broadcastPacket(CreatureSay(objectId,0,"Core","A fatal error has occurred."))
+            npc.broadcastPacket(CreatureSay(objectId,0,"Core","System is being shut down..."))
+            npc.broadcastPacket(CreatureSay(objectId,0,"Core","......"))
             self.FirstAttacked = False
             self.addSpawn(31842,16502,110165,-6394,0,False,900000)
             self.addSpawn(31842,18948,110166,-6397,0,False,900000)

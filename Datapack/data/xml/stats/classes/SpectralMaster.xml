@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="111" name="Spectral Master" classLevel="76" parent="41" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org classInfo.xsd">
+    <level value="76" hp="3198.3" mp="1540.8" cp="1918.98" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3264.7" mp="1574.0" cp="1958.82" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3331.5" mp="1607.4" cp="1998.9" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3398.7" mp="1641.0" cp="2039.22" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3466.3" mp="1674.8" cp="2079.78" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3534.3" mp="1708.8" cp="2120.58" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3602.7" mp="1743.0" cp="2161.62" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3671.5" mp="1777.4" cp="2202.9" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3740.7" mp="1812.0" cp="2244.42" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3810.3" mp="1846.8" cp="2286.18" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

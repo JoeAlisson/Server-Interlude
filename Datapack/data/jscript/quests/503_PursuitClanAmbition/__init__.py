@@ -66,7 +66,7 @@ DROPLIST = {
 def suscribe_members(st) :
   clan=st.getPlayer().getClan().getClanId()
   con=L2DatabaseFactory.getInstance().getConnection()
-  offline=con.prepareStatement("SELECT obj_Id FROM characters WHERE clanid=? AND online=0")
+  offline=con.prepareStatement("SELECT obj_Id FROM characters WHERE clan=? AND online=0")
   repository = DatabaseAccess.getRepository(CharacterQuestsRepository)
   offline.setInt(1, clan)
   rs=offline.executeQuery()

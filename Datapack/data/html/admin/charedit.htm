@@ -7,7 +7,7 @@
 <br>
 <table width=270>
 <tr><td fixwidth=90>HP:%currenthp%/%maxhp%</td><td fixwidth=90>MP:%currentmp%/%maxmp%</td><td fixwidth=90>CP:%currentcp%/%maxcp%</td></tr>
-<tr><td width=90>Karma:%karma%</td><td width=90>PvP:%pvpkills%</td><td width=90>PK:%pkkills%</td></tr>
+<tr><td width=90>Karma:%karma%</td><td width=90>PvP:%pvp%</td><td width=90>PK:%pk%</td></tr>
 <tr><td width=90>Load:</td><td width=90>%currentload%/%maxload%</td><td width=90>(%percent%%)</td></tr>
 <tr><td width=90>Class:</td><td>%class%</td><td width=90>AccLv:%access%</td></tr>
 </table>
@@ -25,8 +25,8 @@
 <br>
 <table width=270>
 <tr><td width=50>Current HP:</td><td><edit var="hp" width=50></td><td width=50>PvP Flag:</td><td><edit var="pvpflag" width=50></td></tr>
-<tr><td width=50>Current MP:</td><td><edit var="mp" width=50></td><td width=50>PvP Kills:</td><td><edit var="pvpkills" width=50></td></tr>
-<tr><td width=50>Current CP:</td><td><edit var="cp" width=50></td><td width=50>PK Kills:</td><td><edit var="pkkills" width=50></td></tr>
+<tr><td width=50>Current MP:</td><td><edit var="mp" width=50></td><td width=50>PvP Kills:</td><td><edit var="pvp" width=50></td></tr>
+<tr><td width=50>Current CP:</td><td><edit var="cp" width=50></td><td width=50>PK Kills:</td><td><edit var="pk" width=50></td></tr>
 </table><br>
-<center><button value="Save Changes" action="bypass -h admin_save_modifications $hp $mp $cp $pvpflag $pvpkills $pkkills" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></center>
+<center><button value="Save Changes" action="bypass -h admin_save_modifications $hp $mp $cp $pvpflag $pvp $pk" width=80 height=15 back="sek.cbui94" fore="sek.cbui92"></center>
 </body></html>

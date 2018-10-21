@@ -1,2 +1,2 @@
-@java -cp ./lib/* com.l2jbr.tools.gsregistering.GameServerRegister
+@java -cp ./lib/* org.l2j.tools.gsregistering.GameServerRegister
 @pause
