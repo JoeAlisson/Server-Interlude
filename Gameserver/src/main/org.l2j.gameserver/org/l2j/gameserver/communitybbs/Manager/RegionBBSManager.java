@@ -86,7 +86,7 @@ public class RegionBBSManager extends BaseBBSManager {
 
         if (player != null) {
             String sex = "Male";
-            if (player.getAppearance().getSex()) {
+            if (player.getAppearance().getSex() == 1) {
                 sex = "Female";
             }
             String levelApprox = "low";
@@ -97,7 +97,7 @@ public class RegionBBSManager extends BaseBBSManager {
             } else if (player.getLevel() >= 20) {
                 levelApprox = "medium";
             }
-            htmlCode.append("<table border=0><tr><td>" + player.getName() + " (" + sex + " " + player.getTemplate().getPlayerClass() + "):</td></tr>");
+            htmlCode.append("<table border=0><tr><td>" + player.getName() + " (" + sex + " " + player.getTemplate().getName() + "):</td></tr>");
             htmlCode.append("<tr><td>Level: " + levelApprox + "</td></tr>");
             htmlCode.append("<tr><td><br></td></tr>");
 

@@ -15,7 +15,7 @@
 package org.l2j.gameserver.model.waypoint;
 
 import org.l2j.commons.Config;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;

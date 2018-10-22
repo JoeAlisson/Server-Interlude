@@ -14,8 +14,8 @@ public interface PetsRepository extends CrudRepository<Pets, Integer> {
 
     @Modifying
     @Query("UPDATE pets SET name=:name,level=:level,curHp=:hp,curMp=:mp,exp=:exp,sp=:sp,karma=:karma,pkkills=:pk,fed=:fed WHERE item_obj_id=:objectId")
-    int updateById(@Param("objectId") int objectId, @Param("name") String name, @Param("level") byte level, @Param("hp") double hp,
-                   @Param("mp") double mp, @Param("exp") long exp, @Param("sp") int sp, @Param("karma") int karma, @Param("pk") int pkKills,
+    int updateById(@Param("objectId") int objectId, @Param("name") String name, @Param("level") int level, @Param("hp") double hp,
+                   @Param("mp") double mp, @Param("exp") long exp, @Param("sp") long sp, @Param("karma") int karma, @Param("pk") int pkKills,
                    @Param("fed") int fed);
 
     @Query("SELECT EXISTS (SELECT 1 FROM pets WHERE name=:name)")

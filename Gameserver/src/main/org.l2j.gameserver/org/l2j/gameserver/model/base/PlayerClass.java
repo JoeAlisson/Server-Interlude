@@ -1,24 +1,7 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model.base;
 
 import org.l2j.commons.util.Util;
+import org.l2j.gameserver.templates.xml.jaxb.Race;
 
 import java.util.EnumMap;
 import java.util.EnumSet;
@@ -65,20 +48,20 @@ public enum PlayerClass {
 	ORACLE(0x1d, Priest, Race.ELF, ELVEN_MAGE),
 	ELDER(0x1e, Priest, Race.ELF, ORACLE),
 	
-	DARK_FIGHTER(0x1f, Fighter, Race.DARK_ELF, null),
-	PALUS_KNIGHT(0x20, Fighter, Race.DARK_ELF, DARK_FIGHTER),
-	SHILLIEN_KNIGHT(0x21, Fighter, Race.DARK_ELF, PALUS_KNIGHT),
-	BLADEDANCER(0x22, Fighter, Race.DARK_ELF, PALUS_KNIGHT),
-	ASSASSIN(0x23, Fighter, Race.DARK_ELF, DARK_FIGHTER),
-	ABYSS_WALKER(0x24, Fighter, Race.DARK_ELF, ASSASSIN),
-	PHANTOM_RANGER(0x25, Fighter, Race.DARK_ELF, ASSASSIN),
+	DARK_FIGHTER(0x1f, Fighter, Race.DARKELF, null),
+	PALUS_KNIGHT(0x20, Fighter, Race.DARKELF, DARK_FIGHTER),
+	SHILLIEN_KNIGHT(0x21, Fighter, Race.DARKELF, PALUS_KNIGHT),
+	BLADEDANCER(0x22, Fighter, Race.DARKELF, PALUS_KNIGHT),
+	ASSASSIN(0x23, Fighter, Race.DARKELF, DARK_FIGHTER),
+	ABYSS_WALKER(0x24, Fighter, Race.DARKELF, ASSASSIN),
+	PHANTOM_RANGER(0x25, Fighter, Race.DARKELF, ASSASSIN),
 	
-	DARK_MAGE(0x26, Mystic, Race.DARK_ELF, null),
-	DARK_WIZARD(0x27, Mystic, Race.DARK_ELF, DARK_MAGE),
-	SPELLHOWLER(0x28, Mystic, Race.DARK_ELF, DARK_WIZARD),
-	PHANTOM_SUMMONER(0x29, Mystic, Race.DARK_ELF, DARK_WIZARD),
-	SHILLIEN_ORACLE(0x2a, Priest, Race.DARK_ELF, DARK_MAGE),
-	SHILLEN_ELDER(0x2b, Priest, Race.DARK_ELF, SHILLIEN_ORACLE),
+	DARK_MAGE(0x26, Mystic, Race.DARKELF, null),
+	DARK_WIZARD(0x27, Mystic, Race.DARKELF, DARK_MAGE),
+	SPELLHOWLER(0x28, Mystic, Race.DARKELF, DARK_WIZARD),
+	PHANTOM_SUMMONER(0x29, Mystic, Race.DARKELF, DARK_WIZARD),
+	SHILLIEN_ORACLE(0x2a, Priest, Race.DARKELF, DARK_MAGE),
+	SHILLEN_ELDER(0x2b, Priest, Race.DARKELF, SHILLIEN_ORACLE),
 	
 	ORC_FIGHTER(0x2c, Fighter, Race.ORC, null),
 	ORC_RAIDER(0x2d, Fighter, Race.ORC, ORC_FIGHTER),
@@ -157,13 +140,13 @@ public enum PlayerClass {
 	ELEMENTAL_MASTER(0x68, Mystic, Race.ELF, ELEMENTAL_SUMMONER),
 	EVA_SAINT(0x69, Priest, Race.ELF, ELDER),
 	
-	SHILLIEN_TEMPLAR(0x6a, Fighter, Race.DARK_ELF, SHILLIEN_KNIGHT),
-	SPECTRAL_DANCER(0x6b, Fighter, Race.DARK_ELF, BLADEDANCER),
-	GHOST_HUNTER(0x6c, Fighter, Race.DARK_ELF, ABYSS_WALKER),
-	GHOST_SENTINEL(0x6d, Fighter, Race.DARK_ELF, PHANTOM_RANGER),
-	STORM_SCREAMER(0x6e, Mystic, Race.DARK_ELF, SPELLHOWLER),
-	SPECTRAL_MASTER(0x6f, Mystic, Race.DARK_ELF, PHANTOM_SUMMONER),
-	SHILLIEN_SAINT(0x70, Priest, Race.DARK_ELF, SHILLEN_ELDER),
+	SHILLIEN_TEMPLAR(0x6a, Fighter, Race.DARKELF, SHILLIEN_KNIGHT),
+	SPECTRAL_DANCER(0x6b, Fighter, Race.DARKELF, BLADEDANCER),
+	GHOST_HUNTER(0x6c, Fighter, Race.DARKELF, ABYSS_WALKER),
+	GHOST_SENTINEL(0x6d, Fighter, Race.DARKELF, PHANTOM_RANGER),
+	STORM_SCREAMER(0x6e, Mystic, Race.DARKELF, SPELLHOWLER),
+	SPECTRAL_MASTER(0x6f, Mystic, Race.DARKELF, PHANTOM_SUMMONER),
+	SHILLIEN_SAINT(0x70, Priest, Race.DARKELF, SHILLEN_ELDER),
 	
 	TITAN(0x71, Fighter, Race.ORC, DESTROYER),
 	GRAND_KHAUATARI(0x72, Fighter, Race.ORC, TYRANT),
@@ -215,16 +198,25 @@ public enum PlayerClass {
     }
 
     private final int id;
-    private final Race race;
+    private final org.l2j.gameserver.templates.xml.jaxb.Race race;
 
 	private final PlayerClass parent;
     private final ClassType classType;
 
-    PlayerClass(int pId, ClassType classType, Race pRace, PlayerClass pParent) {
+    PlayerClass(int pId, ClassType classType, org.l2j.gameserver.templates.xml.jaxb.Race pRace, PlayerClass pParent) {
 		id = pId;
 		this.classType = classType;
 		race = pRace;
 		parent = pParent;
+	}
+
+	public static PlayerClass fromId(Integer id) {
+		for (PlayerClass value : values()) {
+			if(value.getId() == id) {
+				return value;
+			}
+		}
+		return FIGHTER;
 	}
 
 	public final int getId()
@@ -278,9 +270,9 @@ public enum PlayerClass {
             subclasses.remove(this);
             switch (race) {
                 case ELF:
-                    subclasses.removeAll(getSet(Race.DARK_ELF, 2));
+                    subclasses.removeAll(getSet(Race.DARKELF, 2));
                     break;
-                case DARK_ELF:
+                case DARKELF:
                     subclasses.removeAll(getSet(Race.ELF, 2));
                     break;
             }

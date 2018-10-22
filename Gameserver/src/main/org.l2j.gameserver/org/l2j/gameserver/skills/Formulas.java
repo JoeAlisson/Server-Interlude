@@ -30,7 +30,7 @@ import org.l2j.gameserver.model.actor.instance.L2DoorInstance;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
-import org.l2j.gameserver.model.base.Race;
+import org.l2j.gameserver.model.base.CreatureRace;
 import org.l2j.gameserver.model.entity.database.Armor;
 import org.l2j.gameserver.model.entity.database.PlayerTemplate;
 import org.l2j.gameserver.model.entity.database.Weapon;
@@ -1436,8 +1436,8 @@ public final class Formulas
 		
 		if (attacker instanceof L2NpcInstance)
 		{
-			// Skill Race : Undead
-			if (((L2NpcInstance) attacker).getTemplate().getRace() == Race.UNDEAD)
+			// Skill CreatureRace : Undead
+			if (((L2NpcInstance) attacker).getTemplate().getRace() == CreatureRace.UNDEAD)
 			{
 				damage /= attacker.getPDefUndead(target);
 			}

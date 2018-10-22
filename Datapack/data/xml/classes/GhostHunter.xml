@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="108" name="Ghost Hunter" classLevel="76" parent="35" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="76" hp="3113.8" mp="1155.6" cp="1712.59" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3176.88" mp="1180.5" cp="1747.284" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3240.34" mp="1205.55" cp="1782.187" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3304.18" mp="1230.75" cp="1817.299" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3368.4" mp="1256.1" cp="1852.62" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3433.0" mp="1281.6" cp="1888.15" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3497.98" mp="1307.25" cp="1923.889" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3563.34" mp="1333.05" cp="1959.837" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3629.08" mp="1359.0" cp="1995.994" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3695.2" mp="1385.1" cp="2032.36" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

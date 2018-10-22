@@ -1,47 +1,24 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Effect;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Summon;
+import org.l2j.gameserver.model.actor.knownlist.KnownList;
 import org.l2j.gameserver.model.actor.knownlist.PlayableKnownList;
 import org.l2j.gameserver.model.actor.stat.PlayableStat;
 import org.l2j.gameserver.model.actor.status.PlayableStatus;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
 
+import java.util.Objects;
 
-/**
- * This class represents allTemplates Playable characters in the world.<BR>
- * <BR>
- * L2PlayableInstance :<BR>
- * <BR>
- * <li>L2PcInstance</li> <li>L2Summon</li><BR>
- * <BR>
- */
+import static java.util.Objects.isNull;
 
-public abstract class L2PlayableInstance extends L2Character
-{
+public abstract class L2PlayableInstance extends L2Character {
 	
 	private boolean _isNoblesseBlessed = false; // for Noblesse Blessing skill, restores buffs after death
 	private boolean _getCharmOfLuck = false; // Charm of Luck - During a Raid/Boss war, decreased chance for death penalty
-	
+
 	/**
 	 * Constructor of L2PlayableInstance (use L2Character constructor).<BR>
 	 * <BR>
@@ -52,22 +29,18 @@ public abstract class L2PlayableInstance extends L2Character
 	 * @param objectId Identifier of the object to initialized
 	 * @param template The L2CharTemplate to apply to the L2PlayableInstance
 	 */
-	public L2PlayableInstance(int objectId, CharTemplate template)
-	{
+	public L2PlayableInstance(int objectId, CharTemplate template) {
 		super(objectId, template);
-		getKnownList(); // init knownlist
 		getStat(); // init stats
 		getStatus(); // init status
 	}
 	
 	@Override
-	public PlayableKnownList getKnownList()
-	{
-		if ((super.getKnownList() == null) || !(super.getKnownList() instanceof PlayableKnownList))
-		{
-			setKnownList(new PlayableKnownList(this));
-		}
-		return (PlayableKnownList) super.getKnownList();
+	public KnownList getKnownList() {
+		if(isNull(_knownList)) {
+		    _knownList = new PlayableKnownList(this);
+        }
+        return _knownList;
 	}
 	
 	@Override

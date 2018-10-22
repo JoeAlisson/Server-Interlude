@@ -7,10 +7,10 @@ import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.model.L2DropCategory;
 import org.l2j.gameserver.model.L2DropData;
 import org.l2j.gameserver.model.L2Skill;
+import org.l2j.gameserver.model.base.CreatureRace;
 import org.l2j.gameserver.model.base.PlayerClass;
-import org.l2j.gameserver.model.base.Race;
 import org.l2j.gameserver.model.quest.Quest;
-import org.l2j.gameserver.skills.SkillConstants;
+import org.l2j.gameserver.templates.SkillConstants;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.NpcType;
 import org.slf4j.Logger;
@@ -73,7 +73,7 @@ public class NpcTemplate extends CharTemplate {
     @Transient
     private Map<Integer, L2DropCategory> dropCategories;
     @Transient
-    private Race race;
+    private CreatureRace race;
     @Transient
     private Set<PlayerClass> teachInfo;
     // contains a list of quests for each event type (questStart, questAttack, questKill, etc)
@@ -153,7 +153,7 @@ public class NpcTemplate extends CharTemplate {
 
             //TODO implement RACE skill
             if (isNull(race) && (skillId == SkillConstants.RACES)) {
-                race = Race.fromRaceSkillLevel(skillLevel);
+                race = CreatureRace.fromRaceSkillLevel(skillLevel);
             }
 
             L2Skill skill = SkillTable.getInstance().getInfo(skillId, skillLevel);
@@ -338,9 +338,9 @@ public class NpcTemplate extends CharTemplate {
         dropCategories.clear();
     }
 
-    public Race getRace() {
+    public CreatureRace getRace() {
         if(isNull(race)) {
-            return  Race.UNKNOWN;
+            return  CreatureRace.UNKNOWN;
         }
         return race;
     }

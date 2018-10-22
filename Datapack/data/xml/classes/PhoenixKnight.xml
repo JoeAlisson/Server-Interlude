@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="90" name="Phoenix Knight" classLevel="76" parent="5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="76" hp="2883.9" mp="1155.6" cp="1730.34" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="2943.66" mp="1180.5" cp="1766.196" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3003.78" mp="1205.55" cp="1802.268" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3064.26" mp="1230.75" cp="1838.556" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3125.1" mp="1256.1" cp="1875.06" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3186.3" mp="1281.6" cp="1911.78" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3247.86" mp="1307.25" cp="1948.716" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3309.78" mp="1333.05" cp="1985.868" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3372.06" mp="1359.0" cp="2023.236" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3434.7" mp="1385.1" cp="2060.82" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+
+</classInfo>

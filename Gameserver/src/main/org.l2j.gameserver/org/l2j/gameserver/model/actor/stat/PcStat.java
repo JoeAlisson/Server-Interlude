@@ -99,7 +99,7 @@ public class PcStat extends PlayableStat
 	@Override
 	public boolean addExpAndSp(long addToExp, int addToSp)
 	{
-		float ratioTakenByPet = 0;
+		float ratioTakenByPet;
 		// Player is Gm and acces level is below or equal to GM_DONT_TAKE_EXPSP and is in party, don't give Xp/Sp
 		L2PcInstance activeChar = getActiveChar();
 		if (activeChar.isGM() && (activeChar.getAccessLevel() <= Config.GM_DONT_TAKE_EXPSP) && activeChar.isInParty())
@@ -241,7 +241,7 @@ public class PcStat extends PlayableStat
 	}
 	
 	@Override
-	public boolean addSp(int value)
+	public boolean addSp(long value)
 	{
 		if (!super.addSp(value))
 		{
@@ -249,7 +249,7 @@ public class PcStat extends PlayableStat
 		}
 		
 		StatusUpdate su = new StatusUpdate(getActiveChar().getObjectId());
-		su.addAttribute(StatusUpdate.SP, getSp());
+		su.addAttribute(StatusUpdate.SP, (int) getSp());
 		getActiveChar().sendPacket(su);
 		
 		return true;
@@ -270,7 +270,8 @@ public class PcStat extends PlayableStat
 			return 0;
 		}
 
-		return (int) (calcStat(Stats.ACCURACY, getActiveChar().getTemplate().getAccuracy(), null, null) / getActiveChar().getWeaponExpertisePenalty());
+		//TODO use Base Stats to calc
+		return (int) (calcStat(Stats.ACCURACY, 0, null, null) / getActiveChar().getWeaponExpertisePenalty());
 	}
 
 	@Override
@@ -279,7 +280,8 @@ public class PcStat extends PlayableStat
             return 1;
         }
 
-        return (int) (calcStat(Stats.EVASION_RATE, getActiveChar().getTemplate().getEvasion(), target, null) / getActiveChar().getArmourExpertisePenalty());
+        //TODO use Base Stats to calc
+        return (int) (calcStat(Stats.EVASION_RATE, 0, target, null) / getActiveChar().getArmourExpertisePenalty());
 	}
 
 	// =========================================================
@@ -315,7 +317,7 @@ public class PcStat extends PlayableStat
 	}
 	
 	@Override
-	public final byte getLevel()
+	public final int getLevel()
 	{
 		if (getActiveChar().isSubClassActive())
 		{
@@ -326,7 +328,7 @@ public class PcStat extends PlayableStat
 	}
 	
 	@Override
-	public final void setLevel(byte value)
+	public final void setLevel(int value)
 	{
 		if (value > (Experience.MAX_LEVEL - 1))
 		{
@@ -383,7 +385,7 @@ public class PcStat extends PlayableStat
 	}
 	
 	@Override
-	public final int getSp()
+	public final long getSp()
 	{
 		if (getActiveChar().isSubClassActive())
 		{
@@ -394,7 +396,7 @@ public class PcStat extends PlayableStat
 	}
 	
 	@Override
-	public final void setSp(int value)
+	public final void setSp(long value)
 	{
 		if (getActiveChar().isSubClassActive())
 		{

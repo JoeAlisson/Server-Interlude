@@ -81,7 +81,7 @@ public class CursedWeapon
 	{
 		if (_isActivated)
 		{
-			if ((_player != null) && (_player.isOnline() == 1))
+			if ((_player != null) && (_player.isOnline()))
 			{
 				// Remove from player
 				_log.info(_name + " being removed online.");

@@ -1888,43 +1888,43 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 816<br>
-	 * Message: Tickets are now available for Monster Race $s1!
+	 * Message: Tickets are now available for Monster CreatureRace $s1!
 	 */
 	MONSRACE_TICKETS_AVAILABLE_FOR_S1_RACE(816),
 	
 	/**
 	 * ID: 817<br>
-	 * Message: Now selling tickets for Monster Race $s1!
+	 * Message: Now selling tickets for Monster CreatureRace $s1!
 	 */
 	MONSRACE_TICKETS_NOW_AVAILABLE_FOR_S1_RACE(817),
 	
 	/**
 	 * ID: 818<br>
-	 * Message: Ticket sales for the Monster Race will end in $s1 minute(s).
+	 * Message: Ticket sales for the Monster CreatureRace will end in $s1 minute(s).
 	 */
 	MONSRACE_TICKETS_STOP_IN_S1_MINUTES(818),
 	
 	/**
 	 * ID: 819<br>
-	 * Message: Tickets sales are closed for Monster Race $s1. Odds are posted.
+	 * Message: Tickets sales are closed for Monster CreatureRace $s1. Odds are posted.
 	 */
 	MONSRACE_TICKET_SALES_CLOSED(819),
 	
 	/**
 	 * ID: 820<br>
-	 * Message: Monster Race $s2 will begin in $s1 minute(s)!
+	 * Message: Monster CreatureRace $s2 will begin in $s1 minute(s)!
 	 */
 	MONSRACE_BEGINS_IN_S1_MINUTES(820),
 	
 	/**
 	 * ID: 821<br>
-	 * Message: Monster Race $s1 will begin in 30 seconds!
+	 * Message: Monster CreatureRace $s1 will begin in 30 seconds!
 	 */
 	MONSRACE_BEGINS_IN_30_SECONDS(821),
 	
 	/**
 	 * ID: 822<br>
-	 * Message: Monster Race $s1 is about to begin! Countdown in five seconds!
+	 * Message: Monster CreatureRace $s1 is about to begin! Countdown in five seconds!
 	 */
 	MONSRACE_COUNTDOWN_IN_FIVE_SECONDS(822),
 	
@@ -1942,7 +1942,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 825<br>
-	 * Message: Monster Race $s1 is finished!
+	 * Message: Monster CreatureRace $s1 is finished!
 	 */
 	MONSRACE_RACE_END(825),
 	

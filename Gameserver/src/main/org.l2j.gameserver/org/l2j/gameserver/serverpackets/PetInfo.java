@@ -93,7 +93,7 @@ public class PetInfo extends L2GameServerPacket
 		writeInt(_maxHp);// max hp
 		writeInt((int) _summon.getCurrentMp());// current mp
 		writeInt(_maxMp);// max mp
-		writeInt(_summon.getStat().getSp()); // sp
+		writeInt((int)_summon.getStat().getSp()); // sp
 		writeInt(_summon.getLevel());// lvl
 		writeLong(_summon.getStat().getExp());
 		writeLong(_summon.getExpForThisLevel());// 0% absolute value

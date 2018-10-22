@@ -4,7 +4,7 @@ import org.l2j.commons.database.annotation.Column;
 import org.l2j.commons.database.annotation.Table;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.base.PlayerClass;
-import org.l2j.gameserver.model.base.Race;
+import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 

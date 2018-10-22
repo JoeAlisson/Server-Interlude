@@ -20,7 +20,7 @@ package org.l2j.gameserver.datatables;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.ThreadPoolManager;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.instancemanager.SiegeManager;
 import org.l2j.gameserver.model.L2Clan;
 import org.l2j.gameserver.model.L2ClanMember;
@@ -293,7 +293,7 @@ public class ClanTable {
     public void checkSurrender(L2Clan clan1, L2Clan clan2) {
         int count = 0;
         for (L2ClanMember player : clan1.getMembers()) {
-            if ((player != null) && (player.getPlayerInstance().getWantsPeace() == 1)) {
+            if ((player != null) && (player.getPlayerInstance().getWantsPeace())) {
                 count++;
             }
         }

@@ -26,10 +26,13 @@ import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.L2Skill.SkillTargetType;
 import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.actor.appearance.PcAppearance;
+import org.l2j.gameserver.model.actor.knownlist.KnownList;
 import org.l2j.gameserver.model.actor.knownlist.PcKnownList;
 import org.l2j.gameserver.model.actor.stat.PcStat;
 import org.l2j.gameserver.model.actor.status.PcStatus;
-import org.l2j.gameserver.model.base.*;
+import org.l2j.gameserver.model.base.Experience;
+import org.l2j.gameserver.model.base.PlayerClass;
+import org.l2j.gameserver.model.base.SubClass;
 import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.*;
 import org.l2j.gameserver.model.entity.database.repository.*;
@@ -42,6 +45,7 @@ import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.skills.Formulas;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.*;
+import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.l2j.gameserver.util.Broadcast;
 import org.l2j.gameserver.util.FloodProtector;
 import org.l2j.gameserver.util.Point3D;
@@ -53,9 +57,42 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
+import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 
 public final class L2PcInstance extends L2PlayableInstance {
+
+    private L2PcInstance(int objectId, ClassTemplate template, String accountName, PcAppearance app) {
+        super(objectId, template);
+        super.initCharStatusUpdateValues();
+        initPcStatusUpdateValues();
+
+        _accountName = accountName;
+        _appearance = app;
+
+        // Create an AI
+        _ai = new L2PlayerAI(new AIAccessor());
+
+        // Create a L2Radar object
+        _radar = new L2Radar(this);
+
+        // Retrieve from the database allTemplates skills of this L2PcInstance and add them to _skills
+        // Retrieve from the database allTemplates items of this L2PcInstance and add them to _inventory
+        getInventory().restore();
+        if (!Config.WAREHOUSE_CACHE) {
+            getWarehouse();
+        }
+        getFreight().restore();
+    }
+
+    public final KnownList getKnownList() {
+        if(isNull(_knownList)) {
+            _knownList = new PcKnownList(this);
+        }
+        return  _knownList;
+    }
+
+    // ####################################################################################
 
     public static final int REQUEST_TIMEOUT = 15;
     public static final int STORE_PRIVATE_NONE = 0;
@@ -647,7 +684,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     /**
      * The _wants peace.
      */
-    private int _wantsPeace = 0;
+    private boolean _wantsPeace = false;
 
     // Death Penalty Buff Level
     /**
@@ -1152,48 +1189,6 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
     }
 
-    /**
-     * Create a new L2PcInstance and add it in the characters table of the database.<BR>
-     * <BR>
-     * <B><U> Actions</U> :</B><BR>
-     * <BR>
-     * <li>Create a new L2PcInstance with an account name</li> <li>Set the name, the Hair Style, the Hair Color and the Face type of the L2PcInstance</li> <li>Add the player in the characters table of the database</li><BR>
-     * <BR>
-     *
-     * @param objectId    Identifier of the object to initialized
-     * @param template    The L2PcTemplate to apply to the L2PcInstance
-     * @param accountName The name of the L2PcInstance
-     * @param name        The name of the L2PcInstance
-     * @param hairStyle   The hair style Identifier of the L2PcInstance
-     * @param hairColor   The hair color Identifier of the L2PcInstance
-     * @param face        The face type Identifier of the L2PcInstance
-     * @param sex         the sex
-     * @return The L2PcInstance added to the database or null
-     */
-    public static L2PcInstance create(int objectId, ClassTemplate template, String accountName, String name, byte hairStyle, byte hairColor, byte face, boolean sex) {
-        // Create a new L2PcInstance with an account name
-        PcAppearance app = new PcAppearance(face, hairColor, hairStyle, sex);
-        L2PcInstance player = new L2PcInstance(objectId, template, accountName, app);
-
-        // Set the name of the L2PcInstance
-        player.setName(name);
-
-        // Set the base class ID to that of the actual class ID.
-        player.setBaseClass(player.getPlayerClass());
-
-        if (Config.ALT_GAME_NEW_CHAR_ALWAYS_IS_NEWBIE) {
-            player.setNewbie(true);
-        }
-
-        // Add the player in the characters table of the database
-        boolean ok = player.createDb();
-
-        if (!ok) {
-            return null;
-        }
-
-        return player;
-    }
 
     /**
      * Creates the dummy player.
@@ -1298,47 +1293,6 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Constructor of L2PcInstance (use L2Character constructor).<BR>
-     * <BR>
-     * <B><U> Actions</U> :</B><BR>
-     * <BR>
-     * <li>Call the L2Character constructor to create an empty _skills slot and copy basic Calculator set to this L2PcInstance</li> <li>Set the name of the L2PcInstance</li><BR>
-     * <BR>
-     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method SET the level of the L2PcInstance to 1</B></FONT><BR>
-     * <BR>
-     *
-     * @param objectId    Identifier of the object to initialized
-     * @param template    The L2PcTemplate to apply to the L2PcInstance
-     * @param accountName The name of the account including this L2PcInstance
-     * @param app         the app
-     */
-    private L2PcInstance(int objectId, ClassTemplate template, String accountName, PcAppearance app) {
-        super(objectId, template);
-        getKnownList(); // init knownlist
-        getStat(); // init stats
-        getStatus(); // init status
-        super.initCharStatusUpdateValues();
-        initPcStatusUpdateValues();
-
-        _accountName = accountName;
-        _appearance = app;
-
-        // Create an AI
-        _ai = new L2PlayerAI(new AIAccessor());
-
-        // Create a L2Radar object
-        _radar = new L2Radar(this);
-
-        // Retrieve from the database allTemplates skills of this L2PcInstance and add them to _skills
-        // Retrieve from the database allTemplates items of this L2PcInstance and add them to _inventory
-        getInventory().restore();
-        if (!Config.WAREHOUSE_CACHE) {
-            getWarehouse();
-        }
-        getFreight().restore();
-    }
-
-    /**
      * Instantiates a new l2 pc instance.
      *
      * @param objectId the object id
@@ -1350,14 +1304,6 @@ public final class L2PcInstance extends L2PlayableInstance {
         getStatus(); // init status
         super.initCharStatusUpdateValues();
         initPcStatusUpdateValues();
-    }
-
-    @Override
-    public final PcKnownList getKnownList() {
-        if ((super.getKnownList() == null) || !(super.getKnownList() instanceof PcKnownList)) {
-            setKnownList(new PcKnownList(this));
-        }
-        return (PcKnownList) super.getKnownList();
     }
 
     @Override
@@ -1390,8 +1336,8 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @return the base template
      */
-    public final PlayerTemplate getBaseTemplate() {
-        return PlayerTemplateTable.getInstance().getPlayerTemplate(_baseClass);
+    public final ClassTemplate getBaseTemplate() {
+        return PlayerTemplateTable.getInstance().getClassTemplate(_baseClass);
     }
 
     /**
@@ -1400,8 +1346,8 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return the template
      */
     @Override
-    public final PlayerTemplate getTemplate() {
-        return (PlayerTemplate) super.getTemplate();
+    public final ClassTemplate getTemplate() {
+        return (ClassTemplate) super.getTemplate();
     }
 
     /**
@@ -1410,7 +1356,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @param newclass the new template
      */
     public void setTemplate(PlayerClass newclass) {
-        super.setTemplate(PlayerTemplateTable.getInstance().getPlayerTemplate(newclass));
+        super.setTemplate(PlayerTemplateTable.getInstance().getClassTemplate(newclass.getId()));
     }
 
     /**
@@ -2462,7 +2408,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return the class id
      */
     public PlayerClass getPlayerClass() {
-        return getTemplate().getPlayerClass();
+        return PlayerClass.fromId(getTemplate().getId());
     }
 
     /**
@@ -2740,16 +2686,16 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Return the Race object of the L2PcInstance.
+     * Return the CreatureRace object of the L2PcInstance.
      *
      * @return the race
      */
-    public Race getRace() {
+    public org.l2j.gameserver.templates.xml.jaxb.Race getRace() {
         if (!isSubClassActive()) {
             return getTemplate().getRace();
         }
 
-        PlayerTemplate charTemp = PlayerTemplateTable.getInstance().getPlayerTemplate(_baseClass);
+        var charTemp = PlayerTemplateTable.getInstance().getPlayerTemplate(_baseClass);
         return charTemp.getRace();
     }
 
@@ -2767,7 +2713,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @return the sp
      */
-    public int getSp() {
+    public long getSp() {
         return getStat().getSp();
     }
 
@@ -2776,7 +2722,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @param sp the new sp
      */
-    public void setSp(int sp) {
+    public void setSp(long sp) {
         super.getStat().setSp(sp);
     }
 
@@ -6124,109 +6070,6 @@ public final class L2PcInstance extends L2PlayableInstance {
         repository.updateSevenSignsDungeonStatus(getObjectId(), isIn7sDungeon() ? 1 : 0);
     }
 
-    /**
-     * Create a new player in the characters table of the database.
-     *
-     * @return true, if successful
-     */
-    private boolean createDb() {
-        Character character = new Character();
-
-        character.setObjectId(getObjectId());
-        character.setAccount(_accountName);
-
-        character.setLevel((byte) getLevel());
-        character.setExperience(getExp());
-        character.setExpBeforeDeath(_expBeforeDeath);
-        character.setSkillPoint(getSp());
-
-        character.setMaxHp(getMaxHp());
-        character.setCurrentHp((long) getCurrentHp());
-        character.setMaxCp(getMaxCp());
-        character.setCurrentCp((long) getCurrentCp());
-        character.setMaxMp(getMaxMp());
-        character.setCurrentMp((long) getCurrentMp());
-
-        character.setAccuracy(getAccuracy());
-        character.setCritical(getCriticalHit(null, null));
-        character.setEvasion(getEvasionRate(null));
-        character.setMagicalAttack(getMAtk(null, null));
-        character.setMagicalDefense(getMDef(null, null));
-        character.setMagicalSpeed(getMAtkSpd());
-        character.setPhysicalAttack(getPAtk(null));
-        character.setPhysicalDefense(getPDef(null));
-        character.setPhysicalSpeed(getPAtkSpd());
-        character.setRunSpeed(getRunSpeed());
-        character.setWalkSpeed(getWalkSpeed());
-        character.setMovementMultiplier(1);
-        character.setAttackSpeedMultiplier(1);
-        character.setMaxload(getMaxLoad());
-
-        character.setStrength(getSTR());
-        character.setConstitution(getCON());
-        character.setDexterity(getDEX());
-        character.setIntelligence(getINT());
-        character.setMentality(getMEN());
-        character.setWitness(getWIT());
-
-        PcAppearance appearance = getAppearance();
-
-        character.setFace(appearance.getFace());
-        character.setHairStyle(appearance.getHairStyle());
-        character.setHairColor(appearance.getHairColor());
-        character.setSex(appearance.getSex() ? 1 : 0);
-        character.setTitle(getTitle());
-        character.setCharName(getName());
-
-        character.setCollisionRadius(getTemplate().getCollisionRadius());
-        character.setCollisionHeight(getTemplate().getCollisionHeight());
-
-        character.setHeading(getHeading());
-        setCharacterPosition(character);
-
-        character.setKarma(_karma);
-        character.setPvp(_pvpKills);
-        character.setPk(_pkKills);
-
-        character.setRecommendHave(_recomHave);
-        character.setRecommendLeft(_recomLeft);
-        character.setLastRecommendDate(System.currentTimeMillis());
-        character.setAccesslevel(getAccessLevel());
-
-        character.setClan(_clanId);
-        character.setClanPrivileges(getClanPrivileges());
-        character.setWantspeace(_wantsPeace);
-        character.setLvlJoinedAcademy(getLvlJoinedAcademy());
-        character.setApprentice(getApprentice());
-        character.setSponsor(getSponsor());
-        character.setClanJoinExpiryTime(getClanJoinExpiryTime());
-        character.setClanCreateExpiryTime(getClanCreateExpiryTime());
-        character.setPowerGrade(0);
-        character.setSubpledge(getPledgeType());
-
-        character.setRace(getRace().ordinal());
-        character.setClassId(getPlayerClass().getId());
-        character.setBaseClass(getBaseClass());
-
-        character.setDeleteTime(getDeleteTimer());
-        character.setOnline(isOnline());
-        character.setInSevenSigns(isIn7sDungeon() ? 1 : 0);
-
-        character.setOnlineTime(0);
-        character.setInJail(isInJail() ? 1 : 0);
-        character.setJailTimer(getJailTimer());
-        character.setNewbie(isNewbie() ? 1 : 0);
-        character.setNobless(isNoble() ? 1 : 0);
-        character.setVarkaKetraAlly(getAllianceWithVarkaKetra());
-        character.setDeathPenaltyLevel(getDeathPenaltyBuffLevel());
-        character.setCancraft(hasDwarvenCraft() ? 1 : 0);
-
-        CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
-        repository.save(character);
-
-        return character.isPersisted();
-    }
-
     private void setCharacterPosition(Character character) {
         if(_observerMode) {
             character.setX( _obsX );
@@ -6253,9 +6096,8 @@ public final class L2PcInstance extends L2PlayableInstance {
         if(optionalCharacter.isPresent()) {
             Character character = optionalCharacter.get();
             final int activeClassId = character.getClassId();
-            final boolean female = character.getSex() != 0;
-            final PlayerTemplate template = PlayerTemplateTable.getInstance().getPlayerTemplate(activeClassId);
-            PcAppearance app = new PcAppearance(character.getFace(), character.getHairColor(), character.getHairStyle(), female);
+            final ClassTemplate template = PlayerTemplateTable.getInstance().getClassTemplate(activeClassId);
+            PcAppearance app = new PcAppearance(character.getFace(), character.getHairColor(), character.getHairStyle(), character.getSex());
 
             L2PcInstance player = new L2PcInstance(objectId, template, character.getAccount(), app);
             player.setName(character.getCharName());
@@ -6273,8 +6115,8 @@ public final class L2PcInstance extends L2PlayableInstance {
             player.setPvpKills(character.getPvp());
             player.setPkKills(character.getPk());
             player.setOnlineTime(character.getOnlineTime());
-            player.setNewbie(character.isNewbie() == 1);
-            player.setNoble(character.isNobless() == 1);
+            player.setNewbie(character.isNewbie());
+            player.setNoble(character.isNobless());
 
             player.setClanJoinExpiryTime(character.getClanJoinExpiryTime());
             if (player.getClanJoinExpiryTime() < System.currentTimeMillis()) {
@@ -6314,9 +6156,9 @@ public final class L2PcInstance extends L2PlayableInstance {
             player.setFistsWeaponItem(player.findFistsWeaponItem(activeClassId));
             player.setUptime(System.currentTimeMillis());
 
-            player.setCurrentHp(character.getCurrentHp());
+            player.setCurrentHp(character.getHp());
             player.setCurrentCp(character.getCp());
-            player.setCurrentMp(character.getCurrentMp());
+            player.setCurrentMp(character.getMp());
 
             // Check recs
             player.checkRecom(character.getRecHave(), character.getRecLeft());
@@ -6351,8 +6193,8 @@ public final class L2PcInstance extends L2PlayableInstance {
             player.setApprentice(character.getApprentice());
             player.setSponsor(character.getSponsor());
             player.setLvlJoinedAcademy(character.getLvlJoinedAcademy());
-            player.setIsIn7sDungeon((character.isInSevenSigns() == 1) ? true : false);
-            player.setInJail((character.isInJail() == 1) ? true : false);
+            player.setIsIn7sDungeon(character.isInSevenSigns());
+            player.setInJail(character.isInJail());
             if (player.isInJail()) {
                 player.setJailTimer(character.getJailTimer());
             } else {
@@ -6548,8 +6390,8 @@ public final class L2PcInstance extends L2PlayableInstance {
         int currentClassIndex = getClassIndex();
         _classIndex = 0;
         long exp = getStat().getExp();
-        byte level = getStat().getLevel();
-        int sp = getStat().getSp();
+        int level = getStat().getLevel();
+        long sp = getStat().getSp();
         _classIndex = currentClassIndex;
 
         Character character = new Character();
@@ -6562,33 +6404,9 @@ public final class L2PcInstance extends L2PlayableInstance {
         character.setExpBeforeDeath(_expBeforeDeath);
         character.setSkillPoint(sp);
 
-        character.setMaxHp(getMaxHp());
-        character.setCurrentHp((long) getCurrentHp());
-        character.setMaxCp(getMaxCp());
-        character.setCurrentCp((long) getCurrentCp());
-        character.setMaxMp(getMaxMp());
-        character.setCurrentMp((long) getCurrentMp());
-
-        character.setStrength(getSTR());
-        character.setConstitution(getCON());
-        character.setDexterity(getDEX());
-        character.setIntelligence(getINT());
-        character.setMentality(getMEN());
-        character.setWitness(getWIT());
-        character.setMaxload(getMaxLoad());
-        character.setAccuracy(getAccuracy());
-        character.setCritical(getCriticalHit(null, null));
-        character.setEvasion(getEvasionRate(null));
-        character.setMagicalAttack(getMAtk(null, null));
-        character.setMagicalDefense(getMDef(null, null));
-        character.setMagicalSpeed(getMAtkSpd());
-        character.setPhysicalAttack(getPAtk(null));
-        character.setPhysicalDefense(getPDef(null));
-        character.setPhysicalSpeed(getPAtkSpd());
-        character.setRunSpeed(getRunSpeed());
-        character.setWalkSpeed(getWalkSpeed());
-        character.setMovementMultiplier(1);
-        character.setAttackSpeedMultiplier(1);
+        character.setHp((long) getCurrentHp());
+        character.setCp((long) getCurrentCp());
+        character.setMp((long) getCurrentMp());
 
         PcAppearance appearance = getAppearance();
 
@@ -6596,10 +6414,8 @@ public final class L2PcInstance extends L2PlayableInstance {
         character.setHairStyle(appearance.getHairStyle());
         character.setHairColor(appearance.getHairColor());
         character.setTitle(getTitle());
-        character.setCharName(getName());
-        character.setSex(appearance.getSex() ? 1 : 0);
-        character.setCollisionRadius(getTemplate().getCollisionRadius());
-        character.setCollisionHeight(getTemplate().getCollisionHeight());
+        character.setName(getName());
+        character.setSex(appearance.getSex());
 
         character.setHeading(getHeading());
         setCharacterPosition(character);
@@ -6624,14 +6440,14 @@ public final class L2PcInstance extends L2PlayableInstance {
         character.setPowerGrade(getPowerGrade());
         character.setSubpledge(getPledgeType());
 
-        character.setRace(getRace().ordinal());
+        character.setRace(getRace());
         character.setClassId(getPlayerClass().getId());
         character.setBaseClass(getBaseClass());
 
         character.setDeleteTime(getDeleteTimer());
         character.setOnline(isOnline());
         character.setLastAccess(_lastAccess);
-        character.setInSevenSigns(isIn7sDungeon() ? 1 : 0);
+        character.setInSevenSigns(isIn7sDungeon());
 
         long totalOnlineTime = _onlineTime;
 
@@ -6640,14 +6456,12 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
 
         character.setOnlineTime(totalOnlineTime);
-        character.setInJail(isInJail() ? 1 : 0);
+        character.setInJail(isInJail());
         character.setJailTimer(getJailTimer());
-        character.setNewbie(isNewbie() ? 1 : 0);
-        character.setNobless(isNoble() ? 1 : 0);
+        character.setNewbie(isNewbie());
+        character.setNobless(isNoble());
         character.setVarkaKetraAlly(getAllianceWithVarkaKetra());
         character.setDeathPenaltyLevel(getDeathPenaltyBuffLevel());
-        character.setCancraft(hasDwarvenCraft() ? 1 : 0);
-
 
         character.setPersisted();
 
@@ -6715,8 +6529,8 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @return the int
      */
-    public int isOnline() {
-        return (_isOnline ? 1 : 0);
+    public boolean isOnline() {
+        return _isOnline;
     }
 
     /**
@@ -7237,7 +7051,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 }
 
                 // Check if clan is at war
-                if ((getClan() != null) && (((L2PcInstance) attacker).getClan() != null) && (getClan().isAtWarWith(((L2PcInstance) attacker).getClanId()) && (getWantsPeace() == 0) && (((L2PcInstance) attacker).getWantsPeace() == 0) && !isAcademyMember())) {
+                if ((getClan() != null) && (((L2PcInstance) attacker).getClan() != null) && (getClan().isAtWarWith(((L2PcInstance) attacker).getClanId()) && !getWantsPeace()) && (!((L2PcInstance) attacker).getWantsPeace() && !isAcademyMember())) {
                     return true;
                 }
             }
@@ -8042,7 +7856,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     class WarnUserTakeBreak implements Runnable {
         @Override
         public void run() {
-            if (isOnline() == 1) {
+            if (isOnline()) {
                 SystemMessage msg = new SystemMessage(SystemMessageId.PLAYING_FOR_LONG_TIME);
                 sendPacket(msg);
             } else {
@@ -8855,7 +8669,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @param wantsPeace the new wants peace
      */
-    public void setWantsPeace(int wantsPeace) {
+    public void setWantsPeace(boolean wantsPeace) {
         _wantsPeace = wantsPeace;
     }
 
@@ -8864,7 +8678,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @return the wants peace
      */
-    public int getWantsPeace() {
+    public boolean getWantsPeace() {
         return _wantsPeace;
     }
 
@@ -9114,7 +8928,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     private void setClassTemplate(int classId) {
         _activeClass = classId;
 
-        PlayerTemplate t = PlayerTemplateTable.getInstance().getPlayerTemplate(classId);
+        ClassTemplate t = PlayerTemplateTable.getInstance().getClassTemplate(classId);
 
         if (t == null) {
             _log.error("Missing template for classId: " + classId);

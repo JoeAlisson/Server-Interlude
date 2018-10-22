@@ -20,7 +20,7 @@ package org.l2j.gameserver;
 
 import org.l2j.commons.util.Rnd;
 import org.l2j.gameserver.datatables.NpcTable;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 

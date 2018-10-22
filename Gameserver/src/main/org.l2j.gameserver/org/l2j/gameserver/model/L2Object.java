@@ -1,34 +1,18 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2j.gameserver.instancemanager.MercTicketManager;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.actor.knownlist.ObjectKnownList;
+import org.l2j.gameserver.model.actor.knownlist.KnownList;
 import org.l2j.gameserver.model.actor.poly.ObjectPoly;
 import org.l2j.gameserver.model.actor.position.ObjectPosition;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.serverpackets.ActionFailed;
 import org.l2j.gameserver.serverpackets.GetItem;
+
+import static java.util.Objects.isNull;
 
 /**
  * Mother class of allTemplates objects in the world which ones is it possible to interact (PC, NPC, Item...)<BR>
@@ -39,17 +23,30 @@ import org.l2j.gameserver.serverpackets.GetItem;
  */
 public abstract class L2Object {
 
+    protected KnownList _knownList;
+
+	public L2Object(int objectId) {
+		_objectId = objectId;
+	}
+
+    public KnownList getKnownList() {
+        if (isNull(_knownList)) {
+            _knownList = new KnownList(this);
+        }
+        return _knownList;
+    }
+
+	// ########################################
+
 	private boolean _isVisible;
-	private ObjectKnownList _knownList;
+
 	private String _name;
 	private int _objectId;
 	private ObjectPoly _poly;
 	private ObjectPosition _position;
 
-	public L2Object(int objectId)
-	{
-		_objectId = objectId;
-	}
+
+
 
 	public void onAction(L2PcInstance player)
 	{
@@ -304,16 +301,7 @@ public abstract class L2Object {
 		}
 	}
 	
-	public ObjectKnownList getKnownList()
-	{
-		if (_knownList == null)
-		{
-			_knownList = new ObjectKnownList(this);
-		}
-		return _knownList;
-	}
-	
-	public final void setKnownList(ObjectKnownList value)
+	public final void setKnownList(KnownList value)
 	{
 		_knownList = value;
 	}

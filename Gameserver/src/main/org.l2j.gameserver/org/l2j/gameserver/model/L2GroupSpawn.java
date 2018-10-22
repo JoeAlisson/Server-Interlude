@@ -20,7 +20,7 @@ package org.l2j.gameserver.model;
 import org.l2j.commons.Config;
 import org.l2j.commons.util.Rnd;
 import org.l2j.gameserver.Territory;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.actor.instance.L2ControllableMobInstance;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="114" name="Grand Khavatari" classLevel="76" parent="48" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="76" hp="3293.2" mp="1155.6" cp="1646.6" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3362.92" mp="1180.5" cp="1681.46" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3433.06" mp="1205.55" cp="1716.53" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3503.62" mp="1230.75" cp="1751.81" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3574.6" mp="1256.1" cp="1787.3" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3646.0" mp="1281.6" cp="1823.0" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3717.82" mp="1307.25" cp="1858.91" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3790.06" mp="1333.05" cp="1895.03" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3862.72" mp="1359.0" cp="1931.36" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3935.8" mp="1385.1" cp="1967.9" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

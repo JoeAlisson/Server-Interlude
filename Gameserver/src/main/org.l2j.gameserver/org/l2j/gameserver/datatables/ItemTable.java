@@ -1,27 +1,9 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.datatables;
 
 import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.ThreadPoolManager;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.ItemFactory;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.actor.instance.L2BossInstance;
@@ -112,11 +94,11 @@ public class ItemTable {
      */
     public L2ItemInstance createItem(String process, int itemId, int count, L2PcInstance actor, L2Object reference) {
         // Create and Init the L2ItemInstance corresponding to the Item Identifier
-        L2ItemInstance item = new L2ItemInstance(IdFactory.getInstance().getNextId(), itemId);
+        L2ItemInstance item = ItemFactory.create(itemId);
 
         if (process.equalsIgnoreCase("loot") && !Config.AUTO_LOOT) {
             ScheduledFuture<?> itemLootShedule;
-            long delay = 0;
+            long delay;
             // if in CommandChannel and was killing a World/RaidBoss
             if (((reference != null) && (reference instanceof L2BossInstance)) || (reference instanceof L2RaidBossInstance)) {
                 if ((((L2Attackable) reference).getFirstCommandChannelAttacked() != null) && ((L2Attackable) reference).getFirstCommandChannelAttacked().meetRaidWarCondition(reference)) {
@@ -196,7 +178,7 @@ public class ItemTable {
             item.setLastChange(L2ItemInstance.REMOVED);
 
             L2World.getInstance().removeObject(item);
-            IdFactory.getInstance().releaseId(item.getObjectId());
+            ItemFactory.releaseId(item.getObjectId());
 
             if (Config.LOG_ITEMS) {
                 _logItems.info("DELETE: {}", process);

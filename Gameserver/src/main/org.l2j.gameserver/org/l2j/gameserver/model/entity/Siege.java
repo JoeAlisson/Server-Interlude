@@ -24,7 +24,7 @@ import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.datatables.ClanTable;
 import org.l2j.gameserver.datatables.MapRegionTable;
 import org.l2j.gameserver.datatables.NpcTable;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.instancemanager.MercTicketManager;
 import org.l2j.gameserver.instancemanager.SiegeGuardManager;
 import org.l2j.gameserver.instancemanager.SiegeManager;

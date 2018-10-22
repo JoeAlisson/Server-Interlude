@@ -3,6 +3,7 @@ package org.l2j.gameserver.model.entity.database;
 import org.l2j.commons.database.annotation.Column;
 import org.l2j.commons.database.annotation.Table;
 import org.l2j.commons.database.model.Entity;
+import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.springframework.data.annotation.Id;
 
 @Table("characters")
@@ -15,16 +16,19 @@ public class Character extends Entity<Integer> {
     private String account;
     @Column("char_name")
     private String name;
-    private Byte level;
-    private long hp;
-    private long cp;
-    private long mp;
+    private int level;
+    private float hp;
+    private float maxHp;
+    private float cp;
+    private float maxCp;
+    private float mp;
+    private float maxMp;
     private Byte face;
     @Column("hair_style")
     private Byte hairStyle;
     @Column("hair_color")
     private Byte hairColor;
-    private int sex;
+    private byte sex;
     private int heading;
     private int x;
     private int y;
@@ -37,7 +41,7 @@ public class Character extends Entity<Integer> {
     private int pvp;
     private int pk;
     private int clan;
-    private int race;
+    private Race race;
     @Column("class_id")
     private int classId;
     @Column("base_class")
@@ -70,11 +74,11 @@ public class Character extends Entity<Integer> {
     @Column("power_grade")
     private int powerGrade;
     private boolean nobless;
-    private byte subpledge;
+    private int subpledge;
     @Column("last_recom_date")
     private long lastRecomDate;
     @Column("lvl_joined_academy")
-    private short lvlJoinedAcademy;
+    private int lvlJoinedAcademy;
     private int apprentice;
     private int sponsor;
     @Column("varka_ketra_ally")
@@ -111,39 +115,63 @@ public class Character extends Entity<Integer> {
         return name;
     }
 
-    public void setCharName(String char_name) {
+    public void setName(String char_name) {
         this.name = char_name;
     }
 
-    public byte getLevel() {
+    public int getLevel() {
         return level;
     }
 
-    public void setLevel(byte level) {
+    public void setLevel(int level) {
         this.level = level;
     }
 
-    public long getCurrentHp() {
+    public float getMaxHp() {
+        return maxHp;
+    }
+
+    public void setMaxHp(float maxHp) {
+        this.maxHp = maxHp;
+    }
+
+    public float getHp() {
         return hp;
     }
 
-    public void setCurrentHp(long curHp) {
+    public void setHp(float curHp) {
         this.hp = curHp;
     }
 
-    public long getCp() {
+    public float getMaxCp() {
+        return maxCp;
+    }
+
+    public void setMaxCp(float maxCp) {
+        this.maxCp = maxCp;
+    }
+
+    public float getCp() {
         return cp;
     }
 
-    public void setCurrentCp(long curCp) {
+    public void setCp(float curCp) {
         this.cp = curCp;
     }
 
-    public long getCurrentMp() {
+    public float getMaxMp() {
+        return maxMp;
+    }
+
+    public void setMaxMp(float maxMp) {
+        this.maxMp = maxMp;
+    }
+
+    public float getMp() {
         return mp;
     }
 
-    public void setCurrentMp(long curMp) {
+    public void setMp(float curMp) {
         this.mp = curMp;
     }
 
@@ -171,11 +199,11 @@ public class Character extends Entity<Integer> {
         this.hairColor = hairColor;
     }
 
-    public int getSex() {
+    public byte getSex() {
         return sex;
     }
 
-    public void setSex(int sex) {
+    public void setSex(byte sex) {
         this.sex = sex;
     }
 
@@ -219,7 +247,7 @@ public class Character extends Entity<Integer> {
         return sp;
     }
 
-    public void setSkillPoint(int sp) {
+    public void setSkillPoint(long sp) {
         this.sp = sp;
     }
 
@@ -255,11 +283,11 @@ public class Character extends Entity<Integer> {
         this.clan = clan;
     }
 
-    public int getRace() {
+    public Race getRace() {
         return race;
     }
 
-    public void setRace(int race) {
+    public void setRace(Race race) {
         this.race = race;
     }
 
@@ -411,11 +439,11 @@ public class Character extends Entity<Integer> {
         this.nobless = nobless;
     }
 
-    public byte getSubpledge() {
+    public int getSubpledge() {
         return subpledge;
     }
 
-    public void setSubpledge(byte subpledge) {
+    public void setSubpledge(int subpledge) {
         this.subpledge = subpledge;
     }
 
@@ -427,11 +455,11 @@ public class Character extends Entity<Integer> {
         this.lastRecomDate = lastRecomDate;
     }
 
-    public short getLvlJoinedAcademy() {
+    public int getLvlJoinedAcademy() {
         return lvlJoinedAcademy;
     }
 
-    public void setLvlJoinedAcademy(short lvlJoinedAcademy) {
+    public void setLvlJoinedAcademy(int lvlJoinedAcademy) {
         this.lvlJoinedAcademy = lvlJoinedAcademy;
     }
 

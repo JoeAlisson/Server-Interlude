@@ -379,7 +379,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
                     // prevent closing again
                     getActiveChar().setClient(null);
 
-                    if (getActiveChar().isOnline() == 1) {
+                    if (getActiveChar().isOnline()) {
                         getActiveChar().deleteMe();
                     }
                 }

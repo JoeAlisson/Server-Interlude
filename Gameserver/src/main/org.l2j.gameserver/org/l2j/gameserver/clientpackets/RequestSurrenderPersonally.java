@@ -66,14 +66,14 @@ public final class RequestSurrenderPersonally extends L2GameClientPacket
 			return;
 		}
 		
-		if (!_clan.isAtWarWith(clan.getClanId()) || (_activeChar.getWantsPeace() == 1))
+		if (!_clan.isAtWarWith(clan.getClanId()) || (_activeChar.getWantsPeace()))
 		{
 			_activeChar.sendMessage("You aren't at war with this clan.");
 			_activeChar.sendPacket(new ActionFailed());
 			return;
 		}
 		
-		_activeChar.setWantsPeace(1);
+		_activeChar.setWantsPeace(true);
 		_activeChar.deathPenalty(false);
 		SystemMessage msg = new SystemMessage(SystemMessageId.YOU_HAVE_PERSONALLY_SURRENDERED_TO_THE_S1_CLAN);
 		msg.addString(_pledgeName);

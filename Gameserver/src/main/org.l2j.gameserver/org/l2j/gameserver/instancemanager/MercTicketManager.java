@@ -19,7 +19,7 @@ package org.l2j.gameserver.instancemanager;
 
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.datatables.NpcTable;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.AutoChatHandler;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.L2World;

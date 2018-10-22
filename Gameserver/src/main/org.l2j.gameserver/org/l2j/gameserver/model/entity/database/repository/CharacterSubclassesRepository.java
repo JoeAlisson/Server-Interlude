@@ -19,7 +19,7 @@ public interface CharacterSubclassesRepository extends CrudRepository<CharacterS
     @Modifying
     @Query("UPDATE character_subclasses SET exp=:exp,sp=:sp,level=:level,class_id=:classId WHERE char_obj_id=:char AND class_index=:classIndex")
     int updateByClassIndex(@Param("char") int charObjectId, @Param("classIndex") int classIndex, @Param("exp") long exp,
-                           @Param("sp") int sp, @Param("level") byte level, @Param("classId") int classId);
+                           @Param("sp") long sp, @Param("level") int level, @Param("classId") int classId);
 
     @Modifying
     @Query("DELETE FROM character_subclasses WHERE char_obj_id=:char AND class_index=:classIndex")

@@ -24,7 +24,7 @@ import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.datatables.MapRegionTable;
 import org.l2j.gameserver.datatables.NpcTable;
 import org.l2j.gameserver.datatables.SpawnTable;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.RandomSpawn;

@@ -21,7 +21,7 @@ package org.l2j.gameserver.skills;
 import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Skill;
-import org.l2j.gameserver.model.base.Race;
+import org.l2j.gameserver.model.base.CreatureRace;
 import org.l2j.gameserver.model.entity.database.ItemTemplate;
 import org.l2j.gameserver.skills.conditions.*;
 import org.l2j.gameserver.skills.conditions.ConditionGameTime.CheckGameTime;
@@ -29,6 +29,7 @@ import org.l2j.gameserver.skills.conditions.ConditionPlayerState.CheckPlayerStat
 import org.l2j.gameserver.skills.effects.EffectTemplate;
 import org.l2j.gameserver.skills.funcs.*;
 import org.l2j.gameserver.templates.*;
+import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;

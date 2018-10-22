@@ -32,8 +32,8 @@ public class CharStat
 	// Data Field
 	private final L2Character _activeChar;
 	private long _exp = 0;
-	private int _sp = 0;
-	private byte _level = 1;
+	private long _sp = 0;
+	private int _level = 1;
 	
 	// =========================================================
 	// Constructor
@@ -238,12 +238,12 @@ public class CharStat
 		return (int) calcStat(Stats.STAT_INT, _activeChar.getTemplate().getIntellienge(), null, null);
 	}
 	
-	public byte getLevel()
+	public int getLevel()
 	{
 		return _level;
 	}
 	
-	public void setLevel(byte value)
+	public void setLevel(int value)
 	{
 		_level = value;
 	}
@@ -682,12 +682,12 @@ public class CharStat
 		return (int) calcStat(Stats.SHIELD_DEFENCE, 0, null, null);
 	}
 	
-	public int getSp()
+	public long getSp()
 	{
 		return _sp;
 	}
 	
-	public void setSp(int value)
+	public void setSp(long value)
 	{
 		_sp = value;
 	}

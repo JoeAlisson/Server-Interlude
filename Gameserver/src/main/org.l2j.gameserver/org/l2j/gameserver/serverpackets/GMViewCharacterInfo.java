@@ -29,7 +29,7 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		writeInt(_activeChar.getObjectId());
 		writeString(_activeChar.getName());
 		writeInt(_activeChar.getRace().ordinal());
-		writeInt(_activeChar.getAppearance().getSex() ? 1 : 0);
+		writeInt(_activeChar.getAppearance().getSex());
 		writeInt(_activeChar.getPlayerClass().getId());
 		writeInt(_activeChar.getLevel());
 		writeLong(_activeChar.getExp());
@@ -43,7 +43,7 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		writeInt((int) _activeChar.getCurrentHp());
 		writeInt(_activeChar.getMaxMp());
 		writeInt((int) _activeChar.getCurrentMp());
-		writeInt(_activeChar.getSp());
+		writeInt((int)_activeChar.getSp());
 		writeInt(_activeChar.getCurrentLoad());
 		writeInt(_activeChar.getMaxLoad());
 		writeInt(0x28); // unknown

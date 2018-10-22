@@ -18,7 +18,7 @@
 package org.l2j.gameserver.skills.l2skills;
 
 import org.l2j.commons.util.Rnd;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.L2Object;

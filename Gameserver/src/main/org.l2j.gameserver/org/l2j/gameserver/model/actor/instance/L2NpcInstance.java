@@ -27,7 +27,7 @@ import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.ai.Intention;
 import org.l2j.gameserver.cache.HtmCache;
 import org.l2j.gameserver.datatables.*;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.instancemanager.CastleManager;
 import org.l2j.gameserver.instancemanager.DimensionalRiftManager;
 import org.l2j.gameserver.instancemanager.QuestManager;
@@ -805,7 +805,7 @@ public class L2NpcInstance extends L2Character {
             html1.append("<tr><td>Accuracy</td><td>" + getAccuracy() + "</td><td>Evasion</td><td>" + getEvasionRate(null) + "</td></tr>");
             html1.append("<tr><td>Critical</td><td>" + getCriticalHit(null, null) + "</td><td>Speed</td><td>" + getRunSpeed() + "</td></tr>");
             html1.append("<tr><td>Atk.Speed</td><td>" + getPAtkSpd() + "</td><td>Cast.Speed</td><td>" + getMAtkSpd() + "</td></tr>");
-            html1.append("<tr><td>Race</td><td>" + getTemplate().getRace() + "</td><td></td><td></td></tr>");
+            html1.append("<tr><td>CreatureRace</td><td>" + getTemplate().getRace() + "</td><td></td><td></td></tr>");
             html1.append("</table>");
 
             html1.append("<br><center><font color=\"LEVEL\">[Basic Stats]</font></center>");

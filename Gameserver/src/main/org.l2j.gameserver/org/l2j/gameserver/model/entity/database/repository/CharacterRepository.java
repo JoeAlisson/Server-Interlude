@@ -6,7 +6,6 @@ import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface CharacterRepository extends CrudRepository<Character, Integer> {
@@ -93,4 +92,7 @@ public interface CharacterRepository extends CrudRepository<Character, Integer> 
     @Modifying
     @Query("UPDATE characters SET apprentice=:apprentice,sponsor=:sponsor WHERE object_id=:objectId")
     int updateApprenticeAndSponsor(@Param("objectId") int objectId, @Param("apprentice") int apprentice, @Param("sponsor") int sponsor);
+
+    @Query("SELECT Max(slot) FROM characters WHERE account=:account")
+    int getLastCharSlotFromAccount(@Param("account") String account);
 }

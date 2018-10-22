@@ -19,10 +19,10 @@ package org.l2j.gameserver.model.zone.type;
 
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.base.Race;
 import org.l2j.gameserver.model.zone.L2ZoneType;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.xml.jaxb.Race;
 
 /**
  * A mother-trees zone

@@ -6,7 +6,7 @@ import org.l2j.gameserver.model.actor.instance.L2CubicInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.skills.SkillConstants;
+import org.l2j.gameserver.templates.SkillConstants;
 
 import static java.util.Objects.nonNull;
 
@@ -132,7 +132,7 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		obj_id = player.getObjectId();
 		vehicle_obj_id = player.isInBoat() ? player.getBoat().getObjectId() : 0x00;
 		_race = player.getRace().ordinal();
-		sex = player.getAppearance().getSex() ? 1 : 0;
+		sex = player.getAppearance().getSex();
 		base_class = player.getBaseClass();
 		level = player.getLevel();
 		_exp = player.getExp();

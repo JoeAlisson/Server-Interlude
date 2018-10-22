@@ -230,7 +230,7 @@ public class AdminSkill implements IAdminCommandHandler {
         replyMSG.append("</tr></table>");
         replyMSG.append("<br><br>");
         replyMSG.append("<center>Editing <font color=\"LEVEL\">" + player.getName() + "</font></center>");
-        replyMSG.append("<br><table width=270><tr><td>Lv: " + player.getLevel() + " " + player.getTemplate().getPlayerClass() + "</td></tr></table>");
+        replyMSG.append("<br><table width=270><tr><td>Lv: " + player.getLevel() + " " + player.getTemplate().getName() + "</td></tr></table>");
         replyMSG.append("<br><table width=270><tr><td>Note: Dont forget that modifying players skills can</td></tr>");
         replyMSG.append("<tr><td>ruin the game...</td></tr></table>");
         replyMSG.append("<br><center>Click on the skill you wish to remove:</center>");

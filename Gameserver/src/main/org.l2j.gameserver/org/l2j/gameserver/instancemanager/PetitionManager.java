@@ -21,7 +21,7 @@ package org.l2j.gameserver.instancemanager;
 import org.l2j.commons.Config;
 import org.l2j.gameserver.GmListTable;
 import org.l2j.gameserver.clientpackets.Say2;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.CreatureSay;
@@ -118,7 +118,7 @@ public final class PetitionManager {
             setState(endState);
             System.currentTimeMillis();
 
-            if ((getResponder() != null) && (getResponder().isOnline() == 1)) {
+            if ((getResponder() != null) && (getResponder().isOnline())) {
                 if (endState == PetitionState.Responder_Reject) {
                     getPetitioner().sendMessage("Your petition was rejected. Please try again later.");
                 } else {
@@ -137,7 +137,7 @@ public final class PetitionManager {
             }
 
             // End petition consultation and inform them, if they are still online.
-            if ((getPetitioner() != null) && (getPetitioner().isOnline() == 1)) {
+            if ((getPetitioner() != null) && (getPetitioner().isOnline())) {
                 getPetitioner().sendPacket(new SystemMessage(SystemMessageId.THIS_END_THE_PETITION_PLEASE_PROVIDE_FEEDBACK));
             }
 
@@ -174,7 +174,7 @@ public final class PetitionManager {
         }
 
         public void sendPetitionerPacket(L2GameServerPacket responsePacket) {
-            if ((getPetitioner() == null) || (getPetitioner().isOnline() == 0)) {
+            if ((getPetitioner() == null) || (getPetitioner().isOnline())) {
                 // Allows petitioners to see the results of their petition when
                 // they log back into the game.
 
@@ -186,7 +186,7 @@ public final class PetitionManager {
         }
 
         public void sendResponderPacket(L2GameServerPacket responsePacket) {
-            if ((getResponder() == null) || (getResponder().isOnline() == 0)) {
+            if ((getResponder() == null) || (getResponder().isOnline())) {
                 endPetitionConsultation(PetitionState.Responder_Missing);
                 return;
             }

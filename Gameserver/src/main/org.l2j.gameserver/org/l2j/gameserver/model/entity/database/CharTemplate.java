@@ -116,35 +116,37 @@ public abstract class CharTemplate extends Entity<Integer> {
 
     public CharTemplate() {}
 
-    public CharTemplate(PlayerTemplate playerTemplate, ClassInfo classInfo) {
+    public CharTemplate(PlayerTemplate playerTemplate) {
         var speed =  playerTemplate.getBaseSpeed();
         walkSpd = speed.getWalk();
-        runSpd=speed.getRun();
+        runSpd= (short) speed.getRun();
 
-        var stats = playerTemplate.getBaseStats()
-        strength = stats.getStrength();
-        constitution = stats.getConstitution();
-        dexterity = stats.getDexterity();
-        intelligence = stats.getIntelligence();
-        witness = stats.getWisdom();
-        mentality = stats.getMentality();
+        var stats = playerTemplate.getBaseStats();
+        strength = (short) stats.getStrength();
+        constitution = (short) stats.getConstitution();
+        dexterity = (short) stats.getDexterity();
+        intelligence = (short) stats.getIntelligence();
+        witness = (short) stats.getWisdom();
+        mentality = (short) stats.getMentality();
 
         var physicAttack = playerTemplate.getPhysicAttack();
 
-        pAtk = physicAttack.getAttack();
-        pAtkSpd = physicAttack.getSpeed();
-        critRate = physicAttack.getCriticalRate();
-        atkRange = physicAttack.getRange();
+        pAtk = (short) physicAttack.getAttack();
+        pAtkSpd = (short) physicAttack.getSpeed();
+        critRate = (short) physicAttack.getCriticalRate();
+        atkRange = (short) physicAttack.getRange();
 
         var magicAttack = playerTemplate.getMagicAttack();
 
         mAtk = magicAttack.getAttack();
-        mAtkSpd = magicAttack.getSpeed();
+        mAtkSpd = (short) magicAttack.getSpeed();
 
-        pDef;
-        mDef;
-        collisionRadius;
-        collisionHeight;
+        var physicDefense = playerTemplate.getPhysicDefense();
+
+        pDef = physicDefense.getChest() + physicDefense.getBoots() + physicDefense.getCloak() + physicDefense.getGloves() + physicDefense.getHelmet() + physicDefense.getLegs() + physicDefense.getPendant();
+
+        var magicDefense = playerTemplate.getMagicDefense();
+        mDef = magicDefense.getNecklace() + magicDefense.getLeftEarring() + magicDefense.getLeftRing() + magicDefense.getRightEarring() + magicDefense.getRightRing();
     }
 
 

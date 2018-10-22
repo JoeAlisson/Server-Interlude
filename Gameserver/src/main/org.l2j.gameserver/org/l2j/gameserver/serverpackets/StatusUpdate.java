@@ -57,9 +57,9 @@ public class StatusUpdate extends L2GameServerPacket
 		 * id values 09 - current health 0a - max health 0b - current mana 0c - max mana
 		 */
 		public int id;
-		public int value;
+		public long value;
 		
-		Attribute(int pId, int pValue)
+		Attribute(int pId, long pValue)
 		{
 			id = pId;
 			value = pValue;
@@ -72,7 +72,7 @@ public class StatusUpdate extends L2GameServerPacket
 		_objectId = objectId;
 	}
 	
-	public void addAttribute(int id, int level)
+	public void addAttribute(int id, long level)
 	{
 		_attributes.add(new Attribute(id, level));
 	}
@@ -89,7 +89,7 @@ public class StatusUpdate extends L2GameServerPacket
 			Attribute temp = _attributes.get(i);
 			
 			writeInt(temp.id);
-			writeInt(temp.value);
+			writeInt((int) temp.value);
 		}
 	}
 }

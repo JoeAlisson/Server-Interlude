@@ -20,7 +20,7 @@ package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.gameserver.MonsterRace;
 import org.l2j.gameserver.ThreadPoolManager;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.knownlist.RaceManagerKnownList;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
@@ -144,10 +144,10 @@ public class L2RaceManagerInstance extends L2NpcInstance {
         switch (type.getId()) {
             case 816: // SystemMessageId.MONSRACE_TICKETS_AVAILABLE_FOR_S1_RACE
             case 817: // SystemMessageId.MONSRACE_TICKETS_NOW_AVAILABLE_FOR_S1_RACE
-                if (_state != ACCEPTING_BETS) {// System.out.println("Race Initializing");
+                if (_state != ACCEPTING_BETS) {// System.out.println("CreatureRace Initializing");
                     _state = ACCEPTING_BETS;
                     startRace();
-                }// else{System.out.println("Race open");}
+                }// else{System.out.println("CreatureRace open");}
                 sm.addNumber(_raceNumber);
                 break;
             case 818: // SystemMessageId.MONSRACE_TICKETS_STOP_IN_S1_MINUTES
@@ -358,7 +358,7 @@ public class L2RaceManagerInstance extends L2NpcInstance {
             }
             int ticket = player.getRace(0);
             int priceId = player.getRace(1);
-            if (!player.reduceAdena("Race", _cost[priceId - 1], this, true)) {
+            if (!player.reduceAdena("CreatureRace", _cost[priceId - 1], this, true)) {
                 return;
             }
             player.setRace(0, 0);
@@ -372,7 +372,7 @@ public class L2RaceManagerInstance extends L2NpcInstance {
             item.setEnchantLevel(_raceNumber);
             item.setCustomType1(ticket);
             item.setCustomType2(_cost[priceId - 1] / 100);
-            player.getInventory().addItem("Race", item, player, this);
+            player.getInventory().addItem("CreatureRace", item, player, this);
             InventoryUpdate iu = new InventoryUpdate();
             iu.addItem(item);
             L2ItemInstance adenaupdate = player.getInventory().getItemByItemId(57);

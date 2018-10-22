@@ -19,7 +19,7 @@
 package org.l2j.gameserver.instancemanager;
 
 import org.l2j.commons.Config;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.actor.instance.L2BoatInstance;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
 import org.slf4j.Logger;

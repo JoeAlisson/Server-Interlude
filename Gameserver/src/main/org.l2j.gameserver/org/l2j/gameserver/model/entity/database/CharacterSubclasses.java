@@ -15,8 +15,8 @@ public class CharacterSubclasses extends Entity<Integer> {
     @Column("class_id")
     private int classId;
     private long exp;
-    private int sp;
-    private byte level;
+    private long sp;
+    private int level;
     @Column("class_index")
     private int classIndex;
 
@@ -44,11 +44,11 @@ public class CharacterSubclasses extends Entity<Integer> {
         return exp;
     }
 
-    public int getSp() {
+    public long getSp() {
         return sp;
     }
 
-    public byte getLevel() {
+    public int getLevel() {
         return level;
     }
 

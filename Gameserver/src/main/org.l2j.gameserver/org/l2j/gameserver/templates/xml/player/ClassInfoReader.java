@@ -37,11 +37,11 @@ public class ClassInfoReader extends XMLReader<ClassInfo> {
 
     @Override
     protected String getSchemaFilePath() {
-        return "data/xml/stats/classes/classInfo.xsd";
+        return "data/xml/schema/classInfo.xsd";
     }
 
     @Override
     protected String[] getXmlFileDirectories() {
-        return new String[] { "data/xml/stats/classes"};
+        return new String[] { "data/xml/classes"};
     }
 }

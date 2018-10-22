@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.10.20 às 10:28:55 PM BRT 
+// Gerado em: 2018.10.21 às 04:09:27 PM BRT 
 //
 
 
@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;attribute name="walk" type="{http://www.w3.org/2001/XMLSchema}short" default="1" /&gt;
- *       &lt;attribute name="run" type="{http://www.w3.org/2001/XMLSchema}int" default="1" /&gt;
+ *       &lt;attribute name="run" type="{http://www.w3.org/2001/XMLSchema}short" default="1" /&gt;
  *       &lt;attribute name="swim" type="{http://www.w3.org/2001/XMLSchema}int" default="1" /&gt;
  *       &lt;attribute name="fastSwim" type="{http://www.w3.org/2001/XMLSchema}int" default="1" /&gt;
  *       &lt;attribute name="fly" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
@@ -45,7 +45,7 @@ public class Speed {
     @XmlAttribute(name = "walk")
     protected Short walk;
     @XmlAttribute(name = "run")
-    protected Integer run;
+    protected Short run;
     @XmlAttribute(name = "swim")
     protected Integer swim;
     @XmlAttribute(name = "fastSwim")
@@ -92,12 +92,12 @@ public class Speed {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link Short }
      *     
      */
-    public int getRun() {
+    public short getRun() {
         if (run == null) {
-            return  1;
+            return ((short) 1);
         } else {
             return run;
         }
@@ -108,10 +108,10 @@ public class Speed {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link Short }
      *     
      */
-    public void setRun(Integer value) {
+    public void setRun(Short value) {
         this.run = value;
     }
 

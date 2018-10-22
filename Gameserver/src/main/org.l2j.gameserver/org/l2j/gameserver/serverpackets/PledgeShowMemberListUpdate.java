@@ -34,7 +34,7 @@ public class PledgeShowMemberListUpdate extends L2GameServerPacket
 	private final int _level;
 	private final int _classId;
 	private final int _objectId;
-	private int _isOnline;
+	private boolean _isOnline;
 	
 	public PledgeShowMemberListUpdate(L2PcInstance player)
 	{
@@ -62,14 +62,7 @@ public class PledgeShowMemberListUpdate extends L2GameServerPacket
 		_level = player.getLevel();
 		_classId = player.getClassId();
 		_objectId = player.getObjectId();
-		if (player.isOnline())
-		{
-			_isOnline = 1;
-		}
-		else
-		{
-			_isOnline = 0;
-		}
+		_isOnline = player.isOnline();
 		_pledgeType = player.getPledgeType();
 		if (_pledgeType == L2Clan.SUBUNIT_ACADEMY)
 		{
@@ -90,7 +83,7 @@ public class PledgeShowMemberListUpdate extends L2GameServerPacket
 		writeInt(_classId);
 		writeInt(0);
 		writeInt(_objectId);
-		writeInt(_isOnline); // 1=online 0=offline
+		writeInt(_isOnline ? 0x01 : 0x00); // 1=online 0=offline
 		writeInt(_pledgeType);
 		writeInt(_hasSponsor);
 	}

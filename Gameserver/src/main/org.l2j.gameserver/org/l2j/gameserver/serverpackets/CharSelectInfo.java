@@ -200,7 +200,7 @@ public class CharSelectInfo extends L2GameServerPacket {
             writeInt(0x00); // remaining vitality item uses
 
             writeInt(charInfoPackage.getAccessLevel() > - 100 ? 1 : 0 );
-            writeByte(charInfoPackage.getNobles());
+            writeByte(charInfoPackage.getNobles() ? 0x01 : 0x00);
             writeByte(Heroes.getInstance().getHeroes().containsKey(charInfoPackage.getObjectId()) ? 0x01 : 0x00);
             writeByte(0x01); // show hair Acessory
 
@@ -251,9 +251,9 @@ public class CharSelectInfo extends L2GameServerPacket {
         CharSelectInfoPackage charInfopackage = new CharSelectInfoPackage(objectId, name);
         charInfopackage.setLevel(character.getLevel());
         charInfopackage.setMaxHp(character.getMaxHp());
-        charInfopackage.setCurrentHp(character.getCurrentHp());
+        charInfopackage.setCurrentHp(character.getHp());
         charInfopackage.setMaxMp(character.getMaxMp());
-        charInfopackage.setCurrentMp(character.getCurrentMp());
+        charInfopackage.setCurrentMp(character.getMp());
         charInfopackage.setKarma(character.getKarma());
 
         charInfopackage.setFace(character.getFace());
@@ -265,7 +265,7 @@ public class CharSelectInfo extends L2GameServerPacket {
         charInfopackage.setSp(character.getSp());
         charInfopackage.setClanId(character.getClanId());
 
-        charInfopackage.setRace(character.getRace());
+        charInfopackage.setRace(character.getRace().ordinal());
         charInfopackage.setX(character.getX());
         charInfopackage.setY(character.getY());
         charInfopackage.setZ(character.getZ());
@@ -292,9 +292,7 @@ public class CharSelectInfo extends L2GameServerPacket {
 
         if (weaponObjId > 0) {
             AugmentationsRepository repository = getRepository(AugmentationsRepository.class);
-            repository.findById(weaponObjId).ifPresent(augmentation -> {
-                charInfopackage.setAugmentationId(augmentation.getAttributes());
-            });
+            repository.findById(weaponObjId).ifPresent(augmentation -> charInfopackage.setAugmentationId(augmentation.getAttributes()));
         }
 
         /*

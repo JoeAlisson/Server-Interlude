@@ -22,7 +22,7 @@ import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.ai.Intention;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.instancemanager.CursedWeaponsManager;
 import org.l2j.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2j.gameserver.model.*;

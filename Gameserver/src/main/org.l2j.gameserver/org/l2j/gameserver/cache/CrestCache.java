@@ -21,7 +21,7 @@ package org.l2j.gameserver.cache;
 import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.datatables.ClanTable;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.L2Clan;
 import org.l2j.gameserver.model.entity.database.repository.ClanRepository;
 import org.slf4j.Logger;

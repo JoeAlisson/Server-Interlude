@@ -22,7 +22,7 @@ import org.l2j.commons.Config;
 import org.l2j.commons.util.Rnd;
 import org.l2j.gameserver.datatables.NpcTable;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2MonsterInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;

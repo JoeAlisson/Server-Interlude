@@ -12,18 +12,18 @@ public class Pets extends Entity<Integer> {
     @Column("item_obj_id")
     private int itemObjId;
     private String name;
-    private byte level;
+    private int level;
     private double curHp;
     private double curMp;
     private long exp;
-    private int sp;
+    private long sp;
     private int karma;
     private int pkkills;
     private int fed;
 
     public Pets() {}
 
-    public Pets( int objectId, String name, byte level, double currentHp, double currentMp, long exp, int sp, int karma, int pkKills, int currentFed) {
+    public Pets( int objectId, String name, int level, double currentHp, double currentMp, long exp, long sp, int karma, int pkKills, int currentFed) {
         this.itemObjId = objectId;
         this.name = name;
         this.level = level;
@@ -45,7 +45,7 @@ public class Pets extends Entity<Integer> {
         return name;
     }
 
-    public byte getLevel() {
+    public int getLevel() {
         return level;
     }
 
@@ -61,7 +61,7 @@ public class Pets extends Entity<Integer> {
         return exp;
     }
 
-    public int getSp() {
+    public long getSp() {
         return sp;
     }
 

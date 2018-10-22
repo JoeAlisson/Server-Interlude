@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PlayerTemplate classId="18" name="Elf Fighter" race="ELF"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/player.xsd">
+    <baseStats strength="36" constitution="36" dexterity="35" mentality="26" wisdom="14" intelligence="23"/>
+    <physicDefense chest="31" legs="18" helmet="12" boots="7" gloves="8" pendant="3"/>
+    <physicAttack attack="4" criticalRate="40" speed="300" randomDamage="10" range="20"/>
+    <magicDefense necklace="13" leftEarring="9" rightEarring="9" rightRing="5" leftRing="5"/>
+    <magicAttack attack="6" criticalRate="50" speed="333" range="20"/>
+    <damage distance="26" width="120"/>
+    <collision maleRadius="9.0" maleHeight="18" femaleRadius="7.5" femaleHeight="23.0"/>
+    <baseSpeed walk="80" run="131" swim="50" fastSwim="50"/>
+    <abnormalResist magic="10" physic="15"/>
+    <attributes safeFallHeight="180" breath="80"/>
+    <startingItem id="34604" count="9000"/>
+    <startingItem id="34611" count="2000"/>
+    <startingItem id="34603" count="5000"/>
+    <startingItem id="34610" count="1000"/>
+    <startingItem id="2370" equipped="true"/>
+    <startingItem id="10"/>
+    <startingItem id="1146" equipped="true"/>
+    <startingItem id="1147" equipped="true"/>
+    <startingLocation>
+        <location x="107520" y="-175808" z="-400"/>
+        <location x="107824" y="-175776" z="-400"/>
+        <location x="108336" y="-175536" z="-400"/>
+        <location x="108592" y="-175232" z="-400"/>
+        <location x="107024" y="-175440" z="-400"/>
+        <location x="106880" y="-175056" z="-400"/>
+        <location x="106848" y="-174704" z="-400"/>
+        <location x="108256" y="-175152" z="-400"/>
+        <location x="107632" y="-175376" z="-400"/>
+        <location x="107200" y="-174800" z="-400"/>
+    </startingLocation>
+</PlayerTemplate>

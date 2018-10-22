@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
@@ -45,18 +27,33 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ScheduledFuture;
 
+public final class L2ItemInstance extends L2Object {
 
-/**
- * This class manages items.
- * @version $Revision: 1.4.2.1.2.11 $ $Date: 2005/03/31 16:07:50 $
- */
-public final class L2ItemInstance extends L2Object
-{
+	public L2ItemInstance(int objectId, int itemId)  {
+		super(objectId);
+		super.setKnownList(new NullKnownList(this));
+		_itemId = itemId;
+		_item = ItemTable.getInstance().getTemplate(itemId);
+		if ((_itemId == 0) || (_item == null)) {
+			throw new IllegalArgumentException();
+		}
+		_count = 1;
+		_loc = ItemLocation.VOID;
+		_type1 = 0;
+		_type2 = 0;
+		_dropTime = 0;
+		_mana = _item.getDuration();
+	}
+
+
+
+	// ###############################################
+
 	private static final Logger _log = LoggerFactory.getLogger(L2ItemInstance.class.getName());
 	private static final Logger _logItems = LoggerFactory.getLogger("item");
 
 	/** Enumeration of locations for item */
-	public static enum ItemLocation
+	public  enum ItemLocation
 	{
 		VOID,
 		INVENTORY,
@@ -143,29 +140,7 @@ public final class L2ItemInstance extends L2Object
 	private boolean _storedInDb; // if DB data is up-to-date.
 	
 	private ScheduledFuture<?> itemLootShedule = null;
-	
-	/**
-	 * Constructor of the L2ItemInstance from the objectId and the itemId.
-	 * @param objectId : int designating the ID of the object in the world
-	 * @param itemId : int designating the ID of the item
-	 */
-	public L2ItemInstance(int objectId, int itemId)
-	{
-		super(objectId);
-		super.setKnownList(new NullKnownList(this));
-		_itemId = itemId;
-		_item = ItemTable.getInstance().getTemplate(itemId);
-		if ((_itemId == 0) || (_item == null))
-		{
-			throw new IllegalArgumentException();
-		}
-		_count = 1;
-		_loc = ItemLocation.VOID;
-		_type1 = 0;
-		_type2 = 0;
-		_dropTime = 0;
-		_mana = _item.getDuration();
-	}
+
 	
 	/**
 	 * Constructor of the L2ItemInstance from the objetId and the description of the item given by the ItemTemplate.

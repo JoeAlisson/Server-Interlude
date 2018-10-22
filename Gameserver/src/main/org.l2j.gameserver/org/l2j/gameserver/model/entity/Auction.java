@@ -20,7 +20,7 @@ package org.l2j.gameserver.model.entity;
 
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.datatables.ClanTable;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.instancemanager.AuctionManager;
 import org.l2j.gameserver.instancemanager.ClanHallManager;
 import org.l2j.gameserver.model.L2Clan;

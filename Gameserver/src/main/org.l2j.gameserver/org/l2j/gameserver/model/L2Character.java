@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
@@ -38,7 +20,8 @@ import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.actor.instance.*;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance.SkillDat;
 import org.l2j.gameserver.model.actor.knownlist.CharKnownList;
-import org.l2j.gameserver.model.actor.knownlist.ObjectKnownList.KnownListAsynchronousUpdateTask;
+import org.l2j.gameserver.model.actor.knownlist.KnownList;
+import org.l2j.gameserver.model.actor.knownlist.KnownList.KnownListAsynchronousUpdateTask;
 import org.l2j.gameserver.model.actor.stat.CharStat;
 import org.l2j.gameserver.model.actor.status.CharStatus;
 import org.l2j.gameserver.model.entity.Duel;
@@ -65,9 +48,9 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Future;
 
+import static java.util.Objects.isNull;
 import static org.l2j.gameserver.ai.Intention.AI_INTENTION_ATTACK;
 import static org.l2j.gameserver.ai.Intention.AI_INTENTION_FOLLOW;
-
 
 /**
  * Mother class of allTemplates character objects of the world (PC, NPC...)<BR>
@@ -78,9 +61,47 @@ import static org.l2j.gameserver.ai.Intention.AI_INTENTION_FOLLOW;
  * Each L2Character owns generic and static properties (ex : allTemplates Keltir have the same number of HP...). All of those properties are stored in a different template for each type of L2Character. Each template is loaded once in the server cache memory (reduce memory use). When a new instance of
  * L2Character is spawned, server just create a link between the instance and the template. This link is stored in <B>_template</B><BR>
  *
- * @version $Revision: 1.53.2.45.2.34 $ $Date: 2005/04/11 10:06:08 $
  */
 public abstract class L2Character extends L2Object {
+
+    /**
+     * Constructor of L2Character.<BR>
+     * <BR>
+     * <B><U> Concept</U> :</B><BR>
+     * <BR>
+     * Each L2Character owns generic and static properties (ex : allTemplates Keltir have the same number of HP...). All of those properties are stored in a different template for each type of L2Character. Each template is loaded once in the server cache memory (reduce memory use). When a new instance of
+     * L2Character is spawned, server just create a link between the instance and the template This link is stored in <B>_template</B><BR>
+     * <BR>
+     * <B><U> Actions</U> :</B><BR>
+     * <BR>
+     * <li>Set the _template of the L2Character</li> <li>Set _overloaded to false (the charcater can take more items)</li><BR>
+     * <BR>
+     * <li>If L2Character is a L2NPCInstance, copy skills from template to object</li> <li>If L2Character is a L2NPCInstance, link _calculators to NPC_STD_CALCULATOR</li><BR>
+     * <BR>
+     * <li>If L2Character is NOT a L2NPCInstance, create an empty _skills slot</li> <li>If L2Character is a L2PcInstance or L2Summon, copy basic Calculator set to object</li><BR>
+     * <BR>
+     *
+     * @param objectId Identifier of the object to initialized
+     * @param template The L2CharTemplate to apply to the object
+     */
+    public L2Character(int objectId, CharTemplate template) {
+        super(objectId);
+        getKnownList();
+
+        _template = template;
+
+        initSkillsStat(template);
+    }
+
+    @Override
+    public KnownList getKnownList() {
+        if(isNull(_knownList)) {
+            _knownList = new CharKnownList(this);
+        }
+        return _knownList;
+    }
+
+    // #############################################################################
     /**
      * The Constant _log.
      */
@@ -327,35 +348,6 @@ public abstract class L2Character extends L2Object {
         } else if (isInsideZone(zone)) {
             _currentZones ^= zone;
         }
-    }
-
-    /**
-     * Constructor of L2Character.<BR>
-     * <BR>
-     * <B><U> Concept</U> :</B><BR>
-     * <BR>
-     * Each L2Character owns generic and static properties (ex : allTemplates Keltir have the same number of HP...). All of those properties are stored in a different template for each type of L2Character. Each template is loaded once in the server cache memory (reduce memory use). When a new instance of
-     * L2Character is spawned, server just create a link between the instance and the template This link is stored in <B>_template</B><BR>
-     * <BR>
-     * <B><U> Actions</U> :</B><BR>
-     * <BR>
-     * <li>Set the _template of the L2Character</li> <li>Set _overloaded to false (the charcater can take more items)</li><BR>
-     * <BR>
-     * <li>If L2Character is a L2NPCInstance, copy skills from template to object</li> <li>If L2Character is a L2NPCInstance, link _calculators to NPC_STD_CALCULATOR</li><BR>
-     * <BR>
-     * <li>If L2Character is NOT a L2NPCInstance, create an empty _skills slot</li> <li>If L2Character is a L2PcInstance or L2Summon, copy basic Calculator set to object</li><BR>
-     * <BR>
-     *
-     * @param objectId Identifier of the object to initialized
-     * @param template The L2CharTemplate to apply to the object
-     */
-    public L2Character(int objectId, CharTemplate template) {
-        super(objectId);
-        getKnownList();
-
-        _template = template;
-
-        initSkillsStat(template);
     }
 
     protected void initSkillsStat(CharTemplate template) {
@@ -1583,7 +1575,7 @@ public abstract class L2Character extends L2Object {
 
             _status.setCurrentCp(getMaxCp() * Config.RESPAWN_RESTORE_CP);
             _status.setCurrentHp(getMaxHp() * Config.RESPAWN_RESTORE_HP);
-            // _Status.setCurrentMp(getMaxMp() * Config.RESPAWN_RESTORE_MP);
+            // _Status.setMp(getMaxMp() * Config.RESPAWN_RESTORE_MP);
 
             // Start broadcast status
             broadcastPacket(new Revive(this));
@@ -2166,14 +2158,6 @@ public abstract class L2Character extends L2Object {
      */
     public boolean isUndead() {
         return false;
-    }
-
-    @Override
-    public CharKnownList getKnownList() {
-        if ((super.getKnownList() == null) || !(super.getKnownList() instanceof CharKnownList)) {
-            setKnownList(new CharKnownList(this));
-        }
-        return ((CharKnownList) super.getKnownList());
     }
 
     /**

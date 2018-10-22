@@ -1,6 +1,7 @@
 package org.l2j.gameserver.datatables;
 
 import org.l2j.gameserver.model.base.PlayerClass;
+import org.l2j.gameserver.model.entity.database.CharTemplate;
 import org.l2j.gameserver.templates.ClassTemplate;
 import org.l2j.gameserver.templates.xml.jaxb.ClassInfo;
 import org.l2j.gameserver.templates.xml.jaxb.PlayerTemplate;
@@ -15,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
 public class PlayerTemplateTable {
     private static final Logger logger = LoggerFactory.getLogger(PlayerTemplateTable.class);
@@ -34,7 +36,8 @@ public class PlayerTemplateTable {
     private PlayerTemplateTable() {
         templates = new HashMap<>(CLASSES_COUNT);
         loadClassesTemplate();
-        logger.info("Loaded {} player Templates.", templateReader.getTemplateCount());
+        logger.info("Loaded {} players Template.", templateReader.getTemplateCount());
+        logger.info("Loaded {} classes Template.", templates.size());
     }
 
     private void loadClassesTemplate() {
@@ -59,7 +62,10 @@ public class PlayerTemplateTable {
         } else {
             template = addToClassTemplate(reader, reader.getClassInfo(classInfo.getParent()));
         }
-        if(!templates.containsKey(classInfo.getClassId())) {
+        if(isNull(template)) {
+            System.out.println(template);
+        }
+        if(!templates.containsKey(classInfo.getClassId()) && nonNull(template)) {
             templates.put(classInfo.getClassId(), new ClassTemplate(template, classInfo));
         }
         return  template;

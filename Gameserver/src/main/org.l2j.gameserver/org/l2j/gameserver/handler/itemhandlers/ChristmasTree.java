@@ -20,7 +20,7 @@ package org.l2j.gameserver.handler.itemhandlers;
 
 import org.l2j.gameserver.datatables.NpcTable;
 import org.l2j.gameserver.handler.IItemHandler;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Spawn;

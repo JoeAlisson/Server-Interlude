@@ -29,7 +29,7 @@ public class CharSelectInfoPackage
 	private int _objectId = 0;
 	private int _charId = 0x00030b7a;
 	private long _exp = 0;
-	private int _sp = 0;
+	private long _sp = 0;
 	private int _clanId = 0;
 	private int _race = 0;
 	private int _classId = 0;
@@ -41,9 +41,9 @@ public class CharSelectInfoPackage
 	private int _hairColor = 0;
 	private int _sex = 0;
 	private int _level = 1;
-	private int _maxHp = 0;
+	private float _maxHp = 0;
 	private double _currentHp = 0;
-	private int _maxMp = 0;
+	private float _maxMp = 0;
 	private double _currentMp = 0;
 	private final int[][] _paperdoll;
 	private int _karma = 0;
@@ -54,12 +54,8 @@ public class CharSelectInfoPackage
 	private int pk;
     private int pvp;
     private int accessLevel;
-    private int nobles;
+    private boolean nobles;
 
-    /**
-	 * @param objectId
-	 * @param name
-	 */
 	public CharSelectInfoPackage(int objectId, String name)
 	{
 		setObjectId(objectId);
@@ -220,22 +216,22 @@ public class CharSelectInfoPackage
 		_level = level;
 	}
 	
-	public int getMaxHp()
+	public float getMaxHp()
 	{
 		return _maxHp;
 	}
 	
-	public void setMaxHp(int maxHp)
+	public void setMaxHp(float maxHp)
 	{
 		_maxHp = maxHp;
 	}
 	
-	public int getMaxMp()
+	public float getMaxMp()
 	{
 		return _maxMp;
 	}
 	
-	public void setMaxMp(int maxMp)
+	public void setMaxMp(float maxMp)
 	{
 		_maxMp = maxMp;
 	}
@@ -270,12 +266,12 @@ public class CharSelectInfoPackage
 		_sex = sex;
 	}
 	
-	public int getSp()
+	public long getSp()
 	{
 		return _sp;
 	}
 	
-	public void setSp(int sp)
+	public void setSp(long sp)
 	{
 		_sp = sp;
 	}
@@ -357,11 +353,11 @@ public class CharSelectInfoPackage
         this.accessLevel = accesslevel;
     }
 
-    public int getNobles() {
+    public boolean getNobles() {
         return nobles;
     }
 
-    public void setNobles(int nobles) {
+    public void setNobles(boolean nobles) {
 	    this.nobles = nobles;
     }
 }

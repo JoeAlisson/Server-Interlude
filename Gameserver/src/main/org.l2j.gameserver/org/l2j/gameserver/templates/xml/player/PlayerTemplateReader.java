@@ -42,11 +42,11 @@ public class PlayerTemplateReader extends XMLReader<PlayerTemplate> {
 
     @Override
     protected String getSchemaFilePath() {
-        return "data/xml/template/player/player.xsd";
+        return "data/xml/schema/player.xsd";
     }
 
     @Override
     protected String[] getXmlFileDirectories() {
-        return new String[] { "data/xml/template/player"};
+        return new String[] { "data/xml/player"};
     }
 }

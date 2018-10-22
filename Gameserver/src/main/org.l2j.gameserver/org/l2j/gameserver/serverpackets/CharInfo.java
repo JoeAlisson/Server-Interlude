@@ -137,7 +137,7 @@ public class CharInfo extends L2GameServerPacket {
 			writeInt(_activeChar.getObjectId());
 			writeString(_activeChar.getName());
 			writeInt(_activeChar.getRace().ordinal());
-			writeInt(_activeChar.getAppearance().getSex() ? 1 : 0);
+			writeInt(_activeChar.getAppearance().getSex());
 			
 			if (_activeChar.getClassIndex() == 0) {
 				writeInt(_activeChar.getPlayerClass().getId());

@@ -206,7 +206,7 @@ public final class L2TamedBeastInstance extends L2FeedableBeastInstance {
     // tamed mobs will heal/recharge or debuff the enemy according to their skills
     public void onOwnerGotAttacked(L2Character attacker) {
         // check if the owner is no longer around...if so, despawn
-        if ((_owner == null) || (_owner.isOnline() == 0)) {
+        if ((_owner == null) || (!_owner.isOnline())) {
             doDespawn();
             return;
         }
@@ -345,7 +345,7 @@ public final class L2TamedBeastInstance extends L2FeedableBeastInstance {
             L2PcInstance owner = _tamedBeast.getOwner();
 
             // check if the owner is no longer around...if so, despawn
-            if ((owner == null) || (owner.isOnline() == 0)) {
+            if ((owner == null) || (!owner.isOnline())) {
                 doDespawn();
                 return;
             }

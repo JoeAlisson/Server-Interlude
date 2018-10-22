@@ -20,7 +20,7 @@ package org.l2j.gameserver.handler.skillhandlers;
 
 import org.l2j.gameserver.datatables.NpcTable;
 import org.l2j.gameserver.handler.ISkillHandler;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.instancemanager.CastleManager;
 import org.l2j.gameserver.instancemanager.SiegeManager;
 import org.l2j.gameserver.model.L2Character;

@@ -11,7 +11,7 @@ public interface IdFactoryRepository extends Repository<IdFactoryStub, Integer> 
     @Query("DELETE FROM itemsonground WHERE object_id IN (SELECT object_id FROM items)")
     int deleteItemsOnGroundDuplicated();
 
-    @Query("SELECT obj_id AS object_id FROM characters " +
+    @Query("SELECT object_id AS object_id FROM characters " +
             "UNION " +
               "SELECT object_id  FROM items " +
             "UNION " +
@@ -21,51 +21,51 @@ public interface IdFactoryRepository extends Repository<IdFactoryStub, Integer> 
     Iterable<Integer> findAllIds();
 
     @Modifying
-    @Query("DELETE FROM character_friends WHERE character_friends.char_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_friends WHERE character_friends.char_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterFriendInconsistency();
 
     @Modifying
-    @Query("DELETE FROM character_hennas WHERE character_hennas.char_obj_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_hennas WHERE character_hennas.char_obj_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterHennasInconsistency();
 
     @Modifying
-    @Query("DELETE FROM character_macroses WHERE character_macroses.char_obj_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_macroses WHERE character_macroses.char_obj_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterMacrosesInconsistency();
 
     @Modifying
-    @Query("DELETE FROM character_quests WHERE character_quests.char_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_quests WHERE character_quests.char_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterQuestsInconsistency();
 
     @Modifying
-    @Query("DELETE FROM character_recipebook WHERE character_recipebook.char_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_recipebook WHERE character_recipebook.char_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterRecipebookInconsistency();
 
     @Modifying
-    @Query("DELETE FROM character_shortcuts WHERE character_shortcuts.char_obj_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_shortcuts WHERE character_shortcuts.char_obj_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterShortcutsInconsistency();
 
     @Modifying
-    @Query("DELETE FROM character_skills WHERE character_skills.char_obj_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_skills WHERE character_skills.char_obj_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterSkillsInconsistency();
 
     @Modifying
-    @Query("DELETE FROM character_skills_save WHERE character_skills_save.char_obj_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_skills_save WHERE character_skills_save.char_obj_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterSkillsSaveInconsistency();
 
     @Modifying
-    @Query("DELETE FROM character_subclasses WHERE character_subclasses.char_obj_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM character_subclasses WHERE character_subclasses.char_obj_id NOT IN (SELECT object_Id FROM characters)")
     int deleteCharacterSubclassesInconsistency();
 
     @Modifying
-    @Query("DELETE FROM cursed_weapons WHERE cursed_weapons.playerId NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM cursed_weapons WHERE cursed_weapons.playerId NOT IN (SELECT object_Id FROM characters)")
     int deleteCursedWeaponsInconsistency();
 
     @Modifying
-    @Query("DELETE FROM heroes WHERE heroes.char_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM heroes WHERE heroes.char_id NOT IN (SELECT object_Id FROM characters)")
     int deleteHeroesInconsistency();
 
     @Modifying
-    @Query("DELETE FROM olympiad_nobles WHERE olympiad_nobles.char_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM olympiad_nobles WHERE olympiad_nobles.char_id NOT IN (SELECT object_Id FROM characters)")
     int deleteOlympiadNoblesInconsistency();
 
     @Modifying
@@ -73,7 +73,7 @@ public interface IdFactoryRepository extends Repository<IdFactoryStub, Integer> 
     int deletePetsInconsistency();
 
     @Modifying
-    @Query("DELETE FROM seven_signs WHERE seven_signs.char_obj_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM seven_signs WHERE seven_signs.char_obj_id NOT IN (SELECT object_Id FROM characters)")
     int deleteSevenSignsInconsistency();
 
     @Modifying
@@ -85,7 +85,7 @@ public interface IdFactoryRepository extends Repository<IdFactoryStub, Integer> 
     int deleteAuctionBidInconsistency();
 
     @Modifying
-    @Query("DELETE FROM clan_data WHERE clan_data.leader_id NOT IN (SELECT obj_Id FROM characters)")
+    @Query("DELETE FROM clan_data WHERE clan_data.leader_id NOT IN (SELECT object_Id FROM characters)")
     int deleteClanDataInconsistency();
 
     @Modifying
@@ -121,7 +121,7 @@ public interface IdFactoryRepository extends Repository<IdFactoryStub, Integer> 
     int deleteSiegeClansrInconsistency();
 
     @Modifying
-    @Query("DELETE FROM items WHERE items.owner_id NOT IN (SELECT obj_Id FROM characters) AND items.owner_id NOT IN (SELECT id FROM clan_data);")
+    @Query("DELETE FROM items WHERE items.owner_id NOT IN (SELECT object_Id FROM characters) AND items.owner_id NOT IN (SELECT id FROM clan_data);")
     int deleteItemsInconsistency();
 
     @Modifying

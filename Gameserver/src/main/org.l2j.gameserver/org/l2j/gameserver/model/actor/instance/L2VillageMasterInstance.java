@@ -30,8 +30,8 @@ import org.l2j.gameserver.model.L2Clan;
 import org.l2j.gameserver.model.L2Clan.SubPledge;
 import org.l2j.gameserver.model.L2ClanMember;
 import org.l2j.gameserver.model.base.ClassType;
+import org.l2j.gameserver.model.base.CreatureRace;
 import org.l2j.gameserver.model.base.PlayerClass;
-import org.l2j.gameserver.model.base.Race;
 import org.l2j.gameserver.model.base.SubClass;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.entity.database.ClanSkillInfo;
@@ -39,6 +39,7 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.quest.QuestState;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.l2j.gameserver.util.Util;
 
 import java.util.Iterator;
@@ -725,7 +726,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
         }
 
         if(playerClasses.contains(PlayerClass.DARK_FIGHTER) || playerClasses.contains(PlayerClass.DARK_MAGE)) {
-            return Race.DARK_ELF;
+            return Race.DARKELF;
         }
 
         if(playerClasses.contains(PlayerClass.ORC_FIGHTER) || playerClasses.contains(PlayerClass.ORC_MAGE)) {

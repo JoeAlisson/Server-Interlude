@@ -20,7 +20,7 @@ public class CharacterSelectedPacket extends L2GameServerPacket {
         writeInt(client.getSessionId().sessionId);
         writeInt(player.getClanId());
         writeInt(0);  // builder level ??
-        writeInt(player.getAppearance().getSex() ? 0 : 1);
+        writeInt(player.getAppearance().getSex());
         writeInt(player.getRace().ordinal());
         writeInt(player.getPlayerClass().getId());
         writeInt(1);

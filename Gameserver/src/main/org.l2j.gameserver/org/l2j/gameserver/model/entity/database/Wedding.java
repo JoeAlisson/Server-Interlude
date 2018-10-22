@@ -2,7 +2,7 @@ package org.l2j.gameserver.model.entity.database;
 
 import org.l2j.commons.database.annotation.Table;
 import org.l2j.commons.database.model.Entity;
-import org.l2j.gameserver.idfactory.IdFactory;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.entity.database.repository.ModsWeddingRepository;
 import org.springframework.data.annotation.Id;
 

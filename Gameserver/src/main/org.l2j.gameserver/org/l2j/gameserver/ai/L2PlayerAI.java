@@ -24,7 +24,7 @@ import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance.AIAccessor;
 import org.l2j.gameserver.model.actor.instance.L2StaticObjectInstance;
-import org.l2j.gameserver.model.actor.knownlist.ObjectKnownList.KnownListAsynchronousUpdateTask;
+import org.l2j.gameserver.model.actor.knownlist.KnownList.KnownListAsynchronousUpdateTask;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
