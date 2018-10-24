@@ -263,7 +263,7 @@ public class GameStatusThread extends Thread
 				else if (_usrCommand.equals("status"))
 				{
 					int playerCount = 0, objectCount = 0;
-					int max = LoginServerThread.getInstance().getMaxPlayer();
+					int max = AuthServerClient.getInstance().getMaxPlayer();
 					
 					playerCount = L2World.getInstance().getAllPlayersCount();
 					objectCount = L2World.getInstance().getAllVisibleObjectsCount();

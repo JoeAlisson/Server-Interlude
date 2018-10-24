@@ -201,7 +201,7 @@ public class Shutdown extends Thread
 			
 			try
 			{
-				LoginServerThread.getInstance().interrupt();
+				AuthServerClient.getInstance().interrupt();
 			}
 			catch (Throwable t)
 			{
@@ -365,7 +365,7 @@ public class Shutdown extends Thread
 						_an.announceToAll("The server is " + MODE_TEXT[_shutdownMode] + " in 2 minutes.");
 						break;
 					case 60:
-						LoginServerThread.getInstance().setServerStatus(ServerStatus.STATUS_DOWN); // avoids new players from logging in
+						AuthServerClient.getInstance().setServerStatus(ServerStatus.STATUS_DOWN); // avoids new players from logging in
 						_an.announceToAll("The server is " + MODE_TEXT[_shutdownMode] + " in 1 minute.");
 						break;
 					case 30:

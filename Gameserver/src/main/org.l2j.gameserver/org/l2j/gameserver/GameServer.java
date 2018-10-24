@@ -87,8 +87,6 @@ public class GameServer {
 
         TeleportLocationTable.getInstance();
 
-        L2World.getInstance();
-
         DayNightSpawnManager.getInstance().notifyChangeMode();
         SpawnTable.getInstance();
         RaidBossSpawnManager.getInstance();
@@ -187,20 +185,18 @@ public class GameServer {
         FloodProtector.getInstance();
         TvTManager.getInstance();
 */
+        AuthServerClient.getInstance().start();
+
+        var bindAddress =  getInetSocketAddress();
+        L2GamePacketHandler gph = new L2GamePacketHandler();
+        connectionHandler = ConnectionBuilder.create(bindAddress, gph, gph, gph).filter(new IPv4Filter()).build();
+        connectionHandler.start();
 
         // maxMemory is the upper limit the jvm can use, totalMemory the size of the current allocation pool, freeMemory the unused memory in the allocation pool
         long freeMem = ((Runtime.getRuntime().maxMemory() - Runtime.getRuntime().totalMemory()) + Runtime.getRuntime().freeMemory()) / 1048576; // 1024 * 1024 = 1048576;
         long totalMem = Runtime.getRuntime().maxMemory() / 1048576;
 
         _log.info(getMessage("info.free.memory", freeMem, totalMem));
-
-        LoginServerThread _loginThread = LoginServerThread.getInstance();
-        _loginThread.start();
-
-        var bindAddress =  getInetSocketAddress();
-        L2GamePacketHandler gph = new L2GamePacketHandler();
-        connectionHandler = ConnectionBuilder.create(bindAddress, gph, gph, gph).filter(new IPv4Filter()).build();
-        connectionHandler.start();
         _log.info(getMessage("info.max.connected.players", Config.MAXIMUM_ONLINE_USERS));
     }
 

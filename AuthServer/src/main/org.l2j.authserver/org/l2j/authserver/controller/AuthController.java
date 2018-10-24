@@ -5,13 +5,12 @@ import org.l2j.commons.database.AccountRepository;
 import org.l2j.commons.database.model.Account;
 import org.l2j.commons.util.Rnd;
 import org.l2j.authserver.GameServerInfo;
-import org.l2j.authserver.GameServerManager;
-import org.l2j.authserver.network.AuthClient;
+import org.l2j.authserver.network.client.AuthClient;
 import org.l2j.authserver.network.SessionKey;
 import org.l2j.authserver.network.crypt.AuthCrypt;
 import org.l2j.authserver.network.crypt.ScrambledKeyPair;
-import org.l2j.authserver.network.packet.auth2client.LoginOk;
-import org.l2j.authserver.network.packet.game2auth.ServerStatus;
+import org.l2j.authserver.network.client.packet.auth2client.LoginOk;
+import org.l2j.authserver.network.gameserver.packet.game2auth.ServerStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,9 +31,8 @@ import static org.l2j.commons.util.Util.hash;
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
-import static org.l2j.authserver.network.AuthClientState.AUTHED_LOGIN;
-import static org.l2j.authserver.network.packet.auth2client.AccountKicked.AccountKickedReason.REASON_PERMANENTLY_BANNED;
-import static org.l2j.authserver.network.packet.auth2client.LoginFail.LoginFailReason.*;
+import static org.l2j.authserver.network.client.AuthClientState.AUTHED_LOGIN;
+import static org.l2j.authserver.network.client.packet.auth2client.AccountKicked.AccountKickedReason.REASON_PERMANENTLY_BANNED;
 import static org.l2j.authserver.settings.AuthServerSettings.*;
 import static org.l2j.commons.util.Util.isNullOrEmpty;
 

@@ -5966,7 +5966,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @param level the new account accesslevel
      */
     public void setAccountAccesslevel(int level) {
-        LoginServerThread.getInstance().sendAccessLevel(getAccountName(), level);
+        AuthServerClient.getInstance().sendAccessLevel(getAccountName(), level);
     }
 
     /**

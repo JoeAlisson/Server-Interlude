@@ -1,9 +1,14 @@
 package org.l2j.authserver;
 
+import org.l2j.authserver.controller.AuthController;
+import org.l2j.authserver.controller.GameServerManager;
+import org.l2j.authserver.network.SelectorHelper;
+import org.l2j.authserver.network.client.AuthClient;
+import org.l2j.authserver.network.client.AuthPacketHandler;
+import org.l2j.authserver.network.gameserver.GameserverPacketHandler;
+import org.l2j.authserver.network.gameserver.ServerClient;
 import org.l2j.commons.Config;
 import org.l2j.commons.Server;
-import org.l2j.authserver.controller.AuthController;
-import org.l2j.authserver.network.*;
 import org.l2j.mmocore.ConnectionBuilder;
 import org.l2j.mmocore.ConnectionHandler;
 import org.slf4j.Logger;
@@ -11,10 +16,9 @@ import org.slf4j.LoggerFactory;
 
 import java.net.InetSocketAddress;
 
-import static org.l2j.commons.util.Util.isNullOrEmpty;
 import static java.lang.Runtime.getRuntime;
-import static java.util.Objects.nonNull;
 import static org.l2j.authserver.settings.AuthServerSettings.*;
+import static org.l2j.commons.util.Util.isNullOrEmpty;
 
 public class AuthServer {
 
@@ -25,43 +29,35 @@ public class AuthServer {
     private static Logger logger;
 
     private final ConnectionHandler<AuthClient> connectionHandler;
-    private GameServerListener _gameServerListener;
+    private final ConnectionHandler<ServerClient>  serverConnectionHandler;
 
     public AuthServer() throws Exception {
         AuthController.load();
         GameServerManager.load();
 
-        _gameServerListener = new GameServerListener();
-        _gameServerListener.start();
+        var bindServerListen = gameServerListenHost().equals("*") ? new InetSocketAddress(gameServerListenPort()) : new InetSocketAddress(gameServerListenHost(), gameServerListenPort());
+        var gameserverHandler = new GameserverPacketHandler();
+        serverConnectionHandler = ConnectionBuilder.create(bindServerListen, ServerClient::new, gameserverHandler, gameserverHandler).threadPoolSize(1).build();
         logger.info("Listening for GameServers on {} : {}", gameServerListenHost(), gameServerListenPort());
 
-        var bindAddress = loginListenHost().equals("*") ? new InetSocketAddress(loginListenPort()) :
-                new InetSocketAddress(loginListenHost(), loginListenPort()) ;
 
+        var bindAddress = loginListenHost().equals("*") ? new InetSocketAddress(loginListenPort()) : new InetSocketAddress(loginListenHost(), loginListenPort()) ;
         final AuthPacketHandler lph = new AuthPacketHandler();
         final SelectorHelper sh = new SelectorHelper();
-
         connectionHandler = ConnectionBuilder.create(bindAddress, AuthClient::new, lph, sh).threadPoolSize(2).build();
         connectionHandler.start();
         logger.info("Login Server ready on {}:{}", bindAddress.getHostString(), loginListenPort());
+
+        getRuntime().addShutdownHook(new Thread(() -> AuthServer.this.shutdown(false)));
     }
 
-    public void removeGameserver(GameServerConnection gameServerConnection, String ip) {
-        if (nonNull(_gameServerListener)) {
-            _gameServerListener.removeGameServer(gameServerConnection);
-            _gameServerListener.removeFloodProtection(ip);
-        }
-    }
+    private void shutdown(boolean restart) {
+        serverConnectionHandler.shutdown();
+        serverConnectionHandler.setDaemon(true);
 
-    public void shutdown(boolean restart) {
         connectionHandler.shutdown();
         connectionHandler.setDaemon(true);
-        _gameServerListener.close();
         getRuntime().exit(restart ? 2 : 0);
-    }
-
-    public static AuthServer getInstance() {
-        return _instance;
     }
 
     public static void main(String[] args) {

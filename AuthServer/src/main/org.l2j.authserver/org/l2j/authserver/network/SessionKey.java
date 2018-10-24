@@ -18,8 +18,8 @@
  */
 package org.l2j.authserver.network;
 
-import org.l2j.authserver.network.packet.auth2client.LoginOk;
-import org.l2j.authserver.network.packet.auth2client.PlayOk;
+import org.l2j.authserver.network.client.packet.auth2client.LoginOk;
+import org.l2j.authserver.network.client.packet.auth2client.PlayOk;
 
 import java.util.Objects;
 

@@ -2,8 +2,8 @@ package org.l2j.gameserver.network;
 
 import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
-import org.l2j.gameserver.LoginServerThread;
-import org.l2j.gameserver.LoginServerThread.SessionKey;
+import org.l2j.gameserver.AuthServerClient;
+import org.l2j.gameserver.AuthServerClient.SessionKey;
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.communitybbs.Manager.RegionBBSManager;
 import org.l2j.gameserver.datatables.SkillTable;
@@ -387,7 +387,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
             } catch (Exception e1) {
                 _log.warn( "Error while cleanup client.", e1);
             } finally {
-                LoginServerThread.getInstance().sendLogout(getAccountName());
+                AuthServerClient.getInstance().sendLogout(getAccountName());
             }
         }
     }
@@ -456,7 +456,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
             } catch (Exception e1) {
                 _log.warn( "error while disconnecting client", e1);
             } finally {
-                LoginServerThread.getInstance().sendLogout(getAccountName());
+                AuthServerClient.getInstance().sendLogout(getAccountName());
             }
         }
     }

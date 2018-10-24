@@ -1,6 +1,6 @@
 package org.l2j.gameserver.gameserverpackets;
 
-import org.l2j.gameserver.LoginServerThread.SessionKey;
+import org.l2j.gameserver.AuthServerClient.SessionKey;
 
 /**
  * @author -Wooden-

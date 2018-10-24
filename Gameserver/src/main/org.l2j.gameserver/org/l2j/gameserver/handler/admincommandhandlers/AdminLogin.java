@@ -19,7 +19,7 @@
 package org.l2j.gameserver.handler.admincommandhandlers;
 
 import org.l2j.commons.Config;
-import org.l2j.gameserver.LoginServerThread;
+import org.l2j.gameserver.AuthServerClient;
 import org.l2j.gameserver.gameserverpackets.ServerStatus;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -77,7 +77,7 @@ public class AdminLogin implements IAdminCommandHandler
 				String number = st.nextToken();
 				try
 				{
-					LoginServerThread.getInstance().setMaxPlayer(Integer.parseInt(number));
+					AuthServerClient.getInstance().setMaxPlayer(Integer.parseInt(number));
 					activeChar.sendMessage("maxPlayer set to " + number);
 					showMainPage(activeChar);
 				}
@@ -100,14 +100,14 @@ public class AdminLogin implements IAdminCommandHandler
 				String mode = st.nextToken();
 				if (mode.equals("on"))
 				{
-					LoginServerThread.getInstance().sendServerStatus(ServerStatus.SERVER_LIST_CLOCK, ServerStatus.ON);
+					AuthServerClient.getInstance().sendServerStatus(ServerStatus.SERVER_LIST_CLOCK, ServerStatus.ON);
 					activeChar.sendMessage("A clock will now be displayed next to the server name");
 					Config.SERVER_LIST_CLOCK = true;
 					showMainPage(activeChar);
 				}
 				else if (mode.equals("off"))
 				{
-					LoginServerThread.getInstance().sendServerStatus(ServerStatus.SERVER_LIST_CLOCK, ServerStatus.OFF);
+					AuthServerClient.getInstance().sendServerStatus(ServerStatus.SERVER_LIST_CLOCK, ServerStatus.OFF);
 					Config.SERVER_LIST_CLOCK = false;
 					activeChar.sendMessage("The clock will not be displayed");
 					showMainPage(activeChar);
@@ -136,11 +136,11 @@ public class AdminLogin implements IAdminCommandHandler
 	{
 		NpcHtmlMessage html = new NpcHtmlMessage(1);
 		html.setFile("data/html/admin/login.htm");
-		html.replace("%server_name%", LoginServerThread.getInstance().getServerName());
-		html.replace("%status%", LoginServerThread.getInstance().getStatusString());
+		html.replace("%server_name%", AuthServerClient.getInstance().getServerName());
+		html.replace("%status%", AuthServerClient.getInstance().getStatusString());
 		html.replace("%clock%", String.valueOf(Config.SERVER_LIST_CLOCK));
 		html.replace("%brackets%", String.valueOf(Config.SERVER_LIST_BRACKET));
-		html.replace("%max_players%", String.valueOf(LoginServerThread.getInstance().getMaxPlayer()));
+		html.replace("%max_players%", String.valueOf(AuthServerClient.getInstance().getMaxPlayer()));
 		activeChar.sendPacket(html);
 	}
 	
@@ -149,7 +149,7 @@ public class AdminLogin implements IAdminCommandHandler
 	 */
 	private void allowToAll()
 	{
-		LoginServerThread.getInstance().setServerStatus(ServerStatus.STATUS_AUTO);
+		AuthServerClient.getInstance().setServerStatus(ServerStatus.STATUS_AUTO);
 		Config.SERVER_GMONLY = false;
 	}
 	
@@ -158,7 +158,7 @@ public class AdminLogin implements IAdminCommandHandler
 	 */
 	private void gmOnly()
 	{
-		LoginServerThread.getInstance().setServerStatus(ServerStatus.STATUS_GM_ONLY);
+		AuthServerClient.getInstance().setServerStatus(ServerStatus.STATUS_GM_ONLY);
 		Config.SERVER_GMONLY = true;
 	}
 	

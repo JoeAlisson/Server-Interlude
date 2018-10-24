@@ -1,13 +1,12 @@
 package org.l2j.authserver.network;
 
-import org.l2j.commons.crypt.NewCrypt;
-import org.l2j.authserver.AuthServer;
 import org.l2j.authserver.GameServerInfo;
-import org.l2j.authserver.GameServerManager;
 import org.l2j.authserver.controller.AuthController;
-import org.l2j.authserver.network.packet.game2auth.*;
-import org.l2j.authserver.network.packet.auth2game.*;
-import org.l2j.authserver.network.packet.ServerBasePacket;
+import org.l2j.authserver.controller.GameServerManager;
+import org.l2j.authserver.network.client.packet.GameServerWritablePacket;
+import org.l2j.authserver.network.gameserver.packet.auth2game.*;
+import org.l2j.authserver.network.gameserver.packet.game2auth.*;
+import org.l2j.commons.crypt.NewCrypt;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,13 +20,15 @@ import java.net.UnknownHostException;
 import java.security.KeyPair;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 
-import static org.l2j.commons.util.Util.printData;
 import static java.lang.Byte.toUnsignedInt;
 import static java.util.Objects.nonNull;
-import static org.l2j.authserver.network.packet.auth2game.LoginServerFail.NOT_AUTHED;
+import static org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail.NOT_AUTHED;
 import static org.l2j.authserver.settings.AuthServerSettings.acceptNewGameServerEnabled;
+import static org.l2j.commons.util.Util.printData;
 
 /**
  * @author -Wooden-
@@ -121,16 +122,13 @@ public class GameServerConnection extends Thread {
                 _gsi.setDown();
                 logger.info("Server [{}] {} is now set as disconnect", getServerId(), GameServerManager.getInstance().getServerNameById(getServerId()));
             }
-            AuthServer.getInstance().removeGameserver(this, ip);
+            GameServerManager.getInstance().removeGameServer(this, ip);
         }
     }
 
     private void handlePacket(byte[] data) throws IOException {
         int packetType = toUnsignedInt(data[0]);
         switch (packetType) {
-            case 0x0:
-                onReceiveBlowfishKey(data);
-                break;
             case 0x1:
                 onGameServerAuth(data);
                 break;
@@ -174,14 +172,6 @@ public class GameServerConnection extends Thread {
             receivedBytes = receivedBytes + newBytes;
         }
         return receivedBytes;
-    }
-
-    private void onReceiveBlowfishKey(byte[] data) {
-        BlowFishKey bfk = new BlowFishKey(data, _privateKey);
-        byte[] _blowfishKey = bfk.getKey();
-        _blowfish = new NewCrypt(_blowfishKey);
-
-        logger.debug("New BlowFish key received, Blowfih Engine initialized:");
     }
 
     private void onGameServerAuth(byte[] data) throws IOException {
@@ -274,7 +264,7 @@ public class GameServerConnection extends Thread {
         if (nonNull(gsi)) {
             if (Arrays.equals(gsi.getHexId(), hexId)) {
                 if (gsi.isAuthed()) {
-                    forceClose(LoginServerFail.REASON_ALREADY_LOGGED);
+                    forceClose(LoginGameServerFail.REASON_ALREADY_LOGGED);
                 } else {
                     attachGameServerInfo(gsi, gameServerAuth);
                 }
@@ -287,10 +277,10 @@ public class GameServerConnection extends Thread {
                         attachGameServerInfo(gsi, gameServerAuth);
                         gameServerManager.registerServerOnDB(gsi);
                     } else {
-                        forceClose(LoginServerFail.REASON_NO_FREE_ID);
+                        forceClose(LoginGameServerFail.REASON_NO_FREE_ID);
                     }
                 } else {
-                    forceClose(LoginServerFail.REASON_WRONG_HEXID);
+                    forceClose(LoginGameServerFail.REASON_WRONG_HEXID);
                 }
             }
         } else {
@@ -300,10 +290,10 @@ public class GameServerConnection extends Thread {
                     attachGameServerInfo(gsi, gameServerAuth);
                     gameServerManager.registerServerOnDB(gsi);
                 } else {
-                    forceClose(LoginServerFail.REASON_ID_RESERVED);
+                    forceClose(LoginGameServerFail.REASON_ID_RESERVED);
                 }
             } else {
-                forceClose(LoginServerFail.REASON_WRONG_HEXID);
+                forceClose(LoginGameServerFail.REASON_WRONG_HEXID);
             }
         }
     }
@@ -325,7 +315,7 @@ public class GameServerConnection extends Thread {
     }
 
     private void forceClose(int reason) {
-        LoginServerFail lsf = new LoginServerFail(reason);
+        LoginGameServerFail lsf = new LoginGameServerFail(reason);
         try {
             sendPacket(lsf);
         } catch (IOException e) {
@@ -339,7 +329,7 @@ public class GameServerConnection extends Thread {
         }
     }
 
-    private void sendPacket(ServerBasePacket sl) throws IOException {
+    private void sendPacket(GameServerWritablePacket sl) throws IOException {
         byte[] data = sl.getContent();
         NewCrypt.appendChecksum(data);
 

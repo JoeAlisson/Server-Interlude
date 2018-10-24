@@ -20,7 +20,7 @@ package org.l2j.gameserver.handler.admincommandhandlers;
 
 import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
-import org.l2j.gameserver.LoginServerThread;
+import org.l2j.gameserver.AuthServerClient;
 import org.l2j.gameserver.communitybbs.Manager.RegionBBSManager;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.GMAudit;
@@ -92,7 +92,7 @@ public class AdminBan implements IAdminCommandHandler
 			else if (plyr == null)
 			{
 				account_name = player;
-				LoginServerThread.getInstance().sendAccessLevel(account_name, 0);
+				AuthServerClient.getInstance().sendAccessLevel(account_name, 0);
 				activeChar.sendMessage("Ban request sent for account " + account_name + ". If you need a playername based commmand, see //ban_menu");
 			}
 			else
@@ -109,7 +109,7 @@ public class AdminBan implements IAdminCommandHandler
 			try
 			{
 				account_name = st.nextToken();
-				LoginServerThread.getInstance().sendAccessLevel(account_name, 0);
+				AuthServerClient.getInstance().sendAccessLevel(account_name, 0);
 				activeChar.sendMessage("Unban request sent for account " + account_name + ". If you need a playername based commmand, see //unban_menu");
 			}
 			catch (Exception e)

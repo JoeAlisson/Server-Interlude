@@ -21,7 +21,7 @@ package org.l2j.gameserver.handler.admincommandhandlers;
 import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.commons.util.Util;
-import org.l2j.gameserver.LoginServerThread;
+import org.l2j.gameserver.AuthServerClient;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -328,7 +328,7 @@ public class AdminMenu implements IAdminCommandHandler
         }
         else {
             SystemMessage sm = new SystemMessage(SystemMessageId.S1_S2);
-            LoginServerThread.getInstance().sendAccessLevel(acc_name, banLevel);
+            AuthServerClient.getInstance().sendAccessLevel(acc_name, banLevel);
             sm.addString("Account Access Level for " + player + " set to " + banLevel + ".");
             activeChar.sendPacket(sm);
         }

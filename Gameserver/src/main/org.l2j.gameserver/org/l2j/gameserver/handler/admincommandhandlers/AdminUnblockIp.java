@@ -97,7 +97,7 @@ public class AdminUnblockIp implements IAdminCommandHandler
 	
 	private boolean unblockIp(String ipAddress, L2PcInstance activeChar)
 	{
-		// LoginServerThread.getInstance().unBlockip(ipAddress);
+		// AuthServerClient.getInstance().unBlockip(ipAddress);
 		_log.warn("IP removed by GM " + activeChar.getName());
 		return true;
 	}

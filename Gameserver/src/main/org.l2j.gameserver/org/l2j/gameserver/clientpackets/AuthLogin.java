@@ -1,13 +1,11 @@
 package org.l2j.gameserver.clientpackets;
 
-import org.l2j.gameserver.LoginServerThread;
-import org.l2j.gameserver.LoginServerThread.SessionKey;
+import org.l2j.gameserver.AuthServerClient;
+import org.l2j.gameserver.AuthServerClient.SessionKey;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.LoginResult;
 import org.l2j.gameserver.serverpackets.ServerClose;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import static org.l2j.gameserver.serverpackets.LoginResult.ACOUNT_ALREADY_IN_USE;
 import static org.l2j.gameserver.serverpackets.LoginResult.FAILED;
@@ -41,7 +39,7 @@ public final class AuthLogin extends L2GameClientPacket {
         // avoid potential exploits
         if (isNull(client.getAccountName())) {
             client.setAccountName(account);
-            var oldClient = LoginServerThread.getInstance().addGameServerLogin(account, client);
+            var oldClient = AuthServerClient.getInstance().addGameServerLogin(account, client);
             if (nonNull(oldClient)) {
                 var loggedPlayer = oldClient.getActiveChar();
                 if (nonNull(loggedPlayer)) {
@@ -51,9 +49,9 @@ public final class AuthLogin extends L2GameClientPacket {
                     oldClient.close(new ServerClose());
                 }
                 client.close(new LoginResult(FAILED, ACOUNT_ALREADY_IN_USE));
-                LoginServerThread.getInstance().removeServerLogin(account);
+                AuthServerClient.getInstance().removeServerLogin(account);
             } else {
-                LoginServerThread.getInstance().addWaitingClientAndSendRequest(account, client, key);
+                AuthServerClient.getInstance().addWaitingClientAndSendRequest(account, client, key);
             }
         }
     }

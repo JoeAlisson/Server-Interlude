@@ -2,7 +2,7 @@ package org.l2j.authserver;
 
 import org.l2j.commons.database.model.GameServer;
 import org.l2j.authserver.network.GameServerConnection;
-import org.l2j.authserver.network.packet.game2auth.ServerStatus;
+import org.l2j.authserver.network.gameserver.packet.game2auth.ServerStatus;
 
 import java.util.HashSet;
 import java.util.Set;
