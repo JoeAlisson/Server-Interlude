@@ -2,8 +2,8 @@ package org.l2j.commons.database;
 
 import org.l2j.commons.database.annotation.Column;
 import org.l2j.commons.database.annotation.Table;
-import org.springframework.data.jdbc.mapping.model.JdbcPersistentProperty;
-import org.springframework.data.jdbc.mapping.model.NamingStrategy;
+import org.springframework.data.relational.core.mapping.NamingStrategy;
+import org.springframework.data.relational.core.mapping.RelationalPersistentProperty;
 
 import static java.util.Objects.nonNull;
 
@@ -19,7 +19,7 @@ public class AnnotationNamingStrategy implements NamingStrategy {
     }
 
     @Override
-    public String getColumnName(JdbcPersistentProperty property) {
+    public String getColumnName(RelationalPersistentProperty property) {
         Column columnAnnotation = property.getField().getAnnotation(Column.class);
         if(nonNull(columnAnnotation)) {
             return columnAnnotation.value();
@@ -28,7 +28,7 @@ public class AnnotationNamingStrategy implements NamingStrategy {
     }
 
     @Override
-    public String getReverseColumnName(JdbcPersistentProperty property) {
+    public String getReverseColumnName(RelationalPersistentProperty property) {
         return getColumnName(property);
 
     }

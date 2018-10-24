@@ -145,6 +145,6 @@ public interface IdFactoryRepository extends Repository<IdFactoryStub, Integer> 
     void updateCastle();
 
     @Modifying
-    @Query("UPDATE characters SET clanid=0 WHERE characters.clanid NOT IN (SELECT id FROM clan_data)")
+    @Query("UPDATE characters SET clan=0 WHERE characters.clan NOT IN (SELECT id FROM clan_data)")
     void updateCharacters();
 }

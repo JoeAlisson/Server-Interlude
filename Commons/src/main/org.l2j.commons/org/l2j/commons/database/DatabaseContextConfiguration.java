@@ -1,17 +1,19 @@
 package org.l2j.commons.database;
 
-import org.l2j.commons.Config;
-import org.l2j.commons.database.model.Entity;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.l2j.commons.Config;
+import org.l2j.commons.database.model.Entity;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jdbc.mapping.event.AfterLoadEvent;
-import org.springframework.data.jdbc.mapping.event.AfterSaveEvent;
-import org.springframework.data.jdbc.mapping.event.WithEntity;
-import org.springframework.data.jdbc.mapping.model.NamingStrategy;
+import org.springframework.context.annotation.Import;
 import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
+import org.springframework.data.jdbc.repository.config.JdbcConfiguration;
+import org.springframework.data.relational.core.mapping.NamingStrategy;
+import org.springframework.data.relational.core.mapping.event.AfterLoadEvent;
+import org.springframework.data.relational.core.mapping.event.AfterSaveEvent;
+import org.springframework.data.relational.core.mapping.event.WithEntity;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
@@ -19,6 +21,7 @@ import javax.sql.DataSource;
 import java.util.Optional;
 
 @Configuration
+@Import(JdbcConfiguration.class)
 @EnableJdbcRepositories({"org.l2j.commons.database", "org.l2j.gameserver.model.entity.database.repository"})
 public class DatabaseContextConfiguration {
 
@@ -61,9 +64,8 @@ public class DatabaseContextConfiguration {
 
     @Bean
     public ApplicationListener<AfterSaveEvent> afterSaveEventApplicationListener() {
-        return event -> {
-            extractModel(event).ifPresent(Entity::onSave);
-        };
+        return event -> extractModel(event).ifPresent(Entity::onSave);
+
     }
 
     private Optional<Entity> extractModel(WithEntity event) {
@@ -76,8 +78,6 @@ public class DatabaseContextConfiguration {
 
     @Bean
     public ApplicationListener<AfterLoadEvent> afterLoadEventApplicationListener() {
-        return event -> {
-            extractModel(event).ifPresent(Entity::onLoad);
-        };
+        return event -> extractModel(event).ifPresent(Entity::onLoad);
     }
 }

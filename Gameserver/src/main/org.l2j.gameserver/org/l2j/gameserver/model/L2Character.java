@@ -1663,9 +1663,8 @@ public abstract class L2Character extends L2Object {
      *
      * @param newAI the new aI
      *
-     * @deprecated there is no reason to change that
+     *  TODO there is no reason to change that
      */
-    @Deprecated(forRemoval =  true)
     public void setAI(AI newAI) {
         AI oldAI = getAI();
         if ((oldAI != null) && (oldAI != newAI) && (oldAI instanceof L2AttackableAI)) {

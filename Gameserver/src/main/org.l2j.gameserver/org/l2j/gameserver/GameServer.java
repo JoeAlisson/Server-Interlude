@@ -3,8 +3,7 @@ package org.l2j.gameserver;
 import org.l2j.commons.Config;
 import org.l2j.commons.Server;
 import org.l2j.commons.status.Status;
-import org.l2j.gameserver.datatables.*;
-import org.l2j.gameserver.factory.IdFactory;
+import org.l2j.gameserver.datatables.PlayerTemplateTable;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.network.L2GamePacketHandler;
 import org.l2j.gameserver.status.GameStatus;
@@ -45,14 +44,14 @@ public class GameServer {
         gameServer = this;
         makeDataDirectories();
 
+        PlayerTemplateTable.getInstance();
+
+
+/*
         ThreadPoolManager.getInstance();
         IdFactory.getInstance();
-
         // start game time control early
         GameTimeController.getInstance();
-
-        PlayerTemplateTable.getInstance();
-/*
 
         SkillTable.getInstance();
         SkillTreeTable.getInstance();
