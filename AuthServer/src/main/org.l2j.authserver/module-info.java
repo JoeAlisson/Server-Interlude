@@ -1,5 +1,5 @@
 module org.l2j.authserver {
-    requires com.l2jbr.commons;
+    requires org.l2j.commons;
     requires org.l2j.mmocore;
 
     requires java.xml.bind;

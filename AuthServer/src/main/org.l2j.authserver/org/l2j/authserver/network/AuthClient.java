@@ -1,6 +1,6 @@
 package org.l2j.authserver.network;
 
-import com.l2jbr.commons.database.model.Account;
+import org.l2j.commons.database.model.Account;
 import org.l2j.authserver.controller.AuthController;
 import org.l2j.authserver.network.crypt.AuthCrypt;
 import org.l2j.authserver.network.crypt.ScrambledKeyPair;

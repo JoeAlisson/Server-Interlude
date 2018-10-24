@@ -6,12 +6,12 @@ plugins {
 
 version '1.4'
 
-ext.moduleName = 'com.l2jbr.commons'
+ext.moduleName = 'org.l2j.commons'
 
 sourceSets {
     main {
         java {
-            srcDirs = ['src/main/com.l2jbr.commons']
+            srcDirs = ['src/main/org.l2j.commons']
         }
         resources {
             srcDirs = ['src/main/resources']
@@ -32,5 +32,5 @@ dependencies {
 }
 
 jar {
-    baseName "l2j-commons"
+    baseName "commons"
 }

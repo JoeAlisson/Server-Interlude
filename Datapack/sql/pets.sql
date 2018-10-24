@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS pets (
   exp decimal(20, 0) ,
   sp decimal(11) ,
   karma decimal(11) ,
-  pkkills decimal(11) ,
+  pk decimal(11) ,
   fed decimal(11) ,
   PRIMARY KEY  (item_obj_id),
   INDEX (name)

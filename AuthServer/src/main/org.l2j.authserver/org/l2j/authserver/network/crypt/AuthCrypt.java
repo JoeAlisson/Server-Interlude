@@ -17,8 +17,8 @@
  */
 package org.l2j.authserver.network.crypt;
 
-import com.l2jbr.commons.crypt.NewCrypt;
-import com.l2jbr.commons.util.Rnd;
+import org.l2j.commons.crypt.NewCrypt;
+import org.l2j.commons.util.Rnd;
 
 import java.io.IOException;
 

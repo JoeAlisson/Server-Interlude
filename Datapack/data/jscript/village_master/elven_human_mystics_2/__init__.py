@@ -54,14 +54,14 @@ class Quest (JQuest) :
    st = player.getQuestState(qn)
    if not st : return
    race     = player.getRace().ordinal()
-   classid  = player.getClassId().getId()
+   classId  = player.getClassId().getId()
    level    = player.getLevel()
    if npcId not in NPCS : return
    if not event in CLASSES.keys() :
      return event
    else :
      newclass,req_class,req_race,low_ni,low_i,ok_ni,ok_i,req_item=CLASSES[event]
-     if race == req_race and classid == req_class :
+     if race == req_race and classId == req_class :
         item = True
         for i in req_item :
             if not st.getQuestItemsCount(i):

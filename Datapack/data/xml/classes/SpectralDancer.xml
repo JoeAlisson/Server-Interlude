@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="107" name="Spectral Dancer" classLevel="76" parent="34" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="76" hp="3533.3" mp="1155.6" cp="1766.65" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3608.0" mp="1180.5" cp="1804.0" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3683.15" mp="1205.55" cp="1841.575" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3758.75" mp="1230.75" cp="1879.375" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3834.8" mp="1256.1" cp="1917.4" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3911.3" mp="1281.6" cp="1955.65" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3988.25" mp="1307.25" cp="1994.125" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="4065.65" mp="1333.05" cp="2032.825" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="4143.5" mp="1359.0" cp="2071.75" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="4221.8" mp="1385.1" cp="2110.9" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

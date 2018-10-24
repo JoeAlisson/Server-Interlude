@@ -36,14 +36,14 @@ class Quest (JQuest) :
 
  def onEvent (self,event,st) :
     htmltext = event
-    classid = st.getPlayer().getClassId().getId()
+    classId = st.getPlayer().getClassId().getId()
     level = st.getPlayer().getLevel()
     squire = st.getQuestItemsCount(MARK_OF_ESQUIRE)
     coin1,coin2,coin3,coin4,coin5,coin6 = st.getQuestItemsCount(COIN_OF_LORDS1),st.getQuestItemsCount(COIN_OF_LORDS2),st.getQuestItemsCount(COIN_OF_LORDS3),st.getQuestItemsCount(COIN_OF_LORDS4),st.getQuestItemsCount(COIN_OF_LORDS5),st.getQuestItemsCount(COIN_OF_LORDS6)
     guards_mark1,guards_mark2,guards_mark3=st.getQuestItemsCount(GLUDIO_GUARDS_MARK1),st.getQuestItemsCount(GLUDIO_GUARDS_MARK2),st.getQuestItemsCount(GLUDIO_GUARDS_MARK3)
     church_mark1,church_mark2,church_mark3=st.getQuestItemsCount(EINHASAD_CHURCH_MARK1),st.getQuestItemsCount(EINHASAD_CHURCH_MARK2),st.getQuestItemsCount(EINHASAD_CHURCH_MARK3)
     if event == "30417-02a.htm" :
-       if classid == 0x00 :
+       if classId == 0x00 :
           if level >= 19 :
              if st.getQuestItemsCount(SWORD_OF_RITUAL)>0 :
                 htmltext = "30417-04.htm"
@@ -52,11 +52,11 @@ class Quest (JQuest) :
           else :
              htmltext = "30417-02.htm"
              st.exitQuest(1)
-       elif classid != 0x04 :
+       elif classId != 0x04 :
           htmltext = "30417-03.htm"
           st.exitQuest(1)
     elif event == "30417-08.htm" :
-        if st.getInt("cond")== 0 and classid == 0x00 and level >= 19 :
+        if st.getInt("cond")== 0 and classId == 0x00 and level >= 19 :
            st.set("id","0")
            st.set("cond","1")
            st.setState(STARTED)

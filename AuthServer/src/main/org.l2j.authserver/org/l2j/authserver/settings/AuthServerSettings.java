@@ -1,9 +1,9 @@
 package org.l2j.authserver.settings;
 
-import com.l2jbr.commons.configuration.Settings;
-import com.l2jbr.commons.configuration.SettingsFile;
+import org.l2j.commons.configuration.Settings;
+import org.l2j.commons.configuration.SettingsFile;
 
-import static com.l2jbr.commons.configuration.Configurator.getSettings;
+import static org.l2j.commons.configuration.Configurator.getSettings;
 import static java.util.Objects.requireNonNullElseGet;
 
 public class AuthServerSettings implements Settings {

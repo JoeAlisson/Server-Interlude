@@ -74,7 +74,7 @@ class baium (JQuest):
     return
 
   def onAdvEvent (self,event,npc,player):
-    objId=0
+    objectId=0
     if event == "baium_unlock" :
       self.isBaiumLocked = False
       self.deleteGlobalQuestVar("unlockDatetime")
@@ -141,8 +141,8 @@ class baium (JQuest):
     self.lastAttackVsBaiumTime = System.currentTimeMillis()
     
   def onKill(self,npc,player,isPet):
-    objId=npc.getObjectId()
-    npc.broadcastPacket(PlaySound(1, "BS02_D", 1, objId, npc.getX(), npc.getY(), npc.getZ()))
+    objectId=npc.getObjectId()
+    npc.broadcastPacket(PlaySound(1, "BS02_D", 1, objectId, npc.getX(), npc.getY(), npc.getZ()))
     # spawn the "Teleportation Cubic" for 15 minutes (to allow players to exit the lair)
     self.addSpawn(29055,115203,16620,10078,0,False,900000)
     

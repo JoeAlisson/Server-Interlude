@@ -1,2 +1,2 @@
-@java  -cp ./lib/* com.l2jbr.tools.accountmanager.SQLAccountManager
+@java  -cp ./lib/* org.l2j.tools.accountmanager.SQLAccountManager
 @pause

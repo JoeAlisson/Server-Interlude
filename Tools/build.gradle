@@ -7,13 +7,13 @@ plugins {
 
 version '1.4'
 
-ext.moduleName = 'com.l2jbr.tools'
-mainClassName = "com.l2jbr.tools.accountmanager.SQLAccountManager"
+ext.moduleName = 'org.l2j.tools'
+mainClassName = "org.l2j.tools.accountmanager.SQLAccountManager"
 
 sourceSets {
     main {
         java {
-            srcDirs = ['src/main/com.l2jbr.tools']
+            srcDirs = ['src/main/org.l2j.tools']
         }
         resources {
             srcDirs = ['src/main/resources']

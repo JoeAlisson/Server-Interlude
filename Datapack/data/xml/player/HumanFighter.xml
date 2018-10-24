@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<PlayerTemplate classId="0" name="Human Fighter" race="HUMAN"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/player.xsd">
+    <baseStats strength="40" constitution="43" dexterity="30" mentality="25" wisdom="11" intelligence="21"/>
+    <physicDefense chest="31" legs="18" helmet="12" boots="7" gloves="8" pendant="3"/>
+    <physicAttack attack="4" criticalRate="40" speed="300" randomDamage="10" range="20"/>
+    <magicDefense necklace="13" leftEarring="9" rightEarring="9" rightRing="5" leftRing="5"/>
+    <magicAttack attack="6" criticalRate="50" speed="333" range="20"/>
+    <damage distance="26" width="120"/>
+    <collision maleRadius="9" maleHeight="23" femaleRadius="8" femaleHeight="23.5"/>
+    <baseSpeed walk="80" run="132" swim="50" fastSwim="50"/>
+    <abnormalResist magic="10" physic="10"/>
+    <attributes safeFallHeight="250" breath="100"/>
+    <startingItem id="34604" count="9000"/>
+    <startingItem id="34611" count="2000"/>
+    <startingItem id="34603" count="5000"/>
+    <startingItem id="34610" count="1000"/>
+    <startingItem id="2369" equipped="true"/>
+    <startingItem id="10"/>
+    <startingItem id="1146" equipped="true"/>
+    <startingItem id="1147" equipped="true"/>
+    <startingLocation>
+        <location x="-72662" y="258431" z="-3104"/>
+        <location x="-72963" y="258034" z="-3104"/>
+        <location x="-71436" y="256718" z="-3104"/>
+        <location x="-71081" y="257082" z="-3104"/>
+        <location x="-72682" y="257559" z="-3104"/>
+        <location x="-71958" y="256935" z="-3104"/>
+        <location x="-72352" y="257936" z="-3104"/>
+        <location x="-71616" y="257328" z="-3104"/>
+        <location x="-72320" y="258816" z="-3104"/>
+        <location x="-72432" y="258656" z="-3104"/>
+        <location x="-72256" y="258672" z="-3104"/>
+        <location x="-71936" y="259232" z="-3104"/>
+        <location x="-71792" y="259408" z="-3104"/>
+        <location x="-71760" y="259264" z="-3104"/>
+        <location x="-72064" y="257344" z="-3104"/>
+        <location x="-72304" y="257552" z="-3104"/>
+        <location x="-70880" y="257360" z="-3104"/>
+        <location x="-70736" y="257520" z="-3104"/>
+        <location x="-70896" y="257536" z="-3104"/>
+        <location x="-70400" y="257936" z="-3104"/>
+        <location x="-70432" y="258112" z="-3104"/>
+        <location x="-70240" y="258112" z="-3104"/>
+    </startingLocation>
+</PlayerTemplate>

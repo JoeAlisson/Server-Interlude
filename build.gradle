@@ -5,11 +5,11 @@ plugins {
     id "eclipse"
 }
 
-version '1.4'
+version '0.1'
 
 defaultTasks('clean', 'build')
 
-ext.moduleName = 'com.l2jbr'
+ext.moduleName = 'org.l2j'
 
 allprojects {
     repositories {

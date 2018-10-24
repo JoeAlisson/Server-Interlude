@@ -428,27 +428,27 @@ CREATE TABLE `characters` (
   `expBeforeDeath`          decimal(20, 0)          DEFAULT '0',
   `sp`                      decimal(11, 0)          DEFAULT NULL,
   `karma`                   decimal(11, 0)          DEFAULT NULL,
-  `pvpkills`                decimal(11, 0)          DEFAULT NULL,
-  `pkkills`                 decimal(11, 0)          DEFAULT NULL,
-  `clanid`                  decimal(11, 0)          DEFAULT NULL,
+  `pvp`                decimal(11, 0)          DEFAULT NULL,
+  `pk`                 decimal(11, 0)          DEFAULT NULL,
+  `clan`                  decimal(11, 0)          DEFAULT NULL,
   `maxload`                 decimal(11, 0)          DEFAULT NULL,
   `race`                    decimal(11, 0)          DEFAULT NULL,
-  `classid`                 decimal(11, 0)          DEFAULT NULL,
+  `classId`                 decimal(11, 0)          DEFAULT NULL,
   `base_class`              int(2)         NOT NULL DEFAULT '0',
-  `deletetime`              decimal(20, 0)          DEFAULT NULL,
+  `deleteTime`              decimal(20, 0)          DEFAULT NULL,
   `cancraft`                decimal(11, 0)          DEFAULT NULL,
   `title`                   varchar(16)             DEFAULT NULL,
   `rec_have`                int(3)         NOT NULL DEFAULT '0',
   `rec_left`                int(3)         NOT NULL DEFAULT '0',
   `accesslevel`             decimal(4, 0)           DEFAULT NULL,
   `online`                  decimal(1, 0)           DEFAULT NULL,
-  `onlinetime`              decimal(20, 0)          DEFAULT NULL,
+  `onlineTime`              decimal(20, 0)          DEFAULT NULL,
   `char_slot`               decimal(1, 0)           DEFAULT NULL,
   `newbie`                  decimal(1, 0)           DEFAULT '1',
   `lastAccess`              decimal(20, 0)          DEFAULT NULL,
   `clan_privs`              int(11)                 DEFAULT '0',
   `wantspeace`              decimal(1, 0)           DEFAULT '0',
-  `isin7sdungeon`           decimal(1, 0)  NOT NULL DEFAULT '0',
+  `isInSevenSigns`           decimal(1, 0)  NOT NULL DEFAULT '0',
   `in_jail`                 decimal(1, 0)           DEFAULT '0',
   `jail_timer`              decimal(20, 0)          DEFAULT '0',
   `power_grade`             decimal(11, 0)          DEFAULT NULL,
@@ -463,7 +463,7 @@ CREATE TABLE `characters` (
   `clan_create_expiry_time` decimal(20, 0) NOT NULL DEFAULT '0',
   `death_penalty_level`     int(2)         NOT NULL DEFAULT '0',
   PRIMARY KEY (`obj_Id`),
-  KEY `clanid` (`clanid`)
+  KEY `clan` (`clan`)
 )
   ENGINE = InnoDB
   DEFAULT CHARSET = latin1;
@@ -1028,7 +1028,7 @@ CREATE TABLE `pets` (
   `exp`         decimal(20, 0)          DEFAULT NULL,
   `sp`          decimal(11, 0)          DEFAULT NULL,
   `karma`       decimal(11, 0)          DEFAULT NULL,
-  `pkkills`     decimal(11, 0)          DEFAULT NULL,
+  `pk`     decimal(11, 0)          DEFAULT NULL,
   `fed`         decimal(11, 0)          DEFAULT NULL,
   PRIMARY KEY (`item_obj_id`)
 )

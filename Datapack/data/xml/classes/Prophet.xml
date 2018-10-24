@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="17" name="Prophet" classLevel="40" parent="15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="40" hp="1164.9" mp="478.8" cp="582.45" hpRegen="5.4" mpRegen="1.8" cpRegen="4.5" />
+    <level value="41" hp="1218.2" mp="504.8" cp="609.1" hpRegen="5.5" mpRegen="2.1" cpRegen="5.5" />
+    <level value="42" hp="1271.91" mp="531.0" cp="635.955" hpRegen="5.6" mpRegen="2.1" cpRegen="5.5" />
+    <level value="43" hp="1326.03" mp="557.4" cp="663.015" hpRegen="5.7" mpRegen="2.1" cpRegen="5.5" />
+    <level value="44" hp="1380.56" mp="584.0" cp="690.28" hpRegen="5.8" mpRegen="2.1" cpRegen="5.5" />
+    <level value="45" hp="1435.5" mp="610.8" cp="717.75" hpRegen="5.9" mpRegen="2.1" cpRegen="5.5" />
+    <level value="46" hp="1490.85" mp="637.8" cp="745.425" hpRegen="6.0" mpRegen="2.1" cpRegen="5.5" />
+    <level value="47" hp="1546.61" mp="665.0" cp="773.305" hpRegen="6.1" mpRegen="2.1" cpRegen="5.5" />
+    <level value="48" hp="1602.78" mp="692.4" cp="801.39" hpRegen="6.2" mpRegen="2.1" cpRegen="5.5" />
+    <level value="49" hp="1659.36" mp="720.0" cp="829.68" hpRegen="6.3" mpRegen="2.1" cpRegen="5.5" />
+    <level value="50" hp="1716.35" mp="747.8" cp="858.175" hpRegen="6.4" mpRegen="2.1" cpRegen="5.5" />
+    <level value="51" hp="1773.75" mp="775.8" cp="886.875" hpRegen="6.5" mpRegen="2.4" cpRegen="6.5" />
+    <level value="52" hp="1831.56" mp="804.0" cp="915.78" hpRegen="6.6" mpRegen="2.4" cpRegen="6.5" />
+    <level value="53" hp="1889.78" mp="832.4" cp="944.89" hpRegen="6.7" mpRegen="2.4" cpRegen="6.5" />
+    <level value="54" hp="1948.41" mp="861.0" cp="974.205" hpRegen="6.8" mpRegen="2.4" cpRegen="6.5" />
+    <level value="55" hp="2007.45" mp="889.8" cp="1003.725" hpRegen="6.9" mpRegen="2.4" cpRegen="6.5" />
+    <level value="56" hp="2066.9" mp="918.8" cp="1033.45" hpRegen="7.0" mpRegen="2.4" cpRegen="6.5" />
+    <level value="57" hp="2126.76" mp="948.0" cp="1063.38" hpRegen="7.1" mpRegen="2.4" cpRegen="6.5" />
+    <level value="58" hp="2187.03" mp="977.4" cp="1093.515" hpRegen="7.2" mpRegen="2.4" cpRegen="6.5" />
+    <level value="59" hp="2247.71" mp="1007.0" cp="1123.855" hpRegen="7.3" mpRegen="2.4" cpRegen="6.5" />
+    <level value="60" hp="2308.8" mp="1036.8" cp="1154.4" hpRegen="7.4" mpRegen="2.4" cpRegen="6.5" />
+    <level value="61" hp="2370.3" mp="1066.8" cp="1185.15" hpRegen="7.5" mpRegen="2.7" cpRegen="7.5" />
+    <level value="62" hp="2432.21" mp="1097.0" cp="1216.105" hpRegen="7.6" mpRegen="2.7" cpRegen="7.5" />
+    <level value="63" hp="2494.53" mp="1127.4" cp="1247.265" hpRegen="7.7" mpRegen="2.7" cpRegen="7.5" />
+    <level value="64" hp="2557.26" mp="1158.0" cp="1278.63" hpRegen="7.8" mpRegen="2.7" cpRegen="7.5" />
+    <level value="65" hp="2620.4" mp="1188.8" cp="1310.2" hpRegen="7.9" mpRegen="2.7" cpRegen="7.5" />
+    <level value="66" hp="2683.95" mp="1219.8" cp="1341.975" hpRegen="8.0" mpRegen="2.7" cpRegen="7.5" />
+    <level value="67" hp="2747.91" mp="1251.0" cp="1373.955" hpRegen="8.1" mpRegen="2.7" cpRegen="7.5" />
+    <level value="68" hp="2812.28" mp="1282.4" cp="1406.14" hpRegen="8.2" mpRegen="2.7" cpRegen="7.5" />
+    <level value="69" hp="2877.06" mp="1314.0" cp="1438.53" hpRegen="8.3" mpRegen="2.7" cpRegen="7.5" />
+    <level value="70" hp="2942.25" mp="1345.8" cp="1471.125" hpRegen="8.4" mpRegen="2.7" cpRegen="7.5" />
+    <level value="71" hp="3007.85" mp="1377.8" cp="1503.925" hpRegen="8.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="72" hp="3073.86" mp="1410.0" cp="1536.93" hpRegen="8.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="73" hp="3140.28" mp="1442.4" cp="1570.14" hpRegen="8.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="74" hp="3207.11" mp="1475.0" cp="1603.555" hpRegen="8.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="75" hp="3274.35" mp="1507.8" cp="1637.175" hpRegen="8.9" mpRegen="3.0" cpRegen="8.5" />
+    <level value="76" hp="3342.0" mp="1540.8" cp="1671.0" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3410.06" mp="1574.0" cp="1705.03" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3478.53" mp="1607.4" cp="1739.265" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3547.41" mp="1641.0" cp="1773.705" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3616.7" mp="1674.8" cp="1808.35" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3686.4" mp="1708.8" cp="1843.2" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3756.51" mp="1743.0" cp="1878.255" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3827.03" mp="1777.4" cp="1913.515" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3897.96" mp="1812.0" cp="1948.98" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3969.3" mp="1846.8" cp="1984.65" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

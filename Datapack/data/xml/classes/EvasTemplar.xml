@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="99" name="Eva's Templar" classLevel="76" parent="20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="76" hp="3196.0" mp="1155.6" cp="1917.6" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3262.4" mp="1180.5" cp="1957.44" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3329.2" mp="1205.55" cp="1997.52" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3396.4" mp="1230.75" cp="2037.84" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3464.0" mp="1256.1" cp="2078.4" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3532.0" mp="1281.6" cp="2119.2" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3600.4" mp="1307.25" cp="2160.24" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3669.2" mp="1333.05" cp="2201.52" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3738.4" mp="1359.0" cp="2243.04" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3808.0" mp="1385.1" cp="2284.8" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

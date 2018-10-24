@@ -18,7 +18,7 @@ class Quest (JQuest) :
      self.Items = [7080,7531,7081,7505,7288,7319,7350,7381,7412,7443,7084,0]
      self.Mob = [27252,27239,27256]
      self.qn = qn
-     self.classid = 110
+     self.classId = 110
      self.prevclass = 0x28
      self.X = [161719,124376,124355]
      self.Y = [-92823,82127,82155]

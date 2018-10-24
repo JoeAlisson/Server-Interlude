@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="94" name="Archmage" classLevel="76" parent="12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="76" hp="2880.0" mp="1540.8" cp="1728.0" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="2938.1" mp="1574.0" cp="1762.86" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="2996.55" mp="1607.4" cp="1797.93" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3055.35" mp="1641.0" cp="1833.21" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3114.5" mp="1674.8" cp="1868.7" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3174.0" mp="1708.8" cp="1904.4" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3233.85" mp="1743.0" cp="1940.31" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3294.05" mp="1777.4" cp="1976.43" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3354.6" mp="1812.0" cp="2012.76" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3415.5" mp="1846.8" cp="2049.3" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

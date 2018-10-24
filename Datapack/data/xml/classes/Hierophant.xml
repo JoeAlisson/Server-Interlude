@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<classInfo classId="98" name="Hierophant" classLevel="76" parent="17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="76" hp="3342.0" mp="1540.8" cp="1671.0" hpRegen="9.0" mpRegen="3.0" cpRegen="8.5" />
+    <level value="77" hp="3410.06" mp="1574.0" cp="1705.03" hpRegen="9.1" mpRegen="3.0" cpRegen="8.5" />
+    <level value="78" hp="3478.53" mp="1607.4" cp="1739.265" hpRegen="9.2" mpRegen="3.0" cpRegen="8.5" />
+    <level value="79" hp="3547.41" mp="1641.0" cp="1773.705" hpRegen="9.3" mpRegen="3.0" cpRegen="8.5" />
+    <level value="80" hp="3616.7" mp="1674.8" cp="1808.35" hpRegen="9.4" mpRegen="3.0" cpRegen="8.5" />
+    <level value="81" hp="3686.4" mp="1708.8" cp="1843.2" hpRegen="9.5" mpRegen="3.0" cpRegen="8.5" />
+    <level value="82" hp="3756.51" mp="1743.0" cp="1878.255" hpRegen="9.6" mpRegen="3.0" cpRegen="8.5" />
+    <level value="83" hp="3827.03" mp="1777.4" cp="1913.515" hpRegen="9.7" mpRegen="3.0" cpRegen="8.5" />
+    <level value="84" hp="3897.96" mp="1812.0" cp="1948.98" hpRegen="9.8" mpRegen="3.0" cpRegen="8.5" />
+    <level value="85" hp="3969.3" mp="1846.8" cp="1984.65" hpRegen="9.9" mpRegen="3.0" cpRegen="8.5" />
+</classInfo>

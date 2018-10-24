@@ -51,12 +51,12 @@ class Quest (JQuest) :
    st = player.getQuestState(qn)
    if not st : return
    race     = player.getRace().ordinal()
-   classid  = player.getClassId().getId()
+   classId  = player.getClassId().getId()
    level    = player.getLevel()
    if event in CLASSES.keys():
       prefix,intended_race,required_class,denial1,denial2,required_marks,required_level,new_class,reward = CLASSES[event]
       if npcId in UNIQUE_DIALOGS : prefix = str(npcId)+"-"
-      if classid in required_class and race == intended_race :
+      if classId in required_class and race == intended_race :
          marks=0
          for item in required_marks :
             if st.getQuestItemsCount(item) :
@@ -89,7 +89,7 @@ class Quest (JQuest) :
    key      = 0
    npcId    = npc.getNpcId()
    race     = player.getRace().ordinal()
-   classid  = player.getClassId().getId()
+   classId  = player.getClassId().getId()
    st = player.getQuestState(qn)
    if player.isSubClassActive() :
       st.exitQuest(1)
@@ -103,12 +103,12 @@ class Quest (JQuest) :
      if npcId in UNIQUE_DIALOGS : prefix = str(npcId)+"-"
      htmltext=prefix+"11.htm"
      if race == intended_race :
-       if classid in required_class :
+       if classId in required_class :
           htmltext = prefix+"01.htm"
-       elif classid in denial1 :
+       elif classId in denial1 :
           htmltext = prefix+"09.htm"
           st.exitQuest(1)
-       elif classid in denial2 :
+       elif classId in denial2 :
           htmltext = prefix+"10.htm"
           st.exitQuest(1)
        else :

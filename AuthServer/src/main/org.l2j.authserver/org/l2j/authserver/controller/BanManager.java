@@ -1,6 +1,6 @@
 package org.l2j.authserver.controller;
 
-import com.l2jbr.commons.util.Util;
+import org.l2j.commons.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

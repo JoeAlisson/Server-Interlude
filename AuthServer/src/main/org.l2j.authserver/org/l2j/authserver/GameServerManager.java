@@ -1,8 +1,8 @@
 package org.l2j.authserver;
 
-import com.l2jbr.commons.database.GameserverRepository;
-import com.l2jbr.commons.database.model.GameServer;
-import com.l2jbr.commons.util.Rnd;
+import org.l2j.commons.database.GameserverRepository;
+import org.l2j.commons.database.model.GameServer;
+import org.l2j.commons.util.Rnd;
 import org.l2j.authserver.xml.ServerNameReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,8 +15,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static com.l2jbr.commons.database.DatabaseAccess.getRepository;
-import static com.l2jbr.commons.util.Util.hexToString;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
+import static org.l2j.commons.util.Util.hexToString;
 import static java.util.Objects.isNull;
 
 /**
