@@ -1,23 +1,23 @@
-
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
-import org.l2j.authserver.network.client.packet.ClientBasePacket;
+import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
 
-/**
- * @author -Wooden-
- */
-public class PlayerLogout extends ClientBasePacket {
+public class PlayerLogout extends GameserverReadablePacket {
 	
-	private final String _account;
-
-	public PlayerLogout(byte[] data) {
-		super(data);
-		_account = readString();
-	}
+	private String account;
 
 	public String getAccount()
 	{
-		return _account;
+		return account;
 	}
-	
+
+	@Override
+	protected void readImpl() {
+		account = readString();
+	}
+
+	@Override
+	protected void runImpl()  {
+		client.getGameServerInfo().removeAccount(account);
+	}
 }

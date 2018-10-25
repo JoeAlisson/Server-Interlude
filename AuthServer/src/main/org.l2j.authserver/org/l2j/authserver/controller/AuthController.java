@@ -26,6 +26,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.regex.Pattern;
 
+import static org.l2j.authserver.network.client.packet.auth2client.LoginFail.LoginFailReason.*;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.commons.util.Util.hash;
 import static java.lang.System.currentTimeMillis;

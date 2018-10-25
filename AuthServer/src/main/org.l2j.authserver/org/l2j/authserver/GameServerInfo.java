@@ -1,23 +1,30 @@
 package org.l2j.authserver;
 
-import org.l2j.commons.database.model.GameServer;
-import org.l2j.authserver.network.GameServerConnection;
+import org.l2j.authserver.controller.GameServerManager;
+import org.l2j.authserver.network.gameserver.ServerClient;
+import org.l2j.authserver.network.gameserver.packet.auth2game.KickPlayer;
+import org.l2j.authserver.network.gameserver.packet.auth2game.RequestAccountInfo;
 import org.l2j.authserver.network.gameserver.packet.game2auth.ServerStatus;
+import org.l2j.commons.database.model.GameServer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.l2j.commons.util.Util.stringToHex;
 
 public class GameServerInfo {
 
+    private static final Logger logger = LoggerFactory.getLogger(GameServerInfo.class);
     private final byte[] _hexId;
     private final Set<String> accounts = new HashSet<>();
 
     private int _id;
     private volatile boolean _isAuthed;
-
-    private GameServerConnection connection;
     private int _status;
 
     // network
@@ -33,17 +40,58 @@ public class GameServerInfo {
     private boolean _isShowingBrackets;
     private int _maxPlayers;
     private int serverType;
+    private ServerClient client;
 
 
     public GameServerInfo(GameServer gameServer) {
         this(gameServer.getId(), stringToHex(gameServer.getHexid()), null);
     }
 
-    public GameServerInfo(int id, byte[] hexId, GameServerConnection serverConnection) {
+    public GameServerInfo(int id, byte[] hexId, ServerClient client) {
         _id = id;
         _hexId = hexId;
-        connection = serverConnection;
+       this.client = client;
         _status = ServerStatus.STATUS_DOWN;
+    }
+
+    public void setClient(ServerClient client) {
+        this.client = client;
+    }
+
+    public void setHosts(String externalHost, String internalHost) {
+        String oldInternal = getInternalHost();
+        String oldExternal = getExternalHost();
+
+        setExternalHost(externalHost);
+        setInternalHost(internalHost);
+
+        if (!externalHost.equals("*")) {
+            try {
+                setExternalIp(InetAddress.getByName(externalHost).getHostAddress());
+            } catch (UnknownHostException e) {
+                logger.warn("Couldn't resolve hostname {}", externalHost);
+            }
+        } else {
+            setExternalIp(client.getHostAddress());
+        }
+
+        if (!internalHost.equals("*")) {
+            try {
+                setInternalHost(InetAddress.getByName(internalHost).getHostAddress());
+            } catch (UnknownHostException e) {
+                logger.warn("Couldn't resolve hostname {}", internalHost);
+            }
+        } else {
+            setInternalHost(client.getHostAddress());
+        }
+
+        logger.info("Updated Gameserver [{}] {} IP's:", _id, GameServerManager.getInstance().getServerNameById(_id));
+        if ((oldInternal == null) || !oldInternal.equalsIgnoreCase(internalHost)) {
+            logger.info("InternalIP: {}", internalHost);
+        }
+        if ((oldExternal == null) || !oldExternal.equalsIgnoreCase(externalHost)) {
+            logger.info("ExternalIP: {}", externalHost);
+        }
     }
 
     public int getOnlinePlayersCount() {
@@ -53,16 +101,15 @@ public class GameServerInfo {
     public void setDown() {
         setAuthed(false);
         setPort(0);
-        setGameServerThread(null);
         setStatus(ServerStatus.STATUS_DOWN);
     }
 
     public void sendKickPlayer(String account) {
-        connection.kickPlayer(account);
+        client.sendPacket(new KickPlayer(account));
     }
 
     public void requestAccountInfo(String account) {
-        connection.requestAccountInfo(account);
+        client.sendPacket(new RequestAccountInfo(account));
     }
 
     public void addAccount(String account) {
@@ -95,14 +142,6 @@ public class GameServerInfo {
 
     public boolean isAuthed() {
         return _isAuthed;
-    }
-
-    public void setGameServerThread(GameServerConnection gst) {
-        connection = gst;
-    }
-
-    public GameServerConnection getGameServerThread() {
-        return connection;
     }
 
     public void setStatus(int status) {
@@ -187,5 +226,10 @@ public class GameServerInfo {
 
     public int getServerType() {
         return serverType;
+    }
+
+
+    public void addAccounts(List<String> accounts) {
+        this.accounts.addAll(accounts);
     }
 }

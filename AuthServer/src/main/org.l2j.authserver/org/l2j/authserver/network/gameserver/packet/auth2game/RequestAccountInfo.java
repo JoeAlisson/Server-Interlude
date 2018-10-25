@@ -2,18 +2,17 @@ package org.l2j.authserver.network.gameserver.packet.auth2game;
 
 import org.l2j.authserver.network.client.packet.GameServerWritablePacket;
 
-import java.io.IOException;
-
 public class RequestAccountInfo extends GameServerWritablePacket {
 
+    private final String account;
+
     public RequestAccountInfo(String account) {
-        writeByte(0x05);
-        writeString(account);
+        this.account = account;
     }
 
-
     @Override
-    public byte[] getContent() throws IOException {
-        return getBytes();
+    protected void writeImpl() {
+        writeByte(0x05);
+        writeString(account);
     }
 }

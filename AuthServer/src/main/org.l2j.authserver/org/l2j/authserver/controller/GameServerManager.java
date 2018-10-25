@@ -1,11 +1,10 @@
 package org.l2j.authserver.controller;
 
 import org.l2j.authserver.GameServerInfo;
-import org.l2j.authserver.network.GameServerConnection;
+import org.l2j.authserver.xml.ServerNameReader;
 import org.l2j.commons.database.GameserverRepository;
 import org.l2j.commons.database.model.GameServer;
 import org.l2j.commons.util.Rnd;
-import org.l2j.authserver.xml.ServerNameReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,9 +16,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static java.util.Objects.isNull;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.commons.util.Util.hexToString;
-import static java.util.Objects.isNull;
 
 /**
  * @author KenM
@@ -138,7 +137,4 @@ public class GameServerManager {
         return _keyPairs[Rnd.nextInt(10)];
     }
 
-    public void removeGameServer(GameServerConnection gameServerConnection, String ip) {
-
-    }
 }

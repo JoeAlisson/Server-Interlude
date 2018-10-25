@@ -1,34 +1,42 @@
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
+import org.l2j.authserver.controller.AuthController;
 import org.l2j.authserver.network.SessionKey;
-import org.l2j.authserver.network.client.packet.ClientBasePacket;
+import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
+import org.l2j.authserver.network.gameserver.packet.auth2game.PlayerAuthResponse;
 
-/**
- * @author -Wooden-
- */
-public class PlayerAuthRequest extends ClientBasePacket {
+import java.util.Objects;
+
+public class PlayerAuthRequest extends GameserverReadablePacket {
 	
-	private final String _account;
-	private final SessionKey _sessionKey;
+	private  String account;
+	private int sessionId;
+	private int serverAccountId;
+	private int authAccountId;
+	private int authKey;
 
-	public PlayerAuthRequest(byte[] data) {
-		super(data);
-		_account = readString();
-		int sessionId = readInt();
-		int serverAccountId = readInt();
-		int authAccountId = readInt();
-		int authKey = readInt();
-		_sessionKey = new SessionKey(authAccountId, authKey, sessionId, serverAccountId);
+	@Override
+	protected void readImpl() {
+		account = readString();
+		sessionId = readInt();
+		serverAccountId = readInt();
+		authAccountId = readInt();
+		authKey = readInt();
 	}
 
-	public String getAccount()
-	{
-		return _account;
-	}
+	@Override
+	protected void runImpl()  {
+		var sessionKey = new SessionKey(authAccountId, authKey, sessionId, serverAccountId);
+		var authedkey = AuthController.getInstance().getKeyForAccount(account);
 
-	public SessionKey getKey()
-	{
-		return _sessionKey;
+		PlayerAuthResponse authResponse;
+		if(Objects.equals(sessionKey, authedkey)) {
+			AuthController.getInstance().removeAuthedClient(account);
+			authResponse = new PlayerAuthResponse(account, 1);
+		} else {
+			authResponse = new PlayerAuthResponse(account, 0);
+		}
+
+		client.sendPacket(authResponse);
 	}
-	
 }

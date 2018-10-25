@@ -1,23 +1,21 @@
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
-import org.l2j.authserver.network.client.packet.ClientBasePacket;
+import org.l2j.authserver.controller.AuthController;
+import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
 
-public class AccountInfo extends ClientBasePacket {
+public class AccountInfo extends GameserverReadablePacket {
 
-    private final int players;
-    private final String account;
+    private  int players;
+    private  String account;
 
-    public AccountInfo(byte[] data) {
-        super(data);
+    @Override
+    protected void readImpl()   {
         account = readString();
         players = readByte();
     }
 
-    public String getAccount() {
-        return account;
-    }
-
-    public int getPlayers() {
-        return players;
+    @Override
+    protected void runImpl()  {
+        AuthController.getInstance().addAccountCharactersInfo(client.getGameServerInfo().getId(), account, players);
     }
 }

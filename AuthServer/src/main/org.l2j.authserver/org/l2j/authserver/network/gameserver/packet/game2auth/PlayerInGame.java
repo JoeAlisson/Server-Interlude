@@ -1,28 +1,24 @@
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
-import org.l2j.authserver.network.client.packet.ClientBasePacket;
+import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author -Wooden-
- */
-public class PlayerInGame extends ClientBasePacket {
-    private final List<String> _accounts;
+public class PlayerInGame extends GameserverReadablePacket {
+    private List<String> accounts;
 
-    public PlayerInGame(byte[] data) {
-        super(data);
-
+    @Override
+    protected void readImpl() {
         int size = readShort();
-        _accounts = new ArrayList<>(size);
-
+        accounts = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
-            _accounts.add(readString());
+            accounts.add(readString());
         }
     }
 
-    public List<String> getAccounts() {
-        return _accounts;
+    @Override
+    protected void runImpl()  {
+        client.getGameServerInfo().addAccounts(accounts);
     }
 }

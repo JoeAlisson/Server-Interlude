@@ -5,7 +5,7 @@ import org.l2j.authserver.controller.GameServerManager;
 import org.l2j.authserver.network.SelectorHelper;
 import org.l2j.authserver.network.client.AuthClient;
 import org.l2j.authserver.network.client.AuthPacketHandler;
-import org.l2j.authserver.network.gameserver.GameserverPacketHandler;
+import org.l2j.authserver.network.gameserver.GameServerPacketHandler;
 import org.l2j.authserver.network.gameserver.ServerClient;
 import org.l2j.commons.Config;
 import org.l2j.commons.Server;
@@ -36,7 +36,7 @@ public class AuthServer {
         GameServerManager.load();
 
         var bindServerListen = gameServerListenHost().equals("*") ? new InetSocketAddress(gameServerListenPort()) : new InetSocketAddress(gameServerListenHost(), gameServerListenPort());
-        var gameserverHandler = new GameserverPacketHandler();
+        var gameserverHandler = new GameServerPacketHandler();
         serverConnectionHandler = ConnectionBuilder.create(bindServerListen, ServerClient::new, gameserverHandler, gameserverHandler).threadPoolSize(1).build();
         logger.info("Listening for GameServers on {} : {}", gameServerListenHost(), gameServerListenPort());
 

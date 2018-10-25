@@ -1,10 +1,12 @@
 package org.l2j.authserver.network.gameserver;
 
+import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.controller.GameServerManager;
 import org.l2j.authserver.network.SessionKey;
-import org.l2j.authserver.network.client.AuthClientState;
+import org.l2j.authserver.network.client.packet.GameServerWritablePacket;
 import org.l2j.authserver.network.crypt.AuthCrypt;
 import org.l2j.authserver.network.crypt.ScrambledKeyPair;
+import org.l2j.authserver.network.gameserver.packet.auth2game.InitLS;
 import org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail;
 import org.l2j.commons.crypt.NewCrypt;
 import org.l2j.commons.database.model.Account;
@@ -21,8 +23,8 @@ import java.security.interfaces.RSAPublicKey;
 import java.util.HashMap;
 import java.util.Map;
 
-import static java.util.Objects.nonNull;
-import static org.l2j.authserver.network.client.AuthClientState.AUTHED_LOGIN;
+import static org.l2j.authserver.network.gameserver.ServerClientState.AUTHED;
+import static org.l2j.authserver.network.gameserver.ServerClientState.CONNECTED;
 
 public final class ServerClient extends Client<Connection<ServerClient>> {
 
@@ -31,6 +33,7 @@ public final class ServerClient extends Client<Connection<ServerClient>> {
     private final RSAPrivateKey privateKey;
     private final RSAPublicKey publicKey;
     private NewCrypt blowfish;
+    private ServerClientState state;
 
     private AuthCrypt _authCrypt;
     private ScrambledKeyPair _scrambledPair;
@@ -40,8 +43,9 @@ public final class ServerClient extends Client<Connection<ServerClient>> {
 
     private Account account;
     private boolean _usesInternalIP;
-    private AuthClientState _state;
+
     private boolean isJoinedGameSever;
+    private GameServerInfo gameServerInfo;
 
 
     public ServerClient(Connection<ServerClient> con) {
@@ -51,6 +55,10 @@ public final class ServerClient extends Client<Connection<ServerClient>> {
         publicKey = (RSAPublicKey) pair.getPublic();
 	}
 
+    public RSAPublicKey getPublicKey() {
+        return publicKey;
+    }
+
     public PrivateKey getRSAPrivateKey() {
         return privateKey;
     }
@@ -59,6 +67,28 @@ public final class ServerClient extends Client<Connection<ServerClient>> {
         this.blowfish = newCrypt;
 
     }
+
+    public void setState(ServerClientState state) {
+        this.state = state;
+    }
+
+    public ServerClientState getState()
+    {
+        return state;
+    }
+
+    public void close(int reason) {
+        close(new LoginGameServerFail(reason));
+    }
+
+    public void setGameServerInfo(GameServerInfo gsi) {
+        this.gameServerInfo = gsi;
+    }
+
+    public GameServerInfo getGameServerInfo() {
+        return gameServerInfo;
+    }
+
 
     @Override
     public boolean decrypt(byte[] data, int offset, int size) {
@@ -91,127 +121,32 @@ public final class ServerClient extends Client<Connection<ServerClient>> {
         return encryptedSize;
     }
 
-/*	public void sendPacket(L2LoginServerPacket lsp) {
+	public void sendPacket(GameServerWritablePacket lsp) {
 	    writePacket(lsp);
 	}
 
-    public void close(LoginFailReason reason) {
-        close(new LoginFail(reason));
-	}
-
-	public void close(PlayFailReason reason) {
-		close(new PlayFail(reason));
-	}
-
-	public void close(AccountKicked.AccountKickedReason reason) {
-        close(new AccountKicked(reason));
-	}*/
-
     @Override
     public void onConnected() {
-        /*sendPacket(new Init());*/
+        setState(CONNECTED);
+        sendPacket(new InitLS());
     }
 
 	@Override
 	protected void onDisconnection() {
-        _log.info("DISCONNECTED: {}", toString());
 
+        String serverName = getHostAddress();
+        var serverId = gameServerInfo.getId();
 
+        if(serverId != -1) {
+            serverName = String.format("[%d] %s", serverId, GameServerManager.getInstance().getServerNameById(serverId));
+        }
+        _log.info("GameServer {}: Connection Lost", serverName);
 
-
+        if (AUTHED == state) {
+            gameServerInfo.setDown();
+            _log.info("Server [{}] {} is now set as disconnect", serverId, GameServerManager.getInstance().getServerNameById(serverId));
+        }
 	}
 
-    public void addCharactersOnServer(int serverId, int players) {
-        charactersOnServer.put(serverId, players);
-    }
 
-    public int getPlayersOnServer(int serverId) {
-        return charactersOnServer.getOrDefault(serverId, 0);
-    }
-
-    public void joinGameserver() {
-        isJoinedGameSever = true;
-    }
-
-    AuthClientState getState()
-    {
-        return _state;
-    }
-
-    public void setState(AuthClientState state) {
-        _state = state;
-    }
-
-    public byte[] getBlowfishKey() {
-        return _blowfishKey;
-    }
-
-    public byte[] getScrambledModulus() {
-        return _scrambledPair.getScrambledModulus();
-    }
-
-
-
-    public Account getAccount() {
-        return account;
-    }
-
-    public void setAccount(Account account) {
-        this.account = account;
-    }
-
-    public int getAccessLevel() {
-        return nonNull(account) ? account.getAccessLevel() : -1;
-    }
-
-    public int getLastServer() {
-        return nonNull(account) ? account.getLastServer(): -1;
-    }
-
-    public int getSessionId() {
-        return _sessionId;
-    }
-
-    public void setSessionKey(SessionKey sessionKey)
-    {
-        _sessionKey = sessionKey;
-    }
-
-    public SessionKey getSessionKey() {
-        return _sessionKey;
-    }
-
-    public void setKeyPar(ScrambledKeyPair keyPair) {
-        _scrambledPair = keyPair;
-    }
-
-    public void setBlowfishKey(byte[] blowfishKey) {
-        _blowfishKey = blowfishKey;
-    }
-
-    public void setSessionId(int sessionId) {
-        _sessionId = sessionId;
-    }
-
-    public void setCrypt(AuthCrypt crypt) {
-        _authCrypt =  crypt;
-    }
-
-    public boolean usesInternalIP()
-    {
-        return _usesInternalIP;
-    }
-
-    @Override
-    public String toString() {
-        String address =  getHostAddress();
-        if (getState() == AUTHED_LOGIN) {
-            return "[" + getAccount().getId() + " (" + (address.equals("") ? "disconnect" : address) + ")]";
-        }
-        return "[" + (address.equals("") ? "disconnect" : address) + "]";
-    }
-
-    public void close(int reason) {
-        close(new LoginGameServerFail(reason));
-    }
 }

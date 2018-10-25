@@ -1,15 +1,13 @@
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
-import org.l2j.authserver.GameServerInfo;
-import org.l2j.authserver.controller.GameServerManager;
-import org.l2j.authserver.network.client.packet.ClientBasePacket;
+import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static java.util.Objects.nonNull;
 
-/**
- * @author -Wooden-
- */
-public class ServerStatus extends ClientBasePacket {
+public class ServerStatus extends GameserverReadablePacket {
 
 	private static final int SERVER_LIST_STATUS = 0x01;
 	private static final int SERVER_LIST_CLOCK = 0x02;
@@ -25,35 +23,40 @@ public class ServerStatus extends ClientBasePacket {
 	public static final int STATUS_GM_ONLY = 0x05;
 	
 	private static final int ON = 0x01;
+    Map<Integer, Integer> status;
 
-	public ServerStatus(byte[] data, int serverId) {
-		super(data);
-		
-		GameServerInfo gsi = GameServerManager.getInstance().getRegisteredGameServerById(serverId);
-		if (nonNull(gsi)) {
-			int size = readInt();
-			for (int i = 0; i < size; i++) {
-				int type = readInt();
-				int value = readInt();
+	@Override
+	protected void readImpl()  {
+        int size = readInt();
+		status = new HashMap<>(size);
+        for (int i = 0; i < size; i++) {
+            status.put(readInt(), readInt());
+        }
+	}
 
-				switch (type) {
-					case SERVER_LIST_STATUS:
-						gsi.setStatus(value);
-						break;
-					case SERVER_LIST_CLOCK:
-						gsi.setShowingClock(value == ON);
-						break;
-					case SERVER_LIST_SQUARE_BRACKET:
-						gsi.setShowingBrackets(value == ON);
-						break;
-					case TEST_SERVER:
-						gsi.setTestServer(value == ON);
-						break;
-					case MAX_PLAYERS:
-						gsi.setMaxPlayers(value);
-						break;
-				}
-			}
+	@Override
+	protected void runImpl()  {
+		var gameServerInfo = client.getGameServerInfo();
+		if (nonNull(gameServerInfo)) {
+		    status.forEach((type, value) -> {
+                switch (type) {
+                    case SERVER_LIST_STATUS:
+                        gameServerInfo.setStatus(value);
+                        break;
+                    case SERVER_LIST_CLOCK:
+                        gameServerInfo.setShowingClock(value == ON);
+                        break;
+                    case SERVER_LIST_SQUARE_BRACKET:
+                        gameServerInfo.setShowingBrackets(value == ON);
+                        break;
+                    case TEST_SERVER:
+                        gameServerInfo.setTestServer(value == ON);
+                        break;
+                    case MAX_PLAYERS:
+                        gameServerInfo.setMaxPlayers(value);
+                        break;
+                }
+            });
 		}
 	}
 }

@@ -1,28 +1,21 @@
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
-import org.l2j.authserver.network.client.packet.ClientBasePacket;
+import org.l2j.authserver.controller.AuthController;
+import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
 
-/**
- * @author -Wooden-
- */
-public class ChangeAccessLevel extends ClientBasePacket {
+public class ChangeAccessLevel extends GameserverReadablePacket {
 	
-	private final int _level;
-	private final String _account;
+	private short level;
+	private String account;
 
-	public ChangeAccessLevel(byte[] data) {
-		super(data);
-		_level = readInt();
-		_account = readString();
+	@Override
+	protected void readImpl()  {
+		level = readShort();
+		account = readString();
 	}
 
-	public String getAccount()
-	{
-		return _account;
-	}
-
-	public int getLevel()
-	{
-		return _level;
+	@Override
+	protected void runImpl()  {
+        AuthController.getInstance().setAccountAccessLevel(account, level);
 	}
 }

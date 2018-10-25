@@ -2,20 +2,22 @@ package org.l2j.authserver.network.gameserver.packet.game2auth;
 
 import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.controller.GameServerManager;
+import org.l2j.authserver.network.gameserver.ServerClientState;
 import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
 import org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail;
 
 import java.util.Arrays;
 
 import static java.util.Objects.nonNull;
+import static org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail.REASON_NO_FREE_ID;
+import static org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail.REASON_WRONG_HEXID;
 import static org.l2j.authserver.settings.AuthServerSettings.acceptNewGameServerEnabled;
 
 public class GameServerAuth extends GameserverReadablePacket {
 
 	private  byte[] hexId;
 	private  int desiredId;
-	private  boolean hostReserved;
-	private  boolean acceptAlternativeId;
+    private  boolean acceptAlternativeId;
 	private  int maxPlayers;
 	private  int port;
 	private  String externalHost;
@@ -27,7 +29,7 @@ public class GameServerAuth extends GameserverReadablePacket {
 		desiredId = readByte();
 		serverType = readInt();
 		acceptAlternativeId = readByte() != 0;
-		hostReserved = readByte() != 0;
+        readByte(); // hostReserved
 		externalHost = readString();
 		internalHost = readString();
 		port = readShort();
@@ -43,72 +45,48 @@ public class GameServerAuth extends GameserverReadablePacket {
         GameServerInfo gsi = gameServerManager.getRegisteredGameServerById(desiredId);
 
         if (nonNull(gsi)) {
-            if (Arrays.equals(gsi.getHexId(), hexId)) {
-                if (gsi.isAuthed()) {
-                    client.close(LoginGameServerFail.REASON_ALREADY_LOGGED);
-                } else {
-                    attachGameServerInfo(gsi, gameServerAuth);
-                }
-            } else {
-                // there is already a server registered with the desired id and different hex id
-                // try to registerClient this one with an alternative id
-                if (acceptNewGameServerEnabled() && gameServerAuth.acceptAlternateID()) {
-                    gsi = new GameServerInfo(id, hexId, this);
-                    if (gameServerManager.registerWithFirstAvaliableId(gsi)) {
-                        attachGameServerInfo(gsi, gameServerAuth);
-                        gameServerManager.registerServerOnDB(gsi);
-                    } else {
-                        forceClose(LoginGameServerFail.REASON_NO_FREE_ID);
-                    }
-                } else {
-                    forceClose(LoginGameServerFail.REASON_WRONG_HEXID);
-                }
-            }
+            authenticGameServer(gsi);
+        } else {
+            processNewGameServer(gameServerManager);
         }
-
 	}
 
-    private void handleAuthProcess(GameServerAuth gameServerAuth) {
-        GameServerManager gameServerManager = GameServerManager.getInstance();
+    private void authenticGameServer(GameServerInfo gsi) {
+        if (!Arrays.equals(gsi.getHexId(), hexId)) {
+            client.close(LoginGameServerFail.REASON_WRONG_HEXID);
+            return;
+        }
 
-        int id = gameServerAuth.getDesiredID();
-        byte[] hexId = gameServerAuth.getHexID();
+        if (gsi.isAuthed()) {
+            client.close(LoginGameServerFail.REASON_ALREADY_LOGGED);
+        } else {
+            updateGameServerInfo(gsi);
+        }
+    }
 
-        GameServerInfo gsi = gameServerManager.getRegisteredGameServerById(id);
-        if (nonNull(gsi)) {
-            if (Arrays.equals(gsi.getHexId(), hexId)) {
-                if (gsi.isAuthed()) {
-                    forceClose(LoginGameServerFail.REASON_ALREADY_LOGGED);
-                } else {
-                    attachGameServerInfo(gsi, gameServerAuth);
-                }
+    private void processNewGameServer(GameServerManager gameServerManager) {
+        GameServerInfo gsi;
+        if (acceptNewGameServerEnabled() && acceptAlternativeId) {
+            gsi = new GameServerInfo(desiredId, hexId, client);
+            if (gameServerManager.registerWithFirstAvaliableId(gsi)) {
+               updateGameServerInfo(gsi);
+                gameServerManager.registerServerOnDB(gsi);
             } else {
-                // there is already a server registered with the desired id and different hex id
-                // try to registerClient this one with an alternative id
-                if (acceptNewGameServerEnabled() && gameServerAuth.acceptAlternateID()) {
-                    gsi = new GameServerInfo(id, hexId, this);
-                    if (gameServerManager.registerWithFirstAvaliableId(gsi)) {
-                        attachGameServerInfo(gsi, gameServerAuth);
-                        gameServerManager.registerServerOnDB(gsi);
-                    } else {
-                        forceClose(LoginGameServerFail.REASON_NO_FREE_ID);
-                    }
-                } else {
-                    forceClose(LoginGameServerFail.REASON_WRONG_HEXID);
-                }
+                client.close(REASON_NO_FREE_ID);
             }
         } else {
-            if (acceptNewGameServerEnabled()) {
-                gsi = new GameServerInfo(id, hexId, this);
-                if (gameServerManager.register(id, gsi)) {
-                    attachGameServerInfo(gsi, gameServerAuth);
-                    gameServerManager.registerServerOnDB(gsi);
-                } else {
-                    forceClose(LoginGameServerFail.REASON_ID_RESERVED);
-                }
-            } else {
-                forceClose(LoginGameServerFail.REASON_WRONG_HEXID);
-            }
+            client.close(REASON_WRONG_HEXID);
         }
+    }
+
+    private void updateGameServerInfo(GameServerInfo gsi) {
+        client.setGameServerInfo(gsi);
+        client.setState(ServerClientState.AUTHED);
+        gsi.setClient(client);
+        gsi.setPort(port);
+        gsi.setHosts(externalHost, internalHost);
+        gsi.setMaxPlayers(maxPlayers);
+        gsi.setAuthed(true);
+        gsi.setServerType(serverType);
     }
 }
