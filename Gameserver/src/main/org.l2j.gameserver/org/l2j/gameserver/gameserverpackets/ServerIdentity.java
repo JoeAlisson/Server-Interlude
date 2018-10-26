@@ -19,7 +19,7 @@
 package org.l2j.gameserver.gameserverpackets;
 
 
-public class AuthRequest extends GameServerBasePacket
+public class ServerIdentity extends GameServerBasePacket
 {
 	/**
 	 * Format: cccSddb c desired ID c accept alternative ID c reserve Host s ExternalHostName s InetranlHostName d max players d hexid size b hexid
@@ -32,7 +32,7 @@ public class AuthRequest extends GameServerBasePacket
 	 * @param reserveHost
 	 * @param maxplayer
 	 */
-	public AuthRequest(int id, boolean acceptAlternate, byte[] hexid, String externalHost, String internalHost, int port, boolean reserveHost, int maxplayer, int serverType)
+	public ServerIdentity(int id, boolean acceptAlternate, byte[] hexid, String externalHost, String internalHost, int port, boolean reserveHost, int maxplayer, int serverType)
 	{
 		writeC(0x01);
 		writeC(id);

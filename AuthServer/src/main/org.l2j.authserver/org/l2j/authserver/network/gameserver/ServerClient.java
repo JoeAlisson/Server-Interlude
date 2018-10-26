@@ -4,7 +4,7 @@ import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.controller.GameServerManager;
 import org.l2j.authserver.network.gameserver.packet.auth2game.GameServerWritablePacket;
 import org.l2j.authserver.network.crypt.AuthServerCrypt;
-import org.l2j.authserver.network.gameserver.packet.auth2game.InitLS;
+import org.l2j.authserver.network.gameserver.packet.auth2game.Protocol;
 import org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail;
 import org.l2j.mmocore.Client;
 import org.l2j.mmocore.Connection;
@@ -16,6 +16,7 @@ import java.security.PrivateKey;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 
+import static java.util.Objects.nonNull;
 import static org.l2j.authserver.network.gameserver.ServerClientState.AUTHED;
 import static org.l2j.authserver.network.gameserver.ServerClientState.CONNECTED;
 
@@ -68,8 +69,13 @@ public final class ServerClient extends Client<Connection<ServerClient>> {
 
     @Override
     public boolean decrypt(byte[] data, int offset, int size) {
+        boolean decrypted;
         try  {
-             return crypt.decrypt(data, offset, size);
+             decrypted =  crypt.decrypt(data, offset, size);
+            if(!decrypted) {
+                disconnect();
+            }
+            return  decrypted;
         } catch (IOException e) {
             _log.error(e.getLocalizedMessage(), e);
             disconnect();
@@ -98,14 +104,15 @@ public final class ServerClient extends Client<Connection<ServerClient>> {
         privateKey = (RSAPrivateKey) pair.getPrivate();
         publicKey = (RSAPublicKey) pair.getPublic();
         crypt =  new AuthServerCrypt();
-        sendPacket(new InitLS());
+        sendPacket(new Protocol());
     }
 
 	@Override
 	protected void onDisconnection() {
 
         String serverName = getHostAddress();
-        var serverId = gameServerInfo.getId();
+
+        var serverId = nonNull(gameServerInfo) ?  gameServerInfo.getId() : -1;
 
         if(serverId != -1) {
             serverName = String.format("[%d] %s", serverId, GameServerManager.getInstance().getServerNameById(serverId));

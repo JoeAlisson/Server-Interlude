@@ -112,10 +112,6 @@ public class GameServerInfo {
         client.sendPacket(new RequestAccountInfo(account));
     }
 
-    public void addAccount(String account) {
-        accounts.add(account);
-    }
-
     public void removeAccount(String account) {
         accounts.remove(account);
     }

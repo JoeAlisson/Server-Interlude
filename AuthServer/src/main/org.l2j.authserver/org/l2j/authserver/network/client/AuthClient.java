@@ -45,6 +45,7 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
     private boolean _usesInternalIP;
     private AuthClientState _state;
     private boolean isJoinedGameSever;
+    private long requestdServersInfo;
 
 
     public AuthClient(Connection<AuthClient> con) {
@@ -122,11 +123,14 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
         if(!isJoinedGameSever && nonNull(account)) {
             AuthController.getInstance().removeAuthedClient(account.getId());
         }
-
 	}
 
     public void addCharactersOnServer(int serverId, int players) {
         charactersOnServer.put(serverId, players);
+    }
+
+    public Map<Integer, Integer> getCharactersOnServer() {
+        return charactersOnServer;
     }
 
     public int getPlayersOnServer(int serverId) {
@@ -213,6 +217,14 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
         return _usesInternalIP;
     }
 
+    public void setRequestedServerInfo(long count) {
+        this.requestdServersInfo = count;
+    }
+
+    public long getRequestdServersInfo() {
+        return requestdServersInfo;
+    }
+
     @Override
     public String toString() {
         String address =  getHostAddress();
@@ -221,5 +233,4 @@ public final class AuthClient extends Client<Connection<AuthClient>> {
         }
         return "[" + (address.equals("") ? "disconnect" : address) + "]";
     }
-
 }

@@ -1,8 +1,5 @@
 package org.l2j.authserver.network.gameserver.packet.auth2game;
 
-/**
- * @author -Wooden-
- */
 public class LoginGameServerFail extends GameServerWritablePacket {
 
 	public static final int REASON_IP_BANNED = 1;
@@ -15,15 +12,18 @@ public class LoginGameServerFail extends GameServerWritablePacket {
 
 	private final int reason;
 
-
 	public LoginGameServerFail(int reason) {
 		this.reason = reason;
 	}
-
 
 	@Override
 	protected void writeImpl() {
 		writeByte(0x01);
 		writeByte(reason);
+	}
+
+	@Override
+	protected int packetSize() {
+		return super.packetSize() + 2;
 	}
 }

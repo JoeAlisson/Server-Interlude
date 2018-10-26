@@ -13,4 +13,9 @@ public class RequestAccountInfo extends GameServerWritablePacket {
         writeByte(0x05);
         writeString(account);
     }
+
+    @Override
+    protected int packetSize() {
+        return super.packetSize() + 3 + 2 * account.length();
+    }
 }

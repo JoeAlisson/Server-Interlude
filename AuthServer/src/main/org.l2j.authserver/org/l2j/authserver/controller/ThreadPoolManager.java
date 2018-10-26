@@ -18,12 +18,8 @@ public class ThreadPoolManager  {
     }
 
     private ThreadPoolManager() {
-        scheduledExecutor = new ScheduledThreadPoolExecutor(1);
-        executor = new ThreadPoolExecutor(1, 1, 5L, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
-        scheduleAtFixedRate(() -> {
-            executor.purge();
-            scheduledExecutor.purge();
-        }, 600000L, 600000L);
+        scheduledExecutor = new ScheduledThreadPoolExecutor(2);
+        executor = new ThreadPoolExecutor(4, 8, 5L, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
     }
 
     private long validate(final long delay) {

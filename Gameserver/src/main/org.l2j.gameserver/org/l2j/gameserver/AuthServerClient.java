@@ -175,7 +175,7 @@ public class AuthServerClient extends Thread {
                     int packetType = decrypt[0] & 0xff;
                     switch (packetType) {
                         case 0x00:
-                            InitLS init = new InitLS(decrypt);
+                            Protocol init = new Protocol(decrypt);
                             if (Config.DEBUG) {
                                 _log.info("Init received");
                             }
@@ -202,15 +202,10 @@ public class AuthServerClient extends Thread {
                             if (Config.DEBUG) {
                                 _log.info("Sent new blowfish key");
                             }
-                            // now, only accept paket with the new encryption
+                            // RequestServerIdentity now, only accept packet with the new encryption
                             _blowfish = new NewCrypt(_blowfishKey);
                             if (Config.DEBUG) {
                                 _log.info("Changed blowfish key");
-                            }
-                            AuthRequest ar = new AuthRequest(_requestID, _acceptAlternate, _hexID, _gameExternalHost, _gameInternalHost, _gamePort, _reserveHost, _maxPlayer, _serverType);
-                            sendPacket(ar);
-                            if (Config.DEBUG) {
-                                _log.info("Sent AuthRequest to login");
                             }
                             break;
                         case 0x01:
@@ -295,6 +290,14 @@ public class AuthServerClient extends Thread {
                             RequestAccountInfo accountInfo = new RequestAccountInfo(decrypt);
                             responseAccountInfo(accountInfo.getAccount());
                             break;
+                        case 0x06:
+                            ServerIdentity ar = new ServerIdentity(_requestID, _acceptAlternate, _hexID, _gameExternalHost, _gameInternalHost, _gamePort, _reserveHost, _maxPlayer, _serverType);
+                            sendPacket(ar);
+                            if (Config.DEBUG) {
+                                _log.info("Sent ServerIdentity to login");
+                            }
+                            break;
+
                     }
                 }
             } catch (UnknownHostException e) {
@@ -302,6 +305,10 @@ public class AuthServerClient extends Thread {
                     e.printStackTrace();
                 }
             } catch (IOException e) {
+                try {
+                    Thread.sleep(5000); // 5 seconds tempo.
+                } catch (InterruptedException e1) {
+                }
                 _log.info("Deconnected from Login, Trying to reconnect:");
                 _log.info(e.toString());
             } finally {

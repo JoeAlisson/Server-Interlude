@@ -37,19 +37,19 @@ public class AuthServer {
 
         var bindServerListen = gameServerListenHost().equals("*") ? new InetSocketAddress(gameServerListenPort()) : new InetSocketAddress(gameServerListenHost(), gameServerListenPort());
         var gameserverHandler = new GameServerPacketHandler();
-        serverConnectionHandler = ConnectionBuilder.create(bindServerListen, ServerClient::new, gameserverHandler, gameserverHandler).threadPoolSize(1).build();
-        logger.info("Listening for GameServers on {} : {}", gameServerListenHost(), gameServerListenPort());
+        serverConnectionHandler = ConnectionBuilder.create(bindServerListen, ServerClient::new, gameserverHandler, gameserverHandler).threadPoolSize(4).build();
         serverConnectionHandler.start();
+        logger.info("Listening for GameServers on {} : {}", gameServerListenHost(), gameServerListenPort());
 
 
         var bindAddress = loginListenHost().equals("*") ? new InetSocketAddress(loginListenPort()) : new InetSocketAddress(loginListenHost(), loginListenPort()) ;
         final AuthPacketHandler lph = new AuthPacketHandler();
         final SelectorHelper sh = new SelectorHelper();
-        connectionHandler = ConnectionBuilder.create(bindAddress, AuthClient::new, lph, sh).threadPoolSize(2).build();
+        connectionHandler = ConnectionBuilder.create(bindAddress, AuthClient::new, lph, sh).threadPoolSize(4).build();
         connectionHandler.start();
         logger.info("Login Server ready on {}:{}", bindAddress.getHostString(), loginListenPort());
 
-        getRuntime().addShutdownHook(new Thread(() -> AuthServer.this.shutdown(false)));
+
     }
 
     private void shutdown(boolean restart) {
@@ -67,6 +67,7 @@ public class AuthServer {
         } catch (Exception e) {
             logger.error(e.getLocalizedMessage(), e);
         }
+        getRuntime().addShutdownHook(new Thread(() -> _instance.shutdown(false)));
     }
 
     private static void configureLogger() {

@@ -10,11 +10,15 @@ public class PlayerAuthResponse extends GameServerWritablePacket {
 		this.response = response;
 	}
 
-
 	@Override
 	protected void writeImpl()  {
 		writeByte(0x03);
 		writeString(account);
 		writeByte(response);
+	}
+
+	@Override
+	protected int packetSize() {
+		return super.packetSize() + 4 + 2 * account.length();
 	}
 }

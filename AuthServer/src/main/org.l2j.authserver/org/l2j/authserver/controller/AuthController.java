@@ -1,16 +1,16 @@
 package org.l2j.authserver.controller;
 
+import org.l2j.authserver.GameServerInfo;
+import org.l2j.authserver.network.SessionKey;
+import org.l2j.authserver.network.client.AuthClient;
+import org.l2j.authserver.network.client.packet.auth2client.LoginOk;
+import org.l2j.authserver.network.crypt.AuthCrypt;
+import org.l2j.authserver.network.crypt.ScrambledKeyPair;
+import org.l2j.authserver.network.gameserver.packet.game2auth.ServerStatus;
 import org.l2j.commons.Config;
 import org.l2j.commons.database.AccountRepository;
 import org.l2j.commons.database.model.Account;
 import org.l2j.commons.util.Rnd;
-import org.l2j.authserver.GameServerInfo;
-import org.l2j.authserver.network.client.AuthClient;
-import org.l2j.authserver.network.SessionKey;
-import org.l2j.authserver.network.crypt.AuthCrypt;
-import org.l2j.authserver.network.crypt.ScrambledKeyPair;
-import org.l2j.authserver.network.client.packet.auth2client.LoginOk;
-import org.l2j.authserver.network.gameserver.packet.game2auth.ServerStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,15 +26,15 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.regex.Pattern;
 
-import static org.l2j.authserver.network.client.packet.auth2client.LoginFail.LoginFailReason.*;
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
-import static org.l2j.commons.util.Util.hash;
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static org.l2j.authserver.network.client.AuthClientState.AUTHED_LOGIN;
 import static org.l2j.authserver.network.client.packet.auth2client.AccountKicked.AccountKickedReason.REASON_PERMANENTLY_BANNED;
+import static org.l2j.authserver.network.client.packet.auth2client.LoginFail.LoginFailReason.*;
 import static org.l2j.authserver.settings.AuthServerSettings.*;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
+import static org.l2j.commons.util.Util.hash;
 import static org.l2j.commons.util.Util.isNullOrEmpty;
 
 public class AuthController {
@@ -61,7 +61,6 @@ public class AuthController {
         banManager = BanManager.load();
         blowfishKeysGenerator = KeyGenerator.getInstance("Blowfish");
         initializeScrambledKeys();
-
     }
 
     public static void load() throws GeneralSecurityException {
@@ -175,21 +174,18 @@ public class AuthController {
     }
 
     private void processAuth(AuthClient client, Account account) {
-        requestAccountInfo(account);
+        requestAccountInfo(client, account);
         updateClientInfo(client, account);
         authedClients.put(account.getId(), client);
-        client.sendPacket(new LoginOk());
         bruteForceProtection.remove(account.getId());
         getRepository(AccountRepository.class).save(account);
         loginLogger.info("Account Logged {}", account.getId());
     }
 
-    private void requestAccountInfo(Account account) {
-        GameServerManager.getInstance().getRegisteredGameServers().values().forEach(gameServer -> {
-            if(nonNull(gameServer) && gameServer.isAuthed()) {
-                gameServer.requestAccountInfo(account.getId());
-            }
-        });
+    private void requestAccountInfo(AuthClient client, Account account) {
+        var gameservers = GameServerManager.getInstance().getRegisteredGameServers().values().stream().filter(GameServerInfo::isAuthed);
+        client.setRequestedServerInfo(gameservers.count());
+        gameservers.forEach(gameServer -> gameServer.requestAccountInfo(account.getId()));
     }
 
     private void updateClientInfo(AuthClient client, Account account) {
@@ -214,8 +210,10 @@ public class AuthController {
         AuthClient client = authedClients.get(account);
         if (nonNull(client)) {
             client.addCharactersOnServer(serverId, players);
+            if(client.getCharactersOnServer().size() == client.getRequestdServersInfo()) {
+                client.sendPacket(new LoginOk());
+            }
         }
-
     }
 
     public SessionKey getKeyForAccount(String account) {

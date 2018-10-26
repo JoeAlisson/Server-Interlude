@@ -1,5 +1,7 @@
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
+import org.l2j.authserver.network.gameserver.packet.auth2game.RequestServerIdentity;
+
 import javax.crypto.Cipher;
 
 public class BlowFishKey extends GameserverReadablePacket {
@@ -30,5 +32,6 @@ public class BlowFishKey extends GameserverReadablePacket {
 
         System.arraycopy(tempDecryptKey, i, key, 0, len - i);
         client.setCryptKey(key);
+        client.sendPacket(new RequestServerIdentity());
     }
 }

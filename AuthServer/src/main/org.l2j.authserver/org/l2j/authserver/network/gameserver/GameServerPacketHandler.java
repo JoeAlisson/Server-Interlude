@@ -71,7 +71,6 @@ public final class GameServerPacketHandler implements PacketHandler<ServerClient
         client.close(NOT_AUTHED);
     }
 
-
     @Override
     public void execute(ReadablePacket<ServerClient> packet) {
         ThreadPoolManager.getInstance().execute(packet);

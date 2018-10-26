@@ -179,7 +179,7 @@ public class NewCrypt
 		return result;
 	}
 	
-	public void decrypt(byte[] raw, final int offset, final int size) throws IOException
+	public synchronized void  decrypt(byte[] raw, final int offset, final int size) throws IOException
 	{
 		byte[] result = new byte[size];
 		int count = size / 8;

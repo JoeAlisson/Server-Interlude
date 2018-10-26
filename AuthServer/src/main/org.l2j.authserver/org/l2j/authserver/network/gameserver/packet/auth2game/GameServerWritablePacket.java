@@ -20,4 +20,9 @@ public abstract class GameServerWritablePacket extends WritablePacket<ServerClie
 	}
 
 	protected abstract void writeImpl() throws Exception ;
+
+	@Override
+	protected int packetSize() {
+		return 22; // CHECKSUM + PADDING + HEADER
+	}
 }
