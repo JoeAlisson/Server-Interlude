@@ -72,4 +72,11 @@ public class ClassTemplate extends CharTemplate {
     public String getName() {
         return name;
     }
+
+    public ClassTemplate getParent() {
+        if(parent == -1) {
+            return null;
+        }
+        return PlayerTemplateTable.getInstance().getClassTemplate(parent);
+    }
 }

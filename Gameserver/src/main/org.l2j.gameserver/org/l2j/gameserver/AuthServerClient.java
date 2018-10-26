@@ -404,8 +404,8 @@ public class AuthServerClient extends Thread {
     }
 
     public void doKickPlayer(String account) {
-        final L2GameClient client = _accountsInGameServer.get(account);
-        if (client != null) {
+        final L2GameClient client = _accountsInGameServer.remove(account);
+        if (nonNull(client)) {
             client.closeNow();
             AuthServerClient.getInstance().sendLogout(account);
         }

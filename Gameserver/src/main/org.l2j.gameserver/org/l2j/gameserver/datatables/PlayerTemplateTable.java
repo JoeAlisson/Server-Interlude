@@ -1,7 +1,6 @@
 package org.l2j.gameserver.datatables;
 
 import org.l2j.gameserver.model.base.PlayerClass;
-import org.l2j.gameserver.model.entity.database.CharTemplate;
 import org.l2j.gameserver.templates.ClassTemplate;
 import org.l2j.gameserver.templates.xml.jaxb.ClassInfo;
 import org.l2j.gameserver.templates.xml.jaxb.PlayerTemplate;
@@ -95,5 +94,9 @@ public class PlayerTemplateTable {
 
     public Collection<PlayerTemplate> allTemplates() {
         return templateReader.getAllTemplates();
+    }
+
+    public Collection<ClassTemplate> classTemplates() {
+        return templates.values();
     }
 }

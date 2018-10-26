@@ -346,7 +346,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
      * Close client connection with {@link ServerClose} packet
      */
     public void closeNow() {
-        close(ServerClose.STATIC_PACKET);
+        close(new ServerClose());
         synchronized (this) {
             if (_cleanupTask != null) {
                 cancelCleanup();

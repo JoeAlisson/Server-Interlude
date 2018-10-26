@@ -19,49 +19,57 @@ public final class GameServerPacketHandler implements PacketHandler<ServerClient
     @Override
     public ReadablePacket<ServerClient> handlePacket(DataWrapper data, ServerClient client) {
         var opcode = toUnsignedInt(data.get());
-        ReadablePacket<ServerClient> packet = null;
-
         switch (client.getState()) {
             case CONNECTED:
-                switch (opcode) {
-                    case 0x0:
-                        packet = new BlowFishKey();
-                        break;
-                    case 0x1:
-                        packet = new GameServerAuth();
-                        break;
-                    default:
-                        handleUnkownOpcode(client, opcode);
-                        break;
-                }
-                break;
+                return handlePacketInConnected(client, opcode);
             case AUTHED:
-                switch (opcode) {
-                    case 0x02:
-                        packet = new PlayerInGame();
-                        break;
-                    case 0x03:
-                        packet = new PlayerLogout();
-                        break;
-                    case 0x04:
-                        packet = new ChangeAccessLevel();
-                        break;
-                    case 0x05:
-                        packet = new PlayerAuthRequest();
-                        break;
-                    case 0x06:
-                        packet = new ServerStatus();
-                        break;
-                    case 0x07:
-                        packet = new AccountInfo();
-                        break;
-                    default:
-                        handleUnkownOpcode(client, opcode);
-                        break;
-                }
+                return handleAuthedPacket(client, opcode);
+            default:
+                handleUnkownOpcode(client, opcode);
+        }
+        return null;
+    }
+
+    private ReadablePacket<ServerClient> handleAuthedPacket(ServerClient client, int opcode) {
+        ReadablePacket<ServerClient> packet = null;
+        switch (opcode) {
+            case 0x02:
+                packet = new PlayerInGame();
+                break;
+            case 0x03:
+                packet = new PlayerLogout();
+                break;
+            case 0x04:
+                packet = new ChangeAccessLevel();
+                break;
+            case 0x05:
+                packet = new PlayerAuthRequest();
+                break;
+            case 0x06:
+                packet = new ServerStatus();
+                break;
+            case 0x07:
+                packet = new AccountInfo();
                 break;
             default:
                 handleUnkownOpcode(client, opcode);
+                break;
+        }
+        return packet;
+    }
+
+    private ReadablePacket<ServerClient> handlePacketInConnected(ServerClient client, int opcode) {
+        ReadablePacket<ServerClient> packet = null;
+        switch (opcode) {
+            case 0x0:
+                packet = new BlowFishKey();
+                break;
+            case 0x1:
+                packet = new GameServerAuth();
+                break;
+            default:
+                handleUnkownOpcode(client, opcode);
+                break;
         }
         return packet;
     }

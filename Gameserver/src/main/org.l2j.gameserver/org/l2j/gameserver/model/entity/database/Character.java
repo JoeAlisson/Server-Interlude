@@ -14,7 +14,6 @@ public class Character extends Entity<Integer> {
     private int objectId;
     @Column("account")
     private String account;
-    @Column("char_name")
     private String name;
     private int level;
     private float hp;
@@ -64,6 +63,7 @@ public class Character extends Entity<Integer> {
     private long lastAccess;
     @Column("clan_privs")
     private int clanPrivs;
+    @Column("wants_peace")
     private boolean wantspeace;
     @Column("in_seven_signs")
     private boolean inSevenSigns;

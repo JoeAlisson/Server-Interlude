@@ -25,6 +25,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
@@ -183,8 +184,8 @@ public class AuthController {
     }
 
     private void requestAccountInfo(AuthClient client, Account account) {
-        var gameservers = GameServerManager.getInstance().getRegisteredGameServers().values().stream().filter(GameServerInfo::isAuthed);
-        client.setRequestedServerInfo(gameservers.count());
+        var gameservers = GameServerManager.getInstance().getRegisteredGameServers().values().stream().filter(GameServerInfo::isAuthed).collect(Collectors.toList());
+        client.setRequestedServerInfo(gameservers.size());
         gameservers.forEach(gameServer -> gameServer.requestAccountInfo(account.getId()));
     }
 

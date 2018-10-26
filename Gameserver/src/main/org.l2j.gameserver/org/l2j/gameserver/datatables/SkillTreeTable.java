@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.datatables;
 
 import org.l2j.commons.database.DatabaseAccess;
@@ -27,18 +9,20 @@ import org.l2j.gameserver.model.entity.database.repository.EnchantSkillTreesRepo
 import org.l2j.gameserver.model.entity.database.repository.FishingSkillTreeRepository;
 import org.l2j.gameserver.model.entity.database.repository.PledgeSkillTreesRepository;
 import org.l2j.gameserver.model.entity.database.repository.SkillTreeRepository;
+import org.l2j.gameserver.templates.ClassTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
 public class SkillTreeTable {
     private static Logger _log = LoggerFactory.getLogger(SkillTreeTable.class.getName());
     private static SkillTreeTable INSTANCE;
 
-    private Map<PlayerClass, Map<Integer, SkillInfo>> _skillTrees;
+    private Map<ClassTemplate, Map<Integer, SkillInfo>> _skillTrees;
     private List<FishingSkill> _fishingSkillTrees; // allTemplates common skills (teached by Fisherman)
     private List<FishingSkill> _expandDwarfCraftSkillTrees; // list of special skill for DWARF (expand DWARF craft) learned by class teacher
     private List<ClanSkillInfo> clanSkillTrees; // pledge skill list
@@ -62,27 +46,26 @@ public class SkillTreeTable {
         int count = 0;
         SkillTreeRepository skillTreeRepository = DatabaseAccess.getRepository(SkillTreeRepository.class);
 
-      /*  for (PlayerTemplate playerTemplate : PlayerTemplateTable.getInstance().allTemplates()) {
+        for (var classTemplate : PlayerTemplateTable.getInstance().classTemplates()) {
 
             Map<Integer, SkillInfo> map = new HashMap<>();
-            PlayerClass playerClass = playerTemplate.getPlayerClass();
 
-            if (nonNull(playerClass.getParent())) {
-                Map<Integer, SkillInfo> parentMap = getSkillTrees().get(playerClass.getParent());
+            if (nonNull(classTemplate.getParent())) {
+                Map<Integer, SkillInfo> parentMap = getSkillTrees().get(classTemplate.getParent());
                 map.putAll(parentMap);
             }
 
-            skillTreeRepository.findAllByClassOrderBySkill(playerClass.getId()).forEach(skill -> {
+            skillTreeRepository.findAllByClassOrderBySkill(classTemplate.getId()).forEach(skill -> {
                 int id = skill.getId();
                 int lvl = skill.getLevel();
                 map.put(SkillTable.getSkillHashCode(id, lvl), skill);
             });
 
-            getSkillTrees().put(playerClass, map);
+            getSkillTrees().put(classTemplate, map);
             count += map.size();
 
-            _log.debug("SkillTreeTable: skill tree for class {} has {} skills.", playerClass.getId(), map.size());
-        }*/
+            _log.debug("SkillTreeTable: skill tree for class {} has {} skills.", classTemplate.getId(), map.size());
+        }
 
         _log.info("SkillTreeTable: Loaded {} skills.", count);
     }
@@ -160,14 +143,14 @@ public class SkillTreeTable {
     }
 
 
-    private Map<PlayerClass, Map<Integer, SkillInfo>> getSkillTrees() {
+    private Map<ClassTemplate, Map<Integer, SkillInfo>> getSkillTrees() {
         if (_skillTrees == null) {
             _skillTrees = new HashMap<>();
         }
         return _skillTrees;
     }
 
-    public List<SkillInfo> getAvailableSkills(L2PcInstance cha, PlayerClass playerClass) {
+    public List<SkillInfo> getAvailableSkills(L2PcInstance cha, ClassTemplate playerClass) {
         Collection<SkillInfo> skills = getSkillTrees().get(playerClass).values();
         List<SkillInfo> result = new ArrayList<>(skills.size());
 
