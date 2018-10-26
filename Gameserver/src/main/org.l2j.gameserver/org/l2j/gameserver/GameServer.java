@@ -36,7 +36,6 @@ public class GameServer {
     public static void shutdown() {
         if (nonNull(gameServer)) {
             gameServer.connectionHandler.shutdown();
-            gameServer.connectionHandler.setDaemon(true);
         }
     }
 

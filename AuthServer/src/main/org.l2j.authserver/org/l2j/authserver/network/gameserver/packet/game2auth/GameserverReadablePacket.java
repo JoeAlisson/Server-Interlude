@@ -1,4 +1,4 @@
-package org.l2j.authserver.network.gameserver.packet;
+package org.l2j.authserver.network.gameserver.packet.game2auth;
 
 import org.l2j.authserver.network.gameserver.ServerClient;
 import org.l2j.mmocore.ReadablePacket;

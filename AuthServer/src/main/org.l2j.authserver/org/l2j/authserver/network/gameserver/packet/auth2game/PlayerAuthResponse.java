@@ -1,7 +1,5 @@
 package org.l2j.authserver.network.gameserver.packet.auth2game;
 
-import org.l2j.authserver.network.client.packet.GameServerWritablePacket;
-
 public class PlayerAuthResponse extends GameServerWritablePacket {
 
 	private final String account;

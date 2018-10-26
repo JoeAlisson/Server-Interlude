@@ -39,6 +39,7 @@ public class AuthServer {
         var gameserverHandler = new GameServerPacketHandler();
         serverConnectionHandler = ConnectionBuilder.create(bindServerListen, ServerClient::new, gameserverHandler, gameserverHandler).threadPoolSize(1).build();
         logger.info("Listening for GameServers on {} : {}", gameServerListenHost(), gameServerListenPort());
+        serverConnectionHandler.start();
 
 
         var bindAddress = loginListenHost().equals("*") ? new InetSocketAddress(loginListenPort()) : new InetSocketAddress(loginListenHost(), loginListenPort()) ;
@@ -53,10 +54,7 @@ public class AuthServer {
 
     private void shutdown(boolean restart) {
         serverConnectionHandler.shutdown();
-        serverConnectionHandler.setDaemon(true);
-
         connectionHandler.shutdown();
-        connectionHandler.setDaemon(true);
         getRuntime().exit(restart ? 2 : 0);
     }
 

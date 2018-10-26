@@ -1,7 +1,6 @@
 package org.l2j.authserver.network.gameserver.packet.auth2game;
 
 import org.l2j.authserver.controller.GameServerManager;
-import org.l2j.authserver.network.client.packet.GameServerWritablePacket;
 
 public class AuthResponse extends GameServerWritablePacket {
 
@@ -12,7 +11,7 @@ public class AuthResponse extends GameServerWritablePacket {
 	}
 
 	@Override
-	protected void writeImpl() throws Exception {
+	protected void writeImpl() {
 		writeByte(0x02);
 		writeByte(serverId);
 		writeString(GameServerManager.getInstance().getServerNameById(serverId));

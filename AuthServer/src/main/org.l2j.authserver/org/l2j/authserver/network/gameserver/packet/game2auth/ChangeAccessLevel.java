@@ -1,7 +1,6 @@
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
 import org.l2j.authserver.controller.AuthController;
-import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
 
 public class ChangeAccessLevel extends GameserverReadablePacket {
 	

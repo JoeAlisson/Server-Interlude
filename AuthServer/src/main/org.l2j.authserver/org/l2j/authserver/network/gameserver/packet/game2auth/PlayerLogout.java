@@ -1,7 +1,5 @@
 package org.l2j.authserver.network.gameserver.packet.game2auth;
 
-import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
-
 public class PlayerLogout extends GameserverReadablePacket {
 	
 	private String account;

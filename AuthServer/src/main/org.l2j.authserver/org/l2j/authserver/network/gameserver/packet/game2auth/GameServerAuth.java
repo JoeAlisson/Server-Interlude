@@ -3,14 +3,12 @@ package org.l2j.authserver.network.gameserver.packet.game2auth;
 import org.l2j.authserver.GameServerInfo;
 import org.l2j.authserver.controller.GameServerManager;
 import org.l2j.authserver.network.gameserver.ServerClientState;
-import org.l2j.authserver.network.gameserver.packet.GameserverReadablePacket;
-import org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail;
+import org.l2j.authserver.network.gameserver.packet.auth2game.AuthResponse;
 
 import java.util.Arrays;
 
 import static java.util.Objects.nonNull;
-import static org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail.REASON_NO_FREE_ID;
-import static org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail.REASON_WRONG_HEXID;
+import static org.l2j.authserver.network.gameserver.packet.auth2game.LoginGameServerFail.*;
 import static org.l2j.authserver.settings.AuthServerSettings.acceptNewGameServerEnabled;
 
 public class GameServerAuth extends GameserverReadablePacket {
@@ -49,16 +47,20 @@ public class GameServerAuth extends GameserverReadablePacket {
         } else {
             processNewGameServer(gameServerManager);
         }
+
+        if(gsi.isAuthed()) {
+            client.sendPacket(new AuthResponse(gsi.getId()));
+        }
 	}
 
     private void authenticGameServer(GameServerInfo gsi) {
         if (!Arrays.equals(gsi.getHexId(), hexId)) {
-            client.close(LoginGameServerFail.REASON_WRONG_HEXID);
+            client.close(REASON_WRONG_HEXID);
             return;
         }
 
         if (gsi.isAuthed()) {
-            client.close(LoginGameServerFail.REASON_ALREADY_LOGGED);
+            client.close(REASON_ALREADY_LOGGED);
         } else {
             updateGameServerInfo(gsi);
         }
