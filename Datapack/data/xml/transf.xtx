@@ -1,0 +1,2 @@
+<item(.*)type="Weapon">\n.*icon" val=(.*)".*  // To weapon
+<weapon id.*(\n.*?)+</item> // subs end tag

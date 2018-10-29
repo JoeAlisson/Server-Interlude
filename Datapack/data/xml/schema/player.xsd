@@ -5,8 +5,7 @@
            xmlns="http://la2j.org"
            elementFormDefault="qualified">
 
-    <xs:include schemaLocation="race.xsd"/>
-    <xs:include schemaLocation="location.xsd"/>
+    <xs:include schemaLocation="commons.xsd"/>
 
     <xs:element name="PlayerTemplate">
         <xs:complexType>
@@ -70,13 +69,6 @@
         <xs:attribute name="criticalRate"  type="xs:float" default="1"/>
         <xs:attribute name="speed" type="xs:int" default="1"/>
         <xs:attribute name="range" type="xs:int" default="1"/>
-    </xs:complexType>
-    
-    <xs:complexType name="Damage">
-        <xs:attribute name="vertical" type="xs:int" default="0"/>
-        <xs:attribute name="horizontal" type="xs:int" default="0"/>
-        <xs:attribute name="distance" type="xs:int" default="0"/>
-        <xs:attribute name="width" type="xs:int" default="0"/>
     </xs:complexType>
 
     <xs:complexType name="MagicDefense">
