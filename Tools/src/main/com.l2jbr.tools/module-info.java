@@ -6,4 +6,5 @@ module org.l2j.tools {
     requires org.l2j.commons;
 
     requires spring.data.commons;
+    requires java.xml.bind;
 }
