@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  targetNamespace="http://la2j.org"  xmlns="http://la2j.org"  elementFormDefault="qualified">
 
@@ -7,9 +7,9 @@
 
     <xs:element name="itemList">
         <xs:complexType>
-            <xs:choice>
+            <xs:sequence>
                 <xs:element ref="itemTemplate" minOccurs="0" maxOccurs="unbounded"/>
-            </xs:choice>
+            </xs:sequence>
         </xs:complexType>
     </xs:element>
 
@@ -19,14 +19,24 @@
     <xs:element name="item" type="Item" substitutionGroup="itemTemplate"/>
 
     <xs:complexType name="ItemTemplate" abstract="true">
-        <xs:choice>
-            <xs:element name="price" type="xs:int" default="0"/>
-            <xs:element name="restriction" type="ItemRestriction"/>
+        <xs:sequence>
+            <xs:element name="price" type="xs:long" default="0"/>
+            <xs:element name="restriction" type="ItemRestriction" minOccurs="0"/>
+            <xs:element name="crystalInfo" type="CrystalInfo" minOccurs="0"/>
+            <xs:element name="handler" type="ItemHandler" minOccurs="0"/>
+            <xs:element name="questItem" type="xs:boolean" default="false"/>
+            <xs:element name="reuseDelay" type="xs:long" default="1000"/>
+            <xs:element name="time" type="xs:long" default="-1"/>
+            <xs:element name="weight" type="xs:int" default="1"/>
+            <xs:element name="condition" type="UseCondition" minOccurs="0"/>
             <xs:element name="stat" type="xmlTypeStat" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="skill" type="xmlItemSkill" minOccurs="0" maxOccurs="unbounded"/>
-        </xs:choice>
+        </xs:sequence>
         <xs:attribute name="id" type="xs:int" use="required"/>
         <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="additionalName" type="xs:string" use="required"/>
+        <xs:attribute name="type" type="ItemType" default="NONE"/>
+        <xs:attribute name="commissionType" type="CommissionType" />
         <xs:attribute name="icon" type="xs:string" use="required"/>
     </xs:complexType>
     
@@ -34,11 +44,12 @@
         <xs:complexContent>
             <xs:extension base="ItemTemplate">
                 <xs:choice>
-                    <xs:element name="type" type="ItemType"/>
                     <xs:element name="bodyPart" type="BodyPart"/>
                     <xs:element name="damage" type="Damage"/>
+                    <xs:element name="consume" type="ItemConsume" minOccurs="0"/>
                 </xs:choice>
                 <xs:attribute name="shots" type="xs:int" default="1"/>
+                <xs:attribute name="magic" type="xs:boolean" default="false"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -61,6 +72,16 @@
         </xs:complexContent>
     </xs:complexType>
 
+    <xs:complexType name="CrystalInfo">
+        <xs:attribute name="type" type="CrystalType" default="NONE"/>
+        <xs:attribute name="count" type="xs:int" default="0"/>
+    </xs:complexType>
+
+    <xs:complexType name="ItemConsume">
+        <xs:attribute name="mp" type="xs:int" default="0"/>
+        <xs:attribute name="shot" type="xs:int" default="0"/>
+    </xs:complexType>
+
     <xs:complexType name="ItemRestriction">
         <xs:attribute name="dropable" type="xs:boolean" default="true"/>
         <xs:attribute name="tradeable" type="xs:boolean" default="true"/>
@@ -75,5 +96,41 @@
         <xs:attribute name="chance" type="xs:int" default="100"/>
         <xs:attribute name="triggerType" type="xs:string" use="required"/>
     </xs:complexType>
+
+    <xs:simpleType name="CrystalType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NONE"/>
+            <xs:enumeration value="D"/>
+            <xs:enumeration value="C"/>
+            <xs:enumeration value="B"/>
+            <xs:enumeration value="A"/>
+            <xs:enumeration value="S"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ItemHandler">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NONE"/>
+            <xs:enumeration value="ITEM_SKILL"/>
+            <xs:enumeration value="MERCENARY_TICKET"/>
+            <xs:enumeration value="RECIPE"/>
+            <xs:enumeration value="BLESSED_SOUL_SHOT"/>
+            <xs:enumeration value="EXTRACTABLE_ITEM"/>
+            <xs:enumeration value="BOOK"/>
+            <xs:enumeration value="BEAST_SOUL_SHOT"/>
+            <xs:enumeration value="BEAST_SPIRIT_SHOT"/>
+            <xs:enumeration value="SOUL_SHOT"/>
+            <xs:enumeration value="BLESSED_SPIRIT_SHOT"/>
+            <xs:enumeration value="BYPASS"/>
+            <xs:enumeration value="MAP"/>
+            <xs:enumeration value="SPIRIT_SHOT"/>
+            <xs:enumeration value="ENCHANT_SCROLL"/>
+            <xs:enumeration value="FISH_SHOT"/>
+            <xs:enumeration value="NICKNAME_COLOR"/>
+            <xs:enumeration value="DICE"/>
+            <xs:enumeration value="CALCULATOR"/>
+            <xs:enumeration value="RESURRECTION"/>
+        </xs:restriction>
+    </xs:simpleType>
 
 </xs:schema>
