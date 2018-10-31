@@ -46,6 +46,7 @@
     <xs:element name="condition" type="Condition"/>
     <xs:element name="owner" type="OwnerCondition" substitutionGroup="condition"/>
     <xs:element name="state" type="StateCondition" substitutionGroup="condition"/>
+    <xs:element name="level" type="LevelCondition" substitutionGroup="condition"/>
 
     <xs:complexType name="Condition" abstract="true"/>
 
@@ -76,8 +77,23 @@
     <xs:simpleType name="StateType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="IN_OLYMPIAD"/>
+            <xs:enumeration value="FLYING"/>
+            <xs:enumeration value="MOUNTING"/>
+            <xs:enumeration value="IS_CHAOTIC"/>
+            <xs:enumeration value="IS_HERO"/>
+            <xs:enumeration value="IS_MALE"/>
         </xs:restriction>
     </xs:simpleType>
+
+    <xs:complexType name="LevelCondition">
+        <xs:complexContent>
+            <xs:extension base="Condition">
+                <xs:attribute name="min" type="xs:int" default="0"/>
+                <xs:attribute name="max" type="xs:int" default="100"/>
+                <xs:attribute name="target" type="xs:boolean" default="false"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
 
     <xs:complexType name="UseCondition">
         <xs:choice>

@@ -1,6 +1,8 @@
 package org.l2j.xml;
 
 import org.l2j.xml.generated.*;
+import org.l2j.xml.generated.ObjectFactory;
+import org.l2j.xml.old.generated.*;
 import org.l2j.xml.old.generated.ItemType;
 
 import javax.xml.bind.JAXBException;
@@ -13,6 +15,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
 public class Converter {
 
@@ -83,8 +86,48 @@ public class Converter {
 
     private static void parseCond(ItemType itemType, Weapon weapon) {
         itemType.getCond().forEach(condType -> {
-            condType.getUsingOrAndOrNot();
+            var usarCondition = false;
+            if(isNull(weapon.getCondition())) {
+                weapon.setCondition(factory.createUseCondition());
+                usarCondition = true;
+            } else {
+                var useCondition = weapon.getCondition();
+                if(nonNull(useCondition.getCondition())) {
+                    var and = factory.createAND();
+                    and.getCondition().add(useCondition.getCondition());
+                    useCondition.setCondition(null);
+                    useCondition.setOperator(factory.createAnd(and));
+                } else if(! (useCondition.getOperator().getValue() instanceof  AND)) {
+                    var operator = useCondition.getOperator();
+                    var and = factory.createAND();
+                    and.getOperator().add(operator);
+                    useCondition.setOperator(factory.createAnd(and));
+                }
+            }
+            for (Object usingAndOrNot : condType.getUsingOrAndOrNot()) {
+                usarCondition = parseCondition(weapon, usarCondition, usingAndOrNot);
+            }
         });
+    }
+
+    private static boolean parseCondition(Weapon weapon, boolean usarCondition, Object usingAndOrNot) {
+        if(usingAndOrNot instanceof AndType) {
+            var andType = (AndType) usingAndOrNot;
+            for (Object o : andType.getUsingOrPlayerOrTarget()) {
+                if (usarCondition) {
+                    weapon.getCondition().setOperator(factory.createAnd(factory.createAND()));
+                    usarCondition = false;
+                    parseCondition(weapon, usarCondition, o);
+                } else {
+                    usarCondition = false;
+                    parseCondition(weapon, false, o);
+                }
+            }
+        } else if(usingAndOrNot instanceof PlayerType) {
+
+        } else if(usingAndOrNot instanceof TargetType) {
+
+        } return usarCondition;
     }
 
     private static void parseSet(ItemType itemType, Weapon weapon) {
