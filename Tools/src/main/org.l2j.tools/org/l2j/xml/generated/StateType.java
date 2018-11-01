@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.10.30 às 03:19:39 PM BRT 
+// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
 //
 
 
@@ -21,6 +21,11 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;simpleType name="StateType"&gt;
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
  *     &lt;enumeration value="IN_OLYMPIAD"/&gt;
+ *     &lt;enumeration value="FLYING"/&gt;
+ *     &lt;enumeration value="MOUNTING"/&gt;
+ *     &lt;enumeration value="IS_CHAOTIC"/&gt;
+ *     &lt;enumeration value="IS_HERO"/&gt;
+ *     &lt;enumeration value="IS_MALE"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
  * </pre>
@@ -30,7 +35,12 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum StateType {
 
-    IN_OLYMPIAD;
+    IN_OLYMPIAD,
+    FLYING,
+    MOUNTING,
+    IS_CHAOTIC,
+    IS_HERO,
+    IS_MALE;
 
     public String value() {
         return name();

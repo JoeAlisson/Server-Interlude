@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.10.30 às 03:19:39 PM BRT 
+// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
 //
 
 
@@ -38,6 +38,7 @@ public class ObjectFactory {
     private final static QName _Condition_QNAME = new QName("http://la2j.org", "condition");
     private final static QName _Owner_QNAME = new QName("http://la2j.org", "owner");
     private final static QName _State_QNAME = new QName("http://la2j.org", "state");
+    private final static QName _Level_QNAME = new QName("http://la2j.org", "level");
     private final static QName _Using_QNAME = new QName("http://la2j.org", "using");
     private final static QName _Player_QNAME = new QName("http://la2j.org", "player");
     private final static QName _Game_QNAME = new QName("http://la2j.org", "game");
@@ -91,6 +92,14 @@ public class ObjectFactory {
      */
     public StateCondition createStateCondition() {
         return new StateCondition();
+    }
+
+    /**
+     * Create an instance of {@link LevelCondition }
+     * 
+     */
+    public LevelCondition createLevelCondition() {
+        return new LevelCondition();
     }
 
     /**
@@ -318,6 +327,19 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://la2j.org", name = "state", substitutionHeadNamespace = "http://la2j.org", substitutionHeadName = "condition")
     public JAXBElement<StateCondition> createState(StateCondition value) {
         return new JAXBElement<StateCondition>(_State_QNAME, StateCondition.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LevelCondition }{@code >}
+     * 
+     * @param value
+     *     Java instance representing xml element's value.
+     * @return
+     *     the new instance of {@link JAXBElement }{@code <}{@link LevelCondition }{@code >}
+     */
+    @XmlElementDecl(namespace = "http://la2j.org", name = "level", substitutionHeadNamespace = "http://la2j.org", substitutionHeadName = "condition")
+    public JAXBElement<LevelCondition> createLevel(LevelCondition value) {
+        return new JAXBElement<LevelCondition>(_Level_QNAME, LevelCondition.class, null, value);
     }
 
     /**

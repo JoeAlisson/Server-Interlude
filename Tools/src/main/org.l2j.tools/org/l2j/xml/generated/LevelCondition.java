@@ -15,18 +15,18 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java de Location complex type.
+ * <p>Classe Java de LevelCondition complex type.
  * 
  * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="Location"&gt;
+ * &lt;complexType name="LevelCondition"&gt;
  *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;attribute name="x" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
- *       &lt;attribute name="y" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
- *       &lt;attribute name="z" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
- *     &lt;/restriction&gt;
+ *     &lt;extension base="{http://la2j.org}Condition"&gt;
+ *       &lt;attribute name="min" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
+ *       &lt;attribute name="max" type="{http://www.w3.org/2001/XMLSchema}int" default="100" /&gt;
+ *       &lt;attribute name="target" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" /&gt;
+ *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -34,98 +34,100 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Location")
-public class Location {
+@XmlType(name = "LevelCondition")
+public class LevelCondition
+    extends Condition
+{
 
-    @XmlAttribute(name = "x")
-    protected Integer x;
-    @XmlAttribute(name = "y")
-    protected Integer y;
-    @XmlAttribute(name = "z")
-    protected Integer z;
+    @XmlAttribute(name = "min")
+    protected Integer min;
+    @XmlAttribute(name = "max")
+    protected Integer max;
+    @XmlAttribute(name = "target")
+    protected Boolean target;
 
     /**
-     * Obtém o valor da propriedade x.
+     * Obtém o valor da propriedade min.
      * 
      * @return
      *     possible object is
      *     {@link Integer }
      *     
      */
-    public int getX() {
-        if (x == null) {
+    public int getMin() {
+        if (min == null) {
             return  0;
         } else {
-            return x;
+            return min;
         }
     }
 
     /**
-     * Define o valor da propriedade x.
+     * Define o valor da propriedade min.
      * 
      * @param value
      *     allowed object is
      *     {@link Integer }
      *     
      */
-    public void setX(Integer value) {
-        this.x = value;
+    public void setMin(Integer value) {
+        this.min = value;
     }
 
     /**
-     * Obtém o valor da propriedade y.
+     * Obtém o valor da propriedade max.
      * 
      * @return
      *     possible object is
      *     {@link Integer }
      *     
      */
-    public int getY() {
-        if (y == null) {
-            return  0;
+    public int getMax() {
+        if (max == null) {
+            return  100;
         } else {
-            return y;
+            return max;
         }
     }
 
     /**
-     * Define o valor da propriedade y.
+     * Define o valor da propriedade max.
      * 
      * @param value
      *     allowed object is
      *     {@link Integer }
      *     
      */
-    public void setY(Integer value) {
-        this.y = value;
+    public void setMax(Integer value) {
+        this.max = value;
     }
 
     /**
-     * Obtém o valor da propriedade z.
+     * Obtém o valor da propriedade target.
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link Boolean }
      *     
      */
-    public int getZ() {
-        if (z == null) {
-            return  0;
+    public boolean isTarget() {
+        if (target == null) {
+            return false;
         } else {
-            return z;
+            return target;
         }
     }
 
     /**
-     * Define o valor da propriedade z.
+     * Define o valor da propriedade target.
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link Boolean }
      *     
      */
-    public void setZ(Integer value) {
-        this.z = value;
+    public void setTarget(Boolean value) {
+        this.target = value;
     }
 
 }

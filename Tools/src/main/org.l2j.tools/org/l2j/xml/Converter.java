@@ -73,9 +73,9 @@ public class Converter {
             weapon.setAdditionalName(itemType.getAdditionalName());
             parseSet(itemType, weapon);
             parseCond(itemType, weapon);
-            itemType.getCapsuledItems();
-            itemType.getSkills();
             itemType.getStats();
+            itemType.getSkills();
+            itemType.getCapsuledItems();
 
             list.getItemTemplate().add(factory.createWeapon(weapon));
         } catch(Exception e) {
@@ -88,7 +88,11 @@ public class Converter {
         itemType.getCond().forEach(condType -> {
             var usarCondition = false;
             if(isNull(weapon.getCondition())) {
-                weapon.setCondition(factory.createUseCondition());
+                var  useCondition = factory.createUseCondition();
+                useCondition.setMessage(condType.getMsg());
+                useCondition.setMessageId((int)condType.getMsgId());
+                useCondition.setIncludeName(condType.getAddName() == 1);
+                weapon.setCondition(useCondition);
                 usarCondition = true;
             } else {
                 var useCondition = weapon.getCondition();
@@ -112,22 +116,107 @@ public class Converter {
 
     private static boolean parseCondition(Weapon weapon, boolean usarCondition, Object usingAndOrNot) {
         if(usingAndOrNot instanceof AndType) {
-            var andType = (AndType) usingAndOrNot;
-            for (Object o : andType.getUsingOrPlayerOrTarget()) {
-                if (usarCondition) {
-                    weapon.getCondition().setOperator(factory.createAnd(factory.createAND()));
-                    usarCondition = false;
-                    parseCondition(weapon, usarCondition, o);
-                } else {
-                    usarCondition = false;
-                    parseCondition(weapon, false, o);
-                }
-            }
+            usarCondition = parseAndType(weapon, usarCondition, (AndType) usingAndOrNot);
         } else if(usingAndOrNot instanceof PlayerType) {
-
+            parsePlayerType(weapon, usarCondition, (PlayerType) usingAndOrNot);
         } else if(usingAndOrNot instanceof TargetType) {
+            parseTargetType(weapon, usarCondition, (TargetType) usingAndOrNot);
+        }
+        return usarCondition;
+    }
 
-        } return usarCondition;
+    private static void parseTargetType(Weapon weapon, boolean usarCondition, TargetType usingAndOrNot) {
+        var targetType = usingAndOrNot;
+        if(nonNull(targetType.getLevelRange())) {
+            var levels = targetType.getLevelRange().split(";");
+            var level = factory.createLevelCondition();
+            level.setMin(Integer.parseInt(levels[0]));
+            level.setMin(Integer.parseInt(levels[1]));
+            level.setTarget(true);
+            parseLevel(weapon, usarCondition, level);
+        }
+    }
+
+    private static void parsePlayerType(Weapon weapon, boolean usarCondition, PlayerType usingAndOrNot) {
+        var playerType = usingAndOrNot;
+        if(nonNull(playerType.getSex())) {
+            var state = factory.createStateCondition();
+            state.setState(StateType.IS_MALE);
+            var stateCondition = factory.createState(state);
+            if(playerType.getSex() == 0) {
+                if(usarCondition) {
+                    weapon.getCondition().setCondition(stateCondition);
+                } else {
+                    var operator = weapon.getCondition().getOperator().getValue();
+                    if(operator instanceof AND) {
+                        ((AND) operator).getCondition().add(stateCondition);
+                    }
+                }
+            } else {
+                var not = factory.createNOT();
+                not.setCondition(stateCondition);
+                addNotInOperator(weapon, not);
+            }
+        } else if(nonNull(playerType.isFlyMounted()) && !playerType.isFlyMounted()) {
+            var state = factory.createStateCondition();
+            state.setState(StateType.FLYING);
+            var not = factory.createNOT();
+            not.setCondition(factory.createState(state));
+            parseNot(weapon, usarCondition, not);
+        } else if(nonNull(playerType.isChaotic()) && !playerType.isChaotic()) {
+            var state = factory.createStateCondition();
+            state.setState(StateType.IS_CHAOTIC);
+            var not = factory.createNOT();
+            not.setCondition(factory.createState(state));
+            parseNot(weapon, usarCondition, not);
+        } else if(nonNull(playerType.getLevel())) {
+            var levelCondition = factory.createLevelCondition();
+            levelCondition.setMin(playerType.getLevel());
+            parseLevel(weapon, usarCondition, levelCondition);
+        } else if(nonNull(playerType.isIsHero()) && !playerType.isIsHero()) {
+            var state = factory.createStateCondition();
+            state.setState(StateType.IS_HERO);
+            var not = factory.createNOT();
+            not.setCondition(factory.createState(state));
+            parseNot(weapon, usarCondition, not);
+        }
+    }
+
+    private static boolean parseAndType(Weapon weapon, boolean usarCondition, AndType andType) {
+        if (usarCondition) {
+            weapon.getCondition().setOperator(factory.createAnd(factory.createAND()));
+            usarCondition = false;
+        }
+        for (Object o : andType.getUsingOrPlayerOrTarget()) {
+            parseCondition(weapon, false, o);
+        }
+        return usarCondition;
+    }
+
+    private static void parseNot(Weapon weapon, boolean usarCondition, NOT not) {
+        if (usarCondition) {
+            weapon.getCondition().setOperator(factory.createNot(not));
+        } else {
+            addNotInOperator(weapon, not);
+        }
+    }
+
+    private static void parseLevel(Weapon weapon, boolean usarCondition, LevelCondition level) {
+        if (usarCondition) {
+            weapon.getCondition().setCondition(factory.createLevel(level));
+        } else {
+            var operator = weapon.getCondition().getOperator().getValue();
+            if (operator instanceof AND) {
+                ((AND) operator).getCondition().add(factory.createLevel(level));
+            }
+        }
+    }
+
+    private static void addNotInOperator(Weapon weapon, NOT not) {
+        var operator = weapon.getCondition().getOperator().getValue();
+        if (operator instanceof AND) {
+            ((AND) operator).getOperator().add(factory.createNot(not));
+        }
     }
 
     private static void parseSet(ItemType itemType, Weapon weapon) {
