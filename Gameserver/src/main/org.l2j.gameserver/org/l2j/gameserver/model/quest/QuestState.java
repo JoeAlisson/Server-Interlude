@@ -75,13 +75,13 @@ public final class QuestState {
     private boolean _isExitQuestOnCleanUp = false;
 
     /**
-     * Constructor of the QuestState : save the quest in the list of quests of the player.<BR/>
+     * Constructor of the QuestState : save the quest in the list of quests of the reader.<BR/>
      * <BR/>
      * <U><I>Actions :</U></I><BR/>
-     * <LI>Save informations in the object QuestState created (Quest, Player, Completion, State)</LI> <LI>Add the QuestState in the player's list of quests by using setQuestState()</LI> <LI>Add drops gotten by the quest</LI> <BR/>
+     * <LI>Save informations in the object QuestState created (Quest, Player, Completion, State)</LI> <LI>Add the QuestState in the reader's list of quests by using setQuestState()</LI> <LI>Add drops gotten by the quest</LI> <BR/>
      *
      * @param quest     : quest associated with the QuestState
-     * @param player    : L2PcInstance pointing out the player
+     * @param player    : L2PcInstance pointing out the reader
      * @param state     : state of the quest
      * @param completed : boolean for completion of the quest
      */
@@ -89,7 +89,7 @@ public final class QuestState {
         _questName = quest.getName();
         _player = player;
 
-        // Save the state of the quest for the player in the player's list of quest onwed
+        // Save the state of the quest for the reader in the reader's list of quest onwed
         getPlayer().setQuestState(this);
 
         _isCompleted = completed;
@@ -397,7 +397,7 @@ public final class QuestState {
     }
 
     /**
-     * Add player to get notification of characters death
+     * Add reader to get notification of characters death
      *
      * @param character : L2Character of the character to get notification of death
      */
@@ -410,7 +410,7 @@ public final class QuestState {
     }
 
     /**
-     * Return the quantity of one sort of item hold by the player
+     * Return the quantity of one sort of item hold by the reader
      *
      * @param itemId : ID of the item wanted to be count
      * @return int
@@ -428,7 +428,7 @@ public final class QuestState {
     }
 
     /**
-     * Return the level of enchantment on the weapon of the player(Done specifically for weapon SA's)
+     * Return the level of enchantment on the weapon of the reader(Done specifically for weapon SA's)
      *
      * @param itemId : ID of the item to check enchantment
      * @return int
@@ -444,7 +444,7 @@ public final class QuestState {
     }
 
     /**
-     * Give item/reward to the player
+     * Give item/reward to the reader
      *
      * @param itemId
      * @param count
@@ -465,7 +465,7 @@ public final class QuestState {
             // Set quantity of item
         }
 
-        // Add items to player's inventory
+        // Add items to reader's inventory
         L2ItemInstance item = getPlayer().getInventory().addItem("Quest", itemId, count, getPlayer(), getPlayer().getTarget());
 
         if (item == null) {
@@ -509,7 +509,7 @@ public final class QuestState {
      * @param neededCount : Quantity of items needed for quest
      * @param dropChance  : int Base chance of drop, same as in droplist
      * @param sound       : boolean indicating whether to play sound
-     * @return boolean indicating whether player has requested number of items
+     * @return boolean indicating whether reader has requested number of items
      */
     public boolean dropQuestItems(int itemId, int count, int neededCount, int dropChance, boolean sound) {
         return dropQuestItems(itemId, count, count, neededCount, dropChance, sound);
@@ -583,15 +583,15 @@ public final class QuestState {
     // END STUFF THAT WILL PROBABLY BE CHANGED
 
     /**
-     * Remove items from player's inventory when talking to NPC in order to have rewards.<BR>
+     * Remove items from reader's inventory when talking to NPC in order to have rewards.<BR>
      * <BR>
-     * <U><I>Actions :</I></U> <LI>Destroy quantity of items wanted</LI> <LI>Send new inventory list to player</LI>
+     * <U><I>Actions :</I></U> <LI>Destroy quantity of items wanted</LI> <LI>Send new inventory list to reader</LI>
      *
      * @param itemId : Identifier of the item
      * @param count  : Quantity of items to destroy
      */
-    public void takeItems(int itemId, int count) {
-        // Get object item from player's inventory list
+    public void takeItems(int itemId, long count) {
+        // Get object item from reader's inventory list
         L2ItemInstance item = getPlayer().getInventory().getItemByItemId(itemId);
 
         if (item == null) {
@@ -702,7 +702,7 @@ public final class QuestState {
     }
 
     /**
-     * Add spawn for player instance Return object id of newly spawned npc
+     * Add spawn for reader instance Return object id of newly spawned npc
      *
      * @param npcId
      * @return
@@ -720,7 +720,7 @@ public final class QuestState {
     }
 
     /**
-     * Add spawn for player instance Will despawn after the spawn length expires Uses player's coords and heading. Adds a little randomization in the x y coords Return object id of newly spawned npc
+     * Add spawn for reader instance Will despawn after the spawn length expires Uses reader's coords and heading. Adds a little randomization in the x y coords Return object id of newly spawned npc
      *
      * @param npcId
      * @param cha
@@ -735,7 +735,7 @@ public final class QuestState {
     }
 
     /**
-     * Add spawn for player instance Will despawn after the spawn length expires Return object id of newly spawned npc
+     * Add spawn for reader instance Will despawn after the spawn length expires Return object id of newly spawned npc
      *
      * @param npcId
      * @param x
@@ -749,7 +749,7 @@ public final class QuestState {
     }
 
     /**
-     * Add spawn for player instance Inherits coords and heading from specified L2Character instance. It could be either the player, or any killed/attacked mob Return object id of newly spawned npc
+     * Add spawn for reader instance Inherits coords and heading from specified L2Character instance. It could be either the reader, or any killed/attacked mob Return object id of newly spawned npc
      *
      * @param npcId
      * @param cha
@@ -762,7 +762,7 @@ public final class QuestState {
     }
 
     /**
-     * Add spawn for player instance Return object id of newly spawned npc
+     * Add spawn for reader instance Return object id of newly spawned npc
      *
      * @param npcId
      * @param x
@@ -801,7 +801,7 @@ public final class QuestState {
             itemIdList.forEach(item -> takeItems(item, -1));
         }
 
-        // If quest is repeatable, delete quest from list of quest of the player and from database (quest CAN be created again => repeatable)
+        // If quest is repeatable, delete quest from list of quest of the reader and from database (quest CAN be created again => repeatable)
         if (repeatable) {
             getPlayer().delQuestState(getQuestName());
             Quest.deleteQuestInDb(this);

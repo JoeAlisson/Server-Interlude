@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="2600" name="Raid Sword*Caliburs" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>7830000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1044"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2190</weight>
+        <skill id="3046" level="10" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2601" name="Raid Sword*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>7830000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1044"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2170</weight>
+        <skill id="3042" level="10" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2602" name="Raid Sword*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>7830000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1044"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <skill id="3013" level="1" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2603" name="Raid Sword*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>7830000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1044"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2170</weight>
+        <skill id="3044" level="10" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2604" name="Raid Sword*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>7830000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1044"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2170</weight>
+        <skill id="3045" level="10" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2605" name="Raid Sword*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>9550000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1273"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2130</weight>
+        <skill id="3044" level="12" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2606" name="Caliburs*Caliburs" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2140</weight>
+        <skill id="3042" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2607" name="Caliburs*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2150</weight>
+        <skill id="3013" level="1" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2608" name="Caliburs*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2140</weight>
+        <skill id="3044" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2609" name="Caliburs*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2170</weight>
+        <skill id="3045" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2610" name="Caliburs*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2150</weight>
+        <skill id="3046" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2611" name="Caliburs*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>11300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1506"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2120</weight>
+        <skill id="3045" level="13" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2612" name="Ultimate Sword*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2140</weight>
+        <skill id="3042" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2613" name="Ultimate Sword*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2140</weight>
+        <skill id="3013" level="1" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2614" name="Ultimate Sword*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2130</weight>
+        <skill id="3044" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2615" name="Ultimate Sword*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2120</weight>
+        <skill id="3045" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2616" name="Ultimate Sword*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>11300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1506"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <skill id="3046" level="13" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2617" name="Sword of Delusion*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2150</weight>
+        <skill id="3046" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2618" name="Sword of Delusion*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2130</weight>
+        <skill id="3042" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2619" name="Sword of Delusion*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2140</weight>
+        <skill id="3013" level="1" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2620" name="Sword of Delusion*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>11300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1506"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2110</weight>
+        <skill id="3042" level="13" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2621" name="Sword of Nightmare*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2130</weight>
+        <skill id="3044" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2622" name="Sword of Nightmare*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2140</weight>
+        <skill id="3045" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2623" name="Sword of Nightmare*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>11300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1506"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <skill id="3013" level="1" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2624" name="Tsurugi*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2120</weight>
+        <skill id="3044" level="11" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2625" name="Tsurugi*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>11300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1506"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3044" level="13" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2626" name="Samurai Long Sword*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <skill id="3045" level="14" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="2627" name="Mark of Challenger" icon="icon.etc_jewel_silver_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2628" name="Letter of Kash" icon="icon.etc_scroll_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2629" name="Watcher's 1st Eye" icon="icon.etc_eyeball_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2630" name="Watcher's 1st Eye" icon="icon.etc_eyeball_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2631" name="Scroll of Shyslassys" icon="icon.etc_scroll_of_enchant_weapon_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2632" name="Broken Key" icon="icon.etc_mold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2633" name="Mark of Duty" icon="icon.accessary_necklace_of_holy_spirit_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2634" name="Letter of Dustin" icon="icon.etc_piece_of_paper_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2635" name="Knight's Tear" icon="icon.etc_crystal_ball_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2636" name="Mirror of Orpic" icon="icon.etc_mirror_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2637" name="Tear of Confession" icon="icon.etc_crystal_ball_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2638" name="Report Piece" icon="icon.etc_leather_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2639" name="Report of Sir Talianus" icon="icon.etc_letter_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2640" name="Tear of Loyalty" icon="icon.etc_crystal_ball_silver_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2641" name="Militas Article" icon="icon.etc_jewel_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2642" name="Saint's Ash Urn" icon="icon.etc_oil_pot_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2643" name="Athebaldt's Skull" icon="icon.etc_skull_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2644" name="Athebaldt's Ribs" icon="icon.etc_rib_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2645" name="Athebaldt's Shin" icon="icon.etc_piece_bone_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2646" name="Letter of Windawood" icon="icon.etc_letter_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2647" name="Dufner's Letter" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2648" name="Terry's 1st Order" icon="icon.etc_scroll_of_resurrection_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2649" name="Terry's 1st Order" icon="icon.etc_scroll_of_return_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2650" name="Terry's Letter" icon="icon.etc_letter_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2651" name="Viktor's Letter" icon="icon.etc_letter_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2652" name="Hawkeye's Letter" icon="icon.etc_letter_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2653" name="Mysterious Spirit Ore" icon="icon.etc_crystal_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2654" name="Ol Mahum Spirit Ore" icon="icon.etc_crystal_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2655" name="Turek Spirit Ore" icon="icon.etc_crystal_silver_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2656" name="Ant Spirit Ore" icon="icon.etc_crystal_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2657" name="Turak Bugbear Spirit Ore" icon="icon.etc_crystal_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2658" name="Terry's Box" icon="icon.etc_jewel_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2659" name="Viktor's Request" icon="icon.etc_scroll_of_enchant_armor_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2660" name="Medusa Scales" icon="icon.etc_parasite_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2661" name="Dark Bezoar" icon="icon.etc_crystal_green_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2662" name="Analysis Request" icon="icon.etc_recipe_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2663" name="Marina's Letter" icon="icon.etc_piece_of_paper_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2664" name="Experiment Tools" icon="icon.etc_squares_wood_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2665" name="Analysis Result" icon="icon.etc_recipe_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2666" name="Terry's 1st Order" icon="icon.etc_scroll_of_enchant_weapon_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2667" name="Host List" icon="icon.etc_piece_of_paper_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2668" name="Dark Bezoar" icon="icon.etc_crystal_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2669" name="Dark Bezoar" icon="icon.etc_crystal_silver_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2670" name="Dark Bezoar" icon="icon.etc_crystal_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2671" name="Dark Bezoar" icon="icon.etc_crystal_green_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2672" name="Terry's Report" icon="icon.etc_scroll_of_enchant_weapon_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2673" name="Mark of Seeker" icon="icon.etc_jewel_green_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2674" name="Mark of Scholar" icon="icon.etc_jewel_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2675" name="Mirien's 1st Badge" icon="icon.shield_shield_of_mana_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2676" name="Mirien's 1st Badge" icon="icon.shield_shield_of_pledge_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2677" name="Mirien's 1st Badge" icon="icon.shield_round_shield_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2678" name="Mirien's Instruction" icon="icon.etc_scroll_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2679" name="Maria's Letter" icon="icon.etc_letter_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2680" name="Maria's Letter" icon="icon.etc_letter_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2681" name="Lucas' Letter" icon="icon.etc_letter_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2682" name="Lucilla's Handbag" icon="icon.etc_pouch_yellow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2683" name="Creta's 1st Letter" icon="icon.etc_letter_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2684" name="Creta's Painting1" icon="icon.etc_scroll_of_enchant_armor_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2685" name="Creta's Painting1" icon="icon.etc_scroll_of_resurrection_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2686" name="Creta's Painting1" icon="icon.etc_scroll_of_return_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2687" name="Brown Scroll Scrap" icon="icon.etc_map_piece_yellow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2688" name="Crystal of Purity" icon="icon.etc_gem_clear_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2689" name="High Priest's Badge" icon="icon.shield_sages_shield_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2690" name="Grand Magister's Badge" icon="icon.shield_doom_shield_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2691" name="Crono's Badge" icon="icon.shield_another_worlds_shield_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2692" name="Sylvain's Letter" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2693" name="Mark of Sylvain" icon="icon.etc_coins_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2694" name="Jurek's List" icon="icon.etc_piece_of_paper_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2695" name="Monster Eye Destroyer's Skin" icon="icon.etc_leather_yellow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2696" name="Shaman's Necklace" icon="icon.etc_totem_necklace_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2697" name="Shackle's Scalp" icon="icon.etc_leather_brown_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2698" name="Mark of Jurek" icon="icon.etc_coins_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="2699" name="Cronos Letter" icon="icon.etc_letter_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

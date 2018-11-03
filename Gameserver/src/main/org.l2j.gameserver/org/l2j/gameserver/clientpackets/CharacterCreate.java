@@ -44,7 +44,7 @@ public final class CharacterCreate extends L2GameClientPacket {
     @Override
     protected void runImpl() {
         if (!isValidPlayerName(_name)) {
-            logger.debug("player name {} is invalid. creation failed.", _name);
+            logger.debug("reader name {} is invalid. creation failed.", _name);
             sendPacket(new CharCreateFail(CharCreateFail.REASON_16_ENG_CHARS));
             return;
         }
@@ -56,12 +56,12 @@ public final class CharacterCreate extends L2GameClientPacket {
         }
 
         if (CharNameTable.doesCharNameExist(_name)) {
-            logger.debug("player name  {} already exists. creation failed.", _name);
+            logger.debug("reader name  {} already exists. creation failed.", _name);
             sendPacket(new CharCreateFail(CharCreateFail.REASON_NAME_ALREADY_EXISTS));
             return;
         }
 
-        logger.debug("player name: {}  classId: {}", _name, _classId);
+        logger.debug("reader name: {}  classId: {}", _name, _classId);
 
         ClassTemplate template = PlayerTemplateTable.getInstance().getClassTemplate(_classId);
         if ((isNull(template))) {
@@ -74,7 +74,6 @@ public final class CharacterCreate extends L2GameClientPacket {
             sendPacket(new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED));
             return;
         }
-        CharCreateOk cco = new CharCreateOk();
-        sendPacket(cco);
+        sendPacket(new CharCreateOk());
     }
 }

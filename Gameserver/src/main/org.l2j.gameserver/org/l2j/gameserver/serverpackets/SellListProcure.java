@@ -10,7 +10,7 @@ import java.util.*;
 public class SellListProcure extends L2GameServerPacket {
 
     private final L2PcInstance _activeChar;
-    private final int _money;
+    private final long _money;
     private final Map<L2ItemInstance, Integer> _sellList = new HashMap<>();
     private List<CropProcure> _procureList;
     private final int _castle;
@@ -31,16 +31,16 @@ public class SellListProcure extends L2GameServerPacket {
     @Override
     protected final void writeImpl() {
         writeByte(0xE9);
-        writeInt(_money); // money
+        writeLong(_money); // money
         writeInt(0x00); // lease ?
         writeShort(_sellList.size()); // list size
 
         for (L2ItemInstance item : _sellList.keySet()) {
-            writeShort(item.getItem().getType1().getId());
+            writeShort(item.getItem().getType().ordinal());
             writeInt(item.getObjectId());
             writeInt(item.getItemId());
             writeInt(_sellList.get(item)); // count
-            writeShort(item.getItem().getType2().getId());
+            writeShort(item.getItem().getCommissionType().ordinal());
             writeShort(0); // unknown
             writeInt(0); // price, u shouldnt get any adena for crops, only raw materials
         }

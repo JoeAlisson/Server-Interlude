@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="1300" name="Apprentice's Rod" type="BLUNT" icon="icon.weapon_apprentices_rod_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>80</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="41" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="1301" name="Big Hammer" type="BLUNT" icon="icon.weapon_big_hammer_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>300</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="1302" name="Bec de Corbin" type="POLE" icon="icon.weapon_bech_de_corbin_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="150"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="1303" name="Lance" type="POLE" icon="icon.weapon_lancia_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="150"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="1304" name="Conjuror's Staff" type="BLUNT" icon="icon.weapon_apprentices_staff_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="1305" name="Knife" type="DAGGER" icon="icon.weapon_knife_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="26" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="1306" name="Crafted Dagger" type="DAGGER" icon="icon.weapon_knife_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="26" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="1307" name="Bow" type="BOW" icon="icon.weapon_bow_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>10</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="5000" width="0"/>
+        <consume mp="1" shot="1"/>
+    </weapon>
+    <armor id="1308" name="Compound Scale Mail" type="HEAVY" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="1309" name="Mithril Breastplate" type="HEAVY" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="1310" name="Tunic of Magic" type="MAGIC" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="1311" name="Puma Skin Shirt" type="LIGHT" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>300</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="1312" name="White Tunic" type="MAGIC" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="1313" name="Compound Scale Gaiters" type="HEAVY" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="1314" name="Mithril Gaiters" type="HEAVY" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>600</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="1315" name="Stockings of Magic" type="MAGIC" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="1316" name="Puma Skin Gaiters" type="LIGHT" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>400</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="1317" name="Dark Stockings" type="MAGIC" icon="icon.weapon_voodoo_doll_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="1318" name="Gloves" icon="icon.armor_gauntlet_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>80</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="1319" name="Leather Gloves" icon="icon.armor_gauntlet_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="1320" name="Quality Leather Gloves" icon="icon.armor_gauntlet_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="1321" name="Rip Gauntlets" icon="icon.armor_gauntlet_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="1322" name="Bracer" icon="icon.armor_gauntlet_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>80</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="1323" name="Leather Shoes" icon="icon.armor_iron_boots_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="1324" name="Low Boots" icon="icon.armor_iron_boots_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="1325" name="Leather Boots" icon="icon.armor_iron_boots_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>250</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="1326" name="Iron Boots" icon="icon.armor_iron_boots_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>300</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="1327" name="Boots" icon="icon.armor_iron_boots_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>200</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="1328" name="Shield of Grace" icon="icon.shield_leather_shield_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>300</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <armor id="1329" name="Shield of Victory" icon="icon.shield_small_shield_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>350</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <armor id="1330" name="Zubei's Shield" icon="icon.shield_buckler_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>500</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <armor id="1331" name="Otherworldly Shield" icon="icon.shield_round_shield_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>350</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <armor id="1332" name="Knight's Shield" icon="icon.shield_tower_shield_i00">
+        <price>0</price>
+        <restriction tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>500</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <weapon id="1333" name="Brandish" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_brandish_i00">
+        <price>54100</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2250</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="1334" name="Predator's Fang" commissionType="OTHER_ITEM" icon="icon.etc_claw_i00">
+        <price>0</price>
+        <restriction dropable="false" freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1335" name="Goblin Club" commissionType="OTHER_ITEM" icon="icon.weapon_club_i00">
+        <price>0</price>
+        <restriction dropable="false" freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1336" name="Glass Shard" commissionType="OTHER_ITEM" icon="icon.etc_crystal_ball_blue_i00">
+        <price>200</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>80</weight>
+    </item>
+    <item stackable="true" id="1337" name="Emerald" commissionType="OTHER_ITEM" icon="icon.etc_jewel_green_i00">
+        <price>10000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>80</weight>
+    </item>
+    <item stackable="true" id="1338" name="Blue Onyx" commissionType="OTHER_ITEM" icon="icon.etc_jewel_blue_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>80</weight>
+    </item>
+    <item stackable="true" id="1339" name="Onyx" commissionType="OTHER_ITEM" icon="icon.etc_bead_red_i00">
+        <price>600</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>80</weight>
+    </item>
+    <item stackable="true" id="1340" name="Silvery Leaf" commissionType="OTHER_ITEM" icon="icon.etc_feather_white_i00">
+        <price>20</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3</weight>
+    </item>
+    <item stackable="true" id="1341" name="Bone Arrow" type="ARROW" commissionType="OTHER_ITEM" icon="icon.etc_bone_quiver_i00">
+        <price>3</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <item stackable="true" id="1342" name="Steel Arrow" type="ARROW" commissionType="OTHER_ITEM" icon="icon.etc_fine_steel_quiver_i00">
+        <price>5</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4</weight>
+    </item>
+    <item stackable="true" id="1343" name="Silver Arrow" type="ARROW" commissionType="OTHER_ITEM" icon="icon.etc_silver_quiver_i00">
+        <price>7</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4</weight>
+    </item>
+    <item stackable="true" id="1344" name="Mithril Arrow" type="ARROW" commissionType="OTHER_ITEM" icon="icon.etc_mithril_quiver_i00">
+        <price>8</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3</weight>
+    </item>
+    <item stackable="true" id="1346" name="Golem's Stoneheart" icon="icon.etc_squares_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1347" name="Monster Eye's Meat" icon="icon.etc_bark_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1348" name="Basilisk's Gizzard" icon="icon.etc_pouch_yellow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1349" name="Anatomy Diagram" icon="icon.etc_spell_books_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1350" name="Zombie Head" icon="icon.etc_skull_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1351" name="Zombie Heart" icon="icon.etc_bodypart_heart_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1352" name="Zombie Liver" icon="icon.etc_bodypart_liver_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1353" name="Skull" icon="icon.etc_skull_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1354" name="Ribs" icon="icon.etc_rib_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1355" name="Deadman's Spine" icon="icon.etc_piece_bone_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1356" name="Deadman's Arm Bone" icon="icon.etc_piece_bone_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1357" name="Thigh Bone" icon="icon.etc_piece_bone_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1358" name="Deadman's Complete Skeleton" icon="icon.etc_ashes_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1359" name="Red Cross Badge" icon="icon.etc_jewel_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1360" name="Blue Cross Badge" icon="icon.etc_jewel_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1361" name="Black Cross Badge" icon="icon.etc_jewel_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1362" name="Spider's Carapace" icon="icon.item_normal72">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1363" name="Spider Silk" icon="icon.item_normal168">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1364" name="Spider's Poison Sac" icon="icon.item_canuse28">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1365" name="Broken Stoneheart" icon="icon.etc_plate_glay_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1366" name="Monster Eye's Lens" icon="icon.etc_crystal_ball_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1367" name="Wolf Claw" icon="icon.etc_claw_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1368" name="Imp Shackles" icon="icon.accessary_cerberuss_earing_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1369" name="Black Lion Badge" icon="icon.etc_badge_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1370" name="Spellbook: Aqua Swirl" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1371" name="Spellbook: Twister" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1372" name="Spellbook: Blaze" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1373" name="Magic Gem" commissionType="OTHER_ITEM" icon="icon.etc_crystal_ball_white_i00">
+        <price>600</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>80</weight>
+    </item>
+    <item stackable="true" id="1374" name="Greater Wind Walk Potion" type="POTION" commissionType="POTION" icon="icon.etc_lesser_potion_green_i00">
+        <price>3000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>500</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2034" level="1"/>
+    </item>
+    <item stackable="true" id="1375" name="Greater Haste Potion" type="POTION" commissionType="POTION" icon="icon.etc_lesser_potion_purple_i00">
+        <price>3400</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>500</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2035" level="1"/>
+    </item>
+    <weapon id="1376" name="Royal Guard Spear" type="POLE" commissionType="SPEAR" icon="icon.weapon_guard_spear_i00">
+        <price>3400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="101"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>300</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="1377" name="Spellbook: Poison Recovery" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1378" name="Spellbook: Divine Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>16883</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1379" name="Spellbook: Cure Bleeding" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
+        <price>1150</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1380" name="Spellbook: Entangle" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
+        <price>47865</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1381" name="Spellbook: Freezing Strike" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+        <price>39568</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1382" name="Spellbook: Power Break" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+        <price>32612</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1383" name="Spellbook: Poison" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1384" name="Spellbook: Sprint" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
+        <price>32612</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1385" name="Spellbook: Recharge" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>21437</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1386" name="Spellbook: Disrupt Undead" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1387" name="Spellbook: Poison Resistance" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>2450</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1388" name="Spellbook: Mental Shield" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>15048</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1389" name="Spellbook: Holy Weapon" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>1250</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1390" name="Spellbook: Regeneration" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>2450</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1391" name="Spellbook: Empower" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>15048</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1392" name="Spellbook: Berserker Spirit" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>43681</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1393" name="Spellbook: Quickness" commissionType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
+        <price>1250</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1394" name="Spellbook: Sleep" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>10603</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1397" name="Spellbook: Peace" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>2450</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1398" name="Spellbook: Focus" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>15048</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1399" name="Spellbook: Concentration" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>7461</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+</itemList>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="23968" name="Illusion 12">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23969" name="Illusion 13">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23970" name="Illusion 14">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23971" name="Illusion 15">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23972" name="Illusion 16">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23973" name="Illusion 17">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23974" name="Illusion 18">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23975" name="Illusion 19">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23976" name="Illusion 20">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23957" name="Illusion 1">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23958" name="Illusion 2">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23959" name="Illusion 3">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23960" name="Illusion 4">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23961" name="Illusion 5">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23962" name="Illusion 6">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23963" name="Illusion 7">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23964" name="Illusion 8">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23965" name="Illusion 9">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23966" name="Illusion 10">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="23967" name="Illusion 11">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

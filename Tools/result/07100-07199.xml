@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item id="7104" name="Guardian of Forbidden Knowledge - Part 1" icon="icon.etc_spellbook_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7105" name="Guardian of Forbidden Knowledge - Part 2" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7106" name="Guardian of Forbidden Knowledge - Part 2" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7107" name="Guardian of Forbidden Knowledge - Part 2" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7108" name="Guild's Secret Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7109" name="Guild's Secret Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7110" name="Research Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7111" name="Research Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7112" name="Research Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7117" name="Teleport: Talking Island Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="1"/>
+    </item>
+    <item stackable="true" id="7118" name="Teleport: Elven Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="2"/>
+    </item>
+    <item stackable="true" id="7119" name="Teleport: Dark Elf Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="3"/>
+    </item>
+    <item stackable="true" id="7120" name="Teleport: Orc Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="4"/>
+    </item>
+    <item stackable="true" id="7121" name="Teleport: Dwarven Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="5"/>
+    </item>
+    <item stackable="true" id="7122" name="Teleport: Gludin" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="6"/>
+    </item>
+    <item stackable="true" id="7123" name="Teleport: Gludio" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="7"/>
+    </item>
+    <item stackable="true" id="7124" name="Teleport: Dion" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="8"/>
+    </item>
+    <item stackable="true" id="7125" name="Teleport: Floran" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="9"/>
+    </item>
+    <item stackable="true" id="7126" name="Teleport: Giran" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="10"/>
+    </item>
+    <item stackable="true" id="7127" name="Teleport: Hardin's Academy" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i00">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="11"/>
+    </item>
+    <item stackable="true" id="7129" name="Teleport: Oren" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="13"/>
+    </item>
+    <item stackable="true" id="7130" name="Teleport: Ivory Tower" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="14"/>
+    </item>
+    <item stackable="true" id="7131" name="Teleport: Hunter's Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="15"/>
+    </item>
+    <item stackable="true" id="7139" name="Lizardman Bracelet" icon="icon.etc_leash_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7100" name="Importance of Strain" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7101" name="Danger of Ice Spirit" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7102" name="Guardian of Forbidden Knowledge - Part 1" icon="icon.etc_spellbook_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7103" name="Guardian of Forbidden Knowledge - Part 1" icon="icon.etc_spellbook_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

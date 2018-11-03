@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item id="46489" name="Pantheon's Soul Crystal - Stage 1" icon="icon.ensoul_big_mm">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item id="46474" name="Leona's Soul Crystal - Stage 1" icon="icon.ensoul_big_pp">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item id="46459" name="Mermoden's Soul Crystal - Stage 1" icon="icon.ensoul_big_m">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item id="46444" name="Kain's Soul Crystal - Stage 1" icon="icon.ensoul_big_p">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+</itemList>

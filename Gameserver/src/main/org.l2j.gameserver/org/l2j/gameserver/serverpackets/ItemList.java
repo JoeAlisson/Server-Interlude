@@ -42,7 +42,7 @@ public class ItemList extends L2GameServerPacket
 	{
 		for (L2ItemInstance temp : _items)
 		{
-			_log.debug("item:" + temp.getItem().getName() + " type1:" + temp.getItem().getType1() + " type2:" + temp.getItem().getType2());
+			_log.debug("item:" + temp.getItem().getName() + " type1:" + temp.getItem().getType() + " type2:" + temp.getItem().getCommissionType());
 		}
 	}
 	
@@ -62,15 +62,15 @@ public class ItemList extends L2GameServerPacket
 				continue;
 			}
 			
-			writeShort(temp.getItem().getType1().getId()); // item type1
+			writeShort(temp.getItem().getType().ordinal()); // item type1
 			
 			writeInt(temp.getObjectId());
 			writeInt(temp.getItemId());
-			writeInt(temp.getCount());
-			writeShort(temp.getItem().getType2().getId()); // item type2
+			writeLong(temp.getCount());
+			writeShort(temp.getItem().getCommissionType().ordinal()); // item type2
 			writeShort(temp.getCustomType1()); // item type3
 			writeShort(temp.isEquipped() ? 0x01 : 0x00);
-			writeInt(temp.getItem().getBodyPart().getId());
+			writeInt(0); // TODO temp.getItem().getBodyPart().getId());
 			
 			writeShort(temp.getEnchantLevel()); // enchant level
 			// race tickets
@@ -85,7 +85,7 @@ public class ItemList extends L2GameServerPacket
 				writeInt(0x00);
 			}
 			
-			writeInt(temp.getMana());
+			writeInt(temp.getTime());
 		}
 	}
 }

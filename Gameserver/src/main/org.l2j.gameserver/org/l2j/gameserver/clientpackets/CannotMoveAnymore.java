@@ -74,12 +74,12 @@ public final class CannotMoveAnymore extends L2GameClientPacket
 			((L2PcInstance) player).getParty().broadcastToPartyMembers(((L2PcInstance) player), new PartyMemberPosition((L2PcInstance) player));
 		}
 		
-		// player.stopMove();
+		// reader.stopMove();
 		//
 		// if (Config.DEBUG)
 		// logger.debug("client: x:"+_x+" y:"+_y+" z:"+_z+
-		// " server x:"+player.getX()+" y:"+player.getZ()+" z:"+player.getZ());
-		// StopMove smwl = new StopMove(player);
+		// " server x:"+reader.getX()+" y:"+reader.getZ()+" z:"+reader.getZ());
+		// StopMove smwl = new StopMove(reader);
 		// getClient().getActiveChar().sendPacket(smwl);
 		// getClient().getActiveChar().broadcastPacket(smwl);
 		//

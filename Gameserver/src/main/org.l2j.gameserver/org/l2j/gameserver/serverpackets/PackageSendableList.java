@@ -22,17 +22,17 @@ public class PackageSendableList extends L2GameServerPacket
 		writeByte(0xC3);
 		
 		writeInt(_playerObjId);
-		writeInt(getClient().getActiveChar().getAdena());
+		writeLong(getClient().getActiveChar().getAdena());
 		writeInt(_items.length);
 		for (L2ItemInstance item : _items) // format inside the for taken from SellList part use should be about the same
 		{
-			writeShort(item.getItem().getType1().getId());
+			writeShort(item.getItem().getType().ordinal());
 			writeInt(item.getObjectId());
 			writeInt(item.getItemId());
-			writeInt(item.getCount());
-			writeShort(item.getItem().getType2().getId());
+			writeLong(item.getCount());
+			writeShort(item.getItem().getCommissionType().ordinal());
 			writeShort(0x00);
-			writeInt(item.getItem().getBodyPart().getId());
+			writeInt(0); // TODO item.getItem().getBodyPart().getId());
 			writeShort(item.getEnchantLevel());
 			writeShort(0x00);
 			writeShort(0x00);

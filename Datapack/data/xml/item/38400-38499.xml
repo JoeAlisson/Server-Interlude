@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="38421" name="Blue Mackerel: One-handed Blunt Weapon" type="BLUNT" icon="icon.wp_fishing1">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="49920" name="Best Dye of MEN (MEN + 2 WIT - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49921" name="Best Dye of WIT (WIT + 2 INT - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49922" name="Best Dye of WIT (WIT + 2 MEN - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49923" name="Best Dye of STR (STR + 2 CON - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49924" name="Best Dye of STR (STR + 2 DEX - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49925" name="Best Dye of CON (CON + 2 STR - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49926" name="Best Dye of CON (CON + 2 DEX - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49927" name="Best Dye of DEX (DEX + 2 STR - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49928" name="Best Dye of DEX (DEX + 2 CON - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49929" name="Best Dye of INT (INT + 2 MEN - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49930" name="Best Dye of INT (INT + 2 WIT - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49931" name="Best Dye of MEN (MEN + 2 INT - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49932" name="Best Dye of MEN (MEN + 2 WIT - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49933" name="Best Dye of WIT (WIT + 2 INT - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49934" name="Best Dye of WIT (WIT + 2 MEN - 1)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49935" name="Best Dye of STR (STR + 3 CON - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49936" name="Best Dye of STR (STR + 3 DEX - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49937" name="Best Dye of CON (CON + 3 STR - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49938" name="Best Dye of CON (CON + 3 DEX - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49939" name="Best Dye of DEX (DEX + 3 STR - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49940" name="Best Dye of DEX (DEX + 3 CON - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49941" name="Best Dye of INT (INT + 3 MEN - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49942" name="Best Dye of INT (INT + 3 WIT - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49943" name="Best Dye of MEN (MEN + 3 INT - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49944" name="Best Dye of MEN (MEN + 3 WIT - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49945" name="Best Dye of WIT (WIT + 3 INT - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49946" name="Best Dye of WIT (WIT + 3 MEN - 3)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49947" name="Best Dye of STR (STR + 3 CON - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49948" name="Best Dye of STR (STR + 3 DEX - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49949" name="Best Dye of CON (CON + 3 STR - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49950" name="Best Dye of CON (CON + 3 DEX - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49951" name="Best Dye of DEX (DEX + 3 STR - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49952" name="Best Dye of DEX (DEX + 3 CON - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49953" name="Best Dye of INT (INT + 3 MEN - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49954" name="Best Dye of INT (INT + 3 WIT - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49955" name="Best Dye of MEN (MEN + 3 INT - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49956" name="Best Dye of MEN (MEN + 3 WIT - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49957" name="Best Dye of WIT (WIT + 3 INT - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49958" name="Best Dye of WIT (WIT + 3 MEN - 2)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49959" name="Best Dye of STR (STR + 3 CON - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49960" name="Best Dye of STR (STR + 3 DEX - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49961" name="Best Dye of CON (CON + 3 STR - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49962" name="Best Dye of CON (CON + 3 DEX - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49963" name="Best Dye of DEX (DEX + 3 STR - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49964" name="Best Dye of DEX (DEX + 3 CON - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49965" name="Best Dye of INT (INT + 3 MEN - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49966" name="Best Dye of INT (INT + 3 WIT - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49967" name="Best Dye of MEN (MEN + 3 INT - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49968" name="Best Dye of MEN (MEN + 3 WIT - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49969" name="Best Dye of WIT (WIT + 3 INT - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49970" name="Best Dye of WIT (WIT + 2 MEN - 1)" additionalName="3rd Class Transfer" icon="icon.lv3_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49971" name="Best Dye of STR (STR + 4 CON - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49972" name="Best Dye of STR (STR + 4 DEX - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49973" name="Best Dye of CON (CON + 4 STR - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49974" name="Best Dye of CON (CON + 4 DEX - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49975" name="Best Dye of DEX (DEX + 4 STR - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49976" name="Best Dye of DEX (DEX + 4 CON - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49977" name="Best Dye of INT (INT + 4 MEN - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49978" name="Best Dye of INT (INT + 4 WIT - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49979" name="Best Dye of MEN (MEN + 4 INT - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49980" name="Best Dye of MEN (MEN + 4 WIT - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49981" name="Best Dye of WIT (WIT + 4 INT - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49982" name="Best Dye of WIT (WIT + 4 MEN - 4)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49983" name="Best Dye of STR (STR + 4 CON - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49984" name="Best Dye of STR (STR + 4 DEX - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49985" name="Best Dye of CON (CON + 4 STR - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49986" name="Best Dye of CON (CON + 4 DEX - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49987" name="Best Dye of DEX (DEX + 4 STR - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49988" name="Best Dye of DEX (DEX + 4 CON - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49989" name="Best Dye of INT (INT + 4 MEN - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49990" name="Best Dye of INT (INT + 4 WIT - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49991" name="Best Dye of MEN (MEN + 4 INT - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49992" name="Best Dye of MEN (MEN + 4 WIT - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49993" name="Best Dye of WIT (WIT + 4 INT - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49994" name="Best Dye of WIT (WIT + 4 MEN - 3)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49995" name="Best Dye of STR (STR + 4 CON - 2)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49996" name="Best Dye of STR (STR + 4 DEX - 2)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49997" name="Best Dye of CON (CON + 4 STR - 2)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49998" name="Best Dye of CON (CON + 4 DEX - 2)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49999" name="Best Dye of DEX (DEX + 4 STR - 2)" additionalName="3rd Class Transfer" icon="icon.lv4_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49900" name="Best Dye of STR (STR + 2 DEX - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49901" name="Best Dye of CON (CON + 2 STR - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49902" name="Best Dye of CON (CON + 2 DEX - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49903" name="Best Dye of DEX (DEX + 2 STR - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49904" name="Best Dye of DEX (DEX + 2 CON - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49905" name="Best Dye of INT (INT + 2 MEN - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49906" name="Best Dye of INT (INT + 2 WIT - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49907" name="Best Dye of MEN (MEN + 2 INT - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49908" name="Best Dye of MEN (MEN + 2 WIT - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49909" name="Best Dye of WIT (WIT + 2 INT - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49910" name="Best Dye of WIT (WIT + 2 MEN - 3)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_wit">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49911" name="Best Dye of STR (STR + 2 CON - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49912" name="Best Dye of STR (STR + 2 DEX - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_str">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49913" name="Best Dye of CON (CON + 2 STR - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49914" name="Best Dye of CON (CON + 2 DEX - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_con">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49915" name="Best Dye of DEX (DEX + 2 STR - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49916" name="Best Dye of DEX (DEX + 2 CON - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_dex">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49917" name="Best Dye of INT (INT + 2 MEN - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49918" name="Best Dye of INT (INT + 2 WIT - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_int">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+    <item stackable="true" id="49919" name="Best Dye of MEN (MEN + 2 INT - 2)" additionalName="3rd Class Transfer" icon="icon.lv2_1_dye_men">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+    </item>
+</itemList>

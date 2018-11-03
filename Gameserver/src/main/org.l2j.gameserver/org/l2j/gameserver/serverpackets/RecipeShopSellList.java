@@ -26,7 +26,7 @@ public class RecipeShopSellList extends L2GameServerPacket
 			writeInt(_manufacturer.getObjectId());
 			writeInt((int) _manufacturer.getCurrentMp());// Creator's MP
 			writeInt(_manufacturer.getMaxMp());// Creator's MP
-			writeInt(_buyer.getAdena());// Buyer Adena
+			writeLong(_buyer.getAdena());// Buyer Adena
 			
 			int count = createList.size();
 			writeInt(count);

@@ -45,7 +45,7 @@ public final class L2WorldRegion {
     private static Logger _log = LoggerFactory.getLogger(L2WorldRegion.class.getName());
 
     /**
-     * L2ObjectHashSet(L2PlayableInstance) containing L2PlayableInstance of allTemplates player & summon in game in this L2WorldRegion
+     * L2ObjectHashSet(L2PlayableInstance) containing L2PlayableInstance of allTemplates reader & summon in game in this L2WorldRegion
      */
     private final L2ObjectSet<L2PlayableInstance> _allPlayable;
 
@@ -296,7 +296,7 @@ public final class L2WorldRegion {
 
     /**
      * Add the L2Object in the L2ObjectHashSet(L2Object) _visibleObjects containing L2Object visible in this L2WorldRegion <BR>
-     * If L2Object is a L2PcInstance, Add the L2PcInstance in the L2ObjectHashSet(L2PcInstance) _allPlayable containing L2PcInstance of allTemplates player in game in this L2WorldRegion <BR>
+     * If L2Object is a L2PcInstance, Add the L2PcInstance in the L2ObjectHashSet(L2PcInstance) _allPlayable containing L2PcInstance of allTemplates reader in game in this L2WorldRegion <BR>
      * Assert : object.getCurrentWorldRegion() == this
      *
      * @param object
@@ -314,7 +314,7 @@ public final class L2WorldRegion {
         if (object instanceof L2PlayableInstance) {
             _allPlayable.put((L2PlayableInstance) object);
 
-            // if this is the first player to enter the region, activate self & neighbors
+            // if this is the first reader to enter the region, activate self & neighbors
             if ((_allPlayable.size() == 1) && (!Config.GRIDS_ALWAYS_ON)) {
                 startActivation();
             }

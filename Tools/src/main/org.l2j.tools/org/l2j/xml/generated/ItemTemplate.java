@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
+// Gerado em: 2018.11.02 às 11:52:58 AM BRT 
 //
 
 
@@ -38,15 +38,15 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="time" type="{http://www.w3.org/2001/XMLSchema}long"/&gt;
  *         &lt;element name="weight" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="condition" type="{http://la2j.org}UseCondition" minOccurs="0"/&gt;
- *         &lt;element name="stat" type="{http://la2j.org}xmlTypeStat" maxOccurs="unbounded" minOccurs="0"/&gt;
- *         &lt;element name="skill" type="{http://la2j.org}xmlItemSkill" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="stat" type="{http://la2j.org}Stat" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="skill" type="{http://la2j.org}ItemSkill" maxOccurs="unbounded" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *       &lt;attribute name="id" use="required" type="{http://www.w3.org/2001/XMLSchema}int" /&gt;
  *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
- *       &lt;attribute name="additionalName" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="additionalName" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="type" type="{http://la2j.org}ItemType" default="NONE" /&gt;
  *       &lt;attribute name="commissionType" type="{http://la2j.org}CommissionType" /&gt;
- *       &lt;attribute name="icon" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="icon" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
@@ -90,19 +90,19 @@ public abstract class ItemTemplate {
     @XmlElement(defaultValue = "1")
     protected int weight;
     protected UseCondition condition;
-    protected List<XmlTypeStat> stat;
-    protected List<XmlItemSkill> skill;
+    protected List<Stat> stat;
+    protected List<ItemSkill> skill;
     @XmlAttribute(name = "id", required = true)
     protected int id;
     @XmlAttribute(name = "name", required = true)
     protected String name;
-    @XmlAttribute(name = "additionalName", required = true)
+    @XmlAttribute(name = "additionalName")
     protected String additionalName;
     @XmlAttribute(name = "type")
     protected ItemType type;
     @XmlAttribute(name = "commissionType")
     protected CommissionType commissionType;
-    @XmlAttribute(name = "icon", required = true)
+    @XmlAttribute(name = "icon")
     protected String icon;
 
     /**
@@ -299,13 +299,13 @@ public abstract class ItemTemplate {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link XmlTypeStat }
+     * {@link Stat }
      * 
      * 
      */
-    public List<XmlTypeStat> getStat() {
+    public List<Stat> getStat() {
         if (stat == null) {
-            stat = new ArrayList<XmlTypeStat>();
+            stat = new ArrayList<Stat>();
         }
         return this.stat;
     }
@@ -328,13 +328,13 @@ public abstract class ItemTemplate {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link XmlItemSkill }
+     * {@link ItemSkill }
      * 
      * 
      */
-    public List<XmlItemSkill> getSkill() {
+    public List<ItemSkill> getSkill() {
         if (skill == null) {
-            skill = new ArrayList<XmlItemSkill>();
+            skill = new ArrayList<ItemSkill>();
         }
         return this.skill;
     }

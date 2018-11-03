@@ -541,7 +541,7 @@ public class L2Clan {
     }
 
     private void removeMemberInDatabase(L2ClanMember member, long clanJoinExpiryTime, long clanCreateExpiryTime) {
-        //TODO verify if we really need to update like this. can't we only remove on runtime when player is online?
+        //TODO verify if we really need to update like this. can't we only remove on runtime when reader is online?
         CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
         repository.findById(member.getObjectId()).ifPresent( character -> {
             character.clearClanData(clanJoinExpiryTime, clanCreateExpiryTime);
@@ -660,7 +660,7 @@ public class L2Clan {
                 try {
                     if (temp.isOnline()) {
                         if (newSkill.getMinPledgeClass() <= temp.getPlayerInstance().getPledgeClass()) {
-                            temp.getPlayerInstance().addSkill(newSkill, false); // Skill is not saved to player DB
+                            temp.getPlayerInstance().addSkill(newSkill, false); // Skill is not saved to reader DB
                             temp.getPlayerInstance().sendPacket(new PledgeSkillListAdd(newSkill.getId(), newSkill.getLevel()));
                         }
                     }
@@ -677,7 +677,7 @@ public class L2Clan {
                 try {
                     if (temp.isOnline()) {
                         if (skill.getMinPledgeClass() <= temp.getPlayerInstance().getPledgeClass()) {
-                            temp.getPlayerInstance().addSkill(skill, false); // Skill is not saved to player DB
+                            temp.getPlayerInstance().addSkill(skill, false); // Skill is not saved to reader DB
                         }
                     }
                 } catch (NullPointerException e) {
@@ -694,7 +694,7 @@ public class L2Clan {
         for (L2Skill skill : _skills.values()) {
             // TODO add skills according to members class( in ex. don't add Clan Agillity skill's effect to lower class then Baron)
             if (skill.getMinPledgeClass() <= cm.getPledgeClass()) {
-                cm.addSkill(skill, false); // Skill is not saved to player DB
+                cm.addSkill(skill, false); // Skill is not saved to reader DB
             }
         }
     }
@@ -1607,7 +1607,7 @@ public class L2Clan {
             return;
         }
 
-        // the player should know that he has less sp now :p
+        // the reader should know that he has less sp now :p
         StatusUpdate su = new StatusUpdate(player.getObjectId());
         su.addAttribute(StatusUpdate.SP, player.getSp());
         player.sendPacket(su);

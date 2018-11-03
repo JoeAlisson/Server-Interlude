@@ -160,7 +160,7 @@ public class CursedWeaponsManager {
         // This entire for loop should NOT be necessary, since it is already handled by
         // CursedWeapon.endOfLife(). However, if we indeed *need* to duplicate it for safety,
         // then we'd better make sure that it FULLY cleans up inactive cursed weapons!
-        // Undesired effects result otherwise, such as player with no zariche but with karma
+        // Undesired effects result otherwise, such as reader with no zariche but with karma
         // or a lost-child entry in the cursedweapons table, without a corresponding one in items...
         for (CursedWeapon cw : _cursedWeapons.values()) {
             if (cw.isActivated()) {

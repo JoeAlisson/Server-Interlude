@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item id="36080" name="Nom Nom Candy" type="ENCHT_ATTR_RUNE" icon="icon.etc_whiteday_candy_i06">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9619"/>
+    </item>
+    <item stackable="true" id="36081" name="Yummy Gift Box" icon="icon.etc_candy_basket_i04_1">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9620"/>
+    </item>
+    <item id="36079" name="Yum Yum Candy" type="ENCHT_ATTR_RUNE" icon="icon.etc_whiteday_candy_i05">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9618"/>
+    </item>
+</itemList>

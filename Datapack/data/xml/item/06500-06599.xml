@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="6576" name="Blessed Scroll: Enchant Armor (D-grade)" type="BLESS_ENCHT_AM" commissionType="SCROLL_ENCHANT_ARMOR" icon="icon.etc_blessed_scrl_of_ench_am_d_i01">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>ENCHANT_SCROLL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2212"/>
+    </item>
+    <item stackable="true" id="6569" name="Blessed Scroll: Enchant Weapon (A-grade)" type="BLESS_ENCHT_WP" commissionType="SCROLL_ENCHANT_WEAPON" icon="icon.etc_blessed_scrl_of_ench_wp_a_i04">
+        <price>15000000</price>
+        <restriction freightable="false"/>
+        <handler>ENCHANT_SCROLL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2027"/>
+    </item>
+    <item stackable="true" id="6570" name="Blessed Scroll: Enchant Armor (A-grade)" type="BLESS_ENCHT_AM" commissionType="SCROLL_ENCHANT_ARMOR" icon="icon.etc_blessed_scrl_of_ench_am_a_i04">
+        <price>1800000</price>
+        <restriction freightable="false"/>
+        <handler>ENCHANT_SCROLL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2209"/>
+    </item>
+    <item stackable="true" id="6571" name="Blessed Scroll: Enchant Weapon (B-grade)" type="BLESS_ENCHT_WP" commissionType="SCROLL_ENCHANT_WEAPON" icon="icon.etc_blessed_scrl_of_ench_wp_b_i03">
+        <price>7000000</price>
+        <restriction freightable="false"/>
+        <handler>ENCHANT_SCROLL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2028"/>
+    </item>
+    <item stackable="true" id="6572" name="Blessed Scroll: Enchant Armor (B-grade)" type="BLESS_ENCHT_AM" commissionType="SCROLL_ENCHANT_ARMOR" icon="icon.etc_blessed_scrl_of_ench_am_b_i03">
+        <price>750000</price>
+        <restriction freightable="false"/>
+        <handler>ENCHANT_SCROLL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2210"/>
+    </item>
+    <item stackable="true" id="6573" name="Blessed Scroll: Enchant Weapon (C-grade)" type="BLESS_ENCHT_WP" commissionType="SCROLL_ENCHANT_WEAPON" icon="icon.etc_blessed_scrl_of_ench_wp_c_i02">
+        <price>3000000</price>
+        <restriction freightable="false"/>
+        <handler>ENCHANT_SCROLL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2029"/>
+    </item>
+    <item stackable="true" id="6574" name="Blessed Scroll: Enchant Armor (C-grade)" type="BLESS_ENCHT_AM" commissionType="SCROLL_ENCHANT_ARMOR" icon="icon.etc_blessed_scrl_of_ench_am_c_i02">
+        <price>350000</price>
+        <restriction freightable="false"/>
+        <handler>ENCHANT_SCROLL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2211"/>
+    </item>
+    <item stackable="true" id="6575" name="Blessed Scroll: Enchant Weapon (D-grade)" type="BLESS_ENCHT_WP" commissionType="SCROLL_ENCHANT_WEAPON" icon="icon.etc_blessed_scrl_of_ench_wp_d_i01">
+        <price>900000</price>
+        <restriction freightable="false"/>
+        <handler>ENCHANT_SCROLL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2030"/>
+    </item>
+</itemList>

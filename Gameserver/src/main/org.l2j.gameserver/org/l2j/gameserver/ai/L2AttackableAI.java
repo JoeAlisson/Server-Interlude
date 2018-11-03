@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.ai;
 
 import org.l2j.commons.Config;
@@ -27,8 +9,8 @@ import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.instancemanager.DimensionalRiftManager;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.actor.instance.*;
-import org.l2j.gameserver.model.entity.database.Weapon;
-import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 import java.util.concurrent.Future;
 
@@ -150,7 +132,7 @@ public class L2AttackableAI<T extends L2Attackable.AIAccessor> extends MovableAI
 				return false;
 			}
 			
-			// Check if player is an ally //TODO! [Nemesiss] it should be rather boolean or smth like that
+			// Check if reader is an ally //TODO! [Nemesiss] it should be rather boolean or smth like that
 			// Comparing String isnt good idea!
 			if ((me.getFactionId() == "varka") && ((L2PcInstance) target).isAlliedWithVarka())
 			{

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="20728" name="Summon Scroll: Lucky Lamp" icon="BranchSys.icon.br_lamp_orange_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="20792" name="Flavorful Cheese Hat" icon="BranchSys.icon.br_bigrat_cap_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="20793" name="Sweet Cheese Hat" icon="BranchSys.icon.br_goldrat_cap_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+</itemList>

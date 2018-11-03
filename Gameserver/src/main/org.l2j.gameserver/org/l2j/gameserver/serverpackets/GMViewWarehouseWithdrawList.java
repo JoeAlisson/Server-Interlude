@@ -9,7 +9,7 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 	private final L2ItemInstance[] _items;
 	private final String _playerName;
 	private final L2PcInstance _activeChar;
-	private final int _money;
+	private final long _money;
 	
 	public GMViewWarehouseWithdrawList(L2PcInstance cha)
 	{
@@ -24,22 +24,22 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 	{
 		writeByte(0x95);
 		writeString(_playerName);
-		writeInt(_money);
+		writeLong(_money);
 		writeShort(_items.length);
 		
 		for (L2ItemInstance item : _items)
 		{
-			writeShort(item.getItem().getType1().getId());
+			writeShort(item.getItem().getType().ordinal());
 			
 			writeInt(item.getObjectId());
 			writeInt(item.getItemId());
-			writeInt(item.getCount());
-			writeShort(item.getItem().getType2().getId());
+			writeLong(item.getCount());
+			writeShort(item.getItem().getCommissionType().ordinal());
 			writeShort(item.getCustomType1());
 			
-			switch (item.getItem().getType2())
+			switch (item.getItem().getCommissionType())
 			{
-				case TYPE2_WEAPON:
+				/* TODO case TYPE2_WEAPON:
 				{
 					writeInt(item.getItem().getBodyPart().getId());
 					writeShort(item.getEnchantLevel());
@@ -60,12 +60,12 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 					writeShort(0x00);
 					writeShort(0x00);
 					break;
-				}
+				}*/
 			}
 			
 			writeInt(item.getObjectId());
 			
-			switch (item.getItem().getType2())
+			/*switch (item.getItem().getType2())
 			{
 				case TYPE2_WEAPON:
 				{
@@ -93,7 +93,7 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 					writeInt(0);
 					writeInt(0);
 				}
-			}
+			}*/
 		}
 	}
 }

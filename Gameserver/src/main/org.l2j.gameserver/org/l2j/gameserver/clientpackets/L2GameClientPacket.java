@@ -52,7 +52,7 @@ public abstract class L2GameClientPacket extends ReadablePacket<L2GameClient> {
 			if ((this instanceof MoveBackwardToLocation) || (this instanceof AttackRequest) || (this instanceof RequestMagicSkillUse))
 			// could include pickup and talk too, but less is better
 			{
-				// Removes onspawn protection - player has faster computer than
+				// Removes onspawn protection - reader has faster computer than
 				// average
 				if (getClient().getActiveChar() != null) {
 					getClient().getActiveChar().onActionRequest();

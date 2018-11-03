@@ -73,7 +73,7 @@ public class PcStatus extends PlayableStatus
 					return;
 				}
 				
-				// cancel duel if player got hit by another player, that is not part of the duel
+				// cancel duel if reader got hit by another reader, that is not part of the duel
 				if (((L2PcInstance) attacker).getDuelId() != getActiveChar().getDuelId())
 				{
 					getActiveChar().setDuelState(Duel.DUELSTATE_INTERRUPTED);
@@ -118,7 +118,7 @@ public class PcStatus extends PlayableStatus
 				{
 					summon.reduceCurrentHp(tDmg, attacker);
 					value -= tDmg;
-					fullValue = (int) value; // reduce the annouced value here as player will get a message about summon dammage
+					fullValue = (int) value; // reduce the annouced value here as reader will get a message about summon dammage
 				}
 			}
 			

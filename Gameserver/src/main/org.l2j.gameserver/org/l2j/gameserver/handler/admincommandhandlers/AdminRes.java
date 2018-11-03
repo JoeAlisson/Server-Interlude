@@ -103,7 +103,7 @@ public class AdminRes implements IAdminCommandHandler
 		
 		if (resParam != null)
 		{
-			// Check if a player name was specified as a param.
+			// Check if a reader name was specified as a param.
 			L2PcInstance plyr = L2World.getInstance().getPlayer(resParam);
 			
 			if (plyr != null)
@@ -127,7 +127,7 @@ public class AdminRes implements IAdminCommandHandler
 				}
 				catch (NumberFormatException e)
 				{
-					activeChar.sendMessage("Enter a valid player name or radius.");
+					activeChar.sendMessage("Enter a valid reader name or radius.");
 					return;
 				}
 			}
@@ -202,7 +202,7 @@ public class AdminRes implements IAdminCommandHandler
 			return;
 		}
 		
-		// If the target is a player, then restore the XP lost on death.
+		// If the target is a reader, then restore the XP lost on death.
 		if (targetChar instanceof L2PcInstance)
 		{
 			((L2PcInstance) targetChar).restoreExp(100.0);

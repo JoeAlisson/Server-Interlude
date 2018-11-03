@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.10.24 às 08:00:04 AM BRT 
+// Gerado em: 2018.11.03 às 12:02:18 PM BRT 
 //
 
 
@@ -27,6 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;attribute name="horizontal" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
  *       &lt;attribute name="distance" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
  *       &lt;attribute name="width" type="{http://www.w3.org/2001/XMLSchema}int" default="0" /&gt;
+ *       &lt;attribute name="random" type="{http://www.w3.org/2001/XMLSchema}int" default="1" /&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
@@ -46,6 +47,8 @@ public class Damage {
     protected Integer distance;
     @XmlAttribute(name = "width")
     protected Integer width;
+    @XmlAttribute(name = "random")
+    protected Integer random;
 
     /**
      * Obtém o valor da propriedade vertical.
@@ -157,6 +160,34 @@ public class Damage {
      */
     public void setWidth(Integer value) {
         this.width = value;
+    }
+
+    /**
+     * Obtém o valor da propriedade random.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
+     */
+    public int getRandom() {
+        if (random == null) {
+            return  1;
+        } else {
+            return random;
+        }
+    }
+
+    /**
+     * Define o valor da propriedade random.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
+     */
+    public void setRandom(Integer value) {
+        this.random = value;
     }
 
 }

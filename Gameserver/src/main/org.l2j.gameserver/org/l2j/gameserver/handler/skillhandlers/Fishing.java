@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.handler.skillhandlers;
 
 import org.l2j.commons.Config;
@@ -25,15 +7,14 @@ import org.l2j.gameserver.instancemanager.FishingZoneManager;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.model.zone.type.L2FishingZone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.ItemList;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Util;
-
 
 public class Fishing implements ISkillHandler
 {
@@ -85,7 +66,7 @@ public class Fishing implements ISkillHandler
 		if (aimingTo != null)
 		{
 			z = aimingTo.getWaterZ();
-			// player.sendMessage("Hook x,y: " + x + "," + y + " - Water Z, Player Z:" + z + ", " + player.getZ()); //debug line, shows hook landing related coordinates. Uncoment if needed.
+			// reader.sendMessage("Hook x,y: " + x + "," + y + " - Water Z, Player Z:" + z + ", " + reader.getZ()); //debug line, shows hook landing related coordinates. Uncoment if needed.
 		}
 		else
 		{
@@ -142,7 +123,7 @@ public class Fishing implements ISkillHandler
 			}
 		}
 		Weapon weaponItem = player.getActiveWeaponItem();
-		if (((weaponItem == null) || (weaponItem.getType() != ItemType.ROD)))
+		if (((weaponItem == null) || (weaponItem.getType() != ItemType.FISHINGROD)))
 		{
 			// Fishing poles are not installed
 			player.sendPacket(new SystemMessage(SystemMessageId.FISHING_POLE_NOT_EQUIPPED));

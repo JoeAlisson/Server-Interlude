@@ -67,7 +67,7 @@ public final class RequestRefineCancel extends L2GameClientPacket
 		
 		// get the price
 		int price = 0;
-		switch (targetItem.getItem().getCrystalType())
+		switch (targetItem.getItem().getCrystalInfo().getType())
 		{
 			case C:
 				if (targetItem.getCrystalCount() < 1720)

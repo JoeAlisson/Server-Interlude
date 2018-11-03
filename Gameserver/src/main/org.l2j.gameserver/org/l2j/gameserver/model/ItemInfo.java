@@ -1,29 +1,7 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 
-
-/**
- * Get allTemplates information from L2ItemInstance to generate ItemInfo.<BR>
- * <BR>
- */
 public class ItemInfo
 {
 	/** Identifier of the L2ItemInstance */
@@ -39,7 +17,7 @@ public class ItemInfo
 	private int _augmentation;
 	
 	/** The quantity of L2ItemInstance */
-	private int _count;
+	private long _count;
 	
 	/** The price of the L2ItemInstance */
 	private int _price;
@@ -118,7 +96,7 @@ public class ItemInfo
 		}
 		
 		// Get shadow item mana
-		_mana = item.getMana();
+		_mana = item.getTime();
 	}
 	
 	public ItemInfo(L2ItemInstance item, int change)
@@ -161,7 +139,7 @@ public class ItemInfo
 		_change = change;
 		
 		// Get shadow item mana
-		_mana = item.getMana();
+		_mana = item.getTime();
 	}
 	
 	public int getObjectId()
@@ -184,7 +162,7 @@ public class ItemInfo
 		return _augmentation;
 	}
 	
-	public int getCount()
+	public long getCount()
 	{
 		return _count;
 	}

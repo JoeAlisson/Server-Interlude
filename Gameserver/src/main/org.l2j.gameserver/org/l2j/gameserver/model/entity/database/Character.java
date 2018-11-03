@@ -541,4 +541,9 @@ public class Character extends Entity<Integer> {
         apprentice = 0;
         sponsor = 0;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s [%s]", name, account);
+    }
 }

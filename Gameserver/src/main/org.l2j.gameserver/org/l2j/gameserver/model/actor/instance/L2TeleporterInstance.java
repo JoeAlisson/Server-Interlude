@@ -224,7 +224,7 @@ public final class L2TeleporterInstance extends L2FolkInstance
 			{
 				if (Config.DEBUG)
 				{
-					_log.debug("Teleporting player " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
+					_log.debug("Teleporting reader " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
 				}
 				player.teleToLocation(list.getLocX(), list.getLocY(), list.getLocZ(), true);
 			}
@@ -232,7 +232,7 @@ public final class L2TeleporterInstance extends L2FolkInstance
 			{
 				if (Config.DEBUG)
 				{
-					_log.debug("Teleporting player " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
+					_log.debug("Teleporting reader " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
 				}
 				player.teleToLocation(list.getLocX(), list.getLocY(), list.getLocZ(), true);
 			}
@@ -254,7 +254,7 @@ public final class L2TeleporterInstance extends L2FolkInstance
 		{
 			return COND_BUSY_BECAUSE_OF_SIEGE; // Busy because of siege
 		}
-		else if (player.getClan() != null) // Teleporter is on castle ground and player is in a clan
+		else if (player.getClan() != null) // Teleporter is on castle ground and reader is in a clan
 		{
 			if (getCastle().getOwnerId() == player.getClanId())
 			{

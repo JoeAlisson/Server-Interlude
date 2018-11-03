@@ -34,15 +34,15 @@ public class GMViewItemList extends L2GameServerPacket
 				continue;
 			}
 			
-			writeShort(temp.getItem().getType1().getId());
+			writeShort(temp.getItem().getType().ordinal());
 			
 			writeInt(temp.getObjectId());
 			writeInt(temp.getItemId());
-			writeInt(temp.getCount());
-			writeShort(temp.getItem().getType2().getId());
+			writeLong(temp.getCount());
+			writeShort(temp.getItem().getCommissionType().ordinal());
 			writeShort(temp.getCustomType1());
 			writeShort(temp.isEquipped() ? 0x01 : 0x00);
-			writeInt(temp.getItem().getBodyPart().getId());
+			writeInt(0); // TODO temp.getItem().getBodyPart().getId());
 			writeShort(temp.getEnchantLevel());
 			writeShort(temp.getCustomType2());
 			if (temp.isAugmented())

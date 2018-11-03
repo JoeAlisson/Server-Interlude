@@ -35,7 +35,7 @@ import java.util.StringTokenizer;
 
 
 /**
- * This class handles following admin commands: - kill = kills target L2Character - kill_monster = kills target non-player - kill <radius> = If radius is specified, then ALL players only in that radius will be killed. - kill_monster <radius> = If radius is specified, then ALL non-players only in
+ * This class handles following admin commands: - kill = kills target L2Character - kill_monster = kills target non-reader - kill <radius> = If radius is specified, then ALL players only in that radius will be killed. - kill_monster <radius> = If radius is specified, then ALL non-players only in
  * that radius will be killed.
  * @version $Revision: 1.2.4.5 $ $Date: 2007/07/31 10:06:06 $
  */

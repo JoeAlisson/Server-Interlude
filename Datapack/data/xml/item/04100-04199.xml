@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="4100" name="Sealed Zubei's Gauntlet Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
+        <price>3843</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4101" name="Zubei's Shield Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
+        <price>3450</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4102" name="Zubei's Helmet Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>4453</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4103" name="Pata Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>32950</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4104" name="Great Sword Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>34950</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4105" name="Heavy War Axe Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>34950</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4106" name="Spirit's Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>35533</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4107" name="Keshanberk Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>35500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4108" name="Sword of Valhalla Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>35500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4109" name="Kris Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>35500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4110" name="Twilight Knife Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>35500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4111" name="Arthro Nail Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>34950</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4112" name="Dark Elven Longbow Shaft" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
+        <price>35325</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4113" name="Great Axe Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>38867</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4114" name="Damascus Sword Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>45692</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4115" name="Lance Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>45846</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4116" name="Deadman's Glory Stone" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>45769</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4117" name="Art of Battle Axe Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>45769</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4118" name="Evil Spirit Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>48308</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4119" name="Demon's Dagger Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>45692</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4120" name="Bellion Cestus Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>45769</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4121" name="Bow of Peril Shaft" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
+        <price>45923</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="4122" name="Recipe: Maestro Holder" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>4500</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>474</recipeId>
+    </item>
+    <item stackable="true" id="4123" name="Recipe: Maestro Anvil Lock" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>4500</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>475</recipeId>
+    </item>
+    <item stackable="true" id="4124" name="Recipe: Craftsman Mold" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>4500</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>476</recipeId>
+    </item>
+    <item stackable="true" id="4125" name="Recipe: Maestro Mold" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>4500</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>477</recipeId>
+    </item>
+    <item stackable="true" id="4126" name="Recipe: Adamantite Earring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>12120</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>329</recipeId>
+    </item>
+    <item stackable="true" id="4127" name="Recipe: Adamantite Ring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>8080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>331</recipeId>
+    </item>
+    <item stackable="true" id="4128" name="Recipe: Adamantite Necklace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>333</recipeId>
+    </item>
+    <item stackable="true" id="4129" name="Recipe: Black Ore Earring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>18480</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>335</recipeId>
+    </item>
+    <item stackable="true" id="4130" name="Recipe: Black Ore Ring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>12320</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>337</recipeId>
+    </item>
+    <item stackable="true" id="4131" name="Recipe: Black Ore Necklace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>24600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>339</recipeId>
+    </item>
+    <item stackable="true" id="4132" name="Recipe: Compound Shield" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>5160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>340</recipeId>
+    </item>
+    <item stackable="true" id="4133" name="Recipe: Zubei's Breastplate" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>41600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>342</recipeId>
+    </item>
+    <item stackable="true" id="4134" name="Recipe: Zubei's Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>26000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>344</recipeId>
+    </item>
+    <item stackable="true" id="4135" name="Recipe: Implosion Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>346</recipeId>
+    </item>
+    <item stackable="true" id="4136" name="Recipe: Boots of Silence" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>348</recipeId>
+    </item>
+    <item stackable="true" id="4137" name="Recipe: Guardian's Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>350</recipeId>
+    </item>
+    <item stackable="true" id="4138" name="Recipe: Paradia Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>352</recipeId>
+    </item>
+    <item stackable="true" id="4139" name="Recipe: Elemental Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>354</recipeId>
+    </item>
+    <item stackable="true" id="4140" name="Recipe: Boots of Grace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>356</recipeId>
+    </item>
+    <item stackable="true" id="4141" name="Recipe: Avadon Breastplate" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>41600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>358</recipeId>
+    </item>
+    <item stackable="true" id="4142" name="Recipe: Avadon Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>26000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>360</recipeId>
+    </item>
+    <item stackable="true" id="4143" name="Recipe: Zubei's Leather Shirt" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>31200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>362</recipeId>
+    </item>
+    <item stackable="true" id="4144" name="Recipe: Zubei's Leather Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>19460</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>364</recipeId>
+    </item>
+    <item stackable="true" id="4145" name="Recipe: Avadon Leather Armor" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>45600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>366</recipeId>
+    </item>
+    <item stackable="true" id="4146" name="Recipe: Tunic of Zubei" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>31200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>368</recipeId>
+    </item>
+    <item stackable="true" id="4147" name="Recipe: Stockings of Zubei" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>19460</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>370</recipeId>
+    </item>
+    <item stackable="true" id="4148" name="Recipe: Avadon Robe" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>45600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>372</recipeId>
+    </item>
+    <item stackable="true" id="4149" name="Recipe: Avadon Circlet" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>15560</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>374</recipeId>
+    </item>
+    <item stackable="true" id="4150" name="Recipe: Sealed Avadon Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>376</recipeId>
+    </item>
+    <item stackable="true" id="4151" name="Recipe: Chain Gloves of Silence" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>378</recipeId>
+    </item>
+    <item stackable="true" id="4152" name="Recipe: Guardian's Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>380</recipeId>
+    </item>
+    <item stackable="true" id="4153" name="Recipe: Gloves of Blessing" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>382</recipeId>
+    </item>
+    <item stackable="true" id="4154" name="Recipe: Doom Shield" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16900</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>384</recipeId>
+    </item>
+    <item stackable="true" id="4155" name="Recipe: Blue Wolf Breastplate" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>64400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>386</recipeId>
+    </item>
+    <item stackable="true" id="4156" name="Recipe: Boots of Blessing" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>388</recipeId>
+    </item>
+    <item stackable="true" id="4157" name="Recipe: Blue Wolf Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>40200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>390</recipeId>
+    </item>
+    <item stackable="true" id="4158" name="Recipe: Doom Plate Armor" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>94200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>392</recipeId>
+    </item>
+    <item stackable="true" id="4159" name="Recipe: Blue Wolf Leather Armor" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>70600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>394</recipeId>
+    </item>
+    <item stackable="true" id="4160" name="Recipe: Leather Armor of Doom" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>70600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>396</recipeId>
+    </item>
+    <item stackable="true" id="4161" name="Recipe: Blue Wolf Tunic" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>48200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>398</recipeId>
+    </item>
+    <item stackable="true" id="4162" name="Recipe: Tunic of Doom" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>48200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>400</recipeId>
+    </item>
+    <item stackable="true" id="4163" name="Recipe: Blue Wolf Stockings" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>30200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>402</recipeId>
+    </item>
+    <item stackable="true" id="4164" name="Recipe: Stockings of Doom" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>30200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>404</recipeId>
+    </item>
+    <item stackable="true" id="4165" name="Recipe: Blue Wolf Helmet" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>24200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>406</recipeId>
+    </item>
+    <item stackable="true" id="4166" name="Recipe: Doom Helmet" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>24200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>408</recipeId>
+    </item>
+    <item stackable="true" id="4167" name="Recipe: Sealed Blue Wolf Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>410</recipeId>
+    </item>
+    <item stackable="true" id="4168" name="Recipe: Sealed Doom Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>412</recipeId>
+    </item>
+    <item stackable="true" id="4169" name="Recipe: Elemental Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>414</recipeId>
+    </item>
+    <item stackable="true" id="4170" name="Recipe: Gloves of Grace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>416</recipeId>
+    </item>
+    <item stackable="true" id="4171" name="Recipe: Implosion Gauntlets" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>418</recipeId>
+    </item>
+    <item stackable="true" id="4172" name="Recipe: Paradia Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>420</recipeId>
+    </item>
+    <item stackable="true" id="4173" name="Recipe: Sealed Blue Wolf Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>422</recipeId>
+    </item>
+    <item stackable="true" id="4174" name="Recipe: Sealed Zubei's Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>424</recipeId>
+    </item>
+    <item stackable="true" id="4175" name="Recipe: Sealed Avadon Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>426</recipeId>
+    </item>
+    <item stackable="true" id="4176" name="Recipe: Sealed Doom Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>16080</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>428</recipeId>
+    </item>
+    <item stackable="true" id="4177" name="Recipe: Sealed Zubei's Gauntlets" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10380</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>430</recipeId>
+    </item>
+    <item stackable="true" id="4178" name="Recipe: Zubei's Shield" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>10900</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>432</recipeId>
+    </item>
+    <item stackable="true" id="4179" name="Recipe: Zubei's Helmet" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>15560</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>434</recipeId>
+    </item>
+    <item stackable="true" id="4180" name="Recipe: Silver Arrow" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>1800</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>435</recipeId>
+    </item>
+    <item stackable="true" id="4181" name="Recipe: Pata" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>156600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>437</recipeId>
+    </item>
+    <item stackable="true" id="4182" name="Recipe: Great Sword" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>439</recipeId>
+    </item>
+    <item stackable="true" id="4183" name="Recipe: Heavy War Axe" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>441</recipeId>
+    </item>
+    <item stackable="true" id="4184" name="Recipe: Spirit's Staff" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>443</recipeId>
+    </item>
+    <item stackable="true" id="4185" name="Recipe: Keshanberk" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>445</recipeId>
+    </item>
+    <item stackable="true" id="4186" name="Recipe: Sword of Valhalla" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>447</recipeId>
+    </item>
+    <item stackable="true" id="4187" name="Recipe: Kris" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>449</recipeId>
+    </item>
+    <item stackable="true" id="4188" name="Recipe: Twilight Knife" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>451</recipeId>
+    </item>
+    <item stackable="true" id="4189" name="Recipe: Arthro Nail" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>453</recipeId>
+    </item>
+    <item stackable="true" id="4190" name="Recipe: Dark Elven Longbow" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>455</recipeId>
+    </item>
+    <item stackable="true" id="4191" name="Recipe: Great Axe" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>173600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>457</recipeId>
+    </item>
+    <item stackable="true" id="4192" name="Recipe: Damascus Sword" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>262000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>459</recipeId>
+    </item>
+    <item stackable="true" id="4193" name="Recipe: Lance" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>262000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>461</recipeId>
+    </item>
+    <item stackable="true" id="4194" name="Recipe: Deadman's Glory" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>262000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>463</recipeId>
+    </item>
+    <item stackable="true" id="4195" name="Recipe: Art of Battle Axe" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>262000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>465</recipeId>
+    </item>
+    <item stackable="true" id="4196" name="Recipe: Staff of Evil Spirits" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>262000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>467</recipeId>
+    </item>
+    <item stackable="true" id="4197" name="Recipe: Demon's Dagger" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>262000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>469</recipeId>
+    </item>
+    <item stackable="true" id="4198" name="Recipe: Bellion Cestus" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>262000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>471</recipeId>
+    </item>
+    <item stackable="true" id="4199" name="Recipe: Bow of Peril" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>262000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>473</recipeId>
+    </item>
+</itemList>

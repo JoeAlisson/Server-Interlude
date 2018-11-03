@@ -55,10 +55,10 @@ public class L2WeddingManagerInstance extends L2NpcInstance
 		// Check if the L2PcInstance already target the L2NpcInstance
 		if (this != player.getTarget())
 		{
-			// Set the target of the L2PcInstance player
+			// Set the target of the L2PcInstance reader
 			player.setTarget(this);
 			
-			// Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+			// Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
 			player.sendPacket(new MyTargetSelected(getObjectId(), 0));
 			
 			// Send a Server->Client packet ValidateLocation to correct the L2NpcInstance position and heading on the client
@@ -101,7 +101,7 @@ public class L2WeddingManagerInstance extends L2NpcInstance
 		String filename = "data/html/mods/Wedding_start.htm";
 		String replace = "";
 		
-		// if player has no partner
+		// if reader has no partner
 		if (player.getPartnerId() == 0)
 		{
 			filename = "data/html/mods/Wedding_nopartner.htm";

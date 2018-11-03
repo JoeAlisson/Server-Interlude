@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="23173" name="Alluring Swimsuit" type="HEAVY" icon="BranchSys3.icon1.g_co_swimsuit_event_02">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>FULL_BODY</bodyPart>
+    </armor>
+</itemList>

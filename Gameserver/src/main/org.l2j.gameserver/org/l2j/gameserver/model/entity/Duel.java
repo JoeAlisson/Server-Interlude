@@ -283,7 +283,7 @@ public class Duel {
     // Method - Public
 
     /**
-     * Check if a player engaged in pvp combat (only for 1on1 duels)
+     * Check if a reader engaged in pvp combat (only for 1on1 duels)
      *
      * @param sendMessage
      * @return returns true if a DUELIST is engaged in Pvp combat
@@ -307,7 +307,7 @@ public class Duel {
      * Starts the duel
      */
     public void startDuel() {
-        // Save player Conditions
+        // Save reader Conditions
         savePlayerConditions();
 
         if (_playerA.isInDuel() || _playerB.isInDuel()) {
@@ -376,7 +376,7 @@ public class Duel {
     }
 
     /**
-     * Save the current player condition: hp, mp, cp, location
+     * Save the current reader condition: hp, mp, cp, location
      */
     public void savePlayerConditions() {
         if (_partyDuel) {
@@ -393,7 +393,7 @@ public class Duel {
     }
 
     /**
-     * Restore player conditions
+     * Restore reader conditions
      *
      * @param abnormalDuelEnd was the duel canceled?
      */
@@ -424,7 +424,7 @@ public class Duel {
             return;
         }
 
-        // restore player conditions
+        // restore reader conditions
         for (PlayerCondition e : _playerConditions) {
             e.restoreCondition();
         }
@@ -449,7 +449,7 @@ public class Duel {
     }
 
     /**
-     * Get the player that requestet the duel
+     * Get the reader that requestet the duel
      *
      * @return duel requester
      */
@@ -458,9 +458,9 @@ public class Duel {
     }
 
     /**
-     * Get the player that was challenged
+     * Get the reader that was challenged
      *
-     * @return challenged player
+     * @return challenged reader
      */
     public L2PcInstance getPlayerB() {
         return _playerB;
@@ -760,7 +760,7 @@ public class Duel {
         else if (getRemainingTime() <= 0) {
             return DuelResultEnum.Timeout;
         }
-        // Has a player been declared winner yet?
+        // Has a reader been declared winner yet?
         else if (_playerA.getDuelState() == DUELSTATE_WINNER) {
             // If there is a Winner already there should be no more fighting going on
             stopFighting();
@@ -773,7 +773,7 @@ public class Duel {
 
         // More end duel conditions for 1on1 duels
         else if (!_partyDuel) {
-            // Duel was interrupted e.g.: player was attacked by mobs / other players
+            // Duel was interrupted e.g.: reader was attacked by mobs / other players
             if ((_playerA.getDuelState() == DUELSTATE_INTERRUPTED) || (_playerB.getDuelState() == DUELSTATE_INTERRUPTED)) {
                 return DuelResultEnum.Canceled;
             }
@@ -800,7 +800,7 @@ public class Duel {
     /**
      * Register a surrender request
      *
-     * @param player the surrendering player
+     * @param player the surrendering reader
      */
     public void doSurrender(L2PcInstance player) {
         // already received a surrender request
@@ -844,12 +844,12 @@ public class Duel {
     }
 
     /**
-     * This function is called whenever a player was defeated in a duel
+     * This function is called whenever a reader was defeated in a duel
      *
      * @param player
      */
     public void onPlayerDefeat(L2PcInstance player) {
-        // Set player as defeated
+        // Set reader as defeated
         player.setDuelState(DUELSTATE_DEAD);
 
         if (_partyDuel) {
@@ -873,7 +873,7 @@ public class Duel {
             }
         } else {
             if ((player != _playerA) && (player != _playerB)) {
-                _log.warn("Error in onPlayerDefeat(): player is not part of this 1vs1 duel");
+                _log.warn("Error in onPlayerDefeat(): reader is not part of this 1vs1 duel");
             }
 
             if (_playerA == player) {
@@ -885,7 +885,7 @@ public class Duel {
     }
 
     /**
-     * This function is called whenever a player leaves a party
+     * This function is called whenever a reader leaves a party
      *
      * @param player
      */
@@ -895,7 +895,7 @@ public class Duel {
             return;
         }
 
-        // this player is leaving his party during party duel
+        // this reader is leaving his party during party duel
         // if hes either playerA or playerB cancel the duel and port the players back
         if ((player == _playerA) || (player == _playerB)) {
             for (PlayerCondition e : _playerConditions) {
@@ -906,7 +906,7 @@ public class Duel {
             _playerA = null;
             _playerB = null;
         } else
-        // teleport the player back & delete his PlayerCondition record
+        // teleport the reader back & delete his PlayerCondition record
         {
             for (PlayerCondition e : _playerConditions) {
                 if (e.getPlayer() == player) {

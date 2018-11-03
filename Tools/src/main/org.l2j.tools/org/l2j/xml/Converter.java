@@ -5,12 +5,16 @@ import org.l2j.xml.generated.ObjectFactory;
 import org.l2j.xml.old.generated.*;
 import org.l2j.xml.old.generated.ItemType;
 
-import javax.xml.bind.JAXBException;
+import javax.xml.XMLConstants;
+import javax.xml.bind.*;
+import javax.xml.validation.SchemaFactory;
 import java.io.IOException;
+import java.io.Serializable;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
@@ -19,30 +23,66 @@ import static java.util.Objects.nonNull;
 
 public class Converter {
 
-    static Map<String, ItemList>  converted = new HashMap<>();
+    static Map<String, ItemList> converted = new HashMap<>();
     static ObjectFactory factory = new ObjectFactory();
+    private static JAXBContext context;
+    private static Marshaller marsh;
+    private static List<String> onClient;
 
     public static void main(String[] args) throws JAXBException, IOException {
-        OldXmlReader reader = new OldXmlReader();
-        var dir = Paths.get("xml");
-        Files.list(dir).forEach(path -> {
-            processPath(reader, path);
-        });
+        try {
+            onClient = Files.readAllLines(Paths.get("itemname_classic-eu.csv"));
+            SchemaFactory factory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+            var schema = factory.newSchema(Paths.get("schema/item.xsd").toFile());
+
+            context = JAXBContext.newInstance(ItemList.class);
+            marsh = context.createMarshaller();
+            marsh.setSchema(schema);
+            marsh.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            marsh.setProperty(Marshaller.JAXB_SCHEMA_LOCATION, "http://la2j.org ../schema/item.xsd");
+            marsh.setEventHandler(new ValidationEventHandler() {
+                @Override
+                public boolean handleEvent(ValidationEvent event) {
+                    System.out.println(event);
+                    System.out.println(event.getMessage());
+                    System.out.println(event.getLinkedException());
+                    return true;
+                }
+            });
+            OldXmlReader reader = new OldXmlReader();
+            var dir = Paths.get("xml");
+            Files.createDirectory(Paths.get("result"));
+            Files.list(dir).forEach(path -> {
+                processPath(reader, path);
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Verifier.verify();
     }
 
     private static void processPath(OldXmlReader reader, Path path) {
         System.out.println("Processing file " + path.getFileName());
         var file = path.toFile();
         reader.read(file);
-        var itemList  = new ItemList();
+        var itemList = new ItemList();
         converted.put(file.getName(), itemList);
         reader.getItems().values().forEach(itemType -> {
-            processItem(itemList,  itemType);
+            processItem(itemList, itemType);
         });
 
+        try {
+            marsh.marshal(itemList, Paths.get("result/" + path.getFileName()).toFile());
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
     }
 
     private static void processItem(ItemList list, ItemType itemType) {
+        if(!onClient.contains(String.valueOf(itemType.getId().intValue()))) {
+            System.out.println("Not in client " + itemType.getId().intValue());
+            return;
+        }
         switch (itemType.getType().toLowerCase()) {
             case "weapon":
                 processWeapon(list, itemType);
@@ -53,16 +93,216 @@ public class Converter {
             case "etcitem":
                 processEtcItem(list, itemType);
                 break;
-
         }
-
     }
 
     private static void processEtcItem(ItemList list, ItemType itemType) {
+        try {
+            var item = factory.createItem();
+            item.setId(itemType.getId().intValue());
+            item.setName(itemType.getName());
+            item.setAdditionalName(itemType.getAdditionalName());
+            parseSet(itemType, item);
+            parseCond(itemType, item);
+            parseStats(itemType, item);
+            parseSkills(itemType, item);
 
+            list.getItemTemplate().add(factory.createItem(item));
+        } catch (Exception e) {
+            System.out.println("Error processing item " + itemType.getId().intValue());
+            e.printStackTrace();
+        }
+    }
+
+    private static void parseSet(ItemType itemType, Item item) {
+        itemType.getSet().forEach(setType -> {
+            switch (setType.getName()) {
+                case "etcitem_type":
+                    item.setType(org.l2j.xml.generated.ItemType.fromValue(setType.getVal()));
+                    break;
+                case "is_stackable":
+                    item.setStackable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "recipe_id":
+                    item.setRecipeId(Integer.parseInt(setType.getVal()));
+                    break;
+                case "crystal_count":
+                    if (isNull(item.getCrystalInfo())) {
+                        item.setCrystalInfo(factory.createCrystalInfo());
+                    }
+                    item.getCrystalInfo().setCount(Integer.parseInt(setType.getVal()));
+                    break;
+                case "crystal_type":
+                    if (isNull(item.getCrystalInfo())) {
+                        item.setCrystalInfo(factory.createCrystalInfo());
+                    }
+                    item.getCrystalInfo().setType(CrystalType.fromValue(setType.getVal()));
+                    break;
+                case "equip_condition":
+                    var condition = getCondition(setType.getVal());
+                    item.setCondition(condition);
+                    break;
+                case "handler":
+                    var handler = getHandler(setType.getVal());
+                    item.setHandler(handler);
+                    break;
+                case "icon":
+                    item.setIcon(setType.getVal());
+                    break;
+                case "is_destroyable":
+                    if (isNull(item.getRestriction())) {
+                        item.setRestriction(factory.createItemRestriction());
+                    }
+                    item.getRestriction().setDestroyable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_dropable":
+                    if (isNull(item.getRestriction())) {
+                        item.setRestriction(factory.createItemRestriction());
+                    }
+                    item.getRestriction().setDropable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_freightable":
+                    if (isNull(item.getRestriction())) {
+                        item.setRestriction(factory.createItemRestriction());
+                    }
+                    item.getRestriction().setFreightable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_sellable":
+                    if (isNull(item.getRestriction())) {
+                        item.setRestriction(factory.createItemRestriction());
+                    }
+                    item.getRestriction().setSellable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_tradable":
+                    if (isNull(item.getRestriction())) {
+                        item.setRestriction(factory.createItemRestriction());
+                    }
+                    item.getRestriction().setTradeable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_questitem":
+                    item.setQuestItem(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "price":
+                    item.setPrice(Long.parseLong(setType.getVal()));
+                    break;
+                case "reuse_delay":
+                    item.setReuseDelay(Long.parseLong(setType.getVal()));
+                    break;
+                case "time":
+                    item.setTime(Long.parseLong(setType.getVal()));
+                    break;
+                case "weight":
+                    item.setWeight(Integer.parseInt(setType.getVal()));
+                    break;
+                case "commissionItemType":
+                    item.setCommissionType(CommissionType.fromValue(setType.getVal()));
+                    break;
+            }
+        });
     }
 
     private static void processArmor(ItemList list, ItemType itemType) {
+        try {
+            var armor = factory.createArmor();
+            armor.setId(itemType.getId().intValue());
+            armor.setName(itemType.getName());
+            armor.setAdditionalName(itemType.getAdditionalName());
+            parseSet(itemType, armor);
+            parseCond(itemType, armor);
+            parseStats(itemType, armor);
+            parseSkills(itemType, armor);
+            list.getItemTemplate().add(factory.createArmor(armor));
+        } catch (Exception e) {
+            System.out.println("Error processing Armor " + itemType.getId().intValue());
+            e.printStackTrace();
+        }
+    }
+
+    private static void parseSet(ItemType itemType, Armor armor) {
+        itemType.getSet().forEach(setType -> {
+            switch (setType.getName()) {
+                case "armor_type":
+                    armor.setType(org.l2j.xml.generated.ItemType.fromValue(setType.getVal()));
+                    break;
+                case "bodypart":
+                    ;
+                    armor.setBodyPart(getBodyPart(setType.getVal()));
+                    break;
+                case "crystal_count":
+                    if (isNull(armor.getCrystalInfo())) {
+                        armor.setCrystalInfo(factory.createCrystalInfo());
+                    }
+                    armor.getCrystalInfo().setCount(Integer.parseInt(setType.getVal()));
+                    break;
+                case "crystal_type":
+                    if (isNull(armor.getCrystalInfo())) {
+                        armor.setCrystalInfo(factory.createCrystalInfo());
+                    }
+                    armor.getCrystalInfo().setType(CrystalType.fromValue(setType.getVal()));
+                    break;
+                case "equip_condition":
+                    var condition = getCondition(setType.getVal());
+                    armor.setCondition(condition);
+                    break;
+                case "handler":
+                    var handler = getHandler(setType.getVal());
+                    armor.setHandler(handler);
+                    break;
+                case "icon":
+                    armor.setIcon(setType.getVal());
+                    break;
+                case "is_destroyable":
+                    if (isNull(armor.getRestriction())) {
+                        armor.setRestriction(factory.createItemRestriction());
+                    }
+                    armor.getRestriction().setDestroyable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_dropable":
+                    if (isNull(armor.getRestriction())) {
+                        armor.setRestriction(factory.createItemRestriction());
+                    }
+                    armor.getRestriction().setDropable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_freightable":
+                    if (isNull(armor.getRestriction())) {
+                        armor.setRestriction(factory.createItemRestriction());
+                    }
+                    armor.getRestriction().setFreightable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_sellable":
+                    if (isNull(armor.getRestriction())) {
+                        armor.setRestriction(factory.createItemRestriction());
+                    }
+                    armor.getRestriction().setSellable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_tradable":
+                    if (isNull(armor.getRestriction())) {
+                        armor.setRestriction(factory.createItemRestriction());
+                    }
+                    armor.getRestriction().setTradeable(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "is_questitem":
+                    armor.setQuestItem(Boolean.parseBoolean(setType.getVal()));
+                    break;
+                case "price":
+                    armor.setPrice(Long.parseLong(setType.getVal()));
+                    break;
+                case "reuse_delay":
+                    armor.setReuseDelay(Long.parseLong(setType.getVal()));
+                    break;
+                case "time":
+                    armor.setTime(Long.parseLong(setType.getVal()));
+                    break;
+                case "weight":
+                    armor.setWeight(Integer.parseInt(setType.getVal()));
+                    break;
+                case "commissionItemType":
+                    if (!setType.getVal().equalsIgnoreCase("false")) {
+                        armor.setCommissionType(CommissionType.fromValue(setType.getVal()));
+                    }
+                    break;
+            }
+        });
     }
 
     private static void processWeapon(ItemList list, ItemType itemType) {
@@ -73,35 +313,218 @@ public class Converter {
             weapon.setAdditionalName(itemType.getAdditionalName());
             parseSet(itemType, weapon);
             parseCond(itemType, weapon);
-            itemType.getStats();
-            itemType.getSkills();
-            itemType.getCapsuledItems();
-
+            parseStats(itemType, weapon);
+            parseSkills(itemType, weapon);
             list.getItemTemplate().add(factory.createWeapon(weapon));
-        } catch(Exception e) {
-            System.out.println("Erro processing item " + itemType.getId().intValue());
+        } catch (Exception e) {
+            System.out.println("Erro processing Weapon " + itemType.getId().intValue());
             e.printStackTrace();
         }
     }
 
-    private static void parseCond(ItemType itemType, Weapon weapon) {
+    private static void parseSkills(ItemType itemType, ItemTemplate weapon) {
+        if (isNull(itemType.getSkills())) {
+            return;
+        }
+        for (SkillType skillType : itemType.getSkills().getSkill()) {
+            var skill = factory.createItemSkill();
+            skill.setId(skillType.getId().intValue());
+            skill.setLevel(skillType.getLevel().intValue());
+            if (nonNull(skillType.getTypeChance())) {
+                skill.setChance(skillType.getTypeChance().intValue());
+            }
+            if (nonNull(skillType.getTypeValue())) {
+                skill.setTriggerValue(skillType.getTypeValue().intValue());
+            }
+            if (nonNull(skillType.getType())) {
+                switch (skillType.getType()) {
+                    case "NORMAL":
+                    case "ON_EQUIP":
+                    case "ON_UNEQUIP":
+                        skill.setTriggerType(SkillTrigger.ON_USE);
+                        break;
+                    case "ON_ENCHANT":
+                        skill.setTriggerType(SkillTrigger.ENCHANTED);
+                        break;
+                    case "ON_CRITICAL_SKILL":
+                        skill.setTriggerType(SkillTrigger.ON_CRITICAL);
+                        break;
+                    case "ON_MAGIC_SKILL":
+                        skill.setTriggerType(SkillTrigger.ON_MAGIC_SKILL);
+                        break;
+                }
+            }
+            weapon.getSkill().add(skill);
+        }
+    }
+
+    private static void parseStats(ItemType itemType, ItemTemplate weapon) {
+        if (isNull(itemType.getStats())) {
+            return;
+        }
+        for (Serializable content : itemType.getStats().getContent()) {
+            if (content instanceof ForType.Stat) {
+                var statType = (ForType.Stat) content;
+                var stat = factory.createStat();
+                stat.setFunction(Function.ADD);
+                stat.setOrder(16);
+                stat.setValue(Float.parseFloat(statType.getValue()));
+                switch (statType.getType()) {
+                    case P_ATK:
+                        stat.setType(Stats.PHYSIC_ATTACK);
+                        weapon.getStat().add(stat);
+                        break;
+                    case M_ATK:
+                        stat.setType(Stats.MAGIC_ATTACK);
+                        weapon.getStat().add(stat);
+                        break;
+                    case M_DEF:
+                        stat.setType(Stats.MAGIC_DEFENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case P_DEF:
+                        stat.setType(Stats.PHYSIC_DEFENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case S_DEF:
+                        stat.setType(Stats.SHIELD_DEFENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case M_EVAS:
+                        stat.setType(Stats.MAGIC_EVASION_RATE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case MAX_MP:
+                        stat.setType(Stats.MAX_MP);
+                        weapon.getStat().add(stat);
+                        break;
+                    case R_CRIT:
+                        stat.setType(Stats.CRITICAL_RATE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case R_EVAS:
+                        stat.setType(Stats.EVASION_RATE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case R_SHLD:
+                        stat.setType(Stats.SHIELD_RATE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case DARK_RES:
+                        stat.setType(Stats.DARK_RESISTENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case FIRE_RES:
+                        stat.setType(Stats.FIRE_RESISTENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case HOLY_RES:
+                        stat.setType(Stats.HOLY_RESISTENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case WIND_RES:
+                        stat.setType(Stats.WIND_RESISTENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case ACC_MAGIC:
+                        stat.setType(Stats.MAGIC_ACCURACY);
+                        weapon.getStat().add(stat);
+                        break;
+                    case EARTH_RES:
+                        stat.setType(Stats.EARTH_RESISTENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case P_ATK_SPD:
+                        stat.setType(Stats.PHYSIC_ATTACK_SPEED);
+                        weapon.getStat().add(stat);
+                        break;
+                    case WATER_RES:
+                        stat.setType(Stats.WATER_RESISTENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case ACC_COMBAT:
+                        stat.setType(Stats.ACCURACY);
+                        weapon.getStat().add(stat);
+                        break;
+                    case DARK_POWER:
+                        stat.setType(Stats.DARK);
+                        weapon.getStat().add(stat);
+                        break;
+                    case FIRE_POWER:
+                        stat.setType(Stats.FIRE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case HOLY_POWER:
+                        stat.setType(Stats.HOLY);
+                        weapon.getStat().add(stat);
+                        break;
+                    case MOVE_SPEED:
+                        stat.setType(Stats.MOVE_SPEED);
+                        weapon.getStat().add(stat);
+                        break;
+                    case WIND_POWER:
+                        stat.setType(Stats.WIND);
+                        weapon.getStat().add(stat);
+                        break;
+                    case EARTH_POWER:
+                        stat.setType(Stats.EARTH);
+                        weapon.getStat().add(stat);
+                        break;
+                    case M_CRIT_RATE:
+                        stat.setType(Stats.MAGIC_CRITICAL_RATE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case P_ATK_ANGLE:
+                        stat.setType(Stats.PHYSIC_ATTACK_ANGLE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case P_ATK_RANGE:
+                        stat.setType(Stats.PHYSIC_ATTACK_RANGE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case WATER_POWER:
+                        stat.setType(Stats.WATER);
+                        weapon.getStat().add(stat);
+                        break;
+                    case BROOCH_JEWELS:
+                        stat.setType(Stats.MAGIC_ACCURACY);
+                        weapon.getStat().add(stat);
+                        break;
+                    case RANDOM_DAMAGE:
+                        stat.setType(Stats.BROOCH_JEWEL);
+                        weapon.getStat().add(stat);
+                        break;
+                    case MAGIC_SUCC_RES:
+                        stat.setType(Stats.MAGIC_RESISTENCE);
+                        weapon.getStat().add(stat);
+                        break;
+                    case INVENTORY_LIMIT:
+                        stat.setType(Stats.INVENTORY_LIMIT);
+                        weapon.getStat().add(stat);
+                        break;
+                }
+            }
+        }
+    }
+
+    private static void parseCond(ItemType itemType, ItemTemplate weapon) {
         itemType.getCond().forEach(condType -> {
             var usarCondition = false;
-            if(isNull(weapon.getCondition())) {
-                var  useCondition = factory.createUseCondition();
+            if (isNull(weapon.getCondition())) {
+                var useCondition = factory.createUseCondition();
                 useCondition.setMessage(condType.getMsg());
-                useCondition.setMessageId((int)condType.getMsgId());
-                useCondition.setIncludeName(condType.getAddName() == 1);
+                useCondition.setMessageId((int) condType.getMsgId());
+                useCondition.setIncludeName(nonNull(condType.getAddName()) && condType.getAddName() == 1);
                 weapon.setCondition(useCondition);
                 usarCondition = true;
             } else {
                 var useCondition = weapon.getCondition();
-                if(nonNull(useCondition.getCondition())) {
+                if (nonNull(useCondition.getCondition())) {
                     var and = factory.createAND();
                     and.getCondition().add(useCondition.getCondition());
                     useCondition.setCondition(null);
                     useCondition.setOperator(factory.createAnd(and));
-                } else if(! (useCondition.getOperator().getValue() instanceof  AND)) {
+                } else if (!(useCondition.getOperator().getValue() instanceof AND)) {
                     var operator = useCondition.getOperator();
                     var and = factory.createAND();
                     and.getOperator().add(operator);
@@ -114,20 +537,20 @@ public class Converter {
         });
     }
 
-    private static boolean parseCondition(Weapon weapon, boolean usarCondition, Object usingAndOrNot) {
-        if(usingAndOrNot instanceof AndType) {
+    private static boolean parseCondition(ItemTemplate weapon, boolean usarCondition, Object usingAndOrNot) {
+        if (usingAndOrNot instanceof AndType) {
             usarCondition = parseAndType(weapon, usarCondition, (AndType) usingAndOrNot);
-        } else if(usingAndOrNot instanceof PlayerType) {
+        } else if (usingAndOrNot instanceof PlayerType) {
             parsePlayerType(weapon, usarCondition, (PlayerType) usingAndOrNot);
-        } else if(usingAndOrNot instanceof TargetType) {
+        } else if (usingAndOrNot instanceof TargetType) {
             parseTargetType(weapon, usarCondition, (TargetType) usingAndOrNot);
         }
         return usarCondition;
     }
 
-    private static void parseTargetType(Weapon weapon, boolean usarCondition, TargetType usingAndOrNot) {
+    private static void parseTargetType(ItemTemplate weapon, boolean usarCondition, TargetType usingAndOrNot) {
         var targetType = usingAndOrNot;
-        if(nonNull(targetType.getLevelRange())) {
+        if (nonNull(targetType.getLevelRange())) {
             var levels = targetType.getLevelRange().split(";");
             var level = factory.createLevelCondition();
             level.setMin(Integer.parseInt(levels[0]));
@@ -137,52 +560,62 @@ public class Converter {
         }
     }
 
-    private static void parsePlayerType(Weapon weapon, boolean usarCondition, PlayerType usingAndOrNot) {
+    private static void parsePlayerType(ItemTemplate weapon, boolean usarCondition, PlayerType usingAndOrNot) {
         var playerType = usingAndOrNot;
-        if(nonNull(playerType.getSex())) {
+        if (nonNull(playerType.getSex())) {
             var state = factory.createStateCondition();
             state.setState(StateType.IS_MALE);
             var stateCondition = factory.createState(state);
-            if(playerType.getSex() == 0) {
-                if(usarCondition) {
+            if (playerType.getSex() == 0) {
+                if (usarCondition) {
                     weapon.getCondition().setCondition(stateCondition);
                 } else {
                     var operator = weapon.getCondition().getOperator().getValue();
-                    if(operator instanceof AND) {
+                    if (operator instanceof AND) {
                         ((AND) operator).getCondition().add(stateCondition);
                     }
                 }
             } else {
                 var not = factory.createNOT();
                 not.setCondition(stateCondition);
-                addNotInOperator(weapon, not);
+                if (usarCondition) {
+                    weapon.getCondition().setOperator(factory.createNot(not));
+                } else {
+                    addNotInOperator(weapon, not);
+                }
             }
-        } else if(nonNull(playerType.isFlyMounted()) && !playerType.isFlyMounted()) {
+        } else if (nonNull(playerType.isFlyMounted()) && !playerType.isFlyMounted()) {
             var state = factory.createStateCondition();
             state.setState(StateType.FLYING);
             var not = factory.createNOT();
             not.setCondition(factory.createState(state));
             parseNot(weapon, usarCondition, not);
-        } else if(nonNull(playerType.isChaotic()) && !playerType.isChaotic()) {
+        } else if (nonNull(playerType.isChaotic()) && !playerType.isChaotic()) {
             var state = factory.createStateCondition();
             state.setState(StateType.IS_CHAOTIC);
             var not = factory.createNOT();
             not.setCondition(factory.createState(state));
             parseNot(weapon, usarCondition, not);
-        } else if(nonNull(playerType.getLevel())) {
+        } else if (nonNull(playerType.getLevel())) {
             var levelCondition = factory.createLevelCondition();
             levelCondition.setMin(playerType.getLevel());
             parseLevel(weapon, usarCondition, levelCondition);
-        } else if(nonNull(playerType.isIsHero()) && !playerType.isIsHero()) {
+        } else if (nonNull(playerType.isIsHero()) && playerType.isIsHero()) {
             var state = factory.createStateCondition();
             state.setState(StateType.IS_HERO);
-            var not = factory.createNOT();
-            not.setCondition(factory.createState(state));
-            parseNot(weapon, usarCondition, not);
+            if (usarCondition) {
+                weapon.getCondition().setCondition(factory.createState(state));
+            } else {
+                var operator = weapon.getCondition().getOperator().getValue();
+                if (operator instanceof AND) {
+                    ((AND) operator).getCondition().add(factory.createState(state));
+                }
+
+            }
         }
     }
 
-    private static boolean parseAndType(Weapon weapon, boolean usarCondition, AndType andType) {
+    private static boolean parseAndType(ItemTemplate weapon, boolean usarCondition, AndType andType) {
         if (usarCondition) {
             weapon.getCondition().setOperator(factory.createAnd(factory.createAND()));
             usarCondition = false;
@@ -193,7 +626,7 @@ public class Converter {
         return usarCondition;
     }
 
-    private static void parseNot(Weapon weapon, boolean usarCondition, NOT not) {
+    private static void parseNot(ItemTemplate weapon, boolean usarCondition, NOT not) {
         if (usarCondition) {
             weapon.getCondition().setOperator(factory.createNot(not));
         } else {
@@ -201,7 +634,7 @@ public class Converter {
         }
     }
 
-    private static void parseLevel(Weapon weapon, boolean usarCondition, LevelCondition level) {
+    private static void parseLevel(ItemTemplate weapon, boolean usarCondition, LevelCondition level) {
         if (usarCondition) {
             weapon.getCondition().setCondition(factory.createLevel(level));
         } else {
@@ -212,7 +645,7 @@ public class Converter {
         }
     }
 
-    private static void addNotInOperator(Weapon weapon, NOT not) {
+    private static void addNotInOperator(ItemTemplate weapon, NOT not) {
         var operator = weapon.getCondition().getOperator().getValue();
         if (operator instanceof AND) {
             ((AND) operator).getOperator().add(factory.createNot(not));
@@ -258,31 +691,31 @@ public class Converter {
                     weapon.setIcon(setType.getVal());
                     break;
                 case "is_destroyable":
-                    if(isNull(weapon.getRestriction())) {
+                    if (isNull(weapon.getRestriction())) {
                         weapon.setRestriction(factory.createItemRestriction());
                     }
                     weapon.getRestriction().setDestroyable(Boolean.parseBoolean(setType.getVal()));
                     break;
                 case "is_dropable":
-                    if(isNull(weapon.getRestriction())) {
+                    if (isNull(weapon.getRestriction())) {
                         weapon.setRestriction(factory.createItemRestriction());
                     }
                     weapon.getRestriction().setDropable(Boolean.parseBoolean(setType.getVal()));
                     break;
                 case "is_freightable":
-                    if(isNull(weapon.getRestriction())) {
+                    if (isNull(weapon.getRestriction())) {
                         weapon.setRestriction(factory.createItemRestriction());
                     }
                     weapon.getRestriction().setFreightable(Boolean.parseBoolean(setType.getVal()));
                     break;
                 case "is_sellable":
-                    if(isNull(weapon.getRestriction())) {
+                    if (isNull(weapon.getRestriction())) {
                         weapon.setRestriction(factory.createItemRestriction());
                     }
                     weapon.getRestriction().setSellable(Boolean.parseBoolean(setType.getVal()));
                     break;
                 case "is_tradable":
-                    if(isNull(weapon.getRestriction())) {
+                    if (isNull(weapon.getRestriction())) {
                         weapon.setRestriction(factory.createItemRestriction());
                     }
                     weapon.getRestriction().setTradeable(Boolean.parseBoolean(setType.getVal()));
@@ -294,7 +727,7 @@ public class Converter {
                     weapon.setQuestItem(Boolean.parseBoolean(setType.getVal()));
                     break;
                 case "mp_consume":
-                    if(isNull(weapon.getConsume())) {
+                    if (isNull(weapon.getConsume())) {
                         weapon.setConsume(factory.createItemConsume());
                     }
                     weapon.getConsume().setMp(Integer.parseInt(setType.getVal()));
@@ -303,7 +736,7 @@ public class Converter {
                     weapon.setPrice(Long.parseLong(setType.getVal()));
                     break;
                 case "random_damage":
-                    if(isNull(weapon.getDamage())) {
+                    if (isNull(weapon.getDamage())) {
                         weapon.setDamage(factory.createDamage());
                     }
                     weapon.getDamage().setRandom(Integer.parseInt(setType.getVal()));
@@ -313,7 +746,7 @@ public class Converter {
                     break;
                 case "soulshots":
                 case "spiritshots":
-                    if(isNull(weapon.getConsume())) {
+                    if (isNull(weapon.getConsume())) {
                         weapon.setConsume(factory.createItemConsume());
                     }
                     weapon.getConsume().setShot(Integer.parseInt(setType.getVal()));
@@ -396,10 +829,10 @@ public class Converter {
     }
 
     private static UseCondition getCondition(String val) {
-        if(val.toLowerCase().contains("{ec_castle_num")) {
+        if (val.toLowerCase().contains("{ec_castle_num")) {
             var pattern = Pattern.compile(";\\{(\\d+)}");
             var matcher = pattern.matcher(val);
-            if(matcher.find()) {
+            if (matcher.find()) {
                 var castleId = Integer.parseInt(matcher.group(1));
                 var condition = factory.createOwnerCondition();
                 condition.setType(OwnerConditionType.OWNER_CASTLE);
@@ -408,7 +841,7 @@ public class Converter {
                 useCondition.setCondition(factory.createCondition(condition));
                 return useCondition;
             }
-        } else if(val.toLowerCase().contains("{ec_clan_leader")) {
+        } else if (val.toLowerCase().contains("{ec_clan_leader")) {
             var condition = factory.createOwnerCondition();
             condition.setType(OwnerConditionType.OWNER_CASTLE_LEADER);
             var useCondition = factory.createUseCondition();
@@ -422,7 +855,7 @@ public class Converter {
         BodyPart part = null;
         switch (name) {
             case "lbracelet":
-                part =  BodyPart.LEFT_BRACELET;
+                part = BodyPart.LEFT_BRACELET;
                 break;
             case "hairall":
                 part = BodyPart.FULL_HAIR;

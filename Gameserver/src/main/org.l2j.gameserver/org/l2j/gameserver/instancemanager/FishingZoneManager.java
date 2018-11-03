@@ -35,7 +35,7 @@ public class FishingZoneManager {
     }
 
     /*
-     * isInsideFishingZone() - This function was modified to check the coordinates without caring for Z. This allows for the player to fish off bridges, into the water, or from other similar high places. One should be able to cast the line from up into the water, not only fishing whith one's feet
+     * isInsideFishingZone() - This function was modified to check the coordinates without caring for Z. This allows for the reader to fish off bridges, into the water, or from other similar high places. One should be able to cast the line from up into the water, not only fishing whith one's feet
      * wet. :) TODO: Consider in the future, limiting the maximum height one can be above water, if we start getting "orbital fishing" players... xD
      */
     public final L2FishingZone isInsideFishingZone(int x, int y, int z) {

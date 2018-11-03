@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
+// Gerado em: 2018.11.02 às 11:52:58 AM BRT 
 //
 
 
@@ -23,9 +23,9 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType name="Armor"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{http://la2j.org}ItemTemplate"&gt;
- *       &lt;choice&gt;
- *         &lt;element name="bodyPart" type="{http://la2j.org}BodyPart"/&gt;
- *       &lt;/choice&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="bodyPart" type="{http://la2j.org}BodyPart" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;

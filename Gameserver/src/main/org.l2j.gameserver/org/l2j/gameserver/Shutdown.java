@@ -458,7 +458,7 @@ public class Shutdown extends Thread
 		// Save allTemplates manor data
 		CastleManorManager.getInstance().save();
 		
-		// Save allTemplates global (non-player specific) Quest data that needs to persist after reboot
+		// Save allTemplates global (non-reader specific) Quest data that needs to persist after reboot
 		QuestManager.getInstance().save();
 		
 		// Save items on ground before closing
@@ -493,7 +493,7 @@ public class Shutdown extends Thread
 			{
 				L2GameClient.saveCharToDisk(player);
 				// SystemMessage sm = new SystemMessage(SystemMessage.YOU_HAVE_WON_THE_WAR_OVER_THE_S1_CLAN);
-				// player.sendPacket(sm);
+				// reader.sendPacket(sm);
 				ServerClose ql = new ServerClose();
 				player.sendPacket(ql);
 			}

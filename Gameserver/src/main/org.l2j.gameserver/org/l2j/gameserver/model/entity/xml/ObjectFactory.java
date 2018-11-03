@@ -37,7 +37,7 @@ public class ObjectFactory {
     private final static QName _Not_QNAME = new QName("http://la2j.org", "not");
     private final static QName _Condition_QNAME = new QName("http://la2j.org", "condition");
     private final static QName _Using_QNAME = new QName("http://la2j.org", "using");
-    private final static QName _Player_QNAME = new QName("http://la2j.org", "player");
+    private final static QName _Player_QNAME = new QName("http://la2j.org", "reader");
     private final static QName _Game_QNAME = new QName("http://la2j.org", "game");
 
     /**
@@ -285,7 +285,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link XmlStatPlayerCondition }{@code >}
      */
-    @XmlElementDecl(namespace = "http://la2j.org", name = "player", substitutionHeadNamespace = "http://la2j.org", substitutionHeadName = "condition")
+    @XmlElementDecl(namespace = "http://la2j.org", name = "reader", substitutionHeadNamespace = "http://la2j.org", substitutionHeadName = "condition")
     public JAXBElement<XmlStatPlayerCondition> createPlayer(XmlStatPlayerCondition value) {
         return new JAXBElement<XmlStatPlayerCondition>(_Player_QNAME, XmlStatPlayerCondition.class, null, value);
     }

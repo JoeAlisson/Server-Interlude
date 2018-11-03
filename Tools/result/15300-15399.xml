@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="15300" name="Transparent Dual (NPC)" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="15301" name="Transparent Pole (NPC)" type="POLE" icon="icon.weapon_long_spear_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1950</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="15302" name="Transparent Bow (NPC)" type="BOW" icon="icon.weapon_long_bow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume mp="4" shot="2"/>
+    </weapon>
+    <item stackable="true" id="15366" name="Watermelon seed" commissionType="OTHER_ITEM" icon="icon.event_honey_watermelon_seed_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9029" level="1"/>
+    </item>
+    <weapon id="15303" name="Transparent Claw (NPC)" type="DUALFIST" icon="icon.weapon_foxs_nail_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1013</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="15367" name="Honey Watermelon Seed" commissionType="OTHER_ITEM" icon="icon.event_watermelon_seed_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9030" level="1"/>
+    </item>
+    <weapon id="15304" name="Transparent Crossbow (NPC)" type="CROSSBOW" icon="icon.weapon_hunting_gun_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <item stackable="true" id="15368" name="Copied Watermelon Seed" icon="icon.event_honey_watermelon_seed_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <weapon id="15305" name="Transparent Rapier (NPC)" type="RAPIER" icon="icon.weapon_rapier_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <item stackable="true" id="15369" name="Copied Honey Watermelon Seed" icon="icon.event_watermelon_seed_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <weapon id="15306" name="Transparent Dual Dagger (NPC)" type="DUALDAGGER" icon="icon.dual_dagger_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2150</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

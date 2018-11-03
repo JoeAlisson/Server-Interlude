@@ -241,7 +241,7 @@ public final class Config {
     public static boolean ALT_GAME_MAGICFAILURES;
 
     /**
-     * Alternative gaming - player must be in a castle-owning clan or ally to sign up for Dawn.
+     * Alternative gaming - reader must be in a castle-owning clan or ally to sign up for Dawn.
      */
     public static boolean ALT_GAME_REQUIRE_CASTLE_DAWN;
 
@@ -271,12 +271,12 @@ public final class Config {
     public static boolean ALT_GAME_VIEWNPC;
 
     /**
-     * Minimum number of player to participate in SevenSigns Festival
+     * Minimum number of reader to participate in SevenSigns Festival
      */
     public static int ALT_FESTIVAL_MIN_PLAYER;
 
     /**
-     * Maximum of player contrib during Festival
+     * Maximum of reader contrib during Festival
      */
     public static int ALT_MAXIMUM_PLAYER_CONTRIB;
 
@@ -752,7 +752,7 @@ public final class Config {
      */
     public static float RATE_SIEGE_GUARDS_PRICE;
     /*
-     * Alternative Xp/Sp rewards, if not 0, then calculated as 2^((mob.level-player.level) / coef), A few examples for "AltGameExponentXp = 5." and "AltGameExponentSp = 3." diff = 0 (player and mob has the same level), XP bonus rate = 1, SP bonus rate = 1 diff = 3 (mob is 3 levels above), XP bonus
+     * Alternative Xp/Sp rewards, if not 0, then calculated as 2^((mob.level-reader.level) / coef), A few examples for "AltGameExponentXp = 5." and "AltGameExponentSp = 3." diff = 0 (reader and mob has the same level), XP bonus rate = 1, SP bonus rate = 1 diff = 3 (mob is 3 levels above), XP bonus
      * rate = 1.52, SP bonus rate = 2 diff = 5 (mob is 5 levels above), XP bonus rate = 2, SP bonus rate = 3.17 diff = -8 (mob is 8 levels below), XP bonus rate = 0.4, SP bonus rate = 0.16
      */
     /**
@@ -787,7 +787,7 @@ public final class Config {
 
     // Player Drop Rate control
     /**
-     * Limit for player drop
+     * Limit for reader drop
      */
     public static int PLAYER_DROP_LIMIT;
     /**
@@ -795,15 +795,15 @@ public final class Config {
      */
     public static int PLAYER_RATE_DROP;
     /**
-     * Rate for player's item drop
+     * Rate for reader's item drop
      */
     public static int PLAYER_RATE_DROP_ITEM;
     /**
-     * Rate for player's equipment drop
+     * Rate for reader's equipment drop
      */
     public static int PLAYER_RATE_DROP_EQUIP;
     /**
-     * Rate for player's equipment and weapon drop
+     * Rate for reader's equipment and weapon drop
      */
     public static int PLAYER_RATE_DROP_EQUIP_WEAPON;
 
@@ -1289,7 +1289,7 @@ public final class Config {
      */
     public static boolean KARMA_DROP_GM;
     /**
-     * Should award a pvp point for killing a player with karma ?
+     * Should award a pvp point for killing a reader with karma ?
      */
     public static boolean KARMA_AWARD_PK_KILL;
     /**
@@ -1333,37 +1333,37 @@ public final class Config {
     public static List<Integer> LIST_PET_RENT_NPC = new LinkedList<>();
 
     /**
-     * Duration (in ms) while a player stay in PVP mode after hitting an innocent
+     * Duration (in ms) while a reader stay in PVP mode after hitting an innocent
      */
     public static int PVP_NORMAL_TIME;
     /**
-     * Duration (in ms) while a player stay in PVP mode after hitting a purple player
+     * Duration (in ms) while a reader stay in PVP mode after hitting a purple reader
      */
     public static int PVP_PVP_TIME;
 
     // Karma Punishment
     /**
-     * Allow player with karma to be killed in peace zone ?
+     * Allow reader with karma to be killed in peace zone ?
      */
     public static boolean ALT_GAME_KARMA_PLAYER_CAN_BE_KILLED_IN_PEACEZONE;
     /**
-     * Allow player with karma to shop ?
+     * Allow reader with karma to shop ?
      */
     public static boolean ALT_GAME_KARMA_PLAYER_CAN_SHOP;
     /**
-     * Allow player with karma to use gatekeepers ?
+     * Allow reader with karma to use gatekeepers ?
      */
     public static boolean ALT_GAME_KARMA_PLAYER_CAN_USE_GK;
     /**
-     * Allow player with karma to use SOE or Return skill ?
+     * Allow reader with karma to use SOE or Return skill ?
      */
     public static boolean ALT_GAME_KARMA_PLAYER_CAN_TELEPORT;
     /**
-     * Allow player with karma to trade ?
+     * Allow reader with karma to trade ?
      */
     public static boolean ALT_GAME_KARMA_PLAYER_CAN_TRADE;
     /**
-     * Allow player with karma to use warehouse ?
+     * Allow reader with karma to use warehouse ?
      */
     public static boolean ALT_GAME_KARMA_PLAYER_CAN_USE_WAREHOUSE;
 
@@ -1700,7 +1700,7 @@ public final class Config {
      */
     public static boolean PETITIONING_ALLOWED;
     /**
-     * Maximum number of petitions per player
+     * Maximum number of petitions per reader
      */
     public static int MAX_PETITIONS_PER_PLAYER;
     /**
@@ -1734,7 +1734,7 @@ public final class Config {
      */
     public static boolean GAMEGUARD_ENFORCE;
     /**
-     * Don't allow player to perform trade,talk with npc and move until gameguard reply received ?
+     * Don't allow reader to perform trade,talk with npc and move until gameguard reply received ?
      */
     public static boolean GAMEGUARD_PROHIBITACTION;
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item id="35669" name="Angel Cat's Blessing" additionalName="30-day" type="POTION" icon="icon.skilltransform4">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>60000</reuseDelay>
+        <time>43200</time>
+        <weight>5</weight>
+        <skill id="9487"/>
+    </item>
+</itemList>

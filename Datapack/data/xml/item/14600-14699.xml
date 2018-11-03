@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="14611" name="Santa's Red Nose" icon="icon.Accessory_nose_of_rudolph_mask_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>20160</time>
+        <weight>10</weight>
+        </armor>
+</itemList>

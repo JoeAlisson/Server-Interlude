@@ -53,7 +53,7 @@ public class QuestStateManager {
     // Method - Public
 
     /**
-     * Add QuestState for the specified player instance
+     * Add QuestState for the specified reader instance
      *
      * @param quest
      * @param player
@@ -68,7 +68,7 @@ public class QuestStateManager {
     }
 
     /**
-     * Remove allTemplates QuestState for allTemplates player instance that does not exist
+     * Remove allTemplates QuestState for allTemplates reader instance that does not exist
      */
     public void cleanUp() {
         for (int i = getQuestStates().size() - 1; i >= 0; i--) {
@@ -101,7 +101,7 @@ public class QuestStateManager {
     }
 
     /**
-     * Return QuestState for specified player instance
+     * Return QuestState for specified reader instance
      *
      * @param player
      * @return

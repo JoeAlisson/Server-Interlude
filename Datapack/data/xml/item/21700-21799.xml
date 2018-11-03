@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon magic="true" id="21754" name="Server Master Magic Pencil" type="POLE" icon="BranchSys2.icon.g_pencil_of_servermaster">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="21755" name="The Best Graduate's Cope" icon="BranchSys2.icon.g_graduation_cap_gold">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+</itemList>

@@ -238,18 +238,18 @@ public class GameStatusThread extends Thread
 					_print.println("msg <nick> <text>   - Sends a whisper to char <nick> with <text>.");
 					_print.println("gmchat <text>       - Sends a message to allTemplates GMs with <text>.");
 					_print.println("gmlist              - lists allTemplates gms online.");
-					_print.println("kick                - kick player <name> from server.");
+					_print.println("kick                - kick reader <name> from server.");
 					_print.println("shutdown <time>     - shuts down server in <time> seconds.");
 					_print.println("restart <time>      - restarts down server in <time> seconds.");
 					_print.println("abort               - aborts shutdown/restart.");
-					_print.println("give <player> <itemid> <amount>");
+					_print.println("give <reader> <itemid> <amount>");
 					_print.println("extlist             - list allTemplates loaded extension classes");
 					_print.println("extreload <name>    - reload and initializes the named extension or allTemplates if used without argument");
 					_print.println("extinit <name>      - initilizes the named extension or allTemplates if used without argument");
 					_print.println("extunload <name>    - unload the named extension or allTemplates if used without argument");
 					_print.println("debug <cmd>         - executes the debug command (see 'help debug').");
-					_print.println("jail <player> [time]");
-					_print.println("unjail <player>");
+					_print.println("jail <reader> [time]");
+					_print.println("unjail <reader>");
 					_print.println("quit                - closes telnet session.");
 				}
 				else if (_usrCommand.equals("help debug"))
@@ -459,7 +459,7 @@ public class GameStatusThread extends Thread
 					}
 					catch (StringIndexOutOfBoundsException e)
 					{
-						_print.println("Please enter player name to kick");
+						_print.println("Please enter reader name to kick");
 					}
 				}
 				else if (_usrCommand.startsWith("shutdown"))
@@ -551,7 +551,7 @@ public class GameStatusThread extends Thread
 						catch (NoSuchElementException nsee)
 						{
 						}
-						// L2PcInstance playerObj = L2World.getInstance().getPlayer(player);
+						// L2PcInstance playerObj = L2World.getInstance().getPlayer(reader);
 						
 						if (playerObj != null)
 						{

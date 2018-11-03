@@ -127,7 +127,7 @@ public class Sow implements ISkillHandler
 			{
 				_activeChar.getParty().broadcastToPartyMembers(sm);
 			}
-			// TODO: Mob should not agro on player, this way doesn't work really nice
+			// TODO: Mob should not agro on reader, this way doesn't work really nice
 			_target.getAI().setIntention(Intention.AI_INTENTION_IDLE);
 		}
 		
@@ -145,7 +145,7 @@ public class Sow implements ISkillHandler
 		int levelPlayer = _activeChar.getLevel(); // Attacker Level
 		int levelTarget = _target.getLevel(); // taret Level
 		
-		// 5% decrease in chance if player level
+		// 5% decrease in chance if reader level
 		// is more then +/- 5 levels to _seed's_ level
 		if (levelTarget < minlevelSeed)
 		{
@@ -156,7 +156,7 @@ public class Sow implements ISkillHandler
 			basicSuccess -= 5;
 		}
 		
-		// 5% decrease in chance if player level
+		// 5% decrease in chance if reader level
 		// is more than +/- 5 levels to _target's_ level
 		int diff = (levelPlayer - levelTarget);
 		if (diff < 0)

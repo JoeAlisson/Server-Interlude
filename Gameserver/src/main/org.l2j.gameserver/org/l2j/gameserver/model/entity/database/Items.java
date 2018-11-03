@@ -15,7 +15,7 @@ public class Items extends Entity<Integer> {
     private int ownerId;
     @Column("item_id")
     private int itemId;
-    private int count;
+    private long count;
     @Column("enchant_level")
     private int enchantLevel;
     private String loc;
@@ -36,7 +36,7 @@ public class Items extends Entity<Integer> {
 
     public Items() { }
 
-    public Items(int objectId, int ownerId, int itemId, int count, String loc, int locData, int enchantLevel, int priceSell, int priceBuy, int type1, int type2, int mana) {
+    public Items(int objectId, int ownerId, int itemId, long count, String loc, int locData, int enchantLevel, int priceSell, int priceBuy, int type1, int type2, long mana) {
         this.objectId = objectId;
         this.ownerId = ownerId;
         this.itemId = itemId;
@@ -48,7 +48,7 @@ public class Items extends Entity<Integer> {
         this.priceBuy = priceBuy;
         this.customType1 = type1;
         this.customType2 = type2;
-        this.manaLeft = mana;
+        this.manaLeft = (int) mana;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class Items extends Entity<Integer> {
         return itemId;
     }
 
-    public int getCount() {
+    public long getCount() {
         return count;
     }
 

@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
+// Gerado em: 2018.11.02 às 11:52:58 AM BRT 
 //
 
 
@@ -41,6 +41,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="PVP_MAGIC_DAMAGE"/&gt;
  *     &lt;enumeration value="PVP_PHYS_SKILL_DMG"/&gt;
  *     &lt;enumeration value="EVASION_RATE"/&gt;
+ *     &lt;enumeration value="MAGIC_EVASION_RATE"/&gt;
  *     &lt;enumeration value="SHIELD_RATE"/&gt;
  *     &lt;enumeration value="CRITICAL_RATE"/&gt;
  *     &lt;enumeration value="BLOW_RATE"/&gt;
@@ -49,12 +50,13 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="EXP_SP_RATE"/&gt;
  *     &lt;enumeration value="ATTACK_CANCEL"/&gt;
  *     &lt;enumeration value="ACCURACY"/&gt;
+ *     &lt;enumeration value="MAGIC_ACCURACY"/&gt;
+ *     &lt;enumeration value="MAGIC_RESISTENCE"/&gt;
  *     &lt;enumeration value="PHYSIC_ATTACK_RANGE"/&gt;
  *     &lt;enumeration value="MAGIC_ATTACK_RANGE"/&gt;
  *     &lt;enumeration value="PHYSIC_ATTACK_ANGLE"/&gt;
  *     &lt;enumeration value="ATTACK_COUNT_MAX"/&gt;
- *     &lt;enumeration value="RUN_SPEED"/&gt;
- *     &lt;enumeration value="WALK_SPEED"/&gt;
+ *     &lt;enumeration value="MOVE_SPEED"/&gt;
  *     &lt;enumeration value="STAT_STR"/&gt;
  *     &lt;enumeration value="STAT_CON"/&gt;
  *     &lt;enumeration value="STAT_DEX"/&gt;
@@ -76,34 +78,34 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="EARTH"/&gt;
  *     &lt;enumeration value="HOLY"/&gt;
  *     &lt;enumeration value="DARK"/&gt;
- *     &lt;enumeration value="AGGRESSION_VULN"/&gt;
- *     &lt;enumeration value="BLEED_VULN"/&gt;
- *     &lt;enumeration value="POISON_VULN"/&gt;
- *     &lt;enumeration value="STUN_VULN"/&gt;
- *     &lt;enumeration value="PARALYZE_VULN"/&gt;
- *     &lt;enumeration value="ROOT_VULN"/&gt;
- *     &lt;enumeration value="SLEEP_VULN"/&gt;
- *     &lt;enumeration value="CONFUSION_VULN"/&gt;
- *     &lt;enumeration value="MOVEMENT_VULN"/&gt;
- *     &lt;enumeration value="FIRE_VULN"/&gt;
- *     &lt;enumeration value="WIND_VULN"/&gt;
- *     &lt;enumeration value="WATER_VULN"/&gt;
- *     &lt;enumeration value="EARTH_VULN"/&gt;
- *     &lt;enumeration value="HOLY_VULN"/&gt;
- *     &lt;enumeration value="DARK_VULN"/&gt;
- *     &lt;enumeration value="CANCEL_VULN"/&gt;
- *     &lt;enumeration value="DERANGEMENT_VULN"/&gt;
- *     &lt;enumeration value="DEBUFF_VULN"/&gt;
- *     &lt;enumeration value="NONE_WPN_VULN"/&gt;
- *     &lt;enumeration value="SWORD_WPN_VULN"/&gt;
- *     &lt;enumeration value="BLUNT_WPN_VULN"/&gt;
- *     &lt;enumeration value="DAGGER_WPN_VULN"/&gt;
- *     &lt;enumeration value="BOW_WPN_VULN"/&gt;
- *     &lt;enumeration value="POLE_WPN_VULN"/&gt;
- *     &lt;enumeration value="ETC_WPN_VULN"/&gt;
- *     &lt;enumeration value="FIST_WPN_VULN"/&gt;
- *     &lt;enumeration value="DUAL_WPN_VULN"/&gt;
- *     &lt;enumeration value="DUAL_FIST_WPN_VULN"/&gt;
+ *     &lt;enumeration value="AGGRESSION_RESISTENCE"/&gt;
+ *     &lt;enumeration value="BLEED_RESISTENCE"/&gt;
+ *     &lt;enumeration value="POISON_RESISTENCE"/&gt;
+ *     &lt;enumeration value="STUN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="PARALYZE_RESISTENCE"/&gt;
+ *     &lt;enumeration value="ROOT_RESISTENCE"/&gt;
+ *     &lt;enumeration value="SLEEP_RESISTENCE"/&gt;
+ *     &lt;enumeration value="CONFUSION_RESISTENCE"/&gt;
+ *     &lt;enumeration value="MOVEMENT_RESISTENCE"/&gt;
+ *     &lt;enumeration value="FIRE_RESISTENCE"/&gt;
+ *     &lt;enumeration value="WIND_RESISTENCE"/&gt;
+ *     &lt;enumeration value="WATER_RESISTENCE"/&gt;
+ *     &lt;enumeration value="EARTH_RESISTENCE"/&gt;
+ *     &lt;enumeration value="HOLY_RESISTENCE"/&gt;
+ *     &lt;enumeration value="DARK_RESISTENCE"/&gt;
+ *     &lt;enumeration value="CANCEL_RESISTENCE"/&gt;
+ *     &lt;enumeration value="DERANGEMENT_RESISTENCE"/&gt;
+ *     &lt;enumeration value="DEBUFF_RESISTENCE"/&gt;
+ *     &lt;enumeration value="NONE_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="SWORD_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="BLUNT_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="DAGGER_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="BOW_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="POLE_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="ETC_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="FIST_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="DUAL_WPN_RESISTENCE"/&gt;
+ *     &lt;enumeration value="DUAL_FIST_WPN_RESISTENCE"/&gt;
  *     &lt;enumeration value="REFLECT_DAMAGE_PERCENT"/&gt;
  *     &lt;enumeration value="REFLECT_SKILL_MAGIC"/&gt;
  *     &lt;enumeration value="REFLECT_SKILL_PHYSIC"/&gt;
@@ -118,7 +120,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="PATK_UNDEAD"/&gt;
  *     &lt;enumeration value="PDEF_UNDEAD"/&gt;
  *     &lt;enumeration value="ATTACK_REUSE"/&gt;
- *     &lt;enumeration value="INV_LIM"/&gt;
+ *     &lt;enumeration value="INVENTORY_LIMIT"/&gt;
  *     &lt;enumeration value="WH_LIM"/&gt;
  *     &lt;enumeration value="FREIGHT_LIM"/&gt;
  *     &lt;enumeration value="P_SELL_LIM"/&gt;
@@ -130,6 +132,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="MP_CONSUME"/&gt;
  *     &lt;enumeration value="SOUL_SHOT_COUNT"/&gt;
  *     &lt;enumeration value="RANDOM_DAMAGE"/&gt;
+ *     &lt;enumeration value="BROOCH_JEWEL"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
  * </pre>
@@ -160,6 +163,7 @@ public enum Stats {
     PVP_MAGIC_DAMAGE,
     PVP_PHYS_SKILL_DMG,
     EVASION_RATE,
+    MAGIC_EVASION_RATE,
     SHIELD_RATE,
     CRITICAL_RATE,
     BLOW_RATE,
@@ -168,12 +172,13 @@ public enum Stats {
     EXP_SP_RATE,
     ATTACK_CANCEL,
     ACCURACY,
+    MAGIC_ACCURACY,
+    MAGIC_RESISTENCE,
     PHYSIC_ATTACK_RANGE,
     MAGIC_ATTACK_RANGE,
     PHYSIC_ATTACK_ANGLE,
     ATTACK_COUNT_MAX,
-    RUN_SPEED,
-    WALK_SPEED,
+    MOVE_SPEED,
     STAT_STR,
     STAT_CON,
     STAT_DEX,
@@ -195,34 +200,34 @@ public enum Stats {
     EARTH,
     HOLY,
     DARK,
-    AGGRESSION_VULN,
-    BLEED_VULN,
-    POISON_VULN,
-    STUN_VULN,
-    PARALYZE_VULN,
-    ROOT_VULN,
-    SLEEP_VULN,
-    CONFUSION_VULN,
-    MOVEMENT_VULN,
-    FIRE_VULN,
-    WIND_VULN,
-    WATER_VULN,
-    EARTH_VULN,
-    HOLY_VULN,
-    DARK_VULN,
-    CANCEL_VULN,
-    DERANGEMENT_VULN,
-    DEBUFF_VULN,
-    NONE_WPN_VULN,
-    SWORD_WPN_VULN,
-    BLUNT_WPN_VULN,
-    DAGGER_WPN_VULN,
-    BOW_WPN_VULN,
-    POLE_WPN_VULN,
-    ETC_WPN_VULN,
-    FIST_WPN_VULN,
-    DUAL_WPN_VULN,
-    DUAL_FIST_WPN_VULN,
+    AGGRESSION_RESISTENCE,
+    BLEED_RESISTENCE,
+    POISON_RESISTENCE,
+    STUN_RESISTENCE,
+    PARALYZE_RESISTENCE,
+    ROOT_RESISTENCE,
+    SLEEP_RESISTENCE,
+    CONFUSION_RESISTENCE,
+    MOVEMENT_RESISTENCE,
+    FIRE_RESISTENCE,
+    WIND_RESISTENCE,
+    WATER_RESISTENCE,
+    EARTH_RESISTENCE,
+    HOLY_RESISTENCE,
+    DARK_RESISTENCE,
+    CANCEL_RESISTENCE,
+    DERANGEMENT_RESISTENCE,
+    DEBUFF_RESISTENCE,
+    NONE_WPN_RESISTENCE,
+    SWORD_WPN_RESISTENCE,
+    BLUNT_WPN_RESISTENCE,
+    DAGGER_WPN_RESISTENCE,
+    BOW_WPN_RESISTENCE,
+    POLE_WPN_RESISTENCE,
+    ETC_WPN_RESISTENCE,
+    FIST_WPN_RESISTENCE,
+    DUAL_WPN_RESISTENCE,
+    DUAL_FIST_WPN_RESISTENCE,
     REFLECT_DAMAGE_PERCENT,
     REFLECT_SKILL_MAGIC,
     REFLECT_SKILL_PHYSIC,
@@ -237,7 +242,7 @@ public enum Stats {
     PATK_UNDEAD,
     PDEF_UNDEAD,
     ATTACK_REUSE,
-    INV_LIM,
+    INVENTORY_LIMIT,
     WH_LIM,
     FREIGHT_LIM,
     P_SELL_LIM,
@@ -248,7 +253,8 @@ public enum Stats {
     HP_CONSUME_RATE,
     MP_CONSUME,
     SOUL_SHOT_COUNT,
-    RANDOM_DAMAGE;
+    RANDOM_DAMAGE,
+    BROOCH_JEWEL;
 
     public String value() {
         return name();

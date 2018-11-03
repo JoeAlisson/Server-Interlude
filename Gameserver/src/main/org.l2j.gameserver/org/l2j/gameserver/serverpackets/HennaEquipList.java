@@ -20,7 +20,7 @@ public class HennaEquipList extends L2GameServerPacket
 	protected final void writeImpl()
 	{
 		writeByte(0xe2);
-		writeInt(_player.getAdena()); // activeChar current amount of aden
+		writeLong(_player.getAdena()); // activeChar current amount of aden
 		writeInt(3); // available equip slot
 		// writeInt(10); // total amount of symbol available which depends on difference classes
 		writeInt(_hennaEquipList.size());

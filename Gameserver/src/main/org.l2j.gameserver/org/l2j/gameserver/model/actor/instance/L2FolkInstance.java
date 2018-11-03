@@ -1,23 +1,7 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.Config;
+import org.l2j.gameserver.datatables.PlayerTemplateTable;
 import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.datatables.SkillTreeTable;
 import org.l2j.gameserver.model.L2Skill;
@@ -47,7 +31,7 @@ public class L2FolkInstance extends L2NpcInstance {
     }
 
     /**
-     * this displays SkillList to the player.
+     * this displays SkillList to the reader.
      *
      * @param player
      * @param playerClass
@@ -83,7 +67,7 @@ public class L2FolkInstance extends L2NpcInstance {
             return;
         }
 
-        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(player, playerClass);
+        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(player, PlayerTemplateTable.getInstance().getClassTemplate(playerClass.getId()));
         AquireSkillListPacket asl = new AquireSkillListPacket(AquireSkillListPacket.skillType.Usual);
         int counts = 0;
 
@@ -119,7 +103,7 @@ public class L2FolkInstance extends L2NpcInstance {
     }
 
     /**
-     * this displays EnchantSkillList to the player.
+     * this displays EnchantSkillList to the reader.
      *
      * @param player
      * @param playerClass
@@ -240,7 +224,7 @@ public class L2FolkInstance extends L2NpcInstance {
                                     continue;
                                 }
 
-                                if (SkillTreeTable.getInstance().getAvailableSkills(player, cid).isEmpty()) {
+                                if (SkillTreeTable.getInstance().getAvailableSkills(player, PlayerTemplateTable.getInstance().getClassTemplate(cid.getId())).isEmpty()) {
                                     continue;
                                 }
 

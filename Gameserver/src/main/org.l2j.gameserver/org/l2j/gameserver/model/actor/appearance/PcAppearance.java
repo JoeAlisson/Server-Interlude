@@ -5,7 +5,7 @@ public class PcAppearance {
 	private byte hairColor;
 	private byte hairStyle;
 	private byte sex; // Female 1
-	/** true if the player is invisible */
+	/** true if the reader is invisible */
 	private boolean _invisible = false;
 	/** The hexadecimal Color of players name (white is 0xFFFFFF) */
 	private int _nameColor = 0xFFFFFF;

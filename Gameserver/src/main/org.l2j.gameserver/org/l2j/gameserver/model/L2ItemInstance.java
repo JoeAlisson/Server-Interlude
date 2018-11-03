@@ -5,11 +5,11 @@ import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.ai.Intention;
 import org.l2j.gameserver.datatables.ItemTable;
+import org.l2j.gameserver.factory.ItemHelper;
 import org.l2j.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.knownlist.NullKnownList;
 import org.l2j.gameserver.model.entity.database.Augmentation;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
 import org.l2j.gameserver.model.entity.database.Items;
 import org.l2j.gameserver.model.entity.database.repository.AugmentationsRepository;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
@@ -19,13 +19,16 @@ import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.StatusUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.funcs.Func;
-import org.l2j.gameserver.templates.ItemTypeGroup;
+import org.l2j.gameserver.templates.xml.jaxb.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ScheduledFuture;
+
+import static java.util.Objects.nonNull;
 
 public final class L2ItemInstance extends L2Object {
 
@@ -33,26 +36,43 @@ public final class L2ItemInstance extends L2Object {
 		super(objectId);
 		super.setKnownList(new NullKnownList(this));
 		_itemId = itemId;
-		_item = ItemTable.getInstance().getTemplate(itemId);
-		if ((_itemId == 0) || (_item == null)) {
-			throw new IllegalArgumentException();
+		template = ItemTable.getInstance().getTemplate(itemId);
+		if ((_itemId == 0) || (template == null)) {
+			throw new IllegalArgumentException("Error creating itemId " + itemId + " Template not found");
 		}
 		_count = 1;
 		_loc = ItemLocation.VOID;
 		_type1 = 0;
 		_type2 = 0;
 		_dropTime = 0;
-		_mana = _item.getDuration();
+		_mana = template.getTime();
 	}
 
+	public int getSlotId() {
+	    return ItemHelper.getItemSlot(template);
+    }
 
+    public void setLocation(ItemLocation loc, int loc_data) {
+        if ((loc == _loc) && (loc_data == _locData)) {
+            return;
+        }
+        _loc = loc;
+        _locData = loc_data;
+        _storedInDb = false;
+    }
 
-	// ###############################################
+    public int getPaperDoll() {
+	    return ItemHelper.getItemPaperDoll(template);
+    }
+
+	// ###########################################
 
 	private static final Logger _log = LoggerFactory.getLogger(L2ItemInstance.class.getName());
 	private static final Logger _logItems = LoggerFactory.getLogger("item");
 
-	/** Enumeration of locations for item */
+
+
+    /** Enumeration of locations for item */
 	public  enum ItemLocation
 	{
 		VOID,
@@ -65,12 +85,16 @@ public final class L2ItemInstance extends L2Object {
 		LEASE,
 		FREIGHT
 	}
-	
-	/** ID of the owner */
+
+    public int getEquipSlot() {
+        return _locData;
+    }
+
+    /** ID of the owner */
 	private int _ownerId;
 	
 	/** Quantity of the item */
-	private int _count;
+	private long _count;
 	/** Initial Quantity of the item */
 	private int _initCount;
 	/** Time after restore Item count (in Hours) */
@@ -82,7 +106,7 @@ public final class L2ItemInstance extends L2Object {
 	private final int _itemId;
 	
 	/** Object ItemTemplate associated to the item */
-	private final ItemTemplate _item;
+	private final ItemTemplate template;
 	
 	/** Location of the item : Inventory, PaperDoll, WareHouse */
 	private ItemLocation _loc;
@@ -106,7 +130,7 @@ public final class L2ItemInstance extends L2Object {
 	private L2Augmentation _augmentation = null;
 	
 	/** Shadow item */
-	private int _mana = -1;
+	private long _mana = -1;
 	private boolean _consumingMana = false;
 	private static final int MANA_CONSUMPTION_RATE = 60000;
 	
@@ -152,14 +176,14 @@ public final class L2ItemInstance extends L2Object {
 		super(objectId);
 		super.setKnownList(new NullKnownList(this));
 		_itemId = item.getId();
-		_item = item;
-		if ((_itemId == 0) || (_item == null))
+		template = item;
+		if ((_itemId == 0) || (template == null))
 		{
 			throw new IllegalArgumentException();
 		}
 		_count = 1;
 		_loc = ItemLocation.VOID;
-		_mana = _item.getDuration();
+		_mana = template.getTime();
 	}
 	
 	/**
@@ -212,24 +236,6 @@ public final class L2ItemInstance extends L2Object {
 		setLocation(loc, 0);
 	}
 	
-	/**
-	 * Sets the location of the item.<BR>
-	 * <BR>
-	 * <U><I>Remark :</I></U> If loc and loc_data different from database, say datas not up-to-date
-	 * @param loc : ItemLocation (enumeration)
-	 * @param loc_data : int designating the slot where the item is stored or the village for freights
-	 */
-	public void setLocation(ItemLocation loc, int loc_data)
-	{
-		if ((loc == _loc) && (loc_data == _locData))
-		{
-			return;
-		}
-		_loc = loc;
-		_locData = loc_data;
-		_storedInDb = false;
-	}
-	
 	public ItemLocation getLocation()
 	{
 		return _loc;
@@ -239,7 +245,7 @@ public final class L2ItemInstance extends L2Object {
 	 * Returns the quantity of item
 	 * @return int
 	 */
-	public int getCount()
+	public long getCount()
 	{
 		return _count;
 	}
@@ -253,7 +259,7 @@ public final class L2ItemInstance extends L2Object {
 	 * @param creator : L2PcInstance Player requesting the item creation
 	 * @param reference : L2Object Object referencing current action like NPC selling item or previous item in transformation
 	 */
-	public void changeCount(String process, int count, L2PcInstance creator, L2Object reference)
+	public void changeCount(String process, long count, L2PcInstance creator, L2Object reference)
 	{
 		if (count == 0)
 		{
@@ -305,7 +311,7 @@ public final class L2ItemInstance extends L2Object {
 	 * <U><I>Remark :</I></U> If loc and loc_data different from database, say datas not up-to-date
 	 * @param count : int
 	 */
-	public void setCount(int count)
+	public void setCount(long count)
 	{
 		if (_count == count)
 		{
@@ -321,7 +327,14 @@ public final class L2ItemInstance extends L2Object {
 	 * @return boolean
 	 */
 	public boolean isEquipable() {
-		return  _item.isEquipable();
+	    if(template instanceof Armor) {
+	        return  nonNull(((Armor) template).getBodyPart());
+        }
+
+        if(template instanceof Weapon) {
+            return nonNull(((Weapon) template).getBodyPart());
+        }
+		return false;
 	}
 	
 	/**
@@ -334,25 +347,14 @@ public final class L2ItemInstance extends L2Object {
 	}
 	
 	/**
-	 * Returns the slot where the item is stored
-	 * @return int
-	 */
-	public int getEquipSlot()
-	{
-		if (Config.ASSERT)
-		{
-			assert (_loc == ItemLocation.PAPERDOLL) || (_loc == ItemLocation.PET_EQUIP) || (_loc == ItemLocation.FREIGHT);
-		}
-		return _locData;
-	}
-	
-	/**
 	 * Returns the characteristics of the item
 	 * @return ItemTemplate
+     *
+     * TODO private
 	 */
 	public ItemTemplate getItem()
 	{
-		return _item;
+		return template;
 	}
 	
 	public int getCustomType1()
@@ -401,7 +403,7 @@ public final class L2ItemInstance extends L2Object {
 	 */
 	public Enum<?> getItemType()
 	{
-		return _item.getType();
+		return template.getType();
 	}
 	
 	/**
@@ -417,35 +419,21 @@ public final class L2ItemInstance extends L2Object {
 	 * Returns the quantity of crystals for crystallization
 	 * @return int
 	 */
-	public final int getCrystalCount()
-	{
-		return _item.getCrystalCount(_enchantLevel);
+	public final int getCrystalCount() {
+		return template.getCrystalInfo().getCount();
 	}
-	
-	/**
-	 * Returns the reference price of the item
-	 * @return int
-	 */
-	public int getReferencePrice()
+
+	public long getReferencePrice()
 	{
-		return _item.getPrice();
+		return template.getPrice();
 	}
-	
-	/**
-	 * Returns the name of the item
-	 * @return String
-	 */
+
 	public String getItemName()
 	{
-		return _item.getName();
+		return template.getName();
 	}
-	
-	/**
-	 * Returns the price of the item for selling
-	 * @return int
-	 */
-	public int getPriceToSell()
-	{
+
+	public int getPriceToSell() {
 		return (isConsumable() ? (int) (_priceSell * Config.RATE_CONSUMABLE_COST) : _priceSell);
 	}
 	
@@ -495,63 +483,38 @@ public final class L2ItemInstance extends L2Object {
 	{
 		_lastChange = lastChange;
 	}
-	
-	/**
-	 * Returns if item is stackable
-	 * @return boolean
-	 */
-	public boolean isStackable()
-	{
-		return _item.isStackable();
+
+	public boolean isStackable() {
+		return template instanceof  Item && ((Item) template).isStackable();
 	}
-	
-	/**
-	 * Returns if item is dropable
-	 * @return boolean
-	 */
-	public boolean isDropable()
-	{
-		return isAugmented() ? false : _item.isDropable();
+
+	public boolean isDropable() {
+		return !isAugmented() && template.getRestriction().isDropable();
 	}
-	
-	/**
-	 * Returns if item is destroyable
-	 * @return boolean
-	 */
+
 	public boolean isDestroyable()
 	{
-		return _item.isDestroyable();
+		return template.getRestriction().isDestroyable();
 	}
-	
-	/**
-	 * Returns if item is tradeable
-	 * @return boolean
-	 */
-	public boolean isTradeable()
-	{
-		return isAugmented() ? false : _item.isTradeable();
+
+	public boolean isTradeable() {
+		return !isAugmented() && template.getRestriction().isTradeable();
 	}
-	
-	/**
-	 * Returns if item is consumable
-	 * @return boolean
-	 */
-	public boolean isConsumable()
-	{
-		return _item.isConsumable();
+
+	private boolean isConsumable() {
+	    switch (template.getCommissionType()) {
+            case SOULSHOT:
+            case POTION:
+            case SPIRITSHOT:
+                return true;
+            default:
+                return false;
+        }
 	}
-	
-	/**
-	 * Returns if item is available for manipulation
-	 * @param player
-	 * @param allowAdena
-	 * @return boolean
-	 */
-	public boolean isAvailable(L2PcInstance player, boolean allowAdena)
-	{
+
+	public boolean isAvailable(L2PcInstance player, boolean allowAdena) {
 		return ((!isEquipped()) // Not equipped
-			&& (getItem().getType2() != ItemTypeGroup.TYPE2_QUEST) // Not Quest Item
-			&& ((getItem().getType2() != ItemTypeGroup.TYPE2_MONEY) || (getItem().getType1() != ItemTypeGroup.TYPE1_ARMOR_SHIELD)) // TODO: what does this mean?
+			&& (!template.isQuestItem()) // Not Quest Item
 			&& ((player.getPet() == null) || (getObjectId() != player.getPet().getControlItemId())) // Not Control item of currently summoned pet
 			&& (player.getActiveEnchantItem() != this) // Not momentarily used enchant scroll
 			&& (allowAdena || (getItemId() != 57)) && ((player.getCurrentSkill() == null) || (player.getCurrentSkill().getSkill().getItemConsumeId() != getItemId())) && (isTradeable()));
@@ -704,12 +667,8 @@ public final class L2ItemInstance extends L2Object {
 	{
 		_mana = mana;
 	}
-	
-	/**
-	 * Returns the remaining mana of this shadow item
-	 * @return lifeTime
-	 */
-	public int getMana()
+
+	public long getMana()
 	{
 		return _mana;
 	}
@@ -743,7 +702,7 @@ public final class L2ItemInstance extends L2Object {
 		if (player != null)
 		{
 			SystemMessage sm;
-			switch (_mana)
+			switch ((int) _mana)
 			{
 				case 10:
 					sm = new SystemMessage(SystemMessageId.S1S_REMAINING_MANA_IS_NOW_10);
@@ -884,13 +843,14 @@ public final class L2ItemInstance extends L2Object {
 	}
 	
 	/**
-	 * This function basically returns a set of functions from ItemTemplate/Armor/Weapon, but may add additional functions, if this particular item instance is enhanched for a particular player.
-	 * @param player : L2Character designating the player
+	 * This function basically returns a set of functions from ItemTemplate/Armor/Weapon, but may add additional functions, if this particular item instance is enhanched for a particular reader.
+	 * @param player : L2Character designating the reader
 	 * @return Func[]
+     * TODO implement
 	 */
 	public List<Func> getStatFuncs(L2Character player)
 	{
-		return getItem().getStatFuncs(this, player);
+		return  new ArrayList<>(); /*getItem().getStatFuncs(this, player);*/
 	}
 	
 	/**
@@ -942,7 +902,7 @@ public final class L2ItemInstance extends L2Object {
         int owner_id = items.getOwnerId();
         int item_id = items.getItemId();
         int objectId = items.getId();
-        int count = items.getCount();
+        long count = items.getCount();
         ItemLocation loc = ItemLocation.valueOf(items.getLoc());
         int loc_data = items.getLocData();
         int enchant_level = items.getEnchantLevel();
@@ -1133,7 +1093,7 @@ public final class L2ItemInstance extends L2Object {
 	@Override
 	public String toString()
 	{
-		return "" + _item;
+		return template.getName();
 	}
 	
 	public void resetOwnerTimer()

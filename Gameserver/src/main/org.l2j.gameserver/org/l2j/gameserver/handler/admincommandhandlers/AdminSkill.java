@@ -160,7 +160,7 @@ public class AdminSkill implements IAdminCommandHandler {
         boolean countUnlearnable = true;
         int unLearnable = 0;
         int skillCounter = 0;
-        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(player, player.getPlayerClass());
+        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(player, player.getTemplate());
         while (skills.size() > unLearnable) {
             for (SkillInfo s : skills) {
                 L2Skill sk = SkillTable.getInstance().getInfo(s.getId(), s.getLevel());
@@ -176,9 +176,9 @@ public class AdminSkill implements IAdminCommandHandler {
                 player.addSkill(sk, true);
             }
             countUnlearnable = false;
-            skills = SkillTreeTable.getInstance().getAvailableSkills(player, player.getPlayerClass());
+            skills = SkillTreeTable.getInstance().getAvailableSkills(player, player.getTemplate());
         }
-        // Notify player and admin
+        // Notify reader and admin
         player.sendMessage("A GM gave you " + skillCounter + " skills.");
         activeChar.sendMessage("You gave " + skillCounter + " skills to " + player.getName());
         player.sendSkillList();

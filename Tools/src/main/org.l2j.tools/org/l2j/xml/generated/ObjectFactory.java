@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
+// Gerado em: 2018.11.02 às 11:52:58 AM BRT 
 //
 
 
@@ -40,7 +40,7 @@ public class ObjectFactory {
     private final static QName _State_QNAME = new QName("http://la2j.org", "state");
     private final static QName _Level_QNAME = new QName("http://la2j.org", "level");
     private final static QName _Using_QNAME = new QName("http://la2j.org", "using");
-    private final static QName _Player_QNAME = new QName("http://la2j.org", "player");
+    private final static QName _Player_QNAME = new QName("http://la2j.org", "reader");
     private final static QName _Game_QNAME = new QName("http://la2j.org", "game");
     private final static QName _ItemTemplate_QNAME = new QName("http://la2j.org", "itemTemplate");
     private final static QName _Weapon_QNAME = new QName("http://la2j.org", "weapon");
@@ -191,11 +191,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link XmlTypeStat }
+     * Create an instance of {@link Stat }
      * 
      */
-    public XmlTypeStat createXmlTypeStat() {
-        return new XmlTypeStat();
+    public Stat createStat() {
+        return new Stat();
     }
 
     /**
@@ -231,11 +231,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link XmlItemSkill }
+     * Create an instance of {@link ItemSkill }
      * 
      */
-    public XmlItemSkill createXmlItemSkill() {
-        return new XmlItemSkill();
+    public ItemSkill createItemSkill() {
+        return new ItemSkill();
     }
 
     /**
@@ -363,7 +363,7 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link XmlStatPlayerCondition }{@code >}
      */
-    @XmlElementDecl(namespace = "http://la2j.org", name = "player", substitutionHeadNamespace = "http://la2j.org", substitutionHeadName = "condition")
+    @XmlElementDecl(namespace = "http://la2j.org", name = "reader", substitutionHeadNamespace = "http://la2j.org", substitutionHeadName = "condition")
     public JAXBElement<XmlStatPlayerCondition> createPlayer(XmlStatPlayerCondition value) {
         return new JAXBElement<XmlStatPlayerCondition>(_Player_QNAME, XmlStatPlayerCondition.class, null, value);
     }

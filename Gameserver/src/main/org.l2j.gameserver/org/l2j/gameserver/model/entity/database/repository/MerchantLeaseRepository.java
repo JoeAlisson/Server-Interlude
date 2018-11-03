@@ -9,6 +9,6 @@ import org.springframework.data.repository.query.Param;
 public interface MerchantLeaseRepository extends CrudRepository<MerchantLease, Integer> {
 
     @Modifying
-    @Query("DELETE FROM merchant_lease WHERE player_id=:player")
-    int deleteByPlayer(@Param("player") int playerObjectId);
+    @Query("DELETE FROM merchant_lease WHERE player_id=:reader")
+    int deleteByPlayer(@Param("reader") int playerObjectId);
 }

@@ -194,11 +194,11 @@ public final class L2GuardInstance extends L2Attackable
 	}
 	
 	/**
-	 * Manage actions when a player click on the L2GuardInstance.<BR>
+	 * Manage actions when a reader click on the L2GuardInstance.<BR>
 	 * <BR>
 	 * <B><U> Actions on first click on the L2GuardInstance (Select it)</U> :</B><BR>
 	 * <BR>
-	 * <li>Set the L2GuardInstance as target of the L2PcInstance player (if necessary)</li> <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance player (display the select window)</li> <li>Set the L2PcInstance Intention to AI_INTENTION_IDLE</li> <li>Send a Server->Client packet
+	 * <li>Set the L2GuardInstance as target of the L2PcInstance reader (if necessary)</li> <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance reader (display the select window)</li> <li>Set the L2PcInstance Intention to AI_INTENTION_IDLE</li> <li>Send a Server->Client packet
 	 * ValidateLocation to correct the L2GuardInstance position and heading on the client</li><BR>
 	 * <BR>
 	 * <B><U> Actions on second click on the L2GuardInstance (Attack it/Interact with it)</U> :</B><BR>
@@ -228,10 +228,10 @@ public final class L2GuardInstance extends L2Attackable
 				_log.debug(player.getObjectId() + ": Targetted guard " + getObjectId());
 			}
 			
-			// Set the target of the L2PcInstance player
+			// Set the target of the L2PcInstance reader
 			player.setTarget(this);
 			
-			// Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+			// Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
 			// The color to display in the select window is White
 			MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
 			player.sendPacket(my);

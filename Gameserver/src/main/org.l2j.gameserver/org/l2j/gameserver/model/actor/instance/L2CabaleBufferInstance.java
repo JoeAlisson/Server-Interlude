@@ -47,10 +47,10 @@ public class L2CabaleBufferInstance extends L2NpcInstance
 		
 		if (this != player.getTarget())
 		{
-			// Set the target of the L2PcInstance player
+			// Set the target of the L2PcInstance reader
 			player.setTarget(this);
 			
-			// Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+			// Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
 			// The color to display in the select window is White
 			MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
 			player.sendPacket(my);
@@ -108,8 +108,8 @@ public class L2CabaleBufferInstance extends L2NpcInstance
 			}
 			
 			/**
-			 * For each known player in range, cast either the positive or negative buff. <BR>
-			 * The stats affected depend on the player type, either a FIGHTER or a mystic. <BR>
+			 * For each known reader in range, cast either the positive or negative buff. <BR>
+			 * The stats affected depend on the reader type, either a FIGHTER or a mystic. <BR>
 			 * <BR>
 			 * Curse of Destruction (Loser)<BR>
 			 * - Fighters: -25% Accuracy, -25% Effect Resistance<BR>

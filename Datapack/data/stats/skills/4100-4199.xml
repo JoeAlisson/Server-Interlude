@@ -1005,7 +1005,7 @@
   </for>
 </skill>
 <skill id="4161" levels="1" name="Summon PC">
-  <!-- Teleports player to mob (Porta/Perum skill) -->
+  <!-- Teleports reader to mob (Porta/Perum skill) -->
   <set name="target" val="TARGET_NONE"/>
   <set name="hitTime" val="2000"/>
   <set name="skillType" val="NOTDONE"/>

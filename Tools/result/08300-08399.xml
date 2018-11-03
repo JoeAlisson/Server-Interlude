@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="8320" name="Recipe: Destroyer Hammer (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>73200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>813</recipeId>
+    </item>
+    <item stackable="true" id="8388" name="Spellbook: Greater Might" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="8325" name="Recipe: Doom Crusher (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>108000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>809</recipeId>
+    </item>
+    <item stackable="true" id="8389" name="Spellbook: Greater Shield" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="8326" name="Recipe: Doom Crusher (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>108000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>808</recipeId>
+    </item>
+    <item stackable="true" id="8327" name="Steel Sword Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>11912</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="8331" name="Infernal Master Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>11723</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="8300" name="Recipe: Infernal Master (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>73200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>814</recipeId>
+    </item>
+    <item stackable="true" id="8397" name="Spellbook: Clarity" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="8341" name="Spiritual Eye Piece" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>11877</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="8342" name="Flaming Dragon Skull Piece" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>14583</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="8343" name="Lesser Giant's Hammer Piece" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>19757</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="8313" name="Recipe: Spiritual Eye (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>73200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>805</recipeId>
+    </item>
+    <item stackable="true" id="8314" name="Recipe: Spiritual Eye (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>73200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>804</recipeId>
+    </item>
+    <item stackable="true" id="8346" name="Destroyer Hammer Piece" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>11862</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="8315" name="Recipe: Flaming Dragon Skull (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>108000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>807</recipeId>
+    </item>
+    <item stackable="true" id="8316" name="Recipe: Flaming Dragon Skull (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>108000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>806</recipeId>
+    </item>
+    <item stackable="true" id="8317" name="Recipe: Lesser Giant's Hammer" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+        <price>28000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>788</recipeId>
+    </item>
+    <item stackable="true" id="8349" name="Doom Crusher Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+        <price>14586</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <weapon id="8350" name="Souvenir Maracas" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_chrono_maracas_i00">
+        <price>0</price>
+        <restriction dropable="false" freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="3045" level="14" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+    </weapon>
+</itemList>

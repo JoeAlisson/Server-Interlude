@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="49300" name="Steel Sword" additionalName="Haste" type="SWORD" icon="icon.weapon_iron_sword_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49301" name="Steel Sword" additionalName="Critical Damage" type="SWORD" icon="icon.weapon_iron_sword_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49302" name="Lesser Giant's Sword" additionalName="Focus" type="SWORD" icon="icon.weapon_giants_sword_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49303" name="Lesser Giant's Sword" additionalName="Haste" type="SWORD" icon="icon.weapon_giants_sword_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49304" name="Lesser Giant's Sword" additionalName="Critical Damage" type="SWORD" icon="icon.weapon_giants_sword_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49305" name="Dagger of Mana" additionalName="Empower" type="DAGGER" icon="icon.weapon_dagger_of_mana_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49306" name="Dagger of Mana" additionalName="Acumen" type="DAGGER" icon="icon.weapon_dagger_of_mana_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49307" name="Dagger of Mana" additionalName="Magic Regeneration" type="DAGGER" icon="icon.weapon_dagger_of_mana_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49308" name="Mystic Knife" additionalName="Empower" type="DAGGER" icon="icon.weapon_mystic_knife_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>760</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49309" name="Mystic Knife" additionalName="Acumen" type="DAGGER" icon="icon.weapon_mystic_knife_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>760</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49310" name="Mystic Knife" additionalName="Magic Regeneration" type="DAGGER" icon="icon.weapon_mystic_knife_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>760</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49311" name="Conjurer's Knife" additionalName="Empower" type="DAGGER" icon="icon.weapon_conjure_knife_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49312" name="Conjurer's Knife" additionalName="Acumen" type="DAGGER" icon="icon.weapon_conjure_knife_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49313" name="Conjurer's Knife" additionalName="Magic Regeneration" type="DAGGER" icon="icon.weapon_conjure_knife_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49314" name="Shilen Knife" additionalName="Empower" type="DAGGER" icon="icon.weapon_knife_o'_silenus_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49315" name="Shilen Knife" additionalName="Acumen" type="DAGGER" icon="icon.weapon_knife_o'_silenus_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49316" name="Shilen Knife" additionalName="Magic Regeneration" type="DAGGER" icon="icon.weapon_knife_o'_silenus_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49317" name="Sword of Magic" additionalName="Empower" type="SWORD" icon="icon.weapon_sword_of_magic_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49318" name="Sword of Magic" additionalName="Acumen" type="SWORD" icon="icon.weapon_sword_of_magic_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49319" name="Sword of Magic" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_sword_of_magic_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49320" name="Scroll of Wisdom" additionalName="Empower" type="SWORD" icon="icon.weapon_scroll_of_wisdom_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49321" name="Scroll of Wisdom" additionalName="Acumen" type="SWORD" icon="icon.weapon_scroll_of_wisdom_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49322" name="Scroll of Wisdom" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_scroll_of_wisdom_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49323" name="Sword of Mystic" additionalName="Empower" type="SWORD" icon="icon.weapon_sword_of_mystic_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49324" name="Sword of Mystic" additionalName="Acumen" type="SWORD" icon="icon.weapon_sword_of_mystic_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49325" name="Sword of Mystic" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_sword_of_mystic_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49326" name="Sword of Occult" additionalName="Empower" type="SWORD" icon="icon.weapon_sword_of_occult_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49327" name="Sword of Occult" additionalName="Acumen" type="SWORD" icon="icon.weapon_sword_of_occult_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49328" name="Sword of Occult" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_sword_of_occult_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49329" name="Branch of Life" additionalName="Empower" type="SWORD" icon="icon.weapon_branch_of_life_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>620</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49330" name="Branch of Life" additionalName="Acumen" type="SWORD" icon="icon.weapon_branch_of_life_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>620</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49331" name="Branch of Life" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_branch_of_life_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>620</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49332" name="Temptation of Abyss" additionalName="Empower" type="SWORD" icon="icon.weapon_temptation_of_abyss_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49333" name="Temptation of Abyss" additionalName="Acumen" type="SWORD" icon="icon.weapon_temptation_of_abyss_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49334" name="Temptation of Abyss" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_temptation_of_abyss_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49335" name="Proof of Revenge" additionalName="Empower" type="SWORD" icon="icon.weapon_proof_of_revenge_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49336" name="Proof of Revenge" additionalName="Acumen" type="SWORD" icon="icon.weapon_proof_of_revenge_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49337" name="Proof of Revenge" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_proof_of_revenge_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49338" name="Divine Tome" additionalName="Empower" type="SWORD" icon="icon.weapon_divine_tome_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49339" name="Divine Tome" additionalName="Acumen" type="SWORD" icon="icon.weapon_divine_tome_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49340" name="Divine Tome" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_divine_tome_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49341" name="Sage's Blood" additionalName="Empower" type="SWORD" icon="icon.weapon_blood_of_saints_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49342" name="Sage's Blood" additionalName="Acumen" type="SWORD" icon="icon.weapon_blood_of_saints_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49343" name="Sage's Blood" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_blood_of_saints_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49344" name="Tome of Blood" additionalName="Empower" type="SWORD" icon="icon.weapon_tome_of_blood_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49345" name="Tome of Blood" additionalName="Acumen" type="SWORD" icon="icon.weapon_tome_of_blood_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49346" name="Tome of Blood" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_tome_of_blood_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49347" name="Crucifix of Blood" additionalName="Empower" type="SWORD" icon="icon.weapon_crucifix_of_blood_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49348" name="Crucifix of Blood" additionalName="Acumen" type="SWORD" icon="icon.weapon_crucifix_of_blood_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49349" name="Crucifix of Blood" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_crucifix_of_blood_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49350" name="Eye of Infinity" additionalName="Empower" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49351" name="Eye of Infinity" additionalName="Acumen" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49352" name="Eye of Infinity" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49353" name="Blue Crystal Skull" additionalName="Empower" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49354" name="Blue Crystal Skull" additionalName="Acumen" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49355" name="Blue Crystal Skull" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49356" name="Demon's Fangs" additionalName="Empower" type="SWORD" icon="icon.weapon_demon_fangs_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49357" name="Demon's Fangs" additionalName="Acumen" type="SWORD" icon="icon.weapon_demon_fangs_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49358" name="Demon's Fangs" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_demon_fangs_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49359" name="Vajra Wand" additionalName="Empower" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49360" name="Vajra Wand" additionalName="Acumen" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49361" name="Vajra Wand" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49362" name="Ancient Reagent" additionalName="Empower" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49363" name="Ancient Reagent" additionalName="Acumen" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49364" name="Ancient Reagent" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_apprentices_spellbook_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49365" name="Priest Sword" additionalName="Empower" type="SWORD" icon="icon.weapon_sword_of_priest_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49366" name="Priest Sword" additionalName="Acumen" type="SWORD" icon="icon.weapon_sword_of_priest_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49367" name="Priest Sword" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_sword_of_priest_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49368" name="Sword of Magic Fog" additionalName="Empower" type="SWORD" icon="icon.weapon_sword_of_magic_fog_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1450</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49369" name="Sword of Magic Fog" additionalName="Acumen" type="SWORD" icon="icon.weapon_sword_of_magic_fog_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1450</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49370" name="Sword of Magic Fog" additionalName="Magic Regeneration" type="SWORD" icon="icon.weapon_sword_of_magic_fog_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1450</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49371" name="Mace of Prayer" additionalName="Empower" type="BLUNT" icon="icon.weapon_mace_of_prayer_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49372" name="Mace of Prayer" additionalName="Acumen" type="BLUNT" icon="icon.weapon_mace_of_prayer_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49373" name="Mace of Prayer" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_mace_of_prayer_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49374" name="Mace of Judgment" additionalName="Empower" type="BLUNT" icon="icon.weapon_mace_of_judgment_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49375" name="Mace of Judgment" additionalName="Acumen" type="BLUNT" icon="icon.weapon_mace_of_judgment_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49376" name="Mace of Judgment" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_mace_of_judgment_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49377" name="Mace of Miracle" additionalName="Empower" type="BLUNT" icon="icon.weapon_mace_of_miracle_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1250</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49378" name="Mace of Miracle" additionalName="Acumen" type="BLUNT" icon="icon.weapon_mace_of_miracle_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1250</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49379" name="Mace of Miracle" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_mace_of_miracle_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1250</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49380" name="Doom Hammer" additionalName="Empower" type="BLUNT" icon="icon.weapon_doom_hammer_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1200</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49381" name="Doom Hammer" additionalName="Acumen" type="BLUNT" icon="icon.weapon_doom_hammer_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1200</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49382" name="Doom Hammer" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_doom_hammer_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1200</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49383" name="Staff of Life" additionalName="Empower" type="BLUNT" icon="icon.weapon_life_stick_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49384" name="Staff of Life" additionalName="Acumen" type="BLUNT" icon="icon.weapon_life_stick_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49385" name="Staff of Life" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_life_stick_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49386" name="Priest Mace" additionalName="Empower" type="BLUNT" icon="icon.weapon_mace_of_priest_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49387" name="Priest Mace" additionalName="Acumen" type="BLUNT" icon="icon.weapon_mace_of_priest_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49388" name="Priest Mace" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_mace_of_priest_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49389" name="Goat Head Staff" additionalName="Empower" type="BLUNT" icon="icon.weapon_goathead_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49390" name="Goat Head Staff" additionalName="Acumen" type="BLUNT" icon="icon.weapon_goathead_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49391" name="Goat Head Staff" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_goathead_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49392" name="Bone Staff" additionalName="Empower" type="BLUNT" icon="icon.weapon_apprentices_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1060</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49393" name="Bone Staff" additionalName="Acumen" type="BLUNT" icon="icon.weapon_apprentices_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1060</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49394" name="Bone Staff" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_apprentices_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1060</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49395" name="Mystic Staff" additionalName="Empower" type="BLUNT" icon="icon.weapon_mystic_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49396" name="Mystic Staff" additionalName="Acumen" type="BLUNT" icon="icon.weapon_mystic_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49397" name="Mystic Staff" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_mystic_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49398" name="Conjuror's Staff" additionalName="Empower" type="BLUNT" icon="icon.weapon_conjure_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1030</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49399" name="Conjuror's Staff" additionalName="Acumen" type="BLUNT" icon="icon.weapon_conjure_staff_i01">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1030</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

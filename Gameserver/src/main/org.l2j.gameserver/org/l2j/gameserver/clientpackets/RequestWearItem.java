@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
@@ -28,13 +10,13 @@ import org.l2j.gameserver.model.actor.instance.L2MercManagerInstance;
 import org.l2j.gameserver.model.actor.instance.L2MerchantInstance;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
 import org.l2j.gameserver.model.entity.database.MerchantShop;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ActionFailed;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.StatusUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,11 +24,6 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 import java.util.concurrent.Future;
 
-
-/**
- * This class ...
- * @version $Revision: 1.12.4.4 $ $Date: 2005/03/27 15:29:30 $
- */
 public final class RequestWearItem extends L2GameClientPacket
 {
 	private static final String _C__C6_REQUESTWEARITEM = "[C] C6 RequestWearItem";
@@ -126,20 +103,20 @@ public final class RequestWearItem extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		// Get the current player and return if null
+		// Get the current reader and return if null
 		L2PcInstance player = getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 		
-		// If Alternate rule Karma punishment is set to true, forbid Wear to player with Karma
+		// If Alternate rule Karma punishment is set to true, forbid Wear to reader with Karma
 		if (!Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP && (player.getKarma() > 0))
 		{
 			return;
 		}
 		
-		// Check current target of the player and the INTERACTION_DISTANCE
+		// Check current target of the reader and the INTERACTION_DISTANCE
 		L2Object target = player.getTarget();
 		if (!player.isGM() && ((target == null // No target (ie GM Shop)
 			) || !((target instanceof L2MerchantInstance) || (target instanceof L2MercManagerInstance)) // Target not a merchant and not mercmanager
@@ -151,7 +128,7 @@ public final class RequestWearItem extends L2GameClientPacket
 		
 		MerchantShop list = null;
 		
-		// Get the current merchant targeted by the player
+		// Get the current merchant targeted by the reader
 		L2MerchantInstance merchant = ((target != null) && (target instanceof L2MerchantInstance)) ? (L2MerchantInstance) target : null;
 		
 		List<MerchantShop> lists = TradeController.getInstance().getBuyListByNpcId(merchant.getNpcId());
@@ -247,22 +224,22 @@ public final class RequestWearItem extends L2GameClientPacket
 				return;
 			}
 			
-			// If player doesn't own this item : Add this L2ItemInstance to Inventory and set properties lastchanged to ADDED and _wear to True
-			// If player already own this item : Return its L2ItemInstance (will not be destroy because property _wear set to False)
+			// If reader doesn't own this item : Add this L2ItemInstance to Inventory and set properties lastchanged to ADDED and _wear to True
+			// If reader already own this item : Return its L2ItemInstance (will not be destroy because property _wear set to False)
 			L2ItemInstance item = player.getInventory().addWearItem("Wear", itemId, player, merchant);
 			
-			// Equip player with this item (set its location)
+			// Equip reader with this item (set its location)
 			player.getInventory().equipItemAndRecord(item);
 			
 			// Add this Item in the InventoryUpdate Server->Client Packet
 			playerIU.addItem(item);
 		}
 		
-		// Send the InventoryUpdate Server->Client Packet to the player
-		// Add Items in player inventory and equip them
+		// Send the InventoryUpdate Server->Client Packet to the reader
+		// Add Items in reader inventory and equip them
 		player.sendPacket(playerIU);
 		
-		// Send the StatusUpdate Server->Client Packet to the player with new CUR_LOAD (0x0e) information
+		// Send the StatusUpdate Server->Client Packet to the reader with new CUR_LOAD (0x0e) information
 		StatusUpdate su = new StatusUpdate(player.getObjectId());
 		su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
 		player.sendPacket(su);

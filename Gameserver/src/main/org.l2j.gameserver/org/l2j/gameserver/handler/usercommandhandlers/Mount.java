@@ -58,7 +58,7 @@ public class Mount implements IUserCommandHandler
 		{
 			if (activeChar.isDead())
 			{
-				// A strider cannot be ridden when player is dead.
+				// A strider cannot be ridden when reader is dead.
 				SystemMessage msg = new SystemMessage(SystemMessageId.STRIDER_CANT_BE_RIDDEN_WHILE_DEAD);
 				activeChar.sendPacket(msg);
 			}
@@ -76,13 +76,13 @@ public class Mount implements IUserCommandHandler
 			}
 			else if (activeChar.isInCombat())
 			{
-				// A pet cannot be ridden while player is in battle.
+				// A pet cannot be ridden while reader is in battle.
 				SystemMessage msg = new SystemMessage(SystemMessageId.STRIDER_CANT_BE_RIDDEN_WHILE_IN_BATTLE);
 				activeChar.sendPacket(msg);
 			}
 			else if (activeChar.isSitting() || activeChar.isMoving())
 			{
-				// A strider can be ridden only when player is standing.
+				// A strider can be ridden only when reader is standing.
 				SystemMessage msg = new SystemMessage(SystemMessageId.STRIDER_CAN_BE_RIDDEN_ONLY_WHILE_STANDING);
 				activeChar.sendPacket(msg);
 			}

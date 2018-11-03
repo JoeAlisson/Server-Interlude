@@ -54,10 +54,10 @@ public class AdminEditChar implements IAdminCommandHandler {
                     "admin_nokarma", // this is to remove karma from selected char...
                     "admin_setkarma", // sets karma of target char to any amount. //setkarma <karma>
                     "admin_character_list", // same as character_info, kept for compatibility purposes
-                    "admin_character_info", // given a player name, displays an information window
+                    "admin_character_info", // given a reader name, displays an information window
                     "admin_show_characters",// list of characters
-                    "admin_find_character", // find a player by his name or a part of it (case-insensitive)
-                    "admin_find_ip", // find allTemplates the player connections from a given IPv4 number
+                    "admin_find_character", // find a reader by his name or a part of it (case-insensitive)
+                    "admin_find_ip", // find allTemplates the reader connections from a given IPv4 number
                     "admin_find_account", // list allTemplates the characters from an account (useful for GMs w/o DB access)
                     "admin_save_modifications", // consider it deprecated...
                     "admin_rec", // gives recommendation points
@@ -126,7 +126,7 @@ public class AdminEditChar implements IAdminCommandHandler {
             try {
                 String val = command.substring(19);
                 findCharactersPerAccount(activeChar, val);
-            } catch (Exception e) { // Case of empty or malformed player name
+            } catch (Exception e) { // Case of empty or malformed reader name
                 activeChar.sendMessage("Usage: //find_account <player_name>");
                 listCharacters(activeChar, 0);
             }
@@ -345,7 +345,7 @@ public class AdminEditChar implements IAdminCommandHandler {
         }
         adminReply.replace("%pages%", replyMSG.toString());
         replyMSG.delete(0, replyMSG.length());
-        for (int i = CharactersStart; i < CharactersEnd; i++) { // Add player info into new Table row
+        for (int i = CharactersStart; i < CharactersEnd; i++) { // Add reader info into new Table row
             replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_info " + players[i].getName() + "\">" + players[i].getName() + "</a></td><td width=110>" + players[i].getTemplate().getName() + "</td><td width=40>" + players[i].getLevel() + "</td></tr>");
         }
         adminReply.replace("%players%", replyMSG.toString());
@@ -544,7 +544,7 @@ public class AdminEditChar implements IAdminCommandHandler {
         NpcHtmlMessage adminReply = new NpcHtmlMessage(5);
         adminReply.setFile("data/html/admin/charfind.htm");
         StringBuilder replyMSG = new StringBuilder();
-        for (L2PcInstance player : players) { // Add player info into new Table row
+        for (L2PcInstance player : players) { // Add reader info into new Table row
             name = player.getName();
             if (name.toLowerCase().contains(CharacterToFind.toLowerCase())) {
                 CharactersFound = CharactersFound + 1;
@@ -639,7 +639,7 @@ public class AdminEditChar implements IAdminCommandHandler {
             }
             adminReply.replace("%characters%", replyMSG.toString());
             adminReply.replace("%account%", account);
-            adminReply.replace("%player%", characterName);
+            adminReply.replace("%reader%", characterName);
             activeChar.sendPacket(adminReply);
         } else {
             throw new IllegalArgumentException("Malformed character name");

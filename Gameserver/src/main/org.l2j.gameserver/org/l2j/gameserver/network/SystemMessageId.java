@@ -316,7 +316,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 145<br>
-	 * Message: That player is not online.
+	 * Message: That reader is not online.
 	 */
 	TARGET_IS_NOT_FOUND_IN_THE_GAME(145),
 	
@@ -652,7 +652,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 305<br>
-	 * Message: The player declined to join your party.
+	 * Message: The reader declined to join your party.
 	 */
 	PLAYER_DECLINED(305),
 	
@@ -670,7 +670,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 161<br>
-	 * Message: That player is not currently online.
+	 * Message: That reader is not currently online.
 	 */
 	INVITED_USER_NOT_ONLINE(161),
 	
@@ -688,7 +688,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 1399<br>
-	 * Message: Only the leader of the party can transfer party leadership to another player.
+	 * Message: Only the leader of the party can transfer party leadership to another reader.
 	 */
 	ONLY_A_PARTY_LEADER_CAN_TRANSFER_ONES_RIGHTS_TO_ANOTHER_PLAYER(1399),
 	
@@ -1048,7 +1048,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 271<br>
-	 * Message: A player can only be granted a title if the clan is level 3 or above
+	 * Message: A reader can only be granted a title if the clan is level 3 or above
 	 */
 	CLAN_LVL_3_NEEDED_TO_ENDOWE_TITLE(271),
 	
@@ -1948,7 +1948,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 826<br>
-	 * Message: First prize goes to the player in lane $s1. Second prize goes to the player in lane $s2.
+	 * Message: First prize goes to the reader in lane $s1. Second prize goes to the reader in lane $s2.
 	 */
 	MONSRACE_FIRST_PLACE_S1_SECOND_S2(826),
 	
@@ -3097,7 +3097,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 484<br>
-	 * Message: This player is already registered in your friends list.
+	 * Message: This reader is already registered in your friends list.
 	 */
 	S1_ALREADY_IN_FRIENDS_LIST(484),
 	
@@ -3121,7 +3121,7 @@ public enum SystemMessageId {
 	
 	/**
 	 * ID: 662<br>
-	 * Message: The other player is rejecting friend invitations.
+	 * Message: The other reader is rejecting friend invitations.
 	 */
 	THE_PLAYER_IS_REJECTING_FRIEND_INVITATIONS(662),
 	

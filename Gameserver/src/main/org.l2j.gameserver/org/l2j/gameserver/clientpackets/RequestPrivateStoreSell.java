@@ -69,7 +69,7 @@ public final class RequestPrivateStoreSell extends L2GameClientPacket
 			
 			if ((count > Integer.MAX_VALUE) || (count < 0))
 			{
-				String msgErr = "[RequestPrivateStoreSell] player " + getClient().getActiveChar().getName() + " tried an overflow exploit, ban this player!";
+				String msgErr = "[RequestPrivateStoreSell] reader " + getClient().getActiveChar().getName() + " tried an overflow exploit, ban this reader!";
 				Util.handleIllegalPlayerAction(getClient().getActiveChar(), msgErr, Config.DEFAULT_PUNISH);
 				_count = 0;
 				_items = null;
@@ -81,7 +81,7 @@ public final class RequestPrivateStoreSell extends L2GameClientPacket
 		
 		if ((priceTotal < 0) || (priceTotal > Integer.MAX_VALUE))
 		{
-			String msgErr = "[RequestPrivateStoreSell] player " + getClient().getActiveChar().getName() + " tried an overflow exploit, ban this player!";
+			String msgErr = "[RequestPrivateStoreSell] reader " + getClient().getActiveChar().getName() + " tried an overflow exploit, ban this reader!";
 			Util.handleIllegalPlayerAction(getClient().getActiveChar(), msgErr, Config.DEFAULT_PUNISH);
 			_count = 0;
 			_items = null;

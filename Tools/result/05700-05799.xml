@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="5765" name="Dark Crystal Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t74_g_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5766" name="Dark Crystal Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t75_g_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5767" name="Dark Crystal Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t76_g_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5768" name="Tallum Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t77_g_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5769" name="Tallum Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t78_g_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5770" name="Tallum Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t79_g_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5771" name="Gauntlets of Nightmare" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t80_g_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>550</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5772" name="Gauntlets of Nightmare" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t81_g_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>550</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5773" name="Gauntlets of Nightmare" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t82_g_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>550</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5774" name="Majestic Gauntlets" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t83_g_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5775" name="Majestic Gauntlets" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t84_g_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5776" name="Majestic Gauntlets" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t85_g_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5777" name="Dark Crystal Boots" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t74_b_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5778" name="Dark Crystal Boots" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t75_b_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5779" name="Dark Crystal Boots" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t76_b_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5780" name="Tallum Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t77_b_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5781" name="Tallum Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t78_b_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5782" name="Tallum Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t79_b_i00">
+        <price>890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5783" name="Boots of Nightmare" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t80_b_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5784" name="Boots of Nightmare" additionalName="Light" commissionType="FEET" icon="icon.armor_t81_b_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5785" name="Boots of Nightmare" additionalName="Robe" commissionType="FEET" icon="icon.armor_t82_b_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5786" name="Majestic Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t83_b_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5787" name="Majestic Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t84_b_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5788" name="Majestic Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t85_b_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <item stackable="true" id="5789" name="Soulshot (No-grade) (Novice)" type="SOULSHOT" icon="icon.etc_soulshot_none_for_rookie_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1</weight>
+        <skill id="2039" level="1"/>
+    </item>
+    <item stackable="true" id="5790" name="Spiritshot (No-grade) (Novice)" type="SOULSHOT" icon="icon.etc_spiritshot_none_for_rookie_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1</weight>
+        <skill id="2047" level="1"/>
+    </item>
+    <weapon id="5791" name="Tomb Guard A" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5792" name="Tomb Guard B" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5793" name="Tomb Savant A" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1380</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5794" name="Tomb Savant B" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1380</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5795" name="Tomb Guard A" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5796" name="Tomb Guard B" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5797" name="Tomb Savant A" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1380</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5798" name="Tomb Savant B" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1380</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="5799" name="Nephilim Lord" commissionType="ONE_HAND_SWORD" icon="icon.weapon_monster_i00">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <item stackable="true" id="5703" name="Lucky Charm (No-grade)" type="SCROLL" commissionType="OTHER_ITEM" icon="icon.etc_charm_of_luck_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>10000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2168" level="1"/>
+    </item>
+    <weapon id="5705" name="Keshanberk*Damascus" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>18567400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1485"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <skill id="3013" level="3" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5706" name="Damascus*Damascus" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <skill id="3046" level="20" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item id="5707" name="Record of Seven Signs" commissionType="OTHER_ITEM" icon="icon.etc_ssq_scroll_i00">
+        <price>500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="5708" name="Lord's Certificate of Approval" type="TICKET_OF_LORD" commissionType="OTHER_ITEM" icon="icon.etc_permit_card_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="5710" name="Zubei's Gauntlets" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t64_g_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5711" name="Zubei's Gauntlets" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t65_g_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5712" name="Zubei's Gauntlets" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t56_g_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5714" name="Avadon Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t66_g_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5715" name="Avadon Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t67_g_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5716" name="Avadon Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t59_g_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5718" name="Blue Wolf Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t68_g_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5719" name="Blue Wolf Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t69_g_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5720" name="Blue Wolf Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t70_g_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>590</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5722" name="Doom Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t71_g_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5723" name="Doom Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t72_g_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5724" name="Doom Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t73_g_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5726" name="Zubei's Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t64_b_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5727" name="Zubei's Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t65_b_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5728" name="Zubei's Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t56_b_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5730" name="Avadon Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t66_b_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5731" name="Avadon Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t67_b_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5732" name="Avadon Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t59_b_i00">
+        <price>519000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5734" name="Blue Wolf Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t68_b_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5735" name="Blue Wolf Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t69_b_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5736" name="Blue Wolf Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t70_b_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5738" name="Doom Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t71_b_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5739" name="Doom Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t72_b_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5740" name="Doom Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t73_b_i00">
+        <price>804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+</itemList>

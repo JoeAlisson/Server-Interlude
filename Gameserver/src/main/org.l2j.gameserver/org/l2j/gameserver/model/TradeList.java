@@ -1,39 +1,20 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.ItemList;
 import org.l2j.gameserver.serverpackets.StatusUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.Item;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;
-
 
 /**
  * @author Advi
@@ -41,12 +22,12 @@ import java.util.List;
 public class TradeList {
     public class TradeItem {
         private int _objectId;
-        private final ItemTemplate _item;
+        private final org.l2j.gameserver.templates.xml.jaxb.ItemTemplate _item;
         private int _enchant;
-        private int _count;
-        private int _price;
+        private long _count;
+        private long _price;
 
-        public TradeItem(L2ItemInstance item, int count, int price) {
+        public TradeItem(L2ItemInstance item, long count, long price) {
             _objectId = item.getObjectId();
             _item = item.getItem();
             _enchant = item.getEnchantLevel();
@@ -54,7 +35,7 @@ public class TradeList {
             _price = price;
         }
 
-        public TradeItem(ItemTemplate item, int count, int price) {
+        public TradeItem(ItemTemplate item, long count, long price) {
             _objectId = 0;
             _item = item;
             _enchant = 0;
@@ -62,7 +43,7 @@ public class TradeList {
             _price = price;
         }
 
-        public TradeItem(TradeItem item, int count, int price) {
+        public TradeItem(TradeItem item, long count, long price) {
             _objectId = item.getObjectId();
             _item = item.getItem();
             _enchant = item.getEnchant();
@@ -90,11 +71,11 @@ public class TradeList {
             return _enchant;
         }
 
-        public void setCount(int count) {
+        public void setCount(long count) {
             _count = count;
         }
 
-        public int getCount() {
+        public long getCount() {
             return _count;
         }
 
@@ -102,7 +83,7 @@ public class TradeList {
             _price = price;
         }
 
-        public int getPrice() {
+        public long getPrice() {
             return _price;
         }
     }
@@ -281,7 +262,7 @@ public class TradeList {
 
         L2ItemInstance item = (L2ItemInstance) o;
 
-        if (!item.isTradeable() || (item.getItemType() == ItemType.QUEST)) {
+        if (!item.isTradeable() || (item.getItem().isQuestItem())) {
             return null;
         }
 
@@ -326,11 +307,11 @@ public class TradeList {
             return null;
         }
 
-        if (!item.isTradeable() || (item.getType() == ItemType.QUEST)) {
+        if (!item.getRestriction().isTradeable() || (item.isQuestItem())) {
             return null;
         }
 
-        if (!item.isStackable() && (count > 1)) {
+        if (!(item instanceof Item) || !((Item)item).isStackable() && (count > 1)) {
             _log.warn(_owner.getName() + ": Attempt to add non-stackable item to TradeList with count > 1!");
             return null;
         }
@@ -351,7 +332,7 @@ public class TradeList {
      * @param count    : int
      * @return
      */
-    public synchronized TradeItem removeItem(int objectId, int itemId, int count) {
+    public synchronized TradeItem removeItem(int objectId, int itemId, long count) {
         if (isLocked()) {
             _log.warn(_owner.getName() + ": Attempt to modify locked TradeList!");
             return null;
@@ -552,7 +533,7 @@ public class TradeList {
             if (template == null) {
                 continue;
             }
-            if (!template.isStackable()) {
+            if (!(template instanceof Item) || !((Item)template).isStackable()) {
                 slots += item.getCount();
             } else if (partner.getInventory().getItemByItemId(item.getItem().getId()) == null) {
                 slots++;
@@ -664,7 +645,7 @@ public class TradeList {
                 continue;
             }
             weight += item.getCount() * template.getWeight();
-            if (!template.isStackable()) {
+            if (!(template instanceof Item ) || !((Item)template).isStackable()) {
                 slots += item.getCount();
             } else if (player.getInventory().getItemByItemId(item.getItemId()) == null) {
                 slots++;
@@ -782,7 +763,7 @@ public class TradeList {
         PcInventory ownerInventory = _owner.getInventory();
         PcInventory playerInventory = player.getInventory();
 
-        // we must check item are available before beginning transaction, TODO: should we remove that check when transfering items as it's done here? (there might be synchro problems if player clicks fast if we remove it)
+        // we must check item are available before beginning transaction, TODO: should we remove that check when transfering items as it's done here? (there might be synchro problems if reader clicks fast if we remove it)
         // also check if augmented items are traded. If so, cancel it...
         for (ItemRequest item : items) {
             // Check if requested item is available for manipulation

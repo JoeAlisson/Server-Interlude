@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item id="1665" name="World Map" icon="icon.etc_letter_red_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <handler>MAP</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1666" name="Recipe: Wooden Arrow" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>1</recipeId>
+    </item>
+    <item stackable="true" id="1667" name="Spellbook: Summon Shadow" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1668" name="Spellbook: Summon Mew the Cat" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>1250</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1669" name="Spellbook: Summon Boxer the Unicorn" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1670" name="Spellbook: Summon Mirage the Unicorn" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>1250</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1671" name="Spellbook: Summon Silhouette" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="1600" name="Kasha Bear Claw" icon="icon.etc_claw_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1601" name="Kasha Blade Spider Talon" icon="icon.etc_horn_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1602" name="Scarlet Salamander Scale" icon="icon.etc_jewel_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1603" name="Fiery Spirit Scroll" icon="icon.etc_scroll_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1604" name="Rosheek's Letter" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1605" name="Gantaki's Letter of Recommendation" icon="icon.etc_letter_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1606" name="Fig" icon="icon.etc_fruit_yellow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1607" name="Leather Pouch" icon="icon.etc_pouch_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1608" name="Leather Pouch (full)" icon="icon.etc_pouch_yellow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1609" name="Vuku Orc Tusk" icon="icon.etc_molar_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1610" name="Ratman Fang" icon="icon.etc_claw_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1611" name="Langk Lizardman Tooth" icon="icon.etc_horn_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1612" name="Felim Lizardman Tooth" icon="icon.etc_horn_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1613" name="Iron Will Scroll" icon="icon.etc_scroll_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1614" name="Toruku's Letter" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1615" name="Khavatari Totem" icon="icon.etc_orcish_talisman_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1616" name="Fire Charm" icon="icon.etc_letter_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1617" name="Kasha Bear Pelt" icon="icon.etc_leather_brown_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1618" name="Kasha Blade Spider Husk" icon="icon.etc_leather_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1619" name="1st Fiery Egg" icon="icon.etc_crystal_ball_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1620" name="Hestui Mask" icon="icon.etc_orcish_talisman_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1621" name="1st Fiery Egg" icon="icon.etc_crystal_ball_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1622" name="Totem Spirit Claw" icon="icon.etc_claw_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1623" name="Tataru's Letter of Recommendation" icon="icon.etc_letter_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1624" name="Flame Charm" icon="icon.etc_letter_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1625" name="Grizzly Blood" icon="icon.etc_reagent_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1626" name="Blood Cauldron" icon="icon.etc_oil_pot_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1627" name="Spirit Net" icon="icon.etc_piece_of_cloth_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1628" name="Durka Spirit" icon="icon.etc_crystal_ball_silver_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1629" name="Durka Parasite" icon="icon.etc_totem_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1630" name="Totem Spirit Blood" icon="icon.etc_potion_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1631" name="Mask of Medium" icon="icon.etc_skull_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1632" name="Silvera's Ring" icon="icon.accessary_ring_of_assistance_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1633" name="1st Pass Certificate" icon="icon.etc_letter_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1634" name="2nd Pass Certificate" icon="icon.etc_letter_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1635" name="Final Pass Certificate" icon="icon.etc_letter_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1636" name="Boogle Ratman Tooth" icon="icon.etc_claw_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1637" name="Boogle Ratman Captain's Tooth" icon="icon.etc_horn_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1638" name="Kluto's Letter" icon="icon.etc_scroll_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1639" name="Footprint of Thief" icon="icon.etc_leather_brown_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1640" name="Stolen Secret Box" icon="icon.etc_jewel_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1641" name="Secret Box" icon="icon.etc_jewel_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1642" name="Ring of Raven" icon="icon.accessary_ring_of_raccoon_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1643" name="Pippi's Letter of Recommendation" icon="icon.etc_letter_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1644" name="Raut's Scroll of Escape" icon="icon.etc_scroll_of_return_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1645" name="Succubus Undies" icon="icon.etc_piece_of_cloth_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1646" name="Mion's Letter" icon="icon.etc_scroll_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1647" name="Bronk's Ingot" icon="icon.etc_plate_glay_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1648" name="Shari's Axe" icon="icon.weapon_tomahawk_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1649" name="Zimenf's Potion" icon="icon.etc_potion_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1650" name="Bronk's Pay" icon="icon.etc_coins_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1651" name="Shari's Pay" icon="icon.etc_coins_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1652" name="Zimenf's Pay" icon="icon.etc_coins_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1653" name="Teddy Bear Picture" icon="icon.etc_recipe_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1654" name="Tarantula Picture" icon="icon.etc_recipe_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1655" name="Honey Jar" icon="icon.etc_potion_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1656" name="Bead" icon="icon.etc_crystal_ball_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1657" name="Bead Parcel" icon="icon.accessary_mage_earing_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1658" name="Gatekeeper Charm" icon="icon.etc_totem_red_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="1659" name="Gatekeeper Token" icon="icon.etc_coins_silver_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <weapon id="1660" name="Cursed Maingauche" type="DAGGER" commissionType="DAGGER" icon="icon.t00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <skill id="3005" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="1661" name="Thief Key" icon="icon.etc_key_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+</itemList>

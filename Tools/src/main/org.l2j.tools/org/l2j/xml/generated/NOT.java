@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
+// Gerado em: 2018.11.02 às 11:52:58 AM BRT 
 //
 
 
@@ -54,9 +54,9 @@ public class NOT
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link NOT }{@code >}
      *     {@link JAXBElement }{@code <}{@link OR }{@code >}
      *     {@link JAXBElement }{@code <}{@link AND }{@code >}
+     *     {@link JAXBElement }{@code <}{@link NOT }{@code >}
      *     {@link JAXBElement }{@code <}{@link Operator }{@code >}
      *     
      */
@@ -69,9 +69,9 @@ public class NOT
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link NOT }{@code >}
      *     {@link JAXBElement }{@code <}{@link OR }{@code >}
      *     {@link JAXBElement }{@code <}{@link AND }{@code >}
+     *     {@link JAXBElement }{@code <}{@link NOT }{@code >}
      *     {@link JAXBElement }{@code <}{@link Operator }{@code >}
      *     
      */
@@ -84,12 +84,12 @@ public class NOT
      * 
      * @return
      *     possible object is
+     *     {@link JAXBElement }{@code <}{@link StateCondition }{@code >}
+     *     {@link JAXBElement }{@code <}{@link XmlStatGameCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link XmlStatPlayerCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link LevelCondition }{@code >}
-     *     {@link JAXBElement }{@code <}{@link XmlStatGameCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link OwnerCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link XmlStatUsingCondition }{@code >}
-     *     {@link JAXBElement }{@code <}{@link StateCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link Condition }{@code >}
      *     
      */
@@ -102,12 +102,12 @@ public class NOT
      * 
      * @param value
      *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link StateCondition }{@code >}
+     *     {@link JAXBElement }{@code <}{@link XmlStatGameCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link XmlStatPlayerCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link LevelCondition }{@code >}
-     *     {@link JAXBElement }{@code <}{@link XmlStatGameCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link OwnerCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link XmlStatUsingCondition }{@code >}
-     *     {@link JAXBElement }{@code <}{@link StateCondition }{@code >}
      *     {@link JAXBElement }{@code <}{@link Condition }{@code >}
      *     
      */

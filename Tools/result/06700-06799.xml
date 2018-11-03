@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon magic="true" id="6719" name="Monster Only (Ketra Orc Chieftain)" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_monster_i00">
+        <price>956000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>990</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="3"/>
+    </weapon>
+</itemList>

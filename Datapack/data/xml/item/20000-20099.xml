@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="20033" name="Unoccupied Teleport Device Flag" icon="BranchSys.icon.br_flag_of_bookmark_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <armor id="20020" name="Uniform Hat" icon="BranchSys.icon.br_Uniform_Hat_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="20021" name="Assassin's Bamboo Hat" icon="BranchSys.icon.br_Bamboo_Hat_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="20022" name="Ruthless Tribe Mask" icon="BranchSys.icon.br_mask_i00">
+        <bodyPart>HAIR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="20023" name="Ribbon Hairband" icon="BranchSys.icon.br_Ribbon_i00">
+        <bodyPart>HAIR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+</itemList>

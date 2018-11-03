@@ -96,7 +96,7 @@ public class L2StaticObjectInstance extends L2Object
 	}
 	
 	/**
-	 * this is called when a player interacts with this NPC
+	 * this is called when a reader interacts with this NPC
 	 * @param player
 	 */
 	@Override
@@ -109,7 +109,7 @@ public class L2StaticObjectInstance extends L2Object
 		// Check if the L2PcInstance already target the L2NpcInstance
 		if (this != player.getTarget())
 		{
-			// Set the target of the L2PcInstance player
+			// Set the target of the L2PcInstance reader
 			player.setTarget(this);
 			player.sendPacket(new MyTargetSelected(getObjectId(), 0));
 			
@@ -126,7 +126,7 @@ public class L2StaticObjectInstance extends L2Object
 				// Notify the L2PcInstance AI with AI_INTENTION_INTERACT
 				player.getAI().setIntention(Intention.AI_INTENTION_INTERACT, this);
 				
-				// Send a Server->Client packet ActionFailed (target is out of interaction range) to the L2PcInstance player
+				// Send a Server->Client packet ActionFailed (target is out of interaction range) to the L2PcInstance reader
 				player.sendPacket(new ActionFailed());
 			}
 			else

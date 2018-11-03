@@ -7,22 +7,25 @@
 
     <xs:include schemaLocation="commons.xsd"/>
 
-    <xs:complexType name="xmlTypeStat">
+    <xs:complexType name="Stat">
         <xs:sequence>
             <xs:element name="conditions" type="xmlStatCondition" minOccurs="0"/>
         </xs:sequence>
         <xs:attribute name="order" type="xs:int" use="required"/>
-        <xs:attribute name="function" type="xs:string" use="required"/>
-        <xs:attribute name="name" type="Stats" use="required"/>
+        <xs:attribute name="function" type="Function" use="required"/>
+        <xs:attribute name="type" type="Stats" use="required"/>
         <xs:attribute name="value" type="xs:float" use="required"/>
     </xs:complexType>
 
-    <xs:element name="operator" type="xmlStatConditionOperator"/>
-    <xs:element name="and" type="xmlStatConditionAND" substitutionGroup="operator"/>
-    <xs:element name="or" type="xmlStatConditionOR" substitutionGroup="operator"/>
-    <xs:element name="not" type="xmlStatConditionNOT" substitutionGroup="operator"/>
+    <xs:simpleType name="Function">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ADD"/>
+            <xs:enumeration value="SUB"/>
+            <xs:enumeration value="MUL"/>
+            <xs:enumeration value="DIV"/>
+        </xs:restriction>
+    </xs:simpleType>
 
-    <xs:element name="condition" type="xmlStatConditionType"/>
     <xs:element name="using" type="xmlStatUsingCondition" substitutionGroup="condition"/>
     <xs:element name="player" type="xmlStatPlayerCondition" substitutionGroup="condition"/>
     <xs:element name="game" type="xmlStatGameCondition" substitutionGroup="condition"/>
@@ -34,13 +37,9 @@
         </xs:choice>
     </xs:complexType>
 
-    <xs:complexType name="xmlStatConditionType" abstract="true">
-
-    </xs:complexType>
-
     <xs:complexType name="xmlStatUsingCondition">
         <xs:complexContent>
-            <xs:extension base="xmlStatConditionType">
+            <xs:extension base="Condition">
                 <xs:attribute name="kind" type="xs:string" use="required"/>
                 <xs:attribute name="slot" type="xs:int"/>
                 <xs:attribute name="item" type="xs:int"/>
@@ -53,7 +52,7 @@
 
     <xs:complexType name="xmlStatPlayerCondition">
         <xs:complexContent>
-            <xs:extension base="xmlStatConditionType">
+            <xs:extension base="Condition">
                 <xs:attribute name="kind" type="xs:string" use="required"/>
                 <xs:attribute name="value" type="xs:string" use="required"/>
             </xs:extension>
@@ -62,45 +61,9 @@
 
     <xs:complexType name="xmlStatGameCondition">
         <xs:complexContent>
-            <xs:extension base="xmlStatConditionType">
+            <xs:extension base="Condition">
                 <xs:attribute name="kind" type="xs:string" use="required"/>
                 <xs:attribute name="value" type="xs:string" use="required"/>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-
-    <xs:complexType name="xmlStatConditionOperator" abstract="true">
-    </xs:complexType>
-
-    <xs:complexType name="xmlStatConditionAND">
-        <xs:complexContent>
-            <xs:extension base="xmlStatConditionOperator">
-                <xs:sequence>
-                    <xs:element ref="operator" maxOccurs="unbounded" minOccurs="0"/>
-                    <xs:element ref="condition" maxOccurs="unbounded" minOccurs="0"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-
-    <xs:complexType name="xmlStatConditionOR">
-        <xs:complexContent>
-            <xs:extension base="xmlStatConditionOperator">
-                <xs:sequence>
-                    <xs:element ref="operator" maxOccurs="unbounded" minOccurs="0"/>
-                    <xs:element ref="condition" maxOccurs="unbounded" minOccurs="0"/>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
-
-    <xs:complexType name="xmlStatConditionNOT">
-        <xs:complexContent>
-            <xs:extension base="xmlStatConditionOperator">
-                <xs:choice>
-                    <xs:element ref="operator"/>
-                    <xs:element ref="condition"/>
-                </xs:choice>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>

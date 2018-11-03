@@ -1,29 +1,12 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.Armor;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.serverpackets.MultiSellList;
+import org.l2j.gameserver.templates.xml.jaxb.Armor;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
@@ -33,7 +16,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.util.LinkedList;
 import java.util.List;
-
 
 /**
  * Multisell list manager
@@ -74,9 +56,9 @@ public class L2Multisell {
     }
 
     /**
-     * This will generate the multisell list for the items. There exist various parameters in multisells that affect the way they will appear: 1) inventory only: * if true, only show items of the multisell for which the "primary" ingredients are already in the player's inventory. By "primary"
+     * This will generate the multisell list for the items. There exist various parameters in multisells that affect the way they will appear: 1) inventory only: * if true, only show items of the multisell for which the "primary" ingredients are already in the reader's inventory. By "primary"
      * ingredients we mean weapon and armor. * if false, show the entire list. 2) maintain enchantment: presumably, only lists with "inventory only" set to true should sometimes have this as true. This makes no sense otherwise... * If true, then the product will match the enchantment level of the
-     * ingredient. if the player has multiple items that match the ingredient list but the enchantment levels differ, then the entries need to be duplicated to show the products and ingredients for each enchantment level. For example: If the player has a crystal staff +1 and a crystal staff +3 and
+     * ingredient. if the reader has multiple items that match the ingredient list but the enchantment levels differ, then the entries need to be duplicated to show the products and ingredients for each enchantment level. For example: If the reader has a crystal staff +1 and a crystal staff +3 and
      * goes to exchange it at the mammon, the list should have allTemplates exchange possibilities for the +1 staff, followed by allTemplates possibilities for the +3 staff. * If false, then any level ingredient will be considered equal and product will always be at +0 3) apply taxes: Uses the "taxIngredient" entry
      * in order to add a certain amount of adena to the ingredients
      *

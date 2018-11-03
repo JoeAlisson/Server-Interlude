@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="90837" name="White Uniform Hat (STR+1 INT+1)" icon="BranchSys2.icon.br_navy_cap_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90839" name="White Uniform Hat (CON+1 MEN+1)" icon="BranchSys2.icon.br_navy_cap_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90838" name="White Uniform Hat (DEX+1 WIT+1)" icon="BranchSys2.icon.br_navy_cap_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90841" name="Napoleon Hat (DEX+1 WIT+1)" icon="BranchSys.icon.br_napoleonic_cap_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90840" name="Napoleon Hat (STR+1 INT+1)" icon="BranchSys.icon.br_napoleonic_cap_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90843" name="Ninja Hair Accessory (STR+1 INT+1)" icon="BranchSys3.icon1.g_co_ninja_hair">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90842" name="Napoleon Hat (CON+1 MEN+1)" icon="BranchSys.icon.br_napoleonic_cap_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90845" name="Ninja Hair Accessory (CON+1 MEN+1)" icon="BranchSys3.icon1.g_co_ninja_hair">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90844" name="Ninja Hair Accessory (DEX+1 WIT+1)" icon="BranchSys3.icon1.g_co_ninja_hair">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90847" name="Warrior's Helmet (DEX+1 WIT+1)" icon="BranchSys2.icon.br_close_helmet_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90846" name="Warrior's Helmet (STR+1 INT+1)" icon="BranchSys2.icon.br_close_helmet_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90849" name="First Mate Hat (STR+1 INT+1)" icon="icon.Accessary_middle_ages_i01">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90848" name="Warrior's Helmet (CON+1 MEN+1)" icon="BranchSys2.icon.br_close_helmet_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90851" name="First Mate Hat (CON+1 MEN+1)" icon="icon.Accessary_middle_ages_i01">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90850" name="First Mate Hat (DEX+1 WIT+1)" icon="icon.Accessary_middle_ages_i01">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90853" name="Artisan's Goggles (DEX+1 WIT+1)" icon="icon.accessory_dwarf_goggle_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <armor id="90852" name="Artisan's Goggles (STR+1 INT+1)" icon="icon.accessory_dwarf_goggle_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <item stackable="true" id="90855" name="Stabilized Eva's Scroll: Enchant Hair Accessory" icon="icon.scroll_of_unidentify_am_d">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="90854" name="Artisan's Goggles (CON+1 MEN+1)" icon="icon.accessory_dwarf_goggle_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        </armor>
+    <item stackable="true" id="90857" name="Shiny Eva's Life Stone - Hair Accessory" icon="icon.trace_of_wind2">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="90856" name="Eva's Life Stone - Hair Accessory" icon="icon.trace_of_wind">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="90859" name="Eva's Hair Accessory Pack" icon="icon.npoint_earring_of_lind_30day_box">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="90858" name="Eva's Enhancement Pack - Hair Accessory" icon="icon.etc_box_of_adventure_2_i00">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

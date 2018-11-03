@@ -63,10 +63,10 @@ public final class L2AuctioneerInstance extends L2FolkInstance {
 
         // Check if the L2PcInstance already target the L2NpcInstance
         if (this != player.getTarget()) {
-            // Set the target of the L2PcInstance player
+            // Set the target of the L2PcInstance reader
             player.setTarget(this);
 
-            // Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+            // Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
             MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
             player.sendPacket(my);
 

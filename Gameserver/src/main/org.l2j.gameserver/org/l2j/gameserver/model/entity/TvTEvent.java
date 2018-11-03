@@ -301,9 +301,9 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Adds a player to a TvTEvent team<br>
-	 * 1. Calculate the id of the team in which the player should be added<br>
-	 * 2. Add the player to the calculated team
+	 * Adds a reader to a TvTEvent team<br>
+	 * 1. Calculate the id of the team in which the reader should be added<br>
+	 * 2. Add the reader to the calculated team
 	 * @param playerInstance
 	 * @return boolean
 	 */
@@ -329,9 +329,9 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Removes a TvTEvent player from it's team<br>
-	 * 1. Get team id of the player<br>
-	 * 2. Remove player from it's team
+	 * Removes a TvTEvent reader from it's team<br>
+	 * 1. Get team id of the reader<br>
+	 * 2. Remove reader from it's team
 	 * @param playerName
 	 * @return boolean
 	 */
@@ -417,7 +417,7 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Called when a player logs in
+	 * Called when a reader logs in
 	 * @param playerInstance
 	 */
 	public static void onLogin(L2PcInstance playerInstance)
@@ -439,7 +439,7 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Called when a player logs out
+	 * Called when a reader logs out
 	 * @param playerInstance
 	 */
 	public static void onLogout(L2PcInstance playerInstance)
@@ -454,7 +454,7 @@ public class TvTEvent
 	
 	/**
 	 * Called on every bypass by npc of type L2TvTEventNpc<br>
-	 * Needs synchronization cause of the max player check
+	 * Needs synchronization cause of the max reader check
 	 * @param command
 	 * @param playerInstance
 	 */
@@ -488,7 +488,7 @@ public class TvTEvent
 			}
 			else if ((_teams[0].getParticipatedPlayerCount() > 19) && (_teams[1].getParticipatedPlayerCount() > 19))
 			{
-				npcHtmlMessage.setHtml("<html><head><title>TvT Event</title></head><body>The event is full! Maximum of " + Config.TVT_EVENT_MAX_PLAYERS_IN_TEAMS + "  player are allowed in one team.</body></html>");
+				npcHtmlMessage.setHtml("<html><head><title>TvT Event</title></head><body>The event is full! Maximum of " + Config.TVT_EVENT_MAX_PLAYERS_IN_TEAMS + "  reader are allowed in one team.</body></html>");
 			}
 			else if (addParticipant(playerInstance))
 			{
@@ -614,7 +614,7 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Is called when a player is killed
+	 * Is called when a reader is killed
 	 * @param killerCharacter
 	 * @param killedPlayerInstance
 	 */
@@ -768,7 +768,7 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Returns the team id of a player, if player is not participant it returns -1
+	 * Returns the team id of a reader, if reader is not participant it returns -1
 	 * @param playerName
 	 * @return byte
 	 */
@@ -778,7 +778,7 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Returns the team coordinates in which the player is in, if player is not in a team return null
+	 * Returns the team coordinates in which the reader is in, if reader is not in a team return null
 	 * @param playerName
 	 * @return int[]
 	 */
@@ -788,7 +788,7 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Is given player participant of the event?
+	 * Is given reader participant of the event?
 	 * @param playerName
 	 * @return boolean
 	 */
@@ -798,7 +798,7 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Returns participated player count<br>
+	 * Returns participated reader count<br>
 	 * <br>
 	 * @return int<br>
 	 */
@@ -822,7 +822,7 @@ public class TvTEvent
 	}
 	
 	/**
-	 * Returns player count of both teams<br>
+	 * Returns reader count of both teams<br>
 	 * <br>
 	 * @return int[]<br>
 	 */

@@ -263,7 +263,7 @@ public class AuthServerClient extends Thread {
                             }
                             if (nonNull(wcToRemove)) {
                                 if (par.isAuthed()) {
-                                    _log.debug("Login accepted player {} waited({} ms)", wcToRemove.account, (GameTimeController.getGameTicks() - wcToRemove.timestamp));
+                                    _log.debug("Login accepted reader {} waited({} ms)", wcToRemove.account, (GameTimeController.getGameTicks() - wcToRemove.timestamp));
 
                                     wcToRemove.gameClient.setState(AUTHED);
                                     wcToRemove.gameClient.sendPacket(new LoginResult(SUCCESS, 0));
@@ -346,7 +346,7 @@ public class AuthServerClient extends Thread {
         try {
             sendPacket(par);
         } catch (IOException e) {
-            _log.warn("Error while sending player auth request");
+            _log.warn("Error while sending reader auth request");
             if (Config.DEBUG) {
                 e.printStackTrace();
             }

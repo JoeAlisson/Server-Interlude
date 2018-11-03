@@ -11,7 +11,8 @@ public class SpawnItem extends L2GameServerPacket
 	private final int _objectId;
 	private final int _itemId;
 	private final int _x, _y, _z;
-	private final int _stackable, _count;
+	private final int _stackable;
+	private final long _count;
 	
 	public SpawnItem(L2ItemInstance item)
 	{
@@ -36,7 +37,7 @@ public class SpawnItem extends L2GameServerPacket
 		writeInt(_z);
 		// only show item count if it is a stackable item
 		writeInt(_stackable);
-		writeInt(_count);
+		writeLong(_count);
 		writeInt(0x00); // c2
 	}
 }

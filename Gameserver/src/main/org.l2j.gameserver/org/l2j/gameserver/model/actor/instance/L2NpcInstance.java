@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.Config;
@@ -41,9 +23,7 @@ import org.l2j.gameserver.model.actor.status.NpcStatus;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.entity.L2Event;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.model.quest.Quest;
 import org.l2j.gameserver.model.quest.QuestState;
 import org.l2j.gameserver.model.zone.type.L2TownZone;
@@ -52,6 +32,8 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 import java.text.DateFormat;
 import java.util.LinkedList;
@@ -61,7 +43,6 @@ import java.util.Map;
 import static org.l2j.gameserver.ai.Intention.AI_INTENTION_ACTIVE;
 import static org.l2j.gameserver.templates.NpcType.L2Auctioneer;
 import static java.util.Objects.requireNonNullElse;
-
 
 /**
  * This class represents a Non-Player-Character in the world. It can be a monster or a friendly character. It also uses a template to fetch some static values. The templates are hardcoded in the client, so we can rely on them.<BR>
@@ -570,7 +551,7 @@ public class L2NpcInstance extends L2Character {
     protected boolean canInteract(L2PcInstance player) {
         // TODO: NPC busy check etc...
 
-        // if (!canTarget(player))
+        // if (!canTarget(reader))
         // return false;
 
         if (!isInsideRadius(player, INTERACTION_DISTANCE, false, false)) {
@@ -581,16 +562,16 @@ public class L2NpcInstance extends L2Character {
     }
 
     /**
-     * Manage actions when a player click on the L2NpcInstance.<BR>
+     * Manage actions when a reader click on the L2NpcInstance.<BR>
      * <BR>
      * <B><U> Actions on first click on the L2NpcInstance (Select it)</U> :</B><BR>
      * <BR>
-     * <li>Set the L2NpcInstance as target of the L2PcInstance player (if necessary)</li> <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance player (display the select window)</li> <li>If L2NpcInstance is autoAttackable, send a Server->Client packet StatusUpdate to the
+     * <li>Set the L2NpcInstance as target of the L2PcInstance reader (if necessary)</li> <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance reader (display the select window)</li> <li>If L2NpcInstance is autoAttackable, send a Server->Client packet StatusUpdate to the
      * L2PcInstance in order to update L2NpcInstance HP bar</li> <li>Send a Server->Client packet ValidateLocation to correct the L2NpcInstance position and heading on the client</li><BR>
      * <BR>
      * <B><U> Actions on second click on the L2NpcInstance (Attack it/Intercat with it)</U> :</B><BR>
      * <BR>
-     * <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance player (display the select window)</li> <li>If L2NpcInstance is autoAttackable, notify the L2PcInstance AI with AI_INTENTION_ATTACK (after a height verification)</li> <li>If L2NpcInstance is NOT autoAttackable, notify the
+     * <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance reader (display the select window)</li> <li>If L2NpcInstance is autoAttackable, notify the L2PcInstance AI with AI_INTENTION_ATTACK (after a height verification)</li> <li>If L2NpcInstance is NOT autoAttackable, notify the
      * L2PcInstance AI with AI_INTENTION_INTERACT (after a distance verification) and show message</li><BR>
      * <BR>
      * <FONT COLOR=#FF0000><B> <U>Caution</U> : Each group of Server->Client packet must be terminated by a ActionFailed packet in order to avoid that client wait an other packet</B></FONT><BR>
@@ -620,13 +601,13 @@ public class L2NpcInstance extends L2Character {
                 _log.debug("new target selected:" + getObjectId());
             }
 
-            // Set the target of the L2PcInstance player
+            // Set the target of the L2PcInstance reader
             player.setTarget(this);
 
-            // Check if the player is attackable (without a forced attack)
+            // Check if the reader is attackable (without a forced attack)
             if (isAutoAttackable(player)) {
-                // Send a Server->Client packet MyTargetSelected to the L2PcInstance player
-                // The player.getLevel() - getLevel() permit to display the correct color in the select window
+                // Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
+                // The reader.getLevel() - getLevel() permit to display the correct color in the select window
                 MyTargetSelected my = new MyTargetSelected(getObjectId(), player.getLevel() - getLevel());
                 player.sendPacket(my);
 
@@ -636,7 +617,7 @@ public class L2NpcInstance extends L2Character {
                 su.addAttribute(StatusUpdate.MAX_HP, getMaxHp());
                 player.sendPacket(su);
             } else {
-                // Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+                // Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
                 MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
                 player.sendPacket(my);
             }
@@ -645,14 +626,14 @@ public class L2NpcInstance extends L2Character {
             player.sendPacket(new ValidateLocation(this));
         } else {
             player.sendPacket(new ValidateLocation(this));
-            // Check if the player is attackable (without a forced attack) and isn't dead
+            // Check if the reader is attackable (without a forced attack) and isn't dead
             if (isAutoAttackable(player) && !isAlikeDead()) {
                 // Check the height difference
                 if (Math.abs(player.getZ() - getZ()) < 400) // this max heigth difference might need some tweaking
                 {
                     // Set the L2PcInstance Intention to AI_INTENTION_ATTACK
                     player.getAI().setIntention(Intention.AI_INTENTION_ATTACK, this);
-                    // player.startAttack(this);
+                    // reader.startAttack(this);
                 } else {
                     // Send a Server->Client ActionFailed to the L2PcInstance in order to avoid that the client wait another packet
                     player.sendPacket(new ActionFailed());
@@ -691,7 +672,7 @@ public class L2NpcInstance extends L2Character {
      * <BR>
      * <B><U> Actions (If the L2PcInstance is a GM only)</U> :</B><BR>
      * <BR>
-     * <li>Set the L2NpcInstance as target of the L2PcInstance player (if necessary)</li> <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance player (display the select window)</li> <li>If L2NpcInstance is autoAttackable, send a Server->Client packet StatusUpdate to the
+     * <li>Set the L2NpcInstance as target of the L2PcInstance reader (if necessary)</li> <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance reader (display the select window)</li> <li>If L2NpcInstance is autoAttackable, send a Server->Client packet StatusUpdate to the
      * L2PcInstance in order to update L2NpcInstance HP bar</li> <li>Send a Server->Client NpcHtmlMessage() containing the GM console about this L2NpcInstance</li><BR>
      * <BR>
      * <FONT COLOR=#FF0000><B> <U>Caution</U> : Each group of Server->Client packet must be terminated by a ActionFailed packet in order to avoid that client wait an other packet</B></FONT><BR>
@@ -701,7 +682,7 @@ public class L2NpcInstance extends L2Character {
      * <li>Client packet : Action</li><BR>
      * <BR>
      *
-     * @param client The thread that manage the player that pessed Shift and click on the L2NpcInstance
+     * @param client The thread that manage the reader that pessed Shift and click on the L2NpcInstance
      */
     @Override
     public void onActionShift(L2GameClient client) {
@@ -713,15 +694,15 @@ public class L2NpcInstance extends L2Character {
 
         // Check if the L2PcInstance is a GM
         if (player.getAccessLevel() >= Config.GM_ACCESSLEVEL) {
-            // Set the target of the L2PcInstance player
+            // Set the target of the L2PcInstance reader
             player.setTarget(this);
 
-            // Send a Server->Client packet MyTargetSelected to the L2PcInstance player
-            // The player.getLevel() - getLevel() permit to display the correct color in the select window
+            // Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
+            // The reader.getLevel() - getLevel() permit to display the correct color in the select window
             MyTargetSelected my = new MyTargetSelected(getObjectId(), player.getLevel() - getLevel());
             player.sendPacket(my);
 
-            // Check if the player is attackable (without a forced attack)
+            // Check if the reader is attackable (without a forced attack)
             if (isAutoAttackable(player)) {
                 // Send a Server->Client packet StatusUpdate of the L2NpcInstance to the L2PcInstance to update its HP bar
                 StatusUpdate su = new StatusUpdate(getObjectId());
@@ -777,15 +758,15 @@ public class L2NpcInstance extends L2Character {
             html.setHtml(html1.toString());
             player.sendPacket(html);
         } else if (Config.ALT_GAME_VIEWNPC) {
-            // Set the target of the L2PcInstance player
+            // Set the target of the L2PcInstance reader
             player.setTarget(this);
 
-            // Send a Server->Client packet MyTargetSelected to the L2PcInstance player
-            // The player.getLevel() - getLevel() permit to display the correct color in the select window
+            // Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
+            // The reader.getLevel() - getLevel() permit to display the correct color in the select window
             MyTargetSelected my = new MyTargetSelected(getObjectId(), player.getLevel() - getLevel());
             player.sendPacket(my);
 
-            // Check if the player is attackable (without a forced attack)
+            // Check if the reader is attackable (without a forced attack)
             if (isAutoAttackable(player)) {
                 // Send a Server->Client packet StatusUpdate of the L2NpcInstance to the L2PcInstance to update its HP bar
                 StatusUpdate su = new StatusUpdate(getObjectId());
@@ -890,7 +871,7 @@ public class L2NpcInstance extends L2Character {
      * @param command The command string received from client
      */
     public void onBypassFeedback(L2PcInstance player, String command) {
-        // if (canInteract(player))
+        // if (canInteract(reader))
         {
             if (isBusy() && (getBusyMessage().length() > 0)) {
                 player.sendPacket(new ActionFailed());
@@ -1566,7 +1547,7 @@ public class L2NpcInstance extends L2Character {
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>Get the range level in wich player must be to obtain buff</li> <li>If player level is out of range, display a message and return</li> <li>According to player level cast buff</li><BR>
+     * <li>Get the range level in wich reader must be to obtain buff</li> <li>If reader level is out of range, display a message and return</li> <li>According to reader level cast buff</li><BR>
      * <BR>
      * <FONT COLOR=#FF0000><B> Newbie Helper Buff list is define in sql table helper_buff_list</B></FONT><BR>
      * <BR>
@@ -1587,10 +1568,10 @@ public class L2NpcInstance extends L2Character {
         int lowestLevel = 0;
         int higestLevel = 0;
 
-        // Select the player
+        // Select the reader
         setTarget(player);
 
-        // Calculate the min and max level between wich the player must be to obtain buff
+        // Calculate the min and max level between wich the reader must be to obtain buff
         if (player.isMageClass()) {
             lowestLevel = HelperBuffTable.getInstance().getMagicClassLowestLevel();
             higestLevel = HelperBuffTable.getInstance().getMagicClassHighestLevel();
@@ -1599,14 +1580,14 @@ public class L2NpcInstance extends L2Character {
             higestLevel = HelperBuffTable.getInstance().getPhysicClassHighestLevel();
         }
 
-        // If the player is too high level, display a message and return
+        // If the reader is too high level, display a message and return
         if ((player_level > higestLevel) || !player.isNewbie()) {
             String content = "<html><body>Newbie Guide:<br>Only a <font color=\"LEVEL\">novice character of level " + higestLevel + " or less</font> can receive my support magic.<br>Your novice character is the first one that you created and raised in this world.</body></html>";
             insertObjectIdAndShowChatWindow(player, content);
             return;
         }
 
-        // If the player is too low level, display a message and return
+        // If the reader is too low level, display a message and return
         if (player_level < lowestLevel) {
             String content = "<html><body>Come back here when you have reached level " + lowestLevel + ". I will give you support magic then.</body></html>";
             insertObjectIdAndShowChatWindow(player, content);

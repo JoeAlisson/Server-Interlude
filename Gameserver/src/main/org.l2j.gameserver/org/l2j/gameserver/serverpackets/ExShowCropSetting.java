@@ -39,8 +39,8 @@ public class ExShowCropSetting extends L2GameServerPacket {
             _cropData[(i * 14) + 3] = L2Manor.getInstance().getRewardItem(cr, 2);
             _cropData[(i * 14) + 4] = L2Manor.getInstance().getCropPuchaseLimit(cr);
             _cropData[(i * 14) + 5] = 0; // Looks like not used
-            _cropData[(i * 14) + 6] = (L2Manor.getInstance().getCropBasicPrice(cr) * 60) / 100;
-            _cropData[(i * 14) + 7] = L2Manor.getInstance().getCropBasicPrice(cr) * 10;
+            _cropData[(i * 14) + 6] = (int) ((L2Manor.getInstance().getCropBasicPrice(cr) * 60) / 100);
+            _cropData[(i * 14) + 7] = (int) (L2Manor.getInstance().getCropBasicPrice(cr) * 10);
             CropProcure cropPr = c.getCrop(cr, CastleManorManager.PERIOD_CURRENT);
             if (cropPr != null) {
                 _cropData[(i * 14) + 8] = cropPr.getStartAmount();

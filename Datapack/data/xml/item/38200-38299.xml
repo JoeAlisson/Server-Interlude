@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="38211" name="Blue Mackerel: One-handed Sword" type="SWORD" icon="icon.wp_fishing1">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1450</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="38212" name="Trumpetfish: Dagger" type="DAGGER" icon="icon.wp_fishing2">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="38213" name="Shark: Two-handed Sword" type="SWORD" icon="icon.wp_fishing3">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="38214" name="Squid: Spear" icon="icon.wp_fishing4">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2060</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="38215" name="Sea Horse: Two-handed Magic Blunt Weapon" type="BLUNT" icon="icon.wp_fishing5">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="38216" name="Lobster: Fist Weapon" type="DUALFIST" icon="icon.wp_fishing6">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="38217" name="Giant Crab: Bow" type="BOW" icon="icon.wp_fishing7">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <armor id="38220" name="Turtle: Shield" icon="icon.wp_fishing10">
+        <bodyPart>LEFT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+        </armor>
+    <weapon id="38221" name="Blue Mackerel: Dualsword" type="DUAL" icon="icon.wp_fishing11">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2530</weight>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

@@ -61,7 +61,7 @@ public class L2SignsPriestInstance extends L2FolkInstance {
             int cabal = SevenSigns.CABAL_NULL;
             int stoneType = 0;
             L2ItemInstance ancientAdena = player.getInventory().getItemByItemId(SevenSigns.ANCIENT_ADENA_ID);
-            int ancientAdenaAmount = ancientAdena == null ? 0 : ancientAdena.getCount();
+            long ancientAdenaAmount = ancientAdena == null ? 0 : ancientAdena.getCount();
             int val = Integer.parseInt(command.substring(11, 12).trim());
 
             if (command.length() > 12) {
@@ -141,11 +141,11 @@ public class L2SignsPriestInstance extends L2FolkInstance {
                                 }
                             }
                             /*
-                             * if (!getPlayerAllyHasCastle(player)) { if (cabal == SevenSigns.CABAL_DAWN) { player.sendMessage("You must be a member of a castle-owning clan to join the Lords Of Dawn."); return; } }
+                             * if (!getPlayerAllyHasCastle(reader)) { if (cabal == SevenSigns.CABAL_DAWN) { reader.sendMessage("You must be a member of a castle-owning clan to join the Lords Of Dawn."); return; } }
                              */
                             else {
                                 /*
-                                 * If the player is trying to join the Lords of Dawn, check if they are carrying a Lord's certificate. If not then try to take the required amount of adena instead.
+                                 * If the reader is trying to join the Lords of Dawn, check if they are carrying a Lord's certificate. If not then try to take the required amount of adena instead.
                                  */
                                 if (cabal == SevenSigns.CABAL_DAWN) {
                                     boolean allowJoinDawn = false;
@@ -198,21 +198,21 @@ public class L2SignsPriestInstance extends L2FolkInstance {
                 case 6: // Contribute Seal Stones - SevenSigns 6 x
                     stoneType = Integer.parseInt(command.substring(13));
                     L2ItemInstance redStones = player.getInventory().getItemByItemId(SevenSigns.SEAL_STONE_RED_ID);
-                    int redStoneCount = redStones == null ? 0 : redStones.getCount();
+                    long redStoneCount = redStones == null ? 0 : redStones.getCount();
                     L2ItemInstance greenStones = player.getInventory().getItemByItemId(SevenSigns.SEAL_STONE_GREEN_ID);
-                    int greenStoneCount = greenStones == null ? 0 : greenStones.getCount();
+                    long greenStoneCount = greenStones == null ? 0 : greenStones.getCount();
                     L2ItemInstance blueStones = player.getInventory().getItemByItemId(SevenSigns.SEAL_STONE_BLUE_ID);
-                    int blueStoneCount = blueStones == null ? 0 : blueStones.getCount();
-                    int contribScore = SevenSigns.getInstance().getPlayerContribScore(player);
+                    long blueStoneCount = blueStones == null ? 0 : blueStones.getCount();
+                    long contribScore = SevenSigns.getInstance().getPlayerContribScore(player);
                     boolean stonesFound = false;
 
                     if (contribScore == Config.ALT_MAXIMUM_PLAYER_CONTRIB) {
                         player.sendPacket(new SystemMessage(SystemMessageId.CONTRIB_SCORE_EXCEEDED));
                         break;
                     }
-                    int redContribCount = 0;
-                    int greenContribCount = 0;
-                    int blueContribCount = 0;
+                    long redContribCount = 0;
+                    long greenContribCount = 0;
+                    long blueContribCount = 0;
 
                     switch (stoneType) {
                         case 1:
@@ -234,7 +234,7 @@ public class L2SignsPriestInstance extends L2FolkInstance {
                             }
                             break;
                         case 4:
-                            int tempContribScore = contribScore;
+                            long tempContribScore = contribScore;
                             redContribCount = (Config.ALT_MAXIMUM_PLAYER_CONTRIB - tempContribScore) / SevenSigns.RED_CONTRIB_POINTS;
                             if (redContribCount > redStoneCount) {
                                 redContribCount = redStoneCount;
@@ -311,7 +311,7 @@ public class L2SignsPriestInstance extends L2FolkInstance {
                     int winningCabal = SevenSigns.getInstance().getCabalHighestScore();
 
                     if (SevenSigns.getInstance().isSealValidationPeriod() && (playerCabal == winningCabal)) {
-                        int ancientAdenaReward = SevenSigns.getInstance().getAncientAdenaReward(player, true);
+                        long ancientAdenaReward = SevenSigns.getInstance().getAncientAdenaReward(player, true);
 
                         if (ancientAdenaReward < 3) {
                             showChatWindow(player, 9, "b", false);
@@ -351,13 +351,13 @@ public class L2SignsPriestInstance extends L2FolkInstance {
 
                         player.teleToLocation(x, y, z, true);
                     } catch (Exception e) {
-                        _log.warn("SevenSigns: Error occurred while teleporting player: " + e);
+                        _log.warn("SevenSigns: Error occurred while teleporting reader: " + e);
                     }
                     break;
                 case 17: // Exchange Seal Stones for Ancient Adena (Type Choice) - SevenSigns 17 x
                     stoneType = Integer.parseInt(command.substring(14));
                     int stoneId = 0;
-                    int stoneCount = 0;
+                    long stoneCount = 0;
                     int stoneValue = 0;
                     String stoneColor = null;
                     String content;
@@ -421,8 +421,8 @@ public class L2SignsPriestInstance extends L2FolkInstance {
                         break;
                     }
 
-                    int totalCount = convertItem.getCount();
-                    int ancientAdenaReward = 0;
+                    long totalCount = convertItem.getCount();
+                    long ancientAdenaReward = 0;
 
                     if ((convertCount <= totalCount) && (convertCount > 0)) {
                         switch (convertStoneId) {
@@ -497,17 +497,17 @@ public class L2SignsPriestInstance extends L2FolkInstance {
     private final boolean getPlayerAllyHasCastle(L2PcInstance player) {
         L2Clan playerClan = player.getClan();
 
-        // The player is not in a clan, so return false.
+        // The reader is not in a clan, so return false.
         if (playerClan == null) {
             return false;
         }
 
         // If castle ownage check is clan-based rather than ally-based,
-        // check if the player's clan has a castle and return the result.
+        // check if the reader's clan has a castle and return the result.
         if (!Config.ALT_GAME_REQUIRE_CLAN_CASTLE) {
             int allyId = playerClan.getAllyId();
 
-            // The player's clan is not in an alliance, so return false.
+            // The reader's clan is not in an alliance, so return false.
             if (allyId != 0) {
                 // Check if another clan in the same alliance owns a castle,
                 // by traversing the list of clans and act accordingly.

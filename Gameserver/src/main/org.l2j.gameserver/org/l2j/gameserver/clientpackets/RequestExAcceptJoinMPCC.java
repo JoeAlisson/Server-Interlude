@@ -58,7 +58,7 @@ public final class RequestExAcceptJoinMPCC extends L2GameClientPacket
 			}
 			else
 			{
-				requestor.sendMessage("The player declined to join your Command Channel.");
+				requestor.sendMessage("The reader declined to join your Command Channel.");
 			}
 			
 			player.setActiveRequester(null);

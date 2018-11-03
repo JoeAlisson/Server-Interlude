@@ -118,11 +118,11 @@ public abstract class L2PlayableInstance extends L2Character {
 		
 		if (player == null)
 		{
-			return false; // Active player is null
+			return false; // Active reader is null
 		}
 		if (player.getKarma() != 0)
 		{
-			return false; // Active player has karma
+			return false; // Active reader has karma
 		}
 		
 		L2PcInstance targetPlayer = null;
@@ -137,15 +137,15 @@ public abstract class L2PlayableInstance extends L2Character {
 		
 		if (targetPlayer == null)
 		{
-			return false; // Target player is null
+			return false; // Target reader is null
 		}
 		if (targetPlayer == this)
 		{
-			return false; // Target player is self
+			return false; // Target reader is self
 		}
 		if (targetPlayer.getKarma() != 0)
 		{
-			return false; // Target player has karma
+			return false; // Target reader has karma
 		}
 		if (targetPlayer.getPvpFlag() == 0)
 		{
@@ -154,7 +154,7 @@ public abstract class L2PlayableInstance extends L2Character {
 		
 		return true;
 		/*
-		 * Even at war, there should be PvP flag if( player.getClan() == null || targetPlayer.getClan() == null || ( !targetPlayer.getClan().isAtWarWith(player.getClanId()) && targetPlayer.getWantsPeace() == 0 && player.getWantsPeace() == 0 ) ) { return true; } return false;
+		 * Even at war, there should be PvP flag if( reader.getClan() == null || targetPlayer.getClan() == null || ( !targetPlayer.getClan().isAtWarWith(reader.getClanId()) && targetPlayer.getWantsPeace() == 0 && reader.getWantsPeace() == 0 ) ) { return true; } return false;
 		 */
 	}
 	
@@ -201,9 +201,9 @@ public abstract class L2PlayableInstance extends L2Character {
 		updateAbnormalEffect();
 	}
 	
-	public abstract boolean destroyItemByItemId(String process, int itemId, int count, L2Object reference, boolean sendMessage);
+	public abstract boolean destroyItemByItemId(String process, int itemId, long count, L2Object reference, boolean sendMessage);
 	
-	public abstract boolean destroyItem(String process, int objectId, int count, L2Object reference, boolean sendMessage);
+	public abstract boolean destroyItem(String process, int objectId, long count, L2Object reference, boolean sendMessage);
 	
 	// Charm of Luck - During a Raid/Boss war, decreased chance for death penalty
 	public final boolean getCharmOfLuck()

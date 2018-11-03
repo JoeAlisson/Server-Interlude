@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="4736" name="Skull Graver" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_skull_graver_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4737" name="Skull Graver" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_skull_graver_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <skill id="3027"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4738" name="Dwarven War Hammer" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_dwarven_warhammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1670</weight>
+        <skill id="3012" level="2"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4739" name="Dwarven War Hammer" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_dwarven_warhammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1670</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4740" name="Dwarven War Hammer" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_dwarven_warhammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1670</weight>
+        <skill id="3036" level="2"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4741" name="War Axe" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_war_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1660</weight>
+        <skill id="3012" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4742" name="War Axe" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_war_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1660</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4743" name="War Axe" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_war_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1660</weight>
+        <skill id="3036" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4744" name="Yaksa Mace" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_yaksa_mace_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <skill id="3012" level="4"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4745" name="Yaksa Mace" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_yaksa_mace_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4746" name="Yaksa Mace" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_yaksa_mace_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <skill id="3027" level="4"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4747" name="Heavy War Axe" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_heavy_war_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1620</weight>
+        <skill id="3012" level="5"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4748" name="Heavy War Axe" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_heavy_war_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1620</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4749" name="Heavy War Axe" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_heavy_war_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1620</weight>
+        <skill id="3027" level="5"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4750" name="Deadman's Glory" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_deadmans_glory_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <skill id="3012" level="6"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4751" name="Deadman's Glory" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_deadmans_glory_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4752" name="Deadman's Glory" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_deadmans_glory_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <skill id="3036" level="6"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4753" name="Art of Battle Axe" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_art_of_battle_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4754" name="Art of Battle Axe" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_art_of_battle_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <skill id="3027" level="6"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4755" name="Art of Battle Axe" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_art_of_battle_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <skill id="3036" level="6"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4759" name="Cursed Dagger" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_cursed_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <skill id="3020" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4760" name="Cursed Dagger" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_cursed_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <skill id="3041" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4761" name="Cursed Dagger" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_cursed_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <skill id="3033"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4762" name="Dark Elven Dagger" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_darkelven_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1050</weight>
+        <skill id="3011"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4763" name="Dark Elven Dagger" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_darkelven_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1050</weight>
+        <skill id="3019"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4764" name="Dark Elven Dagger" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_darkelven_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1050</weight>
+        <skill id="3035"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4765" name="Stiletto" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_stiletto_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1030</weight>
+        <skill id="3020" level="2" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4766" name="Stiletto" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_stiletto_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1030</weight>
+        <skill id="3041" level="2" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4767" name="Stiletto" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_stiletto_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1030</weight>
+        <skill id="3035" level="2"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4768" name="Grace Dagger" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_grace_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <skill id="3009" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4769" name="Grace Dagger" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_grace_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <skill id="3011" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4770" name="Grace Dagger" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_grace_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <skill id="3019" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4771" name="Dark Screamer" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dark_screamer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <skill id="3009" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4772" name="Dark Screamer" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dark_screamer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <skill id="3011" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4773" name="Dark Screamer" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dark_screamer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <skill id="3020" level="3" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4774" name="Crystal Dagger" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_crystal_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <skill id="3020" level="4" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4775" name="Crystal Dagger" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_crystal_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <skill id="3041" level="4" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4776" name="Crystal Dagger" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_crystal_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <skill id="3035" level="4"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4777" name="Kris" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_kris_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <skill id="3009" level="5"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4778" name="Kris" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_kris_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <skill id="3011" level="5"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4779" name="Kris" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_kris_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <skill id="3019" level="5"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4780" name="Demon's Dagger" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_demons_sword_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <skill id="3020" level="6" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4781" name="Demon's Dagger" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_demons_sword_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <skill id="3041" level="6" triggerType="ON_CRITICAL"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4782" name="Demon's Dagger" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_demons_sword_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <skill id="3035" level="6"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4789" name="Chakram" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_chakram_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1490</weight>
+        <skill id="3039" triggerType="ON_CRITICAL"/>
+        <damage distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4790" name="Chakram" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_chakram_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1490</weight>
+        <skill id="3040" triggerType="ON_CRITICAL"/>
+        <damage distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4791" name="Chakram" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_chakram_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1490</weight>
+        <skill id="3034"/>
+        <damage distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4792" name="Fisted Blade" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_fist_blade_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1480</weight>
+        <skill id="3030" level="3"/>
+        <damage distance="40" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4793" name="Fisted Blade" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_fist_blade_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1480</weight>
+        <skill id="3034" level="3"/>
+        <damage distance="40" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4794" name="Fisted Blade" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_fist_blade_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1480</weight>
+        <skill id="3037" level="3"/>
+        <damage distance="40" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4795" name="Great Pata" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_great_pata_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1460</weight>
+        <skill id="3039" level="4" triggerType="ON_CRITICAL"/>
+        <damage distance="46" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4796" name="Great Pata" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_great_pata_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1460</weight>
+        <skill id="3040" level="4" triggerType="ON_CRITICAL"/>
+        <damage distance="46" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4797" name="Great Pata" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_great_pata_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1460</weight>
+        <skill id="3034" level="4"/>
+        <damage distance="46" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4798" name="Fist" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_knuckle_dust_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1490</weight>
+        <skill id="3030" level="2"/>
+        <damage distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4799" name="Fist" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_knuckle_dust_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1490</weight>
+        <skill id="3034" level="2"/>
+        <damage distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4700" name="Sword of Delusion" additionalName="Haste" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_delusion_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4701" name="Sword of Delusion" additionalName="Critical Damage" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_delusion_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <skill id="3032" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4702" name="Tsurugi" additionalName="Focus" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_tsurugi_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <skill id="3010" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4703" name="Tsurugi" additionalName="Haste" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_tsurugi_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <skill id="3023" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4704" name="Tsurugi" additionalName="Critical Damage" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_tsurugi_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <skill id="3036" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4705" name="Sword of Nightmare" additionalName="Focus" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_nightmare_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4706" name="Sword of Nightmare" additionalName="Haste" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_nightmare_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <skill id="3010" level="3"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4707" name="Sword of Nightmare" additionalName="Critical Damage" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_nightmare_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <skill id="3498"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4708" name="Samurai Long Sword" additionalName="Focus" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_samurai_old_longsword_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1380</weight>
+        <skill id="3010" level="4"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4709" name="Samurai Long Sword" additionalName="Haste" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_samurai_old_longsword_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1380</weight>
+        <skill id="3023" level="4"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4710" name="Samurai Long Sword" additionalName="Critical Damage" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_samurai_old_longsword_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1380</weight>
+        <skill id="3036" level="4"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4711" name="Flamberge" additionalName="Focus" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_flamberge_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2010</weight>
+        <skill id="3023"/>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4712" name="Flamberge" additionalName="Haste" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_flamberge_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2010</weight>
+        <skill id="3010"/>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4713" name="Flamberge" additionalName="Critical Damage" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_flamberge_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2010</weight>
+        <skill id="3498"/>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4714" name="Keshanberk" additionalName="Focus" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_kshanberk_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1370</weight>
+        <skill id="3007" level="5"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4715" name="Keshanberk" additionalName="Haste" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_kshanberk_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1370</weight>
+        <skill id="3010" level="5"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4716" name="Keshanberk" additionalName="Critical Damage" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_kshanberk_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1370</weight>
+        <skill id="3018" level="5"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4717" name="Damascus Sword" additionalName="Focus" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_damascus_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <skill id="3010" level="6"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4718" name="Damascus Sword" additionalName="Haste" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_damascus_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <skill id="3023" level="6"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4719" name="Damascus Sword" additionalName="Critical Damage" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_damascus_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <skill id="3036" level="6"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4723" name="Great Sword" additionalName="Focus" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_great_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1930</weight>
+        <skill id="3013"/>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4724" name="Great Sword" additionalName="Haste" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_great_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1930</weight>
+        <skill id="3023" level="5"/>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4725" name="Great Sword" additionalName="Critical Damage" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_great_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1930</weight>
+        <skill id="3010" level="5"/>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4726" name="Big Hammer" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_big_hammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1710</weight>
+        <skill id="3013"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4727" name="Big Hammer" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_big_hammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1710</weight>
+        <skill id="3027"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4728" name="Big Hammer" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_big_hammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1710</weight>
+        <skill id="3036"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4729" name="Battle Axe" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_battle_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <skill id="3012"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4730" name="Battle Axe" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_battle_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <skill id="3027"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4731" name="Battle Axe" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_battle_axe_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <skill id="3036"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4732" name="Silver Axe" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_war_pick_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1690</weight>
+        <skill id="3012"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4733" name="Silver Axe" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_war_pick_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1690</weight>
+        <skill id="3027"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4734" name="Silver Axe" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_war_pick_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1690</weight>
+        <skill id="3036"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4735" name="Skull Graver" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_skull_graver_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <skill id="3012"/>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

@@ -59,7 +59,7 @@ public class AdminTvTEvent implements IAdminCommandHandler
 			
 			if ((target == null) || !(target instanceof L2PcInstance))
 			{
-				adminInstance.sendMessage("You should select a player!");
+				adminInstance.sendMessage("You should select a reader!");
 				return true;
 			}
 			
@@ -71,7 +71,7 @@ public class AdminTvTEvent implements IAdminCommandHandler
 			
 			if ((target == null) || !(target instanceof L2PcInstance))
 			{
-				adminInstance.sendMessage("You should select a player!");
+				adminInstance.sendMessage("You should select a reader!");
 				return true;
 			}
 			

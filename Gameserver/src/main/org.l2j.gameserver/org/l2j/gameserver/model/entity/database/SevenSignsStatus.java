@@ -147,7 +147,7 @@ public class SevenSignsStatus  {
         previousWinner = winner;
     }
 
-    public void addDawnStoneScore(int score) {
+    public void addDawnStoneScore(long score) {
         dawnStoneScore += score;
     }
 
@@ -163,7 +163,7 @@ public class SevenSignsStatus  {
         dawnFestivalScore = score;
     }
 
-    public void addDuskStoneScore(int score) {
+    public void addDuskStoneScore(long score) {
         duskStoneScore += score;
     }
 

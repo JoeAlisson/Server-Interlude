@@ -14,15 +14,15 @@ public class SevenSignsPlayer extends Entity<Integer> {
     private String cabal;
     private int seal;
     @Column("red_stones")
-    private int redStones;
+    private long redStones;
     @Column("green_stones")
-    private int greenStones;
+    private long greenStones;
     @Column("blue_stones")
-    private int blueStones;
+    private long blueStones;
     @Column("ancient_adena_amount")
-    private int ancientAdenaAmount;
+    private long ancientAdenaAmount;
     @Column("contribution_score")
-    private int contributionScore;
+    private long contributionScore;
 
     public SevenSignsPlayer(int charObjId, String cabal, int seal) {
         this.charObjId = charObjId;
@@ -30,7 +30,7 @@ public class SevenSignsPlayer extends Entity<Integer> {
         this.seal = seal;
     }
 
-    public int getStoneContrib() {
+    public long getStoneContrib() {
         return  redStones + blueStones + greenStones;
     }
 
@@ -55,43 +55,43 @@ public class SevenSignsPlayer extends Entity<Integer> {
         this.seal = seal;
     }
 
-    public int getRedStones() {
+    public long getRedStones() {
         return redStones;
     }
 
-    public void setRedStones(int stones) {
+    public void setRedStones(long stones) {
         this.redStones = stones;
     }
 
-    public int getGreenStones() {
+    public long getGreenStones() {
         return greenStones;
     }
 
-    public void setGreenStones(int stones) {
+    public void setGreenStones(long stones) {
         this.greenStones = stones;
     }
 
-    public int getBlueStones() {
+    public long getBlueStones() {
         return blueStones;
     }
 
-    public void setBlueStones(int stones) {
+    public void setBlueStones(long stones) {
         this.blueStones = stones;
     }
 
-    public int getAncientAdenaAmount() {
+    public long getAncientAdenaAmount() {
         return ancientAdenaAmount;
     }
 
-    public void setAncientAdenaAmount(int totalAncientAdena) {
+    public void setAncientAdenaAmount(long totalAncientAdena) {
         this.ancientAdenaAmount = totalAncientAdena;
     }
 
-    public int getContributionScore() {
+    public long getContributionScore() {
         return contributionScore;
     }
 
-    public void setContribuitionScore(int contribuition) {
+    public void setContribuitionScore(long contribuition) {
         this.contributionScore = contribuition;
     }
 }

@@ -17,7 +17,7 @@ import org.l2j.authserver.network.client.packet.auth2client.ServerList;
  *
  * TYPE_C2=4 - Indicates that each game server will have its bracket flag specified.
  *
- * TYPE_FREYA=5 - Indicates that each game server will have player's character count(s) specified.
+ * TYPE_FREYA=5 - Indicates that each game server will have reader's character count(s) specified.
  */
 public class RequestServerList extends L2LoginClientPacket
 {

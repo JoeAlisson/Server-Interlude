@@ -577,7 +577,7 @@ public class AdminEffects implements IAdminCommandHandler
 							}
 							catch (NumberFormatException nbe)
 							{
-								activeChar.sendMessage("Usage: //abnormal <hex_abnormal_mask> [player|radius]");
+								activeChar.sendMessage("Usage: //abnormal <hex_abnormal_mask> [reader|radius]");
 							}
 						}
 					}

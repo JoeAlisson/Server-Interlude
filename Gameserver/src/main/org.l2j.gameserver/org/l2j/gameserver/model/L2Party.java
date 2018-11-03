@@ -102,7 +102,7 @@ public class L2Party {
     }
 
     /**
-     * decrease number of players that already been invited but not replied yet happens when: player join party or player decline to join
+     * decrease number of players that already been invited but not replied yet happens when: reader join party or reader decline to join
      */
     public void decreasePendingInvitationNumber() {
         _pendingInvitation--;
@@ -203,7 +203,7 @@ public class L2Party {
     }
 
     /**
-     * true if player is party leader
+     * true if reader is party leader
      *
      * @param player
      * @return
@@ -268,7 +268,7 @@ public class L2Party {
         broadcastToPartyMembers(msg);
         broadcastToPartyMembers(new PartySmallWindowAdd(player));
 
-        // add player to party, adjust party level
+        // add reader to party, adjust party level
         getPartyMembers().add(player);
         if (player.getLevel() > _partyLvl) {
             _partyLvl = player.getLevel();
@@ -285,7 +285,7 @@ public class L2Party {
     }
 
     /**
-     * removes player from party
+     * removes reader from party
      *
      * @param player
      */
@@ -362,7 +362,7 @@ public class L2Party {
     }
 
     /**
-     * finds a player in the party by name
+     * finds a reader in the party by name
      *
      * @param name
      * @return
@@ -377,7 +377,7 @@ public class L2Party {
     }
 
     /**
-     * Oust player from party
+     * Oust reader from party
      *
      * @param player
      */
@@ -403,7 +403,7 @@ public class L2Party {
     }
 
     /**
-     * Oust player from party Overloaded method that takes player's name as parameter
+     * Oust reader from party Overloaded method that takes reader's name as parameter
      *
      * @param name
      */
@@ -512,7 +512,7 @@ public class L2Party {
      * @param adena
      * @param target
      */
-    public void distributeAdena(L2PcInstance player, int adena, L2Character target) {
+    public void distributeAdena(L2PcInstance player, long adena, L2Character target) {
         // Get allTemplates the party members
         List<L2PcInstance> membersList = getPartyMembers();
 
@@ -533,7 +533,7 @@ public class L2Party {
 
         // Now we can actually distribute the adena reward
         // (Total adena splitted by the number of party members that are in range and must be rewarded)
-        int count = adena / ToReward.size();
+        long count = adena / ToReward.size();
         for (L2PcInstance member : ToReward) {
             member.addAdena("Party", count, player, true);
         }

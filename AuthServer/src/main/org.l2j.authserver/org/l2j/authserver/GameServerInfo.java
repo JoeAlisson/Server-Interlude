@@ -105,6 +105,7 @@ public class GameServerInfo {
     }
 
     public void sendKickPlayer(String account) {
+        removeAccount(account);
         client.sendPacket(new KickPlayer(account));
     }
 

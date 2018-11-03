@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="14336" name="Cabrio's Hand" type="BLUNT" icon="icon.weapon_hand_of_cabrio_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14338" name="Tallum Blade*Damascus" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1890</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14339" name="Éclair Bijou" type="RAPIER" icon="icon.weapon_greed_stinger_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14341" name="Screaming Vengeance" type="CROSSBOW" icon="icon.weapon_soul_shooter_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="14348" name="Majestic Earring" icon="icon.accessary_inferno_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>1498000</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="14349" name="Majestic Ring" icon="icon.accessary_inferno_ring_i00">
+        <bodyPart>FINGER</bodyPart>
+        <price>999000</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="14350" name="Majestic Necklace" icon="icon.accessary_inferno_necklace_i00">
+        <bodyPart>NECK</bodyPart>
+        <price>1998000</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <weapon id="14327" name="Sirra's Blade" type="SWORD" icon="icon.weapon_sirr_blade_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14328" name="Sword of Ipos" type="SWORD" icon="icon.weapon_sword_of_ipos_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14330" name="Behemoth' Tuning Fork" type="BLUNT" icon="icon.weapon_tuning_fork_of_behemoth_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1890</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14331" name="Naga Storm" type="DAGGER" icon="icon.weapon_naga_storm_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>930</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14332" name="Tiphon's Spear" type="POLE" icon="icon.weapon_tiphon_spear_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14333" name="Shyeed's Bow" type="BOW" icon="icon.weapon_shyid_bow_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="14334" name="Sobekk's Hurricane" type="DUALFIST" icon="icon.weapon_sobekk_hurricane_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1330</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="14335" name="Themis' Tongue" type="SWORD" icon="icon.weapon_tongue_of_themis_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>26968400</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>820</weight>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

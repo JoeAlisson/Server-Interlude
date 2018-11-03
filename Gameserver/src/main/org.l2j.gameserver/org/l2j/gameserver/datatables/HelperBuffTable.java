@@ -38,14 +38,14 @@ public class HelperBuffTable {
     private final List<HelperBuff> helperBuffs;
 
     /**
-     * The player level since Newbie Helper can give the fisrt buff <BR>
+     * The reader level since Newbie Helper can give the fisrt buff <BR>
      * Used to generate message : "Come back here when you have reached level ...")
      */
     private int _magicClassLowestLevel = 100;
     private int _physicClassLowestLevel = 100;
 
     /**
-     * The player level above which Newbie Helper won't give any buff <BR>
+     * The reader level above which Newbie Helper won't give any buff <BR>
      * Used to generate message : "Only novice character of level ... or less can receive my support magic.")
      */
     private int _magicClassHighestLevel = 1;

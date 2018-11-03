@@ -4,8 +4,8 @@ import org.l2j.gameserver.model.base.PlayerClass;
 import org.l2j.gameserver.templates.ClassTemplate;
 import org.l2j.gameserver.templates.xml.jaxb.ClassInfo;
 import org.l2j.gameserver.templates.xml.jaxb.PlayerTemplate;
-import org.l2j.gameserver.templates.xml.player.ClassInfoReader;
-import org.l2j.gameserver.templates.xml.player.PlayerTemplateReader;
+import org.l2j.gameserver.templates.xml.reader.ClassInfoReader;
+import org.l2j.gameserver.templates.xml.reader.PlayerTemplateReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

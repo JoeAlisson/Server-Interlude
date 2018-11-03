@@ -192,7 +192,7 @@ public final class SendWareHouseWithDrawList extends L2GameClientPacket
 			}
 		}
 		
-		// Send updated item list to the player
+		// Send updated item list to the reader
 		if (playerIU != null)
 		{
 			player.sendPacket(playerIU);
@@ -202,7 +202,7 @@ public final class SendWareHouseWithDrawList extends L2GameClientPacket
 			player.sendPacket(new ItemList(player, false));
 		}
 		
-		// Update current load status on player
+		// Update current load status on reader
 		StatusUpdate su = new StatusUpdate(player.getObjectId());
 		su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
 		player.sendPacket(su);

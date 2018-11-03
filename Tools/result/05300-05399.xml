@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="5380" name="Recipe: Sealed Boots of Nightmare (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>35200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>541</recipeId>
+    </item>
+    <item stackable="true" id="5381" name="Recipe: Sealed Boots of Nightmare (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>35200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>542</recipeId>
+    </item>
+    <item stackable="true" id="5382" name="Recipe: Sealed Majestic Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>35200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>543</recipeId>
+    </item>
+    <item stackable="true" id="5383" name="Recipe: Sealed Majestic Boots (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>35200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>544</recipeId>
+    </item>
+    <item stackable="true" id="5392" name="Recipe: Sealed Dark Crystal Gloves (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>23200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>545</recipeId>
+    </item>
+    <item stackable="true" id="5393" name="Recipe: Sealed Dark Crystal Gloves (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>23200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>546</recipeId>
+    </item>
+    <item stackable="true" id="5394" name="Recipe: Sealed Tallum Gloves (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>23200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>547</recipeId>
+    </item>
+    <item stackable="true" id="5395" name="Recipe: Sealed Tallum Gloves (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>23200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>548</recipeId>
+    </item>
+    <armor id="5301" name="Sealed Tallum Leather Armor" type="LIGHT" commissionType="FULL_BODY" icon="icon.armor_t78_ul_i02">
+        <price>4341000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="347"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5400</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="5304" name="Sealed Tallum Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t79_u_i02">
+        <price>2671000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="214"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1860</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="5305" name="Sealed Tallum Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t79_l_i02">
+        <price>1670000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="134"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>920</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="5308" name="Sealed Dark Crystal Robe" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t76_ul_i02">
+        <price>4341000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="347"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2450</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="5311" name="Sealed Armor of Nightmare" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t80_ul_i02">
+        <price>8804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="704"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>9580</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="5312" name="Sealed Helm of Nightmare" commissionType="HELMET" icon="icon.armor_leather_helmet_i02">
+        <price>2032000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="163"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>560</weight>
+        <bodyPart>HEAD</bodyPart>
+    </armor>
+    <armor id="5313" name="Sealed Gauntlets of Nightmare" commissionType="GLOVES" icon="icon.armor_t80_g_i02">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="108"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>550</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5314" name="Sealed Boots of Nightmare" commissionType="FEET" icon="icon.armor_t80_b_i02">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="108"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5315" name="Sealed Shield of Nightmare" commissionType="SHIELD" icon="icon.shield_shield_of_nightmare_i02">
+        <price>1422000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="114"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <armor id="5316" name="Sealed Majestic Plate Armor" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t83_ul_i02">
+        <price>8804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="704"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>9200</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="5317" name="Sealed Majestic Circlet" commissionType="HELMET" icon="icon.armor_leather_helmet_i02">
+        <price>2032000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="163"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>550</weight>
+        <bodyPart>HEAD</bodyPart>
+    </armor>
+    <armor id="5318" name="Sealed Majestic Gauntlets" commissionType="GLOVES" icon="icon.armor_t83_g_i02">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="108"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="5319" name="Sealed Majestic Boots" commissionType="FEET" icon="icon.armor_t83_b_i02">
+        <price>1355000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="108"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="5320" name="Sealed Leather Armor of Nightmare" type="LIGHT" commissionType="FULL_BODY" icon="icon.armor_t81_ul_i02">
+        <price>6603000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="528"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5300</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="5323" name="Sealed Majestic Leather Armor" type="LIGHT" commissionType="FULL_BODY" icon="icon.armor_t84_ul_i02">
+        <price>6603000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="528"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5350</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="5326" name="Sealed Robe of Nightmare" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t82_ul_i02">
+        <price>6603000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="528"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2300</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="5329" name="Sealed Majestic Robe" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t85_ul_i02">
+        <price>6603000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="528"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2330</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <item stackable="true" id="5332" name="Recipe: Sealed Dark Crystal Leather Armor (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>69400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>513</recipeId>
+    </item>
+    <item stackable="true" id="5333" name="Recipe: Sealed Dark Crystal Leather Armor (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>69400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>514</recipeId>
+    </item>
+    <item stackable="true" id="5334" name="Recipe: Sealed Tallum Leather Armor (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>101600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>515</recipeId>
+    </item>
+    <item stackable="true" id="5335" name="Recipe: Sealed Tallum Leather Armor (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>101600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>516</recipeId>
+    </item>
+    <item stackable="true" id="5336" name="Recipe: Sealed Leather Armor of Nightmare (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>154600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>517</recipeId>
+    </item>
+    <item stackable="true" id="5337" name="Recipe: Sealed Leather Armor of Nightmare (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>154600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>518</recipeId>
+    </item>
+    <item stackable="true" id="5338" name="Recipe: Sealed Majestic Leather Armor (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>154600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>519</recipeId>
+    </item>
+    <item stackable="true" id="5339" name="Recipe: Sealed Majestic Leather Armor (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>154600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>520</recipeId>
+    </item>
+    <item stackable="true" id="5340" name="Recipe: Sealed Dark Crystal Leggings (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>43400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>521</recipeId>
+    </item>
+    <item stackable="true" id="5341" name="Recipe: Sealed Dark Crystal Leggings (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>43400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>522</recipeId>
+    </item>
+    <item stackable="true" id="5342" name="Echo Crystal - Sad Song" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i03">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>44000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2584" level="1"/>
+    </item>
+    <item stackable="true" id="5343" name="Echo Crystal - Holy Song" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i04">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>44000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2585" level="1"/>
+    </item>
+    <item stackable="true" id="5346" name="Recipe: Sealed Tallum Tunic (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>69400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>523</recipeId>
+    </item>
+    <item stackable="true" id="5347" name="Recipe: Sealed Tallum Tunic (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>69400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>524</recipeId>
+    </item>
+    <item stackable="true" id="5348" name="Recipe: Sealed Dark Crystal Robe (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>101600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>525</recipeId>
+    </item>
+    <item stackable="true" id="5349" name="Recipe: Sealed Dark Crystal Robe (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>101600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>526</recipeId>
+    </item>
+    <item stackable="true" id="5350" name="Recipe: Sealed Robe of Nightmare (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>154600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>527</recipeId>
+    </item>
+    <item stackable="true" id="5351" name="Recipe: Sealed Robe of Nightmare (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>154600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>528</recipeId>
+    </item>
+    <item stackable="true" id="5352" name="Recipe: Sealed Majestic Robe (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>154600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>529</recipeId>
+    </item>
+    <item stackable="true" id="5353" name="Recipe: Sealed Majestic Robe (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>154600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>530</recipeId>
+    </item>
+    <item stackable="true" id="5354" name="Recipe: Sealed Tallum Stockings (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>43400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>531</recipeId>
+    </item>
+    <item stackable="true" id="5355" name="Recipe: Sealed Tallum Stockings (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>43400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>532</recipeId>
+    </item>
+    <item stackable="true" id="5364" name="Recipe: Sealed Dark Crystal Shield (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>24400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>533</recipeId>
+    </item>
+    <item stackable="true" id="5365" name="Recipe: Sealed Dark Crystal Shield (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>24400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>534</recipeId>
+    </item>
+    <item stackable="true" id="5366" name="Recipe: Sealed Shield of Nightmare (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>37000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>535</recipeId>
+    </item>
+    <item stackable="true" id="5367" name="Recipe: Sealed Shield of Nightmare (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>37000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>536</recipeId>
+    </item>
+    <item stackable="true" id="5368" name="Recipe: Sealed Dark Crystal Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>23200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>537</recipeId>
+    </item>
+    <item stackable="true" id="5369" name="Recipe: Sealed Dark Crystal Boots (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>23200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>538</recipeId>
+    </item>
+    <item stackable="true" id="5370" name="Recipe: Sealed Tallum Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>23200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>539</recipeId>
+    </item>
+    <item stackable="true" id="5371" name="Recipe: Sealed Tallum Boots (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>23200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>540</recipeId>
+    </item>
+</itemList>

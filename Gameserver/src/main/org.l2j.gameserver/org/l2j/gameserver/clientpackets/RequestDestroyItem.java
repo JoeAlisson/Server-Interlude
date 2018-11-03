@@ -73,7 +73,7 @@ public final class RequestDestroyItem extends L2GameClientPacket
 			return;
 		}
 		
-		int count = _count;
+		long count = _count;
 		
 		if (activeChar.getPrivateStoreType() != 0)
 		{

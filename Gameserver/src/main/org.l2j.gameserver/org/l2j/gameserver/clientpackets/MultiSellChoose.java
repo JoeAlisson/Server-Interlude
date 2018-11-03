@@ -1,20 +1,3 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
@@ -28,20 +11,19 @@ import org.l2j.gameserver.model.L2Multisell.MultiSellListContainer;
 import org.l2j.gameserver.model.PcInventory;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.Armor;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ItemList;
 import org.l2j.gameserver.serverpackets.PledgeShowInfoUpdate;
 import org.l2j.gameserver.serverpackets.StatusUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.xml.jaxb.Armor;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;
-
 
 public class MultiSellChoose extends L2GameClientPacket {
     private static final String _C__A7_MULTISELLCHOOSE = "[C] A7 MultiSellChoose";
@@ -101,7 +83,7 @@ public class MultiSellChoose extends L2GameClientPacket {
         MultiSellEntry entry = prepareEntry(merchant, templateEntry, applyTaxes, maintainEnchantment, enchantment);
 
         // Generate a list of distinct ingredients and counts in order to check if the correct item-counts
-        // are possessed by the player
+        // are possessed by the reader
         List<MultiSellIngredient> _ingredientsList = new LinkedList<>();
         boolean newIng = true;
         for (MultiSellIngredient e : entry.getIngredients()) {
@@ -128,7 +110,7 @@ public class MultiSellChoose extends L2GameClientPacket {
                 _ingredientsList.add(L2Multisell.getInstance().new MultiSellIngredient(e));
             }
         }
-        // now check if the player has sufficient items in the inventory to cover the ingredients' expences
+        // now check if the reader has sufficient items in the inventory to cover the ingredients' expences
         for (MultiSellIngredient e : _ingredientsList) {
             if (((double) e.getItemCount() * _amount) > Integer.MAX_VALUE) {
                 player.sendPacket(new SystemMessage(SystemMessageId.YOU_HAVE_EXCEEDED_QUANTITY_THAT_CAN_BE_INPUTTED));

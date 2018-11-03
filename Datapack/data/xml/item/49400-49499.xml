@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="49408" name="Atuba Hammer" additionalName="Acumen" type="BLUNT" icon="icon.weapon_atuba_hammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49409" name="Atuba Hammer" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_atuba_hammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49410" name="Ghost Staff" additionalName="Empower" type="BLUNT" icon="icon.weapon_ghost_staff_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49411" name="Ghost Staff" additionalName="Acumen" type="BLUNT" icon="icon.weapon_ghost_staff_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49412" name="Ghost Staff" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_ghost_staff_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49413" name="Atuba Mace" additionalName="Empower" type="BLUNT" icon="icon.weapon_atuba_mace_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49414" name="Atuba Mace" additionalName="Acumen" type="BLUNT" icon="icon.weapon_atuba_mace_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49415" name="Atuba Mace" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_atuba_mace_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="49416" name="Blade Spirit" icon="icon.etc_soul_of_blade">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49417" name="Spirit Energy" icon="icon.etc_power_of_soul">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="49418" name="Cube of Sayha" additionalName="30-day" icon="icon.sa_cube">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>0</weight>
+    </item>
+    <item id="49419" name="Cube of Sayha" additionalName="90-day" icon="icon.sa_cube">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>129600</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49420" name="Scroll: Summon Storm" icon="icon.scrl_of_storm">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49421" name="Package: Cube of Sayha (30-day)" icon="icon.shirt_special_box_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49422" name="Package: Cube of Sayha (90-day)" icon="icon.shirt_special_box_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49423" name="Spellbook: Dual Weapon Defense" icon="icon.etc_spell_books_hfighter_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49424" name="Spellbook: Broad Sweep" icon="icon.etc_spell_books_hfighter_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49425" name="Spellbook: Immortal Life" icon="icon.etc_spell_books_hfighter_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49426" name="Spellbook: Break Duress" icon="icon.etc_spell_books_hfighter_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49427" name="Spellbook: Shield Deflect Magic" icon="icon.etc_spell_books_hfighter_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49428" name="Spellbook: Aegis" icon="icon.etc_spell_books_hfighter_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49429" name="Spellbook: Hide" icon="icon.etc_spell_books_defighter_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49430" name="Spellbook: Mystic Immunity" icon="icon.etc_spell_books_assistance_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49431" name="Spellbook: Divine Power" icon="icon.etc_spell_books_white_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49432" name="Spellbook: Stigma of Shilen" icon="icon.etc_spell_books_assistance_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49433" name="Amulet: Chant of Movement" icon="icon.etc_orcish_talisman_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49434" name="Sayha's Treasure Chest" icon="icon.etc_ev_kalie_treasure_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49435" name="Scroll: Berserker Spirit" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <weapon id="49436" name="Blue Mackerel: One-handed Sword" additionalName="7-day" type="SWORD" icon="icon.wp_fishing1">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>1450</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49437" name="Trumpetfish: Dagger" additionalName="7-day" type="DAGGER" icon="icon.wp_fishing2">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>1070</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49438" name="Shark: Two-handed Sword" additionalName="7-day" type="SWORD" icon="icon.wp_fishing3">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>2020</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49439" name="Squid: Spear" additionalName="7-day" type="POLE" icon="icon.wp_fishing4">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>2060</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49440" name="Sea Horse: Two-handed Magic Blunt Weapon" additionalName="7-day" type="BLUNT" icon="icon.wp_fishing5">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>1000</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49441" name="Lobster: Fist Weapon" additionalName="7-day" type="DUALFIST" icon="icon.wp_fishing6">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>1510</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49442" name="Giant Crab: Bow" additionalName="7-day" type="BOW" icon="icon.wp_fishing7">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>1820</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <armor id="49443" name="Turtle: Shield" additionalName="7-day" icon="icon.wp_fishing10">
+        <bodyPart>LEFT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>1320</weight>
+        </armor>
+    <weapon id="49444" name="Blue Mackerel: Dualsword" additionalName="7-day" type="DUAL" icon="icon.wp_fishing11">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>2530</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49445" name="Blue Mackerel: One-handed Blunt Weapon" additionalName="7-day" type="BLUNT" icon="icon.wp_fishing1">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>1720</weight>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="49446" name="Blue Mackerel Chest: One-handed Sword" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49447" name="Trumpetfish Chest: Dagger" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49448" name="Shark Chest: Two-handed Sword" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49449" name="Squid Chest: Spear" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49450" name="Sea Horse Chest: Two-handed Magic Blunt Weapon" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49451" name="Lobster Chest: Fist Weapon" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49452" name="Giant Crab Chest: Bow" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49453" name="Turtle Chest: Shield" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49454" name="Blue Mackerel Chest: Dualsword" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49455" name="Blue Mackerel Chest: One-handed Blunt Weapon" icon="icon.etc_raid_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49456" name="Blade Spirit Chest (5 pcs.)" icon="icon.etc_equip_item_box_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49457" name="Letter Collector's Gift" icon="icon.shield_bread_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49458" name="Agathion - Pisces" additionalName="15-day" icon="icon.agathion_magmeld_teleport">
+        <bodyPart>LEFT_BRACELET</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>150</weight>
+        <skill id="17619"/>
+        <skill id="3267"/>
+        <skill id="39053"/>
+        <skill id="39054"/>
+        <skill id="39055"/>
+        <skill id="39056"/>
+        </armor>
+    <armor id="49459" name="Agathion - Cancer" additionalName="15-day" icon="icon.agathion_magmeld_teleport">
+        <bodyPart>LEFT_BRACELET</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>150</weight>
+        <skill id="17621"/>
+        <skill id="3267"/>
+        <skill id="39053"/>
+        <skill id="39054"/>
+        <skill id="39055"/>
+        <skill id="39056"/>
+        </armor>
+    <item stackable="true" id="49460" name="Fish Stew: Might" icon="icon.fish_stew_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39047"/>
+    </item>
+    <item stackable="true" id="49461" name="Fish Stew: Shield" icon="icon.fish_stew_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39048"/>
+    </item>
+    <item stackable="true" id="49462" name="Fish Stew: Magic Barrier" icon="icon.fish_stew_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39049"/>
+    </item>
+    <item stackable="true" id="49463" name="Fish Stew: Vampiric Rage" icon="icon.fish_stew_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39050"/>
+    </item>
+    <item stackable="true" id="49464" name="Fish Stew: Empower" icon="icon.fish_stew_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39051"/>
+    </item>
+    <weapon id="49465" name="Fishing Rod" additionalName="For NPC" type="FISHINGROD" icon="icon.weapon_fishing_rod_i03">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        </weapon>
+    <item id="49466" name="Warrior Experience Rune" additionalName="30-day" type="ENCHT_ATTR_RUNE" icon="icon.skill70094">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>0</weight>
+        <skill id="39057"/>
+    </item>
+    <armor id="49467" name="Fire Dragon Pendant" icon="icon.bm_pendant_pve">
+        <bodyPart>UNDERWEAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49468" name="Land Dragon Pendant" icon="icon.bm_pendant_pvp">
+        <bodyPart>UNDERWEAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <item stackable="true" id="49469" name="Pendant Polish" icon="icon.bm_pendant_varnish">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49470" name="Shining Pendant Polish" icon="icon.bm_pendant_varnish_premium">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49471" name="Fire Dragon Pendant Chest" icon="icon.bm_pendant_pve_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49472" name="Land Dragon Pendant Chest" icon="icon.bm_pendant_pvp_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49473" name="Mr. K's Hand of God Gift Basket" icon="icon.mrk_basket_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49474" name="Scroll Part: Enchant Weapon" icon="icon.weapon_enchant_piece">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49475" name="Scroll Part: Enchant Armor" icon="icon.armor_enchant_piece">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49476" name="Refined Scroll Part: Enchant Weapon" icon="icon.high_weapon_enchant_piece">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49477" name="Queen Ant's Ring" additionalName="15-day" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i00">
+        <bodyPart>FINGER</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>150</weight>
+        <skill id="3562"/>
+        </armor>
+    <item stackable="true" id="49478" name="Refined Scroll Part: Enchant Armor" icon="icon.high_armor_enchant_piece">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49479" name="Solid Scroll Part: Enchant Weapon" icon="icon.safe_weapon_enchant_piece">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49480" name="Solid Scroll Part: Enchant Armor" icon="icon.safe_armor_enchant_piece">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49481" name="Solid Scroll: Enchant Armor (D-grade)" icon="icon.giant_scrl_of_ench_am_d">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49482" name="Solid Scroll: Enchant Weapon (D-grade)" icon="icon.giant_scrl_of_ench_wp_d">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49483" name="Solid Scroll: Enchant Armor (C-grade)" icon="icon.giant_scrl_of_ench_am_c">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49484" name="Solid Scroll: Enchant Weapon (C-grade)" icon="icon.giant_scrl_of_ench_wp_c">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49485" name="Solid Scroll: Enchant Armor (B-grade)" icon="icon.giant_scrl_of_ench_am_b">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49486" name="Solid Scroll: Enchant Weapon (B-grade)" icon="icon.giant_scrl_of_ench_wp_b">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49487" name="Soulshot Ticket" icon="icon.etc_exchange_ticket_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49488" name="Major Healing Potion" type="POTION" icon="icon.etc_reagent_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>10000</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="39069"/>
+    </item>
+    <item stackable="true" id="49489" name="Parts of Enchantment Scrolls Chest" icon="icon.etc_treasure_box_i08">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49490" name="Fishing kit" icon="icon.etc_elite_marguene_collection_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49491" name="Weapon Supply Box (D-grade)" icon="icon.etc_raid_e_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49492" name="Weapon Supply Box (C-grade)" icon="icon.etc_raid_e_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49493" name="Orfen's Earring" additionalName="15-day" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>150</weight>
+        <skill id="3560"/>
+        </armor>
+    <item stackable="true" id="49494" name="Buff Scrolls Chest" icon="icon.new_user_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <weapon id="49495" name="Hero's Dual Swords" additionalName="15-day" type="DUAL" icon="icon.weapon_r_dualsword_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>2460</weight>
+        <consume shot="1"/>
+    </weapon>
+    <item id="49496" name="Luck Cube" additionalName="7-day" icon="icon.special_cube_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49497" name="Hero's Fishing kit" icon="icon.etc_elite_marguene_collection_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49498" name="My Teleport Scroll Package" icon="icon.etc_pi_gift_box_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="49499" name="Angel Cat's Energy" additionalName="30-day" type="POTION" icon="icon.skilltransform4">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>60000</reuseDelay>
+        <time>43200</time>
+        <weight>5</weight>
+        <skill id="39074"/>
+    </item>
+    <weapon magic="true" id="49400" name="Conjuror's Staff" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_conjure_staff_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1030</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49401" name="Staff of Mana" additionalName="Empower" type="BLUNT" icon="icon.weapon_staff_of_mana_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49402" name="Staff of Mana" additionalName="Acumen" type="BLUNT" icon="icon.weapon_staff_of_mana_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49403" name="Staff of Mana" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_staff_of_mana_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49404" name="Staff of Magic" additionalName="Empower" type="BLUNT" icon="icon.weapon_staff_of_magicpower_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49405" name="Staff of Magic" additionalName="Acumen" type="BLUNT" icon="icon.weapon_staff_of_magicpower_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="49406" name="Staff of Magic" additionalName="Magic Regeneration" type="BLUNT" icon="icon.weapon_staff_of_magicpower_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49407" name="Atuba Hammer" additionalName="Empower" type="BLUNT" icon="icon.weapon_atuba_hammer_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

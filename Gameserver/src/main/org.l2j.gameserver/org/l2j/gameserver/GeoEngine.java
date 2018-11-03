@@ -104,7 +104,7 @@ public class GeoEngine extends GeoData {
      */
     @Override
     public boolean canSeeTarget(L2Object cha, L2Object target) {
-        // To be able to see over fences and give the player the viewpoint
+        // To be able to see over fences and give the reader the viewpoint
         // game client has, allTemplates coordinates are lifted 45 from ground.
         // Because of layer selection in LOS algorithm (it selects -45 there
         // and some layers can be very close...) do not change this without

@@ -1,26 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
-
-/**
- * @author godson
- */
-
 package org.l2j.gameserver;
 
 import org.l2j.commons.Config;
@@ -39,6 +16,7 @@ import org.l2j.gameserver.serverpackets.ExOlympiadUserInfoSpectator;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.MagicSkillUser;
 import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -1285,7 +1263,7 @@ public class Olympiad {
                             player.removeSkill(skill, false);
                         }
                     }
-                    // Abort casting if player casting
+                    // Abort casting if reader casting
                     if (player.isCastingNow()) {
                         player.abortCast();
                     }
@@ -1311,10 +1289,10 @@ public class Olympiad {
                     }
 
                     /*
-                     * if (player.getCubics() != null) { for(L2CubicInstance cubic : player.getCubics().values()) { cubic.stopAction(); player.delCubic(cubic.getId()); } player.getCubics().clear(); }
+                     * if (reader.getCubics() != null) { for(L2CubicInstance cubic : reader.getCubics().values()) { cubic.stopAction(); reader.delCubic(cubic.getId()); } reader.getCubics().clear(); }
                      */
 
-                    // Remove player from his party
+                    // Remove reader from his party
                     if (player.getParty() != null) {
                         L2Party party = player.getParty();
                         party.removePartyMember(player);
@@ -1327,7 +1305,7 @@ public class Olympiad {
                         wpn = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LRHAND);
                     }
                     if ((wpn != null) && (((wpn.getItemId() >= 6611) && (wpn.getItemId() <= 6621)) || (wpn.getItemId() == 6842))) {
-                        L2ItemInstance[] unequiped = player.getInventory().unEquipItemInBodySlotAndRecord(wpn.getItem().getBodyPart());
+                        L2ItemInstance[] unequiped = player.getInventory().unEquipItemInBodySlotAndRecord(((Weapon)wpn.getItem()).getBodyPart());
                         InventoryUpdate iu = new InventoryUpdate();
                         for (L2ItemInstance element : unequiped) {
                             iu.addModifiedItem(element);

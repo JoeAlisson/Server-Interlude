@@ -92,7 +92,7 @@ public class SiegeFlag implements ISkillHandler
 	 * Return true if character clan place a flag<BR>
 	 * <BR>
 	 * @param activeChar The L2Character of the character placing the flag
-	 * @param isCheckOnly if false, it will send a notification to the player telling him why it failed
+	 * @param isCheckOnly if false, it will send a notification to the reader telling him why it failed
 	 * @return
 	 */
 	public static boolean checkIfOkToPlaceFlag(L2Character activeChar, boolean isCheckOnly)

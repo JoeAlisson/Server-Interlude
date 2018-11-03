@@ -241,10 +241,10 @@ public final class L2World {
     }
 
     /**
-     * Return the player instance corresponding to the given name.<BR>
+     * Return the reader instance corresponding to the given name.<BR>
      * <BR>
      *
-     * @param name Name of the player to get Instance
+     * @param name Name of the reader to get Instance
      * @return
      */
     public L2PcInstance getPlayer(String name) {
@@ -358,7 +358,7 @@ public final class L2World {
             _log.debug("objects in range:" + visibles.size());
         }
 
-        // tell the player about the surroundings
+        // tell the reader about the surroundings
         // Go through the visible objects contained in the circular area
         for (L2Object visible : visibles) {
             // Add the object in L2ObjectHashSet(L2Object) _knownObjects of the visible L2Character according to conditions :
@@ -379,7 +379,7 @@ public final class L2World {
      * <BR>
      * <B><U> Example of use </U> :</B><BR>
      * <BR>
-     * <li>Remove a player from the visible objects</li><BR>
+     * <li>Remove a reader from the visible objects</li><BR>
      *
      * @param cha
      */
@@ -447,7 +447,7 @@ public final class L2World {
 
             // If object is a L2Character :
             // Remove allTemplates L2Object from L2ObjectHashSet(L2Object) containing allTemplates L2Object detected by the L2Character
-            // Remove allTemplates L2PcInstance from L2ObjectHashSet(L2PcInstance) containing allTemplates player ingame detected by the L2Character
+            // Remove allTemplates L2PcInstance from L2ObjectHashSet(L2PcInstance) containing allTemplates reader ingame detected by the L2Character
             object.getKnownList().removeAllKnownObjects();
 
             // If selected L2Object is a L2PcIntance, remove it from L2ObjectHashSet(L2PcInstance) _allPlayers of L2World

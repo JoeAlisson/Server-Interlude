@@ -331,7 +331,7 @@ public class MapRegionTable {
 					castle = CastleManager.getInstance().getCastleByOwner(player.getClan());
 				}
 				
-				// Check if player is on castle ground
+				// Check if reader is on castle ground
 				if (castle == null)
 				{
 					castle = CastleManager.getInstance().getCastle(player);
@@ -340,7 +340,7 @@ public class MapRegionTable {
 				if ((castle != null) && (castle.getCastleId() > 0))
 				{
 					// If Teleporting to castle or
-					// If is on caslte with siege and player's clan is defender
+					// If is on caslte with siege and reader's clan is defender
 					if ((teleportWhere == TeleportWhereType.Castle) || (castle.getSiege().getIsInProgress() && (castle.getSiege().getDefenderClan(player.getClan()) != null)))
 					{
 						coord = castle.getZone().getSpawn();
@@ -349,11 +349,11 @@ public class MapRegionTable {
 					
 					if ((teleportWhere == TeleportWhereType.SiegeFlag) && castle.getSiege().getIsInProgress())
 					{
-						// Check if player's clan is attacker
+						// Check if reader's clan is attacker
 						List<L2NpcInstance> flags = castle.getSiege().getFlag(player.getClan());
 						if ((flags != null) && !flags.isEmpty())
 						{
-							// Spawn to flag - Need more work to get player to the nearest flag
+							// Spawn to flag - Need more work to get reader to the nearest flag
 							L2NpcInstance flag = flags.get(0);
 							return new Location(flag.getX(), flag.getY(), flag.getZ());
 						}
@@ -366,7 +366,7 @@ public class MapRegionTable {
 			{
 				return new Location(17817, 170079, -3530);
 			}
-			// Karma player land out of city
+			// Karma reader land out of city
 			if (player.getKarma() > 1)
 			{
 				int closest = getMapRegion(activeChar.getX(), activeChar.getY());

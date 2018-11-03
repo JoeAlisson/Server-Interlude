@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.handler.itemhandlers;
 
 import org.l2j.gameserver.handler.IItemHandler;
@@ -25,13 +7,12 @@ import org.l2j.gameserver.model.actor.instance.L2BabyPetInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ExAutoSoulShot;
 import org.l2j.gameserver.serverpackets.MagicSkillUser;
 import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
-
 
 /**
  * Beast SoulShot Handler
@@ -105,8 +86,8 @@ public class BeastSoulShot implements IItemHandler
 				return;
 			}
 			
-			int shotCount = item.getCount();
-			shotConsumption = weaponItem.getSoulshots();
+			long shotCount = item.getCount();
+			shotConsumption = weaponItem.getShots();
 			
 			if (shotConsumption == 0)
 			{
@@ -133,7 +114,7 @@ public class BeastSoulShot implements IItemHandler
 			activePet.setChargedSoulShot(L2ItemInstance.CHARGED_SOULSHOT);
 		}
 		
-		// If the player doesn't have enough beast soulshot remaining, remove any auto soulshot task.
+		// If the reader doesn't have enough beast soulshot remaining, remove any auto soulshot task.
 		if (!activeOwner.destroyItemWithoutTrace("Consume", item.getObjectId(), shotConsumption, null, false))
 		{
 			if (activeOwner.getAutoSoulShot().containsKey(itemId))

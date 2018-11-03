@@ -60,10 +60,10 @@ public class L2CastleChamberlainInstance extends L2FolkInstance {
 
         // Check if the L2PcInstance already target the L2NpcInstance
         if (this != player.getTarget()) {
-            // Set the target of the L2PcInstance player
+            // Set the target of the L2PcInstance reader
             player.setTarget(this);
 
-            // Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+            // Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
             MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
             player.sendPacket(my);
 
@@ -206,7 +206,7 @@ public class L2CastleChamberlainInstance extends L2FolkInstance {
                     BuyList bl = new BuyList(list, player.getAdena(), 0);
                     player.sendPacket(bl);
                 } else {
-                    _log.warn("player: " + player.getName() + " attempting to buy from chamberlain that don't have buylist!");
+                    _log.warn("reader: " + player.getName() + " attempting to buy from chamberlain that don't have buylist!");
                     _log.warn("buylist id:" + buy);
                 }
                 player.sendPacket(new ActionFailed());
@@ -408,8 +408,8 @@ public class L2CastleChamberlainInstance extends L2FolkInstance {
     }
 
     /*
-     * private void showVaultWindowDeposit(L2PcInstance player) { player.sendPacket(new ActionFailed()); player.setActiveWarehouse(player.getClan().getWarehouse()); player.sendPacket(new WareHouseDepositList(player, WareHouseDepositList.CLAN)); //Or Castle ?? } private void
-     * showVaultWindowWithdraw(L2PcInstance player) { player.sendPacket(new ActionFailed()); player.setActiveWarehouse(player.getClan().getWarehouse()); player.sendPacket(new WareHouseWithdrawalList(player, WareHouseWithdrawalList.CLAN)); //Or Castle ?? }
+     * private void showVaultWindowDeposit(L2PcInstance reader) { reader.sendPacket(new ActionFailed()); reader.setActiveWarehouse(reader.getClan().getWarehouse()); reader.sendPacket(new WareHouseDepositList(reader, WareHouseDepositList.CLAN)); //Or Castle ?? } private void
+     * showVaultWindowWithdraw(L2PcInstance reader) { reader.sendPacket(new ActionFailed()); reader.setActiveWarehouse(reader.getClan().getWarehouse()); reader.sendPacket(new WareHouseWithdrawalList(reader, WareHouseWithdrawalList.CLAN)); //Or Castle ?? }
      */
     protected int validateCondition(L2PcInstance player) {
         if ((getCastle() != null) && (getCastle().getCastleId() > 0)) {

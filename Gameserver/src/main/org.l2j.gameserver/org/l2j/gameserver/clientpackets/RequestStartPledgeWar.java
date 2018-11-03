@@ -116,8 +116,8 @@ public final class RequestStartPledgeWar extends L2GameClientPacket
 		
 		// if(leader != null && leader.isOnline() == 0)
 		// {
-		// player.sendMessage("Clan leader isn't online.");
-		// player.sendPacket(new ActionFailed());
+		// reader.sendMessage("Clan leader isn't online.");
+		// reader.sendPacket(new ActionFailed());
 		// return;
 		// }
 		
@@ -125,7 +125,7 @@ public final class RequestStartPledgeWar extends L2GameClientPacket
 		// {
 		// SystemMessage sm = new SystemMessage(SystemMessage.S1_IS_BUSY_TRY_LATER);
 		// sm.addString(leader.getName());
-		// player.sendPacket(sm);
+		// reader.sendPacket(sm);
 		// return;
 		// }
 		
@@ -133,13 +133,13 @@ public final class RequestStartPledgeWar extends L2GameClientPacket
 		// {
 		// SystemMessage sm = new SystemMessage(SystemMessage.S1_IS_BUSY_TRY_LATER);
 		// sm.addString(leader.getName());
-		// player.sendPacket(sm);
+		// reader.sendPacket(sm);
 		// return;
 		// }
 		
-		// leader.setTransactionRequester(player);
-		// player.setTransactionRequester(leader);
-		// leader.sendPacket(new StartPledgeWar(_clan.getName(),player.getName()));
+		// leader.setTransactionRequester(reader);
+		// reader.setTransactionRequester(leader);
+		// leader.sendPacket(new StartPledgeWar(_clan.getName(),reader.getName()));
 		
 		ClanTable.getInstance().storeclanswars(player.getClanId(), clan.getClanId());
 		for (L2PcInstance cha : L2World.getInstance().getAllPlayers())

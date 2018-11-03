@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.Config;
@@ -29,18 +11,17 @@ import org.l2j.gameserver.model.actor.knownlist.DoorKnownList;
 import org.l2j.gameserver.model.actor.stat.DoorStat;
 import org.l2j.gameserver.model.actor.status.DoorStatus;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.entity.ClanHall;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
-
 
 public class L2DoorInstance extends L2Character {
     protected static final Logger log = LoggerFactory.getLogger(L2DoorInstance.class.getName());
@@ -353,14 +334,14 @@ public class L2DoorInstance extends L2Character {
 
         // Check if the L2PcInstance already target the L2NpcInstance
         if (this != player.getTarget()) {
-            // Set the target of the L2PcInstance player
+            // Set the target of the L2PcInstance reader
             player.setTarget(this);
 
-            // Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+            // Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
             MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
             player.sendPacket(my);
 
-            // if (isAutoAttackable(player))
+            // if (isAutoAttackable(reader))
             // {
             DoorStatusUpdate su = new DoorStatusUpdate(this);
             player.sendPacket(su);
@@ -369,8 +350,8 @@ public class L2DoorInstance extends L2Character {
             // Send a Server->Client packet ValidateLocation to correct the L2NpcInstance position and heading on the client
             player.sendPacket(new ValidateLocation(this));
         } else {
-            // MyTargetSelected my = new MyTargetSelected(getObjectId(), player.getLevel());
-            // player.sendPacket(my);
+            // MyTargetSelected my = new MyTargetSelected(getObjectId(), reader.getLevel());
+            // reader.sendPacket(my);
             if (isAutoAttackable(player)) {
                 if (Math.abs(player.getZ() - getZ()) < 400) // this max heigth difference might need some tweaking
                 {
@@ -381,8 +362,8 @@ public class L2DoorInstance extends L2Character {
                     player.getAI().setIntention(Intention.AI_INTENTION_INTERACT, this);
                 } else {
                     // need find serverpacket which ask open/close gate. now auto
-                    // if (getOpen() == 1) player.sendPacket(new SystemMessage(1140));
-                    // else player.sendPacket(new SystemMessage(1141));
+                    // if (getOpen() == 1) reader.sendPacket(new SystemMessage(1140));
+                    // else reader.sendPacket(new SystemMessage(1141));
                     if (getOpen() == 1) {
                         openMe();
                     } else {

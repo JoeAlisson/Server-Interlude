@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
+// Gerado em: 2018.11.02 às 11:52:58 AM BRT 
 //
 
 
@@ -23,6 +23,9 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType name="Item"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{http://la2j.org}ItemTemplate"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="recipeId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
  *       &lt;attribute name="stackable" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" /&gt;
  *     &lt;/extension&gt;
  *   &lt;/complexContent&gt;
@@ -32,13 +35,40 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Item")
+@XmlType(name = "Item", propOrder = {
+    "recipeId"
+})
 public class Item
     extends ItemTemplate
 {
 
+    protected Integer recipeId;
     @XmlAttribute(name = "stackable")
     protected Boolean stackable;
+
+    /**
+     * Obtém o valor da propriedade recipeId.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
+     */
+    public Integer getRecipeId() {
+        return recipeId;
+    }
+
+    /**
+     * Define o valor da propriedade recipeId.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
+     */
+    public void setRecipeId(Integer value) {
+        this.recipeId = value;
+    }
 
     /**
      * Obtém o valor da propriedade stackable.

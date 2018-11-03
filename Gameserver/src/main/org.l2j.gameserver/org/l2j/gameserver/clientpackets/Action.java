@@ -45,7 +45,7 @@ public final class Action extends L2GameClientPacket
 			_log.debug("oid:" + _objectId);
 		}
 		
-		// Get the current L2PcInstance of the player
+		// Get the current L2PcInstance of the reader
 		L2PcInstance activeChar = getClient().getActiveChar();
 		
 		if (activeChar == null)
@@ -73,7 +73,7 @@ public final class Action extends L2GameClientPacket
 			return;
 		}
 		
-		// Check if the target is valid, if the player haven't a shop or isn't the requester of a transaction (ex : FriendInvite, JoinAlly, JoinParty...)
+		// Check if the target is valid, if the reader haven't a shop or isn't the requester of a transaction (ex : FriendInvite, JoinAlly, JoinParty...)
 		if ((activeChar.getPrivateStoreType() == 0) && (activeChar.getActiveRequester() == null))
 		{
 			switch (_actionId)

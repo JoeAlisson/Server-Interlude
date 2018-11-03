@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="8487" name="Recipe: Destroyer Hammer (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>73200</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>812</recipeId>
+    </item>
+</itemList>

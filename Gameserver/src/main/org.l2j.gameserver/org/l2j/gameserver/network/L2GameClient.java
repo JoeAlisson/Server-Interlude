@@ -202,7 +202,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
         try {
             cha.store();
         } catch (Exception e) {
-            _log.error("Error saving player character: " + e);
+            _log.error("Error saving reader character: " + e);
         }
     }
 
@@ -318,7 +318,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
      */
     private int getObjectIdForSlot(int charslot) {
         if ((charslot < 0) || (charslot >= _charSlotMapping.size())) {
-            _log.warn(toString() + " tried to delete Character in slot " + charslot + " but no characters exits at that slot.");
+            _log.warn(toString() + " tried to get Character in slot " + charslot + " but no characters exits at that slot.");
             return -1;
         }
         Integer objectId = _charSlotMapping.get(charslot);

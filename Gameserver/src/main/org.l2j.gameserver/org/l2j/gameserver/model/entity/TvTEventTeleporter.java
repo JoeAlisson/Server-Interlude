@@ -27,11 +27,11 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 public class TvTEventTeleporter implements Runnable
 {
-	/** The instance of the player to teleport */
+	/** The instance of the reader to teleport */
 	private final L2PcInstance _playerInstance;
 	/** Coordinates of the spot to teleport to */
 	private int[] _coordinates = new int[3];
-	/** Admin removed this player from event */
+	/** Admin removed this reader from event */
 	private final boolean _adminRemove;
 	
 	/**
@@ -59,8 +59,8 @@ public class TvTEventTeleporter implements Runnable
 	}
 	
 	/**
-	 * The task method to teleport the player<br>
-	 * 1. Unsummon pet if there is one 2. Remove allTemplates effects 3. Revive and full heal the player 4. Teleport the player 5. Broadcast status and user info
+	 * The task method to teleport the reader<br>
+	 * 1. Unsummon pet if there is one 2. Remove allTemplates effects 3. Revive and full heal the reader 4. Teleport the reader 5. Broadcast status and user info
 	 * @see Runnable#run()
 	 */
 	@Override

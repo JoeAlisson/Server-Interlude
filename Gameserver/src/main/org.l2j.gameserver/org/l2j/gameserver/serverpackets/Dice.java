@@ -24,7 +24,7 @@ public class Dice extends L2GameServerPacket
 	protected final void writeImpl()
 	{
 		writeByte(0xD4);
-		writeInt(_charObjId); // object id of player
+		writeInt(_charObjId); // object id of reader
 		writeInt(_itemId); // item id of dice (spade) 4625,4626,4627,4628
 		writeInt(_number); // number rolled
 		writeInt(_x); // x

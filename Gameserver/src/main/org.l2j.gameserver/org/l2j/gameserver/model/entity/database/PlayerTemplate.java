@@ -4,6 +4,7 @@ import org.l2j.commons.database.annotation.Column;
 import org.l2j.commons.database.annotation.Table;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.base.PlayerClass;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
@@ -68,7 +69,7 @@ public class PlayerTemplate extends CharTemplate {
     }
 
     private void loadItems() {
-        items = new LinkedList<>();
+        items = new LinkedList<org.l2j.gameserver.templates.xml.jaxb.ItemTemplate>();
         addItem(item1);
         addItem(item2);
         addItem(item3);
@@ -77,13 +78,13 @@ public class PlayerTemplate extends CharTemplate {
     }
 
     private void addItem(int itemId) {
-        ItemTemplate item = ItemTable.getInstance().getTemplate(itemId);
+        org.l2j.gameserver.templates.xml.jaxb.ItemTemplate item = ItemTable.getInstance().getTemplate(itemId);
         if(nonNull(item)) {
             items.add(item);
         }
     }
 
-    public List<ItemTemplate> getItems() {
+    public List<org.l2j.gameserver.templates.xml.jaxb.ItemTemplate> getItems() {
         if(isNull(items)){
             loadItems();
         }

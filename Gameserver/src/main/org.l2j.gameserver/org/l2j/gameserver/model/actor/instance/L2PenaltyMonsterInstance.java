@@ -45,7 +45,7 @@ public class L2PenaltyMonsterInstance extends L2MonsterInstance
 	@Deprecated
 	public void notifyPlayerDead()
 	{
-		// Monster kill player and can by deleted
+		// Monster kill reader and can by deleted
 		deleteMe();
 		
 		L2Spawn spawn = getSpawn();

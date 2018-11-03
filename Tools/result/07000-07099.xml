@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="7082" name="Guild Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7083" name="Guild Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7084" name="Guild Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7085" name="Guild Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7086" name="Guild Report" icon="icon.etc_magic_book_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7087" name="Tattered Book" icon="icon.etc_spellbook_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7088" name="Tattered Book" icon="icon.etc_spellbook_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7089" name="Tattered Book" icon="icon.etc_spellbook_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <weapon id="7058" name="Souvenir Darbuka" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_chrono_darbuka_i00">
+        <price>0</price>
+        <restriction dropable="false" freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+    </weapon>
+    <item stackable="true" id="7090" name="Tattered Book" icon="icon.etc_spellbook_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7091" name="Guild Report" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="7092" name="Guild Report" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7093" name="Sculpture of the Fallen Knight" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7094" name="Record of Mother Tree Guardian" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7095" name="Criticism of Biel's Song" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7096" name="Swordmaster Iron’s Journal" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7097" name="Contemplation of White Wing Army" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7098" name="Record of Traitor Muhark" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="7099" name="Secret Book of Khavatari" icon="icon.etc_spellbook_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>BOOK</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

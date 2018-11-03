@@ -153,7 +153,7 @@ public final class L2CastleTeleporterInstance extends L2FolkInstance
 			{
 				if (Config.DEBUG)
 				{
-					_log.debug("Teleporting player " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
+					_log.debug("Teleporting reader " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
 				}
 				
 				// teleport

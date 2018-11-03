@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="3968" name="Mercenary Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_cleric_move_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3969" name="Mercenary Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_wizard_move_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3970" name="Mercenary Posting Ticket (Teleporter1)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3971" name="Mercenary Posting Ticket (Teleporter2)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3972" name="Mercenary Posting Ticket (Teleporter3)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3973" name="Mercenary Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_sword_fix_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3974" name="Mercenary Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_pole_fix_i00">
+        <price>30000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3975" name="Mercenary Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_bow_fix_i00">
+        <price>40000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3976" name="Mercenary Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_cleric_fix_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3977" name="Mercenary Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_wizard_fix_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3978" name="Mercenary Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_sword_move_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3979" name="Mercenary Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_pole_move_i00">
+        <price>30000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3980" name="Mercenary Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_bow_move_i00">
+        <price>40000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3981" name="Mercenary Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_cleric_move_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3982" name="Mercenary Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_wizard_move_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3983" name="Mercenary Posting Ticket (Teleporter1)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3984" name="Mercenary Posting Ticket (Teleporter2)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3985" name="Mercenary Posting Ticket (Teleporter3)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3986" name="Mercenary Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_sword_fix_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3987" name="Mercenary Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_pole_fix_i00">
+        <price>30000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3988" name="Mercenary Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_bow_fix_i00">
+        <price>40000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3989" name="Mercenary Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_cleric_fix_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3990" name="Mercenary Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_wizard_fix_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3991" name="Mercenary Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_sword_move_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3992" name="Mercenary Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_pole_move_i00">
+        <price>30000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3993" name="Mercenary Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_bow_move_i00">
+        <price>40000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3994" name="Mercenary Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_cleric_move_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3995" name="Mercenary Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_wizard_move_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3996" name="Mercenary Posting Ticket (Teleporter1)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3997" name="Mercenary Posting Ticket (Teleporter2)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3998" name="Mercenary Posting Ticket (Teleporter3)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
+        <price>500000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3999" name="Mercenary Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_sword_fix_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3926" name="Scroll: Guidance" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2050"/>
+    </item>
+    <item stackable="true" id="3927" name="Scroll: Death Whisper" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2051"/>
+    </item>
+    <item stackable="true" id="3928" name="Scroll: Focus" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2052"/>
+    </item>
+    <item stackable="true" id="3929" name="Scroll: Acumen" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2053"/>
+    </item>
+    <item stackable="true" id="3930" name="Scroll: Haste" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2054"/>
+    </item>
+    <item stackable="true" id="3931" name="Scroll: Agility" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2055"/>
+    </item>
+    <item stackable="true" id="3932" name="Scroll: Empower" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2056"/>
+    </item>
+    <item stackable="true" id="3933" name="Scroll: Might" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2057"/>
+    </item>
+    <item stackable="true" id="3934" name="Scroll: Wind Walk" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2058"/>
+    </item>
+    <item stackable="true" id="3935" name="Scroll: Shield" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2059"/>
+    </item>
+    <item stackable="true" id="3936" name="Blessed Scroll of Resurrection" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
+        <price>400000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2049"/>
+    </item>
+    <weapon id="3937" name="Monster Only (Lesser Giant)" type="POLE" commissionType="SPEAR" icon="icon.weapon_monster_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="101"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>300</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="3938" name="Monster Only (Lesser Giant Wizard's Weapon)" type="POLE" commissionType="SPEAR" icon="icon.weapon_monster_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="101"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>300</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="3939" name="Monster Only (Bensh)" type="POLE" commissionType="SPEAR" icon="icon.weapon_monster_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="101"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>300</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="3940" name="Blueprint: Summon Siege Golem" commissionType="SPELLBOOK" icon="icon.etc_plan_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3941" name="Spellbook: Mass Resurrection" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>4600</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3942" name="Spellbook: Party Return" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3943" name="Amulet: Pa'agrio's Heart" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3944" name="Spellbook: Light" commissionType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
+        <price>43681</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3947" name="Blessed Spiritshot (No-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_white_i01">
+        <price>35</price>
+        <restriction freightable="false"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4</weight>
+        <skill id="2061"/>
+    </item>
+    <item stackable="true" id="3948" name="Blessed Spiritshot (D-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_blue_i01">
+        <price>45</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4</weight>
+        <skill id="2160"/>
+    </item>
+    <item stackable="true" id="3949" name="Blessed Spiritshot (C-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_green_i01">
+        <price>90</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+        <skill id="2161"/>
+    </item>
+    <item stackable="true" id="3950" name="Blessed Spiritshot (B-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_red_i01">
+        <price>245</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+        <skill id="2162"/>
+    </item>
+    <item stackable="true" id="3951" name="Blessed Spiritshot (A-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_silver_i01">
+        <price>290</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1</weight>
+        <skill id="2163"/>
+    </item>
+    <item stackable="true" id="3953" name="Recipe: Blessed Spiritshot (D-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+        <price>5000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>323</recipeId>
+    </item>
+    <item stackable="true" id="3954" name="Recipe: Blessed Spiritshot (C-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>60000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>324</recipeId>
+    </item>
+    <item stackable="true" id="3955" name="Recipe: Blessed Spiritshot (B-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>325</recipeId>
+    </item>
+    <item stackable="true" id="3956" name="Recipe: Blessed Spiritshot (A-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>150000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>326</recipeId>
+    </item>
+    <item stackable="true" id="3958" name="Blessed Scroll of Escape" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i01">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2036" level="2"/>
+    </item>
+    <item stackable="true" id="3959" name="Blessed Scroll of Resurrection" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="2062"/>
+    </item>
+    <item stackable="true" id="3960" name="Mercenary Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_sword_fix_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3961" name="Mercenary Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_pole_fix_i00">
+        <price>30000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3962" name="Mercenary Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_bow_fix_i00">
+        <price>40000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3963" name="Mercenary Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_cleric_fix_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3964" name="Mercenary Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_wizard_fix_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3965" name="Mercenary Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_sword_move_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3966" name="Mercenary Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_pole_move_i00">
+        <price>30000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3967" name="Mercenary Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_bow_move_i00">
+        <price>40000</price>
+        <restriction freightable="false"/>
+        <handler>MERCENARY_TICKET</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

@@ -69,7 +69,7 @@ public final class RequestBlock extends L2GameClientPacket
 			case UNBLOCK:
 				if (_target == null)
 				{
-					// Incorrect player name.
+					// Incorrect reader name.
 					activeChar.sendPacket(new SystemMessage(SystemMessageId.FAILED_TO_REGISTER_TO_IGNORE_LIST));
 					return;
 				}

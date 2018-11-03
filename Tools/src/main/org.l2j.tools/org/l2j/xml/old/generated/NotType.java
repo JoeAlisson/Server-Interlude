@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="using" type="{}usingType" minOccurs="0"/&gt;
- *         &lt;element name="player" type="{}playerType" minOccurs="0"/&gt;
+ *         &lt;element name="reader" type="{}playerType" minOccurs="0"/&gt;
  *         &lt;element name="target" type="{}targetType" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -71,7 +71,7 @@ public class NotType {
     }
 
     /**
-     * Obtém o valor da propriedade player.
+     * Obtém o valor da propriedade reader.
      * 
      * @return
      *     possible object is
@@ -83,7 +83,7 @@ public class NotType {
     }
 
     /**
-     * Define o valor da propriedade player.
+     * Define o valor da propriedade reader.
      * 
      * @param value
      *     allowed object is

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="384" name="Wolf Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
+        <price>2010000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="173"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2560</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="385" name="Gaiters of Victory" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
+        <price>2010000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="173"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2240</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="386" name="Gaiters of Valor" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
+        <price>2890000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="173"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2240</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="387" name="Elven Crystal Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
+        <price>2010000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="173"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2240</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="388" name="Dark Crystal Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t74_l_i00">
+        <price>2226000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="178"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3320</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="390" name="Cotton Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t07_u_i00">
+        <price>20300</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4770</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="391" name="Puma Skin Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t09_u_i00">
+        <price>62600</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="113"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4700</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="392" name="Lion Skin Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t18_u_i00">
+        <price>99900</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="181"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4580</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="393" name="Mithril Banded Mail" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t10_u_i00">
+        <price>152000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="276"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4570</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="394" name="Reinforced Leather Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t13_u_i00">
+        <price>152000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="276"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4570</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="395" name="Manticore Skin Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t42_u_i00">
+        <price>224000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="407"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4520</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="396" name="Salamander Skin Mail" type="LIGHT" commissionType="FULL_BODY" icon="icon.armor_t45_ul_i00">
+        <price>429000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="780"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>6100</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="397" name="Reinforced Mithril Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t47_u_i00">
+        <price>379000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="151"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4470</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="398" name="Plated Leather Armor" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t47_u_i00">
+        <price>446000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="178"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4450</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="399" name="Rind Leather Armor" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t49_u_i00">
+        <price>483000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="193"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4420</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <weapon id="300" name="Great Axe" type="POLE" commissionType="SPEAR" icon="icon.weapon_great_axe_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1940</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="301" name="scorpion" type="POLE" commissionType="SPEAR" icon="icon.weapon_scorpion_i00">
+        <price>4780000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1912"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1990</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="302" name="Body Slasher" type="POLE" commissionType="SPEAR" icon="icon.weapon_body_slasher_i00">
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2030</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="303" name="Widow Maker" type="POLE" commissionType="SPEAR" icon="icon.weapon_widow_maker_i00">
+        <price>4780000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1912"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1980</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="305" name="Tallum Glaive" type="POLE" commissionType="SPEAR" icon="icon.weapon_tallum_glaive_i00">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="308" name="Buffalo's Horn" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_buffalo_horn_i00">
+        <price>768</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>660</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="309" name="Tears of Eva" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_tears_of_eva_i00">
+        <price>136000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>630</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="310" name="Relic of the Saints" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>136000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="311" name="Crucifix of Blessing" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_crucifix_of_blessing_i00">
+        <price>244000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>620</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="312" name="Branch of Life" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_branch_of_life_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>620</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="313" name="Temptation of Abyss" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_temptation_of_abyss_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="314" name="Proof of Revenge" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_proof_of_revenge_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="315" name="Divine Tome" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_divine_tome_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="316" name="Sage's Blood" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_blood_of_saints_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="317" name="Tome of Blood" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_tome_of_blood_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="318" name="Crucifix of Blood" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_crucifix_of_blood_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="319" name="Eye of Infinity" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="320" name="Blue Crystal Skull" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>1520000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2763"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="321" name="Demon's Fangs" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_demon_fangs_i00">
+        <price>1520000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2763"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="322" name="Vajra Wand" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>1800000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="3272"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="323" name="Ancient Reagent" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>1800000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="3272"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="325" name="Horn of Glory" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_horn_of_glory_i00">
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="347" name="Ring Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t12_u_i00">
+        <price>83500</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="151"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8820</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="348" name="Scale Mail" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t08_u_i00">
+        <price>133000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="241"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8720</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="349" name="Compound Scale Mail" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t20_u_i00">
+        <price>183000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="332"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8620</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="350" name="Dwarven Scale Mail" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t15_u_i00">
+        <price>183000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="332"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8540</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="351" name="Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t40_u_i00">
+        <price>203000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="369"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8420</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="352" name="Brigandine" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t43_u_i00">
+        <price>299000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="543"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8320</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="353" name="Half Plate Armor" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t46_u_i00">
+        <price>391000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="710"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8220</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="354" name="Chain Mail Shirt" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t48_u_i00">
+        <price>505000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="202"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8120</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="355" name="Dwarven Chain Mail Shirt" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t60_u_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="257"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8070</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="356" name="Full Plate Armor" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t62_ul_i00">
+        <price>2090000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="836"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10480</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="357" name="Zubei's Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t64_u_i00">
+        <price>2080000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="277"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>7970</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="358" name="Blue Wolf Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t68_u_i00">
+        <price>3220000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="429"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>7820</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="360" name="Armor of Victory" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
+        <price>3220000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="429"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3360</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="361" name="Breastplate of Valor" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
+        <price>4630000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="429"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3360</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="364" name="Elven Crystal Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
+        <price>3220000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="429"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2400</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="365" name="Dark Crystal Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t74_u_i00">
+        <price>3562000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="285"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>7700</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="374" name="Armor of Nightmare" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t80_ul_i00">
+        <price>8804000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="704"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>9580</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="376" name="Iron Plate Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t12_l_i00">
+        <price>52200</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="94"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3820</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="377" name="Scale Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t08_l_i00">
+        <price>83300</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="151"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3860</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="378" name="Compound Scale Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t20_l_i00">
+        <price>127000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="230"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3770</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="379" name="Dwarven Scale Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t15_l_i00">
+        <price>127000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="230"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3840</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="380" name="Plate Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t46_l_i00">
+        <price>244000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="443"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3770</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="381" name="Chain Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t48_l_i00">
+        <price>316000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="126"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3680</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="382" name="Dwarven Chain Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t60_l_i00">
+        <price>403000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="161"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3620</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="383" name="Zubei's Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t64_l_i00">
+        <price>1300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="173"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3570</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+</itemList>

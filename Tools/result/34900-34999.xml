@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="34956" name="Letter M" icon="icon.etc_alphabet_m_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="34925" name="Cloak of Light" icon="icon.amor_goodness_cloak">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="IS_CHAOTIC"/>
+            </not>
+        </condition>
+        <skill id="19039" level="1"/>
+        <bodyPart>BACK</bodyPart>
+    </armor>
+    <armor id="34926" name="Cloak of Darkness" icon="icon.amor_evilness_cloak">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="IS_CHAOTIC"/>
+            </not>
+        </condition>
+        <skill id="19040" level="1"/>
+        <bodyPart>BACK</bodyPart>
+    </armor>
+</itemList>

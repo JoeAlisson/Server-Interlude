@@ -48,7 +48,7 @@ public class RecipeShopManageList extends L2GameServerPacket
 	{
 		writeByte(0xd8);
 		writeInt(_seller.getObjectId());
-		writeInt(_seller.getAdena());
+		writeLong(_seller.getAdena());
 		writeInt(_isDwarven ? 0x00 : 0x01);
 		
 		if (_recipes == null)

@@ -137,7 +137,7 @@ public class CharStatus
 					return;
 				}
 				
-				// cancel duel if player got hit by another player, that is not part of the duel or a monster
+				// cancel duel if reader got hit by another reader, that is not part of the duel or a monster
 				if (!(attacker instanceof L2SummonInstance) && !((attacker instanceof L2PcInstance) && (((L2PcInstance) attacker).getDuelId() == ((L2PcInstance) getActiveChar()).getDuelId())))
 				{
 					((L2PcInstance) getActiveChar()).setDuelState(Duel.DUELSTATE_INTERRUPTED);
@@ -155,7 +155,7 @@ public class CharStatus
 				return; // Disabled == null check so skills like Body to Mind work again untill another solution is found
 			}
 			
-			if ((attacker instanceof L2PcInstance) && ((L2PcInstance) attacker).isInDuel() && !((getActiveChar() instanceof L2SummonInstance) && (((L2SummonInstance) getActiveChar()).getOwner().getDuelId() == ((L2PcInstance) attacker).getDuelId()))) // Duelling player attacks mob
+			if ((attacker instanceof L2PcInstance) && ((L2PcInstance) attacker).isInDuel() && !((getActiveChar() instanceof L2SummonInstance) && (((L2SummonInstance) getActiveChar()).getOwner().getDuelId() == ((L2PcInstance) attacker).getDuelId()))) // Duelling reader attacks mob
 			{
 				((L2PcInstance) attacker).setDuelState(Duel.DUELSTATE_INTERRUPTED);
 			}

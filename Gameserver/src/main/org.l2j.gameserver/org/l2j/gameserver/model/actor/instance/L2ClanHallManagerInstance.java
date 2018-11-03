@@ -781,7 +781,7 @@ public class L2ClanHallManagerInstance extends L2FolkInstance
 	}
 	
 	/**
-	 * this is called when a player interacts with this NPC
+	 * this is called when a reader interacts with this NPC
 	 * @param player
 	 */
 	@Override
@@ -795,10 +795,10 @@ public class L2ClanHallManagerInstance extends L2FolkInstance
 		// Check if the L2PcInstance already target the L2NpcInstance
 		if (this != player.getTarget())
 		{
-			// Set the target of the L2PcInstance player
+			// Set the target of the L2PcInstance reader
 			player.setTarget(this);
 			
-			// Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+			// Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
 			MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
 			player.sendPacket(my);
 			
@@ -811,8 +811,8 @@ public class L2ClanHallManagerInstance extends L2FolkInstance
 			if (!canInteract(player))
 			{
 				// Notify the L2PcInstance AI with AI_INTENTION_INTERACT
-				// note: commented out so the player must stand close
-				// player.getAI().setIntention(Intention.AI_INTENTION_INTERACT, this);
+				// note: commented out so the reader must stand close
+				// reader.getAI().setIntention(Intention.AI_INTENTION_INTERACT, this);
 			}
 			else
 			{
@@ -915,7 +915,7 @@ public class L2ClanHallManagerInstance extends L2FolkInstance
 	{
 		if (Config.DEBUG)
 		{
-			player.sendMessage("doTeleport(L2PcInstance player, int val) is called");
+			player.sendMessage("doTeleport(L2PcInstance reader, int val) is called");
 		}
 		Teleport list = TeleportLocationTable.getInstance().getTemplate(val);
 		if (list != null)
@@ -930,7 +930,7 @@ public class L2ClanHallManagerInstance extends L2FolkInstance
 			{
 				if (Config.DEBUG)
 				{
-					_log.warn("Teleporting player " + player.getName() + " for CH to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
+					_log.warn("Teleporting reader " + player.getName() + " for CH to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
 				}
 				player.teleToLocation(list.getLocX(), list.getLocY(), list.getLocZ());
 			}

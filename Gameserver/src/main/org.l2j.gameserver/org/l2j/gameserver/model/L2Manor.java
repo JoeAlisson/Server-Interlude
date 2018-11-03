@@ -1,25 +1,8 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.datatables.ItemTable;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -63,7 +46,7 @@ public class L2Manor {
         return crops;
     }
 
-    public int getSeedBasicPrice(int seedId) {
+    public long getSeedBasicPrice(int seedId) {
         ItemTemplate seedItem = ItemTable.getInstance().getTemplate(seedId);
 
         if (seedItem != null) {
@@ -72,7 +55,7 @@ public class L2Manor {
         return 0;
     }
 
-    public int getSeedBasicPriceByCrop(int cropId) {
+    public long getSeedBasicPriceByCrop(int cropId) {
         for (SeedData seed : _seeds.values()) {
             if (seed.getCrop() == cropId) {
                 return getSeedBasicPrice(seed.getId());
@@ -81,7 +64,7 @@ public class L2Manor {
         return 0;
     }
 
-    public int getCropBasicPrice(int cropId) {
+    public long getCropBasicPrice(int cropId) {
         ItemTemplate cropItem = ItemTable.getInstance().getTemplate(cropId);
 
         if (cropItem != null) {
@@ -105,8 +88,8 @@ public class L2Manor {
      * @param seedId
      * @return seed price
      */
-    public int getSeedBuyPrice(int seedId) {
-        int buyPrice = getSeedBasicPrice(seedId) / 10;
+    public long getSeedBuyPrice(int seedId) {
+        long buyPrice = getSeedBasicPrice(seedId) / 10;
         return (buyPrice > 0 ? buyPrice : 1);
     }
 

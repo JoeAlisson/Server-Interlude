@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="20662" name="Agathion - Uthanka" icon="BranchSys.icon.br_aga_uthanka_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="21109" level="1"/>
+        <skill id="23087" level="1"/>
+        <skill id="3267" level="1" triggerType="ON_USE"/>
+        <bodyPart>LEFT_BRACELET</bodyPart>
+    </armor>
+    <armor id="20678" name="Gatekeeper Hat" icon="BranchSys.icon.br_gatekeeper_of_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="20666" name="Valkyrie Hat" icon="BranchSys.icon.br_valkyrie_cap_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+</itemList>

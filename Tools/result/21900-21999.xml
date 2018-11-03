@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="21973" name="Mardil's Fan" type="SWORD" icon="BranchSys2.icon.br_wp_wind_of_mardil_i00">
+        <price>20741000</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>840</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="21974" name="Mardil's Fan" additionalName="Empower" type="SWORD" icon="BranchSys2.icon.br_wp_wind_of_mardil_i01">
+        <price>20741000</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>840</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="21975" name="Mardil's Fan" additionalName="Acumen" type="SWORD" icon="BranchSys2.icon.br_wp_wind_of_mardil_i01">
+        <price>20741000</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>840</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="21976" name="Mardil's Fan" additionalName="Magic Regeneration" type="SWORD" icon="BranchSys2.icon.br_wp_wind_of_mardil_i01">
+        <price>20741000</price>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>840</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

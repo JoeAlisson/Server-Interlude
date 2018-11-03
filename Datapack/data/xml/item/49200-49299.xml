@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="49200" name="Skull Breaker" additionalName="Focus" type="BLUNT" icon="icon.weapon_skull_breaker_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1740</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49201" name="Skull Breaker" additionalName="Haste" type="BLUNT" icon="icon.weapon_skull_breaker_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1740</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49202" name="Skull Breaker" additionalName="Critical Damage" type="BLUNT" icon="icon.weapon_skull_breaker_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1740</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49203" name="Heavy Bone Club" additionalName="Focus" type="BLUNT" icon="icon.weapon_heavy_bone_club_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1730</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49204" name="Heavy Bone Club" additionalName="Haste" type="BLUNT" icon="icon.weapon_heavy_bone_club_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1730</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49205" name="Heavy Bone Club" additionalName="Critical Damage" type="BLUNT" icon="icon.weapon_heavy_bone_club_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1730</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49206" name="Crafted Dagger" additionalName="Focus" type="DAGGER" icon="icon.weapon_handiwork_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49207" name="Crafted Dagger" additionalName="Haste" type="DAGGER" icon="icon.weapon_handiwork_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49208" name="Crafted Dagger" additionalName="Mortal Strike" type="DAGGER" icon="icon.weapon_handiwork_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49209" name="Assassin Knife" additionalName="Focus" type="DAGGER" icon="icon.weapon_assassin_knife_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49210" name="Assassin Knife" additionalName="Haste" type="DAGGER" icon="icon.weapon_assassin_knife_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49211" name="Assassin Knife" additionalName="Mortal Strike" type="DAGGER" icon="icon.weapon_assassin_knife_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49212" name="Poniard Dagger" additionalName="Focus" type="DAGGER" icon="icon.weapon_dirk_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1090</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49213" name="Poniard Dagger" additionalName="Haste" type="DAGGER" icon="icon.weapon_dirk_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1090</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49214" name="Poniard Dagger" additionalName="Mortal Strike" type="DAGGER" icon="icon.weapon_dirk_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1090</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49215" name="Kukuri" additionalName="Focus" type="DAGGER" icon="icon.weapon_kukuri_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1080</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49216" name="Kukuri" additionalName="Haste" type="DAGGER" icon="icon.weapon_kukuri_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1080</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49217" name="Kukuri" additionalName="Mortal Strike" type="DAGGER" icon="icon.weapon_kukuri_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1080</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49218" name="Maingauche" additionalName="Focus" type="DAGGER" icon="icon.weapon_maingauche_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49219" name="Maingauche" additionalName="Haste" type="DAGGER" icon="icon.weapon_maingauche_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49220" name="Maingauche" additionalName="Mortal Strike" type="DAGGER" icon="icon.weapon_maingauche_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49221" name="Mithril Dagger" additionalName="Focus" type="DAGGER" icon="icon.weapon_mithril_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1060</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49222" name="Mithril Dagger" additionalName="Haste" type="DAGGER" icon="icon.weapon_mithril_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1060</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49223" name="Mithril Dagger" additionalName="Mortal Strike" type="DAGGER" icon="icon.weapon_mithril_dagger_i01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1060</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49224" name="Cursed Maingauche" additionalName="Focus" type="DAGGER" icon="icon.t01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49225" name="Cursed Maingauche" additionalName="Haste" type="DAGGER" icon="icon.t01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49226" name="Cursed Maingauche" additionalName="Mortal Strike" type="DAGGER" icon="icon.t01">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49227" name="Lesser Giant's Hammer" additionalName="Focus" type="BLUNT" icon="icon.weapon_giants_hammer_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49228" name="Lesser Giant's Hammer" additionalName="Haste" type="BLUNT" icon="icon.weapon_giants_hammer_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49229" name="Lesser Giant's Hammer" additionalName="Critical Damage" type="BLUNT" icon="icon.weapon_giants_hammer_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49230" name="Reinforced Bow" additionalName="Focus" type="BOW" icon="icon.weapon_strengthening_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1870</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49231" name="Reinforced Bow" additionalName="Haste" type="BOW" icon="icon.weapon_strengthening_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1870</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49232" name="Reinforced Bow" additionalName="Critical Damage" type="BOW" icon="icon.weapon_strengthening_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1870</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49233" name="Longbow" additionalName="Focus" type="BOW" icon="icon.weapon_long_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49234" name="Longbow" additionalName="Haste" type="BOW" icon="icon.weapon_long_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49235" name="Longbow" additionalName="Critical Damage" type="BOW" icon="icon.weapon_long_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49236" name="Elven Bow" additionalName="Focus" type="BOW" icon="icon.weapon_elven_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49237" name="Elven Bow" additionalName="Haste" type="BOW" icon="icon.weapon_elven_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49238" name="Elven Bow" additionalName="Critical Damage" type="BOW" icon="icon.weapon_elven_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49239" name="Dark Elven Bow" additionalName="Focus" type="BOW" icon="icon.weapon_dark_elven_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49240" name="Dark Elven Bow" additionalName="Haste" type="BOW" icon="icon.weapon_dark_elven_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49241" name="Dark Elven Bow" additionalName="Critical Damage" type="BOW" icon="icon.weapon_dark_elven_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49242" name="Gastraphetes" additionalName="Focus" type="BOW" icon="icon.weapon_gastraphetes_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49243" name="Gastraphetes" additionalName="Haste" type="BOW" icon="icon.weapon_gastraphetes_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49244" name="Gastraphetes" additionalName="Critical Damage" type="BOW" icon="icon.weapon_gastraphetes_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49245" name="Reinforced Longbow" additionalName="Focus" type="BOW" icon="icon.weapon_strengthening_long_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49246" name="Reinforced Longbow" additionalName="Haste" type="BOW" icon="icon.weapon_strengthening_long_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49247" name="Reinforced Longbow" additionalName="Critical Damage" type="BOW" icon="icon.weapon_strengthening_long_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="49248" name="Light Crossbow" additionalName="Focus" type="BOW" icon="icon.weapon_cyclone_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1810</weight>
+        <consume mp="2" shot="2"/>
+    </weapon>
+    <weapon id="49249" name="Light Crossbow" additionalName="Haste" type="BOW" icon="icon.weapon_cyclone_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1810</weight>
+        <consume mp="2" shot="2"/>
+    </weapon>
+    <weapon id="49250" name="Light Crossbow" additionalName="Critical Damage" type="BOW" icon="icon.weapon_cyclone_bow_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1810</weight>
+        <consume mp="2" shot="2"/>
+    </weapon>
+    <weapon id="49251" name="Bagh-Nakh" additionalName="Focus" type="DUALFIST" icon="icon.weapon_baghnakh_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1540</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49252" name="Bagh-Nakh" additionalName="Haste" type="DUALFIST" icon="icon.weapon_baghnakh_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1540</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49253" name="Bagh-Nakh" additionalName="Critical Damage" type="DUALFIST" icon="icon.weapon_baghnakh_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1540</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49254" name="Single-Edged Jamadhr" additionalName="Focus" type="DUALFIST" icon="icon.weapon_single-edged_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1550</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49255" name="Single-Edged Jamadhr" additionalName="Haste" type="DUALFIST" icon="icon.weapon_single-edged_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1550</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49256" name="Single-Edged Jamadhr" additionalName="Critical Damage" type="DUALFIST" icon="icon.weapon_single-edged_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1550</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49257" name="Triple-Edged Jamadhr" additionalName="Focus" type="DUALFIST" icon="icon.weapon_triple-edged_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1540</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49258" name="Triple-Edged Jamadhr" additionalName="Haste" type="DUALFIST" icon="icon.weapon_triple-edged_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1540</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49259" name="Triple-Edged Jamadhr" additionalName="Critical Damage" type="DUALFIST" icon="icon.weapon_triple-edged_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1540</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49260" name="Bich'Hwa" additionalName="Focus" type="DUALFIST" icon="icon.weapon_bichhwa_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49261" name="Bich'Hwa" additionalName="Haste" type="DUALFIST" icon="icon.weapon_bichhwa_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49262" name="Bich'Hwa" additionalName="Critical Damage" type="DUALFIST" icon="icon.weapon_bichhwa_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49263" name="Scallop Jamadhr" additionalName="Focus" type="DUALFIST" icon="icon.weapon_scallop_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49264" name="Scallop Jamadhr" additionalName="Haste" type="DUALFIST" icon="icon.weapon_scallop_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49265" name="Scallop Jamadhr" additionalName="Critical Damage" type="DUALFIST" icon="icon.weapon_scallop_jamadhr_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49266" name="Winged Spear" additionalName="Focus" type="POLE" icon="icon.weapon_winged_spear_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2060</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49267" name="Winged Spear" additionalName="Haste" type="POLE" icon="icon.weapon_winged_spear_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2060</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49268" name="Winged Spear" additionalName="Critical Damage" type="POLE" icon="icon.weapon_winged_spear_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2060</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49269" name="Trident" additionalName="Focus" type="POLE" icon="icon.weapon_trident_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49270" name="Trident" additionalName="Haste" type="POLE" icon="icon.weapon_trident_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49271" name="Trident" additionalName="Critical Damage" type="POLE" icon="icon.weapon_trident_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49272" name="Pike" additionalName="Focus" type="POLE" icon="icon.weapon_pike_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49273" name="Pike" additionalName="Haste" type="POLE" icon="icon.weapon_pike_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49274" name="Pike" additionalName="Critical Damage" type="POLE" icon="icon.weapon_pike_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49275" name="War Hammer" additionalName="Focus" type="POLE" icon="icon.weapon_war_hammer_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49276" name="War Hammer" additionalName="Haste" type="POLE" icon="icon.weapon_war_hammer_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49277" name="War Hammer" additionalName="Critical Damage" type="POLE" icon="icon.weapon_war_hammer_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49278" name="War Pick" additionalName="Focus" type="POLE" icon="icon.weapon_hammer_in_flames_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2050</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49279" name="War Pick" additionalName="Haste" type="POLE" icon="icon.weapon_hammer_in_flames_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2050</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49280" name="War Pick" additionalName="Critical Damage" type="POLE" icon="icon.weapon_hammer_in_flames_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2050</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49281" name="Dwarven Trident" additionalName="Focus" type="POLE" icon="icon.weapon_dwarven_trident_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49282" name="Dwarven Trident" additionalName="Haste" type="POLE" icon="icon.weapon_dwarven_trident_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49283" name="Dwarven Trident" additionalName="Critical Damage" type="POLE" icon="icon.weapon_dwarven_trident_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49284" name="Dwarven Pike" additionalName="Focus" type="POLE" icon="icon.weapon_dwarven_pike_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2070</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49285" name="Dwarven Pike" additionalName="Haste" type="POLE" icon="icon.weapon_dwarven_pike_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2070</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49286" name="Dwarven Pike" additionalName="Critical Damage" type="POLE" icon="icon.weapon_dwarven_pike_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2070</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49287" name="Glaive" additionalName="Focus" type="POLE" icon="icon.weapon_glaive_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2050</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49288" name="Glaive" additionalName="Haste" type="POLE" icon="icon.weapon_glaive_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2050</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49289" name="Glaive" additionalName="Critical Damage" type="POLE" icon="icon.weapon_glaive_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2050</weight>
+        <skill id="3599"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49290" name="Claymore" additionalName="Focus" type="SWORD" icon="icon.weapon_claymore_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49291" name="Claymore" additionalName="Haste" type="SWORD" icon="icon.weapon_claymore_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49292" name="Claymore" additionalName="Critical Damage" type="SWORD" icon="icon.weapon_claymore_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49293" name="Two-handed Sword" additionalName="Focus" type="SWORD" icon="icon.weapon_two_handed_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49294" name="Two-handed Sword" additionalName="Haste" type="SWORD" icon="icon.weapon_two_handed_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49295" name="Two-handed Sword" additionalName="Critical Damage" type="SWORD" icon="icon.weapon_two_handed_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49296" name="Heavy Sword" additionalName="Focus" type="SWORD" icon="icon.weapon_heavy_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49297" name="Heavy Sword" additionalName="Haste" type="SWORD" icon="icon.weapon_heavy_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49298" name="Heavy Sword" additionalName="Critical Damage" type="SWORD" icon="icon.weapon_heavy_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="49299" name="Steel Sword" additionalName="Focus" type="SWORD" icon="icon.weapon_iron_sword_i01">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

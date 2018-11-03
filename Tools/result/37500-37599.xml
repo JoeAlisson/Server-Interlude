@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="37543" name="Snowy Squash Nectar" commissionType="OTHER_ITEM" icon="icon.etc_nectar_i01">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="17110" level="1"/>
+    </item>
+    <item stackable="true" id="37544" name="Snowball" icon="BranchSys2.icon.g_illumination_white">
+        <price>5000</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="37545" name="Large Snowball" icon="BranchSys2.icon.g_illumination_white">
+        <price>30000</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="37546" name="Rudolf's Gift 2015" additionalName="Lv. 1" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="37547" name="Rudolf's Gift 2015" additionalName="Lv. 2" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="37548" name="Rudolf's Gift 2015" additionalName="Lv. 3" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="37549" name="Rudolf's Gift 2015" additionalName="Lv. 4" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="37550" name="Snowman's Buff" icon="icon.weapon_snowman_stick_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="37551" name="Christmas Present" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="37552" name="Snowy Squash Seed" commissionType="OTHER_ITEM" icon="icon.etc_gourd_i10">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="17111" level="1"/>
+    </item>
+    <item stackable="true" id="37553" name="Large Snowy Squash Seed" commissionType="OTHER_ITEM" icon="icon.etc_gourd_i11">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="17112" level="1"/>
+    </item>
+    <armor id="37533" name="NC Messenger's Hat" icon="icon.nc_hair_acc">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="37534" name="Santa Suit" type="HEAVY" icon="icon.armor_ev_santas_clothes">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>FULL_BODY</bodyPart>
+    </armor>
+    <armor id="37535" name="Santa Hat" icon="icon.accessory_santas_cap_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+</itemList>

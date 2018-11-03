@@ -76,7 +76,7 @@ public class AdminHelpPage implements IAdminCommandHandler
 		return (level >= REQUIRED_LEVEL);
 	}
 	
-	// FIXME: implement method to send html to player in L2PcInstance directly
+	// FIXME: implement method to send html to reader in L2PcInstance directly
 	// PUBLIC & STATIC so other classes from package can include it directly
 	public static void showHelpPage(L2PcInstance targetChar, String filename)
 	{

@@ -195,7 +195,7 @@ public final class RequestRestartPoint extends L2GameClientPacket
 		}
 		else if (!activeChar.isAlikeDead())
 		{
-			_log.warn("Living player [" + activeChar.getName() + "] called RestartPointPacket! Ban this player!");
+			_log.warn("Living reader [" + activeChar.getName() + "] called RestartPointPacket! Ban this reader!");
 			return;
 		}
 		

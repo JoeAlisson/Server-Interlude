@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="1792" name="Recipe: Short Spear" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>2720</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>8</recipeId>
+    </item>
+    <item stackable="true" id="1793" name="Recipe: Sword of Reflection" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>2720</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>9</recipeId>
+    </item>
+    <item stackable="true" id="1794" name="Recipe: Forest Bow" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>2720</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>10</recipeId>
+    </item>
+    <item stackable="true" id="1795" name="Recipe: Leather Shoes" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>53</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>11</recipeId>
+    </item>
+    <item stackable="true" id="1796" name="Recipe: Leather Tunic" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>159</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>12</recipeId>
+    </item>
+    <item stackable="true" id="1797" name="Recipe: Leather Stockings" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>99</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>13</recipeId>
+    </item>
+    <item stackable="true" id="1798" name="Recipe: Leather Helmet" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>204</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>14</recipeId>
+    </item>
+    <item stackable="true" id="1799" name="Recipe: Leather Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>135</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>15</recipeId>
+    </item>
+    <item stackable="true" id="1785" name="Soulstone" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_crystal_white_i00">
+        <price>250</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="1786" name="Recipe: Broadsword" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>250</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>2</recipeId>
+    </item>
+    <item stackable="true" id="1787" name="Recipe: Willow Staff" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>250</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>3</recipeId>
+    </item>
+    <item stackable="true" id="1788" name="Recipe: Bow" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>250</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>4</recipeId>
+    </item>
+    <item stackable="true" id="1789" name="Recipe: Cedar Staff" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>1082</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>5</recipeId>
+    </item>
+    <item stackable="true" id="1790" name="Recipe: Dirk" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>1082</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>6</recipeId>
+    </item>
+    <item stackable="true" id="1791" name="Recipe: Brandish" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+        <price>1082</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>7</recipeId>
+    </item>
+</itemList>

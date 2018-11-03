@@ -7,7 +7,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 public class PrivateStoreManageListBuy extends L2GameServerPacket
 {
 	private final L2PcInstance _activeChar;
-	private final int _playerAdena;
+	private final long _playerAdena;
 	private final L2ItemInstance[] _itemList;
 	private final TradeList.TradeItem[] _buyList;
 	
@@ -25,7 +25,7 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 		writeByte(0xb7);
 		// section 1
 		writeInt(_activeChar.getObjectId());
-		writeInt(_playerAdena);
+		writeLong(_playerAdena);
 		
 		// section2
 		writeInt(_itemList.length); // inventory items for potential buy
@@ -33,11 +33,11 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 		{
 			writeInt(item.getItemId());
 			writeShort(0); // show enchant lvl as 0, as you can't buy enchanted weapons
-			writeInt(item.getCount());
-			writeInt(item.getReferencePrice());
+			writeLong(item.getCount());
+			writeLong(item.getReferencePrice());
 			writeShort(0x00);
-			writeInt(item.getItem().getBodyPart().getId());
-			writeShort(item.getItem().getType2().getId());
+			writeInt(0);// TODO item.getItem().getBodyPart().getId());
+			writeShort(item.getItem().getCommissionType().ordinal());
 		}
 		
 		// section 3
@@ -46,13 +46,13 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 		{
 			writeInt(item.getItem().getId());
 			writeShort(0);
-			writeInt(item.getCount());
-			writeInt(item.getItem().getPrice());
+			writeLong(item.getCount());
+			writeLong(item.getItem().getPrice());
 			writeShort(0x00);
-			writeInt(item.getItem().getBodyPart().getId());
-			writeShort(item.getItem().getType2().getId());
-			writeInt(item.getPrice());// your price
-			writeInt(item.getItem().getPrice());// fixed store price
+			writeInt(0); // TODO item.getItem().getBodyPart().getId());
+			writeShort(item.getItem().getCommissionType().ordinal());
+			writeLong(item.getPrice());// your price
+			writeLong(item.getItem().getPrice());// fixed store price
 		}
 	}
 }

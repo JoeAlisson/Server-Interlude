@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="5900" name="Coin Collecting Album" icon="icon.etc_magic_book_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5901" name="Blood Offering" icon="icon.etc_dragon_blood_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5902" name="Scroll of Ancient Magic" icon="icon.etc_scroll_of_enchant_weapon_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5903" name="Ancient Ash Urn" icon="icon.etc_oil_pot_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5916" name="Spellbook Page" icon="icon.etc_piece_of_paper_white_i00">
+        <price>80</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="2171"/>
+    </item>
+    <item stackable="true" id="5917" name="Kranvel's Spellbook: Chapter of Fire" icon="icon.etc_paper_red_i00">
+        <price>80</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5918" name="Kranvel's Spellbook: Chapter of Water" icon="icon.etc_paper_blue_i00">
+        <price>80</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5919" name="Kranvel's Spellbook: Chapter of Wind" icon="icon.etc_paper_white_i00">
+        <price>80</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5920" name="Kranvel's Spellbook: Chapter of Earth" icon="icon.etc_paper_black_i00">
+        <price>80</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5921" name="Worthless Piece of Paper" icon="icon.etc_piece_of_paper_black_i00">
+        <price>80</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5922" name="Blueprint: Giants Golem 1" icon="icon.etc_paper_black_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5923" name="Blueprint: Giants Golem 2" icon="icon.etc_paper_black_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5924" name="Blueprint: Giants Golem 3" icon="icon.etc_paper_black_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5925" name="Blueprint: Giants Golem 4" icon="icon.etc_paper_black_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5926" name="Blueprint: Giants Golem 5" icon="icon.etc_paper_black_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5927" name="Book: Basics of Giants Magic, Chapter 1" icon="icon.etc_paper_blue_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5928" name="Book: Basics of Giants Magic, Chapter 2" icon="icon.etc_paper_blue_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5929" name="Book: Basics of Giants Magic, Chapter 3" icon="icon.etc_paper_blue_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5930" name="Book: Basics of Giants Magic, Chapter 4" icon="icon.etc_paper_blue_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5931" name="Book: Basics of Giants Magic, Chapter 5" icon="icon.etc_paper_blue_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5932" name="Handbook: Giants Architecture, Chapter 1" icon="icon.etc_paper_red_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5933" name="Handbook: Giants Architecture, Chapter 2" icon="icon.etc_paper_red_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5934" name="Handbook: Giants Architecture, Chapter 3" icon="icon.etc_paper_red_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5935" name="Handbook: Giants Architecture, Chapter 4" icon="icon.etc_paper_red_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5936" name="Handbook: Giants Architecture, Chapter 5" icon="icon.etc_paper_red_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5937" name="Book: Giants Medical Science, Chapter 1" icon="icon.etc_paper_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5938" name="Book: Giants Medical Science, Chapter 2" icon="icon.etc_paper_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5939" name="Book: Giants Medical Science, Chapter 3" icon="icon.etc_paper_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5940" name="Book: Giants Medical Science, Chapter 4" icon="icon.etc_paper_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5941" name="Book: Giants Medical Science, Chapter 5" icon="icon.etc_paper_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5942" name="Giant's Love Letter" icon="icon.etc_piece_of_report_i00">
+        <price>200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5943" name="Giants' Doodle" icon="icon.etc_painting_i00">
+        <price>200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5944" name="Ancient Parchment" icon="icon.etc_roll_of_paper_black_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="2172"/>
+    </item>
+    <item stackable="true" id="5945" name="Book: Giants Science and Technology, Chapter 1" icon="icon.etc_spell_books_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5946" name="Book: Giants Science and Technology, Chapter 2" icon="icon.etc_spell_books_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5947" name="Book: Giants Science and Technology, Chapter 3" icon="icon.etc_spell_books_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5948" name="Book: Giants Science and Technology, Chapter 4" icon="icon.etc_spell_books_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5949" name="Book: Giants Science and Technology, Chapter 5" icon="icon.etc_spell_books_white_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5950" name="Almanac: Lesser Giant Culture, Chapter 1" icon="icon.etc_spell_books_summon_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5951" name="Almanac: Lesser Giant Culture, Chapter 2" icon="icon.etc_spell_books_summon_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5952" name="Almanac: Lesser Giant Culture, Chapter 3" icon="icon.etc_spell_books_summon_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5953" name="Almanac: Lesser Giant Culture, Chapter 4" icon="icon.etc_spell_books_summon_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5954" name="Almanac: Lesser Giant Culture, Chapter 5" icon="icon.etc_spell_books_summon_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5955" name="Ancient Lesser Giant Book" icon="icon.etc_spell_books_black_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="2173"/>
+    </item>
+    <item stackable="true" id="5956" name="15-year-old Wine" icon="icon.etc_luxury_wine_a_i00">
+        <price>5900</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="5957" name="30-year-old Wine" icon="icon.etc_luxury_wine_b_i00">
+        <price>7900</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="5958" name="60-year-old Wine" icon="icon.etc_luxury_wine_c_i00">
+        <price>30900</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item id="5959" name="Ritron's Dessert Recipe" icon="icon.etc_paper_white_i00">
+        <price>40000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item id="5960" name="Ritron Jelly" icon="icon.etc_cobol_i04">
+        <price>920</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="5961" name="Kail's Silver Basilisk" icon="icon.etc_kyles_silver_basilisk_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5962" name="Kail's Gold Golem" icon="icon.etc_kyles_gold_golem_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5963" name="Kail's Blood Dragon" icon="icon.etc_kyles_blood_dragon_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5964" name="Warehouse Keeper's Medal" icon="icon.etc_irongate_medal_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5971" name="Joke Book of Ancient Times" icon="icon.etc_piece_of_paper_black_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5972" name="Revelation of the Seals: Chapter of Avarice" icon="icon.etc_piece_of_paper_white_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5973" name="Revelation of the Seals: Chapter of Gnosis" icon="icon.etc_piece_of_paper_white_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5974" name="Revelation of the Seals: Chapter of Strife" icon="icon.etc_piece_of_paper_white_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5975" name="Revelation of the Seals: Chapter of Punishment" icon="icon.etc_piece_of_paper_white_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5976" name="Revelation of the Seals: Chapter of Awakening" icon="icon.etc_piece_of_paper_white_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5977" name="Revelation of the Seals: Chapter of Calamity" icon="icon.etc_piece_of_paper_white_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5978" name="Revelation of the Seals: Chapter of Descent" icon="icon.etc_piece_of_paper_white_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5979" name="Ancient Epic, Chapter 1" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5980" name="Ancient Epic, Chapter 2" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5981" name="Ancient Epic, Chapter 3" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5982" name="Ancient Epic, Chapter 4" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5983" name="Ancient Epic, Chapter 5" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5984" name="Imperial Genealogy 1" icon="icon.etc_letter_red_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5985" name="Imperial Genealogy 2" icon="icon.etc_letter_red_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5986" name="Imperial Genealogy 3" icon="icon.etc_letter_red_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5987" name="Imperial Genealogy 4" icon="icon.etc_letter_red_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5988" name="Imperial Genealogy 5" icon="icon.etc_letter_red_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

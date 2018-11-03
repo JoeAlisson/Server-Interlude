@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon magic="true" id="7810" name="Soulfire Dirk" additionalName="Empower" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dagger_of_magicflame_i01">
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <skill id="3014" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7811" name="Soulfire Dirk" additionalName="Acumen" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dagger_of_magicflame_i01">
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <skill id="1201" level="18" chance="10" triggerType="ON_MAGIC_SKILL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7812" name="Soulfire Dirk" additionalName="Magic Regeneration" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dagger_of_magicflame_i01">
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <skill id="3074" level="2" chance="10" triggerType="ON_MAGIC_SKILL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7813" name="Twilight Knife" additionalName="Empower" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_hell_knife_i01">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>740</weight>
+        <skill id="1044" level="3" chance="30" triggerType="ON_MAGIC_SKILL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7814" name="Twilight Knife" additionalName="Acumen" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_hell_knife_i01">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>740</weight>
+        <skill id="1035" level="4" chance="50" triggerType="ON_MAGIC_SKILL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7815" name="Twilight Knife" additionalName="Magic Regeneration" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_hell_knife_i01">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>740</weight>
+        <skill id="1164" level="11" chance="7" triggerType="ON_MAGIC_SKILL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7880" name="Steel Sword" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_iron_sword_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7881" name="Lesser Giant's Sword" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_giants_sword_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7882" name="Pa'agrian Sword" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_sword_of_paagrio_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1980</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7883" name="Sword of Sentinel" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_guardians_sword_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1930</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7884" name="Infernal Master" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_inferno_master_i00">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1900</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7885" name="Priest Sword" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_priest_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7886" name="Sword of Magic Fog" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_magic_fog_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1450</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7887" name="Mysterious Sword" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_mystery_sword_i00">
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1430</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7888" name="Ecliptic Sword" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_eclipse_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1380</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7889" name="Wizard's Tear" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_tears_of_wizard_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7890" name="Priest Mace" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_mace_of_priest_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7891" name="Ecliptic Axe" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_eclipse_axe_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7892" name="Spell Breaker" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_spell_breaker_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1620</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7893" name="Kaim Vanul's Bones" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_bone_of_kaim_vanul_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7894" name="Spiritual Eye" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_eye_of_soul_i00">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1550</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7895" name="Flaming Dragon Skull" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_dragon_flame_head_i00">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1530</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7896" name="Lesser Giant's Hammer" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_giants_hammer_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7897" name="Dwarven Hammer" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_dwarven_hammer_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2010</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7898" name="Karik Horn" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_horn_of_karik_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="7899" name="Destroyer Hammer" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_hammer_of_destroyer_i00">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1910</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="7850" name="Moon Helmet" commissionType="HELMET" icon="icon.armor_helmet_i00">
+        <price>11720</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>640</weight>
+        <bodyPart>HEAD</bodyPart>
+    </armor>
+    <armor id="7851" name="Moon Armor" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t1001_ul_i00">
+        <price>50780</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>9870</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="7852" name="Moon Gauntlets" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t1001_g_i00">
+        <price>7820</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>640</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="7853" name="Moon Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t1001_b_i00">
+        <price>7820</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="7854" name="Moon Shell" type="LIGHT" commissionType="FULL_BODY" icon="icon.armor_t1002_ul_i00">
+        <price>38080</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5400</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="7855" name="Moon Leather Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t1002_g_i00">
+        <price>7820</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>640</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="7856" name="Moon Shoes" additionalName="Light" commissionType="FEET" icon="icon.armor_t1002_b_i00">
+        <price>7820</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <armor id="7857" name="Moon Cape" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t1003_ul_i00">
+        <price>38080</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2450</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="7858" name="Moon Silk Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t1003_g_i00">
+        <price>7820</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>640</weight>
+        <bodyPart>GLOVES</bodyPart>
+    </armor>
+    <armor id="7859" name="Moon Sandals" additionalName="Robe" commissionType="FEET" icon="icon.armor_t1003_b_i00">
+        <price>7820</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+</itemList>

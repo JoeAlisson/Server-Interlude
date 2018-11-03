@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="8678" name="Sirra's Blade" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sirr_blade_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="8679" name="Sword of Ipos" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_sword_of_ipos_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="8680" name="Barakiel's Axe" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_barakiel_axe_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1550</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="8681" name="Behemoth' Tuning Fork" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_tuning_fork_of_behemoth_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1890</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="8618" name="Ancient Book: Divine Inspiration (Modern Language Version)" commissionType="SPELLBOOK" icon="icon.etc_add_buffslot_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="1405" level="1"/>
+    </item>
+    <weapon id="8682" name="Naga Storm" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_naga_storm_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>930</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="8619" name="Ancient Book: Divine Inspiration (Original Language Version)" commissionType="SPELLBOOK" icon="icon.etc_add_buffslot_i01">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="1405" level="2"/>
+    </item>
+    <weapon id="8683" name="Tiphon's Spear" type="POLE" commissionType="SPEAR" icon="icon.weapon_tiphon_spear_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="8620" name="Ancient Book: Divine Inspiration (Manuscript)" commissionType="SPELLBOOK" icon="icon.etc_add_buffslot_i02">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="1405" level="3"/>
+    </item>
+    <weapon id="8684" name="Shyeed's Bow" type="BOW" commissionType="BOW" icon="icon.weapon_shyid_bow_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1640</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <item stackable="true" id="8621" name="Ancient Book: Divine Inspiration (Original Version)" commissionType="SPELLBOOK" icon="icon.etc_add_buffslot_i03">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="1405" level="4"/>
+    </item>
+    <weapon id="8685" name="Sobekk's Hurricane" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_sobekk_hurricane_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1330</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="8686" name="Themis' Tongue" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_tongue_of_themis_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>820</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="8687" name="Cabrio's Hand" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_hand_of_cabrio_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="8688" name="Daimon Crystal" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_of_deamon_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>880</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="8690" name="Recipe: Sirra's Blade (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>844</recipeId>
+    </item>
+    <item stackable="true" id="8691" name="Recipe: Sirra's Blade (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>845</recipeId>
+    </item>
+    <item stackable="true" id="8692" name="Recipe: Sword of Ipos (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>846</recipeId>
+    </item>
+    <item stackable="true" id="8693" name="Recipe: Sword of Ipos (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>847</recipeId>
+    </item>
+    <item stackable="true" id="8694" name="Recipe: Barakiel's Axe (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>848</recipeId>
+    </item>
+    <item stackable="true" id="8695" name="Recipe: Barakiel's Axe (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>849</recipeId>
+    </item>
+    <item stackable="true" id="8696" name="Recipe: Behemoth' Tuning Fork (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>850</recipeId>
+    </item>
+    <item stackable="true" id="8697" name="Recipe: Behemoth' Tuning Fork (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>851</recipeId>
+    </item>
+    <item stackable="true" id="8698" name="Recipe: Naga Storm (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>852</recipeId>
+    </item>
+    <item stackable="true" id="8699" name="Recipe: Naga Storm (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>706000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>853</recipeId>
+    </item>
+</itemList>

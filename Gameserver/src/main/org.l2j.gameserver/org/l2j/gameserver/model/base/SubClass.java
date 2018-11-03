@@ -43,7 +43,7 @@ public final class SubClass
 	
 	public SubClass(int classId, int classIndex)
 	{
-		// Used for defining a sub class using default values for XP, SP and player level.
+		// Used for defining a sub class using default values for XP, SP and reader level.
 		_class = PlayerClass.values()[classId];
 		_classIndex = classIndex;
 	}

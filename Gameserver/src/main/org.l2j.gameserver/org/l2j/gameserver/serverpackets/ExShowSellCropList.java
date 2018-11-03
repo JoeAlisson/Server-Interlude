@@ -85,7 +85,7 @@ public class ExShowSellCropList extends L2GameServerPacket
 				writeInt(0); // buy price
 				writeByte(0); // reward
 			}
-			writeInt(item.getCount()); // my crops
+			writeInt((int) item.getCount()); // my crops
 		}
 	}
 }

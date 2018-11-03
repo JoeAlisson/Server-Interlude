@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="29696" name="Major Quick Healing Potion" additionalName="Event" type="POTION" icon="icon.etc_potion_gold_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55084" level="1"/>
+    </item>
+    <item stackable="true" id="29697" name="1st Class Buff Scroll" additionalName="Event" type="SCROLL" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55085" level="1"/>
+    </item>
+    <item stackable="true" id="29698" name="2nd Class Buff Scroll" additionalName="Event" type="SCROLL" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55086" level="2"/>
+    </item>
+    <item stackable="true" id="29699" name="Minor Blessed Scroll of Escape" additionalName="Event" icon="icon.etc_scroll_of_return_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <armor id="29600" name="Hair Accessory for the Event" additionalName="30-day" icon="icon.accessory_taiwan_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>10</weight>
+        <skill id="55057" level="1"/>
+        <bodyPart>HAIR</bodyPart>
+    </armor>
+    <item stackable="true" id="29601" name="Newbie Kit - Lvl 1" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29602" name="Newbie Kit - Lvl 2" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="10"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29603" name="Newbie Kit - Lvl 3" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29604" name="Newbie Kit - Lvl 4" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="25"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29605" name="Newbie Kit - Lvl 5" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="30"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29606" name="Newbie Kit - Lvl 6" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="35"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29607" name="Newbie Kit - Lvl 7" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="40"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29608" name="Ticket: Temporary Weapon (D-grade)" icon="icon.etc_lottery_card_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29609" name="Ticket: Temporary Weapon (C-grade)" icon="icon.etc_lottery_card_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <weapon id="29610" name="Katana" additionalName="30-day" type="SWORD" icon="icon.weapon_katana_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1420</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29611" name="Stiletto" additionalName="30-day" type="DAGGER" icon="icon.weapon_stiletto_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1030</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29612" name="Dwarven War Hammer" additionalName="30-day" type="BLUNT" icon="icon.weapon_dwarven_warhammer_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1670</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29613" name="Bec de Corbin" additionalName="30-day" type="POLE" icon="icon.weapon_bech_de_corbin_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>2020</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29614" name="Elemental Bow" additionalName="30-day" type="BOW" icon="icon.weapon_elemental_bow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1770</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume mp="3" shot="1"/>
+    </weapon>
+    <weapon id="29615" name="Fist" additionalName="30-day" type="DUALFIST" icon="icon.weapon_knuckle_dust_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1490</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29616" name="Soulfire Dirk" additionalName="30-day" type="DAGGER" icon="icon.weapon_dagger_of_magicflame_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29617" name="Horn of Glory" additionalName="30-day" type="SWORD" icon="icon.weapon_horn_of_glory_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>540</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="29618" name="Cursed Staff" additionalName="30-day" type="BLUNT" icon="icon.weapon_cursed_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29619" name="Elven Sword*Elven Long Sword" additionalName="30-day" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>2410</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29620" name="Saber*Elven Sword" additionalName="30-day" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>2510</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29621" name="Sword of Revolution" additionalName="30-day" type="SWORD" icon="icon.weapon_sword_of_revolution_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1450</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29622" name="Maingauche" additionalName="30-day" type="DAGGER" icon="icon.weapon_maingauche_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1070</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29623" name="Reinforced Longbow" additionalName="30-day" type="BOW" icon="icon.weapon_strengthening_long_bow_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1820</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="29624" name="Tarbar" additionalName="30-day" type="BLUNT" icon="icon.weapon_tarbar_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1730</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29625" name="Lesser Giant's Sword" additionalName="30-day" type="SWORD" icon="icon.weapon_giants_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>2020</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29626" name="Lesser Giant's Hammer" additionalName="30-day" type="BLUNT" icon="icon.weapon_giants_hammer_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>2100</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29627" name="Winged Spear" additionalName="30-day" type="POLE" icon="icon.weapon_winged_spear_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>2060</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29628" name="Bich'Hwa" additionalName="30-day" type="DUALFIST" icon="icon.weapon_bichhwa_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1510</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="29629" name="Sword of Magic Fog" additionalName="30-day" type="SWORD" icon="icon.weapon_sword_of_magic_fog_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1450</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="29630" name="Priest Mace" additionalName="30-day" type="BLUNT" icon="icon.weapon_mace_of_priest_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1720</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="29631" name="Goat Head Staff" additionalName="30-day" type="BLUNT" icon="icon.weapon_goathead_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="29632" name="Daily Present - VIP 6" icon="BranchIcon.Icon.etc_vip_present_i05">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29633" name="Daily Present - VIP 7" icon="BranchIcon.Icon.etc_vip_present_i06">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29634" name="Newbie Kit - Lv. 1" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29635" name="Newbie Kit - Lv. 2" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="10"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29636" name="Newbie Kit - Lv. 3" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29637" name="Newbie Kit - Lv. 4" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="25"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29638" name="Newbie Kit - Lv. 5" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="30"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29639" name="Newbie Kit - Lv. 6" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="35"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29640" name="Newbie Kit - Lv. 7" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="40"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29641" name="Mysterious No-grade Soulshot" additionalName="Not in Use" icon="BranchIcon.Icon.g_etc_soulshot_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29642" name="Mysterious Blessed No-grade Spiritshot" additionalName="Not in Use" icon="BranchIcon.Icon.g_etc_spiritshot_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29643" name="Mysterious Soulshot (D-grade)" additionalName="Not in Use" icon="br_cashtex.item.br_cash_soulshot_d_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29644" name="Mysterious Blessed Spiritshot (D-grade)" additionalName="Not in Use" icon="br_cashtex.item.br_cash_spiritshot_d_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29645" name="Mysterious Soulshot (C-grade)" additionalName="Not in Use" icon="br_cashtex.item.br_cash_soulshot_c_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29646" name="Mysterious Blessed Spiritshot (C-grade)" additionalName="Not in Use" icon="br_cashtex.item.br_cash_spiritshot_c_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29647" name="XP/SP Scroll" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55000" level="1"/>
+    </item>
+    <item stackable="true" id="29648" name="XP/SP Scroll - Normal" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55000" level="1"/>
+    </item>
+    <item stackable="true" id="29649" name="XP/SP Scroll - Medium" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55000" level="2"/>
+    </item>
+    <item stackable="true" id="29650" name="XP/SP Scroll - High" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55000" level="4"/>
+    </item>
+    <item stackable="true" id="29651" name="Healing Potion" additionalName="Event" type="POTION" commissionType="POTION" icon="icon.etc_lesser_potion_red_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2031" level="1"/>
+    </item>
+    <item stackable="true" id="29652" name="Major Healing Potion" additionalName="Event" type="POTION" commissionType="POTION" icon="icon.etc_lesser_potion_red_i00">
+        <price>330</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>10000</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2032" level="1"/>
+    </item>
+    <item stackable="true" id="29653" name="Haste Potion" type="POTION" commissionType="POTION" icon="icon.etc_reagent_green_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>500</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2012" level="1"/>
+    </item>
+    <item stackable="true" id="29654" name="1st Class Buff Scroll" type="SCROLL" commissionType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55055" level="1"/>
+    </item>
+    <item stackable="true" id="29655" name="2nd Class Buff Scroll" type="SCROLL" commissionType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55056" level="2"/>
+    </item>
+    <item stackable="true" id="29656" name="Traveler's Package - Lvl 1" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="24"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29657" name="Traveler's Package - Lvl 2" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="25"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29658" name="Traveler's Package - Lvl 3" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="28"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29659" name="Traveler's Package - Lvl 4" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="30"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29660" name="Traveler's Package - Lvl 5" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="32"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29661" name="Traveler's Package - Lvl 6" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="35"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29662" name="Traveler's Package - Lvl 7" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="38"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29663" name="Traveler's Package - Lvl 8" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="40"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29664" name="Traveler's Package - Lvl 9" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="42"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29665" name="Traveler's Package - Lvl 10" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="45"/>
+        </condition>
+    </item>
+    <item stackable="true" id="29666" name="Traveler's Package - Lvl 11" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="49"/>
+        </condition>
+    </item>
+    <armor id="29667" name="Agathion - Griffin" additionalName="30-day" icon="icon.etc_rbracelet_aga_agit_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>150</weight>
+        <skill id="55059" level="1"/>
+        <skill id="55060" level="1"/>
+        <skill id="3267" level="1" triggerType="ON_USE"/>
+        <bodyPart>LEFT_BRACELET</bodyPart>
+    </armor>
+    <item stackable="true" id="29668" name="Castle Owners' Coin" icon="icon.etc_11th_token">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="29669" name="Castle XP/SP Scroll - Normal" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55061" level="2"/>
+    </item>
+    <item stackable="true" id="29670" name="Castle XP/SP Scroll - Medium" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55062" level="2"/>
+    </item>
+    <item stackable="true" id="29671" name="Quick Castle Healing Potion" type="POTION" icon="icon.etc_potion_gold_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55063" level="1"/>
+    </item>
+    <item stackable="true" id="29672" name="Major Quick Castle Healing Potion" type="POTION" icon="icon.etc_potion_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55064" level="1"/>
+    </item>
+    <item stackable="true" id="29673" name="Scroll: Castle Berserker Spirit" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="55065" level="1"/>
+    </item>
+    <item stackable="true" id="29674" name="Scroll: Castle Death Whisper" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="55066" level="1"/>
+    </item>
+    <item stackable="true" id="29675" name="Blessed Castle Scroll of Escape" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="55067" level="1"/>
+    </item>
+    <item stackable="true" id="29676" name="Scroll: Castle Blessing" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="55068" level="1"/>
+    </item>
+    <armor id="29677" name="Castle Ring (10-day)" commissionType="RING" icon="icon.ev_11th_rare_acc_ring">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>14400</time>
+        <weight>150</weight>
+        <skill id="55069" level="1"/>
+        <bodyPart>FINGER</bodyPart>
+    </armor>
+    <armor id="29678" name="Castle Ring" commissionType="RING" icon="icon.ev_11th_rare_acc_ring">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55069" level="1"/>
+        <bodyPart>FINGER</bodyPart>
+    </armor>
+    <armor id="29679" name="Castle Earring (10-day)" commissionType="EARRING" icon="icon.ev_11th_rare_acc_earing">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>14400</time>
+        <weight>150</weight>
+        <skill id="55070" level="1"/>
+        <bodyPart>EAR</bodyPart>
+    </armor>
+    <armor id="29680" name="Castle Earring" commissionType="EARRING" icon="icon.ev_11th_rare_acc_earing">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55070" level="1"/>
+        <bodyPart>EAR</bodyPart>
+    </armor>
+    <armor id="29681" name="Castle Necklace (10-day)" commissionType="NECKLACE" icon="icon.ev_11th_rare_acc_necklace">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>14400</time>
+        <weight>150</weight>
+        <skill id="55071" level="1"/>
+        <bodyPart>NECK</bodyPart>
+    </armor>
+    <armor id="29682" name="Castle Necklace" commissionType="NECKLACE" icon="icon.ev_11th_rare_acc_necklace">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55071" level="1"/>
+        <bodyPart>NECK</bodyPart>
+    </armor>
+    <item stackable="true" id="29683" name="Castle Owners' Coin Chest" icon="icon.etc_treasure_box_i08">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29684" name="Scroll: Shield" type="SCROLL" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="39015" level="1"/>
+    </item>
+    <item stackable="true" id="29685" name="Scroll: Might" type="SCROLL" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="39014" level="1"/>
+    </item>
+    <item stackable="true" id="29686" name="Scroll: Concentration" type="SCROLL" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29687" name="Scroll: Agility" type="SCROLL" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29688" name="Scroll: Regeneration" type="SCROLL" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29689" name="Scroll: Magic Barrier" type="SCROLL" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29690" name="Scroll: Blessed Body" type="SCROLL" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29691" name="Scroll: Blessed Soul" type="SCROLL" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29692" name="LineageII Chest" icon="icon.ev_10th_present2">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55072" level="1"/>
+    </item>
+    <item stackable="true" id="29693" name="Chronicle Chest" icon="icon.ev_10th_present2">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55073" level="1"/>
+    </item>
+    <item stackable="true" id="29694" name="Memories Chest" icon="icon.ev_10th_present2">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55074" level="1"/>
+    </item>
+    <item stackable="true" id="29695" name="Quick Healing Potion" additionalName="Event" type="POTION" icon="icon.etc_potion_gold_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55083" level="1"/>
+    </item>
+</itemList>

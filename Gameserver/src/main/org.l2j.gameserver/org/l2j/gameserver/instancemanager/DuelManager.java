@@ -82,7 +82,7 @@ public class DuelManager {
             return;
         }
 
-        // return if a player has PvPFlag
+        // return if a reader has PvPFlag
         String engagedInPvP = "The duel was canceled because a DUELIST engaged in PvP combat.";
         if (partyDuel == 1) {
             boolean playerInPvP = false;
@@ -100,7 +100,7 @@ public class DuelManager {
                     }
                 }
             }
-            // A player has PvP flag
+            // A reader has PvP flag
             if (playerInPvP) {
                 for (L2PcInstance temp : playerA.getParty().getPartyMembers()) {
                     temp.sendMessage(engagedInPvP);
@@ -135,9 +135,9 @@ public class DuelManager {
     }
 
     /**
-     * Updates player states.
+     * Updates reader states.
      *
-     * @param player - the dieing player
+     * @param player - the dieing reader
      */
     public void onPlayerDefeat(L2PcInstance player) {
         if ((player == null) || !player.isInDuel()) {
@@ -166,9 +166,9 @@ public class DuelManager {
     }
 
     /**
-     * Removes player from duel.
+     * Removes reader from duel.
      *
-     * @param player - the removed player
+     * @param player - the removed reader
      */
     public void onRemoveFromParty(L2PcInstance player) {
         if ((player == null) || !player.isInDuel()) {
@@ -181,7 +181,7 @@ public class DuelManager {
     }
 
     /**
-     * Broadcasts a packet to the team opposing the given player.
+     * Broadcasts a packet to the team opposing the given reader.
      *
      * @param player
      * @param packet

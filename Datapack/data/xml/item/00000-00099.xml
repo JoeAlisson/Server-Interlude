@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org"
+          xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="1" name="Short Sword" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_small_sword_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>768</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="2" name="Long Sword" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_long_sword_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>136000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1560</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="3" name="Broadsword" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_broad_sword_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>12500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1590</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="4" name="Club" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_club_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>768</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1870</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5" name="Mace" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_mace_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>12500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1880</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="6" name="Apprentice's Wand" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON"
+            icon="icon.weapon_apprentices_wand_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="7" name="Apprentice's Rod" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON"
+            icon="icon.weapon_apprentices_rod_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>768</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1330</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="8" name="Willow Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON"
+            icon="icon.weapon_willow_staff_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>12500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1080</weight>
+        <damage distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="9" name="Cedar Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON"
+            icon="icon.weapon_cedar_staff_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>54100</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1090</weight>
+        <damage distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="10" name="Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dagger_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1160</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="11" name="Bone Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_bone_dagger_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>768</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1150</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="12" name="Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_knife_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>12500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1140</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="13" name="Short Bow" type="BOW" commissionType="BOW" icon="icon.weapon_short_bow_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>768</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1950</weight>
+        <damage distance="10"/>
+        <consume mp="1" shot="1"/>
+    </weapon>
+    <weapon id="14" name="Bow" type="BOW" commissionType="BOW" icon="icon.weapon_bow_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>12500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1930</weight>
+        <damage distance="10"/>
+        <consume mp="1" shot="1"/>
+    </weapon>
+    <weapon id="15" name="Short Spear" type="POLE" commissionType="SPEAR" icon="icon.weapon_short_spear_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>136000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2140</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="16" name="Great Spear" type="POLE" commissionType="SPEAR" icon="icon.weapon_long_spear_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>244000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2120</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="17" name="Wooden Arrow" type="ARROW" icon="icon.etc_wooden_quiver_i00">
+        <price>2</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>6</weight>
+    </item>
+    <armor id="18" name="Leather Shield" commissionType="SHIELD" icon="icon.shield_leather_shield_i00">
+        <bodyPart>LEFT_HAND</bodyPart>
+        <price>39</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1430</weight>
+    </armor>
+    <armor id="19" name="Small Shield" commissionType="SHIELD" icon="icon.shield_small_shield_i00">
+        <bodyPart>LEFT_HAND</bodyPart>
+        <price>638</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1420</weight>
+    </armor>
+    <armor id="20" name="Buckler" commissionType="SHIELD" icon="icon.shield_buckler_i00">
+        <bodyPart>LEFT_HAND</bodyPart>
+        <price>2780</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1410</weight>
+    </armor>
+    <armor id="21" name="Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t02_u_i00">
+        <bodyPart>CHEST</bodyPart>
+        <price>147</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4830</weight>
+    </armor>
+    <armor id="22" name="Leather Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t04_u_i00">
+        <bodyPart>CHEST</bodyPart>
+        <price>2430</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4830</weight>
+    </armor>
+    <armor id="23" name="Wooden Breastplate" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t06_u_i00">
+        <bodyPart>CHEST</bodyPart>
+        <price>7960</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4820</weight>
+    </armor>
+    <armor id="24" name="Bone Breastplate" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t32_u_i00">
+        <bodyPart>CHEST</bodyPart>
+        <price>20300</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4770</weight>
+    </armor>
+    <armor id="25" name="Piece Bone Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t33_u_i00">
+        <bodyPart>CHEST</bodyPart>
+        <price>31800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8970</weight>
+    </armor>
+    <armor id="26" name="Bronze Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t34_u_i00">
+        <bodyPart>CHEST</bodyPart>
+        <price>49200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8920</weight>
+    </armor>
+    <armor id="27" name="Durable Leather Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t30_u_i00">
+        <bodyPart>CHEST</bodyPart>
+        <price>36900</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4720</weight>
+    </armor>
+    <armor id="28" name="Pants" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t02_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>92</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1740</weight>
+    </armor>
+    <armor id="29" name="Leather Pants" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t04_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>1520</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1730</weight>
+    </armor>
+    <armor id="30" name="Durable Leather Pants" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t06_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>4970</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1700</weight>
+    </armor>
+    <armor id="31" name="Bone Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t32_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>12700</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1680</weight>
+    </armor>
+    <armor id="32" name="Piece Bone Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t33_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>19900</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4020</weight>
+    </armor>
+    <armor id="33" name="Durable Leather Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t30_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>23000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1610</weight>
+    </armor>
+    <armor id="34" name="Bronze Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t34_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>30700</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3960</weight>
+    </armor>
+    <armor id="35" name="Cloth Shoes" commissionType="FEET" icon="icon.armor_t02_b_i00">
+        <bodyPart>FEET</bodyPart>
+        <price>37</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+    </armor>
+    <armor id="36" name="Leather Sandals" commissionType="FEET" icon="icon.armor_t03_b_i00">
+        <bodyPart>FEET</bodyPart>
+        <price>37</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+    </armor>
+    <armor id="37" name="Leather Shoes" commissionType="FEET" icon="icon.armor_t05_b_i00">
+        <bodyPart>FEET</bodyPart>
+        <price>2650</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+    </armor>
+    <armor id="38" name="Low Boots" commissionType="FEET" icon="icon.armor_t32_b_i00">
+        <bodyPart>FEET</bodyPart>
+        <price>6770</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+    </armor>
+    <armor id="39" name="Boots" commissionType="FEET" icon="icon.armor_t30_b_i00">
+        <bodyPart>FEET</bodyPart>
+        <price>12300</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1310</weight>
+    </armor>
+    <armor id="40" name="Leather Boots" commissionType="FEET" icon="icon.armor_t09_b_i00">
+        <bodyPart>FEET</bodyPart>
+        <price>20900</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="38"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+    </armor>
+    <armor id="41" name="Cloth Cap" commissionType="HELMET" icon="icon.armor_cloth_helmet_i00">
+        <bodyPart>HEAD</bodyPart>
+        <price>55</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>660</weight>
+    </armor>
+    <armor id="42" name="Leather Cap" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+        <bodyPart>HEAD</bodyPart>
+        <price>911</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>660</weight>
+    </armor>
+    <armor id="43" name="Wooden Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+        <bodyPart>HEAD</bodyPart>
+        <price>3980</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>660</weight>
+    </armor>
+    <armor id="44" name="Leather Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+        <bodyPart>HEAD</bodyPart>
+        <price>10200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>650</weight>
+    </armor>
+    <armor id="45" name="Bone Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+        <bodyPart>HEAD</bodyPart>
+        <price>31300</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="56"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>640</weight>
+    </armor>
+    <armor id="46" name="Bronze Helmet" commissionType="HELMET" icon="icon.armor_helmet_i00">
+        <bodyPart>HEAD</bodyPart>
+        <price>50000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="90"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>630</weight>
+    </armor>
+    <armor id="47" name="Headgear" commissionType="HELMET" icon="icon.armor_helmet_i00">
+        <bodyPart>HEAD</bodyPart>
+        <price>76200</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="138"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>640</weight>
+    </armor>
+    <armor id="48" name="Short Gloves" commissionType="GLOVES" icon="icon.armor_t02_g_i00">
+        <bodyPart>GLOVES</bodyPart>
+        <price>37</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>660</weight>
+    </armor>
+    <armor id="49" name="Gloves" commissionType="GLOVES" icon="icon.armor_t06_g_i00">
+        <bodyPart>GLOVES</bodyPart>
+        <price>2650</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>660</weight>
+    </armor>
+    <armor id="50" name="Leather Gloves" commissionType="GLOVES" icon="icon.armor_t32_g_i00">
+        <bodyPart>GLOVES</bodyPart>
+        <price>6770</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>650</weight>
+    </armor>
+    <armor id="51" name="Bracer" commissionType="GLOVES" icon="icon.armor_t30_g_i00">
+        <bodyPart>GLOVES</bodyPart>
+        <price>12300</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>650</weight>
+    </armor>
+    <item stackable="true" id="57" name="Adena" icon="icon.etc_adena_i00">
+        <price>1</price>
+        <restriction freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="58" name="Mithril Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t19_u_i00">
+        <bodyPart>CHEST</bodyPart>
+        <price>183000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="332"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>8670</weight>
+    </armor>
+    <armor id="59" name="Mithril Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t19_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>127000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="230"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3830</weight>
+    </armor>
+    <armor id="60" name="Compound Armor" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t61_ul_i00">
+        <bodyPart>ONE_PIECE</bodyPart>
+        <price>1440000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="576"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10980</weight>
+    </armor>
+    <armor id="61" name="Mithril Gloves" commissionType="GLOVES" icon="icon.armor_t46_g_i00">
+        <bodyPart>GLOVES</bodyPart>
+        <price>97800</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="177"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>630</weight>
+    </armor>
+    <armor id="62" name="Reinforced Mithril Boots" commissionType="FEET" icon="icon.armor_t47_b_i00">
+        <bodyPart>FEET</bodyPart>
+        <price>126000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="50"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1230</weight>
+    </armor>
+    <armor id="63" name="Gauntlets" commissionType="GLOVES" icon="icon.armor_t10_g_i00">
+        <bodyPart>GLOVES</bodyPart>
+        <price>50800</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="92"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>640</weight>
+    </armor>
+    <armor id="64" name="Compound Boots" commissionType="FEET" icon="icon.armor_t61_b_i00">
+        <bodyPart>FEET</bodyPart>
+        <price>245000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="98"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1220</weight>
+    </armor>
+    <weapon id="66" name="Gladius" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_gladius_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>54100</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="67" name="Orcish Sword" type="SWORD" commissionType="ONE_HAND_SWORD"
+            icon="icon.weapon_orcish_sword_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>54100</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="68" name="Falchion" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_falchion_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>244000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1530</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="69" name="Bastard Sword" type="SWORD" commissionType="ONE_HAND_SWORD"
+            icon="icon.weapon_bastard_sword_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <damage distance="42" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="70" name="Claymore" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_claymore_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>1800000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="3272"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="71" name="Flamberge" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_flamberge_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2010</weight>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="72" name="StormBringer" type="SWORD" commissionType="ONE_HAND_SWORD"
+            icon="icon.weapon_stormbringer_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1430</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="73" name="Shamshir" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_shamshir_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1420</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="74" name="Katana" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_katana_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1420</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="75" name="Caliburs" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_caliburs_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="76" name="Sword of Delusion" type="SWORD" commissionType="ONE_HAND_SWORD"
+            icon="icon.weapon_sword_of_delusion_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="77" name="Tsurugi" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_tsurugi_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1400</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="78" name="Great Sword" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_great_sword_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1930</weight>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="79" name="Damascus Sword" type="SWORD" commissionType="ONE_HAND_SWORD"
+            icon="icon.weapon_sword_of_damascus_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="80" name="Tallum Blade" type="SWORD" commissionType="ONE_HAND_SWORD"
+            icon="icon.weapon_tallum_blade_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1330</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="81" name="Dragon Slayer" type="SWORD" commissionType="TWO_HAND_SWORD"
+            icon="icon.weapon_dragon_slayer_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <damage distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="83" name="Sword of Magic" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD"
+            icon="icon.weapon_sword_of_magic_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>716000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1301"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="84" name="Homunkulus' Sword" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD"
+            icon="icon.weapon_homunkuluss_sword_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>950</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="86" name="Tomahawk" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_tomahawk_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1780</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="87" name="Iron Hammer" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_iron_hammer_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>244000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="88" name="Morning Star" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_morning_star_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="89" name="Big Hammer" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_big_hammer_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1710</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="90" name="Goat Head Staff" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON"
+            icon="icon.weapon_goathead_staff_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <damage distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="91" name="Heavy War Axe" type="BLUNT" commissionType="BLUNT_WEAPON"
+            icon="icon.weapon_heavy_war_axe_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1620</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="92" name="Spirit's Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON"
+            icon="icon.weapon_sprites_staff_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>960</weight>
+        <damage distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="93" name="Winged Spear" type="POLE" commissionType="SPEAR" icon="icon.weapon_winged_spear_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2060</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="94" name="Bec de Corbin" type="POLE" commissionType="SPEAR" icon="icon.weapon_bech_de_corbin_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="95" name="Poleaxe" type="POLE" commissionType="SPEAR" icon="icon.weapon_poleaxe_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2010</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="96" name="Scythe" type="POLE" commissionType="SPEAR" icon="icon.weapon_scythe_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2040</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="97" name="Lance" type="POLE" commissionType="SPEAR" icon="icon.weapon_lancia_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1920</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="98" name="Halberd" type="POLE" commissionType="SPEAR" icon="icon.weapon_halbard_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1900</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="99" name="Apprentice's Spellbook" type="SWORD" commissionType="OTHER_WEAPON"
+            icon="icon.weapon_apprentices_spellbook_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>12500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>650</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

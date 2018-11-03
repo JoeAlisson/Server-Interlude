@@ -68,14 +68,14 @@ public final class RequestActionUse extends L2GameClientPacket
 			_log.debug(activeChar.getName() + " request Action use: id " + _actionId + " 2:" + _ctrlPressed + " 3:" + _shiftPressed);
 		}
 		
-		// dont do anything if player is dead
+		// dont do anything if reader is dead
 		if (activeChar.isAlikeDead())
 		{
 			getClient().sendPacket(new ActionFailed());
 			return;
 		}
 		
-		// don't do anything if player is confused
+		// don't do anything if reader is confused
 		if (activeChar.isOutOfControl())
 		{
 			getClient().sendPacket(new ActionFailed());

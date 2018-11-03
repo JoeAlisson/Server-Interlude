@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
@@ -26,17 +8,12 @@ import org.l2j.gameserver.model.PcInventory;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
-import org.l2j.gameserver.templates.CrystalType;
+import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
 import org.l2j.gameserver.util.IllegalPlayerAction;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-/**
- * This class ...
- * @version $Revision: 1.2.2.3.2.5 $ $Date: 2005/03/27 15:29:30 $
- */
 public final class RequestCrystallizeItem extends L2GameClientPacket
 {
 	private static final String _C__72_REQUESTDCRYSTALLIZEITEM = "[C] 72 RequestCrystallizeItem";
@@ -44,7 +21,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 	private static Logger _log = LoggerFactory.getLogger(RequestCrystallizeItem.class.getName());
 	
 	private int _objectId;
-	private int _count;
+	private long _count;
 	
 	@Override
 	protected void readImpl()
@@ -115,14 +92,14 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		{
 			return;
 		}
-		if (!itemToRemove.getItem().isCrystallizable() || (itemToRemove.getItem().getCrystalCount() <= 0) || (itemToRemove.getItem().getCrystalType() == CrystalType.NONE))
+		if (itemToRemove.getItem().getCrystalInfo().getType() == org.l2j.gameserver.templates.xml.jaxb.CrystalType.NONE|| (itemToRemove.getItem().getCrystalInfo().getCount() <= 0))
 		{
 			_log.warn("" + activeChar.getObjectId() + " tried to crystallize " + itemToRemove.getItem().getId());
 			return;
 		}
 		
 		// Check if the char can crystallize C items and return if false;
-		if ((itemToRemove.getItem().getCrystalType() == CrystalType.C) && (skillLevel <= 1))
+		if ((itemToRemove.getItem().getCrystalInfo().getType() == CrystalType.C) && (skillLevel <= 1))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);
 			activeChar.sendPacket(sm);
@@ -133,7 +110,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		}
 		
 		// Check if the user can crystallize B items and return if false;
-		if ((itemToRemove.getItem().getCrystalType() == CrystalType.B) && (skillLevel <= 2))
+		if ((itemToRemove.getItem().getCrystalInfo().getType() == CrystalType.B) && (skillLevel <= 2))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);
 			activeChar.sendPacket(sm);
@@ -144,7 +121,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		}
 		
 		// Check if the user can crystallize A items and return if false;
-		if ((itemToRemove.getItem().getCrystalType() == CrystalType.A) && (skillLevel <= 3))
+		if ((itemToRemove.getItem().getCrystalInfo().getType()== CrystalType.A) && (skillLevel <= 3))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);
 			activeChar.sendPacket(sm);
@@ -155,7 +132,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		}
 		
 		// Check if the user can crystallize S items and return if false;
-		if ((itemToRemove.getItem().getCrystalType() == CrystalType.S) && (skillLevel <= 4))
+		if ((itemToRemove.getItem().getCrystalInfo().getType() == CrystalType.S) && (skillLevel <= 4))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);
 			activeChar.sendPacket(sm);
@@ -189,7 +166,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		L2ItemInstance removedItem = activeChar.getInventory().destroyItem("Crystalize", _objectId, _count, activeChar, null);
 		
 		// add crystals
-		int crystalId = itemToRemove.getItem().getCrystalType().getItemId();
+		int crystalId = 1458; // TODO itemToRemove.getItem().getCrystalInfo().getType().getItemId;
 		int crystalAmount = itemToRemove.getCrystalCount();
 		L2ItemInstance createditem = activeChar.getInventory().addItem("Crystalize", crystalId, crystalAmount, activeChar, itemToRemove);
 		

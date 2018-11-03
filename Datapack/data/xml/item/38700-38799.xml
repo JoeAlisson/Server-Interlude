@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="38753" name="Uldie’s Elite Gift" icon="BranchSys.icon.br_ghost_magicalbox_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="38750" name="Uldie’s Card Key" icon="icon.cardkey_raracat">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="38751" name="Uldie’s Business Card" icon="icon.namecard_raracat">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

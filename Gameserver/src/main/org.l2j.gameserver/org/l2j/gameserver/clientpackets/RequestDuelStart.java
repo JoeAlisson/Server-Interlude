@@ -103,11 +103,11 @@ public final class RequestDuelStart extends L2GameClientPacket
 			// Target may not be of the same party
 			else if (activeChar.getParty().getPartyMembers().contains(targetChar))
 			{
-				activeChar.sendMessage("This player is a member of your own party.");
+				activeChar.sendMessage("This reader is a member of your own party.");
 				return;
 			}
 			
-			// Check if every player is ready for a duel
+			// Check if every reader is ready for a duel
 			for (L2PcInstance temp : activeChar.getParty().getPartyMembers())
 			{
 				if (!temp.canDuel())

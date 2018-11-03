@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="30372" name="Hero's Cloak" icon="icon.vesper_cloack_i00">
+        <bodyPart>BACK</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>220</weight>
+        <skill id="13136"/>
+        </armor>
+    <armor id="30373" name="Glorious Cloak" icon="icon.vesper_cloack_i00">
+        <bodyPart>BACK</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>220</weight>
+        </armor>
+</itemList>

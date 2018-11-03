@@ -32,7 +32,7 @@ public class DropItem extends L2GameServerPacket {
 		{
 			writeInt(0x00);
 		}
-		writeInt(_item.getCount());
+		writeLong(_item.getCount());
 		
 		writeInt(1); // unknown
 	}

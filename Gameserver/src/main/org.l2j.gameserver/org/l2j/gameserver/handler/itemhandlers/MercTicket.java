@@ -84,7 +84,7 @@ public class MercTicket implements IItemHandler
 				case 9:
 					activeChar.sendMessage("This Mercenary Ticket can only be used in Schuttgart.");
 					return;
-					// player is not in a castle
+					// reader is not in a castle
 				default:
 					activeChar.sendMessage("Mercenary Tickets can only be used in a castle.");
 					return;

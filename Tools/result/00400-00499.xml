@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="461" name="Apprentice's Stockings" type="MAGIC" icon="icon.armor_t01_l_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="462" name="Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t03_l_i00">
+        <price>92</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1080</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="463" name="Feriotic Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t52_l_i00">
+        <price>1520</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="400" name="Theca Leather Armor" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t63_u_i00">
+        <price>825000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="330"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>4370</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="464" name="Leather Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t05_l_i00">
+        <price>4970</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="401" name="Drake Leather Armor" type="LIGHT" commissionType="FULL_BODY" icon="icon.armor_t45_ul_i00">
+        <price>1570000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="628"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5800</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="465" name="Cursed Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t14_l_i00">
+        <price>39100</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="466" name="Elven Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t11_l_i00">
+        <price>62500</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="113"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="467" name="Dark Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t16_l_i00">
+        <price>62500</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="113"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="468" name="Wizard Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t17_l_i00">
+        <price>62500</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="113"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>990</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="469" name="Stockings of Knowledge" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t41_l_i00">
+        <price>95200</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="173"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="470" name="Mithril Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t51_l_i00">
+        <price>140000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="254"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="471" name="Karmian Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t53_l_i00">
+        <price>237000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="94"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="472" name="Demon's Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t54_l_i00">
+        <price>460000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="184"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="473" name="Divine Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t57_l_i00">
+        <price>671000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="268"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>960</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="412" name="Cotton Pants" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t07_l_i00">
+        <price>12700</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1630</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="413" name="Puma Skin Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t09_l_i00">
+        <price>39100</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="71"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="414" name="Lion Skin Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t18_l_i00">
+        <price>62500</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="113"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="415" name="Mithril Banded Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t10_l_i00">
+        <price>95200</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="173"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1580</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="416" name="Reinforced Leather Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t13_l_i00">
+        <price>95200</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="173"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="417" name="Manticore Skin Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t42_l_i00">
+        <price>140000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="254"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1550</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="418" name="Plated Leather Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t47_l_i00">
+        <price>279000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="111"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1560</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="419" name="Rind Leather Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t49_l_i00">
+        <price>302000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="120"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1550</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="420" name="Theca Leather Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t63_l_i00">
+        <price>516000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="206"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1530</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="425" name="Apprentice's Tunic" type="MAGIC" icon="icon.armor_t01_u_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2150</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="426" name="Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t03_u_i00">
+        <price>147</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2150</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="428" name="Feriotic Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t52_u_i00">
+        <price>2430</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2140</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="429" name="Leather Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t05_u_i00">
+        <price>7960</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2110</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="431" name="Robe of Magic" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_cotton_robe_i02">
+        <price>53900</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2600</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="432" name="Cursed Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t14_u_i00">
+        <price>62600</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="113"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="433" name="Elven Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t11_u_i00">
+        <price>99900</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="181"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="497" name="Chain Helmet" commissionType="HELMET" icon="icon.armor_helmet_i00">
+        <price>147000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="59"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>620</weight>
+        <bodyPart>HEAD</bodyPart>
+    </armor>
+    <armor id="434" name="White Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t16_u_i00">
+        <price>99900</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="181"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2040</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="498" name="Steel Plate Helmet" commissionType="HELMET" icon="icon.armor_helmet_i00">
+        <price>206000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="82"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>HEAD</bodyPart>
+    </armor>
+    <armor id="435" name="Wizard Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t17_u_i00">
+        <price>99900</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="181"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2030</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="499" name="Mithril Helmet" commissionType="HELMET" icon="icon.armor_circlet_i00">
+        <price>536000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="214"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>240</weight>
+        <bodyPart>HEAD</bodyPart>
+    </armor>
+    <armor id="436" name="Tunic of Knowledge" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t41_u_i00">
+        <price>152000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="276"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="437" name="Mithril Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t51_u_i00">
+        <price>224000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="407"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2010</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="438" name="Sage's Rags" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t44_ul_i00">
+        <price>429000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="780"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2580</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="439" name="Karmian Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t53_u_i00">
+        <price>379000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="151"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1980</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="440" name="Robe of Seal" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t44_ul_i00">
+        <price>707000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="282"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2500</weight>
+        <bodyPart>ONE_PIECE</bodyPart>
+    </armor>
+    <armor id="441" name="Demon's Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t54_u_i00">
+        <price>736000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="294"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1990</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="442" name="Divine Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t57_u_i00">
+        <price>1070000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="428"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1980</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+</itemList>

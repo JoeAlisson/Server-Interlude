@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="3072" name="Spellbook: Purify" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3073" name="Spellbook: Might of Heaven" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3074" name="Spellbook: Surrender to Wind" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3075" name="Spellbook: Blazing Circle" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3076" name="Spellbook: Prominence" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3077" name="Spellbook: Blazing Skin" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3078" name="Spellbook: Decay" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>4600</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3079" name="Spellbook: Cancel" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3080" name="Spellbook: Sleeping Cloud" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3081" name="Spellbook: Aura Flare" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3082" name="Spellbook: Surrender to Water" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3083" name="Spellbook: Frost Wall" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>5400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3084" name="Spellbook: Freezing Shackle" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3085" name="Spellbook: Hydro Blast" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3086" name="Spellbook: Frost Bolt" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3087" name="Spellbook: Ice Dagger" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3088" name="Spellbook: Freezing Skin" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3089" name="Spellbook: Tempest" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3090" name="Spellbook: Hurricane" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3091" name="Spellbook: Servitor Magic Shield" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3092" name="Spellbook: Servitor Physical Shield" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3093" name="Spellbook: Servitor Haste" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3094" name="Spellbook: Invigor" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3095" name="Spellbook: Magic Barrier" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3096" name="Spellbook: Blessed Body" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3097" name="Spellbook: Blessed Soul" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3098" name="Spellbook: Return" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3099" name="Spellbook: Haste" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3000" name="Recipe: Dwarven Chain Shield" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>3120</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>291</recipeId>
+    </item>
+    <item stackable="true" id="3001" name="Recipe: Rind Leather Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>3220</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>292</recipeId>
+    </item>
+    <item stackable="true" id="3002" name="Recipe: Dwarven Chain Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>3220</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>293</recipeId>
+    </item>
+    <item stackable="true" id="3003" name="Recipe: Gloves of Seal" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>3220</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>294</recipeId>
+    </item>
+    <item stackable="true" id="3004" name="Recipe: Rind Leather Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>3220</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>295</recipeId>
+    </item>
+    <item stackable="true" id="3005" name="Recipe: Demon's Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>4900</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>296</recipeId>
+    </item>
+    <item stackable="true" id="3006" name="Recipe: Demon's Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>4900</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>297</recipeId>
+    </item>
+    <item stackable="true" id="3007" name="Recipe: Theca Leather Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>5500</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>298</recipeId>
+    </item>
+    <item stackable="true" id="3008" name="Recipe: Theca Leather Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>5500</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>299</recipeId>
+    </item>
+    <item stackable="true" id="3009" name="Recipe: Compound Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>4900</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>300</recipeId>
+    </item>
+    <item stackable="true" id="3010" name="Recipe: Compound Helmet" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7360</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>301</recipeId>
+    </item>
+    <item stackable="true" id="3011" name="Recipe: Divine Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>302</recipeId>
+    </item>
+    <item stackable="true" id="3012" name="Recipe: Full Plate Helmet" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>10720</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>303</recipeId>
+    </item>
+    <item stackable="true" id="3013" name="Recipe: Drake Leather Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>304</recipeId>
+    </item>
+    <item stackable="true" id="3014" name="Recipe: Full Plate Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>305</recipeId>
+    </item>
+    <item stackable="true" id="3015" name="Recipe: Drake Leather Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>306</recipeId>
+    </item>
+    <item stackable="true" id="3016" name="Recipe: Full Plate Gauntlets" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>307</recipeId>
+    </item>
+    <item stackable="true" id="3017" name="Recipe: Divine Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>308</recipeId>
+    </item>
+    <item stackable="true" id="3018" name="Recipe: Blessed Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7160</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>309</recipeId>
+    </item>
+    <item stackable="true" id="3019" name="Recipe: Full Plate Shield" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>7500</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>310</recipeId>
+    </item>
+    <item stackable="true" id="3020" name="Recipe: Elven Long Sword" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+        <price>36000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>311</recipeId>
+    </item>
+    <item stackable="true" id="3021" name="Recipe: Dwarven War Hammer" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>57400</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>312</recipeId>
+    </item>
+    <item stackable="true" id="3022" name="Recipe: Yaksa Mace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>122600</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>313</recipeId>
+    </item>
+    <item stackable="true" id="3023" name="Recipe: Lesser Giant's Key" type="RECIPE" icon="icon.etc_recipe_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>314</recipeId>
+    </item>
+    <item stackable="true" id="3024" name="Recipe: Journeyman Ring" type="RECIPE" icon="icon.etc_recipe_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>315</recipeId>
+    </item>
+    <item stackable="true" id="3025" name="Recipe: Amber Bead" type="RECIPE" icon="icon.etc_recipe_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>316</recipeId>
+    </item>
+    <weapon id="3026" name="Talin's Spear" type="POLE" icon="icon.weapon_short_spear_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>800</weight>
+        <skill id="3599"/>
+        <damage distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="3027" name="Old Knight Sword" type="SWORD" icon="icon.weapon_brandish_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <damage distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="3028" name="Crescent Moon Bow" type="BOW" icon="icon.weapon_short_bow_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>600</weight>
+        <damage distance="10"/>
+        <consume mp="1" shot="1"/>
+    </weapon>
+    <weapon id="3029" name="Sword of Seal" type="SWORD" icon="icon.weapon_gladius_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1200</weight>
+        <damage distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="3030" name="Lesser Giant's Key" icon="icon.etc_key_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="3031" name="Spirit Ore" type="MATERIAL" icon="icon.etc_stone_gray_i00">
+        <price>400</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3032" name="Recipe: Spiritshot (D-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+        <price>5000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>317</recipeId>
+    </item>
+    <item stackable="true" id="3033" name="Recipe: Spiritshot (C-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>60000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>318</recipeId>
+    </item>
+    <item stackable="true" id="3034" name="Recipe: Spiritshot (B-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>319</recipeId>
+    </item>
+    <item stackable="true" id="3035" name="Recipe: Spiritshot (A-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>150000</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>320</recipeId>
+    </item>
+    <item stackable="true" id="3037" name="Kakan's Letter" icon="icon.etc_scroll_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3038" name="Blueprint: Summon Mechanic Golem" commissionType="SPELLBOOK" icon="icon.etc_plan_i00">
+        <price>21437</price>
+        <restriction freightable="false"/>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3039" name="Spellbook: Summon Storm Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3040" name="Spellbook: Summon Vampiric Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>3700</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3041" name="Spellbook: Summon Phantom Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3042" name="Spellbook: Life Scavenge" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3043" name="Spellbook: Divine Strike" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>4250</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3044" name="Spellbook: Horror" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3045" name="Spellbook: Summon Life Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3046" name="Spellbook: Sacrifice" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3047" name="Spellbook: Iron Will" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3048" name="Spellbook: Reflect Damage" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3049" name="Spellbook: Corpse Plague" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3050" name="Spellbook: Hex" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3051" name="Spellbook: Spirit Barrier" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3052" name="Spellbook: Hamstring" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3053" name="Spellbook: Blessing of Holy" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3054" name="Spellbook: Summon Viper Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+        <price>4800</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3055" name="Spellbook: Lightning Strike" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3056" name="Spellbook: Summon Dark Panther" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3057" name="Spellbook: Summon Reanimated Man" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3058" name="Spellbook: Summon Corrupted Man" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3059" name="Spellbook: Corpse Burst" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>4600</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3060" name="Spellbook: Forget" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3061" name="Spellbook: Curse Discord" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3062" name="Spellbook: Curse Fear" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3063" name="Spellbook: Anchor" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3064" name="Spellbook: Silence" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3065" name="Spellbook: Death Spike" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3066" name="Spellbook: Curse Death Link" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3067" name="Spellbook: Vampiric Claw" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3068" name="Spellbook: Vitalize" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>4600</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3069" name="Spellbook: Repose" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>3850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3070" name="Spellbook: Hold Undead" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>4600</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3071" name="Spellbook: Requiem" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+</itemList>

@@ -167,7 +167,7 @@ public class L2SkillSummon extends L2Skill
 			{
 				if (Config.DEBUG)
 				{
-					_log.debug("player can't summon any more cubics. ignore summon skill");
+					_log.debug("reader can't summon any more cubics. ignore summon skill");
 				}
 				activeChar.sendPacket(new SystemMessage(SystemMessageId.CUBIC_SUMMONING_FAILED));
 				return;
@@ -186,7 +186,7 @@ public class L2SkillSummon extends L2Skill
 		{
 			if (Config.DEBUG)
 			{
-				_log.debug("player has a pet already. ignore summon skill");
+				_log.debug("reader has a pet already. ignore summon skill");
 			}
 			return;
 		}

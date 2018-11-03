@@ -62,15 +62,15 @@ public class PetInventoryUpdate extends L2GameServerPacket {
         writeShort(count);
         for (ItemInfo item : _items) {
             writeShort(item.getChange());
-            writeShort(item.getItem().getType1().getId()); // item type1
+            writeShort(item.getItem().getType().ordinal()); // item type1
             writeInt(item.getObjectId());
             writeInt(item.getItem().getId());
-            writeInt(item.getCount());
-            writeShort(item.getItem().getType2().getId()); // item type2
+            writeLong(item.getCount());
+            writeShort(item.getItem().getCommissionType().ordinal()); // item type2
             writeShort(0x00); // ?
             writeShort(item.getEquipped());
             // writeShort(temp.getItem().getBodyPart()); // rev 377 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
-            writeInt(item.getItem().getBodyPart().getId()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
+            writeInt(0); // TODO item.getItem().getBodyPart().getId()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
             writeShort(item.getEnchant()); // enchant level
             writeShort(0x00); // ?
         }

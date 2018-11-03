@@ -2,7 +2,7 @@ package org.l2j.gameserver.serverpackets;
 
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Object;
-import org.l2j.gameserver.templates.CrystalType;
+import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
 
 public class Attack extends L2GameServerPacket  {
 

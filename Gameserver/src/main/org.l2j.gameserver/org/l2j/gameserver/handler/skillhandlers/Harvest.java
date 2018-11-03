@@ -91,7 +91,7 @@ public class Harvest implements ISkillHandler
 			int total = 0;
 			int cropId = 0;
 			
-			// TODO: check items and amount of items player harvest
+			// TODO: check items and amount of items reader harvest
 			if (_target.isSeeded())
 			{
 				if (calcSuccess())
@@ -168,7 +168,7 @@ public class Harvest implements ISkillHandler
 			diff = -diff;
 		}
 		
-		// apply penalty, target <=> player levels
+		// apply penalty, target <=> reader levels
 		// 5% penalty for each level
 		if (diff > 5)
 		{

@@ -66,11 +66,11 @@ public final class L2ArtefactInstance extends L2NpcInstance
 	}
 	
 	/**
-	 * Manage actions when a player click on the L2ArtefactInstance.<BR>
+	 * Manage actions when a reader click on the L2ArtefactInstance.<BR>
 	 * <BR>
 	 * <B><U> Actions</U> :</B><BR>
 	 * <BR>
-	 * <li>Set the L2NpcInstance as target of the L2PcInstance player (if necessary)</li> <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance player (display the select window)</li> <li>Send a Server->Client packet ValidateLocation to correct the L2NpcInstance position and heading
+	 * <li>Set the L2NpcInstance as target of the L2PcInstance reader (if necessary)</li> <li>Send a Server->Client packet MyTargetSelected to the L2PcInstance reader (display the select window)</li> <li>Send a Server->Client packet ValidateLocation to correct the L2NpcInstance position and heading
 	 * on the client</li><BR>
 	 * <BR>
 	 * <B><U> Example of use </U> :</B><BR>
@@ -89,10 +89,10 @@ public final class L2ArtefactInstance extends L2NpcInstance
 		
 		if (this != player.getTarget())
 		{
-			// Set the target of the L2PcInstance player
+			// Set the target of the L2PcInstance reader
 			player.setTarget(this);
 			
-			// Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+			// Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
 			MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
 			player.sendPacket(my);
 			

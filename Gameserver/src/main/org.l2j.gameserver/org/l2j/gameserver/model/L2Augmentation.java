@@ -139,7 +139,7 @@ public final class L2Augmentation {
     }
 
     /**
-     * Applys the boni to the player.
+     * Applys the boni to the reader.
      *
      * @param player
      */
@@ -154,7 +154,7 @@ public final class L2Augmentation {
     }
 
     /**
-     * Removes the augmentation boni from the player.
+     * Removes the augmentation boni from the reader.
      *
      * @param player
      */

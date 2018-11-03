@@ -8,7 +8,7 @@ public class PrivateStoreListSell extends L2GameServerPacket
 {
 	private L2PcInstance _storePlayer;
 	private final L2PcInstance _activeChar;
-	private final int _playerAdena;
+	private final long _playerAdena;
 	private final boolean _packageSale;
 	private final TradeList.TradeItem[] _items;
 	
@@ -37,21 +37,21 @@ public class PrivateStoreListSell extends L2GameServerPacket
 		writeByte(0x9b);
 		writeInt(_storePlayer.getObjectId());
 		writeInt(_packageSale ? 1 : 0);
-		writeInt(_playerAdena);
+		writeLong(_playerAdena);
 		
 		writeInt(_items.length);
 		for (TradeList.TradeItem item : _items)
 		{
-			writeInt(item.getItem().getType2().getId());
+			writeInt(item.getItem().getCommissionType().ordinal());
 			writeInt(item.getObjectId());
 			writeInt(item.getItem().getId());
-			writeInt(item.getCount());
+			writeLong(item.getCount());
 			writeShort(0x00);
 			writeShort(item.getEnchant());
 			writeShort(0x00);
-			writeInt(item.getItem().getBodyPart().getId());
-			writeInt(item.getPrice()); // your price
-			writeInt(item.getItem().getPrice()); // store price
+			writeInt(0);; // todo item.getItem().getBodyPart().getId());
+			writeLong(item.getPrice()); // your price
+			writeLong(item.getItem().getPrice()); // store price
 		}
 	}
 }

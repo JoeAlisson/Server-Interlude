@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="49500" name="Greater Scroll of Escape" additionalName="Event" icon="icon.etc_scroll_of_return_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49501" name="Fish Stew. The guild's gratitude." icon="icon.ev_invasion_buff_box">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39076"/>
+    </item>
+    <item stackable="true" id="49502" name="Teleport: Giran Harbor" icon="icon.etc_scroll_of_return_i05">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="39078"/>
+    </item>
+    <item stackable="true" id="49503" name="Teleport: Gludin Harbor" icon="icon.etc_scroll_of_return_i05">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="39077"/>
+    </item>
+    <item id="49504" name="Report about Fish" icon="icon.mercenary_certification_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="49505" name="Sealed Bottle" icon="icon.etc_hot_spring_glass_bottle_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <weapon id="49506" name="Fishing Rod" additionalName="10-day" type="FISHINGROD" icon="icon.weapon_fishing_rod_i03">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>14400</time>
+        <weight>1000</weight>
+        </weapon>
+    <item stackable="true" id="49507" name="Fishing Rod Chest (10-day)" icon="icon.etc_box_of_adventure_1_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="49508" name="Normal Bait" additionalName="Event" icon="icon.etc_huge_lure">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49509" name="Ring of Core" additionalName="15-day" commissionType="RING" icon="icon.accessory_ring_of_core_i00">
+        <bodyPart>FINGER</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>150</weight>
+        <skill id="3563"/>
+        </armor>
+    <item id="49510" name="Pierre's letter" icon="icon.etc_letter_envelope_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49511" name="Sheep Gift" icon="icon.etc_treasure_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="49512" name="Amulet: Prosperity" additionalName="14-day" type="ENCHT_ATTR_RUNE" icon="BranchSys3.lcon.g_rune_itemdrop_up">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>20160</time>
+        <weight>0</weight>
+        <skill id="39082"/>
+    </item>
+    <item stackable="true" id="49513" name="Shining Pendant Polish box" icon="icon.bm_special_pendant_abradant_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49514" name="Agathion - Aries" additionalName="60-day" icon="icon.agathion_magmeld_teleport">
+        <bodyPart>UNDERWEAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>86400</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49515" name="Agathion - Aries" icon="icon.agathion_magmeld_teleport">
+        <bodyPart>UNDERWEAR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49516" name="Agathion - Aries" icon="icon.agathion_magmeld_teleport">
+        <bodyPart>UNDERWEAR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <item stackable="true" id="49517" name="Pirate Trophy Chest" icon="icon.bm_pirate_battle_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49518" name="Special Pirate Fruit" icon="icon.etc_codran_i09">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>60000</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39144"/>
+    </item>
+    <item stackable="true" id="49519" name="King Pirate's Treasure Chest" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49520" name="Agation box: Aries" additionalName="60-day" icon="icon.bm_sheep_agathion_30d_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>86400</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49521" name="Refined Romantic Chapeau" additionalName="Special Trait" icon="icon.accessory_archer_hat2_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49522" name="Pirate King Hat" additionalName="Special Trait" icon="BranchSys2.icon.zaken_hair_accessary">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49523" name="Circlet of Devil" additionalName="Special Trait" icon="icon.Accessary_demon_circlet_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <item stackable="true" id="49524" name="Captain Pirate Hat Box" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49525" name="Rare Accessory Box" icon="icon.ev_10th_present2">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55089"/>
+    </item>
+    <item stackable="true" id="49526" name="Improved Scroll of Resurrection" icon="icon.etc_scroll_of_resurrection_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49527" name="My Teleport Pack" icon="icon.etc_pi_gift_box_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49528" name="Pirate Healing Potion" icon="icon.etc_bm_hero_red_potion">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49529" name="Blue Dynasty - Heavy Armor" type="HEAVY" icon="icon.armor_t2000_ul_i00">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49530" name="Blue Dynasty - Diadem" icon="icon.Accessary_angel_circlet_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49531" name="Red Zubei - Heavy Armor" type="HEAVY" icon="icon.armor_t2000_ul_i00">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49532" name="White Murderer Suit" type="HEAVY" icon="icon.dark_assassin">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <item stackable="true" id="49533" name="Quick Hero Healing Potion" icon="icon.etc_potion_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>180</weight>
+    </item>
+    <item id="49534" name="Hero Cube" additionalName="7-day" icon="icon.special_cube_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49535" name="Fishing kit of the Hero Who Came Back" icon="icon.etc_elite_marguene_collection_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49536" name="Box of Scroll of Escape to the Base" icon="icon.etc_treasure_box_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49537" name="Teleport: Dragon Valley Bridge" icon="icon.etc_scroll_of_return_i05">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49538" name="Teleport: Antharas' Lair" icon="icon.etc_scroll_of_return_i05">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49539" name="Teleport: Entrance to Cruma Tower" icon="icon.etc_scroll_of_return_i05">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49540" name="Teleport: Entrance to Orc Barracks" icon="icon.etc_scroll_of_return_i05">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49541" name="Spellbook Chest" icon="icon.etc_treasure_box_i05">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39059"/>
+    </item>
+    <item stackable="true" id="49542" name="Improved Scroll of Resurrection" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+        <skill id="39109"/>
+    </item>
+    <item stackable="true" id="49543" name="Elemental Stone" icon="icon.etc_crystal_cave_crystal_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49544" name="Warrior's Armor1" type="HEAVY" icon="BranchSys3.iconArmor.g_co_captain_i00">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49545" name="Warrior's Armor2" type="HEAVY" icon="icon.dark_assassin">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49546" name="Warrior's Armor3" type="HEAVY" icon="icon.dark_kninght">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49547" name="Mage's Armor1" type="MAGIC" icon="icon.dark_assassin">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49548" name="Mage's Armor2" type="MAGIC" icon="icon.dark_assassin">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49549" name="Mage's Armor3" type="MAGIC" icon="icon.ev_wp_halloween">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <item stackable="true" id="49550" name="Teleport Device - Entrance to Enchanted Valley" icon="icon.etc_scroll_of_return_i05">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <armor id="49551" name="Blue Dynasty - Light Armor" type="LIGHT" icon="icon.armor_t2000_ul_i00">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49552" name="Blue Dynasty - Magic Armor" type="MAGIC" icon="icon.armor_t2000_ul_i00">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49553" name="Red Zubei - Light Armor" type="LIGHT" icon="icon.armor_t2000_ul_i00">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <armor id="49554" name="Red Zubei - Magic Armor" type="MAGIC" icon="icon.armor_t2000_ul_i00">
+        <bodyPart>FULL_BODY</bodyPart>
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        </armor>
+    <item stackable="true" id="49555" name="Mold" icon="icon.etc_mold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49556" name="Amora's Receipt" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49557" name="Armor Trade Contract" icon="icon.etc_paper_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49558" name="Turek Orc Order" icon="icon.etc_roll_of_paper_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49559" name="Rolento's Bag" icon="icon.pouch_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49560" name="Iron Scale Guild Certificate" icon="icon.etc_letter_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49561" name="Turek Orc Invader Head" icon="icon.etc_skull_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49562" name="Spellbook: Spirit Sharing" icon="icon.etc_spell_books_summon_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49563" name="1,000,000,000 Adena" additionalName="Event" icon="icon.fairy_adena_joke">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49564" name="10,000,000,000 Adena" additionalName="Event" icon="icon.fairy_adena_joke">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49565" name="Misfety's Gift" additionalName="Event" icon="icon.etc_pi_box_joy_pack">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49566" name="Roa's Gift" additionalName="Event" icon="icon.etc_ev_draco_gift_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49567" name="Something Roa lost" additionalName="Event" icon="icon.event_july_seven_park_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49568" name="Spellbook: Sonic Move" icon="icon.etc_spell_books_blue_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49569" name="Spellbook: Sand Bomb" icon="icon.etc_spell_books_blue_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49570" name="Spellbook: Mass Curse Gloom" icon="icon.etc_spell_books_blue_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49571" name="Spellbook: Clear Mind" icon="icon.etc_spell_books_blue_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <weapon id="49573" name="Samurai Black Long Sword*Samurai Black Long Sword" additionalName="30-day" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <bodyPart>TWO_HANDS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>2340</weight>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="49574" name="Enhanced Queen Ant's Ring" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i02">
+        <bodyPart>FINGER</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3562" level="2"/>
+        </armor>
+    <armor id="49575" name="Enhanced Orfen's Earring" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i02">
+        <bodyPart>EAR</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3560" level="2"/>
+        </armor>
+    <armor id="49576" name="Enhanced Ring of Core" commissionType="RING" icon="icon.accessory_ring_of_core_i02">
+        <bodyPart>FINGER</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3563" level="2"/>
+        </armor>
+    <armor id="49577" name="Refined Queen Ant's Ring" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
+        <bodyPart>FINGER</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3562" level="3"/>
+        </armor>
+    <armor id="49578" name="Refined Orfen's Earring" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
+        <bodyPart>EAR</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3560" level="3"/>
+        </armor>
+    <armor id="49579" name="Refined Ring of Core" commissionType="RING" icon="icon.accessory_ring_of_core_i03">
+        <bodyPart>FINGER</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3563" level="3"/>
+        <skill id="35016"/>
+        </armor>
+    <armor id="49580" name="Baium's Ring" commissionType="RING" icon="icon.accessory_ring_of_baium_i00">
+        <bodyPart>FINGER</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3561"/>
+        </armor>
+    <armor id="49581" name="Reinforced Baium's Ring" commissionType="RING" icon="icon.accessory_ring_of_baium_i02">
+        <bodyPart>FINGER</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3561" level="2"/>
+        </armor>
+    <armor id="49582" name="Refined Baium's Ring" commissionType="RING" icon="icon.accessory_ring_of_baium_i03">
+        <bodyPart>FINGER</bodyPart>
+        <price>100000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="3561" level="3"/>
+        </armor>
+    <item stackable="true" id="49583" name="Golden Mermaid's Fishing Supplies Chest" icon="icon.etc_treasure_box_i08">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49584" name="Golden Boot" icon="icon.bm_gold_shose">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="49585" name="Golden Necklace of Mermaid" additionalName="7-day" icon="icon.general_fuel_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <skill id="39113"/>
+    </item>
+    <weapon id="49586" name="Mermaid's Golden Fishing Rod" additionalName="30-day" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1000</weight>
+        </weapon>
+    <weapon id="49587" name="Mermaid's Golden Fishing Rod" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        </weapon>
+    <item stackable="true" id="49588" name="Mermaid Golden Fishing Rod Chest" additionalName="30-day" icon="icon.etc_bm_lure_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="49589" name="Golden Bait" icon="icon.bm_gold_lure">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49590" name="Refined Rare Accessory Pack" additionalName="30-day" icon="icon.etc_box_of_adventure_3_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49591" name="Refined Queen Ant's Ring" additionalName="30-day" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
+        <bodyPart>FINGER</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>150</weight>
+        <skill id="3562" level="3"/>
+        </armor>
+    <armor id="49592" name="Refined Orfen's Earring" additionalName="30-day" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>150</weight>
+        <skill id="3560" level="3"/>
+        </armor>
+    <armor id="49593" name="Refined Ring of Core" additionalName="30-day" commissionType="RING" icon="icon.accessory_ring_of_core_i03">
+        <bodyPart>FINGER</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>150</weight>
+        <skill id="3563" level="3"/>
+        <skill id="35016"/>
+        </armor>
+    <item stackable="true" id="49594" name="Whale" icon="icon.fish_huge_i15">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49595" name="Scroll: 2000 SP" icon="icon.etc_sp_scroll1_i00">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49596" name="Scroll: 10000 SP" icon="icon.etc_sp_scroll2_i00">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49597" name="Golden Boots" icon="icon.bm_gold_shose">
+        <price>0</price>
+        <restriction dropable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

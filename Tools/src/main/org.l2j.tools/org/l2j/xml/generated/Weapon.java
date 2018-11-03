@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.01 às 01:28:10 PM BRT 
+// Gerado em: 2018.11.02 às 11:52:58 AM BRT 
 //
 
 
@@ -24,11 +24,11 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType name="Weapon"&gt;
  *   &lt;complexContent&gt;
  *     &lt;extension base="{http://la2j.org}ItemTemplate"&gt;
- *       &lt;choice&gt;
- *         &lt;element name="bodyPart" type="{http://la2j.org}BodyPart"/&gt;
- *         &lt;element name="damage" type="{http://la2j.org}Damage"/&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="bodyPart" type="{http://la2j.org}BodyPart" minOccurs="0"/&gt;
+ *         &lt;element name="damage" type="{http://la2j.org}Damage" minOccurs="0"/&gt;
  *         &lt;element name="consume" type="{http://la2j.org}ItemConsume" minOccurs="0"/&gt;
- *       &lt;/choice&gt;
+ *       &lt;/sequence&gt;
  *       &lt;attribute name="shots" type="{http://www.w3.org/2001/XMLSchema}int" default="1" /&gt;
  *       &lt;attribute name="magic" type="{http://www.w3.org/2001/XMLSchema}boolean" default="false" /&gt;
  *     &lt;/extension&gt;

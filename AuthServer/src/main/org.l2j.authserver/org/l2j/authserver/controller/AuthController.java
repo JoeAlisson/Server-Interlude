@@ -178,6 +178,9 @@ public class AuthController {
         requestAccountInfo(client, account);
         updateClientInfo(client, account);
         authedClients.put(account.getId(), client);
+        if(client.getRequestdServersInfo() == 0) {
+            client.sendPacket(new LoginOk());
+        }
         bruteForceProtection.remove(account.getId());
         getRepository(AccountRepository.class).save(account);
         loginLogger.info("Account Logged {}", account.getId());

@@ -12,7 +12,8 @@ public class SpawnItemPoly extends L2GameServerPacket
 	private int _objectId;
 	private int _itemId;
 	private int _x, _y, _z;
-	private int _stackable, _count;
+	private int _stackable;
+	private long _count;
 	
 	public SpawnItemPoly(L2Object object)
 	{
@@ -51,7 +52,7 @@ public class SpawnItemPoly extends L2GameServerPacket
 		writeInt(_z);
 		// only show item count if it is a stackable item
 		writeInt(_stackable);
-		writeInt(_count);
+		writeLong(_count);
 		writeInt(0x00); // c2
 	}
 }

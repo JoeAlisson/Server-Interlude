@@ -1,0 +1,108 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://la2j.org"
+           xmlns="http://la2j.org"
+           elementFormDefault="qualified">
+
+    <xs:element name="operator" type="Operator"/>
+    <xs:element name="and" type="AND" substitutionGroup="operator"/>
+    <xs:element name="or" type="OR" substitutionGroup="operator"/>
+    <xs:element name="not" type="NOT" substitutionGroup="operator"/>
+
+    <xs:complexType name="Operator" abstract="true"/>
+
+    <xs:complexType name="AND">
+        <xs:complexContent>
+            <xs:extension base="Operator">
+                <xs:sequence>
+                    <xs:element ref="operator" maxOccurs="unbounded" minOccurs="0"/>
+                    <xs:element ref="condition" maxOccurs="unbounded" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="OR">
+        <xs:complexContent>
+            <xs:extension base="Operator">
+                <xs:sequence>
+                    <xs:element ref="operator" maxOccurs="unbounded" minOccurs="0"/>
+                    <xs:element ref="condition" maxOccurs="unbounded" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="NOT">
+        <xs:complexContent>
+            <xs:extension base="Operator">
+                <xs:choice>
+                    <xs:element ref="operator"/>
+                    <xs:element ref="condition"/>
+                </xs:choice>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="condition" type="Condition"/>
+    <xs:element name="owner" type="OwnerCondition" substitutionGroup="condition"/>
+    <xs:element name="state" type="StateCondition" substitutionGroup="condition"/>
+    <xs:element name="level" type="LevelCondition" substitutionGroup="condition"/>
+
+    <xs:complexType name="Condition" abstract="true"/>
+
+    <xs:complexType name="OwnerCondition">
+        <xs:complexContent>
+            <xs:extension base="Condition">
+                <xs:attribute name="type" type="OwnerConditionType" use="required"/>
+                <xs:attribute name="ownedId" type="xs:int" default="-1"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:simpleType name="OwnerConditionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="OWNER_CASTLE"/>
+            <xs:enumeration value="OWNER_CASTLE_LEADER"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="StateCondition">
+        <xs:complexContent>
+            <xs:extension base="Condition">
+                <xs:attribute name="state" type="StateType" use="required"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:simpleType name="StateType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="IN_OLYMPIAD"/>
+            <xs:enumeration value="FLYING"/>
+            <xs:enumeration value="MOUNTING"/>
+            <xs:enumeration value="IS_CHAOTIC"/>
+            <xs:enumeration value="IS_HERO"/>
+            <xs:enumeration value="IS_MALE"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="LevelCondition">
+        <xs:complexContent>
+            <xs:extension base="Condition">
+                <xs:attribute name="min" type="xs:int" default="0"/>
+                <xs:attribute name="max" type="xs:int" default="100"/>
+                <xs:attribute name="target" type="xs:boolean" default="false"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="UseCondition">
+        <xs:choice>
+            <xs:element ref="operator"/>
+            <xs:element ref="condition"/>
+        </xs:choice>
+        <xs:attribute name="message" type="xs:string" />
+        <xs:attribute name="messageId" type="xs:int" />
+        <xs:attribute name="includeName" type="xs:boolean"/>
+    </xs:complexType>
+
+</xs:schema>

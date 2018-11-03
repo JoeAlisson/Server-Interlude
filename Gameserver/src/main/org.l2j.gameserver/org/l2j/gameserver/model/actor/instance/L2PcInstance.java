@@ -33,8 +33,8 @@ import org.l2j.gameserver.model.actor.status.PcStatus;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.model.base.PlayerClass;
 import org.l2j.gameserver.model.base.SubClass;
-import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.*;
+import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.repository.*;
 import org.l2j.gameserver.model.entity.*;
 import org.l2j.gameserver.model.quest.Quest;
@@ -45,7 +45,10 @@ import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.skills.Formulas;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.*;
+import org.l2j.gameserver.templates.xml.jaxb.Armor;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.l2j.gameserver.templates.xml.jaxb.Race;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
 import org.l2j.gameserver.util.FloodProtector;
 import org.l2j.gameserver.util.Point3D;
@@ -174,7 +177,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         public void doAttack(L2Character target) {
             super.doAttack(target);
 
-            // cancel the recent fake-death protection instantly if the player attacks or casts spells
+            // cancel the recent fake-death protection instantly if the reader attacks or casts spells
             setRecentFakeDeath(false);
             for (L2CubicInstance cubic : getCubics().values()) {
                 if (cubic.getId() != L2CubicInstance.LIFE_CUBIC) {
@@ -187,7 +190,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         public void doCast(L2Skill skill) {
             super.doCast(skill);
 
-            // cancel the recent fake-death protection instantly if the player attacks or casts spells
+            // cancel the recent fake-death protection instantly if the reader attacks or casts spells
             setRecentFakeDeath(false);
             if (skill == null) {
                 return;
@@ -240,12 +243,12 @@ public final class L2PcInstance extends L2PlayableInstance {
     private int _karma;
 
     /**
-     * The number of player killed during a PvP (the player killed was PvP Flagged).
+     * The number of reader killed during a PvP (the reader killed was PvP Flagged).
      */
     private int _pvpKills;
 
     /**
-     * The PK counter of the L2PcInstance (= Number of non PvP Flagged player killed).
+     * The PK counter of the L2PcInstance (= Number of non PvP Flagged reader killed).
      */
     private int _pkKills;
 
@@ -512,7 +515,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     private boolean _hero = false;
 
     /**
-     * The L2FolkInstance corresponding to the last Folk which one the player talked.
+     * The L2FolkInstance corresponding to the last Folk which one the reader talked.
      */
     private L2FolkInstance _lastFolkNpc = null;
 
@@ -542,7 +545,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     private final List<L2PcInstance> _snoopListener = new LinkedList<>();
 
     /**
-     * The _snooped player.
+     * The _snooped reader.
      */
     private final List<L2PcInstance> _snoopedPlayer = new LinkedList<>();
 
@@ -677,7 +680,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     private int _pledgeType = 0;
 
     /**
-     * Level at which the player joined the clan as an academy member.
+     * Level at which the reader joined the clan as an academy member.
      */
     private int _lvlJoinedAcademy = 0;
 
@@ -738,7 +741,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     private L2Party _party;
 
-    // this is needed to find the inviting player for Party response
+    // this is needed to find the inviting reader for Party response
     // there can only be one active party request at once
     /**
      * The _active requester.
@@ -1191,7 +1194,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
 
     /**
-     * Creates the dummy player.
+     * Creates the dummy reader.
      *
      * @param objectId the object id
      * @param name     the name
@@ -1534,7 +1537,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * Checks for recipe list.
      *
      * @param recipeId the recipe id
-     * @return true, if successful <b>TRUE</b> if player has the recipe on Common or Dwarven Recipe book else returns <b>FALSE</b>
+     * @return true, if successful <b>TRUE</b> if reader has the recipe on Common or Dwarven Recipe book else returns <b>FALSE</b>
      */
     public boolean hasRecipeList(int recipeId) {
         if (_dwarvenRecipeBook.containsKey(recipeId)) {
@@ -2300,7 +2303,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         for (L2ItemInstance item : getInventory().getItems()) {
             if ((item != null) && item.isEquipped()) {
-                int crystaltype = item.getItem().getCrystalType().ordinal();
+                int crystaltype = item.getItem().getCrystalInfo().getType().ordinal();
 
                 if (crystaltype > newPenalty) {
                     newPenalty = crystaltype;
@@ -2369,11 +2372,11 @@ public final class L2PcInstance extends L2PlayableInstance {
             return;
         }
 
-        if ((unequipped.getItem().getType2() == ItemTypeGroup.TYPE2_WEAPON) && (equipped == null ? true : equipped.getItem().getCrystalType() != unequipped.getItem().getCrystalType())) {
+        if ((unequipped.getItem() instanceof org.l2j.gameserver.templates.xml.jaxb.Weapon) && (equipped == null || equipped.getItem().getCrystalInfo().getType() != unequipped.getItem().getCrystalInfo().getType())) {
             for (L2ItemInstance ss : getInventory().getItems()) {
                 int _itemId = ss.getItemId();
 
-                if ((((_itemId >= 2509) && (_itemId <= 2514)) || ((_itemId >= 3947) && (_itemId <= 3952)) || ((_itemId <= 1804) && (_itemId >= 1808)) || (_itemId == 5789) || (_itemId == 5790) || (_itemId == 1835)) && (ss.getItem().getCrystalType() == unequipped.getItem().getCrystalType())) {
+                if ((((_itemId >= 2509) && (_itemId <= 2514)) || ((_itemId >= 3947) && (_itemId <= 3952)) || ((_itemId <= 1804) && (_itemId >= 1808)) || (_itemId == 5789) || (_itemId == 5790) || (_itemId == 1835)) && (ss.getItem().getCrystalInfo().getType() == unequipped.getItem().getCrystalInfo().getType())) {
                     sendPacket(new ExAutoSoulShot(_itemId, 0));
 
                     SystemMessage sm = new SystemMessage(SystemMessageId.AUTO_USE_OF_S1_CANCELLED);
@@ -2385,7 +2388,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Return the the PvP Kills of the L2PcInstance (Number of player killed during a PvP).
+     * Return the the PvP Kills of the L2PcInstance (Number of reader killed during a PvP).
      *
      * @return the pvp kills
      */
@@ -2394,7 +2397,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Set the the PvP Kills of the L2PcInstance (Number of player killed during a PvP).
+     * Set the the PvP Kills of the L2PcInstance (Number of reader killed during a PvP).
      *
      * @param pvpKills the new pvp kills
      */
@@ -2645,7 +2648,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Give allTemplates available skills to the player.<br>
+     * Give allTemplates available skills to the reader.<br>
      * <br>
      */
     private void giveAvailableSkills() {
@@ -2653,7 +2656,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         int skillCounter = 0;
 
         // Get available skills
-        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(this, getPlayerClass());
+        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(this, getTemplate());
         while (skills.size()> unLearnable) {
             for (SkillInfo s : skills) {
                 L2Skill sk = SkillTable.getInstance().getInfo(s.getId(), s.getLevel());
@@ -2670,7 +2673,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             }
 
             // Get new available skills
-            skills = SkillTreeTable.getInstance().getAvailableSkills(this, getPlayerClass());
+            skills = SkillTreeTable.getInstance().getAvailableSkills(this, getTemplate());
         }
 
         sendMessage("You have learned " + skillCounter + " new skills.");
@@ -2735,7 +2738,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     public boolean isCastleLord(int castleId) {
         L2Clan clan = getClan();
 
-        // player has clan and is the clan leader, check the castle info
+        // reader has clan and is the clan leader, check the castle info
         if ((clan != null) && (clan.getLeader().getPlayerInstance() == this)) {
             // if the clan has a castle and it is actually the queried castle, return true
             Castle castle = CastleManager.getInstance().getCastleByOwner(clan);
@@ -2896,7 +2899,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         /**
          * Instantiates a new sit down task.
          *
-         * @param player the player
+         * @param player the reader
          */
         SitDownTask(L2PcInstance player) {
             _player = player;
@@ -2922,7 +2925,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         /**
          * Instantiates a new stand up task.
          *
-         * @param player the player
+         * @param player the reader
          */
         StandUpTask(L2PcInstance player) {
             _player = player;
@@ -3020,7 +3023,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @return the adena
      */
-    public int getAdena() {
+    public long getAdena() {
         return _inventory.getAdena();
     }
 
@@ -3029,7 +3032,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @return the ancient adena
      */
-    public int getAncientAdena() {
+    public long getAncientAdena() {
         return _inventory.getAncientAdena();
     }
 
@@ -3041,7 +3044,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @param reference   : L2Object Object referencing current action like NPC selling item or previous item in transformation
      * @param sendMessage : boolean Specifies whether to send message to Client about this action
      */
-    public void addAdena(String process, int count, L2Object reference, boolean sendMessage) {
+    public void addAdena(String process, long count, L2Object reference, boolean sendMessage) {
         if (sendMessage) {
             SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_ADENA);
             sm.addNumber(count);
@@ -3071,7 +3074,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @param sendMessage : boolean Specifies whether to send message to Client about this action
      * @return boolean informing if the action was successfull
      */
-    public boolean reduceAdena(String process, int count, L2Object reference, boolean sendMessage) {
+    public boolean reduceAdena(String process, long count, L2Object reference, boolean sendMessage) {
         if (count > getAdena()) {
             if (sendMessage) {
                 sendPacket(new SystemMessage(SystemMessageId.YOU_NOT_ENOUGH_ADENA));
@@ -3110,7 +3113,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @param reference   : L2Object Object referencing current action like NPC selling item or previous item in transformation
      * @param sendMessage : boolean Specifies whether to send message to Client about this action
      */
-    public void addAncientAdena(String process, int count, L2Object reference, boolean sendMessage) {
+    public void addAncientAdena(String process, long count, L2Object reference, boolean sendMessage) {
         if (sendMessage) {
             SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
             sm.addItemName(PcInventory.ANCIENT_ADENA_ID);
@@ -3326,7 +3329,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return boolean informing if the action was successfull
      */
     public boolean destroyItem(String process, L2ItemInstance item, L2Object reference, boolean sendMessage) {
-        int oldCount = item.getCount();
+        long oldCount = item.getCount();
         item = _inventory.destroyItem(process, item, this, reference);
 
         if (item == null) {
@@ -3373,7 +3376,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return boolean informing if the action was successfull
      */
     @Override
-    public boolean destroyItem(String process, int objectId, int count, L2Object reference, boolean sendMessage) {
+    public boolean destroyItem(String process, int objectId, long count, L2Object reference, boolean sendMessage) {
         L2ItemInstance item = _inventory.getItemByObjectId(objectId);
 
         if ((item == null) || (item.getCount() < count) || (_inventory.destroyItem(process, objectId, count, this, reference) == null)) {
@@ -3482,7 +3485,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return boolean informing if the action was successfull
      */
     @Override
-    public boolean destroyItemByItemId(String process, int itemId, int count, L2Object reference, boolean sendMessage) {
+    public boolean destroyItemByItemId(String process, int itemId, long count, L2Object reference, boolean sendMessage) {
         L2ItemInstance item = _inventory.getItemByItemId(itemId);
 
         if ((item == null) || (item.getCount() < count) || (_inventory.destroyItemByItemId(process, itemId, count, this, reference) == null)) {
@@ -3540,7 +3543,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                     continue;
                 }
 
-                // Send an Unequipped Message in system window of the player for each Item
+                // Send an Unequipped Message in system window of the reader for each Item
                 SystemMessage sm = new SystemMessage(SystemMessageId.S1_DISARMED);
                 sm.addItemName(item.getItemId());
                 sendPacket(sm);
@@ -3548,12 +3551,12 @@ public final class L2PcInstance extends L2PlayableInstance {
             }
         }
 
-        // Send the StatusUpdate Server->Client Packet to the player with new CUR_LOAD (0x0e) information
+        // Send the StatusUpdate Server->Client Packet to the reader with new CUR_LOAD (0x0e) information
         StatusUpdate su = new StatusUpdate(getObjectId());
         su.addAttribute(StatusUpdate.CUR_LOAD, getCurrentLoad());
         sendPacket(su);
 
-        // Send the ItemList Server->Client Packet to the player in order to refresh its Inventory
+        // Send the ItemList Server->Client Packet to the reader in order to refresh its Inventory
         ItemList il = new ItemList(getInventory().getItems(), true);
         sendPacket(il);
 
@@ -3777,34 +3780,34 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @param action   the action
      * @return the l2 item instance
      */
-    public L2ItemInstance checkItemManipulation(int objectId, int count, String action) {
+    public L2ItemInstance checkItemManipulation(int objectId, long count, String action) {
         // TODO: if we remove objects that are not visisble from the L2World, we'll have to remove this check
         if (L2World.getInstance().findObject(objectId) == null) {
-            _log.debug(getObjectId() + ": player tried to " + action + " item not available in L2World");
+            _log.debug(getObjectId() + ": reader tried to " + action + " item not available in L2World");
             return null;
         }
 
         L2ItemInstance item = getInventory().getItemByObjectId(objectId);
 
         if ((item == null) || (item.getOwnerId() != getObjectId())) {
-            _log.debug(getObjectId() + ": player tried to " + action + " item he is not owner of");
+            _log.debug(getObjectId() + ": reader tried to " + action + " item he is not owner of");
             return null;
         }
 
         if ((count < 0) || ((count > 1) && !item.isStackable())) {
-            _log.debug(getObjectId() + ": player tried to " + action + " item with invalid count: " + count);
+            _log.debug(getObjectId() + ": reader tried to " + action + " item with invalid count: " + count);
             return null;
         }
 
         if (count > item.getCount()) {
-            _log.debug(getObjectId() + ": player tried to " + action + " more items than he owns");
+            _log.debug(getObjectId() + ": reader tried to " + action + " more items than he owns");
             return null;
         }
 
         // Pet is summoned and not the item that summoned the pet AND not the buggle from strider you're mounting
         if (((getPet() != null) && (getPet().getControlItemId() == objectId)) || (getMountObjectID() == objectId)) {
             if (Config.DEBUG) {
-                _log.debug(getObjectId() + ": player tried to " + action + " item controling pet");
+                _log.debug(getObjectId() + ": reader tried to " + action + " item controling pet");
             }
 
             return null;
@@ -3812,7 +3815,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         if ((getActiveEnchantItem() != null) && (getActiveEnchantItem().getObjectId() == objectId)) {
             if (Config.DEBUG) {
-                _log.debug(getObjectId() + ":player tried to " + action + " an enchant scroll he was using");
+                _log.debug(getObjectId() + ":reader tried to " + action + " an enchant scroll he was using");
             }
 
             return null;
@@ -3885,21 +3888,21 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Manage actions when a player click on this L2PcInstance. <BR>
+     * Manage actions when a reader click on this L2PcInstance. <BR>
      * <B><U> Actions on first click on the L2PcInstance (Select it)</U> :</B><BR>
-     * <li>Set the target of the player</li> <li>Send a Server->Client packet MyTargetSelected to the player (display the select window)</li><BR>
+     * <li>Set the target of the reader</li> <li>Send a Server->Client packet MyTargetSelected to the reader (display the select window)</li><BR>
      * <BR>
      * <B><U> Actions on second click on the L2PcInstance (Follow it/Attack it/Intercat with it)</U> :</B><BR>
      * <BR>
-     * <li>Send a Server->Client packet MyTargetSelected to the player (display the select window)</li> <li>If this L2PcInstance has a Private Store, notify the player AI with AI_INTENTION_INTERACT</li> <li>If this L2PcInstance is autoAttackable, notify the player AI with AI_INTENTION_ATTACK</li><BR>
+     * <li>Send a Server->Client packet MyTargetSelected to the reader (display the select window)</li> <li>If this L2PcInstance has a Private Store, notify the reader AI with AI_INTENTION_INTERACT</li> <li>If this L2PcInstance is autoAttackable, notify the reader AI with AI_INTENTION_ATTACK</li><BR>
      * <BR>
-     * <li>If this L2PcInstance is NOT autoAttackable, notify the player AI with AI_INTENTION_FOLLOW</li><BR>
+     * <li>If this L2PcInstance is NOT autoAttackable, notify the reader AI with AI_INTENTION_FOLLOW</li><BR>
      * <BR>
      * <B><U> Example of use </U> :</B><BR>
      * <BR>
      * <li>Client packet : Action, AttackRequest</li><BR>
      *
-     * @param player The player that start an action on this L2PcInstance
+     * @param player The reader that start an action on this L2PcInstance
      */
     @Override
     public void onAction(L2PcInstance player) {
@@ -3911,17 +3914,17 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         // Check if the L2PcInstance is confused
         if (player.isOutOfControl()) {
-            // Send a Server->Client packet ActionFailed to the player
+            // Send a Server->Client packet ActionFailed to the reader
             player.sendPacket(new ActionFailed());
             return;
         }
 
-        // Check if the player already target this L2PcInstance
+        // Check if the reader already target this L2PcInstance
         if (player.getTarget() != this) {
-            // Set the target of the player
+            // Set the target of the reader
             player.setTarget(this);
 
-            // Send a Server->Client packet MyTargetSelected to the player
+            // Send a Server->Client packet MyTargetSelected to the reader
             // The color to display in the select window is White
             player.sendPacket(new MyTargetSelected(getObjectId(), 0));
             if (player != this) {
@@ -4851,7 +4854,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                     if (itemDrop.isAugmented() || // Dont drop augmented items
                             itemDrop.isShadowItem() || // Dont drop Shadow Items
                             (itemDrop.getItemId() == 57) || // Adena
-                            (itemDrop.getItem().getType2() == ItemTypeGroup.TYPE2_QUEST) || // Quest Items
+                            (itemDrop.getItem().isQuestItem()) || // Quest Items
                             nonDroppableList.contains(itemDrop.getItemId()) || // Item listed in the non droppable item list
                             nonDroppableListPet.contains(itemDrop.getItemId()) || // Item listed in the non droppable pet item list
                             ((getPet() != null) && (getPet().getControlItemId() == itemDrop.getItemId() // Control Item of active pet
@@ -4861,7 +4864,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
                     if (itemDrop.isEquipped()) {
                         // Set proper chance according to Item type of equipped Item
-                        itemDropPercent = itemDrop.getItem().getType2() == ItemTypeGroup.TYPE2_WEAPON ? dropEquipWeapon : dropEquip;
+                        itemDropPercent = itemDrop.getItem() instanceof Weapon ? dropEquipWeapon : dropEquip;
                         getInventory().unEquipItemInSlotAndRecord(itemDrop.getEquipSlot());
                     } else {
                         itemDropPercent = dropItem; // Item in inventory
@@ -4928,10 +4931,10 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
 
         if (targetPlayer == null) {
-            return; // Target player is null
+            return; // Target reader is null
         }
         if (targetPlayer == this) {
-            return; // Target player is self
+            return; // Target reader is self
         }
 
         if (isCursedWeaponEquiped()) {
@@ -4951,14 +4954,14 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         // Check if it's pvp
         if ((checkIfPvP(target) && // Can pvp and
-                (targetPlayer.getPvpFlag() != 0 // Target player has pvp flag set
+                (targetPlayer.getPvpFlag() != 0 // Target reader has pvp flag set
                 )) || // or
                 (isInsideZone(ZONE_PVP) && // Player is inside pvp zone and
-                        targetPlayer.isInsideZone(ZONE_PVP) // Target player is inside pvp zone
+                        targetPlayer.isInsideZone(ZONE_PVP) // Target reader is inside pvp zone
                 )) {
             increasePvpKills();
         } else
-        // Target player doesn't have pvp flag set
+        // Target reader doesn't have pvp flag set
         {
             // check about wars
             if ((targetPlayer.getClan() != null) && (getClan() != null)) {
@@ -4972,12 +4975,12 @@ public final class L2PcInstance extends L2PlayableInstance {
             }
 
             // 'No war' or 'One way war' -> 'Normal PK'
-            if (targetPlayer.getKarma() > 0) // Target player has karma
+            if (targetPlayer.getKarma() > 0) // Target reader has karma
             {
                 if (Config.KARMA_AWARD_PK_KILL) {
                     increasePvpKills();
                 }
-            } else if (targetPlayer.getPvpFlag() == 0) // Target player doesn't have karma
+            } else if (targetPlayer.getPvpFlag() == 0) // Target reader doesn't have karma
             {
                 increasePkKillsAndKarma(targetPlayer.getLevel());
             }
@@ -4985,7 +4988,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Increase the pvp kills count and send the info to the player.
+     * Increase the pvp kills count and send the info to the reader.
      */
     public void increasePvpKills() {
         // Add karma to attacker and increase its PK counter
@@ -4996,9 +4999,9 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Increase pk count, karma and send the info to the player.
+     * Increase pk count, karma and send the info to the reader.
      *
-     * @param targLVL : level of the killed player
+     * @param targLVL : level of the killed reader
      */
     public void increasePkKillsAndKarma(int targLVL) {
         int baseKarma = Config.KARMA_MIN_KARMA;
@@ -5064,7 +5067,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     public int calculateKarmaLost(long exp) {
         // KARMA LOSS
-        // When a PKer gets killed by another player or a L2MonsterInstance, it loses a certain amount of Karma based on their level.
+        // When a PKer gets killed by another reader or a L2MonsterInstance, it loses a certain amount of Karma based on their level.
         // this (with defaults) results in a level 1 losing about ~2 karma per death, and a lvl 70 loses about 11760 karma per death...
         // You lose karma as long as you were not in a pvp zone and you did not kill urself.
         // NOTE: exp for death (if delevel is allowed) is based on the players level
@@ -5720,7 +5723,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Disarm the player's weapon and shield.
+     * Disarm the reader's weapon and shield.
      *
      * @return true, if successful
      */
@@ -5745,7 +5748,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 wpn.getAugmentation().removeBoni(this);
             }
 
-            L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(wpn.getItem().getBodyPart());
+            L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(((Weapon)wpn.getItem()).getBodyPart());
             InventoryUpdate iu = new InventoryUpdate();
             for (L2ItemInstance element : unequiped) {
                 iu.addModifiedItem(element);
@@ -5777,7 +5780,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 return false;
             }
 
-            L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(sld.getItem().getBodyPart());
+            L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(((Armor)sld.getItem()).getBodyPart());
             InventoryUpdate iu = new InventoryUpdate();
             for (L2ItemInstance element : unequiped) {
                 iu.addModifiedItem(element);
@@ -5816,9 +5819,9 @@ public final class L2PcInstance extends L2PlayableInstance {
             return false;
         }
 
-        if (weaponItem.getType() == ItemType.DUAL) {
+        if (weaponItem.getType() == org.l2j.gameserver.templates.xml.jaxb.ItemType.DUAL) {
             return true;
-        } else if (weaponItem.getType() == ItemType.DUAL_FIST) {
+        } else if (weaponItem.getType() == org.l2j.gameserver.templates.xml.jaxb.ItemType.DUALFIST) {
             return true;
         } else if (weaponItem.getId() == 248) {
             return true;
@@ -6224,7 +6227,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             player.refreshOverloaded();
             return player;
         } else{
-            _log.warn("Couldn't restore player from database!!!");
+            _log.warn("Couldn't restore reader from database!!!");
             return null;
         }
     }
@@ -6329,7 +6332,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * Store recipe book data for this L2PcInstance, if not on an active sub-class.
      */
     private void storeRecipeBook() {
-        // If the player is on a sub-class don't even attempt to store a recipe book.
+        // If the reader is on a sub-class don't even attempt to store a recipe book.
         if (isSubClassActive()) {
             return;
         }
@@ -6814,7 +6817,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         // Send Server->Client UserInfo packet to this L2PcInstance
         sendPacket(new UserInfo(this));
 
-        // Add the recovered dyes to the player's inventory and notify them.
+        // Add the recovered dyes to the reader's inventory and notify them.
         getInventory().addItem("Henna", henna.getDyeId(), henna.getDyeAmount() / 2, this, null);
 
         SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
@@ -7140,7 +7143,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 _log.info(getQueuedSkill().getSkill().getName() + " is already queued for " + getName() + ".");
             }
 
-            // Create a new SkillDat object and queue it in the player _queuedSkill
+            // Create a new SkillDat object and queue it in the reader _queuedSkill
             setQueuedSkill(skill, forceUse, dontMove);
             sendPacket(new ActionFailed());
             return;
@@ -7157,7 +7160,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         SkillType sklType = skill.getSkillType();
 
         switch (sklTargetType) {
-            // Target the player if skill type is AURA, PARTY, CLAN or SELF
+            // Target the reader if skill type is AURA, PARTY, CLAN or SELF
             case TARGET_AURA:
             case TARGET_PARTY:
             case TARGET_ALLY:
@@ -7179,7 +7182,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             sendPacket(new ActionFailed());
             return;
         }
-        // Are the target and the player in the same duel?
+        // Are the target and the reader in the same duel?
         if (isInDuel()) {
             if (!((target instanceof L2PcInstance) && (((L2PcInstance) target).getDuelId() == getDuelId()))) {
                 sendMessage("You cannot do this while duelling.");
@@ -7271,7 +7274,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         // Abnormal effects(ex : Stun, Sleep...) are checked in L2Character useMagic()
 
-        // Check if the player use "Fake Death" skill
+        // Check if the reader use "Fake Death" skill
         if (isAlikeDead()) {
             // Send a Server->Client packet ActionFailed to the L2PcInstance
             sendPacket(new ActionFailed());
@@ -7398,7 +7401,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             }
         }
 
-        // Check if this is a Pvp skill and target isn't a non-flagged/non-karma player
+        // Check if this is a Pvp skill and target isn't a non-flagged/non-karma reader
         switch (sklTargetType) {
             case TARGET_PARTY:
             case TARGET_ALLY: // For such skills, checkPvpSkill() is called from L2Skill.getTargetList()
@@ -7440,7 +7443,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             return;
         }
 
-        // If allTemplates conditions are checked, create a new SkillDat object and set the player _currentSkill
+        // If allTemplates conditions are checked, create a new SkillDat object and set the reader _currentSkill
         setCurrentSkill(skill, forceUse, dontMove);
 
         // Check if the active L2Skill can be casted (ex : not sleeping...), Check if the target is correct and Notify the AI with AI_INTENTION_CAST and target
@@ -7489,7 +7492,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             {
                 if ((getClan() != null) && (((L2PcInstance) target).getClan() != null)) {
                     if (getClan().isAtWarWith(((L2PcInstance) target).getClan().getClanId())) {
-                        return true; // in clan war player can attack whites even with sleep etc.
+                        return true; // in clan war reader can attack whites even with sleep etc.
                     }
                 }
                 if ((((L2PcInstance) target).getPvpFlag() == 0) && // target's pvp flag is not set and
@@ -7689,7 +7692,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
     @Override
     public String toString() {
-        return "player " + getName();
+        return "reader " + getName();
     }
 
     /**
@@ -7708,7 +7711,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Set the _lastFolkNpc of the L2PcInstance corresponding to the last Folk wich one the player talked.
+     * Set the _lastFolkNpc of the L2PcInstance corresponding to the last Folk wich one the reader talked.
      *
      * @param folkNpc the new last folk npc
      */
@@ -7717,7 +7720,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Return the _lastFolkNpc of the L2PcInstance corresponding to the last Folk wich one the player talked.
+     * Return the _lastFolkNpc of the L2PcInstance corresponding to the last Folk wich one the reader talked.
      *
      * @return the last folk npc
      */
@@ -8534,7 +8537,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * This returns a SystemMessage stating why the player is not available for duelling.
+     * This returns a SystemMessage stating why the reader is not available for duelling.
      *
      * @return S1_CANNOT_DUEL... message
      */
@@ -8546,9 +8549,9 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Checks if this player might join / start a duel. To get the reason use getNoDuelReason() after calling this function.
+     * Checks if this reader might join / start a duel. To get the reason use getNoDuelReason() after calling this function.
      *
-     * @return true if the player might join/start a duel.
+     * @return true if the reader might join/start a duel.
      */
     public boolean canDuel() {
         if (isInCombat() || isInJail()) {
@@ -8747,7 +8750,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     /**
      * Send skill list.
      *
-     * @param player the player
+     * @param player the reader
      */
     public void sendSkillList(L2PcInstance player) {
         SkillList sl = new SkillList();
@@ -8767,7 +8770,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
     /**
      * 1. Add the specified class ID as a subclass (up to the maximum number of <b>three</b>) for this character.<BR>
-     * 2. This method no longer changes the active _classIndex of the player. This is only done by the calling of setActiveClass() method as that should be the only way to do so.
+     * 2. This method no longer changes the active _classIndex of the reader. This is only done by the calling of setActiveClass() method as that should be the only way to do so.
      *
      * @param classId    the class id
      * @param classIndex the class index
@@ -8832,7 +8835,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     /**
      * 1. Completely erase allTemplates existance of the subClass linked to the classIndex.<BR>
      * 2. Send over the newClassId to addSubClass()to create a new instance on this classIndex.<BR>
-     * 3. Upon Exception, revert the player to their BaseClass to avoid further problems.
+     * 3. Upon Exception, revert the reader to their BaseClass to avoid further problems.
      *
      * @param classIndex the class index
      * @param newClassId the new class id
@@ -8969,9 +8972,9 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
 
         /*
-         * Update the character's change in class status. 1. Remove any active cubics from the player. 2. Renovate the characters table in the database with the new class info, storing also buff/effect data. 3. Remove allTemplates existing skills. 4. Restore allTemplates the learned skills for the current class from
+         * Update the character's change in class status. 1. Remove any active cubics from the reader. 2. Renovate the characters table in the database with the new class info, storing also buff/effect data. 3. Remove allTemplates existing skills. 4. Restore allTemplates the learned skills for the current class from
          * the database. 5. Restore effect/buff data for the new class. 6. Restore henna data for the class, applying the new stat modifiers while removing existing ones. 7. Reset HP/MP/CP stats and send Server->Client character status packet to reflect changes. 8. Restore shortcut data related to
-         * this class. 9. Resend a class change animation effect to broadcast to allTemplates nearby players. 10.Unsummon any active servitor from the player.
+         * this class. 9. Resend a class change animation effect to broadcast to allTemplates nearby players. 10.Unsummon any active servitor from the reader.
          */
 
         if ((getPet() != null) && (getPet() instanceof L2SummonInstance)) {
@@ -9014,7 +9017,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         restoreEffects();
         sendPacket(new EtcStatusUpdate(this));
 
-        // if player has quest 422: Repent Your Sins, remove it
+        // if reader has quest 422: Repent Your Sins, remove it
         QuestState st = getQuestState("422_RepentYourSins");
 
         if (st != null) {
@@ -9174,7 +9177,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * On player enter.
+     * On reader enter.
      */
     public void onPlayerEnter() {
         startWarnUserTakeBreak();
@@ -9288,7 +9291,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
     @Override
     public void doRevive(double revivePower) {
-        // Restore the player's lost experience,
+        // Restore the reader's lost experience,
         // depending on the % return of the skill used (based on its power).
         restoreExp(revivePower);
         doRevive();
@@ -9709,7 +9712,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             }
         }
 
-        _log.warn("[L2PcInstance] player [" + getName() + "] sent invalid bypass '" + cmd + "', ban this player!");
+        _log.warn("[L2PcInstance] reader [" + getName() + "] sent invalid bypass '" + cmd + "', ban this reader!");
         return false;
     }
 
@@ -9724,14 +9727,14 @@ public final class L2PcInstance extends L2PlayableInstance {
         L2ItemInstance item = getInventory().getItemByObjectId(objectId);
 
         if ((item == null) || (item.getOwnerId() != getObjectId())) {
-            _log.debug(getObjectId() + ": player tried to " + action + " item he is not owner of");
+            _log.debug(getObjectId() + ": reader tried to " + action + " item he is not owner of");
             return false;
         }
 
         // Pet is summoned and not the item that summoned the pet AND not the buggle from strider you're mounting
         if (((getPet() != null) && (getPet().getControlItemId() == objectId)) || (getMountObjectID() == objectId)) {
             if (Config.DEBUG) {
-                _log.debug(getObjectId() + ": player tried to " + action + " item controling pet");
+                _log.debug(getObjectId() + ": reader tried to " + action + " item controling pet");
             }
 
             return false;
@@ -9739,7 +9742,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         if ((getActiveEnchantItem() != null) && (getActiveEnchantItem().getObjectId() == objectId)) {
             if (Config.DEBUG) {
-                _log.debug(getObjectId() + ":player tried to " + action + " an enchant scroll he was using");
+                _log.debug(getObjectId() + ":reader tried to " + action + " an enchant scroll he was using");
             }
 
             return false;
@@ -10528,7 +10531,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Create a new SkillDat object and set the player _currentSkill.
+     * Create a new SkillDat object and set the reader _currentSkill.
      *
      * @param currentSkill the current skill
      * @param ctrlPressed  the ctrl pressed
@@ -10561,7 +10564,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Create a new SkillDat object and queue it in the player _queuedSkill.
+     * Create a new SkillDat object and queue it in the reader _queuedSkill.
      *
      * @param queuedSkill  the queued skill
      * @param ctrlPressed  the ctrl pressed
@@ -10623,7 +10626,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 sendMessage("You are in jail for " + delayInMinutes + " minutes.");
             }
 
-            // Open a Html message to inform the player
+            // Open a Html message to inform the reader
             NpcHtmlMessage htmlMsg = new NpcHtmlMessage(0);
             String jailInfos = HtmCache.getInstance().getHtm("data/html/jail_in.htm");
             if (jailInfos != null) {
@@ -10635,7 +10638,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
             teleToLocation(-114356, -249645, -2984, true); // Jail
         } else {
-            // Open a Html message to inform the player
+            // Open a Html message to inform the reader
             NpcHtmlMessage htmlMsg = new NpcHtmlMessage(0);
             String jailInfos = HtmCache.getInstance().getHtm("data/html/jail_out.htm");
             if (jailInfos != null) {
@@ -10675,14 +10678,14 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     private void updateJailState() {
         if (isInJail()) {
-            // If jail time is elapsed, free the player
+            // If jail time is elapsed, free the reader
             if (_jailTimer > 0) {
                 // restart the countdown
                 _jailTask = ThreadPoolManager.getInstance().scheduleGeneral(new JailTask(this), _jailTimer);
                 sendMessage("You are still in jail for " + (_jailTimer / 60000) + " minutes.");
             }
 
-            // If player escaped, put him back in jail
+            // If reader escaped, put him back in jail
             if (!isInsideZone(ZONE_JAIL)) {
                 teleToLocation(-114356, -249645, -2984, true);
             }
@@ -10727,7 +10730,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         /**
          * Instantiates a new jail task.
          *
-         * @param player the player
+         * @param player the reader
          */
         protected JailTask(L2PcInstance player) {
             _player = player;

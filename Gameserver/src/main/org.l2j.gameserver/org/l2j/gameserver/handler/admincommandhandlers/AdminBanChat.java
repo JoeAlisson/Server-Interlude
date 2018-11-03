@@ -28,8 +28,8 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 
 /**
- * This class handles following admin commands: - admin_banchat = Imposes a chat ban on the specified player/target. - admin_unbanchat = Removes any chat ban on the specified player/target. Uses: admin_banchat [<player_name>] [<ban_duration>] admin_unbanchat [<player_name>] If <player_name> is not
- * specified, the current target player is used.
+ * This class handles following admin commands: - admin_banchat = Imposes a chat ban on the specified reader/target. - admin_unbanchat = Removes any chat ban on the specified reader/target. Uses: admin_banchat [<player_name>] [<ban_duration>] admin_unbanchat [<player_name>] If <player_name> is not
+ * specified, the current target reader is used.
  * @version $Revision: 1.1.6.3 $ $Date: 2005/04/11 10:06:06 $
  */
 public class AdminBanChat implements IAdminCommandHandler

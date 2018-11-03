@@ -216,7 +216,7 @@ public class CastleManager {
         int circletId = getCircletByCastleId(castleId);
 
         if (circletId != 0) {
-            // online-player circlet removal
+            // online-reader circlet removal
             if (player != null) {
                 try {
                     L2ItemInstance circlet = player.getInventory().getItemByItemId(circletId);

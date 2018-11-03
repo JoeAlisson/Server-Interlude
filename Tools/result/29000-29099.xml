@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="29001" name="Daily Present - VIP 1" icon="BranchIcon.Icon.etc_vip_present_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29002" name="Daily Present - VIP 2" icon="BranchIcon.Icon.etc_vip_present_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29003" name="Daily Present - VIP 3" icon="BranchIcon.Icon.etc_vip_present_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29004" name="Daily Present - VIP 4" icon="BranchIcon.Icon.etc_vip_present_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29005" name="Daily Present - VIP 5" icon="BranchIcon.Icon.etc_vip_present_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29006" name="Daily Present - VIP 6" icon="BranchIcon.Icon.etc_vip_present_i05">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29007" name="Daily Present - VIP 1" icon="BranchIcon.Icon.etc_vip_present_i06">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="29008" name="XP/SP Scroll" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55000" level="1"/>
+    </item>
+    <item stackable="true" id="29009" name="XP/SP Scroll - Normal" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55000" level="3"/>
+    </item>
+    <item stackable="true" id="29010" name="XP/SP Scroll - High" type="SCROLL" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55000" level="4"/>
+    </item>
+    <item stackable="true" id="29011" name="1st Class Buff Scroll" type="SCROLL" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55003" level="1"/>
+    </item>
+    <item stackable="true" id="29012" name="2nd Class Buff Scroll" type="SCROLL" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55004" level="2"/>
+    </item>
+    <item stackable="true" id="29013" name="Scroll: Hunter's Song" icon="BranchIcon.Icon.etc_g_bm_song_scroll_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <item stackable="true" id="29014" name="Scroll: Dance of Fire" icon="BranchIcon.Icon.etc_g_bm_dance_scroll_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <item stackable="true" id="29015" name="Scroll: Enchant Weapon (D-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_wp_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29016" name="Scroll: Enchant Armor (D-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_am_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29017" name="Scroll: Enchant Weapon (C-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_wp_c_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29018" name="Scroll: Enchant Armor (C-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_am_c_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29019" name="Blessed Scroll: Enchant Weapon (D-grade)" icon="icon.etc_blessed_scrl_of_ench_wp_d_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29020" name="Blessed Scroll: Enchant Armor (D-grade)" icon="icon.etc_blessed_scrl_of_ench_am_d_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29021" name="Blessed Scroll: Enchant Weapon (C-grade)" icon="icon.etc_blessed_scrl_of_ench_wp_c_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29022" name="Blessed Scroll: Enchant Armor (C-grade)" icon="icon.etc_blessed_scrl_of_ench_am_c_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="29023" name="Mysterious No-grade Soulshot" icon="BranchIcon.Icon.g_etc_soulshot_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="9293" level="1"/>
+    </item>
+    <item stackable="true" id="29024" name="Mysterious Blessed No-grade Spiritshot" icon="BranchIcon.Icon.g_etc_spiritshot_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="9300" level="1"/>
+    </item>
+    <item stackable="true" id="29025" name="Mysterious Soulshot (D-grade)" icon="br_cashtex.item.br_cash_soulshot_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <crystalInfo type="D"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9294" level="1"/>
+    </item>
+    <item stackable="true" id="29026" name="Mysterious Blessed Spiritshot (D-grade)" icon="br_cashtex.item.br_cash_spiritshot_d_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <crystalInfo type="D"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9301" level="1"/>
+    </item>
+    <item stackable="true" id="29027" name="Mysterious Soulshot (C-grade)" icon="br_cashtex.item.br_cash_soulshot_c_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <crystalInfo type="C"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9295" level="1"/>
+    </item>
+    <item stackable="true" id="29028" name="Mysterious Blessed Spiritshot (C-grade)" icon="br_cashtex.item.br_cash_spiritshot_c_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <crystalInfo type="C"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9302" level="1"/>
+    </item>
+    <item stackable="true" id="29029" name="Blessed Scroll of Escape" icon="icon.etc_scroll_of_return_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <item stackable="true" id="29030" name="Blessed Scroll of Resurrection" icon="icon.etc_scroll_of_resurrection_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <item stackable="true" id="29031" name="Quick Healing Potion" type="POTION" icon="icon.etc_potion_gold_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55015" level="1"/>
+    </item>
+    <item stackable="true" id="29032" name="Major Quick Healing Potion" type="POTION" icon="icon.etc_potion_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55016" level="1"/>
+    </item>
+    <armor id="29033" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29034" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29035" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29036" name="Refined Romantic Chapeau: Red" icon="icon.bm_romantic_chaperon_red">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29037" name="Refined Angel Ring" icon="icon.accessory_angel_ring_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29038" name="Refined Wizard Hat" icon="icon.accessory_magician_cap2_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29039" name="Laborer Hat" icon="BranchSys.icon.br_people_cap_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>HAIR</bodyPart>
+    </armor>
+    <armor id="29040" name="Top Hat" icon="icon.accessory_magicial_cap_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29041" name="Vigilante Hat" icon="icon.accessory_archer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29042" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29043" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29044" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29045" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29046" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29047" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29048" name="Refined Romantic Chapeau: Red" icon="icon.bm_romantic_chaperon_red">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29049" name="Refined Angel Ring" icon="icon.accessory_angel_ring_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29050" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29051" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29052" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29053" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29054" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29055" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29056" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="29057" name="Agathion - Virgo" icon="BranchIcon.Icon.accessary_sign_agathion_april_aug_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29058" name="Agathion - Virgo" icon="BranchIcon.Icon.accessary_sign_agathion_april_aug_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29059" name="Agathion - Capricorn" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_dec_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29060" name="Agathion - Capricorn" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_dec_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29061" name="Agathion - Libra" icon="BranchIcon.Icon.accessary_sign_agathion_april_sep_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29062" name="Agathion - Libra" icon="BranchIcon.Icon.accessary_sign_agathion_april_sep_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29063" name="Agathion - Aries" icon="BranchIcon.Icon.accessory_lbracelet_march_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29064" name="Agathion - Aries" icon="BranchIcon.Icon.accessory_lbracelet_march_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29065" name="Agathion - Taurus" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_april_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29066" name="Agathion - Taurus" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_april_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29067" name="Agathion - Leo" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_july_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29068" name="Agathion - Leo" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_july_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29069" name="Agathion - Gemini" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_may_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29070" name="Agathion - Gemini" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_may_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29071" name="Agathion - Scorpio" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_oct_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29072" name="Agathion - Scorpio" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_oct_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29073" name="Agathion - Aquarius" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_jan_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29074" name="Agathion - Aquarius" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_jan_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29075" name="Agathion - Pisces" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_feb_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29076" name="Agathion - Pisces" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_feb_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29077" name="Agathion - Sagittarius" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_nov_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29078" name="Agathion - Sagittarius" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_nov_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29079" name="Agathion - Cancer" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_june_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="29080" name="Agathion - Cancer" icon="BranchIcon.Icon.accessary_lbracelet_sign_agathion_june_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <item stackable="true" id="29081" name="Premium Dye of STR (STR + 1 CON - 1)" icon="icon.etc_str_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29082" name="Premium Dye of STR (STR + 1 DEX - 1)" icon="icon.etc_str_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29083" name="Premium Dye of CON (CON + 1 STR - 1)" icon="icon.etc_con_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29084" name="Premium Dye of CON (CON + 1 DEX - 1)" icon="icon.etc_con_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29085" name="Premium Dye of DEX (DEX + 1 STR - 1)" icon="icon.etc_dex_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29086" name="Premium Dye of DEX (DEX + 1 CON - 1)" icon="icon.etc_dex_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29087" name="Premium Dye of INT (INT + 1 MEN - 1)" icon="icon.etc_int_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29088" name="Premium Dye of INT (INT + 1 WIT - 1)" icon="icon.etc_int_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29089" name="Premium Dye of MEN (MEN + 1 INT - 1)" icon="icon.etc_men_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29090" name="Premium Dye of MEN (MEN + 1 WIT - 1)" icon="icon.etc_men_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29091" name="Premium Dye of WIT (WIT + 1 INT - 1)" icon="icon.etc_wit_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29092" name="Premium Dye of WIT (WIT + 1 MEN - 1)" icon="icon.etc_wit_hena_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29093" name="Premium Dye of STR (STR + 2 CON - 2)" icon="icon.etc_str_hena_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29094" name="Premium Dye of STR (STR + 2 DEX - 2)" icon="icon.etc_str_hena_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29095" name="Premium Dye of CON (CON + 2 STR - 2)" icon="icon.etc_con_hena_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29096" name="Premium Dye of CON (CON + 2 DEX - 2)" icon="icon.etc_con_hena_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29097" name="Premium Dye of DEX (DEX + 2 STR - 2)" icon="icon.etc_dex_hena_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29098" name="Premium Dye of DEX (DEX + 2 CON - 2)" icon="icon.etc_dex_hena_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="29099" name="Premium Dye of INT (INT + 2 MEN - 2)" icon="icon.etc_int_hena_i02">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+</itemList>

@@ -3,27 +3,7 @@
            xmlns="http://la2j.org"
            elementFormDefault="qualified">
 
-    <xs:simpleType name="BodyPart">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="RIGHT_HAND"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="ItemType">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="SWORD"/>
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="Race">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="HUMAN"/>
-            <xs:enumeration value="ELF"/>
-            <xs:enumeration value="DARKELF"/>
-            <xs:enumeration value="ORC"/>
-            <xs:enumeration value="DWARF"/>
-        </xs:restriction>
-    </xs:simpleType>
+    <xs:include schemaLocation="conditions.xsd"/>
 
     <xs:complexType name="LocationList">
         <xs:sequence>
@@ -42,7 +22,141 @@
         <xs:attribute name="horizontal" type="xs:int" default="0"/>
         <xs:attribute name="distance" type="xs:int" default="0"/>
         <xs:attribute name="width" type="xs:int" default="0"/>
+        <xs:attribute name="random" type="xs:int" default="1"/>
     </xs:complexType>
+
+    <xs:simpleType name="BodyPart">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NONE"/>
+            <xs:enumeration value="HEAD"/>
+            <xs:enumeration value="RIGHT_HAND"/>
+            <xs:enumeration value="LEFT_BRACELET"/>
+            <xs:enumeration value="FULL_HAIR"/>
+            <xs:enumeration value="LEFT_EAR"/>
+            <xs:enumeration value="RIGHT_EAR"/>
+            <xs:enumeration value="EAR"/>
+            <xs:enumeration value="UNDERWEAR"/>
+            <xs:enumeration value="FULL_BODY"/>
+            <xs:enumeration value="HAIR_DOWN"/>
+            <xs:enumeration value="TWO_HANDS"/>
+            <xs:enumeration value="HAIR"/>
+            <xs:enumeration value="RIGHT_HAND"/>
+            <xs:enumeration value="CHEST"/>
+            <xs:enumeration value="LEGS"/>
+            <xs:enumeration value="GLOVES"/>
+            <xs:enumeration value="FEET"/>
+            <xs:enumeration value="LEFT_HAND"/>
+            <xs:enumeration value="BROOCH_JEWEL"/>
+            <xs:enumeration value="LEFT_FINGER"/>
+            <xs:enumeration value="RIGHT_FINGER"/>
+            <xs:enumeration value="FINGER"/>
+            <xs:enumeration value="NECK"/>
+            <xs:enumeration value="TALISMAN"/>
+            <xs:enumeration value="DECO"/>
+            <xs:enumeration value="BROOCH"/>
+            <xs:enumeration value="WAIST"/>
+            <xs:enumeration value="ONE_PIECE"/>
+            <xs:enumeration value="BACK"/>
+            <xs:enumeration value="RIGHT_BRACELET"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ItemType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SWORD"/>
+            <xs:enumeration value="DUAL"/>
+            <xs:enumeration value="BLUNT"/>
+            <xs:enumeration value="BOW"/>
+            <xs:enumeration value="DAGGER"/>
+            <xs:enumeration value="POLE"/>
+            <xs:enumeration value="RAPIER"/>
+            <xs:enumeration value="FISHINGROD"/>
+            <xs:enumeration value="CROSSBOW"/>
+            <xs:enumeration value="TWOHANDCROSSBOW"/>
+            <xs:enumeration value="DUALFIST"/>
+            <xs:enumeration value="DUALDAGGER"/>
+            <xs:enumeration value="DUALBLUNT"/>
+            <xs:enumeration value="ETC"/>
+            <xs:enumeration value="LIGHT"/>
+            <xs:enumeration value="HEAVY"/>
+            <xs:enumeration value="MAGIC"/>
+            <xs:enumeration value="NONE"/>
+            <xs:enumeration value="ARROW"/>
+            <xs:enumeration value="SCROLL"/>
+            <xs:enumeration value="RECIPE"/>
+            <xs:enumeration value="ENCHT_WP"/>
+            <xs:enumeration value="ENCHT_ATTR_RUNE"/>
+            <xs:enumeration value="ENCHT_AM"/>
+            <xs:enumeration value="DYE"/>
+            <xs:enumeration value="MATERIAL"/>
+            <xs:enumeration value="TICKET_OF_LORD"/>
+            <xs:enumeration value="SOULSHOT"/>
+            <xs:enumeration value="CASTLE_GUARD"/>
+            <xs:enumeration value="POTION"/>
+            <xs:enumeration value="LURE"/>
+            <xs:enumeration value="BLESS_ENCHT_WP"/>
+            <xs:enumeration value="BLESS_ENCHT_AM"/>
+            <xs:enumeration value="BOLT"/>
+            <xs:enumeration value="SIGIL"/>
+            <xs:enumeration value="TELEPORTBOOKMARK"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="CommissionType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="HAIR_ACCESSORY"/>
+            <xs:enumeration value="TWO_HAND_SWORD"/>
+            <xs:enumeration value="OTHER_ITEM"/>
+            <xs:enumeration value="SPELLBOOK"/>
+            <xs:enumeration value="POTION"/>
+            <xs:enumeration value="SPEAR"/>
+            <xs:enumeration value="DUALSWORD"/>
+            <xs:enumeration value="ONE_HAND_MAGIC_BLUNT_WEAPON"/>
+            <xs:enumeration value="RECIPE"/>
+            <xs:enumeration value="TWO_HAND_MAGIC_BLUNT_WEAPON"/>
+            <xs:enumeration value="MAJOR_CRAFTING_INGREDIENTS"/>
+            <xs:enumeration value="ONE_HAND_MAGIC_SWORD"/>
+            <xs:enumeration value="TWO_HAND_BLUNT_WEAPON"/>
+            <xs:enumeration value="SCROLL_OTHER"/>
+            <xs:enumeration value="RING"/>
+            <xs:enumeration value="EARRING"/>
+            <xs:enumeration value="NECKLACE"/>
+            <xs:enumeration value="BRACELET"/>
+            <xs:enumeration value="ARMOR_TOP"/>
+            <xs:enumeration value="ONE_HAND_SWORD"/>
+            <xs:enumeration value="SOULSHOT"/>
+            <xs:enumeration value="BLUNT_WEAPON"/>
+            <xs:enumeration value="FULL_BODY"/>
+            <xs:enumeration value="ARMOR_PANTS"/>
+            <xs:enumeration value="GEMSTONE"/>
+            <xs:enumeration value="DAGGER"/>
+            <xs:enumeration value="HELMET"/>
+            <xs:enumeration value="FIST_WEAPON"/>
+            <xs:enumeration value="GLOVES"/>
+            <xs:enumeration value="PET_EQUIPMENT"/>
+            <xs:enumeration value="BOW"/>
+            <xs:enumeration value="SPIRITSHOT"/>
+            <xs:enumeration value="FEET"/>
+            <xs:enumeration value="SHIELD"/>
+            <xs:enumeration value="PET_SUPPLIES"/>
+            <xs:enumeration value="DYES"/>
+            <xs:enumeration value="OTHER_WEAPON"/>
+            <xs:enumeration value="SCROLL_ENCHANT_WEAPON"/>
+            <xs:enumeration value="SOUL_CRYSTAL"/>
+            <xs:enumeration value="SCROLL_ENCHANT_ARMOR"/>
+            <xs:enumeration value="CRYSTAL"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Race">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="HUMAN"/>
+            <xs:enumeration value="ELF"/>
+            <xs:enumeration value="DARKELF"/>
+            <xs:enumeration value="ORC"/>
+            <xs:enumeration value="DWARF"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:simpleType name="Stats">
         <xs:restriction base="xs:string">
@@ -53,7 +167,7 @@
             <xs:enumeration value="REGENERATE_CP_RATE"/>
             <xs:enumeration value="REGENERATE_MP_RATE"/>
             <xs:enumeration value="RECHARGE_MP_RATE"/>
-            <xs:enumeration value="HEAL_EFFECTIVNESS"/>
+            <xs:enumeration value="HEAL_EFFECTIVENESS"/>
             <xs:enumeration value="PHYSIC_DEFENCE"/>
             <xs:enumeration value="MAGIC_DEFENCE"/>
             <xs:enumeration value="PHYSIC_ATTACK"/>
@@ -67,20 +181,22 @@
             <xs:enumeration value="PVP_MAGIC_DAMAGE"/>
             <xs:enumeration value="PVP_PHYS_SKILL_DMG"/>
             <xs:enumeration value="EVASION_RATE"/>
+            <xs:enumeration value="MAGIC_EVASION_RATE"/>
             <xs:enumeration value="SHIELD_RATE"/>
             <xs:enumeration value="CRITICAL_RATE"/>
             <xs:enumeration value="BLOW_RATE"/>
             <xs:enumeration value="LETHAL_RATE"/>
-            <xs:enumeration value="MCRITICAL_RATE"/>
-            <xs:enumeration value="EXPSP_RATE"/>
+            <xs:enumeration value="MAGIC_CRITICAL_RATE"/>
+            <xs:enumeration value="EXP_SP_RATE"/>
             <xs:enumeration value="ATTACK_CANCEL"/>
             <xs:enumeration value="ACCURACY"/>
+            <xs:enumeration value="MAGIC_ACCURACY"/>
+            <xs:enumeration value="MAGIC_RESISTENCE"/>
             <xs:enumeration value="PHYSIC_ATTACK_RANGE"/>
             <xs:enumeration value="MAGIC_ATTACK_RANGE"/>
             <xs:enumeration value="PHYSIC_ATTACK_ANGLE"/>
             <xs:enumeration value="ATTACK_COUNT_MAX"/>
-            <xs:enumeration value="RUN_SPEED"/>
-            <xs:enumeration value="WALK_SPEED"/>
+            <xs:enumeration value="MOVE_SPEED"/>
             <xs:enumeration value="STAT_STR"/>
             <xs:enumeration value="STAT_CON"/>
             <xs:enumeration value="STAT_DEX"/>
@@ -102,34 +218,34 @@
             <xs:enumeration value="EARTH"/>
             <xs:enumeration value="HOLY"/>
             <xs:enumeration value="DARK"/>
-            <xs:enumeration value="AGGRESSION_VULN"/>
-            <xs:enumeration value="BLEED_VULN"/>
-            <xs:enumeration value="POISON_VULN"/>
-            <xs:enumeration value="STUN_VULN"/>
-            <xs:enumeration value="PARALYZE_VULN"/>
-            <xs:enumeration value="ROOT_VULN"/>
-            <xs:enumeration value="SLEEP_VULN"/>
-            <xs:enumeration value="CONFUSION_VULN"/>
-            <xs:enumeration value="MOVEMENT_VULN"/>
-            <xs:enumeration value="FIRE_VULN"/>
-            <xs:enumeration value="WIND_VULN"/>
-            <xs:enumeration value="WATER_VULN"/>
-            <xs:enumeration value="EARTH_VULN"/>
-            <xs:enumeration value="HOLY_VULN"/>
-            <xs:enumeration value="DARK_VULN"/>
-            <xs:enumeration value="CANCEL_VULN"/>
-            <xs:enumeration value="DERANGEMENT_VULN"/>
-            <xs:enumeration value="DEBUFF_VULN"/>
-            <xs:enumeration value="NONE_WPN_VULN"/>
-            <xs:enumeration value="SWORD_WPN_VULN"/>
-            <xs:enumeration value="BLUNT_WPN_VULN"/>
-            <xs:enumeration value="DAGGER_WPN_VULN"/>
-            <xs:enumeration value="BOW_WPN_VULN"/>
-            <xs:enumeration value="POLE_WPN_VULN"/>
-            <xs:enumeration value="ETC_WPN_VULN"/>
-            <xs:enumeration value="FIST_WPN_VULN"/>
-            <xs:enumeration value="DUAL_WPN_VULN"/>
-            <xs:enumeration value="DUALFIST_WPN_VULN"/>
+            <xs:enumeration value="AGGRESSION_RESISTENCE"/>
+            <xs:enumeration value="BLEED_RESISTENCE"/>
+            <xs:enumeration value="POISON_RESISTENCE"/>
+            <xs:enumeration value="STUN_RESISTENCE"/>
+            <xs:enumeration value="PARALYZE_RESISTENCE"/>
+            <xs:enumeration value="ROOT_RESISTENCE"/>
+            <xs:enumeration value="SLEEP_RESISTENCE"/>
+            <xs:enumeration value="CONFUSION_RESISTENCE"/>
+            <xs:enumeration value="MOVEMENT_RESISTENCE"/>
+            <xs:enumeration value="FIRE_RESISTENCE"/>
+            <xs:enumeration value="WIND_RESISTENCE"/>
+            <xs:enumeration value="WATER_RESISTENCE"/>
+            <xs:enumeration value="EARTH_RESISTENCE"/>
+            <xs:enumeration value="HOLY_RESISTENCE"/>
+            <xs:enumeration value="DARK_RESISTENCE"/>
+            <xs:enumeration value="CANCEL_RESISTENCE"/>
+            <xs:enumeration value="DERANGEMENT_RESISTENCE"/>
+            <xs:enumeration value="DEBUFF_RESISTENCE"/>
+            <xs:enumeration value="NONE_WPN_RESISTENCE"/>
+            <xs:enumeration value="SWORD_WPN_RESISTENCE"/>
+            <xs:enumeration value="BLUNT_WPN_RESISTENCE"/>
+            <xs:enumeration value="DAGGER_WPN_RESISTENCE"/>
+            <xs:enumeration value="BOW_WPN_RESISTENCE"/>
+            <xs:enumeration value="POLE_WPN_RESISTENCE"/>
+            <xs:enumeration value="ETC_WPN_RESISTENCE"/>
+            <xs:enumeration value="FIST_WPN_RESISTENCE"/>
+            <xs:enumeration value="DUAL_WPN_RESISTENCE"/>
+            <xs:enumeration value="DUAL_FIST_WPN_RESISTENCE"/>
             <xs:enumeration value="REFLECT_DAMAGE_PERCENT"/>
             <xs:enumeration value="REFLECT_SKILL_MAGIC"/>
             <xs:enumeration value="REFLECT_SKILL_PHYSIC"/>
@@ -144,7 +260,7 @@
             <xs:enumeration value="PATK_UNDEAD"/>
             <xs:enumeration value="PDEF_UNDEAD"/>
             <xs:enumeration value="ATTACK_REUSE"/>
-            <xs:enumeration value="INV_LIM"/>
+            <xs:enumeration value="INVENTORY_LIMIT"/>
             <xs:enumeration value="WH_LIM"/>
             <xs:enumeration value="FREIGHT_LIM"/>
             <xs:enumeration value="P_SELL_LIM"/>
@@ -154,8 +270,9 @@
             <xs:enumeration value="MP_CONSUME_RATE"/>
             <xs:enumeration value="HP_CONSUME_RATE"/>
             <xs:enumeration value="MP_CONSUME"/>
-            <xs:enumeration value="SOULSHOT_COUNT"/>
+            <xs:enumeration value="SOUL_SHOT_COUNT"/>
             <xs:enumeration value="RANDOM_DAMAGE"/>
+            <xs:enumeration value="BROOCH_JEWEL"/>
         </xs:restriction>
     </xs:simpleType>
 

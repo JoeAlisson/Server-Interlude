@@ -94,7 +94,7 @@ public class QuestTimer
 	
 	// public method to compare if this timer matches with the key attributes passed.
 	// a quest and a name are required.
-	// null npc or player act as wildcards for the match
+	// null npc or reader act as wildcards for the match
 	public boolean isMatch(Quest quest, String name, L2NpcInstance npc, L2PcInstance player)
 	{
 		if ((quest == null) || (name == null))

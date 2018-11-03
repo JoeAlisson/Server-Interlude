@@ -99,15 +99,15 @@ public class InventoryUpdate extends L2GameServerPacket {
         writeShort(count);
         for (ItemInfo item : _items) {
             writeShort(item.getChange()); // Update type : 01-add, 02-modify, 03-remove
-            writeShort(item.getItem().getType1().getId()); // Item Type 1 : 00-weapon/ring/earring/necklace, 01-armor/shield, 04-item/questitem/adena
+            writeShort(item.getItem().getType().ordinal()); // Item Type 1 : 00-weapon/ring/earring/necklace, 01-armor/shield, 04-item/questitem/adena
 
             writeInt(item.getObjectId()); // ObjectId
             writeInt(item.getItem().getId()); // ItemId
-            writeInt(item.getCount()); // Quantity
-            writeShort(item.getItem().getType2().getId()); // Item Type 2 : 00-weapon, 01-shield/armor, 02-ring/earring/necklace, 03-questitem, 04-adena, 05-item
+            writeLong(item.getCount()); // Quantity
+            writeShort(item.getItem().getCommissionType().ordinal()); // Item Type 2 : 00-weapon, 01-shield/armor, 02-ring/earring/necklace, 03-questitem, 04-adena, 05-item
             writeShort(item.getCustomType1()); // Filler (always 0)
             writeShort(item.getEquipped()); // Equipped : 00-No, 01-yes
-            writeInt(item.getItem().getBodyPart().getId()); // BodyPart : 0006-lr.ear, 0008-neck, 0030-lr.finger, 0040-head, 0100-l.hand, 0200-gloves, 0400-chest, 0800-pants, 1000-feet, 4000-r.hand, 8000-r.hand
+            writeInt(0); // TODO item.getItem().getBodyPart().getId()); // BodyPart : 0006-lr.ear, 0008-neck, 0030-lr.finger, 0040-head, 0100-l.hand, 0200-gloves, 0400-chest, 0800-pants, 1000-feet, 4000-r.hand, 8000-r.hand
             writeShort(item.getEnchant()); // Enchant level (pet level shown in control item)
             writeShort(item.getCustomType2()); // Pet name exists or not shown in control item
 

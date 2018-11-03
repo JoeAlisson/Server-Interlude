@@ -178,7 +178,7 @@ public class NpcTemplate extends CharTemplate {
             return false;
         }
 
-        // If the player is on a third class, fetch the class teacher
+        // If the reader is on a third class, fetch the class teacher
         // information for its parent class.
         if (playerClass.getId() >= 88) {
             return teachInfo.contains(playerClass.getParent());

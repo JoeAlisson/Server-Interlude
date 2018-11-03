@@ -80,8 +80,8 @@ public final class RequestSurrenderPledgeWar extends L2GameClientPacket
 		_activeChar.deathPenalty(false);
 		ClanTable.getInstance().deleteclanswars(_clan.getClanId(), clan.getClanId());
 		/*
-		 * L2PcInstance leader = L2World.getInstance().getPlayer(clan.getLeaderName()); if(leader != null && leader.isOnline() == 0) { player.sendMessage("Clan leader isn't online."); player.sendPacket(new ActionFailed()); return; } if (leader.isTransactionInProgress()) { SystemMessage sm = new
-		 * SystemMessage(SystemMessageId.S1_IS_BUSY_TRY_LATER); sm.addString(leader.getName()); player.sendPacket(sm); return; } leader.setTransactionRequester(player); player.setTransactionRequester(leader); leader.sendPacket(new SurrenderPledgeWar(_clan.getName(),player.getName()));
+		 * L2PcInstance leader = L2World.getInstance().getPlayer(clan.getLeaderName()); if(leader != null && leader.isOnline() == 0) { reader.sendMessage("Clan leader isn't online."); reader.sendPacket(new ActionFailed()); return; } if (leader.isTransactionInProgress()) { SystemMessage sm = new
+		 * SystemMessage(SystemMessageId.S1_IS_BUSY_TRY_LATER); sm.addString(leader.getName()); reader.sendPacket(sm); return; } leader.setTransactionRequester(reader); reader.setTransactionRequester(leader); leader.sendPacket(new SurrenderPledgeWar(_clan.getName(),reader.getName()));
 		 */
 	}
 	

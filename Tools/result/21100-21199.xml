@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="21162" name="Wedding Veil" icon="BranchSys2.icon.br_wedding_vail_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <weapon id="21163" name="Wedding Bouquet" type="ETC" icon="BranchSys2.icon.br_wedding_bouquet_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="21165" name="Agathion - Zaken's Spirit Swords" icon="BranchSys2.Icon.br_aga_zaken_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55417" level="1"/>
+        <skill id="3267" level="1" triggerType="ON_USE"/>
+        <bodyPart>LEFT_BRACELET</bodyPart>
+    </armor>
+</itemList>

@@ -598,7 +598,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="1139" name="Warrior Guild Badge" type="EtcItem">
-		<!-- A badge that shows that a player is a member of the Warrior Guild. Have it with you in Ruins of Agony when you hunt for Skeleton Trackers. -->
+		<!-- A badge that shows that a reader is a member of the Warrior Guild. Have it with you in Ruins of Agony when you hunt for Skeleton Trackers. -->
 		<set name="icon" val="icon.etc_badge_gold_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />

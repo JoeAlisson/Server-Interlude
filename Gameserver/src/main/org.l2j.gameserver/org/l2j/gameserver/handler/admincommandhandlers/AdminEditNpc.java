@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.handler.admincommandhandlers;
 
 import org.l2j.commons.Config;
@@ -29,11 +11,15 @@ import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.L2DropCategory;
 import org.l2j.gameserver.model.L2DropData;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.*;
+import org.l2j.gameserver.model.entity.database.DropList;
+import org.l2j.gameserver.model.entity.database.MerchantItem;
+import org.l2j.gameserver.model.entity.database.MerchantShop;
+import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.repository.DropListRepository;
 import org.l2j.gameserver.model.entity.database.repository.MerchantBuyListRepository;
 import org.l2j.gameserver.model.entity.database.repository.NpcRepository;
 import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,9 +29,8 @@ import java.util.StringTokenizer;
 
 import static java.util.Objects.isNull;
 
-
 /**
- * @author terry Window - Preferences - Java - Code Style - Code Templates
+ * @author terry
  */
 public class AdminEditNpc implements IAdminCommandHandler {
     private static Logger _log = LoggerFactory.getLogger(AdminEditChar.class.getName());

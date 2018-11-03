@@ -26,7 +26,7 @@
 		</stats>
 	</item>
 	<item id="47928" name="Magic Woodpile" additionalName="Event" type="EtcItem">
-		<!-- Double-click to use a magic woodpile for one player. If you have the Magic Fan equipped, you can use the skills Breeze and Gust to set fire to the woodpile. Will be deleted after the event. -->
+		<!-- Double-click to use a magic woodpile for one reader. If you have the Magic Fan equipped, you can use the skills Breeze and Gust to set fire to the woodpile. Will be deleted after the event. -->
 		<set name="icon" val="icon.ev_firewood_seed_solo" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_stackable" val="true" />

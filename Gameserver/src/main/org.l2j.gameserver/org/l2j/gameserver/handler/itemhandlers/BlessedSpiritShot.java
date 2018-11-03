@@ -1,40 +1,16 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.handler.itemhandlers;
 
 import org.l2j.gameserver.handler.IItemHandler;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ExAutoSoulShot;
 import org.l2j.gameserver.serverpackets.MagicSkillUser;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.CrystalType;
+import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
-
-
-/**
- * This class ...
- * @version $Revision: 1.1.2.1.2.5 $ $Date: 2005/03/27 15:30:07 $
- */
 
 public class BlessedSpiritShot implements IItemHandler
 {
@@ -86,7 +62,7 @@ public class BlessedSpiritShot implements IItemHandler
 		}
 		
 		// Check if Blessed Spiritshot can be used
-		if ((weaponInst == null) || (weaponItem.getSpiritshots() == 0))
+		if ((weaponInst == null) || (weaponItem.getShots() == 0))
 		{
 			if (!activeChar.getAutoSoulShot().containsKey(itemId))
 			{
@@ -102,7 +78,7 @@ public class BlessedSpiritShot implements IItemHandler
 		}
 		
 		// Check for correct grade
-		CrystalType weaponGrade = weaponItem.getCrystalType();
+		CrystalType weaponGrade = weaponItem.getCrystalInfo().getType();
 		if (((weaponGrade == CrystalType.NONE) && (itemId != 3947)) || ((weaponGrade == CrystalType.D) && (itemId != 3948)) || ((weaponGrade == CrystalType.C) && (itemId != 3949)) || ((weaponGrade == CrystalType.B) && (itemId != 3950)) || ((weaponGrade == CrystalType.A) && (itemId != 3951)) || ((weaponGrade == CrystalType.S) && (itemId != 3952)))
 		{
 			if (!activeChar.getAutoSoulShot().containsKey(itemId))
@@ -112,8 +88,8 @@ public class BlessedSpiritShot implements IItemHandler
 			return;
 		}
 		
-		// Consume Blessed Spiritshot if player has enough of them
-		if (!activeChar.destroyItemWithoutTrace("Consume", item.getObjectId(), weaponItem.getSpiritshots(), null, false))
+		// Consume Blessed Spiritshot if reader has enough of them
+		if (!activeChar.destroyItemWithoutTrace("Consume", item.getObjectId(), weaponItem.getShots(), null, false))
 		{
 			if (activeChar.getAutoSoulShot().containsKey(itemId))
 			{

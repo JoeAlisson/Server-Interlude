@@ -316,16 +316,16 @@ public class SevenSigns {
         return _instance;
     }
 
-    public static int calcContributionScore(int blueCount, int greenCount, int redCount) {
-        int contrib = blueCount * BLUE_CONTRIB_POINTS;
+    public static long calcContributionScore(long blueCount, long greenCount, long redCount) {
+        long contrib = blueCount * BLUE_CONTRIB_POINTS;
         contrib += greenCount * GREEN_CONTRIB_POINTS;
         contrib += redCount * RED_CONTRIB_POINTS;
 
         return contrib;
     }
 
-    public static int calcAncientAdenaReward(int blueCount, int greenCount, int redCount) {
-        int reward = blueCount * SEAL_STONE_BLUE_VALUE;
+    public static long calcAncientAdenaReward(long  blueCount, long greenCount, long redCount) {
+        long reward = blueCount * SEAL_STONE_BLUE_VALUE;
         reward += greenCount * SEAL_STONE_GREEN_VALUE;
         reward += redCount * SEAL_STONE_RED_VALUE;
 
@@ -572,16 +572,16 @@ public class SevenSigns {
         return Optional.ofNullable(_signsPlayerData.get(player.getObjectId()));
     }
 
-    public int getPlayerStoneContrib(L2PcInstance player) {
-        return getPlayerData(player).map(SevenSignsPlayer::getStoneContrib).orElse(0);
+    public long getPlayerStoneContrib(L2PcInstance player) {
+        return getPlayerData(player).map(SevenSignsPlayer::getStoneContrib).orElse(0L);
     }
 
-    public int getPlayerContribScore(L2PcInstance player) {
-        return getPlayerData(player).map(SevenSignsPlayer::getContributionScore).orElse(0);
+    public long getPlayerContribScore(L2PcInstance player) {
+        return getPlayerData(player).map(SevenSignsPlayer::getContributionScore).orElse(0L);
     }
 
-    public int getPlayerAdenaCollect(L2PcInstance player) {
-        return  getPlayerData(player).map(SevenSignsPlayer::getAncientAdenaAmount).orElse(0);
+    public long getPlayerAdenaCollect(L2PcInstance player) {
+        return  getPlayerData(player).map(SevenSignsPlayer::getAncientAdenaAmount).orElse(0L);
     }
 
     public int getPlayerSeal(L2PcInstance player) {
@@ -614,7 +614,7 @@ public class SevenSigns {
     /**
      * Saves allTemplates Seven Signs data, both to the database and properties file (if updateSettings = True).
      * Often called to preserve data integrity and synchronization with DB, in case of errors. <BR>
-     * If player != null, just that player's data is updated in the database, otherwise allTemplates player's data is sequentially updated.
+     * If reader != null, just that reader's data is updated in the database, otherwise allTemplates reader's data is sequentially updated.
      *
      */
     public void saveSevenSignsData(L2PcInstance player, boolean updateSettings) {
@@ -647,10 +647,10 @@ public class SevenSigns {
      */
     protected void resetPlayerData() {
         if (Config.DEBUG) {
-            _log.info("SevenSigns: Resetting player data for new event period.");
+            _log.info("SevenSigns: Resetting reader data for new event period.");
         }
 
-        // Reset each player's contribution data as well as seal and cabal.
+        // Reset each reader's contribution data as well as seal and cabal.
         _signsPlayerData.values().forEach(signsPlayer -> {
             signsPlayer.setCabal("");
             signsPlayer.setSeal(SEAL_NULL);
@@ -659,7 +659,7 @@ public class SevenSigns {
     }
 
     /**
-     * Tests whether the specified player has joined a cabal in the past.
+     * Tests whether the specified reader has joined a cabal in the past.
      *
      * @param player
      * @return boolean hasRegistered
@@ -669,8 +669,8 @@ public class SevenSigns {
     }
 
     /**
-     * Used to specify cabal-related details for the specified player. This method checks to see if the player has registered before and will update the database if necessary. <BR>
-     * Returns the cabal ID the player has joined.
+     * Used to specify cabal-related details for the specified reader. This method checks to see if the reader has registered before and will update the database if necessary. <BR>
+     * Returns the cabal ID the reader has joined.
      *
      * @param player
      * @param chosenCabal
@@ -705,7 +705,7 @@ public class SevenSigns {
         return chosenCabal;
     }
 
-    public int getAncientAdenaReward(L2PcInstance player, boolean removeReward) {
+    public long getAncientAdenaReward(L2PcInstance player, boolean removeReward) {
         var optionalPlayer = getPlayerData(player);
 
         if(optionalPlayer.isPresent()) {
@@ -726,7 +726,7 @@ public class SevenSigns {
     }
 
 
-    public int addPlayerStoneContrib(L2PcInstance player, int blueCount, int greenCount, int redCount) {
+    public long addPlayerStoneContrib(L2PcInstance player, long blueCount, long greenCount, long redCount) {
         var optionalPlayer = getPlayerData(player);
         if(optionalPlayer.isPresent()) {
             var signsPlayer = optionalPlayer.get();
@@ -788,7 +788,7 @@ public class SevenSigns {
     }
 
     /**
-     * Send info on the current Seven Signs period to the specified player.
+     * Send info on the current Seven Signs period to the specified reader.
      *
      * @param player
      */

@@ -46,7 +46,7 @@ public class stats implements IVoicedCommandHandler {
                 StringBuilder replyMSG = new StringBuilder("<html><body>");
 
                 replyMSG.append("<center><font color=\"LEVEL\">[ L2J EVENT ENGINE ]</font></center><br>");
-                replyMSG.append("<br>Statistics for player <font color=\"LEVEL\">" + pc.getName() + "</font><br>");
+                replyMSG.append("<br>Statistics for reader <font color=\"LEVEL\">" + pc.getName() + "</font><br>");
                 replyMSG.append("Total kills <font color=\"FF0000\">" + pc.kills.size() + "</font><br>");
                 replyMSG.append("<br>Detailed list: <br>");
                 Iterator<String> it = pc.kills.iterator();

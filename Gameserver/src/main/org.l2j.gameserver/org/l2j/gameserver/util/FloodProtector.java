@@ -69,7 +69,7 @@ public class FloodProtector {
     }
 
     /**
-     * Add a new player to the flood protector (should be done for allTemplates players when they enter the world)
+     * Add a new reader to the flood protector (should be done for allTemplates players when they enter the world)
      *
      * @param playerObjId
      */
@@ -80,12 +80,12 @@ public class FloodProtector {
             array[i] = 0;
         }
 
-        // register the player with an empty array
+        // register the reader with an empty array
         _floodClient.put(playerObjId, array);
     }
 
     /**
-     * Remove a player from the flood protector (should be done if player loggs off)
+     * Remove a reader from the flood protector (should be done if reader loggs off)
      *
      * @param playerObjId
      */

@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="5632" name="Tallum Glaive" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_tallum_glaive_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <skill id="3602" level="8"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5633" name="Tallum Glaive" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_tallum_glaive_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <skill id="3013" level="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5634" name="Tallum Glaive" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_tallum_glaive_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <skill id="3552" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="180"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5635" name="Tallum Blade" additionalName="Focus" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_tallum_blade_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1330</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3061" level="1" triggerType="ON_CRITICAL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5636" name="Tallum Blade" additionalName="Haste" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_tallum_blade_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1330</weight>
+        <skill id="3068" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5637" name="Tallum Blade" additionalName="Critical Damage" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_tallum_blade_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1330</weight>
+        <skill id="3057" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5638" name="Elemental Sword" additionalName="Empower" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_elemental_sword_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>830</weight>
+        <skill id="3073" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5639" name="Elemental Sword" additionalName="Acumen" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_elemental_sword_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>830</weight>
+        <skill id="3075" level="1" chance="5" triggerType="ON_MAGIC_SKILL"/>
+        <skill id="3552" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5640" name="Elemental Sword" additionalName="Magic Regeneration" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_elemental_sword_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>830</weight>
+        <skill id="3072" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5641" name="Sword of Miracles" additionalName="Empower" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_miracle_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>840</weight>
+        <skill id="3073" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5642" name="Sword of Miracles" additionalName="Acumen" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_miracle_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>840</weight>
+        <skill id="3074" level="2" chance="10" triggerType="ON_MAGIC_SKILL"/>
+        <skill id="3552" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5643" name="Sword of Miracles" additionalName="Magic Regeneration" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_miracle_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>840</weight>
+        <skill id="3047" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5644" name="Dragon Slayer" additionalName="Focus" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_dragon_slayer_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <skill id="3013" level="3"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5645" name="Dragon Slayer" additionalName="Haste" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_dragon_slayer_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3055" level="2" triggerType="ON_CRITICAL"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5646" name="Dragon Slayer" additionalName="Critical Damage" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_dragon_slayer_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3060" level="2" triggerType="ON_CRITICAL"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5647" name="Dark Legion's Edge" additionalName="Focus" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_dark_legions_edge_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+        <skill id="3067" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5648" name="Dark Legion's Edge" additionalName="Haste" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_dark_legions_edge_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+        <skill id="3013" level="3"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5649" name="Dark Legion's Edge" additionalName="Critical Damage" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_dark_legions_edge_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1320</weight>
+        <skill id="3071" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5600" name="Meteor Shower" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_meteor_shower_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3052" level="1" triggerType="ON_CRITICAL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5601" name="Meteor Shower" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_meteor_shower_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <skill id="3056" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5602" name="Elysian" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_elysian_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1580</weight>
+        <skill id="3013" level="3"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5603" name="Elysian" additionalName="Haste" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_elysian_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1580</weight>
+        <skill id="3057" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5604" name="Elysian" additionalName="Critical Damage" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_elysian_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1580</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3059" level="2" triggerType="ON_CRITICAL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5605" name="Branch of the Mother Tree" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_worldtrees_branch_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>900</weight>
+        <skill id="3048" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5606" name="Branch of the Mother Tree" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_worldtrees_branch_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>900</weight>
+        <skill id="3049" level="2" chance="30" triggerType="ON_MAGIC_SKILL"/>
+        <skill id="3552" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5607" name="Branch of the Mother Tree" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_worldtrees_branch_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>900</weight>
+        <skill id="3047" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5608" name="Carnage Bow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_carnium_bow_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>900</weight>
+        <skill id="3498" level="1"/>
+        <skill id="3552" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="5609" name="Carnage Bow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_carnium_bow_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1670</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3053" level="1" triggerType="ON_CRITICAL"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="5610" name="Carnage Bow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_carnium_bow_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1670</weight>
+        <skill id="3014" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="5611" name="Soul Bow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_soul_bow_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1660</weight>
+        <skill id="3552" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="5612" name="Soul Bow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_soul_bow_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>697</reuseDelay>
+        <time>0</time>
+        <weight>1660</weight>
+        <skill id="3552" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="5613" name="Soul Bow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_soul_bow_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1660</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3062" level="2" triggerType="ON_CRITICAL"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="5614" name="Bloody Orchid" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_bloody_orchid_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>960</weight>
+        <skill id="3051" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5615" name="Bloody Orchid" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_bloody_orchid_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>960</weight>
+        <skill id="3063" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5616" name="Bloody Orchid" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_bloody_orchid_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>960</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3054" level="1" triggerType="ON_CRITICAL"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5617" name="Soul Separator" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_soul_separator_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>950</weight>
+        <skill id="3064" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5618" name="Soul Separator" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_soul_separator_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>950</weight>
+        <skill id="3066" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5619" name="Soul Separator" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_soul_separator_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>950</weight>
+        <skill id="3056" level="2"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5620" name="Blood Tornado" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_blood_tornado_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1370</weight>
+        <skill id="3068" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5621" name="Blood Tornado" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_blood_tornado_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1370</weight>
+        <skill id="3050" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5622" name="Blood Tornado" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_blood_tornado_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1370</weight>
+        <skill id="3058" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5623" name="Dragon Grinder" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_dragon_grinder_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <skill id="3069" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5624" name="Dragon Grinder" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_dragon_grinder_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <skill id="3065" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5625" name="Dragon Grinder" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_dragon_grinder_i01">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <skill id="3013" level="3"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5626" name="Halberd" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_halbard_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1900</weight>
+        <skill id="3601" level="7"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5627" name="Halberd" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_halbard_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1900</weight>
+        <skill id="3552" level="2"/>
+        <skill id="3070" level="1" triggerType="ON_CRITICAL"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5628" name="Halberd" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_halbard_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1900</weight>
+        <skill id="3552" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="180"/>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

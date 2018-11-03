@@ -386,13 +386,13 @@ public class RecipeController {
             }
 
             if ((_player == null) || (_target == null)) {
-                _log.warn("player or target == null (disconnect?), aborting" + _target + _player);
+                _log.warn("reader or target == null (disconnect?), aborting" + _target + _player);
                 abort();
                 return;
             }
 
             if ((!_player.isOnline()) || (!_target.isOnline())) {
-                _log.warn("player or target is not online, aborting " + _target + _player);
+                _log.warn("reader or target is not online, aborting " + _target + _player);
                 abort();
                 return;
             }
@@ -417,7 +417,7 @@ public class RecipeController {
                 _player.reduceCurrentMp(_manaRequired); // use some mp
                 updateCurMp(); // update craft window mp bar
 
-                grabSomeItems(); // grab (equip) some more items with a nice msg to player
+                grabSomeItems(); // grab (equip) some more items with a nice msg to reader
 
                 // if still not empty, schedule another pass
                 if (!_items.isEmpty()) {
@@ -599,7 +599,7 @@ public class RecipeController {
         private class TempItem { // no object id stored, this will be only "list" of items with it's owner
             private final int _itemId;
             private int _quantity;
-            private final int _referencePrice;
+            private final long _referencePrice;
             private final String _itemName;
 
             /**
@@ -629,7 +629,7 @@ public class RecipeController {
                 _quantity = quantity;
             }
 
-            public int getReferencePrice() {
+            public long getReferencePrice() {
                 return _referencePrice;
             }
 
@@ -676,7 +676,7 @@ public class RecipeController {
 
             if (Config.ALT_GAME_CREATION) {
                 int recipeLevel = _recipeList.getLevel();
-                int exp = createdItem.getReferencePrice() * itemCount;
+                long exp = createdItem.getReferencePrice() * itemCount;
                 // one variation
 
                 // exp -= materialsRefPrice; // mat. ref. price is not accurate so other method is better
@@ -691,7 +691,7 @@ public class RecipeController {
                     exp /= 4;
                 }
 
-                int sp = exp / 10;
+                long sp = exp / 10;
 
                 // Added multiplication of Creation speed with XP/SP gain
                 // slower crafting -> more XP, faster crafting -> less XP

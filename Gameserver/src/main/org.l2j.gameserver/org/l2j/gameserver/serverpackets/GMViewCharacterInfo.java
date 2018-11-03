@@ -168,7 +168,7 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		writeShort(_activeChar.getRecomLeft());
 		writeShort(_activeChar.getRecomHave()); // Blue value for name (0 = white, 255 = pure blue)
 		writeInt(_activeChar.getPlayerClass().getId());
-		writeInt(0x00); // special effects? circles around player...
+		writeInt(0x00); // special effects? circles around reader...
 		writeInt(_activeChar.getMaxCp());
 		writeInt((int) _activeChar.getCurrentCp());
 		

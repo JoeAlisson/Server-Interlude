@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
@@ -24,21 +6,17 @@ import org.l2j.gameserver.cache.HtmCache;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.actor.instance.*;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
 import org.l2j.gameserver.model.entity.database.MerchantShop;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.templates.xml.jaxb.Item;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
-
-/**
- * This class ...
- * @version $Revision: 1.12.4.4 $ $Date: 2005/03/27 15:29:30 $
- */
 public final class RequestBuyItem extends L2GameClientPacket
 {
 	private static final String _C__1F_REQUESTBUYITEM = "[C] 1F RequestBuyItem";
@@ -226,7 +204,7 @@ public final class RequestBuyItem extends L2GameClientPacket
 			{
 				continue;
 			}
-			if ((count > Integer.MAX_VALUE) || (!template.isStackable() && (count > 1)))
+			if ((count > Integer.MAX_VALUE) || ((!(template instanceof Item)  || !((Item)template).isStackable()) && (count > 1)))
 			{
 				Util.handleIllegalPlayerAction(player, "Warning!! Character " + player.getName() + " of account " + player.getAccountName() + " tried to purchase invalid quantity of items at the same time.", Config.DEFAULT_PUNISH);
 				SystemMessage sm = new SystemMessage(SystemMessageId.YOU_HAVE_EXCEEDED_QUANTITY_THAT_CAN_BE_INPUTTED);
@@ -273,7 +251,7 @@ public final class RequestBuyItem extends L2GameClientPacket
 			}
 			
 			weight += (long) count * template.getWeight();
-			if (!template.isStackable())
+			if (!(template instanceof  Item) || !((Item)template).isStackable())
 			{
 				slots += count;
 			}
@@ -330,7 +308,7 @@ public final class RequestBuyItem extends L2GameClientPacket
 			player.getInventory().addItem("Buy", itemId, count, player, merchant);
 			/*
 			 * TODO: Disabled until Leaseholders are rewritten ;-) // Update Leaseholder list if (_listId >= 1000000) { L2ItemInstance li = merchant.findLeaseItem(item.getId(), 0); if (li == null) continue; if (li.getCount() < item.getCount()) item.setCount(li.getCount());
-			 * li.setCount(li.getCount() - item.getCount()); li.updateDatabase(); price = item.getCount() + li.getPriceToSell(); L2ItemInstance la = merchant.getLeaseAdena(); la.setCount(la.getCount() + price); la.updateDatabase(); player.getInventory().addItem(item); item.updateDatabase(); }
+			 * li.setCount(li.getCount() - item.getCount()); li.updateDatabase(); price = item.getCount() + li.getPriceToSell(); L2ItemInstance la = merchant.getLeaseAdena(); la.setCount(la.getCount() + price); la.updateDatabase(); reader.getInventory().addItem(item); item.updateDatabase(); }
 			 */
 		}
 		

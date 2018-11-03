@@ -18,7 +18,7 @@ public class WareHouseWithdrawalList extends L2GameServerPacket
 	public static final int FREIGHT = 4; // not sure
 	private static Logger _log = LoggerFactory.getLogger(WareHouseWithdrawalList.class.getName());
 	private L2PcInstance _activeChar;
-	private int _playerAdena;
+	private long _playerAdena;
 	private L2ItemInstance[] _items;
 	private int _whType;
 	
@@ -40,7 +40,7 @@ public class WareHouseWithdrawalList extends L2GameServerPacket
 		{
 			for (L2ItemInstance item : _items)
 			{
-				_log.debug("item:" + item.getItem().getName() + " type1:" + item.getItem().getType1() + " type2:" + item.getItem().getType2());
+				_log.debug("item:" + item.getItem().getName() + " type1:" + item.getItem().getType() + " type2:" + item.getItem().getCommissionType());
 			}
 		}
 	}
@@ -53,18 +53,18 @@ public class WareHouseWithdrawalList extends L2GameServerPacket
 		 * 0x01-Private Warehouse 0x02-Clan Warehouse 0x03-Castle Warehouse 0x04-Warehouse
 		 */
 		writeShort(_whType);
-		writeInt(_playerAdena);
+		writeLong(_playerAdena);
 		writeShort(_items.length);
 		
 		for (L2ItemInstance item : _items)
 		{
-			writeShort(item.getItem().getType1().getId()); // item type1 //unconfirmed, works
+			writeShort(item.getItem().getType().ordinal()); // item type1 //unconfirmed, works
 			writeInt(0x00); // unconfirmed, works
 			writeInt(item.getItemId()); // unconfirmed, works
-			writeInt(item.getCount()); // unconfirmed, works
-			writeShort(item.getItem().getType2().getId()); // item type2 //unconfirmed, works
+			writeLong(item.getCount()); // unconfirmed, works
+			writeShort(item.getItem().getCommissionType().ordinal()); // item type2 //unconfirmed, works
 			writeShort(0x00); // ?
-			writeInt(item.getItem().getBodyPart().getId()); // ?
+			writeInt(0);// TODO item.getItem().getBodyPart().getId()); // ?
 			writeShort(item.getEnchantLevel()); // enchant level -confirmed
 			writeShort(0x00); // ?
 			writeShort(0x00); // ?

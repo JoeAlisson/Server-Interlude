@@ -3147,8 +3147,8 @@ public class SevenSignsFestival implements SpawnListener {
     protected Map<Integer, List<L2PcInstance>> _dawnPreviousParticipants;
     protected Map<Integer, List<L2PcInstance>> _duskPreviousParticipants;
 
-    private Map<Integer, Integer> _dawnFestivalScores;
-    private Map<Integer, Integer> _duskFestivalScores;
+    private Map<Integer, Long> _dawnFestivalScores;
+    private Map<Integer, Long> _duskFestivalScores;
 
     /**
      * _festivalData is essentially an instance of the seven_signs_festival table and should be treated as such. Data is initially accessed by the related Seven Signs cycle, with _signsCycle representing data for the current round of Festivals. The actual table data is stored as a series of StatsSet
@@ -3161,11 +3161,11 @@ public class SevenSignsFestival implements SpawnListener {
 
         _dawnFestivalParticipants = new HashMap<>();
         _dawnPreviousParticipants = new HashMap<>();
-        _dawnFestivalScores = new HashMap<>();
+        _dawnFestivalScores = new HashMap<Integer, Long>();
 
         _duskFestivalParticipants = new HashMap<>();
         _duskPreviousParticipants = new HashMap<>();
-        _duskFestivalScores = new HashMap<>();
+        _duskFestivalScores = new HashMap<Integer, Long>();
 
         _festivalData = new HashMap<>();
 
@@ -3218,7 +3218,7 @@ public class SevenSignsFestival implements SpawnListener {
     }
 
     /**
-     * Returns the maximum allowed player level for the given festival type.
+     * Returns the maximum allowed reader level for the given festival type.
      *
      * @param festivalId
      * @return int maxLevel
@@ -3541,7 +3541,7 @@ public class SevenSignsFestival implements SpawnListener {
     }
 
     /**
-     * Returns the current festival ID and ORACLE ID that the specified player is in, but will return the default of {-1, -1} if the player is not found as a participant.
+     * Returns the current festival ID and ORACLE ID that the specified reader is in, but will return the default of {-1, -1} if the reader is not found as a participant.
      *
      * @param player
      * @return int[] playerFestivalInfo
@@ -3579,7 +3579,7 @@ public class SevenSignsFestival implements SpawnListener {
             festivalId++;
         }
 
-        // Return default data if the player is not found as a participant.
+        // Return default data if the reader is not found as a participant.
         return playerFestivalInfo;
     }
 
@@ -3667,7 +3667,7 @@ public class SevenSignsFestival implements SpawnListener {
         }
     }
 
-    public final int getFinalScore(int oracle, int festivalId) {
+    public final Long getFinalScore(int oracle, int festivalId) {
         if (oracle == SevenSigns.CABAL_DAWN) {
             return _dawnFestivalScores.get(festivalId);
         }
@@ -3675,7 +3675,7 @@ public class SevenSignsFestival implements SpawnListener {
         return _duskFestivalScores.get(festivalId);
     }
 
-    public final int getHighestScore(int oracle, int festivalId) {
+    public final long getHighestScore(int oracle, int festivalId) {
         return getHighestScoreData(oracle, festivalId).getScore();
     }
 
@@ -3720,12 +3720,12 @@ public class SevenSignsFestival implements SpawnListener {
      */
     public final SevenSignsFestivalData getOverallHighestScoreData(int festivalId) {
         SevenSignsFestivalData result = null;
-        int highestScore = 0;
+        long highestScore = 0;
 
         for (Map<Integer, SevenSignsFestivalData> currCycleData : _festivalData.values()) {
             for (SevenSignsFestivalData currFestData : currCycleData.values()) {
                 int currFestID = requireNonNullElse(currFestData.getId(), 0);
-                int festivalScore = currFestData.getScore();
+                long festivalScore = currFestData.getScore();
 
                 if (currFestID != festivalId) {
                     continue;
@@ -3750,14 +3750,14 @@ public class SevenSignsFestival implements SpawnListener {
      * @param offeringScore
      * @return boolean isHighestScore
      */
-    public boolean setFinalScore(L2PcInstance player, int oracle, int festivalId, int offeringScore) {
+    public boolean setFinalScore(L2PcInstance player, int oracle, int festivalId, long offeringScore) {
         List<String> partyMembers;
 
-        int currDawnHighScore = getHighestScore(SevenSigns.CABAL_DAWN, festivalId);
-        int currDuskHighScore = getHighestScore(SevenSigns.CABAL_DUSK, festivalId);
+        long currDawnHighScore = getHighestScore(SevenSigns.CABAL_DAWN, festivalId);
+        long currDuskHighScore = getHighestScore(SevenSigns.CABAL_DUSK, festivalId);
 
-        int thisCabalHighScore = 0;
-        int otherCabalHighScore = 0;
+        long thisCabalHighScore = 0;
+        long otherCabalHighScore = 0;
 
         if (oracle == SevenSigns.CABAL_DAWN) {
             thisCabalHighScore = currDawnHighScore;
@@ -3773,7 +3773,7 @@ public class SevenSignsFestival implements SpawnListener {
 
         SevenSignsFestivalData currFestData = getHighestScoreData(oracle, festivalId);
 
-        // Check if this is the highest score for this level range so far for the player's cabal.
+        // Check if this is the highest score for this level range so far for the reader's cabal.
         if (offeringScore > thisCabalHighScore) {
             // If the current score is greater than that for the other cabal,
             // then they already have the points from this festival.
@@ -3848,7 +3848,7 @@ public class SevenSignsFestival implements SpawnListener {
     }
 
     /**
-     * Calculate and return the proportion of the accumulated bonus for the festival where the player was in the winning party, if the winning party's cabal won the event. The accumulated bonus is then updated, with the player's share deducted.
+     * Calculate and return the proportion of the accumulated bonus for the festival where the reader was in the winning party, if the winning party's cabal won the event. The accumulated bonus is then updated, with the reader's share deducted.
      *
      * @param player
      * @return playerBonus (the share of the bonus for the party)
@@ -4204,7 +4204,7 @@ public class SevenSignsFestival implements SpawnListener {
                     for (L2PcInstance participant : _participants) {
                         _originalLocations.put(participant, new FestivalSpawn(participant.getX(), participant.getY(), participant.getZ(), participant.getHeading()));
 
-                        // Randomize the spawn point around the specific centerpoint for each player.
+                        // Randomize the spawn point around the specific centerpoint for each reader.
                         int x = _startLocation._x;
                         int y = _startLocation._y;
 
@@ -4304,7 +4304,7 @@ public class SevenSignsFestival implements SpawnListener {
                 int y = _startLocation._y;
 
                 /*
-                 * Random X and Y coords around the player start location, up to half of the maximum allowed offset are generated to prevent the mobs from allTemplates moving to the exact same place.
+                 * Random X and Y coords around the reader start location, up to half of the maximum allowed offset are generated to prevent the mobs from allTemplates moving to the exact same place.
                  */
                 isPositive = (Rnd.nextInt(2) == 1);
 
@@ -4479,7 +4479,7 @@ public class SevenSignsFestival implements SpawnListener {
                 participant.teleToLocation(origPosition._x, origPosition._y, origPosition._z, true);
                 participant.sendMessage("You have been removed from the festival arena.");
             } catch (Exception e) {
-                // If an exception occurs, just move the player to the nearest town.
+                // If an exception occurs, just move the reader to the nearest town.
                 try {
                     participant.teleToLocation(MapRegionTable.TeleportWhereType.Town);
                     participant.sendMessage("You have been removed from the festival arena.");

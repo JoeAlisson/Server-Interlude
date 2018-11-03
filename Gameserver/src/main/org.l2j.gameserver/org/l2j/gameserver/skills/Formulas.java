@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.skills;
 
 import org.l2j.commons.Config;
@@ -31,9 +13,7 @@ import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.base.CreatureRace;
-import org.l2j.gameserver.model.entity.database.Armor;
 import org.l2j.gameserver.model.entity.database.PlayerTemplate;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.model.entity.ClanHall;
 import org.l2j.gameserver.model.entity.Siege;
 import org.l2j.gameserver.network.SystemMessageId;
@@ -41,12 +21,13 @@ import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.conditions.ConditionPlayerState;
 import org.l2j.gameserver.skills.conditions.ConditionPlayerState.CheckPlayerState;
 import org.l2j.gameserver.skills.conditions.ConditionUsingItemType;
-import org.l2j.gameserver.skills.funcs.Func;
-import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.skills.funcs.Func;;
+import org.l2j.gameserver.templates.xml.jaxb.Armor;
+import org.l2j.gameserver.templates.xml.jaxb.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 
 /**
  * Global calculations, can be modified by server admins
@@ -375,7 +356,7 @@ public final class Formulas
 		private FuncBowAtkRange()
 		{
 			super(Stats.PHYSIC_ATTACK_RANGE, 0x10, null);
-			setCondition(new ConditionUsingItemType(ItemType.BOW.mask()));
+			setCondition(new ConditionUsingItemType(1 << ItemType.BOW.ordinal()));
 		}
 		
 		@Override
@@ -1186,13 +1167,13 @@ public final class Formulas
 		final int festivalId = festivalInfo[1];
 		int[] festivalCenter;
 		
-		// If the player isn't found in the festival, leave the regen rate as it is.
+		// If the reader isn't found in the festival, leave the regen rate as it is.
 		if (festivalId < 0)
 		{
 			return 0;
 		}
 		
-		// Retrieve the X and Y coords for the center of the festival arena the player is in.
+		// Retrieve the X and Y coords for the center of the festival arena the reader is in.
 		if (oracle == SevenSigns.CABAL_DAWN)
 		{
 			festivalCenter = SevenSignsFestival.FESTIVAL_DAWN_PLAYER_SPAWNS[festivalId];
@@ -1202,7 +1183,7 @@ public final class Formulas
 			festivalCenter = SevenSignsFestival.FESTIVAL_DUSK_PLAYER_SPAWNS[festivalId];
 		}
 		
-		// Check the distance between the player and the player spawn point, in the center of the arena.
+		// Check the distance between the reader and the reader spawn point, in the center of the arena.
 		double distToCenter = activeChar.getDistance(festivalCenter[0], festivalCenter[1]);
 		
 		if (Config.DEBUG)
@@ -1300,8 +1281,8 @@ public final class Formulas
 	
 	/**
 	 * Calculated damage caused by ATTACK of attacker on target, called separatly for each weapon, if dual-weapon is used.
-	 * @param attacker player or NPC that makes ATTACK
-	 * @param target player or NPC, target of ATTACK
+	 * @param attacker reader or NPC that makes ATTACK
+	 * @param target reader or NPC, target of ATTACK
 	 * @param skill
 	 * @param shld
 	 * @param crit if the ATTACK have critical success
@@ -1364,7 +1345,7 @@ public final class Formulas
 					stat = Stats.BOW_WPN_VULN;
 					break;
 				case BLUNT:
-				case BIG_BLUNT:
+                case DUALBLUNT:
 					stat = Stats.BLUNT_WPN_VULN;
 					break;
 				case DAGGER:
@@ -1373,22 +1354,16 @@ public final class Formulas
 				case DUAL:
 					stat = Stats.DUAL_WPN_VULN;
 					break;
-				case DUAL_FIST:
+				case DUALFIST:
 					stat = Stats.DUALFIST_WPN_VULN;
 					break;
 				case ETC:
 					stat = Stats.ETC_WPN_VULN;
 					break;
-				case FIST:
-					stat = Stats.FIST_WPN_VULN;
-					break;
 				case POLE:
 					stat = Stats.POLE_WPN_VULN;
 					break;
 				case SWORD:
-					stat = Stats.SWORD_WPN_VULN;
-					break;
-				case BIG_SWORD: // TODO: have a proper resistance/vulnerability for Big swords
 					stat = Stats.SWORD_WPN_VULN;
 					break;
 			}

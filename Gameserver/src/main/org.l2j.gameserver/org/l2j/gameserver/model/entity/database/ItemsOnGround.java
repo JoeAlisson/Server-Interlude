@@ -14,7 +14,7 @@ public class ItemsOnGround extends Entity<Integer> {
     private int objectId;
     @Column("item_id")
     private int itemId;
-    private int count;
+    private long count;
     @Column("enchant_level")
     private int enchantLevel;
     private int x;
@@ -47,7 +47,7 @@ public class ItemsOnGround extends Entity<Integer> {
         return itemId;
     }
 
-    public int getCount() {
+    public long getCount() {
         return count;
     }
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="35752" name="Scroll: PK (Mid-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="9505"/>
+    </item>
+    <item stackable="true" id="35753" name="Scroll: PK (High-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="9506"/>
+    </item>
+    <item stackable="true" id="35754" name="Scroll: PK (Top-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="9507"/>
+    </item>
+    <item stackable="true" id="35741" name="Scroll: PK (Low-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="9504"/>
+    </item>
+</itemList>

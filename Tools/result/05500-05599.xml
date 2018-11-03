@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="5508" name="Sealed Dark Crystal Glove Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>8530</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5509" name="Sealed Tallum Glove Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>8530</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5514" name="Sealed Gauntlets of Nightmare Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>11842</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5515" name="Sealed Majestic Gauntlet Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>11842</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5520" name="Sealed Dark Crystal Breastplate Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
+        <price>31015</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5521" name="Sealed Tallum Plate Armor Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
+        <price>43953</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5522" name="Sealed Armor of Nightmare Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
+        <price>58728</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5523" name="Sealed Majestic Plate Armor Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
+        <price>58728</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5524" name="Sealed Dark Crystal Gaiter Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
+        <price>20292</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5525" name="Sealed Dark Crystal Helmet Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>12938</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5526" name="Sealed Tallum Helmet Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>12938</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5527" name="Sealed Helm of Nightmare Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>16728</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5528" name="Sealed Majestic Circlet Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
+        <price>16728</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5529" name="Dragon Slayer Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>72900</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5530" name="Berserker Blade Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>43600</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5531" name="Heavy Sword Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>11912</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5532" name="Meteor Shower Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_silver_i00">
+        <price>59308</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5533" name="Elysian Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_silver_i00">
+        <price>72914</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5534" name="Soul Bow Shaft" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
+        <price>72850</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5535" name="Carnage Bow Shaft" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
+        <price>58615</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5536" name="Bloody Orchid Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>58785</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5537" name="Soul Separator Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>72900</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5538" name="Dragon Grinder Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>72914</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5539" name="Blood Tornado Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>59308</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5541" name="Tallum Glaive Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>72929</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5542" name="Halberd Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>59308</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5543" name="Dasparion's Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_silver_i00">
+        <price>58754</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5544" name="Branch of the Mother Tree Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_silver_i00">
+        <price>72986</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5545" name="Dark Legion's Edge Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>72900</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5546" name="Sword of Miracles Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>66369</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5547" name="Elemental Sword Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>58785</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5548" name="Tallum Blade Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+        <price>58785</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5549" name="Metallic Thread" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_skein_gray_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+    </item>
+    <item stackable="true" id="5550" name="Reinforced Metal Plate" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_squares_wood_i00">
+        <price>15000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+    </item>
+    <item stackable="true" id="5551" name="Reorin's Mold" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_blacksmiths_frame_i00">
+        <price>238000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+    </item>
+    <item stackable="true" id="5552" name="Warsmith' Mold" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_blacksmiths_frame_i00">
+        <price>385000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+    </item>
+    <item stackable="true" id="5553" name="Arcsmith' Anvil" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_blacksmiths_frame_i00">
+        <price>531200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+    </item>
+    <item stackable="true" id="5554" name="Warsmith' Holder" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_blacksmiths_frame_i00">
+        <price>884000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+    </item>
+    <item stackable="true" id="5562" name="Echo Crystal - Theme of Christmas I" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>44000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2140" level="1"/>
+    </item>
+    <item stackable="true" id="5563" name="Echo Crystal - Theme of Christmas II" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i01">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>32000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2141" level="1"/>
+    </item>
+    <item stackable="true" id="5564" name="Echo Crystal - Theme of Christmas III" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i02">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>30000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2142" level="1"/>
+    </item>
+    <item stackable="true" id="5565" name="Echo Crystal - Theme of Christmas IV" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i03">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>29000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2143" level="1"/>
+    </item>
+    <item stackable="true" id="5566" name="Echo Crystal - Theme of Christmas V" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i04">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>26000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2144" level="1"/>
+    </item>
+    <item stackable="true" id="5567" name="Sla's Letter" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5568" name="Sla's Letter" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5569" name="Water Rune" commissionType="OTHER_ITEM" icon="icon.etc_water_rune_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5570" name="Water Mantra" commissionType="OTHER_ITEM" icon="icon.etc_water_mantra_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5571" name="Wind Rune" commissionType="OTHER_ITEM" icon="icon.etc_wind_rune_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5572" name="Wind Mantra" commissionType="OTHER_ITEM" icon="icon.etc_wind_mantra_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5573" name="Fire Rune" commissionType="OTHER_ITEM" icon="icon.etc_fire_rune_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="5574" name="Fire Mantra" commissionType="OTHER_ITEM" icon="icon.etc_fire_mantra_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="5576" name="Sound Test Boots" commissionType="FEET" icon="icon.armor_t30_b_i00">
+        <price>884000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>50</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <item stackable="true" id="5583" name="Echo Crystal - Theme of Christmas VI" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i00">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>20000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2145" level="1"/>
+    </item>
+    <item stackable="true" id="5584" name="Echo Crystal - Theme of Christmas VII" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i01">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>17000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2146" level="1"/>
+    </item>
+    <item stackable="true" id="5585" name="Echo Crystal - Theme of Christmas VIII" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i02">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>15000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2147" level="1"/>
+    </item>
+    <item stackable="true" id="5586" name="Echo Crystal - Theme of Christmas IX" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i03">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>9000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2148" level="1"/>
+    </item>
+    <item stackable="true" id="5587" name="Echo Crystal - Theme of Christmas X" commissionType="OTHER_ITEM" icon="icon.etc_echo_crystal_i04">
+        <price>0</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>31000</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2149" level="1"/>
+    </item>
+    <item id="5588" name="Tutorial Guide" commissionType="OTHER_ITEM" icon="icon.etc_spellbook_gray_i00">
+        <price>1</price>
+        <restriction dropable="false" freightable="false"/>
+        <handler>BOOK</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="5589" name="Momentum Stone" type="POTION" commissionType="OTHER_ITEM" icon="icon.etc_energy_stone_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="2165" level="1"/>
+    </item>
+    <armor id="5590" name="Squeaking Shoes" commissionType="FEET" icon="icon.armor_t02_b_i00">
+        <price>350000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>50</weight>
+        <bodyPart>FEET</bodyPart>
+    </armor>
+    <item stackable="true" id="5591" name="CP Potion" type="POTION" commissionType="POTION" icon="icon.etc_cp_potion_i00">
+        <price>200</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>500</reuseDelay>
+        <time>0</time>
+        <weight>25</weight>
+        <skill id="2166" level="1"/>
+    </item>
+    <item stackable="true" id="5592" name="Greater CP Potion" type="POTION" commissionType="POTION" icon="icon.etc_cp_potion_i01">
+        <price>500</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>500</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+        <skill id="2166" level="2"/>
+    </item>
+    <item stackable="true" id="5593" name="SP Scroll (Low-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_sp_scroll1_i00">
+        <price>50000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <skill id="2167" level="1"/>
+    </item>
+    <item stackable="true" id="5594" name="SP Scroll (Mid-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_sp_scroll2_i00">
+        <price>300000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <skill id="2167" level="2"/>
+    </item>
+    <item stackable="true" id="5595" name="SP Scroll (High-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_sp_scroll3_i00">
+        <price>1200000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <skill id="2167" level="3"/>
+    </item>
+    <weapon magic="true" id="5596" name="Dasparion's Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_dasparions_staff_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>920</weight>
+        <skill id="3014" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5597" name="Dasparion's Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_dasparions_staff_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>920</weight>
+        <skill id="3048" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="5598" name="Dasparion's Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_dasparions_staff_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>920</weight>
+        <skill id="3047" level="2"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="5599" name="Meteor Shower" additionalName="Focus" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_meteor_shower_i01">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <skill id="3050" level="1"/>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="5502" name="Sealed Boots of Nightmare Lining" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_piece_of_cloth_black_i00">
+        <price>11842</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item stackable="true" id="5503" name="Sealed Majestic Boot Lining" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_piece_of_cloth_black_i00">
+        <price>11842</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+</itemList>

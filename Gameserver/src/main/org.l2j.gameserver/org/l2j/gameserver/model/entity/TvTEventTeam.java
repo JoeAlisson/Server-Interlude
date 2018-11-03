@@ -63,7 +63,7 @@ public class TvTEventTeam {
     }
 
     /**
-     * Adds a player to the team
+     * Adds a reader to the team
      *
      * @param playerInstance
      * @return boolean
@@ -87,7 +87,7 @@ public class TvTEventTeam {
     }
 
     /**
-     * Removes a player from the team
+     * Removes a reader from the team
      *
      * @param playerName
      */
@@ -117,7 +117,7 @@ public class TvTEventTeam {
     }
 
     /**
-     * Is given player in this team?
+     * Is given reader in this team?
      *
      * @param playerName
      * @return boolean
@@ -190,7 +190,7 @@ public class TvTEventTeam {
     }
 
     /**
-     * Returns player count of this team
+     * Returns reader count of this team
      *
      * @return int
      */

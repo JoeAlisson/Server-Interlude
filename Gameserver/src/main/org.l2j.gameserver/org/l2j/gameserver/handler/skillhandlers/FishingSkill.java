@@ -1,32 +1,13 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.handler.skillhandlers;
 
 import org.l2j.gameserver.handler.ISkillHandler;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ActionFailed;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 public class FishingSkill implements ISkillHandler
 {
@@ -75,7 +56,7 @@ public class FishingSkill implements ISkillHandler
 		{
 			SS = 2;
 		}
-		double gradebonus = 1 + (weaponItem.getCrystalType().ordinal() * 0.1);
+		double gradebonus = 1 + (weaponItem.getCrystalInfo().getType().ordinal() * 0.1);
 		int dmg = (int) (skill.getPower() * gradebonus * SS);
 		if (player.getSkillLevel(1315) <= (skill.getLevel() - 2)) // 1315 - Fish Expertise
 		{// Penalty

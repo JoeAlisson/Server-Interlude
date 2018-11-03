@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
@@ -24,14 +6,14 @@ import org.l2j.gameserver.GameTimeController;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
+import org.l2j.gameserver.templates.xml.jaxb.Item;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;
-
 
 /**
  * @author Advi
@@ -134,8 +116,8 @@ public abstract class ItemContainer {
      * @param enchantLevel : enchant level to match on, or -1 for ANY enchant level
      * @return int corresponding to the number of items matching the above conditions.
      */
-    public int getInventoryItemCount(int itemId, int enchantLevel) {
-        int count = 0;
+    public long getInventoryItemCount(int itemId, int enchantLevel) {
+        long count = 0;
 
         for (L2ItemInstance item : _items) {
             if ((item.getItemId() == itemId) && ((item.getEnchantLevel() == enchantLevel) || (enchantLevel < 0))) {
@@ -165,7 +147,7 @@ public abstract class ItemContainer {
 
         // If stackable item is found in inventory just add to current quantity
         if ((olditem != null) && olditem.isStackable()) {
-            int count = item.getCount();
+            long count = item.getCount();
             olditem.changeCount(process, count, actor, reference);
             olditem.setLastChange(L2ItemInstance.MODIFIED);
 
@@ -211,7 +193,7 @@ public abstract class ItemContainer {
      * @param reference : L2Object Object referencing current action like NPC selling item or previous item in transformation
      * @return L2ItemInstance corresponding to the new item or the updated item in inventory
      */
-    public L2ItemInstance addItem(String process, int itemId, int count, L2PcInstance actor, L2Object reference) {
+    public L2ItemInstance addItem(String process, int itemId, long count, L2PcInstance actor, L2Object reference) {
         L2ItemInstance item = getItemByItemId(itemId);
 
         // If stackable item is found in inventory just add to current quantity
@@ -237,7 +219,7 @@ public abstract class ItemContainer {
                     return null;
                 }
 
-                item = ItemTable.getInstance().createItem(process, itemId, template.isStackable() ? count : 1, actor, reference);
+                item = ItemTable.getInstance().createItem(process, itemId, (template instanceof Item) && ((Item)template).isStackable() ? count : 1, actor, reference);
                 item.setOwnerId(getOwnerId());
                 item.setLocation(getBaseLocation());
                 item.setLastChange(L2ItemInstance.ADDED);
@@ -248,7 +230,7 @@ public abstract class ItemContainer {
                 item.updateDatabase();
 
                 // If stackable, end loop as entire count is included in 1 instance of item
-                if (template.isStackable() || !Config.MULTIPLE_ITEM_DROP) {
+                if ((template instanceof  Item) && ((Item)template).isStackable() || !Config.MULTIPLE_ITEM_DROP) {
                     break;
                 }
             }
@@ -269,7 +251,7 @@ public abstract class ItemContainer {
      * @return L2ItemInstance corresponding to the new weared item
      */
     public L2ItemInstance addWearItem(String process, int itemId, L2PcInstance actor, L2Object reference) {
-        // Surch the item in the inventory of the player
+        // Surch the item in the inventory of the reader
         L2ItemInstance item = getItemByItemId(itemId);
 
         // There is such item already in inventory
@@ -290,7 +272,7 @@ public abstract class ItemContainer {
         // Add item in inventory and equip it if necessary (item location defined)
         addItem(item);
 
-        // Calculate the weight loaded by player
+        // Calculate the weight loaded by reader
         refreshWeight();
 
         return item;
@@ -307,7 +289,7 @@ public abstract class ItemContainer {
      * @param reference L2Object Object referencing current action like NPC selling item or previous item in transformation
      * @return L2ItemInstance corresponding to the new item or the updated item in inventory
      */
-    public L2ItemInstance transferItem(String process, int objectId, int count, ItemContainer target, L2PcInstance actor, L2Object reference) {
+    public L2ItemInstance transferItem(String process, int objectId, long count, ItemContainer target, L2PcInstance actor, L2Object reference) {
         if (target == null) {
             return null;
         }
@@ -403,7 +385,7 @@ public abstract class ItemContainer {
      * @param reference : L2Object Object referencing current action like NPC selling item or previous item in transformation
      * @return L2ItemInstance corresponding to the destroyed item or the updated item in inventory
      */
-    public L2ItemInstance destroyItem(String process, int objectId, int count, L2PcInstance actor, L2Object reference) {
+    public L2ItemInstance destroyItem(String process, int objectId, long count, L2PcInstance actor, L2Object reference) {
         L2ItemInstance item = getItemByObjectId(objectId);
         if (item == null) {
             return null;
@@ -434,7 +416,7 @@ public abstract class ItemContainer {
      * @param reference : L2Object Object referencing current action like NPC selling item or previous item in transformation
      * @return L2ItemInstance corresponding to the destroyed item or the updated item in inventory
      */
-    public L2ItemInstance destroyItemByItemId(String process, int itemId, int count, L2PcInstance actor, L2Object reference) {
+    public L2ItemInstance destroyItemByItemId(String process, int itemId, long count, L2PcInstance actor, L2Object reference) {
         L2ItemInstance item = getItemByItemId(itemId);
         if (item == null) {
             return null;
@@ -468,13 +450,8 @@ public abstract class ItemContainer {
         }
     }
 
-    /**
-     * Get warehouse Adena.
-     *
-     * @return
-     */
-    public int getAdena() {
-        int count = 0;
+    public long getAdena() {
+        long count = 0;
 
         for (L2ItemInstance item : _items) {
             if (item.getItemId() == 57) {

@@ -125,8 +125,8 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 				_relation |= RelationChangedPacket.USER_RELATION_CLAN_LEADER;
 		}
 
-		/*for(Event e : player.getEvents())  // TODO implement Events Relation
-			_relation = e.getUserRelation(player, _relation);*/
+		/*for(Event e : reader.getEvents())  // TODO implement Events Relation
+			_relation = e.getUserRelation(reader, _relation);*/
 
 
 		obj_id = player.getObjectId();
@@ -196,24 +196,24 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		pledge_class = player.getPledgeClass();
 		pledge_type = player.getPledgeType();
 		transformation = 0; // transoformation ID TODO implement Transformations
-		//attackElement = player.getAttackElement();  //TODO implement Elements
-		attackElementValue = 0; // player.getAttack(attackElement);
+		//attackElement = reader.getAttackElement();  //TODO implement Elements
+		attackElementValue = 0; // reader.getAttack(attackElement);
 		defenceFire = (int) player.getTemplate().getFireVuln();
 		defenceWater = (int) player.getTemplate().getWaterVuln();
 		defenceWind = (int) player.getTemplate().getWindVuln();
 		defenceEarth = (int) player.getTemplate().getEarthVuln();
 		defenceHoly = (int) player.getTemplate().getHolyVuln();
 		defenceUnholy = (int) player.getTemplate().getDarkVuln();
-		agathion = 0; // player.getAgathionId(); // TODO implement Agathion
-		fame = 0; // player.getFame(); // TODO implement Fame
+		agathion = 0; // reader.getAgathionId(); // TODO implement Agathion
+		fame = 0; // reader.getFame(); // TODO implement Fame
 		partyRoom =  false; //TODO implement party Room 
 		_moveType = player.isInWater() ? 0x01 : 0x00; // FlyingTransform  0x02
-		talismans = 0; // player.getTalismanCount(); TODO implements talisman
-		_jewelsLimit = 0; // player.getJewelsLimit(); TODO implements Jewels
-		//_allowMap = player.isActionBlocked(Zone.BLOCKED_ACTION_MINIMAP);
-		_partySubstitute = 0; // player.isPartySubstituteStarted()  ? 1 : 0; TODO implements party substitute 
-		_hideHeadAccessories = false; // TODO player.hideHeadAccessories();
-		_armorSetEnchant = 0; // player.getArmorSetEnchant(); TODO implement ArmorSet Enchantment
+		talismans = 0; // reader.getTalismanCount(); TODO implements talisman
+		_jewelsLimit = 0; // reader.getJewelsLimit(); TODO implements Jewels
+		//_allowMap = reader.isActionBlocked(Zone.BLOCKED_ACTION_MINIMAP);
+		_partySubstitute = 0; // reader.isPartySubstituteStarted()  ? 1 : 0; TODO implements party substitute
+		_hideHeadAccessories = false; // TODO reader.hideHeadAccessories();
+		_armorSetEnchant = 0; // reader.getArmorSetEnchant(); TODO implement ArmorSet Enchantment
         x = player.getX();
         y = player.getY();
         z = player.getZ();

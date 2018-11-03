@@ -114,20 +114,20 @@ public final class RequestPrivateStoreBuy extends L2GameClientPacket
 		{
 			if ((ir.getCount() > Integer.MAX_VALUE) || (ir.getCount() < 0))
 			{
-				String msgErr = "[RequestPrivateStoreBuy] player " + getClient().getActiveChar().getName() + " tried an overflow exploit, ban this player!";
+				String msgErr = "[RequestPrivateStoreBuy] reader " + getClient().getActiveChar().getName() + " tried an overflow exploit, ban this reader!";
 				Util.handleIllegalPlayerAction(getClient().getActiveChar(), msgErr, Config.DEFAULT_PUNISH);
 				return;
 			}
 			TradeItem sellersItem = storeList.getItem(ir.getObjectId());
 			if (sellersItem == null)
 			{
-				String msgErr = "[RequestPrivateStoreBuy] player " + getClient().getActiveChar().getName() + " tried to buy an item not sold in a private store (buy), ban this player!";
+				String msgErr = "[RequestPrivateStoreBuy] reader " + getClient().getActiveChar().getName() + " tried to buy an item not sold in a private store (buy), ban this reader!";
 				Util.handleIllegalPlayerAction(getClient().getActiveChar(), msgErr, Config.DEFAULT_PUNISH);
 				return;
 			}
 			if (ir.getPrice() != sellersItem.getPrice())
 			{
-				String msgErr = "[RequestPrivateStoreBuy] player " + getClient().getActiveChar().getName() + " tried to change the seller's price in a private store (buy), ban this player!";
+				String msgErr = "[RequestPrivateStoreBuy] reader " + getClient().getActiveChar().getName() + " tried to change the seller's price in a private store (buy), ban this reader!";
 				Util.handleIllegalPlayerAction(getClient().getActiveChar(), msgErr, Config.DEFAULT_PUNISH);
 				return;
 			}
@@ -137,7 +137,7 @@ public final class RequestPrivateStoreBuy extends L2GameClientPacket
 		// FIXME: this check should be (and most probabliy is) done in the TradeList mechanics
 		if ((priceTotal < 0) || (priceTotal > Integer.MAX_VALUE))
 		{
-			String msgErr = "[RequestPrivateStoreBuy] player " + getClient().getActiveChar().getName() + " tried an overflow exploit, ban this player!";
+			String msgErr = "[RequestPrivateStoreBuy] reader " + getClient().getActiveChar().getName() + " tried an overflow exploit, ban this reader!";
 			Util.handleIllegalPlayerAction(getClient().getActiveChar(), msgErr, Config.DEFAULT_PUNISH);
 			return;
 		}
@@ -153,7 +153,7 @@ public final class RequestPrivateStoreBuy extends L2GameClientPacket
 		{
 			if (storeList.getItemCount() > _count)
 			{
-				String msgErr = "[RequestPrivateStoreBuy] player " + getClient().getActiveChar().getName() + " tried to buy less items then sold by package-sell, ban this player for bot-usage!";
+				String msgErr = "[RequestPrivateStoreBuy] reader " + getClient().getActiveChar().getName() + " tried to buy less items then sold by package-sell, ban this reader for bot-usage!";
 				Util.handleIllegalPlayerAction(getClient().getActiveChar(), msgErr, Config.DEFAULT_PUNISH);
 				return;
 			}

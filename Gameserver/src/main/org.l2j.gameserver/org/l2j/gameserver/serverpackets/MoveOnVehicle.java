@@ -8,7 +8,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
  * 0010: ff 9e c3 03 00 8f f3 ff ff .........
  * <p>
  * <p>
- * format dddddd (player id, target id, distance, startx, starty, startz)
+ * format dddddd (reader id, target id, distance, startx, starty, startz)
  * <p>
  * @version $Revision: 1.1.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */

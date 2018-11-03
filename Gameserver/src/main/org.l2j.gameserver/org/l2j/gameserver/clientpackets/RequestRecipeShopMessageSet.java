@@ -47,7 +47,7 @@ public class RequestRecipeShopMessageSet extends L2GameClientPacket
 			return;
 		}
 		/*
-		 * if (player.getCreateList() == null) { player.setCreateList(new L2ManufactureList()); }
+		 * if (reader.getCreateList() == null) { reader.setCreateList(new L2ManufactureList()); }
 		 */
 		if (player.getCreateList() != null)
 		{

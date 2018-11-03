@@ -1230,7 +1230,7 @@ public class L2Attackable extends L2NpcInstance {
         if (Config.DEEPBLUE_DROP_RULES) {
             int highestLevel = lastAttacker.getLevel();
 
-            // Check to prevent very high level player to nearly kill mob and let low level player do the last hit.
+            // Check to prevent very high level reader to nearly kill mob and let low level reader do the last hit.
             if ((getAttackByList() != null) && !getAttackByList().isEmpty()) {
                 for (L2Character atkChar : getAttackByList()) {
                     if ((atkChar != null) && (atkChar.getLevel() > highestLevel)) {
@@ -1798,7 +1798,7 @@ public class L2Attackable extends L2NpcInstance {
     /**
      * Calculate the leveling chance of Soul Crystals based on the attacker that killed this L2Attackable
      *
-     * @param attacker The player that last killed this L2Attackable $ Rewrite 06.12.06 - Yesod
+     * @param attacker The reader that last killed this L2Attackable $ Rewrite 06.12.06 - Yesod
      */
     private void levelSoulCrystals(L2Character attacker) {
         // Only L2PcInstance can absorb a soul
@@ -1897,7 +1897,7 @@ public class L2Attackable extends L2NpcInstance {
                     // Find any of the 39 possible crystals.
                     if (id == itemId) {
                         crystalQTY++;
-                        // Keep count but make sure the player has no more than 1 crystal
+                        // Keep count but make sure the reader has no more than 1 crystal
                         if (crystalQTY > 1) {
                             isSuccess = false;
                             break;
@@ -1965,13 +1965,13 @@ public class L2Attackable extends L2NpcInstance {
                 doLevelup = false;
             }
 
-            // The player doesn't have any crystals with him get to the next player.
+            // The reader doesn't have any crystals with him get to the next reader.
             if ((crystalQTY < 1) || (crystalQTY > 1) || !isSuccess || !doLevelup) {
                 // Too many crystals in inventory.
                 if (crystalQTY > 1) {
                     player.sendPacket(new SystemMessage(SystemMessageId.SOUL_CRYSTAL_ABSORBING_FAILED_RESONATION));
                 }
-                // The soul crystal stage of the player is way too high
+                // The soul crystal stage of the reader is way too high
                 else if (!doLevelup) {
                     player.sendPacket(new SystemMessage(SystemMessageId.SOUL_CRYSTAL_ABSORBING_REFUSED));
                 }
@@ -2020,7 +2020,7 @@ public class L2Attackable extends L2NpcInstance {
             Item = player.getInventory().addItem("SoulCrystal", giveid, 1, player, this);
             playerIU.addItem(Item);
 
-            // Send a sound event and text message to the player
+            // Send a sound event and text message to the reader
             if (broke) {
                 player.sendPacket(new SystemMessage(SystemMessageId.SOUL_CRYSTAL_BROKE));
             } else {
@@ -2104,7 +2104,7 @@ public class L2Attackable extends L2NpcInstance {
         // (1/1 basis - 13% of over-hit damage, 13% of extra exp is given, and so on...)
         double overhitExp = ((overhitPercentage / 100) * normalExp);
 
-        // Return the rounded ammount of exp points to be added to the player's normal exp reward
+        // Return the rounded ammount of exp points to be added to the reader's normal exp reward
         long bonusOverhit = Math.round(overhitExp);
         return bonusOverhit;
     }
@@ -2158,7 +2158,7 @@ public class L2Attackable extends L2NpcInstance {
      * Sets the seed parametrs, but not the seed state
      *
      * @param id     - id of the seed
-     * @param seeder - player who is sowind the seed
+     * @param seeder - reader who is sowind the seed
      */
     public void setSeeded(int id, L2PcInstance seeder) {
         if (!_seeded) {
@@ -2289,7 +2289,7 @@ public class L2Attackable extends L2NpcInstance {
             for (L2Character player : _monster.getAggroListRP().keySet()) {
                 if (player.isInParty() && player.getParty().isInCommandChannel()) {
                     if (player.getParty().getCommandChannel().equals(_channel)) {
-                        // if a player which is in first attacked CommandChannel, restart the timer ;)
+                        // if a reader which is in first attacked CommandChannel, restart the timer ;)
                         _monster.setCommandChannelTimer(this);
                         _monster.setFirstCommandChannelAttacked(_channel);
                         ThreadPoolManager.getInstance().scheduleGeneral(this, 300000); // 5 min

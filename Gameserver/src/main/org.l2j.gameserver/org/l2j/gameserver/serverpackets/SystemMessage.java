@@ -46,7 +46,7 @@ public class SystemMessage extends L2GameServerPacket
 		return this;
 	}
 	
-	public SystemMessage addNumber(int number)
+	public SystemMessage addNumber(long number)
 	{
 		_types.add(TYPE_NUMBER);
 		_values.add(number);

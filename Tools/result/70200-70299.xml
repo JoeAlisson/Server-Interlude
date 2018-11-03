@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <armor id="70201" name="Earring of Chronicle Heir" additionalName="Lv. 10" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>EAR</bodyPart>
+    </armor>
+    <armor id="70200" name="Earring of Chronicle Heir" additionalName="Lv. 9" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <bodyPart>EAR</bodyPart>
+    </armor>
+    <armor id="70203" name="Refined Romantic Chapeau: Yellow" additionalName="33-day" icon="icon.bm_romantic_chaperon_yellow">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>47520</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <armor id="70202" name="Refined Romantic Chapeau: Gold" additionalName="100-day" icon="icon.bm_romantic_chaperon_gold">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>144000</time>
+        <weight>10</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+    <item stackable="true" id="70205" name="Sniper's Mysterious Package (No-grade)" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70204" name="Feather of Blessing" icon="icon.blessed_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70207" name="Sniper's Mysterious Package (D-grade)" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70206" name="Mystic's Mysterious Package (No-grade)" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70209" name="Sniper's Mysterious Package (C-grade)" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70208" name="Mystic's Mysterious Package (D-grade)" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="70211" name="Wondrous Cubic" additionalName="General" icon="icon.etc_ore_cube_event_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70210" name="Mystic's Mysterious Package (C-grade)" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70213" name="Refined Romantic Gold Chapeau Box" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="70212" name="Wondrous Cubic" additionalName="Enhanced" icon="icon.etc_ore_cube_event_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70215" name="XP Rune Chest - 100%" icon="icon.etc_pi_box_joy_pack">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70214" name="Refined Romantic Yellow Chapeau Box" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70217" name="Rare Accessory Enhanced Coupon" icon="icon.etc_lottery_card_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="70216" name="Chronicle Cube" additionalName="21-day" icon="icon.etc_ore_cube_event_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>30240</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70219" name="Refined Rare Accessory Pack" additionalName="7-day" icon="icon.etc_box_of_adventure_3_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70218" name="Chronicle Chest" icon="icon.ev_10th_present2">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55317" level="1"/>
+    </item>
+    <armor id="70221" name="Refined Orfen's Earring" additionalName="7-day" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>150</weight>
+        <skill id="3560" level="3"/>
+        <bodyPart>EAR</bodyPart>
+    </armor>
+    <armor id="70220" name="Refined Queen Ant's Ring" additionalName="7-day" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>150</weight>
+        <skill id="3562" level="3"/>
+        <bodyPart>FINGER</bodyPart>
+    </armor>
+    <item stackable="true" id="70223" name="Refined Queen Ant's Ring Box" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="70222" name="Refined Ring of Core" additionalName="7-day" commissionType="RING" icon="icon.accessory_ring_of_core_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>150</weight>
+        <skill id="3563" level="3"/>
+        <skill id="35016" level="1"/>
+        <bodyPart>FINGER</bodyPart>
+    </armor>
+    <item stackable="true" id="70225" name="Refined Ring of Core Box" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70224" name="Refined Orfen's Earring Box" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70227" name="Refined Queen Ant's Ring Box" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70226" name="Chronicle Cube Box (21-day)" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70229" name="Refined Ring of Core Box" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70228" name="Refined Orfen's Earring Box" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70231" name="King Pirate's Treasure Chest" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70230" name="Exchange Coupon: Refined Rare Accessory Pack" icon="icon.etc_lottery_card_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70233" name="Strawberry Juice" type="POTION" icon="icon.etc_fruit_cocktail_i01">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>3000</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55329" level="1"/>
+    </item>
+    <item stackable="true" id="70232" name="Coco Brownie's Amulet of Love" icon="icon.love_potion_party">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70235" name="Cherry Juice" type="POTION" icon="icon.etc_fruit_cocktail_i02">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>3000</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55331" level="1"/>
+    </item>
+    <item stackable="true" id="70234" name="Mango Juice" type="POTION" icon="icon.etc_fruit_cocktail_i03">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>3000</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55330" level="1"/>
+    </item>
+    <item stackable="true" id="70237" name="Scroll: 100 SP" additionalName="Event" icon="icon.etc_sp_scroll2_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70236" name="Scroll: 50 SP" additionalName="Event" icon="icon.etc_sp_scroll1_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70239" name="Irene' Hourglass - 1 Hour" additionalName="1~19" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70238" name="Scroll: 1,000 SP" additionalName="Event" icon="icon.etc_sp_scroll3_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70241" name="Irene' Hourglass - 3 Hours" additionalName="1~19" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70240" name="Irene' Hourglass - 2 Hours" additionalName="1~19" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70243" name="Irene' Hourglass - 2 Hours" additionalName="20~39" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70242" name="Irene' Hourglass - 1 Hour" additionalName="20~39" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70245" name="Irene' Hourglass - 1 Hour" additionalName="40~51" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70244" name="Irene' Hourglass - 3 Hours" additionalName="20~39" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70247" name="Irene' Hourglass - 3 Hours" additionalName="40~51" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70246" name="Irene' Hourglass - 2 Hours" additionalName="40~51" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70249" name="Irene' Hourglass - 2 Hours" additionalName="52~60" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70248" name="Irene' Hourglass - 1 Hour" additionalName="52~60" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70251" name="Irene' Hourglass - 1 Hour" additionalName="61~75" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70250" name="Irene' Hourglass - 3 Hours" additionalName="52~60" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70253" name="Irene' Hourglass - 3 Hours" additionalName="61~75" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70252" name="Irene' Hourglass - 2 Hours" additionalName="61~75" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70255" name="Irene' Hourglass - 2 Hours" additionalName="76~79" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70254" name="Irene' Hourglass - 1 Hour" additionalName="76~79" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70257" name="Irene' Hourglass - 1 Hour" additionalName="80~85" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70256" name="Irene' Hourglass - 3 Hours" additionalName="76~79" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70259" name="Irene' Hourglass - 3 Hours" additionalName="80~85" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70258" name="Irene' Hourglass - 2 Hours" additionalName="80~85" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70261" name="Irene' Hourglass - 2 Hours" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70260" name="Irene' Hourglass - 1 Hour" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70263" name="Irene' Hourglass - 4 Hours" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70262" name="Irene' Hourglass - 3 Hours" icon="icon.etc_dragons_blood_i03">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="70265" name="Irene's Song 100%" additionalName="3 hours" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>180</time>
+        <weight>0</weight>
+    </item>
+    <item id="70264" name="Irene's Song 100%" additionalName="1 hour" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item id="70267" name="Irene's Song 100%" additionalName="7-day" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+    </item>
+    <item id="70266" name="Irene's Song 100%" additionalName="5 hours" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>300</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70269" name="Irene's Song 100% - 3 Hours" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70268" name="Irene's Song 100% - 1 Hour" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70271" name="Irene's Song 100% - 7 Days" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70270" name="Irene's Song 100% - 5 Hours" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="70273" name="Irene's Song 200%" additionalName="3 hours" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>180</time>
+        <weight>0</weight>
+    </item>
+    <item id="70272" name="Irene's Song 200%" additionalName="1 hour" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item id="70275" name="Irene's Song 200%" additionalName="7-day" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+    </item>
+    <item id="70274" name="Irene's Song 200%" additionalName="5 hours" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>300</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70277" name="Irene's Song 200% - 3 Hours" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70276" name="Irene's Song 200% - 1 Hour" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70279" name="Irene's Song 200% - 7 Days" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70278" name="Irene's Song 200% - 5 hours" icon="icon.etc_pi_gift_box_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="70281" name="Clan Reputation Score - 50" additionalName="1-day" type="SCROLL" icon="icon.etc_bloodpledge_point_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>1440</time>
+        <weight>0</weight>
+        <skill id="55363" level="1"/>
+    </item>
+    <item id="70280" name="Clan Reputation Score - 10" additionalName="1-day" type="SCROLL" icon="icon.etc_bloodpledge_point_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>1440</time>
+        <weight>0</weight>
+        <skill id="55362" level="1"/>
+    </item>
+    <item stackable="true" id="70283" name="Superspeed Potion" type="POTION" icon="icon.etc_potion_red_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+        <skill id="55361" level="1"/>
+    </item>
+    <item id="70282" name="Clan Reputation Score - 150" additionalName="1-day" type="SCROLL" icon="icon.etc_bloodpledge_point_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>1440</time>
+        <weight>0</weight>
+        <skill id="55364" level="1"/>
+    </item>
+    <item stackable="true" id="70285" name="Weapon Supply Box (C-grade)" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70284" name="Weapon Supply Box (B-grade)" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70287" name="C-grade Armor Supply Box" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70286" name="B-grade Armor Supply Box" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70289" name="C-grade Weapons Ingredient Box" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70288" name="B-grade Weapons Ingredient Box" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70291" name="C-grade Armor Ingredient Box" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70290" name="B-grade Armor Ingredient Box" icon="icon.bm_pirate_treasure_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70293" name="Kusto's Support Box: Enhance Weapon" icon="icon.etc_bm_jewelbox_main_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70292" name="Baium Treasure Chest" icon="icon.etc_treasure_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="70295" name="Talisman of Border +2" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </armor>
+    <armor id="70294" name="Talisman of Border +1" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </armor>
+    <armor id="70297" name="Talisman of Border +4" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </armor>
+    <armor id="70296" name="Talisman of Border +3" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </armor>
+    <item stackable="true" id="70299" name="Enchant Scroll of Border" icon="icon.etc_doom_capture">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="70298" name="Talisman of Border +5" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </armor>
+</itemList>

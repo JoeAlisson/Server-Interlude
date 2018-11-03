@@ -28,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
  *         &lt;element name="using" type="{}usingType"/&gt;
- *         &lt;element name="player" type="{}playerType"/&gt;
+ *         &lt;element name="reader" type="{}playerType"/&gt;
  *         &lt;element name="target" type="{}targetType"/&gt;
  *         &lt;element name="not" type="{}notType"/&gt;
  *         &lt;element name="game" type="{}gameType"/&gt;
@@ -49,7 +49,7 @@ public class AndType {
 
     @XmlElements({
         @XmlElement(name = "using", type = UsingType.class),
-        @XmlElement(name = "player", type = PlayerType.class),
+        @XmlElement(name = "reader", type = PlayerType.class),
         @XmlElement(name = "target", type = TargetType.class),
         @XmlElement(name = "not", type = NotType.class),
         @XmlElement(name = "game", type = GameType.class),

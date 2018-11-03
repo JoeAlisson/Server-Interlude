@@ -122,20 +122,20 @@ public class ScrollOfEscape implements IItemHandler
 			return;
 		}
 		
-		// Check to see if the player is in a festival.
+		// Check to see if the reader is in a festival.
 		if (activeChar.isFestivalParticipant())
 		{
 			activeChar.sendPacket(SystemMessage.sendString("You may not use an escape skill in a festival."));
 			return;
 		}
 		
-		// Check to see if player is in jail
+		// Check to see if reader is in jail
 		if (activeChar.isInJail())
 		{
 			activeChar.sendPacket(SystemMessage.sendString("You can not escape from jail."));
 			return;
 		}
-		// Check to see if player is in a duel
+		// Check to see if reader is in a duel
 		if (activeChar.isInDuel())
 		{
 			activeChar.sendPacket(SystemMessage.sendString("You cannot use escape skills during a duel."));

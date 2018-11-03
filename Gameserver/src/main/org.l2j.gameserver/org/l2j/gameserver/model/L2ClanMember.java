@@ -65,7 +65,7 @@ public class L2ClanMember
 	{
 		if (player.getClan() == null)
 		{
-			throw new IllegalArgumentException("Can not create a ClanMember if player has a null clan.");
+			throw new IllegalArgumentException("Can not create a ClanMember if reader has a null clan.");
 		}
 		_clan = player.getClan();
 		_player = player;
@@ -84,7 +84,7 @@ public class L2ClanMember
 	{
 		if ((player == null) && (_player != null))
 		{
-			// this is here to keep the data when the player logs off
+			// this is here to keep the data when the reader logs off
 			_name = _player.getName();
 			_level = _player.getLevel();
 			_classId = _player.getPlayerClass().getId();

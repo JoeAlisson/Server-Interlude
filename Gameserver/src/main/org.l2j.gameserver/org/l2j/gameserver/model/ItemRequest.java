@@ -25,7 +25,7 @@ public class ItemRequest
 {
 	int _objectId;
 	int _itemId;
-	int _count;
+	long _count;
 	int _price;
 	
 	public ItemRequest(int objectId, int count, int price)
@@ -53,12 +53,12 @@ public class ItemRequest
 		return _itemId;
 	}
 	
-	public void setCount(int count)
+	public void setCount(long count)
 	{
 		_count = count;
 	}
 	
-	public int getCount()
+	public long getCount()
 	{
 		return _count;
 	}

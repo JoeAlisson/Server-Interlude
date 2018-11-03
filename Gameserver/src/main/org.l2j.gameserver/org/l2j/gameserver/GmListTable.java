@@ -81,7 +81,7 @@ public class GmListTable {
     }
 
     /**
-     * Add a L2PcInstance player to the Set _gmList
+     * Add a L2PcInstance reader to the Set _gmList
      *
      * @param player
      * @param hidden

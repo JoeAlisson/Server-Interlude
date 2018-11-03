@@ -21,7 +21,7 @@ public final class ProtocolVersion extends L2GameClientPacket {
             logger.info("Ping received");
             // this is just a ping attempt from the new C2 client
             client.closeNow();
-        } else if (_version != 64) {
+        } else if (_version != 64 && _version != 110) {
             logger.warn("Client: {} -> Protocol Revision: {} is invalid. Version  {} is supported. Closing connection. ", client, _version, 64);
             logger.warn("Wrong Protocol Version {}", _version);
             client.close(new VersionCheck(client.enableCrypt(), 0));

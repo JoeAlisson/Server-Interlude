@@ -2,6 +2,9 @@ package org.l2j.gameserver.serverpackets;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.model.L2ItemInstance;
+import org.l2j.gameserver.templates.xml.jaxb.Armor;
+import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,7 +28,14 @@ public class EquipUpdate extends L2GameServerPacket {
 		writeByte(0x4b);
 		writeInt(_change);
 		writeInt(_item.getObjectId());
-		switch (_item.getItem().getBodyPart())
+
+		BodyPart bodyPart = null;
+		if(_item.getItem() instanceof Armor) {
+			bodyPart = ((Armor) _item.getItem()).getBodyPart();
+		} else if(_item.getItem() instanceof Weapon) {
+			bodyPart =  ((Weapon) _item.getItem()).getBodyPart();
+		}
+		switch (bodyPart)
 		{
 			case LEFT_EAR:
 				bodypart = 0x01;
@@ -66,7 +76,7 @@ public class EquipUpdate extends L2GameServerPacket {
 			case BACK:
 				bodypart = 0x0d;
 				break;
-            case TWO_HAND:
+            case TWO_HANDS:
 				bodypart = 0x0e;
 				break;
 			case HAIR:

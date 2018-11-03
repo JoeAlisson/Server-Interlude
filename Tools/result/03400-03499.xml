@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="3456" name="Imperial Diamond" commissionType="OTHER_ITEM" icon="icon.etc_jewel_silver_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3457" name="Statue of Shilen - Head" commissionType="OTHER_ITEM" icon="icon.etc_stone_gray_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3458" name="Statue of Shilen - Torso" commissionType="OTHER_ITEM" icon="icon.etc_debris_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3459" name="Statue of Shilen - Arm" commissionType="OTHER_ITEM" icon="icon.etc_gargoyle_claw_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3460" name="Statue of Shilen - Leg" commissionType="OTHER_ITEM" icon="icon.etc_stone_black_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3461" name="Complete Statue of Shilen" commissionType="OTHER_ITEM" icon="icon.etc_statue_of_einhasad_bronze_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3462" name="Ancient Tablet Fragment: 1st Piece" commissionType="OTHER_ITEM" icon="icon.etc_plate_silver_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3463" name="Ancient Tablet Fragment: 2nd Piece" commissionType="OTHER_ITEM" icon="icon.etc_plate_silver_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3464" name="Ancient Tablet Fragment: 3rd Piece" commissionType="OTHER_ITEM" icon="icon.etc_plate_silver_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3465" name="Ancient Tablet Fragment: 4th Piece" commissionType="OTHER_ITEM" icon="icon.etc_plate_silver_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3466" name="Complete Ancient Tablet" commissionType="OTHER_ITEM" icon="icon.etc_ancient_tablet_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item id="3467" name="The Wishing Potion" commissionType="OTHER_ITEM" icon="icon.etc_lesser_potion_blue_i00">
+        <price>10</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>60</weight>
+    </item>
+    <item id="3468" name="Ancient Crown" commissionType="OTHER_ITEM" icon="icon.etc_mark_blue_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="3469" name="Certificate of Royalty" commissionType="OTHER_ITEM" icon="icon.etc_crest_red_i00">
+        <price>10</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3470" name="Gold Bar" commissionType="OTHER_ITEM" icon="icon.etc_lump_yellow_i00">
+        <price>10000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <weapon id="3471" name="Cybellin's Dagger" type="DAGGER" icon="icon.weapon_doomed_dagger_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>400</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="3472" name="Blood Medusa" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i00">
+        <price>50</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3473" name="Blood Werewolf" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3474" name="Blood Basilisk" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i00">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3475" name="Blood Dre Vanul" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3476" name="Blood Succubus" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i00">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3477" name="Blood Dragon" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i00">
+        <price>200</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3478" name="Beleth's Blood Dragon" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i01">
+        <price>300</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3479" name="Manak's Blood Werewolf" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i01">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3480" name="Nia's Blood Medusa" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_blood_i01">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3481" name="Gold Dragon" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i00">
+        <price>200</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3482" name="Gold Wyvern" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i00">
+        <price>50</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3483" name="Gold Knight" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3484" name="Gold Giant" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i00">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3485" name="Gold Drake" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3486" name="Gold Wyrm" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i00">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3487" name="Beleth's Gold Dragon" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i01">
+        <price>300</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3488" name="Manak's Gold Giant" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i01">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3489" name="Nia's Gold Wyvern" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_gold_i01">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3490" name="Silver Unicorn" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i00">
+        <price>50</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3491" name="Silver Fairy" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3492" name="Silver Dryad" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i00">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3493" name="Silver Dragon" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i00">
+        <price>200</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3494" name="Silver Golem" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i00">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3495" name="Silver Undine" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i00">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3496" name="Beleth's Silver Dragon" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i01">
+        <price>300</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3497" name="Manak's Silver Dryad" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i01">
+        <price>150</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3498" name="Nia's Silver Fairy" commissionType="OTHER_ITEM" icon="icon.etc_magic_coin_silver_i01">
+        <price>100</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="3499" name="Fairy Dust" commissionType="OTHER_ITEM" icon="icon.etc_powder_orange_i00">
+        <price>10000</price>
+        <restriction dropable="false" freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3400" name="Huge Orc Fang" icon="icon.etc_horn_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3401" name="Sumari's Letter" icon="icon.etc_piece_of_paper_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3402" name="Urutu Blade" icon="icon.etc_sword_body_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3403" name="Timak Orc Skull" icon="icon.etc_skull_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3404" name="Sword Into Skull" icon="icon.etc_skull_black_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3405" name="Neruga Axe Blade" icon="icon.weapon_heavy_bone_club_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3406" name="Ceremonial Axe" icon="icon.weapon_battle_axe_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3407" name="Marsh Spider's Pincer" icon="icon.etc_ginseng_gray_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3408" name="Marsh Spider's Feet" icon="icon.etc_insect_leg_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3409" name="Handiwork Spider Brooch" icon="icon.shield_doom_shield_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3410" name="Reinforced Monster Cornea" icon="icon.etc_crystal_ball_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3411" name="Monster Eye Woodcarving" icon="icon.etc_parasite_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3412" name="Bear Fang Necklace" icon="icon.accessary_necklace_of_binding_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3413" name="Martankus' Charm" icon="icon.accessary_inferno_necklace_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3414" name="Ragna Orc Head" icon="icon.etc_skull_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3415" name="Ragna Chief Notice" icon="icon.etc_letter_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3416" name="Immortal Flame" icon="icon.etc_jewel_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3428" name="Crystal Brooch" icon="icon.accessary_elven_necklace_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="3429" name="Spellbook: Greater Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3430" name="Spellbook: Greater Battle Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3431" name="Spellbook: Greater Group Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3432" name="Spellbook: Remedy" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+        <price>3200</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item id="3433" name="Elf Figure" icon="icon.etc_figure_FElf_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="3434" name="Coke" icon="icon.etc_coke_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="3435" name="Nvidia" icon="icon.etc_nvidia_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="3436" name="Mouse" icon="icon.etc_mouse_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="3437" name="Trade Book of Merchant" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_blue_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item id="3438" name="Great Merchant's Trade Book" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_blue_i00">
+        <price>20000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="3440" name="Cargo Box" commissionType="OTHER_ITEM" icon="icon.etc_jewel_box_i00">
+        <price>10</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3441" name="Cargo Box" commissionType="OTHER_ITEM" icon="icon.etc_jewel_box_i00">
+        <price>10</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3442" name="Cargo Box" commissionType="OTHER_ITEM" icon="icon.etc_jewel_box_i00">
+        <price>10</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3443" name="Cargo Box" commissionType="OTHER_ITEM" icon="icon.etc_jewel_box_i00">
+        <price>10</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3444" name="Gludio Apples" commissionType="OTHER_ITEM" icon="icon.etc_fruit_green_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3445" name="Dion Corn Meal" commissionType="OTHER_ITEM" icon="icon.etc_powder_orange_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3446" name="Dire Wolf Pelts" commissionType="OTHER_ITEM" icon="icon.etc_crafted_leather_i00">
+        <price>1000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3447" name="Moonstone" commissionType="OTHER_ITEM" icon="icon.etc_gem_clear_i00">
+        <price>1500</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3448" name="Gludio Wheat Flour" commissionType="OTHER_ITEM" icon="icon.etc_powder_white_i00">
+        <price>1500</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3449" name="Spidersilk Rope" commissionType="OTHER_ITEM" icon="icon.etc_skein_white_i00">
+        <price>1500</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3450" name="Alexandrite" commissionType="OTHER_ITEM" icon="icon.etc_gem_green_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3451" name="Silver Tea Service" commissionType="OTHER_ITEM" icon="icon.etc_mechanic_box_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3452" name="Mechanic Golem Spare Parts" commissionType="OTHER_ITEM" icon="icon.etc_instrument_i00">
+        <price>2000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3453" name="Fire Emerald" commissionType="OTHER_ITEM" icon="icon.etc_jewel_red_i00">
+        <price>5000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3454" name="Avellan Silk Frock" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_cloth_red_i00">
+        <price>5000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="3455" name="Feriotic Porcelain Urn" commissionType="OTHER_ITEM" icon="icon.etc_oil_pot_white_i00">
+        <price>5000</price>
+        <restriction freightable="false"/>
+        <questItem>true</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+</itemList>

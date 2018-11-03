@@ -33,9 +33,9 @@ public interface ItemRepository extends CrudRepository<Items, Integer> {
     @Modifying
     @Query("UPDATE items SET owner_id=:owner,count=:count,loc=:loc,loc_data=:locData,enchant_level=:enchantLevel,price_sell=:priceSell,price_buy=:priceBuy," +
             "custom_type1=:customType1,custom_type2=:customType2,mana_left=:mana WHERE object_id=:id")
-    int updateById(@Param("id") int id, @Param("owner") int ownerId, @Param("count") int count, @Param("loc") String loc, @Param("locData") int locData,
+    int updateById(@Param("id") int id, @Param("owner") int ownerId, @Param("count") long count, @Param("loc") String loc, @Param("locData") int locData,
                    @Param("enchantLevel") int enchantLevel, @Param("priceSell") int priceSell, @Param("priceBuy") int priceBuy,
-                   @Param("customType1") int customType1, @Param("customType2") int customType2, @Param("mana") int mana);
+                   @Param("customType1") int customType1, @Param("customType2") int customType2, @Param("mana") long mana);
 
     @Modifying
     @Query("DELETE FROM items WHERE owner_id=:owner")

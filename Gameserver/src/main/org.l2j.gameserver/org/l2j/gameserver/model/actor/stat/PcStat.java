@@ -90,7 +90,7 @@ public class PcStat extends PlayableStat
 	 * <BR>
 	 * <B><U> Actions </U> :</B><BR>
 	 * <BR>
-	 * <li>Remove Karma when the player kills L2MonsterInstance</li> <li>Send a Server->Client packet StatusUpdate to the L2PcInstance</li> <li>Send a Server->Client System Message to the L2PcInstance</li> <li>If the L2PcInstance increases it's level, send a Server->Client packet SocialAction
+	 * <li>Remove Karma when the reader kills L2MonsterInstance</li> <li>Send a Server->Client packet StatusUpdate to the L2PcInstance</li> <li>Send a Server->Client System Message to the L2PcInstance</li> <li>If the L2PcInstance increases it's level, send a Server->Client packet SocialAction
 	 * (broadcast)</li> <li>If the L2PcInstance increases it's level, manage the increase level task (Max MP, Max MP, Recommandation, Expertise and beginner skills...)</li> <li>If the L2PcInstance increases it's level, send a Server->Client packet UserInfo to the L2PcInstance</li><BR>
 	 * <BR>
 	 * @param addToExp The Experience value to add
@@ -107,7 +107,7 @@ public class PcStat extends PlayableStat
 			return false;
 		}
 		
-		// if this player has a pet that takes from the owner's Exp, give the pet Exp now
+		// if this reader has a pet that takes from the owner's Exp, give the pet Exp now
 		
 		if (activeChar.getPet() instanceof L2PetInstance)
 		{
@@ -178,7 +178,7 @@ public class PcStat extends PlayableStat
 			 *
 			 * If the first character that becomes level 6 is deleted, the rest of the characters may not receive the new character bonus;
 			 *
-			 * If the first character to become level 6 loses a level, and the player makes another character level 6,
+			 * If the first character to become level 6 loses a level, and the reader makes another character level 6,
 			 * the bonus will be applied to only the first character to achieve level 6;
 			 *
 			 * If the character loses a level after reaching level 25, the character may not receive the bonus;

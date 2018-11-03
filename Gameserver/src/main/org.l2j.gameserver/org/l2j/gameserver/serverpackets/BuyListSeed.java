@@ -6,10 +6,10 @@ import org.l2j.gameserver.model.entity.database.MerchantShop;
 public final class BuyListSeed extends L2GameServerPacket {
 
     private final int _manorId;
-    private final int _money;
+    private final long _money;
     private final MerchantShop shop;
 
-    public BuyListSeed(MerchantShop shop, int manorId, int currentMoney) {
+    public BuyListSeed(MerchantShop shop, int manorId, long currentMoney) {
         this.shop = shop;
         _money = currentMoney;
         _manorId = manorId;
@@ -19,7 +19,7 @@ public final class BuyListSeed extends L2GameServerPacket {
     protected final void writeImpl() {
         writeByte(0xE8);
 
-        writeInt(_money); // current money
+        writeLong(_money); // current money
         writeInt(_manorId); // manor id
 
         writeShort(shop.getItems().size()); // list length

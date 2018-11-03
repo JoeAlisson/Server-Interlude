@@ -1,20 +1,3 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.gameserver.model.L2ItemInstance;
@@ -23,9 +6,9 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ExConfirmVariationItem;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.CrystalType;
-import org.l2j.gameserver.templates.ItemTypeGroup;
-
+import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 /**
  * Format:(ch) d
@@ -60,8 +43,8 @@ public final class RequestConfirmTargetItem extends L2GameClientPacket
 		}
 		
 		// check if the item is augmentable
-		CrystalType itemGrade = item.getItem().getCrystalType();
-		ItemTypeGroup itemType = item.getItem().getType2();
+		CrystalType itemGrade = item.getItem().getCrystalInfo().getType();
+		CommissionType itemType = item.getItem().getCommissionType();
 
 		if (item.isAugmented())
 		{
@@ -69,13 +52,13 @@ public final class RequestConfirmTargetItem extends L2GameClientPacket
 			return;
 		}
 		// TODO: can do better? : currently: using isdestroyable() as a check for hero / cursed weapons
-		else if ((itemGrade.compareTo(CrystalType.C) < 0) || (itemType != ItemTypeGroup.TYPE2_WEAPON) || !item.isDestroyable() || item.isShadowItem())
+		else if ((itemGrade.compareTo(CrystalType.C) < 0) || !(item.getItem() instanceof Weapon) || !item.isDestroyable() || item.isShadowItem())
 		{
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.THIS_IS_NOT_A_SUITABLE_ITEM));
 			return;
 		}
 		
-		// check if the player can augment
+		// check if the reader can augment
 		if (activeChar.getPrivateStoreType() != L2PcInstance.STORE_PRIVATE_NONE)
 		{
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.YOU_CANNOT_AUGMENT_ITEMS_WHILE_A_PRIVATE_STORE_OR_PRIVATE_WORKSHOP_IS_IN_OPERATION));

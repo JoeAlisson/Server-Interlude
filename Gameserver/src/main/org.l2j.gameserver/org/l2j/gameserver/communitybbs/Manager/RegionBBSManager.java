@@ -133,7 +133,7 @@ public class RegionBBSManager extends BaseBBSManager {
             htmlCode.append("</body></html>");
             separateAndSend(htmlCode.toString(), activeChar);
         } else {
-            ShowBoard sb = new ShowBoard("<html><body><br><br><center>No player with name " + name + "</center><br><br></body></html>", "101");
+            ShowBoard sb = new ShowBoard("<html><body><br><br><center>No reader with name " + name + "</center><br><br></body></html>", "101");
             activeChar.sendPacket(sb);
             activeChar.sendPacket(new ShowBoard(null, "102"));
             activeChar.sendPacket(new ShowBoard(null, "103"));
@@ -391,7 +391,7 @@ public class RegionBBSManager extends BaseBBSManager {
                     htmlCode.append("<td align=right width=190><button value=\"Prev\" action=\"bypass _bbsloc;page;" + (page - 1) + "\" width=50 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></td>");
                 }
                 htmlCode.append("<td FIXWIDTH=10></td>");
-                htmlCode.append("<td align=center valign=top width=200>Displaying " + (((page - 1) * Config.NAME_PAGE_SIZE_COMMUNITYBOARD) + 1) + " - " + (((page - 1) * Config.NAME_PAGE_SIZE_COMMUNITYBOARD) + getOnlinePlayers(page).size()) + " player(s)</td>");
+                htmlCode.append("<td align=center valign=top width=200>Displaying " + (((page - 1) * Config.NAME_PAGE_SIZE_COMMUNITYBOARD) + 1) + " - " + (((page - 1) * Config.NAME_PAGE_SIZE_COMMUNITYBOARD) + getOnlinePlayers(page).size()) + " reader(s)</td>");
                 htmlCode.append("<td FIXWIDTH=10></td>");
                 if (getOnlineCount("gm") <= (page * Config.NAME_PAGE_SIZE_COMMUNITYBOARD)) {
                     htmlCode.append("<td width=190><button value=\"Next\" width=50 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></td>");
@@ -508,7 +508,7 @@ public class RegionBBSManager extends BaseBBSManager {
                     htmlCode.append("<td align=right width=190><button value=\"Prev\" action=\"bypass _bbsloc;page;" + (page - 1) + "\" width=50 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></td>");
                 }
                 htmlCode.append("<td FIXWIDTH=10></td>");
-                htmlCode.append("<td align=center valign=top width=200>Displaying " + (((page - 1) * Config.NAME_PAGE_SIZE_COMMUNITYBOARD) + 1) + " - " + (((page - 1) * Config.NAME_PAGE_SIZE_COMMUNITYBOARD) + getOnlinePlayers(page).size()) + " player(s)</td>");
+                htmlCode.append("<td align=center valign=top width=200>Displaying " + (((page - 1) * Config.NAME_PAGE_SIZE_COMMUNITYBOARD) + 1) + " - " + (((page - 1) * Config.NAME_PAGE_SIZE_COMMUNITYBOARD) + getOnlinePlayers(page).size()) + " reader(s)</td>");
                 htmlCode.append("<td FIXWIDTH=10></td>");
                 if (getOnlineCount("pl") <= (page * Config.NAME_PAGE_SIZE_COMMUNITYBOARD)) {
                     htmlCode.append("<td width=190><button value=\"Next\" width=50 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></td>");

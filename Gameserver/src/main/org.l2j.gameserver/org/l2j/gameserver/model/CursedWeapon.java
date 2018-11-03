@@ -1,20 +1,3 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
@@ -30,7 +13,7 @@ import org.l2j.gameserver.model.entity.database.repository.CursedWeaponRepositor
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
-import org.l2j.gameserver.templates.BodyPart;
+import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.l2j.gameserver.util.Point3D;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -83,7 +66,7 @@ public class CursedWeapon
 		{
 			if ((_player != null) && (_player.isOnline()))
 			{
-				// Remove from player
+				// Remove from reader
 				_log.info(_name + " being removed online.");
 				
 				_player.abortAttack();
@@ -94,7 +77,7 @@ public class CursedWeapon
 				removeSkill();
 				
 				// Remove
-				_player.getInventory().unEquipItemInBodySlotAndRecord(BodyPart.TWO_HAND);
+				_player.getInventory().unEquipItemInBodySlotAndRecord(BodyPart.TWO_HANDS);
 				_player.store();
 				
 				// Destroy
@@ -344,7 +327,7 @@ public class CursedWeapon
 	
 	public void activate(L2PcInstance player, L2ItemInstance item)
 	{
-		// if the player is mounted, attempt to unmount first. Only allow picking up
+		// if the reader is mounted, attempt to unmount first. Only allow picking up
 		// the zariche if unmounting is successful.
 		if (player.isMounted())
 		{
@@ -371,7 +354,7 @@ public class CursedWeapon
 		_playerPkKills = _player.getPkKills();
 		saveData();
 		
-		// Change player stats
+		// Change reader stats
 		_player.setCursedWeaponEquipedId(_itemId);
 		_player.setKarma(9000000);
 		_player.setPkKills(0);
@@ -391,7 +374,7 @@ public class CursedWeapon
 		sm.addItemName(_item.getItemId());
 		_player.sendPacket(sm);
 		
-		// Fully heal player
+		// Fully heal reader
 		_player.setCurrentHpMp(_player.getMaxHp(), _player.getMaxMp());
 		_player.setCurrentCp(_player.getMaxCp());
 		
@@ -408,7 +391,7 @@ public class CursedWeapon
 			_player.sendPacket(new ItemList(_player, false));
 		}
 		
-		// Refresh player stats
+		// Refresh reader stats
 		_player.broadcastUserInfo();
 		
 		SocialAction atk = new SocialAction(_player.getObjectId(), 17);
@@ -442,7 +425,7 @@ public class CursedWeapon
 		{
 			// Unequip & Drop
 			dropIt(null, null, killer, false);
-			// Reset player stats
+			// Reset reader stats
 			_player.setKarma(_playerKarma);
 			_player.setPkKills(_playerPkKills);
 			_player.setCursedWeaponEquipedId(0);
@@ -636,7 +619,7 @@ public class CursedWeapon
 		
 		if (_isActivated)
 		{
-			// Go to player holding the weapon
+			// Go to reader holding the weapon
 			player.teleToLocation(_player.getX(), _player.getY(), _player.getZ() + 20, true);
 		}
 		else if (_isDropped)

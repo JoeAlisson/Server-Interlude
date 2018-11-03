@@ -295,7 +295,7 @@ public class Siege {
                 if (getDefenderClans().size() == 0) // If defender doesn't exist (Pc vs NpcTemplate)
                 // and only an alliance attacks
                 {
-                    // The player's clan is in an alliance
+                    // The reader's clan is in an alliance
                     if (allyId != 0) {
                         boolean allinsamealliance = true;
                         for (L2SiegeClan sc : getAttackerClans()) {
@@ -326,7 +326,7 @@ public class Siege {
                 removeAttacker(sc_newowner);
                 addDefender(sc_newowner, SiegeClanType.OWNER);
 
-                // The player's clan is in an alliance
+                // The reader's clan is in an alliance
                 if (allyId != 0) {
                     L2Clan[] clanList = ClanTable.getInstance().getClans();
 
@@ -395,10 +395,10 @@ public class Siege {
 
 
     /**
-     * Announce to player.<BR>
+     * Announce to reader.<BR>
      * <BR>
      *
-     * @param message    The String of the message to send to player
+     * @param message    The String of the message to send to reader
      * @param inAreaOnly The boolean flag to show message to players in area only.
      */
     public void announceToPlayer(String message, boolean inAreaOnly) {
@@ -449,7 +449,7 @@ public class Siege {
      * Approve clan as defender for siege<BR>
      * <BR>
      *
-     * @param clanId The int of player's clan id
+     * @param clanId The int of reader's clan id
      */
     public void approveSiegeDefenderClan(int clanId) {
         if (clanId <= 0) {
@@ -485,7 +485,7 @@ public class Siege {
      * Return true if clan is attacker<BR>
      * <BR>
      *
-     * @param clan The L2Clan of the player
+     * @param clan The L2Clan of the reader
      * @return
      */
     public boolean checkIsAttacker(L2Clan clan) {
@@ -496,7 +496,7 @@ public class Siege {
      * Return true if clan is defender<BR>
      * <BR>
      *
-     * @param clan The L2Clan of the player
+     * @param clan The L2Clan of the reader
      * @return
      */
     public boolean checkIsDefender(L2Clan clan) {
@@ -507,7 +507,7 @@ public class Siege {
      * Return true if clan is defender waiting approval<BR>
      * <BR>
      *
-     * @param clan The L2Clan of the player
+     * @param clan The L2Clan of the reader
      * @return
      */
     public boolean checkIsDefenderWaiting(L2Clan clan) {
@@ -612,7 +612,7 @@ public class Siege {
         List<L2PcInstance> players = new LinkedList<>();
 
         for (L2PcInstance player : L2World.getInstance().getAllPlayers()) {
-            // quick check from player states, which don't include siege number however
+            // quick check from reader states, which don't include siege number however
             if (!player.isInsideZone(L2Character.ZONE_SIEGE) || (player.getSiegeState() != 0)) {
                 continue;
             }
@@ -662,7 +662,7 @@ public class Siege {
      * Register clan as attacker<BR>
      * <BR>
      *
-     * @param player The L2PcInstance of the player trying to register
+     * @param player The L2PcInstance of the reader trying to register
      */
     public void registerAttacker(L2PcInstance player) {
         registerAttacker(player, false);
@@ -692,7 +692,7 @@ public class Siege {
      * Register clan as defender<BR>
      * <BR>
      *
-     * @param player The L2PcInstance of the player trying to register
+     * @param player The L2PcInstance of the reader trying to register
      */
     public void registerDefender(L2PcInstance player) {
         registerDefender(player, false);
@@ -731,7 +731,7 @@ public class Siege {
      * Remove clan from siege<BR>
      * <BR>
      *
-     * @param player The L2PcInstance of player/clan being removed
+     * @param player The L2PcInstance of reader/clan being removed
      */
     public void removeSiegeClan(L2PcInstance player) {
         removeSiegeClan(player.getClan());
@@ -836,10 +836,10 @@ public class Siege {
     }
 
     /**
-     * Return true if the player can register.<BR>
+     * Return true if the reader can register.<BR>
      * <BR>
      *
-     * @param player The L2PcInstance of the player trying to register
+     * @param player The L2PcInstance of the reader trying to register
      * @return
      */
     private boolean checkIfCanRegister(L2PcInstance player) {

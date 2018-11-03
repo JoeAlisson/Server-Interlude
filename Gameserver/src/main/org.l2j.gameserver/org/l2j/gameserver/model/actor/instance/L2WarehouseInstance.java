@@ -179,12 +179,12 @@ public final class L2WarehouseInstance extends L2FolkInstance
 	
 	private void showDepositWindowFreight(L2PcInstance player)
 	{
-		// No other chars in the account of this player
+		// No other chars in the account of this reader
 		if (player.getAccountChars().size() == 0)
 		{
 			player.sendPacket(new SystemMessage(SystemMessageId.CHARACTER_DOES_NOT_EXIST));
 		}
-		// One or more chars other than this player for this account
+		// One or more chars other than this reader for this account
 		else
 		{
 			
@@ -245,7 +245,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 		// lil check to prevent enchant exploit
 		if (player.getActiveEnchantItem() != null)
 		{
-			_log.info("Player " + player.getName() + " trying to use enchant exploit, ban this player!");
+			_log.info("Player " + player.getName() + " trying to use enchant exploit, ban this reader!");
 			player.closeNetConnection();
 			return;
 		}

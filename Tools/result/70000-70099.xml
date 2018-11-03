@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="70001" name="Sealed Rune - Lv. 2" icon="BranchIcon.Icon.g_green_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55194" level="1"/>
+    </item>
+    <item stackable="true" id="70000" name="Sealed Rune - Lv. 1" icon="BranchIcon.Icon.g_green_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55193" level="1"/>
+    </item>
+    <item stackable="true" id="70003" name="Sealed Rune - Lv. 4" icon="BranchIcon.Icon.g_green_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55196" level="1"/>
+    </item>
+    <item stackable="true" id="70002" name="Sealed Rune - Lv. 3" icon="BranchIcon.Icon.g_green_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55195" level="1"/>
+    </item>
+    <item stackable="true" id="70005" name="Sealed Rune - Lv. 6" icon="BranchIcon.Icon.g_blue_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55198" level="1"/>
+    </item>
+    <item stackable="true" id="70004" name="Sealed Rune - Lv. 5" icon="BranchIcon.Icon.g_green_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55197" level="1"/>
+    </item>
+    <item stackable="true" id="70007" name="Sealed Rune - Lv. 8" icon="BranchIcon.Icon.g_blue_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55200" level="1"/>
+    </item>
+    <item stackable="true" id="70006" name="Sealed Rune - Lv. 7" icon="BranchIcon.Icon.g_blue_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55199" level="1"/>
+    </item>
+    <item stackable="true" id="70009" name="Sealed Rune - Lv. 10" icon="BranchIcon.Icon.g_blue_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55202" level="1"/>
+    </item>
+    <item stackable="true" id="70008" name="Sealed Rune - Lv. 9" icon="BranchIcon.Icon.g_blue_sealed_rune">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55201" level="1"/>
+    </item>
+    <item stackable="true" id="70011" name="Sealed Rune - Lv. 12" icon="BranchIcon.Icon.g_red_sealed_rune_01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55204" level="1"/>
+    </item>
+    <item stackable="true" id="70010" name="Sealed Rune - Lv. 11" icon="BranchIcon.Icon.g_red_sealed_rune_01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55203" level="1"/>
+    </item>
+    <item stackable="true" id="70013" name="Sealed Rune - Lv. 14" additionalName="Not in Use" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70012" name="Sealed Rune - Lv. 13" icon="BranchIcon.Icon.g_red_sealed_rune_01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55205" level="1"/>
+    </item>
+    <item stackable="true" id="70015" name="Sealed Rune - Lv. 16" additionalName="Not in Use" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70014" name="Sealed Rune - Lv. 15" additionalName="Not in Use" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70017" name="Sealed Rune - Lv. 18" additionalName="Not in Use" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70016" name="Sealed Rune - Lv. 17" additionalName="Not in Use" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70019" name="Sealed Rune - Lv. 20" additionalName="Not in Use" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70018" name="Sealed Rune - Lv. 19" additionalName="Not in Use" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70021" name="Clan's Supplies" additionalName="Medium Grade" icon="icon.etc_box_of_adventure_3_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="70020" name="Clan's Supplies" additionalName="Low Grade" icon="icon.etc_box_of_adventure_2_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="70023" name="Clan's Supplies" additionalName="Highest Grade" icon="icon.etc_box_of_adventure_5_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="70022" name="Clan's Supplies" additionalName="High Grade" icon="icon.etc_box_of_adventure_4_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+    </item>
+    <item stackable="true" id="70025" name="Clan's Special Supplies" additionalName="Low Grade" icon="icon.etc_box_of_adventure_2_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="55172" level="1"/>
+    </item>
+    <item stackable="true" id="70024" name="Daily Coin" icon="icon.ev_festival_goldcoin">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70027" name="Clan's Special Supplies" additionalName="High Grade" icon="icon.etc_box_of_adventure_4_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="55174" level="1"/>
+    </item>
+    <item stackable="true" id="70026" name="Clan's Special Supplies" additionalName="Medium Grade" icon="icon.etc_box_of_adventure_3_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="55173" level="1"/>
+    </item>
+    <armor id="70029" name="Yellow Talisman - P. Atk." icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55176" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <item stackable="true" id="70028" name="Clan's Special Supplies" additionalName="Highest Grade" icon="icon.etc_box_of_adventure_5_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>10</weight>
+        <skill id="55175" level="1"/>
+    </item>
+    <armor id="70031" name="Yellow Talisman - M. Def." icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55178" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70030" name="Yellow Talisman - Atk. Spd." icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55177" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70033" name="Yellow Talisman - Casting Spd." icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55180" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70032" name="Yellow Talisman - M. Atk." icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55179" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70035" name="Yellow Talisman - P. Def." icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55182" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70034" name="Yellow Talisman - Accuracy" icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55181" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70037" name="Yellow Talisman - Evasion" icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55184" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70036" name="Yellow Talisman - Speed" icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55183" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70039" name="Blue Talisman - Invisibility" icon="icon.etc_talisman_i01">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55186" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="70038" name="Yellow Talisman - Healing Power" icon="icon.etc_talisman_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        <skill id="55185" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <item stackable="true" id="70041" name="Roast Blue Mackerel - INT" icon="BranchIcon.Icon.roasted_mackerel_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55188" level="1"/>
+    </item>
+    <item stackable="true" id="70040" name="Roast Blue Mackerel - STR" icon="BranchIcon.Icon.roasted_mackerel_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55187" level="1"/>
+    </item>
+    <item stackable="true" id="70043" name="Roast Blue Mackerel - DEX" icon="BranchIcon.Icon.roasted_mackerel_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55190" level="1"/>
+    </item>
+    <item stackable="true" id="70042" name="Roast Blue Mackerel - CON" icon="BranchIcon.Icon.roasted_mackerel_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55189" level="1"/>
+    </item>
+    <item stackable="true" id="70045" name="Roast Blue Mackerel - WIT" icon="BranchIcon.Icon.roasted_mackerel_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55192" level="1"/>
+    </item>
+    <item stackable="true" id="70044" name="Roast Blue Mackerel - MEN" icon="BranchIcon.Icon.roasted_mackerel_buff">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55191" level="1"/>
+    </item>
+    <item stackable="true" id="70047" name="Instant Acceleration Potion" icon="icon.etc_potion_green_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>20</weight>
+    </item>
+    <item stackable="true" id="70046" name="High Quality Bait" icon="icon.etc_bait_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70049" name="Scroll of Escape: School of Dark Arts" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70048" name="Scroll of Escape: Mithril Mines" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70051" name="Scroll of Escape: Ruins of Agony" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70050" name="Scroll of Escape: Orc Barracks" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70053" name="Scroll of Escape: Abandoned Camp" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70052" name="Scroll of Escape: Ruins of Despair" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70055" name="Scroll of Escape: Cruma Tower" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70054" name="Scroll of Escape: Ant Nest" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70057" name="Scroll of Escape: Dragon Valley" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70056" name="Scroll of Escape: Death Pass" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70059" name="Scroll of Escape: Outlaw Forest" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70058" name="Scroll of Escape: Antharas' Lair" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70061" name="Scroll of Escape: Forgotten Temple" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70060" name="Scroll of Escape: Alligator Island" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70063" name="Scroll of Escape: Hunting Zone 16" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70062" name="Scroll of Escape: Hunting Zone 15" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70065" name="Scroll of Escape: Hunting Zone 18" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70064" name="Scroll of Escape: Hunting Zone 17" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70067" name="Scroll of Escape: Hunting Zone 20" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70066" name="Scroll of Escape: Hunting Zone 19" icon="icon.etc_scroll_of_return_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70069" name="Scroll: Intense Slasher - Lv. 1" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14826" level="1"/>
+    </item>
+    <item stackable="true" id="70068" name="Scroll of Invisibility" icon="icon.etc_aidcharm_cancel_valbreath_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="70071" name="Scroll: Intense Slasher - Lv. 3" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14826" level="3"/>
+    </item>
+    <item stackable="true" id="70070" name="Scroll: Intense Slasher - Lv. 2" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14826" level="2"/>
+    </item>
+    <item stackable="true" id="70073" name="Scroll: Intense Slasher - Lv. 5" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14826" level="5"/>
+    </item>
+    <item stackable="true" id="70072" name="Scroll: Intense Slasher - Lv. 4" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14826" level="4"/>
+    </item>
+    <item stackable="true" id="70075" name="Purity Blast Scroll - Lv. 1" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14828" level="1"/>
+    </item>
+    <item stackable="true" id="70074" name="Scroll: Intense Slasher - Lv. 6" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14826" level="6"/>
+    </item>
+    <item stackable="true" id="70077" name="Purity Blast Scroll - Lv. 3" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14828" level="3"/>
+    </item>
+    <item stackable="true" id="70076" name="Purity Blast Scroll - Lv. 2" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14828" level="2"/>
+    </item>
+    <item stackable="true" id="70079" name="Purity Blast Scroll - Lv. 5" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14828" level="5"/>
+    </item>
+    <item stackable="true" id="70078" name="Purity Blast Scroll - Lv. 4" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14828" level="4"/>
+    </item>
+    <item stackable="true" id="70081" name="Grey Explosion Scroll - Lv. 1" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14830" level="1"/>
+    </item>
+    <item stackable="true" id="70080" name="Purity Blast Scroll - Lv. 6" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14828" level="6"/>
+    </item>
+    <item stackable="true" id="70083" name="Grey Explosion Scroll - Lv. 3" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14830" level="3"/>
+    </item>
+    <item stackable="true" id="70082" name="Grey Explosion Scroll - Lv. 2" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14830" level="2"/>
+    </item>
+    <item stackable="true" id="70085" name="Grey Explosion Scroll - Lv. 5" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14830" level="5"/>
+    </item>
+    <item stackable="true" id="70084" name="Grey Explosion Scroll - Lv. 4" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14830" level="4"/>
+    </item>
+    <item stackable="true" id="70087" name="Platonic Tempest Scroll - Lv. 1" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14832" level="1"/>
+    </item>
+    <item stackable="true" id="70086" name="Grey Explosion Scroll - Lv. 6" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14830" level="6"/>
+    </item>
+    <item stackable="true" id="70089" name="Platonic Tempest Scroll - Lv. 3" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14832" level="3"/>
+    </item>
+    <item stackable="true" id="70088" name="Platonic Tempest Scroll - Lv. 2" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14832" level="2"/>
+    </item>
+    <item stackable="true" id="70091" name="Platonic Tempest Scroll - Lv. 5" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14832" level="5"/>
+    </item>
+    <item stackable="true" id="70090" name="Platonic Tempest Scroll - Lv. 4" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14832" level="4"/>
+    </item>
+    <item stackable="true" id="70093" name="Highest Quality Bait" icon="icon.etc_bait_i02">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70092" name="Platonic Tempest Scroll - Lv. 6" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <condition messageId="113" includeName="false">
+            <level min="20"/>
+        </condition>
+        <skill id="14832" level="6"/>
+    </item>
+    <armor id="70095" name="Wooden Helmet" additionalName="7-day" icon="icon.armor_leather_helmet_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <bodyPart>HEAD</bodyPart>
+    </armor>
+    <item id="70094" name="XP Rune - 100%" additionalName="2 hours" type="ENCHT_ATTR_RUNE" icon="icon.skill70094">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>120</time>
+        <weight>120</weight>
+        <skill id="55234" level="1"/>
+    </item>
+    <armor id="70097" name="Wooden Gaiters" additionalName="7-day" type="LIGHT" icon="icon.armor_t06_l_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <bodyPart>LEGS</bodyPart>
+    </armor>
+    <armor id="70096" name="Wooden Breastplate" additionalName="7-day" type="LIGHT" icon="icon.armor_t06_u_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="70099" name="Tunic of Devotion" additionalName="7-day" type="MAGIC" icon="icon.armor_t55_u_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <bodyPart>CHEST</bodyPart>
+    </armor>
+    <armor id="70098" name="Leather Helmet" additionalName="7-day" icon="icon.armor_leather_helmet_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <bodyPart>HEAD</bodyPart>
+    </armor>
+</itemList>

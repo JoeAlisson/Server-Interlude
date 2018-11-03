@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="13009" name="Inventory3">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="13025" name="Agathion - Joy" icon="icon.etc_rbracelet_aga_agit_i00">
+        <bodyPart>LEFT_BRACELET</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>30</weight>
+        <skill id="8256"/>
+        <skill id="5955"/>
+        <skill id="3267"/>
+        </armor>
+    <item stackable="true" id="13015" name="My Teleport Book" icon="icon.bookmark_book_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="2587"/>
+    </item>
+    <item stackable="true" id="13016" name="My Teleport Scroll" type="TELEPORTBOOKMARK" icon="icon.bookmark_scroll_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <item stackable="true" id="13021" name="Color Title" icon="icon.color_name_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>NICKNAME_COLOR</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+</itemList>

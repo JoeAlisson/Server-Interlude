@@ -1,23 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- *
- * @author godson
- **/
 package org.l2j.gameserver.model.entity;
 
 import org.l2j.commons.util.Util;
@@ -36,7 +16,7 @@ import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.PledgeShowInfoUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.serverpackets.UserInfo;
-import org.l2j.gameserver.templates.BodyPart;
+import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -154,7 +134,7 @@ public class Heroes {
 				{
 					player.setHero(false);
 					
-					items = player.getInventory().unEquipItemInBodySlotAndRecord(BodyPart.TWO_HAND);
+					items = player.getInventory().unEquipItemInBodySlotAndRecord(BodyPart.TWO_HANDS);
 					iu = new InventoryUpdate();
 					for (L2ItemInstance item : items)
 					{
@@ -186,7 +166,7 @@ public class Heroes {
 					}
 					player.sendPacket(iu);
 					
-					items = player.getInventory().unEquipItemInBodySlotAndRecord(BodyPart.DHAIR);
+					items = player.getInventory().unEquipItemInBodySlotAndRecord(BodyPart.HAIR_DOWN);
 					iu = new InventoryUpdate();
 					for (L2ItemInstance item : items)
 					{

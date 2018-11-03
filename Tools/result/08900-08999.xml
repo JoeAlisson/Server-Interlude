@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="8938" name="Tallum Blade*Damascus" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+        <price>26968400</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="2157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1890</weight>
+        <skill id="3552" level="1"/>
+        <skill id="3045" level="17" triggerType="ENCHANTED" triggerValue="4"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="44" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

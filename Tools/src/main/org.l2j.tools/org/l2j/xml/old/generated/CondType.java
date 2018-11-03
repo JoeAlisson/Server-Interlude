@@ -26,7 +26,7 @@ import java.util.List;
  *         &lt;element name="using" type="{}usingType"/&gt;
  *         &lt;element name="and" type="{}andType"/&gt;
  *         &lt;element name="not" type="{}notType"/&gt;
- *         &lt;element name="player" type="{}playerType"/&gt;
+ *         &lt;element name="reader" type="{}playerType"/&gt;
  *         &lt;element name="target" type="{}targetType"/&gt;
  *       &lt;/choice&gt;
  *       &lt;attribute name="msgId" type="{http://www.w3.org/2001/XMLSchema}short" /&gt;
@@ -49,7 +49,7 @@ public class CondType {
         @XmlElement(name = "using", type = UsingType.class),
         @XmlElement(name = "and", type = AndType.class),
         @XmlElement(name = "not", type = NotType.class),
-        @XmlElement(name = "player", type = PlayerType.class),
+        @XmlElement(name = "reader", type = PlayerType.class),
         @XmlElement(name = "target", type = TargetType.class)
     })
     protected List<Object> usingOrAndOrNot;

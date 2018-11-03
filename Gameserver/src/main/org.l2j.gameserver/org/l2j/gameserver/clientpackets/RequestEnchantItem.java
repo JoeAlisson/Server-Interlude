@@ -1,20 +1,3 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
@@ -25,15 +8,16 @@ import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
-import org.l2j.gameserver.templates.ItemType;
-import org.l2j.gameserver.templates.ItemTypeGroup;
+import org.l2j.gameserver.templates.xml.jaxb.Armor;
+import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.IllegalPlayerAction;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static org.l2j.gameserver.templates.BodyPart.FULL_ARMOR;
-
 
 public final class RequestEnchantItem extends L2GameClientPacket
 {
@@ -79,7 +63,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 		}
 		
 		// can't enchant rods, hero weapons and shadow items
-		if ((item.getItem().getType() == ItemType.ROD) || ((item.getItemId() >= 6611) && (item.getItemId() <= 6621)) || item.isShadowItem())
+		if ((item.getItem().getType() == ItemType.FISHINGROD) || ((item.getItemId() >= 6611) && (item.getItemId() <= 6621)) || item.isShadowItem())
 		{
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITION));
 			return;
@@ -89,13 +73,13 @@ public final class RequestEnchantItem extends L2GameClientPacket
 			Util.handleIllegalPlayerAction(activeChar, "Player " + activeChar.getName() + " tried to enchant a weared Item", IllegalPlayerAction.PUNISH_KICK);
 			return;
 		}
-		ItemTypeGroup itemType2 = item.getItem().getType2();
+		var itemType2 = item.getItem().getCommissionType();
 		boolean enchantItem = false;
 		boolean blessedScroll = false;
 		int crystalId = 0;
 		
 		/** pretty code ;D */
-		switch (item.getItem().getCrystalType())
+		switch (item.getItem().getCrystalInfo().getType())
 		{
 			case A:
 				crystalId = 1461;
@@ -104,7 +88,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 729:
 					case 731:
 					case 6569:
-						if (itemType2 == ItemTypeGroup.TYPE2_WEAPON)
+						if (item.getItem() instanceof Weapon)
 						{
 							enchantItem = true;
 						}
@@ -112,7 +96,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 730:
 					case 732:
 					case 6570:
-						if ((itemType2 == ItemTypeGroup.TYPE2_SHIELD_ARMOR) || (itemType2 == ItemTypeGroup.TYPE2_ACCESSORY))
+						if ( item.getItem() instanceof Armor)
 						{
 							enchantItem = true;
 						}
@@ -126,7 +110,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 947:
 					case 949:
 					case 6571:
-						if (itemType2 == ItemTypeGroup.TYPE2_WEAPON)
+						if (item.getItem() instanceof  Weapon)
 						{
 							enchantItem = true;
 						}
@@ -134,7 +118,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 948:
 					case 950:
 					case 6572:
-						if ((itemType2 == ItemTypeGroup.TYPE2_SHIELD_ARMOR) || (itemType2 == ItemTypeGroup.TYPE2_ACCESSORY))
+						if (item.getItem() instanceof  Armor)
 						{
 							enchantItem = true;
 						}
@@ -148,7 +132,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 951:
 					case 953:
 					case 6573:
-						if (itemType2 == ItemTypeGroup.TYPE2_WEAPON)
+						if (item.getItem() instanceof  Weapon)
 						{
 							enchantItem = true;
 						}
@@ -156,7 +140,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 952:
 					case 954:
 					case 6574:
-						if ((itemType2 == ItemTypeGroup.TYPE2_SHIELD_ARMOR) || (itemType2 == ItemTypeGroup.TYPE2_ACCESSORY))
+						if (item.getItem() instanceof  Armor)
 						{
 							enchantItem = true;
 						}
@@ -170,7 +154,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 955:
 					case 957:
 					case 6575:
-						if (itemType2 == ItemTypeGroup.TYPE2_WEAPON)
+						if (item.getItem() instanceof  Weapon)
 						{
 							enchantItem = true;
 						}
@@ -178,7 +162,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 956:
 					case 958:
 					case 6576:
-						if ((itemType2 == ItemTypeGroup.TYPE2_SHIELD_ARMOR) || (itemType2 == ItemTypeGroup.TYPE2_ACCESSORY))
+						if ( item.getItem() instanceof  Armor)
 						{
 							enchantItem = true;
 						}
@@ -192,7 +176,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 959:
 					case 961:
 					case 6577:
-						if (itemType2 == ItemTypeGroup.TYPE2_WEAPON)
+						if (item.getItem() instanceof  Weapon)
 						{
 							enchantItem = true;
 						}
@@ -200,7 +184,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					case 960:
 					case 962:
 					case 6578:
-						if ((itemType2 == ItemTypeGroup.TYPE2_SHIELD_ARMOR) || (itemType2 == ItemTypeGroup.TYPE2_ACCESSORY))
+						if (item.getItem() instanceof Armor)
 						{
 							enchantItem = true;
 						}
@@ -248,26 +232,26 @@ public final class RequestEnchantItem extends L2GameClientPacket
 		int chance = 0;
 		int maxEnchantLevel = 0;
 		
-		if (item.getItem().getType2() == ItemTypeGroup.TYPE2_WEAPON)
+		if (item.getItem() instanceof  Weapon)
 		{
 			chance = Config.ENCHANT_CHANCE_WEAPON;
 			maxEnchantLevel = Config.ENCHANT_MAX_WEAPON;
 		}
-		else if (item.getItem().getType2() == ItemTypeGroup.TYPE2_SHIELD_ARMOR)
+		else if (item.getItem() instanceof Armor)
 		{
 			chance = Config.ENCHANT_CHANCE_ARMOR;
 			maxEnchantLevel = Config.ENCHANT_MAX_ARMOR;
 		}
-		else if (item.getItem().getType2() == ItemTypeGroup.TYPE2_ACCESSORY)
+		else if (item.getItem() instanceof  Armor)
 		{
 			chance = Config.ENCHANT_CHANCE_JEWELRY;
 			maxEnchantLevel = Config.ENCHANT_MAX_JEWELRY;
 		}
 		
-		if ((item.getEnchantLevel() < Config.ENCHANT_SAFE_MAX) || ((item.getItem().getBodyPart() == FULL_ARMOR) && (item.getEnchantLevel() < Config.ENCHANT_SAFE_MAX_FULL)))
+		/* TODO if ((item.getEnchantLevel() < Config.ENCHANT_SAFE_MAX) || ((item.getItem().getBodyPart() == FULL_ARMOR) && (item.getEnchantLevel() < Config.ENCHANT_SAFE_MAX_FULL)))
 		{
 			chance = 100;
-		}
+		} */
 		
 		if (Rnd.get(100) < chance)
 		{
@@ -354,7 +338,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 					activeChar.broadcastUserInfo();
 				}
 				
-				int count = item.getCrystalCount() - ((item.getItem().getCrystalCount() + 1) / 2);
+				int count = item.getCrystalCount() - ((item.getItem().getCrystalInfo().getCount() + 1) / 2);
 				if (count < 1)
 				{
 					count = 1;

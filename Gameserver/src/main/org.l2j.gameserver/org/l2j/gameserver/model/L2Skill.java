@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.gameserver.GeoData;
@@ -35,8 +17,8 @@ import org.l2j.gameserver.skills.effects.EffectTemplate;
 import org.l2j.gameserver.skills.funcs.Func;
 import org.l2j.gameserver.skills.funcs.FuncTemplate;
 import org.l2j.gameserver.skills.l2skills.*;
-import org.l2j.gameserver.templates.ItemType;
 import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.templates.xml.jaxb.ItemType;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,12 +28,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-
-/**
- * This class...
- *
- * @version $Revision: 1.3.2.8.2.22 $ $Date: 2005/04/06 16:13:42 $
- */
 public abstract class L2Skill {
     protected static final Logger _log = LoggerFactory.getLogger(L2Skill.class.getName());
 
@@ -1048,14 +1024,14 @@ public abstract class L2Skill {
         if (activeChar.getActiveWeaponItem() != null) {
             ItemType playerWeapon;
             playerWeapon = activeChar.getActiveWeaponItem().getType();
-            int mask = playerWeapon.mask();
+            int mask = 1 << playerWeapon.ordinal();
             if ((mask & weaponsAllowed) != 0) {
                 return true;
             }
             // can be on the secondary weapon
             if (activeChar.getSecondaryWeaponItem() != null) {
                 playerWeapon = activeChar.getSecondaryWeaponItem().getType();
-                mask = playerWeapon.mask();
+                mask = 1 << playerWeapon.ordinal();
                 if ((mask & weaponsAllowed) != 0) {
                     return true;
                 }
@@ -1064,11 +1040,12 @@ public abstract class L2Skill {
         StringBuilder skillmsg = new StringBuilder();
         skillmsg.append(getName());
         skillmsg.append(" can only be used with weapons of type ");
+        /* TODO implement
         for (ItemType wt : ItemType.weapons()) {
             if ((wt.mask() & weaponsAllowed) != 0) {
                 skillmsg.append(wt).append('/');
             }
-        }
+        }*/
         skillmsg.setCharAt(skillmsg.length() - 1, '.');
         SystemMessage message = new SystemMessage(SystemMessageId.S1_S2);
         message.addString(skillmsg.toString());

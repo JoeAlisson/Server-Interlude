@@ -430,7 +430,7 @@ public final class PetitionManager {
     }
 
     public boolean sendActivePetitionMessage(L2PcInstance player, String messageText) {
-        // if (!isPlayerInConsultation(player))
+        // if (!isPlayerInConsultation(reader))
         // return false;
 
         CreatureSay cs;

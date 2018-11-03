@@ -113,10 +113,10 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                            /* case 0x11D:
                                 msg = new RequestTodoList();
-                                break;
-                            case 0x138:
-                                msg = new RequestUserBanInfo();
                                 break;*/
+                            case 0x138:
+                             //   msg = new RequestUserBanInfo();
+                                break;
                             default:
                                 printDebugDoubleOpcode(opcode, id3, data, state, client);
                                 break;

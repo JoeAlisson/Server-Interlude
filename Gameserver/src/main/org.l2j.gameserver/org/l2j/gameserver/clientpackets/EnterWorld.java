@@ -271,7 +271,7 @@ public class EnterWorld extends L2GameClientPacket
 		
 		if (activeChar.isAlikeDead())
 		{
-			// no broadcast needed since the player will already spawn dead to others
+			// no broadcast needed since the reader will already spawn dead to others
 			sendPacket(new Die(activeChar));
 		}
 		

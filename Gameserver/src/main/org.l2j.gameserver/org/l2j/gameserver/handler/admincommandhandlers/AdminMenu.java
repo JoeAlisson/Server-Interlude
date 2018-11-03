@@ -324,7 +324,7 @@ public class AdminMenu implements IAdminCommandHandler
         CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
         String acc_name = repository.findAccountByName(player);
         if(Util.isNullOrEmpty(acc_name)) {
-            activeChar.sendMessage("Specified player name didn't lead to a valid account.");
+            activeChar.sendMessage("Specified reader name didn't lead to a valid account.");
         }
         else {
             SystemMessage sm = new SystemMessage(SystemMessageId.S1_S2);

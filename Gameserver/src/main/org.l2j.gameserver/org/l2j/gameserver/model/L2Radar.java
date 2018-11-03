@@ -37,7 +37,7 @@ public final class L2Radar
 		_markers = new Vector<>();
 	}
 	
-	// Add a marker to player's radar
+	// Add a marker to reader's radar
 	public void addMarker(int x, int y, int z)
 	{
 		RadarMarker newMarker = new RadarMarker(x, y, z);
@@ -46,7 +46,7 @@ public final class L2Radar
 		_player.sendPacket(new RadarControl(0, 1, x, y, z));
 	}
 	
-	// Remove a marker from player's radar
+	// Remove a marker from reader's radar
 	public void removeMarker(int x, int y, int z)
 	{
 		RadarMarker newMarker = new RadarMarker(x, y, z);

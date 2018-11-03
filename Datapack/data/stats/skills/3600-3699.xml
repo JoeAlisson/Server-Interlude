@@ -169,7 +169,7 @@ Description(s):
   Needs to be finished.
 
   Description(s):
-      Increases maximum CP/CP regeneration and decreases experience value penalty if killed by another player. Casts a hold on an attacking player at a certain rate.
+      Increases maximum CP/CP regeneration and decreases experience value penalty if killed by another reader. Casts a hold on an attacking reader at a certain rate.
 -->
   <set name="power" val="0.0"/>
   <set name="target" val="TARGET_SELF"/>
@@ -180,8 +180,8 @@ Description(s):
   <for>
     <add val='232' order='0x40' stat='maxCp'/>
     <mul val='1.40' order='0x30' stat='regCp'/>
-    <!-- decreases experience value penalty if killed by another player -->
-    <!-- Casts a hold on an attacking player at a certain rate -->
+    <!-- decreases experience value penalty if killed by another reader -->
+    <!-- Casts a hold on an attacking reader at a certain rate -->
   </for>
 </skill>
 <skill id="3609" levels="1" name="Apella Light Armor Set">
@@ -189,7 +189,7 @@ Description(s):
   Needs to be finished.
 
   Description(s):
-      Increases maximum CP/CP regeneration and decreases experience value penalty if killed by another player. Casts a Speed reduction curse on an attacking player.
+      Increases maximum CP/CP regeneration and decreases experience value penalty if killed by another reader. Casts a Speed reduction curse on an attacking reader.
 -->
   <set name="power" val="0.0"/>
   <set name="target" val="TARGET_SELF"/>
@@ -200,8 +200,8 @@ Description(s):
   <for>
     <add val='195' order='0x40' stat='maxCp'/>
     <mul val='1.40' order='0x30' stat='regCp'/>
-    <!-- decreases experience value penalty if killed by another player -->
-    <!-- Casts a Speed reduction curse on an attacking player -->
+    <!-- decreases experience value penalty if killed by another reader -->
+    <!-- Casts a Speed reduction curse on an attacking reader -->
   </for>
 </skill>
 <skill id="3610" levels="1" name="Apella Robe Set">
@@ -209,7 +209,7 @@ Description(s):
   Needs to be finished.
 
   Description(s):
-      Increases maximum CP/CP regeneration and decreases experience value penalty if killed by a player. Casts an Atk. Spd. reduction curse on attacking player.
+      Increases maximum CP/CP regeneration and decreases experience value penalty if killed by a reader. Casts an Atk. Spd. reduction curse on attacking reader.
 -->
   <set name="power" val="0.0"/>
   <set name="target" val="TARGET_SELF"/>
@@ -220,8 +220,8 @@ Description(s):
   <for>
     <add val='177' order='0x40' stat='maxCp'/>
     <mul val='1.40' order='0x30' stat='regCp'/>
-    <!-- decreases experience value penalty if killed by a player -->
-    <!-- Casts an Atk. Spd. reduction curse on attacking player -->
+    <!-- decreases experience value penalty if killed by a reader -->
+    <!-- Casts an Atk. Spd. reduction curse on attacking reader -->
   </for>
 </skill>
 <skill id="3611" levels="1" name="Enchant Heavy Armor (Grade D)">

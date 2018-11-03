@@ -56,7 +56,7 @@ public final class RequestConfirmSiegeWaitingList extends L2GameClientPacket
 			return;
 		}
 		
-		// Check if the player has a clan
+		// Check if the reader has a clan
 		if (activeChar.getClan() == null)
 		{
 			return;

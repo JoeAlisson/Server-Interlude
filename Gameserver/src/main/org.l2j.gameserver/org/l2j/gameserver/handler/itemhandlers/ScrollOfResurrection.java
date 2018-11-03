@@ -142,7 +142,7 @@ public class ScrollOfResurrection implements IItemHandler
 				}
 				else
 				{
-					if (targetPlayer.isFestivalParticipant()) // Check to see if the current player target is in a festival.
+					if (targetPlayer.isFestivalParticipant()) // Check to see if the current reader target is in a festival.
 					{
 						condGood = false;
 						activeChar.sendPacket(SystemMessage.sendString("You may not resurrect participants in a festival."));

@@ -247,7 +247,7 @@ abstract class DocumentBase {
         if ("not".equalsIgnoreCase(n.getNodeName())) {
             return parseLogicNot(n, template);
         }
-        if ("player".equalsIgnoreCase(n.getNodeName())) {
+        if ("reader".equalsIgnoreCase(n.getNodeName())) {
             return parsePlayerCondition(n);
         }
         if ("target".equalsIgnoreCase(n.getNodeName())) {
@@ -371,7 +371,7 @@ abstract class DocumentBase {
         }
 
         if (cond == null) {
-            _log.error("Unrecognized <player> condition in " + _file);
+            _log.error("Unrecognized <reader> condition in " + _file);
         }
         return cond;
     }

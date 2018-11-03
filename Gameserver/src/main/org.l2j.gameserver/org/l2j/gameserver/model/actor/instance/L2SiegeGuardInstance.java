@@ -133,7 +133,7 @@ public final class L2SiegeGuardInstance extends L2Attackable
 	}
 	
 	/**
-	 * Custom onAction behaviour. Note that super() is not called because guards need extra check to see if a player should interact or ATTACK them when clicked.
+	 * Custom onAction behaviour. Note that super() is not called because guards need extra check to see if a reader should interact or ATTACK them when clicked.
 	 */
 	@Override
 	public void onAction(L2PcInstance player)
@@ -151,10 +151,10 @@ public final class L2SiegeGuardInstance extends L2Attackable
 				_log.debug("new target selected:" + getObjectId());
 			}
 			
-			// Set the target of the L2PcInstance player
+			// Set the target of the L2PcInstance reader
 			player.setTarget(this);
 			
-			// Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+			// Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
 			MyTargetSelected my = new MyTargetSelected(getObjectId(), player.getLevel() - getLevel());
 			player.sendPacket(my);
 			

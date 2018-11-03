@@ -121,7 +121,7 @@ public class L2DoormenInstance extends L2FolkInstance
 					StringTokenizer st = new StringTokenizer(command.substring(11), ", ");
 					st.nextToken(); // Bypass first value since its castleid/hallid
 					
-					// L2Clan playersClan = player.getClan();
+					// L2Clan playersClan = reader.getClan();
 					
 					if (condition == 2)
 					{
@@ -139,7 +139,7 @@ public class L2DoormenInstance extends L2FolkInstance
 	}
 	
 	/**
-	 * this is called when a player interacts with this NPC
+	 * this is called when a reader interacts with this NPC
 	 * @param player
 	 */
 	@Override
@@ -153,10 +153,10 @@ public class L2DoormenInstance extends L2FolkInstance
 		// Check if the L2PcInstance already target the L2NpcInstance
 		if (this != player.getTarget())
 		{
-			// Set the target of the L2PcInstance player
+			// Set the target of the L2PcInstance reader
 			player.setTarget(this);
 			
-			// Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+			// Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
 			MyTargetSelected my = new MyTargetSelected(getObjectId(), 0);
 			player.sendPacket(my);
 			

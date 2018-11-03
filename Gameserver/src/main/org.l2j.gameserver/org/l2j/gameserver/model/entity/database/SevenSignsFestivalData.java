@@ -12,12 +12,12 @@ public class SevenSignsFestivalData extends Entity<Integer> {
     private String cabal;
     private int cycle;
     private long date;
-    private int score;
+    private long score;
     private String members;
 
     public SevenSignsFestivalData() { }
 
-    public SevenSignsFestivalData(int festivalId, String cabal, int cycle, long date, int score, String members) {
+    public SevenSignsFestivalData(int festivalId, String cabal, int cycle, long date, long score, String members) {
         this.festivalId = festivalId;
         this.cabal = cabal;
         this.cycle = cycle;
@@ -55,11 +55,11 @@ public class SevenSignsFestivalData extends Entity<Integer> {
         this.date = date;
     }
 
-    public int getScore() {
+    public long getScore() {
         return score;
     }
 
-    public void setScore(int score) {
+    public void setScore(long score) {
         this.score = score;
     }
 

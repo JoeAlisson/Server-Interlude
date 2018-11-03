@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="34610" name="Mysterious Blessed No-grade Spiritshot" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_white_i01">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8910" level="1"/>
+    </item>
+    <item stackable="true" id="34611" name="Mysterious Blessed Spiritshot (D-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_blue_i01">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8911" level="1"/>
+    </item>
+    <item stackable="true" id="34612" name="Mysterious Blessed Spiritshot (C-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_green_i01">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8912" level="1"/>
+    </item>
+    <item stackable="true" id="34613" name="Mysterious Blessed Spiritshot (B-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_red_i01">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <crystalInfo type="B"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8913" level="1"/>
+    </item>
+    <item stackable="true" id="34614" name="Mysterious Blessed Spiritshot (A-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_silver_i01">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <crystalInfo type="A"/>
+        <handler>BLESSED_SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8907" level="1"/>
+    </item>
+    <item stackable="true" id="34603" name="Mysterious No-grade Soulshot" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_white_i00">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9293" level="1"/>
+    </item>
+    <item stackable="true" id="34604" name="Mysterious Soulshot (D-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_blue_i00">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9294" level="1"/>
+    </item>
+    <item stackable="true" id="34605" name="Mysterious Soulshot (C-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_green_i00">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9295" level="1"/>
+    </item>
+    <item stackable="true" id="34606" name="Mysterious Soulshot (B-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_red_i00">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <crystalInfo type="B"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9296" level="1"/>
+    </item>
+    <item stackable="true" id="34607" name="Mysterious Soulshot (A-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_silver_i00">
+        <price>0</price>
+        <restriction freightable="false" sellable="false"/>
+        <crystalInfo type="A"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="9297" level="1"/>
+    </item>
+</itemList>

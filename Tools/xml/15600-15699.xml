@@ -97,7 +97,7 @@
 		<set name="is_oly_restricted" val="true" />
 	</item>
 	<item id="15629" name="Random Reward" type="EtcItem">
-		<!-- Random reward given to player. -->
+		<!-- Random reward given to reader. -->
 		<set name="icon" val="icon.etc_quest_random_reward_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="CRYSTAL" />

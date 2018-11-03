@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="70145" name="Blue Wolf Stockings Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70144" name="Blue Wolf Tunic Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70147" name="Black Ore Ring Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70146" name="Black Ore Necklace Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70149" name="Brigandine Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70148" name="Black Ore Earring Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70151" name="Brigandine Helmet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70150" name="Brigandine Gaiters Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70153" name="Manticore Skin Shirt Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70152" name="Brigandine Shield Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70155" name="Manticore Skin Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70154" name="Manticore Skin Gaiters Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70157" name="Mithril Stockings Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70156" name="Mithril Tunic Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70159" name="Mana Recovery Potion" icon="icon.etc_potion_blue_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+    </item>
+    <item stackable="true" id="70158" name="Elven Mithril Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70161" name="My Teleport Pack" icon="icon.etc_pi_gift_box_i01">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70160" name="1st Anniversary Coin" icon="icon.etc_11th_token">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="70163" name="Energy of Development" icon="BranchIcon.Icon.etc_g_bonus_herb_i00">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55273"/>
+    </item>
+    <item stackable="true" id="70162" name="Valakas Treasure Chest" icon="icon.bm_sheep_agathion_30d_box">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item id="70165" name="Great Energy of Development" icon="BranchIcon.Icon.etc_g_bonus_herb_i00">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55273" level="3"/>
+    </item>
+    <item id="70164" name="Powerful Energy of Development" icon="BranchIcon.Icon.etc_g_bonus_herb_i00">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55273" level="2"/>
+    </item>
+    <item id="70167" name="Powerful Energy of Speed" icon="BranchIcon.Icon.etc_g_bonus_herb_i01">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55274" level="2"/>
+    </item>
+    <item id="70166" name="Energy of Speed" icon="BranchIcon.Icon.etc_g_bonus_herb_i01">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55274"/>
+    </item>
+    <item id="70169" name="Energy of Accuracy" icon="BranchIcon.Icon.etc_g_bonus_herb_i02">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55275"/>
+    </item>
+    <item id="70168" name="Great Energy of Speed" icon="BranchIcon.Icon.etc_g_bonus_herb_i01">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55274" level="3"/>
+    </item>
+    <item id="70171" name="Great Energy of Accuracy" icon="BranchIcon.Icon.etc_g_bonus_herb_i02">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55275" level="3"/>
+    </item>
+    <item id="70170" name="Powerful Energy of Accuracy" icon="BranchIcon.Icon.etc_g_bonus_herb_i02">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="55275" level="2"/>
+    </item>
+    <item stackable="true" id="70173" name="Decayed Coin" icon="BranchIcon.Icon.vip_silver_coin">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70172" name="Coin of Tears" icon="BranchIcon.Icon.vip_silver_coin">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70175" name="Crude Coin" icon="BranchIcon.Icon.vip_silver_coin">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70174" name="Shabby Coin" icon="BranchIcon.Icon.vip_silver_coin">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70177" name="Box of Tears" icon="icon.bm_sheep_agathion_30d_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70176" name="Old Coin" icon="BranchIcon.Icon.vip_silver_coin">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70179" name="Shabby Box" icon="icon.bm_sheep_agathion_30d_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70178" name="Decayed Box" icon="icon.bm_sheep_agathion_30d_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70181" name="Old Box" icon="icon.bm_sheep_agathion_30d_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="70180" name="Crude Box" icon="icon.bm_sheep_agathion_30d_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="70183" name="Devi’s Ring" icon="icon.ev_11th_rare_acc_ring">
+        <bodyPart>FINGER</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70182" name="Devi’s Ring (15-day)" icon="icon.ev_11th_rare_acc_ring">
+        <bodyPart>FINGER</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>150</weight>
+        <skill id="55290"/>
+        </armor>
+    <armor id="70185" name="Devi’s Earring" icon="icon.ev_11th_rare_acc_earing">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70184" name="Devi’s Earring (15-day)" icon="icon.ev_11th_rare_acc_earing">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70187" name="Devi’s Necklace" icon="icon.ev_11th_rare_acc_necklace">
+        <bodyPart>NECK</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70186" name="Devi’s Necklace (15-day)" icon="icon.ev_11th_rare_acc_necklace">
+        <bodyPart>NECK</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>21600</time>
+        <weight>150</weight>
+        <skill id="55294"/>
+        </armor>
+    <weapon id="70189" name="2 Weapon Slots" additionalName="Test Item" type="BLUNT" icon="icon.weapon_mace_of_judgment_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="70188" name="1 Weapon Slot" additionalName="Test Item" type="BLUNT" icon="icon.weapon_mace_of_judgment_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="70191" name="4 Weapon Slots" additionalName="Test Item" type="BLUNT" icon="icon.weapon_mace_of_judgment_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="70190" name="3 Weapon Slots" additionalName="Test Item" type="BLUNT" icon="icon.weapon_mace_of_judgment_i00">
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="70193" name="Earring of Chronicle Heir" additionalName="Lv. 2" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70192" name="Earring of Chronicle Heir" additionalName="Lv. 1" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70195" name="Earring of Chronicle Heir" additionalName="Lv. 4" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70194" name="Earring of Chronicle Heir" additionalName="Lv. 3" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70197" name="Earring of Chronicle Heir" additionalName="Lv. 6" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70196" name="Earring of Chronicle Heir" additionalName="Lv. 5" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70199" name="Earring of Chronicle Heir" additionalName="Lv. 8" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70198" name="Earring of Chronicle Heir" additionalName="Lv. 7" icon="icon.accessary_onyxbeastseye_earing_i00">
+        <bodyPart>EAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>150</weight>
+        </armor>
+    <armor id="70101" name="Refined Romantic Chapeau: Gold" additionalName="7-day" icon="icon.bm_romantic_chaperon_gold">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <skill id="39043"/>
+        <skill id="39044"/>
+        <skill id="39045"/>
+        </armor>
+    <armor id="70100" name="Stockings of Devotion" additionalName="7-day" type="MAGIC" icon="icon.armor_t55_l_i00">
+        <bodyPart>LEGS</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        </armor>
+    <item stackable="true" id="70103" name="Adventurer’s Potion - Casting Spd." type="POTION" commissionType="POTION" icon="icon.etc_potion_of_acumen2_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="55236"/>
+    </item>
+    <item stackable="true" id="70102" name="Adventurer’s Potion - Atk. Spd." type="POTION" commissionType="POTION" icon="icon.etc_reagent_green_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="55235"/>
+    </item>
+    <item stackable="true" id="70105" name="Scroll of Mana" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55241"/>
+    </item>
+    <item stackable="true" id="70104" name="Scroll: Vampiric Rage" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55237"/>
+    </item>
+    <item stackable="true" id="70107" name="Scroll: Berserker Spirit" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="55242"/>
+    </item>
+    <item id="70106" name="Rune of Boost" additionalName="7-day" type="ENCHT_ATTR_RUNE" icon="BranchSys3.lcon.g_rune_itemdrop_up">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <skill id="55246"/>
+    </item>
+    <armor id="70109" name="Water Dragon Pendant - Lv. 3" additionalName="7-day" icon="BranchIcon.Icon.bm_pendant_pvp_blue">
+        <bodyPart>UNDERWEAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <skill id="55104" level="3"/>
+        </armor>
+    <armor id="70108" name="Fire Dragon Pendant - Lv. 3" additionalName="7-day" icon="BranchIcon.Icon.bm_pendant_pve">
+        <bodyPart>UNDERWEAR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>0</weight>
+        <skill id="55094"/>
+        </armor>
+    <item stackable="true" id="70111" name="Scroll: Dance of the Mystic" type="SCROLL" commissionType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_dance_scroll_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="273"/>
+    </item>
+    <item stackable="true" id="70110" name="Scroll: Dance of the Warrior" type="SCROLL" commissionType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_dance_scroll_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>5</weight>
+        <skill id="271"/>
+    </item>
+    <item stackable="true" id="70113" name="Scroll of Escape: Town of Aden" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+        <price>35000</price>
+        <restriction freightable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <condition messageId="113" includeName="true">
+            <not>
+                <state state="FLYING"/>
+            </not>
+        </condition>
+        <skill id="2213" level="12"/>
+    </item>
+    <armor id="70112" name="Refined Romantic Chapeau - Special Trait" additionalName="7-day" commissionType="HAIR_ACCESSORY" icon="icon.accessory_archer_hat2_i00">
+        <bodyPart>FULL_HAIR</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>10</weight>
+        <skill id="35011"/>
+        <skill id="55047"/>
+        <skill id="55048"/>
+        <skill id="55247"/>
+        </armor>
+    <item stackable="true" id="70115" name="Fishing Coin" icon="icon.fairy_adena_joke">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="70114" name="Agathion - Singer and Dancer" additionalName="7-day" icon="BranchSys2.icon.br_aga_singer_dancer_i00">
+        <bodyPart>LEFT_BRACELET</bodyPart>
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10800</time>
+        <weight>0</weight>
+        <skill id="21233"/>
+        <skill id="23234"/>
+        <skill id="3267"/>
+        <skill id="39016"/>
+        <skill id="39017"/>
+        <skill id="39018"/>
+        </armor>
+    <weapon id="70117" name="Mermaid's Elite Golden Fishing Rod" additionalName="3 days" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        </weapon>
+    <weapon id="70116" name="Mermaid's Elite Golden Fishing Rod" additionalName="1-day" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>1440</time>
+        <weight>1000</weight>
+        </weapon>
+    <weapon id="70119" name="Mermaid's Elite Golden Fishing Rod" additionalName="30-day" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>1000</weight>
+        </weapon>
+    <weapon id="70118" name="Mermaid's Elite Golden Fishing Rod" additionalName="7-day" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>10080</time>
+        <weight>1000</weight>
+        </weapon>
+    <item stackable="true" id="70121" name="Full Plate Armor Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <weapon id="70120" name="Mermaid's Elite Golden Fishing Rod" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
+        <bodyPart>TWO_HANDS</bodyPart>
+    <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        </weapon>
+    <item stackable="true" id="70123" name="Full Plate Shield Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70122" name="Full Plate Helmet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70125" name="Drake Leather Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70124" name="Drake Leather Armor Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70127" name="Divine Stockings Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70126" name="Divine Tunic Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70129" name="Doom Shield Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70128" name="Divine Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70131" name="Doom Helmet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70130" name="Doom Plate Armor Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70133" name="Doom Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70132" name="Doom Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70135" name="Blue Wolf Gaiters Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70134" name="Blue Wolf Breastplate Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70137" name="Blue Wolf Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70136" name="Blue Wolf Helmet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70139" name="Doom Leather Armor Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70138" name="Blue Wolf Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70141" name="Avadon Circlet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70140" name="Avadon Robe Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70143" name="Avadon Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+    <item stackable="true" id="70142" name="Avadon Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>100</weight>
+    </item>
+</itemList>

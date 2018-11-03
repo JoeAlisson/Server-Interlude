@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="256" name="Cestus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_vipers_canine_i00">
+        <price>136000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1570</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="257" name="Viper Fang" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_vipers_canine_i00">
+        <price>244000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1560</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="258" name="Bagh-Nakh" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_baghnakh_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1540</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="259" name="Single-Edged Jamadhr" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_single-edged_jamadhr_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1550</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="260" name="Triple-Edged Jamadhr" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_triple-edged_jamadhr_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1540</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="261" name="Bich'Hwa" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_bichhwa_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="262" name="Scallop Jamadhr" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_scallop_jamadhr_i00">
+        <price>1800000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="3272"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="263" name="Chakram" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_chakram_i00">
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1490</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="264" name="Pata" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_chakram_i00">
+        <price>7830000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1044"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1440</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="42" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="265" name="Fisted Blade" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_fist_blade_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1480</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="266" name="Great Pata" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_great_pata_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1460</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="267" name="Arthro Nail" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_arthro_nail_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1420</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="52" width="90"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="268" name="Bellion Cestus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_bellion_cestus_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1390</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="269" name="Blood Tornado" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_blood_tornado_i00">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1370</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="270" name="Dragon Grinder" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_dragon_grinder_i00">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1350</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="271" name="Hunting Bow" type="BOW" commissionType="BOW" icon="icon.weapon_hunting_bow_i00">
+        <price>54100</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1910</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="1" shot="1"/>
+    </weapon>
+    <weapon id="272" name="Forest Bow" type="BOW" commissionType="BOW" icon="icon.weapon_short_bow_i00">
+        <price>136000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1900</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="1" shot="1"/>
+    </weapon>
+    <weapon id="273" name="Compound Bow" type="BOW" commissionType="BOW" icon="icon.weapon_composition_bow_i00">
+        <price>244000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1880</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="1" shot="1"/>
+    </weapon>
+    <weapon id="274" name="Reinforced Bow" type="BOW" commissionType="BOW" icon="icon.weapon_strengthening_bow_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1870</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="275" name="Longbow" type="BOW" commissionType="BOW" icon="icon.weapon_long_bow_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="276" name="Elven Bow" type="BOW" commissionType="BOW" icon="icon.weapon_elven_bow_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="277" name="Dark Elven Bow" type="BOW" commissionType="BOW" icon="icon.weapon_dark_elven_bow_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1830</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="278" name="Gastraphetes" type="BOW" commissionType="BOW" icon="icon.weapon_gastraphetes_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1840</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="279" name="Reinforced Longbow" type="BOW" commissionType="BOW" icon="icon.weapon_strengthening_long_bow_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="2" shot="1"/>
+    </weapon>
+    <weapon id="280" name="Light Crossbow" type="BOW" commissionType="BOW" icon="icon.weapon_cyclone_bow_i00">
+        <price>1800000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="3272"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1810</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="2" shot="2"/>
+    </weapon>
+    <weapon id="281" name="Crystallized Ice Bow" type="BOW" commissionType="BOW" icon="icon.weapon_crystallized_ice_bow_i00">
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1790</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="3" shot="1"/>
+    </weapon>
+    <weapon id="282" name="Elemental Bow" type="BOW" commissionType="BOW" icon="icon.weapon_elemental_bow_i00">
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1770</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="3" shot="1"/>
+    </weapon>
+    <weapon id="283" name="Akat Longbow" type="BOW" commissionType="BOW" icon="icon.weapon_akat_long_bow_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1740</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="3" shot="1"/>
+    </weapon>
+    <weapon id="284" name="Dark Elven Longbow" type="BOW" commissionType="BOW" icon="icon.weapon_dark_elven_long_bow_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="4" shot="1"/>
+    </weapon>
+    <weapon id="285" name="Noble Elven Bow" type="BOW" commissionType="BOW" icon="icon.weapon_noble_elven_bow_i00">
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1760</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="3" shot="1"/>
+    </weapon>
+    <weapon id="286" name="Eminence Bow" type="BOW" commissionType="BOW" icon="icon.weapon_eminence_bow_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="3" shot="2"/>
+    </weapon>
+    <weapon id="287" name="Bow of Peril" type="BOW" commissionType="BOW" icon="icon.weapon_hazard_bow_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1700</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="4" shot="1"/>
+    </weapon>
+    <weapon id="288" name="Carnage Bow" type="BOW" commissionType="BOW" icon="icon.weapon_carnium_bow_i00">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>1500</reuseDelay>
+        <time>0</time>
+        <weight>1670</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="289" name="Soul Bow" type="BOW" commissionType="BOW" icon="icon.weapon_soul_bow_i00">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>820</reuseDelay>
+        <time>0</time>
+        <weight>1660</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="10" width="0"/>
+        <consume mp="5" shot="1"/>
+    </weapon>
+    <weapon id="291" name="Trident" type="POLE" commissionType="SPEAR" icon="icon.weapon_trident_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="292" name="Pike" type="POLE" commissionType="SPEAR" icon="icon.weapon_pike_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="293" name="War Hammer" type="POLE" commissionType="SPEAR" icon="icon.weapon_war_hammer_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2080</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="294" name="War Pick" type="POLE" commissionType="SPEAR" icon="icon.weapon_hammer_in_flames_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2050</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="295" name="Dwarven Trident" type="POLE" commissionType="SPEAR" icon="icon.weapon_dwarven_trident_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="296" name="Dwarven Pike" type="POLE" commissionType="SPEAR" icon="icon.weapon_dwarven_pike_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2070</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="297" name="Glaive" type="POLE" commissionType="SPEAR" icon="icon.weapon_glaive_i00">
+        <price>1800000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="3272"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2050</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="298" name="Orcish Glaive" type="POLE" commissionType="SPEAR" icon="icon.weapon_orcish_glaive_i00">
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2030</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="299" name="Orcish Poleaxe" type="POLE" commissionType="SPEAR" icon="icon.weapon_orcish_poleaxe_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1950</weight>
+        <skill id="3599" level="1"/>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="66" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="200" name="Sage's Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sages_staff_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="201" name="Club of Nature" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_club_of_nature_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="202" name="Mace of Underworld" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_mace_of_underworld_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1090</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="203" name="Pa'agrio Axe" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_axe_i00">
+        <price>4780000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1912"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>990</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="204" name="Deadman's Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_deadmans_staff_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="205" name="Ghoul's Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_ghouls_staff_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="206" name="Demon's Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_demons_staff_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>990</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="207" name="Staff of Phantom" additionalName="Not Activated" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_apprentices_staff_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="208" name="Staff of Seal" additionalName="Not Activated" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_apprentices_staff_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="209" name="Divine Staff" additionalName="Not Activated" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_apprentices_staff_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>960</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="210" name="Staff of Evil Spirits" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_staff_of_evil_sprit_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>930</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="211" name="Staff of Nobility" additionalName="Not Activated" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_apprentices_staff_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>910</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="212" name="Dasparion's Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_dasparions_staff_i00">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>920</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="46" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="213" name="Branch of the Mother Tree" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_worldtrees_branch_i00">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>900</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="215" name="Doom Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_doomed_dagger_i00">
+        <price>12500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="216" name="Dirk" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dirk_i00">
+        <price>54100</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="217" name="Shining Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_shining_knife_i00">
+        <price>136000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1120</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="218" name="Throwing Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_throw_knife_i00">
+        <price>136000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1120</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="219" name="Sword Breaker" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_sword_breaker_i00">
+        <price>244000</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1110</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="220" name="Crafted Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_handiwork_dagger_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="221" name="Assassin Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_assassin_knife_i00">
+        <price>409000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="743"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1100</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="222" name="Poniard Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dirk_i00">
+        <price>644000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1170"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1090</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="223" name="Kukuri" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_kukuri_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1080</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="224" name="Maingauche" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_maingauche_i00">
+        <price>1400000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="2545"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="225" name="Mithril Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_mithril_dagger_i00">
+        <price>1800000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="3272"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1060</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="226" name="Cursed Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_cursed_dagger_i00">
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="227" name="Stiletto" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_stiletto_i00">
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1030</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="228" name="Crystal Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_crystal_dagger_i00">
+        <price>6130000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="2452"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="229" name="Kris" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_kris_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="230" name="Needle Wolverine" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_needle_wolverine_i00">
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="231" name="Grace Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_grace_dagger_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="232" name="Dark Elven Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_darkelven_dagger_i00">
+        <price>2290000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="916"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1050</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="233" name="Dark Screamer" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dark_screamer_i00">
+        <price>4300000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1720"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="234" name="Demon's Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_demons_sword_i00">
+        <price>13100000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1746"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="235" name="Bloody Orchid" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_bloody_orchid_i00">
+        <price>14098000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1128"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>960</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="236" name="Soul Separator" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_soul_separator_i00">
+        <price>20741000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="A" count="1659"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>950</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="238" name="Dagger of Mana" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dagger_of_mana_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="239" name="Mystic Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_mystic_knife_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>760</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="240" name="Conjurer's Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_conjure_knife_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="241" name="Shilen Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_knife_o'_silenus_i00">
+        <price>967000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="D" count="1758"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="242" name="Soulfire Dirk" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_dagger_of_magicflame_i00">
+        <price>2870000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="C" count="1148"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon magic="true" id="243" name="Twilight Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_hell_knife_i00">
+        <price>8680000</price>
+        <restriction freightable="false"/>
+        <crystalInfo type="B" count="1157"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>740</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="244" name="Elven Fighter Fist" commissionType="FIST_WEAPON">
+        <price>22</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="245" name="Dark Fighter Fist" commissionType="FIST_WEAPON">
+        <price>33</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="246" name="Human Fighter Fist" commissionType="FIST_WEAPON">
+        <price>44</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="247" name="Dwarven Fighter Fist" commissionType="FIST_WEAPON">
+        <price>56</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="248" name="Orc Fighter Fist" commissionType="FIST_WEAPON">
+        <price>67</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="249" name="Elven Mystic Fist" commissionType="FIST_WEAPON">
+        <price>11</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="250" name="Dark Mystic Fist" commissionType="FIST_WEAPON">
+        <price>22</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="251" name="Human Mystic Fist" commissionType="FIST_WEAPON">
+        <price>33</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="252" name="Orc Shaman Fist" commissionType="FIST_WEAPON">
+        <price>44</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <damage vertical="0" horizontal="0" distance="40" width="120"/>
+    </weapon>
+    <weapon id="253" name="Spiked Gloves" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_spike_glove_i00">
+        <price>768</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1590</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="254" name="Iron Gloves" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_iron_glove_i00">
+        <price>12500</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1580</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="255" name="Fox Claw Gloves" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_foxs_nail_i00">
+        <price>54100</price>
+        <restriction freightable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1560</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <damage vertical="0" horizontal="0" distance="32" width="120"/>
+        <consume shot="1"/>
+    </weapon>
+</itemList>

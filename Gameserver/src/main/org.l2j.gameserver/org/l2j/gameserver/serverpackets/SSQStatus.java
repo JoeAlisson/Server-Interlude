@@ -80,8 +80,8 @@ public class SSQStatus extends L2GameServerPacket
 				writeByte(SevenSigns.getInstance().getPlayerCabal(_activevChar));
 				writeByte(SevenSigns.getInstance().getPlayerSeal(_activevChar));
 				
-				writeInt(SevenSigns.getInstance().getPlayerStoneContrib(_activevChar)); // Seal Stones Turned-In
-				writeInt(SevenSigns.getInstance().getPlayerAdenaCollect(_activevChar)); // Ancient Adena to Collect
+				writeLong(SevenSigns.getInstance().getPlayerStoneContrib(_activevChar)); // Seal Stones Turned-In
+				writeLong(SevenSigns.getInstance().getPlayerAdenaCollect(_activevChar)); // Ancient Adena to Collect
 				
 				double dawnStoneScore = SevenSigns.getInstance().getCurrentStoneScore(SevenSigns.CABAL_DAWN);
 				int dawnFestivalScore = SevenSigns.getInstance().getCurrentFestivalScore(SevenSigns.CABAL_DAWN);
@@ -157,11 +157,11 @@ public class SSQStatus extends L2GameServerPacket
 					writeByte(i + 1); // Current client-side festival ID
 					writeInt(SevenSignsFestival.FESTIVAL_LEVEL_SCORES[i]);
 					
-					int duskScore = SevenSignsFestival.getInstance().getHighestScore(SevenSigns.CABAL_DUSK, i);
-					int dawnScore = SevenSignsFestival.getInstance().getHighestScore(SevenSigns.CABAL_DAWN, i);
+					long duskScore = SevenSignsFestival.getInstance().getHighestScore(SevenSigns.CABAL_DUSK, i);
+					long dawnScore = SevenSignsFestival.getInstance().getHighestScore(SevenSigns.CABAL_DAWN, i);
 					
 					// Dusk Score \\
-					writeInt(duskScore);
+					writeLong(duskScore);
 					
 					SevenSignsFestivalData highScoreData = SevenSignsFestival.getInstance().getHighestScoreData(SevenSigns.CABAL_DUSK, i);
 					String[] partyMembers = highScoreData.getMembers().split(",");
@@ -181,7 +181,7 @@ public class SSQStatus extends L2GameServerPacket
 					}
 					
 					// Dawn Score \\
-					writeInt(dawnScore);
+					writeLong(dawnScore);
 					
 					highScoreData = SevenSignsFestival.getInstance().getHighestScoreData(SevenSigns.CABAL_DAWN, i);
 					partyMembers = highScoreData.getMembers().split(",");

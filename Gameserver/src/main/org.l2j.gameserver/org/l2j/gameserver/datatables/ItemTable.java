@@ -3,24 +3,19 @@ package org.l2j.gameserver.datatables;
 import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.ThreadPoolManager;
-import org.l2j.gameserver.factory.ItemFactory;
+import org.l2j.gameserver.factory.ItemHelper;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.actor.instance.L2BossInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2RaidBossInstance;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
-import org.l2j.gameserver.model.entity.database.repository.ArmorRepository;
-import org.l2j.gameserver.model.entity.database.repository.EtcItemRepository;
 import org.l2j.gameserver.model.entity.database.repository.PetsRepository;
-import org.l2j.gameserver.model.entity.database.repository.WeaponRepository;
-import org.l2j.gameserver.model.entity.xml.ItemStatsReader;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
+import org.l2j.gameserver.templates.xml.reader.ItemReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.xml.bind.JAXBException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.ScheduledFuture;
 
 import static org.l2j.gameserver.util.GameserverMessages.getMessage;
@@ -32,8 +27,7 @@ public class ItemTable {
 
     private static ItemTable INSTANCE;
 
-    private Map<Integer, ItemTemplate> items;
-    private ItemStatsReader statsReader;
+    private ItemReader itemReader;
 
     public static ItemTable getInstance() {
         if (isNull(INSTANCE)) {
@@ -43,38 +37,21 @@ public class ItemTable {
     }
 
     private ItemTable() {
-        items = new HashMap<>();
-        loadItemsStat();
-        DatabaseAccess.getRepository(EtcItemRepository.class).findAll().forEach(this::addToItems);
-        DatabaseAccess.getRepository(ArmorRepository.class).findAll().forEach(this::addToItems);
-        DatabaseAccess.getRepository(WeaponRepository.class).findAll().forEach(this::addToItems);
-        _log.info(getMessage("info.items.loaded"), items.size());
+        loadItems();
+        _log.info(getMessage("info.items.loaded"), itemReader.size());
     }
 
-    private void loadItemsStat() {
+    private void loadItems() {
         try {
-            statsReader = new ItemStatsReader();
-            statsReader.readAll();
+            itemReader = new ItemReader();
+            itemReader.readAll();
         } catch (JAXBException e) {
             _log.error(e.getLocalizedMessage(), e);
         }
     }
 
-    private void addToItems(ItemTemplate item) {
-        if(!isNull(statsReader)) {
-            statsReader.attach(item);
-        }
-        items.put(item.getId(), item);
-    }
-
-    /**
-     * Returns the item corresponding to the item ID
-     *
-     * @param id : int designating the item
-     * @return ItemTemplate
-     */
     public ItemTemplate getTemplate(int id) {
-        return items.get(id);
+        return itemReader.getItemTemplate(id);
     }
 
     /**
@@ -92,9 +69,9 @@ public class ItemTable {
      * @param reference : L2Object Object referencing current action like NPC selling item or previous item in transformation
      * @return L2ItemInstance corresponding to the new item
      */
-    public L2ItemInstance createItem(String process, int itemId, int count, L2PcInstance actor, L2Object reference) {
+    public L2ItemInstance createItem(String process, int itemId, long count, L2PcInstance actor, L2Object reference) {
         // Create and Init the L2ItemInstance corresponding to the Item Identifier
-        L2ItemInstance item = ItemFactory.create(itemId);
+        L2ItemInstance item = ItemHelper.create(itemId);
 
         if (process.equalsIgnoreCase("loot") && !Config.AUTO_LOOT) {
             ScheduledFuture<?> itemLootShedule;
@@ -178,7 +155,7 @@ public class ItemTable {
             item.setLastChange(L2ItemInstance.REMOVED);
 
             L2World.getInstance().removeObject(item);
-            ItemFactory.releaseId(item.getObjectId());
+            ItemHelper.releaseId(item.getObjectId());
 
             if (Config.LOG_ITEMS) {
                 _logItems.info("DELETE: {}", process);
@@ -193,7 +170,7 @@ public class ItemTable {
     }
 
     public void reload() {
-        //FIXME  The player must relogin to get new item status
+        //FIXME  The reader must relogin to get new item status
         synchronized (INSTANCE) {
             INSTANCE = null;
             INSTANCE = new ItemTable();

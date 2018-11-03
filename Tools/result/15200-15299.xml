@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="15280" name="Transparent 1HS (NPC)" type="SWORD" icon="icon.weapon_long_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1560</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="15281" name="Transparent 2HS (NPC)" type="SWORD" icon="icon.weapon_two_handed_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <crystalInfo type="A"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+</itemList>

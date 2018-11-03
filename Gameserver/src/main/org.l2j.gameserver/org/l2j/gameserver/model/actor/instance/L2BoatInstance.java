@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.Config;
@@ -26,8 +8,8 @@ import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.knownlist.BoatKnownList;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -37,12 +19,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-
 /**
  * @author Maktakien
  */
 public class L2BoatInstance extends L2Character {
-    protected static final Logger _logBoat = LoggerFactory.getLogger(L2BoatInstance.class.getName());
+    protected static final Logger _logBoat = LoggerFactory.getLogger(L2BoatInstance.class);
 
     private class L2BoatTrajet {
         private Map<Integer, L2BoatPoint> _path;
@@ -435,7 +416,7 @@ public class L2BoatInstance extends L2Character {
                 L2PcInstance player = _inboat.get(i);
                 if ((player != null) && player.isInBoat()) {
                     if (player.getBoat() == this) {
-                        // player.getKnownList().addKnownObject(this);
+                        // reader.getKnownList().addKnownObject(this);
                         player.getPosition().setXYZ(x, y, z);
                         player.revalidateZone(false);
                     }
@@ -578,7 +559,7 @@ public class L2BoatInstance extends L2Character {
                 }
                 for (L2PcInstance player : knownPlayers) {
                     player.sendPacket(sm);
-                    // player.sendPacket(ps);
+                    // reader.sendPacket(ps);
                 }
                 break;
             case -1:

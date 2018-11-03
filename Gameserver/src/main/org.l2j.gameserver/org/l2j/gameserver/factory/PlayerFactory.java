@@ -1,13 +1,17 @@
 package org.l2j.gameserver.factory;
 
 import org.l2j.commons.Config;
+import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.Items;
 import org.l2j.gameserver.model.entity.database.repository.CharacterRepository;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.templates.ClassTemplate;
 
+import java.util.Optional;
+
 import static java.lang.System.currentTimeMillis;
+import static java.util.Objects.requireNonNullElse;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.model.L2ItemInstance.ItemLocation.INVENTORY;
 import static org.l2j.gameserver.model.L2ItemInstance.ItemLocation.PAPERDOLL;
@@ -48,7 +52,7 @@ public class PlayerFactory {
         character.setY(loc.getY());
         character.setZ(loc.getY());
         character.setRace(template.getRace());
-        character.setClassId(template.getId());
+        character.setClassId(requireNonNullElse(template.getId(), 0));
         character.setBaseClass(template.getId());
 
         if (Config.ALT_GAME_NEW_CHAR_ALWAYS_IS_NEWBIE) {
@@ -76,17 +80,25 @@ public class PlayerFactory {
     }
 
     private static void createItem(int objectId, int id, int count, boolean equipped) {
-        var item = ItemFactory.create(id);
+        var item = ItemHelper.create(id);
         if (count > 1) {
             item.setCount(count);
         }
 
         if (equipped) {
-            item.setLocation(PAPERDOLL);
+            item.setLocation(PAPERDOLL, item.getPaperDoll());
         } else {
             item.setLocation(INVENTORY);
         }
-        var modelItem = new Items(item.getObjectId(), objectId, item.getItemId(), item.getCount(), item.getLocation().name(), 0, item.getEnchantLevel(), item.getPriceToSell(), item.getPriceToBuy(), item.getCustomType1(), item.getCustomType2(), item.getMana());
+        var modelItem = new Items(item.getObjectId(), objectId, item.getItemId(), item.getCount(), item.getLocation().name(), item.getEquipSlot(), item.getEnchantLevel(), item.getPriceToSell(), item.getPriceToBuy(), item.getCustomType1(), item.getCustomType2(), item.getMana());
         getRepository(ItemRepository.class).save(modelItem);
+    }
+
+    public static L2PcInstance load(int objectId) {
+        CharacterRepository repository = getRepository(CharacterRepository.class);
+        Optional<Character> optionalCharacter = repository.findById(objectId);
+
+        L2PcInstance player = L2PcInstance.load(objectId);
+        return player;
     }
 }

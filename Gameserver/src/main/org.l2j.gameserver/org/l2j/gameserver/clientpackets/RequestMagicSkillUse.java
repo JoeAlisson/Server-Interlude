@@ -51,7 +51,7 @@ public final class RequestMagicSkillUse extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		// Get the current L2PcInstance of the player
+		// Get the current L2PcInstance of the reader
 		L2PcInstance activeChar = getClient().getActiveChar();
 		
 		if (activeChar == null)
@@ -84,7 +84,7 @@ public final class RequestMagicSkillUse extends L2GameClientPacket
 			// logger.debug("	reusedelay:"+skill.getReuseDelay()+" hittime:"+skill.getHitTime());
 			// logger.debug("	currentState:"+activeChar.getCurrentState()); //for debug
 			
-			// If Alternate rule Karma punishment is set to true, forbid skill Return to player with Karma
+			// If Alternate rule Karma punishment is set to true, forbid skill Return to reader with Karma
 			if ((skill.getSkillType() == L2Skill.SkillType.RECALL) && !Config.ALT_GAME_KARMA_PLAYER_CAN_TELEPORT && (activeChar.getKarma() > 0))
 			{
 				return;

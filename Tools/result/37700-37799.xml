@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="37700" name="Valentine Dual Dagger" type="DUALDAGGER" icon="icon.ev_hallowinday_candy_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>500</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <weapon id="37701" name="Valentine Dual Blunt Weapon" type="DUALBLUNT" icon="icon.ev_hallowinday_candy_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>500</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <armor id="37702" name="Valentine Shield" icon="icon.ev_hallowinday_candy_i00">
+        <price>88681000</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1130</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <armor id="37703" name="Valentine Sigil" type="SIGIL" icon="icon.ev_hallowinday_candy_i00">
+        <price>88681000</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>920</weight>
+        <bodyPart>LEFT_HAND</bodyPart>
+    </armor>
+    <item id="37704" name="Love Potion" commissionType="OTHER_ITEM" icon="icon.etc_whiteday_herb">
+        <price>0</price>
+        <restriction tradeable="false" sellable="false" destroyable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="17154" level="1"/>
+    </item>
+    <item stackable="true" id="37705" name="Gold Fishing Shot" icon="icon.etc_spirit_bullet_fish_i05">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3</weight>
+    </item>
+    <armor id="37725" name="NC Dinos Uniform" type="HEAVY" icon="icon.london_olympic_bikini">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>FULL_BODY</bodyPart>
+    </armor>
+    <armor id="37726" name="NC Dinos Shortstop Cap" icon="icon.accessory_mining_cap_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>FULL_HAIR</bodyPart>
+    </armor>
+</itemList>

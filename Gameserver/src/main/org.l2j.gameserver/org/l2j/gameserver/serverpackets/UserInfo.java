@@ -257,7 +257,7 @@ public class UserInfo extends L2GameServerPacket
 		writeShort(_activeChar.GetInventoryLimit());
 		
 		writeInt(_activeChar.getPlayerClass().getId());
-		writeInt(0x00); // special effects? circles around player...
+		writeInt(0x00); // special effects? circles around reader...
 		writeInt(_activeChar.getMaxCp());
 		writeInt((int) _activeChar.getCurrentCp());
 		writeByte(_activeChar.isMounted() ? 0 : _activeChar.getEnchantEffect());

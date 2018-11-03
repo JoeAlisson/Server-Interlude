@@ -58,7 +58,7 @@ public final class Logout extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		// Dont allow leaving if player is fighting
+		// Dont allow leaving if reader is fighting
 		L2PcInstance player = getClient().getActiveChar();
 		
 		if (player == null)
@@ -92,8 +92,8 @@ public final class Logout extends L2GameClientPacket
 			return;
 		}
 		
-		// Prevent player from logging out if they are a festival participant
-		// and it is in progress, otherwise notify party members that the player
+		// Prevent reader from logging out if they are a festival participant
+		// and it is in progress, otherwise notify party members that the reader
 		// is not longer a participant.
 		if (player.isFestivalParticipant())
 		{

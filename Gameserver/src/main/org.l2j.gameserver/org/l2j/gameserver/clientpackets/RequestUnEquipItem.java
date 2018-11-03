@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
@@ -24,15 +6,10 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.BodyPart;
+import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
-/**
- * This class ...
- * @version $Revision: 1.8.2.3.2.7 $ $Date: 2005/03/27 15:29:30 $
- */
 public class RequestUnEquipItem extends L2GameClientPacket
 {
 	private static final String _C__11_REQUESTUNEQUIPITEM = "[C] 11 RequestUnequipItem";
@@ -64,8 +41,7 @@ public class RequestUnEquipItem extends L2GameClientPacket
 		{
 			return;
 		}
-
-        BodyPart bodyPart = BodyPart.fromId(_slot);
+		BodyPart bodyPart = BodyPart.FULL_BODY; // TODO BodyPart.fromId(_slot);
 		
 		L2ItemInstance item = activeChar.getInventory().getPaperdollItemByL2ItemId(bodyPart);
 		if ((item != null) && item.isWear())
@@ -74,13 +50,13 @@ public class RequestUnEquipItem extends L2GameClientPacket
 			return;
 		}
 		// Prevent of unequiping a cursed weapon
-		if ((bodyPart == BodyPart.TWO_HAND) && activeChar.isCursedWeaponEquiped())
+		if ((bodyPart == BodyPart.TWO_HANDS) && activeChar.isCursedWeaponEquiped())
 		{
 			// Message ?
 			return;
 		}
 		
-		// Prevent player from unequipping items in special conditions
+		// Prevent reader from unequipping items in special conditions
 		if (activeChar.isStunned() || activeChar.isSleeping() || activeChar.isParalyzed() || activeChar.isAlikeDead())
 		{
 			activeChar.sendMessage("Your status does not allow you to do that.");

@@ -19,6 +19,7 @@
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
+import org.l2j.gameserver.datatables.PlayerTemplateTable;
 import org.l2j.gameserver.datatables.SkillSpellbookTable;
 import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.datatables.SkillTreeTable;
@@ -93,7 +94,7 @@ public class RequestAquireSkillInfo extends L2GameClientPacket
 				return; // cheater
 			}
 			
-			List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(activeChar, activeChar.getSkillLearningClassId());
+			List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(activeChar, PlayerTemplateTable.getInstance().getClassTemplate(activeChar.getSkillLearningClassId().getId()));
 			
 			for (SkillInfo s : skills)
 			{

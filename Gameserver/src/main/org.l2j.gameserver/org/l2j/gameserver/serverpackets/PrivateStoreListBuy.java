@@ -7,7 +7,7 @@ public class PrivateStoreListBuy extends L2GameServerPacket
 {
 	private final L2PcInstance _storePlayer;
 	private final L2PcInstance _activeChar;
-	private final int _playerAdena;
+	private final long _playerAdena;
 	private final TradeList.TradeItem[] _items;
 	
 	public PrivateStoreListBuy(L2PcInstance player, L2PcInstance storePlayer)
@@ -24,7 +24,7 @@ public class PrivateStoreListBuy extends L2GameServerPacket
 	{
 		writeByte(0xb8);
 		writeInt(_storePlayer.getObjectId());
-		writeInt(_playerAdena);
+		writeLong(_playerAdena);
 		
 		writeInt(_items.length);
 		
@@ -33,16 +33,16 @@ public class PrivateStoreListBuy extends L2GameServerPacket
 			writeInt(item.getObjectId());
 			writeInt(item.getItem().getId());
 			writeShort(item.getEnchant());
-			writeInt(item.getCount()); // give max possible sell amount
+			writeLong(item.getCount()); // give max possible sell amount
 			
-			writeInt(item.getItem().getPrice());
+			writeLong(item.getItem().getPrice());
 			writeShort(0);
 			
-			writeInt(item.getItem().getBodyPart().getId());
-			writeShort(item.getItem().getType2().getId());
-			writeInt(item.getPrice());// buyers price
+			writeInt(0);// TODO item.getItem().getBodyPart().getId());
+			writeShort(item.getItem().getCommissionType().ordinal());
+			writeLong(item.getPrice());// buyers price
 			
-			writeInt(item.getCount()); // maximum possible tradecount
+			writeLong(item.getCount()); // maximum possible tradecount
 		}
 	}
 }

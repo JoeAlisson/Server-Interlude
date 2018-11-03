@@ -7,15 +7,24 @@
 
     <xs:include schemaLocation="commons.xsd"/>
 
-    <xs:complexType name="xmlTypeStat">
+    <xs:complexType name="Stat">
         <xs:sequence>
             <xs:element name="conditions" type="xmlStatCondition" minOccurs="0"/>
         </xs:sequence>
         <xs:attribute name="order" type="xs:int" use="required"/>
-        <xs:attribute name="function" type="xs:string" use="required"/>
-        <xs:attribute name="name" type="Stats" use="required"/>
+        <xs:attribute name="function" type="Function" use="required"/>
+        <xs:attribute name="type" type="Stats" use="required"/>
         <xs:attribute name="value" type="xs:float" use="required"/>
     </xs:complexType>
+
+    <xs:simpleType name="Function">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ADD"/>
+            <xs:enumeration value="SUB"/>
+            <xs:enumeration value="MUL"/>
+            <xs:enumeration value="DIV"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:element name="using" type="xmlStatUsingCondition" substitutionGroup="condition"/>
     <xs:element name="player" type="xmlStatPlayerCondition" substitutionGroup="condition"/>

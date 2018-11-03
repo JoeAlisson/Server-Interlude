@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="49700" name="Scroll Box: Emperor Baium's Enchant" icon="icon.etc_treasure_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49701" name="Steel Bracelet Fragment" icon="icon.etc_vacualite_noglow_white_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49702" name="Bracelet of Border Fragment" icon="icon.etc_vacualite_noglow_gold_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49703" name="Bracelet of Border" icon="icon.dimension_bracelet_i05">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <item stackable="true" id="49704" name="Talisman of Border’s Fragment" icon="icon.etc_armor_soul_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49705" name="Forbidden Limit Chest" icon="icon.bm_special_pendant_abradant_box">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49706" name="Talisman of Darkness Box" icon="icon.bm_pirate_king_box">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39147" level="1"/>
+    </item>
+    <armor id="49707" name="Talisman of Darkness - P. Atk." additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3272" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49708" name="Talisman of Darkness - M. Atk." additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3276" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49709" name="Talisman of Darkness - P. Def." additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3273" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49710" name="Talisman of Darkness - M. Def." additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3277" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49711" name="Talisman of Darkness - P. Skills Evasion" additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3274" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49712" name="Talisman of Darkness - M. Skills Evasion" additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3278" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49713" name="Talisman of Darkness - HP" additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3279" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49714" name="Talisman of Darkness - MP" additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3280" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49715" name="Talisman of Darkness - Healing Power" additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3293" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49716" name="Talisman of Darkness - Power of Healing Magic" additionalName="1 hour" icon="icon.etc_wise_man_stone_i04">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>120</weight>
+        <skill id="3294" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <item stackable="true" id="49717" name="Talisman of Darkness Box - P. Atk." additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49718" name="Talisman of Darkness Box - M. Atk." additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49719" name="Talisman of Darkness Box - P. Def." additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49720" name="Talisman of Darkness Box - M. Def." additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49721" name="Talisman of Darkness Box - P. Skills Evasion" additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49722" name="Talisman of Darkness Box - M. Skills Evasion" additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49723" name="Talisman of Darkness Box - HP" additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49724" name="Talisman of Darkness Box - MP" additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49725" name="Talisman of Darkness Box - Healing Power" additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49726" name="Talisman of Darkness Box - Power of Healing Magic" additionalName="1 hour" icon="icon.etc_exchange_box_i00">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>EXTRACTABLE_ITEM</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>60</time>
+        <weight>0</weight>
+    </item>
+    <armor id="49727" name="Limited Talisman of Border - Lv. 1" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49728" name="Talisman of Border - Lv. 2" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="2"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49729" name="Talisman of Border - Lv. 3" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="3"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49730" name="Talisman of Border - Lv. 4" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="4"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49731" name="Talisman of Border - Lv. 5" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="5"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49732" name="Talisman of Border - Lv. 6" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="6"/>
+        <skill id="35025" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49733" name="Talisman of Border - Lv. 7" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="7"/>
+        <skill id="35025" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49734" name="Talisman of Border - Lv. 8" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="8"/>
+        <skill id="35025" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49735" name="Talisman of Border - Lv. 9" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="9"/>
+        <skill id="35025" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49736" name="Talisman of Border - Lv. 10" icon="icon.bm_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="10"/>
+        <skill id="35025" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <armor id="49737" name="Blessed Talisman of Border" icon="icon.bm_blessed_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="35024" level="11"/>
+        <skill id="35025" level="1"/>
+        <bodyPart>TALISMAN</bodyPart>
+    </armor>
+    <item id="49738" name="Sealed Blessed Talisman of Border" icon="icon.bm_blessed_magic_square_talisman">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39148" level="1"/>
+    </item>
+    <item stackable="true" id="49739" name="Blessed Soulshot (No-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_white_i00">
+        <price>0</price>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>3</weight>
+        <skill id="8915" level="1"/>
+    </item>
+    <item stackable="true" id="49740" name="Blessed Soulshot (D-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
+        <price>0</price>
+        <crystalInfo type="D"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+        <skill id="8916" level="1"/>
+    </item>
+    <item stackable="true" id="49741" name="Blessed Soulshot (C-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_green_i00">
+        <price>0</price>
+        <crystalInfo type="C"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2</weight>
+        <skill id="8917" level="1"/>
+    </item>
+    <item stackable="true" id="49742" name="Blessed Soulshot (B-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_red_i00">
+        <price>0</price>
+        <crystalInfo type="B"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1</weight>
+        <skill id="8918" level="1"/>
+    </item>
+    <item stackable="true" id="49743" name="Blessed Soulshot (A-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
+        <price>0</price>
+        <crystalInfo type="A"/>
+        <handler>SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1</weight>
+        <skill id="8919" level="1"/>
+    </item>
+    <item stackable="true" id="49744" name="Blessed Mysterious Soulshot (No-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_white_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>BLESSED_SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8910" level="1"/>
+    </item>
+    <item stackable="true" id="49745" name="Mysterious Blessed Soulshot (D-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="D"/>
+        <handler>BLESSED_SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8911" level="1"/>
+    </item>
+    <item stackable="true" id="49746" name="Mysterious Blessed Soulshot (C-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_green_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="C"/>
+        <handler>BLESSED_SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8912" level="1"/>
+    </item>
+    <item stackable="true" id="49747" name="Mysterious Blessed Soulshot (B-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="B"/>
+        <handler>BLESSED_SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8913" level="1"/>
+    </item>
+    <item stackable="true" id="49748" name="Mysterious Blessed Soulshot (A-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="A"/>
+        <handler>BLESSED_SOUL_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8907" level="1"/>
+    </item>
+    <item stackable="true" id="49749" name="Mysterious Spiritshot (B-grade)" icon="icon.etc_spell_shot_red_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="B"/>
+        <handler>SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8908" level="1"/>
+    </item>
+    <item stackable="true" id="49750" name="Mysterious Spiritshot (A-grade)" icon="icon.etc_spell_shot_silver_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <crystalInfo type="A"/>
+        <handler>SPIRIT_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="8909" level="1"/>
+    </item>
+    <item stackable="true" id="49751" name="Recipe: Blessed Soulshot (D)" type="RECIPE" icon="icon.etc_recipe_blue_i00">
+        <price>0</price>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>4000</recipeId>
+    </item>
+    <item stackable="true" id="49752" name="Recipe: Blessed Soulshot (C)" type="RECIPE" icon="icon.etc_recipe_yellow_i00">
+        <price>0</price>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>4001</recipeId>
+    </item>
+    <item stackable="true" id="49753" name="Recipe: Blessed Soulshot (B)" type="RECIPE" icon="icon.etc_recipe_red_i00">
+        <price>0</price>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>4002</recipeId>
+    </item>
+    <item stackable="true" id="49754" name="Recipe: Blessed Soulshot (A)" type="RECIPE" icon="icon.etc_recipe_violet_i00">
+        <price>0</price>
+        <handler>RECIPE</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+        <recipeId>4003</recipeId>
+    </item>
+    <item stackable="true" id="49755" name="Talisman of Baium Box" icon="icon.etc_treasure_box_i07">
+        <price>0</price>
+        <restriction dropable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39149" level="1"/>
+    </item>
+    <item stackable="true" id="49756" name="Cloth Piece" icon="icon.etc_piece_shirt_green_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49757" name="Sayha's Holy Water" icon="icon.etc_fruit_juice_glass_bottle_i09">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49758" name="Blood Crystal" icon="icon.etc_fire_crystal_1_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49759" name="Celestial Shard" icon="icon.etc_unholy_crystal_1_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49760" name="Armor Supply Box (A-grade)" icon="icon.etc_box_of_adventure_3_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49761" name="Ornament Supply Box (A-grade)" icon="icon.etc_box_of_adventure_2_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39152" level="1"/>
+    </item>
+    <item stackable="true" id="49762" name="Armor Ingredient Box - A-grade" icon="icon.etc_box_of_adventure_3_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49763" name="Ornament Ingredient Box - A-grade" icon="icon.etc_box_of_adventure_2_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49764" name="Scroll: 20,000 SP" icon="icon.etc_sp_scroll3_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49765" name="Life Control Tower's Scroll of Blessing" icon="icon.etc_aidcharm_cancel_valbreath_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49766" name="Unidentified Stone" icon="icon.etc_magical_stone_i00">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49767" name="Broken Celestial Shard" icon="icon.etc_broken_crystal_silver_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49768" name="Scroll of Heavenly Protection" icon="icon.scroll_of_verification_i08">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49769" name="Improved Scroll Box: Emperor Baium's Enchant" icon="icon.etc_treasure_box_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49770" name="Sayha’s Energy" icon="icon.etc_holy_water_i00">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49771" name="Emperor Baium's Secret Treasures" icon="icon.etc_bm_jewelbox_shhadai">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49772" name="Scroll of Mood Melody" icon="icon.bm_magmeld">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>120</weight>
+    </item>
+    <item stackable="true" id="49773" name="Fighter Pirate Fruit - Attack" icon="icon.etc_codran_i09">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>60000</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39162" level="1"/>
+    </item>
+    <item stackable="true" id="49774" name="Fighter Pirate Fruit - Defense" icon="icon.etc_codran_i09">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>60000</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39163" level="1"/>
+    </item>
+    <item stackable="true" id="49775" name="Red Spinel" additionalName="Event" icon="icon.ensoul_big_pp">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49776" name="Green Spinel" additionalName="Event" icon="icon.ensoul_big_ep">
+        <price>0</price>
+        <restriction sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49777" name="Low-grade XP Scroll" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49778" name="Mid-grade XP Scroll" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49779" name="High-grade XP Scroll" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49780" name="Top-grade XP Scroll" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item stackable="true" id="49781" name="Super XP Scroll" icon="icon.etc_recall_exp_scroll">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>30</weight>
+    </item>
+    <item id="49782" name="Balthus Knights Supply Items" icon="icon.etc_ev_kalie_treasure_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>86400000</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39170" level="1"/>
+    </item>
+    <item stackable="true" id="49783" name="Sibis Coin" icon="icon.ev_balthus_coin">
+        <price>0</price>
+        <restriction dropable="false" tradeable="true" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49784" name="Balthus Knight Mark" icon="icon.ev_balthus_token">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>60000</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39171" level="1"/>
+    </item>
+    <item stackable="true" id="49785" name="Weapon Supply Box (A-grade)" icon="icon.etc_treasure_box_i00">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39172" level="1"/>
+    </item>
+    <item stackable="true" id="49786" name="A-grade Armor Supply Box" icon="icon.etc_treasure_box_i00">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39173" level="1"/>
+    </item>
+    <item stackable="true" id="49787" name="Solid Scroll: Enchant (A-grade) Box" icon="icon.etc_treasure_box_i03">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49788" name="Solid Scroll: Enchant (A-grade) Large Box" icon="icon.etc_treasure_box_i03">
+        <price>0</price>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <item stackable="true" id="49789" name="+8 Enchanted Weapon Supply Box (B-grade)" icon="icon.etc_jewel_box_i00">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39174" level="1"/>
+    </item>
+    <item stackable="true" id="49790" name="+16 Enchanted Weapon Supply Box (C-grade)" icon="icon.etc_treasure_box_i06">
+        <price>0</price>
+        <handler>ITEM_SKILL</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="39175" level="1"/>
+    </item>
+    <armor id="49791" name="Cadmus Transformation Bracelet - Prophet" additionalName="1-day" icon="icon.pi_high_agathion_bracelet_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>1440</time>
+        <weight>0</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="49792" name="Cadmus Transformation Bracelet - Shillien Elder" additionalName="1-day" icon="icon.pi_high_agathion_bracelet_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>1440</time>
+        <weight>0</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="49793" name="Cadmus Transformation Bracelet - Elven Elder" additionalName="1-day" icon="icon.pi_high_agathion_bracelet_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>1440</time>
+        <weight>0</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="49794" name="Cadmus Transformation Bracelet - Prophet" additionalName="30-day" icon="icon.pi_high_agathion_bracelet_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>0</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="49795" name="Cadmus Transformation Bracelet - Shillien Elder" additionalName="30-day" icon="icon.pi_high_agathion_bracelet_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>0</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <armor id="49796" name="Cadmus Transformation Bracelet - Elven Elder" additionalName="30-day" icon="icon.pi_high_agathion_bracelet_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>43200</time>
+        <weight>0</weight>
+        <bodyPart>UNDERWEAR</bodyPart>
+    </armor>
+    <item stackable="true" id="49797" name="Gift of Sated Cadmus" additionalName="Event" icon="icon.etc_ev_draco_gift_box">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+    <weapon id="49798" name="Cheer Stamen" additionalName="Event" type="DUAL" icon="icon.ev_12th_weapon">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2530</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="1"/>
+    </weapon>
+    <item stackable="true" id="49799" name="Express Bus Pass Card" icon="icon.card_hidden">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false" sellable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+    </item>
+</itemList>

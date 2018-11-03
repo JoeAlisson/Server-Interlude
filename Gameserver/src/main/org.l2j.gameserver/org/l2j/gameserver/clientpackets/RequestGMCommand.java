@@ -49,7 +49,7 @@ public final class RequestGMCommand extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		// prevent non gm or low level GMs from vieweing player stuff
+		// prevent non gm or low level GMs from vieweing reader stuff
 		if (!getClient().getActiveChar().isGM() || (getClient().getActiveChar().getAccessLevel() < Config.GM_ALTG_MIN_LEVEL))
 		{
 			return;
@@ -57,7 +57,7 @@ public final class RequestGMCommand extends L2GameClientPacket
 		
 		L2PcInstance player = L2World.getInstance().getPlayer(_targetName);
 		
-		// player name was incorrect?
+		// reader name was incorrect?
 		if (player == null)
 		{
 			return;
@@ -65,12 +65,12 @@ public final class RequestGMCommand extends L2GameClientPacket
 		
 		switch (_command)
 		{
-			case 1: // player status
+			case 1: // reader status
 			{
 				sendPacket(new GMViewCharacterInfo(player));
 				break;
 			}
-			case 2: // player clan
+			case 2: // reader clan
 			{
 				if (player.getClan() != null)
 				{
@@ -78,22 +78,22 @@ public final class RequestGMCommand extends L2GameClientPacket
 				}
 				break;
 			}
-			case 3: // player skills
+			case 3: // reader skills
 			{
 				sendPacket(new GMViewSkillInfo(player));
 				break;
 			}
-			case 4: // player quests
+			case 4: // reader quests
 			{
 				sendPacket(new GMViewQuestList(player));
 				break;
 			}
-			case 5: // player inventory
+			case 5: // reader inventory
 			{
 				sendPacket(new GMViewItemList(player));
 				break;
 			}
-			case 6: // player warehouse
+			case 6: // reader warehouse
 			{
 				// gm warehouse view to be implemented
 				sendPacket(new GMViewWarehouseWithdrawList(player));

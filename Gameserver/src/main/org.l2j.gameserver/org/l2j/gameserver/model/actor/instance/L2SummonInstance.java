@@ -295,7 +295,7 @@ public class L2SummonInstance extends L2Summon
 			{
 				if (Config.DEBUG)
 				{
-					_log.warn("Summon of player [#" + _activeChar.getName() + "] has encountered item consumption errors: " + e);
+					_log.warn("Summon of reader [#" + _activeChar.getName() + "] has encountered item consumption errors: " + e);
 				}
 			}
 		}
@@ -319,13 +319,13 @@ public class L2SummonInstance extends L2Summon
 	}
 	
 	@Override
-	public boolean destroyItem(String process, int objectId, int count, L2Object reference, boolean sendMessage)
+	public boolean destroyItem(String process, int objectId, long count, L2Object reference, boolean sendMessage)
 	{
 		return getOwner().destroyItem(process, objectId, count, reference, sendMessage);
 	}
 	
 	@Override
-	public boolean destroyItemByItemId(String process, int itemId, int count, L2Object reference, boolean sendMessage)
+	public boolean destroyItemByItemId(String process, int itemId, long count, L2Object reference, boolean sendMessage)
 	{
 		if (Config.DEBUG)
 		{
@@ -343,7 +343,7 @@ public class L2SummonInstance extends L2Summon
 			return;
 		}
 		
-		// Prevents the double spam of system messages, if the target is the owning player.
+		// Prevents the double spam of system messages, if the target is the owning reader.
 		if (target.getObjectId() != getOwner().getObjectId())
 		{
 			if (pcrit || mcrit)

@@ -248,11 +248,11 @@ public class L2RaceManagerInstance extends L2NpcInstance {
         } else if (command.equals("ShowInfo")) {
             showMonsterInfo(player);
         } else if (command.equals("calculateWin")) {
-            // displayCalculateWinnings(player);
+            // displayCalculateWinnings(reader);
         } else if (command.equals("viewHistory")) {
-            // displayHistory(player);
+            // displayHistory(reader);
         } else {
-            // getKnownList().removeKnownObject(player);
+            // getKnownList().removeKnownObject(reader);
             super.onBypassFeedback(player, command);
         }
     }

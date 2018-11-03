@@ -226,7 +226,7 @@ public abstract class Quest {
      * @param name   name of the timer (also passed back as "event" in onAdvEvent)
      * @param time   time in ms for when to fire the timer
      * @param npc    npc associated with this timer (can be null)
-     * @param player player associated with this timer (can be null)
+     * @param player reader associated with this timer (can be null)
      */
     public void startQuestTimer(String name, long time, L2NpcInstance npc, L2PcInstance player) {
         // Add quest timer if timer doesn't already exist
@@ -237,9 +237,9 @@ public abstract class Quest {
             timers.add(new QuestTimer(this, name, time, npc, player));
             _allEventTimers.put(name, timers);
         }
-        // a timer with this name exists, but may not be for the same set of npc and player
+        // a timer with this name exists, but may not be for the same set of npc and reader
         else {
-            // if there exists a timer with this name, allow the timer only if the [npc, player] set is unique
+            // if there exists a timer with this name, allow the timer only if the [npc, reader] set is unique
             // nulls act as wildcards
             if (getQuestTimer(name, npc, player) == null) {
                 timers.add(new QuestTimer(this, name, time, npc, player));
@@ -376,7 +376,7 @@ public abstract class Quest {
 
     public String onAdvEvent(String event, L2NpcInstance npc, L2PcInstance player) {
         // if not overriden by a subclass, then default to the returned value of the simpler (and older) onEvent override
-        // if the player has a state, use it as parameter in the next call, else return null
+        // if the reader has a state, use it as parameter in the next call, else return null
         QuestState qs = player.getQuestState(getName());
         if (qs != null) {
             return onEvent(event, qs);
@@ -406,7 +406,7 @@ public abstract class Quest {
     }
 
     /**
-     * Show message error to player who has an access level greater than 0
+     * Show message error to reader who has an access level greater than 0
      *
      * @param player : L2PcInstance
      * @param t      : Throwable
@@ -426,14 +426,14 @@ public abstract class Quest {
     }
 
     /**
-     * Show a message to player.<BR>
+     * Show a message to reader.<BR>
      * <BR>
      * <U><I>Concept : </I></U><BR>
      * 3 cases are managed according to the value of the parameter "res" :<BR>
      * <LI><U>"res" ends with string ".html" :</U> an HTML is opened in order to be shown in a dialog box</LI> <LI><U>"res" starts with "<html>" :</U> the message hold in "res" is shown in a dialog box</LI> <LI><U>otherwise :</U> the message hold in "res" is shown in chat box</LI>
      *
      * @param player
-     * @param res    : String pointing out the message to show at the player
+     * @param res    : String pointing out the message to show at the reader
      * @return boolean
      */
     private boolean showResult(L2PcInstance player, String res) {
@@ -455,7 +455,7 @@ public abstract class Quest {
     }
 
     /**
-     * Add quests to the L2PCInstance of the player.<BR>
+     * Add quests to the L2PCInstance of the reader.<BR>
      * <BR>
      * <U><I>Action : </U></I><BR>
      * Add state of quests, drops and variables for quests in the HashMap _quest of L2PcInstance
@@ -463,7 +463,7 @@ public abstract class Quest {
      * @param player : Player who is entering the world
      */
     public final static void playerEnter(L2PcInstance player) {
-        // Get list of quests owned by the player from database
+        // Get list of quests owned by the reader from database
 
         CharacterQuestsRepository repository = DatabaseAccess.getRepository(CharacterQuestsRepository.class);
         repository.findAllByState(player.getObjectId()).forEach(characterQuest -> {
@@ -475,14 +475,14 @@ public abstract class Quest {
             // Search quest associated with the ID
             Quest q = QuestManager.getInstance().getQuest(questId);
             if (q == null) {
-                _log.warn("Unknown quest {} for player {}", questId, player.getName());
+                _log.warn("Unknown quest {} for reader {}", questId, player.getName());
                 if (Config.AUTODELETE_INVALID_QUEST_DATA) {
                     repository.deleteByName(player.getObjectId(), questId);
                 }
                 return;
             }
 
-            // Identify the state of the quest for the player
+            // Identify the state of the quest for the reader
             boolean completed = false;
             if (stateId.equals("Completed")) {
                 completed = true;
@@ -491,13 +491,13 @@ public abstract class Quest {
             // Create an object State containing the state of the quest
             State state = q._states.get(stateId);
             if (state == null) {
-                _log.warn("Unknown state in quest {} for player {}", questId,  player.getName());
+                _log.warn("Unknown state in quest {} for reader {}", questId,  player.getName());
                 if (Config.AUTODELETE_INVALID_QUEST_DATA) {
                     repository.deleteByName(player.getObjectId(), questId);
                 }
                 return;
             }
-            // Create a new QuestState for the player that will be added to the player's list of quests
+            // Create a new QuestState for the reader that will be added to the reader's list of quests
             new QuestState(q, player, state, completed);
 
         });
@@ -510,7 +510,7 @@ public abstract class Quest {
             // Get the QuestState saved in the loop before
             QuestState qs = player.getQuestState(questId);
             if (qs == null) {
-                _log.warn("Lost variable {} in quest {} for player {}", var, questId, player.getName());
+                _log.warn("Lost variable {} in quest {} for reader {}", var, questId, player.getName());
                 if (Config.AUTODELETE_INVALID_QUEST_DATA) {
                     repository.deleteByNameAndVar(player.getObjectId(), questId, var);
                 }
@@ -525,7 +525,7 @@ public abstract class Quest {
     }
 
     /**
-     * Insert (or Update) in the database variables that need to stay persistant for this quest after a reboot. This function is for storage of values that do not related to a specific player but are global for allTemplates characters. For example, if we need to disable a quest-gatekeeper until a certain
+     * Insert (or Update) in the database variables that need to stay persistant for this quest after a reboot. This function is for storage of values that do not related to a specific reader but are global for allTemplates characters. For example, if we need to disable a quest-gatekeeper until a certain
      * time (as is done with some grand-boss gatekeepers), we can save that time in the DB.
      *
      * @param var   : String designating the name of the variable for the quest
@@ -594,7 +594,7 @@ public abstract class Quest {
      * Use fucntion createQuestVarInDb() with following parameters :<BR>
      * <LI>QuestState : parameter sq that puts in fields of database :
      * <UL type="square">
-     * <LI>char_id : ID of the player</LI>
+     * <LI>char_id : ID of the reader</LI>
      * <LI>name : name of the quest</LI>
      * </UL>
      * </LI> <LI>var : string "&lt;state&gt;" as the name of the variable for the quest</LI> <LI>val : string corresponding at the ID of the state (in fact, initial state)</LI>
@@ -704,10 +704,10 @@ public abstract class Quest {
         return addEventId(npcId, QuestEventType.MOB_TARGETED_BY_SKILL);
     }
 
-    // returns a random party member's L2PcInstance for the passed player's party
-    // returns the passed player if he has no party.
+    // returns a random party member's L2PcInstance for the passed reader's party
+    // returns the passed reader if he has no party.
     public L2PcInstance getRandomPartyMember(L2PcInstance player) {
-        // NPE prevention. If the player is null, there is nothing to return
+        // NPE prevention. If the reader is null, there is nothing to return
         if (player == null) {
             return null;
         }
@@ -721,7 +721,7 @@ public abstract class Quest {
     /**
      * Auxiliary function for party quests. Note: This function is only here because of how commonly it may be used by quest developers. For any variations on this function, the quest script can always handle things on its own
      *
-     * @param player the instance of a player whose party is to be searched
+     * @param player the instance of a reader whose party is to be searched
      * @param value  the value of the "cond" variable that must be matched
      * @return L2PcInstance: L2PcInstance for a random party member that matches the specified condition, or null if no match.
      */
@@ -732,14 +732,14 @@ public abstract class Quest {
     /**
      * Auxiliary function for party quests. Note: This function is only here because of how commonly it may be used by quest developers. For any variations on this function, the quest script can always handle things on its own
      *
-     * @param player the instance of a player whose party is to be searched
+     * @param player the instance of a reader whose party is to be searched
      * @param var
      * @param value  a party member to be considered.
      * @return L2PcInstance: L2PcInstance for a random party member that matches the specified condition, or null if no match. If the var is null, any random party member is returned (i.e. no condition is applied). The party member must be within 1500 distance from the target of the reference
-     * player, or if no target exists, 1500 distance from the player itself.
+     * reader, or if no target exists, 1500 distance from the reader itself.
      */
     public L2PcInstance getRandomPartyMember(L2PcInstance player, String var, String value) {
-        // if no valid player instance is passed, there is nothing to check...
+        // if no valid reader instance is passed, there is nothing to check...
         if (player == null) {
             return null;
         }
@@ -749,10 +749,10 @@ public abstract class Quest {
             return getRandomPartyMember(player);
         }
 
-        // normal cases...if the player is not in a party, check the player's state
+        // normal cases...if the reader is not in a party, check the reader's state
         QuestState temp = null;
         L2Party party = player.getParty();
-        // if this player is not in a party, just check if this player instance matches the conditions itself
+        // if this reader is not in a party, just check if this reader instance matches the conditions itself
         if ((party == null) || (party.getPartyMembers().size() == 0)) {
             temp = player.getQuestState(getName());
             if ((temp != null) && (temp.get(var) != null) && ((String) temp.get(var)).equalsIgnoreCase(value)) {
@@ -762,8 +762,8 @@ public abstract class Quest {
             return null; // no match
         }
 
-        // if the player is in a party, gather a list of allTemplates matching party members (possibly
-        // including this player)
+        // if the reader is in a party, gather a list of allTemplates matching party members (possibly
+        // including this reader)
         List<L2PcInstance> candidates = new LinkedList<>();
 
         // get the target for enforcing distance limitations.
@@ -790,12 +790,12 @@ public abstract class Quest {
     /**
      * Auxiliary function for party quests. Note: This function is only here because of how commonly it may be used by quest developers. For any variations on this function, the quest script can always handle things on its own
      *
-     * @param player the instance of a player whose party is to be searched
+     * @param player the instance of a reader whose party is to be searched
      * @param state  the state in which the party member's queststate must be in order to be considered.
      * @return L2PcInstance: L2PcInstance for a random party member that matches the specified condition, or null if no match. If the var is null, any random party member is returned (i.e. no condition is applied).
      */
     public L2PcInstance getRandomPartyMemberState(L2PcInstance player, State state) {
-        // if no valid player instance is passed, there is nothing to check...
+        // if no valid reader instance is passed, there is nothing to check...
         if (player == null) {
             return null;
         }
@@ -805,10 +805,10 @@ public abstract class Quest {
             return getRandomPartyMember(player);
         }
 
-        // normal cases...if the player is not in a partym check the player's state
+        // normal cases...if the reader is not in a partym check the reader's state
         QuestState temp = null;
         L2Party party = player.getParty();
-        // if this player is not in a party, just check if this player instance matches the conditions itself
+        // if this reader is not in a party, just check if this reader instance matches the conditions itself
         if ((party == null) || (party.getPartyMembers().size() == 0)) {
             temp = player.getQuestState(getName());
             if ((temp != null) && (temp.getState() == state)) {
@@ -818,8 +818,8 @@ public abstract class Quest {
             return null; // no match
         }
 
-        // if the player is in a party, gather a list of allTemplates matching party members (possibly
-        // including this player)
+        // if the reader is in a party, gather a list of allTemplates matching party members (possibly
+        // including this reader)
         List<L2PcInstance> candidates = new LinkedList<>();
 
         // get the target for enforcing distance limitations.
@@ -914,7 +914,7 @@ public abstract class Quest {
                 // reaches here, xyz have become 0! Also, a questdev might have purposely set xy to 0,0...however,
                 // the spawn code is coded such that if x=y=0, it looks into location for the spawn loc! This will NOT work
                 // with quest spawns! For both of the above cases, we need a fail-safe spawn. For this, we use the
-                // default spawn location, which is at the player's loc.
+                // default spawn location, which is at the reader's loc.
                 if ((x == 0) && (y == 0)) {
                     _log.error( "Failed to adjust bad locks for quest spawn!  Spawn aborted!");
                     return null;

@@ -85,10 +85,10 @@ public final class L2ClassMasterInstance extends L2FolkInstance {
 
         // Check if the L2PcInstance already target the L2NpcInstance
         if (getObjectId() != player.getTargetId()) {
-            // Set the target of the L2PcInstance player
+            // Set the target of the L2PcInstance reader
             player.setTarget(this);
 
-            // Send a Server->Client packet MyTargetSelected to the L2PcInstance player
+            // Send a Server->Client packet MyTargetSelected to the L2PcInstance reader
             player.sendPacket(new MyTargetSelected(getObjectId(), 0));
 
             // Send a Server->Client packet ValidateLocation to correct the L2NpcInstance position and heading on the client

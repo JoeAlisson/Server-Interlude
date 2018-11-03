@@ -89,7 +89,7 @@ public class L2FestivalMonsterInstance extends L2MonsterInstance
 	}
 	
 	/**
-	 * Actions: <li>Check if the killing object is a player, and then find the party they belong to.</li> <li>Add a blood offering item to the leader of the party.</li> <li>Update the party leader's inventory to show the new item addition.</li>
+	 * Actions: <li>Check if the killing object is a reader, and then find the party they belong to.</li> <li>Add a blood offering item to the leader of the party.</li> <li>Update the party leader's inventory to show the new item addition.</li>
 	 */
 	@Override
 	public void doItemDrop(L2Character lastAttacker)

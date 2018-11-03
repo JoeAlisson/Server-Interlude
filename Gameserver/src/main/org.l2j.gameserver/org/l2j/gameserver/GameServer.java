@@ -3,6 +3,9 @@ package org.l2j.gameserver;
 import org.l2j.commons.Config;
 import org.l2j.commons.Server;
 import org.l2j.commons.status.Status;
+import org.l2j.gameserver.datatables.ItemTable;
+import org.l2j.gameserver.datatables.SkillTable;
+import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.network.L2GamePacketHandler;
 import org.l2j.gameserver.status.GameStatus;
@@ -41,6 +44,8 @@ public class GameServer {
     public GameServer() throws Exception {
         gameServer = this;
         makeDataDirectories();
+
+        loadData();
 
 /*
         // start game time control early
@@ -191,6 +196,11 @@ public class GameServer {
 
         _log.info(getMessage("info.free.memory", freeMem, totalMem));
         _log.info(getMessage("info.max.connected.players", Config.MAXIMUM_ONLINE_USERS));
+    }
+
+    private void loadData() {
+        IdFactory.getInstance();
+        ItemTable.getInstance();
     }
 
     private InetSocketAddress getInetSocketAddress() {

@@ -30,6 +30,9 @@ import org.l2j.gameserver.serverpackets.ItemList;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.ItemType;
 import org.l2j.gameserver.templates.ItemTypeGroup;
+import org.l2j.gameserver.templates.xml.jaxb.Armor;
+import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.IllegalPlayerAction;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
@@ -135,11 +138,11 @@ public final class RequestDropItem extends L2GameClientPacket
 			}
 		}
 		
-		if ((ItemTypeGroup.TYPE2_QUEST == item.getItem().getType2()) && !activeChar.isGM())
+		if (item.getItem().isQuestItem() && !activeChar.isGM())
 		{
 			if (Config.DEBUG)
 			{
-				_log.debug(activeChar.getObjectId() + ":player tried to drop quest item");
+				_log.debug(activeChar.getObjectId() + ":reader tried to drop quest item");
 			}
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.CANNOT_DISCARD_EXCHANGE_ITEM));
 			return;
@@ -167,8 +170,14 @@ public final class RequestDropItem extends L2GameClientPacket
 			{
 				item.getAugmentation().removeBoni(activeChar);
 			}
-			
-			L2ItemInstance[] unequiped = activeChar.getInventory().unEquipItemInBodySlotAndRecord(item.getItem().getBodyPart());
+
+            BodyPart bodyPart = null;
+			if(item.getItem() instanceof Armor) {
+			    bodyPart = ((Armor) item.getItem()).getBodyPart();
+            } else if(item.getItem() instanceof Weapon) {
+			    bodyPart = ((Weapon) item.getItem()).getBodyPart();
+            }
+			L2ItemInstance[] unequiped = activeChar.getInventory().unEquipItemInBodySlotAndRecord(bodyPart);
 			InventoryUpdate iu = new InventoryUpdate();
 			for (L2ItemInstance element : unequiped)
 			{

@@ -95,8 +95,8 @@ public final class RequestRestart extends L2GameClientPacket
 			return;
 		}
 		
-		// Prevent player from restarting if they are a festival participant
-		// and it is in progress, otherwise notify party members that the player
+		// Prevent reader from restarting if they are a festival participant
+		// and it is in progress, otherwise notify party members that the reader
 		// is not longer a participant.
 		if (player.isFestivalParticipant())
 		{
@@ -126,7 +126,7 @@ public final class RequestRestart extends L2GameClientPacket
 		TvTEvent.onLogout(player);
 		RegionBBSManager.getInstance().changeCommunityBoard();
 		
-		// removing player from the world
+		// removing reader from the world
 		player.deleteMe();
 		L2GameClient.saveCharToDisk(client.getActiveChar());
 		

@@ -67,14 +67,14 @@ public class Escape implements IUserCommandHandler
 		
 		int unstuckTimer = (activeChar.getAccessLevel() >= REQUIRED_LEVEL ? 5000 : Config.UNSTUCK_INTERVAL * 1000);
 		
-		// Check to see if the player is in a festival.
+		// Check to see if the reader is in a festival.
 		if (activeChar.isFestivalParticipant())
 		{
 			activeChar.sendMessage("You may not use an escape command in a festival.");
 			return false;
 		}
 		
-		// Check to see if player is in jail
+		// Check to see if reader is in jail
 		if (activeChar.isInJail())
 		{
 			activeChar.sendMessage("You can not escape from jail.");

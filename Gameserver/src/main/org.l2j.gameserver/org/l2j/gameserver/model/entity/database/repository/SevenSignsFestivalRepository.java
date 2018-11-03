@@ -12,5 +12,5 @@ public interface SevenSignsFestivalRepository extends CrudRepository<SevenSignsF
     @Query("UPDATE seven_signs_festival SET date=:date, score=:score, members=:members WHERE cycle=:cycle AND cabal=:cabal " +
                "AND festivalId=:festival")
     int updateByCycleAndCabal(@Param("festival") int festivalId, @Param("cycle") int cycle, @Param("cabal") String cabal,
-                              @Param("date") long date, @Param("score") int score, @Param("members") String members);
+                              @Param("date") long date, @Param("score") long score, @Param("members") String members);
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <item stackable="true" id="38154" name="Fishing Shot" icon="icon.etc_spirit_bullet_fish_i05">
+        <price>28</price>
+        <restriction sellable="false"/>
+        <handler>FISH_SHOT</handler>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>0</weight>
+        <skill id="17386" level="1"/>
+    </item>
+</itemList>

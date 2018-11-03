@@ -26,7 +26,6 @@ import org.l2j.gameserver.model.actor.stat.CharStat;
 import org.l2j.gameserver.model.actor.status.CharStatus;
 import org.l2j.gameserver.model.entity.Duel;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.model.quest.Quest;
 import org.l2j.gameserver.model.quest.QuestState;
 import org.l2j.gameserver.network.SystemMessageId;
@@ -38,8 +37,9 @@ import org.l2j.gameserver.skills.Formulas;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.skills.effects.EffectCharge;
 import org.l2j.gameserver.skills.funcs.Func;
-import org.l2j.gameserver.templates.CrystalType;
-import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
+import org.l2j.gameserver.templates.xml.jaxb.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -453,7 +453,7 @@ public abstract class L2Character extends L2Object {
                         player.sendPacket(new RelationChanged((L2PcInstance) this, relation, player.isAutoAttackable(this)));
                     }
                 }
-                // if(Config.DEVELOPER && !isInsideRadius(player, 3500, false, false)) _log.warn("broadcastPacket: Too far player see event!");
+                // if(Config.DEVELOPER && !isInsideRadius(reader, 3500, false, false)) _log.warn("broadcastPacket: Too far reader see event!");
             } catch (NullPointerException e) {
             }
         }
@@ -723,13 +723,13 @@ public abstract class L2Character extends L2Object {
 
             if (target instanceof L2PcInstance) {
                 if (((L2PcInstance) target).isCursedWeaponEquiped() && (((L2PcInstance) this).getLevel() <= 20)) {
-                    ((L2PcInstance) this).sendMessage("Can't attack a cursed player when under level 21.");
+                    ((L2PcInstance) this).sendMessage("Can't attack a cursed reader when under level 21.");
                     sendPacket(new ActionFailed());
                     return;
                 }
 
                 if (((L2PcInstance) this).isCursedWeaponEquiped() && (((L2PcInstance) target).getLevel() <= 20)) {
-                    ((L2PcInstance) this).sendMessage("Can't attack a newbie player using a cursed weapon.");
+                    ((L2PcInstance) this).sendMessage("Can't attack a newbie reader using a cursed weapon.");
                     sendPacket(new ActionFailed());
                     return;
                 }
@@ -742,7 +742,7 @@ public abstract class L2Character extends L2Object {
         // Get the active weapon item corresponding to the active weapon instance (always equiped in the right hand)
         Weapon weaponItem = getActiveWeaponItem();
 
-        if ((weaponItem != null) && (weaponItem.getType() == ItemType.ROD)) {
+        if ((weaponItem != null) && (weaponItem.getType() == org.l2j.gameserver.templates.xml.jaxb.ItemType.BLUNT)) {
             // You can't make an attack with a fishing pole.
             ((L2PcInstance) this).sendPacket(new SystemMessage(SystemMessageId.CANNOT_ATTACK_WITH_FISHING_POLE));
             getAI().setIntention(Intention.AI_INTENTION_IDLE);
@@ -764,7 +764,7 @@ public abstract class L2Character extends L2Object {
         if (((weaponItem != null) && (weaponItem.getType() == ItemType.BOW))) {
             // Check for arrows and MP
             if (this instanceof L2PcInstance) {
-                // Checking if target has moved to peace zone - only for player-bow attacks at the moment
+                // Checking if target has moved to peace zone - only for reader-bow attacks at the moment
                 // Other melee is checked in movement code and for offensive spells a check is done every time
                 if (target.isInsidePeaceZone((L2PcInstance) this)) {
                     getAI().setIntention(Intention.AI_INTENTION_ACTIVE);
@@ -776,7 +776,7 @@ public abstract class L2Character extends L2Object {
                 if (_disableBowAttackEndTime <= GameTimeController.getGameTicks()) {
                     // Verify if L2PcInstance owns enough MP
                     int saMpConsume = (int) getStat().calcStat(Stats.MP_CONSUME, 0, null, null);
-                    int mpConsume = saMpConsume == 0 ? weaponItem.getMpConsume() : saMpConsume;
+                    int mpConsume = saMpConsume == 0 ? weaponItem.getConsume().getMp() : saMpConsume;
 
                     if (getCurrentMp() < mpConsume) {
                         // If L2PcInstance doesn't have enough MP, stop the attack
@@ -824,7 +824,7 @@ public abstract class L2Character extends L2Object {
             setCurrentCp(getCurrentCp() - 10);
         }
 
-        // Recharge any active auto soulshot tasks for player (or player's summon if one exists).
+        // Recharge any active auto soulshot tasks for reader (or reader's summon if one exists).
         if (this instanceof L2PcInstance) {
             ((L2PcInstance) this).rechargeAutoSoulShot(true, false, false);
         } else if (this instanceof L2Summon) {
@@ -851,7 +851,7 @@ public abstract class L2Character extends L2Object {
         CrystalType ssGrade = CrystalType.NONE;
 
         if (weaponItem != null) {
-            ssGrade = weaponItem.getCrystalType();
+            ssGrade = weaponItem.getCrystalInfo().getType();
         }
 
         // Create a Server->Client packet Attack
@@ -1427,7 +1427,7 @@ public abstract class L2Character extends L2Object {
             disableSkill(skill.getId(), reuseDelay);
         }
 
-        // For force buff skills, start the effect as long as the player is casting.
+        // For force buff skills, start the effect as long as the reader is casting.
         if (forceBuff) {
             startForceBuff(target, skill);
         }
@@ -1920,7 +1920,7 @@ public abstract class L2Character extends L2Object {
     }
 
     /**
-     * Return True if the L2Character can be controlled by the player (confused, afraid).
+     * Return True if the L2Character can be controlled by the reader (confused, afraid).
      *
      * @return true, if is out of control
      */
@@ -2424,7 +2424,7 @@ public abstract class L2Character extends L2Object {
     class QueuedMagicUseTask implements Runnable {
 
         /**
-         * The _curr player.
+         * The _curr reader.
          */
         L2PcInstance _currPlayer;
 
@@ -2446,7 +2446,7 @@ public abstract class L2Character extends L2Object {
         /**
          * Instantiates a new queued magic use task.
          *
-         * @param currPlayer     the curr player
+         * @param currPlayer     the curr reader
          * @param queuedSkill    the queued skill
          * @param isCtrlPressed  the is ctrl pressed
          * @param isShiftPressed the is shift pressed
@@ -2700,7 +2700,7 @@ public abstract class L2Character extends L2Object {
      * <B><U> Actions</U> :</B><BR>
      * <BR>
      * <li>Add the L2Effect to the L2Character _effects</li> <li>If this effect doesn't belong to a Stack Group, add its Funcs to the Calculator set of the L2Character (remove the old one if necessary)</li> <li>If this effect has higher priority in its Stack Group, add its Funcs to the Calculator
-     * set of the L2Character (remove previous stacked effect Funcs if necessary)</li> <li>If this effect has NOT higher priority in its Stack Group, set the effect to Not In Use</li> <li>Update active skills in progress icones on player client</li><BR>
+     * set of the L2Character (remove previous stacked effect Funcs if necessary)</li> <li>If this effect has NOT higher priority in its Stack Group, set the effect to Not In Use</li> <li>Update active skills in progress icones on reader client</li><BR>
      *
      * @param newEffect the new effect
      */
@@ -2762,7 +2762,7 @@ public abstract class L2Character extends L2Object {
                 // Add Funcs of this effect to the Calculator set of the L2Character
                 addStatFuncs(newEffect.getStatFuncs());
 
-                // Update active skills in progress icones on player client
+                // Update active skills in progress icones on reader client
                 updateEffectIcons();
                 return;
             }
@@ -2886,7 +2886,7 @@ public abstract class L2Character extends L2Object {
      * <B><U> Actions</U> :</B><BR>
      * <BR>
      * <li>Remove Func added by this effect from the L2Character Calculator (Stop L2Effect)</li> <li>If the L2Effect belongs to a not empty Stack Group, replace theses Funcs by next stacked effect Funcs</li> <li>Remove the L2Effect from _effects of the L2Character</li> <li>Update active skills in
-     * progress icones on player client</li><BR>
+     * progress icones on reader client</li><BR>
      *
      * @param effect the effect
      */
@@ -3175,7 +3175,7 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>Remove Func added by this effect from the L2Character Calculator (Stop L2Effect)</li> <li>Remove the L2Effect from _effects of the L2Character</li> <li>Update active skills in progress icones on player client</li><BR>
+     * <li>Remove Func added by this effect from the L2Character Calculator (Stop L2Effect)</li> <li>Remove the L2Effect from _effects of the L2Character</li> <li>Update active skills in progress icones on reader client</li><BR>
      * <BR>
      *
      * @param type The type of effect to stop ((ex : BUFF, DMG_OVER_TIME...)
@@ -3215,7 +3215,7 @@ public abstract class L2Character extends L2Object {
         }
 
         setIsFakeDeath(false);
-        // if this is a player instance, start the grace period for this character (grace from mobs only)!
+        // if this is a reader instance, start the grace period for this character (grace from mobs only)!
         if (this instanceof L2PcInstance) {
             ((L2PcInstance) this).setRecentFakeDeath(true);
         }
@@ -3366,7 +3366,7 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * All active skills effects in progress (In Use and Not In Use because stacked) are represented by an icone on the client.<BR>
      * <BR>
-     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method ONLY UPDATE the client of the player and not clients of allTemplates players in the party.</B></FONT><BR>
+     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method ONLY UPDATE the client of the reader and not clients of allTemplates players in the party.</B></FONT><BR>
      * <BR>
      */
     public final void updateEffectIcons() {
@@ -3420,7 +3420,7 @@ public abstract class L2Character extends L2Object {
         // Note: Now handled by EtcStatusUpdate packet
         // NOTE: CHECK IF THEY WERE EVEN VISIBLE TO OTHERS...
         /*
-         * if (player != null && mi != null) { if (player.getWeightPenalty() > 0) mi.addEffect(4270, player.getWeightPenalty(), -1); if (player.getExpertisePenalty() > 0) mi.addEffect(4267, 1, -1); if (player.getMessageRefusal()) mi.addEffect(4269, 1, -1); }
+         * if (reader != null && mi != null) { if (reader.getWeightPenalty() > 0) mi.addEffect(4270, reader.getWeightPenalty(), -1); if (reader.getExpertisePenalty() > 0) mi.addEffect(4267, 1, -1); if (reader.getMessageRefusal()) mi.addEffect(4269, 1, -1); }
          */
 
         // Go through allTemplates effects if any
@@ -3456,7 +3456,7 @@ public abstract class L2Character extends L2Object {
         }
         if ((ps != null) && (player != null)) {
             // summon info only needs to go to the owner, not to the whole party
-            // player info: if in party, send to allTemplates party members except one's self.
+            // reader info: if in party, send to allTemplates party members except one's self.
             // if not in party, send to self.
             if (player.isInParty() && (summon == null)) {
                 player.getParty().broadcastToPartyMembers(player, ps);
@@ -5659,7 +5659,7 @@ public abstract class L2Character extends L2Object {
             Weapon activeWeapon = getActiveWeaponItem();
 
             if (activeWeapon != null) {
-                activeWeapon.getSkillEffects(this, target, crit);
+                // activeWeapon.getSkillEffects(this, target, crit); TODO implements
             }
 
             /*
@@ -5935,7 +5935,7 @@ public abstract class L2Character extends L2Object {
             return 0;
         }
 
-        int reuse = weapon.getAttackReuseDelay();
+        long reuse = weapon.getReuseDelay();
         // only bows should continue for now
         if (reuse == 0) {
             return 0;
@@ -6249,7 +6249,7 @@ public abstract class L2Character extends L2Object {
         }
 
         // Ensure that a cast is in progress
-        // Check if player is using fake death.
+        // Check if reader is using fake death.
         // Potions can be used while faking death.
         if (!isCastingNow() || (isAlikeDead() && !skill.isPotion())) {
             _skillCast = null;
@@ -6420,7 +6420,7 @@ public abstract class L2Character extends L2Object {
         getAI().notifyEvent(Event.EVT_FINISH_CASTING);
 
         /*
-         * If character is a player, then wipe their current cast state and check if a skill is queued. If there is a queued skill, launch it and wipe the queue.
+         * If character is a reader, then wipe their current cast state and check if a skill is queued. If there is a queued skill, launch it and wipe the queue.
          */
         if (this instanceof L2PcInstance) {
             L2PcInstance currPlayer = (L2PcInstance) this;
@@ -6570,9 +6570,10 @@ public abstract class L2Character extends L2Object {
                     Weapon activeWeapon = getActiveWeaponItem();
                     // Launch weapon Special ability skill effect if available
                     if ((activeWeapon != null) && !((L2Character) target).isDead()) {
-                        if ((! activeWeapon.getSkillEffects(this, player, skill).isEmpty()) && (this instanceof L2PcInstance)) {
+                        // TODO implment
+                        /*if ((! activeWeapon.getSkillEffects(this, player, skill).isEmpty()) && (this instanceof L2PcInstance)) {
                             sendPacket(SystemMessage.sendString("Target affected by weapon special ability!"));
-                        }
+                        }*/
                     }
 
                     // Check Raidboss attack
@@ -6604,7 +6605,7 @@ public abstract class L2Character extends L2Object {
                             }
                         } else {
                             if (player instanceof L2PcInstance) {
-                                // Casting non offensive skill on player with pvp flag set or with karma
+                                // Casting non offensive skill on reader with pvp flag set or with karma
                                 if (!player.equals(this) && ((((L2PcInstance) player).getPvpFlag() > 0) || (((L2PcInstance) player).getKarma() > 0))) {
                                     activeChar.updatePvPStatus();
                                 }
@@ -6936,7 +6937,7 @@ public abstract class L2Character extends L2Object {
             return 5 + (int) Math.sqrt(getLevel());
         }
 
-        return weaponItem.getRandomDamage();
+        return weaponItem.getDamage().getRandom();
     }
 
     @Override

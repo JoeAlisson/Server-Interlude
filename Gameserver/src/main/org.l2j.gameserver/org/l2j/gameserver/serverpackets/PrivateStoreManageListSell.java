@@ -11,7 +11,7 @@ public class PrivateStoreManageListSell extends L2GameServerPacket
 {
 	private static final String _S__B3_PRIVATESELLLISTSELL = "[S] 9a PrivateSellListSell";
 	private final L2PcInstance _activeChar;
-	private final int _playerAdena;
+	private final long _playerAdena;
 	private final boolean _packageSale;
 	private final TradeList.TradeItem[] _itemList;
 	private final TradeList.TradeItem[] _sellList;
@@ -33,36 +33,36 @@ public class PrivateStoreManageListSell extends L2GameServerPacket
 		// section 1
 		writeInt(_activeChar.getObjectId());
 		writeInt(_packageSale ? 1 : 0); // Package sell
-		writeInt(_playerAdena);
+		writeLong(_playerAdena);
 		
 		// section2
 		writeInt(_itemList.length); // for potential sells
 		for (TradeList.TradeItem item : _itemList)
 		{
-			writeInt(item.getItem().getType2().getId());
+			writeInt(item.getItem().getType().ordinal());
 			writeInt(item.getObjectId());
 			writeInt(item.getItem().getId());
-			writeInt(item.getCount());
+			writeLong(item.getCount());
 			writeShort(0);
 			writeShort(item.getEnchant());// enchant lvl
 			writeShort(0);
-			writeInt(item.getItem().getBodyPart().getId());
-			writeInt(item.getPrice()); // store price
+			writeInt(0); // TODO item.getItem().getBodyPart().getId());
+			writeLong(item.getPrice()); // store price
 		}
 		// section 3
 		writeInt(_sellList.length); // count for any items already added for sell
 		for (TradeList.TradeItem item : _sellList)
 		{
-			writeInt(item.getItem().getType2().getId());
+			writeInt(item.getItem().getCommissionType().ordinal());
 			writeInt(item.getObjectId());
 			writeInt(item.getItem().getId());
-			writeInt(item.getCount());
+			writeLong(item.getCount());
 			writeShort(0);
 			writeShort(item.getEnchant());// enchant lvl
 			writeShort(0x00);
-			writeInt(item.getItem().getBodyPart().getId());
-			writeInt(item.getPrice());// your price
-			writeInt(item.getItem().getPrice()); // store price
+			writeInt(0); // TODO item.getItem().getBodyPart().getId());
+			writeLong(item.getPrice());// your price
+			writeLong(item.getItem().getPrice()); // store price
 		}
 	}
 }

@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.Config;
@@ -30,12 +12,12 @@ import org.l2j.gameserver.model.actor.stat.PetStat;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.Pets;
 import org.l2j.gameserver.model.entity.database.PetsStats;
-import org.l2j.gameserver.model.entity.database.Weapon;
 import org.l2j.gameserver.model.entity.database.repository.PetsRepository;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
 import org.l2j.gameserver.templates.ItemTypeGroup;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,11 +25,6 @@ import java.util.concurrent.Future;
 
 import static org.l2j.gameserver.templates.NpcType.L2BabyPet;
 
-
-/**
- * This class ...
- * @version $Revision: 1.15.2.10.2.16 $ $Date: 2005/04/06 16:13:40 $
- */
 public class L2PetInstance extends L2Summon
 {
 	protected static final Logger _logPet = LoggerFactory.getLogger(L2PetInstance.class.getName());
@@ -301,7 +278,7 @@ public class L2PetInstance extends L2Summon
 	{
 		for (L2ItemInstance item : getInventory().getItems())
 		{
-			if ((item.getLocation() == L2ItemInstance.ItemLocation.PET_EQUIP) && (item.getItem().getType1() == ItemTypeGroup.TYPE2_WEAPON))
+			if ((item.getLocation() == L2ItemInstance.ItemLocation.PET_EQUIP) && (item.getItem() instanceof Weapon))
 			{
 				return item;
 			}
@@ -356,7 +333,7 @@ public class L2PetInstance extends L2Summon
 	 * @return boolean informing if the action was successfull
 	 */
 	@Override
-	public boolean destroyItem(String process, int objectId, int count, L2Object reference, boolean sendMessage)
+	public boolean destroyItem(String process, int objectId, long count, L2Object reference, boolean sendMessage)
 	{
 		L2ItemInstance item = _inventory.destroyItem(process, objectId, count, getOwner(), reference);
 		
@@ -395,7 +372,7 @@ public class L2PetInstance extends L2Summon
 	 * @return boolean informing if the action was successfull
 	 */
 	@Override
-	public boolean destroyItemByItemId(String process, int itemId, int count, L2Object reference, boolean sendMessage)
+	public boolean destroyItemByItemId(String process, int itemId, long count, L2Object reference, boolean sendMessage)
 	{
 		L2ItemInstance item = _inventory.destroyItemByItemId(process, itemId, count, getOwner(), reference);
 		
@@ -684,7 +661,7 @@ public class L2PetInstance extends L2Summon
 	}
 	
 	/**
-	 * Remove the Pet from DB and its associated item from the player inventory
+	 * Remove the Pet from DB and its associated item from the reader inventory
 	 * @param owner The owner from whose invenory we should delete the item
 	 */
 	public void destroyControlItem(L2PcInstance owner)
@@ -1044,7 +1021,7 @@ public class L2PetInstance extends L2Summon
 			return;
 		}
 		
-		// Prevents the double spam of system messages, if the target is the owning player.
+		// Prevents the double spam of system messages, if the target is the owning reader.
 		if (target.getObjectId() != getOwner().getObjectId())
 		{
 			if (pcrit || mcrit)

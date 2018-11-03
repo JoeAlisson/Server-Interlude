@@ -69,21 +69,21 @@ public final class RequestStopPledgeWar extends L2GameClientPacket
 			return;
 		}
 		
-		// Check if player who does the request has the correct rights to do it
+		// Check if reader who does the request has the correct rights to do it
 		if ((player.getClanPrivileges() & L2Clan.CP_CL_PLEDGE_WAR) != L2Clan.CP_CL_PLEDGE_WAR)
 		{
 			player.sendPacket(new SystemMessage(SystemMessageId.YOU_ARE_NOT_AUTHORIZED_TO_DO_THAT));
 			return;
 		}
 		
-		// logger.info("RequestStopPledgeWar: By leader or authorized player: " + playerClan.getLeaderName() + " of clan: "
+		// logger.info("RequestStopPledgeWar: By leader or authorized reader: " + playerClan.getLeaderName() + " of clan: "
 		// + playerClan.getName() + " to clan: " + _pledgeName);
 		
 		// L2PcInstance leader = L2World.getInstance().getPlayer(clan.getLeaderName());
 		// if(leader != null && leader.isOnline() == 0)
 		// {
-		// player.sendMessage("Clan leader isn't online.");
-		// player.sendPacket(new ActionFailed());
+		// reader.sendMessage("Clan leader isn't online.");
+		// reader.sendPacket(new ActionFailed());
 		// return;
 		// }
 		
@@ -91,7 +91,7 @@ public final class RequestStopPledgeWar extends L2GameClientPacket
 		// {
 		// SystemMessage sm = new SystemMessage(SystemMessage.S1_IS_BUSY_TRY_LATER);
 		// sm.addString(leader.getName());
-		// player.sendPacket(sm);
+		// reader.sendPacket(sm);
 		// return;
 		// }
 		

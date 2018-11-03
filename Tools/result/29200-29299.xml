@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
+    <weapon id="29200" name="Saber" type="SWORD" icon="icon.weapon_saber_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29201" name="Spinebone Sword" type="SWORD" icon="icon.weapon_spinebone_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1510</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29202" name="Artisan's Sword" type="SWORD" icon="icon.weapon_artisans_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1500</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29203" name="Crimson Sword" type="SWORD" icon="icon.weapon_crimson_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1490</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29204" name="Knight's Sword" type="SWORD" icon="icon.weapon_knights_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1500</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29205" name="Sword of Revolution" type="SWORD" icon="icon.weapon_sword_of_revolution_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1450</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29206" name="Elven Sword" type="SWORD" icon="icon.weapon_elven_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1470</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29207" name="Sword of Mystic" type="SWORD" icon="icon.weapon_sword_of_mystic_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>980</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29208" name="Sword of Occult" type="SWORD" icon="icon.weapon_sword_of_occult_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>970</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29209" name="Branch of Life" type="SWORD" icon="icon.weapon_branch_of_life_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>620</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29210" name="Temptation of Abyss" type="SWORD" icon="icon.weapon_temptation_of_abyss_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>610</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29211" name="Proof of Revenge" type="SWORD" icon="icon.weapon_proof_of_revenge_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29212" name="Divine Tome" type="SWORD" icon="icon.weapon_divine_tome_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29213" name="Sage's Blood" type="SWORD" icon="icon.weapon_blood_of_saints_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>580</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29214" name="Tome of Blood" type="SWORD" icon="icon.weapon_tome_of_blood_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>570</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29215" name="Crucifix of Blood" type="SWORD" icon="icon.weapon_crucifix_of_blood_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>540</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29216" name="Eye of Infinity" type="SWORD" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29217" name="Blue Crystal Skull" type="SWORD" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29218" name="Demon's Fangs" type="SWORD" icon="icon.weapon_demon_fangs_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon magic="true" id="29219" name="Vajra Wand" type="SWORD" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29220" name="Ancient Reagent" type="SWORD" icon="icon.weapon_apprentices_spellbook_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1600</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29221" name="Elven Long Sword" type="SWORD" icon="icon.weapon_elven_long_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1440</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29222" name="Priest Sword" type="SWORD" icon="icon.weapon_sword_of_priest_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon magic="true" id="29223" name="Sword of Magic Fog" type="SWORD" icon="icon.weapon_sword_of_magic_fog_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1450</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29224" name="Red Sunset Sword" type="SWORD" icon="icon.weapon_brandish_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29225" name="Brandish" type="SWORD" icon="icon.weapon_brandish_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2250</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29226" name="Zweihander" type="SWORD" icon="icon.weapon_zweihander_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1530</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29227" name="Claymore" type="SWORD" icon="icon.weapon_claymore_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2090</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29228" name="Two-handed Sword" type="SWORD" icon="icon.weapon_two_handed_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2180</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29229" name="Heavy Sword" type="SWORD" icon="icon.weapon_heavy_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1520</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29230" name="Steel Sword" type="SWORD" icon="icon.weapon_iron_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2100</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29231" name="Lesser Giant's Sword" type="SWORD" icon="icon.weapon_giants_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2020</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29232" name="Saber*Saber" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2530</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29233" name="Saber*Bastard Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2520</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29234" name="Saber*Spinebone Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2530</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29235" name="Saber*Artisan's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2520</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29236" name="Saber*Knight's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2510</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29237" name="Saber*Crimson Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2530</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29238" name="Saber*Elven Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2510</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29239" name="Bastard Sword*Bastard Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2470</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29240" name="Bastard Sword*Spinebone Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2470</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29241" name="Bastard Sword*Artisan's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2480</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29242" name="Bastard Sword*Knight's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2500</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29243" name="Bastard Sword*Crimson Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2470</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29244" name="Bastard Sword*Elven Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2460</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29245" name="Spinebone Sword*Spinebone Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2520</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29246" name="Spinebone Sword*Artisan's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2460</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29247" name="Spinebone Sword*Knight's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2470</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29248" name="Spinebone Sword*Crimson Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2520</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29249" name="Spinebone Sword*Elven Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2460</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29250" name="Artisan's Sword*Artisan's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2480</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29251" name="Artisan's Sword*Knight's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2470</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29252" name="Artisan's Sword*Crimson Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2450</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29253" name="Artisan's Sword*Elven Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2470</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29254" name="Knight's Sword*Knight's Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2460</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29255" name="Knight's Sword*Crimson Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2460</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29256" name="Knight's Sword*Elven Sword" type="DUAL" icon="icon.weapon_dual_sword_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>2450</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29257" name="Club" type="BLUNT" icon="icon.weapon_club_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1870</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29258" name="Mace" type="BLUNT" icon="icon.weapon_mace_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1880</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29259" name="Apprentice's Rod" type="BLUNT" icon="icon.weapon_apprentices_rod_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1330</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29260" name="Iron Hammer" type="BLUNT" icon="icon.weapon_iron_hammer_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29261" name="Heavy Chisel" type="BLUNT" icon="icon.weapon_heavy_chisel_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1890</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29262" name="Sickle" type="BLUNT" icon="icon.weapon_sickle_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29263" name="Dwarven Mace" type="BLUNT" icon="icon.weapon_dwarven_mace_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1860</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29264" name="Flanged Mace" type="BLUNT" icon="icon.weapon_buzdygan_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1800</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon magic="true" id="29265" name="Wand of Adept" type="BLUNT" icon="icon.weapon_apprentices_wand_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29266" name="Silversmith Hammer" type="BLUNT" icon="icon.weapon_iron_hammer_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1860</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29267" name="Bone Club" type="BLUNT" icon="icon.weapon_club_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1850</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon id="29268" name="Tomahawk" type="BLUNT" icon="icon.weapon_tomahawk_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1780</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29269" name="Morning Star" type="BLUNT" icon="icon.weapon_morning_star_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29270" name="Hand Axe" type="BLUNT" icon="icon.weapon_hand_axe_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1820</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29271" name="Spiked Club" type="BLUNT" icon="icon.weapon_spike_club_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1750</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29272" name="Tarbar" type="BLUNT" icon="icon.weapon_tarbar_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1730</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29273" name="Bonebreaker" type="BLUNT" icon="icon.weapon_bonebreaker_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29274" name="Heavy Mace" type="BLUNT" icon="icon.weapon_heavy_mace_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1800</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29275" name="Scalpel" type="BLUNT" icon="icon.weapon_scalpel_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1810</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29276" name="Work Hammer" type="BLUNT" icon="icon.weapon_work_hammer_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1790</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29277" name="Skull Breaker" type="BLUNT" icon="icon.weapon_skull_breaker_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1740</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29278" name="Heavy Bone Club" type="BLUNT" icon="icon.weapon_heavy_bone_club_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1730</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29279" name="Mace of Prayer" type="BLUNT" icon="icon.weapon_mace_of_prayer_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1300</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29280" name="Mace of Judgment" type="BLUNT" icon="icon.weapon_mace_of_judgment_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1280</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29281" name="Mace of Miracle" type="BLUNT" icon="icon.weapon_mace_of_miracle_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1250</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29282" name="Doom Hammer" type="BLUNT" icon="icon.weapon_doom_hammer_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1200</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon magic="true" id="29283" name="Staff of Life" type="BLUNT" icon="icon.weapon_life_stick_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1180</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon id="29284" name="Priest Mace" type="BLUNT" icon="icon.weapon_mace_of_priest_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1720</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon magic="true" id="29285" name="Willow Staff" type="BLUNT" icon="icon.weapon_willow_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1080</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon magic="true" id="29286" name="Cedar Staff" type="BLUNT" icon="icon.weapon_cedar_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1090</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon magic="true" id="29287" name="Apprentice's Staff" type="BLUNT" icon="icon.weapon_apprentices_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1070</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon magic="true" id="29288" name="Mage Staff" type="BLUNT" icon="icon.weapon_apprentices_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1050</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon magic="true" id="29289" name="Staff of Sentinel" type="BLUNT" icon="icon.weapon_cedar_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1800</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon magic="true" id="29290" name="Red Sunset Staff" type="BLUNT" icon="icon.weapon_cedar_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1700</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon magic="true" id="29291" name="Eldritch Staff" type="BLUNT" icon="icon.weapon_apprentices_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1050</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="2"/>
+    </weapon>
+    <weapon magic="true" id="29292" name="Goat Head Staff" type="BLUNT" icon="icon.weapon_goathead_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon magic="true" id="29293" name="Bone Staff" type="BLUNT" icon="icon.weapon_apprentices_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1060</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon magic="true" id="29294" name="Mystic Staff" type="BLUNT" icon="icon.weapon_mystic_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon magic="true" id="29295" name="Conjuror's Staff" type="BLUNT" icon="icon.weapon_conjure_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1030</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon magic="true" id="29296" name="Staff of Mana" type="BLUNT" icon="icon.weapon_staff_of_mana_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1040</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon magic="true" id="29297" name="Staff of Magic" type="BLUNT" icon="icon.weapon_staff_of_magicpower_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1020</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="3"/>
+    </weapon>
+    <weapon id="29298" name="Atuba Hammer" type="BLUNT" icon="icon.weapon_atuba_hammer_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1010</weight>
+        <bodyPart>RIGHT_HAND</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+    <weapon magic="true" id="29299" name="Ghost Staff" type="BLUNT" icon="icon.weapon_ghost_staff_i00">
+        <price>0</price>
+        <restriction dropable="false" tradeable="false"/>
+        <questItem>false</questItem>
+        <reuseDelay>0</reuseDelay>
+        <time>0</time>
+        <weight>1000</weight>
+        <bodyPart>TWO_HANDS</bodyPart>
+        <consume shot="5"/>
+    </weapon>
+</itemList>

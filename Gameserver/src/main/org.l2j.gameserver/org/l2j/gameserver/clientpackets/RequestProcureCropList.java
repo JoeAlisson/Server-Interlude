@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
@@ -29,14 +11,14 @@ import org.l2j.gameserver.model.actor.instance.L2ManorManagerInstance;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.CropProcure;
-import org.l2j.gameserver.model.entity.database.ItemTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ActionFailed;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.StatusUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.xml.jaxb.Item;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.l2j.gameserver.util.Util;
-
 
 /**
  * Format: (ch) d [dddd] d: size [ d obj id d item id d manor id d count ]
@@ -140,7 +122,7 @@ public class RequestProcureCropList extends L2GameClientPacket
 				ItemTemplate template = ItemTable.getInstance().getTemplate(rewardItemId);
 				weight += count * template.getWeight();
 				
-				if (!template.isStackable())
+				if (!(template instanceof Item) || !((Item)template).isStackable())
 				{
 					slots += count;
 				}
@@ -202,7 +184,7 @@ public class RequestProcureCropList extends L2GameClientPacket
 				continue;
 			}
 			
-			int fee = 0; // fee for selling to other manors
+			long fee = 0; // fee for selling to other manors
 			
 			int rewardItem = L2Manor.getInstance().getRewardItem(cropId, crop.getReward());
 			
@@ -211,15 +193,15 @@ public class RequestProcureCropList extends L2GameClientPacket
 				continue;
 			}
 			
-			int sellPrice = (count * L2Manor.getInstance().getCropBasicPrice(cropId));
-			int rewardPrice = ItemTable.getInstance().getTemplate(rewardItem).getPrice();
+			long sellPrice = (count * L2Manor.getInstance().getCropBasicPrice(cropId));
+			long rewardPrice = ItemTable.getInstance().getTemplate(rewardItem).getPrice();
 			
 			if (rewardPrice == 0)
 			{
 				continue;
 			}
 			
-			int rewardItemCount = sellPrice / rewardPrice;
+			long rewardItemCount = sellPrice / rewardPrice;
 			if (rewardItemCount < 1)
 			{
 				SystemMessage sm = new SystemMessage(SystemMessageId.FAILED_IN_TRADING_S2_OF_CROP_S1);
@@ -250,7 +232,7 @@ public class RequestProcureCropList extends L2GameClientPacket
 			L2ItemInstance itemAdd = null;
 			if (player.getInventory().getItemByObjectId(objId) != null)
 			{
-				// check if player have correct items count
+				// check if reader have correct items count
 				L2ItemInstance item = player.getInventory().getItemByObjectId(objId);
 				if (item.getCount() < count)
 				{

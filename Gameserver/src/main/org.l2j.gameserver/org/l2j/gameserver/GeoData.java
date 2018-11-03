@@ -135,7 +135,7 @@ public class GeoData
 	 * @param tx
 	 * @param ty
 	 * @param tz
-	 * @return Last Location (x,y,z) where player can walk - just befor wall
+	 * @return Last Location (x,y,z) where reader can walk - just befor wall
 	 */
 	public Location moveCheck(int x, int y, int z, int tx, int ty, int tz)
 	{

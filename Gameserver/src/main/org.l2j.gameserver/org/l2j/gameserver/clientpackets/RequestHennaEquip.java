@@ -63,7 +63,7 @@ public final class RequestHennaEquip extends L2GameClientPacket
 		{
 			return;
 		}
-		int _count = 0;
+		long _count = 0;
 		
 		try
 		{

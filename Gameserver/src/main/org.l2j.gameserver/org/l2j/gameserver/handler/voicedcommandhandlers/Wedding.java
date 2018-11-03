@@ -66,7 +66,7 @@ public class Wedding implements IVoicedCommandHandler
 		
 		int _partnerId = activeChar.getPartnerId();
 		int _coupleId = activeChar.getCoupleId();
-		int AdenaAmount = 0;
+		long AdenaAmount = 0;
 		
 		if (activeChar.isMarried())
 		{
@@ -119,18 +119,18 @@ public class Wedding implements IVoicedCommandHandler
 		// check if target is a l2pcinstance
 		if (!(activeChar.getTarget() instanceof L2PcInstance))
 		{
-			activeChar.sendMessage("You can only ask another player to engage you.");
+			activeChar.sendMessage("You can only ask another reader to engage you.");
 			
 			return false;
 		}
 		
-		// check if player is already engaged
+		// check if reader is already engaged
 		if (activeChar.getPartnerId() != 0)
 		{
 			activeChar.sendMessage("You are already engaged.");
 			if (Config.L2JMOD_WEDDING_PUNISH_INFIDELITY)
 			{
-				activeChar.startAbnormalEffect((short) 0x2000); // give player a Big Head
+				activeChar.startAbnormalEffect((short) 0x2000); // give reader a Big Head
 				// lets recycle the sevensigns debuffs
 				int skillId;
 				
@@ -165,7 +165,7 @@ public class Wedding implements IVoicedCommandHandler
 		
 		L2PcInstance ptarget = (L2PcInstance) activeChar.getTarget();
 		
-		// check if player target himself
+		// check if reader target himself
 		if (ptarget.getObjectId() == activeChar.getObjectId())
 		{
 			activeChar.sendMessage("Is there something wrong with you, are you trying to go out with youself?");
@@ -196,14 +196,14 @@ public class Wedding implements IVoicedCommandHandler
 			return false;
 		}
 		
-		// check if target has player on friendlist
+		// check if target has reader on friendlist
         CharacterFriendRepository repository = DatabaseAccess.getRepository(CharacterFriendRepository.class);
         boolean	FoundOnFriendList = repository.existsFriends(activeChar.getObjectId(), ptarget.getObjectId());
 
 		
 		if (!FoundOnFriendList)
 		{
-			activeChar.sendMessage("The player you want to ask is not on your friends list, you must first be on each others friends list before you choose to engage.");
+			activeChar.sendMessage("The reader you want to ask is not on your friends list, you must first be on each others friends list before you choose to engage.");
 			return false;
 		}
 		
