@@ -6,7 +6,7 @@
         <handler>BLESSED_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="8910"/>
     </item>
@@ -17,7 +17,7 @@
         <handler>BLESSED_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="8911"/>
     </item>
@@ -28,7 +28,7 @@
         <handler>BLESSED_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="8912"/>
     </item>
@@ -39,7 +39,7 @@
         <handler>BLESSED_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="8913"/>
     </item>
@@ -50,7 +50,7 @@
         <handler>BLESSED_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="8907"/>
     </item>
@@ -60,7 +60,7 @@
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="9293"/>
     </item>
@@ -71,7 +71,7 @@
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="9294"/>
     </item>
@@ -82,7 +82,7 @@
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="9295"/>
     </item>
@@ -93,7 +93,7 @@
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="9296"/>
     </item>
@@ -104,7 +104,7 @@
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="9297"/>
     </item>

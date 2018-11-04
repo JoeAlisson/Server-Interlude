@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55416" level="1"/>
         <skill id="55440" level="1"/>
@@ -17,7 +17,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -26,7 +26,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55418" level="1"/>
         <skill id="55442" level="1"/>
@@ -38,7 +38,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55417" level="1"/>
         <skill id="55441" level="1"/>
@@ -50,7 +50,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55420" level="1"/>
         <skill id="55444" level="1"/>
@@ -62,7 +62,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55419" level="1"/>
         <skill id="55443" level="1"/>
@@ -74,7 +74,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55422" level="1"/>
         <skill id="55446" level="1"/>
@@ -86,7 +86,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55421" level="1"/>
         <skill id="55445" level="1"/>
@@ -98,7 +98,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55424" level="1"/>
         <skill id="55448" level="1"/>
@@ -110,7 +110,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55423" level="1"/>
         <skill id="55447" level="1"/>
@@ -122,7 +122,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55426" level="1"/>
         <skill id="55450" level="1"/>
@@ -134,7 +134,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55425" level="1"/>
         <skill id="55449" level="1"/>
@@ -146,7 +146,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55428" level="1"/>
         <skill id="55452" level="1"/>
@@ -158,7 +158,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55427" level="1"/>
         <skill id="55451" level="1"/>
@@ -170,7 +170,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55430" level="1"/>
         <skill id="55454" level="1"/>
@@ -182,7 +182,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55429" level="1"/>
         <skill id="55453" level="1"/>
@@ -194,7 +194,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55432" level="1"/>
         <skill id="55456" level="1"/>
@@ -206,7 +206,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55431" level="1"/>
         <skill id="55455" level="1"/>
@@ -218,7 +218,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55434" level="1"/>
         <skill id="55458" level="1"/>
@@ -230,7 +230,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55433" level="1"/>
         <skill id="55457" level="1"/>
@@ -242,7 +242,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55436" level="1"/>
         <skill id="55460" level="1"/>
@@ -254,7 +254,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55435" level="1"/>
         <skill id="55459" level="1"/>
@@ -266,7 +266,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55438" level="1"/>
         <skill id="55462" level="1"/>
@@ -278,7 +278,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55437" level="1"/>
         <skill id="55461" level="1"/>
@@ -290,7 +290,7 @@
         <restriction sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -299,7 +299,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55439" level="1"/>
         <skill id="55463" level="1"/>
@@ -312,7 +312,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70426" name="Energy of Protection" additionalName="Event" icon="icon.general_energy_condense_i01">
@@ -320,7 +320,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="70429" name="Agathion - Singer and Dancer Pack (7-day)" icon="icon.bm_ensoulbox_soul_of_undead">
@@ -329,7 +329,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70428" name="Talisman of Border Pack +5" icon="icon.bm_ensoulbox_PvP">
@@ -338,7 +338,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70431" name="NoItemName" icon="icon.etc_bm_brooch_lavianrose_i00">
@@ -346,7 +346,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>BROOCH</bodyPart>
     </armor>
@@ -355,7 +355,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70433" name="NoItemName" icon="icon.etc_bm_jewel_vital">
@@ -363,7 +363,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -372,7 +372,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -381,7 +381,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>BROOCH</bodyPart>
     </armor>
@@ -390,7 +390,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>BROOCH</bodyPart>
     </armor>
@@ -399,7 +399,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -408,7 +408,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -417,7 +417,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -426,7 +426,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -435,7 +435,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -444,7 +444,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -453,7 +453,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -462,7 +462,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -471,7 +471,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -480,7 +480,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -489,7 +489,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -498,7 +498,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -507,7 +507,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -516,7 +516,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -525,7 +525,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -534,7 +534,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -543,7 +543,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -552,7 +552,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -561,7 +561,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -570,7 +570,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -579,7 +579,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -588,7 +588,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -597,7 +597,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -606,7 +606,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -615,7 +615,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -624,7 +624,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -633,7 +633,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -642,7 +642,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -651,7 +651,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -660,7 +660,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -669,7 +669,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -678,7 +678,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -687,7 +687,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -696,7 +696,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -705,7 +705,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -714,7 +714,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -723,7 +723,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -732,7 +732,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -741,7 +741,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -750,7 +750,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <bodyPart>BROOCH_JEWEL</bodyPart>
     </armor>
@@ -759,7 +759,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70476" name="NoItemName" icon="icon.etc_bm_jewel_piece">
@@ -767,7 +767,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70479" name="NoItemName" icon="icon.etc_bm_jewelbox_garnet_i01">
@@ -775,7 +775,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70478" name="NoItemName" icon="icon.etc_bm_jewelbox_topaz_i00">
@@ -783,7 +783,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70481" name="NoItemName" icon="icon.etc_bm_jewelbox_ruby_i00">
@@ -791,7 +791,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70480" name="NoItemName" icon="icon.etc_bm_jewelbox_jade_i00">
@@ -799,7 +799,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70483" name="NoItemName" icon="icon.etc_bm_jewelbox_diamond_i00">
@@ -807,7 +807,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70482" name="NoItemName" icon="icon.etc_bm_jewelbox_sapphire_i00">
@@ -815,7 +815,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70485" name="NoItemName" icon="icon.etc_bm_jewelbox_vital_i00">
@@ -823,7 +823,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70484" name="NoItemName" icon="icon.etc_bm_jewelbox_pearl_i00">
@@ -831,7 +831,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70487" name="NoItemName" icon="icon.etc_bm_jewelbox_topaz_i00">
@@ -839,7 +839,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70486" name="NoItemName" icon="icon.etc_bm_jewelbox_main_i00">
@@ -847,7 +847,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70489" name="NoItemName" icon="icon.etc_bm_jewelbox_jade_i00">
@@ -855,7 +855,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70488" name="NoItemName" icon="icon.etc_bm_jewelbox_garnet_i01">
@@ -863,7 +863,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70491" name="NoItemName" icon="icon.etc_bm_jewelbox_sapphire_i00">
@@ -871,7 +871,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70490" name="NoItemName" icon="icon.etc_bm_jewelbox_ruby_i00">
@@ -879,7 +879,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70493" name="NoItemName" icon="icon.etc_bm_jewelbox_pearl_i00">
@@ -887,7 +887,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70492" name="NoItemName" icon="icon.etc_bm_jewelbox_diamond_i00">
@@ -895,7 +895,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70495" name="NoItemName" icon="icon.etc_bm_jewelbox_topaz_i00">
@@ -903,7 +903,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70494" name="NoItemName" icon="icon.etc_bm_jewelbox_vital_i00">
@@ -911,7 +911,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70497" name="NoItemName" icon="icon.etc_bm_jewelbox_topaz_i00">
@@ -919,7 +919,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70496" name="NoItemName" icon="icon.etc_bm_jewelbox_topaz_i00">
@@ -927,7 +927,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70499" name="NoItemName" icon="icon.etc_bm_jewelbox_garnet_i01">
@@ -935,7 +935,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70498" name="NoItemName" icon="icon.etc_bm_jewelbox_garnet_i01">
@@ -943,7 +943,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

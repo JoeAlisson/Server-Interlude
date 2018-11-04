@@ -6,7 +6,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>8</recipeId>
     </item>
@@ -16,7 +16,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>9</recipeId>
     </item>
@@ -26,7 +26,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>10</recipeId>
     </item>
@@ -36,7 +36,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>11</recipeId>
     </item>
@@ -46,7 +46,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>12</recipeId>
     </item>
@@ -56,7 +56,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>13</recipeId>
     </item>
@@ -66,7 +66,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>14</recipeId>
     </item>
@@ -76,7 +76,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>15</recipeId>
     </item>
@@ -85,7 +85,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1786" name="Recipe: Broadsword" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
@@ -94,7 +94,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>2</recipeId>
     </item>
@@ -104,7 +104,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>3</recipeId>
     </item>
@@ -114,7 +114,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>4</recipeId>
     </item>
@@ -124,7 +124,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>5</recipeId>
     </item>
@@ -134,7 +134,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>6</recipeId>
     </item>
@@ -144,7 +144,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>7</recipeId>
     </item>

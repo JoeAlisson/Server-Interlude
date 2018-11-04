@@ -5,7 +5,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="29701" name="Rare Accessory Box" additionalName="for me" icon="icon.ev_10th_present2">
@@ -14,7 +14,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55043"/>
     </item>
@@ -23,7 +23,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29703" name="Body of Avatar Chest" icon="icon.etc_pi_gift_box_i00">
@@ -31,7 +31,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="29704" name="Fire Dragon Pendant" additionalName="Lvl 1" icon="BranchIcon.Icon.bm_pendant_pve">
@@ -40,7 +40,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29705" name="Fire Dragon Pendant" additionalName="Lvl 2" icon="BranchIcon.Icon.bm_pendant_pve">
@@ -49,7 +49,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29706" name="Fire Dragon Pendant" additionalName="Lvl 3" icon="BranchIcon.Icon.bm_pendant_pve">
@@ -58,7 +58,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29707" name="Fire Dragon Pendant" additionalName="Lvl 4" icon="BranchIcon.Icon.bm_pendant_pve">
@@ -67,7 +67,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29708" name="Fire Dragon Pendant" additionalName="Lvl 5" icon="BranchIcon.Icon.bm_pendant_pve">
@@ -76,7 +76,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29709" name="Water Dragon Pendant" additionalName="Lvl 1" icon="BranchIcon.Icon.bm_pendant_pvp_blue">
@@ -85,7 +85,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29710" name="Water Dragon Pendant" additionalName="Lvl 2" icon="BranchIcon.Icon.bm_pendant_pvp_blue">
@@ -94,7 +94,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29711" name="Water Dragon Pendant" additionalName="Lvl 3" icon="BranchIcon.Icon.bm_pendant_pvp_blue">
@@ -103,7 +103,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29712" name="Water Dragon Pendant" additionalName="Lvl 4" icon="BranchIcon.Icon.bm_pendant_pvp_blue">
@@ -112,7 +112,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29713" name="Water Dragon Pendant" additionalName="Lvl 5" icon="BranchIcon.Icon.bm_pendant_pvp_blue">
@@ -121,7 +121,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29714" name="Wind Dragon Pendant" additionalName="Lvl 1" icon="BranchIcon.Icon.bm_pendant_pve_white">
@@ -130,7 +130,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29715" name="Wind Dragon Pendant" additionalName="Lvl 2" icon="BranchIcon.Icon.bm_pendant_pve_white">
@@ -139,7 +139,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29716" name="Wind Dragon Pendant" additionalName="Lvl 3" icon="BranchIcon.Icon.bm_pendant_pve_white">
@@ -148,7 +148,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29717" name="Wind Dragon Pendant" additionalName="Lvl 4" icon="BranchIcon.Icon.bm_pendant_pve_white">
@@ -157,7 +157,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29718" name="Wind Dragon Pendant" additionalName="Lvl 5" icon="BranchIcon.Icon.bm_pendant_pve_white">
@@ -166,7 +166,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29719" name="Land Dragon Pendant" additionalName="Lvl 1" icon="BranchIcon.Icon.bm_pendant_pvp">
@@ -175,7 +175,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29720" name="Land Dragon Pendant" additionalName="Lvl 2" icon="BranchIcon.Icon.bm_pendant_pvp">
@@ -184,7 +184,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29721" name="Land Dragon Pendant" additionalName="Lvl 3" icon="BranchIcon.Icon.bm_pendant_pvp">
@@ -193,7 +193,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29722" name="Land Dragon Pendant" additionalName="Lvl 4" icon="BranchIcon.Icon.bm_pendant_pvp">
@@ -202,7 +202,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="29723" name="Land Dragon Pendant" additionalName="Lvl 5" icon="BranchIcon.Icon.bm_pendant_pvp">
@@ -211,7 +211,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <item stackable="true" id="29724" name="Fire Dragon Pendant Chest" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -220,7 +220,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29725" name="Water Dragon Pendant Chest" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -228,7 +228,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29726" name="Wind Dragon Pendant Chest" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -236,7 +236,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29727" name="Land Dragon Pendant Chest" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -244,7 +244,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29728" name="Special Fire Dragon Pendant Chest" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -253,7 +253,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29729" name="Special Water Dragon Pendant Chest" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -261,7 +261,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29730" name="Special Wind Dragon Pendant Chest" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -269,7 +269,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29731" name="Special Land Dragon Pendant Chest" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -277,7 +277,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29732" name="Package: Shiny Pendant Polish for Fire Dragon Pendant" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -286,7 +286,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29733" name="Package: Shiny Pendant Polish for Water Dragon Pendant" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -294,7 +294,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29734" name="Package: Shiny Pendant Polish for Wind Dragon Pendant" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -302,7 +302,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29735" name="Package: Shiny Pendant Polish for Land Dragon Pendant" icon="BranchIcon.Icon.bm_special_pendant_abradant_box">
@@ -310,7 +310,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="29736" name="Diana's Earring" additionalName="Quest" icon="icon.accessary_mage_earing_i00">
@@ -318,7 +318,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="29737" name="Dianna's Ring" additionalName="Quest" icon="icon.accessary_ring_of_binding_i00">
@@ -326,7 +326,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="29738" name="Dianna's Necklace" additionalName="Quest" icon="icon.item_normal142">
@@ -334,7 +334,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="29739" name="Diana's Recommendation" additionalName="Event" icon="icon.etc_letter_envelope_i00">
@@ -342,7 +342,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29740" name="Scroll: Enchant Weapon (B-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_wp_b_i00">
@@ -350,7 +350,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29741" name="Scroll: Enchant Armor (B-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_am_b_i00">
@@ -358,7 +358,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29742" name="Blessed Scroll: Enchant Weapon (B-grade)" icon="icon.etc_blessed_scrl_of_ench_wp_b_i03">
@@ -366,7 +366,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29743" name="Blessed Scroll: Enchant Armor (B-grade)" icon="icon.etc_blessed_scrl_of_ench_am_b_i03">
@@ -374,7 +374,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29744" name="Shaft with Antharas treasures" icon="BranchIcon.Icon.g_bm_antaras_pocket_i00">
@@ -382,7 +382,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29745" name="Premium Coin" icon="BranchIcon.Icon.g_bm_premium_coin_i00">
@@ -390,7 +390,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29746" name="Mysterious Soulshot (B-grade)" icon="icon.bm_spirit_bullet_red">
@@ -400,7 +400,7 @@
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55139"/>
     </item>
@@ -411,7 +411,7 @@
         <handler>BLESSED_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55140"/>
     </item>
@@ -421,7 +421,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29749" name="Package: Mysterious Blessed Spiritshot (D-grade, 100 pcs)" icon="br_cashtex.item.br_cash_large_pack_of_blessed_spiritshot_b_i00">
@@ -430,7 +430,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29750" name="Sniper's Mysterious Package (B-grade)" icon="icon.etc_pi_gift_box_i00">
@@ -439,7 +439,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29751" name="Mystic's Mysterious Package (B-grade)" icon="icon.etc_pi_gift_box_i00">
@@ -448,7 +448,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="29752" name="Halloween Suit" type="HEAVY" icon="icon.ev_wp_halloween">
@@ -457,7 +457,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         </armor>
     <armor id="29753" name="Blue Talisman - P. Crit." additionalName="1 hour" icon="icon.etc_talisman_i01">

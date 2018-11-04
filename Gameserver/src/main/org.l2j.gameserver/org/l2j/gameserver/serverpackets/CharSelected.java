@@ -40,17 +40,17 @@ public class CharSelected extends L2GameServerPacket {
 		
 		writeDouble(_activeChar.getCurrentHp());
 		writeDouble(_activeChar.getCurrentMp());
-		writeInt((int)_activeChar.getSp());
-		writeLong(_activeChar.getExp());
+		writeInt((int)_activeChar.getSkillPoints());
+		writeLong(_activeChar.getExperience());
 		writeInt(_activeChar.getLevel());
 		writeInt(_activeChar.getKarma()); // thx evill33t
 		writeInt(0x0); // ?
-		writeInt(_activeChar.getINT());
-		writeInt(_activeChar.getSTR());
-		writeInt(_activeChar.getCON());
-		writeInt(_activeChar.getMEN());
-		writeInt(_activeChar.getDEX());
-		writeInt(_activeChar.getWIT());
+		writeInt(_activeChar.getIntelligence());
+		writeInt(_activeChar.getStrength());
+		writeInt(_activeChar.getConstitution());
+		writeInt(_activeChar.getMentality());
+		writeInt(_activeChar.getDexterity());
+		writeInt(_activeChar.getWisdom());
 		for (int i = 0; i < 30; i++) {
 			writeInt(0x00);
 		}

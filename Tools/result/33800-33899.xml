@@ -5,7 +5,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="33809" name="Improved Scroll: Enchant Weapon (A-grade)" icon="icon.etc_blessed_scrl_of_ench_wp_a_i04">
@@ -13,7 +13,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="33812" name="Improved Scroll: Enchant Armor (D-grade)" icon="icon.etc_blessed_scrl_of_ench_am_d_i01">
@@ -21,7 +21,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="33813" name="Improved Scroll: Enchant Armor (C-grade)" icon="icon.etc_blessed_scrl_of_ench_am_c_i02">
@@ -29,7 +29,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="33814" name="Improved Scroll: Enchant Armor (B-grade)" icon="icon.etc_blessed_scrl_of_ench_am_b_i03">
@@ -37,7 +37,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="33815" name="Improved Scroll: Enchant Armor (A-grade)" icon="icon.etc_blessed_scrl_of_ench_am_a_i04">
@@ -45,7 +45,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="33806" name="Improved Scroll: Enchant Weapon (D-grade)" icon="icon.etc_blessed_scrl_of_ench_wp_d_i01">
@@ -53,7 +53,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="33807" name="Improved Scroll: Enchant Weapon (C-grade)" icon="icon.etc_blessed_scrl_of_ench_wp_c_i02">
@@ -61,7 +61,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
 </itemList>

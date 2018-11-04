@@ -6,7 +6,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3007" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -19,7 +19,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3022" level="3" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -32,7 +32,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -45,7 +45,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>920</weight>
         <skill id="3076" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -58,7 +58,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>920</weight>
         <skill id="3077" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -71,7 +71,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>920</weight>
         <skill id="3078" level="3" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -84,7 +84,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>950</weight>
         <skill id="3047" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -97,7 +97,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>950</weight>
         <skill id="3048" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -110,7 +110,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>950</weight>
         <skill id="3079" level="3" chance="5" triggerType="ON_MAGIC_SKILL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -123,7 +123,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <item stackable="true" id="6318" name="Blood Fire" commissionType="OTHER_ITEM" icon="icon.etc_potion_red_i00">
@@ -131,7 +131,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
     </item>
     <item stackable="true" id="6319" name="Mimir's Elixir" icon="icon.etc_lesser_potion_yellow_i00">
@@ -139,7 +139,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6320" name="Pure Silver" commissionType="OTHER_ITEM" icon="icon.etc_broken_crystal_silver_i00">
@@ -147,7 +147,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6321" name="True Gold" icon="icon.etc_broken_crystal_gold_i00">
@@ -155,7 +155,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6322" name="Philosopher's Stone" icon="icon.etc_bead_silver_i00">
@@ -163,7 +163,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="6323" name="Sealed Phoenix Necklace" commissionType="NECKLACE" icon="icon.accessary_phoenixs_necklace_i02">
@@ -172,7 +172,7 @@
         <crystalInfo type="A" count="107"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>NECK</bodyPart>
     </armor>
@@ -182,7 +182,7 @@
         <crystalInfo type="A" count="80"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>EAR</bodyPart>
     </armor>
@@ -192,7 +192,7 @@
         <crystalInfo type="A" count="54"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -202,7 +202,7 @@
         <crystalInfo type="A" count="160"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>NECK</bodyPart>
     </armor>
@@ -212,7 +212,7 @@
         <crystalInfo type="A" count="120"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>EAR</bodyPart>
     </armor>
@@ -222,7 +222,7 @@
         <crystalInfo type="A" count="80"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -232,7 +232,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>617</recipeId>
     </item>
@@ -242,7 +242,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>618</recipeId>
     </item>
@@ -252,7 +252,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>613</recipeId>
     </item>
@@ -262,7 +262,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>614</recipeId>
     </item>
@@ -272,7 +272,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>621</recipeId>
     </item>
@@ -282,7 +282,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>622</recipeId>
     </item>
@@ -292,7 +292,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>619</recipeId>
     </item>
@@ -302,7 +302,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>620</recipeId>
     </item>
@@ -312,7 +312,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>615</recipeId>
     </item>
@@ -322,7 +322,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>616</recipeId>
     </item>
@@ -332,7 +332,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>623</recipeId>
     </item>
@@ -342,7 +342,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>624</recipeId>
     </item>
@@ -351,7 +351,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="6342" name="Sealed Majestic Earring Gemstone" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_gem_blue_i00">
@@ -359,7 +359,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="6343" name="Sealed Phoenix Necklace Beads" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="BranchSys2.icon.etc_sealed_phoenixbeads_i00">
@@ -367,7 +367,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="6344" name="Sealed Majestic Necklace Beads" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="BranchSys2.icon.etc_sealed_majesticbeads_i00">
@@ -375,7 +375,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="6345" name="Sealed Phoenix Ring Gemstone" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_gem_blue_i00">
@@ -383,7 +383,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="6346" name="Sealed Majestic Ring Gemstone" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_gem_blue_i00">
@@ -391,7 +391,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <weapon id="6347" name="Berserker Blade" additionalName="Focus" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_berserker_blade_i01">
@@ -400,7 +400,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <skill id="3010" level="4"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -413,7 +413,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <skill id="3542" level="4"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -426,7 +426,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <skill id="3037" level="4"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -438,7 +438,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="6351" name="Amulet: Ritual of Life" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -446,7 +446,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="6352" name="Spellbook: Prayer" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
@@ -454,7 +454,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="6353" name="Blue Gemstone" commissionType="OTHER_ITEM" icon="icon.etc_jewel_blue_i00">
@@ -462,7 +462,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="6356" name="Needle Wolverine" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_needle_wolverine_i01">
@@ -471,7 +471,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <skill id="3033" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -484,7 +484,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <skill id="3033" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -497,7 +497,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <skill id="3043" level="4"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -510,7 +510,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>970</weight>
         <skill id="3043" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -522,7 +522,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6388" name="Lord's Certificate of Approval" commissionType="OTHER_ITEM" icon="icon.etc_permit_card_i00">
@@ -530,7 +530,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6389" name="Squash Seed" commissionType="OTHER_ITEM" icon="icon.etc_gourd_i00">
@@ -539,7 +539,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="2003" level="1"/>
     </item>
@@ -549,7 +549,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="2004" level="1"/>
     </item>
@@ -559,7 +559,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="2005" level="1"/>
     </item>
@@ -568,7 +568,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6393" name="Event - Glittering Medal" commissionType="OTHER_ITEM" icon="icon.etc_event_glitter_medal_i00">
@@ -576,7 +576,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="6394" name="Red Party Mask" commissionType="HAIR_ACCESSORY" icon="icon.etc_party_mask_i01">
@@ -584,7 +584,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>HAIR</bodyPart>
     </armor>
@@ -593,7 +593,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="6396" name="Amulet: Chant of Eagle" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -601,7 +601,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="6397" name="Amulet: Chant of Vampire" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -609,7 +609,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="6398" name="Spellbook: Body of Avatar" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
@@ -617,7 +617,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="6399" name="Rabbit Crest" icon="icon.etc_paper_black_i00">
@@ -625,7 +625,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

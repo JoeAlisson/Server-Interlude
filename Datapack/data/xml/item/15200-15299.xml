@@ -7,7 +7,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <consume shot="2"/>
     </weapon>
@@ -18,7 +18,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <consume shot="2"/>
     </weapon>

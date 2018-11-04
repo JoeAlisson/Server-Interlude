@@ -7,7 +7,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -18,7 +18,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -29,7 +29,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1590</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -40,7 +40,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1870</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -51,7 +51,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1880</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -63,7 +63,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1350</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -75,7 +75,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1330</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -87,7 +87,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1080</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -99,7 +99,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1090</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -110,7 +110,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1160</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -121,7 +121,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1150</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -132,7 +132,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1140</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -143,7 +143,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1950</weight>
         <damage distance="10"/>
         <consume mp="1" shot="1"/>
@@ -154,7 +154,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <damage distance="10"/>
         <consume mp="1" shot="1"/>
@@ -165,7 +165,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2140</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -177,7 +177,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2120</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -188,7 +188,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>6</weight>
     </item>
     <armor id="18" name="Leather Shield" commissionType="SHIELD" icon="icon.shield_leather_shield_i00">
@@ -197,7 +197,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1430</weight>
     </armor>
     <armor id="19" name="Small Shield" commissionType="SHIELD" icon="icon.shield_small_shield_i00">
@@ -206,7 +206,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
     </armor>
     <armor id="20" name="Buckler" commissionType="SHIELD" icon="icon.shield_buckler_i00">
@@ -215,7 +215,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1410</weight>
     </armor>
     <armor id="21" name="Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t02_u_i00">
@@ -224,7 +224,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4830</weight>
     </armor>
     <armor id="22" name="Leather Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t04_u_i00">
@@ -233,7 +233,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4830</weight>
     </armor>
     <armor id="23" name="Wooden Breastplate" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t06_u_i00">
@@ -242,7 +242,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4820</weight>
     </armor>
     <armor id="24" name="Bone Breastplate" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t32_u_i00">
@@ -251,7 +251,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4770</weight>
     </armor>
     <armor id="25" name="Piece Bone Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t33_u_i00">
@@ -260,7 +260,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8970</weight>
     </armor>
     <armor id="26" name="Bronze Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t34_u_i00">
@@ -269,7 +269,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8920</weight>
     </armor>
     <armor id="27" name="Durable Leather Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t30_u_i00">
@@ -278,7 +278,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4720</weight>
     </armor>
     <armor id="28" name="Pants" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t02_l_i00">
@@ -287,7 +287,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
     </armor>
     <armor id="29" name="Leather Pants" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t04_l_i00">
@@ -296,7 +296,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
     </armor>
     <armor id="30" name="Durable Leather Pants" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t06_l_i00">
@@ -305,7 +305,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1700</weight>
     </armor>
     <armor id="31" name="Bone Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t32_l_i00">
@@ -314,7 +314,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1680</weight>
     </armor>
     <armor id="32" name="Piece Bone Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t33_l_i00">
@@ -323,7 +323,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4020</weight>
     </armor>
     <armor id="33" name="Durable Leather Gaiters" type="LIGHT" commissionType="ARMOR_PANTS" icon="icon.armor_t30_l_i00">
@@ -332,7 +332,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1610</weight>
     </armor>
     <armor id="34" name="Bronze Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t34_l_i00">
@@ -341,7 +341,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3960</weight>
     </armor>
     <armor id="35" name="Cloth Shoes" commissionType="FEET" icon="icon.armor_t02_b_i00">
@@ -350,7 +350,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1320</weight>
     </armor>
     <armor id="36" name="Leather Sandals" commissionType="FEET" icon="icon.armor_t03_b_i00">
@@ -359,7 +359,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1320</weight>
     </armor>
     <armor id="37" name="Leather Shoes" commissionType="FEET" icon="icon.armor_t05_b_i00">
@@ -368,7 +368,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1320</weight>
     </armor>
     <armor id="38" name="Low Boots" commissionType="FEET" icon="icon.armor_t32_b_i00">
@@ -377,7 +377,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1320</weight>
     </armor>
     <armor id="39" name="Boots" commissionType="FEET" icon="icon.armor_t30_b_i00">
@@ -386,7 +386,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1310</weight>
     </armor>
     <armor id="40" name="Leather Boots" commissionType="FEET" icon="icon.armor_t09_b_i00">
@@ -396,7 +396,7 @@
         <crystalInfo type="D" count="38"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
     </armor>
     <armor id="41" name="Cloth Cap" commissionType="HELMET" icon="icon.armor_cloth_helmet_i00">
@@ -405,7 +405,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>660</weight>
     </armor>
     <armor id="42" name="Leather Cap" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
@@ -414,7 +414,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>660</weight>
     </armor>
     <armor id="43" name="Wooden Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
@@ -423,7 +423,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>660</weight>
     </armor>
     <armor id="44" name="Leather Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
@@ -432,7 +432,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>650</weight>
     </armor>
     <armor id="45" name="Bone Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
@@ -442,7 +442,7 @@
         <crystalInfo type="D" count="56"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>640</weight>
     </armor>
     <armor id="46" name="Bronze Helmet" commissionType="HELMET" icon="icon.armor_helmet_i00">
@@ -452,7 +452,7 @@
         <crystalInfo type="D" count="90"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>630</weight>
     </armor>
     <armor id="47" name="Headgear" commissionType="HELMET" icon="icon.armor_helmet_i00">
@@ -462,7 +462,7 @@
         <crystalInfo type="D" count="138"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>640</weight>
     </armor>
     <armor id="48" name="Short Gloves" commissionType="GLOVES" icon="icon.armor_t02_g_i00">
@@ -471,7 +471,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>660</weight>
     </armor>
     <armor id="49" name="Gloves" commissionType="GLOVES" icon="icon.armor_t06_g_i00">
@@ -480,7 +480,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>660</weight>
     </armor>
     <armor id="50" name="Leather Gloves" commissionType="GLOVES" icon="icon.armor_t32_g_i00">
@@ -489,7 +489,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>650</weight>
     </armor>
     <armor id="51" name="Bracer" commissionType="GLOVES" icon="icon.armor_t30_g_i00">
@@ -498,7 +498,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>650</weight>
     </armor>
     <item stackable="true" id="57" name="Adena" icon="icon.etc_adena_i00">
@@ -506,7 +506,7 @@
         <restriction freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="58" name="Mithril Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t19_u_i00">
@@ -516,7 +516,7 @@
         <crystalInfo type="D" count="332"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8670</weight>
     </armor>
     <armor id="59" name="Mithril Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t19_l_i00">
@@ -526,7 +526,7 @@
         <crystalInfo type="D" count="230"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3830</weight>
     </armor>
     <armor id="60" name="Compound Armor" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t61_ul_i00">
@@ -536,7 +536,7 @@
         <crystalInfo type="C" count="576"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10980</weight>
     </armor>
     <armor id="61" name="Mithril Gloves" commissionType="GLOVES" icon="icon.armor_t46_g_i00">
@@ -546,7 +546,7 @@
         <crystalInfo type="D" count="177"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>630</weight>
     </armor>
     <armor id="62" name="Reinforced Mithril Boots" commissionType="FEET" icon="icon.armor_t47_b_i00">
@@ -556,7 +556,7 @@
         <crystalInfo type="C" count="50"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1230</weight>
     </armor>
     <armor id="63" name="Gauntlets" commissionType="GLOVES" icon="icon.armor_t10_g_i00">
@@ -566,7 +566,7 @@
         <crystalInfo type="D" count="92"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>640</weight>
     </armor>
     <armor id="64" name="Compound Boots" commissionType="FEET" icon="icon.armor_t61_b_i00">
@@ -576,7 +576,7 @@
         <crystalInfo type="C" count="98"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1220</weight>
     </armor>
     <weapon id="66" name="Gladius" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_gladius_i00">
@@ -585,7 +585,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -597,7 +597,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -608,7 +608,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1530</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -621,7 +621,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <damage distance="42" width="120"/>
         <consume shot="1"/>
@@ -633,7 +633,7 @@
         <crystalInfo type="D" count="3272"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -645,7 +645,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -658,7 +658,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1430</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -670,7 +670,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -682,7 +682,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -694,7 +694,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -707,7 +707,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -719,7 +719,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -731,7 +731,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -744,7 +744,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1350</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -757,7 +757,7 @@
         <crystalInfo type="A" count="1128"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1330</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -770,7 +770,7 @@
         <crystalInfo type="A" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1840</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -783,7 +783,7 @@
         <crystalInfo type="D" count="1301"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>970</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -796,7 +796,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>950</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -808,7 +808,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1780</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -819,7 +819,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1850</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -831,7 +831,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -843,7 +843,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1710</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -856,7 +856,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -869,7 +869,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1620</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -882,7 +882,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>960</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -894,7 +894,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2060</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -907,7 +907,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -920,7 +920,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -933,7 +933,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2040</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -946,7 +946,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1920</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -959,7 +959,7 @@
         <crystalInfo type="A" count="1128"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1900</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -972,7 +972,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>650</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>

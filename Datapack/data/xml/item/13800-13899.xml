@@ -6,7 +6,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         </armor>
     <armor id="13895" name="Leather Belt" type="LIGHT" icon="icon.armor_belt_i01">
@@ -15,7 +15,7 @@
         <crystalInfo type="B"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>480</weight>
         </armor>
     <armor id="13896" name="Iron Belt" type="LIGHT" icon="icon.armor_belt_i02">
@@ -24,7 +24,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>460</weight>
         </armor>
     <armor id="13897" name="Mithril Belt" type="LIGHT" icon="icon.armor_belt_i03">
@@ -33,7 +33,7 @@
         <crystalInfo type="S"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>440</weight>
         </armor>
 </itemList>

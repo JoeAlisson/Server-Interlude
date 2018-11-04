@@ -1480,9 +1480,9 @@ public class L2Clan {
         switch (getLevel()) {
             case 0: {
                 // upgrade to 1
-                if ((player.getSp() >= 30000) && (player.getAdena() >= 650000)) {
+                if ((player.getSkillPoints() >= 30000) && (player.getAdena() >= 650000)) {
                     if (player.reduceAdena("ClanLvl", 650000, player.getTarget(), true)) {
-                        player.setSp(player.getSp() - 30000);
+                        player.setSp(player.getSkillPoints() - 30000);
                         SystemMessage sp = new SystemMessage(SystemMessageId.SP_DECREASED_S1);
                         sp.addNumber(30000);
                         player.sendPacket(sp);
@@ -1494,9 +1494,9 @@ public class L2Clan {
             }
             case 1: {
                 // upgrade to 2
-                if ((player.getSp() >= 150000) && (player.getAdena() >= 2500000)) {
+                if ((player.getSkillPoints() >= 150000) && (player.getAdena() >= 2500000)) {
                     if (player.reduceAdena("ClanLvl", 2500000, player.getTarget(), true)) {
-                        player.setSp(player.getSp() - 150000);
+                        player.setSp(player.getSkillPoints() - 150000);
                         SystemMessage sp = new SystemMessage(SystemMessageId.SP_DECREASED_S1);
                         sp.addNumber(150000);
                         player.sendPacket(sp);
@@ -1508,10 +1508,10 @@ public class L2Clan {
             }
             case 2: {
                 // upgrade to 3
-                if ((player.getSp() >= 500000) && (player.getInventory().getItemByItemId(1419) != null)) {
+                if ((player.getSkillPoints() >= 500000) && (player.getInventory().getItemByItemId(1419) != null)) {
                     // itemid 1419 == proof of blood
                     if (player.destroyItemByItemId("ClanLvl", 1419, 1, player.getTarget(), false)) {
-                        player.setSp(player.getSp() - 500000);
+                        player.setSp(player.getSkillPoints() - 500000);
                         SystemMessage sp = new SystemMessage(SystemMessageId.SP_DECREASED_S1);
                         sp.addNumber(500000);
                         player.sendPacket(sp);
@@ -1528,10 +1528,10 @@ public class L2Clan {
             }
             case 3: {
                 // upgrade to 4
-                if ((player.getSp() >= 1400000) && (player.getInventory().getItemByItemId(3874) != null)) {
+                if ((player.getSkillPoints() >= 1400000) && (player.getInventory().getItemByItemId(3874) != null)) {
                     // itemid 3874 == proof of alliance
                     if (player.destroyItemByItemId("ClanLvl", 3874, 1, player.getTarget(), false)) {
-                        player.setSp(player.getSp() - 1400000);
+                        player.setSp(player.getSkillPoints() - 1400000);
                         SystemMessage sp = new SystemMessage(SystemMessageId.SP_DECREASED_S1);
                         sp.addNumber(1400000);
                         player.sendPacket(sp);
@@ -1548,10 +1548,10 @@ public class L2Clan {
             }
             case 4: {
                 // upgrade to 5
-                if ((player.getSp() >= 3500000) && (player.getInventory().getItemByItemId(3870) != null)) {
+                if ((player.getSkillPoints() >= 3500000) && (player.getInventory().getItemByItemId(3870) != null)) {
                     // itemid 3870 == proof of aspiration
                     if (player.destroyItemByItemId("ClanLvl", 3870, 1, player.getTarget(), false)) {
-                        player.setSp(player.getSp() - 3500000);
+                        player.setSp(player.getSkillPoints() - 3500000);
                         SystemMessage sp = new SystemMessage(SystemMessageId.SP_DECREASED_S1);
                         sp.addNumber(3500000);
                         player.sendPacket(sp);
@@ -1609,7 +1609,7 @@ public class L2Clan {
 
         // the reader should know that he has less sp now :p
         StatusUpdate su = new StatusUpdate(player.getObjectId());
-        su.addAttribute(StatusUpdate.SP, player.getSp());
+        su.addAttribute(StatusUpdate.SP, player.getSkillPoints());
         player.sendPacket(su);
 
         ItemList il = new ItemList(player, false);

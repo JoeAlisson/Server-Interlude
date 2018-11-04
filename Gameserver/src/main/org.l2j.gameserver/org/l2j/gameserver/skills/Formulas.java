@@ -13,7 +13,6 @@ import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.base.CreatureRace;
-import org.l2j.gameserver.model.entity.database.PlayerTemplate;
 import org.l2j.gameserver.model.entity.ClanHall;
 import org.l2j.gameserver.model.entity.Siege;
 import org.l2j.gameserver.network.SystemMessageId;
@@ -22,6 +21,7 @@ import org.l2j.gameserver.skills.conditions.ConditionPlayerState;
 import org.l2j.gameserver.skills.conditions.ConditionPlayerState.CheckPlayerState;
 import org.l2j.gameserver.skills.conditions.ConditionUsingItemType;
 import org.l2j.gameserver.skills.funcs.Func;;
+import org.l2j.gameserver.templates.ClassTemplate;
 import org.l2j.gameserver.templates.xml.jaxb.Armor;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
 import org.l2j.gameserver.templates.xml.jaxb.Weapon;
@@ -227,7 +227,7 @@ public final class Formulas
 		@Override
 		public void calc(Env env)
 		{
-			env.value *= STRbonus[env.player.getSTR()] * env.player.getLevelMod();
+			env.value *= STRbonus[env.player.getStrength()] * env.player.getLevelMod();
 		}
 	}
 	
@@ -248,7 +248,7 @@ public final class Formulas
 		@Override
 		public void calc(Env env)
 		{
-			double intb = INTbonus[env.player.getINT()];
+			double intb = INTbonus[env.player.getIntelligence()];
 			double lvlb = env.player.getLevelMod();
 			env.value *= (lvlb * lvlb) * (intb * intb);
 		}
@@ -295,7 +295,7 @@ public final class Formulas
 					env.value -= 13;
 				}
 			}
-			env.value *= MENbonus[env.player.getMEN()] * env.player.getLevelMod();
+			env.value *= MENbonus[env.player.getMentality()] * env.player.getLevelMod();
 		}
 	}
 	
@@ -389,7 +389,7 @@ public final class Formulas
 		{
 			L2Character p = env.player;
 			// [Square(DEX)]*6 + lvl + weapon hitbonus;
-			env.value += Math.sqrt(p.getDEX()) * 6;
+			env.value += Math.sqrt(p.getDexterity()) * 6;
 			env.value += p.getLevel();
 			if (p instanceof L2Summon)
 			{
@@ -417,7 +417,7 @@ public final class Formulas
 		{
 			L2Character p = env.player;
 			// [Square(DEX)]*6 + lvl;
-			env.value += Math.sqrt(p.getDEX()) * 6;
+			env.value += Math.sqrt(p.getDexterity()) * 6;
 			env.value += p.getLevel();
 		}
 	}
@@ -450,7 +450,7 @@ public final class Formulas
 			}
 			else
 			{
-				env.value *= DEXbonus[p.getDEX()];
+				env.value *= DEXbonus[p.getDexterity()];
 				env.value *= 10;
 				if (env.value > 500)
 				{
@@ -478,7 +478,7 @@ public final class Formulas
 		public void calc(Env env)
 		{
 			L2PcInstance p = (L2PcInstance) env.player;
-			env.value *= DEXbonus[p.getDEX()];
+			env.value *= DEXbonus[p.getDexterity()];
 		}
 	}
 	
@@ -500,7 +500,7 @@ public final class Formulas
 		public void calc(Env env)
 		{
 			L2PcInstance p = (L2PcInstance) env.player;
-			env.value *= DEXbonus[p.getDEX()];
+			env.value *= DEXbonus[p.getDexterity()];
 		}
 	}
 	
@@ -522,7 +522,7 @@ public final class Formulas
 		public void calc(Env env)
 		{
 			L2PcInstance p = (L2PcInstance) env.player;
-			env.value *= WITbonus[p.getWIT()];
+			env.value *= WITbonus[p.getWisdom()];
 		}
 	}
 	
@@ -699,11 +699,11 @@ public final class Formulas
 		@Override
 		public void calc(Env env)
 		{
-			PlayerTemplate t = (PlayerTemplate) env.player.getTemplate();
+			ClassTemplate t = (ClassTemplate) env.player.getTemplate();
 			int lvl = env.player.getLevel() - t.getClassLevel();
-			double hpmod = t.getHpMod() * lvl;
-			double hpmax = (t.getHpAdd() + hpmod) * lvl;
-			double hpmin = (t.getHpAdd() * lvl) + hpmod;
+			double hpmod = 1.5 * lvl;
+			double hpmax = (1.5 + hpmod) * lvl;
+			double hpmin = (1.5 * lvl) + hpmod;
 			env.value += (hpmax + hpmin) / 2;
 		}
 	}
@@ -726,7 +726,7 @@ public final class Formulas
 		public void calc(Env env)
 		{
 			L2PcInstance p = (L2PcInstance) env.player;
-			env.value *= CONbonus[p.getCON()];
+			env.value *= CONbonus[p.getConstitution()];
 		}
 	}
 	
@@ -747,11 +747,11 @@ public final class Formulas
 		@Override
 		public void calc(Env env)
 		{
-			PlayerTemplate t = (PlayerTemplate) env.player.getTemplate();
+			ClassTemplate t = (ClassTemplate) env.player.getTemplate();
 			int lvl = env.player.getLevel() - t.getClassLevel();
-			double cpmod = t.getCpMod() * lvl;
-			double cpmax = (t.getCpAdd() + cpmod) * lvl;
-			double cpmin = (t.getCpAdd() * lvl) + cpmod;
+			double cpmod = 3 * lvl;
+			double cpmax = (3 + cpmod) * lvl;
+			double cpmin = (3 * lvl) + cpmod;
 			env.value += (cpmax + cpmin) / 2;
 		}
 	}
@@ -774,7 +774,7 @@ public final class Formulas
 		public void calc(Env env)
 		{
 			L2PcInstance p = (L2PcInstance) env.player;
-			env.value *= CONbonus[p.getCON()];
+			env.value *= CONbonus[p.getConstitution()];
 		}
 	}
 	
@@ -795,11 +795,11 @@ public final class Formulas
 		@Override
 		public void calc(Env env)
 		{
-			PlayerTemplate t = (PlayerTemplate) env.player.getTemplate();
+			ClassTemplate t = (ClassTemplate) env.player.getTemplate();
 			int lvl = env.player.getLevel() - t.getClassLevel();
-			double mpmod = t.getMpMod() * lvl;
-			double mpmax = (t.getMpAdd() + mpmod) * lvl;
-			double mpmin = (t.getMpAdd() * lvl) + mpmod;
+			double mpmod = 4 * lvl;
+			double mpmax = (4 + mpmod) * lvl;
+			double mpmin = (4 * lvl) + mpmod;
 			env.value += (mpmax + mpmin) / 2;
 		}
 	}
@@ -822,7 +822,7 @@ public final class Formulas
 		public void calc(Env env)
 		{
 			L2PcInstance p = (L2PcInstance) env.player;
-			env.value *= MENbonus[p.getMEN()];
+			env.value *= MENbonus[p.getMentality()];
 		}
 	}
 	
@@ -1019,7 +1019,7 @@ public final class Formulas
 			}
 			
 			// Add CON bonus
-			init *= cha.getLevelMod() * CONbonus[cha.getCON()];
+			init *= cha.getLevelMod() * CONbonus[cha.getConstitution()];
 		}
 		
 		if (init < 1)
@@ -1092,7 +1092,7 @@ public final class Formulas
 			}
 			
 			// Add MEN bonus
-			init *= cha.getLevelMod() * MENbonus[cha.getMEN()];
+			init *= cha.getLevelMod() * MENbonus[cha.getMentality()];
 		}
 		
 		if (init < 1)
@@ -1150,7 +1150,7 @@ public final class Formulas
 		}
 		
 		// Apply CON bonus
-		init *= cha.getLevelMod() * CONbonus[cha.getCON()];
+		init *= cha.getLevelMod() * CONbonus[cha.getConstitution()];
 		if (init < 1)
 		{
 			init = 1;
@@ -1593,7 +1593,7 @@ public final class Formulas
 	 */
 	public final boolean calcBlow(L2Character activeChar, L2Character target, int chance)
 	{
-		return activeChar.calcStat(Stats.BLOW_RATE, chance * (1.0 + ((activeChar.getDEX() - 20) / 100)), target, null) > Rnd.get(100);
+		return activeChar.calcStat(Stats.BLOW_RATE, chance * (1.0 + ((activeChar.getDexterity() - 20) / 100)), target, null) > Rnd.get(100);
 	}
 	
 	/**
@@ -1645,7 +1645,7 @@ public final class Formulas
 		init += Math.sqrt(13 * dmg);
 		
 		// Chance is affected by target MEN
-		init -= ((MENbonus[target.getMEN()] * 100) - 100);
+		init -= ((MENbonus[target.getMentality()] * 100) - 100);
 		
 		// Calculate allTemplates modifiers for ATTACK_CANCEL
 		double rate = target.calcStat(Stats.ATTACK_CANCEL, init, null, null);
@@ -1740,7 +1740,7 @@ public final class Formulas
 	public boolean calcShldUse(L2Character attacker, L2Character target)
 	{
 		Weapon at_weapon = attacker.getActiveWeaponItem();
-		double shldRate = target.calcStat(Stats.SHIELD_RATE, 0, attacker, null) * DEXbonus[target.getDEX()];
+		double shldRate = target.calcStat(Stats.SHIELD_RATE, 0, attacker, null) * DEXbonus[target.getDexterity()];
 		if (shldRate == 0.0)
 		{
 			return false;
@@ -1821,22 +1821,22 @@ public final class Formulas
 						multiplier *= target.getTemplate().getSleepVuln();
 						break;
 					case FIRE:
-						multiplier *= target.getTemplate().getFireVuln();
+						multiplier *= target.getTemplate().getFireDefense();
 						break;
 					case WIND:
-						multiplier *= target.getTemplate().getWindVuln();
+						multiplier *= target.getTemplate().getWindDefense();
 						break;
 					case WATER:
-						multiplier *= target.getTemplate().getWaterVuln();
+						multiplier *= target.getTemplate().getWaterDefense();
 						break;
 					case EARTH:
-						multiplier *= target.getTemplate().getEarthVuln();
+						multiplier *= target.getTemplate().getEarthDefense();
 						break;
 					case HOLY:
-						multiplier *= target.getTemplate().getHolyVuln();
+						multiplier *= target.getTemplate().getHolyDefense();
 						break;
 					case DARK:
-						multiplier *= target.getTemplate().getDarkVuln();
+						multiplier *= target.getTemplate().getUnholyDefense();
 						break;
 				}
 			}
@@ -1926,7 +1926,7 @@ public final class Formulas
 		{
 			case STUN:
 			case BLEED:
-				multiplier = 2 - Math.sqrt(CONbonus[target.getCON()]);
+				multiplier = 2 - Math.sqrt(CONbonus[target.getConstitution()]);
 				break;
 			case POISON:
 			case SLEEP:
@@ -1940,7 +1940,7 @@ public final class Formulas
 			case CONFUSION:
 			case AGGREDUCE_CHAR:
 			case PARALYZE:
-				multiplier = 2 - Math.sqrt(MENbonus[target.getMEN()]);
+				multiplier = 2 - Math.sqrt(MENbonus[target.getMentality()]);
 				break;
 			default:
 				return multiplier;
@@ -2145,6 +2145,6 @@ public final class Formulas
 	
 	public double getSTRBonus(L2Character activeChar)
 	{
-		return STRbonus[activeChar.getSTR()];
+		return STRbonus[activeChar.getStrength()];
 	}
 }

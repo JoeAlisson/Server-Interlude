@@ -6,7 +6,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -19,7 +19,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3027" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -32,7 +32,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1670</weight>
         <skill id="3012" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -45,7 +45,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1670</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -58,7 +58,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1670</weight>
         <skill id="3036" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -71,7 +71,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1660</weight>
         <skill id="3012" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -84,7 +84,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1660</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -97,7 +97,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1660</weight>
         <skill id="3036" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -110,7 +110,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3012" level="4"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -123,7 +123,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -136,7 +136,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3027" level="4"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -149,7 +149,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1620</weight>
         <skill id="3012" level="5"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -162,7 +162,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1620</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -175,7 +175,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1620</weight>
         <skill id="3027" level="5"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -188,7 +188,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <skill id="3012" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -201,7 +201,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -214,7 +214,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <skill id="3036" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -227,7 +227,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -240,7 +240,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <skill id="3027" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -253,7 +253,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <skill id="3036" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -266,7 +266,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <skill id="3020" level="1" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -279,7 +279,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <skill id="3041" level="1" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -292,7 +292,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <skill id="3033" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -305,7 +305,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1050</weight>
         <skill id="3011" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -318,7 +318,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1050</weight>
         <skill id="3019" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -331,7 +331,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1050</weight>
         <skill id="3035" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -344,7 +344,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1030</weight>
         <skill id="3020" level="2" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -357,7 +357,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1030</weight>
         <skill id="3041" level="2" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -370,7 +370,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1030</weight>
         <skill id="3035" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -383,7 +383,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="3009" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -396,7 +396,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="3011" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -409,7 +409,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="3019" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -422,7 +422,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="3009" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -435,7 +435,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="3011" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -448,7 +448,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="3020" level="3" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -461,7 +461,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="3020" level="4" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -474,7 +474,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="3041" level="4" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -487,7 +487,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="3035" level="4"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -500,7 +500,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>980</weight>
         <skill id="3009" level="5"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -513,7 +513,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>980</weight>
         <skill id="3011" level="5"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -526,7 +526,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>980</weight>
         <skill id="3019" level="5"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -539,7 +539,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>970</weight>
         <skill id="3020" level="6" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -552,7 +552,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>970</weight>
         <skill id="3041" level="6" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -565,7 +565,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>970</weight>
         <skill id="3035" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -578,7 +578,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <skill id="3039" level="1" triggerType="ON_CRITICAL"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -591,7 +591,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <skill id="3040" level="1" triggerType="ON_CRITICAL"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -604,7 +604,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <skill id="3034" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -617,7 +617,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1480</weight>
         <skill id="3030" level="3"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -630,7 +630,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1480</weight>
         <skill id="3034" level="3"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -643,7 +643,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1480</weight>
         <skill id="3037" level="3"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -656,7 +656,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1460</weight>
         <skill id="3039" level="4" triggerType="ON_CRITICAL"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -669,7 +669,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1460</weight>
         <skill id="3040" level="4" triggerType="ON_CRITICAL"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -682,7 +682,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1460</weight>
         <skill id="3034" level="4"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -695,7 +695,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <skill id="3030" level="2"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -708,7 +708,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <skill id="3034" level="2"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -721,7 +721,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -734,7 +734,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3032" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -747,7 +747,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3010" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -760,7 +760,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3023" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -773,7 +773,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3036" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -786,7 +786,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -799,7 +799,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3010" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -812,7 +812,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3498" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -825,7 +825,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <skill id="3010" level="4"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -838,7 +838,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <skill id="3023" level="4"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -851,7 +851,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <skill id="3036" level="4"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -864,7 +864,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         <skill id="3023" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -877,7 +877,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         <skill id="3010" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -890,7 +890,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         <skill id="3498" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -903,7 +903,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1370</weight>
         <skill id="3007" level="5"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -916,7 +916,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1370</weight>
         <skill id="3010" level="5"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -929,7 +929,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1370</weight>
         <skill id="3018" level="5"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -942,7 +942,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1350</weight>
         <skill id="3010" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -955,7 +955,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1350</weight>
         <skill id="3023" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -968,7 +968,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1350</weight>
         <skill id="3036" level="6"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -981,7 +981,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <skill id="3013" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -994,7 +994,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <skill id="3023" level="5"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -1007,7 +1007,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <skill id="3010" level="5"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -1020,7 +1020,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1710</weight>
         <skill id="3013" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1033,7 +1033,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1710</weight>
         <skill id="3027" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1046,7 +1046,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1710</weight>
         <skill id="3036" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1059,7 +1059,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <skill id="3012" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1072,7 +1072,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <skill id="3027" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1085,7 +1085,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <skill id="3036" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1098,7 +1098,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1690</weight>
         <skill id="3012" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1111,7 +1111,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1690</weight>
         <skill id="3027" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1124,7 +1124,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1690</weight>
         <skill id="3036" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -1137,7 +1137,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3012" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>

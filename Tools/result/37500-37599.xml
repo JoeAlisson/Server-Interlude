@@ -6,7 +6,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="17110" level="1"/>
     </item>
@@ -15,7 +15,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="37545" name="Large Snowball" icon="BranchSys2.icon.g_illumination_white">
@@ -23,42 +23,42 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="37546" name="Rudolf's Gift 2015" additionalName="Lv. 1" icon="icon.etc_pi_gift_box_i04">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="37547" name="Rudolf's Gift 2015" additionalName="Lv. 2" icon="icon.etc_pi_gift_box_i04">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="37548" name="Rudolf's Gift 2015" additionalName="Lv. 3" icon="icon.etc_pi_gift_box_i04">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="37549" name="Rudolf's Gift 2015" additionalName="Lv. 4" icon="icon.etc_pi_gift_box_i04">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="37550" name="Snowman's Buff" icon="icon.weapon_snowman_stick_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="37551" name="Christmas Present" icon="icon.etc_pi_gift_box_i04">
@@ -66,7 +66,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="37552" name="Snowy Squash Seed" commissionType="OTHER_ITEM" icon="icon.etc_gourd_i10">
@@ -75,7 +75,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="17111" level="1"/>
     </item>
@@ -85,7 +85,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="17112" level="1"/>
     </item>
@@ -94,7 +94,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -103,7 +103,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <bodyPart>FULL_BODY</bodyPart>
     </armor>
@@ -112,7 +112,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>

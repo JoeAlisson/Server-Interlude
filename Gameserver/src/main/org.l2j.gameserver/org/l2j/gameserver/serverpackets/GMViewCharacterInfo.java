@@ -32,18 +32,18 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		writeInt(_activeChar.getSex());
 		writeInt(_activeChar.getPlayerClass().getId());
 		writeInt(_activeChar.getLevel());
-		writeLong(_activeChar.getExp());
-		writeInt(_activeChar.getSTR());
-		writeInt(_activeChar.getDEX());
-		writeInt(_activeChar.getCON());
-		writeInt(_activeChar.getINT());
-		writeInt(_activeChar.getWIT());
-		writeInt(_activeChar.getMEN());
+		writeLong(_activeChar.getExperience());
+		writeInt(_activeChar.getStrength());
+		writeInt(_activeChar.getDexterity());
+		writeInt(_activeChar.getConstitution());
+		writeInt(_activeChar.getIntelligence());
+		writeInt(_activeChar.getWisdom());
+		writeInt(_activeChar.getMentality());
 		writeInt(_activeChar.getMaxHp());
 		writeInt((int) _activeChar.getCurrentHp());
 		writeInt(_activeChar.getMaxMp());
 		writeInt((int) _activeChar.getCurrentMp());
-		writeInt((int)_activeChar.getSp());
+		writeInt((int)_activeChar.getSkillPoints());
 		writeInt(_activeChar.getCurrentLoad());
 		writeInt(_activeChar.getMaxLoad());
 		writeInt(0x28); // unknown

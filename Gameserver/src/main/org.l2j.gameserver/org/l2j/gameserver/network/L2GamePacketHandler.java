@@ -115,7 +115,7 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 msg = new RequestTodoList();
                                 break;*/
                             case 0x138:
-                             //   msg = new RequestUserBanInfo();
+                                msg = new RequestUserBanInfo();
                                 break;
                             default:
                                 printDebugDoubleOpcode(opcode, id3, data, state, client);
@@ -1092,11 +1092,11 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                             case 0x5F:
                                 msg = new RequestExWithdrawMpccRoom();
-                                break;
+                                break;*/
                             case 0x60:
-                                //msg = new RequestExSeedPhase();
+                                msg = new RequestSeedPhase();
                                 break;
-                            case 0x61:
+                            /*case 0x61:
                                 msg = new RequestExMpccPartymasterList();
                                 break;
                             case 0x62:

@@ -6,7 +6,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6273" name="Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -15,7 +15,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6274" name="Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -24,7 +24,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6275" name="Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -33,7 +33,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6276" name="Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -42,7 +42,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6277" name="Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -51,7 +51,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6278" name="Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -60,7 +60,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6279" name="Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -69,7 +69,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6280" name="Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -78,7 +78,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6281" name="Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -87,7 +87,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6282" name="Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -96,7 +96,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6283" name="Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -105,7 +105,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6284" name="Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -114,7 +114,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6285" name="Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -123,7 +123,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6286" name="Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -132,7 +132,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6287" name="Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -141,7 +141,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6288" name="Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -150,7 +150,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6289" name="Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -159,7 +159,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6290" name="Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -168,7 +168,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6291" name="Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -177,7 +177,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6292" name="Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -186,7 +186,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6293" name="Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -195,7 +195,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6294" name="Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -204,7 +204,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6200" name="Greater Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -213,7 +213,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6201" name="Greater Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -222,7 +222,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6202" name="Greater Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -231,7 +231,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6203" name="Greater Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -240,7 +240,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6204" name="Greater Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -249,7 +249,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6205" name="Greater Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -258,7 +258,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6206" name="Greater Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -267,7 +267,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6207" name="Greater Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -276,7 +276,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6208" name="Greater Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -285,7 +285,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6209" name="Greater Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -294,7 +294,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6210" name="Greater Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -303,7 +303,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6211" name="Greater Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -312,7 +312,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6212" name="Greater Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -321,7 +321,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6213" name="Greater Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -330,7 +330,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6214" name="Greater Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -339,7 +339,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6215" name="Greater Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -348,7 +348,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6216" name="Greater Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -357,7 +357,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6217" name="Greater Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -366,7 +366,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6218" name="Greater Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -375,7 +375,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6219" name="Greater Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -384,7 +384,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6220" name="Greater Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -393,7 +393,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6221" name="Greater Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -402,7 +402,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6222" name="Greater Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -411,7 +411,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6223" name="Greater Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -420,7 +420,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6224" name="Greater Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -429,7 +429,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6225" name="Greater Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -438,7 +438,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6226" name="Greater Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -447,7 +447,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6227" name="Greater Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -456,7 +456,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6228" name="Greater Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -465,7 +465,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6229" name="Greater Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -474,7 +474,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6230" name="Greater Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -483,7 +483,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6231" name="Greater Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -492,7 +492,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6232" name="Greater Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -501,7 +501,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6233" name="Greater Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -510,7 +510,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6234" name="Greater Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -519,7 +519,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6235" name="Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -528,7 +528,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6236" name="Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -537,7 +537,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6237" name="Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -546,7 +546,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6238" name="Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -555,7 +555,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6239" name="Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -564,7 +564,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6240" name="Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -573,7 +573,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6241" name="Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -582,7 +582,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6242" name="Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -591,7 +591,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6243" name="Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -600,7 +600,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6244" name="Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -609,7 +609,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6245" name="Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -618,7 +618,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6246" name="Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -627,7 +627,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6247" name="Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -636,7 +636,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6248" name="Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -645,7 +645,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6249" name="Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -654,7 +654,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6250" name="Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -663,7 +663,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6251" name="Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -672,7 +672,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6252" name="Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -681,7 +681,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6253" name="Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -690,7 +690,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6254" name="Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -699,7 +699,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6255" name="Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -708,7 +708,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6256" name="Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -717,7 +717,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6257" name="Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -726,7 +726,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6258" name="Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -735,7 +735,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6259" name="Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -744,7 +744,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6260" name="Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -753,7 +753,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6261" name="Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -762,7 +762,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6262" name="Recruit Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -771,7 +771,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6263" name="Recruit Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -780,7 +780,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6264" name="Recruit Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -789,7 +789,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6265" name="Recruit Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_fix_i00">
@@ -798,7 +798,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6266" name="Recruit Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -807,7 +807,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6267" name="Recruit Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -816,7 +816,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6268" name="Recruit Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -825,7 +825,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6269" name="Recruit Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -834,7 +834,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6270" name="Recruit Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -843,7 +843,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="6271" name="Recruit Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -852,7 +852,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

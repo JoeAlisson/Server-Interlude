@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <classInfo classId="44" name="Orc Fighter" classLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://la2j.org" xsi:schemaLocation="http://la2j.org ../schema/classInfo.xsd">
+    <level value="1" hp="80.0" mp="30" cp="40" hpRegen="2.00" mpRegen="0.9" cpRegen="2.0" />
     <level value="2" hp="92.74" mp="35.46" cp="46.37" hpRegen="2.05" mpRegen="0.9" cpRegen="2.0" />
     <level value="3" hp="105.62" mp="40.98" cp="52.81" hpRegen="2.1" mpRegen="0.9" cpRegen="2.0" />
     <level value="4" hp="118.64" mp="46.56" cp="59.32" hpRegen="2.15" mpRegen="0.9" cpRegen="2.0" />

@@ -5,7 +5,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -15,7 +15,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -25,7 +25,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -35,7 +35,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -45,7 +45,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -55,7 +55,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -65,7 +65,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -75,7 +75,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -85,7 +85,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -95,7 +95,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -105,7 +105,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -115,7 +115,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -125,7 +125,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1090</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -135,7 +135,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1090</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -145,7 +145,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1090</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -155,7 +155,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1080</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -165,7 +165,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1080</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -175,7 +175,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1080</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -185,7 +185,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -195,7 +195,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -205,7 +205,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -215,7 +215,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1060</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -225,7 +225,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1060</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -235,7 +235,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1060</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -245,7 +245,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -255,7 +255,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -265,7 +265,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -275,7 +275,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -285,7 +285,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -295,7 +295,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -305,7 +305,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1870</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -315,7 +315,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1870</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -325,7 +325,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1870</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -335,7 +335,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -345,7 +345,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -355,7 +355,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -365,7 +365,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1850</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -375,7 +375,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1850</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -385,7 +385,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1850</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -395,7 +395,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -405,7 +405,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -415,7 +415,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -425,7 +425,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1840</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -435,7 +435,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1840</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -445,7 +445,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1840</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -455,7 +455,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -465,7 +465,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -475,7 +475,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -485,7 +485,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="2"/>
@@ -495,7 +495,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="2"/>
@@ -505,7 +505,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="2"/>
@@ -515,7 +515,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -525,7 +525,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -535,7 +535,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -545,7 +545,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -555,7 +555,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -565,7 +565,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -575,7 +575,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -585,7 +585,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -595,7 +595,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -605,7 +605,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -615,7 +615,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -625,7 +625,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -635,7 +635,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -645,7 +645,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -655,7 +655,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -665,7 +665,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2060</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -676,7 +676,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2060</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -687,7 +687,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2060</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -698,7 +698,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -709,7 +709,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -720,7 +720,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -731,7 +731,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -742,7 +742,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -753,7 +753,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -764,7 +764,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -775,7 +775,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -786,7 +786,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -797,7 +797,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -808,7 +808,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -819,7 +819,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -830,7 +830,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -841,7 +841,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -852,7 +852,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -863,7 +863,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2070</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -874,7 +874,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2070</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -885,7 +885,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2070</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -896,7 +896,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -907,7 +907,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -918,7 +918,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -929,7 +929,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -939,7 +939,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -949,7 +949,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -959,7 +959,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -969,7 +969,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -979,7 +979,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -989,7 +989,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -999,7 +999,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -1009,7 +1009,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -1019,7 +1019,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>

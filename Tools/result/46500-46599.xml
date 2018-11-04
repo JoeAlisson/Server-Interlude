@@ -4,7 +4,7 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
 </itemList>

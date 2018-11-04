@@ -104,11 +104,11 @@ public class RegionBBSManager extends BaseBBSManager {
                 long nextLevelExpNeeded = 0;
                 if (player.getLevel() < (Experience.MAX_LEVEL - 1)) {
                     nextLevelExp = Experience.LEVEL[player.getLevel() + 1];
-                    nextLevelExpNeeded = nextLevelExp - player.getExp();
+                    nextLevelExpNeeded = nextLevelExp - player.getExperience();
                 }
 
                 htmlCode.append("<tr><td>Level: " + player.getLevel() + "</td></tr>");
-                htmlCode.append("<tr><td>Experience: " + player.getExp() + "/" + nextLevelExp + "</td></tr>");
+                htmlCode.append("<tr><td>Experience: " + player.getExperience() + "/" + nextLevelExp + "</td></tr>");
                 htmlCode.append("<tr><td>Experience needed for level up: " + nextLevelExpNeeded + "</td></tr>");
                 htmlCode.append("<tr><td><br></td></tr>");
             }

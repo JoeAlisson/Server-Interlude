@@ -6,7 +6,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -17,7 +17,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="2"/>

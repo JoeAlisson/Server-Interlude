@@ -7,7 +7,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5766" name="Dark Crystal Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t75_g_i00">
@@ -17,7 +17,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5767" name="Dark Crystal Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t76_g_i00">
@@ -27,7 +27,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5768" name="Tallum Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t77_g_i00">
@@ -37,7 +37,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5769" name="Tallum Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t78_g_i00">
@@ -47,7 +47,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5770" name="Tallum Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t79_g_i00">
@@ -57,7 +57,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5771" name="Gauntlets of Nightmare" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t80_g_i00">
@@ -67,7 +67,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>550</weight>
         </armor>
     <armor id="5772" name="Gauntlets of Nightmare" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t81_g_i00">
@@ -77,7 +77,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>550</weight>
         </armor>
     <armor id="5773" name="Gauntlets of Nightmare" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t82_g_i00">
@@ -87,7 +87,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>550</weight>
         </armor>
     <armor id="5774" name="Majestic Gauntlets" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t83_g_i00">
@@ -97,7 +97,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>540</weight>
         </armor>
     <armor id="5775" name="Majestic Gauntlets" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t84_g_i00">
@@ -107,7 +107,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>540</weight>
         </armor>
     <armor id="5776" name="Majestic Gauntlets" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t85_g_i00">
@@ -117,7 +117,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>540</weight>
         </armor>
     <armor id="5777" name="Dark Crystal Boots" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t74_b_i00">
@@ -127,7 +127,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="5778" name="Dark Crystal Boots" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t75_b_i00">
@@ -137,7 +137,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="5779" name="Dark Crystal Boots" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t76_b_i00">
@@ -147,7 +147,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="5780" name="Tallum Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t77_b_i00">
@@ -157,7 +157,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="5781" name="Tallum Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t78_b_i00">
@@ -167,7 +167,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="5782" name="Tallum Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t79_b_i00">
@@ -177,7 +177,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="5783" name="Boots of Nightmare" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t80_b_i00">
@@ -187,7 +187,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="5784" name="Boots of Nightmare" additionalName="Light" commissionType="FEET" icon="icon.armor_t81_b_i00">
@@ -197,7 +197,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="5785" name="Boots of Nightmare" additionalName="Robe" commissionType="FEET" icon="icon.armor_t82_b_i00">
@@ -207,7 +207,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="5786" name="Majestic Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t83_b_i00">
@@ -217,7 +217,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="5787" name="Majestic Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t84_b_i00">
@@ -227,7 +227,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="5788" name="Majestic Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t85_b_i00">
@@ -237,7 +237,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <item stackable="true" id="5789" name="Soulshot (No-grade) (Novice)" type="SOULSHOT" icon="icon.etc_soulshot_none_for_rookie_i00">
@@ -246,7 +246,7 @@
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="2039"/>
     </item>
@@ -256,7 +256,7 @@
         <handler>SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="2047"/>
     </item>
@@ -267,7 +267,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -279,7 +279,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -291,7 +291,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -303,7 +303,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -315,7 +315,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -327,7 +327,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -339,7 +339,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -351,7 +351,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -363,7 +363,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1320</weight>
         </armor>
     <item stackable="true" id="5703" name="Lucky Charm (No-grade)" type="SCROLL" icon="icon.etc_charm_of_luck_i00">
@@ -372,7 +372,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>10000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2168"/>
     </item>
@@ -383,7 +383,7 @@
         <crystalInfo type="A" count="1485"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <skill id="3013" level="3" triggerType="ENCHANTED" triggerValue="4"/>
         <damage distance="44" width="120"/>
@@ -396,7 +396,7 @@
         <crystalInfo type="A" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <skill id="3046" level="20" triggerType="ENCHANTED" triggerValue="4"/>
         <damage distance="44" width="120"/>
@@ -407,7 +407,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="5708" name="Lord's Certificate of Approval" type="TICKET_OF_LORD" icon="icon.etc_permit_card_i00">
@@ -415,7 +415,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="5710" name="Zubei's Gauntlets" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t64_g_i00">
@@ -425,7 +425,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5711" name="Zubei's Gauntlets" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t65_g_i00">
@@ -435,7 +435,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5712" name="Zubei's Gauntlets" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t56_g_i00">
@@ -445,7 +445,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5714" name="Avadon Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t66_g_i00">
@@ -455,7 +455,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5715" name="Avadon Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t67_g_i00">
@@ -465,7 +465,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5716" name="Avadon Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t59_g_i00">
@@ -475,7 +475,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5718" name="Blue Wolf Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t68_g_i00">
@@ -485,7 +485,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5719" name="Blue Wolf Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t69_g_i00">
@@ -495,7 +495,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5720" name="Blue Wolf Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t70_g_i00">
@@ -505,7 +505,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="5722" name="Doom Gloves" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t71_g_i00">
@@ -515,7 +515,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5723" name="Doom Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t72_g_i00">
@@ -525,7 +525,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5724" name="Doom Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t73_g_i00">
@@ -535,7 +535,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         </armor>
     <armor id="5726" name="Zubei's Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t64_b_i00">
@@ -545,7 +545,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1180</weight>
         </armor>
     <armor id="5727" name="Zubei's Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t65_b_i00">
@@ -555,7 +555,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1180</weight>
         </armor>
     <armor id="5728" name="Zubei's Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t56_b_i00">
@@ -565,7 +565,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1180</weight>
         </armor>
     <armor id="5730" name="Avadon Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t66_b_i00">
@@ -575,7 +575,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1180</weight>
         </armor>
     <armor id="5731" name="Avadon Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t67_b_i00">
@@ -585,7 +585,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1180</weight>
         </armor>
     <armor id="5732" name="Avadon Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t59_b_i00">
@@ -595,7 +595,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1180</weight>
         </armor>
     <armor id="5734" name="Blue Wolf Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t68_b_i00">
@@ -605,7 +605,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="5735" name="Blue Wolf Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t69_b_i00">
@@ -615,7 +615,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="5736" name="Blue Wolf Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t70_b_i00">
@@ -625,7 +625,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="5738" name="Doom Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t71_b_i00">
@@ -635,7 +635,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="5739" name="Doom Boots" additionalName="Light" commissionType="FEET" icon="icon.armor_t72_b_i00">
@@ -645,7 +645,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="5740" name="Doom Boots" additionalName="Robe" commissionType="FEET" icon="icon.armor_t73_b_i00">
@@ -655,7 +655,7 @@
         <crystalInfo type="B" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
 </itemList>

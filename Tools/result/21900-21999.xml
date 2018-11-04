@@ -5,7 +5,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>840</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -15,7 +15,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>840</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -25,7 +25,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>840</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -35,7 +35,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>840</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>

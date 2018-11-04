@@ -7,7 +7,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1500</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -19,7 +19,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -31,7 +31,7 @@
         <crystalInfo type="D" count="1758"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1470</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -43,7 +43,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -55,7 +55,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -67,7 +67,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -79,7 +79,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -91,7 +91,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -103,7 +103,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1370</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -115,7 +115,7 @@
         <crystalInfo type="D" count="1301"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>980</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -127,7 +127,7 @@
         <crystalInfo type="D" count="1301"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>970</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -139,7 +139,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>920</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -151,7 +151,7 @@
         <crystalInfo type="B" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>910</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -163,7 +163,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>900</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -175,7 +175,7 @@
         <crystalInfo type="A" count="1128"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>830</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -187,7 +187,7 @@
         <crystalInfo type="A" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>840</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -198,7 +198,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1890</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -209,7 +209,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1850</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -220,7 +220,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1860</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -231,7 +231,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1800</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -243,7 +243,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -255,7 +255,7 @@
         <crystalInfo type="D" count="1758"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1750</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -267,7 +267,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -279,7 +279,7 @@
         <crystalInfo type="D" count="3272"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -291,7 +291,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -303,7 +303,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1690</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -315,7 +315,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1660</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -327,7 +327,7 @@
         <crystalInfo type="A" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1580</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -339,7 +339,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1800</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -351,7 +351,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -363,7 +363,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1790</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -375,7 +375,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -387,7 +387,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -399,7 +399,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -411,7 +411,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -423,7 +423,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1150</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -435,7 +435,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -446,7 +446,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -457,7 +457,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1050</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -469,7 +469,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1060</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -481,7 +481,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -493,7 +493,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -505,7 +505,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1250</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -517,7 +517,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1200</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -529,7 +529,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -541,7 +541,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1030</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -553,7 +553,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -565,7 +565,7 @@
         <crystalInfo type="D" count="1758"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -577,7 +577,7 @@
         <crystalInfo type="D" count="3272"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -589,7 +589,7 @@
         <crystalInfo type="D" count="3272"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -601,7 +601,7 @@
         <crystalInfo type="D" count="3272"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1180</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -613,7 +613,7 @@
         <crystalInfo type="D" count="3272"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -625,7 +625,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -637,7 +637,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -649,7 +649,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1160</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -661,7 +661,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <damage distance="56" width="120"/>
         <consume shot="1"/>
@@ -673,7 +673,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -685,7 +685,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -697,7 +697,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -709,7 +709,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -721,7 +721,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -732,7 +732,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>630</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -744,7 +744,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>610</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -755,7 +755,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1390</weight>
         </armor>
     <armor id="103" name="Tower Shield" commissionType="SHIELD" icon="icon.shield_tower_shield_i00">
@@ -765,7 +765,7 @@
         <crystalInfo type="C" count="103"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1240</weight>
         </armor>
     <armor id="107" name="Compound Shield" commissionType="SHIELD" icon="icon.shield_composite_shield_i00">
@@ -775,7 +775,7 @@
         <crystalInfo type="C" count="103"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1230</weight>
         </armor>
     <armor id="108" name="Masterpiece Shield" commissionType="SHIELD" icon="icon.shield_masterpiece_shield_i00">
@@ -785,7 +785,7 @@
         <crystalInfo type="B" count="103"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5600</weight>
         </armor>
     <armor id="110" name="Doom Shield" commissionType="SHIELD" icon="icon.shield_doom_shield_i00">
@@ -795,7 +795,7 @@
         <crystalInfo type="B" count="112"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1200</weight>
         </armor>
     <armor id="112" name="Apprentice's Earring" commissionType="EARRING" icon="icon.accessary_apprentices_earing_i00">
@@ -804,7 +804,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="113" name="Mage Earring" commissionType="EARRING" icon="icon.accessary_mage_earing_i00">
@@ -813,7 +813,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="114" name="Earring of Strength" commissionType="EARRING" icon="icon.accessary_earing_of_strength_i00">
@@ -822,7 +822,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="115" name="Earring of Wisdom" commissionType="EARRING" icon="icon.accessary_earing_of_wisdom_i00">
@@ -831,7 +831,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="116" name="Magic Ring" commissionType="RING" icon="icon.accessary_magic_ring_i00">
@@ -840,7 +840,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="117" name="Ring of Mana" commissionType="RING" icon="icon.accessary_ring_of_mana_i00">
@@ -850,7 +850,7 @@
         <crystalInfo type="B" count="112"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="118" name="Magic Necklace" commissionType="NECKLACE" icon="icon.accessary_necklace_of_magic_i00">
@@ -859,7 +859,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="119" name="Necklace of Seal" commissionType="NECKLACE" icon="icon.accessary_necklace_of_binding_i00">
@@ -869,7 +869,7 @@
         <crystalInfo type="C" count="226"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <weapon id="120" name="Sword of Reflection" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_sword_of_watershadow_i00">
@@ -878,7 +878,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -889,7 +889,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -900,7 +900,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -912,7 +912,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -924,7 +924,7 @@
         <crystalInfo type="D" count="1758"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2180</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -936,7 +936,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -948,7 +948,7 @@
         <crystalInfo type="D" count="1170"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1500</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -960,7 +960,7 @@
         <crystalInfo type="D" count="1758"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>

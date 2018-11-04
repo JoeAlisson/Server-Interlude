@@ -5,7 +5,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1537" name="Amulet: Seal of Poison" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -13,7 +13,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1538" name="Blessed Scroll of Escape" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i01">
@@ -22,7 +22,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="2036" level="1"/>
     </item>
@@ -32,7 +32,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>10000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -47,7 +47,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>180</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -61,7 +61,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1542" name="Bear Fur Cloak" icon="icon.etc_piece_of_cloth_black_i00">
@@ -69,7 +69,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1543" name="Bloody Axe" icon="icon.weapon_tomahawk_i00">
@@ -77,7 +77,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1544" name="Ancestor Skull" icon="icon.etc_skull_black_i00">
@@ -85,7 +85,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1545" name="Spider Dust" icon="icon.etc_powder_white_i00">
@@ -93,7 +93,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1546" name="Deep Sea Orb" icon="icon.etc_crystal_ball_silver_i00">
@@ -101,7 +101,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1547" name="Bolter's List" icon="icon.etc_piece_of_paper_white_i00">
@@ -109,7 +109,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1548" name="Mining Boots" icon="icon.armor_apprentices_shoes_i00">
@@ -117,7 +117,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1549" name="Miner's Pick" icon="icon.weapon_guard_spear_i00">
@@ -125,7 +125,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1550" name="Boomboom Powder" icon="icon.etc_powder_black_i00">
@@ -133,7 +133,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1551" name="Redstone Beer" icon="icon.etc_potion_scarlet_i00">
@@ -141,7 +141,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1552" name="Bolter's Smelly Socks" icon="icon.armor_cotton_shoes_i00">
@@ -149,7 +149,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1553" name="Hatos' 1st Order" icon="icon.etc_piece_of_paper_white_i00">
@@ -157,7 +157,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1554" name="Hatos' 1st Order" icon="icon.etc_piece_of_paper_gray_i00">
@@ -165,7 +165,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1555" name="Hatos' 1st Order" icon="icon.etc_piece_of_paper_black_i00">
@@ -173,7 +173,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1556" name="Secret Letter to Dark Elves" icon="icon.etc_letter_red_i00">
@@ -181,7 +181,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1557" name="Secret Letter to Humans" icon="icon.etc_letter_white_i00">
@@ -189,7 +189,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1558" name="Secret Letter to Elves" icon="icon.etc_letter_blue_i00">
@@ -197,7 +197,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1559" name="Gouph's Contract" icon="icon.etc_letter_blue_i00">
@@ -205,7 +205,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1560" name="Reep's Contract" icon="icon.etc_letter_red_i00">
@@ -213,7 +213,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1561" name="Elven Wine" icon="icon.etc_lesser_potion_purple_i00">
@@ -221,7 +221,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1562" name="Brunon's Dice" icon="icon.etc_squares_silver_i00">
@@ -229,7 +229,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1563" name="Brunon's Contract" icon="icon.etc_letter_white_i00">
@@ -237,7 +237,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1564" name="Aquamarine" icon="icon.etc_jewel_green_i00">
@@ -245,7 +245,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1565" name="Chrysoberyl" icon="icon.etc_jewel_blue_i00">
@@ -253,7 +253,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1566" name="Diamond Box" icon="icon.etc_jewel_box_i00">
@@ -261,7 +261,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1567" name="Coal Piece" icon="icon.etc_plate_black_i00">
@@ -269,7 +269,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1568" name="Brunon's Letter" icon="icon.etc_scroll_white_i00">
@@ -277,7 +277,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1569" name="Berry Tart" icon="icon.etc_pouch_brown_i00">
@@ -285,7 +285,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1570" name="Bat Diagram" icon="icon.etc_recipe_red_i00">
@@ -293,7 +293,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1571" name="Star Diamond" icon="icon.etc_jewel_silver_i00">
@@ -301,7 +301,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1572" name="Star Stone" icon="icon.etc_crystal_blue_i00">
@@ -309,7 +309,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1573" name="Star Stone" icon="icon.etc_crystal_blue_i00">
@@ -317,7 +317,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1574" name="Mirien's Review" icon="icon.etc_letter_red_i00">
@@ -325,7 +325,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1575" name="Mirien's Review" icon="icon.etc_letter_red_i00">
@@ -333,7 +333,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1576" name="Mirien's Review" icon="icon.etc_letter_red_i00">
@@ -341,7 +341,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1577" name="Mirien's Review" icon="icon.etc_letter_red_i00">
@@ -349,7 +349,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1578" name="Green Blood" icon="icon.etc_reagent_green_i00">
@@ -357,7 +357,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1579" name="Goblin Dwelling Map" icon="icon.etc_recipe_blue_i00">
@@ -365,7 +365,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1580" name="Kuruka Ratman Fang" icon="icon.etc_claw_i00">
@@ -373,7 +373,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1581" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -381,7 +381,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1582" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -389,7 +389,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1583" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -397,7 +397,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1584" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -405,7 +405,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1585" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -413,7 +413,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1586" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -421,7 +421,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1587" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -429,7 +429,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1588" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -437,7 +437,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1589" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -445,7 +445,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1590" name="Betrayer's Report" icon="icon.etc_piece_of_paper_white_i00">
@@ -453,7 +453,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1591" name="Head of Betrayer" icon="icon.etc_skull_red_i00">
@@ -461,7 +461,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1592" name="Badge of Raider" icon="icon.accessary_earing_of_black_ore_i00">
@@ -469,7 +469,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1593" name="Pomegranate" icon="icon.etc_fruit_red_i00">
@@ -477,7 +477,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1594" name="Leather Pouch" icon="icon.etc_pouch_gray_i00">
@@ -485,7 +485,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1595" name="Leather Pouch" icon="icon.etc_pouch_gray_i00">
@@ -493,7 +493,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1596" name="Leather Pouch" icon="icon.etc_pouch_gray_i00">
@@ -501,7 +501,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1597" name="Leather Pouch (full)" icon="icon.etc_pouch_yellow_i00">
@@ -509,7 +509,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1598" name="Leather Pouch (full)" icon="icon.etc_pouch_yellow_i00">
@@ -517,7 +517,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1599" name="Leather Pouch (full)" icon="icon.etc_pouch_yellow_i00">
@@ -525,7 +525,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1500" name="Totem of Hestui" commissionType="OTHER_ITEM" icon="icon.etc_totem_black_i00">
@@ -533,7 +533,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1501" name="Maraku Werewolf Totem" commissionType="OTHER_ITEM" icon="icon.etc_totem_green_i00">
@@ -541,7 +541,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1502" name="Grandma's Pearl" commissionType="OTHER_ITEM" icon="icon.etc_crystal_ball_silver_i00">
@@ -549,7 +549,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1503" name="Grandma's Mirror" commissionType="OTHER_ITEM" icon="icon.etc_mirror_i00">
@@ -557,7 +557,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1504" name="Grandma's Necklace" commissionType="OTHER_ITEM" icon="icon.accessary_aquastone_necklace_i00">
@@ -565,7 +565,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1505" name="Grandma's Hairpin" commissionType="OTHER_ITEM" icon="icon.etc_jewel_white_i00">
@@ -573,7 +573,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <armor id="1506" name="Necklace of Courage" commissionType="NECKLACE" icon="icon.accessary_necklace_of_courage_i00">
@@ -581,7 +581,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>NECK</bodyPart>
     </armor>
@@ -590,7 +590,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>NECK</bodyPart>
     </armor>
@@ -599,7 +599,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -608,7 +608,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -617,7 +617,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <damage vertical="0" horizontal="0" distance="40" width="120"/>
@@ -628,7 +628,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1860</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <damage vertical="0" horizontal="0" distance="40" width="120"/>
@@ -639,7 +639,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1513" name="Spellbook: Charm" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
@@ -647,7 +647,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1514" name="Spellbook: Resurrection" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
@@ -655,7 +655,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1515" name="Spellbook: Eva's Kiss" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -663,7 +663,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1516" name="Spellbook: Corpse Life Drain" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
@@ -671,7 +671,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1517" name="Spellbook: Body To Mind" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
@@ -679,7 +679,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1518" name="Amulet: Chant of Flame" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -687,7 +687,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1519" name="Amulet: Pa'agrio's Gift" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -695,7 +695,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1520" name="Amulet: Pa'agrio's Blessing" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -703,7 +703,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1521" name="Amulet: Chant of Fire" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -711,7 +711,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1522" name="Amulet: Chant of Battle" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -719,7 +719,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1523" name="Amulet: Chant of Shielding" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -727,7 +727,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1524" name="Amulet: Soul Shield" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -735,7 +735,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1525" name="Amulet: Life Drain" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -743,7 +743,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1526" name="Amulet: Fear" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -751,7 +751,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1527" name="Amulet: Venom" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -759,7 +759,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1528" name="Amulet: Seal of Chaos" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -767,7 +767,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1529" name="Amulet: Dreaming Spirit" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -775,7 +775,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1530" name="Amulet: Seal of Slow" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -783,7 +783,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1531" name="Amulet: Chill Flame" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -791,7 +791,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1532" name="Amulet: Burning Flame" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -799,7 +799,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1533" name="Amulet: Aura Sink" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -807,7 +807,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1534" name="Amulet: Madness" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -815,7 +815,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1535" name="Amulet: Frost Flame" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -823,7 +823,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
 </itemList>

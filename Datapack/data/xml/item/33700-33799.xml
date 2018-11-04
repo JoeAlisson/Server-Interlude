@@ -6,7 +6,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="33778" name="Soulshot (A-grade)" additionalName="Event" icon="icon.etc_spirit_bullet_silver_i00">
@@ -15,7 +15,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="33785" name="Spiritshot (A-grade)" additionalName="Event" icon="icon.etc_spell_shot_silver_i00">
@@ -24,7 +24,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

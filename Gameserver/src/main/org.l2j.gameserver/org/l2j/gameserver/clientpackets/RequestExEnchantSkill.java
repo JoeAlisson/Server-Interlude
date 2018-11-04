@@ -128,9 +128,9 @@ public final class RequestExEnchantSkill extends L2GameClientPacket
 			return;
 		}
 		
-		if (player.getSp() >= _requiredSp)
+		if (player.getSkillPoints() >= _requiredSp)
 		{
-			if (player.getExp() >= _requiredExp)
+			if (player.getExperience() >= _requiredExp)
 			{
 				if (Config.ES_SP_BOOK_NEEDED && ((_skillLvl == 101) || (_skillLvl == 141))) // only first lvl requires book
 				{
@@ -172,7 +172,7 @@ public final class RequestExEnchantSkill extends L2GameClientPacket
 			player.getStat().removeExpAndSp(_requiredExp, _requiredSp);
 			
 			StatusUpdate su = new StatusUpdate(player.getObjectId());
-			su.addAttribute(StatusUpdate.SP, player.getSp());
+			su.addAttribute(StatusUpdate.SP, player.getSkillPoints());
 			player.sendPacket(su);
 			
 			SystemMessage ep = new SystemMessage(SystemMessageId.EXP_DECREASED_BY_S1);

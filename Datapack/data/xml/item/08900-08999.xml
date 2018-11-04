@@ -7,7 +7,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1890</weight>
         <skill id="3552"/>
         <skill id="3045" level="17" triggerType="ENCHANTED" triggerValue="4"/>

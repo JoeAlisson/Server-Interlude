@@ -5,7 +5,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70300" name="Enchant Scroll of Forbidden Limit" icon="icon.etc_aidcharm_cancel_deathfire_i00">
@@ -13,7 +13,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70303" name="Monkey Bait" icon="icon.etc_gludio_fish_lure_i00">
@@ -21,7 +21,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70302" name="Blessed Enchant Scroll of Border" icon="icon.etc_doom_capture">
@@ -29,7 +29,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70305" name="Chef Monkey’s Gift" icon="icon.bm_sayha_gold_present">
@@ -37,7 +37,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="70304" name="Tuna" icon="icon.fish_huge_i12">
@@ -45,7 +45,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70307" name="Mysterious Blessed Soulshot (D-grade)" additionalName="Event" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
@@ -55,7 +55,7 @@
         <handler>BLESSED_SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55385"/>
     </item>
@@ -65,7 +65,7 @@
         <handler>BLESSED_SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55384"/>
     </item>
@@ -76,7 +76,7 @@
         <handler>BLESSED_SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55387"/>
     </item>
@@ -87,7 +87,7 @@
         <handler>BLESSED_SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55386"/>
     </item>
@@ -96,7 +96,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70310" name="Mysterious Blessed Soulshot (A-grade)" additionalName="Event" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
@@ -106,7 +106,7 @@
         <handler>BLESSED_SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55388"/>
     </item>
@@ -115,7 +115,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70312" name="Tryout Event Coin" additionalName="Event" icon="icon.etc_ev_kalie_token">
@@ -123,7 +123,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70315" name="Olympiad Warrior's Potion - CON" additionalName="Event" icon="icon.etc_lesser_potion_yellow_i00">
@@ -131,7 +131,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70314" name="Olympiad Warrior's Potion - INT" additionalName="Event" icon="icon.etc_lesser_potion_scarlet_i00">
@@ -139,7 +139,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70317" name="Olympiad Warrior's Potion - MEN" additionalName="Event" icon="icon.etc_lesser_potion_blue_i00">
@@ -147,7 +147,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70316" name="Olympiad Warrior's Potion - DEX" additionalName="Event" icon="icon.etc_lesser_potion_green_i00">
@@ -155,7 +155,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70319" name="Enhanced Olympiad Warrior's Potion - STR" additionalName="Event" icon="icon.etc_fruit_juice_glass_bottle_i10">
@@ -163,7 +163,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70318" name="Olympiad Warrior's Potion - WIT" additionalName="Event" icon="icon.etc_lesser_potion_purple_i00">
@@ -171,7 +171,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70321" name="Enhanced Olympiad Warrior's Potion - CON" additionalName="Event" icon="icon.etc_fruit_juice_glass_bottle_i07">
@@ -179,7 +179,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70320" name="Enhanced Olympiad Warrior's Potion - INT" additionalName="Event" icon="icon.etc_fruit_juice_glass_bottle_i11">
@@ -187,7 +187,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70323" name="Enhanced Olympiad Warrior's Potion - MEN" additionalName="Event" icon="icon.etc_fruit_juice_glass_bottle_i05">
@@ -195,7 +195,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70322" name="Enhanced Olympiad Warrior's Potion - DEX" additionalName="Event" icon="icon.etc_fruit_juice_glass_bottle_i03">
@@ -203,7 +203,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70325" name="Commemorative Olympiad XP/SP Scroll" additionalName="Event" icon="icon.exp_bottle_scroll">
@@ -212,7 +212,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55397" level="3"/>
     </item>
@@ -221,7 +221,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70327" name="Olympiad Commemorative Amulet - 100%" additionalName="3 hours" icon="icon.skill19226">
@@ -237,7 +237,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70329" name="Tryout Glorious Cloak" additionalName="30 days" icon="icon.vesper_cloack_i00">
@@ -246,7 +246,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <item stackable="true" id="70328" name="Olympiad Warrior's SP Scroll" additionalName="Event" icon="icon.etc_sp_scroll3_i00">
@@ -254,7 +254,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70331" name="Olympiad Warrior's Talisman" additionalName="30 days" icon="icon.npoint_talisman_stat">
@@ -263,7 +263,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </armor>
     <armor id="70330" name="Commemorative Olympiad Bracelet" additionalName="Event" icon="icon.dimension_bracelet_i05">
@@ -271,7 +271,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70333" name="Agathion - Cheerleader Mae" additionalName="30 days" icon="BranchSys.icon.br_aga_local2009_g_i00">
@@ -280,7 +280,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70332" name="Olympiad Warrior's Belt" additionalName="Event" type="LIGHT" icon="icon.belt_i03">
@@ -289,7 +289,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         </armor>
     <item stackable="true" id="70335" name="Cadmus Transformation Bracelet Pack (1 day)" additionalName="Shillien Elder" icon="icon.etc_pi_box_wish_pack">
@@ -297,7 +297,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70334" name="Cadmus Transformation Bracelet Pack (1 day)" additionalName="Prophet" icon="icon.etc_pi_box_love_pack">
@@ -305,7 +305,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70337" name="Cadmus Transformation Bracelet Pack (7 days)" additionalName="Prophet" icon="icon.etc_pi_box_love_pack">
@@ -313,7 +313,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70336" name="Cadmus Transformation Bracelet Pack (1 day)" additionalName="Elven Elder" icon="icon.ev_10th_present2">
@@ -321,7 +321,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70339" name="Cadmus Transformation Bracelet Pack (7 days)" additionalName="Elven Elder" icon="icon.ev_10th_present2">
@@ -329,7 +329,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70338" name="Cadmus Transformation Bracelet Pack (7 days)" additionalName="Shillien Elder" icon="icon.etc_pi_box_wish_pack">
@@ -337,7 +337,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70341" name="Cadmus Transformation Bracelet Pack (30 days)" additionalName="Shillien Elder" icon="icon.etc_pi_box_wish_pack">
@@ -345,7 +345,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70340" name="Cadmus Transformation Bracelet Pack (30 days)" additionalName="Prophet" icon="icon.etc_pi_box_love_pack">
@@ -353,7 +353,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70343" name="Expertise Rune (A-grade)" additionalName="1-day" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
@@ -369,7 +369,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70345" name="Expertise Rune (A-grade)" additionalName="3-day" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
@@ -409,7 +409,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70348" name="A-grade Expertise Rune Pack" additionalName="10-day" icon="icon.etc_equip_item_box_i00">
@@ -425,7 +425,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70350" name="Kusto's Support Box: Enhance Weapon" additionalName="B-grade" icon="icon.etc_bm_jewelbox_main_i00">
@@ -433,7 +433,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70353" name="Transformation Scroll: Pirate" icon="icon.etc_charm_of_courage_i03">
@@ -441,7 +441,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70352" name="Kusto's Special Alloy" type="MATERIAL" icon="icon.etc_adamantium_i00">
@@ -449,7 +449,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70355" name="Transformation Scroll: White Assassin" icon="icon.etc_charm_of_courage_i00">
@@ -457,7 +457,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70354" name="Transformation Scroll: Dark Assassin" icon="icon.etc_charm_of_courage_i05">
@@ -465,7 +465,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70357" name="Straw Hat" icon="icon.accessory_straw_hat_i00">
@@ -474,7 +474,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <item stackable="true" id="70356" name="Scroll: Enchant Armor (A-grade)" additionalName="Event" icon="icon.etc_scroll_of_enchant_armor_i04">
@@ -482,7 +482,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <armor id="70359" name="Warrior's Helmet" icon="BranchSys2.icon.br_close_helmet_i00">
@@ -491,7 +491,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70358" name="First Mate Hat" icon="icon.Accessary_middle_ages_i01">
@@ -500,7 +500,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70361" name="Red Horn of Victory" icon="icon.accessory_hair_cornu_i00">
@@ -509,7 +509,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70360" name="Chapeau" icon="icon.accessory_archer_hat_i00">
@@ -518,7 +518,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70363" name="Refined Orange Skeleton Circlet" icon="icon.accessory_animal_feather_skeleton_circlet_i00">
@@ -527,7 +527,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70362" name="Refined Black Skeleton Circlet" icon="icon.accessory_animal_skeleton_circlet_i00">
@@ -536,7 +536,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70365" name="Refined Brown Skeleton Circlet" icon="icon.accessory_animal_rage_skeleton_circlet_i00">
@@ -545,7 +545,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70364" name="Refined Green Skeleton Circlet" icon="icon.accessory_animal_warrior_skeleton_circlet_i00">
@@ -554,7 +554,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70367" name="Silver Skeleton Circlet" icon="icon.accessory_golden_skeleton_circlet_i02">
@@ -563,7 +563,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70366" name="Gold Skeleton Circlet" icon="icon.accessory_golden_skeleton_circlet_i00">
@@ -572,7 +572,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70369" name="Black Skeleton Circlet" icon="icon.accessory_golden_skeleton_circlet_i03">
@@ -581,7 +581,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70368" name="Red Skeleton Circlet" icon="icon.accessory_golden_skeleton_circlet_i01">
@@ -590,7 +590,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70371" name="Chick Silver Horn Cap" icon="icon.accessory_horn01_hat_i01">
@@ -599,7 +599,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70370" name="Chick Gold Horn Cap" icon="icon.accessory_horn01_hat_i00">
@@ -608,7 +608,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70373" name="Refined Yellow Turban" icon="icon.accessory_turban_yellow_hat_i01">
@@ -617,7 +617,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70372" name="Refined Brown Turban" icon="icon.accessory_turban_yellow_hat_i00">
@@ -626,7 +626,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70375" name="Enhanced Mining Hat" icon="icon.accessory_advence_mining_cap_i00">
@@ -635,7 +635,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70374" name="Mining Hat" icon="icon.accessory_mining_cap_i00">
@@ -644,7 +644,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70377" name="Enhanced Search Hat" icon="icon.accessory_advence_mine_search_cap_i00">
@@ -653,7 +653,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70376" name="Search Hat" icon="icon.accessory_mine_search_cap_i00">
@@ -662,7 +662,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70379" name="Circlet of Ice" icon="icon.accessory_ice_circlet_i00">
@@ -671,7 +671,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70378" name="Circlet of Flames" icon="icon.accessory_flame_circlet_i00">
@@ -680,7 +680,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70381" name="Circlet of Earthquake" icon="icon.accessory_earthquake_circlet_i00">
@@ -689,7 +689,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70380" name="Circlet of Storm" icon="icon.accessory_storm_circlet_i00">
@@ -698,7 +698,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70383" name="Circlet of Splendor" icon="icon.accessory_shining_circlet_i00">
@@ -707,7 +707,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70382" name="Circlet of Darkness" icon="icon.accessory_darkness_circlet_i00">
@@ -716,7 +716,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70385" name="Refined Devil Horn" icon="icon.accessory_devil_horn_i00">
@@ -725,7 +725,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70384" name="Refined Carnival Circlet" icon="icon.accessory_carnival_circlet_i00">
@@ -734,7 +734,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70387" name="Demon Circlet" icon="icon.Accessary_demon_circlet_i00">
@@ -743,7 +743,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70386" name="Refined Carnival Circlet" icon="icon.accessory_carnival_circlet2_i00">
@@ -752,7 +752,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70389" name="Black Half Mask" icon="icon.Accessary_black_half_mask_i00">
@@ -761,7 +761,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70388" name="Medieval Party Mask" icon="icon.accessory_middle_age_party_mask_i00">
@@ -770,7 +770,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70391" name="Phantom Mask" icon="icon.accessary_mask_of_chaotic_i00">
@@ -779,7 +779,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70390" name="Eva's Mark" icon="icon.accessory_soaring_bird_i00">
@@ -788,7 +788,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="39025"/>
         </armor>
@@ -798,7 +798,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70392" name="Black Phantom Mask" icon="icon.accessory_high_phantom_mask_i00">
@@ -807,7 +807,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70395" name="Gold-rimmed Glasses" icon="BranchSys2.icon.br_gold_eyeglass_i00">
@@ -816,7 +816,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70394" name="Goblin Circlet" icon="icon.accessory_taiwan_i00">
@@ -825,7 +825,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70397" name="Refined Romantic Chapeau: Gold" icon="icon.bm_romantic_chaperon_gold">
@@ -834,7 +834,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70396" name="Refined Romantic Chapeau: Blue" icon="icon.bm_romantic_chaperon_blue">
@@ -843,7 +843,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70399" name="Refined Romantic Chapeau: Red" icon="icon.bm_romantic_chaperon_red">
@@ -852,7 +852,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70398" name="Refined Romantic Chapeau: Green" icon="icon.bm_romantic_chaperon_green">
@@ -861,7 +861,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
 </itemList>

@@ -4,147 +4,147 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90112" name="Scroll: Chant of Victory" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90115" name="Scroll: Chant of Protection" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90114" name="Scroll: Chant of Gate" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90117" name="Scroll: Victories of Pa'agrio" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90116" name="Scroll: Great Fury" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90119" name="Scroll: Pa'agrio's Fist" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90118" name="Scroll: Seal of Disease" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90121" name="Scroll: Flames of Invincibility" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90120" name="Scroll: Seal of Despair" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90123" name="Scroll: Cleanse" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90122" name="Scroll: Balance Life" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90125" name="Scroll: Salvation" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90124" name="Scroll: Chain Heal" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90127" name="Scroll: Warrior Servitor" icon="icon.etc_magic_book_red_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90126" name="Scroll: Miracle" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90129" name="Scroll: Assassin Servitor" icon="icon.etc_magic_book_red_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90128" name="Scroll: Wizard Servitor" icon="icon.etc_magic_book_red_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90131" name="Scroll: Servitor Share" icon="icon.etc_magic_book_red_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90130" name="Scroll: Final Servitor" icon="icon.etc_magic_book_red_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90133" name="Scroll: Exciting Adventure" icon="icon.etc_magic_book_red_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <armor id="90132" name="Monster Arena Belt" additionalName="7-day" type="LIGHT" icon="icon.belt_of_tiat">
@@ -160,14 +160,14 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90134" name="Scroll: Wind Riding" icon="icon.etc_magic_book_red_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90137" name="Pendant Matte Varnish" icon="icon.bm_pendant_varnish">
@@ -175,7 +175,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90136" name="Dimensional Gift" icon="icon.etc_box_of_adventure_5_i00">
@@ -184,7 +184,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39207" level="1"/>
     </item>
@@ -193,7 +193,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90138" name="Pendant Shiny Varnish" icon="icon.bm_pendant_varnish_premium">
@@ -201,7 +201,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="90141" name="Cadmus Transformation Bracelet - Shillien Elder" additionalName="7-day" icon="icon.pi_high_agathion_bracelet_i00">
@@ -227,7 +227,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="90142" name="Cadmus Transformation Bracelet - Elven Elder" additionalName="7-day" icon="icon.pi_high_agathion_bracelet_i00">
@@ -244,7 +244,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -253,7 +253,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90147" name="Mark of Savior" icon="icon.etc_ev_kalie_token">
@@ -261,7 +261,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="90146" name="Savior’s Cube" additionalName="30-day" icon="icon.etc_crystal_cube_event_i00">
@@ -277,7 +277,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="90148" name="Savior' Growth Scroll" icon="icon.etc_kalie_hero_scroll">
@@ -285,7 +285,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon magic="true" id="90151" name="Savior’s Staff" additionalName="30-day" type="BLUNT" icon="icon.weapon_crystal_staff_i00">
@@ -337,7 +337,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="90154" name="Savior's Spear" additionalName="30-day" type="POLE" icon="icon.weapon_scorpion_i00">
@@ -432,7 +432,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90164" name="Battle Cure" icon="icon.super_elixir_potion">
@@ -440,7 +440,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item id="90167" name="Banana for a Monkey" commissionType="OTHER_ITEM" icon="Icon.ev_monkey_banana">
@@ -449,7 +449,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39223" level="1"/>
     </item>
@@ -458,7 +458,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90169" name="Mango Banana Cocktail" type="POTION" icon="icon.etc_fruit_cocktail_i03">
@@ -466,7 +466,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>3000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39225" level="1"/>
     </item>
@@ -475,7 +475,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>3000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39224" level="1"/>
     </item>
@@ -484,7 +484,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90170" name="Cherry Banana Cocktail" type="POTION" icon="icon.etc_fruit_cocktail_i02">
@@ -492,7 +492,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>3000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39226" level="1"/>
     </item>
@@ -501,7 +501,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90172" name="Gemstone of Border" icon="icon.ensoul_big_mm">
@@ -509,7 +509,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90183" name="Chef's Fish Stew: Victory" icon="icon.fish_stew_residence_cha">
@@ -517,7 +517,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90185" name="Chef's Fish Stew: Water" icon="icon.fish_stew_residence_cha">
@@ -525,7 +525,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90184" name="Chef's Fish Stew: Fire" icon="icon.fish_stew_residence_cha">
@@ -533,7 +533,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90186" name="Chef's Fish Stew: Wind" icon="icon.fish_stew_residence_cha">
@@ -541,91 +541,91 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="90101" name="Scroll: Turn to Stone" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90100" name="Scroll: Block Wind Walk" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90103" name="Scroll: Prophecy of Water" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90102" name="Scroll: Counter Critical" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90105" name="Scroll: Mass Vitalize" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90104" name="Scroll: Mass Cure Poison" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90107" name="Scroll: Eva's Blessing" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90106" name="Scroll: Mana Gain" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90109" name="Scroll: Mass Purify" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90108" name="Scroll: Prophecy of Wind" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90111" name="Scroll: Enlightenment" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="90110" name="Scroll: Lord of Vampires" icon="icon.etc_magic_book_white_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
 </itemList>

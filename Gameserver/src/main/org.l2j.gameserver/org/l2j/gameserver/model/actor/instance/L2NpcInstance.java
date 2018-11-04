@@ -253,9 +253,9 @@ public class L2NpcInstance extends L2Character {
         // Copy the skills of the L2NPCInstance from its template to the L2Character Instance
         // The skills list can be affected by spell effects so it's necessary to make a copy
         // to avoid that a spell affecting a L2NPCInstance, affects others L2NPCInstance of the same type too.
-        _skills = ((NpcTemplate) template).getSkills();
-        if (_skills != null) {
-            for (Map.Entry<Integer, L2Skill> skill : _skills.entrySet()) {
+        skills = ((NpcTemplate) template).getSkills();
+        if (skills != null) {
+            for (Map.Entry<Integer, L2Skill> skill : skills.entrySet()) {
                 addStatFuncs(skill.getValue().getStatFuncs(null, this));
             }
         }
@@ -744,8 +744,8 @@ public class L2NpcInstance extends L2Character {
 
             html1.append("<font color=\"LEVEL\">Basic Stats</font>");
             html1.append("<table border=\"0\" width=\"100%\">");
-            html1.append("<tr><td>STR</td><td>" + getSTR() + "</td><td>DEX</td><td>" + getDEX() + "</td><td>CON</td><td>" + getCON() + "</td></tr>");
-            html1.append("<tr><td>INT</td><td>" + getINT() + "</td><td>WIT</td><td>" + getWIT() + "</td><td>MEN</td><td>" + getMEN() + "</td></tr>");
+            html1.append("<tr><td>STR</td><td>" + getStrength() + "</td><td>DEX</td><td>" + getDexterity() + "</td><td>CON</td><td>" + getConstitution() + "</td></tr>");
+            html1.append("<tr><td>INT</td><td>" + getIntelligence() + "</td><td>WIT</td><td>" + getWisdom() + "</td><td>MEN</td><td>" + getMentality() + "</td></tr>");
             html1.append("</table>");
 
             html1.append("<br><center><table><tr><td><button value=\"Edit NPC\" action=\"bypass -h admin_edit_npc " + getTemplate().getId() + "\" width=100 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"><br1></td>");
@@ -791,8 +791,8 @@ public class L2NpcInstance extends L2Character {
 
             html1.append("<br><center><font color=\"LEVEL\">[Basic Stats]</font></center>");
             html1.append("<table border=0 width=\"100%\">");
-            html1.append("<tr><td>STR</td><td>" + getSTR() + "</td><td>DEX</td><td>" + getDEX() + "</td><td>CON</td><td>" + getCON() + "</td></tr>");
-            html1.append("<tr><td>INT</td><td>" + getINT() + "</td><td>WIT</td><td>" + getWIT() + "</td><td>MEN</td><td>" + getMEN() + "</td></tr>");
+            html1.append("<tr><td>STR</td><td>" + getStrength() + "</td><td>DEX</td><td>" + getDexterity() + "</td><td>CON</td><td>" + getConstitution() + "</td></tr>");
+            html1.append("<tr><td>INT</td><td>" + getIntelligence() + "</td><td>WIT</td><td>" + getWisdom() + "</td><td>MEN</td><td>" + getMentality() + "</td></tr>");
             html1.append("</table>");
 
             html1.append("<br><center><font color=\"LEVEL\">[Drop Info]</font></center>");

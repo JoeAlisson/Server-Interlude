@@ -1,20 +1,11 @@
 package org.l2j.gameserver.serverpackets;
 
-public class RestartResponse extends L2GameServerPacket
-{
-	private final String _message;
-	
-	public RestartResponse()
-	{
-		_message = "ok merong~ khaha";
-	}
-	
+public class RestartResponse extends L2GameServerPacket {
+
 	@Override
-	protected final void writeImpl()
-	{
-		writeByte(0x5f);
-		
+	protected final void writeImpl() {
+		writeByte(0x71);
 		writeInt(0x01); // 01-ok
-		writeString(_message);
+		writeString("Bye");
 	}
 }

@@ -6,7 +6,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <consume shot="1"/>
     </weapon>
@@ -16,7 +16,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <consume shot="1"/>
     </weapon>
@@ -26,7 +26,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <consume shot="1"/>
     </weapon>
@@ -36,7 +36,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1500</weight>
         <consume shot="1"/>
     </weapon>
@@ -46,7 +46,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1500</weight>
         <consume shot="1"/>
     </weapon>
@@ -56,7 +56,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1500</weight>
         <consume shot="1"/>
     </weapon>
@@ -66,7 +66,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <consume shot="1"/>
     </weapon>
@@ -76,7 +76,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <consume shot="1"/>
     </weapon>
@@ -86,7 +86,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <consume shot="1"/>
     </weapon>
@@ -96,7 +96,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1500</weight>
         <consume shot="1"/>
     </weapon>
@@ -106,7 +106,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1500</weight>
         <consume shot="1"/>
     </weapon>
@@ -116,7 +116,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1500</weight>
         <consume shot="1"/>
     </weapon>
@@ -126,7 +126,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <consume shot="1"/>
     </weapon>
@@ -136,7 +136,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <consume shot="1"/>
     </weapon>
@@ -146,7 +146,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <consume shot="1"/>
     </weapon>
@@ -156,7 +156,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1470</weight>
         <consume shot="1"/>
     </weapon>
@@ -166,7 +166,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1470</weight>
         <consume shot="1"/>
     </weapon>
@@ -176,7 +176,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1470</weight>
         <consume shot="1"/>
     </weapon>
@@ -186,7 +186,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1440</weight>
         <consume shot="1"/>
     </weapon>
@@ -196,7 +196,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1440</weight>
         <consume shot="1"/>
     </weapon>
@@ -206,7 +206,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1440</weight>
         <consume shot="1"/>
     </weapon>
@@ -216,7 +216,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1780</weight>
         <consume shot="1"/>
     </weapon>
@@ -226,7 +226,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1780</weight>
         <consume shot="1"/>
     </weapon>
@@ -236,7 +236,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1780</weight>
         <consume shot="1"/>
     </weapon>
@@ -246,7 +246,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <consume shot="1"/>
     </weapon>
@@ -256,7 +256,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <consume shot="1"/>
     </weapon>
@@ -266,7 +266,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <consume shot="1"/>
     </weapon>
@@ -276,7 +276,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <consume shot="1"/>
     </weapon>
@@ -286,7 +286,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <consume shot="1"/>
     </weapon>
@@ -296,7 +296,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <consume shot="1"/>
     </weapon>
@@ -306,7 +306,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1750</weight>
         <consume shot="1"/>
     </weapon>
@@ -316,7 +316,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1750</weight>
         <consume shot="1"/>
     </weapon>
@@ -326,7 +326,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1750</weight>
         <consume shot="1"/>
     </weapon>
@@ -336,7 +336,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <consume shot="1"/>
     </weapon>
@@ -346,7 +346,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <consume shot="1"/>
     </weapon>
@@ -356,7 +356,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <consume shot="1"/>
     </weapon>
@@ -366,7 +366,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <consume shot="1"/>
     </weapon>
@@ -376,7 +376,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <consume shot="1"/>
     </weapon>
@@ -386,7 +386,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <consume shot="1"/>
     </weapon>
@@ -396,7 +396,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1800</weight>
         <consume shot="1"/>
     </weapon>
@@ -406,7 +406,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1800</weight>
         <consume shot="1"/>
     </weapon>
@@ -416,7 +416,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1800</weight>
         <consume shot="1"/>
     </weapon>
@@ -426,7 +426,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <consume shot="1"/>
     </weapon>
@@ -436,7 +436,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <consume shot="1"/>
     </weapon>
@@ -446,7 +446,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <consume shot="1"/>
     </weapon>
@@ -456,7 +456,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1790</weight>
         <consume shot="1"/>
     </weapon>
@@ -466,7 +466,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1790</weight>
         <consume shot="1"/>
     </weapon>
@@ -476,7 +476,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1790</weight>
         <consume shot="1"/>
     </weapon>
@@ -485,7 +485,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item id="49101" name="Teleport: Giran" icon="icon.etc_capture_stone_i00">
@@ -493,7 +493,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item id="49102" name="Teleport: Oren" icon="icon.etc_capture_stone_i00">
@@ -501,7 +501,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item id="49103" name="Teleport: Ivory Tower" icon="icon.etc_capture_stone_i00">
@@ -509,7 +509,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item id="49104" name="Teleport: Hunter's Village" icon="icon.etc_capture_stone_i00">
@@ -517,7 +517,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item id="49105" name="Teleport: Entrance to Cruma Tower" icon="icon.etc_capture_stone_i00">
@@ -525,7 +525,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item id="49106" name="Teleport: Entrance to Dragon Valley" icon="icon.etc_capture_stone_i00">
@@ -533,7 +533,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item id="49107" name="Teleport: Dragon Valley Bridge" icon="icon.etc_capture_stone_i00">
@@ -541,21 +541,21 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="49108" name="Beauty Chest" icon="icon.etc_box_of_adventure_2_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49109" name="Buff Scrolls Chest" icon="icon.etc_box_of_adventure_3_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49110" name="High-Quality Dye Chest" icon="icon.etc_box_of_adventure_4_i00">
@@ -563,7 +563,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="32012"/>
     </item>
@@ -572,7 +572,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="32013"/>
     </item>
@@ -580,49 +580,49 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49113" name="Fist Weapon Chest" additionalName="Grade C" icon="icon.etc_treasure_box_i03">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49114" name="Spear Chest" additionalName="Grade C" icon="icon.etc_treasure_box_i04">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49115" name="Blunt Weapon Chest" additionalName="Grade C" icon="icon.etc_treasure_box_i05">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49116" name="Dagger Chest" additionalName="Grade C" icon="icon.etc_treasure_box_i06">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49117" name="One-Handed Sword Chest" additionalName="Grade C" icon="icon.etc_treasure_box_i07">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49118" name="Bow Chest" additionalName="Grade C" icon="icon.etc_treasure_box_i08">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="49119" name="Halloween Suit (15-day)" type="HEAVY" icon="icon.ev_wp_halloween">
@@ -631,7 +631,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         </armor>
     <armor id="49120" name="Halloween Suit" type="HEAVY" icon="icon.ev_wp_halloween">
@@ -640,7 +640,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         </armor>
     <armor id="49121" name="Party Mask" icon="icon.etc_party_mask_i00">
@@ -649,7 +649,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="49122" name="Ring of Macken (15-day)" icon="icon.ev_11th_rare_acc_ring">
@@ -658,7 +658,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="49123" name="Ring of Macken" icon="icon.ev_11th_rare_acc_ring">
@@ -666,7 +666,7 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="49124" name="Earring of Macken (15-day)" icon="icon.ev_11th_rare_acc_earing">
@@ -675,7 +675,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="49125" name="Earring of Macken" icon="icon.ev_11th_rare_acc_earing">
@@ -683,7 +683,7 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="49126" name="Necklace of Macken (15-day)" icon="icon.ev_11th_rare_acc_necklace">
@@ -692,7 +692,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="49127" name="Necklace of Macken" icon="icon.ev_11th_rare_acc_necklace">
@@ -700,7 +700,7 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <item stackable="true" id="49128" name="Souvenir Box" icon="icon.new_user_box">
@@ -708,7 +708,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49129" name="11th Anniversary Coin" icon="icon.etc_11th_token">
@@ -716,7 +716,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49130" name="Summon Scroll: Byo" icon="icon.etc_11th_event_solo">
@@ -724,7 +724,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="49131" name="Magic Number Cube" icon="icon.etc_11th_event_group">
@@ -732,7 +732,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="49132" name="Membership Card" additionalName="11th Sale" icon="icon.ev_buff_11th">
@@ -740,7 +740,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="49133" name="Venetian Fleece - Low Level" additionalName="15-day" icon="icon.skill19226">
@@ -757,7 +757,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2530</weight>
         <consume shot="1"/>
     </weapon>
@@ -766,7 +766,7 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2530</weight>
         <consume shot="1"/>
     </weapon>
@@ -783,7 +783,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49138" name="Venetian Fleece Chest (High Level)" icon="icon.etc_pi_box_love_pack">
@@ -791,7 +791,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49139" name="Dual Sword Gift Chest" icon="icon.etc_pi_box_joy_pack">
@@ -799,7 +799,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="49140" name="Horn of Glory" additionalName="Empower" type="SWORD" icon="icon.weapon_horn_of_glory_i01">
@@ -808,7 +808,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>540</weight>
         <consume shot="1"/>
     </weapon>
@@ -818,7 +818,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>540</weight>
         <consume shot="1"/>
     </weapon>
@@ -828,7 +828,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>540</weight>
         <consume shot="1"/>
     </weapon>
@@ -838,7 +838,7 @@
         <crystalInfo type="B"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1440</weight>
         <consume shot="1"/>
     </weapon>
@@ -848,7 +848,7 @@
         <crystalInfo type="B"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1440</weight>
         <consume shot="1"/>
     </weapon>
@@ -858,7 +858,7 @@
         <crystalInfo type="B"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1440</weight>
         <consume shot="1"/>
     </weapon>
@@ -868,7 +868,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <consume shot="1"/>
     </weapon>
@@ -878,7 +878,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <consume shot="1"/>
     </weapon>
@@ -888,7 +888,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <consume shot="1"/>
     </weapon>
@@ -898,7 +898,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <consume shot="1"/>
     </weapon>
@@ -908,7 +908,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <consume shot="1"/>
     </weapon>
@@ -918,7 +918,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <consume shot="1"/>
     </weapon>

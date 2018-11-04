@@ -6,7 +6,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -16,7 +16,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </armor>
     <weapon id="37697" name="Valentine One-handed Magic Blunt Weapon" type="BLUNT" icon="icon.ev_hallowinday_candy_i00">
@@ -24,7 +24,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -34,7 +34,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -44,7 +44,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -54,7 +54,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -64,7 +64,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -74,7 +74,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -84,7 +84,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -94,7 +94,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -104,7 +104,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <skill id="3599"/>
         <damage distance="66" width="120"/>
@@ -116,7 +116,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </armor>
     <weapon id="37694" name="Valentine Bow" type="BOW" icon="icon.ev_hallowinday_candy_i00">
@@ -124,7 +124,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>
@@ -133,7 +133,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <consume shot="1"/>
     </weapon>

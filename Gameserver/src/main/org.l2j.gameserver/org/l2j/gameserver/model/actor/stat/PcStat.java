@@ -78,7 +78,7 @@ public class PcStat extends PlayableStat
 		}
 		
 		/*
-		 * Micht : Use of UserInfo for C5 StatusUpdate su = new StatusUpdate(activeChar.getObjectId()); su.addAttribute(StatusUpdate.EXP, getExp()); activeChar.sendPacket(su);
+		 * Micht : Use of UserInfo for C5 StatusUpdate su = new StatusUpdate(activeChar.getObjectId()); su.addAttribute(StatusUpdate.EXP, getExperience()); activeChar.sendPacket(su);
 		 */
 		activeChar.sendPacket(new UserInfo(activeChar));
 		

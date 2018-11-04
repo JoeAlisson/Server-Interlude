@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="10250" name="Adventurer Hat - Event" icon="icon.accessory_explorer_hat_i00">
@@ -14,7 +14,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
 </itemList>

@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>650</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -15,7 +15,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>630</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -25,7 +25,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -35,7 +35,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -45,7 +45,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -55,7 +55,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>660</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -65,7 +65,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>630</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -75,7 +75,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>610</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -85,7 +85,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>620</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -95,7 +95,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -105,7 +105,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -115,7 +115,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -125,7 +125,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -135,7 +135,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -145,7 +145,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>970</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -155,7 +155,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>610</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -165,7 +165,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29101" name="Premium Dye of MEN (MEN + 2 INT - 2)" icon="icon.etc_men_hena_i02">
@@ -173,7 +173,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29102" name="Premium Dye of MEN (MEN + 2 WIT - 2)" icon="icon.etc_men_hena_i02">
@@ -181,7 +181,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29103" name="Premium Dye of WIT (WIT + 2 INT - 2)" icon="icon.etc_wit_hena_i02">
@@ -189,7 +189,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29104" name="Premium Dye of WIT (WIT + 2 MEN - 2)" icon="icon.etc_wit_hena_i02">
@@ -197,7 +197,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29105" name="Premium Dye of STR (STR + 3 CON - 3)" icon="icon.etc_str_hena_i02">
@@ -205,7 +205,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29106" name="Premium Dye of STR (STR + 3 DEX - 3)" icon="icon.etc_str_hena_i02">
@@ -213,7 +213,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29107" name="Premium Dye of CON (CON+ 3 STR - 3)" icon="icon.etc_con_hena_i02">
@@ -221,7 +221,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29108" name="Premium Dye of CON (CON + 3 DEX - 3)" icon="icon.etc_con_hena_i02">
@@ -229,7 +229,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29109" name="Premium Dye of DEX (DEX + 3 STR - 3)" icon="icon.etc_dex_hena_i02">
@@ -237,7 +237,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29110" name="Premium Dye of DEX (DEX + 3 CON - 3)" icon="icon.etc_dex_hena_i02">
@@ -245,7 +245,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29111" name="Premium Dye of INT (INT + 3 MEN - 3)" icon="icon.etc_int_hena_i02">
@@ -253,7 +253,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29112" name="Premium Dye of INT (INT+ 3 WIT - 3)" icon="icon.etc_int_hena_i02">
@@ -261,7 +261,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29113" name="Premium Dye of MEN (MEN + 3 INT - 3)" icon="icon.etc_men_hena_i02">
@@ -269,7 +269,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29114" name="Premium Dye of MEN (MEN + 3 WIT - 3)" icon="icon.etc_men_hena_i02">
@@ -277,7 +277,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29115" name="Premium Dye of WIT (WIT + 3 INT - 3)" icon="icon.etc_wit_hena_i02">
@@ -285,7 +285,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29116" name="Premium Dye of WIT (WIT + 3 MEN - 3)" icon="icon.etc_wit_hena_i02">
@@ -293,7 +293,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29117" name="Premium Greater Dye of STR (STR + 4 CON - 3)" icon="icon.etc_str_hena_i02">
@@ -301,7 +301,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29118" name="Premium Greater Dye of STR (STR + 4 DEX - 3)" icon="icon.etc_str_hena_i02">
@@ -309,7 +309,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29119" name="Premium Greater Dye of CON (CON + 4 STR - 3)" icon="icon.etc_con_hena_i02">
@@ -317,7 +317,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29120" name="Premium Greater Dye of CON (CON + 4 DEX - 3)" icon="icon.etc_con_hena_i02">
@@ -325,7 +325,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29121" name="Premium Greater Dye of DEX (DEX + 4 STR - 3)" icon="icon.etc_dex_hena_i02">
@@ -333,7 +333,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29122" name="Premium Greater Dye of DEX (DEX + 4 CON - 3)" icon="icon.etc_dex_hena_i02">
@@ -341,7 +341,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29123" name="Premium Greater Dye of INT (INT + 4 MEN - 3)" icon="icon.etc_int_hena_i02">
@@ -349,7 +349,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29124" name="Premium Greater Dye of INT (INT + 4 WIT - 3)" icon="icon.etc_int_hena_i02">
@@ -357,7 +357,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29125" name="Premium Greater Dye of MEN (MEN + 4 INT - 3)" icon="icon.etc_men_hena_i02">
@@ -365,7 +365,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29126" name="Premium Greater Dye of MEN (MEN + 4 WIT - 3)" icon="icon.etc_men_hena_i02">
@@ -373,7 +373,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29127" name="Premium Greater Dye of WIT (WIT + 4 INT - 3)" icon="icon.etc_wit_hena_i02">
@@ -381,7 +381,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29128" name="Premium Greater Dye of WIT (WIT + 4 MEN - 3)" icon="icon.etc_wit_hena_i02">
@@ -389,7 +389,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="29129" name="Newbie Kit" icon="icon.etc_pi_gift_box_i00">
@@ -397,7 +397,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29130" name="Newbie Kit" icon="icon.etc_pi_gift_box_i00">
@@ -405,7 +405,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29131" name="Newbie Kit" icon="icon.etc_pi_gift_box_i00">
@@ -413,7 +413,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29132" name="Newbie Kit" icon="icon.etc_pi_gift_box_i00">
@@ -421,7 +421,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29133" name="Newbie Kit" icon="icon.etc_pi_gift_box_i00">
@@ -429,7 +429,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29134" name="Newbie Kit" icon="icon.etc_pi_gift_box_i00">
@@ -437,7 +437,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29135" name="Traveller's Package" icon="icon.etc_pi_gift_box_i00">
@@ -445,7 +445,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29136" name="Traveller's Package" icon="icon.etc_pi_gift_box_i00">
@@ -453,7 +453,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29137" name="Traveller's Package" icon="icon.etc_pi_gift_box_i00">
@@ -461,7 +461,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29138" name="Traveller's Package" icon="icon.etc_pi_gift_box_i00">
@@ -469,7 +469,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29139" name="Traveller's Package" icon="icon.etc_pi_gift_box_i00">
@@ -477,7 +477,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29140" name="Traveller's Package" icon="icon.etc_pi_gift_box_i00">
@@ -485,7 +485,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29141" name="Master's Package" icon="icon.etc_pi_gift_box_i00">
@@ -493,7 +493,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29142" name="Master's Package" icon="icon.etc_pi_gift_box_i00">
@@ -501,7 +501,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29143" name="Master's Package" icon="icon.etc_pi_gift_box_i00">
@@ -509,7 +509,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29144" name="Master's Package" icon="icon.etc_pi_gift_box_i00">
@@ -517,7 +517,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29145" name="Master's Package" icon="icon.etc_pi_gift_box_i00">
@@ -525,7 +525,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29146" name="Master's Package" icon="icon.etc_pi_gift_box_i00">
@@ -533,7 +533,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29147" name="Master's Package" icon="icon.etc_pi_gift_box_i00">
@@ -541,7 +541,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29148" name="Feather of Blessing" icon="icon.blessed_feather_i00">
@@ -549,7 +549,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29149" name="Teleport: Talking Island Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
@@ -558,7 +558,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -573,7 +573,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -588,7 +588,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -603,7 +603,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -618,7 +618,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -633,7 +633,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -648,7 +648,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -662,7 +662,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1150</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -672,7 +672,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1140</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -682,7 +682,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -692,7 +692,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -702,7 +702,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1120</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -712,7 +712,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1120</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -722,7 +722,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -732,7 +732,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -742,7 +742,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -752,7 +752,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1050</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -762,7 +762,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -772,7 +772,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -782,7 +782,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -792,7 +792,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1090</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -802,7 +802,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1080</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -812,7 +812,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="5"/>
@@ -822,7 +822,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1060</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="5"/>
@@ -832,7 +832,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -842,7 +842,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>760</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -852,7 +852,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -862,7 +862,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="3"/>
@@ -872,7 +872,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="5"/>
@@ -882,7 +882,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -892,7 +892,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -902,7 +902,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1590</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -912,7 +912,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -922,7 +922,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>
@@ -932,7 +932,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1530</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="2"/>

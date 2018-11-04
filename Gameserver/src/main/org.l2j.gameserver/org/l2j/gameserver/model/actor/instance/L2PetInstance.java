@@ -16,7 +16,6 @@ import org.l2j.gameserver.model.entity.database.repository.PetsRepository;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
-import org.l2j.gameserver.templates.ItemTypeGroup;
 import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -996,7 +995,7 @@ public class L2PetInstance extends L2Summon
 	@Override
 	public final int getSkillLevel(int skillId)
 	{
-		if ((_skills == null) || (_skills.get(skillId) == null))
+		if ((skills == null) || (skills.get(skillId) == null))
 		{
 			return -1;
 		}

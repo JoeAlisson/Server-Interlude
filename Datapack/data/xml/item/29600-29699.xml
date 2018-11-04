@@ -6,7 +6,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55084"/>
     </item>
@@ -16,7 +16,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55085"/>
     </item>
@@ -26,7 +26,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55086" level="2"/>
     </item>
@@ -35,7 +35,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <armor id="29600" name="Hair Accessory for the Event" additionalName="30-day" icon="icon.accessory_taiwan_i00">
@@ -55,7 +55,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29602" name="Newbie Kit - Lvl 2" icon="icon.etc_pi_gift_box_i00">
@@ -64,7 +64,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="10"/>
@@ -76,7 +76,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="20"/>
@@ -88,7 +88,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="25"/>
@@ -100,7 +100,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="30"/>
@@ -112,7 +112,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="35"/>
@@ -124,7 +124,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="40"/>
@@ -135,7 +135,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29609" name="Ticket: Temporary Weapon (C-grade)" icon="icon.etc_lottery_card_i00">
@@ -143,7 +143,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="29610" name="Katana" additionalName="30-day" type="SWORD" icon="icon.weapon_katana_i00">
@@ -396,7 +396,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="29633" name="Daily Present - VIP 7" icon="BranchIcon.Icon.etc_vip_present_i06">
@@ -405,7 +405,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="29634" name="Newbie Kit - Lv. 1" icon="icon.etc_pi_gift_box_i00">
@@ -414,7 +414,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29635" name="Newbie Kit - Lv. 2" icon="icon.etc_pi_gift_box_i00">
@@ -423,7 +423,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="10"/>
@@ -435,7 +435,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="20"/>
@@ -447,7 +447,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="25"/>
@@ -459,7 +459,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="30"/>
@@ -471,7 +471,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="35"/>
@@ -483,7 +483,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="40"/>
@@ -494,7 +494,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29642" name="Mysterious Blessed No-grade Spiritshot" additionalName="Not in Use" icon="BranchIcon.Icon.g_etc_spiritshot_i01">
@@ -502,7 +502,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29643" name="Mysterious Soulshot (D-grade)" additionalName="Not in Use" icon="br_cashtex.item.br_cash_soulshot_d_i00">
@@ -511,7 +511,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29644" name="Mysterious Blessed Spiritshot (D-grade)" additionalName="Not in Use" icon="br_cashtex.item.br_cash_spiritshot_d_i00">
@@ -520,7 +520,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29645" name="Mysterious Soulshot (C-grade)" additionalName="Not in Use" icon="br_cashtex.item.br_cash_soulshot_c_i00">
@@ -529,7 +529,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29646" name="Mysterious Blessed Spiritshot (C-grade)" additionalName="Not in Use" icon="br_cashtex.item.br_cash_spiritshot_c_i00">
@@ -538,7 +538,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29647" name="XP/SP Scroll" type="SCROLL" icon="icon.etc_recall_exp_scroll">
@@ -547,7 +547,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55000"/>
     </item>
@@ -557,7 +557,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55000"/>
     </item>
@@ -567,7 +567,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55000" level="2"/>
     </item>
@@ -577,7 +577,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55000" level="4"/>
     </item>
@@ -587,7 +587,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -602,7 +602,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>10000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -617,7 +617,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -632,7 +632,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55055"/>
     </item>
@@ -642,7 +642,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55056" level="2"/>
     </item>
@@ -652,7 +652,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="24"/>
@@ -664,7 +664,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="25"/>
@@ -676,7 +676,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="28"/>
@@ -688,7 +688,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="30"/>
@@ -700,7 +700,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="32"/>
@@ -712,7 +712,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="35"/>
@@ -724,7 +724,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="38"/>
@@ -736,7 +736,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="40"/>
@@ -748,7 +748,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="42"/>
@@ -760,7 +760,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="45"/>
@@ -772,7 +772,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="49"/>
@@ -796,7 +796,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29669" name="Castle XP/SP Scroll - Normal" type="SCROLL" icon="icon.etc_recall_exp_scroll">
@@ -805,7 +805,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55061" level="2"/>
     </item>
@@ -815,7 +815,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55062" level="2"/>
     </item>
@@ -825,7 +825,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55063"/>
     </item>
@@ -835,7 +835,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55064"/>
     </item>
@@ -845,7 +845,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="55065"/>
     </item>
@@ -855,7 +855,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="55066"/>
     </item>
@@ -865,7 +865,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="55067"/>
     </item>
@@ -875,7 +875,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="55068"/>
     </item>
@@ -896,7 +896,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55069"/>
         </armor>
@@ -917,7 +917,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55070"/>
         </armor>
@@ -938,7 +938,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55071"/>
         </armor>
@@ -948,7 +948,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="29684" name="Scroll: Shield" type="SCROLL" icon="icon.etc_scroll_white_i00">
@@ -957,7 +957,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="39015"/>
     </item>
@@ -967,7 +967,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="39014"/>
     </item>
@@ -976,7 +976,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29687" name="Scroll: Agility" type="SCROLL" icon="icon.etc_scroll_white_i00">
@@ -984,7 +984,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29688" name="Scroll: Regeneration" type="SCROLL" icon="icon.etc_scroll_white_i00">
@@ -992,7 +992,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29689" name="Scroll: Magic Barrier" type="SCROLL" icon="icon.etc_scroll_white_i00">
@@ -1000,7 +1000,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29690" name="Scroll: Blessed Body" type="SCROLL" icon="icon.etc_scroll_white_i00">
@@ -1008,7 +1008,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29691" name="Scroll: Blessed Soul" type="SCROLL" icon="icon.etc_scroll_white_i00">
@@ -1016,7 +1016,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29692" name="LineageII Chest" icon="icon.ev_10th_present2">
@@ -1025,7 +1025,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55072"/>
     </item>
@@ -1035,7 +1035,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55073"/>
     </item>
@@ -1045,7 +1045,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55074"/>
     </item>
@@ -1055,7 +1055,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55083"/>
     </item>

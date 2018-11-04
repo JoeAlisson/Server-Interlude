@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="706" name="Basilisk's Claw" icon="icon.item_normal141">
@@ -13,7 +13,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="707" name="Spore Sac" icon="icon.etc_pouch_yellow_i00">
@@ -21,7 +21,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="708" name="Sylph Headband" icon="icon.item_system03">
@@ -29,7 +29,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="709" name="Leather Shirt" icon="icon.armor_leather_shirt_i00">
@@ -38,7 +38,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>400</weight>
         </armor>
     <armor id="710" name="Durable Leather Shirt" icon="icon.armor_leather_shirt_i00">
@@ -47,7 +47,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>400</weight>
         </armor>
     <armor id="711" name="Piece Bone Breastplate" icon="icon.armor_mithril_banded_mail_i00">
@@ -56,7 +56,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>800</weight>
         </armor>
     <armor id="712" name="Half Plate Armor" icon="icon.armor_dwarven_scale_mail_i00">
@@ -65,7 +65,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1200</weight>
         </armor>
     <armor id="713" name="Leather Pants" icon="icon.armor_squires_pants_i00">
@@ -74,7 +74,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>250</weight>
         </armor>
     <armor id="714" name="Durable Leather Pants" icon="icon.armor_leather_pants_i00">
@@ -83,7 +83,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         </armor>
     <armor id="715" name="Piece Bone Gaiters" icon="icon.armor_mithril_banded_gaiters_i00">
@@ -92,7 +92,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         </armor>
     <armor id="716" name="Plate Gaiters" icon="icon.armor_dwarven_scale_mail_i00">
@@ -101,7 +101,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>800</weight>
         </armor>
     <armor id="717" name="Leather Gloves" icon="icon.armor_gauntlet_i00">
@@ -110,7 +110,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <armor id="718" name="Durable Leather Gloves" icon="icon.armor_gauntlet_i00">
@@ -119,7 +119,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="719" name="Quality Leather Gloves" icon="icon.armor_gauntlet_i00">
@@ -128,7 +128,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="720" name="Reinforced Gloves" icon="icon.armor_gauntlet_i00">
@@ -137,7 +137,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>200</weight>
         </armor>
     <armor id="721" name="Leather Boots" icon="icon.armor_iron_boots_i00">
@@ -146,7 +146,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="722" name="Durable Leather Boots" icon="icon.armor_iron_boots_i00">
@@ -155,7 +155,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="723" name="Quality Leather Boots" icon="icon.armor_feet99">
@@ -164,7 +164,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>200</weight>
         </armor>
     <armor id="724" name="Reinforced Boots" icon="icon.armor_iron_boots_i00">
@@ -173,7 +173,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>250</weight>
         </armor>
     <item stackable="true" id="729" name="Scroll: Enchant Weapon (A-grade)" type="ENCHT_WP" commissionType="SCROLL_ENCHANT_WEAPON" icon="icon.etc_scroll_of_enchant_weapon_i04">
@@ -182,7 +182,7 @@
         <handler>ENCHANT_SCROLL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="2006"/>
     </item>
@@ -192,7 +192,7 @@
         <handler>ENCHANT_SCROLL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="2007"/>
     </item>
@@ -201,7 +201,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="734" name="Wind Walk Potion" type="POTION" commissionType="POTION" icon="icon.etc_potion_green_i00">
@@ -210,7 +210,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -225,7 +225,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -240,7 +240,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="2013"/>
     </item>
@@ -250,7 +250,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="2014"/>
     </item>
@@ -260,7 +260,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -270,7 +270,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="740" name="Broken Blade Bottom" icon="icon.weapon_great_sword_i00">
@@ -278,7 +278,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="741" name="Broken Blade Top" icon="icon.etc_sword_body_i00">
@@ -286,7 +286,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="742" name="Altran's Note" icon="icon.etc_piece_of_paper_white_i00">
@@ -294,7 +294,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="743" name="Sword of Sentinel" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_broad_sword_i00">
@@ -303,7 +303,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -314,7 +314,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1800</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -324,7 +324,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="746" name="Alberius' List" icon="icon.etc_piece_of_paper_white_i00">
@@ -332,7 +332,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon magic="true" id="747" name="Wand of Adept" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_apprentices_wand_i00">
@@ -341,7 +341,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -352,7 +352,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1350</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -362,7 +362,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="751" name="Cracked Kinship Crystal" icon="icon.item_canuse07">
@@ -370,7 +370,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="752" name="Orc Amulet" icon="icon.etc_feather_gold_i00">
@@ -378,7 +378,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="753" name="Silverleaf Brooch" icon="icon.item_normal12">
@@ -386,7 +386,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon magic="true" id="754" name="Red Sunset Staff" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_cedar_staff_i00">
@@ -395,7 +395,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1700</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -405,7 +405,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="702" name="Wolf Pelt" icon="icon.etc_leather_brown_i00">
@@ -413,7 +413,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="703" name="Giant Spider's Poison Sac" icon="icon.etc_pouch_gray_i00">
@@ -421,7 +421,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

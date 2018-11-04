@@ -6,7 +6,7 @@
         <crystalInfo type="A" count="75"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1190</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -16,7 +16,7 @@
         <crystalInfo type="B" count="69"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1170</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -26,7 +26,7 @@
         <crystalInfo type="B" count="107"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -36,7 +36,7 @@
         <crystalInfo type="C" count="143"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1200</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -46,7 +46,7 @@
         <crystalInfo type="D" count="38"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>650</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -56,7 +56,7 @@
         <crystalInfo type="D" count="60"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>640</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -66,7 +66,7 @@
         <crystalInfo type="D" count="135"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>630</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -76,7 +76,7 @@
         <crystalInfo type="D" count="177"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>620</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -86,7 +86,7 @@
         <crystalInfo type="C" count="98"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>600</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -96,7 +96,7 @@
         <crystalInfo type="C" count="143"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1920</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -106,7 +106,7 @@
         <crystalInfo type="B" count="72"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1210</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -116,7 +116,7 @@
         <crystalInfo type="B" count="69"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -125,7 +125,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item id="687" name="Darin's Letter" icon="icon.etc_scroll_gray_i00">
@@ -133,7 +133,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="688" name="Roxxy's Kerchief" icon="icon.etc_piece_of_cloth_white_i00">
@@ -141,7 +141,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="625" name="Bone Shield" commissionType="SHIELD" icon="icon.shield_bone_shield_i00">
@@ -149,7 +149,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -158,7 +158,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="626" name="Bronze Shield" commissionType="SHIELD" icon="icon.shield_bronze_shield_i00">
@@ -167,7 +167,7 @@
         <crystalInfo type="D" count="39"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1370</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -176,7 +176,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="627" name="Aspis" commissionType="SHIELD" icon="icon.shield_aspis_i00">
@@ -185,7 +185,7 @@
         <crystalInfo type="D" count="63"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1350</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -194,7 +194,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="628" name="Hoplon" commissionType="SHIELD" icon="icon.shield_hoplon_i00">
@@ -203,7 +203,7 @@
         <crystalInfo type="D" count="96"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1340</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -212,7 +212,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="629" name="Kite Shield" commissionType="SHIELD" icon="icon.shield_kite_shield_i00">
@@ -221,7 +221,7 @@
         <crystalInfo type="D" count="142"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1320</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -230,7 +230,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="630" name="Square Shield" commissionType="SHIELD" icon="icon.shield_square_shield_i00">
@@ -239,7 +239,7 @@
         <crystalInfo type="D" count="187"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1310</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -248,7 +248,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="631" name="Eldarake" commissionType="SHIELD" icon="icon.shield_eldarake_i00">
@@ -257,7 +257,7 @@
         <crystalInfo type="C" count="53"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1290</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -266,7 +266,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="632" name="Knight's Shield" commissionType="SHIELD" icon="icon.shield_knight_shield_i00">
@@ -275,7 +275,7 @@
         <crystalInfo type="C" count="67"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1260</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -284,7 +284,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="633" name="Zubei's Shield" commissionType="SHIELD" icon="icon.shield_shrnoens_shield_i00">
@@ -293,7 +293,7 @@
         <crystalInfo type="B" count="72"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1210</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -302,7 +302,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="698" name="Gilbert's List" icon="icon.item_normal37">
@@ -310,7 +310,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="699" name="Orc's Nose" icon="icon.item_canuse05">
@@ -318,7 +318,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

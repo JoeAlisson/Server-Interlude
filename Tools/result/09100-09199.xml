@@ -5,7 +5,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -14,7 +14,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>900</weight>
         <skill id="3261" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>

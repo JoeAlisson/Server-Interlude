@@ -59,7 +59,7 @@ import static org.l2j.gameserver.ai.Intention.AI_INTENTION_FOLLOW;
  * <li>L2CastleGuardInstance</li> <li>L2DoorInstance</li> <li>L2NpcInstance</li> <li>L2PlayableInstance</li><BR>
  * <B><U> Concept of L2CharTemplate</U> :</B><BR>
  * Each L2Character owns generic and static properties (ex : allTemplates Keltir have the same number of HP...). All of those properties are stored in a different template for each type of L2Character. Each template is loaded once in the server cache memory (reduce memory use). When a new instance of
- * L2Character is spawned, server just create a link between the instance and the template. This link is stored in <B>_template</B><BR>
+ * L2Character is spawned, server just create a link between the instance and the template. This link is stored in <B>template</B><BR>
  *
  */
 public abstract class L2Character extends L2Object {
@@ -70,15 +70,15 @@ public abstract class L2Character extends L2Object {
      * <B><U> Concept</U> :</B><BR>
      * <BR>
      * Each L2Character owns generic and static properties (ex : allTemplates Keltir have the same number of HP...). All of those properties are stored in a different template for each type of L2Character. Each template is loaded once in the server cache memory (reduce memory use). When a new instance of
-     * L2Character is spawned, server just create a link between the instance and the template This link is stored in <B>_template</B><BR>
+     * L2Character is spawned, server just create a link between the instance and the template This link is stored in <B>template</B><BR>
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>Set the _template of the L2Character</li> <li>Set _overloaded to false (the charcater can take more items)</li><BR>
+     * <li>Set the template of the L2Character</li> <li>Set _overloaded to false (the charcater can take more items)</li><BR>
      * <BR>
      * <li>If L2Character is a L2NPCInstance, copy skills from template to object</li> <li>If L2Character is a L2NPCInstance, link _calculators to NPC_STD_CALCULATOR</li><BR>
      * <BR>
-     * <li>If L2Character is NOT a L2NPCInstance, create an empty _skills slot</li> <li>If L2Character is a L2PcInstance or L2Summon, copy basic Calculator set to object</li><BR>
+     * <li>If L2Character is NOT a L2NPCInstance, create an empty skills slot</li> <li>If L2Character is a L2PcInstance or L2Summon, copy basic Calculator set to object</li><BR>
      * <BR>
      *
      * @param objectId Identifier of the object to initialized
@@ -88,7 +88,7 @@ public abstract class L2Character extends L2Object {
         super(objectId);
         getKnownList();
 
-        _template = template;
+        this.template = template;
 
         initSkillsStat(template);
     }
@@ -100,6 +100,146 @@ public abstract class L2Character extends L2Object {
         }
         return _knownList;
     }
+
+    public int getSkillLevel(int skillId) {
+        if (isNull(skills)) {
+            return -1;
+        }
+
+        var skill = skills.get(skillId);
+
+        if (isNull(skill)) {
+            return -1;
+        }
+        return skill.getLevel();
+    }
+
+    public final String getTitle() {
+        return title;
+    }
+
+    public int getStrength() {
+        return getStat().getSTR();
+    }
+
+    public int getDexterity() {
+        return getStat().getDEX();
+    }
+
+    public int getConstitution() {
+        return getStat().getCON();
+    }
+
+    public int getIntelligence() {
+        return getStat().getINT();
+    }
+
+    public int getWisdom() {
+        return getStat().getWIT();
+    }
+
+    public int getMentality() {
+        return getStat().getMEN();
+    }
+
+    public int getMaxHp() {
+        return getStat().getMaxHp();
+    }
+
+    public final double getCurrentHp() {
+        return getStatus().getCurrentHp();
+    }
+
+    public int getMaxMp() {
+        return getStat().getMaxMp();
+    }
+
+    public final double getCurrentMp() {
+        return getStatus().getCurrentMp();
+    }
+
+    public final double getCurrentCp() {
+        return getStatus().getCurrentCp();
+    }
+
+    public final int getMaxCp() {
+        return getStat().getMaxCp();
+    }
+
+    public int getPAtk(L2Character target) {
+        return getStat().getPAtk(target);
+    }
+
+    public int getPAtkSpd() {
+        return getStat().getPAtkSpd();
+    }
+
+    public int getPDef(L2Character target) {
+        return getStat().getPDef(target);
+    }
+
+    public int getEvasionRate(L2Character target) {
+        return getStat().getEvasionRate(target);
+    }
+
+    public int getAccuracy() {
+        return getStat().getAccuracy();
+    }
+
+    public int getCriticalHit(L2Character target, L2Skill skill) {
+        return getStat().getCriticalHit(target, skill);
+    }
+
+    public int getMAtk(L2Character target, L2Skill skill) {
+        return getStat().getMAtk(target, skill);
+    }
+
+    public int getMAtkSpd() {
+        return getStat().getMAtkSpd();
+    }
+
+    public int getMDef(L2Character target, L2Skill skill) {
+        return getStat().getMDef(target, skill);
+    }
+
+    public final int getMCriticalHit(L2Character target, L2Skill skill) {
+        return getStat().getMCriticalHit(target, skill);
+    }
+
+    public float getFireDefense() {
+        return template.getFireDefense();
+    }
+
+    public float getWaterDefense() {
+        return template.getWaterDefense();
+    }
+
+    public float getWindDefense() {
+        return template.getWindDefense();
+    }
+
+    public float getEarthDefense() {
+        return template.getEarthDefense();
+    }
+
+    public float getHolyDefense() {
+        return template.getHolyDefense();
+    }
+
+    public float getUnholyDefense() {
+        return template.getUnholyDefense();
+    }
+
+    public int getRunSpeed() {
+        return getStat().getRunSpeed();
+    }
+
+    public final boolean isRunning() {
+        return _isRunning;
+    }
+
+
+
 
     // #############################################################################
     /**
@@ -233,14 +373,14 @@ public abstract class L2Character extends L2Object {
     private CharStatus _status;
 
     /**
-     * The _template.
+     * The template.
      */
-    private CharTemplate _template; // The link on the L2CharTemplate object containing generic and static properties of this L2Character type (ex : Max HP, Speed...)
+    private CharTemplate template; // The link on the L2CharTemplate object containing generic and static properties of this L2Character type (ex : Max HP, Speed...)
 
     /**
-     * The _title.
+     * The title.
      */
-    private String _title;
+    private String title;
 
     /**
      * The _ai class.
@@ -269,7 +409,7 @@ public abstract class L2Character extends L2Object {
 
 
     protected Calculator[] _calculators;
-    protected  Map<Integer, L2Skill> _skills;
+    protected  Map<Integer, L2Skill> skills;
 
     /**
      * Zone system.
@@ -351,8 +491,8 @@ public abstract class L2Character extends L2Object {
     }
 
     protected void initSkillsStat(CharTemplate template) {
-        // Initialize the FastMap _skills to null
-        _skills = new ConcurrentHashMap<>();
+        // Initialize the FastMap skills to null
+        skills = new ConcurrentHashMap<>();
 
         // If L2Character is a L2PcInstance or a L2Summon, create the basic calculator set
         _calculators = new Calculator[Stats.NUM_STATS];
@@ -2033,15 +2173,6 @@ public abstract class L2Character extends L2Object {
     }
 
     /**
-     * Return True if the L2Character is running.
-     *
-     * @return true, if is running
-     */
-    public final boolean isRunning() {
-        return _isRunning;
-    }
-
-    /**
      * Sets the checks if is running.
      *
      * @param value the new checks if is running
@@ -2207,7 +2338,7 @@ public abstract class L2Character extends L2Object {
      * @return the template
      */
     public CharTemplate getTemplate() {
-        return _template;
+        return template;
     }
 
     /**
@@ -2216,7 +2347,7 @@ public abstract class L2Character extends L2Object {
      * <B><U> Concept</U> :</B><BR>
      * <BR>
      * Each L2Character owns generic and static properties (ex : allTemplates Keltir have the same number of HP...). All of those properties are stored in a different template for each type of L2Character. Each template is loaded once in the server cache memory (reduce memory use). When a new instance of
-     * L2Character is spawned, server just create a link between the instance and the template This link is stored in <B>_template</B><BR>
+     * L2Character is spawned, server just create a link between the instance and the template This link is stored in <B>template</B><BR>
      * <BR>
      * <B><U> Assert </U> :</B><BR>
      * <BR>
@@ -2226,16 +2357,7 @@ public abstract class L2Character extends L2Object {
      * @param template the new template
      */
     protected final void setTemplate(CharTemplate template) {
-        _template = template;
-    }
-
-    /**
-     * Return the Title of the L2Character.
-     *
-     * @return the title
-     */
-    public final String getTitle() {
-        return _title;
+        this.template = template;
     }
 
     /**
@@ -2244,7 +2366,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new title
      */
     public final void setTitle(String value) {
-        _title = value;
+        title = value;
     }
 
     /**
@@ -5963,11 +6085,11 @@ public abstract class L2Character extends L2Object {
     }
 
     /**
-     * Add a skill to the L2Character _skills and its Func objects to the calculator set of the L2Character.<BR>
+     * Add a skill to the L2Character skills and its Func objects to the calculator set of the L2Character.<BR>
      * <BR>
      * <B><U> Concept</U> :</B><BR>
      * <BR>
-     * All skills own by a L2Character are identified in <B>_skills</B><BR>
+     * All skills own by a L2Character are identified in <B>skills</B><BR>
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
@@ -5986,7 +6108,7 @@ public abstract class L2Character extends L2Object {
 
         if (newSkill != null) {
             // Replace oldSkill by newSkill or Add the newSkill
-            oldSkill = _skills.put(newSkill.getId(), newSkill);
+            oldSkill = skills.put(newSkill.getId(), newSkill);
 
             // If an old skill has been replaced, remove allTemplates its Func objects
             if (oldSkill != null) {
@@ -6005,11 +6127,11 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * <B><U> Concept</U> :</B><BR>
      * <BR>
-     * All skills own by a L2Character are identified in <B>_skills</B><BR>
+     * All skills own by a L2Character are identified in <B>skills</B><BR>
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>Remove the skill from the L2Character _skills</li> <li>Remove allTemplates its Func objects from the L2Character calculator set</li><BR>
+     * <li>Remove the skill from the L2Character skills</li> <li>Remove allTemplates its Func objects from the L2Character calculator set</li><BR>
      * <BR>
      * <B><U> Overriden in </U> :</B><BR>
      * <BR>
@@ -6024,8 +6146,8 @@ public abstract class L2Character extends L2Object {
             return null;
         }
 
-        // Remove the skill from the L2Character _skills
-        L2Skill oldSkill = _skills.remove(skill.getId());
+        // Remove the skill from the L2Character skills
+        L2Skill oldSkill = skills.remove(skill.getId());
 
         // Remove allTemplates its Func objects from the L2Character calculator set
         if (oldSkill != null) {
@@ -6040,37 +6162,17 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * <B><U> Concept</U> :</B><BR>
      * <BR>
-     * All skills own by a L2Character are identified in <B>_skills</B> the L2Character <BR>
+     * All skills own by a L2Character are identified in <B>skills</B> the L2Character <BR>
      * <BR>
      *
      * @return the allTemplates skills
      */
     public final L2Skill[] getAllSkills() {
-        if (_skills == null) {
+        if (skills == null) {
             return new L2Skill[0];
         }
 
-        return _skills.values().toArray(new L2Skill[_skills.values().size()]);
-    }
-
-    /**
-     * Return the level of a skill owned by the L2Character.<BR>
-     * <BR>
-     *
-     * @param skillId The identifier of the L2Skill whose level must be returned
-     * @return The level of the L2Skill identified by skillId
-     */
-    public int getSkillLevel(int skillId) {
-        if (_skills == null) {
-            return -1;
-        }
-
-        L2Skill skill = _skills.get(skillId);
-
-        if (skill == null) {
-            return -1;
-        }
-        return skill.getLevel();
+        return skills.values().toArray(new L2Skill[skills.values().size()]);
     }
 
     /**
@@ -6081,11 +6183,11 @@ public abstract class L2Character extends L2Object {
      * @return the known skill
      */
     public final L2Skill getKnownSkill(int skillId) {
-        if (_skills == null) {
+        if (skills == null) {
             return null;
         }
 
-        return _skills.get(skillId);
+        return skills.get(skillId);
     }
 
     /**
@@ -6979,16 +7081,6 @@ public abstract class L2Character extends L2Object {
         return getStat().calcStat(stat, init, target, skill);
     }
 
-    // Property - Public
-
-    /**
-     * Gets the accuracy.
-     *
-     * @return the accuracy
-     */
-    public int getAccuracy() {
-        return getStat().getAccuracy();
-    }
 
     /**
      * Gets the attack speed multiplier.
@@ -6997,24 +7089,6 @@ public abstract class L2Character extends L2Object {
      */
     public final float getAttackSpeedMultiplier() {
         return getStat().getAttackSpeedMultiplier();
-    }
-
-    /**
-     * Gets the cON.
-     *
-     * @return the cON
-     */
-    public int getCON() {
-        return getStat().getCON();
-    }
-
-    /**
-     * Gets the dEX.
-     *
-     * @return the dEX
-     */
-    public int getDEX() {
-        return getStat().getDEX();
     }
 
     /**
@@ -7029,36 +7103,6 @@ public abstract class L2Character extends L2Object {
     }
 
     /**
-     * Gets the critical hit.
-     *
-     * @param target the target
-     * @param skill  the skill
-     * @return the critical hit
-     */
-    public int getCriticalHit(L2Character target, L2Skill skill) {
-        return getStat().getCriticalHit(target, skill);
-    }
-
-    /**
-     * Gets the evasion rate.
-     *
-     * @param target the target
-     * @return the evasion rate
-     */
-    public int getEvasionRate(L2Character target) {
-        return getStat().getEvasionRate(target);
-    }
-
-    /**
-     * Gets the iNT.
-     *
-     * @return the iNT
-     */
-    public int getINT() {
-        return getStat().getINT();
-    }
-
-    /**
      * Gets the magical attack range.
      *
      * @param skill the skill
@@ -7066,84 +7110,6 @@ public abstract class L2Character extends L2Object {
      */
     public final int getMagicalAttackRange(L2Skill skill) {
         return getStat().getMagicalAttackRange(skill);
-    }
-
-    /**
-     * Gets the max cp.
-     *
-     * @return the max cp
-     */
-    public final int getMaxCp() {
-        return getStat().getMaxCp();
-    }
-
-    /**
-     * Gets the m atk.
-     *
-     * @param target the target
-     * @param skill  the skill
-     * @return the m atk
-     */
-    public int getMAtk(L2Character target, L2Skill skill) {
-        return getStat().getMAtk(target, skill);
-    }
-
-    /**
-     * Gets the m atk spd.
-     *
-     * @return the m atk spd
-     */
-    public int getMAtkSpd() {
-        return getStat().getMAtkSpd();
-    }
-
-    /**
-     * Gets the max mp.
-     *
-     * @return the max mp
-     */
-    public int getMaxMp() {
-        return getStat().getMaxMp();
-    }
-
-    /**
-     * Gets the max hp.
-     *
-     * @return the max hp
-     */
-    public int getMaxHp() {
-        return getStat().getMaxHp();
-    }
-
-    /**
-     * Gets the m critical hit.
-     *
-     * @param target the target
-     * @param skill  the skill
-     * @return the m critical hit
-     */
-    public final int getMCriticalHit(L2Character target, L2Skill skill) {
-        return getStat().getMCriticalHit(target, skill);
-    }
-
-    /**
-     * Gets the m def.
-     *
-     * @param target the target
-     * @param skill  the skill
-     * @return the m def
-     */
-    public int getMDef(L2Character target, L2Skill skill) {
-        return getStat().getMDef(target, skill);
-    }
-
-    /**
-     * Gets the mEN.
-     *
-     * @return the mEN
-     */
-    public int getMEN() {
-        return getStat().getMEN();
     }
 
     /**
@@ -7163,16 +7129,6 @@ public abstract class L2Character extends L2Object {
      */
     public float getMovementSpeedMultiplier() {
         return getStat().getMovementSpeedMultiplier();
-    }
-
-    /**
-     * Gets the p atk.
-     *
-     * @param target the target
-     * @return the p atk
-     */
-    public int getPAtk(L2Character target) {
-        return getStat().getPAtk(target);
     }
 
     /**
@@ -7225,14 +7181,6 @@ public abstract class L2Character extends L2Object {
         return getStat().getPAtkPlants(target);
     }
 
-    /**
-     * Gets the p atk spd.
-     *
-     * @return the p atk spd
-     */
-    public int getPAtkSpd() {
-        return getStat().getPAtkSpd();
-    }
 
     /**
      * Gets the p atk undead.
@@ -7255,31 +7203,12 @@ public abstract class L2Character extends L2Object {
     }
 
     /**
-     * Gets the p def.
-     *
-     * @param target the target
-     * @return the p def
-     */
-    public int getPDef(L2Character target) {
-        return getStat().getPDef(target);
-    }
-
-    /**
      * Gets the physical attack range.
      *
      * @return the physical attack range
      */
     public final int getPhysicalAttackRange() {
         return getStat().getPhysicalAttackRange();
-    }
-
-    /**
-     * Gets the run speed.
-     *
-     * @return the run speed
-     */
-    public int getRunSpeed() {
-        return getStat().getRunSpeed();
     }
 
     /**
@@ -7291,14 +7220,6 @@ public abstract class L2Character extends L2Object {
         return getStat().getShldDef();
     }
 
-    /**
-     * Gets the sTR.
-     *
-     * @return the sTR
-     */
-    public int getSTR() {
-        return getStat().getSTR();
-    }
 
     /**
      * Gets the walk speed.
@@ -7309,14 +7230,6 @@ public abstract class L2Character extends L2Object {
         return getStat().getWalkSpeed();
     }
 
-    /**
-     * Gets the wIT.
-     *
-     * @return the wIT
-     */
-    public int getWIT() {
-        return getStat().getWIT();
-    }
 
     // =========================================================
     // Status - NEED TO REMOVE ONCE L2CHARTATUS IS COMPLETE
@@ -7381,16 +7294,6 @@ public abstract class L2Character extends L2Object {
         getStatus().stopHpMpRegeneration();
     }
 
-    // Property - Public
-
-    /**
-     * Gets the current cp.
-     *
-     * @return the current cp
-     */
-    public final double getCurrentCp() {
-        return getStatus().getCurrentCp();
-    }
 
     /**
      * Sets the current cp.
@@ -7408,15 +7311,6 @@ public abstract class L2Character extends L2Object {
      */
     public final void setCurrentCp(double newCp) {
         getStatus().setCurrentCp(newCp);
-    }
-
-    /**
-     * Gets the current hp.
-     *
-     * @return the current hp
-     */
-    public final double getCurrentHp() {
-        return getStatus().getCurrentHp();
     }
 
     /**
@@ -7438,14 +7332,6 @@ public abstract class L2Character extends L2Object {
         getStatus().setCurrentHpMp(newHp, newMp);
     }
 
-    /**
-     * Gets the current mp.
-     *
-     * @return the current mp
-     */
-    public final double getCurrentMp() {
-        return getStatus().getCurrentMp();
-    }
 
     /**
      * Sets the current mp.

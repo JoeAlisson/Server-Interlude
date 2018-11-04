@@ -24,7 +24,7 @@ public abstract class L2PlayableInstance extends L2Character {
 	 * <BR>
 	 * <B><U> Actions</U> :</B><BR>
 	 * <BR>
-	 * <li>Call the L2Character constructor to create an empty _skills slot and link copy basic Calculator set to this L2PlayableInstance</li><BR>
+	 * <li>Call the L2Character constructor to create an empty skills slot and link copy basic Calculator set to this L2PlayableInstance</li><BR>
 	 * <BR>
 	 * @param objectId Identifier of the object to initialized
 	 * @param template The L2CharTemplate to apply to the L2PlayableInstance

@@ -6,7 +6,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -21,7 +21,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>600</weight>
         <skill id="2104" level="1"/>
     </item>
@@ -31,7 +31,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2105" level="1"/>
     </item>
@@ -41,7 +41,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2106" level="1"/>
     </item>
@@ -51,7 +51,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <skill id="2107" level="1"/>
     </item>
@@ -61,7 +61,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <skill id="2108" level="1"/>
     </item>
@@ -71,7 +71,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="2110" level="1"/>
     </item>
@@ -81,7 +81,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="2111" level="1"/>
     </item>
@@ -91,7 +91,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2112" level="1"/>
     </item>
@@ -101,7 +101,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2113" level="1"/>
     </item>
@@ -111,7 +111,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <skill id="2114" level="1"/>
     </item>
@@ -121,7 +121,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="2116" level="1"/>
     </item>
@@ -131,7 +131,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="2117" level="1"/>
     </item>
@@ -141,7 +141,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2118" level="1"/>
     </item>
@@ -151,7 +151,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2119" level="1"/>
     </item>
@@ -161,7 +161,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <skill id="2120" level="1"/>
     </item>
@@ -171,7 +171,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>498</recipeId>
     </item>
@@ -181,7 +181,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>499</recipeId>
     </item>
@@ -191,7 +191,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>500</recipeId>
     </item>
@@ -201,7 +201,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>501</recipeId>
     </item>
@@ -211,7 +211,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>503</recipeId>
     </item>
@@ -221,7 +221,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>504</recipeId>
     </item>
@@ -231,7 +231,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>505</recipeId>
     </item>
@@ -241,7 +241,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>506</recipeId>
     </item>
@@ -251,7 +251,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>508</recipeId>
     </item>
@@ -261,7 +261,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>509</recipeId>
     </item>
@@ -271,7 +271,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>510</recipeId>
     </item>
@@ -281,7 +281,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>511</recipeId>
     </item>
@@ -291,7 +291,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="2136" level="1"/>
     </item>
@@ -300,7 +300,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1530</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="44" width="120"/>
@@ -312,7 +312,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="44" width="120"/>
@@ -324,7 +324,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="44" width="120"/>
@@ -336,7 +336,7 @@
         <crystalInfo type="A" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>7700</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -346,7 +346,7 @@
         <crystalInfo type="A" count="178"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3320</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -356,7 +356,7 @@
         <crystalInfo type="A" count="107"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>570</weight>
         <bodyPart>HEAD</bodyPart>
     </armor>
@@ -366,7 +366,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -376,7 +376,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -386,7 +386,7 @@
         <crystalInfo type="A" count="75"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1190</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -396,7 +396,7 @@
         <crystalInfo type="A" count="463"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>9780</weight>
         <bodyPart>ONE_PIECE</bodyPart>
     </armor>
@@ -406,7 +406,7 @@
         <crystalInfo type="A" count="107"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>570</weight>
         <bodyPart>HEAD</bodyPart>
     </armor>
@@ -416,7 +416,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>580</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -426,7 +426,7 @@
         <crystalInfo type="A" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -436,7 +436,7 @@
         <crystalInfo type="A" count="214"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4300</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -446,7 +446,7 @@
         <crystalInfo type="A" count="134"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1480</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -456,7 +456,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2065" level="4"/>
     </item>
@@ -466,7 +466,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2065" level="5"/>
     </item>
@@ -476,7 +476,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2065" level="6"/>
     </item>
@@ -486,7 +486,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2065" level="7"/>
     </item>
@@ -496,7 +496,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2065" level="8"/>
     </item>
@@ -506,7 +506,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5206" name="Mercenary Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_fix_i00">
@@ -515,7 +515,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5207" name="Mercenary Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_fix_i00">
@@ -524,7 +524,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5208" name="Mercenary Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_fix_i00">
@@ -533,7 +533,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5209" name="Mercenary Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_fix_i00">
@@ -542,7 +542,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5210" name="Mercenary Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_sword_move_i00">
@@ -551,7 +551,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5211" name="Mercenary Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_pole_move_i00">
@@ -560,7 +560,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5212" name="Mercenary Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_bow_move_i00">
@@ -569,7 +569,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5213" name="Mercenary Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_cleric_move_i00">
@@ -578,7 +578,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5214" name="Mercenary Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_wizard_move_i00">
@@ -587,7 +587,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5215" name="Mercenary Posting Ticket (Teleporter1)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_teleporter_fix_i00">
@@ -596,7 +596,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5218" name="Mercenary Posting Ticket (Teleporter2)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_teleporter_fix_i00">
@@ -605,7 +605,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5219" name="Mercenary Posting Ticket (Teleporter3)" type="CASTLE_GUARD" commissionType="OTHER_ITEM" icon="icon.mticket_teleporter_fix_i00">
@@ -614,7 +614,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5220" name="Metal Hardener" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_plate_blue_i00">
@@ -622,7 +622,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="5230" name="Recipe: Mithril Arrow" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
@@ -631,7 +631,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>496</recipeId>
     </item>
@@ -641,7 +641,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>497</recipeId>
     </item>
@@ -650,7 +650,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="5233" name="Keshanberk*Keshanberk" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
@@ -659,7 +659,7 @@
         <crystalInfo type="A" count="1128"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <skill id="3045" level="17" triggerType="ENCHANTED" triggerValue="4"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -672,7 +672,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -687,7 +687,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -702,7 +702,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -717,7 +717,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -732,7 +732,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -747,7 +747,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -762,7 +762,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -777,7 +777,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -792,7 +792,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -807,7 +807,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -822,7 +822,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -837,7 +837,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -852,7 +852,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -867,7 +867,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>50</weight>
         <condition messageId="113" includeName="true">
             <not>

@@ -5,7 +5,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4101" name="Zubei's Shield Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -13,7 +13,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4102" name="Zubei's Helmet Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -21,7 +21,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4103" name="Pata Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -29,7 +29,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4104" name="Great Sword Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -37,7 +37,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4105" name="Heavy War Axe Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
@@ -45,7 +45,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4106" name="Spirit's Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
@@ -53,7 +53,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4107" name="Keshanberk Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -61,7 +61,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4108" name="Sword of Valhalla Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -69,7 +69,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4109" name="Kris Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -77,7 +77,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4110" name="Twilight Knife Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -85,7 +85,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4111" name="Arthro Nail Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -93,7 +93,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4112" name="Dark Elven Longbow Shaft" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
@@ -101,7 +101,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4113" name="Great Axe Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
@@ -109,7 +109,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4114" name="Damascus Sword Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -117,7 +117,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4115" name="Lance Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -125,7 +125,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4116" name="Deadman's Glory Stone" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
@@ -133,7 +133,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4117" name="Art of Battle Axe Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -141,7 +141,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4118" name="Evil Spirit Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
@@ -149,7 +149,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4119" name="Demon's Dagger Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -157,7 +157,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4120" name="Bellion Cestus Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
@@ -165,7 +165,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4121" name="Bow of Peril Shaft" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
@@ -173,7 +173,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4122" name="Recipe: Maestro Holder" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
@@ -182,7 +182,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>474</recipeId>
     </item>
@@ -192,7 +192,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>475</recipeId>
     </item>
@@ -202,7 +202,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>476</recipeId>
     </item>
@@ -212,7 +212,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>477</recipeId>
     </item>
@@ -222,7 +222,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>329</recipeId>
     </item>
@@ -232,7 +232,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>331</recipeId>
     </item>
@@ -242,7 +242,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>333</recipeId>
     </item>
@@ -252,7 +252,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>335</recipeId>
     </item>
@@ -262,7 +262,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>337</recipeId>
     </item>
@@ -272,7 +272,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>339</recipeId>
     </item>
@@ -282,7 +282,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>340</recipeId>
     </item>
@@ -292,7 +292,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>342</recipeId>
     </item>
@@ -302,7 +302,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>344</recipeId>
     </item>
@@ -312,7 +312,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>346</recipeId>
     </item>
@@ -322,7 +322,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>348</recipeId>
     </item>
@@ -332,7 +332,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>350</recipeId>
     </item>
@@ -342,7 +342,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>352</recipeId>
     </item>
@@ -352,7 +352,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>354</recipeId>
     </item>
@@ -362,7 +362,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>356</recipeId>
     </item>
@@ -372,7 +372,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>358</recipeId>
     </item>
@@ -382,7 +382,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>360</recipeId>
     </item>
@@ -392,7 +392,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>362</recipeId>
     </item>
@@ -402,7 +402,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>364</recipeId>
     </item>
@@ -412,7 +412,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>366</recipeId>
     </item>
@@ -422,7 +422,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>368</recipeId>
     </item>
@@ -432,7 +432,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>370</recipeId>
     </item>
@@ -442,7 +442,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>372</recipeId>
     </item>
@@ -452,7 +452,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>374</recipeId>
     </item>
@@ -462,7 +462,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>376</recipeId>
     </item>
@@ -472,7 +472,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>378</recipeId>
     </item>
@@ -482,7 +482,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>380</recipeId>
     </item>
@@ -492,7 +492,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>382</recipeId>
     </item>
@@ -502,7 +502,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>384</recipeId>
     </item>
@@ -512,7 +512,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>386</recipeId>
     </item>
@@ -522,7 +522,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>388</recipeId>
     </item>
@@ -532,7 +532,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>390</recipeId>
     </item>
@@ -542,7 +542,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>392</recipeId>
     </item>
@@ -552,7 +552,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>394</recipeId>
     </item>
@@ -562,7 +562,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>396</recipeId>
     </item>
@@ -572,7 +572,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>398</recipeId>
     </item>
@@ -582,7 +582,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>400</recipeId>
     </item>
@@ -592,7 +592,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>402</recipeId>
     </item>
@@ -602,7 +602,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>404</recipeId>
     </item>
@@ -612,7 +612,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>406</recipeId>
     </item>
@@ -622,7 +622,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>408</recipeId>
     </item>
@@ -632,7 +632,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>410</recipeId>
     </item>
@@ -642,7 +642,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>412</recipeId>
     </item>
@@ -652,7 +652,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>414</recipeId>
     </item>
@@ -662,7 +662,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>416</recipeId>
     </item>
@@ -672,7 +672,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>418</recipeId>
     </item>
@@ -682,7 +682,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>420</recipeId>
     </item>
@@ -692,7 +692,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>422</recipeId>
     </item>
@@ -702,7 +702,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>424</recipeId>
     </item>
@@ -712,7 +712,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>426</recipeId>
     </item>
@@ -722,7 +722,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>428</recipeId>
     </item>
@@ -732,7 +732,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>430</recipeId>
     </item>
@@ -742,7 +742,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>432</recipeId>
     </item>
@@ -752,7 +752,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>434</recipeId>
     </item>
@@ -762,7 +762,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>435</recipeId>
     </item>
@@ -772,7 +772,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>437</recipeId>
     </item>
@@ -782,7 +782,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>439</recipeId>
     </item>
@@ -792,7 +792,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>441</recipeId>
     </item>
@@ -802,7 +802,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>443</recipeId>
     </item>
@@ -812,7 +812,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>445</recipeId>
     </item>
@@ -822,7 +822,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>447</recipeId>
     </item>
@@ -832,7 +832,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>449</recipeId>
     </item>
@@ -842,7 +842,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>451</recipeId>
     </item>
@@ -852,7 +852,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>453</recipeId>
     </item>
@@ -862,7 +862,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>455</recipeId>
     </item>
@@ -872,7 +872,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>457</recipeId>
     </item>
@@ -882,7 +882,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>459</recipeId>
     </item>
@@ -892,7 +892,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>461</recipeId>
     </item>
@@ -902,7 +902,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>463</recipeId>
     </item>
@@ -912,7 +912,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>465</recipeId>
     </item>
@@ -922,7 +922,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>467</recipeId>
     </item>
@@ -932,7 +932,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>469</recipeId>
     </item>
@@ -942,7 +942,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>471</recipeId>
     </item>
@@ -952,7 +952,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>473</recipeId>
     </item>

@@ -7,7 +7,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="3014"/>
         <damage distance="40" width="120"/>
@@ -20,7 +20,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="1201" level="18" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="40" width="120"/>
@@ -33,7 +33,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="3074" level="2" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="40" width="120"/>
@@ -46,7 +46,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>740</weight>
         <skill id="1044" level="3" chance="30" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="40" width="120"/>
@@ -59,7 +59,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>740</weight>
         <skill id="1035" level="4" chance="50" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="40" width="120"/>
@@ -72,7 +72,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>740</weight>
         <skill id="1164" level="11" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="40" width="120"/>
@@ -85,7 +85,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -97,7 +97,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -109,7 +109,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1980</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -121,7 +121,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -133,7 +133,7 @@
         <crystalInfo type="A" count="1128"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1900</weight>
         <damage distance="46" width="120"/>
         <consume shot="1"/>
@@ -145,7 +145,7 @@
         <crystalInfo type="D" count="743"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -157,7 +157,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -169,7 +169,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1430</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -181,7 +181,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1380</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -193,7 +193,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1350</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -205,7 +205,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -217,7 +217,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -229,7 +229,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1620</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -241,7 +241,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -253,7 +253,7 @@
         <crystalInfo type="A" count="1128"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -265,7 +265,7 @@
         <crystalInfo type="A" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1530</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -277,7 +277,7 @@
         <crystalInfo type="D" count="2545"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -289,7 +289,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -301,7 +301,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -313,7 +313,7 @@
         <crystalInfo type="A" count="1128"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1910</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -325,7 +325,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>640</weight>
         </armor>
     <armor id="7851" name="Moon Armor" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t1001_ul_i00">
@@ -335,7 +335,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>9870</weight>
         </armor>
     <armor id="7852" name="Moon Gauntlets" additionalName="Heavy" commissionType="GLOVES" icon="icon.armor_t1001_g_i00">
@@ -345,7 +345,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>640</weight>
         </armor>
     <armor id="7853" name="Moon Boots" additionalName="Heavy" commissionType="FEET" icon="icon.armor_t1001_b_i00">
@@ -355,7 +355,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         </armor>
     <armor id="7854" name="Moon Shell" type="LIGHT" commissionType="FULL_BODY" icon="icon.armor_t1002_ul_i00">
@@ -365,7 +365,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5400</weight>
         </armor>
     <armor id="7855" name="Moon Leather Gloves" additionalName="Light" commissionType="GLOVES" icon="icon.armor_t1002_g_i00">
@@ -375,7 +375,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>640</weight>
         </armor>
     <armor id="7856" name="Moon Shoes" additionalName="Light" commissionType="FEET" icon="icon.armor_t1002_b_i00">
@@ -385,7 +385,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         </armor>
     <armor id="7857" name="Moon Cape" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t1003_ul_i00">
@@ -395,7 +395,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2450</weight>
         </armor>
     <armor id="7858" name="Moon Silk Gloves" additionalName="Robe" commissionType="GLOVES" icon="icon.armor_t1003_g_i00">
@@ -405,7 +405,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>640</weight>
         </armor>
     <armor id="7859" name="Moon Sandals" additionalName="Robe" commissionType="FEET" icon="icon.armor_t1003_b_i00">
@@ -415,7 +415,7 @@
         <crystalInfo type="D" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         </armor>
 </itemList>

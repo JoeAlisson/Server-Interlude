@@ -149,7 +149,6 @@ public abstract class CharTemplate extends Entity<Integer> {
         mDef = magicDefense.getNecklace() + magicDefense.getLeftEarring() + magicDefense.getLeftRing() + magicDefense.getRightEarring() + magicDefense.getRightRing();
     }
 
-
     public static CharTemplate objectTemplate(int hp, int pdef, int mdef, float collisionRadius, float collisionHeight) {
         CharTemplate template = new CharTemplate() {
             @Override
@@ -352,27 +351,27 @@ public abstract class CharTemplate extends Entity<Integer> {
         return sleepVuln;
     }
 
-    public float getFireVuln() {
+    public float getFireDefense() {
         return fireVuln;
     }
 
-    public float getWindVuln() {
+    public float getWindDefense() {
         return windVuln;
     }
 
-    public float getWaterVuln() {
+    public float getWaterDefense() {
         return waterVuln;
     }
 
-    public float getEarthVuln() {
+    public float getEarthDefense() {
         return earthVuln;
     }
 
-    public float getHolyVuln() {
+    public float getHolyDefense() {
         return holyVuln;
     }
 
-    public float getDarkVuln() {
+    public float getUnholyDefense() {
         return darkVuln;
     }
 

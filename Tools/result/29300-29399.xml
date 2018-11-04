@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="5"/>
@@ -15,7 +15,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="5"/>
@@ -25,7 +25,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2140</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -36,7 +36,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2120</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -47,7 +47,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2060</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -58,7 +58,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -69,7 +69,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -80,7 +80,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -91,7 +91,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -102,7 +102,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -113,7 +113,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2070</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -124,7 +124,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -135,7 +135,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1950</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="1" shot="2"/>
@@ -145,7 +145,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="1" shot="2"/>
@@ -155,7 +155,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1910</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="1" shot="2"/>
@@ -165,7 +165,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1900</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="1" shot="2"/>
@@ -175,7 +175,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1880</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="1" shot="2"/>
@@ -185,7 +185,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1870</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="3"/>
@@ -195,7 +195,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="3"/>
@@ -205,7 +205,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1850</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="3"/>
@@ -215,7 +215,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="3"/>
@@ -225,7 +225,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1840</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="3"/>
@@ -235,7 +235,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="5"/>
@@ -245,7 +245,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="5"/>
@@ -255,7 +255,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1590</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="2"/>
@@ -265,7 +265,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1580</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="2"/>
@@ -275,7 +275,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="2"/>
@@ -285,7 +285,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="2"/>
@@ -295,7 +295,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="2"/>
@@ -305,7 +305,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="2"/>
@@ -315,7 +315,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="3"/>
@@ -325,7 +325,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="3"/>
@@ -335,7 +335,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="3"/>
@@ -345,7 +345,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="5"/>
@@ -355,7 +355,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="5"/>
@@ -365,7 +365,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8920</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -374,7 +374,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8970</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -383,7 +383,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3960</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -392,7 +392,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4020</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -401,7 +401,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8620</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -410,7 +410,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8540</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -419,7 +419,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8420</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -428,7 +428,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8320</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -437,7 +437,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8220</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -446,7 +446,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8670</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -455,7 +455,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8720</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -464,7 +464,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8820</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -473,7 +473,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3770</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -482,7 +482,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3820</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -491,7 +491,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3870</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -500,7 +500,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3840</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -509,7 +509,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3770</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -518,7 +518,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3830</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -527,7 +527,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3820</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -536,7 +536,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3860</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -545,7 +545,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4720</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -554,7 +554,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4770</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -563,7 +563,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4770</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -572,7 +572,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4820</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -581,7 +581,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4830</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -590,7 +590,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4830</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -599,7 +599,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1610</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -608,7 +608,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1630</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -617,7 +617,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1680</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -626,7 +626,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1670</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -635,7 +635,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -644,7 +644,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -653,7 +653,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1700</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -662,7 +662,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4700</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -671,7 +671,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4580</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -680,7 +680,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4570</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -689,7 +689,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4570</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -698,7 +698,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4520</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -707,7 +707,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -716,7 +716,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -725,7 +725,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1580</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -734,7 +734,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -743,7 +743,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -752,7 +752,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>6100</weight>
         <bodyPart>ONE_PIECE</bodyPart>
     </armor>
@@ -761,7 +761,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -770,7 +770,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -779,7 +779,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2110</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -788,7 +788,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2120</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -797,7 +797,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2150</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -806,7 +806,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2140</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -815,7 +815,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1060</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -824,7 +824,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -833,7 +833,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1030</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -842,7 +842,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1080</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -851,7 +851,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -860,7 +860,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -869,7 +869,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>720</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -878,7 +878,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -887,7 +887,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -896,7 +896,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2040</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -905,7 +905,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -914,7 +914,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -923,7 +923,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -932,7 +932,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2400</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -941,7 +941,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>

@@ -5,7 +5,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4097" name="Sealed Zubei's Boot Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -13,7 +13,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4098" name="Sealed Avadon Boot Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -21,7 +21,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4099" name="Sealed Doom Boot Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -29,7 +29,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4000" name="Mercenary Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_pole_fix_i00">
@@ -38,7 +38,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4001" name="Mercenary Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_bow_fix_i00">
@@ -47,7 +47,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4002" name="Mercenary Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_cleric_fix_i00">
@@ -56,7 +56,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4003" name="Mercenary Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_wizard_fix_i00">
@@ -65,7 +65,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4004" name="Mercenary Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_sword_move_i00">
@@ -74,7 +74,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4005" name="Mercenary Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_pole_move_i00">
@@ -83,7 +83,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4006" name="Mercenary Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_bow_move_i00">
@@ -92,7 +92,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4007" name="Mercenary Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_cleric_move_i00">
@@ -101,7 +101,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4008" name="Mercenary Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_wizard_move_i00">
@@ -110,7 +110,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4009" name="Mercenary Posting Ticket (Teleporter1)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
@@ -119,7 +119,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4010" name="Mercenary Posting Ticket (Teleporter2)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
@@ -128,7 +128,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4011" name="Mercenary Posting Ticket (Teleporter3)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
@@ -137,7 +137,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4012" name="Mercenary Posting Ticket (Sword/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_sword_fix_i00">
@@ -146,7 +146,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4013" name="Mercenary Posting Ticket (Spear/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_pole_fix_i00">
@@ -155,7 +155,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4014" name="Mercenary Posting Ticket (Bow/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_bow_fix_i00">
@@ -164,7 +164,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4015" name="Mercenary Posting Ticket (Cleric/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_cleric_fix_i00">
@@ -173,7 +173,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4016" name="Mercenary Posting Ticket (Wizard/Stationary)" type="CASTLE_GUARD" icon="icon.mticket_wizard_fix_i00">
@@ -182,7 +182,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4017" name="Mercenary Posting Ticket (Sword/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_sword_move_i00">
@@ -191,7 +191,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4018" name="Mercenary Posting Ticket (Spear/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_pole_move_i00">
@@ -200,7 +200,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4019" name="Mercenary Posting Ticket (Bow/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_bow_move_i00">
@@ -209,7 +209,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4020" name="Mercenary Posting Ticket (Cleric/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_cleric_move_i00">
@@ -218,7 +218,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4021" name="Mercenary Posting Ticket (Wizard/Mobile)" type="CASTLE_GUARD" icon="icon.mticket_wizard_move_i00">
@@ -227,7 +227,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4022" name="Mercenary Posting Ticket (Teleporter1)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
@@ -236,7 +236,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4023" name="Mercenary Posting Ticket (Teleporter2)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
@@ -245,7 +245,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4024" name="Mercenary Posting Ticket (Teleporter3)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
@@ -254,7 +254,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4025" name="Mercenary Posting Ticket (Teleporter4)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
@@ -263,7 +263,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4026" name="Mercenary Posting Ticket (Teleporter5)" type="CASTLE_GUARD" icon="icon.mticket_teleporter_fix_i00">
@@ -272,7 +272,7 @@
         <handler>MERCENARY_TICKET</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="4027" name="Bouquet" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.etc_plan_i00">
@@ -281,7 +281,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <damage distance="40" width="120"/>
     </weapon>
@@ -292,7 +292,7 @@
         <crystalInfo type="D" count="101"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -302,7 +302,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4030" name="Orange Paper" icon="icon.etc_paper_red_i00">
@@ -310,7 +310,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4031" name="Yellow Paper" icon="icon.etc_paper_red_i00">
@@ -318,7 +318,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4032" name="Green Paper" icon="icon.etc_paper_red_i00">
@@ -326,7 +326,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4033" name="Blue Paper" icon="icon.etc_paper_red_i00">
@@ -334,7 +334,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4034" name="Purple Paper" icon="icon.etc_paper_red_i00">
@@ -342,7 +342,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4035" name="White Paper" icon="icon.etc_paper_red_i00">
@@ -350,7 +350,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4036" name="Black Paper" icon="icon.etc_paper_red_i00">
@@ -358,7 +358,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4037" name="Coin of Luck" icon="icon.etc_coins_gold_i00">
@@ -366,7 +366,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4039" name="Mold Glue" type="MATERIAL" icon="icon.etc_reagent_red_i00">
@@ -374,7 +374,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4040" name="Mold Lubricant" type="MATERIAL" icon="icon.etc_reagent_gold_i00">
@@ -382,7 +382,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4041" name="Mold Hardener" type="MATERIAL" icon="icon.etc_reagent_blue_i00">
@@ -390,7 +390,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4042" name="Enria" type="MATERIAL" icon="icon.etc_gem_red_i00">
@@ -398,7 +398,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4043" name="Asofe" type="MATERIAL" icon="icon.etc_gem_blue_i00">
@@ -406,7 +406,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4044" name="Thons" type="MATERIAL" icon="icon.etc_gem_clear_i00">
@@ -414,7 +414,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4045" name="Maestro Holder" type="MATERIAL" icon="icon.etc_lump_yellow_i00">
@@ -422,7 +422,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4046" name="Maestro Anvil Lock" type="MATERIAL" icon="icon.etc_lump_dark_gray_i00">
@@ -430,7 +430,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4047" name="Craftsman Mold" type="MATERIAL" icon="icon.etc_mold_i00">
@@ -438,7 +438,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4048" name="Maestro Mold" type="MATERIAL" icon="icon.etc_silver_mold_i00">
@@ -446,7 +446,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="4049" name="Adamantite Earring Gemstone" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_crystal_ball_gold_i00">
@@ -454,7 +454,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4050" name="Adamantite Ring Wire" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_jewel_box_i00">
@@ -462,7 +462,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4051" name="Adamantite Necklace Chain" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_jewel_box_i00">
@@ -470,7 +470,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4052" name="Black Ore Earring Piece" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_broken_crystal_silver_i00">
@@ -478,7 +478,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4053" name="Black Ore Ring Gemstone" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_gem_black_i00">
@@ -486,7 +486,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4054" name="Black Ore Necklace Beads" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="BranchSys2.icon.etc_blackorenecklace_beads_i00">
@@ -494,7 +494,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4055" name="Compound Shield Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -502,7 +502,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4056" name="Zubei's Breastplate Part" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -510,7 +510,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4057" name="Zubei's Gaiter Material" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -518,7 +518,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4058" name="Implosion Boot Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -526,7 +526,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4059" name="Boots of Silence Fabric" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -534,7 +534,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4060" name="Guardian's Boot Fabric" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -542,7 +542,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4061" name="Paradia Boot Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
@@ -550,7 +550,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4062" name="Elemental Boot Lining" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -558,7 +558,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4063" name="Boots of Grace Lining" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -566,7 +566,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4064" name="Avadon Breastplate Part" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -574,7 +574,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4065" name="Avadon Gaiter Material" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -582,7 +582,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4066" name="Zubei's Leather Shirt Fabric" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -590,7 +590,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4067" name="Zubei's Leather Gaiter Texture" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -598,7 +598,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4068" name="Avadon Leather Armor Lining" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -606,7 +606,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4069" name="Tunic of Zubei Fabric" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -614,7 +614,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4070" name="Stockings of Zubei Fabric" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -622,7 +622,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4071" name="Avadon Robe Fabric" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -630,7 +630,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4072" name="Avadon Circlet Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
@@ -638,7 +638,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4073" name="Sealed Avadon Glove Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -646,7 +646,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4074" name="Chain Gloves of Silence Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -654,7 +654,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4075" name="Guardian's Glove Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -662,7 +662,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4076" name="Gloves of Blessing Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
@@ -670,7 +670,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4077" name="Doom Shield Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -678,7 +678,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4078" name="Blue Wolf Breastplate Part" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -686,7 +686,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4079" name="Boots of Blessing Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -694,7 +694,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4080" name="Blue Wolf Gaiter Material" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -702,7 +702,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4081" name="Doom Plate Armor Temper" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_lump_white_i00">
@@ -710,7 +710,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4082" name="Blue Wolf Leather Armor Texture" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -718,7 +718,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4083" name="Leather Armor of Doom Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -726,7 +726,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4084" name="Blue Wolf Tunic Fabric" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -734,7 +734,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4085" name="Tunic of Doom Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
@@ -742,7 +742,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4086" name="Blue Wolf Stocking Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
@@ -750,7 +750,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4087" name="Stockings of Doom Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
@@ -758,7 +758,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4088" name="Blue Wolf Helmet Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -766,7 +766,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4089" name="Doom Helmet Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
@@ -774,7 +774,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4090" name="Sealed Blue Wolf Boot Design" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_pouch_brown_i00">
@@ -782,7 +782,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4091" name="Sealed Doom Glove Fragment" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_plate_silver_i00">
@@ -790,7 +790,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4092" name="Elemental Glove Lining" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -798,7 +798,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4093" name="Gloves of Grace Lining" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -806,7 +806,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4094" name="Implosion Gauntlet Fabric" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_leather_gray_i00">
@@ -814,7 +814,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="4095" name="Paradia Glove Pattern" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_letter_red_i00">
@@ -822,7 +822,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
 </itemList>

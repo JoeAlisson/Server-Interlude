@@ -6,7 +6,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7105" name="Guardian of Forbidden Knowledge - Part 2" icon="icon.etc_magic_book_red_i00">
@@ -15,7 +15,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7106" name="Guardian of Forbidden Knowledge - Part 2" icon="icon.etc_magic_book_red_i00">
@@ -24,7 +24,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7107" name="Guardian of Forbidden Knowledge - Part 2" icon="icon.etc_magic_book_red_i00">
@@ -33,7 +33,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7108" name="Guild's Secret Report" icon="icon.etc_magic_book_red_i00">
@@ -42,7 +42,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7109" name="Guild's Secret Report" icon="icon.etc_magic_book_red_i00">
@@ -51,7 +51,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7110" name="Research Report" icon="icon.etc_magic_book_red_i00">
@@ -60,7 +60,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7111" name="Research Report" icon="icon.etc_magic_book_red_i00">
@@ -69,7 +69,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7112" name="Research Report" icon="icon.etc_magic_book_red_i00">
@@ -78,7 +78,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="7117" name="Teleport: Talking Island Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
@@ -87,7 +87,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -102,7 +102,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -117,7 +117,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -132,7 +132,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -147,7 +147,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -162,7 +162,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -177,7 +177,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -192,7 +192,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -207,7 +207,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -222,7 +222,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -237,7 +237,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -252,7 +252,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -267,7 +267,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -282,7 +282,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -296,7 +296,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7100" name="Importance of Strain" icon="icon.etc_spellbook_blue_i00">
@@ -305,7 +305,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7101" name="Danger of Ice Spirit" icon="icon.etc_spellbook_blue_i00">
@@ -314,7 +314,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7102" name="Guardian of Forbidden Knowledge - Part 1" icon="icon.etc_spellbook_gray_i00">
@@ -323,7 +323,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="7103" name="Guardian of Forbidden Knowledge - Part 1" icon="icon.etc_spellbook_gray_i00">
@@ -332,7 +332,7 @@
         <handler>BOOK</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

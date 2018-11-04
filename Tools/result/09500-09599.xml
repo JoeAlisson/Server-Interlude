@@ -6,7 +6,7 @@
         <crystalInfo type="C" count="72"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3322" level="1"/>
         <bodyPart>RIGHT_BRACELET</bodyPart>
@@ -17,7 +17,7 @@
         <crystalInfo type="B" count="53"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3323" level="1"/>
         <bodyPart>RIGHT_BRACELET</bodyPart>
@@ -28,7 +28,7 @@
         <crystalInfo type="A" count="61"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3324" level="1"/>
         <bodyPart>RIGHT_BRACELET</bodyPart>

@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="8560" name="Teddy Bear Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_bear_cap_i00">
@@ -13,7 +13,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -22,7 +22,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="8561" name="Piggy Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_pig_cap_i00">
@@ -30,7 +30,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -39,7 +39,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="8562" name="Jester Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_jester_cap_i00">
@@ -47,7 +47,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -56,7 +56,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -65,7 +65,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -74,7 +74,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <bodyPart>HAIR</bodyPart>
     </armor>
@@ -83,7 +83,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="8559" name="Coronet" commissionType="HAIR_ACCESSORY" icon="icon.accessory_flower_cap_i00">
@@ -91,7 +91,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <condition messageId="1518" includeName="false">
             <not>

@@ -5,7 +5,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <bodyPart>WAIST</bodyPart>
     </armor>
@@ -14,7 +14,7 @@
         <crystalInfo type="B"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>480</weight>
         <bodyPart>WAIST</bodyPart>
     </armor>
@@ -23,7 +23,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>460</weight>
         <bodyPart>WAIST</bodyPart>
     </armor>
@@ -32,7 +32,7 @@
         <crystalInfo type="S"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>440</weight>
         <bodyPart>WAIST</bodyPart>
     </armor>

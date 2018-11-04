@@ -6,7 +6,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="23879" name="Samurai Outfit" icon="BranchSys3.iconArmar.g_co_japan_general_i00">
@@ -15,7 +15,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
 </itemList>

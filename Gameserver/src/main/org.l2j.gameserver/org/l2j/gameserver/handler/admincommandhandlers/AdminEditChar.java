@@ -389,8 +389,8 @@ public class AdminEditChar implements IAdminCommandHandler {
         adminReply.replace("%name%", player.getName());
         adminReply.replace("%level%", String.valueOf(player.getLevel()));
         adminReply.replace("%clan%", String.valueOf(ClanTable.getInstance().getClan(player.getClanId())));
-        adminReply.replace("%xp%", String.valueOf(player.getExp()));
-        adminReply.replace("%sp%", String.valueOf(player.getSp()));
+        adminReply.replace("%xp%", String.valueOf(player.getExperience()));
+        adminReply.replace("%sp%", String.valueOf(player.getSkillPoints()));
         adminReply.replace("%class%", player.getPlayerClass().humanize());
         adminReply.replace("%ordinal%", String.valueOf(player.getPlayerClass().ordinal()));
         adminReply.replace("%classid%", String.valueOf(player.getPlayerClass()));

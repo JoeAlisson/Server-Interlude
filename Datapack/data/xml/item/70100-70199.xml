@@ -5,7 +5,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70144" name="Blue Wolf Tunic Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -13,7 +13,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70147" name="Black Ore Ring Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -21,7 +21,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70146" name="Black Ore Necklace Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -29,7 +29,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70149" name="Brigandine Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -37,7 +37,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70148" name="Black Ore Earring Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -45,7 +45,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70151" name="Brigandine Helmet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -53,7 +53,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70150" name="Brigandine Gaiters Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -61,7 +61,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70153" name="Manticore Skin Shirt Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -69,7 +69,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70152" name="Brigandine Shield Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -77,7 +77,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70155" name="Manticore Skin Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -85,7 +85,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70154" name="Manticore Skin Gaiters Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -93,7 +93,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70157" name="Mithril Stockings Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -101,7 +101,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70156" name="Mithril Tunic Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -109,14 +109,14 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70159" name="Mana Recovery Potion" icon="icon.etc_potion_blue_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="70158" name="Elven Mithril Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -124,7 +124,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70161" name="My Teleport Pack" icon="icon.etc_pi_gift_box_i01">
@@ -132,7 +132,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70160" name="1st Anniversary Coin" icon="icon.etc_11th_token">
@@ -140,7 +140,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70163" name="Energy of Development" icon="BranchIcon.Icon.etc_g_bonus_herb_i00">
@@ -148,7 +148,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55273"/>
     </item>
@@ -157,7 +157,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70165" name="Great Energy of Development" icon="BranchIcon.Icon.etc_g_bonus_herb_i00">
@@ -165,7 +165,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55273" level="3"/>
     </item>
@@ -174,7 +174,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55273" level="2"/>
     </item>
@@ -183,7 +183,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55274" level="2"/>
     </item>
@@ -192,7 +192,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55274"/>
     </item>
@@ -201,7 +201,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55275"/>
     </item>
@@ -210,7 +210,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55274" level="3"/>
     </item>
@@ -219,7 +219,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55275" level="3"/>
     </item>
@@ -228,7 +228,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55275" level="2"/>
     </item>
@@ -237,7 +237,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70172" name="Coin of Tears" icon="BranchIcon.Icon.vip_silver_coin">
@@ -245,7 +245,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70175" name="Crude Coin" icon="BranchIcon.Icon.vip_silver_coin">
@@ -253,7 +253,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70174" name="Shabby Coin" icon="BranchIcon.Icon.vip_silver_coin">
@@ -261,7 +261,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70177" name="Box of Tears" icon="icon.bm_sheep_agathion_30d_box">
@@ -269,7 +269,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70176" name="Old Coin" icon="BranchIcon.Icon.vip_silver_coin">
@@ -277,7 +277,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70179" name="Shabby Box" icon="icon.bm_sheep_agathion_30d_box">
@@ -285,7 +285,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70178" name="Decayed Box" icon="icon.bm_sheep_agathion_30d_box">
@@ -293,7 +293,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70181" name="Old Box" icon="icon.bm_sheep_agathion_30d_box">
@@ -301,7 +301,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70180" name="Crude Box" icon="icon.bm_sheep_agathion_30d_box">
@@ -309,7 +309,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70183" name="Devi’s Ring" icon="icon.ev_11th_rare_acc_ring">
@@ -318,7 +318,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70182" name="Devi’s Ring (15-day)" icon="icon.ev_11th_rare_acc_ring">
@@ -337,7 +337,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70184" name="Devi’s Earring (15-day)" icon="icon.ev_11th_rare_acc_earing">
@@ -355,7 +355,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70186" name="Devi’s Necklace (15-day)" icon="icon.ev_11th_rare_acc_necklace">
@@ -374,7 +374,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         <consume shot="1"/>
     </weapon>
@@ -384,7 +384,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         <consume shot="1"/>
     </weapon>
@@ -394,7 +394,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         <consume shot="1"/>
     </weapon>
@@ -404,7 +404,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         <consume shot="1"/>
     </weapon>
@@ -414,7 +414,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70192" name="Earring of Chronicle Heir" additionalName="Lv. 1" icon="icon.accessary_onyxbeastseye_earing_i00">
@@ -423,7 +423,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70195" name="Earring of Chronicle Heir" additionalName="Lv. 4" icon="icon.accessary_onyxbeastseye_earing_i00">
@@ -432,7 +432,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70194" name="Earring of Chronicle Heir" additionalName="Lv. 3" icon="icon.accessary_onyxbeastseye_earing_i00">
@@ -441,7 +441,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70197" name="Earring of Chronicle Heir" additionalName="Lv. 6" icon="icon.accessary_onyxbeastseye_earing_i00">
@@ -450,7 +450,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70196" name="Earring of Chronicle Heir" additionalName="Lv. 5" icon="icon.accessary_onyxbeastseye_earing_i00">
@@ -459,7 +459,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70199" name="Earring of Chronicle Heir" additionalName="Lv. 8" icon="icon.accessary_onyxbeastseye_earing_i00">
@@ -468,7 +468,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70198" name="Earring of Chronicle Heir" additionalName="Lv. 7" icon="icon.accessary_onyxbeastseye_earing_i00">
@@ -477,7 +477,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <armor id="70101" name="Refined Romantic Chapeau: Gold" additionalName="7-day" icon="icon.bm_romantic_chaperon_gold">
@@ -507,7 +507,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -522,7 +522,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -537,7 +537,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55241"/>
     </item>
@@ -547,7 +547,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55237"/>
     </item>
@@ -557,7 +557,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55242"/>
     </item>
@@ -599,7 +599,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="273"/>
     </item>
@@ -609,7 +609,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="271"/>
     </item>
@@ -619,7 +619,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -647,7 +647,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70114" name="Agathion - Singer and Dancer" additionalName="7-day" icon="BranchSys2.icon.br_aga_singer_dancer_i00">
@@ -671,7 +671,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         </weapon>
     <weapon id="70116" name="Mermaid's Elite Golden Fishing Rod" additionalName="1-day" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
@@ -706,7 +706,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <weapon id="70120" name="Mermaid's Elite Golden Fishing Rod" type="FISHINGROD" icon="icon.bm_gold_fishing_pole">
@@ -715,7 +715,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         </weapon>
     <item stackable="true" id="70123" name="Full Plate Shield Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -723,7 +723,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70122" name="Full Plate Helmet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -731,7 +731,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70125" name="Drake Leather Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -739,7 +739,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70124" name="Drake Leather Armor Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -747,7 +747,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70127" name="Divine Stockings Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -755,7 +755,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70126" name="Divine Tunic Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -763,7 +763,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70129" name="Doom Shield Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -771,7 +771,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70128" name="Divine Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -779,7 +779,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70131" name="Doom Helmet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -787,7 +787,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70130" name="Doom Plate Armor Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -795,7 +795,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70133" name="Doom Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -803,7 +803,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70132" name="Doom Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -811,7 +811,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70135" name="Blue Wolf Gaiters Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -819,7 +819,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70134" name="Blue Wolf Breastplate Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -827,7 +827,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70137" name="Blue Wolf Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -835,7 +835,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70136" name="Blue Wolf Helmet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -843,7 +843,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70139" name="Doom Leather Armor Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -851,7 +851,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70138" name="Blue Wolf Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -859,7 +859,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70141" name="Avadon Circlet Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -867,7 +867,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70140" name="Avadon Robe Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -875,7 +875,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70143" name="Avadon Boots Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -883,7 +883,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70142" name="Avadon Gloves Crafting Pack" icon="icon.etc_pi_gift_box_i00">
@@ -891,7 +891,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
 </itemList>

@@ -7,7 +7,7 @@
         <crystalInfo type="A" count="96"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>570</weight>
         </armor>
     <armor id="547" name="Tallum Helmet" commissionType="HELMET" icon="icon.armor_helmet_i00">
@@ -17,7 +17,7 @@
         <crystalInfo type="A" count="147"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>570</weight>
         </armor>
     <armor id="517" name="Compound Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
@@ -27,7 +27,7 @@
         <crystalInfo type="C" count="147"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>610</weight>
         </armor>
     <armor id="582" name="Paradia Boots" commissionType="FEET" icon="icon.armor_t68_b_i00">
@@ -37,7 +37,7 @@
         <crystalInfo type="B" count="107"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1140</weight>
         </armor>
     <armor id="583" name="Majestic Boots" commissionType="FEET" icon="icon.armor_t45_b_i00">
@@ -47,7 +47,7 @@
         <crystalInfo type="A" count="107"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="553" name="Iron Boots" commissionType="FEET" icon="icon.armor_t10_b_i00">
@@ -57,7 +57,7 @@
         <crystalInfo type="D" count="92"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1280</weight>
         </armor>
     <armor id="554" name="Sealed Zubei's Boots" commissionType="FEET" icon="icon.armor_t64_b_i02">
@@ -67,7 +67,7 @@
         <crystalInfo type="B" count="69"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1180</weight>
         </armor>
     <armor id="588" name="Elemental Boots" commissionType="FEET" icon="icon.armor_t71_b_i00">
@@ -77,7 +77,7 @@
         <crystalInfo type="B" count="107"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="590" name="Boots of Grace" commissionType="FEET" icon="icon.armor_t71_b_i00">
@@ -87,7 +87,7 @@
         <crystalInfo type="B" count="107"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="563" name="Dark Crystal Boots" commissionType="FEET" icon="icon.armor_t15_b_i00">
@@ -97,7 +97,7 @@
         <crystalInfo type="A" count="69"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1110</weight>
         </armor>
     <armor id="595" name="Boots of Blessing" commissionType="FEET" icon="icon.armor_t56_b_i00">
@@ -107,7 +107,7 @@
         <crystalInfo type="B" count="69"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1160</weight>
         </armor>
     <armor id="500" name="Great Helmet" commissionType="HELMET" icon="icon.armor_helmet_i00">
@@ -117,7 +117,7 @@
         <crystalInfo type="C" count="96"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>610</weight>
         </armor>
     <armor id="598" name="Tallum Boots" commissionType="FEET" icon="icon.armor_t45_b_i00">
@@ -127,7 +127,7 @@
         <crystalInfo type="A" count="69"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         </armor>
     <armor id="503" name="Zubei's Helmet" commissionType="HELMET" icon="icon.armor_helmet_i00">
@@ -137,7 +137,7 @@
         <crystalInfo type="B" count="96"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>590</weight>
         </armor>
     <armor id="572" name="Boots of Silence" commissionType="FEET" icon="icon.armor_t65_b_i00">
@@ -147,7 +147,7 @@
         <crystalInfo type="B" count="69"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1190</weight>
         </armor>
 </itemList>

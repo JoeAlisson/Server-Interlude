@@ -6,7 +6,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>16</recipeId>
     </item>
@@ -16,7 +16,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>17</recipeId>
     </item>
@@ -26,7 +26,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>18</recipeId>
     </item>
@@ -36,7 +36,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>19</recipeId>
     </item>
@@ -46,7 +46,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>20</recipeId>
     </item>
@@ -56,7 +56,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>21</recipeId>
     </item>
@@ -66,7 +66,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>22</recipeId>
     </item>
@@ -76,7 +76,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>23</recipeId>
     </item>
@@ -86,7 +86,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>25</recipeId>
     </item>
@@ -96,7 +96,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>26</recipeId>
     </item>
@@ -106,7 +106,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>27</recipeId>
     </item>
@@ -116,7 +116,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -131,7 +131,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -146,7 +146,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2042" level="1"/>
     </item>
@@ -156,7 +156,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2043" level="1"/>
     </item>
@@ -166,7 +166,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2044" level="1"/>
     </item>
@@ -176,7 +176,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2045" level="1"/>
     </item>
@@ -186,7 +186,7 @@
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3</weight>
         <skill id="2039" level="1"/>
     </item>
@@ -195,7 +195,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1837" name="Kendell's 1st Order" icon="icon.etc_recipe_blue_i00">
@@ -203,7 +203,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1838" name="Kendell's 1st Order" icon="icon.etc_recipe_blue_i00">
@@ -211,7 +211,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1839" name="Kendell's 1st Order" icon="icon.etc_recipe_blue_i00">
@@ -219,7 +219,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1840" name="Kendell's 1st Order" icon="icon.etc_recipe_red_i00">
@@ -227,7 +227,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1841" name="Kendell's 1st Order" icon="icon.etc_recipe_red_i00">
@@ -235,7 +235,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1842" name="Kendell's 1st Order" icon="icon.etc_recipe_red_i00">
@@ -243,7 +243,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1843" name="Kendell's 1st Order" icon="icon.etc_recipe_red_i00">
@@ -251,7 +251,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1844" name="Kaboo Chief's Necklace" icon="icon.accessary_necklace_of_black_ore_i00">
@@ -259,7 +259,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1845" name="Kaboo Chief's Necklace" icon="icon.accessary_necklace_of_black_ore_i00">
@@ -267,7 +267,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1846" name="Turek Dog Tag" icon="icon.etc_totem_necklace_black_i00">
@@ -275,7 +275,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1847" name="Turek Medallion" icon="icon.etc_totem_necklace_green_i00">
@@ -283,7 +283,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1848" name="Clay Urn Fragment" commissionType="OTHER_ITEM" icon="icon.etc_broken_crystal_white_i00">
@@ -291,7 +291,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1849" name="Brass Tiara Piece" commissionType="OTHER_ITEM" icon="icon.etc_broken_crystal_gold_i00">
@@ -299,7 +299,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1850" name="Bronze Mirror Piece" commissionType="OTHER_ITEM" icon="icon.etc_broken_crystal_silver_i00">
@@ -307,7 +307,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1851" name="Jade Necklace Bead" commissionType="OTHER_ITEM" icon="icon.etc_debris_i00">
@@ -315,7 +315,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1852" name="Ancient Clay Urn" commissionType="OTHER_ITEM" icon="icon.etc_oil_pot_white_i00">
@@ -323,7 +323,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1853" name="Ancient Brass Tiara" commissionType="OTHER_ITEM" icon="icon.etc_ancient_crown_i03">
@@ -331,7 +331,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1854" name="Ancient Bronze Mirror" commissionType="OTHER_ITEM" icon="icon.etc_mirror_i00">
@@ -339,7 +339,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1855" name="Ancient Jade Necklace" commissionType="OTHER_ITEM" icon="icon.etc_leash_i00">
@@ -347,7 +347,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="1856" name="Amulet: Chant of Life" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
@@ -355,7 +355,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1857" name="Keltir Fang" icon="icon.etc_claw_i00">
@@ -363,7 +363,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1858" name="Keltir Fang" icon="icon.etc_claw_i00">
@@ -371,7 +371,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1859" name="Keltir Fang" icon="icon.etc_claw_i00">
@@ -379,7 +379,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1860" name="Keltir Fang" icon="icon.etc_claw_i00">
@@ -387,7 +387,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1861" name="Keltir Fang" icon="icon.etc_claw_i00">
@@ -395,7 +395,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1862" name="Keltir Fang" icon="icon.etc_claw_i00">
@@ -403,7 +403,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="1863" name="Map: Elmore" commissionType="OTHER_ITEM" icon="icon.etc_letter_red_i00">
@@ -412,7 +412,7 @@
         <handler>MAP</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1864" name="Stem" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_branch_gold_i00">
@@ -420,7 +420,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1865" name="Varnish" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_pouch_yellow_i00">
@@ -428,7 +428,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1866" name="Suede" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_suede_i00">
@@ -436,7 +436,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1867" name="Animal Skin" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_leather_brown_i00">
@@ -444,7 +444,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1868" name="Thread" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_skein_white_i00">
@@ -452,7 +452,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1869" name="Iron Ore" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_lump_gray_i00">
@@ -460,7 +460,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1870" name="Coal" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_coal_i00">
@@ -468,7 +468,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1871" name="Charcoal" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_charcoal_i00">
@@ -476,7 +476,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1872" name="Animal Bone" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_piece_bone_white_i00">
@@ -484,7 +484,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1873" name="Silver Nugget" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_silver_i00">
@@ -492,7 +492,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1874" name="Oriharukon Ore" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_oriharukon_ore_i00">
@@ -500,7 +500,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1875" name="Stone of Purity" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_crystal_ball_white_i00">
@@ -508,7 +508,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1876" name="Mithril Ore" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_mithril_ore_i00">
@@ -516,7 +516,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1877" name="Adamantite Nugget" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_adamantite_i00">
@@ -524,7 +524,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1878" name="Durable Braid" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_braided_hemp_i00">
@@ -532,7 +532,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1879" name="Cokes" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_oil_pot_black_i00">
@@ -540,7 +540,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1880" name="Steel" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_lump_black_i00">
@@ -548,7 +548,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1881" name="Coarse Bone Powder" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_powder_white_i00">
@@ -556,7 +556,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1882" name="Leather" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_leather_i00">
@@ -564,7 +564,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1883" name="Steel Mold" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_mold_i00">
@@ -572,7 +572,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1884" name="Cord" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_skein_gray_i00">
@@ -580,7 +580,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1885" name="High-grade Suede" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_pouch_yellow_i00">
@@ -588,7 +588,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1886" name="Silver Mold" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_silver_mold_i00">
@@ -596,7 +596,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1887" name="Varnish of Purity" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_potion_clear_i00">
@@ -604,7 +604,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1888" name="Synthetic Cokes" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_synthetic_cokes_i00">
@@ -612,7 +612,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1889" name="Synthetic Braid" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_compound_braid_i00">
@@ -620,7 +620,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1890" name="Mithril Alloy" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_lump_white_i00">
@@ -628,7 +628,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1891" name="Artisan's Frame" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_artisans_frame_i00">
@@ -636,7 +636,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1892" name="Blacksmith' Frame" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_blacksmiths_frame_i00">
@@ -644,7 +644,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1893" name="Oriharukon" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_oriharukon_i00">
@@ -652,7 +652,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1894" name="Crafted Leather" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_crafted_leather_i00">
@@ -660,7 +660,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1895" name="Metallic Fiber" type="MATERIAL" commissionType="OTHER_ITEM" icon="icon.etc_metallic_fiber_i00">
@@ -668,7 +668,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="1896" name="Necklace of Anguish Chain" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_jewel_box_i00">
@@ -676,7 +676,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="1897" name="Necklace of Wisdom Chain" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_jewel_box_i00">
@@ -684,7 +684,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="1898" name="Blue Diamond Necklace Gem" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_gem_blue_i00">
@@ -692,7 +692,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
     <item stackable="true" id="1899" name="Necklace of Devotion Chain" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_jewel_box_i00">
@@ -700,7 +700,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>60</weight>
     </item>
 </itemList>

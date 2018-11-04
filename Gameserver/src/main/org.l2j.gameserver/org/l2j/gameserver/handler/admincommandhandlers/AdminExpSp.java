@@ -123,8 +123,8 @@ public class AdminExpSp implements IAdminCommandHandler
 		adminReply.setFile("data/html/admin/expsp.htm");
 		adminReply.replace("%name%", player.getName());
 		adminReply.replace("%level%", String.valueOf(player.getLevel()));
-		adminReply.replace("%xp%", String.valueOf(player.getExp()));
-		adminReply.replace("%sp%", String.valueOf(player.getSp()));
+		adminReply.replace("%xp%", String.valueOf(player.getExperience()));
+		adminReply.replace("%sp%", String.valueOf(player.getSkillPoints()));
 		adminReply.replace("%class%", player.getPlayerClass().humanize());
 		activeChar.sendPacket(adminReply);
 	}

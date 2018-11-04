@@ -4,28 +4,28 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <item id="46474" name="Leona's Soul Crystal - Stage 1" icon="icon.ensoul_big_pp">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <item id="46459" name="Mermoden's Soul Crystal - Stage 1" icon="icon.ensoul_big_m">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <item id="46444" name="Kain's Soul Crystal - Stage 1" icon="icon.ensoul_big_p">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
 </itemList>

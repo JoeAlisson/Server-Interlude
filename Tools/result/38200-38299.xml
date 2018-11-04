@@ -5,7 +5,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1450</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -15,7 +15,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <consume shot="1"/>
@@ -25,7 +25,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -35,7 +35,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2060</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -47,7 +47,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -57,7 +57,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -67,7 +67,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume mp="2" shot="1"/>
@@ -77,7 +77,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1320</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -86,7 +86,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2530</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>

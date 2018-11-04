@@ -25,11 +25,27 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
         }
 	}
 
+    /**
+     * Write <B>byte</B> to the buffer. <BR>
+     * 8bit integer (00)
+     * @param value to be written
+     */
 	protected final void writeByte(final int value) {
 	    writeByte((byte) value);
     }
-	
-	/**
+
+    /**
+     * Write <B>byte</B> to the buffer. <BR>
+     *  8bit integer (00)
+     * @param value to be written
+     */
+    protected final void writeByte(final boolean value) {
+        writeByte((byte) (value ? 0x01 : 0x00));
+    }
+
+
+
+    /**
 	 * Write <B>double</B> to the buffer. <BR>
 	 * 64bit double precision float (00 00 00 00 00 00 00 00)
 	 * @param value to be put on data

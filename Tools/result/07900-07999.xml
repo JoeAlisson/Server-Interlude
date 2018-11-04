@@ -6,7 +6,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1950</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="44" width="120"/>
@@ -18,7 +18,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="44" width="120"/>
@@ -30,7 +30,7 @@
         <crystalInfo type="A" count="1659"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1900</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="44" width="120"/>

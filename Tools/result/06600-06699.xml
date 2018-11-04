@@ -5,7 +5,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3562" level="1"/>
         <bodyPart>FINGER</bodyPart>
@@ -15,7 +15,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3560" level="1"/>
         <bodyPart>EAR</bodyPart>
@@ -25,7 +25,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3563" level="1"/>
         <bodyPart>FINGER</bodyPart>
@@ -36,7 +36,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -53,7 +53,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -70,7 +70,7 @@
         <crystalInfo type="S"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -87,7 +87,7 @@
         <handler>BEAST_SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="2033" level="1"/>
     </item>
@@ -97,7 +97,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -114,7 +114,7 @@
         <handler>BEAST_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="2008" level="1"/>
     </item>
@@ -124,7 +124,7 @@
         <handler>BEAST_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="2009" level="1"/>
     </item>
@@ -134,7 +134,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -151,7 +151,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -168,7 +168,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -185,7 +185,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>1398</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -202,7 +202,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -219,7 +219,7 @@
         <crystalInfo type="NONE"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>

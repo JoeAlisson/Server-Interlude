@@ -6,7 +6,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <consume shot="5"/>
     </weapon>
@@ -16,7 +16,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <consume shot="5"/>
     </weapon>
@@ -26,7 +26,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2140</weight>
         <skill id="3599"/>
         <consume shot="2"/>
@@ -37,7 +37,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2120</weight>
         <skill id="3599"/>
         <consume shot="2"/>
@@ -48,7 +48,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2060</weight>
         <skill id="3599"/>
         <consume shot="5"/>
@@ -59,7 +59,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2100</weight>
         <skill id="3599"/>
         <consume shot="3"/>
@@ -70,7 +70,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599"/>
         <consume shot="3"/>
@@ -81,7 +81,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <skill id="3599"/>
         <consume shot="3"/>
@@ -92,7 +92,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599"/>
         <consume shot="5"/>
@@ -103,7 +103,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <skill id="3599"/>
         <consume shot="3"/>
@@ -114,7 +114,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2070</weight>
         <skill id="3599"/>
         <consume shot="3"/>
@@ -125,7 +125,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2050</weight>
         <skill id="3599"/>
         <consume shot="5"/>
@@ -136,7 +136,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1950</weight>
         <consume mp="1" shot="2"/>
     </weapon>
@@ -146,7 +146,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1930</weight>
         <consume mp="1" shot="2"/>
     </weapon>
@@ -156,7 +156,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1910</weight>
         <consume mp="1" shot="2"/>
     </weapon>
@@ -166,7 +166,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1900</weight>
         <consume mp="1" shot="2"/>
     </weapon>
@@ -176,7 +176,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1880</weight>
         <consume mp="1" shot="2"/>
     </weapon>
@@ -186,7 +186,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1870</weight>
         <consume mp="2" shot="3"/>
     </weapon>
@@ -196,7 +196,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <consume mp="2" shot="3"/>
     </weapon>
@@ -206,7 +206,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1850</weight>
         <consume mp="2" shot="3"/>
     </weapon>
@@ -216,7 +216,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1830</weight>
         <consume mp="2" shot="3"/>
     </weapon>
@@ -226,7 +226,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1840</weight>
         <consume mp="2" shot="3"/>
     </weapon>
@@ -236,7 +236,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <consume mp="2" shot="5"/>
     </weapon>
@@ -246,7 +246,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1810</weight>
         <consume mp="2" shot="5"/>
     </weapon>
@@ -256,7 +256,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1590</weight>
         <consume shot="2"/>
     </weapon>
@@ -266,7 +266,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1580</weight>
         <consume shot="2"/>
     </weapon>
@@ -276,7 +276,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <consume shot="2"/>
     </weapon>
@@ -286,7 +286,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <consume shot="2"/>
     </weapon>
@@ -296,7 +296,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <consume shot="2"/>
     </weapon>
@@ -306,7 +306,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <consume shot="2"/>
     </weapon>
@@ -316,7 +316,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <consume shot="3"/>
     </weapon>
@@ -326,7 +326,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <consume shot="3"/>
     </weapon>
@@ -336,7 +336,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1540</weight>
         <consume shot="3"/>
     </weapon>
@@ -346,7 +346,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <consume shot="5"/>
     </weapon>
@@ -356,7 +356,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1520</weight>
         <consume shot="5"/>
     </weapon>
@@ -366,7 +366,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8920</weight>
         </armor>
     <armor id="29336" name="Piece Bone Breastplate" type="HEAVY" icon="icon.armor_t33_u_i00">
@@ -375,7 +375,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8970</weight>
         </armor>
     <armor id="29337" name="Bronze Gaiters" type="HEAVY" icon="icon.armor_t34_l_i00">
@@ -384,7 +384,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3960</weight>
         </armor>
     <armor id="29338" name="Piece Bone Gaiters" type="HEAVY" icon="icon.armor_t33_l_i00">
@@ -393,7 +393,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4020</weight>
         </armor>
     <armor id="29339" name="Compound Scale Mail" type="HEAVY" icon="icon.armor_t20_u_i00">
@@ -402,7 +402,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8620</weight>
         </armor>
     <armor id="29340" name="Dwarven Scale Mail" type="HEAVY" icon="icon.armor_t15_u_i00">
@@ -411,7 +411,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8540</weight>
         </armor>
     <armor id="29341" name="Breastplate" type="HEAVY" icon="icon.armor_t40_u_i00">
@@ -420,7 +420,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8420</weight>
         </armor>
     <armor id="29342" name="Brigandine" type="HEAVY" icon="icon.armor_t43_u_i00">
@@ -429,7 +429,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8320</weight>
         </armor>
     <armor id="29343" name="Half Plate Armor" type="HEAVY" icon="icon.armor_t46_u_i00">
@@ -438,7 +438,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8220</weight>
         </armor>
     <armor id="29344" name="Mithril Breastplate" type="HEAVY" icon="icon.armor_t19_u_i00">
@@ -447,7 +447,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8670</weight>
         </armor>
     <armor id="29345" name="Scale Mail" type="HEAVY" icon="icon.armor_t08_u_i00">
@@ -456,7 +456,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8720</weight>
         </armor>
     <armor id="29346" name="Ring Breastplate" type="HEAVY" icon="icon.armor_t12_u_i00">
@@ -465,7 +465,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>8820</weight>
         </armor>
     <armor id="29347" name="Plate Gaiters" type="HEAVY" icon="icon.armor_t46_l_i00">
@@ -474,7 +474,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3770</weight>
         </armor>
     <armor id="29348" name="Brigandine Gaiters" type="HEAVY" icon="icon.armor_t43_l_i00">
@@ -483,7 +483,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3820</weight>
         </armor>
     <armor id="29349" name="Mithril Scale Gaiters" type="HEAVY" icon="icon.armor_t40_l_i00">
@@ -492,7 +492,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3870</weight>
         </armor>
     <armor id="29350" name="Dwarven Scale Gaiters" type="HEAVY" icon="icon.armor_t15_l_i00">
@@ -501,7 +501,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3840</weight>
         </armor>
     <armor id="29351" name="Compound Scale Gaiters" type="HEAVY" icon="icon.armor_t20_l_i00">
@@ -510,7 +510,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3770</weight>
         </armor>
     <armor id="29352" name="Mithril Gaiters" type="HEAVY" icon="icon.armor_t19_l_i00">
@@ -519,7 +519,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3830</weight>
         </armor>
     <armor id="29353" name="Iron Plate Gaiters" type="HEAVY" icon="icon.armor_t12_l_i00">
@@ -528,7 +528,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3820</weight>
         </armor>
     <armor id="29354" name="Scale Gaiters" type="HEAVY" icon="icon.armor_t08_l_i00">
@@ -537,7 +537,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3860</weight>
         </armor>
     <armor id="29355" name="Durable Leather Shirt" type="LIGHT" icon="icon.armor_t30_u_i00">
@@ -546,7 +546,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4720</weight>
         </armor>
     <armor id="29356" name="Cotton Shirt" type="LIGHT" icon="icon.armor_t07_u_i00">
@@ -555,7 +555,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4770</weight>
         </armor>
     <armor id="29357" name="Bone Breastplate" type="LIGHT" icon="icon.armor_t32_u_i00">
@@ -564,7 +564,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4770</weight>
         </armor>
     <armor id="29358" name="Wooden Breastplate" type="LIGHT" icon="icon.armor_t06_u_i00">
@@ -573,7 +573,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4820</weight>
         </armor>
     <armor id="29359" name="Leather Shirt" type="LIGHT" icon="icon.armor_t04_u_i00">
@@ -582,7 +582,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4830</weight>
         </armor>
     <armor id="29360" name="Shirt" type="LIGHT" icon="icon.armor_t02_u_i00">
@@ -591,7 +591,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4830</weight>
         </armor>
     <armor id="29361" name="Durable Leather Gaiters" type="LIGHT" icon="icon.armor_t30_l_i00">
@@ -600,7 +600,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1610</weight>
         </armor>
     <armor id="29362" name="Cotton Pants" type="LIGHT" icon="icon.armor_t07_l_i00">
@@ -609,7 +609,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1630</weight>
         </armor>
     <armor id="29363" name="Bone Gaiters" type="LIGHT" icon="icon.armor_t32_l_i00">
@@ -618,7 +618,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1680</weight>
         </armor>
     <armor id="29364" name="Wooden Gaiters" type="LIGHT" icon="icon.armor_t06_l_i00">
@@ -627,7 +627,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1670</weight>
         </armor>
     <armor id="29365" name="Pants" type="LIGHT" icon="icon.armor_t02_l_i00">
@@ -636,7 +636,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         </armor>
     <armor id="29366" name="Leather Pants" type="LIGHT" icon="icon.armor_t04_l_i00">
@@ -645,7 +645,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1730</weight>
         </armor>
     <armor id="29367" name="Durable Leather Pants" type="LIGHT" icon="icon.armor_t06_l_i00">
@@ -654,7 +654,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1700</weight>
         </armor>
     <armor id="29368" name="Puma Skin Shirt" type="LIGHT" icon="icon.armor_t09_u_i00">
@@ -663,7 +663,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4700</weight>
         </armor>
     <armor id="29369" name="Lion Skin Shirt" type="LIGHT" icon="icon.armor_t18_u_i00">
@@ -672,7 +672,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4580</weight>
         </armor>
     <armor id="29370" name="Mithril Banded Mail" type="LIGHT" icon="icon.armor_t10_u_i00">
@@ -681,7 +681,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4570</weight>
         </armor>
     <armor id="29371" name="Reinforced Leather Shirt" type="LIGHT" icon="icon.armor_t13_u_i00">
@@ -690,7 +690,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4570</weight>
         </armor>
     <armor id="29372" name="Manticore Skin Shirt" type="LIGHT" icon="icon.armor_t42_u_i00">
@@ -699,7 +699,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4520</weight>
         </armor>
     <armor id="29373" name="Puma Skin Gaiters" type="LIGHT" icon="icon.armor_t09_l_i00">
@@ -708,7 +708,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         </armor>
     <armor id="29374" name="Lion Skin Gaiters" type="LIGHT" icon="icon.armor_t18_l_i00">
@@ -717,7 +717,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         </armor>
     <armor id="29375" name="Mithril Banded Gaiters" type="LIGHT" icon="icon.armor_t10_l_i00">
@@ -726,7 +726,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1580</weight>
         </armor>
     <armor id="29376" name="Reinforced Leather Gaiters" type="LIGHT" icon="icon.armor_t13_l_i00">
@@ -735,7 +735,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         </armor>
     <armor id="29377" name="Manticore Skin Gaiters" type="LIGHT" icon="icon.armor_t42_l_i00">
@@ -744,7 +744,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         </armor>
     <armor id="29378" name="Salamander Skin Mail" type="LIGHT" icon="icon.armor_t45_ul_i00">
@@ -753,7 +753,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>6100</weight>
         </armor>
     <armor id="29379" name="Tunic of Devotion" type="MAGIC" icon="icon.armor_t55_u_i00">
@@ -762,7 +762,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         </armor>
     <armor id="29380" name="Tunic of Magic" type="MAGIC" icon="icon.armor_t58_u_i00">
@@ -771,7 +771,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         </armor>
     <armor id="29381" name="Leather Tunic" type="MAGIC" icon="icon.armor_t05_u_i00">
@@ -780,7 +780,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2110</weight>
         </armor>
     <armor id="29382" name="Cotton Tunic" type="MAGIC" icon="icon.armor_t50_u_i00">
@@ -789,7 +789,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2120</weight>
         </armor>
     <armor id="29383" name="Tunic" type="MAGIC" icon="icon.armor_t03_u_i00">
@@ -798,7 +798,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2150</weight>
         </armor>
     <armor id="29384" name="Feriotic Tunic" type="MAGIC" icon="icon.armor_t52_u_i00">
@@ -807,7 +807,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2140</weight>
         </armor>
     <armor id="29385" name="Cotton Stockings" type="MAGIC" icon="icon.armor_t50_l_i00">
@@ -816,7 +816,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1060</weight>
         </armor>
     <armor id="29386" name="Stockings of Devotion" type="MAGIC" icon="icon.armor_t55_l_i00">
@@ -825,7 +825,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1040</weight>
         </armor>
     <armor id="29387" name="Stockings of Magic" type="MAGIC" icon="icon.armor_t58_l_i00">
@@ -834,7 +834,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1030</weight>
         </armor>
     <armor id="29388" name="Stockings" type="MAGIC" icon="icon.armor_t03_l_i00">
@@ -843,7 +843,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1080</weight>
         </armor>
     <armor id="29389" name="Feriotic Stockings" type="MAGIC" icon="icon.armor_t52_l_i00">
@@ -852,7 +852,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         </armor>
     <armor id="29390" name="Leather Stockings" type="MAGIC" icon="icon.armor_t05_l_i00">
@@ -861,7 +861,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         </armor>
     <armor id="29391" name="Elven Mithril Tunic" type="MAGIC" icon="icon.armor_elven_tunic_i00">
@@ -870,7 +870,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>720</weight>
         </armor>
     <armor id="29392" name="Cursed Tunic" type="MAGIC" icon="icon.armor_t14_u_i00">
@@ -879,7 +879,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         </armor>
     <armor id="29393" name="Elven Tunic" type="MAGIC" icon="icon.armor_t11_u_i00">
@@ -888,7 +888,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         </armor>
     <armor id="29394" name="White Tunic" type="MAGIC" icon="icon.armor_t16_u_i00">
@@ -897,7 +897,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2040</weight>
         </armor>
     <armor id="29395" name="Wizard Tunic" type="MAGIC" icon="icon.armor_t17_u_i00">
@@ -906,7 +906,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         </armor>
     <armor id="29396" name="Tunic of Knowledge" type="MAGIC" icon="icon.armor_t41_u_i00">
@@ -915,7 +915,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         </armor>
     <armor id="29397" name="Mithril Tunic" type="MAGIC" icon="icon.armor_t51_u_i00">
@@ -924,7 +924,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         </armor>
     <armor id="29398" name="Mithril Stockings" type="MAGIC" icon="icon.armor_elven_hose_i00">
@@ -933,7 +933,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2400</weight>
         </armor>
     <armor id="29399" name="Cursed Stockings" type="MAGIC" icon="icon.armor_t14_l_i00">
@@ -942,7 +942,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         </armor>
 </itemList>

@@ -78,18 +78,18 @@ public class UserInfo extends L2GameServerPacket
 		}
 		
 		writeInt(_activeChar.getLevel());
-		writeLong(_activeChar.getExp());
-		writeInt(_activeChar.getSTR());
-		writeInt(_activeChar.getDEX());
-		writeInt(_activeChar.getCON());
-		writeInt(_activeChar.getINT());
-		writeInt(_activeChar.getWIT());
-		writeInt(_activeChar.getMEN());
+		writeLong(_activeChar.getExperience());
+		writeInt(_activeChar.getStrength());
+		writeInt(_activeChar.getDexterity());
+		writeInt(_activeChar.getConstitution());
+		writeInt(_activeChar.getIntelligence());
+		writeInt(_activeChar.getWisdom());
+		writeInt(_activeChar.getMentality());
 		writeInt(_activeChar.getMaxHp());
 		writeInt((int) _activeChar.getCurrentHp());
 		writeInt(_activeChar.getMaxMp());
 		writeInt((int) _activeChar.getCurrentMp());
-		writeInt((int)_activeChar.getSp());
+		writeInt((int)_activeChar.getSkillPoints());
 		writeInt(_activeChar.getCurrentLoad());
 		writeInt(_activeChar.getMaxLoad());
 		
@@ -254,7 +254,7 @@ public class UserInfo extends L2GameServerPacket
 		writeShort(_activeChar.getRecomLeft()); // c2 recommendations remaining
 		writeShort(_activeChar.getRecomHave()); // c2 recommendations received
 		writeInt(0x00);
-		writeShort(_activeChar.GetInventoryLimit());
+		writeShort(_activeChar.getInventoryLimit());
 		
 		writeInt(_activeChar.getPlayerClass().getId());
 		writeInt(0x00); // special effects? circles around reader...

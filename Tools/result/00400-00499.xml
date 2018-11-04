@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1100</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -14,7 +14,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1080</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -23,7 +23,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1070</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -33,7 +33,7 @@
         <crystalInfo type="C" count="330"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4370</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -42,7 +42,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -52,7 +52,7 @@
         <crystalInfo type="C" count="628"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5800</weight>
         <bodyPart>ONE_PIECE</bodyPart>
     </armor>
@@ -62,7 +62,7 @@
         <crystalInfo type="D" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -72,7 +72,7 @@
         <crystalInfo type="D" count="113"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -82,7 +82,7 @@
         <crystalInfo type="D" count="113"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -92,7 +92,7 @@
         <crystalInfo type="D" count="113"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>990</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -102,7 +102,7 @@
         <crystalInfo type="D" count="173"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -112,7 +112,7 @@
         <crystalInfo type="D" count="254"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>980</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -122,7 +122,7 @@
         <crystalInfo type="C" count="94"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>970</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -132,7 +132,7 @@
         <crystalInfo type="C" count="184"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>980</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -142,7 +142,7 @@
         <crystalInfo type="C" count="268"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>960</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -151,7 +151,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1630</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -161,7 +161,7 @@
         <crystalInfo type="D" count="71"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -171,7 +171,7 @@
         <crystalInfo type="D" count="113"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -181,7 +181,7 @@
         <crystalInfo type="D" count="173"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1580</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -191,7 +191,7 @@
         <crystalInfo type="D" count="173"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1570</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -201,7 +201,7 @@
         <crystalInfo type="D" count="254"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -211,7 +211,7 @@
         <crystalInfo type="C" count="111"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1560</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -221,7 +221,7 @@
         <crystalInfo type="C" count="120"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1550</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -231,7 +231,7 @@
         <crystalInfo type="C" count="206"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1530</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -240,7 +240,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2150</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -249,7 +249,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2150</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -258,7 +258,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2140</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -267,7 +267,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2110</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -276,7 +276,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2600</weight>
         <bodyPart>ONE_PIECE</bodyPart>
     </armor>
@@ -286,7 +286,7 @@
         <crystalInfo type="D" count="113"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2090</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -296,7 +296,7 @@
         <crystalInfo type="D" count="181"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2080</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -306,7 +306,7 @@
         <crystalInfo type="C" count="59"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>620</weight>
         <bodyPart>HEAD</bodyPart>
     </armor>
@@ -316,7 +316,7 @@
         <crystalInfo type="D" count="181"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2040</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -326,7 +326,7 @@
         <crystalInfo type="C" count="82"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>610</weight>
         <bodyPart>HEAD</bodyPart>
     </armor>
@@ -336,7 +336,7 @@
         <crystalInfo type="D" count="181"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -346,7 +346,7 @@
         <crystalInfo type="C" count="214"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>240</weight>
         <bodyPart>HEAD</bodyPart>
     </armor>
@@ -356,7 +356,7 @@
         <crystalInfo type="D" count="276"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -366,7 +366,7 @@
         <crystalInfo type="D" count="407"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2010</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -376,7 +376,7 @@
         <crystalInfo type="D" count="780"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2580</weight>
         <bodyPart>ONE_PIECE</bodyPart>
     </armor>
@@ -386,7 +386,7 @@
         <crystalInfo type="C" count="151"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1980</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -396,7 +396,7 @@
         <crystalInfo type="C" count="282"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2500</weight>
         <bodyPart>ONE_PIECE</bodyPart>
     </armor>
@@ -406,7 +406,7 @@
         <crystalInfo type="C" count="294"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1990</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -416,7 +416,7 @@
         <crystalInfo type="C" count="428"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1980</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>

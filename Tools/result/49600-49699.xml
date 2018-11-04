@@ -5,7 +5,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39125" level="1"/>
     </item>
@@ -14,7 +14,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39127" level="1"/>
     </item>
@@ -23,7 +23,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39129" level="1"/>
     </item>
@@ -32,7 +32,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39124" level="1"/>
     </item>
@@ -41,7 +41,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39126" level="1"/>
     </item>
@@ -50,7 +50,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39128" level="1"/>
     </item>
@@ -58,28 +58,28 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49671" name="Armor/Ornament Ingredient Box (B-grade)" icon="icon.event_hero_treasure_box_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49672" name="Weapons Ingredient Box (C-grade)" icon="icon.etc_treasure_box_i06">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49673" name="Armor/Ornament Ingredient Box (C-grade)" icon="icon.event_hero_treasure_box_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49674" name="Rice Cake of Flaming Fighting Spirit" additionalName="Event" icon="icon.bm_rice_cake_i01">
@@ -87,7 +87,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49675" name="Hero Cube Box" icon="icon.etc_pi_gift_box_i03">
@@ -95,7 +95,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="49676" name="Talisman of Insolence I" icon="icon.tallisman_oman_i02">
@@ -103,7 +103,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="35017" level="1"/>
         <bodyPart>TALISMAN</bodyPart>
@@ -113,7 +113,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="35017" level="2"/>
         <bodyPart>TALISMAN</bodyPart>
@@ -123,7 +123,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="35017" level="3"/>
         <bodyPart>TALISMAN</bodyPart>
@@ -133,7 +133,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="35017" level="4"/>
         <bodyPart>TALISMAN</bodyPart>
@@ -143,7 +143,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="35017" level="5"/>
         <bodyPart>TALISMAN</bodyPart>
@@ -153,7 +153,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <condition messageId="113" includeName="false">
             <level min="60"/>
@@ -167,7 +167,7 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="49683" name="Talisman of Baium" icon="icon.tallisman_baium">
@@ -175,7 +175,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <condition messageId="113" includeName="false">
             <level min="60"/>
@@ -190,14 +190,14 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49685" name="Energy of Insolence" icon="icon.ensoul_sommon">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="49686" name="Refined Silver Chapeau" additionalName="30-day" icon="BranchSys2.icon2.pi_silverchaperon">
@@ -214,7 +214,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>
@@ -231,7 +231,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49690" name="Blue Dynasty Transformation Potion" icon="icon.general_stone_i01">
@@ -239,7 +239,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="49691" name="Red Zubei Transformation Potion" icon="icon.general_stone_i00">
@@ -247,7 +247,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <weapon id="49692" name="Samurai Black Long Sword" additionalName="15-day" type="DUAL" icon="icon.weapon_dual_sword_i00">
@@ -265,7 +265,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49694" name="Magical Potion of Leaping" additionalName="Lv. 2" icon="icon.etc_wind_potion_i00">
@@ -273,7 +273,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49695" name="Magical Potion of Leaping" additionalName="Lv. 3" icon="icon.etc_water_potion_i00">
@@ -281,7 +281,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49696" name="Gift from a Returned Friend" icon="BranchSys.icon.br_lucky_bag_i00">
@@ -289,7 +289,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49697" name="Special Pirate Fruit" additionalName="Event" icon="icon.etc_codran_i09">
@@ -298,7 +298,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>60000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55160" level="1"/>
     </item>
@@ -307,7 +307,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49699" name="Master’s Book Skill" icon="icon.q10338_book_of_hades">
@@ -315,7 +315,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49662" name="Stylish Color Title" icon="icon.color_name_i00">
@@ -323,7 +323,7 @@
         <restriction dropable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="49663" name="Melissa’s Recovery Potion" icon="BranchSys.icon.br_vitality_potion_i01">
@@ -331,7 +331,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

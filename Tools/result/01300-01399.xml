@@ -5,7 +5,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>80</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <damage vertical="0" horizontal="0" distance="41" width="120"/>
@@ -16,7 +16,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <damage vertical="0" horizontal="0" distance="40" width="120"/>
@@ -27,7 +27,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -39,7 +39,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -51,7 +51,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="46" width="120"/>
@@ -62,7 +62,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <damage vertical="0" horizontal="0" distance="26" width="120"/>
@@ -73,7 +73,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         <bodyPart>RIGHT_HAND</bodyPart>
         <damage vertical="0" horizontal="0" distance="26" width="120"/>
@@ -84,7 +84,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>10</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="5000" width="0"/>
@@ -95,7 +95,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -104,7 +104,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -113,7 +113,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -122,7 +122,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -131,7 +131,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>CHEST</bodyPart>
     </armor>
@@ -140,7 +140,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -149,7 +149,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>600</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -158,7 +158,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -167,7 +167,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>400</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -176,7 +176,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>LEGS</bodyPart>
     </armor>
@@ -185,7 +185,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>80</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -194,7 +194,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -203,7 +203,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -212,7 +212,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -221,7 +221,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>80</weight>
         <bodyPart>GLOVES</bodyPart>
     </armor>
@@ -230,7 +230,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -239,7 +239,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -248,7 +248,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>250</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -257,7 +257,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -266,7 +266,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>200</weight>
         <bodyPart>FEET</bodyPart>
     </armor>
@@ -275,7 +275,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -284,7 +284,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>350</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -293,7 +293,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -302,7 +302,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>350</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -311,7 +311,7 @@
         <restriction tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -320,7 +320,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2250</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <damage vertical="0" horizontal="0" distance="44" width="120"/>
@@ -331,7 +331,7 @@
         <restriction dropable="false" freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1335" name="Goblin Club" commissionType="OTHER_ITEM" icon="icon.weapon_club_i00">
@@ -339,7 +339,7 @@
         <restriction dropable="false" freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1336" name="Glass Shard" commissionType="OTHER_ITEM" icon="icon.etc_crystal_ball_blue_i00">
@@ -347,7 +347,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>80</weight>
     </item>
     <item stackable="true" id="1337" name="Emerald" commissionType="OTHER_ITEM" icon="icon.etc_jewel_green_i00">
@@ -355,7 +355,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>80</weight>
     </item>
     <item stackable="true" id="1338" name="Blue Onyx" commissionType="OTHER_ITEM" icon="icon.etc_jewel_blue_i00">
@@ -363,7 +363,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>80</weight>
     </item>
     <item stackable="true" id="1339" name="Onyx" commissionType="OTHER_ITEM" icon="icon.etc_bead_red_i00">
@@ -371,7 +371,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>80</weight>
     </item>
     <item stackable="true" id="1340" name="Silvery Leaf" commissionType="OTHER_ITEM" icon="icon.etc_feather_white_i00">
@@ -379,7 +379,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3</weight>
     </item>
     <item stackable="true" id="1341" name="Bone Arrow" type="ARROW" commissionType="OTHER_ITEM" icon="icon.etc_bone_quiver_i00">
@@ -388,7 +388,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="1342" name="Steel Arrow" type="ARROW" commissionType="OTHER_ITEM" icon="icon.etc_fine_steel_quiver_i00">
@@ -397,7 +397,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4</weight>
     </item>
     <item stackable="true" id="1343" name="Silver Arrow" type="ARROW" commissionType="OTHER_ITEM" icon="icon.etc_silver_quiver_i00">
@@ -406,7 +406,7 @@
         <crystalInfo type="B"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4</weight>
     </item>
     <item stackable="true" id="1344" name="Mithril Arrow" type="ARROW" commissionType="OTHER_ITEM" icon="icon.etc_mithril_quiver_i00">
@@ -415,7 +415,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3</weight>
     </item>
     <item stackable="true" id="1346" name="Golem's Stoneheart" icon="icon.etc_squares_gray_i00">
@@ -423,7 +423,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1347" name="Monster Eye's Meat" icon="icon.etc_bark_gold_i00">
@@ -431,7 +431,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1348" name="Basilisk's Gizzard" icon="icon.etc_pouch_yellow_i00">
@@ -439,7 +439,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1349" name="Anatomy Diagram" icon="icon.etc_spell_books_red_i00">
@@ -447,7 +447,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1350" name="Zombie Head" icon="icon.etc_skull_red_i00">
@@ -455,7 +455,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1351" name="Zombie Heart" icon="icon.etc_bodypart_heart_i00">
@@ -463,7 +463,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1352" name="Zombie Liver" icon="icon.etc_bodypart_liver_i00">
@@ -471,7 +471,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1353" name="Skull" icon="icon.etc_skull_white_i00">
@@ -479,7 +479,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1354" name="Ribs" icon="icon.etc_rib_white_i00">
@@ -487,7 +487,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1355" name="Deadman's Spine" icon="icon.etc_piece_bone_red_i00">
@@ -495,7 +495,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1356" name="Deadman's Arm Bone" icon="icon.etc_piece_bone_black_i00">
@@ -503,7 +503,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1357" name="Thigh Bone" icon="icon.etc_piece_bone_white_i00">
@@ -511,7 +511,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1358" name="Deadman's Complete Skeleton" icon="icon.etc_ashes_white_i00">
@@ -519,7 +519,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1359" name="Red Cross Badge" icon="icon.etc_jewel_red_i00">
@@ -527,7 +527,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1360" name="Blue Cross Badge" icon="icon.etc_jewel_blue_i00">
@@ -535,7 +535,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1361" name="Black Cross Badge" icon="icon.etc_jewel_gold_i00">
@@ -543,7 +543,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1362" name="Spider's Carapace" icon="icon.item_normal72">
@@ -551,7 +551,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1363" name="Spider Silk" icon="icon.item_normal168">
@@ -559,7 +559,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1364" name="Spider's Poison Sac" icon="icon.item_canuse28">
@@ -567,7 +567,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1365" name="Broken Stoneheart" icon="icon.etc_plate_glay_i00">
@@ -575,7 +575,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1366" name="Monster Eye's Lens" icon="icon.etc_crystal_ball_white_i00">
@@ -583,7 +583,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1367" name="Wolf Claw" icon="icon.etc_claw_i00">
@@ -591,7 +591,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1368" name="Imp Shackles" icon="icon.accessary_cerberuss_earing_i00">
@@ -599,7 +599,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1369" name="Black Lion Badge" icon="icon.etc_badge_black_i00">
@@ -607,7 +607,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="1370" name="Spellbook: Aqua Swirl" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
@@ -615,7 +615,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1371" name="Spellbook: Twister" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
@@ -623,7 +623,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1372" name="Spellbook: Blaze" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
@@ -631,7 +631,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1373" name="Magic Gem" commissionType="OTHER_ITEM" icon="icon.etc_crystal_ball_white_i00">
@@ -639,7 +639,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>80</weight>
     </item>
     <item stackable="true" id="1374" name="Greater Wind Walk Potion" type="POTION" commissionType="POTION" icon="icon.etc_lesser_potion_green_i00">
@@ -648,7 +648,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -663,7 +663,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -678,7 +678,7 @@
         <crystalInfo type="D" count="101"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <skill id="3599" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -690,7 +690,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1378" name="Spellbook: Divine Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
@@ -698,7 +698,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1379" name="Spellbook: Cure Bleeding" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
@@ -706,7 +706,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1380" name="Spellbook: Entangle" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
@@ -714,7 +714,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1381" name="Spellbook: Freezing Strike" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
@@ -722,7 +722,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1382" name="Spellbook: Power Break" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
@@ -730,7 +730,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1383" name="Spellbook: Poison" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
@@ -738,7 +738,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1384" name="Spellbook: Sprint" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
@@ -746,7 +746,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1385" name="Spellbook: Recharge" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
@@ -754,7 +754,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1386" name="Spellbook: Disrupt Undead" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
@@ -762,7 +762,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1387" name="Spellbook: Poison Resistance" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -770,7 +770,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1388" name="Spellbook: Mental Shield" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -778,7 +778,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1389" name="Spellbook: Holy Weapon" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
@@ -786,7 +786,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1390" name="Spellbook: Regeneration" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -794,7 +794,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1391" name="Spellbook: Empower" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -802,7 +802,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1392" name="Spellbook: Berserker Spirit" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -810,7 +810,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1393" name="Spellbook: Quickness" commissionType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
@@ -818,7 +818,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1394" name="Spellbook: Sleep" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -826,7 +826,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1397" name="Spellbook: Peace" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -834,7 +834,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1398" name="Spellbook: Focus" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -842,7 +842,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="1399" name="Spellbook: Concentration" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
@@ -850,7 +850,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
 </itemList>

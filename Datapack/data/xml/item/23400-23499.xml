@@ -6,7 +6,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="23459" name="Maid Hair Accessory" icon="BranchSys3.icon1.g_co_cutie_maid_hair">
@@ -15,7 +15,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
 </itemList>

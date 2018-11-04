@@ -79,4 +79,26 @@ public class ClassTemplate extends CharTemplate {
         }
         return PlayerTemplateTable.getInstance().getClassTemplate(parent);
     }
+
+    public int getClassLevel() {
+        if(parent == -1) {
+            return 0;
+        }
+        return  1 + PlayerTemplateTable.getInstance().getClassTemplate(parent).getClassLevel();
+    }
+
+    public double getCollisionRadius(byte sex) {
+        var collision = playerTemplate.getCollision();
+        return sex == 1 ? collision.getFemaleRadius() : collision.getMaleRadius();
+    }
+
+    public double getCollisionHeight(byte sex) {
+        var collision = playerTemplate.getCollision();
+        return sex == 1 ? collision.getFemaleHeight() : collision.getMaleHeight();
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

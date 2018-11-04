@@ -5,7 +5,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="49501" name="Fish Stew. The guild's gratitude." icon="icon.ev_invasion_buff_box">
@@ -14,7 +14,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39076"/>
     </item>
@@ -24,7 +24,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -39,7 +39,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -53,7 +53,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="49505" name="Sealed Bottle" icon="icon.etc_hot_spring_glass_bottle_i00">
@@ -61,7 +61,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="49506" name="Fishing Rod" additionalName="10-day" type="FISHINGROD" icon="icon.weapon_fishing_rod_i03">
@@ -79,7 +79,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="49508" name="Normal Bait" additionalName="Event" icon="icon.etc_huge_lure">
@@ -87,7 +87,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="49509" name="Ring of Core" additionalName="15-day" commissionType="RING" icon="icon.accessory_ring_of_core_i00">
@@ -106,7 +106,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49511" name="Sheep Gift" icon="icon.etc_treasure_box_i00">
@@ -114,7 +114,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="49512" name="Amulet: Prosperity" additionalName="14-day" type="ENCHT_ATTR_RUNE" icon="BranchSys3.lcon.g_rune_itemdrop_up">
@@ -132,7 +132,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="49514" name="Agathion - Aries" additionalName="60-day" icon="icon.agathion_magmeld_teleport">
@@ -150,7 +150,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49516" name="Agathion - Aries" icon="icon.agathion_magmeld_teleport">
@@ -159,7 +159,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <item stackable="true" id="49517" name="Pirate Trophy Chest" icon="icon.bm_pirate_battle_box">
@@ -167,7 +167,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49518" name="Special Pirate Fruit" icon="icon.etc_codran_i09">
@@ -176,7 +176,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>60000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39144"/>
     </item>
@@ -185,7 +185,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49520" name="Agation box: Aries" additionalName="60-day" icon="icon.bm_sheep_agathion_30d_box">
@@ -202,7 +202,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49522" name="Pirate King Hat" additionalName="Special Trait" icon="BranchSys2.icon.zaken_hair_accessary">
@@ -211,7 +211,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49523" name="Circlet of Devil" additionalName="Special Trait" icon="icon.Accessary_demon_circlet_i00">
@@ -220,7 +220,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <item stackable="true" id="49524" name="Captain Pirate Hat Box" icon="icon.bm_pirate_king_box">
@@ -228,7 +228,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49525" name="Rare Accessory Box" icon="icon.ev_10th_present2">
@@ -237,7 +237,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55089"/>
     </item>
@@ -246,7 +246,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49527" name="My Teleport Pack" icon="icon.etc_pi_gift_box_i01">
@@ -254,7 +254,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49528" name="Pirate Healing Potion" icon="icon.etc_bm_hero_red_potion">
@@ -262,7 +262,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="49529" name="Blue Dynasty - Heavy Armor" type="HEAVY" icon="icon.armor_t2000_ul_i00">
@@ -271,7 +271,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49530" name="Blue Dynasty - Diadem" icon="icon.Accessary_angel_circlet_i00">
@@ -280,7 +280,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49531" name="Red Zubei - Heavy Armor" type="HEAVY" icon="icon.armor_t2000_ul_i00">
@@ -289,7 +289,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49532" name="White Murderer Suit" type="HEAVY" icon="icon.dark_assassin">
@@ -298,7 +298,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <item stackable="true" id="49533" name="Quick Hero Healing Potion" icon="icon.etc_potion_gold_i00">
@@ -306,7 +306,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>180</weight>
     </item>
     <item id="49534" name="Hero Cube" additionalName="7-day" icon="icon.special_cube_i00">
@@ -322,7 +322,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49536" name="Box of Scroll of Escape to the Base" icon="icon.etc_treasure_box_i04">
@@ -330,7 +330,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49537" name="Teleport: Dragon Valley Bridge" icon="icon.etc_scroll_of_return_i05">
@@ -338,7 +338,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="49538" name="Teleport: Antharas' Lair" icon="icon.etc_scroll_of_return_i05">
@@ -346,7 +346,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="49539" name="Teleport: Entrance to Cruma Tower" icon="icon.etc_scroll_of_return_i05">
@@ -354,7 +354,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="49540" name="Teleport: Entrance to Orc Barracks" icon="icon.etc_scroll_of_return_i05">
@@ -362,7 +362,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <item stackable="true" id="49541" name="Spellbook Chest" icon="icon.etc_treasure_box_i05">
@@ -371,7 +371,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39059"/>
     </item>
@@ -381,7 +381,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <skill id="39109"/>
     </item>
@@ -389,7 +389,7 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="49544" name="Warrior's Armor1" type="HEAVY" icon="BranchSys3.iconArmor.g_co_captain_i00">
@@ -398,7 +398,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49545" name="Warrior's Armor2" type="HEAVY" icon="icon.dark_assassin">
@@ -407,7 +407,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49546" name="Warrior's Armor3" type="HEAVY" icon="icon.dark_kninght">
@@ -416,7 +416,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49547" name="Mage's Armor1" type="MAGIC" icon="icon.dark_assassin">
@@ -425,7 +425,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49548" name="Mage's Armor2" type="MAGIC" icon="icon.dark_assassin">
@@ -434,7 +434,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49549" name="Mage's Armor3" type="MAGIC" icon="icon.ev_wp_halloween">
@@ -443,7 +443,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <item stackable="true" id="49550" name="Teleport Device - Entrance to Enchanted Valley" icon="icon.etc_scroll_of_return_i05">
@@ -451,7 +451,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
     </item>
     <armor id="49551" name="Blue Dynasty - Light Armor" type="LIGHT" icon="icon.armor_t2000_ul_i00">
@@ -460,7 +460,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49552" name="Blue Dynasty - Magic Armor" type="MAGIC" icon="icon.armor_t2000_ul_i00">
@@ -469,7 +469,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49553" name="Red Zubei - Light Armor" type="LIGHT" icon="icon.armor_t2000_ul_i00">
@@ -478,7 +478,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <armor id="49554" name="Red Zubei - Magic Armor" type="MAGIC" icon="icon.armor_t2000_ul_i00">
@@ -487,7 +487,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         </armor>
     <item stackable="true" id="49555" name="Mold" icon="icon.etc_mold_i00">
@@ -495,7 +495,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49556" name="Amora's Receipt" icon="icon.etc_piece_of_paper_gray_i00">
@@ -503,7 +503,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49557" name="Armor Trade Contract" icon="icon.etc_paper_black_i00">
@@ -511,7 +511,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49558" name="Turek Orc Order" icon="icon.etc_roll_of_paper_black_i00">
@@ -519,7 +519,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49559" name="Rolento's Bag" icon="icon.pouch_i01">
@@ -527,7 +527,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49560" name="Iron Scale Guild Certificate" icon="icon.etc_letter_white_i00">
@@ -535,7 +535,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49561" name="Turek Orc Invader Head" icon="icon.etc_skull_black_i00">
@@ -543,14 +543,14 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49562" name="Spellbook: Spirit Sharing" icon="icon.etc_spell_books_summon_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="49563" name="1,000,000,000 Adena" additionalName="Event" icon="icon.fairy_adena_joke">
@@ -558,7 +558,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49564" name="10,000,000,000 Adena" additionalName="Event" icon="icon.fairy_adena_joke">
@@ -566,7 +566,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49565" name="Misfety's Gift" additionalName="Event" icon="icon.etc_pi_box_joy_pack">
@@ -574,7 +574,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49566" name="Roa's Gift" additionalName="Event" icon="icon.etc_ev_draco_gift_box">
@@ -582,7 +582,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49567" name="Something Roa lost" additionalName="Event" icon="icon.event_july_seven_park_i00">
@@ -590,35 +590,35 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49568" name="Spellbook: Sonic Move" icon="icon.etc_spell_books_blue_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="49569" name="Spellbook: Sand Bomb" icon="icon.etc_spell_books_blue_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="49570" name="Spellbook: Mass Curse Gloom" icon="icon.etc_spell_books_blue_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="49571" name="Spellbook: Clear Mind" icon="icon.etc_spell_books_blue_i00">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <weapon id="49573" name="Samurai Black Long Sword*Samurai Black Long Sword" additionalName="30-day" type="DUAL" icon="icon.weapon_dual_sword_i00">
@@ -638,7 +638,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3562" level="2"/>
         </armor>
@@ -648,7 +648,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3560" level="2"/>
         </armor>
@@ -658,7 +658,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3563" level="2"/>
         </armor>
@@ -668,7 +668,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3562" level="3"/>
         </armor>
@@ -678,7 +678,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3560" level="3"/>
         </armor>
@@ -688,7 +688,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3563" level="3"/>
         <skill id="35016"/>
@@ -699,7 +699,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3561"/>
         </armor>
@@ -709,7 +709,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3561" level="2"/>
         </armor>
@@ -719,7 +719,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3561" level="3"/>
         </armor>
@@ -729,7 +729,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49584" name="Golden Boot" icon="icon.bm_gold_shose">
@@ -738,7 +738,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="49585" name="Golden Necklace of Mermaid" additionalName="7-day" icon="icon.general_fuel_i00">
@@ -766,7 +766,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         </weapon>
     <item stackable="true" id="49588" name="Mermaid Golden Fishing Rod Chest" additionalName="30-day" icon="icon.etc_bm_lure_box_i00">
@@ -782,7 +782,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49590" name="Refined Rare Accessory Pack" additionalName="30-day" icon="icon.etc_box_of_adventure_3_i00">
@@ -829,7 +829,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49595" name="Scroll: 2000 SP" icon="icon.etc_sp_scroll1_i00">
@@ -837,7 +837,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49596" name="Scroll: 10000 SP" icon="icon.etc_sp_scroll2_i00">
@@ -845,7 +845,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="49597" name="Golden Boots" icon="icon.bm_gold_shose">
@@ -853,7 +853,7 @@
         <restriction dropable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

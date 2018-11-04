@@ -5,7 +5,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <weapon id="5127" name="Dailaon Knife" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_monster_i00">
@@ -15,7 +15,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <damage distance="40" width="120"/>
         <consume shot="1"/>
@@ -27,7 +27,7 @@
         <crystalInfo type="D" count="101"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <damage distance="300" width="120"/>
         <consume shot="1"/>
@@ -37,7 +37,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <weapon id="5129" name="Doll Knife" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_monster_i00">
@@ -47,7 +47,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <damage distance="44" width="120"/>
         <consume shot="1"/>
@@ -57,7 +57,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <weapon id="5130" name="Nos Sword" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_monster_i00">
@@ -67,7 +67,7 @@
         <crystalInfo type="D" count="101"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <damage distance="300" width="120"/>
         <consume shot="1"/>
@@ -77,7 +77,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <weapon id="5131" name="Monster Only (Parhit Staff)" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_monster_i00">
@@ -87,7 +87,7 @@
         <crystalInfo type="D" count="101"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <damage distance="300" width="120"/>
         <consume shot="1"/>
@@ -97,7 +97,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <weapon id="5132" name="Monster Only (Lesser Giant)" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_monster_i00">
@@ -107,7 +107,7 @@
         <crystalInfo type="D" count="101"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>300</weight>
         <damage distance="300" width="120"/>
         <consume shot="1"/>
@@ -118,7 +118,7 @@
         <restriction dropable="false" freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <damage distance="40" width="120"/>
     </weapon>
@@ -128,7 +128,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2065"/>
     </item>
@@ -138,7 +138,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>600</weight>
         <skill id="2078"/>
     </item>
@@ -148,7 +148,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2065" level="2"/>
     </item>
@@ -158,7 +158,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2079"/>
     </item>
@@ -168,7 +168,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="2065" level="3"/>
     </item>
@@ -178,7 +178,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2080"/>
     </item>
@@ -188,7 +188,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>200</weight>
         <skill id="2081"/>
     </item>
@@ -198,7 +198,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>200</weight>
         <skill id="2082"/>
     </item>
@@ -208,7 +208,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="2084"/>
     </item>
@@ -218,7 +218,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="2085"/>
     </item>
@@ -228,7 +228,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2086"/>
     </item>
@@ -238,7 +238,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2087"/>
     </item>
@@ -248,7 +248,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>200</weight>
         <skill id="2088"/>
     </item>
@@ -258,7 +258,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="2090"/>
     </item>
@@ -268,7 +268,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>750</weight>
         <skill id="2091"/>
     </item>
@@ -278,7 +278,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2092"/>
     </item>
@@ -288,7 +288,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>450</weight>
         <skill id="2093"/>
     </item>
@@ -298,7 +298,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>200</weight>
         <skill id="2094"/>
     </item>
@@ -307,7 +307,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="5153" name="Recipe: Soulshot Compressed Package (D-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
@@ -316,7 +316,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>480</recipeId>
     </item>
@@ -326,7 +326,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>481</recipeId>
     </item>
@@ -336,7 +336,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>482</recipeId>
     </item>
@@ -346,7 +346,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>483</recipeId>
     </item>
@@ -356,7 +356,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>485</recipeId>
     </item>
@@ -366,7 +366,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>486</recipeId>
     </item>
@@ -376,7 +376,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>487</recipeId>
     </item>
@@ -386,7 +386,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>488</recipeId>
     </item>
@@ -396,7 +396,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>490</recipeId>
     </item>
@@ -406,7 +406,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>491</recipeId>
     </item>
@@ -416,7 +416,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>492</recipeId>
     </item>
@@ -426,7 +426,7 @@
         <handler>RECIPE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>30</weight>
         <recipeId>493</recipeId>
     </item>

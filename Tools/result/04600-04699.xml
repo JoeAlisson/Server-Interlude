@@ -5,7 +5,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4609" name="Greater Dye of MEN (Men + 3 Int - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i02">
@@ -13,7 +13,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4610" name="Greater Dye of MEN (Men + 3 Wit - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i02">
@@ -21,7 +21,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4611" name="Greater Dye of WIT (Wit + 3 Int - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i02">
@@ -29,7 +29,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4612" name="Greater Dye of WIT (Wit + 3 Men - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i02">
@@ -37,7 +37,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4613" name="Greater Dye of STR (STR + 4 CON - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i02">
@@ -45,7 +45,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4614" name="Greater Dye of STR (STR + 4 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i02">
@@ -53,7 +53,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4615" name="Greater Dye of CON (Con + 4 Str - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i02">
@@ -61,7 +61,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4616" name="Greater Dye of CON (Con + 4 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i02">
@@ -69,7 +69,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4617" name="Greater Dye of DEX (Dex + 4 Str - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i02">
@@ -77,7 +77,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4618" name="Greater Dye of DEX (Dex + 4 CON - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i02">
@@ -85,7 +85,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4619" name="Greater Dye of INT (Int + 4 Men - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i02">
@@ -93,7 +93,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4620" name="Greater Dye of INT (Int + 4 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i02">
@@ -101,7 +101,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4621" name="Greater Dye of MEN (Men + 4 Int - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i02">
@@ -109,7 +109,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4622" name="Greater Dye of MEN (Men + 4 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i02">
@@ -117,7 +117,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4623" name="Greater Dye of WIT (Wit + 4 Int - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i02">
@@ -125,7 +125,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4624" name="Greater Dye of WIT (Wit + 4 Men - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i02">
@@ -133,7 +133,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item id="4625" name="Dice (Heart)" commissionType="OTHER_ITEM" icon="icon.etc_dice_a_i00">
@@ -142,7 +142,7 @@
         <handler>DICE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="4626" name="Dice (Spade)" commissionType="OTHER_ITEM" icon="icon.etc_dice_b_i00">
@@ -151,7 +151,7 @@
         <handler>DICE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="4627" name="Dice (Clover)" commissionType="OTHER_ITEM" icon="icon.etc_dice_c_i00">
@@ -160,7 +160,7 @@
         <handler>DICE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="4628" name="Dice (Diamond)" commissionType="OTHER_ITEM" icon="icon.etc_dice_d_i00">
@@ -169,7 +169,7 @@
         <handler>DICE</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="4630" name="Red Soul Crystal - Stage 1" type="SCROLL" commissionType="SOUL_CRYSTAL" icon="icon.etc_soul_stone_i00">
@@ -178,7 +178,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -188,7 +188,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -198,7 +198,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -208,7 +208,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -218,7 +218,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -228,7 +228,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -238,7 +238,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -248,7 +248,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -258,7 +258,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -268,7 +268,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -278,7 +278,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -288,7 +288,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -298,7 +298,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -308,7 +308,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -318,7 +318,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -328,7 +328,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -338,7 +338,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -348,7 +348,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -358,7 +358,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -368,7 +368,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -378,7 +378,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -388,7 +388,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -398,7 +398,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -408,7 +408,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -418,7 +418,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -428,7 +428,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -438,7 +438,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -448,7 +448,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -458,7 +458,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -468,7 +468,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <skill id="2096" level="1"/>
     </item>
@@ -477,7 +477,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4675" name="Medal of Friendship" icon="icon.etc_magic_coin_silver_i00">
@@ -485,7 +485,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4676" name="Medal of Victory" icon="icon.etc_magic_coin_blood_i00">
@@ -493,7 +493,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="4677" name="Potion of Critical Escape" type="POTION" commissionType="POTION" icon="icon.etc_potion_red_i00">
@@ -502,7 +502,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -517,7 +517,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>10000</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>180</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -532,7 +532,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>180</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -547,7 +547,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>180</weight>
         <condition messageId="113" includeName="true">
             <not>
@@ -562,7 +562,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1430</weight>
         <skill id="3026" level="1"/>
         <skill id="3025" level="1" triggerType="ON_CRITICAL"/>
@@ -576,7 +576,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1430</weight>
         <skill id="3010" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -589,7 +589,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1430</weight>
         <skill id="3498" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -602,7 +602,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3007" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -615,7 +615,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3018" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -628,7 +628,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3028" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -641,7 +641,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3010" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -654,7 +654,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3023" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -667,7 +667,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3036" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -680,7 +680,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3023" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -693,7 +693,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3024" level="2" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -706,7 +706,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3036" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -719,7 +719,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3010" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -732,7 +732,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3022" level="2" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -745,7 +745,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3024" level="2" triggerType="ON_CRITICAL"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -758,7 +758,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3007" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -771,7 +771,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3010" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -784,7 +784,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3023" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -797,7 +797,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1400</weight>
         <skill id="3010" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -809,7 +809,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4601" name="Greater Dye of STR (STR + 3 CON - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i02">
@@ -817,7 +817,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4602" name="Greater Dye of STR (STR + 3 DEX - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i02">
@@ -825,7 +825,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4603" name="Greater Dye of CON (Con + 3 Str - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i02">
@@ -833,7 +833,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4604" name="Greater Dye of CON (Con + 3 DEX - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i02">
@@ -841,7 +841,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4605" name="Greater Dye of DEX (Dex + 3 Str - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i02">
@@ -849,7 +849,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4606" name="Greater Dye of DEX (Dex + 3 CON - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i02">
@@ -857,7 +857,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
     <item stackable="true" id="4607" name="Greater Dye of INT (Int + 3 Men - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i02">
@@ -865,7 +865,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
     </item>
 </itemList>

@@ -6,7 +6,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>930</weight>
         <skill id="3051" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -19,7 +19,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>930</weight>
         <skill id="3066" level="2"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -32,7 +32,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>930</weight>
         <skill id="3063" level="1"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -45,7 +45,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <skill id="3552" level="2"/>
         <skill id="3070" level="3" triggerType="ON_CRITICAL"/>
@@ -59,7 +59,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <skill id="3552" level="2"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -71,7 +71,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="8805" name="Tiphon's Spear" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_tiphon_spear_i01">
@@ -80,7 +80,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1820</weight>
         <skill id="3552" level="2"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -93,7 +93,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3552" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -106,7 +106,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3050" level="2"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -118,7 +118,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
         <condition messageId="113" includeName="false">
             <level min="20"/>
@@ -130,7 +130,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>639</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1640</weight>
         <skill id="3552" level="1"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -142,7 +142,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <weapon id="8809" name="Sobekk's Hurricane" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_sobekk_hurricane_i01">
@@ -151,7 +151,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1330</weight>
         <skill id="3056" level="3"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -164,7 +164,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1330</weight>
         <skill id="3068" level="3"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -177,7 +177,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1330</weight>
         <skill id="3552" level="1"/>
         <skill id="3039" level="7" triggerType="ON_CRITICAL"/>
@@ -191,7 +191,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>820</weight>
         <skill id="3014" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -204,7 +204,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>820</weight>
         <skill id="1035" level="4" chance="50" triggerType="ON_MAGIC_SKILL"/>
         <skill id="3552" level="1"/>
@@ -218,7 +218,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>820</weight>
         <skill id="1077" level="3" chance="20" triggerType="ON_MAGIC_SKILL"/>
         <skill id="3552" level="1"/>
@@ -232,7 +232,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <skill id="3048" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -245,7 +245,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <skill id="3014" level="3"/>
         <bodyPart>RIGHT_HAND</bodyPart>
@@ -258,7 +258,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1510</weight>
         <skill id="3074" level="2" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <skill id="3552" level="1"/>
@@ -272,7 +272,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>880</weight>
         <skill id="3014" level="3"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -285,7 +285,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>880</weight>
         <skill id="3047" level="3"/>
         <bodyPart>TWO_HANDS</bodyPart>
@@ -298,7 +298,7 @@
         <crystalInfo type="A" count="2157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>880</weight>
         <skill id="1035" level="4" chance="50" triggerType="ON_MAGIC_SKILL"/>
         <skill id="3552" level="1"/>
@@ -311,7 +311,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="8891" name="Spellbook: Aura Flash" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
@@ -319,7 +319,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
 </itemList>

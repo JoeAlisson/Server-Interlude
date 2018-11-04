@@ -6,7 +6,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <weapon id="21163" name="Wedding Bouquet" type="ETC" icon="BranchSys2.icon.br_wedding_bouquet_i00">
@@ -15,7 +15,7 @@
         <restriction dropable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1600</weight>
         <consume shot="1"/>
     </weapon>
@@ -25,7 +25,7 @@
         <restriction dropable="false" tradeable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="55417"/>
         <skill id="3267"/>

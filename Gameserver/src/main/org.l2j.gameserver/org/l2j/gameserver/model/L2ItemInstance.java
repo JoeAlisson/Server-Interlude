@@ -7,6 +7,7 @@ import org.l2j.gameserver.ai.Intention;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.factory.ItemHelper;
 import org.l2j.gameserver.instancemanager.ItemsOnGroundManager;
+import org.l2j.gameserver.instancemanager.MercTicketManager;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.knownlist.NullKnownList;
 import org.l2j.gameserver.model.entity.database.Augmentation;
@@ -14,10 +15,7 @@ import org.l2j.gameserver.model.entity.database.Items;
 import org.l2j.gameserver.model.entity.database.repository.AugmentationsRepository;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.serverpackets.StatusUpdate;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.skills.funcs.Func;
 import org.l2j.gameserver.templates.xml.jaxb.*;
 import org.slf4j.Logger;
@@ -32,6 +30,27 @@ import static java.util.Objects.nonNull;
 
 public final class L2ItemInstance extends L2Object {
 
+    public final void pickupMe(L2Character player) {
+        L2WorldRegion oldregion = getPosition().getWorldRegion();
+        GetItem gi = new GetItem(this, player.getObjectId());
+        player.broadcastPacket(gi);
+
+        synchronized (this) {
+            setIsVisible(false);
+            getPosition().setWorldRegion(null);
+        }
+
+        int itemId = this.getItemId();
+        if (MercTicketManager.getInstance().getTicketCastleId(itemId) > 0) {
+            MercTicketManager.getInstance().removeTicket(this);
+            ItemsOnGroundManager.getInstance().removeObject(this);
+        }
+
+        L2World.getInstance().removeVisibleObject(this, oldregion);
+    }
+
+
+    // ###################################################
 	public L2ItemInstance(int objectId, int itemId)  {
 		super(objectId);
 		super.setKnownList(new NullKnownList(this));

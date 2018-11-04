@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -15,7 +15,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>500</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -25,7 +25,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1130</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -34,7 +34,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>920</weight>
         <bodyPart>LEFT_HAND</bodyPart>
     </armor>
@@ -44,7 +44,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="17154" level="1"/>
     </item>
@@ -53,7 +53,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3</weight>
     </item>
     <armor id="37725" name="NC Dinos Uniform" type="HEAVY" icon="icon.london_olympic_bikini">
@@ -61,7 +61,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <bodyPart>FULL_BODY</bodyPart>
     </armor>
@@ -70,7 +70,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <bodyPart>FULL_HAIR</bodyPart>
     </armor>

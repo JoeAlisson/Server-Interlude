@@ -54,7 +54,7 @@ public class PlayerFactory {
 
         character.setX(loc.getX());
         character.setY(loc.getY());
-        character.setZ(loc.getY());
+        character.setZ(loc.getZ());
         character.setRace(template.getRace());
         character.setClassId(requireNonNullElse(template.getId(), 0));
         character.setBaseClass(template.getId());

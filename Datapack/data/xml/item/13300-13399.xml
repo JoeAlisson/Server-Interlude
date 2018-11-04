@@ -6,7 +6,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="13307" name="Color Title (Event)" icon="icon.color_name_i00">
@@ -15,7 +15,7 @@
         <handler>NICKNAME_COLOR</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <armor id="13340" name="Agathion - Love (Event)" additionalName="7-day" icon="icon.etc_rbracelet_aga_agit_i00">

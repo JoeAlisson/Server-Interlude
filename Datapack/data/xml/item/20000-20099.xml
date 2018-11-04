@@ -4,7 +4,7 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <armor id="20020" name="Uniform Hat" icon="BranchSys.icon.br_Uniform_Hat_i00">
@@ -13,7 +13,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="20021" name="Assassin's Bamboo Hat" icon="BranchSys.icon.br_Bamboo_Hat_i00">
@@ -22,7 +22,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="20022" name="Ruthless Tribe Mask" icon="BranchSys.icon.br_mask_i00">
@@ -31,7 +31,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="20023" name="Ribbon Hairband" icon="BranchSys.icon.br_Ribbon_i00">
@@ -40,7 +40,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
 </itemList>

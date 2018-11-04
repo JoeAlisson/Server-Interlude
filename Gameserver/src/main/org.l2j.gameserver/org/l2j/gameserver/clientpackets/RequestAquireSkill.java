@@ -123,7 +123,7 @@ public class RequestAquireSkill extends L2GameClientPacket
 				return;
 			}
 			
-			if (player.getSp() >= _requiredSp)
+			if (player.getSkillPoints() >= _requiredSp)
 			{
 				if (Config.SP_BOOK_NEEDED)
 				{
@@ -183,7 +183,7 @@ public class RequestAquireSkill extends L2GameClientPacket
 				return;
 			}
 			
-			if (player.getSp() >= _requiredSp)
+			if (player.getSkillPoints() >= _requiredSp)
 			{
 				if (!player.destroyItemByItemId("Consume", costid, costcount, trainer, false))
 				{
@@ -306,10 +306,10 @@ public class RequestAquireSkill extends L2GameClientPacket
 			_log.debug("Learned skill " + _id + " for " + _requiredSp + " SP.");
 		}
 		
-		player.setSp(player.getSp() - _requiredSp);
+		player.setSp(player.getSkillPoints() - _requiredSp);
 		
 		StatusUpdate su = new StatusUpdate(player.getObjectId());
-		su.addAttribute(StatusUpdate.SP, player.getSp());
+		su.addAttribute(StatusUpdate.SP, player.getSkillPoints());
 		player.sendPacket(su);
 		
 		SystemMessage sp = new SystemMessage(SystemMessageId.SP_DECREASED_S1);

@@ -6,7 +6,7 @@
         <handler>FISH_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="17386"/>
     </item>

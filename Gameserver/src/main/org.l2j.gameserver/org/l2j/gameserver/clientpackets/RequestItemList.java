@@ -18,7 +18,10 @@
  */
 package org.l2j.gameserver.clientpackets;
 
+import org.l2j.gameserver.serverpackets.ActionFailed;
 import org.l2j.gameserver.serverpackets.ItemList;
+
+import static java.util.Objects.isNull;
 
 
 /**
@@ -36,13 +39,14 @@ public final class RequestItemList extends L2GameClientPacket
 	}
 	
 	@Override
-	protected void runImpl()
-	{
-		if ((getClient() != null) && (getClient().getActiveChar() != null) && !getClient().getActiveChar().isInvetoryDisabled())
-		{
-			ItemList il = new ItemList(getClient().getActiveChar(), true);
-			sendPacket(il);
-		}
+	protected void runImpl() {
+		var player = client.getActiveChar();
+		if (isNull(player) ||  player.isInvetoryDisabled()) {
+		    sendPacket(new ActionFailed());
+		} else {
+            ItemList il = new ItemList(player, true);
+            sendPacket(il);
+        }
 	}
 	
 	/*

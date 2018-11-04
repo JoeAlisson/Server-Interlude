@@ -4,14 +4,14 @@
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="45473" name="Blue Mackerel" icon="icon.fish_normal_i04">
         <price>3000</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="45492" name="Fishing Rod" additionalName="1-day" type="FISHINGROD" icon="icon.weapon_fishing_rod_i03">
@@ -29,7 +29,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="45495" name="Normal Bait" type="LURE" icon="icon.etc_huge_lure">
@@ -37,14 +37,14 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="45481" name="Fresh Blue Mackerel" icon="icon.fish_normal_i12">
         <price>50000</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

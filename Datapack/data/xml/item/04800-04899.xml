@@ -7,7 +7,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="1044" chance="30" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -20,7 +20,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="1035" level="2" chance="50" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -33,7 +33,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="1201" level="16" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -46,7 +46,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="3031"/>
         <damage distance="46" width="120"/>
@@ -59,7 +59,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="3014"/>
         <damage distance="46" width="120"/>
@@ -72,7 +72,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1020</weight>
         <skill id="1045" level="2" chance="20" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -85,7 +85,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1168" level="6" chance="8" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="56" width="120"/>
@@ -98,7 +98,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1164" level="7" chance="8" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="56" width="120"/>
@@ -111,7 +111,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1222" level="4" chance="8" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="56" width="120"/>
@@ -124,7 +124,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="1201" level="18" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -137,7 +137,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="1168" level="6" chance="8" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -150,7 +150,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="1164" level="8" chance="8" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -163,7 +163,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1044" level="2" chance="30" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -176,7 +176,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1035" level="3" chance="50" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -189,7 +189,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1201" level="21" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -202,7 +202,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="3031" level="3"/>
         <damage distance="46" width="120"/>
@@ -215,7 +215,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1168" level="6" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -228,7 +228,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1164" level="9" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -241,7 +241,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="1201" level="21" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -254,7 +254,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="1168" level="6" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -267,7 +267,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="1164" level="9" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -280,7 +280,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>990</weight>
         <skill id="3014"/>
         <damage distance="46" width="120"/>
@@ -293,7 +293,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>990</weight>
         <skill id="1164" level="9" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -306,7 +306,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>990</weight>
         <skill id="1222" level="5" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -319,7 +319,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1044" level="2" chance="30" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -332,7 +332,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1035" level="3" chance="50" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -345,7 +345,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1010</weight>
         <skill id="1201" level="23" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -358,7 +358,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="3031" level="4"/>
         <damage distance="46" width="120"/>
@@ -371,7 +371,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="3014"/>
         <damage distance="46" width="120"/>
@@ -384,7 +384,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1000</weight>
         <skill id="1045" level="4" chance="20" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -397,7 +397,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>990</weight>
         <skill id="1168" level="6" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -410,7 +410,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>990</weight>
         <skill id="1164" level="10" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -423,7 +423,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>990</weight>
         <skill id="1222" level="5" chance="7" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -436,7 +436,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>960</weight>
         <skill id="1044" level="3" chance="30" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -449,7 +449,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>960</weight>
         <skill id="1035" level="4" chance="50" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -462,7 +462,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>960</weight>
         <skill id="1201" level="25" chance="10" triggerType="ON_MAGIC_SKILL"/>
         <damage distance="46" width="120"/>
@@ -475,7 +475,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1490</weight>
         <skill id="3037" level="2"/>
         <damage distance="32" width="120"/>
@@ -488,7 +488,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3040" level="5" triggerType="ON_CRITICAL"/>
         <damage distance="52" width="90"/>
@@ -501,7 +501,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3030" level="5"/>
         <damage distance="52" width="90"/>
@@ -514,7 +514,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1420</weight>
         <skill id="3034" level="5"/>
         <damage distance="52" width="90"/>
@@ -527,7 +527,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1390</weight>
         <skill id="3039" level="6" triggerType="ON_CRITICAL"/>
         <damage distance="32" width="120"/>
@@ -540,7 +540,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1390</weight>
         <skill id="3040" level="6" triggerType="ON_CRITICAL"/>
         <damage distance="32" width="120"/>
@@ -553,7 +553,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1390</weight>
         <skill id="3034" level="6"/>
         <damage distance="32" width="120"/>
@@ -566,7 +566,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1790</weight>
         <skill id="3008"/>
         <damage distance="10"/>
@@ -579,7 +579,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1790</weight>
         <skill id="3009"/>
         <damage distance="10"/>
@@ -592,7 +592,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>1248</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1790</weight>
         <damage distance="10"/>
         <consume mp="2" shot="1"/>
@@ -604,7 +604,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1770</weight>
         <skill id="3008" level="2"/>
         <damage distance="10"/>
@@ -617,7 +617,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1770</weight>
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
@@ -629,7 +629,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>639</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1770</weight>
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
@@ -641,7 +641,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1760</weight>
         <skill id="3009" level="2"/>
         <damage distance="10"/>
@@ -654,7 +654,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1760</weight>
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
@@ -666,7 +666,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1760</weight>
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
@@ -678,7 +678,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         <skill id="3008" level="3"/>
         <damage distance="10"/>
@@ -691,7 +691,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         <skill id="3009" level="3"/>
         <damage distance="10"/>
@@ -704,7 +704,7 @@
         <crystalInfo type="C" count="1720"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1740</weight>
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
@@ -716,7 +716,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <skill id="3008" level="4"/>
         <damage distance="10"/>
@@ -729,7 +729,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <damage distance="10"/>
         <consume mp="3" shot="2"/>
@@ -741,7 +741,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <damage distance="10"/>
         <consume mp="3" shot="2"/>
@@ -753,7 +753,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <skill id="3009" level="5"/>
         <damage distance="10"/>
@@ -766,7 +766,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <skill id="3021" level="5" triggerType="ON_CRITICAL"/>
         <damage distance="10"/>
@@ -779,7 +779,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>820</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1720</weight>
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
@@ -791,7 +791,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1700</weight>
         <skill id="3008" level="6"/>
         <damage distance="10"/>
@@ -804,7 +804,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>1310</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1700</weight>
         <damage distance="10"/>
         <consume mp="4" shot="1"/>
@@ -816,7 +816,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>1500</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1700</weight>
         <damage distance="10"/>
         <consume mp="4" shot="1"/>
@@ -828,7 +828,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2040</weight>
         <skill id="3600"/>
         <damage distance="66" width="120"/>
@@ -841,7 +841,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2040</weight>
         <skill id="3599"/>
         <skill id="3016" triggerType="ON_CRITICAL"/>
@@ -855,7 +855,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2040</weight>
         <skill id="3498"/>
         <skill id="3599"/>
@@ -869,7 +869,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         <skill id="3600"/>
         <damage distance="66" width="120"/>
@@ -882,7 +882,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         <skill id="3599"/>
         <skill id="3016" triggerType="ON_CRITICAL"/>
@@ -896,7 +896,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         <skill id="3599"/>
         <damage distance="80" width="120"/>
@@ -909,7 +909,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         <skill id="3599"/>
         <skill id="3016" triggerType="ON_CRITICAL"/>
@@ -923,7 +923,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         <skill id="3599"/>
         <damage distance="80" width="120"/>
@@ -936,7 +936,7 @@
         <crystalInfo type="C" count="916"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2030</weight>
         <skill id="3599"/>
         <damage distance="66" width="180"/>
@@ -949,7 +949,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <skill id="3599"/>
         <skill id="3016" level="2" triggerType="ON_CRITICAL"/>
@@ -963,7 +963,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <skill id="3599"/>
         <damage distance="80" width="120"/>
@@ -976,7 +976,7 @@
         <crystalInfo type="C" count="1148"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2020</weight>
         <skill id="3498"/>
         <skill id="3599"/>
@@ -990,7 +990,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1990</weight>
         <skill id="3600" level="3"/>
         <damage distance="66" width="120"/>
@@ -1003,7 +1003,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1990</weight>
         <skill id="3599"/>
         <skill id="3016" level="3" triggerType="ON_CRITICAL"/>
@@ -1017,7 +1017,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1990</weight>
         <skill id="3599"/>
         <damage distance="80" width="120"/>
@@ -1030,7 +1030,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1980</weight>
         <skill id="3599"/>
         <skill id="3016" level="3" triggerType="ON_CRITICAL"/>
@@ -1044,7 +1044,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1980</weight>
         <skill id="3599"/>
         <damage distance="80" width="120"/>
@@ -1057,7 +1057,7 @@
         <crystalInfo type="C" count="1912"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1980</weight>
         <skill id="3599"/>
         <damage distance="66" width="180"/>
@@ -1070,7 +1070,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1950</weight>
         <skill id="3599"/>
         <skill id="3016" level="4" triggerType="ON_CRITICAL"/>
@@ -1084,7 +1084,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1950</weight>
         <skill id="3599"/>
         <damage distance="80" width="120"/>
@@ -1097,7 +1097,7 @@
         <crystalInfo type="C" count="2452"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1950</weight>
         <skill id="3599"/>
         <damage distance="66" width="180"/>
@@ -1110,7 +1110,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1940</weight>
         <skill id="3600" level="5"/>
         <damage distance="66" width="120"/>
@@ -1123,7 +1123,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1940</weight>
         <skill id="3599"/>
         <skill id="3016" level="5" triggerType="ON_CRITICAL"/>
@@ -1137,7 +1137,7 @@
         <crystalInfo type="B" count="1157"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1940</weight>
         <skill id="3498"/>
         <skill id="3599"/>
@@ -1151,7 +1151,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1920</weight>
         <skill id="3600" level="6"/>
         <damage distance="66" width="120"/>
@@ -1164,7 +1164,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1920</weight>
         <skill id="3599"/>
         <skill id="3016" level="6" triggerType="ON_CRITICAL"/>
@@ -1178,7 +1178,7 @@
         <crystalInfo type="B" count="1746"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1920</weight>
         <skill id="3599"/>
         <damage distance="80" width="120"/>

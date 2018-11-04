@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70500" name="NoItemName" icon="icon.etc_bm_jewelbox_garnet_i01">
@@ -13,7 +13,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70503" name="NoItemName" icon="icon.etc_bm_jewelbox_jade_i00">
@@ -21,7 +21,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70502" name="NoItemName" icon="icon.etc_bm_jewelbox_jade_i00">
@@ -29,7 +29,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70505" name="NoItemName" icon="icon.etc_bm_jewelbox_ruby_i00">
@@ -37,7 +37,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70504" name="NoItemName" icon="icon.etc_bm_jewelbox_ruby_i00">
@@ -45,7 +45,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70507" name="NoItemName" icon="icon.etc_bm_jewelbox_sapphire_i00">
@@ -53,7 +53,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70506" name="NoItemName" icon="icon.etc_bm_jewelbox_ruby_i00">
@@ -61,7 +61,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70509" name="NoItemName" icon="icon.etc_bm_jewelbox_sapphire_i00">
@@ -69,7 +69,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70508" name="NoItemName" icon="icon.etc_bm_jewelbox_sapphire_i00">
@@ -77,7 +77,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70511" name="NoItemName" icon="icon.etc_bm_jewelbox_diamond_i00">
@@ -85,7 +85,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70510" name="NoItemName" icon="icon.etc_bm_jewelbox_diamond_i00">
@@ -93,7 +93,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70513" name="NoItemName" icon="icon.etc_bm_jewelbox_pearl_i00">
@@ -101,7 +101,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70512" name="NoItemName" icon="icon.etc_bm_jewelbox_diamond_i00">
@@ -109,7 +109,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70515" name="NoItemName" icon="icon.etc_bm_jewelbox_pearl_i00">
@@ -117,7 +117,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70514" name="NoItemName" icon="icon.etc_bm_jewelbox_pearl_i00">
@@ -125,7 +125,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70517" name="NoItemName" icon="icon.etc_bm_jewelbox_vital_i00">
@@ -133,7 +133,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70516" name="NoItemName" icon="icon.etc_bm_jewelbox_vital_i00">
@@ -141,7 +141,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70519" name="NoItemName" icon="icon.etc_bm_jewelbox_main_i00">
@@ -149,7 +149,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70518" name="NoItemName" icon="icon.etc_bm_jewelbox_vital_i00">
@@ -157,7 +157,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70521" name="NoItemName" icon="icon.etc_bm_jewel_aquamarine_i00">
@@ -165,7 +165,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item id="70520" name="NoItemName" icon="icon.etc_bm_jewel_aquamarine_i00">
@@ -173,7 +173,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item id="70523" name="NoItemName" icon="icon.etc_bm_jewel_aquamarine_i00">
@@ -181,7 +181,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item id="70522" name="NoItemName" icon="icon.etc_bm_jewel_aquamarine_i00">
@@ -189,7 +189,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="70525" name="NoItemName" icon="icon.etc_bm_jewelbox_aquamarine_i00">
@@ -197,7 +197,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70524" name="NoItemName" icon="icon.etc_bm_jewel_aquamarine_i00">
@@ -205,7 +205,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="70527" name="NoItemName" icon="icon.etc_bm_jewelbox_aquamarine_i00">
@@ -213,7 +213,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70526" name="NoItemName" icon="icon.etc_bm_brooch_lavianrose_i02">
@@ -222,7 +222,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <item stackable="true" id="70529" name="NoItemName" icon="icon.etc_bm_jewelbox_aquamarine_i00">
@@ -230,7 +230,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70528" name="NoItemName" icon="icon.etc_bm_jewelbox_aquamarine_i00">
@@ -238,7 +238,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70531" name="NoItemName" icon="icon.etc_pi_gift_box_i00">
@@ -246,7 +246,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70530" name="NoItemName" icon="icon.etc_bm_jewelbox_aquamarine_i00">
@@ -254,7 +254,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70533" name="NoItemName" icon="icon.bm_gold_lure">
@@ -262,7 +262,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70532" name="NoItemName" icon="icon.bm_gold_shose">
@@ -270,7 +270,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70535" name="NoItemName" icon="icon.etc_treasure_box_i08">
@@ -278,7 +278,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70534" name="NoItemName" icon="icon.fish_huge_i15">
@@ -286,7 +286,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70537" name="NoItemName" icon="icon.etc_pi_gift_box_i00">
@@ -294,7 +294,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70536" name="NoItemName" icon="icon.event_orc_coinbox">
@@ -302,7 +302,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70539" name="Refined Carnival Circlet - 14-day" icon="icon.accessory_carnival_circlet_i00">
@@ -311,7 +311,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <item stackable="true" id="70538" name="NoItemName" icon="icon.etc_pi_gift_box_i00">
@@ -319,7 +319,7 @@
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <armor id="70541" name="Chick Gold Horn Cap - 14-day" icon="icon.accessory_horn01_hat_i00">
@@ -328,7 +328,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="70540" name="Refined Carnival Circlet - 14-day" icon="icon.accessory_carnival_circlet2_i00">
@@ -337,7 +337,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <item stackable="true" id="70543" name="Scroll: Enchant Weapon (B-grade)" additionalName="Event" icon="icon.etc_scroll_of_enchant_weapon_i03">
@@ -345,7 +345,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <armor id="70542" name="Chick Silver Horn Cap - 14-day" icon="icon.accessory_horn01_hat_i01">
@@ -354,49 +354,49 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <item stackable="true" id="70545" name="Fist Weapon Chest" additionalName="Event" icon="icon.etc_treasure_box_i03">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70544" name="Staff Chest" additionalName="Event" icon="icon.etc_treasure_box_i02">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70547" name="Blunt Weapon Chest" additionalName="Event" icon="icon.etc_treasure_box_i05">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70546" name="Spear Chest" additionalName="Event" icon="icon.etc_treasure_box_i04">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70549" name="One-Handed Sword Chest" additionalName="Event" icon="icon.etc_treasure_box_i07">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70548" name="Dagger Chest" additionalName="Event" icon="icon.etc_treasure_box_i06">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70551" name="Valakas Treasure Chest" icon="icon.bm_sheep_agathion_30d_box">
@@ -404,14 +404,14 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70550" name="Bow Chest" additionalName="Event" icon="icon.etc_treasure_box_i08">
         <price>0</price>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70553" name="Mount - Elk" additionalName="7-day" icon="BranchIcon.icon.tf_elk_i00">
@@ -429,7 +429,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <armor id="70555" name="Mount - Elk" additionalName="7-day" icon="BranchIcon.icon.tf_elk_i00">
@@ -447,7 +447,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <item stackable="true" id="70557" name="Mount - Elk (30-day)" icon="icon.etc_pi_gift_box_i02">
@@ -455,7 +455,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70556" name="Mount - Elk (7-day)" icon="icon.etc_pi_gift_box_i02">
@@ -463,7 +463,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <armor id="70559" name="Agathion - Minion Eye" icon="icon.etc_rbracelet_aga_agit_i00">
@@ -472,7 +472,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <item stackable="true" id="70558" name="Mount - Elk - Event" icon="icon.etc_pi_gift_box_i02">
@@ -480,7 +480,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <armor id="70561" name="Agathion - Minion Eye" additionalName="30 days" icon="icon.etc_rbracelet_aga_agit_i00">
@@ -489,7 +489,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <armor id="70560" name="Agathion - Minion Eye" additionalName="7-day" icon="icon.etc_rbracelet_aga_agit_i00">
@@ -520,7 +520,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <armor id="70565" name="Agathion - Babayaga" icon="BranchIcon.icon.br_babayaga_i00">
@@ -529,7 +529,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <armor id="70564" name="Agathion - Matryoshka" additionalName="30 days" icon="icon.etc_rbracelet_aga_agit_i00">
@@ -538,7 +538,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <armor id="70567" name="Agathion - Babayaga" additionalName="30 days" icon="BranchIcon.icon.br_babayaga_i00">
@@ -547,7 +547,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
         </armor>
     <armor id="70566" name="Agathion - Babayaga" additionalName="7-day" icon="BranchIcon.icon.br_babayaga_i00">
@@ -564,7 +564,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70568" name="Agathion - Minion Eye (7-day)" icon="icon.etc_pi_gift_box_i02">
@@ -572,7 +572,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70571" name="Agathion - Matryoshka (30-day)" icon="icon.etc_pi_gift_box_i02">
@@ -580,7 +580,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70570" name="Agathion - Matryoshka (7-day)" icon="icon.etc_pi_gift_box_i02">
@@ -588,7 +588,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70573" name="Agathion - Babayaga (30-day)" icon="icon.etc_pi_gift_box_i02">
@@ -596,7 +596,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70572" name="Agathion - Babayaga (7-day)" icon="icon.etc_pi_gift_box_i02">
@@ -604,7 +604,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="70575" name="Mango Juice" additionalName="Event" icon="icon.etc_fruit_cocktail_i03">
@@ -612,7 +612,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70574" name="Strawberry Juice" additionalName="Event" icon="icon.etc_fruit_cocktail_i01">
@@ -620,7 +620,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="70577" name="Damascus" additionalName="15-day" type="SWORD" icon="icon.weapon_sword_of_damascus_i00">
@@ -639,7 +639,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="70579" name="Deadman's Glory" additionalName="15-day" type="BLUNT" icon="icon.weapon_deadmans_glory_i00">
@@ -736,7 +736,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="70586" name="Guardian's Sword" additionalName="15-day" type="SWORD" icon="icon.weapon_guardians_sword_i00">
@@ -755,7 +755,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70588" name="+10 Lance Chest" icon="icon.etc_jewel_box_i00">
@@ -763,7 +763,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70591" name="+10 Staff of Evil Spirits" icon="icon.etc_jewel_box_i00">
@@ -771,7 +771,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70590" name="+10 Art of Battle Axe Chest" icon="icon.etc_jewel_box_i00">
@@ -779,7 +779,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70593" name="+10 Bellion Cestus" icon="icon.etc_jewel_box_i00">
@@ -787,7 +787,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70592" name="+10 Demon's Dagger" icon="icon.etc_jewel_box_i00">
@@ -795,7 +795,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70595" name="+10 Samurai Long Sword*Samurai Long Sword" icon="icon.etc_jewel_box_i00">
@@ -803,7 +803,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70594" name="+10 Bow of Peril" icon="icon.etc_jewel_box_i00">
@@ -811,7 +811,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70597" name="Expertise Rune (B-grade)" additionalName="10-day" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
@@ -827,7 +827,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70599" name="Mysterious Blessed Soulshot (No-grade)" icon="icon.etc_bless_spirit_bullet_white_i00">
@@ -835,7 +835,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70598" name="Expertise Rune Pack" additionalName="B (10-day)" icon="icon.etc_equip_item_box_i00">
@@ -843,7 +843,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
 </itemList>

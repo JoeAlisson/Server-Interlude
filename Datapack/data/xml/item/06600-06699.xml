@@ -6,7 +6,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3562"/>
         </armor>
@@ -16,7 +16,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3560"/>
         </armor>
@@ -26,7 +26,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <skill id="3563"/>
         </armor>
@@ -36,7 +36,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -52,7 +52,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -69,7 +69,7 @@
         <crystalInfo type="S"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -85,7 +85,7 @@
         <handler>BEAST_SOUL_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="2033"/>
     </item>
@@ -95,7 +95,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -111,7 +111,7 @@
         <handler>BEAST_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="2008"/>
     </item>
@@ -121,7 +121,7 @@
         <handler>BEAST_SPIRIT_SHOT</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="2009"/>
     </item>
@@ -131,7 +131,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -147,7 +147,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -163,7 +163,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -179,7 +179,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>1398</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -195,7 +195,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>
@@ -211,7 +211,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1300</weight>
         <condition messageId="1518" includeName="false">
             <state state="IS_HERO"/>

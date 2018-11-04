@@ -7,7 +7,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>990</weight>
         <damage distance="46" width="120"/>
         <consume shot="3"/>

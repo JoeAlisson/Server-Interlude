@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -14,7 +14,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -23,7 +23,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -32,7 +32,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -41,7 +41,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -50,7 +50,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="29506" name="Medium VIP Gain Scroll" icon="BranchIcon.Icon.g_bm_vip_potion_i00">
@@ -58,7 +58,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="29507" name="Good VIP Gain Scroll" icon="BranchIcon.Icon.g_bm_vip_potion_i00">
@@ -66,7 +66,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="29508" name="Perfect VIP Gain Scroll" icon="BranchIcon.Icon.g_bm_vip_potion_i00">
@@ -74,7 +74,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="29509" name="Feather of Blessing (temporary used by NPC)" icon="icon.blessed_feather_i00">
@@ -82,7 +82,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29510" name="Newbie Kit - Lvl 1" icon="icon.etc_pi_gift_box_i00">
@@ -91,7 +91,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29511" name="Newbie Kit - Lvl 2" icon="icon.etc_pi_gift_box_i00">
@@ -100,7 +100,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="10"/>
@@ -112,7 +112,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="20"/>
@@ -124,7 +124,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="25"/>
@@ -136,7 +136,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="30"/>
@@ -148,7 +148,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="35"/>
@@ -160,7 +160,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <condition messageId="113" includeName="false">
             <level min="40"/>
@@ -171,7 +171,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="29518" name="Blessed Scroll of Resurrection" icon="icon.etc_scroll_of_resurrection_i01">
@@ -179,7 +179,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
     </item>
     <item stackable="true" id="29519" name="XP/SP Scroll - Medium" type="SCROLL" icon="icon.etc_recall_exp_scroll">
@@ -188,7 +188,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55000" level="2"/>
     </item>
@@ -197,7 +197,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29521" name="Package: Mysterious Soulshot (No-grade, 1000 pcs.)" icon="br_cashtex.item.br_cash_pack_of_soulshot_a_i00">
@@ -206,7 +206,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29522" name="Package: Mysterious Blessed Spiritshot (No-grade, 1000 pcs.)" icon="br_cashtex.item.br_cash_pack_of_spiritshot_a_i00">
@@ -215,7 +215,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29523" name="Package: Mysterious Soulshot (D-grade, 1000 pcs.)" icon="br_cashtex.item.br_cash_pack_of_soulshot_d_i00">
@@ -224,7 +224,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29524" name="Package: Mysterious Blessed Spiritshot (D-grade, 1000 pcs.)" icon="br_cashtex.item.br_cash_pack_of_spiritshot_d_i00">
@@ -233,7 +233,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29525" name="Package: Mysterious Soulshot (C-grade, 1000 pcs.)" icon="br_cashtex.item.br_cash_pack_of_soulshot_c_i00">
@@ -242,7 +242,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29526" name="Package: Mysterious Blessed Spiritshot (C-grade, 1000 pcs.)" icon="br_cashtex.item.br_cash_pack_of_spiritshot_c_i00">
@@ -251,7 +251,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <weapon id="29527" name="Saber*Elven Sword" additionalName="30-day" type="DUAL" icon="icon.weapon_dual_sword_i00">
@@ -270,7 +270,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29529" name="Package: Magic Necklace Making" icon="icon.etc_pi_gift_box_i00">
@@ -279,7 +279,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29530" name="Package: Tiger's Eye Making" icon="icon.etc_pi_gift_box_i00">
@@ -288,7 +288,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>100</weight>
     </item>
     <item stackable="true" id="29531" name="Sniper's Mysterious Package (No-grade)" icon="icon.etc_pi_gift_box_i00">
@@ -297,7 +297,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29532" name="Mystic's Mysterious Package (No-grade)" icon="icon.etc_pi_gift_box_i00">
@@ -306,7 +306,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29533" name="Sniper's Mysterious Package (D-grade)" icon="icon.etc_pi_gift_box_i00">
@@ -315,7 +315,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29534" name="Mystic's Mysterious Package (D-grade)" icon="icon.etc_pi_gift_box_i00">
@@ -324,7 +324,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29535" name="Sniper's Mysterious Package (C-grade)" icon="icon.etc_pi_gift_box_i00">
@@ -333,7 +333,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29536" name="Mystic's Mysterious Package (C-grade)" icon="icon.etc_pi_gift_box_i00">
@@ -342,7 +342,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29537" name="Life Stone: Hair Accessory" icon="icon.etc_crystal_ball_silver_i00">
@@ -350,7 +350,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29538" name="Soulshot (No-grade)" icon="BranchIcon.Icon.g_etc_soulshot_i01">
@@ -358,7 +358,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>3</weight>
     </item>
     <item stackable="true" id="29539" name="Blessed Spiritshot (No-grade)" icon="BranchIcon.Icon.g_etc_spiritshot_i01">
@@ -366,7 +366,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4</weight>
     </item>
     <item stackable="true" id="29540" name="Soulshot (D-grade)" icon="br_cashtex.item.br_cash_soulshot_d_i00">
@@ -375,7 +375,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="29541" name="Blessed Spiritshot (D-grade)" icon="br_cashtex.item.br_cash_spiritshot_d_i00">
@@ -384,7 +384,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>4</weight>
     </item>
     <item stackable="true" id="29542" name="Soulshot (C-grade)" icon="br_cashtex.item.br_cash_soulshot_c_i00">
@@ -393,7 +393,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="29543" name="Blessed Spiritshot (C-grade)" icon="br_cashtex.item.br_cash_spiritshot_c_i00">
@@ -402,7 +402,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <armor id="29544" name="Expensive Ring of Chronicle Heir" icon="icon.event_classic_ring">
@@ -410,7 +410,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -419,7 +419,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29546" name="Blessed Scroll of Resurrection" icon="icon.etc_scroll_of_resurrection_i01">
@@ -427,7 +427,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29547" name="Scroll: Enchant Weapon (D-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_wp_d_i00">
@@ -435,7 +435,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29548" name="Scroll: Enchant Armor (D-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_am_d_i00">
@@ -443,7 +443,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29549" name="Scroll: Enchant Weapon (C-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_wp_c_i00">
@@ -451,7 +451,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29550" name="Scroll: Enchant Armor (C-grade)" icon="br_cashtex.item.br_cash_scrl_of_ench_am_c_i00">
@@ -459,7 +459,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="29551" name="Ring of Chronicle Heir Part" type="MATERIAL" icon="icon.event_classic_ring">
@@ -467,7 +467,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29552" name="1st Class Buff Scroll" type="SCROLL" icon="icon.etc_scroll_white_i00">
@@ -476,7 +476,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55035" level="1"/>
     </item>
@@ -486,7 +486,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55036" level="2"/>
     </item>
@@ -496,7 +496,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55037" level="1"/>
     </item>
@@ -506,7 +506,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55038" level="1"/>
     </item>
@@ -515,7 +515,7 @@
         <restriction dropable="false" tradeable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29557" name="Package: Mysterious Soulshot (No-grade, 100 pcs.)" icon="br_cashtex.item.br_cash_pack_of_soulshot_a_i00">
@@ -523,7 +523,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29558" name="Package: Mysterious Blessed Spiritshot (No-grade, 1000 pcs.)" icon="br_cashtex.item.br_cash_pack_of_spiritshot_a_i00">
@@ -531,7 +531,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29559" name="Package: Mysterious Soulshot (D-grade, 100 pcs.)" icon="br_cashtex.item.br_cash_pack_of_soulshot_d_i00">
@@ -539,7 +539,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29560" name="Package: Mysterious Blessed Spiritshot (D-grade, 100 pcs.)" icon="br_cashtex.item.br_cash_pack_of_spiritshot_d_i00">
@@ -547,7 +547,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29561" name="Package: Mysterious Soulshot (C-grade, 100 pcs.)" icon="br_cashtex.item.br_cash_pack_of_soulshot_c_i00">
@@ -555,7 +555,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29562" name="Package: Mysterious Blessed Spiritshot (C-grade, 100 pcs.)" icon="br_cashtex.item.br_cash_pack_of_spiritshot_c_i00">
@@ -563,7 +563,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29563" name="Lucky Coin" icon="BranchIcon.Icon.etc_premium_coin_i00">
@@ -571,7 +571,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29564" name="Attendance Coin" icon="BranchIcon.Icon.etc_att_coin_i00">
@@ -579,7 +579,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29565" name="XP/SP Scroll" type="SCROLL" icon="icon.etc_recall_exp_scroll">
@@ -588,7 +588,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5</weight>
         <skill id="55041" level="1"/>
     </item>
@@ -607,7 +607,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29568" name="7-Day Reward" additionalName="Attendance Reward" icon="icon.etc_pi_gift_box_i00">
@@ -615,7 +615,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29569" name="13-Day Reward" additionalName="Attendance Reward" icon="icon.etc_pi_gift_box_i00">
@@ -623,7 +623,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29570" name="14-Day Reward" additionalName="Attendance Reward" icon="icon.etc_pi_gift_box_i00">
@@ -631,7 +631,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29571" name="20-Day Reward" additionalName="Attendance Reward" icon="icon.etc_pi_gift_box_i00">
@@ -639,7 +639,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29572" name="21-Day Reward" additionalName="Attendance Reward" icon="icon.etc_pi_gift_box_i00">
@@ -647,7 +647,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29573" name="27-Day Reward" additionalName="Attendance Reward" icon="icon.etc_pi_gift_box_i00">
@@ -655,7 +655,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29574" name="28-Day Reward" additionalName="Attendance Reward" icon="icon.etc_pi_gift_box_i00">
@@ -663,7 +663,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="29575" name="Queen Ant's Ring" additionalName="30-day" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i00">
@@ -702,7 +702,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="39058" level="1"/>
     </item>
@@ -711,7 +711,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="39025" level="1"/>
         <bodyPart>HAIR</bodyPart>
@@ -721,7 +721,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29581" name="Lineage II Chest" icon="icon.ev_10th_present2">
@@ -730,7 +730,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55044" level="1"/>
     </item>
@@ -740,7 +740,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55045" level="1"/>
     </item>
@@ -750,7 +750,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="55046" level="1"/>
     </item>
@@ -760,7 +760,7 @@
         <handler>EXTRACTABLE_ITEM</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="29585" name="Refined Romantic Chapeau" additionalName="30-day" icon="icon.accessory_archer_hat2_i00">
@@ -779,7 +779,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="29587" name="Agathion - Singer and Dancer" icon="BranchSys2.icon.br_aga_singer_dancer_i00">
@@ -787,7 +787,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="21233" level="1"/>
         <skill id="23234" level="1"/>
@@ -819,7 +819,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2340</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -830,7 +830,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2340</weight>
         <bodyPart>TWO_HANDS</bodyPart>
         <consume shot="1"/>
@@ -856,7 +856,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         <bodyPart>FINGER</bodyPart>
     </armor>
@@ -892,7 +892,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="29599" name="Chronic Noble Successor Box" icon="icon.ev_10th_present2">
@@ -900,7 +900,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

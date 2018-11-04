@@ -97,7 +97,7 @@ public class AdminLevel implements IAdminCommandHandler
 				byte lvl = Byte.parseByte(val);
 				if ((lvl >= 1) && (lvl <= Experience.MAX_LEVEL))
 				{
-					long pXp = targetPlayer.getExp();
+					long pXp = targetPlayer.getExperience();
 					long tXp = Experience.LEVEL[lvl];
 					
 					if (pXp > tXp)

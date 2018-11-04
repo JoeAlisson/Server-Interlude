@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5901" name="Blood Offering" icon="icon.etc_dragon_blood_i00">
@@ -13,7 +13,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5902" name="Scroll of Ancient Magic" icon="icon.etc_scroll_of_enchant_weapon_i01">
@@ -21,7 +21,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5903" name="Ancient Ash Urn" icon="icon.etc_oil_pot_black_i00">
@@ -29,7 +29,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5916" name="Spellbook Page" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_white_i00">
@@ -38,7 +38,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="2171" level="1"/>
     </item>
@@ -47,7 +47,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5918" name="Kranvel's Spellbook: Chapter of Water" commissionType="OTHER_ITEM" icon="icon.etc_paper_blue_i00">
@@ -55,7 +55,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5919" name="Kranvel's Spellbook: Chapter of Wind" commissionType="OTHER_ITEM" icon="icon.etc_paper_white_i00">
@@ -63,7 +63,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5920" name="Kranvel's Spellbook: Chapter of Earth" commissionType="OTHER_ITEM" icon="icon.etc_paper_black_i00">
@@ -71,7 +71,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5921" name="Worthless Piece of Paper" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_black_i00">
@@ -79,7 +79,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5922" name="Blueprint: Giants Golem 1" commissionType="OTHER_ITEM" icon="icon.etc_paper_black_i00">
@@ -87,7 +87,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5923" name="Blueprint: Giants Golem 2" commissionType="OTHER_ITEM" icon="icon.etc_paper_black_i00">
@@ -95,7 +95,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5924" name="Blueprint: Giants Golem 3" commissionType="OTHER_ITEM" icon="icon.etc_paper_black_i00">
@@ -103,7 +103,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5925" name="Blueprint: Giants Golem 4" commissionType="OTHER_ITEM" icon="icon.etc_paper_black_i00">
@@ -111,7 +111,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5926" name="Blueprint: Giants Golem 5" commissionType="OTHER_ITEM" icon="icon.etc_paper_black_i00">
@@ -119,7 +119,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5927" name="Book: Basics of Giants Magic, Chapter 1" commissionType="OTHER_ITEM" icon="icon.etc_paper_blue_i00">
@@ -127,7 +127,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5928" name="Book: Basics of Giants Magic, Chapter 2" commissionType="OTHER_ITEM" icon="icon.etc_paper_blue_i00">
@@ -135,7 +135,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5929" name="Book: Basics of Giants Magic, Chapter 3" commissionType="OTHER_ITEM" icon="icon.etc_paper_blue_i00">
@@ -143,7 +143,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5930" name="Book: Basics of Giants Magic, Chapter 4" commissionType="OTHER_ITEM" icon="icon.etc_paper_blue_i00">
@@ -151,7 +151,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5931" name="Book: Basics of Giants Magic, Chapter 5" commissionType="OTHER_ITEM" icon="icon.etc_paper_blue_i00">
@@ -159,7 +159,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5932" name="Handbook: Giants Architecture, Chapter 1" commissionType="OTHER_ITEM" icon="icon.etc_paper_red_i00">
@@ -167,7 +167,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5933" name="Handbook: Giants Architecture, Chapter 2" commissionType="OTHER_ITEM" icon="icon.etc_paper_red_i00">
@@ -175,7 +175,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5934" name="Handbook: Giants Architecture, Chapter 3" commissionType="OTHER_ITEM" icon="icon.etc_paper_red_i00">
@@ -183,7 +183,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5935" name="Handbook: Giants Architecture, Chapter 4" commissionType="OTHER_ITEM" icon="icon.etc_paper_red_i00">
@@ -191,7 +191,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5936" name="Handbook: Giants Architecture, Chapter 5" commissionType="OTHER_ITEM" icon="icon.etc_paper_red_i00">
@@ -199,7 +199,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5937" name="Book: Giants Medical Science, Chapter 1" commissionType="OTHER_ITEM" icon="icon.etc_paper_white_i00">
@@ -207,7 +207,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5938" name="Book: Giants Medical Science, Chapter 2" commissionType="OTHER_ITEM" icon="icon.etc_paper_white_i00">
@@ -215,7 +215,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5939" name="Book: Giants Medical Science, Chapter 3" commissionType="OTHER_ITEM" icon="icon.etc_paper_white_i00">
@@ -223,7 +223,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5940" name="Book: Giants Medical Science, Chapter 4" commissionType="OTHER_ITEM" icon="icon.etc_paper_white_i00">
@@ -231,7 +231,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5941" name="Book: Giants Medical Science, Chapter 5" commissionType="OTHER_ITEM" icon="icon.etc_paper_white_i00">
@@ -239,7 +239,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5942" name="Giant's Love Letter" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_report_i00">
@@ -247,7 +247,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5943" name="Giants' Doodle" commissionType="OTHER_ITEM" icon="icon.etc_painting_i00">
@@ -255,7 +255,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5944" name="Ancient Parchment" commissionType="OTHER_ITEM" icon="icon.etc_roll_of_paper_black_i00">
@@ -264,7 +264,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="2172" level="1"/>
     </item>
@@ -273,7 +273,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5946" name="Book: Giants Science and Technology, Chapter 2" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_white_i00">
@@ -281,7 +281,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5947" name="Book: Giants Science and Technology, Chapter 3" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_white_i00">
@@ -289,7 +289,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5948" name="Book: Giants Science and Technology, Chapter 4" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_white_i00">
@@ -297,7 +297,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5949" name="Book: Giants Science and Technology, Chapter 5" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_white_i00">
@@ -305,7 +305,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5950" name="Almanac: Lesser Giant Culture, Chapter 1" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_summon_i00">
@@ -313,7 +313,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5951" name="Almanac: Lesser Giant Culture, Chapter 2" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_summon_i00">
@@ -321,7 +321,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5952" name="Almanac: Lesser Giant Culture, Chapter 3" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_summon_i00">
@@ -329,7 +329,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5953" name="Almanac: Lesser Giant Culture, Chapter 4" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_summon_i00">
@@ -337,7 +337,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5954" name="Almanac: Lesser Giant Culture, Chapter 5" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_summon_i00">
@@ -345,7 +345,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5955" name="Ancient Lesser Giant Book" commissionType="OTHER_ITEM" icon="icon.etc_spell_books_black_i00">
@@ -354,7 +354,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
         <skill id="2173" level="1"/>
     </item>
@@ -363,7 +363,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <item stackable="true" id="5957" name="30-year-old Wine" commissionType="OTHER_ITEM" icon="icon.etc_luxury_wine_b_i00">
@@ -371,7 +371,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <item stackable="true" id="5958" name="60-year-old Wine" commissionType="OTHER_ITEM" icon="icon.etc_luxury_wine_c_i00">
@@ -379,7 +379,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>20</weight>
     </item>
     <item id="5959" name="Ritron's Dessert Recipe" commissionType="OTHER_ITEM" icon="icon.etc_paper_white_i00">
@@ -387,7 +387,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item id="5960" name="Ritron Jelly" commissionType="OTHER_ITEM" icon="icon.etc_cobol_i04">
@@ -395,7 +395,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="5961" name="Kail's Silver Basilisk" commissionType="OTHER_ITEM" icon="icon.etc_kyles_silver_basilisk_i00">
@@ -403,7 +403,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5962" name="Kail's Gold Golem" commissionType="OTHER_ITEM" icon="icon.etc_kyles_gold_golem_i00">
@@ -411,7 +411,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5963" name="Kail's Blood Dragon" commissionType="OTHER_ITEM" icon="icon.etc_kyles_blood_dragon_i00">
@@ -419,7 +419,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5964" name="Warehouse Keeper's Medal" commissionType="OTHER_ITEM" icon="icon.etc_irongate_medal_i00">
@@ -427,7 +427,7 @@
         <restriction freightable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5971" name="Joke Book of Ancient Times" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_black_i00">
@@ -435,7 +435,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5972" name="Revelation of the Seals: Chapter of Avarice" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_white_i00">
@@ -443,7 +443,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5973" name="Revelation of the Seals: Chapter of Gnosis" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_white_i00">
@@ -451,7 +451,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5974" name="Revelation of the Seals: Chapter of Strife" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_white_i00">
@@ -459,7 +459,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5975" name="Revelation of the Seals: Chapter of Punishment" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_white_i00">
@@ -467,7 +467,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5976" name="Revelation of the Seals: Chapter of Awakening" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_white_i00">
@@ -475,7 +475,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5977" name="Revelation of the Seals: Chapter of Calamity" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_white_i00">
@@ -483,7 +483,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5978" name="Revelation of the Seals: Chapter of Descent" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_white_i00">
@@ -491,7 +491,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5979" name="Ancient Epic, Chapter 1" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_gray_i00">
@@ -499,7 +499,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5980" name="Ancient Epic, Chapter 2" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_gray_i00">
@@ -507,7 +507,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5981" name="Ancient Epic, Chapter 3" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_gray_i00">
@@ -515,7 +515,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5982" name="Ancient Epic, Chapter 4" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_gray_i00">
@@ -523,7 +523,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5983" name="Ancient Epic, Chapter 5" commissionType="OTHER_ITEM" icon="icon.etc_piece_of_paper_gray_i00">
@@ -531,7 +531,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5984" name="Imperial Genealogy 1" commissionType="OTHER_ITEM" icon="icon.etc_letter_red_i00">
@@ -539,7 +539,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5985" name="Imperial Genealogy 2" commissionType="OTHER_ITEM" icon="icon.etc_letter_red_i00">
@@ -547,7 +547,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5986" name="Imperial Genealogy 3" commissionType="OTHER_ITEM" icon="icon.etc_letter_red_i00">
@@ -555,7 +555,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5987" name="Imperial Genealogy 4" commissionType="OTHER_ITEM" icon="icon.etc_letter_red_i00">
@@ -563,7 +563,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="5988" name="Imperial Genealogy 5" commissionType="OTHER_ITEM" icon="icon.etc_letter_red_i00">
@@ -571,7 +571,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
 </itemList>

@@ -5,7 +5,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="8560" name="Teddy Bear Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_bear_cap_i00">
@@ -14,7 +14,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <item stackable="true" id="8545" name="Kasha Spider's Tooth" icon="icon.etc_claw_i00">
@@ -22,7 +22,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="8561" name="Piggy Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_pig_cap_i00">
@@ -31,7 +31,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <item stackable="true" id="8546" name="Horn of Baar Dre Vanul" icon="icon.etc_horn_i00">
@@ -39,7 +39,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="8562" name="Jester Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_jester_cap_i00">
@@ -48,7 +48,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="8563" name="Wizard Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_magic_cap_i00">
@@ -57,7 +57,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="8564" name="Dapper Cap" commissionType="HAIR_ACCESSORY" icon="icon.accessory_dandy_cap_i00">
@@ -66,7 +66,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <armor id="8569" name="Half Face Mask" commissionType="HAIR_ACCESSORY" icon="icon.accessory_half_face_i00">
@@ -75,7 +75,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         </armor>
     <item stackable="true" id="8543" name="Bead Parcel" icon="icon.accessary_mage_earing_i00">
@@ -83,7 +83,7 @@
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <questItem>true</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="8559" name="Coronet" commissionType="HAIR_ACCESSORY" icon="icon.accessory_flower_cap_i00">
@@ -92,7 +92,7 @@
         <restriction freightable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <condition messageId="1518" includeName="false">
             <not>

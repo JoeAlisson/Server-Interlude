@@ -7,7 +7,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1210</weight>
         </armor>
     <armor id="70656" name="Warrior's Shining Gloves" additionalName="30 days" icon="icon.armor_t45_g_i00">
@@ -17,7 +17,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>600</weight>
         </armor>
     <armor id="70659" name="Warrior's Shining Tunic" additionalName="30 days" type="MAGIC" icon="icon.armor_t57_u_i00">
@@ -27,7 +27,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1980</weight>
         </armor>
     <armor id="70658" name="Warrior's Shining Circlet" additionalName="30 days" icon="icon.armor_circlet_i00">
@@ -37,7 +37,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>600</weight>
         </armor>
     <armor id="70661" name="Warrior's Shining Gloves" additionalName="30 days" icon="icon.armor_t57_g_i00">
@@ -47,7 +47,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>610</weight>
         </armor>
     <armor id="70660" name="Warrior's Shining Stockings" additionalName="30 days" type="MAGIC" icon="icon.armor_t57_l_i00">
@@ -57,7 +57,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>960</weight>
         </armor>
     <item id="70663" name="Party Support Cube - Lv. 1" additionalName="7-day" icon="icon.etc_clear_crystal_cube_pc_i00">
@@ -75,7 +75,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1210</weight>
         </armor>
     <item id="70665" name="Spiritshot Support Cube" additionalName="7-day" icon="icon.etc_pink_crystal_cube_pc_i00">
@@ -148,7 +148,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>150</weight>
         </armor>
     <item id="70672" name="Progression Support Cube" additionalName="7-day" icon="icon.etc_crystal_cube_event_i00">
@@ -164,7 +164,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70674" name="Returning Hero's Talisman" additionalName="30 days" icon="icon.npoint_talisman_stat">
@@ -173,7 +173,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </armor>
     <item stackable="true" id="70677" name="Returning Hero's Reward - Robe" additionalName="Event" icon="icon.event_six_party_box_i00">
@@ -181,7 +181,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70676" name="Returning Hero's Reward - Light Armor" additionalName="Event" icon="icon.event_six_party_box_i00">
@@ -189,7 +189,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70679" name="Returning Hero's Reward - Lv. 30" additionalName="Event" icon="icon.npoint_earring_of_lind_30day_box">
@@ -197,7 +197,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70678" name="Expertise Rune (C-grade)" additionalName="30 days" icon="br_cashtex.item.br_cash_rune_of_feather_i00">
@@ -205,7 +205,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70681" name="Returning Hero's Reward - Lv. 45" additionalName="Event" icon="icon.npoint_valakas_30day_box">
@@ -213,7 +213,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70680" name="Returning Hero's Reward - Lv. 40" additionalName="Event" icon="icon.npoint_antaras_30day_box">
@@ -221,7 +221,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70683" name="Returning Hero's Reward - Lv. 54" additionalName="Event" icon="icon.npoint_earthworm_30day_box">
@@ -229,7 +229,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70682" name="Returning Hero's Reward - Lv. 50" additionalName="Event" icon="icon.npoint_tauti_30day_box">
@@ -237,7 +237,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70685" name="Returning Hero's Reward - Lv. 58" additionalName="Event" icon="icon.etc_pi_box_wish_pack">
@@ -245,7 +245,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70684" name="Returning Hero's Reward - Lv. 56" additionalName="Event" icon="icon.etc_pi_box_love_pack">
@@ -253,7 +253,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70687" name="Artisan's Goggles (STR+1 INT+1)" icon="icon.accessory_dwarf_goggle_i00">
@@ -262,7 +262,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55605"/>
         </armor>
@@ -271,7 +271,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70689" name="Artisan's Goggles (CON+1 MEN+1)" icon="icon.accessory_dwarf_goggle_i00">
@@ -281,7 +281,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55607"/>
         </armor>
@@ -292,7 +292,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55606"/>
         </armor>
@@ -303,7 +303,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55609"/>
         </armor>
@@ -314,7 +314,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55608"/>
         </armor>
@@ -325,7 +325,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55611"/>
         </armor>
@@ -336,7 +336,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55610"/>
         </armor>
@@ -347,7 +347,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55613"/>
         </armor>
@@ -358,7 +358,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55612"/>
         </armor>
@@ -369,7 +369,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55615"/>
         </armor>
@@ -380,7 +380,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55614"/>
         </armor>
@@ -391,7 +391,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55617"/>
         </armor>
@@ -402,7 +402,7 @@
         <handler>ITEM_SKILL</handler>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
         <skill id="55616"/>
         </armor>
@@ -412,7 +412,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70600" name="Mysterious Blessed Soulshot (D-grade)" icon="icon.etc_bless_spirit_bullet_blue_i00">
@@ -421,7 +421,7 @@
         <crystalInfo type="D"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70603" name="Mysterious Blessed Soulshot (A-grade)" icon="icon.etc_bless_spirit_bullet_silver_i00">
@@ -430,7 +430,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70602" name="Mysterious Blessed Soulshot (B-grade)" icon="icon.etc_bless_spirit_bullet_red_i00">
@@ -439,7 +439,7 @@
         <crystalInfo type="B"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70605" name="Mysterious Blessed Soulshot Pack (No-grade)" icon="br_cashtex.item.br_cash_pack_of_soulshot_a_i00">
@@ -447,7 +447,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70604" name="Mysterious Blessed Spiritshot (A-grade)" icon="icon.etc_spell_shot_silver_i01">
@@ -456,7 +456,7 @@
         <crystalInfo type="A"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70607" name="Mysterious Blessed Soulshot Pack (C-grade)" icon="br_cashtex.item.br_cash_pack_of_soulshot_c_i00">
@@ -464,7 +464,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70606" name="Mysterious Blessed Soulshot Pack (D-grade)" icon="br_cashtex.item.br_cash_pack_of_soulshot_d_i00">
@@ -472,7 +472,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70609" name="Mysterious Blessed Soulshot Pack (A-grade)" icon="br_cashtex.item.br_cash_pack_of_soulshot_a_i00">
@@ -480,7 +480,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70608" name="Mysterious Blessed Soulshot Pack (B-grade)" icon="br_cashtex.item.br_cash_pack_of_soulshot_b_i00">
@@ -488,7 +488,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70611" name="Mysterious Blessed Spiritshot Pack (D-grade)" icon="br_cashtex.item.br_cash_large_pack_of_blessed_spiritshot_d_i00">
@@ -496,7 +496,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70610" name="Mysterious Blessed Spiritshot Pack (No-grade)" icon="br_cashtex.item.br_cash_pack_of_spiritshot_a_i00">
@@ -504,7 +504,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70613" name="Mysterious Blessed Spiritshot Pack (B-grade)" icon="br_cashtex.item.br_cash_large_pack_of_blessed_spiritshot_b_i00">
@@ -512,7 +512,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70612" name="Mysterious Blessed Spiritshot Pack (C-grade)" icon="br_cashtex.item.br_cash_large_pack_of_blessed_spiritshot_c_i00">
@@ -520,7 +520,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70615" name="Mount - Gold Maned Lion" additionalName="7-day" icon="icon.pi_high_agathion_bracelet_i00">
@@ -537,7 +537,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70617" name="Mount - Gold Maned Lion (7-day)" icon="icon.etc_pi_gift_box_i00">
@@ -545,7 +545,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <armor id="70616" name="Mount - Princess Ant" additionalName="7-day" icon="icon.pi_high_agathion_bracelet_i00">
@@ -562,7 +562,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item stackable="true" id="70618" name="Mount - Princess Ant (7-day)" icon="icon.etc_pi_gift_box_i01">
@@ -570,7 +570,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70621" name="Einhasad's Protection" icon="BranchSys2.icon.br_soulavatar_regen_i00">
@@ -578,7 +578,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70620" name="The Finest Quick Recovery Potion" icon="icon.bm_freya_potion">
@@ -586,7 +586,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>2</weight>
     </item>
     <item id="70623" name="Lucky Charm" additionalName="1-day" icon="BranchSys.icon.br_four_leaf_clover_i00">
@@ -602,7 +602,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70625" name="XP Growth Amulet" additionalName="1-day" icon="icon.skill19226">
@@ -618,7 +618,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70627" name="XP Growth Amulet Chest (1-day)" icon="BranchSys.icon.br_lucky_bag_box_i00">
@@ -626,7 +626,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70626" name="High-grade XP Growth Amulet" additionalName="1-day" icon="icon.skill19226">
@@ -650,7 +650,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70631" name="Fishing XP Growth Amulet Pack (1-day)" icon="BranchSys.icon.br_four_leaf_clover_box_i00">
@@ -658,7 +658,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item id="70630" name="High-grade Fishing XP Growth Amulet" additionalName="1-day" icon="icon.fishing_zone_ticket">
@@ -674,7 +674,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70632" name="High-grade Fishing XP Growth Amulet Pack (1-day)" icon="BranchSys.icon.br_four_leaf_clover_box_i00">
@@ -682,7 +682,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70635" name="Formal Wear Appearance Scroll" icon="icon.etc_charm_of_courage_i02">
@@ -690,7 +690,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70634" name="Red Zubei Transformation Scroll" icon="icon.etc_charm_of_courage_i04">
@@ -698,7 +698,7 @@
         <restriction sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>0</weight>
     </item>
     <item stackable="true" id="70637" name="Party Buff Scroll - Lv. 2" additionalName="Event" icon="icon.etc_trans_4f_s_b_01">
@@ -706,7 +706,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="70636" name="Party Buff Scroll - Lv. 1" additionalName="Event" icon="icon.etc_trans_4f_s_b_01">
@@ -714,7 +714,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>120</weight>
     </item>
     <item stackable="true" id="70639" name="Warrior's XP/SP Scroll" additionalName="Event" icon="icon.exp_bottle_scroll">
@@ -722,7 +722,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="70638" name="Special Warrior's Fruit" additionalName="Event" icon="icon.etc_cobol_i01">
@@ -730,7 +730,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="70641" name="Warrior's Major Recovery Potion" additionalName="Event" icon="icon.etc_potion_red_i00">
@@ -738,7 +738,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item stackable="true" id="70640" name="Warrior's Recovery Potion" additionalName="Event" icon="icon.etc_potion_scarlet_i00">
@@ -746,7 +746,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <item id="70643" name="Golden Mermaid's Scale" additionalName="7-day" icon="icon.etc_oren_fish_scale_i00">
@@ -762,7 +762,7 @@
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10</weight>
     </item>
     <weapon id="70645" name="Warrior's Shining Dualsword" additionalName="30 days" type="DUAL" icon="icon.weapon_dual_sword_i00">
@@ -772,7 +772,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <consume shot="1"/>
     </weapon>
@@ -791,7 +791,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <consume mp="3" shot="1"/>
     </weapon>
@@ -802,7 +802,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <consume shot="1"/>
     </weapon>
@@ -813,7 +813,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <skill id="3599"/>
         <consume shot="1"/>
@@ -825,7 +825,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1</weight>
         <consume shot="1"/>
     </weapon>
@@ -836,7 +836,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>10480</weight>
         </armor>
     <armor id="70650" name="Warrior's Shining Helmet" additionalName="30 days" icon="icon.armor_leather_helmet_i00">
@@ -846,7 +846,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>600</weight>
         </armor>
     <armor id="70653" name="Warrior's Shining Boots" additionalName="30 days" icon="icon.armor_t62_b_i00">
@@ -856,7 +856,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>1200</weight>
         </armor>
     <armor id="70652" name="Warrior's Shining Gauntlets" additionalName="30 days" icon="icon.armor_t62_g_i00">
@@ -866,7 +866,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>600</weight>
         </armor>
     <armor id="70655" name="Warrior's Shining Rags" additionalName="30 days" type="LIGHT" icon="icon.armor_t45_ul_i00">
@@ -876,7 +876,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>5800</weight>
         </armor>
     <armor id="70654" name="Warrior's Shining Helmet" additionalName="30 days" icon="icon.armor_leather_helmet_i00">
@@ -886,7 +886,7 @@
         <crystalInfo type="C"/>
         <questItem>false</questItem>
         <reuseDelay>0</reuseDelay>
-        <time>0</time>
+        <time>-1</time>
         <weight>620</weight>
         </armor>
 </itemList>

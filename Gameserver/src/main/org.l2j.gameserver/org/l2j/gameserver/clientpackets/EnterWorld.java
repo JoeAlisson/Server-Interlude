@@ -1,62 +1,26 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Base64;
-import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.*;
-import org.l2j.gameserver.cache.HtmCache;
-import org.l2j.gameserver.communitybbs.Manager.RegionBBSManager;
-import org.l2j.gameserver.datatables.MapRegionTable;
-import org.l2j.gameserver.handler.AdminCommandHandler;
 import org.l2j.gameserver.instancemanager.*;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.*;
 import org.l2j.gameserver.model.entity.database.Wedding;
 import org.l2j.gameserver.model.entity.database.repository.CharacterFriendRepository;
-import org.l2j.gameserver.model.quest.Quest;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
-import org.l2j.gameserver.util.FloodProtector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Objects;
 
+import static java.util.Objects.isNull;
 
-/**
- * Enter World Packet Handler
- * <p>
- * <p>
- * 0000: 03
- * <p>
- * packet format rev656 cbdddd
- * <p>
- * @version $Revision: 1.16.2.1.2.7 $ $Date: 2005/03/29 23:15:33 $
- */
-public class EnterWorld extends L2GameClientPacket
-{
-	private static final String _C__03_ENTERWORLD = "[C] 03 EnterWorld";
-	private static Logger _log = LoggerFactory.getLogger(EnterWorld.class.getName());
+public class EnterWorld extends L2GameClientPacket {
+
+	private static Logger _log = LoggerFactory.getLogger(EnterWorld.class);
 	
 	public TaskPriority getPriority()
 	{
@@ -64,34 +28,32 @@ public class EnterWorld extends L2GameClientPacket
 	}
 	
 	@Override
-	protected void readImpl()
-	{
+	protected void readImpl() {
 		// this is just a trigger packet. it has no content
 	}
 	
 	@Override
-	protected void runImpl()
-	{
-		L2PcInstance activeChar = getClient().getActiveChar();
+	protected void runImpl() {
+		var activeChar = client.getActiveChar();
 		
-		if (activeChar == null)
-		{
+		if (isNull(activeChar)) {
 			_log.warn("EnterWorld failed! activeChar is null...");
-			getClient().closeNow();
+			client.closeNow();
 			return;
 		}
 
-        sendPacket(new ExLightingCandleEvent(ExLightingCandleEvent.DISABLED));
+        //sendPacket(new ExLightingCandleEvent(ExLightingCandleEvent.ENABLED));
         sendPacket(new ExEnterWorldPacket());
-        sendPacket(new ExConnectedTimeAndGettableReward());
+        /*sendPacket(new ExConnectedTimeAndGettableReward());
         sendPacket(new ExOneDayReceiveRewardList(activeChar));
         sendPacket(new ExConnectedTimeAndGettableReward());
         sendPacket(new ExPeriodicHenna(activeChar));
         sendPacket(new HennaInfoPacket(activeChar));
-        sendPacket(new EtcStatusUpdate(activeChar));
-        sendPacket(new UIPacket(activeChar));
+        sendPacket(new EtcStatusUpdate(activeChar));*/
+        sendPacket(new UserInfoPacket(activeChar));
+		activeChar.spawnMe(activeChar.getX(), activeChar.getY(), activeChar.getZ());
         sendPacket(new SystemMessage(SystemMessageId.WELCOME_TO_THE_WORLD_OF_LINEAGE_II));
-
+/*
 
 		// Register in flood protector
 		FloodProtector.getInstance().registerNewPlayer(activeChar.getObjectId());
@@ -347,11 +309,11 @@ public class EnterWorld extends L2GameClientPacket
 		
 		RegionBBSManager.getInstance().changeCommunityBoard();
 		
-		/*
+		*//*
 		 * if(Config.GAMEGUARD_ENFORCE) - disabled by KenM will be reenabled later activeChar.sendPacket(new GameGuardQuery());
-		 */
+		 *//*
 		
-		TvTEvent.onLogin(activeChar);
+		TvTEvent.onLogin(activeChar);*/
 
 	}
 	
@@ -482,12 +444,6 @@ public class EnterWorld extends L2GameClientPacket
 			// huh, UTF-8 is not supported? :)
 			return null;
 		}
-	}
-	
-	@Override
-	public String getType()
-	{
-		return _C__03_ENTERWORLD;
 	}
 	
 	private void setPledgeClass(L2PcInstance activeChar)
