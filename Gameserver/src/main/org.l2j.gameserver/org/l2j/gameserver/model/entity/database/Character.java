@@ -57,7 +57,6 @@ public class Character extends Entity<Integer> {
     private boolean online;
     @Column("online_time")
     private long onlineTime;
-    private byte slot;
     private boolean newbie;
     @Column("last_access")
     private long lastAccess;
@@ -111,7 +110,7 @@ public class Character extends Entity<Integer> {
         this.objectId = objectId;
     }
 
-    public String getCharName() {
+    public String getName() {
         return name;
     }
 
@@ -361,14 +360,6 @@ public class Character extends Entity<Integer> {
 
     public void setOnlineTime(long onlineTime) {
         this.onlineTime = onlineTime;
-    }
-
-    public int getSlot() {
-        return slot;
-    }
-
-    public void setSlot(byte slot) {
-        this.slot = slot;
     }
 
     public boolean isNewbie() {

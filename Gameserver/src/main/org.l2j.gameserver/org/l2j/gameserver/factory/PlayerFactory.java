@@ -1,16 +1,16 @@
 package org.l2j.gameserver.factory;
 
 import org.l2j.commons.Config;
+import org.l2j.gameserver.datatables.PlayerTemplateTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.Items;
-import org.l2j.gameserver.model.entity.database.repository.CharacterRepository;
-import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
+import org.l2j.gameserver.model.entity.database.repository.*;
 import org.l2j.gameserver.templates.ClassTemplate;
 
-import java.util.Optional;
-
 import static java.lang.System.currentTimeMillis;
+import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 import static java.util.Objects.requireNonNullElse;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.model.L2ItemInstance.ItemLocation.INVENTORY;
@@ -59,13 +59,7 @@ public class PlayerFactory {
             character.setNewbie(true);
         }
         character.setLastAccess(currentTimeMillis());
-
-        var repository = getRepository(CharacterRepository.class);
-
-        var slot = repository.getLastCharSlotFromAccount(account);
-        character.setSlot((byte) (slot + 1));
-
-        repository.save(character);
+        getRepository(CharacterRepository.class).save(character);
         return character;
     }
 
@@ -94,11 +88,50 @@ public class PlayerFactory {
         getRepository(ItemRepository.class).save(modelItem);
     }
 
-    public static L2PcInstance load(int objectId) {
-        CharacterRepository repository = getRepository(CharacterRepository.class);
-        Optional<Character> optionalCharacter = repository.findById(objectId);
+    public static L2PcInstance load(Character character) {
+        if(isNull(character)) {
+            return null;
+        }
+        var template = PlayerTemplateTable.getInstance().getClassTemplate(character.getClassId());
+        return new L2PcInstance(template, character);
+    }
 
-        L2PcInstance player = L2PcInstance.load(objectId);
-        return player;
+    public static void delete(int objectId) {
+        if (objectId < 0) {
+            return;
+        }
+        // TODO  release all objects Id
+        IdFactory.getInstance().releaseId(objectId);
+
+        getRepository(CharacterFriendRepository.class).deleteFriends(objectId);
+        getRepository(CharacterHennasRepository.class).deleteById(objectId);
+        getRepository(CharacterMacrosesRepository.class).deleteById(objectId);
+        getRepository(CharacterQuestsRepository.class).deleteById(objectId);
+        getRepository(CharacterRecipebookRepository.class).deleteAllByCharacter(objectId);
+        getRepository(CharacterShortcutsRepository.class).deleteById(objectId);
+        getRepository(CharacterSkillsRepository.class).deleteById(objectId);
+        getRepository(CharacterSkillsSaveRepository.class).deleteById(objectId);
+        getRepository(CharacterSubclassesRepository.class).deleteById(objectId);
+        getRepository(HeroesRepository.class).deleteById(objectId);
+        getRepository(OlympiadNoblesRepository.class).deleteById(objectId);
+        getRepository(SevenSignsRepository.class).deleteById(objectId);
+        getRepository(PetsRepository.class).deleteByOwner(objectId);
+        getRepository(AugmentationsRepository.class).deleteByItemOwner(objectId);
+        getRepository(ItemRepository.class).deleteByOwner(objectId);
+        getRepository(MerchantLeaseRepository.class).deleteByPlayer(objectId);
+        getRepository(CharacterRepository.class).deleteById(objectId);
+    }
+
+    public static void markToDelete(Character character) {
+        long deleteTime = System.currentTimeMillis() + (Config.DELETE_DAYS * 86400000L);
+        getRepository(CharacterRepository.class).updateDeleteTime(character.getObjectId(), deleteTime);
+        character.setDeleteTime(deleteTime);
+    }
+
+    public static void removeMarkDelete(Character character) {
+        if(nonNull(character)) {
+            getRepository(CharacterRepository.class).updateDeleteTime(character.getObjectId(), 0);
+            character.setDeleteTime(0);
+        }
     }
 }

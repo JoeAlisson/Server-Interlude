@@ -1,5 +1,6 @@
 package org.l2j.gameserver.model.actor.appearance;
 
+@Deprecated(forRemoval = true)
 public class PcAppearance {
 	private byte face;
 	private byte hairColor;

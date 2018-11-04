@@ -14,6 +14,7 @@ import org.l2j.gameserver.cache.WarehouseCacheManager;
 import org.l2j.gameserver.communitybbs.BB.Forum;
 import org.l2j.gameserver.communitybbs.Manager.ForumsBBSManager;
 import org.l2j.gameserver.datatables.*;
+import org.l2j.gameserver.factory.ItemHelper;
 import org.l2j.gameserver.handler.IItemHandler;
 import org.l2j.gameserver.handler.ISkillHandler;
 import org.l2j.gameserver.handler.ItemHandler;
@@ -65,6 +66,37 @@ import static java.util.Objects.nonNull;
 
 public final class L2PcInstance extends L2PlayableInstance {
 
+    private Character character; // TODO make final
+    private Weapon fistsWeaponItem; // Used when no weapon is equipped
+
+
+
+    public L2PcInstance(ClassTemplate template, Character character) {
+        super(character.getObjectId(), template);
+        this.character = character;
+        fistsWeaponItem = ItemHelper.findFistsWeaponItem(character.getClassId());
+    }
+
+    public final KnownList getKnownList() {
+        if(isNull(_knownList)) {
+            _knownList = new PcKnownList(this);
+        }
+        return  _knownList;
+    }
+
+    // ####################################################################################
+
+    private L2Clan clan;
+    /**
+     * Return the fists weapon of the L2PcInstance (used when no weapon is equiped).
+     *
+     * @return the fists weapon item
+     */
+    public Weapon getFistsWeaponItem() {
+        return fistsWeaponItem;
+    }
+
+    @Deprecated
     private L2PcInstance(int objectId, ClassTemplate template, String accountName, PcAppearance app) {
         super(objectId, template);
         super.initCharStatusUpdateValues();
@@ -88,14 +120,6 @@ public final class L2PcInstance extends L2PlayableInstance {
         getFreight().restore();
     }
 
-    public final KnownList getKnownList() {
-        if(isNull(_knownList)) {
-            _knownList = new PcKnownList(this);
-        }
-        return  _knownList;
-    }
-
-    // ####################################################################################
 
     public static final int REQUEST_TIMEOUT = 15;
     public static final int STORE_PRIVATE_NONE = 0;
@@ -129,7 +153,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
 
     private L2GameClient _client;
-    private Character character;
+
 
     private String _accountName;
     private long _deleteTimer;
@@ -635,11 +659,6 @@ public final class L2PcInstance extends L2PlayableInstance {
     private int _clanId;
 
     /**
-     * The Clan object of the L2PcInstance.
-     */
-    private L2Clan _clan;
-
-    /**
      * Apprentice and Sponsor IDs.
      */
     private int _apprentice = 0;
@@ -650,12 +669,12 @@ public final class L2PcInstance extends L2PlayableInstance {
     private int _sponsor = 0;
 
     /**
-     * The _clan join expire time.
+     * The clan join expire time.
      */
     private long _clanJoinExpiryTime;
 
     /**
-     * The _clan create expire time.
+     * The clan create expire time.
      */
     private long _clanCreateExpiryTime;
 
@@ -665,7 +684,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     private int _powerGrade = 0;
 
     /**
-     * The _clan privileges.
+     * The clan privileges.
      */
     private int _clanPrivileges = 0;
 
@@ -774,11 +793,6 @@ public final class L2PcInstance extends L2PlayableInstance {
      * The _recent fake death end time.
      */
     private long _recentFakeDeathEndTime = 0;
-
-    /**
-     * The fists Weapon of the L2PcInstance (used when no weapon is equiped).
-     */
-    private Weapon _fistsWeaponItem;
 
     /**
      * The _chars.
@@ -2421,22 +2435,22 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     public void setClassId(int Id) {
 
-        if ((getLvlJoinedAcademy() != 0) && (_clan != null) && (PlayerClass.values()[Id].level() == 2)) {
+        if ((getLvlJoinedAcademy() != 0) && (clan != null) && (PlayerClass.values()[Id].level() == 2)) {
             if (getLvlJoinedAcademy() <= 16) {
-                _clan.setReputationScore(_clan.getReputationScore() + 400, true);
+                clan.setReputationScore(clan.getReputationScore() + 400, true);
             } else if (getLvlJoinedAcademy() >= 39) {
-                _clan.setReputationScore(_clan.getReputationScore() + 170, true);
+                clan.setReputationScore(clan.getReputationScore() + 170, true);
             } else {
-                _clan.setReputationScore(_clan.getReputationScore() + (400 - ((getLvlJoinedAcademy() - 16) * 10)), true);
+                clan.setReputationScore(clan.getReputationScore() + (400 - ((getLvlJoinedAcademy() - 16) * 10)), true);
             }
-            _clan.broadcastToOnlineMembers(new PledgeShowInfoUpdate(_clan));
+            clan.broadcastToOnlineMembers(new PledgeShowInfoUpdate(clan));
             setLvlJoinedAcademy(0);
             // oust pledge member from the academy, cuz he has finished his 2nd class transfer
             SystemMessage msg = new SystemMessage(SystemMessageId.CLAN_MEMBER_S1_EXPELLED);
             msg.addString(getName());
-            _clan.broadcastToOnlineMembers(msg);
-            _clan.broadcastToOnlineMembers(new PledgeShowMemberListDelete(getName()));
-            _clan.removeClanMember(getName(), 0);
+            clan.broadcastToOnlineMembers(msg);
+            clan.broadcastToOnlineMembers(new PledgeShowMemberListDelete(getName()));
+            clan.removeClanMember(getName(), 0);
             sendPacket(new SystemMessage(SystemMessageId.ACADEMY_MEMBERSHIP_TERMINATED));
 
             // receive graduation gift
@@ -2477,73 +2491,6 @@ public final class L2PcInstance extends L2PlayableInstance {
         return _activeEnchantItem;
     }
 
-    /**
-     * Set the fists weapon of the L2PcInstance (used when no weapon is equiped).
-     *
-     * @param weaponItem The fists Weapon to set to the L2PcInstance
-     */
-    public void setFistsWeaponItem(Weapon weaponItem) {
-        _fistsWeaponItem = weaponItem;
-    }
-
-    /**
-     * Return the fists weapon of the L2PcInstance (used when no weapon is equiped).
-     *
-     * @return the fists weapon item
-     */
-    public Weapon getFistsWeaponItem() {
-        return _fistsWeaponItem;
-    }
-
-    /**
-     * Return the fists weapon of the L2PcInstance Class (used when no weapon is equiped).
-     *
-     * @param classId the class id
-     * @return the l2 weapon
-     */
-    public Weapon findFistsWeaponItem(int classId) {
-        Weapon weaponItem = null;
-        ItemTemplate temp = null;
-        if ((classId >= 0x00) && (classId <= 0x09)) {
-            // HUMAN FIGHTER fists
-            temp = ItemTable.getInstance().getTemplate(246);
-            weaponItem = (Weapon) temp;
-        } else if ((classId >= 0x0a) && (classId <= 0x11)) {
-            // HUMAN MAGE fists
-            temp = ItemTable.getInstance().getTemplate(251);
-            weaponItem = (Weapon) temp;
-        } else if ((classId >= 0x12) && (classId <= 0x18)) {
-            // elven FIGHTER fists
-            temp = ItemTable.getInstance().getTemplate(244);
-            weaponItem = (Weapon) temp;
-        } else if ((classId >= 0x19) && (classId <= 0x1e)) {
-            // elven MAGE fists
-            temp = ItemTable.getInstance().getTemplate(249);
-            weaponItem = (Weapon) temp;
-        } else if ((classId >= 0x1f) && (classId <= 0x25)) {
-            // dark elven FIGHTER fists
-            temp = ItemTable.getInstance().getTemplate(245);
-            weaponItem = (Weapon) temp;
-        } else if ((classId >= 0x26) && (classId <= 0x2b)) {
-            // dark elven MAGE fists
-            temp = ItemTable.getInstance().getTemplate(250);
-            weaponItem = (Weapon) temp;
-        } else if ((classId >= 0x2c) && (classId <= 0x30)) {
-            // ORC FIGHTER fists
-            temp = ItemTable.getInstance().getTemplate(248);
-            weaponItem = (Weapon) temp;
-        } else if ((classId >= 0x31) && (classId <= 0x34)) {
-            // ORC MAGE fists
-            temp = ItemTable.getInstance().getTemplate(252);
-            weaponItem = (Weapon) temp;
-        } else if ((classId >= 0x35) && (classId <= 0x39)) {
-            // dwarven fists
-            temp = ItemTable.getInstance().getTemplate(247);
-            weaponItem = (Weapon) temp;
-        }
-
-        return weaponItem;
-    }
 
     /**
      * Give Expertise skill of this level and remove beginner Lucky skill. <B><U> Actions</U> :</B><BR>
@@ -2765,8 +2712,8 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return the clan crest id
      */
     public int getClanCrestId() {
-        if ((_clan != null) && _clan.hasCrest()) {
-            return _clan.getCrestId();
+        if ((clan != null) && clan.hasCrest()) {
+            return clan.getCrestId();
         }
 
         return 0;
@@ -2778,8 +2725,8 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return The Clan CrestLarge Identifier or 0
      */
     public int getClanCrestLargeId() {
-        if ((_clan != null) && _clan.hasCrestLarge()) {
-            return _clan.getCrestLargeId();
+        if ((clan != null) && clan.hasCrestLarge()) {
+            return clan.getCrestLargeId();
         }
 
         return 0;
@@ -4128,10 +4075,10 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return the ally id
      */
     public int getAllianceId() {
-        if (_clan == null) {
+        if (clan == null) {
             return 0;
         }
-        return _clan.getAllyId();
+        return clan.getAllyId();
     }
 
     /**
@@ -4742,12 +4689,12 @@ public final class L2PcInstance extends L2PlayableInstance {
 
                     if (!(isInsideZone(ZONE_PVP) && !isInsideZone(ZONE_SIEGE))) {
                         boolean isKillerPc = (killer instanceof L2PcInstance);
-                        if (isKillerPc && (((L2PcInstance) killer).getClan() != null) && (getClan() != null) && !isAcademyMember() && !(((L2PcInstance) killer).isAcademyMember()) && _clan.isAtWarWith(((L2PcInstance) killer).getClanId()) && ((L2PcInstance) killer).getClan().isAtWarWith(_clan.getClanId())) {
+                        if (isKillerPc && (((L2PcInstance) killer).getClan() != null) && (getClan() != null) && !isAcademyMember() && !(((L2PcInstance) killer).isAcademyMember()) && clan.isAtWarWith(((L2PcInstance) killer).getClanId()) && ((L2PcInstance) killer).getClan().isAtWarWith(clan.getClanId())) {
                             if (getClan().getReputationScore() > 0) {
                                 ((L2PcInstance) killer).getClan().setReputationScore(((L2PcInstance) killer).getClan().getReputationScore() + 2, true);
                             }
                             if (((L2PcInstance) killer).getClan().getReputationScore() > 0) {
-                                _clan.setReputationScore(_clan.getReputationScore() - 2, true);
+                                clan.setReputationScore(clan.getReputationScore() - 2, true);
                             }
                         }
                         if (Config.ALT_GAME_DELEVEL) {
@@ -5615,12 +5562,12 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Set the _clan object, _clanId, _clanLeader Flag and title of the L2PcInstance.
+     * Set the clan object, _clanId, _clanLeader Flag and title of the L2PcInstance.
      *
      * @param clan the new clan
      */
     public void setClan(L2Clan clan) {
-        _clan = clan;
+        this.clan = clan;
         setTitle("");
 
         if (clan == null) {
@@ -5644,12 +5591,12 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Return the _clan object of the L2PcInstance.
+     * Return the clan object of the L2PcInstance.
      *
      * @return the clan
      */
     public L2Clan getClan() {
-        return _clan;
+        return clan;
     }
 
     /**
@@ -6093,6 +6040,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @param objectId Identifier of the object to initialized
      * @return The L2PcInstance loaded from the database
      */
+    @Deprecated
     private static L2PcInstance restore(int objectId) {
         CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
         Optional<Character> optionalCharacter = repository.findById(objectId);
@@ -6103,7 +6051,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             PcAppearance app = new PcAppearance(character.getFace(), character.getHairColor(), character.getHairStyle(), character.getSex());
 
             L2PcInstance player = new L2PcInstance(objectId, template, character.getAccount(), app);
-            player.setName(character.getCharName());
+            player.setName(character.getName());
             player._lastAccess = character.getLastAccess();
 
             player.getStat().setExp(character.getExperience());
@@ -6156,7 +6104,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             player.setDeleteTimer(character.getDeleteTime());
             player.setTitle(character.getTitle());
             player.setAccessLevel(character.getAccesslevel());
-            player.setFistsWeaponItem(player.findFistsWeaponItem(activeClassId));
+
             player.setUptime(System.currentTimeMillis());
 
             player.setCurrentHp(character.getHp());
@@ -6211,7 +6159,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             player.setHeading(character.getHeading());
 
             repository.findOthersCharactersOnAccount(character.getAccount(), player.getObjectId()).forEach(other -> {
-                player.getAccountChars().put(other.getObjectId(), other.getCharName());
+                player.getAccountChars().put(other.getObjectId(), other.getName());
             });
 
             player.restoreCharData();
@@ -7955,11 +7903,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
     }
 
-    /**
-     * Gets the clan privileges.
-     *
-     * @return the clan privileges
-     */
+
     public int getClanPrivileges() {
         return _clanPrivileges;
     }
@@ -10743,11 +10687,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
     }
 
-    /**
-     * Gets the power grade.
-     *
-     * @return the power grade
-     */
+    // TODO implements
     public int getPowerGrade() {
         return _powerGrade;
     }

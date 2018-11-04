@@ -74,6 +74,7 @@ public final class CharacterCreate extends L2GameClientPacket {
             sendPacket(new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED));
             return;
         }
+        client.addCharacter(character);
         sendPacket(new CharCreateOk());
     }
 }

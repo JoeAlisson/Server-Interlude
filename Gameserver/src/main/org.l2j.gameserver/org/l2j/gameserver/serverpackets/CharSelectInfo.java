@@ -1,55 +1,74 @@
 package org.l2j.gameserver.serverpackets;
 
 import org.l2j.commons.Config;
-import org.l2j.gameserver.model.CharSelectInfoPackage;
+import org.l2j.gameserver.datatables.ClanTable;
+import org.l2j.gameserver.factory.PlayerFactory;
 import org.l2j.gameserver.model.Inventory;
-import org.l2j.gameserver.model.L2Clan;
-import org.l2j.gameserver.model.actor.instance.L2PcInstance;
+import org.l2j.gameserver.model.PcInventory;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.model.entity.Heroes;
 import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.repository.AugmentationsRepository;
 import org.l2j.gameserver.model.entity.database.repository.CharacterRepository;
 import org.l2j.gameserver.model.entity.database.repository.CharacterSubclassesRepository;
-import org.l2j.gameserver.network.L2GameClient;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.nonNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
+import static org.l2j.gameserver.factory.ItemHelper.*;
 
 public class CharSelectInfo extends L2GameServerPacket {
 
-    private final String account;
+    private List<Character> characters;
+    private int activeId;
 
-    private final int sessionId;
-
-    private int _activeId;
-
-    private final CharSelectInfoPackage[] _characterPackages;
-
-    public CharSelectInfo(String account, int sessionId) {
-        this(account, sessionId, -1);
+    public CharSelectInfo() {
+        this(-1);
     }
 
-    public CharSelectInfo(String account, int sessionId, int activeId) {
-        this.sessionId = sessionId;
-        this.account = account;
-        _characterPackages = loadCharacterSelectInfo();
-        _activeId = activeId;
+    public CharSelectInfo(int activeId) {
+        this.activeId = activeId;
     }
 
-    public CharSelectInfoPackage[] getCharInfo() {
-        return _characterPackages;
+    public CharSelectInfo(List<Character> characters, int activeId) {
+        this.characters = characters;
+        this.activeId = activeId;
+    }
+
+    private List<Character> loadCharacters(String account) {
+        return getRepository(CharacterRepository.class).findAllByAccountName(account).stream().filter(this::restore).collect(Collectors.toList());
+    }
+
+    private boolean restore(Character character) {
+        var deleteTime = character.getDeleteTime();
+
+        if (deleteTime > 0 && System.currentTimeMillis() > deleteTime) {
+            if (character.getClanId() > 0) {
+                var clan = ClanTable.getInstance().getClan(character.getClanId());
+                if (nonNull(clan)) {
+                    clan.removeClanMember(character.getName(), 0);
+                }
+            }
+            PlayerFactory.delete(character.getObjectId());
+            return false;
+        }
+        return true;
+    }
+
+    public List<Character> getCharInfo() {
+        return characters;
     }
 
     @Override
     protected final void writeImpl() {
-        int size = (_characterPackages.length);
-
+        if(Objects.isNull(characters)) {
+            characters = loadCharacters(client.getAccountName());
+        }
         writeByte(0x09);
-        writeInt(size);
+        writeInt(characters.size());
         writeInt(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT);
         writeByte(0x00);
         writeByte(0x02); // Play Mode [0=can't play] [1=can play free until level 85] [2=100% free play] -->
@@ -57,50 +76,64 @@ public class CharSelectInfo extends L2GameServerPacket {
         writeByte(0x01);
 
         long lastAccess = 0L;
-
-        if (_activeId ==  -1) {
-            for (int i = 0; i < size; i++) {
-                if (lastAccess < _characterPackages[i].getLastAccess()) {
-                    lastAccess = _characterPackages[i].getLastAccess();
-                    _activeId = i;
+        if (activeId == -1) {
+            for (int i = 0; i < characters.size(); i++) {
+                var characterLastAcess = characters.get(i).getLastAccess();
+                if (characterLastAcess > lastAccess) {
+                    lastAccess = characterLastAcess;
                 }
+                activeId = i;
             }
         }
 
-        for (int i = 0; i < size; i++) {
-            CharSelectInfoPackage charInfoPackage = _characterPackages[i];
+        for (int i = 0; i < characters.size(); i++) {
+            var character = characters.get(i);
 
-            writeString(charInfoPackage.getName());
-            writeInt(charInfoPackage.getObjectId());
-            writeString(account);
-            writeInt(sessionId);
-            writeInt(charInfoPackage.getClanId());
+            writeString(character.getName());
+            writeInt(character.getObjectId());
+            writeString(client.getAccountName());
+            writeInt(client.getSessionId().sessionId);
+            writeInt(character.getClanId());
             writeInt(0x00); // Builder Level ??
 
-            writeInt(charInfoPackage.getSex());
-            writeInt(charInfoPackage.getRace());
-            writeInt(charInfoPackage.getBaseClassId());
+            writeInt(character.getSex());
+            writeInt(character.getRace().ordinal());
+            writeInt(character.getBaseClass());
 
             writeInt(Config.SERVER_ID);
 
-            writeInt(charInfoPackage.getX());
-            writeInt(charInfoPackage.getY());
-            writeInt(charInfoPackage.getZ());
+            writeInt(character.getX());
+            writeInt(character.getY());
+            writeInt(character.getZ());
 
-            writeDouble(charInfoPackage.getCurrentHp());
-            writeDouble(charInfoPackage.getCurrentMp());
+            writeDouble(character.getHp());
+            writeDouble(character.getMp());
 
-            writeLong(charInfoPackage.getSp());
-            writeLong(charInfoPackage.getExp());
+            var experience = character.getExperience();
+            var sp = character.getSp();
+            var level = character.getLevel();
 
-            long xpToNextLevel = Experience.LEVEL[charInfoPackage.getLevel() +1] - Experience.LEVEL[charInfoPackage.getLevel()];
-            long xpInCurrentLevel = charInfoPackage.getExp() - Experience.LEVEL[charInfoPackage.getLevel()];
-            writeDouble( (double) xpInCurrentLevel / xpToNextLevel); // level progress
-            writeInt(charInfoPackage.getLevel());
+            if (character.getBaseClass() != character.getClassId()) {
+                var optionSub = getRepository(CharacterSubclassesRepository.class).findByClassId(character.getObjectId(), character.getClassId());
+                if (optionSub.isPresent()) {
+                    var sub = optionSub.get();
+                    experience = sub.getExp();
+                    sp = sub.getSp();
+                    level = sub.getLevel();
+                }
+            }
 
-            writeInt(charInfoPackage.getKarma()); // Reputation
-            writeInt(charInfoPackage.getPk());
-            writeInt(charInfoPackage.getPvP());
+            writeLong(sp);
+            writeLong(experience);
+
+            long xpToNextLevel = Experience.LEVEL[level + 1] - Experience.LEVEL[level];
+            long xpInCurrentLevel = experience - Experience.LEVEL[level];
+            writeDouble((double) xpInCurrentLevel / xpToNextLevel); // level progress
+            writeInt(level);
+
+            writeInt(character.getKarma()); // Reputation
+            writeInt(character.getPk());
+            writeInt(character.getPvp());
 
             writeInt(0x00);
             writeInt(0x00);
@@ -113,64 +146,66 @@ public class CharSelectInfo extends L2GameServerPacket {
             writeInt(0x00); // Unk
             writeInt(0x00); // Unk
 
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_PENDANT));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEAR));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_REAR));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_NECK));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LFINGER));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RFINGER));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HEAD));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_GLOVES));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_CHEST));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEGS));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_FEET));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_BACK));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_DHAIR));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RBRACELET));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LBRACELET));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_DECO1));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_DECO2));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_DECO3));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_DECO4));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_DECO5));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_DECO6));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_BELT));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_BROOCH));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_JEWEL1));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_JEWEL2));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_JEWEL3));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_JEWEL4));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_JEWEL5));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_JEWEL6));
+            var paperdoll = PcInventory.restoreVisibleInventory(character.getObjectId());
 
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND)); // Visible Itens
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_GLOVES));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_CHEST));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEGS));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_FEET));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_DHAIR));
+            writeInt(paperdoll[PAPERDOLL_UNDERWEAR][1]);
+            writeInt(paperdoll[PAPERDOLL_LEFT_EAR][1]);
+            writeInt(paperdoll[PAPERDOLL_RIGHT_EAR][1]);
+            writeInt(paperdoll[PAPERDOLL_NECK][1]);
+            writeInt(paperdoll[PAPERDOLL_LEFT_FINGER][1]);
+            writeInt(paperdoll[PAPERDOLL_RIGHT_FINGER][1]);
+            writeInt(paperdoll[PAPERDOLL_HEAD][1]);
+            writeInt(paperdoll[PAPERDOLL_RIGHT_HAND][1]);
+            writeInt(paperdoll[PAPERDOLL_LEFT_HAND][1]);
+            writeInt(paperdoll[PAPERDOLL_GLOVES][1]);
+            writeInt(paperdoll[PAPERDOLL_CHEST][1]);
+            writeInt(paperdoll[PAPERDOLL_LEGS][1]);
+            writeInt(paperdoll[PAPERDOLL_FEET][1]);
+            writeInt(paperdoll[PAPERDOLL_BACK][1]);
+            writeInt(paperdoll[PAPERDOLL_TWO_HANDS][1]);
+            writeInt(paperdoll[PAPERDOLL_HAIR][1]);
+            writeInt(paperdoll[PAPERDOLL_HAIR_DOWN][1]);
+            writeInt(paperdoll[PAPERDOLL_RIGHT_BRACELET][1]);
+            writeInt(paperdoll[PAPERDOLL_LEFT_BRACELET][1]);
+            writeInt(paperdoll[PAPERDOLL_DECO1][1]);
+            writeInt(paperdoll[PAPERDOLL_DECO2][1]);
+            writeInt(paperdoll[PAPERDOLL_DECO3][1]);
+            writeInt(paperdoll[PAPERDOLL_DECO4][1]);
+            writeInt(paperdoll[PAPERDOLL_DECO5][1]);
+            writeInt(paperdoll[PAPERDOLL_DECO6][1]);
+            writeInt(paperdoll[PAPERDOLL_WAIST][1]);
+            writeInt(paperdoll[PAPERDOLL_BROOCH][1]);
+            writeInt(paperdoll[PAPERDOLL_JEWEL1][1]);
+            writeInt(paperdoll[PAPERDOLL_JEWEL2][1]);
+            writeInt(paperdoll[PAPERDOLL_JEWEL3][1]);
+            writeInt(paperdoll[PAPERDOLL_JEWEL4][1]);
+            writeInt(paperdoll[PAPERDOLL_JEWEL5][1]);
+            writeInt(paperdoll[PAPERDOLL_JEWEL6][1]);
 
-            writeShort(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_CHEST));
-            writeShort(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_LEGS));
-            writeShort(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_HEAD));
-            writeShort(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_GLOVES));
-            writeShort(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_FEET));
+            writeInt(paperdoll[PAPERDOLL_RIGHT_HAND][1]); // Visible Itens
+            writeInt(paperdoll[PAPERDOLL_LEFT_HAND][1]);
+            writeInt(paperdoll[PAPERDOLL_GLOVES][1]);
+            writeInt(paperdoll[PAPERDOLL_CHEST][1]);
+            writeInt(paperdoll[PAPERDOLL_LEGS][1]);
+            writeInt(paperdoll[PAPERDOLL_FEET][1]);
+            writeInt(paperdoll[PAPERDOLL_TWO_HANDS][1]);
+            writeInt(paperdoll[PAPERDOLL_HAIR][1]);
+            writeInt(paperdoll[PAPERDOLL_HAIR_DOWN][1]);
 
-            writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR) > 0 ? charInfoPackage.getSex() : charInfoPackage.getHairStyle());
-            writeInt(charInfoPackage.getHairColor());
-            writeInt(charInfoPackage.getFace());
+            writeShort(paperdoll[PAPERDOLL_CHEST][2]);
+            writeShort(paperdoll[PAPERDOLL_LEGS][2]);
+            writeShort(paperdoll[PAPERDOLL_HEAD][2]);
+            writeShort(paperdoll[PAPERDOLL_GLOVES][2]);
+            writeShort(paperdoll[PAPERDOLL_FEET][2]);
 
-            writeDouble(charInfoPackage.getMaxHp()); // hp max
-            writeDouble(charInfoPackage.getMaxMp()); // mp max
+            writeInt(paperdoll[PAPERDOLL_HAIR][1] > 0 ? character.getSex() : character.getHairStyle());
+            writeInt(character.getHairColor());
+            writeInt(character.getFace());
 
-            long deleteTime = charInfoPackage.getDeleteTimer();
+            writeDouble(character.getMaxHp()); // hp max
+            writeDouble(character.getMaxMp()); // mp max
+
+            long deleteTime = character.getDeleteTime();
             int deletedays = 0;
             if (deleteTime > 0) {
                 deletedays = (int) ((deleteTime - System.currentTimeMillis()) / 1000);
@@ -178,12 +213,31 @@ public class CharSelectInfo extends L2GameServerPacket {
             writeInt(deletedays); // days left before
             // delete .. if != 0
             // then char is inactive
-            writeInt(charInfoPackage.getClassId());
-            writeInt(i == _activeId ? 0x01 : 0x00);
+            writeInt(character.getClassId());
+            writeInt(i == activeId ? 0x01 : 0x00);
 
-            writeByte(charInfoPackage.getEnchantEffect() > 127 ? 127 : charInfoPackage.getEnchantEffect());
-            writeInt(charInfoPackage.getAugmentationId()); // TODO Augmentantion Effect 1
-            writeInt(charInfoPackage.getAugmentationId()); // TODO Augmentantion Effect 2
+            var enchantEffect = paperdoll[PAPERDOLL_RIGHT_HAND][2];
+            if (enchantEffect <= 0) {
+                enchantEffect = paperdoll[PAPERDOLL_TWO_HANDS][2];
+            }
+
+            writeByte(enchantEffect > 127 ? 127 : enchantEffect);
+
+            int weaponObjId = paperdoll[PAPERDOLL_TWO_HANDS][0];
+            if (weaponObjId < 1) {
+                weaponObjId = paperdoll[Inventory.PAPERDOLL_RHAND][0];
+            }
+
+            int augmentationId = 0;
+            if (weaponObjId > 0) {
+                var augmentation = getRepository(AugmentationsRepository.class).findById(weaponObjId);
+                if (augmentation.isPresent()) {
+                    augmentationId = augmentation.get().getAttributes();
+                }
+            }
+
+            writeInt(augmentationId); // TODO Augmentantion Effect 1
+            writeInt(augmentationId); // TODO Augmentantion Effect 2
 
             writeInt(0x00); // tranformation
 
@@ -199,114 +253,14 @@ public class CharSelectInfo extends L2GameServerPacket {
             writeInt(0x00); // Vitality Percent
             writeInt(0x00); // remaining vitality item uses
 
-            writeInt(charInfoPackage.getAccessLevel() > - 100 ? 1 : 0 );
-            writeByte(charInfoPackage.getNobles() ? 0x01 : 0x00);
-            writeByte(Heroes.getInstance().getHeroes().containsKey(charInfoPackage.getObjectId()) ? 0x01 : 0x00);
+            writeInt(character.getAccesslevel() > -100 ? 1 : 0);
+            writeByte(character.isNobless() ? 0x01 : 0x00);
+            writeByte(Heroes.getInstance().getHeroes().containsKey(character.getObjectId()) ? 0x01 : 0x00);
             writeByte(0x01); // show hair Acessory
-
         }
     }
 
-    private CharSelectInfoPackage[] loadCharacterSelectInfo() {
-        List<CharSelectInfoPackage> characterList = new ArrayList<>();
-
-        getRepository(CharacterRepository.class).findAllByAccountName(account).forEach(character -> {
-            CharSelectInfoPackage charInfoPackage = restoreChar(character);
-            if (nonNull(charInfoPackage)) {
-                characterList.add(charInfoPackage);
-            }
-        });
-
-        return characterList.toArray(new CharSelectInfoPackage[0]);
-
-    }
-
-    private void loadCharacterSubclassInfo(CharSelectInfoPackage charInfopackage, int ObjectId, int activeClassId) {
-        CharacterSubclassesRepository repository = getRepository(CharacterSubclassesRepository.class);
-        repository.findByClassId(ObjectId, activeClassId).ifPresent(characterSubclasse -> {
-            charInfopackage.setExp(characterSubclasse.getExp());
-            charInfopackage.setSp(characterSubclasse.getSp());
-            charInfopackage.setLevel(characterSubclasse.getLevel());
-        });
-    }
-
-    private CharSelectInfoPackage restoreChar(Character character) {
-        int objectId = character.getObjectId();
-
-        // See if the char must be deleted
-        long deleteTime = character.getDeleteTime();
-        if (deleteTime > 0 && System.currentTimeMillis() > deleteTime) {
-            L2PcInstance cha = L2PcInstance.load(objectId);
-            L2Clan clan = cha.getClan();
-            if (clan != null) {
-                clan.removeClanMember(cha.getName(), 0);
-            }
-
-            L2GameClient.deleteCharByObjId(objectId);
-            return null;
-        }
-
-        String name = character.getCharName();
-
-        CharSelectInfoPackage charInfopackage = new CharSelectInfoPackage(objectId, name);
-        charInfopackage.setLevel(character.getLevel());
-        charInfopackage.setMaxHp(character.getMaxHp());
-        charInfopackage.setCurrentHp(character.getHp());
-        charInfopackage.setMaxMp(character.getMaxMp());
-        charInfopackage.setCurrentMp(character.getMp());
-        charInfopackage.setKarma(character.getKarma());
-
-        charInfopackage.setFace(character.getFace());
-        charInfopackage.setHairStyle(character.getHairStyle());
-        charInfopackage.setHairColor(character.getHairColor());
-        charInfopackage.setSex(character.getSex());
-
-        charInfopackage.setExp(character.getExperience());
-        charInfopackage.setSp(character.getSp());
-        charInfopackage.setClanId(character.getClanId());
-
-        charInfopackage.setRace(character.getRace().ordinal());
-        charInfopackage.setX(character.getX());
-        charInfopackage.setY(character.getY());
-        charInfopackage.setZ(character.getZ());
-        charInfopackage.setPk(character.getPk());
-        charInfopackage.setPvp(character.getPvp());
-        charInfopackage.setAccessLevel(character.getAccesslevel());
-        charInfopackage.setNobles(character.isNobless());
-
-        final int baseClassId = character.getBaseClass();
-        final int activeClassId = character.getClassId();
-
-        // if is in subclass, load subclass exp, sp, lvl info
-        if (baseClassId != activeClassId) {
-            loadCharacterSubclassInfo(charInfopackage, objectId, activeClassId);
-        }
-
-        charInfopackage.setClassId(activeClassId);
-
-        // Get the augmentation id for equipped weapon
-        int weaponObjId = charInfopackage.getPaperdollObjectId(Inventory.PAPERDOLL_LRHAND);
-        if (weaponObjId < 1) {
-            weaponObjId = charInfopackage.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND);
-        }
-
-        if (weaponObjId > 0) {
-            AugmentationsRepository repository = getRepository(AugmentationsRepository.class);
-            repository.findById(weaponObjId).ifPresent(augmentation -> charInfopackage.setAugmentationId(augmentation.getAttributes()));
-        }
-
-        /*
-         * Check if the base class is set to zero and alse doesn't match with the current active class, otherwise send the base class ID. This prevents chars created before base class was introduced from being displayed incorrectly.
-         */
-        if ((baseClassId == 0) && (activeClassId > 0)) {
-            charInfopackage.setBaseClassId(activeClassId);
-        } else {
-            charInfopackage.setBaseClassId(baseClassId);
-        }
-
-        charInfopackage.setDeleteTimer(deleteTime);
-        charInfopackage.setLastAccess(character.getLastAccess());
-
-        return charInfopackage;
+    public List<Character> getCharacters() {
+        return characters;
     }
 }

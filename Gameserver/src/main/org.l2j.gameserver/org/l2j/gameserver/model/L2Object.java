@@ -316,8 +316,7 @@ public abstract class L2Object {
 		_name = value;
 	}
 	
-	public final int getObjectId()
-	{
+	public final int getObjectId() {
 		return _objectId;
 	}
 	

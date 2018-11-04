@@ -5,6 +5,7 @@ import org.l2j.commons.Server;
 import org.l2j.commons.status.Status;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.datatables.SkillTable;
+import org.l2j.gameserver.datatables.SkillTreeTable;
 import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.network.L2GamePacketHandler;
@@ -201,6 +202,9 @@ public class GameServer {
     private void loadData() {
         IdFactory.getInstance();
         ItemTable.getInstance();
+
+        SkillTable.getInstance();
+        SkillTreeTable.getInstance();
     }
 
     private InetSocketAddress getInetSocketAddress() {

@@ -1,5 +1,6 @@
 package org.l2j.gameserver.clientpackets;
 
+import org.l2j.gameserver.factory.PlayerFactory;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.L2GameClient.GameClientState;
 import org.l2j.gameserver.serverpackets.ActionFailed;
@@ -33,7 +34,8 @@ public class RequestGameStart extends L2GameClientPacket  {
 					logger.debug("selected slot: {}", _charSlot);
 					
 					// load up character from disk
-					L2PcInstance cha = client.loadCharFromDisk(_charSlot);
+					var  character = client.getCharacterForSlot(_charSlot);
+					L2PcInstance cha = PlayerFactory.load(character);
 					if (isNull(cha)) {
 						logger.error("Character could not be loaded (slot: {})", _charSlot);
 						sendPacket(new ActionFailed());

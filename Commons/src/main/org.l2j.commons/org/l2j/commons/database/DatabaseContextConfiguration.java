@@ -65,7 +65,6 @@ public class DatabaseContextConfiguration {
     @Bean
     public ApplicationListener<AfterSaveEvent> afterSaveEventApplicationListener() {
         return event -> extractModel(event).ifPresent(Entity::onSave);
-
     }
 
     private Optional<Entity> extractModel(WithEntity event) {

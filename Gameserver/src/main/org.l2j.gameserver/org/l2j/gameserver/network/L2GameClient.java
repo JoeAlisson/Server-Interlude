@@ -1,17 +1,14 @@
 package org.l2j.gameserver.network;
 
-import org.l2j.commons.Config;
-import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.AuthServerClient;
 import org.l2j.gameserver.AuthServerClient.SessionKey;
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.communitybbs.Manager.RegionBBSManager;
 import org.l2j.gameserver.datatables.SkillTable;
-import org.l2j.gameserver.model.CharSelectInfoPackage;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.L2Event;
-import org.l2j.gameserver.model.entity.database.repository.*;
+import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.serverpackets.L2GameServerPacket;
 import org.l2j.gameserver.serverpackets.ServerClose;
 import org.l2j.gameserver.serverpackets.UserInfo;
@@ -21,13 +18,13 @@ import org.l2j.mmocore.Connection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Future;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.ReentrantLock;
 
+import static java.util.Objects.isNull;
 import static org.l2j.commons.util.Util.isNullOrEmpty;
 
 /**
@@ -36,7 +33,36 @@ import static org.l2j.commons.util.Util.isNullOrEmpty;
  * @author KenM
  */
 public final class L2GameClient extends Client<Connection<L2GameClient>> {
-    protected static final Logger _log = LoggerFactory.getLogger(L2GameClient.class.getName());
+
+    private static final Logger _log = LoggerFactory.getLogger(L2GameClient.class);
+    private List<Character> characters;
+
+    public Character getCharacterForSlot(int charslot) {
+        if ((charslot < 0) || isNull(characters) || (charslot >= characters.size())) {
+            _log.warn("{} tried to get Character in slot {} but no characters exits at that slot.", this, charslot);
+            return null;
+        }
+        return characters.get(charslot);
+    }
+
+    public void setCharacters(List<Character> characters) {
+        this.characters = characters;
+    }
+
+    public List<Character> getCharacters() {
+        return characters;
+    }
+
+    public void removeCharacter(Character character) {
+        characters.remove(character);
+    }
+
+    public void addCharacter(Character character) {
+        characters.add(character);
+    }
+
+    // ###########################################
+
 
     /**
      * CONNECTED - client has just connected
@@ -60,7 +86,6 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     private final ReentrantLock _activeCharLock = new ReentrantLock();
 
     private final long _connectionStartTime;
-    private final List<Integer> _charSlotMapping = new ArrayList<>();
 
     // Task
     protected/* final */ ScheduledFuture<?> _autoSaveInDB;
@@ -151,48 +176,6 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
         gsp.runImpl();
     }
 
-    public L2PcInstance markToDeleteChar(int charslot) {
-        // have to make sure active character must be nulled
-        /*
-         * if (getActiveChar() != null) { saveCharToDisk(getActiveChar()); if (Config.DEBUG) { _log.debug("active Char saved"); } this.setActiveChar(null); }
-         */
-
-        int objectId = getObjectIdForSlot(charslot);
-        if (objectId < 0) {
-            return null;
-        }
-
-        L2PcInstance character = L2PcInstance.load(objectId);
-        if (character.getClanId() != 0) {
-            return character;
-        }
-
-        long deleteTime = System.currentTimeMillis() + (Config.DELETE_DAYS * 86400000L);
-        CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
-        repository.updateDeleteTime(objectId, deleteTime);
-        return null;
-    }
-
-    public L2PcInstance deleteChar(int charslot) {
-        // have to make sure active character must be nulled
-        /*
-         * if (getActiveChar() != null) { saveCharToDisk (getActiveChar()); if (Config.DEBUG) _log.debug("active Char saved"); this.setActiveChar(null); }
-         */
-
-        int objid = getObjectIdForSlot(charslot);
-        if (objid < 0) {
-            return null;
-        }
-
-        L2PcInstance character = L2PcInstance.load(objid);
-        if (character.getClanId() != 0) {
-            return character;
-        }
-
-        deleteCharByObjId(objid);
-        return null;
-    }
-
     /**
      * Save the L2PcInstance to the database.
      *
@@ -206,75 +189,8 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
         }
     }
 
-    public void markRestoredChar(int charSlot) {
-        int objId = getObjectIdForSlot(charSlot);
-        if (objId < 0) {
-            return;
-        }
-
-        CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
-        repository.updateDeleteTime(objId, 0);
-    }
-
-    public static void deleteCharByObjId(int objId) {
-        if (objId < 0) {
-            return;
-        }
-
-        CharacterFriendRepository characterFriendRepository = DatabaseAccess.getRepository(CharacterFriendRepository.class);
-        characterFriendRepository.deleteFriends(objId);
-
-        CharacterHennasRepository characterHennasRepository = DatabaseAccess.getRepository(CharacterHennasRepository.class);
-        characterHennasRepository.deleteById(objId);
-
-        CharacterMacrosesRepository characterMacrosesRepository = DatabaseAccess.getRepository(CharacterMacrosesRepository.class);
-        characterMacrosesRepository.deleteById(objId);
-
-        CharacterQuestsRepository characterQuestsRepository = DatabaseAccess.getRepository(CharacterQuestsRepository.class);
-        characterQuestsRepository.deleteById(objId);
-
-        CharacterRecipebookRepository recipebookRepository = DatabaseAccess.getRepository(CharacterRecipebookRepository.class);
-        recipebookRepository.deleteAllByCharacter(objId);
-
-        CharacterShortcutsRepository shortcutsRepository = DatabaseAccess.getRepository(CharacterShortcutsRepository.class);
-        shortcutsRepository.deleteById(objId);
-
-        CharacterSkillsRepository skillsRepository = DatabaseAccess.getRepository(CharacterSkillsRepository.class);
-        skillsRepository.deleteById(objId);
-
-        CharacterSkillsSaveRepository skillsSaveRepository = DatabaseAccess.getRepository(CharacterSkillsSaveRepository.class);
-        skillsSaveRepository.deleteById(objId);
-
-        CharacterSubclassesRepository subclassesRepository = DatabaseAccess.getRepository(CharacterSubclassesRepository.class);
-        subclassesRepository.deleteById(objId);
-
-        HeroesRepository heroesRepository = DatabaseAccess.getRepository(HeroesRepository.class);
-        heroesRepository.deleteById(objId);
-
-        OlympiadNoblesRepository noblesRepository = DatabaseAccess.getRepository(OlympiadNoblesRepository.class);
-        noblesRepository.deleteById(objId);
-
-        SevenSignsRepository sevenSignsRepository = DatabaseAccess.getRepository(SevenSignsRepository.class);
-        sevenSignsRepository.deleteById(objId);
-
-        PetsRepository repository = DatabaseAccess.getRepository(PetsRepository.class);
-        repository.deleteByOwner(objId);
-
-        AugmentationsRepository augmentationsRepository = DatabaseAccess.getRepository(AugmentationsRepository.class);
-        augmentationsRepository.deleteByItemOwner(objId);
-
-        ItemRepository itemRepository = DatabaseAccess.getRepository(ItemRepository.class);
-        itemRepository.deleteByOwner(objId);
-
-        MerchantLeaseRepository leaseRepository = DatabaseAccess.getRepository(MerchantLeaseRepository.class);
-        leaseRepository.deleteByPlayer(objId);
-
-        CharacterRepository characterRepository = DatabaseAccess.getRepository(CharacterRepository.class);
-        characterRepository.deleteById(objId);
-    }
-
     public L2PcInstance loadCharFromDisk(int charslot) {
-        L2PcInstance character = L2PcInstance.load(getObjectIdForSlot(charslot));
+        L2PcInstance character = L2PcInstance.load(getCharacterForSlot(charslot).getObjectId());
 
         if (character != null) {
             // restoreInventory(character);
@@ -299,32 +215,6 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
         // setCharacter(character);
         return character;
     }
-
-    /**
-     * @param chars
-     */
-    public void setCharSelection(CharSelectInfoPackage[] chars) {
-        _charSlotMapping.clear();
-
-        for (CharSelectInfoPackage c : chars) {
-            int objectId = c.getObjectId();
-            _charSlotMapping.add(objectId);
-        }
-    }
-
-    /**
-     * @param charslot
-     * @return
-     */
-    private int getObjectIdForSlot(int charslot) {
-        if ((charslot < 0) || (charslot >= _charSlotMapping.size())) {
-            _log.warn(toString() + " tried to get Character in slot " + charslot + " but no characters exits at that slot.");
-            return -1;
-        }
-        Integer objectId = _charSlotMapping.get(charslot);
-        return objectId.intValue();
-    }
-
 
     @Override
     protected void onDisconnection() {
@@ -385,7 +275,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
                 }
                 setActiveChar(null);
             } catch (Exception e1) {
-                _log.warn( "Error while cleanup client.", e1);
+                _log.warn("Error while cleanup client.", e1);
             } finally {
                 AuthServerClient.getInstance().sendLogout(getAccountName());
             }
@@ -454,7 +344,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
                 }
                 setActiveChar(null);
             } catch (Exception e1) {
-                _log.warn( "error while disconnecting client", e1);
+                _log.warn("error while disconnecting client", e1);
             } finally {
                 AuthServerClient.getInstance().sendLogout(getAccountName());
             }

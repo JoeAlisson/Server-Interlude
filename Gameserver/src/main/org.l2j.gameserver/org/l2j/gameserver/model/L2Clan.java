@@ -574,7 +574,7 @@ public class L2Clan {
         CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
         repository.findAllByClanId(getClanId()).forEach( character -> {
 
-            L2ClanMember member = new L2ClanMember(this, character.getCharName(), character.getLevel(), character.getClassId(),
+            L2ClanMember member = new L2ClanMember(this, character.getName(), character.getLevel(), character.getClassId(),
                     character.getObjectId(), character.getSubpledge(), character.getPowerGrade(), character.getTitle());
 
             if (member.getObjectId() == clan.getLeaderId()) {

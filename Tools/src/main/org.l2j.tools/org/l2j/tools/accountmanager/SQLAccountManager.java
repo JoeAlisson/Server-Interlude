@@ -165,7 +165,7 @@ public class SQLAccountManager {
                     clanRepository.delete(clanData);
                 });
 
-                System.out.println("Deleting character " + character.getCharName());
+                System.out.println("Deleting character " + character.getName());
 
                 CharacterSkillsRepository skillsRepository = DatabaseAccess.getRepository(CharacterSkillsRepository.class);
                 skillsRepository.deleteById(character.getObjectId());

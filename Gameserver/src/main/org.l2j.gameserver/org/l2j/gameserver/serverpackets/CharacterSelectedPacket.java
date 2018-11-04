@@ -19,7 +19,7 @@ public class CharacterSelectedPacket extends L2GameServerPacket {
         writeString(player.getTitle());
         writeInt(client.getSessionId().sessionId);
         writeInt(player.getClanId());
-        writeInt(0);  // builder level ??
+        writeInt(0);  // builder level GM??
         writeInt(player.getAppearance().getSex());
         writeInt(player.getRace().ordinal());
         writeInt(player.getPlayerClass().getId());
@@ -44,7 +44,6 @@ public class CharacterSelectedPacket extends L2GameServerPacket {
         writeBytes(new byte[64]); // GG
         writeInt(0); // Opcode Shuffling seed
     }
-
 
     @Override
     protected int packetSize() {

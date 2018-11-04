@@ -271,9 +271,9 @@ public class AuthServerClient extends Thread {
                                     sendPacket(pig);
 
                                     wcToRemove.gameClient.setSessionId(wcToRemove.session);
-                                    CharSelectInfo cl = new CharSelectInfo(wcToRemove.account, wcToRemove.gameClient.getSessionId().sessionId);
+                                    CharSelectInfo cl = new CharSelectInfo();
                                     wcToRemove.gameClient.sendPacket(cl);
-                                    wcToRemove.gameClient.setCharSelection(cl.getCharInfo());
+                                    wcToRemove.gameClient.setCharacters(cl.getCharacters());
                                 } else {
                                     _log.warn("Auth server disconnected. closing connection");
                                     wcToRemove.gameClient.close(new LoginResult(FAILED, ACCESS_FAILED_TRY_LATER));

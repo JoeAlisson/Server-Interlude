@@ -4,14 +4,12 @@ import org.l2j.gameserver.serverpackets.CharSelectInfo;
 
 public class GotoLobby extends L2GameClientPacket {
 	@Override
-	protected void readImpl()
-	{}
+	protected void readImpl() { }
 
 	@Override
 	protected void runImpl() {
-		var selectInfo = new CharSelectInfo(client.getAccountName(), client.getSessionId().sessionId);
+		var selectInfo = new CharSelectInfo(client.getCharacters(), -1);
 		sendPacket(selectInfo);
-		client.setCharSelection(selectInfo.getCharInfo());
 	}
 
     @Override

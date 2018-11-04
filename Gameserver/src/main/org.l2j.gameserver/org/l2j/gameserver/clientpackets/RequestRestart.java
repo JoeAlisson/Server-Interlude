@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.clientpackets;
 
 import org.l2j.commons.Config;
@@ -37,25 +19,17 @@ import org.l2j.gameserver.taskmanager.AttackStanceTaskManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+public final class RequestRestart extends L2GameClientPacket  {
 
-/**
- * This class ...
- * @version $Revision: 1.11.2.1.2.4 $ $Date: 2005/03/27 15:29:30 $
- */
-public final class RequestRestart extends L2GameClientPacket
-{
-	private static final String _C__46_REQUESTRESTART = "[C] 46 RequestRestart";
-	private static Logger _log = LoggerFactory.getLogger(RequestRestart.class.getName());
+	private static Logger _log = LoggerFactory.getLogger(RequestRestart.class);
 	
 	@Override
-	protected void readImpl()
-	{
+	protected void readImpl() {
 		// trigger
 	}
 	
 	@Override
-	protected void runImpl()
-	{
+	protected void runImpl() {
 		L2PcInstance player = getClient().getActiveChar();
 		if (player == null)
 		{
@@ -139,18 +113,7 @@ public final class RequestRestart extends L2GameClientPacket
 		sendPacket(response);
 		
 		// send char list
-		CharSelectInfo cl = new CharSelectInfo(client.getAccountName(), client.getSessionId().sessionId);
+		CharSelectInfo cl = new CharSelectInfo(client.getCharacters(), -1);
 		sendPacket(cl);
-		client.setCharSelection(cl.getCharInfo());
-	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see org.l2j.gameserver.clientpackets.ClientBasePacket#getType()
-	 */
-	@Override
-	public String getType()
-	{
-		return _C__46_REQUESTRESTART;
 	}
 }

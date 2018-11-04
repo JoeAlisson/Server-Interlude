@@ -1,8 +1,10 @@
 package org.l2j.gameserver.factory;
 
+import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 public class ItemHelper {
 
@@ -36,39 +38,39 @@ public class ItemHelper {
     private static final int SLOT_BROOCH = 0x20000000;
     private static final int SLOT_JEWEL = 0x40000000;
 
-    private static final int PAPERDOLL_UNDERWEAR = 0;
-    private static final int PAPERDOLL_RIGHT_EAR = 1;
-    private static final int PAPERDOLL_LEFT_EAR = 2;
-    private static final int PAPERDOLL_NECK = 3;
-    private static final int PAPERDOLL_RIGHT_FINGER = 4;
-    private static final int PAPERDOLL_LEFT_FINGER = 5;
-    private static final int PAPERDOLL_HEAD = 6;
-    private static final int PAPERDOLL_RIGHT_HAND = 7;
-    private static final int PAPERDOLL_LEFT_HAND = 8;
-    private static final int PAPERDOLL_GLOVES = 9;
-    private static final int PAPERDOLL_CHEST = 10;
-    private static final int PAPERDOLL_LEGS = 11;
-    private static final int PAPERDOLL_FEET = 12;
-    private static final int PAPERDOLL_BACK = 13;
-    private static final int PAPERDOLL_TWO_HANDS = 14;
-    private static final int PAPERDOLL_HAIR = 15;
-    private static final int PAPERDOLL_HAIR_DOWN = 16;
-    private static final int PAPERDOLL_RIGHT_BRACELET = 17;
-    private static final int PAPERDOLL_LEFT_BRACELET = 18;
-    private static final int PAPERDOLL_DECO1 = 19;
-    private static final int PAPERDOLL_DECO2 = 20;
-    private static final int PAPERDOLL_DECO3 = 21;
-    private static final int PAPERDOLL_DECO4 = 22;
-    private static final int PAPERDOLL_DECO5 = 23;
-    private static final int PAPERDOLL_DECO6 = 24;
-    private static final int PAPERDOLL_WAIST = 25;
-    private static final int PAPERDOLL_BROOCH = 26;
-    private static final int PAPERDOLL_JEWEL1 = 27;
-    private static final int PAPERDOLL_JEWEL2 = 28;
-    private static final int PAPERDOLL_JEWEL3 = 29;
-    private static final int PAPERDOLL_JEWEL4 = 30;
-    private static final int PAPERDOLL_JEWEL5 = 31;
-    private static final int PAPERDOLL_JEWEL6 = 32;
+    public static final int PAPERDOLL_UNDERWEAR = 0;
+    public static final int PAPERDOLL_RIGHT_EAR = 1;
+    public static final int PAPERDOLL_LEFT_EAR = 2;
+    public static final int PAPERDOLL_NECK = 3;
+    public static final int PAPERDOLL_RIGHT_FINGER = 4;
+    public static final int PAPERDOLL_LEFT_FINGER = 5;
+    public static final int PAPERDOLL_HEAD = 6;
+    public static final int PAPERDOLL_RIGHT_HAND = 7;
+    public static final int PAPERDOLL_LEFT_HAND = 8;
+    public static final int PAPERDOLL_GLOVES = 9;
+    public static final int PAPERDOLL_CHEST = 10;
+    public static final int PAPERDOLL_LEGS = 11;
+    public static final int PAPERDOLL_FEET = 12;
+    public static final int PAPERDOLL_BACK = 13;
+    public static final int PAPERDOLL_TWO_HANDS = 14;
+    public static final int PAPERDOLL_HAIR = 15;
+    public static final int PAPERDOLL_HAIR_DOWN = 16;
+    public static final int PAPERDOLL_RIGHT_BRACELET = 17;
+    public static final int PAPERDOLL_LEFT_BRACELET = 18;
+    public static final int PAPERDOLL_DECO1 = 19;
+    public static final int PAPERDOLL_DECO2 = 20;
+    public static final int PAPERDOLL_DECO3 = 21;
+    public static final int PAPERDOLL_DECO4 = 22;
+    public static final int PAPERDOLL_DECO5 = 23;
+    public static final int PAPERDOLL_DECO6 = 24;
+    public static final int PAPERDOLL_WAIST = 25;
+    public static final int PAPERDOLL_BROOCH = 26;
+    public static final int PAPERDOLL_JEWEL1 = 27;
+    public static final int PAPERDOLL_JEWEL2 = 28;
+    public static final int PAPERDOLL_JEWEL3 = 29;
+    public static final int PAPERDOLL_JEWEL4 = 30;
+    public static final int PAPERDOLL_JEWEL5 = 31;
+    public static final int PAPERDOLL_JEWEL6 = 32;
 
     public static L2ItemInstance create(int itemTemplateId) {
         var objectId = IdFactory.getInstance().getNextId();
@@ -272,6 +274,50 @@ public class ItemHelper {
                 break;
         }
         return slot;
+    }
+
+    public static Weapon findFistsWeaponItem(int classId) {
+        Weapon weaponItem = null;
+        ItemTemplate temp = null;
+        if ((classId >= 0x00) && (classId <= 0x09)) {
+            // HUMAN FIGHTER fists
+            temp = ItemTable.getInstance().getTemplate(246);
+            weaponItem = (Weapon) temp;
+        } else if ((classId >= 0x0a) && (classId <= 0x11)) {
+            // HUMAN MAGE fists
+            temp = ItemTable.getInstance().getTemplate(251);
+            weaponItem = (Weapon) temp;
+        } else if ((classId >= 0x12) && (classId <= 0x18)) {
+            // elven FIGHTER fists
+            temp = ItemTable.getInstance().getTemplate(244);
+            weaponItem = (Weapon) temp;
+        } else if ((classId >= 0x19) && (classId <= 0x1e)) {
+            // elven MAGE fists
+            temp = ItemTable.getInstance().getTemplate(249);
+            weaponItem = (Weapon) temp;
+        } else if ((classId >= 0x1f) && (classId <= 0x25)) {
+            // dark elven FIGHTER fists
+            temp = ItemTable.getInstance().getTemplate(245);
+            weaponItem = (Weapon) temp;
+        } else if ((classId >= 0x26) && (classId <= 0x2b)) {
+            // dark elven MAGE fists
+            temp = ItemTable.getInstance().getTemplate(250);
+            weaponItem = (Weapon) temp;
+        } else if ((classId >= 0x2c) && (classId <= 0x30)) {
+            // ORC FIGHTER fists
+            temp = ItemTable.getInstance().getTemplate(248);
+            weaponItem = (Weapon) temp;
+        } else if ((classId >= 0x31) && (classId <= 0x34)) {
+            // ORC MAGE fists
+            temp = ItemTable.getInstance().getTemplate(252);
+            weaponItem = (Weapon) temp;
+        } else if ((classId >= 0x35) && (classId <= 0x39)) {
+            // dwarven fists
+            temp = ItemTable.getInstance().getTemplate(247);
+            weaponItem = (Weapon) temp;
+        }
+
+        return weaponItem;
     }
 
 }

@@ -6,6 +6,7 @@ import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface CharacterRepository extends CrudRepository<Character, Integer> {
@@ -25,7 +26,7 @@ public interface CharacterRepository extends CrudRepository<Character, Integer> 
     int updateDeleteTime(@Param("objectId") int objectId, @Param("deleteTime") long deleteTime);
 
     @Query("SELECT * FROM characters WHERE account=:account")
-    Iterable<Character> findAllByAccountName(@Param("account") String account);
+    List<Character> findAllByAccountName(@Param("account") String account);
 
     @Modifying
     @Query("UPDATE characters SET clan=0 WHERE clan=:clanId")

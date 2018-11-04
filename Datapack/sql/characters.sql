@@ -37,7 +37,6 @@ CREATE TABLE IF NOT EXISTS characters (
   access_level decimal(4,0) default NULL,
   online BOOL default NULL,
   online_time decimal(20,0) default NULL,
-  slot decimal(1) default NULL,
   newbie bool default false,
   last_access decimal(20,0) default NULL,
   clan_privs INT DEFAULT 0,
