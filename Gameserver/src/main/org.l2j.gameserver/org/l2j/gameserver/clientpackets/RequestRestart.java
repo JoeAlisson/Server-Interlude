@@ -91,9 +91,7 @@ public final class RequestRestart extends L2GameClientPacket  {
 		{
 			player.removeSkill(SkillTable.getInstance().getInfo(4289, 1));
 		}
-		
-		L2GameClient client = getClient();
-		
+
 		// detach the client from the char so that the connection isnt closed in the deleteMe
 		player.setClient(null);
 		
@@ -104,16 +102,10 @@ public final class RequestRestart extends L2GameClientPacket  {
 		player.deleteMe();
 		L2GameClient.saveCharToDisk(client.getActiveChar());
 		
-		getClient().setActiveChar(null);
-		
-		// return the client to the authed status
+		client.setActiveChar(null);
 		client.setState(GameClientState.AUTHED);
-		
-		RestartResponse response = new RestartResponse();
-		sendPacket(response);
-		
-		// send char list
-		CharSelectInfo cl = new CharSelectInfo(client.getCharacters(), -1);
-		sendPacket(cl);
+
+		sendPacket(new RestartResponse());
+		sendPacket(new CharSelectInfo());
 	}
 }

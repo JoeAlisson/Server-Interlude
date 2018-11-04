@@ -111,7 +111,7 @@ public class NpcInfo extends L2GameServerPacket
 	{
 		if (_activeChar instanceof L2Summon)
 		{
-			if ((((L2Summon) _activeChar).getOwner() != null) && ((L2Summon) _activeChar).getOwner().getAppearance().getInvisible())
+			if ((((L2Summon) _activeChar).getOwner() != null) && ((L2Summon) _activeChar).getOwner().isInvisible())
 			{
 				return;
 			}

@@ -55,23 +55,22 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		this(player, true);
 	}
 
-	public UIPacket(L2PcInstance player, boolean addAll)
-	{
+	public UIPacket(L2PcInstance player, boolean addAll) {
 		_name = player.getName();
-		name_color = player.getAppearance().getNameColor();
+		name_color = player.getNameColor();
 		_title = player.getTitle();
-		title_color = player.getAppearance().getTitleColor();
+		title_color = player.getTitleColor();
 
-			var clan = player.getClan();
-			clan_id = clan == null ? 0 : clan.getClanId();
-			_isClanLeader = player.isClanLeader() ? 1 : 0;
-			clan_crest_id = clan == null ? 0 : clan.getCrestId();
-			large_clan_crest_id = clan == null ? 0 : clan.getCrestLargeId();
-			//
-			ally_id = player.getAllianceId();
-			ally_crest_id = player.getAllyCrestId();
+		var clan = player.getClan();
+		clan_id = clan == null ? 0 : clan.getClanId();
+		_isClanLeader = player.isClanLeader() ? 1 : 0;
+		clan_crest_id = clan == null ? 0 : clan.getCrestId();
+		large_clan_crest_id = clan == null ? 0 : clan.getCrestLargeId();
+		//
+		ally_id = player.getAllianceId();
+		ally_crest_id = player.getAllyCrestId();
 
-		if(player.getAppearance().getInvisible() && player.isGM())
+		if(player.isInvisible() && player.isGM())
 			_title += "[I]";
 		if(player.getPoly().isMorphed())
 		{
@@ -132,7 +131,7 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		obj_id = player.getObjectId();
 		vehicle_obj_id = player.isInBoat() ? player.getBoat().getObjectId() : 0x00;
 		_race = player.getRace().ordinal();
-		sex = player.getAppearance().getSex();
+		sex = player.getSex();
 		base_class = player.getBaseClass();
 		level = player.getLevel();
 		_exp = player.getExp();
@@ -171,9 +170,9 @@ public class UIPacket extends AbstractMaskPacket<UserInfoType> {
 		attack_speed = player.getAttackSpeedMultiplier();
 		col_radius = player.getBaseTemplate().getCollisionRadius();
 		col_height = player.getBaseTemplate().getCollisionHeight();
-		hair_style = player.getAppearance().getHairStyle();
-		hair_color = player.getAppearance().getHairColor();
-		face = player.getAppearance().getFace();
+		hair_style = player.getHairStyle();
+		hair_color = player.getHairColor();
+		face = player.getFace();
 		gm_commands = player.isGM() || player.getAccessLevel() >= Config.GM_ALTG_MIN_LEVEL ? 1 : 0;
 		// builder level активирует в клиенте админские команды
 		clan_id = player.getClanId();

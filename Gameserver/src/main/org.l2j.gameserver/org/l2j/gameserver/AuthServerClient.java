@@ -4,6 +4,7 @@ import org.l2j.commons.Config;
 import org.l2j.commons.crypt.NewCrypt;
 import org.l2j.commons.util.Rnd;
 import org.l2j.commons.util.Util;
+import org.l2j.gameserver.factory.PlayerFactory;
 import org.l2j.gameserver.gameserverpackets.*;
 import org.l2j.gameserver.loginserverpackets.*;
 import org.l2j.gameserver.model.L2World;
@@ -31,6 +32,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.network.L2GameClient.GameClientState.AUTHED;
@@ -263,17 +265,18 @@ public class AuthServerClient extends Thread {
                             }
                             if (nonNull(wcToRemove)) {
                                 if (par.isAuthed()) {
+                                    var client = wcToRemove.gameClient;
                                     _log.debug("Login accepted reader {} waited({} ms)", wcToRemove.account, (GameTimeController.getGameTicks() - wcToRemove.timestamp));
 
-                                    wcToRemove.gameClient.setState(AUTHED);
-                                    wcToRemove.gameClient.sendPacket(new LoginResult(SUCCESS, 0));
+                                    client.setState(AUTHED);
+                                    client.sendPacket(new LoginResult(SUCCESS, 0));
                                     PlayerInGame pig = new PlayerInGame(par.getAccount());
                                     sendPacket(pig);
 
-                                    wcToRemove.gameClient.setSessionId(wcToRemove.session);
-                                    CharSelectInfo cl = new CharSelectInfo();
-                                    wcToRemove.gameClient.sendPacket(cl);
-                                    wcToRemove.gameClient.setCharacters(cl.getCharacters());
+                                    client.setSessionId(wcToRemove.session);
+                                    var characters = PlayerFactory.loadCharacters(wcToRemove.account);
+                                    client.setCharacters(characters);
+                                    client.sendPacket(new CharSelectInfo());
                                 } else {
                                     _log.warn("Auth server disconnected. closing connection");
                                     wcToRemove.gameClient.close(new LoginResult(FAILED, ACCESS_FAILED_TRY_LATER));

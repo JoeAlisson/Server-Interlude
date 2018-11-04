@@ -97,13 +97,14 @@ public class SkillTreeTable {
             return 0;
         }
 
+        /* TODO implement
         // since expertise comes at same level for allTemplates classes we use PALADIN for now
         Map<Integer, SkillInfo> learnMap = getSkillTrees().get(PlayerClass.PALADIN);
 
         int skillHashCode = SkillTable.getSkillHashCode(239, grade);
         if (learnMap.containsKey(skillHashCode)) {
             return learnMap.get(skillHashCode).getMinLevel();
-        }
+        }*/
 
         _log.error("Expertise not found for grade " + grade);
         return 0;

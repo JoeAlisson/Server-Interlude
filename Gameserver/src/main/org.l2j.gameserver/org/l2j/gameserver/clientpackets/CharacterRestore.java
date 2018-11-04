@@ -17,6 +17,6 @@ public final class CharacterRestore extends L2GameClientPacket {
 	protected void runImpl() {
         Character character = client.getCharacterForSlot(charSlot);
         PlayerFactory.removeMarkDelete(character);
-		sendPacket(new CharSelectInfo(client.getCharacters(), charSlot));
+		sendPacket(new CharSelectInfo(charSlot));
 	}
 }

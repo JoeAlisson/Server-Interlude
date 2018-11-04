@@ -29,7 +29,7 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		writeInt(_activeChar.getObjectId());
 		writeString(_activeChar.getName());
 		writeInt(_activeChar.getRace().ordinal());
-		writeInt(_activeChar.getAppearance().getSex());
+		writeInt(_activeChar.getSex());
 		writeInt(_activeChar.getPlayerClass().getId());
 		writeInt(_activeChar.getLevel());
 		writeLong(_activeChar.getExp());
@@ -150,9 +150,9 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		writeDouble(_activeChar.getAttackSpeedMultiplier()); // 2.9);//
 		writeDouble(_activeChar.getTemplate().getCollisionRadius()); // scale
 		writeDouble(_activeChar.getTemplate().getCollisionHeight()); // y offset ??!? fem DWARF 4033
-		writeInt(_activeChar.getAppearance().getHairStyle());
-		writeInt(_activeChar.getAppearance().getHairColor());
-		writeInt(_activeChar.getAppearance().getFace());
+		writeInt(_activeChar.getHairStyle());
+		writeInt(_activeChar.getHairColor());
+		writeInt(_activeChar.getFace());
 		writeInt(_activeChar.isGM() ? 0x01 : 0x00); // builder level
 		
 		writeString(_activeChar.getTitle());
@@ -181,7 +181,7 @@ public class GMViewCharacterInfo extends L2GameServerPacket
 		writeByte(_activeChar.isNoble() ? 0x01 : 0x00);
 		writeByte(_activeChar.isHero() ? 0x01 : 0x00);
 		
-		writeInt(_activeChar.getAppearance().getNameColor());
-		writeInt(_activeChar.getAppearance().getTitleColor());
+		writeInt(_activeChar.getNameColor());
+		writeInt(_activeChar.getTitleColor());
 	}
 }

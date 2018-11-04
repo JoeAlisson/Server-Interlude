@@ -51,7 +51,7 @@ public class CharInfo extends L2GameServerPacket {
 	protected final void writeImpl() {
 		boolean gmSeeInvis = false;
 		
-		if (_activeChar.getAppearance().getInvisible()) {
+		if (_activeChar.isInvisible()) {
 			L2PcInstance tmp = getClient().getActiveChar();
 			if ((tmp != null) && tmp.isGM()) {
 				gmSeeInvis = true;
@@ -98,7 +98,7 @@ public class CharInfo extends L2GameServerPacket {
 				if (gmSeeInvis) {
 					writeByte(0);
 				} else {
-					writeByte(_activeChar.getAppearance().getInvisible() ? 1 : 0); // invisible ?? 0=false 1=true 2=summoned (only works if model has a summon animation)
+					writeByte(_activeChar.isInvisible() ? 1 : 0); // invisible ?? 0=false 1=true 2=summoned (only works if model has a summon animation)
 				}
 				
 				writeString(_activeChar.getName());
@@ -137,7 +137,7 @@ public class CharInfo extends L2GameServerPacket {
 			writeInt(_activeChar.getObjectId());
 			writeString(_activeChar.getName());
 			writeInt(_activeChar.getRace().ordinal());
-			writeInt(_activeChar.getAppearance().getSex());
+			writeInt(_activeChar.getSex());
 			
 			if (_activeChar.getClassIndex() == 0) {
 				writeInt(_activeChar.getPlayerClass().getId());
@@ -204,9 +204,9 @@ public class CharInfo extends L2GameServerPacket {
 			writeDouble(_activeChar.getBaseTemplate().getCollisionRadius());
 			writeDouble(_activeChar.getBaseTemplate().getCollisionHeight());
 			
-			writeInt(_activeChar.getAppearance().getHairStyle());
-			writeInt(_activeChar.getAppearance().getHairColor());
-			writeInt(_activeChar.getAppearance().getFace());
+			writeInt(_activeChar.getHairStyle());
+			writeInt(_activeChar.getHairColor());
+			writeInt(_activeChar.getFace());
 			
 			if (gmSeeInvis) {
 				writeString("Invisible");
@@ -230,7 +230,7 @@ public class CharInfo extends L2GameServerPacket {
 			if (gmSeeInvis) {
 				writeByte(0);
 			} else {
-				writeByte(_activeChar.getAppearance().getInvisible() ? 1 : 0); // invisible = 1 visible =0
+				writeByte(_activeChar.isInvisible() ? 1 : 0); // invisible = 1 visible =0
 			}
 			
 			writeByte(_activeChar.getMountType()); // 1 on strider 2 on wyvern 0 no mount
@@ -274,14 +274,14 @@ public class CharInfo extends L2GameServerPacket {
 			writeInt(_activeChar.GetFishy());
 			writeInt(_activeChar.GetFishz());
 			
-			writeInt(_activeChar.getAppearance().getNameColor());
+			writeInt(_activeChar.getNameColor());
 			
 			writeInt(0x00); // isRunning() as in UserInfo?
 			
 			writeInt(_activeChar.getPledgeClass());
 			writeInt(0x00); // ??
 			
-			writeInt(_activeChar.getAppearance().getTitleColor());
+			writeInt(_activeChar.getTitleColor());
 			
 			// writeInt(0x00); // ??
 			

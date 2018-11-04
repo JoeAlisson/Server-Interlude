@@ -1,12 +1,16 @@
 package org.l2j.gameserver.factory;
 
 import org.l2j.commons.Config;
+import org.l2j.gameserver.datatables.ClanTable;
 import org.l2j.gameserver.datatables.PlayerTemplateTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.Items;
 import org.l2j.gameserver.model.entity.database.repository.*;
 import org.l2j.gameserver.templates.ClassTemplate;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 import static java.lang.System.currentTimeMillis;
 import static java.util.Objects.isNull;
@@ -94,6 +98,26 @@ public class PlayerFactory {
         }
         var template = PlayerTemplateTable.getInstance().getClassTemplate(character.getClassId());
         return new L2PcInstance(template, character);
+    }
+
+    public static List<Character> loadCharacters(String account) {
+        return getRepository(CharacterRepository.class).findAllByAccountName(account).stream().filter(PlayerFactory::restore).collect(Collectors.toList());
+    }
+
+    private static boolean restore(Character character) {
+        var deleteTime = character.getDeleteTime();
+
+        if (deleteTime > 0 && System.currentTimeMillis() > deleteTime) {
+            if (character.getClanId() > 0) {
+                var clan = ClanTable.getInstance().getClan(character.getClanId());
+                if (nonNull(clan)) {
+                    clan.removeClanMember(character.getName(), 0);
+                }
+            }
+            PlayerFactory.delete(character.getObjectId());
+            return false;
+        }
+        return true;
     }
 
     public static void delete(int objectId) {

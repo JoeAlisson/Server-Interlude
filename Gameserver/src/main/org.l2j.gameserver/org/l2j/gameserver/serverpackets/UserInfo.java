@@ -66,7 +66,7 @@ public class UserInfo extends L2GameServerPacket
 		writeInt(_activeChar.getObjectId());
 		writeString(_activeChar.getName());
 		writeInt(_activeChar.getRace().ordinal());
-		writeInt(_activeChar.getAppearance().getSex());
+		writeInt(_activeChar.getSex());
 		
 		if (_activeChar.getClassIndex() == 0)
 		{
@@ -205,13 +205,13 @@ public class UserInfo extends L2GameServerPacket
 			writeDouble(_activeChar.getBaseTemplate().getCollisionHeight());
 		}
 		
-		writeInt(_activeChar.getAppearance().getHairStyle());
-		writeInt(_activeChar.getAppearance().getHairColor());
-		writeInt(_activeChar.getAppearance().getFace());
+		writeInt(_activeChar.getHairStyle());
+		writeInt(_activeChar.getHairColor());
+		writeInt(_activeChar.getFace());
 		writeInt((_activeChar.getAccessLevel() >= Config.GM_ALTG_MIN_LEVEL) ? 1 : 0); // builder level
 		
 		String title = _activeChar.getTitle();
-		if (_activeChar.getAppearance().getInvisible() && _activeChar.isGM())
+		if (_activeChar.isInvisible() && _activeChar.isGM())
 		{
 			title = "Invisible";
 		}
@@ -283,7 +283,7 @@ public class UserInfo extends L2GameServerPacket
 		writeInt(_activeChar.GetFishx()); // fishing x
 		writeInt(_activeChar.GetFishy()); // fishing y
 		writeInt(_activeChar.GetFishz()); // fishing z
-		writeInt(_activeChar.getAppearance().getNameColor());
+		writeInt(_activeChar.getNameColor());
 		
 		// new c5
 		writeByte(_activeChar.isRunning() ? 0x01 : 0x00); // changes the Speed display on Status Window
@@ -291,7 +291,7 @@ public class UserInfo extends L2GameServerPacket
 		writeInt(_activeChar.getPledgeClass()); // changes the text above CP on Status Window
 		writeInt(0x00); // ??
 		
-		writeInt(_activeChar.getAppearance().getTitleColor());
+		writeInt(_activeChar.getTitleColor());
 		
 		// writeInt(0x00); // ??
 		

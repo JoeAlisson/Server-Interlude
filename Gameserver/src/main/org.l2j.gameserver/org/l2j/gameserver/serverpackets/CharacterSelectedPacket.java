@@ -3,6 +3,10 @@ package org.l2j.gameserver.serverpackets;
 import org.l2j.gameserver.GameTimeController;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 
+import java.util.Objects;
+
+import static java.util.Objects.requireNonNullElse;
+
 public class CharacterSelectedPacket extends L2GameServerPacket {
 
     private final L2PcInstance player;
@@ -20,7 +24,7 @@ public class CharacterSelectedPacket extends L2GameServerPacket {
         writeInt(client.getSessionId().sessionId);
         writeInt(player.getClanId());
         writeInt(0);  // builder level GM??
-        writeInt(player.getAppearance().getSex());
+        writeInt(player.getSex());
         writeInt(player.getRace().ordinal());
         writeInt(player.getPlayerClass().getId());
         writeInt(1);
@@ -47,6 +51,6 @@ public class CharacterSelectedPacket extends L2GameServerPacket {
 
     @Override
     protected int packetSize() {
-        return 2 * player.getName().length() + 2 * player.getTitle().length() + 190;
+        return 2 * player.getName().length() + 2 * requireNonNullElse(player.getTitle(), "").length() + 190;
     }
 }

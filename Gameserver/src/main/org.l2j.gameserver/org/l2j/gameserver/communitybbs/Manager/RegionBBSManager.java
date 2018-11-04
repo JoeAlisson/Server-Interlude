@@ -35,6 +35,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static java.util.Objects.nonNull;
 import static org.l2j.commons.util.Util.*;
 
 
@@ -84,11 +85,8 @@ public class RegionBBSManager extends BaseBBSManager {
         htmlCode.append("<table border=0><tr><td FIXWIDTH=15></td><td align=center>L2J Community Board<img src=\"sek.cbui355\" width=610 height=1></td></tr><tr><td FIXWIDTH=15></td><td>");
         L2PcInstance player = L2World.getInstance().getPlayer(name);
 
-        if (player != null) {
-            String sex = "Male";
-            if (player.getAppearance().getSex() == 1) {
-                sex = "Female";
-            }
+        if (nonNull(player)) {
+            String sex = player.isMale() ? "Male" : "Female";
             String levelApprox = "low";
             if (player.getLevel() >= 60) {
                 levelApprox = "very high";
@@ -254,7 +252,7 @@ public class RegionBBSManager extends BaseBBSManager {
             if (page.size() < Config.NAME_PAGE_SIZE_COMMUNITYBOARD) {
                 if (!page.contains(player)) {
                     page.add(player);
-                    if (!player.getAppearance().getInvisible()) {
+                    if (!player.isInvisible()) {
                         _onlineCount++;
                     }
                     _onlineCountGm++;
@@ -272,7 +270,7 @@ public class RegionBBSManager extends BaseBBSManager {
             int page = _onlinePlayers.size() + 1;
             if (temp.add(player)) {
                 _onlinePlayers.put(page, temp);
-                if (!player.getAppearance().getInvisible()) {
+                if (!player.isInvisible()) {
                     _onlineCount++;
                 }
                 _onlineCountGm++;
@@ -458,7 +456,7 @@ public class RegionBBSManager extends BaseBBSManager {
 
             cell = 0;
             for (L2PcInstance player : getOnlinePlayers(page)) {
-                if ((player == null) || (player.getAppearance().getInvisible())) {
+                if ((player == null) || (player.isInvisible())) {
                     continue; // Go to next
                 }
 

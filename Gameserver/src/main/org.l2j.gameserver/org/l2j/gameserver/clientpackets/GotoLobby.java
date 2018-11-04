@@ -8,12 +8,6 @@ public class GotoLobby extends L2GameClientPacket {
 
 	@Override
 	protected void runImpl() {
-		var selectInfo = new CharSelectInfo(client.getCharacters(), -1);
-		sendPacket(selectInfo);
+		sendPacket(new CharSelectInfo());
 	}
-
-    @Override
-    public String getType() {
-        return "[C] GOTO_LOBBY";
-    }
 }

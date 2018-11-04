@@ -44,7 +44,6 @@ public final class CharacterDelete extends L2GameClientPacket  {
             sendPacket(new CharDeleteOk());
         }
 		int nextSlot = charSlot > 0 ? charSlot -1 : client.getCharacters().size() -1;
-		CharSelectInfo cl = new CharSelectInfo(client.getCharacters(), nextSlot);
-		sendPacket(cl);
+		sendPacket(new CharSelectInfo(nextSlot));
 	}
 }

@@ -1,7 +1,6 @@
 package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.Config;
-import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.commons.util.Rnd;
 import org.l2j.gameserver.*;
 import org.l2j.gameserver.SevenSigns;
@@ -26,7 +25,6 @@ import org.l2j.gameserver.instancemanager.*;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.L2Skill.SkillTargetType;
 import org.l2j.gameserver.model.L2Skill.SkillType;
-import org.l2j.gameserver.model.actor.appearance.PcAppearance;
 import org.l2j.gameserver.model.actor.knownlist.KnownList;
 import org.l2j.gameserver.model.actor.knownlist.PcKnownList;
 import org.l2j.gameserver.model.actor.stat.PcStat;
@@ -63,17 +61,21 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public final class L2PcInstance extends L2PlayableInstance {
 
     private Character character; // TODO make final
     private Weapon fistsWeaponItem; // Used when no weapon is equipped
-
-
+    private boolean invisible;
+    private int nameColor = 0xFFFFFF;
+    private int titleColor = 0xFFFFFF;
 
     public L2PcInstance(ClassTemplate template, Character character) {
         super(character.getObjectId(), template);
         this.character = character;
+        setName(character.getName());
+        setTitle(character.getTitle());
         fistsWeaponItem = ItemHelper.findFistsWeaponItem(character.getClassId());
     }
 
@@ -82,6 +84,62 @@ public final class L2PcInstance extends L2PlayableInstance {
             _knownList = new PcKnownList(this);
         }
         return  _knownList;
+    }
+
+    public void setInvisible(boolean value) {
+        this.invisible = value;
+    }
+
+    public boolean isInvisible() {
+        return invisible;
+    }
+
+    public void setNameColor(int color) {
+        this.nameColor = color;
+    }
+
+    public int getNameColor() {
+        return nameColor;
+    }
+
+    public int getTitleColor() {
+        return titleColor;
+    }
+
+    public boolean isMale() {
+        return character.getSex() == 0;
+    }
+
+    public void setSex(byte sex) {
+        character.setSex(sex);
+    }
+
+    public int getSex() {
+        return character.getSex();
+    }
+
+    public void setFace(byte face) {
+        character.setFace(face);
+    }
+
+    public int getFace() {
+        return character.getFace();
+    }
+
+    public void setHairColor(byte color) {
+        character.setHairColor(color);
+    }
+
+    public int getHairColor() {
+        return character.getHairColor();
+    }
+
+    public void setHairStyle(byte style) {
+        character.setHairStyle(style);
+    }
+
+    public int getHairStyle() {
+        return character.getHairStyle();
     }
 
     // ####################################################################################
@@ -97,13 +155,12 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     @Deprecated
-    private L2PcInstance(int objectId, ClassTemplate template, String accountName, PcAppearance app) {
+    private L2PcInstance(int objectId, ClassTemplate template, String accountName) {
         super(objectId, template);
         super.initCharStatusUpdateValues();
         initPcStatusUpdateValues();
 
         _accountName = accountName;
-        _appearance = app;
 
         // Create an AI
         _ai = new L2PlayerAI(new AIAccessor());
@@ -166,7 +223,6 @@ public final class L2PcInstance extends L2PlayableInstance {
     protected int _activeClass;
     protected int _classIndex = 0;
     private Map<Integer, SubClass> _subClasses;
-    private PcAppearance _appearance;
     private int _charId = 0x00030b7a;
 
     /**
@@ -1339,14 +1395,6 @@ public final class L2PcInstance extends L2PlayableInstance {
         return (PcStatus) super.getStatus();
     }
 
-    /**
-     * Gets the appearance.
-     *
-     * @return the appearance
-     */
-    public final PcAppearance getAppearance() {
-        return _appearance;
-    }
 
     /**
      * Return the base L2PcTemplate link to the L2PcInstance.
@@ -2160,7 +2208,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     public void giveRecom(L2PcInstance target) {
         if (Config.ALT_RECOMMEND) {
             CharacterRecommends recommend = new CharacterRecommends(getObjectId(), target.getObjectId());
-            CharacterRecommendsRepository repository = DatabaseAccess.getRepository(CharacterRecommendsRepository.class);
+            CharacterRecommendsRepository repository = getRepository(CharacterRecommendsRepository.class);
             repository.save(recommend);
         }
         target.incRecomHave();
@@ -6008,7 +6056,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     public void updateOnlineStatus() {
         _lastAccess = System.currentTimeMillis();
-        CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
+        CharacterRepository repository = getRepository(CharacterRepository.class);
         repository.updateOnlineStatus(getObjectId(), isOnline(), _lastAccess);
     }
 
@@ -6016,7 +6064,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * Update is in7s dungeon status.
      */
     public void updateIsIn7sDungeonStatus() {
-        CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
+        CharacterRepository repository = getRepository(CharacterRepository.class);
         repository.updateSevenSignsDungeonStatus(getObjectId(), isIn7sDungeon() ? 1 : 0);
     }
 
@@ -6042,15 +6090,14 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     @Deprecated
     private static L2PcInstance restore(int objectId) {
-        CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
+        CharacterRepository repository = getRepository(CharacterRepository.class);
         Optional<Character> optionalCharacter = repository.findById(objectId);
         if(optionalCharacter.isPresent()) {
             Character character = optionalCharacter.get();
             final int activeClassId = character.getClassId();
             final ClassTemplate template = PlayerTemplateTable.getInstance().getClassTemplate(activeClassId);
-            PcAppearance app = new PcAppearance(character.getFace(), character.getHairColor(), character.getHairStyle(), character.getSex());
 
-            L2PcInstance player = new L2PcInstance(objectId, template, character.getAccount(), app);
+            L2PcInstance player = new L2PcInstance(objectId, template, character.getAccount());
             player.setName(character.getName());
             player._lastAccess = character.getLastAccess();
 
@@ -6235,7 +6282,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     private static boolean restoreSubClassData(L2PcInstance player) {
-        CharacterSubclassesRepository repository = DatabaseAccess.getRepository(CharacterSubclassesRepository.class);
+        CharacterSubclassesRepository repository = getRepository(CharacterSubclassesRepository.class);
         repository.findAllByCharacter(player.getObjectId()).forEach(characterSubclasse -> {
             SubClass subClass = new SubClass();
             subClass.setClassId(characterSubclasse.getClassId());
@@ -6288,7 +6335,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             return;
         }
 
-        CharacterRecipebookRepository repository = DatabaseAccess.getRepository(CharacterRecipebookRepository.class);
+        CharacterRecipebookRepository repository = getRepository(CharacterRecipebookRepository.class);
         repository.deleteAllByCharacter(getObjectId());
 
         L2RecipeList[] recipes = getCommonRecipeBook();
@@ -6306,7 +6353,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     private void restoreRecipeBook() {
-        CharacterRecipebookRepository repository = DatabaseAccess.getRepository(CharacterRecipebookRepository.class);
+        CharacterRecipebookRepository repository = getRepository(CharacterRecipebookRepository.class);
         repository.findAllByCharacter(getObjectId()).forEach(recipeBook -> {
             L2RecipeList recipe = RecipeController.getInstance().getRecipeList(recipeBook.getId() - 1);
 
@@ -6333,9 +6380,6 @@ public final class L2PcInstance extends L2PlayableInstance {
         storeRecipeBook();
     }
 
-    /**
-     * Store char base.
-     */
     private void storeCharBase() {
         // Get the exp, level, and sp of base class to store in base table
         int currentClassIndex = getClassIndex();
@@ -6345,60 +6389,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         long sp = getStat().getSp();
         _classIndex = currentClassIndex;
 
-        Character character = new Character();
-
-        character.setObjectId(getObjectId());
-        character.setAccount(_accountName);
-
-        character.setLevel(level);
-        character.setExperience(exp);
-        character.setExpBeforeDeath(_expBeforeDeath);
-        character.setSkillPoint(sp);
-
-        character.setHp((long) getCurrentHp());
-        character.setCp((long) getCurrentCp());
-        character.setMp((long) getCurrentMp());
-
-        PcAppearance appearance = getAppearance();
-
-        character.setFace(appearance.getFace());
-        character.setHairStyle(appearance.getHairStyle());
-        character.setHairColor(appearance.getHairColor());
-        character.setTitle(getTitle());
-        character.setName(getName());
-        character.setSex(appearance.getSex());
-
-        character.setHeading(getHeading());
         setCharacterPosition(character);
-
-        character.setKarma(_karma);
-        character.setPvp(_pvpKills);
-        character.setPk(_pkKills);
-
-        character.setRecommendHave(_recomHave);
-        character.setRecommendLeft(_recomLeft);
-        character.setLastRecommendDate(getLastRecomUpdate());
-        character.setAccesslevel(getAccessLevel());
-
-        character.setClan(_clanId);
-        character.setClanPrivileges(getClanPrivileges());
-        character.setWantspeace(_wantsPeace);
-        character.setLvlJoinedAcademy(getLvlJoinedAcademy());
-        character.setApprentice(getApprentice());
-        character.setSponsor(getSponsor());
-        character.setClanJoinExpiryTime(getClanJoinExpiryTime());
-        character.setClanCreateExpiryTime(getClanCreateExpiryTime());
-        character.setPowerGrade(getPowerGrade());
-        character.setSubpledge(getPledgeType());
-
-        character.setRace(getRace());
-        character.setClassId(getPlayerClass().getId());
-        character.setBaseClass(getBaseClass());
-
-        character.setDeleteTime(getDeleteTimer());
-        character.setOnline(isOnline());
-        character.setLastAccess(_lastAccess);
-        character.setInSevenSigns(isIn7sDungeon());
 
         long totalOnlineTime = _onlineTime;
 
@@ -6407,22 +6398,12 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
 
         character.setOnlineTime(totalOnlineTime);
-        character.setInJail(isInJail());
-        character.setJailTimer(getJailTimer());
-        character.setNewbie(isNewbie());
-        character.setNobless(isNoble());
-        character.setVarkaKetraAlly(getAllianceWithVarkaKetra());
-        character.setDeathPenaltyLevel(getDeathPenaltyBuffLevel());
-
-        character.setPersisted();
-
-        CharacterRepository repository = DatabaseAccess.getRepository(CharacterRepository.class);
-        repository.save(character);
+        getRepository(CharacterRepository.class).save(character);
     }
 
     private void storeCharSub() {
         if (getTotalSubClasses() > 0) {
-            CharacterSubclassesRepository repository = DatabaseAccess.getRepository(CharacterSubclassesRepository.class);
+            CharacterSubclassesRepository repository = getRepository(CharacterSubclassesRepository.class);
 
             for (SubClass subClass : getSubClasses().values()) {
                 repository.updateByClassIndex(getObjectId(), subClass.getClassIndex(), subClass.getExp(), subClass.getSp(), subClass.getLevel(),
@@ -6439,7 +6420,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             return;
         }
 
-        CharacterSkillsSaveRepository repository = DatabaseAccess.getRepository(CharacterSkillsSaveRepository.class);
+        CharacterSkillsSaveRepository repository = getRepository(CharacterSkillsSaveRepository.class);
         repository.deleteAllByClassIndex(getObjectId(), getClassIndex());
 
         int buff_index = 0;
@@ -6547,7 +6528,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         L2Skill oldSkill = super.removeSkill(skill);
 
         if (oldSkill != null) {
-            CharacterSkillsRepository repository = DatabaseAccess.getRepository(CharacterSkillsRepository.class);
+            CharacterSkillsRepository repository = getRepository(CharacterSkillsRepository.class);
             repository.deleteSkillByClassIndex(getObjectId(), oldSkill.getId(), getClassIndex());
         }
 
@@ -6577,12 +6558,12 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
 
         if ((oldSkill != null) && (newSkill != null)) {
-            CharacterSkillsRepository repository = DatabaseAccess.getRepository(CharacterSkillsRepository.class);
+            CharacterSkillsRepository repository = getRepository(CharacterSkillsRepository.class);
             repository.updateSkillLevelByClassIndex(getObjectId(), oldSkill.getId(), newSkill.getLevel(), classIndex);
         } else if (newSkill != null) {
             CharacterSkills characterSkill = new CharacterSkills(getObjectId(), newSkill.getId(), newSkill.getLevel(),
                 newSkill.getName(), classIndex);
-            CharacterSkillsRepository repository = DatabaseAccess.getRepository(CharacterSkillsRepository.class);
+            CharacterSkillsRepository repository = getRepository(CharacterSkillsRepository.class);
             repository.save(characterSkill);
         } else {
             _log.warn("could not store new skill. its NULL");
@@ -6590,7 +6571,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     private void restoreSkills() {
-        CharacterSkillsRepository repository = DatabaseAccess.getRepository(CharacterSkillsRepository.class);
+        CharacterSkillsRepository repository = getRepository(CharacterSkillsRepository.class);
         repository.findAllByClassIndex(getObjectId(), getClassIndex()).forEach(characterSkill -> {
             int id = characterSkill.getSkillId();
             int level = characterSkill.getSkillLevel();
@@ -6613,7 +6594,7 @@ public final class L2PcInstance extends L2PlayableInstance {
          * Restore Type 0 These skill were still in effect on the character upon logout.
          * Some of which were self casted and might still have had a long reuse delay which also is restored.
          */
-        CharacterSkillsSaveRepository repository = DatabaseAccess.getRepository(CharacterSkillsSaveRepository.class);
+        CharacterSkillsSaveRepository repository = getRepository(CharacterSkillsSaveRepository.class);
         repository.findAllByClassIndexAndRestoreType(getObjectId(), getClassIndex(), 0).forEach( skillSave -> {
             int skillId = skillSave.getSkillId();
             int skillLvl = skillSave.getSkillLevel();
@@ -6677,7 +6658,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             _henna[i] = null;
         }
 
-        CharacterHennasRepository repository = DatabaseAccess.getRepository(CharacterHennasRepository.class);
+        CharacterHennasRepository repository = getRepository(CharacterHennasRepository.class);
         repository.findAllByClassIndex(getObjectId(), getClassIndex()).forEach(characterHenna -> {
             int slot = characterHenna.getSlot();
 
@@ -6706,7 +6687,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     private void restoreRecom() {
         java.sql.Connection con = null;
-        CharacterRecommendsRepository repository = DatabaseAccess.getRepository(CharacterRecommendsRepository.class);
+        CharacterRecommendsRepository repository = getRepository(CharacterRecommendsRepository.class);
         repository.findAllByCharacter(getObjectId()).forEach(recommend -> {
             _recomChars.add(recommend.getTargetId());
         });
@@ -6753,7 +6734,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         Henna henna = _henna[slot];
         _henna[slot] = null;
 
-        CharacterHennasRepository repository = DatabaseAccess.getRepository(CharacterHennasRepository.class);
+        CharacterHennasRepository repository = getRepository(CharacterHennasRepository.class);
         repository.deleteByClassindexAndSlot(getObjectId(), getClassIndex(), slot+1);
 
         // Calculate Henna modifiers of this L2PcInstance
@@ -6798,7 +6779,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 recalcHennaStats();
 
                 CharacterHennas characterHenna = new CharacterHennas(getObjectId(), henna.getSymbolId(), getClassIndex(), i+1);
-                CharacterHennasRepository repository = DatabaseAccess.getRepository(CharacterHennasRepository.class);
+                CharacterHennasRepository repository = getRepository(CharacterHennasRepository.class);
                 repository.save(characterHenna);
 
                 // Send Server->Client HennaInfo packet to this L2PcInstance
@@ -7640,7 +7621,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
     @Override
     public String toString() {
-        return "reader " + getName();
+        return getName();
     }
 
     /**
@@ -8016,7 +7997,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         stopMove(null);
         setIsParalyzed(true);
         setIsInvul(true);
-        getAppearance().setInvisible();
+        invisible = true;
         sendPacket(new ObservationMode(x, y, z));
         setPosition(x, y, z);
 
@@ -8055,7 +8036,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         _obsZ = getZ();
         setTarget(null);
         setIsInvul(true);
-        getAppearance().setInvisible();
+        invisible = true;
         teleToLocation(x, y, z, true);
         sendPacket(new ExOlympiadMode(3));
         _observerMode = true;
@@ -8069,7 +8050,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         setTarget(null);
         setPosition(_obsX, _obsY, _obsZ);
         setIsParalyzed(false);
-        getAppearance().setVisible();
+        invisible=false;
         setIsInvul(false);
 
         if (getAI() != null) {
@@ -8088,7 +8069,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         setTarget(null);
         sendPacket(new ExOlympiadMode(0));
         teleToLocation(_obsX, _obsY, _obsZ, true);
-        getAppearance().setVisible();
+        invisible = false;
         setIsInvul(false);
         if (getAI() != null) {
             getAI().setIntention(Intention.AI_INTENTION_IDLE);
@@ -8736,7 +8717,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         newClass.setClassIndex(classIndex);
 
         CharacterSubclasses subclasse = new CharacterSubclasses(getObjectId(), newClass);
-        CharacterSubclassesRepository repository = DatabaseAccess.getRepository(CharacterSubclassesRepository.class);
+        CharacterSubclassesRepository repository = getRepository(CharacterSubclassesRepository.class);
         repository.save(subclasse);
 
         // Commit after database INSERT incase exception is thrown.
@@ -8790,19 +8771,19 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         _log.debug("{} has requested to modify sub class index {} from {} class ID to {}.", getName(),  classIndex, oldClassId, newClassId);
 
-        CharacterHennasRepository hennasRepository = DatabaseAccess.getRepository(CharacterHennasRepository.class);
+        CharacterHennasRepository hennasRepository = getRepository(CharacterHennasRepository.class);
         hennasRepository.deleteAllByClassIndex(getObjectId(), classIndex);
 
-        CharacterShortcutsRepository shortcutsRepository = DatabaseAccess.getRepository(CharacterShortcutsRepository.class);
+        CharacterShortcutsRepository shortcutsRepository = getRepository(CharacterShortcutsRepository.class);
         shortcutsRepository.deleteAllByClassIndex(getObjectId(), classIndex);
 
-        CharacterSkillsSaveRepository skillsSaveRepository = DatabaseAccess.getRepository(CharacterSkillsSaveRepository.class);
+        CharacterSkillsSaveRepository skillsSaveRepository = getRepository(CharacterSkillsSaveRepository.class);
         skillsSaveRepository.deleteAllByClassIndex(getObjectId(), getClassIndex());
 
-        CharacterSkillsRepository skillsRepository = DatabaseAccess.getRepository(CharacterSkillsRepository.class);
+        CharacterSkillsRepository skillsRepository = getRepository(CharacterSkillsRepository.class);
         skillsRepository.deleteAllByClassIndex(getObjectId(), classIndex);
 
-        CharacterSubclassesRepository subclassesRepository = DatabaseAccess.getRepository(CharacterSubclassesRepository.class);
+        CharacterSubclassesRepository subclassesRepository = getRepository(CharacterSubclassesRepository.class);
         subclassesRepository.deleteByClassIndex(getObjectId(), classIndex);
 
         getSubClasses().remove(classIndex);
@@ -9146,7 +9127,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         if (_isInvul) {
             sendMessage("Entering world in Invulnerable mode.");
         }
-        if (getAppearance().getInvisible()) {
+        if (invisible) {
             sendMessage("Entering world in Invisible mode.");
         }
         if (getMessageRefusal()) {
@@ -9191,7 +9172,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
     public void restartRecom() {
         if (Config.ALT_RECOMMEND) {
-            CharacterRecommendsRepository repository = DatabaseAccess.getRepository(CharacterRecommendsRepository.class);
+            CharacterRecommendsRepository repository = getRepository(CharacterRecommendsRepository.class);
             repository.deleteById(getObjectId());
         }
 

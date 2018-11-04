@@ -1,28 +1,18 @@
 package org.l2j.gameserver.serverpackets;
 
 import org.l2j.commons.Config;
-import org.l2j.gameserver.datatables.ClanTable;
-import org.l2j.gameserver.factory.PlayerFactory;
 import org.l2j.gameserver.model.Inventory;
 import org.l2j.gameserver.model.PcInventory;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.model.entity.Heroes;
-import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.repository.AugmentationsRepository;
-import org.l2j.gameserver.model.entity.database.repository.CharacterRepository;
 import org.l2j.gameserver.model.entity.database.repository.CharacterSubclassesRepository;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
-
-import static java.util.Objects.nonNull;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.factory.ItemHelper.*;
 
 public class CharSelectInfo extends L2GameServerPacket {
 
-    private List<Character> characters;
     private int activeId;
 
     public CharSelectInfo() {
@@ -33,40 +23,10 @@ public class CharSelectInfo extends L2GameServerPacket {
         this.activeId = activeId;
     }
 
-    public CharSelectInfo(List<Character> characters, int activeId) {
-        this.characters = characters;
-        this.activeId = activeId;
-    }
-
-    private List<Character> loadCharacters(String account) {
-        return getRepository(CharacterRepository.class).findAllByAccountName(account).stream().filter(this::restore).collect(Collectors.toList());
-    }
-
-    private boolean restore(Character character) {
-        var deleteTime = character.getDeleteTime();
-
-        if (deleteTime > 0 && System.currentTimeMillis() > deleteTime) {
-            if (character.getClanId() > 0) {
-                var clan = ClanTable.getInstance().getClan(character.getClanId());
-                if (nonNull(clan)) {
-                    clan.removeClanMember(character.getName(), 0);
-                }
-            }
-            PlayerFactory.delete(character.getObjectId());
-            return false;
-        }
-        return true;
-    }
-
-    public List<Character> getCharInfo() {
-        return characters;
-    }
-
     @Override
     protected final void writeImpl() {
-        if(Objects.isNull(characters)) {
-            characters = loadCharacters(client.getAccountName());
-        }
+        var characters = client.getCharacters();
+
         writeByte(0x09);
         writeInt(characters.size());
         writeInt(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT);
@@ -258,9 +218,5 @@ public class CharSelectInfo extends L2GameServerPacket {
             writeByte(Heroes.getInstance().getHeroes().containsKey(character.getObjectId()) ? 0x01 : 0x00);
             writeByte(0x01); // show hair Acessory
         }
-    }
-
-    public List<Character> getCharacters() {
-        return characters;
     }
 }

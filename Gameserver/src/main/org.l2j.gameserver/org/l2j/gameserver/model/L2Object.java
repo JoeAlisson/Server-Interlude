@@ -36,6 +36,10 @@ public abstract class L2Object {
         return _knownList;
     }
 
+	public final String getName() {
+		return _name;
+	}
+
 	// ########################################
 
 	private boolean _isVisible;
@@ -304,11 +308,6 @@ public abstract class L2Object {
 	public final void setKnownList(KnownList value)
 	{
 		_knownList = value;
-	}
-	
-	public final String getName()
-	{
-		return _name;
 	}
 	
 	public final void setName(String value)

@@ -80,49 +80,26 @@ public class CharChangePotions implements IItemHandler
 			return;
 		}
 		
-		switch (itemId)
-		{
+		switch (itemId) {
 			case 5235:
-				activeChar.getAppearance().setFace(0);
-				break;
 			case 5236:
-				activeChar.getAppearance().setFace(1);
-				break;
 			case 5237:
-				activeChar.getAppearance().setFace(2);
+				activeChar.setFace((byte) (itemId - 5235));
 				break;
 			case 5238:
-				activeChar.getAppearance().setHairColor(0);
-				break;
 			case 5239:
-				activeChar.getAppearance().setHairColor(1);
-				break;
 			case 5240:
-				activeChar.getAppearance().setHairColor(2);
-				break;
 			case 5241:
-				activeChar.getAppearance().setHairColor(3);
+				activeChar.setHairColor((byte) (itemId - 5238));
 				break;
 			case 5242:
-				activeChar.getAppearance().setHairStyle(0);
-				break;
 			case 5243:
-				activeChar.getAppearance().setHairStyle(1);
-				break;
 			case 5244:
-				activeChar.getAppearance().setHairStyle(2);
-				break;
 			case 5245:
-				activeChar.getAppearance().setHairStyle(3);
-				break;
 			case 5246:
-				activeChar.getAppearance().setHairStyle(4);
-				break;
 			case 5247:
-				activeChar.getAppearance().setHairStyle(5);
-				break;
 			case 5248:
-				activeChar.getAppearance().setHairStyle(6);
+				activeChar.setHairStyle((byte)(itemId - 5242));
 				break;
 		}
 		

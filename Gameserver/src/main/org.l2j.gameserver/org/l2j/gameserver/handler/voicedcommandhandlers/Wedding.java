@@ -21,6 +21,8 @@ import org.l2j.gameserver.util.Broadcast;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
+
 
 /**
  * @author evill33t
@@ -190,17 +192,14 @@ public class Wedding implements IVoicedCommandHandler
 			return false;
 		}
 		
-		if ((ptarget.getAppearance().getSex() == activeChar.getAppearance().getSex()) && !Config.L2JMOD_WEDDING_SAMESEX)
-		{
+		if ((ptarget.isMale() == activeChar.isMale()) && !Config.L2JMOD_WEDDING_SAMESEX) {
 			activeChar.sendMessage("Gay marriage is not allowed on this server!");
 			return false;
 		}
-		
-		// check if target has reader on friendlist
-        CharacterFriendRepository repository = DatabaseAccess.getRepository(CharacterFriendRepository.class);
-        boolean	FoundOnFriendList = repository.existsFriends(activeChar.getObjectId(), ptarget.getObjectId());
 
-		
+		// check if target has reader on friendlist
+        boolean	FoundOnFriendList = getRepository(CharacterFriendRepository.class).existsFriends(activeChar.getObjectId(), ptarget.getObjectId());
+
 		if (!FoundOnFriendList)
 		{
 			activeChar.sendMessage("The reader you want to ask is not on your friends list, you must first be on each others friends list before you choose to engage.");

@@ -101,23 +101,23 @@ public class AdminEffects implements IAdminCommandHandler
 		
 		if (command.equals("admin_invis_menu"))
 		{
-			if (!activeChar.getAppearance().getInvisible())
+			if (!activeChar.isInvisible())
 			{
-				activeChar.getAppearance().setInvisible();
+				activeChar.setInvisible(true);
 				activeChar.broadcastUserInfo();
 				activeChar.decayMe();
 				activeChar.spawnMe();
 			}
 			else
 			{
-				activeChar.getAppearance().setVisible();
+				activeChar.setInvisible(false);
 				activeChar.broadcastUserInfo();
 			}
 			RegionBBSManager.getInstance().changeCommunityBoard();
 		}
 		else if (command.startsWith("admin_invis"))
 		{
-			activeChar.getAppearance().setInvisible();
+			activeChar.setInvisible(true);
 			activeChar.broadcastUserInfo();
 			activeChar.decayMe();
 			activeChar.spawnMe();
@@ -126,7 +126,7 @@ public class AdminEffects implements IAdminCommandHandler
 		
 		else if (command.startsWith("admin_vis"))
 		{
-			activeChar.getAppearance().setVisible();
+			activeChar.setInvisible(false);
 			activeChar.broadcastUserInfo();
 			RegionBBSManager.getInstance().changeCommunityBoard();
 		}

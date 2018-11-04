@@ -264,7 +264,7 @@ public class AdminEditChar implements IAdminCommandHandler {
             } else {
                 return false;
             }
-            player.getAppearance().setSex(player.getAppearance().getSex());
+            player.setSex((byte) (player.isMale() ? 1 : 0));
             player.sendMessage("Your gender has been changed by a GM");
             player.broadcastUserInfo();
             player.decayMe();
@@ -282,7 +282,7 @@ public class AdminEditChar implements IAdminCommandHandler {
                 } else {
                     return false;
                 }
-                player.getAppearance().setNameColor(Integer.decode("0x" + val));
+                player.setNameColor(Integer.decode("0x" + val));
                 player.sendMessage("Your name color has been changed by a GM");
                 player.broadcastUserInfo();
             } catch (StringIndexOutOfBoundsException e) { // Case of empty color

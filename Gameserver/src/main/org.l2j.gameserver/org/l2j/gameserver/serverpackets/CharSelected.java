@@ -30,7 +30,7 @@ public class CharSelected extends L2GameServerPacket {
 		writeInt(_sessionId);
 		writeInt(_activeChar.getClanId());
 		writeInt(0x00); // ??
-		writeInt(_activeChar.getAppearance().getSex());
+		writeInt(_activeChar.getSex());
 		writeInt(_activeChar.getRace().ordinal());
 		writeInt(_activeChar.getPlayerClass().getId());
 		writeInt(0x01); // active ??
