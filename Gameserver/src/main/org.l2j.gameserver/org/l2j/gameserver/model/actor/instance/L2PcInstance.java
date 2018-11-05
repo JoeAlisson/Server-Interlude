@@ -88,10 +88,10 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     public final KnownList getKnownList() {
-        if(isNull(_knownList)) {
-            _knownList = new PcKnownList(this);
+        if(isNull(knownList)) {
+            knownList = new PcKnownList(this);
         }
-        return  _knownList;
+        return knownList;
     }
 
     public int getEnchantEffect() {

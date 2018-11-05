@@ -6,7 +6,6 @@ public class DoorStat extends CharStat {
 
 	public DoorStat(L2DoorInstance activeChar) {
 		super(activeChar);
-		setLevel((byte) 1);
 	}
 
 	@Override
@@ -14,10 +13,9 @@ public class DoorStat extends CharStat {
 	{
 		return (L2DoorInstance) super.getActiveChar();
 	}
-	
+
 	@Override
-	public final int getLevel()
-	{
+	public final int getLevel() {
 		return 1;
 	}
 }

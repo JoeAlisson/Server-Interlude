@@ -215,9 +215,9 @@ public class UserInfo extends L2GameServerPacket
 		{
 			title = "Invisible";
 		}
-		if (_activeChar.getPoly().isMorphed())
+		if (_activeChar.isMorphed())
 		{
-			NpcTemplate polyObj = NpcTable.getInstance().getTemplate(_activeChar.getPoly().getPolyId());
+			NpcTemplate polyObj = NpcTable.getInstance().getTemplate(_activeChar.getPolyMorph());
 			if (polyObj != null)
 			{
 				title += " - " + polyObj.getName();

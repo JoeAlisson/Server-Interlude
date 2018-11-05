@@ -560,7 +560,7 @@ public class AdminEventEngine implements IAdminCommandHandler {
         while (it.hasNext()) {
             try {
                 L2PcInstance target = L2World.getInstance().getPlayer(it.next().toString());
-                target.getPoly().setPolyInfo("npc", id);
+                target.setPolyInfo("npc", id);
                 target.teleToLocation(target.getX(), target.getY(), target.getZ(), true);
                 CharInfo info1 = new CharInfo(target);
                 target.broadcastPacket(info1);
@@ -579,7 +579,7 @@ public class AdminEventEngine implements IAdminCommandHandler {
             try {
                 L2PcInstance target = L2World.getInstance().getPlayer(it.next().toString());
 
-                target.getPoly().setPolyInfo(null, "1");
+                target.setPolyInfo(null, "1");
                 target.decayMe();
                 target.spawnMe(target.getX(), target.getY(), target.getZ());
                 CharInfo info1 = new CharInfo(target);

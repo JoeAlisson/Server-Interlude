@@ -5,35 +5,62 @@ import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.knownlist.KnownList;
-import org.l2j.gameserver.model.actor.poly.ObjectPoly;
 import org.l2j.gameserver.model.actor.position.ObjectPosition;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.serverpackets.ActionFailed;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
 /**
  * Mother class of allTemplates objects in the world which ones is it possible to interact (PC, NPC, Item...)<BR>
  * <BR>
  * L2Object :<BR>
  * <BR>
- * <li>L2Character</li> <li>L2ItemInstance</li> <li>L2Potion</li>
+ * <li>L2Character</li> <li>L2ItemInstance</li> <li>L2StaticObjectInstance</li>
  */
 public abstract class L2Object {
 
-    protected KnownList _knownList;
+    protected KnownList knownList;
+    private ObjectPosition _position;
+
+    private boolean isVisible;
+    private String polyMorphType;
+    private int polyMorph;
+    private int objectId;
+
 
     public L2Object(int objectId) {
-        _objectId = objectId;
+        this.objectId = objectId;
     }
 
     public KnownList getKnownList() {
-        if (isNull(_knownList)) {
-            _knownList = new KnownList(this);
+        if (isNull(knownList)) {
+            knownList = new KnownList(this);
         }
-        return _knownList;
+        return knownList;
     }
 
+    public final int getObjectId() {
+        return objectId;
+    }
+
+    public boolean isMorphed() {
+        return nonNull(polyMorphType);
+    }
+
+    public int getPolyMorph() {
+        return polyMorph;
+    }
+
+    public String getPolyMorphType() {
+        return polyMorphType;
+    }
+
+    public void setPolyInfo(String type, String id) {
+        polyMorphType = type;
+        polyMorph = Integer.parseInt(id);
+    }
 
     // ########################################
 
@@ -41,12 +68,9 @@ public abstract class L2Object {
         return _name;
     }
 
-    private boolean _isVisible;
-
     private String _name;
-    private int _objectId;
-    private ObjectPoly _poly;
-    private ObjectPosition _position;
+
+
 
     public void onAction(L2PcInstance player) {
         player.sendPacket(new ActionFailed());
@@ -88,7 +112,7 @@ public abstract class L2Object {
         L2WorldRegion reg = getPosition().getWorldRegion();
 
         synchronized (this) {
-            _isVisible = false;
+            isVisible = false;
             getPosition().setWorldRegion(null);
         }
 
@@ -99,10 +123,11 @@ public abstract class L2Object {
         }
     }
 
+    // TODO remove this method make no sense do a refresh
     public void refreshID() {
         L2World.getInstance().removeObject(this);
         IdFactory.getInstance().releaseId(getObjectId());
-        _objectId = IdFactory.getInstance().getNextId();
+        objectId = IdFactory.getInstance().getNextId();
     }
 
     /**
@@ -123,7 +148,7 @@ public abstract class L2Object {
     public final void spawnMe() {
         synchronized (this) {
             // Set the x,y,z position of the L2Object spawn and update its _worldregion
-            _isVisible = true;
+            isVisible = true;
             getPosition().setWorldRegion(L2World.getInstance().getRegion(getPosition().getWorldPosition()));
 
             // Add the L2Object spawn in the _allobjects of L2World
@@ -145,7 +170,7 @@ public abstract class L2Object {
 
         synchronized (this) {
             // Set the x,y,z position of the L2Object spawn and update its _worldregion
-            _isVisible = true;
+            isVisible = true;
 
             if (x > L2World.MAP_MAX_X) {
                 x = L2World.MAP_MAX_X - 5000;
@@ -197,29 +222,18 @@ public abstract class L2Object {
     }
 
     public final void setIsVisible(boolean value) {
-        _isVisible = value;
-        if (!_isVisible) {
+        isVisible = value;
+        if (!isVisible) {
             getPosition().setWorldRegion(null);
         }
     }
 
     public final void setKnownList(KnownList value) {
-        _knownList = value;
+        knownList = value;
     }
 
     public final void setName(String value) {
         _name = value;
-    }
-
-    public final int getObjectId() {
-        return _objectId;
-    }
-
-    public final ObjectPoly getPoly() {
-        if (_poly == null) {
-            _poly = new ObjectPoly(this);
-        }
-        return _poly;
     }
 
     public final ObjectPosition getPosition() {

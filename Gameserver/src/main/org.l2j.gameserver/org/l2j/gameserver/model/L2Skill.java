@@ -1230,7 +1230,7 @@ public abstract class L2Skill {
                     src = ((L2Summon) activeChar).getOwner();
                 }
 
-                // Go through the L2Character _knownList
+                // Go through the L2Character knownList
                 for (L2Object obj : activeChar.getKnownList().getKnownObjects().values()) {
                     if ((obj != null) && ((obj instanceof L2Attackable) || (obj instanceof L2PlayableInstance))) {
                         // Don't add this target if this is a Pc->Pc pvp casting and pvp condition not met

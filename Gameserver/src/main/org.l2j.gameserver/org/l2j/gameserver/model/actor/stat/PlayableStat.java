@@ -3,13 +3,14 @@ package org.l2j.gameserver.model.actor.stat;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
 import org.l2j.gameserver.model.base.Experience;
 
+// TODO move EXP and SP to Characters
 public class PlayableStat extends CharStat {
 
 	public PlayableStat(L2PlayableInstance activeChar)
 	{
 		super(activeChar);
 	}
-	
+
 
 	public boolean addExp(long value) {
 		if (((getExp() + value) < 0) || (getExp() == (getExpForLevel(Experience.MAX_LEVEL) - 1))) {
@@ -22,7 +23,7 @@ public class PlayableStat extends CharStat {
 		
 		setExp(getExp() + value);
 		
-		byte level = 0;
+		byte level;
 		for (level = 1; level <= Experience.MAX_LEVEL; level++) {
 			if (getExp() >= getExpForLevel(level)) {
 				continue;
@@ -30,82 +31,64 @@ public class PlayableStat extends CharStat {
 			level--;
 			break;
 		}
-		if (level != getLevel())
-		{
+
+		if (level != getLevel()) {
 			addLevel((byte) (level - getLevel()));
 		}
-		
 		return true;
 	}
 	
-	public boolean removeExp(long value)
-	{
-		if ((getExp() - value) < 0)
-		{
+	public boolean removeExp(long value) {
+		if ((getExp() - value) < 0) {
 			value = getExp() - 1;
 		}
 		
 		setExp(getExp() - value);
 		
-		byte level = 0;
-		for (level = 1; level <= Experience.MAX_LEVEL; level++)
-		{
-			if (getExp() >= getExpForLevel(level))
-			{
+		byte level;
+		for (level = 1; level <= Experience.MAX_LEVEL; level++) {
+			if (getExp() >= getExpForLevel(level)) {
 				continue;
 			}
 			level--;
 			break;
 		}
-		if (level != getLevel())
-		{
+		if (level != getLevel()) {
 			addLevel((byte) (level - getLevel()));
 		}
 		return true;
 	}
 	
-	public boolean addExpAndSp(long addToExp, int addToSp)
-	{
+	public boolean addExpAndSp(long addToExp, int addToSp) {
 		boolean expAdded = false;
 		boolean spAdded = false;
-		if (addToExp >= 0)
-		{
+		if (addToExp >= 0) {
 			expAdded = addExp(addToExp);
 		}
-		if (addToSp >= 0)
-		{
+		if (addToSp >= 0) {
 			spAdded = addSp(addToSp);
 		}
 		
 		return expAdded || spAdded;
 	}
 	
-	public boolean removeExpAndSp(long removeExp, int removeSp)
-	{
+	public boolean removeExpAndSp(long removeExp, int removeSp) {
 		boolean expRemoved = false;
 		boolean spRemoved = false;
-		if (removeExp > 0)
-		{
+		if (removeExp > 0) {
 			expRemoved = removeExp(removeExp);
 		}
-		if (removeSp > 0)
-		{
+		if (removeSp > 0) {
 			spRemoved = removeSp(removeSp);
 		}
-		
 		return expRemoved || spRemoved;
 	}
 	
-	public boolean addLevel(byte value)
-	{
-		if ((getLevel() + value) > (Experience.MAX_LEVEL - 1))
-		{
-			if (getLevel() < (Experience.MAX_LEVEL - 1))
-			{
+	public boolean addLevel(byte value) {
+		if ((getLevel() + value) > (Experience.MAX_LEVEL - 1)) {
+			if (getLevel() < (Experience.MAX_LEVEL - 1)) {
 				value = (byte) (Experience.MAX_LEVEL - 1 - getLevel());
-			}
-			else
-			{
+			} else {
 				return false;
 			}
 		}
@@ -115,13 +98,11 @@ public class PlayableStat extends CharStat {
 		setLevel(value);
 		
 		// Sync up exp with current level
-		if ((getExp() >= getExpForLevel(getLevel() + 1)) || (getExpForLevel(getLevel()) > getExp()))
-		{
+		if ((getExp() >= getExpForLevel(getLevel() + 1)) || (getExpForLevel(getLevel()) > getExp())) {
 			setExp(getExpForLevel(getLevel()));
 		}
 		
-		if (!levelIncreased)
-		{
+		if (!levelIncreased) {
 			return false;
 		}
 		
@@ -131,21 +112,16 @@ public class PlayableStat extends CharStat {
 		return true;
 	}
 	
-	public boolean addSp(long value)
-	{
-		if (value < 0)
-		{
-			System.out.println("wrong usage");
+	public boolean addSp(long value) {
+		if (value < 0) {
 			return false;
 		}
 		long currentSp = getSp();
-		if (currentSp == Long.MAX_VALUE)
-		{
+		if (currentSp == Long.MAX_VALUE) {
 			return false;
 		}
 		
-		if (currentSp > (Long.MAX_VALUE - value))
-		{
+		if (currentSp > (Long.MAX_VALUE - value)) {
 			value = Long.MAX_VALUE - currentSp;
 		}
 		
@@ -153,27 +129,19 @@ public class PlayableStat extends CharStat {
 		return true;
 	}
 	
-	public boolean removeSp(long value)
-	{
+	public boolean removeSp(long value) {
 		long currentSp = getSp();
-		if (currentSp < value)
-		{
+		if (currentSp < value) {
 			value = currentSp;
 		}
 		setSp(getSp() - value);
 		return true;
 	}
 	
-	public long getExpForLevel(int level)
-	{
+	public long getExpForLevel(int level) {
 		return level;
 	}
-	
-	// =========================================================
-	// Method - Private
-	
-	// =========================================================
-	// Property - Public
+
 	@Override
 	public L2PlayableInstance getActiveChar()
 	{

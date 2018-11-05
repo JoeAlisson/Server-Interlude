@@ -53,7 +53,7 @@ public class PcKnownList extends PlayableKnownList {
 			return false;
 		}
 		
-		if (object.getPoly().isMorphed() && object.getPoly().getPolyType().equals("item"))
+		if (object.isMorphed() && object.getPolyMorphType().equals("item"))
 		{
 			// if (object.getPolytype().equals("item"))
 			getActiveChar().sendPacket(new SpawnItemPoly(object));

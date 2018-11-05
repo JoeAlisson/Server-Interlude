@@ -1,20 +1,3 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model.actor.position;
 
 import org.l2j.commons.Config;
@@ -27,22 +10,16 @@ import org.l2j.gameserver.util.Point3D;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+public class ObjectPosition  {
+	private static final Logger _log = LoggerFactory.getLogger(ObjectPosition.class);
 
-public class ObjectPosition
-{
-	private static final Logger _log = LoggerFactory.getLogger(ObjectPosition.class.getName());
-	
-	// =========================================================
-	// Data Field
 	private final L2Object _activeObject;
 	private int _heading = 0;
 	private Point3D _worldPosition;
 	private L2WorldRegion _worldRegion; // Object localization : Used for items/chars that are seen in the world
 	
-	// =========================================================
-	// Constructor
-	public ObjectPosition(L2Object activeObject)
-	{
+
+	public ObjectPosition(L2Object activeObject) {
 		_activeObject = activeObject;
 		setWorldRegion(L2World.getInstance().getRegion(getWorldPosition()));
 	}
@@ -161,12 +138,7 @@ public class ObjectPosition
 			getWorldRegion().addVisibleObject(getActiveObject());
 		}
 	}
-	
-	// =========================================================
-	// Method - Private
-	
-	// =========================================================
-	// Property - Public
+
 	public final L2Object getActiveObject()
 	{
 		return _activeObject;

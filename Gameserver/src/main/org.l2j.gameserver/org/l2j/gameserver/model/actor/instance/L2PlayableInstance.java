@@ -10,8 +10,6 @@ import org.l2j.gameserver.model.actor.stat.PlayableStat;
 import org.l2j.gameserver.model.actor.status.PlayableStatus;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
 
-import java.util.Objects;
-
 import static java.util.Objects.isNull;
 
 public abstract class L2PlayableInstance extends L2Character {
@@ -37,10 +35,10 @@ public abstract class L2PlayableInstance extends L2Character {
 	
 	@Override
 	public KnownList getKnownList() {
-		if(isNull(_knownList)) {
-		    _knownList = new PlayableKnownList(this);
+		if(isNull(knownList)) {
+		    knownList = new PlayableKnownList(this);
         }
-        return _knownList;
+        return knownList;
 	}
 	
 	@Override

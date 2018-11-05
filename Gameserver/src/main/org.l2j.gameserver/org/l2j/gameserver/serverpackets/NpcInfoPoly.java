@@ -34,7 +34,7 @@ public class NpcInfoPoly extends L2GameServerPacket
 	public NpcInfoPoly(L2Object obj, L2Character attacker)
 	{
 		_obj = obj;
-		_npcId = obj.getPoly().getPolyId();
+		_npcId = obj.getPolyMorph();
 		_template = NpcTable.getInstance().getTemplate(_npcId);
 		_isAttackable = true;
 		_rhand = 0;

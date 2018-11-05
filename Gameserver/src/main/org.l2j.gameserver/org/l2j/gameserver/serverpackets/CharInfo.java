@@ -60,13 +60,13 @@ public class CharInfo extends L2GameServerPacket {
 			}
 		}
 		
-		if (_activeChar.getPoly().isMorphed()) {
-			NpcTemplate template = NpcTable.getInstance().getTemplate(_activeChar.getPoly().getPolyId());
+		if (_activeChar.isMorphed()) {
+			NpcTemplate template = NpcTable.getInstance().getTemplate(_activeChar.getPolyMorph());
 			
 			if (template != null) {
 				writeByte(0x16);
 				writeInt(_activeChar.getObjectId());
-				writeInt(_activeChar.getPoly().getPolyId() + 1000000); // npctype id
+				writeInt(_activeChar.getPolyMorph() + 1000000); // npctype id
 				writeInt(_activeChar.getKarma() > 0 ? 1 : 0);
 				writeInt(_x);
 				writeInt(_y);
@@ -126,7 +126,7 @@ public class CharInfo extends L2GameServerPacket {
 				writeByte(0); // C2
 			}
 			else {
-				_log.warn("Character " + _activeChar.getName() + " (" + _activeChar.getObjectId() + ") morphed in a NpcTemplate (" + _activeChar.getPoly().getPolyId() + ") w/o template.");
+				_log.warn("Character " + _activeChar.getName() + " (" + _activeChar.getObjectId() + ") morphed in a NpcTemplate (" + _activeChar.getPolyMorph() + ") w/o template.");
 			}
 		} else {
 			writeByte(0x03);

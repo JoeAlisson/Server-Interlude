@@ -35,14 +35,13 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
     }
 
     /**
-     * Write <B>byte</B> to the buffer. <BR>
+     * Write <B>boolean</B> to the buffer. <BR>
      *  8bit integer (00)
      * @param value to be written
      */
     protected final void writeByte(final boolean value) {
         writeByte((byte) (value ? 0x01 : 0x00));
     }
-
 
 
     /**
@@ -66,6 +65,15 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
                         (byte) (x >>> 8));
 	}
 
+    /**
+     * Write <B>boolean</B> to the buffer. <BR>
+     *  16bit integer (00 00)
+     * @param value to be written
+     */
+    protected final void writeShort(final boolean value) {
+        writeShort(value ? 0x01 : 0x00);
+    }
+
     private void writeShortParts(byte b0, byte b1) {
 	    writeByte(pickByte(b0, b1));
 	    writeByte(pickByte(b1, b0));
@@ -82,6 +90,15 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
                       (byte) (x >>> 8),
                       (byte) (x >>> 16),
                       (byte) (x >>> 24));
+	}
+
+	/**
+	 * Write <B>byte</B> to the buffer. <BR>
+	 *  32bit integer (00 00 00 00)
+	 * @param value to be written
+	 */
+	protected final void writeInt(final boolean value) {
+		writeInt(value ? 0x01 : 0x00);
 	}
 
     private void writeIntParts(byte b0, byte b1, byte b2, byte b3) {
@@ -159,7 +176,6 @@ public abstract class WritablePacket<T extends Client<Connection<T>>> extends Ab
 	        writeShort(0);
         }
     }
-
 
     int writeData() {
 		data = new byte[max(2, packetSize())];

@@ -34,8 +34,8 @@ public class UserInfoPacket extends AbstractMaskPacket<UserInfoType> {
 
 		if(player.isInvisible() && player.isGM())
 			title += "[I]";
-		if(player.getPoly().isMorphed()) {
-            NpcTemplate polyObj = NpcTable.getInstance().getTemplate(player.getPoly().getPolyId());
+		if(player.isMorphed()) {
+            NpcTemplate polyObj = NpcTable.getInstance().getTemplate(player.getPolyMorph());
             if(nonNull(polyObj)) {
                 title += " - " + polyObj.getName();
             } else {

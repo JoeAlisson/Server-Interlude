@@ -21,7 +21,7 @@ public class SpawnItemPoly extends L2GameServerPacket
 		{
 			L2ItemInstance item = (L2ItemInstance) object;
 			_objectId = object.getObjectId();
-			_itemId = object.getPoly().getPolyId();
+			_itemId = object.getPolyMorph();
 			_x = item.getX();
 			_y = item.getY();
 			_z = item.getZ();
@@ -31,7 +31,7 @@ public class SpawnItemPoly extends L2GameServerPacket
 		else
 		{
 			_objectId = object.getObjectId();
-			_itemId = object.getPoly().getPolyId();
+			_itemId = object.getPolyMorph();
 			_x = object.getX();
 			_y = object.getY();
 			_z = object.getZ();

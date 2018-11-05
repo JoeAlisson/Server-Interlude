@@ -113,7 +113,7 @@ public class AdminPolymorph implements IAdminCommandHandler
 	{
 		if (obj != null)
 		{
-			obj.getPoly().setPolyInfo(type, id);
+			obj.setPolyInfo(type, id);
 			// animation
 			if (obj instanceof L2Character)
 			{
@@ -142,7 +142,7 @@ public class AdminPolymorph implements IAdminCommandHandler
 	{
 		if (target != null)
 		{
-			target.getPoly().setPolyInfo(null, "1");
+			target.setPolyInfo(null, "1");
 			target.decayMe();
 			target.spawnMe(target.getX(), target.getY(), target.getZ());
 			activeChar.sendMessage("Unpolymorph succeed");

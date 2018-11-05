@@ -95,10 +95,10 @@ public abstract class L2Character extends L2Object {
 
     @Override
     public KnownList getKnownList() {
-        if(isNull(_knownList)) {
-            _knownList = new CharKnownList(this);
+        if(isNull(knownList)) {
+            knownList = new CharKnownList(this);
         }
-        return _knownList;
+        return knownList;
     }
 
     public int getSkillLevel(int skillId) {

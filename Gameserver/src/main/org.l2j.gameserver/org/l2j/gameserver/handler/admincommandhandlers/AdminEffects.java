@@ -331,7 +331,7 @@ public class AdminEffects implements IAdminCommandHandler
 			try
 			{
 				String id = st.nextToken();
-				activeChar.getPoly().setPolyInfo("npc", id);
+				activeChar.setPolyInfo("npc", id);
 				activeChar.teleToLocation(activeChar.getX(), activeChar.getY(), activeChar.getZ(), false);
 				CharInfo info1 = new CharInfo(activeChar);
 				activeChar.broadcastPacket(info1);
@@ -344,7 +344,7 @@ public class AdminEffects implements IAdminCommandHandler
 		}
 		else if (command.startsWith("admin_unpolyself"))
 		{
-			activeChar.getPoly().setPolyInfo(null, "1");
+			activeChar.setPolyInfo(null, "1");
 			activeChar.decayMe();
 			activeChar.spawnMe(activeChar.getX(), activeChar.getY(), activeChar.getZ());
 			CharInfo info1 = new CharInfo(activeChar);

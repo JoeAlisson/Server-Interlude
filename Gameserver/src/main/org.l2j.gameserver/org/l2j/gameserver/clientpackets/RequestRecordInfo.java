@@ -66,7 +66,7 @@ public class RequestRecordInfo extends L2GameClientPacket
 				continue;
 			}
 			
-			if (object.getPoly().isMorphed() && object.getPoly().getPolyType().equals("item"))
+			if (object.isMorphed() && object.getPolyMorphType().equals("item"))
 			{
 				_activeChar.sendPacket(new SpawnItemPoly(object));
 			}
