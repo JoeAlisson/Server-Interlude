@@ -107,14 +107,14 @@ public class L2CastleZone extends L2ZoneType {
 
     public void updateZoneStatusForCharactersInside() {
         if (_castle.getSiege().getIsInProgress()) {
-            for (L2Character character : _characterList.values()) {
+            for (L2Character character : characterList.values()) {
                 try {
                     onEnter(character);
                 } catch (NullPointerException e) {
                 }
             }
         } else {
-            for (L2Character character : _characterList.values()) {
+            for (L2Character character : characterList.values()) {
                 try {
                     character.setInsideZone(L2Character.ZONE_PVP, false);
                     character.setInsideZone(L2Character.ZONE_SIEGE, false);
@@ -137,7 +137,7 @@ public class L2CastleZone extends L2ZoneType {
      * @param owningClanId
      */
     public void banishForeigners(int owningClanId) {
-        for (L2Character temp : _characterList.values()) {
+        for (L2Character temp : characterList.values()) {
             if (!(temp instanceof L2PcInstance)) {
                 continue;
             }
@@ -155,7 +155,7 @@ public class L2CastleZone extends L2ZoneType {
      * @param message
      */
     public void announceToPlayers(String message) {
-        for (L2Character temp : _characterList.values()) {
+        for (L2Character temp : characterList.values()) {
             if (temp instanceof L2PcInstance) {
                 ((L2PcInstance) temp).sendMessage(message);
             }
@@ -170,7 +170,7 @@ public class L2CastleZone extends L2ZoneType {
     public List<L2PcInstance> getAllPlayers() {
         List<L2PcInstance> players = new LinkedList<>();
 
-        for (L2Character temp : _characterList.values()) {
+        for (L2Character temp : characterList.values()) {
             if (temp instanceof L2PcInstance) {
                 players.add((L2PcInstance) temp);
             }

@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import static java.util.Objects.nonNull;
 
 public class Position {
+
     private static final Logger logger = LoggerFactory.getLogger(Position.class);
     private static final int SAFE_DISTANCE = 500;
 

@@ -54,6 +54,6 @@ public class L2FishingZone extends L2ZoneType {
 	 */
 	public int getWaterZ()
 	{
-		return getZone().getHighZ();
+		return getZoneForm().getHighZ();
 	}
 }

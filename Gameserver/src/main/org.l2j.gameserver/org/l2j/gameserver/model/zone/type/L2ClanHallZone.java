@@ -124,7 +124,7 @@ public class L2ClanHallZone extends L2ZoneType {
 	 */
 	public void banishForeigners(int owningClanId)
 	{
-		for (L2Character temp : _characterList.values())
+		for (L2Character temp : characterList.values())
 		{
 			if (!(temp instanceof L2PcInstance))
 			{

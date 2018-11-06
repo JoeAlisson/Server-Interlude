@@ -143,14 +143,14 @@ public class ZoneData {
                                 int[] x = vertices.stream().mapToInt(ZoneVertices::getX).toArray();
                                 int[] y = vertices.stream().mapToInt(ZoneVertices::getY).toArray();
 
-                                temp.setZone(new ZoneCuboid(x[0], x[1], y[0], y[1], minZ, maxZ));
+                                temp.setZoneForm(new ZoneCuboid(x[0], x[1], y[0], y[1], minZ, maxZ));
                             } else if (zoneShape.equals("NPoly")) {
                                 // An nPoly needs to have at least 3 vertices
                                 if (vertices.size() > 2) {
                                     int[] aX = vertices.stream().mapToInt(ZoneVertices::getX).toArray();
                                     int[] aY = vertices.stream().mapToInt(ZoneVertices::getY).toArray();
 
-                                    temp.setZone(new ZoneNPoly(aX, aY, minZ, maxZ));
+                                    temp.setZoneForm(new ZoneNPoly(aX, aY, minZ, maxZ));
                                 } else {
                                     _log.warn("ZoneData: Bad sql data for zone: {}", zoneId);
                                     continue;
@@ -187,7 +187,7 @@ public class ZoneData {
                                     ay = (y - L2World.OFFSET_Y) << L2World.SHIFT_BY;
                                     by = ((y + 1) - L2World.OFFSET_Y) << L2World.SHIFT_BY;
 
-                                    if (temp.getZone().intersectsRectangle(ax, bx, ay, by)) {
+                                    if (temp.getZoneForm().intersectsRectangle(ax, bx, ay, by)) {
                                         worldRegions[x][y].addZone(temp);
                                         _log.debug("Zone ( {} ) added to: {}, {}.", zoneId, x, y);
                                     }

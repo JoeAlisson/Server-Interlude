@@ -64,7 +64,7 @@ public class L2DamageZone extends L2ZoneType {
 	@Override
 	protected void onExit(L2Character character)
 	{
-		if (_characterList.isEmpty())
+		if (characterList.isEmpty())
 		{
 			_task.cancel(true);
 			_task = null;
@@ -73,7 +73,7 @@ public class L2DamageZone extends L2ZoneType {
 	
 	protected Collection<L2Character> getCharacterList()
 	{
-		return _characterList.values();
+		return characterList.values();
 	}
 	
 	protected int getDamagePerSecond()
