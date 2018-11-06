@@ -127,7 +127,7 @@ public class PcKnownList extends PlayableKnownList {
 				L2PcInstance otherPlayer = (L2PcInstance) object;
 				if (otherPlayer.isInBoat())
 				{
-					otherPlayer.getPosition().setWorldPosition(otherPlayer.getBoat().getPosition().getWorldPosition());
+					otherPlayer.setPosition(otherPlayer.getBoat());
 					getActiveChar().sendPacket(new CharInfo(otherPlayer));
 					int relation = otherPlayer.getRelation(getActiveChar());
 					if ((otherPlayer.getKnownList().getKnownRelations().get(getActiveChar().getObjectId()) != null) && (otherPlayer.getKnownList().getKnownRelations().get(getActiveChar().getObjectId()) != relation))

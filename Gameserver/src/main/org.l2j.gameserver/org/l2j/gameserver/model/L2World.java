@@ -23,7 +23,6 @@ import org.l2j.gameserver.GmListTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
-import org.l2j.gameserver.util.L2ObjectMap;
 import org.l2j.gameserver.util.Point3D;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,6 +31,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
 
 /**
@@ -40,10 +40,10 @@ import static java.util.Objects.isNull;
  * @version $Revision: 1.21.2.5.2.7 $ $Date: 2005/03/27 15:29:32 $
  */
 public final class L2World {
-    private static Logger _log = LoggerFactory.getLogger(L2World.class.getName());
+    private static Logger logger = LoggerFactory.getLogger(L2World.class.getName());
 
     /*
-     * biteshift, defines number of regions note, shifting by 15 will result in regions corresponding to map tiles shifting by 12 divides one tile to 8x8 regions
+     * bite shift, defines number of regions note, shifting by 15 will result in regions corresponding to map tiles shifting by 12 divides one tile to 8x8 regions
      */
     public static final int SHIFT_BY = 12;
 
@@ -74,10 +74,7 @@ public final class L2World {
      */
     private final Map<String, L2PcInstance> _allPlayers;
 
-    /**
-     * L2ObjectHashMap(L2Object) containing allTemplates visible objects
-     */
-    private final L2ObjectMap<L2Object> _allObjects;
+    private final Map<Integer, L2Object> allObjects;
 
     /**
      * List with the pets instances and their owner id
@@ -95,8 +92,7 @@ public final class L2World {
     private L2World() {
         _allPlayers = new ConcurrentHashMap<>();
         _petsInstance = new ConcurrentHashMap<>();
-        _allObjects = L2ObjectMap.createL2ObjectMap();
-
+        allObjects = new ConcurrentHashMap<>();
         initRegions();
     }
 
@@ -104,128 +100,34 @@ public final class L2World {
         return isNull(_instance) ? _instance = new L2World() : _instance;
     }
 
-    /**
-     * Add L2Object object in _allObjects.<BR>
-     * <BR>
-     * <B><U> Example of use </U> :</B><BR>
-     * <BR>
-     * <li>Withdraw an item from the warehouse, create an item</li> <li>Spawn a L2Character (PC, NPC, Pet)</li><BR>
-     *
-     * @param object
-     */
     public void storeObject(L2Object object) {
-        if (_allObjects.get(object.getObjectId()) != null) {
-            if (Config.DEBUG) {
-                _log.warn("[L2World] objectId " + object.getObjectId() + " already exist in OID map!");
-            }
-            return;
+        if(nonNull(object) &&  nonNull(allObjects.putIfAbsent(object.getObjectId(), object))) {
+            logger.warn("objectId {} already exist in OID map!", object.getObjectId() );
         }
-
-        _allObjects.put(object);
     }
 
-    public long timeStoreObject(L2Object object) {
-        long time = System.currentTimeMillis();
-        _allObjects.put(object);
-        time -= System.currentTimeMillis();
-        return time;
-    }
-
-    /**
-     * Remove L2Object object from _allObjects of L2World.<BR>
-     * <BR>
-     * <B><U> Example of use </U> :</B><BR>
-     * <BR>
-     * <li>Delete item from inventory, tranfer Item from inventory to warehouse</li> <li>Crystallize item</li> <li>Remove NPC/PC/Pet from the world</li><BR>
-     *
-     * @param object L2Object to remove from _allObjects of L2World
-     */
     public void removeObject(L2Object object) {
-        _allObjects.remove(object); // suggestion by whatev
-        // IdFactory.getInstance().releaseId(object.getObjectId());
+        allObjects.remove(object.getObjectId());
     }
 
     public void removeObjects(List<L2Object> list) {
-        for (L2Object o : list) {
-            _allObjects.remove(o); // suggestion by whatev
-            // IdFactory.getInstance().releaseId(object.getObjectId());
+        for (L2Object object : list) {
+            allObjects.remove(object.getObjectId());
         }
     }
 
-    public void removeObjects(L2Object[] objects) {
-        for (L2Object o : objects) {
-            _allObjects.remove(o); // suggestion by whatev
-            // IdFactory.getInstance().releaseId(object.getObjectId());
-        }
+    public L2Object findObject(int objectId) {
+        return allObjects.get(objectId);
     }
 
-    public long timeRemoveObject(L2Object object) {
-        long time = System.currentTimeMillis();
-        _allObjects.remove(object);
-        time -= System.currentTimeMillis();
-        return time;
+    public final Collection<L2Object> getAllVisibleObjects() {
+        return allObjects.values();
     }
 
-    /**
-     * Return the L2Object object that belongs to an ID or null if no object found.<BR>
-     * <BR>
-     * <B><U> Example of use </U> :</B><BR>
-     * <BR>
-     * <li>Client packets : Action, AttackRequest, RequestJoinParty, RequestJoinPledge...</li><BR>
-     *
-     * @param oID Identifier of the L2Object
-     * @return
-     */
-    public L2Object findObject(int oID) {
-        return _allObjects.get(oID);
-    }
-
-    public long timeFindObject(int objectID) {
-        long time = System.currentTimeMillis();
-        _allObjects.get(objectID);
-        time -= System.currentTimeMillis();
-        return time;
-    }
-
-    /**
-     * Added by Tempy - 08 Aug 05 Allows easy retrieval of allTemplates visible objects in world. -- do not use that function, its unsafe!
-     *
-     * @return
-     * @deprecated
-     */
-    @Deprecated
-    public final L2ObjectMap<L2Object> getAllVisibleObjects() {
-        return _allObjects;
-    }
-
-    /**
-     * Get the count of allTemplates visible objects in world.<br>
-     * <br>
-     *
-     * @return count off allTemplates L2World objects
-     */
     public final int getAllVisibleObjectsCount() {
-        return _allObjects.size();
+        return allObjects.size();
     }
 
-    /**
-     * Return a table containing allTemplates GMs.<BR>
-     * <BR>
-     *
-     * @return
-     */
-    public List<L2PcInstance> getAllGMs() {
-        return GmListTable.getInstance().getAllGms(true);
-    }
-
-    /**
-     * Return a collection containing allTemplates players in game.<BR>
-     * <BR>
-     * <FONT COLOR=#FF0000><B> <U>Caution</U> : Read-only, please! </B></FONT><BR>
-     * <BR>
-     *
-     * @return
-     */
     public Collection<L2PcInstance> getAllPlayers() {
         return _allPlayers.values();
     }
@@ -322,7 +224,7 @@ public final class L2World {
      * <I>** only if object is a GM L2PcInstance</I><BR>
      * <BR>
      * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T ADD the object in _visibleObjects and _allPlayers* of L2WorldRegion (need synchronisation)</B></FONT><BR>
-     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T ADD the object to _allObjects and _allPlayers* of L2World (need synchronisation)</B></FONT><BR>
+     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T ADD the object to allObjects and _allPlayers* of L2World (need synchronisation)</B></FONT><BR>
      * <BR>
      * <B><U> Example of use </U> :</B><BR>
      * <BR>
@@ -342,7 +244,7 @@ public final class L2World {
             if (!player.isTeleporting()) {
                 L2PcInstance tmp = _allPlayers.get(player.getName().toLowerCase());
                 if (tmp != null) {
-                    _log.warn("Duplicate character!? Closing both characters (" + player.getName() + ")");
+                    logger.warn("Duplicate character!? Closing both characters (" + player.getName() + ")");
                     player.closeNetConnection();
                     tmp.closeNetConnection();
                     return;
@@ -355,7 +257,7 @@ public final class L2World {
         // in a circular area of 2000 units
         List<L2Object> visibles = getVisibleObjects(object, 2000);
         if (Config.DEBUG) {
-            _log.debug("objects in range:" + visibles.size());
+            logger.debug("objects in range:" + visibles.size());
         }
 
         // tell the reader about the surroundings
@@ -401,7 +303,7 @@ public final class L2World {
      * surrounding L2WorldRegion L2Characters</li><BR>
      * <li>If object is a L2Character, remove allTemplates L2Object from its _knownObjects and allTemplates L2PcInstance from its _knownPlayer</li><BR>
      * <BR>
-     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T REMOVE the object from _allObjects of L2World</B></FONT><BR>
+     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T REMOVE the object from allObjects of L2World</B></FONT><BR>
      * <BR>
      * <I>* only if object is a L2PcInstance</I><BR>
      * <I>** only if object is a GM L2PcInstance</I><BR>
@@ -706,6 +608,7 @@ public final class L2World {
      * @param point position of the object
      * @return
      */
+    @Deprecated(forRemoval = true)
     public L2WorldRegion getRegion(Point3D point) {
         return _worldRegions[(point.getX() >> SHIFT_BY) + OFFSET_X][(point.getY() >> SHIFT_BY) + OFFSET_Y];
     }
@@ -750,7 +653,7 @@ public final class L2World {
      * <li>Constructor of L2World</li><BR>
      */
     private void initRegions() {
-        _log.info("L2World: Setting up World Regions");
+        logger.info("L2World: Setting up World Regions");
 
         _worldRegions = new L2WorldRegion[REGIONS_X + 1][REGIONS_Y + 1];
 
@@ -771,19 +674,19 @@ public final class L2World {
                 }
             }
         }
-        _log.info("L2World: ({} by {}) World Region Grid set up.", REGIONS_X, REGIONS_Y);
+        logger.info("L2World: ({} by {}) World Region Grid set up.", REGIONS_X, REGIONS_Y);
     }
 
     /**
      * Deleted allTemplates spawns in the world.
      */
     public synchronized void deleteVisibleNpcSpawns() {
-        _log.info("Deleting allTemplates visible NPC's.");
+        logger.info("Deleting allTemplates visible NPC's.");
         for (int i = 0; i <= REGIONS_X; i++) {
             for (int j = 0; j <= REGIONS_Y; j++) {
                 _worldRegions[i][j].deleteVisibleNpcSpawns();
             }
         }
-        _log.info("All visible NPC's deleted.");
+        logger.info("All visible NPC's deleted.");
     }
 }

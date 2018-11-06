@@ -125,7 +125,7 @@ public class RequestRecordInfo extends L2GameClientPacket
 					
 					if (otherPlayer.isInBoat())
 					{
-						otherPlayer.getPosition().setWorldPosition(otherPlayer.getBoat().getPosition().getWorldPosition());
+						otherPlayer.setPosition(otherPlayer.getBoat());
 						_activeChar.sendPacket(new CharInfo(otherPlayer));
 						int relation = otherPlayer.getRelation(_activeChar);
 						if ((otherPlayer.getKnownList().getKnownRelations().get(_activeChar.getObjectId()) != null) && (otherPlayer.getKnownList().getKnownRelations().get(_activeChar.getObjectId()) != relation))

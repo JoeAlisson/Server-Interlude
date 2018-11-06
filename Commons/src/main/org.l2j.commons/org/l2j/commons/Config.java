@@ -1443,31 +1443,6 @@ public final class Config {
     public static boolean BAD_ID_CHECKING;
 
     /**
-     * Enumeration for type of maps object
-     */
-    public static enum ObjectMapType {
-        L2ObjectHashMap,
-        WorldObjectMap
-    }
-
-    /**
-     * Enumeration for type of set object
-     */
-    public static enum ObjectSetType {
-        L2ObjectHashSet,
-        WorldObjectSet
-    }
-
-    /**
-     * Type of map object
-     */
-    public static ObjectMapType MAP_TYPE;
-    /**
-     * Type of set object
-     */
-    public static ObjectSetType SET_TYPE;
-
-    /**
      * Allow lesser effects to be canceled if stronger effects are used when effects of the same stack group are used.<br>
      * New effects that are added will be canceled if they are of lesser priority to the old one.
      */
@@ -2059,8 +2034,6 @@ public final class Config {
                 idSettings.load(is);
                 is.close();
 
-                MAP_TYPE = ObjectMapType.valueOf(idSettings.getProperty("L2Map", "WorldObjectMap"));
-                SET_TYPE = ObjectSetType.valueOf(idSettings.getProperty("L2Set", "WorldObjectSet"));
                 BAD_ID_CHECKING = Boolean.valueOf(idSettings.getProperty("BadIdChecking", "True"));
             } catch (Exception e) {
                 e.printStackTrace();

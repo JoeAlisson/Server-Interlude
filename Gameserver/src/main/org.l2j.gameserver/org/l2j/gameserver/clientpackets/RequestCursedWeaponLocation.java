@@ -54,7 +54,7 @@ public final class RequestCursedWeaponLocation extends L2GameClientPacket {
                 continue;
             }
 
-            Point3D pos = cw.getWorldPosition();
+            var pos = cw.getPosition();
 
             if (pos != null) {
                 list.add(new CursedWeaponInfo(pos, cw.getItemId(), cw.isActivated() ? 1 : 0));

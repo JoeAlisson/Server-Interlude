@@ -36,7 +36,7 @@ public final class L2ItemInstance extends L2Object {
         player.broadcastPacket(gi);
 
         synchronized (this) {
-            setIsVisible(false);
+            setVisible(false);
             getPosition().setWorldRegion(null);
         }
 
@@ -999,19 +999,13 @@ public final class L2ItemInstance extends L2Object {
 	 * @param y
 	 * @param z
 	 */
-	public final void dropMe(L2Character dropper, int x, int y, int z)
-	{
-		if (Config.ASSERT)
-		{
-			assert getPosition().getWorldRegion() == null;
-		}
+	public final void dropMe(L2Character dropper, int x, int y, int z) {
 		
 		synchronized (this)
 		{
 			// Set the x,y,z position of the L2ItemInstance dropped and update its _worldregion
-			setIsVisible(true);
-			getPosition().setWorldPosition(x, y, z);
-			getPosition().setWorldRegion(L2World.getInstance().getRegion(getPosition().getWorldPosition()));
+			setVisible(true);
+			setPosition(x,y,z);
 			
 			// Add the L2ItemInstance dropped to _visibleObjects of its L2WorldRegion
 			getPosition().getWorldRegion().addVisibleObject(this);
@@ -1028,9 +1022,15 @@ public final class L2ItemInstance extends L2Object {
 		}
 	}
 
+    @Override
+    public void decayMe() {
+        super.decayMe();
+        if (Config.SAVE_DROPPED_ITEM) {
+            ItemsOnGroundManager.getInstance().removeObject(this);
+        }
+    }
 
-	
-	/**
+    /**
 	 * Update the database with values of the item
 	 */
 	private void updateInDb()

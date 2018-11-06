@@ -1,5 +1,6 @@
 package org.l2j.gameserver.serverpackets;
 
+import org.l2j.gameserver.model.actor.position.Position;
 import org.l2j.gameserver.util.Point3D;
 
 import java.util.List;
@@ -41,12 +42,11 @@ public class ExCursedWeaponLocation extends L2GameServerPacket {
 
 	public static class CursedWeaponInfo
 	{
-		public Point3D pos;
+		public Position pos;
 		public int id;
 		public int activated; // 0 - not activated ? 1 - activated
 		
-		public CursedWeaponInfo(Point3D p, int ID, int status)
-		{
+		public CursedWeaponInfo(Position p, int ID, int status) {
 			pos = p;
 			id = ID;
 			activated = status;

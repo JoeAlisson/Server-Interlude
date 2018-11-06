@@ -24,10 +24,7 @@ public class Point3D implements Serializable
 		_y = pY;
 		_z = 0;
 	}
-	
-	/**
-	 * @param worldPosition
-	 */
+
 	public Point3D(Point3D worldPosition)
 	{
 		synchronized (worldPosition)
@@ -80,36 +77,7 @@ public class Point3D implements Serializable
 	{
 		return (_x == pX) && (_y == pY) && (_z == pZ);
 	}
-	
-	public synchronized long distanceSquaredTo(Point3D point)
-	{
-		long dx, dy;
-		synchronized (point)
-		{
-			dx = _x - point._x;
-			dy = _y - point._y;
-		}
-		return (dx * dx) + (dy * dy);
-	}
-	
-	public static long distanceSquared(Point3D point1, Point3D point2)
-	{
-		long dx, dy;
-		synchronized (point1)
-		{
-			synchronized (point2)
-			{
-				dx = point1._x - point2._x;
-				dy = point1._y - point2._y;
-			}
-		}
-		return (dx * dx) + (dy * dy);
-	}
-	
-	public static boolean distanceLessThan(Point3D point1, Point3D point2, double distance)
-	{
-		return distanceSquared(point1, point2) < (distance * distance);
-	}
+
 	
 	public int getX()
 	{

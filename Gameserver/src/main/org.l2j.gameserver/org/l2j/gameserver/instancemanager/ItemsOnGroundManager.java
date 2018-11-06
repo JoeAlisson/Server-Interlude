@@ -86,23 +86,21 @@ public class ItemsOnGroundManager {
 
         repository.findAll().forEach(itemsOnGround -> {
             L2ItemInstance item = new L2ItemInstance(itemsOnGround.getId(), itemsOnGround.getItemId());
-            L2World.getInstance().storeObject(item);
+
             if (item.isStackable() && (itemsOnGround.getCount() > 1)) {
                 item.setCount(itemsOnGround.getCount());
             }
             if (itemsOnGround.getEnchantLevel() > 0) {
                 item.setEnchantLevel(itemsOnGround.getEnchantLevel());
             }
-            item.getPosition().setWorldPosition(itemsOnGround.getX(), itemsOnGround.getY(), itemsOnGround.getZ());
-            item.getPosition().setWorldRegion(L2World.getInstance().getRegion(item.getPosition().getWorldPosition()));
-            item.getPosition().getWorldRegion().addVisibleObject(item);
+            item.spawnMe(itemsOnGround.getX(), itemsOnGround.getY(), itemsOnGround.getZ());
             item.setDropTime(itemsOnGround.getDropTime());
             if (itemsOnGround.getDropTime() == -1) {
                 item.setProtected(true);
             } else {
                 item.setProtected(false);
             }
-            item.setIsVisible(true);
+
             L2World.getInstance().addVisibleObject(item, item.getPosition().getWorldRegion(), null);
             _items.add(item);
             // add to ItemsAutoDestroy only items not protected
