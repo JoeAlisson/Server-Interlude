@@ -22,23 +22,15 @@ import java.util.List;
 public class TradeList {
     public class TradeItem {
         private int _objectId;
-        private final org.l2j.gameserver.templates.xml.jaxb.ItemTemplate _item;
+        private final L2ItemInstance _item;
         private int _enchant;
         private long _count;
         private long _price;
 
         public TradeItem(L2ItemInstance item, long count, long price) {
             _objectId = item.getObjectId();
-            _item = item.getItem();
-            _enchant = item.getEnchantLevel();
-            _count = count;
-            _price = price;
-        }
-
-        public TradeItem(ItemTemplate item, long count, long price) {
-            _objectId = 0;
             _item = item;
-            _enchant = 0;
+            _enchant = item.getEnchantLevel();
             _count = count;
             _price = price;
         }
@@ -59,7 +51,7 @@ public class TradeList {
             return _objectId;
         }
 
-        public ItemTemplate getItem() {
+        public L2ItemInstance getItem() {
             return _item;
         }
 
@@ -184,7 +176,7 @@ public class TradeList {
     public TradeItem adjustAvailableItem(L2ItemInstance item) {
         if (item.isStackable()) {
             for (TradeItem exclItem : _items) {
-                if (exclItem.getItem().getId() == item.getItemId()) {
+                if (exclItem.getItem().getId() == item.getId()) {
                     if (item.getCount() <= exclItem.getCount()) {
                         return null;
                     }
@@ -262,7 +254,7 @@ public class TradeList {
 
         L2ItemInstance item = (L2ItemInstance) o;
 
-        if (!item.isTradeable() || (item.getItem().isQuestItem())) {
+        if (!item.isTradeable() || (item.isQuestItem())) {
             return null;
         }
 
@@ -301,17 +293,19 @@ public class TradeList {
             return null;
         }
 
-        ItemTemplate item = ItemTable.getInstance().getTemplate(itemId);
+        L2ItemInstance item = ItemTable.getInstance().createDummyItem(itemId);
         if (item == null) {
             _log.warn(_owner.getName() + ": Attempt to add invalid item to TradeList!");
             return null;
         }
 
-        if (!item.getRestriction().isTradeable() || (item.isQuestItem())) {
+        if (!item.isTradeable() || item.isQuestItem()) {
             return null;
         }
 
-        if (!(item instanceof Item) || !((Item)item).isStackable() && (count > 1)) {
+
+
+        if (!item.isStackable() && (count > 1)) {
             _log.warn(_owner.getName() + ": Attempt to add non-stackable item to TradeList with count > 1!");
             return null;
         }
@@ -719,24 +713,24 @@ public class TradeList {
             if (newItem.isStackable()) {
                 SystemMessage msg = new SystemMessage(SystemMessageId.S1_PURCHASED_S3_S2_S);
                 msg.addString(player.getName());
-                msg.addItemName(newItem.getItemId());
+                msg.addItemName(newItem.getId());
                 msg.addNumber(item.getCount());
                 _owner.sendPacket(msg);
 
                 msg = new SystemMessage(SystemMessageId.PURCHASED_S3_S2_S_FROM_S1);
                 msg.addString(_owner.getName());
-                msg.addItemName(newItem.getItemId());
+                msg.addItemName(newItem.getId());
                 msg.addNumber(item.getCount());
                 player.sendPacket(msg);
             } else {
                 SystemMessage msg = new SystemMessage(SystemMessageId.S1_PURCHASED_S2);
                 msg.addString(player.getName());
-                msg.addItemName(newItem.getItemId());
+                msg.addItemName(newItem.getId());
                 _owner.sendPacket(msg);
 
                 msg = new SystemMessage(SystemMessageId.PURCHASED_S2_FROM_S1);
                 msg.addString(_owner.getName());
-                msg.addItemName(newItem.getItemId());
+                msg.addItemName(newItem.getId());
                 player.sendPacket(msg);
             }
         }
@@ -820,24 +814,24 @@ public class TradeList {
             if (newItem.isStackable()) {
                 SystemMessage msg = new SystemMessage(SystemMessageId.PURCHASED_S3_S2_S_FROM_S1);
                 msg.addString(player.getName());
-                msg.addItemName(newItem.getItemId());
+                msg.addItemName(newItem.getId());
                 msg.addNumber(item.getCount());
                 _owner.sendPacket(msg);
 
                 msg = new SystemMessage(SystemMessageId.S1_PURCHASED_S3_S2_S);
                 msg.addString(_owner.getName());
-                msg.addItemName(newItem.getItemId());
+                msg.addItemName(newItem.getId());
                 msg.addNumber(item.getCount());
                 player.sendPacket(msg);
             } else {
                 SystemMessage msg = new SystemMessage(SystemMessageId.PURCHASED_S2_FROM_S1);
                 msg.addString(player.getName());
-                msg.addItemName(newItem.getItemId());
+                msg.addItemName(newItem.getId());
                 _owner.sendPacket(msg);
 
                 msg = new SystemMessage(SystemMessageId.S1_PURCHASED_S2);
                 msg.addString(_owner.getName());
-                msg.addItemName(newItem.getItemId());
+                msg.addItemName(newItem.getId());
                 player.sendPacket(msg);
             }
         }

@@ -83,7 +83,7 @@ public class SummonItems implements IItemHandler
 			return;
 		}
 		
-		L2SummonItem sitem = SummonItemsData.getInstance().getSummonItem(item.getItemId());
+		L2SummonItem sitem = SummonItemsData.getInstance().getSummonItem(item.getId());
 		
 		if (((activeChar.getPet() != null) || activeChar.isMounted()) && sitem.isPetSummon())
 		{

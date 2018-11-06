@@ -183,7 +183,7 @@ public class Potions implements IItemHandler
 			return;
 		}
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		switch (itemId)
 		{

@@ -16,9 +16,6 @@ import org.l2j.gameserver.serverpackets.ItemList;
 import org.l2j.gameserver.serverpackets.PledgeShowInfoUpdate;
 import org.l2j.gameserver.serverpackets.StatusUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.xml.jaxb.Armor;
-import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -315,8 +312,8 @@ public class MultiSellChoose extends L2GameClientPacket {
             }
             // if it is an armor/weapon, modify the enchantment level appropriately, if necessary
             else if (maintainEnchantment) {
-                ItemTemplate tempItem = ItemTable.getInstance().createDummyItem(newIngredient.getItemId()).getItem();
-                if ((tempItem instanceof Armor) || (tempItem instanceof Weapon)) {
+                var tempItem = ItemTable.getInstance().createDummyItem(newIngredient.getItemId());
+                if ((tempItem.isArmor()) || (tempItem.isWeapon())) {
                     newIngredient.setEnchantmentLevel(enchantLevel);
                 }
             }
@@ -337,8 +334,8 @@ public class MultiSellChoose extends L2GameClientPacket {
             if (maintainEnchantment) {
                 // if it is an armor/weapon, modify the enchantment level appropriately
                 // (note, if maintain enchantment is "false" this modification will result to a +0)
-                ItemTemplate tempItem = ItemTable.getInstance().createDummyItem(newIngredient.getItemId()).getItem();
-                if ((tempItem instanceof Armor) || (tempItem instanceof Weapon)) {
+                var tempItem = ItemTable.getInstance().createDummyItem(newIngredient.getItemId());
+                if ((tempItem.isArmor()) || (tempItem .isWeapon())) {
                     newIngredient.setEnchantmentLevel(enchantLevel);
                 }
             }

@@ -419,7 +419,7 @@ public final class QuestState {
         int count = 0;
 
         for (L2ItemInstance item : getPlayer().getInventory().getItems()) {
-            if (item.getItemId() == itemId) {
+            if (item.getId() == itemId) {
                 count += item.getCount();
             }
         }
@@ -485,12 +485,12 @@ public final class QuestState {
         else {
             if (count > 1) {
                 SystemMessage smsg = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
-                smsg.addItemName(item.getItemId());
+                smsg.addItemName(item.getId());
                 smsg.addNumber(count);
                 getPlayer().sendPacket(smsg);
             } else {
                 SystemMessage smsg = new SystemMessage(SystemMessageId.EARNED_ITEM);
-                smsg.addItemName(item.getItemId());
+                smsg.addItemName(item.getId());
                 getPlayer().sendPacket(smsg);
             }
         }

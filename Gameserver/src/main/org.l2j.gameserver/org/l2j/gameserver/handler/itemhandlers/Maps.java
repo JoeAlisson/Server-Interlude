@@ -53,7 +53,7 @@ public class Maps implements IItemHandler
 			return;
 		}
 		final L2PcInstance activeChar = (L2PcInstance) playable;
-		final int itemId = item.getItemId();
+		final int itemId = item.getId();
 		if (itemId == 7063)
 		{
 			activeChar.sendPacket(new ShowMiniMap(1665));

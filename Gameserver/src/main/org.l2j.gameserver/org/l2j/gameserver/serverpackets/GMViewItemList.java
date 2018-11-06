@@ -37,7 +37,7 @@ public class GMViewItemList extends L2GameServerPacket
 			writeShort(temp.getItem().getType().ordinal());
 			
 			writeInt(temp.getObjectId());
-			writeInt(temp.getItemId());
+			writeInt(temp.getId());
 			writeLong(temp.getCount());
 			writeShort(temp.getItem().getCommissionType().ordinal());
 			writeShort(temp.getCustomType1());

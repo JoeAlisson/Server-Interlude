@@ -180,7 +180,7 @@ public class Heroes {
 						{
 							continue;
 						}
-						if (_heroItems.contains(item.getItemId()))
+						if (_heroItems.contains(item.getId()))
 						{
 							continue;
 						}

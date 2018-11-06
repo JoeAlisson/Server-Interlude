@@ -38,7 +38,7 @@ public class PetItemList extends L2GameServerPacket
 		{
 			writeShort(temp.getItem().getType().ordinal()); // item type1
 			writeInt(temp.getObjectId());
-			writeInt(temp.getItemId());
+			writeInt(temp.getId());
 			writeLong(temp.getCount());
 			writeShort(temp.getItem().getCommissionType().ordinal()); // item type2
 			writeShort(0xff); // ?

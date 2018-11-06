@@ -67,7 +67,7 @@ public final class RequestRefineCancel extends L2GameClientPacket
 		
 		// get the price
 		int price = 0;
-		switch (targetItem.getItem().getCrystalInfo().getType())
+		switch (targetItem.getCrystal())
 		{
 			case C:
 				if (targetItem.getCrystalCount() < 1720)
@@ -141,7 +141,7 @@ public final class RequestRefineCancel extends L2GameClientPacket
 		
 		// send system message
 		SystemMessage sm = new SystemMessage(SystemMessageId.AUGMENTATION_HAS_BEEN_SUCCESSFULLY_REMOVED_FROM_YOUR_S1);
-		sm.addString(targetItem.getItemName());
+		sm.addString(targetItem.getName());
 		activeChar.sendPacket(sm);
 	}
 	

@@ -75,12 +75,12 @@ public final class RequestPetUseItem extends L2GameClientPacket
 			return;
 		}
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		if (activeChar.isAlikeDead() || pet.isDead())
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.S1_CANNOT_BE_USED);
-			sm.addItemName(item.getItemId());
+			sm.addItemName(item.getId());
 			activeChar.sendPacket(sm);
 			sm = null;
 			return;
@@ -95,25 +95,25 @@ public final class RequestPetUseItem extends L2GameClientPacket
 		if (item.isEquipable())
 		{
 			if (L2PetDataTable.isWolf(pet.getNpcId()) && // wolf
-			item.getItem().getCommissionType() == CommissionType.PET_EQUIPMENT)
+			item.getCommissionType() == CommissionType.PET_EQUIPMENT)
 			{
 				useItem(pet, item, activeChar);
 				return;
 			}
 			else if (L2PetDataTable.isHatchling(pet.getNpcId()) && // hatchlings
-					item.getItem().getCommissionType() == CommissionType.PET_EQUIPMENT)
+					item.getCommissionType() == CommissionType.PET_EQUIPMENT)
 			{
 				useItem(pet, item, activeChar);
 				return;
 			}
 			else if (L2PetDataTable.isStrider(pet.getNpcId()) && // striders
-					item.getItem().getCommissionType() == CommissionType.PET_EQUIPMENT)
+					item.getCommissionType() == CommissionType.PET_EQUIPMENT)
 			{
 				useItem(pet, item, activeChar);
 				return;
 			}
 			else if (L2PetDataTable.isBaby(pet.getNpcId()) && // baby pets (buffalo, cougar, kookaboora)
-					item.getItem().getCommissionType() == CommissionType.PET_EQUIPMENT)
+					item.getCommissionType() == CommissionType.PET_EQUIPMENT)
 			{
 				useItem(pet, item, activeChar);
 				return;
@@ -157,7 +157,7 @@ public final class RequestPetUseItem extends L2GameClientPacket
 			}
 		}
 		
-		IItemHandler handler = ItemHandler.getInstance().getItemHandler(item.getItemId());
+		IItemHandler handler = ItemHandler.getInstance().getItemHandler(item.getId());
 		
 		if (handler != null)
 		{
@@ -196,11 +196,11 @@ public final class RequestPetUseItem extends L2GameClientPacket
 		else
 		{
 			// logger.debug("item not equipable id:"+ item.getId());
-			IItemHandler handler = ItemHandler.getInstance().getItemHandler(item.getItemId());
+			IItemHandler handler = ItemHandler.getInstance().getItemHandler(item.getId());
 			
 			if (handler == null)
 			{
-				_log.warn("no itemhandler registered for itemId:" + item.getItemId());
+				_log.warn("no itemhandler registered for itemId:" + item.getId());
 			}
 			else
 			{

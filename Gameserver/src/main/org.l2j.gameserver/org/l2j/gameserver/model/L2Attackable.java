@@ -1605,7 +1605,7 @@ public class L2Attackable extends L2NpcInstance {
 
             // Add drop to auto destroy item task
             if (!Config.LIST_PROTECTED_ITEMS.contains(item.getItemId())) {
-                if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (ditem.getItemType() != ItemType.HERB)) || ((Config.HERB_AUTO_DESTROY_TIME > 0) && (ditem.getItemType() == ItemType.HERB))) {
+                if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (ditem.getType() != ItemType.HERB)) || ((Config.HERB_AUTO_DESTROY_TIME > 0) && (ditem.getType() == ItemType.HERB))) {
                     ItemsAutoDestroy.getInstance().addItem(ditem);
                 }
             }
@@ -1892,7 +1892,7 @@ public class L2Attackable extends L2NpcInstance {
 
             L2ItemInstance[] inv = player.getInventory().getItems();
             for (L2ItemInstance item : inv) {
-                int itemId = item.getItemId();
+                int itemId = item.getId();
                 for (int id : SoulCrystal.SoulCrystalTable) {
                     // Find any of the 39 possible crystals.
                     if (id == itemId) {

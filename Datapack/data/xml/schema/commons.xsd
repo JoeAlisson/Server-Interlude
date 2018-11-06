@@ -145,6 +145,7 @@
             <xs:enumeration value="SOUL_CRYSTAL"/>
             <xs:enumeration value="SCROLL_ENCHANT_ARMOR"/>
             <xs:enumeration value="CRYSTAL"/>
+            <xs:enumeration value="HERB"/>
         </xs:restriction>
     </xs:simpleType>
 

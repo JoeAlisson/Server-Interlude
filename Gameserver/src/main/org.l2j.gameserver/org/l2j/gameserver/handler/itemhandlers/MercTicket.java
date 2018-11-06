@@ -43,7 +43,7 @@ public class MercTicket implements IItemHandler
 	@Override
 	public void useItem(L2PlayableInstance playable, L2ItemInstance item)
 	{
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		Castle castle = CastleManager.getInstance().getCastle(activeChar);
 		int castleId = -1;
@@ -103,18 +103,18 @@ public class MercTicket implements IItemHandler
 			return;
 		}
 		
-		if (MercTicketManager.getInstance().isAtCasleLimit(item.getItemId()))
+		if (MercTicketManager.getInstance().isAtCasleLimit(item.getId()))
 		{
 			activeChar.sendMessage("You cannot hire any more mercenaries");
 			return;
 		}
-		if (MercTicketManager.getInstance().isAtTypeLimit(item.getItemId()))
+		if (MercTicketManager.getInstance().isAtTypeLimit(item.getId()))
 		{
 			activeChar.sendMessage("You cannot hire any more mercenaries of this type.  You may still hire other types of mercenaries");
 			return;
 		}
 		
-		int npcId = MercTicketManager.getInstance().addTicket(item.getItemId(), activeChar, MESSAGES);
+		int npcId = MercTicketManager.getInstance().addTicket(item.getId(), activeChar, MESSAGES);
 		activeChar.destroyItem("Consume", item.getObjectId(), 1, null, false); // Remove item from char's inventory
 		activeChar.sendMessage("Hired mercenary (" + itemId + "," + npcId + ") at coords:" + activeChar.getX() + "," + activeChar.getY() + "," + activeChar.getZ() + " heading:" + activeChar.getHeading());
 	}

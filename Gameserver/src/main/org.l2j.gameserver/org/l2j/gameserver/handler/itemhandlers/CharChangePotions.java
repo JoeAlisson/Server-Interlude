@@ -56,7 +56,7 @@ public class CharChangePotions implements IItemHandler
 	@Override
 	public void useItem(L2PlayableInstance playable, L2ItemInstance item)
 	{
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		L2PcInstance activeChar;
 		

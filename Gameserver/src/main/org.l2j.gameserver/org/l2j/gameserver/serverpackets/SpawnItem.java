@@ -17,7 +17,7 @@ public class SpawnItem extends L2GameServerPacket
 	public SpawnItem(L2ItemInstance item)
 	{
 		_objectId = item.getObjectId();
-		_itemId = item.getItemId();
+		_itemId = item.getId();
 		_x = item.getX();
 		_y = item.getY();
 		_z = item.getZ();

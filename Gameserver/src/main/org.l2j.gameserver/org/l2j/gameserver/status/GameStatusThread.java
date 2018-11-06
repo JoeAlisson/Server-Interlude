@@ -295,7 +295,7 @@ public class GameStatusThread extends Thread
 						}
 						if (obj instanceof L2ItemInstance)
 						{
-							if (((L2ItemInstance) obj).getLocation() == L2ItemInstance.ItemLocation.VOID)
+							if (((L2ItemInstance) obj).getLocation() == ItemLocation.VOID)
 							{
 								itemVoidCount++;
 							}

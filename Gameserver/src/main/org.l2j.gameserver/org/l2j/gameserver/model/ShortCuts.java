@@ -102,10 +102,10 @@ public class ShortCuts
 		{
 			L2ItemInstance item = _owner.getInventory().getItemByObjectId(old.getId());
 			
-			if ((item != null) && (item.getItemType() == ItemType.SHOT))
+			if ((item != null) && (item.getType() == ItemType.SHOT))
 			{
-				_owner.removeAutoSoulShot(item.getItemId());
-				_owner.sendPacket(new ExAutoSoulShot(item.getItemId(), 0));
+				_owner.removeAutoSoulShot(item.getId());
+				_owner.sendPacket(new ExAutoSoulShot(item.getId(), 0));
 			}
 		}
 		

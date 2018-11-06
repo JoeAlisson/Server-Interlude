@@ -116,7 +116,7 @@ public class Scrolls implements IItemHandler
 			return;
 		}
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		if ((itemId >= 8594) && (itemId <= 8599)) // Scrolls of recovery XML: 2286
 		{

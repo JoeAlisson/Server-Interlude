@@ -314,7 +314,6 @@ public class L2Spawn {
 
 
     private void respawnNpc(L2NpcInstance oldNpc) {
-        oldNpc.refreshID();
         intializeNpcInstance(oldNpc);
     }
 

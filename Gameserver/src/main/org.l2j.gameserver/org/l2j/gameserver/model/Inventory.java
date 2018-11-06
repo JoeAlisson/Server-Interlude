@@ -5,7 +5,6 @@ import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.datatables.ArmorSetsTable;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.datatables.SkillTable;
-import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.ArmorSet;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
@@ -84,7 +83,7 @@ public abstract class Inventory extends ItemContainer {
 
             L2PcInstance owner = (L2PcInstance) getOwner();
 
-            if (item.getItemId() == 6408) {
+            if (item.getId() == 6408) {
                 owner.setIsWearingFormalWear(false);
             }
         }
@@ -98,7 +97,7 @@ public abstract class Inventory extends ItemContainer {
             L2PcInstance owner = (L2PcInstance) getOwner();
 
             // If reader equip Formal Wear unequip weapons and abort cast/attack
-            if (item.getItemId() == 6408) {
+            if (item.getId() == 6408) {
                 owner.setIsWearingFormalWear(true);
             } else {
                 if (!owner.isWearingFormalWear()) {
@@ -165,7 +164,7 @@ public abstract class Inventory extends ItemContainer {
             if (Config.ASSERT) {
                 assert null == getPaperdollItem(PAPERDOLL_LRHAND);
             }
-            if (item.getItemType() == ItemType.BOW) {
+            if (item.getType() == ItemType.BOW) {
                 L2ItemInstance arrow = getPaperdollItem(PAPERDOLL_LHAND);
                 if (arrow != null) {
                     setPaperdollItem(PAPERDOLL_LHAND, null);
@@ -181,8 +180,8 @@ public abstract class Inventory extends ItemContainer {
             if (Config.ASSERT) {
                 assert item == getPaperdollItem(PAPERDOLL_LRHAND);
             }
-            if (item.getItemType() == ItemType.BOW) {
-                L2ItemInstance arrow = findArrowForBow(item.getItem());
+            if (item.getType() == ItemType.BOW) {
+                L2ItemInstance arrow = findArrowForBow(item);
                 if (arrow != null) {
                     setPaperdollItem(PAPERDOLL_LHAND, arrow);
                 }
@@ -221,11 +220,10 @@ public abstract class Inventory extends ItemContainer {
 
             L2Skill passiveSkill = null;
 
-            ItemTemplate it = item.getItem();
 
-            if (it instanceof Weapon) {
+            if (item.isWeapon()) {
                 // passiveSkill = ((Weapon) it).getSkill(); TODO implement
-            } else if (it instanceof Armor) {
+            } else if (item.isArmor()) {
                 // passiveSkill = ((Armor) it).getSkill(); TODO implement
             }
 
@@ -247,12 +245,10 @@ public abstract class Inventory extends ItemContainer {
 
             L2Skill passiveSkill = null;
 
-            ItemTemplate it = item.getItem();
-
-            if (it instanceof Weapon) {
+            if (item.isWeapon()) {
                 // passiveSkill = ((Weapon) it).getSkill(); TODO IMPLEMENT
 
-            } else if (it instanceof Armor) {
+            } else if (item.isArmor()) {
                 // passiveSkill = ((Armor) it).getSkill(); TODO IMPLEMENT
             }
 
@@ -279,13 +275,13 @@ public abstract class Inventory extends ItemContainer {
             }
 
             // checks if there is armorset for chest item that reader worns
-            ArmorSet armorSet = ArmorSetsTable.getInstance().getSet(chestItem.getItemId());
+            ArmorSet armorSet = ArmorSetsTable.getInstance().getSet(chestItem.getId());
             if (armorSet == null) {
                 return;
             }
 
             // checks if equiped item is part of set
-            if (armorSet.containItem(slot, item.getItemId())) {
+            if (armorSet.containItem(slot, item.getId())) {
                 if (armorSet.containAll(player)) {
                     L2Skill skill = SkillTable.getInstance().getInfo(armorSet.getSkillId(), 1);
                     if (skill != null) {
@@ -319,7 +315,7 @@ public abstract class Inventory extends ItemContainer {
                         }
                     }
                 }
-            } else if (armorSet.containShield(item.getItemId())) {
+            } else if (armorSet.containShield(item.getId())) {
                 if (armorSet.containAll(player)) {
                     L2Skill skills = SkillTable.getInstance().getInfo(armorSet.getShieldSkillId(), 1);
                     if (skills != null) {
@@ -346,7 +342,7 @@ public abstract class Inventory extends ItemContainer {
             int removeSkillId3 = 0; // enchant +6 skill
 
             if (slot == PAPERDOLL_CHEST) {
-                ArmorSet armorSet = ArmorSetsTable.getInstance().getSet(item.getItemId());
+                ArmorSet armorSet = ArmorSetsTable.getInstance().getSet(item.getId());
                 if (armorSet == null) {
                     return;
                 }
@@ -361,18 +357,18 @@ public abstract class Inventory extends ItemContainer {
                     return;
                 }
 
-                ArmorSet armorSet = ArmorSetsTable.getInstance().getSet(chestItem.getItemId());
+                ArmorSet armorSet = ArmorSetsTable.getInstance().getSet(chestItem.getId());
                 if (armorSet == null) {
                     return;
                 }
 
-                if (armorSet.containItem(slot, item.getItemId())) // removed part of set
+                if (armorSet.containItem(slot, item.getId())) // removed part of set
                 {
                     remove = true;
                     removeSkillId1 = armorSet.getSkillId();
                     removeSkillId2 = armorSet.getShieldSkillId();
                     removeSkillId3 = armorSet.getEnchant6Skill();
-                } else if (armorSet.containShield(item.getItemId())) // removed shield
+                } else if (armorSet.containShield(item.getId())) // removed shield
                 {
                     remove = true;
                     removeSkillId2 = armorSet.getShieldSkillId();
@@ -456,7 +452,7 @@ public abstract class Inventory extends ItemContainer {
             }
 
             removeItem(item);
-            item.setOwnerId(process, 0, actor, reference);
+            item.setOwnerId(process, 0);
             item.setLocation(ItemLocation.VOID);
             item.setLastChange(L2ItemInstance.REMOVED);
 
@@ -484,11 +480,11 @@ public abstract class Inventory extends ItemContainer {
 
         // Adjust item quantity and create new instance to drop
         if (item.getCount() > count) {
-            item.changeCount(process, -count, actor, reference);
+            item.changeCount(process, -count);
             item.setLastChange(L2ItemInstance.MODIFIED);
             item.updateDatabase();
 
-            item = ItemTable.getInstance().createItem(process, item.getItemId(), count, actor, reference);
+            item = ItemTable.getInstance().createItem(process, item.getId(), count, actor, reference);
 
             item.updateDatabase();
             refreshWeight();
@@ -598,11 +594,11 @@ public abstract class Inventory extends ItemContainer {
     public int getPaperdollItemId(int slot) {
         L2ItemInstance item = _paperdoll[slot];
         if (item != null) {
-            return item.getItemId();
+            return item.getId();
         } else if (slot == PAPERDOLL_HAIR) {
             item = _paperdoll[PAPERDOLL_DHAIR];
             if (item != null) {
-                return item.getItemId();
+                return item.getId();
             }
         }
         return 0;
@@ -676,7 +672,7 @@ public abstract class Inventory extends ItemContainer {
                 for (int i = 0; i < PAPERDOLL_LRHAND; i++) {
                     L2ItemInstance pi = _paperdoll[i];
                     if (pi != null) {
-                        mask |= 1 << pi.getItem().getType().ordinal();
+                        mask |= 1 << pi.getType().ordinal();
                     }
                 }
                 _wearedMask = mask;
@@ -694,7 +690,7 @@ public abstract class Inventory extends ItemContainer {
                 _paperdoll[slot] = item;
                 item.setLocation(getEquipLocation(), slot);
                 item.setLastChange(L2ItemInstance.MODIFIED);
-                _wearedMask |= 1 << item.getItem().getType().ordinal();
+                _wearedMask |= 1 << item.getType().ordinal();
                 for (PaperdollListener listener : _paperdollListeners) {
                     listener.notifyEquiped(slot, item);
                 }
@@ -935,7 +931,7 @@ public abstract class Inventory extends ItemContainer {
 
             if (!player.isGM()) {
                 if (!player.isHero()) {
-                    int itemId = item.getItemId();
+                    int itemId = item.getId();
                     if (((itemId >= 6611) && (itemId <= 6621)) || (itemId == 6842)) {
                         return;
                     }
@@ -1121,10 +1117,10 @@ public abstract class Inventory extends ItemContainer {
      * @param bow : ItemTemplate designating the bow
      * @return L2ItemInstance pointing out arrows for bow
      */
-    public L2ItemInstance findArrowForBow(ItemTemplate bow) {
+    public L2ItemInstance findArrowForBow(L2ItemInstance bow) {
         int arrowsId = 0;
 
-        switch (bow.getCrystalInfo().getType()) {
+        switch (bow.getCrystal()) {
             default: // broken weapon.csv ??
             case NONE:
                 arrowsId = 17;
@@ -1164,7 +1160,7 @@ public abstract class Inventory extends ItemContainer {
 
                 if (!player.isGM()) {
                     if (!player.isHero()) {
-                        int itemId = item.getItemId();
+                        int itemId = item.getId();
                         if (((itemId >= 6611) && (itemId <= 6621)) || (itemId == 6842)) {
                             item.setLocation(ItemLocation.INVENTORY);
                         }
@@ -1175,7 +1171,7 @@ public abstract class Inventory extends ItemContainer {
             L2World.getInstance().storeObject(item);
 
             // If stackable item is found in inventory just add to current quantity
-            if (item.isStackable() && (getItemByItemId(item.getItemId()) != null)) {
+            if (item.isStackable() && (getItemByItemId(item.getId()) != null)) {
                 addItem("Restore", item, null, getOwner());
             } else {
                 addItem(item);

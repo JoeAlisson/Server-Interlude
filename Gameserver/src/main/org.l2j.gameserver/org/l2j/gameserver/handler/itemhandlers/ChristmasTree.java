@@ -53,7 +53,7 @@ public class ChristmasTree implements IItemHandler
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		NpcTemplate template1 = null;
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		for (int i = 0; i < ITEM_IDS.length; i++)
 		{
 			if (ITEM_IDS[i] == itemId)

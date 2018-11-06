@@ -8,7 +8,6 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
-import org.l2j.gameserver.templates.xml.jaxb.Armor;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
 import org.l2j.gameserver.templates.xml.jaxb.Weapon;
@@ -71,7 +70,7 @@ public final class UseItem extends L2GameClientPacket
 			return;
 		}
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		/*
 		 * Alt game - Karma punishment // SOE 736 Scroll of Escape 1538 Blessed Scroll of Escape 1829 Scroll of Escape: Clan Hall 1830 Scroll of Escape: Castle 3958 L2Day - Blessed Scroll of Escape 5858 Blessed Scroll of Escape: Clan Hall 5859 Blessed Scroll of Escape: Castle 6663 Scroll of Escape:
 		 * Orc Village 6664 Scroll of Escape: Silenos Village 7117 Scroll of Escape to Talking Island 7118 Scroll of Escape to Elven Village 7119 Scroll of Escape to Dark Elf Village 7120 Scroll of Escape to Orc Village 7121 Scroll of Escape to Dwarven Village 7122 Scroll of Escape to Gludin Village
@@ -136,14 +135,7 @@ public final class UseItem extends L2GameClientPacket
 				return;
 			}
 			
-			BodyPart bodyPart = null;
-
-			if(item.getItem() instanceof Armor) {
-			    bodyPart = ((Armor) item.getItem()).getBodyPart();
-            } else if(item.getItem() instanceof Weapon) {
-			    bodyPart = ((Weapon) item.getItem()).getBodyPart();
-            }
-
+			BodyPart bodyPart = item.getBodyPart();
 
 			// Prevent reader to remove the weapon on special conditions
 			if ((activeChar.isAttackingNow() || activeChar.isCastingNow() || activeChar.isMounted()) && ((bodyPart == BodyPart.TWO_HANDS) || (bodyPart == BodyPart.LEFT_HAND) || (bodyPart == BodyPart.RIGHT_HAND)))
@@ -162,13 +154,13 @@ public final class UseItem extends L2GameClientPacket
 			}
 			
 			// Don't allow weapon/shield hero equipment during Olympiads
-			if (activeChar.isInOlympiadMode() && ((bodyPart == BodyPart.TWO_HANDS) || (bodyPart == BodyPart.LEFT_HAND) || (bodyPart == BodyPart.RIGHT_HAND)) && (((item.getItemId() >= 6611) && (item.getItemId() <= 6621)) || (item.getItemId() == 6842)))
+			if (activeChar.isInOlympiadMode() && ((bodyPart == BodyPart.TWO_HANDS) || (bodyPart == BodyPart.LEFT_HAND) || (bodyPart == BodyPart.RIGHT_HAND)) && (((item.getId() >= 6611) && (item.getId() <= 6621)) || (item.getId() == 6842)))
 			{
 				return;
 			}
 			
 			// Don't allow weapon/shield hero equipment during Olympiads
-			if (activeChar.isInOlympiadMode() && ((bodyPart == BodyPart.TWO_HANDS) || (bodyPart == BodyPart.LEFT_HAND) || (bodyPart == BodyPart.RIGHT_HAND)) && (((item.getItemId() >= 6611) && (item.getItemId() <= 6621)) || (item.getItemId() == 6842)))
+			if (activeChar.isInOlympiadMode() && ((bodyPart == BodyPart.TWO_HANDS) || (bodyPart == BodyPart.LEFT_HAND) || (bodyPart == BodyPart.RIGHT_HAND)) && (((item.getId() >= 6611) && (item.getId() <= 6621)) || (item.getId() == 6842)))
 			{
 				return;
 			}
@@ -211,12 +203,7 @@ public final class UseItem extends L2GameClientPacket
 			}
 			else
 			{
-				BodyPart tempBodyPart = null;
-				if(item.getItem() instanceof  Armor) {
-				    tempBodyPart = ((Armor) item.getItem()).getBodyPart();
-                } else  if(item.getItem() instanceof  Weapon) {
-				    tempBodyPart = ((Weapon) item.getItem()).getBodyPart();
-                }
+				BodyPart tempBodyPart = item.getBodyPart();
 
 				L2ItemInstance tempItem = activeChar.getInventory().getPaperdollItemByL2ItemId(tempBodyPart);
 				
@@ -305,7 +292,7 @@ public final class UseItem extends L2GameClientPacket
 			
 			activeChar.refreshExpertisePenalty();
 			
-			if (item.getItem() instanceof  Weapon)
+			if (item.isWeapon())
 			{
 				activeChar.checkIfWeaponIsAllowed();
 			}
@@ -319,7 +306,7 @@ public final class UseItem extends L2GameClientPacket
 		else
 		{
 			Weapon weaponItem = activeChar.getActiveWeaponItem();
-			int itemid = item.getItemId();
+			int itemid = item.getId();
 			// logger.debug("item not equipable id:"+ item.getId());
 			if (itemid == 4393)
 			{
@@ -336,11 +323,11 @@ public final class UseItem extends L2GameClientPacket
 			}
 			else
 			{
-				IItemHandler handler = ItemHandler.getInstance().getItemHandler(item.getItemId());
+				IItemHandler handler = ItemHandler.getInstance().getItemHandler(item.getId());
 				
 				if (handler == null)
 				{
-					_log.warn("No item handler registered for item ID " + item.getItemId() + ".");
+					_log.warn("No item handler registered for item ID " + item.getId() + ".");
 				}
 				else
 				{

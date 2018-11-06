@@ -112,17 +112,17 @@ public final class RequestPackageSend extends L2GameClientPacket {
                 continue;
             }
 
-            if (!item.isTradeable() || (item.getItemType() == ItemType.QUEST)) {
+            if (!item.isTradeable() || (item.getType() == ItemType.QUEST)) {
                 return;
             }
 
             // Calculate needed adena and slots
-            if (item.getItemId() == 57) {
+            if (item.getId() == 57) {
                 currentAdena -= count;
             }
             if (!item.isStackable()) {
                 slots += count;
-            } else if (warehouse.getItemByItemId(item.getItemId()) == null) {
+            } else if (warehouse.getItemByItemId(item.getId()) == null) {
                 slots++;
             }
         }
@@ -156,7 +156,7 @@ public final class RequestPackageSend extends L2GameClientPacket {
                 continue;
             }
 
-            int itemId = oldItem.getItemId();
+            int itemId = oldItem.getId();
 
             if (((itemId >= 6611) && (itemId <= 6621)) || (itemId == 6842)) {
                 continue;

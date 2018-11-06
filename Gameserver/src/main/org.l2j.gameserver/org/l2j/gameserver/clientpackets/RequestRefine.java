@@ -101,8 +101,8 @@ public final class RequestRefine extends L2GameClientPacket
 		}
 		
 		CrystalType itemGrade = targetItem.getItem().getCrystalInfo().getType();
-		int lifeStoneId = refinerItem.getItemId();
-		int gemstoneItemId = gemstoneItem.getItemId();
+		int lifeStoneId = refinerItem.getId();
+		int gemstoneItemId = gemstoneItem.getId();
 		
 		// is the refiner Item a life stone?
 		if ((lifeStoneId < 8723) || (lifeStoneId > 8762))

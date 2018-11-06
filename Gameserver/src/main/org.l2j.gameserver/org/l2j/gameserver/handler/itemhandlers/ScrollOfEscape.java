@@ -149,7 +149,7 @@ public class ScrollOfEscape implements IItemHandler
 		
 		// Modified by Tempy - 28 Jul 05 \\
 		// Check if this is a blessed scroll, if it is then shorten the cast time.
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		int escapeSkill = ((itemId == 1538) || (itemId == 5858) || (itemId == 5859) || (itemId == 3958)) ? 2036 : 2013;
 		
 		if (!activeChar.destroyItem("Consume", item.getObjectId(), 1, null, false))

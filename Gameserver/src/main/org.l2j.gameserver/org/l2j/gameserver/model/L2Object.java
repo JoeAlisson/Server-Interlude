@@ -1,6 +1,5 @@
 package org.l2j.gameserver.model;
 
-import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.knownlist.KnownList;
 import org.l2j.gameserver.model.actor.position.Position;
@@ -19,14 +18,14 @@ import static java.util.Objects.nonNull;
  */
 public abstract class L2Object {
 
-    protected KnownList knownList;
     private final Position position;
-
     private boolean visible;
     private String polyMorphType;
     private int polyMorph;
-    private int objectId;
+    private String _name;
 
+    protected KnownList knownList;
+    protected final int objectId;
 
     public L2Object(int objectId) {
         this.objectId = objectId;
@@ -61,11 +60,9 @@ public abstract class L2Object {
         polyMorph = Integer.parseInt(id);
     }
 
-    public final String getName() {
+    public String getName() {
         return _name;
     }
-
-    private String _name;
 
     public void onAction(L2PcInstance player) {
         player.sendPacket(new ActionFailed());
@@ -112,13 +109,6 @@ public abstract class L2Object {
         }
         L2World.getInstance().removeVisibleObject(this, reg);
         L2World.getInstance().removeObject(this);
-    }
-
-    // TODO remove this method make no sense do a refresh
-    public void refreshID() {
-        L2World.getInstance().removeObject(this);
-        IdFactory.getInstance().releaseId(getObjectId());
-        objectId = IdFactory.getInstance().getNextId();
     }
 
     public final void setVisible(boolean value) {

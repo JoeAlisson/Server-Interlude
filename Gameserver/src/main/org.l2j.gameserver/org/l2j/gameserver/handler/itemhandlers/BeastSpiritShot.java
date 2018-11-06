@@ -65,7 +65,7 @@ public class BeastSpiritShot implements IItemHandler
 			return;
 		}
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		boolean isBlessed = (itemId == 6647);
 		int shotConsumption = 1;
 		

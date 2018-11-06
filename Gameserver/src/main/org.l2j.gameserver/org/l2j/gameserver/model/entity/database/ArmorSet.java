@@ -87,10 +87,10 @@ public class ArmorSet {
         var glovesItem = inventory.getPaperdollItem(Inventory.PAPERDOLL_GLOVES);
         var feetItem = inventory.getPaperdollItem(Inventory.PAPERDOLL_FEET);
 
-        var legs = isNull(legsItem) ?  0 : legsItem.getItemId();
-        var head = isNull(headItem) ?  0 : headItem.getItemId();
-        var gloves = isNull(glovesItem) ?  0 : glovesItem.getItemId();
-        var feet = isNull(feetItem) ?  0 : feetItem.getItemId();
+        var legs = isNull(legsItem) ?  0 : legsItem.getId();
+        var head = isNull(headItem) ?  0 : headItem.getId();
+        var gloves = isNull(glovesItem) ?  0 : glovesItem.getId();
+        var feet = isNull(feetItem) ?  0 : feetItem.getId();
 
         return containAll(chest, legs, head, gloves, feet);
     }
@@ -106,7 +106,7 @@ public class ArmorSet {
 
     public boolean containShield(L2PcInstance player) {
         var shieldItem = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LHAND);
-        return nonNull(shieldItem) && shieldItem.getItemId() == shield;
+        return nonNull(shieldItem) && shieldItem.getId() == shield;
     }
 
     public boolean containShield(int shieldId) {

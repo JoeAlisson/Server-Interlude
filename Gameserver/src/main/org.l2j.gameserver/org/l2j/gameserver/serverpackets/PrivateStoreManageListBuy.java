@@ -31,13 +31,13 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 		writeInt(_itemList.length); // inventory items for potential buy
 		for (L2ItemInstance item : _itemList)
 		{
-			writeInt(item.getItemId());
+			writeInt(item.getId());
 			writeShort(0); // show enchant lvl as 0, as you can't buy enchanted weapons
 			writeLong(item.getCount());
 			writeLong(item.getReferencePrice());
 			writeShort(0x00);
 			writeInt(0);// TODO item.getItem().getBodyPart().getId());
-			writeShort(item.getItem().getCommissionType().ordinal());
+			writeShort(item.getCommissionType().ordinal());
 		}
 		
 		// section 3

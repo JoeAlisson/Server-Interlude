@@ -80,7 +80,7 @@ public class WareHouseDepositList extends L2GameServerPacket {
         for (L2ItemInstance item : _items) {
             writeShort(item.getItem().getType().ordinal()); // item type1 //unconfirmed, works
             writeInt(item.getObjectId()); // unconfirmed, works
-            writeInt(item.getItemId()); // unconfirmed, works
+            writeInt(item.getId()); // unconfirmed, works
             writeLong(item.getCount()); // unconfirmed, works
             writeShort(item.getItem().getCommissionType().ordinal()); // item type2 //unconfirmed, works
             writeShort(0x00); // ? 100

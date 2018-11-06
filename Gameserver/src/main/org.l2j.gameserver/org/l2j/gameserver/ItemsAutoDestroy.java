@@ -20,6 +20,7 @@ package org.l2j.gameserver;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.instancemanager.ItemsOnGroundManager;
+import org.l2j.gameserver.model.ItemLocation;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.templates.ItemType;
@@ -71,10 +72,10 @@ public class ItemsAutoDestroy {
 
         long curtime = System.currentTimeMillis();
         for (L2ItemInstance item : _items) {
-            if ((item == null) || (item.getDropTime() == 0) || (item.getLocation() != L2ItemInstance.ItemLocation.VOID)) {
+            if ((item == null) || (item.getDropTime() == 0) || (item.getLocation() != ItemLocation.VOID)) {
                 _items.remove(item);
             } else {
-                if (item.getItemType() == ItemType.HERB) {
+                if (item.getType() == ItemType.HERB) {
                     if ((curtime - item.getDropTime()) > Config.HERB_AUTO_DESTROY_TIME) {
                         L2World.getInstance().removeVisibleObject(item, item.getWorldRegion());
                         L2World.getInstance().removeObject(item);

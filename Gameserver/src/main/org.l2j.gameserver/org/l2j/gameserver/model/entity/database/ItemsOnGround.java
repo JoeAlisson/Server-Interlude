@@ -28,7 +28,7 @@ public class ItemsOnGround extends Entity<Integer> {
 
     public ItemsOnGround(L2ItemInstance item) {
         this.objectId = item.getObjectId();
-        this.itemId = item.getItemId();
+        this.itemId = item.getId();
         this.count = item.getCount();
         this.enchantLevel = item.getEnchantLevel();
         this.x = item.getX();

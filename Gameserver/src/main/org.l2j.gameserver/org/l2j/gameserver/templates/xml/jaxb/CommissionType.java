@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.03 às 12:02:18 PM BRT 
+// Gerado em: 2018.11.06 às 03:44:38 PM BRT 
 //
 
 
@@ -61,6 +61,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="SOUL_CRYSTAL"/&gt;
  *     &lt;enumeration value="SCROLL_ENCHANT_ARMOR"/&gt;
  *     &lt;enumeration value="CRYSTAL"/&gt;
+ *     &lt;enumeration value="HERB"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
  * </pre>
@@ -110,7 +111,8 @@ public enum CommissionType {
     SCROLL_ENCHANT_WEAPON,
     SOUL_CRYSTAL,
     SCROLL_ENCHANT_ARMOR,
-    CRYSTAL;
+    CRYSTAL,
+    HERB;
 
     public String value() {
         return name();

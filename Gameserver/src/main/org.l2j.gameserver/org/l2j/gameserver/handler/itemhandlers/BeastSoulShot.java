@@ -123,7 +123,7 @@ public class BeastSoulShot implements IItemHandler
 				activeOwner.sendPacket(new ExAutoSoulShot(itemId, 0));
 				
 				SystemMessage sm = new SystemMessage(SystemMessageId.AUTO_USE_OF_S1_CANCELLED);
-				sm.addString(item.getItem().getName());
+				sm.addString(item.getName());
 				activeOwner.sendPacket(sm);
 				return;
 			}

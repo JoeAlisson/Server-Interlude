@@ -15,7 +15,6 @@ import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
-import org.l2j.gameserver.util.Point3D;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -374,7 +373,7 @@ public class CursedWeapon
 		// L2ItemInstance[] items =
 		this.player.getInventory().equipItemAndRecord(this.item);
 		SystemMessage sm = new SystemMessage(SystemMessageId.S1_EQUIPPED);
-		sm.addItemName(this.item.getItemId());
+		sm.addItemName(this.item.getId());
 		this.player.sendPacket(sm);
 		
 		// Fully heal reader
@@ -403,7 +402,7 @@ public class CursedWeapon
 		
 		sm = new SystemMessage(SystemMessageId.THE_OWNER_OF_S2_HAS_APPEARED_IN_THE_S1_REGION);
 		sm.addZoneName(this.player.getX(), this.player.getY(), this.player.getZ()); // Region Name
-		sm.addItemName(this.item.getItemId());
+		sm.addItemName(this.item.getId());
 		CursedWeaponsManager.announce(sm);
 	}
 	

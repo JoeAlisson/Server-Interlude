@@ -53,7 +53,7 @@ public class Firework implements IItemHandler
 			return; // prevent Class cast exception
 		}
 		L2PcInstance activeChar = (L2PcInstance) playable;
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		if (!FloodProtector.getInstance().tryPerformAction(activeChar.getObjectId(), FloodProtector.PROTECTED_FIREWORK))
 		{

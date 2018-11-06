@@ -55,7 +55,7 @@ public class RollingDice implements IItemHandler
 		}
 		
 		L2PcInstance activeChar = (L2PcInstance) playable;
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		if (activeChar.isInOlympiadMode())
 		{
@@ -72,7 +72,7 @@ public class RollingDice implements IItemHandler
 				return;
 			}
 			
-			Dice d = new Dice(activeChar.getObjectId(), item.getItemId(), number, activeChar.getX() - 30, activeChar.getY() - 30, activeChar.getZ());
+			Dice d = new Dice(activeChar.getObjectId(), item.getId(), number, activeChar.getX() - 30, activeChar.getY() - 30, activeChar.getZ());
 			Broadcast.toSelfAndKnownPlayers(activeChar, d);
 			
 			SystemMessage sm = new SystemMessage(SystemMessageId.S1_ROLLED_S2);

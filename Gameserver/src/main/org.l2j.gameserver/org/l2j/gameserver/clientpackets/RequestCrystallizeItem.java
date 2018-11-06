@@ -75,7 +75,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 				return;
 			}
 			
-			int itemId = item.getItemId();
+			int itemId = item.getId();
 			if (((itemId >= 6611) && (itemId <= 6621)) || (itemId == 6842))
 			{
 				return;
@@ -92,14 +92,17 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		{
 			return;
 		}
-		if (itemToRemove.getItem().getCrystalInfo().getType() == org.l2j.gameserver.templates.xml.jaxb.CrystalType.NONE|| (itemToRemove.getItem().getCrystalInfo().getCount() <= 0))
+
+		var crystal = itemToRemove.getCrystal();
+
+		if (crystal == CrystalType.NONE || (itemToRemove.getCrystalCount() <= 0))
 		{
-			_log.warn("" + activeChar.getObjectId() + " tried to crystallize " + itemToRemove.getItem().getId());
+			_log.warn("" + activeChar.getObjectId() + " tried to crystallize " + itemToRemove.getId());
 			return;
 		}
 		
 		// Check if the char can crystallize C items and return if false;
-		if ((itemToRemove.getItem().getCrystalInfo().getType() == CrystalType.C) && (skillLevel <= 1))
+		if ((crystal == CrystalType.C) && (skillLevel <= 1))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);
 			activeChar.sendPacket(sm);
@@ -110,7 +113,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		}
 		
 		// Check if the user can crystallize B items and return if false;
-		if ((itemToRemove.getItem().getCrystalInfo().getType() == CrystalType.B) && (skillLevel <= 2))
+		if ((crystal == CrystalType.B) && (skillLevel <= 2))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);
 			activeChar.sendPacket(sm);
@@ -121,7 +124,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		}
 		
 		// Check if the user can crystallize A items and return if false;
-		if ((itemToRemove.getItem().getCrystalInfo().getType()== CrystalType.A) && (skillLevel <= 3))
+		if ((crystal == CrystalType.A) && (skillLevel <= 3))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);
 			activeChar.sendPacket(sm);
@@ -132,7 +135,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		}
 		
 		// Check if the user can crystallize S items and return if false;
-		if ((itemToRemove.getItem().getCrystalInfo().getType() == CrystalType.S) && (skillLevel <= 4))
+		if ((crystal == CrystalType.S) && (skillLevel <= 4))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.CRYSTALLIZE_LEVEL_TOO_LOW);
 			activeChar.sendPacket(sm);
@@ -166,7 +169,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		L2ItemInstance removedItem = activeChar.getInventory().destroyItem("Crystalize", _objectId, _count, activeChar, null);
 		
 		// add crystals
-		int crystalId = 1458; // TODO itemToRemove.getItem().getCrystalInfo().getType().getItemId;
+		int crystalId = 1458; // TODO itemToRemove.getItem().getCrystalInfo().getType().getId;
 		int crystalAmount = itemToRemove.getCrystalCount();
 		L2ItemInstance createditem = activeChar.getInventory().addItem("Crystalize", crystalId, crystalAmount, activeChar, itemToRemove);
 		

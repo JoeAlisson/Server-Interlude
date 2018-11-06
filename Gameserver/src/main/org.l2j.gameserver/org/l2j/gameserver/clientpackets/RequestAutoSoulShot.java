@@ -83,7 +83,7 @@ public final class RequestAutoSoulShot extends L2GameClientPacket
 							
 							// start the auto soulshot use
 							SystemMessage sm = new SystemMessage(SystemMessageId.USE_OF_S1_WILL_BE_AUTO);
-							sm.addString(item.getItemName());
+							sm.addString(item.getName());
 							activeChar.sendPacket(sm);
 							sm = null;
 							
@@ -91,12 +91,12 @@ public final class RequestAutoSoulShot extends L2GameClientPacket
 						}
 						else
 						{
-							if ((activeChar.getActiveWeaponItem() != activeChar.getFistsWeaponItem()) && (item.getItem().getCrystalInfo().getType() == activeChar.getActiveWeaponItem().getCrystalInfo().getType()))
+							if ((activeChar.getActiveWeaponItem() != activeChar.getFistsWeaponItem()) && (item.getCrystal() == activeChar.getActiveWeaponItem().getCrystalInfo().getType()))
 							{
 								if ((_itemId >= 3947) && (_itemId <= 3952) && activeChar.isInOlympiadMode())
 								{
 									SystemMessage sm = new SystemMessage(SystemMessageId.THIS_ITEM_IS_NOT_AVAILABLE_FOR_THE_OLYMPIAD_EVENT);
-									sm.addString(item.getItemName());
+									sm.addString(item.getName());
 									activeChar.sendPacket(sm);
 									sm = null;
 								}
@@ -108,7 +108,7 @@ public final class RequestAutoSoulShot extends L2GameClientPacket
 									
 									// start the auto soulshot use
 									SystemMessage sm = new SystemMessage(SystemMessageId.USE_OF_S1_WILL_BE_AUTO);
-									sm.addString(item.getItemName());
+									sm.addString(item.getName());
 									activeChar.sendPacket(sm);
 									sm = null;
 									
@@ -137,7 +137,7 @@ public final class RequestAutoSoulShot extends L2GameClientPacket
 					
 					// cancel the auto soulshot use
 					SystemMessage sm = new SystemMessage(SystemMessageId.AUTO_USE_OF_S1_CANCELLED);
-					sm.addString(item.getItemName());
+					sm.addString(item.getName());
 					activeChar.sendPacket(sm);
 					sm = null;
 				}

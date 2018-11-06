@@ -57,7 +57,7 @@ public class BeastSpice implements IItemHandler
 		L2Object[] targets = new L2Object[1];
 		targets[0] = activeChar.getTarget();
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		if (itemId == 6643)
 		{ // Golden Spice
 			activeChar.useMagic(SkillTable.getInstance().getInfo(2188, 1), false, false);

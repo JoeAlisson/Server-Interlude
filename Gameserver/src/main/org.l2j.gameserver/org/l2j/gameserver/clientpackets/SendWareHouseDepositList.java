@@ -125,12 +125,12 @@ public final class SendWareHouseDepositList extends L2GameClientPacket
 				continue;
 			}
 			
-			if (((warehouse instanceof ClanWarehouse) && !item.isTradeable()) || (item.getItemType() == ItemType.QUEST))
+			if (((warehouse instanceof ClanWarehouse) && !item.isTradeable()) || (item.getType() == ItemType.QUEST))
 			{
 				return;
 			}
 			// Calculate needed adena and slots
-			if (item.getItemId() == 57)
+			if (item.getId() == 57)
 			{
 				currentAdena -= count;
 			}
@@ -138,7 +138,7 @@ public final class SendWareHouseDepositList extends L2GameClientPacket
 			{
 				slots += count;
 			}
-			else if (warehouse.getItemByItemId(item.getItemId()) == null)
+			else if (warehouse.getItemByItemId(item.getId()) == null)
 			{
 				slots++;
 			}
@@ -178,7 +178,7 @@ public final class SendWareHouseDepositList extends L2GameClientPacket
 				continue;
 			}
 			
-			int itemId = oldItem.getItemId();
+			int itemId = oldItem.getId();
 			
 			if (((itemId >= 6611) && (itemId <= 6621)) || (itemId == 6842))
 			{

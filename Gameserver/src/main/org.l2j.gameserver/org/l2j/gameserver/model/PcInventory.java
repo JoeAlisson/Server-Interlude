@@ -1,24 +1,6 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.database.DatabaseAccess;
-import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.TradeList.TradeItem;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
@@ -85,16 +67,16 @@ public class PcInventory extends Inventory {
     public L2ItemInstance[] getUniqueItems(boolean allowAdena, boolean allowAncientAdena, boolean onlyAvailable) {
         List<L2ItemInstance> list = new LinkedList<>();
         for (L2ItemInstance item : _items) {
-            if ((!allowAdena && (item.getItemId() == 57))) {
+            if ((!allowAdena && (item.getId() == 57))) {
                 continue;
             }
-            if ((!allowAncientAdena && (item.getItemId() == 5575))) {
+            if ((!allowAncientAdena && (item.getId() == 5575))) {
                 continue;
             }
 
             boolean isDuplicate = false;
             for (L2ItemInstance litem : list) {
-                if (litem.getItemId() == item.getItemId()) {
+                if (litem.getId() == item.getId()) {
                     isDuplicate = true;
                     break;
                 }
@@ -121,16 +103,16 @@ public class PcInventory extends Inventory {
     public L2ItemInstance[] getUniqueItemsByEnchantLevel(boolean allowAdena, boolean allowAncientAdena, boolean onlyAvailable) {
         List<L2ItemInstance> list = new LinkedList<>();
         for (L2ItemInstance item : _items) {
-            if ((!allowAdena && (item.getItemId() == 57))) {
+            if ((!allowAdena && (item.getId() == 57))) {
                 continue;
             }
-            if ((!allowAncientAdena && (item.getItemId() == 5575))) {
+            if ((!allowAncientAdena && (item.getId() == 5575))) {
                 continue;
             }
 
             boolean isDuplicate = false;
             for (L2ItemInstance litem : list) {
-                if ((litem.getItemId() == item.getItemId()) && (litem.getEnchantLevel() == item.getEnchantLevel())) {
+                if ((litem.getId() == item.getId()) && (litem.getEnchantLevel() == item.getEnchantLevel())) {
                     isDuplicate = true;
                     break;
                 }
@@ -152,7 +134,7 @@ public class PcInventory extends Inventory {
     public L2ItemInstance[] getAllItemsByItemId(int itemId) {
         List<L2ItemInstance> list = new LinkedList<>();
         for (L2ItemInstance item : _items) {
-            if (item.getItemId() == itemId) {
+            if (item.getId() == itemId) {
                 list.add(item);
             }
         }
@@ -170,7 +152,7 @@ public class PcInventory extends Inventory {
     public L2ItemInstance[] getAllItemsByItemId(int itemId, int enchantment) {
         List<L2ItemInstance> list = new LinkedList<>();
         for (L2ItemInstance item : _items) {
-            if ((item.getItemId() == itemId) && (item.getEnchantLevel() == enchantment)) {
+            if ((item.getId() == itemId) && (item.getEnchantLevel() == enchantment)) {
                 list.add(item);
             }
         }
@@ -238,7 +220,7 @@ public class PcInventory extends Inventory {
      */
     public void adjustAvailableItem(TradeItem item) {
         for (L2ItemInstance adjItem : _items) {
-            if (adjItem.getItemId() == item.getItem().getId()) {
+            if (adjItem.getId() == item.getItem().getId()) {
                 item.setObjectId(adjItem.getObjectId());
                 item.setEnchant(adjItem.getEnchantLevel());
 
@@ -322,11 +304,11 @@ public class PcInventory extends Inventory {
     public L2ItemInstance addItem(String process, L2ItemInstance item, L2PcInstance actor, L2Object reference) {
         item = super.addItem(process, item, actor, reference);
 
-        if ((item != null) && (item.getItemId() == ADENA_ID) && !item.equals(_adena)) {
+        if ((item != null) && (item.getId() == ADENA_ID) && !item.equals(_adena)) {
             _adena = item;
         }
 
-        if ((item != null) && (item.getItemId() == ANCIENT_ADENA_ID) && !item.equals(_ancientAdena)) {
+        if ((item != null) && (item.getId() == ANCIENT_ADENA_ID) && !item.equals(_ancientAdena)) {
             _ancientAdena = item;
         }
 
@@ -347,11 +329,11 @@ public class PcInventory extends Inventory {
     public L2ItemInstance addItem(String process, int itemId, long count, L2PcInstance actor, L2Object reference) {
         L2ItemInstance item = super.addItem(process, itemId, count, actor, reference);
 
-        if ((item != null) && (item.getItemId() == ADENA_ID) && !item.equals(_adena)) {
+        if ((item != null) && (item.getId() == ADENA_ID) && !item.equals(_adena)) {
             _adena = item;
         }
 
-        if ((item != null) && (item.getItemId() == ANCIENT_ADENA_ID) && !item.equals(_ancientAdena)) {
+        if ((item != null) && (item.getId() == ANCIENT_ADENA_ID) && !item.equals(_ancientAdena)) {
             _ancientAdena = item;
         }
 
@@ -520,9 +502,9 @@ public class PcInventory extends Inventory {
             getOwner().setActiveEnchantItem(null);
         }
 
-        if (item.getItemId() == ADENA_ID) {
+        if (item.getId() == ADENA_ID) {
             _adena = null;
-        } else if (item.getItemId() == ANCIENT_ADENA_ID) {
+        } else if (item.getId() == ANCIENT_ADENA_ID) {
             _ancientAdena = null;
         }
 
@@ -564,7 +546,7 @@ public class PcInventory extends Inventory {
     public boolean validateCapacity(L2ItemInstance item) {
         int slots = 0;
 
-        if (!(item.isStackable() && (getItemByItemId(item.getItemId()) != null)) && (item.getItemType() != ItemType.HERB)) {
+        if (!(item.isStackable() && (getItemByItemId(item.getId()) != null)) && (item.getType() != ItemType.HERB)) {
             slots++;
         }
 
@@ -575,7 +557,7 @@ public class PcInventory extends Inventory {
         int slots = 0;
 
         for (L2ItemInstance item : items) {
-            if (!(item.isStackable() && (getItemByItemId(item.getItemId()) != null))) {
+            if (!(item.isStackable() && (getItemByItemId(item.getId()) != null))) {
                 slots++;
             }
         }

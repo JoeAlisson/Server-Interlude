@@ -347,7 +347,7 @@ public class Seed implements IItemHandler
 			return;
 		}
 		
-		_seedId = item.getItemId();
+		_seedId = item.getId();
 		
 		if (areaValid(MapRegionTable.getInstance().getAreaCastle(_activeChar)))
 		{

@@ -17,8 +17,8 @@ import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static java.util.Objects.requireNonNullElse;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
-import static org.l2j.gameserver.model.L2ItemInstance.ItemLocation.INVENTORY;
-import static org.l2j.gameserver.model.L2ItemInstance.ItemLocation.PAPERDOLL;
+import static org.l2j.gameserver.model.ItemLocation.INVENTORY;
+import static org.l2j.gameserver.model.ItemLocation.PAPERDOLL;
 import static org.l2j.gameserver.templates.ItemConstants.ADENA;
 
 public class PlayerFactory {
@@ -88,7 +88,7 @@ public class PlayerFactory {
         } else {
             item.setLocation(INVENTORY);
         }
-        var modelItem = new Items(item.getObjectId(), objectId, item.getItemId(), item.getCount(), item.getLocation().name(), item.getEquipSlot(), item.getEnchantLevel(), item.getPriceToSell(), item.getPriceToBuy(), item.getCustomType1(), item.getCustomType2(), item.getMana());
+        var modelItem = new Items(item.getObjectId(), objectId, item.getId(), item.getCount(), item.getLocation().name(), item.getEquipSlot(), item.getEnchantLevel(), item.getPriceToSell(), item.getPriceToBuy(), item.getCustomType1(), item.getCustomType2(), item.getMana());
         getRepository(ItemRepository.class).save(modelItem);
     }
 

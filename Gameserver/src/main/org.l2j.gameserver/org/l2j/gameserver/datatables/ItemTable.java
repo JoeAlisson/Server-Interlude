@@ -5,7 +5,6 @@ import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.factory.ItemHelper;
 import org.l2j.gameserver.model.*;
-import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.actor.instance.L2BossInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2RaidBossInstance;
@@ -90,7 +89,7 @@ public class ItemTable {
                 delay = 15000;
             }
             itemLootShedule = ThreadPoolManager.getInstance().scheduleGeneral(new resetOwner(item), delay);
-            item.setItemLootShedule(itemLootShedule);
+            item.setItemLootSchedule(itemLootShedule);
         }
 
         if (Config.DEBUG) {
@@ -162,7 +161,7 @@ public class ItemTable {
             }
 
             // if it's a pet control item, delete the pet as well
-            if (L2PetDataTable.isPetItem(item.getItemId())) {
+            if (L2PetDataTable.isPetItem(item.getId())) {
                 PetsRepository repository = DatabaseAccess.getRepository(PetsRepository.class);
                 repository.deleteById(item.getObjectId());
             }
@@ -187,7 +186,7 @@ public class ItemTable {
         @Override
         public void run() {
             _item.setOwnerId(0);
-            _item.setItemLootShedule(null);
+            _item.setItemLootSchedule(null);
         }
     }
 

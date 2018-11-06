@@ -202,7 +202,7 @@ public class L2WeddingManagerInstance extends L2NpcInstance
 				}
 				else
 				{
-					String strItem = Integer.toString(item3.getItemId());
+					String strItem = Integer.toString(item3.getId());
 					String frmWear = Integer.toString(6408);
 					player.sendMessage(strItem);
 					if (strItem.equals(frmWear))
@@ -244,7 +244,7 @@ public class L2WeddingManagerInstance extends L2NpcInstance
 				{
 					String frmWear = Integer.toString(6408);
 					String strItem = null;
-					strItem = Integer.toString(item3.getItemId());
+					strItem = Integer.toString(item3.getId());
 					
 					if ((null != strItem) && strItem.equals(frmWear))
 					{

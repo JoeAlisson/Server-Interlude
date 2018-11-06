@@ -2,7 +2,6 @@ package org.l2j.gameserver.serverpackets;
 
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.model.entity.database.Weapon;
 
 public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 {
@@ -32,7 +31,7 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 			writeShort(item.getItem().getType().ordinal());
 			
 			writeInt(item.getObjectId());
-			writeInt(item.getItemId());
+			writeInt(item.getId());
 			writeLong(item.getCount());
 			writeShort(item.getItem().getCommissionType().ordinal());
 			writeShort(item.getCustomType1());

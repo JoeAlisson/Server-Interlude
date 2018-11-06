@@ -48,7 +48,7 @@ public class PaganKeys implements IItemHandler
 	public void useItem(L2PlayableInstance playable, L2ItemInstance item)
 	{
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		if (!(playable instanceof L2PcInstance))
 		{
 			return;

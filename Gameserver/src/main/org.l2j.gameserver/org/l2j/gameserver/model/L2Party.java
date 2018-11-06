@@ -444,26 +444,26 @@ public class L2Party {
      * @param item
      */
     public void distributeItem(L2PcInstance player, L2ItemInstance item) {
-        if (item.getItemId() == 57) {
+        if (item.getId() == 57) {
             distributeAdena(player, item.getCount(), player);
             ItemTable.getInstance().destroyItem("Party", item, player, null);
             return;
         }
 
-        L2PcInstance target = getActualLooter(player, item.getItemId(), false, player);
+        L2PcInstance target = getActualLooter(player, item.getId(), false, player);
         target.addItem("Party", item, player, true);
 
         // Send messages to other party members about reward
         if (item.getCount() > 1) {
             SystemMessage msg = new SystemMessage(SystemMessageId.S1_PICKED_UP_S2_S3);
             msg.addString(target.getName());
-            msg.addItemName(item.getItemId());
+            msg.addItemName(item.getId());
             msg.addNumber(item.getCount());
             broadcastToPartyMembers(target, msg);
         } else {
             SystemMessage msg = new SystemMessage(SystemMessageId.S1_PICKED_UP_S2);
             msg.addString(target.getName());
-            msg.addItemName(item.getItemId());
+            msg.addItemName(item.getId());
             broadcastToPartyMembers(target, msg);
         }
     }

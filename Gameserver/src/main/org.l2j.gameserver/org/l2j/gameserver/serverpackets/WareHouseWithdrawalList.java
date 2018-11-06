@@ -40,7 +40,7 @@ public class WareHouseWithdrawalList extends L2GameServerPacket
 		{
 			for (L2ItemInstance item : _items)
 			{
-				_log.debug("item:" + item.getItem().getName() + " type1:" + item.getItem().getType() + " type2:" + item.getItem().getCommissionType());
+				_log.debug("item:" + item.getName() + " type1:" + item.getType() + " type2:" + item.getCommissionType());
 			}
 		}
 	}
@@ -58,11 +58,11 @@ public class WareHouseWithdrawalList extends L2GameServerPacket
 		
 		for (L2ItemInstance item : _items)
 		{
-			writeShort(item.getItem().getType().ordinal()); // item type1 //unconfirmed, works
+			writeShort(item.getType().ordinal()); // item type1 //unconfirmed, works
 			writeInt(0x00); // unconfirmed, works
-			writeInt(item.getItemId()); // unconfirmed, works
+			writeInt(item.getId()); // unconfirmed, works
 			writeLong(item.getCount()); // unconfirmed, works
-			writeShort(item.getItem().getCommissionType().ordinal()); // item type2 //unconfirmed, works
+			writeShort(item.getCommissionType().ordinal()); // item type2 //unconfirmed, works
 			writeShort(0x00); // ?
 			writeInt(0);// TODO item.getItem().getBodyPart().getId()); // ?
 			writeShort(item.getEnchantLevel()); // enchant level -confirmed

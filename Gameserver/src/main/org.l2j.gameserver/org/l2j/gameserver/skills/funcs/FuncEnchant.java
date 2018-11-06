@@ -6,7 +6,6 @@ import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 public class FuncEnchant extends Func
 {
@@ -24,8 +23,8 @@ public class FuncEnchant extends Func
 			return;
 		}
 		L2ItemInstance item = (L2ItemInstance) funcOwner;
-		CrystalType cristall = item.getItem().getCrystalInfo().getType();
-		Enum<?> itemType = item.getItemType();
+		CrystalType cristall = item.getCrystal();
+		Enum<?> itemType = item.getType();
 		
 		if (cristall == CrystalType.NONE)
 		{
@@ -48,7 +47,7 @@ public class FuncEnchant extends Func
 		
 		if (stat == Stats.MAGIC_ATTACK)
 		{
-			switch (item.getItem().getCrystalInfo().getType())
+			switch (item.getCrystal())
 			{
 				case S:
 					env.value += (4 * enchant) + (8 * overenchant);
@@ -69,7 +68,7 @@ public class FuncEnchant extends Func
 			return;
 		}
 		
-		switch (item.getItem().getCrystalInfo().getType())
+		switch (item.getCrystal())
 		{
 			case A:
 				if (itemType == ItemType.BOW)
@@ -143,6 +142,6 @@ public class FuncEnchant extends Func
 	}
 
 	private boolean isTwoHand(L2ItemInstance item) {
-		return item.getItem() instanceof Weapon && ((Weapon) item.getItem()).getBodyPart() == BodyPart.TWO_HANDS;
+		return item.getBodyPart() == BodyPart.TWO_HANDS;
 	}
 }

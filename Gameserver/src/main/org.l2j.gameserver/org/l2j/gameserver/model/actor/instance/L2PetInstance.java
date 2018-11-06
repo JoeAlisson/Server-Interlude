@@ -277,7 +277,7 @@ public class L2PetInstance extends L2Summon
 	{
 		for (L2ItemInstance item : getInventory().getItems())
 		{
-			if ((item.getLocation() == L2ItemInstance.ItemLocation.PET_EQUIP) && (item.getItem() instanceof Weapon))
+			if ((item.getLocation() == ItemLocation.PET_EQUIP) && (item.getItem() instanceof Weapon))
 			{
 				return item;
 			}
@@ -355,7 +355,7 @@ public class L2PetInstance extends L2Summon
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.DISSAPEARED_ITEM);
 			sm.addNumber(count);
-			sm.addItemName(item.getItemId());
+			sm.addItemName(item.getId());
 			getOwner().sendPacket(sm);
 		}
 		return true;
@@ -424,18 +424,18 @@ public class L2PetInstance extends L2Summon
 		L2ItemInstance target = (L2ItemInstance) object;
 		
 		// Herbs
-		if ((target.getItemId() > 8599) && (target.getItemId() < 8615))
+		if ((target.getId() > 8599) && (target.getId() < 8615))
 		{
 			SystemMessage smsg = new SystemMessage(SystemMessageId.FAILED_TO_PICKUP_S1);
-			smsg.addItemName(target.getItemId());
+			smsg.addItemName(target.getId());
 			getOwner().sendPacket(smsg);
 			return;
 		}
 		// Cursed weapons
-		if (CursedWeaponsManager.getInstance().isCursed(target.getItemId()))
+		if (CursedWeaponsManager.getInstance().isCursed(target.getId()))
 		{
 			SystemMessage smsg = new SystemMessage(SystemMessageId.FAILED_TO_PICKUP_S1);
-			smsg.addItemName(target.getItemId());
+			smsg.addItemName(target.getId());
 			getOwner().sendPacket(smsg);
 			return;
 		}
@@ -452,7 +452,7 @@ public class L2PetInstance extends L2Summon
 			{
 				getOwner().sendPacket(new ActionFailed());
 				
-				if (target.getItemId() == 57)
+				if (target.getId() == 57)
 				{
 					SystemMessage smsg = new SystemMessage(SystemMessageId.FAILED_TO_PICKUP_S1_ADENA);
 					smsg.addNumber(target.getCount());
@@ -461,20 +461,20 @@ public class L2PetInstance extends L2Summon
 				else if (target.getCount() > 1)
 				{
 					SystemMessage smsg = new SystemMessage(SystemMessageId.FAILED_TO_PICKUP_S2_S1_S);
-					smsg.addItemName(target.getItemId());
+					smsg.addItemName(target.getId());
 					smsg.addNumber(target.getCount());
 					getOwner().sendPacket(smsg);
 				}
 				else
 				{
 					SystemMessage smsg = new SystemMessage(SystemMessageId.FAILED_TO_PICKUP_S1);
-					smsg.addItemName(target.getItemId());
+					smsg.addItemName(target.getId());
 					getOwner().sendPacket(smsg);
 				}
 				
 				return;
 			}
-			if ((target.getItemLootShedule() != null) && ((target.getOwnerId() == getOwner().getObjectId()) || getOwner().isInLooterParty(target.getOwnerId())))
+			if ((target.getItemLootSchedule() != null) && ((target.getOwnerId() == getOwner().getObjectId()) || getOwner().isInLooterParty(target.getOwnerId())))
 			{
 				target.resetOwnerTimer();
 			}
@@ -718,7 +718,7 @@ public class L2PetInstance extends L2Summon
 		
 		if (dropit != null)
 		{
-			_logPet.debug("Item id to drop: " + dropit.getItemId() + " amount: " + dropit.getCount());
+			_logPet.debug("Item id to drop: " + dropit.getId() + " amount: " + dropit.getCount());
 			dropit.dropMe(this, getX(), getY(), getZ() + 100);
 		}
 	}

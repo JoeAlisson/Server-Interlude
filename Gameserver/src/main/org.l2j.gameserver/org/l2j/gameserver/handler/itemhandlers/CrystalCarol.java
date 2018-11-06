@@ -66,7 +66,7 @@ public class CrystalCarol implements IItemHandler
 			return;
 		}
 		L2PcInstance activeChar = (L2PcInstance) playable;
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		if (itemId == 5562)
 		{ // crystal_carol_01
 			MagicSkillUser MSU = new MagicSkillUser(playable, activeChar, 2140, 1, 1, 0);

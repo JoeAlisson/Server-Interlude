@@ -41,12 +41,14 @@ import org.l2j.gameserver.model.quest.QuestState;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.serverpackets.ItemList;
 import org.l2j.gameserver.skills.Formulas;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.*;
+import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.*;
 import org.l2j.gameserver.templates.xml.jaxb.Armor;
 import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
-import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
 import org.l2j.gameserver.util.FloodProtector;
@@ -63,6 +65,9 @@ import static java.lang.Math.min;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
+import static org.l2j.gameserver.templates.xml.jaxb.ItemType.HEAVY;
+import static org.l2j.gameserver.templates.xml.jaxb.ItemType.LIGHT;
+import static org.l2j.gameserver.templates.xml.jaxb.ItemType.MAGIC;
 
 public final class L2PcInstance extends L2PlayableInstance {
 
@@ -2459,7 +2464,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         for (L2ItemInstance item : getInventory().getItems()) {
             if ((item != null) && item.isEquipped()) {
-                int crystaltype = item.getItem().getCrystalInfo().getType().ordinal();
+                int crystaltype = item.getCrystal().ordinal();
 
                 if (crystaltype > newPenalty) {
                     newPenalty = crystaltype;
@@ -2528,15 +2533,15 @@ public final class L2PcInstance extends L2PlayableInstance {
             return;
         }
 
-        if ((unequipped.getItem() instanceof org.l2j.gameserver.templates.xml.jaxb.Weapon) && (equipped == null || equipped.getItem().getCrystalInfo().getType() != unequipped.getItem().getCrystalInfo().getType())) {
+        if ((unequipped.isWeapon()) && (isNull(equipped) || equipped.getCrystal() != unequipped.getCrystal())) {
             for (L2ItemInstance ss : getInventory().getItems()) {
-                int _itemId = ss.getItemId();
+                int _itemId = ss.getId();
 
-                if ((((_itemId >= 2509) && (_itemId <= 2514)) || ((_itemId >= 3947) && (_itemId <= 3952)) || ((_itemId <= 1804) && (_itemId >= 1808)) || (_itemId == 5789) || (_itemId == 5790) || (_itemId == 1835)) && (ss.getItem().getCrystalInfo().getType() == unequipped.getItem().getCrystalInfo().getType())) {
+                if ((((_itemId >= 2509) && (_itemId <= 2514)) || ((_itemId >= 3947) && (_itemId <= 3952)) || ((_itemId <= 1804) && (_itemId >= 1808)) || (_itemId == 5789) || (_itemId == 5790) || (_itemId == 1835)) && (ss.getCrystal() == unequipped.getCrystal())) {
                     sendPacket(new ExAutoSoulShot(_itemId, 0));
 
                     SystemMessage sm = new SystemMessage(SystemMessageId.AUTO_USE_OF_S1_CANCELLED);
-                    sm.addString(ss.getItemName());
+                    sm.addString(ss.getName());
                     sendPacket(sm);
                 }
             }
@@ -3252,17 +3257,17 @@ public final class L2PcInstance extends L2PlayableInstance {
             if (sendMessage) {
                 if (item.getCount() > 1) {
                     SystemMessage sm = new SystemMessage(SystemMessageId.YOU_PICKED_UP_S1_S2);
-                    sm.addItemName(item.getItemId());
+                    sm.addItemName(item.getId());
                     sm.addNumber(item.getCount());
                     sendPacket(sm);
                 } else if (item.getEnchantLevel() > 0) {
                     SystemMessage sm = new SystemMessage(SystemMessageId.YOU_PICKED_UP_A_S1_S2);
                     sm.addNumber(item.getEnchantLevel());
-                    sm.addItemName(item.getItemId());
+                    sm.addItemName(item.getId());
                     sendPacket(sm);
                 } else {
                     SystemMessage sm = new SystemMessage(SystemMessageId.YOU_PICKED_UP_S1);
-                    sm.addItemName(item.getItemId());
+                    sm.addItemName(item.getId());
                     sendPacket(sm);
                 }
             }
@@ -3285,7 +3290,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             sendPacket(su);
 
             // Cursed Weapon
-            if (CursedWeaponsManager.getInstance().isCursed(newitem.getItemId())) {
+            if (CursedWeaponsManager.getInstance().isCursed(newitem.getId())) {
                 CursedWeaponsManager.getInstance().activate(this, newitem);
             }
 
@@ -3308,7 +3313,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     public void addItem(String process, int itemId, int count, L2Object reference, boolean sendMessage) {
         if (count > 0) {
             // Sends message to client if requested
-            if (sendMessage && ((!isCastingNow() && (ItemTable.getInstance().createDummyItem(itemId).getItemType() == ItemType.HERB)) || (ItemTable.getInstance().createDummyItem(itemId).getItemType() != ItemType.HERB))) {
+            if (sendMessage && ((!isCastingNow() && (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() == CommissionType.HERB)) || (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() != CommissionType.HERB.HERB))) {
                 if (count > 1) {
                     if (process.equalsIgnoreCase("sweep") || process.equalsIgnoreCase("Quest")) {
                         SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
@@ -3334,13 +3339,13 @@ public final class L2PcInstance extends L2PlayableInstance {
                 }
             }
             // Auto use herbs - autoloot
-            if (ItemTable.getInstance().createDummyItem(itemId).getItemType() == ItemType.HERB) // If item is herb dont add it to iv :]
+            if (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() == CommissionType.HERB) // If item is herb dont add it to iv :]
             {
                 if (!isCastingNow()) {
                     L2ItemInstance herb = new L2ItemInstance(_charId, itemId);
-                    IItemHandler handler = ItemHandler.getInstance().getItemHandler(herb.getItemId());
+                    IItemHandler handler = ItemHandler.getInstance().getItemHandler(herb.getId());
                     if (handler == null) {
-                        _log.warn("No item handler registered for Herb - item ID " + herb.getItemId() + ".");
+                        _log.warn("No item handler registered for Herb - item ID " + herb.getId() + ".");
                     } else {
                         handler.useItem(this, herb);
                         if (_herbstask >= 100) {
@@ -3370,7 +3375,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 sendPacket(su);
 
                 // Cursed Weapon
-                if (CursedWeaponsManager.getInstance().isCursed(item.getItemId())) {
+                if (CursedWeaponsManager.getInstance().isCursed(item.getId())) {
                     CursedWeaponsManager.getInstance().activate(this, item);
                 }
 
@@ -3421,7 +3426,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         if (sendMessage) {
             SystemMessage sm = new SystemMessage(SystemMessageId.DISSAPEARED_ITEM);
             sm.addNumber(oldCount);
-            sm.addItemName(item.getItemId());
+            sm.addItemName(item.getId());
             sendPacket(sm);
         }
 
@@ -3468,7 +3473,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         if (sendMessage) {
             SystemMessage sm = new SystemMessage(SystemMessageId.DISSAPEARED_ITEM);
             sm.addNumber(count);
-            sm.addItemName(item.getItemId());
+            sm.addItemName(item.getId());
             sendPacket(sm);
         }
 
@@ -3498,7 +3503,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         // Adjust item quantity
         if (item.getCount() > count) {
             synchronized (item) {
-                item.changeCountWithoutTrace(process, -count, this, reference);
+                item.changeCount(-count );
                 item.setLastChange(L2ItemInstance.MODIFIED);
 
                 // could do also without saving, but let's save approx 1 of 10
@@ -3530,7 +3535,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         if (sendMessage) {
             SystemMessage sm = new SystemMessage(SystemMessageId.DISSAPEARED_ITEM);
             sm.addNumber(count);
-            sm.addItemName(item.getItemId());
+            sm.addItemName(item.getId());
             sendPacket(sm);
         }
 
@@ -3608,7 +3613,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
                 // Send an Unequipped Message in system window of the reader for each Item
                 SystemMessage sm = new SystemMessage(SystemMessageId.S1_DISARMED);
-                sm.addItemName(item.getItemId());
+                sm.addItemName(item.getId());
                 sendPacket(sm);
 
             }
@@ -3730,7 +3735,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         item.dropMe(this, (getClientX() + Rnd.get(50)) - 25, (getClientY() + Rnd.get(50)) - 25, getClientZ() + 20);
 
-        if ((Config.AUTODESTROY_ITEM_AFTER > 0) && Config.DESTROY_DROPPED_PLAYER_ITEM && !Config.LIST_PROTECTED_ITEMS.contains(item.getItemId())) {
+        if ((Config.AUTODESTROY_ITEM_AFTER > 0) && Config.DESTROY_DROPPED_PLAYER_ITEM && !Config.LIST_PROTECTED_ITEMS.contains(item.getId())) {
             if ((item.isEquipable() && Config.DESTROY_EQUIPABLE_PLAYER_ITEM) || !item.isEquipable()) {
                 ItemsAutoDestroy.getInstance().addItem(item);
             }
@@ -3762,7 +3767,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         // Sends message to client if requested
         if (sendMessage) {
             SystemMessage sm = new SystemMessage(SystemMessageId.YOU_DROPPED_S1);
-            sm.addItemName(item.getItemId());
+            sm.addItemName(item.getId());
             sendPacket(sm);
         }
 
@@ -3796,7 +3801,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
         item.dropMe(this, x, y, z);
 
-        if ((Config.AUTODESTROY_ITEM_AFTER > 0) && Config.DESTROY_DROPPED_PLAYER_ITEM && !Config.LIST_PROTECTED_ITEMS.contains(item.getItemId())) {
+        if ((Config.AUTODESTROY_ITEM_AFTER > 0) && Config.DESTROY_DROPPED_PLAYER_ITEM && !Config.LIST_PROTECTED_ITEMS.contains(item.getId())) {
             if ((item.isEquipable() && Config.DESTROY_EQUIPABLE_PLAYER_ITEM) || !item.isEquipable()) {
                 ItemsAutoDestroy.getInstance().addItem(item);
             }
@@ -3828,7 +3833,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         // Sends message to client if requested
         if (sendMessage) {
             SystemMessage sm = new SystemMessage(SystemMessageId.YOU_DROPPED_S1);
-            sm.addItemName(item.getItemId());
+            sm.addItemName(item.getId());
             sendPacket(sm);
         }
 
@@ -4320,24 +4325,24 @@ public final class L2PcInstance extends L2PlayableInstance {
             if ((target.getOwnerId() != 0) && (target.getOwnerId() != getObjectId()) && !isInLooterParty(target.getOwnerId())) {
                 sendPacket(new ActionFailed());
 
-                if (target.getItemId() == 57) {
+                if (target.getId() == 57) {
                     SystemMessage smsg = new SystemMessage(SystemMessageId.FAILED_TO_PICKUP_S1_ADENA);
                     smsg.addNumber(target.getCount());
                     sendPacket(smsg);
                 } else if (target.getCount() > 1) {
                     SystemMessage smsg = new SystemMessage(SystemMessageId.FAILED_TO_PICKUP_S2_S1_S);
-                    smsg.addItemName(target.getItemId());
+                    smsg.addItemName(target.getId());
                     smsg.addNumber(target.getCount());
                     sendPacket(smsg);
                 } else {
                     SystemMessage smsg = new SystemMessage(SystemMessageId.FAILED_TO_PICKUP_S1);
-                    smsg.addItemName(target.getItemId());
+                    smsg.addItemName(target.getId());
                     sendPacket(smsg);
                 }
 
                 return;
             }
-            if ((target.getItemLootShedule() != null) && ((target.getOwnerId() == getObjectId()) || isInLooterParty(target.getOwnerId()))) {
+            if ((target.getItemLootSchedule() != null) && ((target.getOwnerId() == getObjectId()) || isInLooterParty(target.getOwnerId()))) {
                 target.resetOwnerTimer();
             }
 
@@ -4350,31 +4355,31 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
 
         // Auto use herbs - pick up
-        if (target.getItemType() == ItemType.HERB) {
-            IItemHandler handler = ItemHandler.getInstance().getItemHandler(target.getItemId());
+        if (target.getCommissionType() == CommissionType.HERB) {
+            IItemHandler handler = ItemHandler.getInstance().getItemHandler(target.getId());
             if (handler == null) {
-                _log.debug("No item handler registered for item ID " + target.getItemId() + ".");
+                _log.debug("No item handler registered for item ID " + target.getId() + ".");
             } else {
                 handler.useItem(this, target);
             }
             ItemTable.getInstance().destroyItem("Consume", target, this, null);
         }
         // Cursed Weapons are not distributed
-        else if (CursedWeaponsManager.getInstance().isCursed(target.getItemId())) {
+        else if (CursedWeaponsManager.getInstance().isCursed(target.getId())) {
             addItem("Pickup", target, null, true);
         } else {
             // if item is instance of Armor or Weapon broadcast an "Attention" system message
-            if ((ItemType.armors().contains(target.getItemType())) || (ItemType.weapons().contains(target.getItemType()))) {
+            if ((ItemType.armors().contains(target.getType())) || (ItemType.weapons().contains(target.getType()))) {
                 if (target.getEnchantLevel() > 0) {
                     SystemMessage msg = new SystemMessage(SystemMessageId.ATTENTION_S1_PICKED_UP_S2_S3);
                     msg.addString(getName());
                     msg.addNumber(target.getEnchantLevel());
-                    msg.addItemName(target.getItemId());
+                    msg.addItemName(target.getId());
                     broadcastPacket(msg, 1400);
                 } else {
                     SystemMessage msg = new SystemMessage(SystemMessageId.ATTENTION_S1_PICKED_UP_S2);
                     msg.addString(getName());
-                    msg.addItemName(target.getItemId());
+                    msg.addItemName(target.getId());
                     broadcastPacket(msg, 1400);
                 }
             }
@@ -4382,7 +4387,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             // Check if a Party is in progress
             if (isInParty()) {
                 getParty().distributeItem(this, target);
-            } else if ((target.getItemId() == 57) && (getInventory().getAdenaInstance() != null)) {
+            } else if ((target.getId() == 57) && (getInventory().getAdenaInstance() != null)) {
                 addAdena("Pickup", target.getCount(), null, true);
                 ItemTable.getInstance().destroyItem("Pickup", target, this, null);
             } else {
@@ -4454,6 +4459,8 @@ public final class L2PcInstance extends L2PlayableInstance {
      * Return the active weapon item (always equiped in the right hand).
      *
      * @return the active weapon item
+     *
+     * TODO private
      */
     @Override
     public Weapon getActiveWeaponItem() {
@@ -4498,7 +4505,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     public boolean isWearingHeavyArmor() {
         L2ItemInstance armor = getChestArmorInstance();
 
-        if (armor.getItemType() == ItemType.HEAVY) {
+        if (armor.getType() == HEAVY) {
             return true;
         }
 
@@ -4513,7 +4520,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     public boolean isWearingLightArmor() {
         L2ItemInstance armor = getChestArmorInstance();
 
-        if (armor.getItemType() == ItemType.LIGHT) {
+        if (armor.getType() == LIGHT) {
             return true;
         }
 
@@ -4528,7 +4535,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     public boolean isWearingMagicArmor() {
         L2ItemInstance armor = getChestArmorInstance();
 
-        if (armor.getItemType() == ItemType.MAGIC) {
+        if (armor.getType() == MAGIC) {
             return true;
         }
 
@@ -4879,11 +4886,11 @@ public final class L2PcInstance extends L2PlayableInstance {
                     // Don't drop
                     if (itemDrop.isAugmented() || // Dont drop augmented items
                             itemDrop.isShadowItem() || // Dont drop Shadow Items
-                            (itemDrop.getItemId() == 57) || // Adena
+                            (itemDrop.getId() == 57) || // Adena
                             (itemDrop.getItem().isQuestItem()) || // Quest Items
-                            nonDroppableList.contains(itemDrop.getItemId()) || // Item listed in the non droppable item list
-                            nonDroppableListPet.contains(itemDrop.getItemId()) || // Item listed in the non droppable pet item list
-                            ((getPet() != null) && (getPet().getControlItemId() == itemDrop.getItemId() // Control Item of active pet
+                            nonDroppableList.contains(itemDrop.getId()) || // Item listed in the non droppable item list
+                            nonDroppableListPet.contains(itemDrop.getId()) || // Item listed in the non droppable pet item list
+                            ((getPet() != null) && (getPet().getControlItemId() == itemDrop.getId() // Control Item of active pet
                             ))) {
                         continue;
                     }
@@ -4901,9 +4908,9 @@ public final class L2PcInstance extends L2PlayableInstance {
                         dropItem("DieDrop", itemDrop, killer, true);
 
                         if (isKarmaDrop) {
-                            _log.warn(getName() + " has karma and dropped id = " + itemDrop.getItemId() + ", count = " + itemDrop.getCount());
+                            _log.warn(getName() + " has karma and dropped id = " + itemDrop.getId() + ", count = " + itemDrop.getCount());
                         } else {
-                            _log.warn(getName() + " dropped id = " + itemDrop.getItemId() + ", count = " + itemDrop.getCount());
+                            _log.warn(getName() + " dropped id = " + itemDrop.getId() + ", count = " + itemDrop.getCount());
                         }
 
                         dropCount++;
@@ -5695,7 +5702,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         // Check if nothing is equiped in left hand
         if (getInventory().getPaperdollItem(Inventory.PAPERDOLL_LHAND) == null) {
             // Get the L2ItemInstance of the arrows needed for this bow
-            _arrowItem = getInventory().findArrowForBow(getActiveWeaponItem());
+            _arrowItem = getInventory().findArrowForBow(getActiveWeaponInstance());
 
             if (_arrowItem != null) {
                 // Equip arrows needed in left hand
@@ -5755,10 +5762,10 @@ public final class L2PcInstance extends L2PlayableInstance {
                 if (unequiped[0].getEnchantLevel() > 0) {
                     sm = new SystemMessage(SystemMessageId.EQUIPMENT_S1_S2_REMOVED);
                     sm.addNumber(unequiped[0].getEnchantLevel());
-                    sm.addItemName(unequiped[0].getItemId());
+                    sm.addItemName(unequiped[0].getId());
                 } else {
                     sm = new SystemMessage(SystemMessageId.S1_DISARMED);
-                    sm.addItemName(unequiped[0].getItemId());
+                    sm.addItemName(unequiped[0].getId());
                 }
                 sendPacket(sm);
             }
@@ -5787,10 +5794,10 @@ public final class L2PcInstance extends L2PlayableInstance {
                 if (unequiped[0].getEnchantLevel() > 0) {
                     sm = new SystemMessage(SystemMessageId.EQUIPMENT_S1_S2_REMOVED);
                     sm.addNumber(unequiped[0].getEnchantLevel());
-                    sm.addItemName(unequiped[0].getItemId());
+                    sm.addItemName(unequiped[0].getId());
                 } else {
                     sm = new SystemMessage(SystemMessageId.S1_DISARMED);
-                    sm.addItemName(unequiped[0].getItemId());
+                    sm.addItemName(unequiped[0].getId());
                 }
                 sendPacket(sm);
             }
@@ -9592,7 +9599,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             return false;
         }
 
-        if (CursedWeaponsManager.getInstance().isCursed(item.getItemId())) {
+        if (CursedWeaponsManager.getInstance().isCursed(item.getId())) {
             // can not trade a cursed weapon
             return false;
         }
@@ -9905,7 +9912,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             boolean isUpperGrade = false;
 
             if (_lure != null) {
-                int lureid = _lure.getItemId();
+                int lureid = _lure.getId();
                 isNoob = _fish.getGroup() == 0;
                 isUpperGrade = _fish.getGroup() == 2;
                 if ((lureid == 6519) || (lureid == 6522) || (lureid == 6525) || (lureid == 8505) || (lureid == 8508) || (lureid == 8511)) {
@@ -9926,7 +9933,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return the int
      */
     private int GetRandomGroup() {
-        switch (_lure.getItemId()) {
+        switch (_lure.getId()) {
             case 7807: // green for beginners
             case 7808: // purple for beginners
             case 7809: // yellow for beginners
@@ -9953,7 +9960,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         int type = 1;
         switch (group) {
             case 0: // fish for novices
-                switch (_lure.getItemId()) {
+                switch (_lure.getId()) {
                     case 7807: // green lure, preferred by fast-moving (nimble) fish (type 5)
                         if (check <= 54) {
                             type = 5;
@@ -9993,7 +10000,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 }
                 break;
             case 1: // normal fish
-                switch (_lure.getItemId()) {
+                switch (_lure.getId()) {
                     case 7610:
                     case 7611:
                     case 7612:
@@ -10057,7 +10064,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 }
                 break;
             case 2: // upper grade fish, luminous lure
-                switch (_lure.getItemId()) {
+                switch (_lure.getId()) {
                     case 8506: // green lure, preferred by fast-moving (nimble) fish (type 8)
                         if (check <= 54) {
                             type = 8;

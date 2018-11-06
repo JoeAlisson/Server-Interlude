@@ -61,7 +61,7 @@ public class EnergyStone implements IItemHandler
 			return;
 		}
 		
-		if (item.getItemId() != 5589)
+		if (item.getId() != 5589)
 		{
 			return;
 		}

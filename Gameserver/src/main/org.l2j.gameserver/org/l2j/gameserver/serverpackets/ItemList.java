@@ -36,16 +36,16 @@ public class ItemList extends L2GameServerPacket {
         writeShort(count);
 
         for (L2ItemInstance temp : _items) {
-            if ((temp == null) || (temp.getItem() == null)) {
+            if ((temp == null)) {
                 continue;
             }
 
             writeByte(0); // TODO implements flag
             writeInt(temp.getObjectId());
-            writeInt(temp.getItemId());
+            writeInt(temp.getId());
             writeByte(temp.isEquipped() ? -1 : temp.getEquipSlot());
             writeLong(temp.getCount());
-            writeByte(temp.getItem().getCommissionType().ordinal()); // item type2
+            writeByte(temp.getCommissionType().ordinal()); // item type2
             writeByte(temp.getCustomType1()); // item type3
             writeShort(temp.isEquipped() ? 0x01 : 0x00);
             writeLong(temp.getSlotId());

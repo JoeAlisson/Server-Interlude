@@ -55,7 +55,7 @@ public class Recipes implements IItemHandler
 			return;
 		}
 		L2PcInstance activeChar = (L2PcInstance) playable;
-		L2RecipeList rp = RecipeController.getInstance().getRecipeByItemId(item.getItemId());
+		L2RecipeList rp = RecipeController.getInstance().getRecipeByItemId(item.getId());
 		if (activeChar.hasRecipeList(rp.getId()))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.RECIPE_ALREADY_REGISTERED);

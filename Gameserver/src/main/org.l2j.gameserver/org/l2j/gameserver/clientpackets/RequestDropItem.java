@@ -28,11 +28,7 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.ItemList;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.ItemType;
-import org.l2j.gameserver.templates.ItemTypeGroup;
-import org.l2j.gameserver.templates.xml.jaxb.Armor;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.IllegalPlayerAction;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
@@ -79,11 +75,11 @@ public final class RequestDropItem extends L2GameClientPacket
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.CANNOT_DISCARD_THIS_ITEM));
 			return;
 		}
-		if (item.getItemType() == ItemType.QUEST)
+		if (item.isQuestItem())
 		{
 			return;
 		}
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		// Cursed Weapons cannot be dropped
 		if (CursedWeaponsManager.getInstance().isCursed(itemId))
@@ -131,14 +127,14 @@ public final class RequestDropItem extends L2GameClientPacket
 		// Cannot discard item that the skill is consumming
 		if (activeChar.isCastingNow())
 		{
-			if ((activeChar.getCurrentSkill() != null) && (activeChar.getCurrentSkill().getSkill().getItemConsumeId() == item.getItemId()))
+			if ((activeChar.getCurrentSkill() != null) && (activeChar.getCurrentSkill().getSkill().getItemConsumeId() == item.getId()))
 			{
 				activeChar.sendPacket(new SystemMessage(SystemMessageId.CANNOT_DISCARD_THIS_ITEM));
 				return;
 			}
 		}
 		
-		if (item.getItem().isQuestItem() && !activeChar.isGM())
+		if (item.isQuestItem() && !activeChar.isGM())
 		{
 			if (Config.DEBUG)
 			{
@@ -171,12 +167,7 @@ public final class RequestDropItem extends L2GameClientPacket
 				item.getAugmentation().removeBoni(activeChar);
 			}
 
-            BodyPart bodyPart = null;
-			if(item.getItem() instanceof Armor) {
-			    bodyPart = ((Armor) item.getItem()).getBodyPart();
-            } else if(item.getItem() instanceof Weapon) {
-			    bodyPart = ((Weapon) item.getItem()).getBodyPart();
-            }
+            BodyPart bodyPart = item.getBodyPart();
 			L2ItemInstance[] unequiped = activeChar.getInventory().unEquipItemInBodySlotAndRecord(bodyPart);
 			InventoryUpdate iu = new InventoryUpdate();
 			for (L2ItemInstance element : unequiped)
@@ -204,10 +195,10 @@ public final class RequestDropItem extends L2GameClientPacket
 		if (activeChar.isGM())
 		{
 			String target = (activeChar.getTarget() != null ? activeChar.getTarget().getName() : "no-target");
-			GMAudit.auditGMAction(activeChar.getName(), "drop", target, dropedItem.getItemId() + " - " + dropedItem.getName());
+			GMAudit.auditGMAction(activeChar.getName(), "drop", target, dropedItem.getId() + " - " + dropedItem.getName());
 		}
 		
-		if ((dropedItem != null) && (dropedItem.getItemId() == 57) && (dropedItem.getCount() >= 1000000))
+		if ((dropedItem != null) && (dropedItem.getId() == 57) && (dropedItem.getCount() >= 1000000))
 		{
 			String msg = "Character (" + activeChar.getName() + ") has dropped (" + dropedItem.getCount() + ")adena at (" + _x + "," + _y + "," + _z + ")";
 			_log.warn(msg);

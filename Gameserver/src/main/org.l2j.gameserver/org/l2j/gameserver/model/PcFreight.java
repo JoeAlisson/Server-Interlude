@@ -17,7 +17,6 @@
  */
 package org.l2j.gameserver.model;
 
-import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 import java.util.LinkedList;
@@ -94,7 +93,7 @@ public class PcFreight extends ItemContainer {
     @Override
     public L2ItemInstance getItemByItemId(int itemId) {
         for (L2ItemInstance item : _items) {
-            if ((item.getItemId() == itemId) && ((item.getEquipSlot() == 0) || (_activeLocationId == 0) || (item.getEquipSlot() == _activeLocationId))) {
+            if ((item.getId() == itemId) && ((item.getEquipSlot() == 0) || (_activeLocationId == 0) || (item.getEquipSlot() == _activeLocationId))) {
                 return item;
             }
         }

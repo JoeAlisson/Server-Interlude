@@ -101,7 +101,7 @@ public class L2Multisell {
 
                         // check ingredients of this entry to see if it's an entry we'd like to include.
                         for (MultiSellIngredient ing : ent.getIngredients()) {
-                            if (item.getItemId() == ing.getItemId()) {
+                            if (item.getId() == ing.getItemId()) {
                                 doInclude = true;
                                 break;
                             }

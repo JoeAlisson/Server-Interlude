@@ -17,9 +17,7 @@
  */
 package org.l2j.gameserver.model;
 
-import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
-
 
 public class PetInventory extends Inventory
 {

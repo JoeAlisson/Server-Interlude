@@ -69,7 +69,7 @@ public class Remedy implements IItemHandler
 			return;
 		}
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		if (itemId == 1831) // antidote
 		{
 			L2Effect[] effects = activeChar.getAllEffects();

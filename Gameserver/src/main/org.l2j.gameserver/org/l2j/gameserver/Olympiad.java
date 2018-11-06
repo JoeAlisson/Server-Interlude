@@ -16,7 +16,6 @@ import org.l2j.gameserver.serverpackets.ExOlympiadUserInfoSpectator;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.MagicSkillUser;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,9 +23,9 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.ScheduledFuture;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
 import static java.util.Objects.requireNonNullElse;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public class Olympiad {
     protected static final Logger _log = LoggerFactory.getLogger(Olympiad.class.getName());
@@ -1304,8 +1303,8 @@ public class Olympiad {
                     if (wpn == null) {
                         wpn = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LRHAND);
                     }
-                    if ((wpn != null) && (((wpn.getItemId() >= 6611) && (wpn.getItemId() <= 6621)) || (wpn.getItemId() == 6842))) {
-                        L2ItemInstance[] unequiped = player.getInventory().unEquipItemInBodySlotAndRecord(((Weapon)wpn.getItem()).getBodyPart());
+                    if ((wpn != null) && (((wpn.getId() >= 6611) && (wpn.getId() <= 6621)) || (wpn.getId() == 6842))) {
+                        L2ItemInstance[] unequiped = player.getInventory().unEquipItemInBodySlotAndRecord(wpn.getBodyPart());
                         InventoryUpdate iu = new InventoryUpdate();
                         for (L2ItemInstance element : unequiped) {
                             iu.addModifiedItem(element);
@@ -1323,10 +1322,10 @@ public class Olympiad {
                             if (unequiped[0].getEnchantLevel() > 0) {
                                 sm = new SystemMessage(SystemMessageId.EQUIPMENT_S1_S2_REMOVED);
                                 sm.addNumber(unequiped[0].getEnchantLevel());
-                                sm.addItemName(unequiped[0].getItemId());
+                                sm.addItemName(unequiped[0].getId());
                             } else {
                                 sm = new SystemMessage(SystemMessageId.S1_DISARMED);
-                                sm.addItemName(unequiped[0].getItemId());
+                                sm.addItemName(unequiped[0].getId());
                             }
                             player.sendPacket(sm);
                         }
@@ -1573,7 +1572,7 @@ public class Olympiad {
                     _playerOne.sendPacket(iu);
 
                     SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
-                    sm.addItemName(item.getItemId());
+                    sm.addItemName(item.getId());
                     sm.addNumber(30);
                     _playerOne.sendPacket(sm);
                 } catch (Exception e) {
@@ -1602,7 +1601,7 @@ public class Olympiad {
                     _playerTwo.sendPacket(iu);
 
                     SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
-                    sm.addItemName(item.getItemId());
+                    sm.addItemName(item.getId());
                     sm.addNumber(30);
                     _playerTwo.sendPacket(sm);
                 } catch (Exception e) {

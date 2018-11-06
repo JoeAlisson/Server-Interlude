@@ -59,7 +59,7 @@ public class CompBlessedSpiritShotPacks implements IItemHandler
 		}
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		int itemToCreateId;
 		int amount;
 		

@@ -104,10 +104,10 @@ public class ItemsOnGroundManager {
             L2World.getInstance().addVisibleObject(item, item.getPosition().getWorldRegion(), null);
             _items.add(item);
             // add to ItemsAutoDestroy only items not protected
-            if (!Config.LIST_PROTECTED_ITEMS.contains(item.getItemId())) {
+            if (!Config.LIST_PROTECTED_ITEMS.contains(item.getId())) {
                 if (itemsOnGround.getDropTime() > -1) {
-                    if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (item.getItemType() != ItemType.HERB)) ||
-                            ((Config.HERB_AUTO_DESTROY_TIME > 0) && (item.getItemType() == ItemType.HERB))) {
+                    if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (item.getType() != ItemType.HERB)) ||
+                            ((Config.HERB_AUTO_DESTROY_TIME > 0) && (item.getType() == ItemType.HERB))) {
                         ItemsAutoDestroy.getInstance().addItem(item);
                     }
                 }
@@ -167,7 +167,7 @@ public class ItemsOnGroundManager {
             ItemsOnGroundRepository repository = DatabaseAccess.getRepository(ItemsOnGroundRepository.class);
             for (L2ItemInstance item : _items) {
 
-                if (CursedWeaponsManager.getInstance().isCursed(item.getItemId())) {
+                if (CursedWeaponsManager.getInstance().isCursed(item.getId())) {
                     continue; // Cursed Items not saved to ground, prevent double save
                 }
 

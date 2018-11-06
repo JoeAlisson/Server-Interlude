@@ -71,7 +71,7 @@ public class ScrollOfResurrection implements IItemHandler
 			return;
 		}
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		// boolean blessedScroll = (itemId != 737);
 		boolean humanScroll = ((itemId == 3936) || (itemId == 3959) || (itemId == 737));
 		boolean petScroll = ((itemId == 6387) || (itemId == 737));

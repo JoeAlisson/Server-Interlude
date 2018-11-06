@@ -35,13 +35,13 @@ public class SellList extends L2GameServerPacket {
         if (_lease == null) {
             for (L2ItemInstance item : _activeChar.getInventory().getItems()) {
                 if (!item.isEquipped() && // Not equipped
-                        item.getItem().getRestriction().isSellable() && // Item is sellable
+                        item.isSellable() && // Item is sellable
                         ((_activeChar.getPet() == null) || // Pet not summoned or
                              (item.getObjectId() != _activeChar.getPet().getControlItemId()))) // Pet is summoned and not the item that summoned the pet
                 {
                     _selllist.add(item);
                     if (Config.DEBUG) {
-                        _log.debug("item added to selllist: " + item.getItem().getName());
+                        _log.debug("item added to selllist: " + item.getName());
                     }
                 }
             }
@@ -57,11 +57,11 @@ public class SellList extends L2GameServerPacket {
         writeShort(_selllist.size());
 
         for (L2ItemInstance item : _selllist) {
-            writeShort(item.getItem().getType().ordinal());
+            writeShort(item.getType().ordinal());
             writeInt(item.getObjectId());
-            writeInt(item.getItemId());
+            writeInt(item.getId());
             writeLong(item.getCount());
-            writeShort(item.getItem().getCommissionType().ordinal());
+            writeShort(item.getCommissionType().ordinal());
             writeShort(0x00);
             writeInt(0); //item.getItem().getBodyPart().getId());
             writeShort(item.getEnchantLevel());
@@ -69,7 +69,7 @@ public class SellList extends L2GameServerPacket {
             writeShort(0x00);
 
             if (_lease == null) {
-                writeLong(item.getItem().getPrice() / 2); // wtf??? there is no conditional part in SellList!! this d should allways be here 0.o! fortunately the lease stuff are never ever use so the if allways exectues
+                writeLong(item.getPrice() / 2); // wtf??? there is no conditional part in SellList!! this d should allways be here 0.o! fortunately the lease stuff are never ever use so the if allways exectues
             }
         }
     }

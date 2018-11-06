@@ -38,7 +38,7 @@ public class SellListProcure extends L2GameServerPacket {
         for (L2ItemInstance item : _sellList.keySet()) {
             writeShort(item.getItem().getType().ordinal());
             writeInt(item.getObjectId());
-            writeInt(item.getItemId());
+            writeInt(item.getId());
             writeInt(_sellList.get(item)); // count
             writeShort(item.getItem().getCommissionType().ordinal());
             writeShort(0); // unknown

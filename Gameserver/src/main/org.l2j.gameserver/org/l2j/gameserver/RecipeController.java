@@ -608,10 +608,10 @@ public class RecipeController {
              */
             public TempItem(L2ItemInstance item, int quantity) {
                 super();
-                _itemId = item.getItemId();
+                _itemId = item.getId();
                 _quantity = quantity;
                 item.getOwnerId();
-                _itemName = item.getItem().getName();
+                _itemName = item.getName();
                 _referencePrice = item.getReferencePrice();
             }
 

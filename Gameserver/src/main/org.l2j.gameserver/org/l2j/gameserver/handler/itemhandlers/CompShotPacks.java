@@ -62,7 +62,7 @@ public class CompShotPacks implements IItemHandler
 		}
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		int itemToCreateId = 0;
 		int amount = 0; // default regular pack
 		

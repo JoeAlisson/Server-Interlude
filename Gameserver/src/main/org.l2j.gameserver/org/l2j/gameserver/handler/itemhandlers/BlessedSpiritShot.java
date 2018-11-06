@@ -50,12 +50,12 @@ public class BlessedSpiritShot implements IItemHandler
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		L2ItemInstance weaponInst = activeChar.getActiveWeaponInstance();
 		Weapon weaponItem = activeChar.getActiveWeaponItem();
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		if (activeChar.isInOlympiadMode())
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.THIS_ITEM_IS_NOT_AVAILABLE_FOR_THE_OLYMPIAD_EVENT);
-			sm.addString(item.getItemName());
+			sm.addString(item.getName());
 			activeChar.sendPacket(sm);
 			sm = null;
 			return;

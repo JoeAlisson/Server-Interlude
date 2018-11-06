@@ -120,7 +120,7 @@ public class SoulCrystals implements IItemHandler
 			return;
 		}
 		
-		int crystalId = item.getItemId();
+		int crystalId = item.getId();
 		
 		// Soul Crystal Casting section
 		L2Skill skill = SkillTable.getInstance().getInfo(2096, 1);

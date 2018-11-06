@@ -53,7 +53,7 @@ public class ItemLogFormatter extends Formatter {
                 if (item.getEnchantLevel() > 0) {
                     output.append("+" + item.getEnchantLevel() + " ");
                 }
-                output.append(item.getItem().getName());
+                output.append(item.getName());
                 output.append("(" + item.getCount() + ")");
             } else {
                 output.append(p.toString()/* + ":" + ((L2Object)p).getObjectId() */);

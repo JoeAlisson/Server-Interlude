@@ -51,7 +51,7 @@ public class SoulShots implements IItemHandler
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		L2ItemInstance weaponInst = activeChar.getActiveWeaponInstance();
 		Weapon weaponItem = activeChar.getActiveWeaponItem();
-		int itemId = item.getItemId();
+		int itemId = item.getId();
 		
 		// Check if Soulshot can be used
 		if ((weaponInst == null) || (weaponItem.getShots() == 0))
@@ -95,7 +95,7 @@ public class SoulShots implements IItemHandler
 					activeChar.sendPacket(new ExAutoSoulShot(itemId, 0));
 					
 					SystemMessage sm = new SystemMessage(SystemMessageId.AUTO_USE_OF_S1_CANCELLED);
-					sm.addString(item.getItem().getName());
+					sm.addString(item.getName());
 					activeChar.sendPacket(sm);
 				}
 				else

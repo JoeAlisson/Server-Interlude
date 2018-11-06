@@ -8,7 +8,6 @@ import org.l2j.gameserver.serverpackets.ExConfirmVariationItem;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 /**
  * Format:(ch) d
@@ -43,8 +42,8 @@ public final class RequestConfirmTargetItem extends L2GameClientPacket
 		}
 		
 		// check if the item is augmentable
-		CrystalType itemGrade = item.getItem().getCrystalInfo().getType();
-		CommissionType itemType = item.getItem().getCommissionType();
+		CrystalType itemGrade = item.getCrystal();
+		CommissionType itemType = item.getCommissionType();
 
 		if (item.isAugmented())
 		{
@@ -52,7 +51,7 @@ public final class RequestConfirmTargetItem extends L2GameClientPacket
 			return;
 		}
 		// TODO: can do better? : currently: using isdestroyable() as a check for hero / cursed weapons
-		else if ((itemGrade.compareTo(CrystalType.C) < 0) || !(item.getItem() instanceof Weapon) || !item.isDestroyable() || item.isShadowItem())
+		else if ((itemGrade.compareTo(CrystalType.C) < 0) || !(item.isWeapon()) || !item.isDestroyable() || item.isShadowItem())
 		{
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.THIS_IS_NOT_A_SUITABLE_ITEM));
 			return;

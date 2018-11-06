@@ -129,7 +129,7 @@ public final class RequestSellItem extends L2GameClientPacket
 			}
 			
 			L2ItemInstance item = player.checkItemManipulation(objectId, count, "sell");
-			if ((item == null) || (!item.getItem().getRestriction().isSellable()))
+			if ((item == null) || (!item.isSellable()))
 			{
 				continue;
 			}

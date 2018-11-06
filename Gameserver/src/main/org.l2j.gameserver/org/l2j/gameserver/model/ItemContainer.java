@@ -4,7 +4,6 @@ import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.GameTimeController;
 import org.l2j.gameserver.datatables.ItemTable;
-import org.l2j.gameserver.model.L2ItemInstance.ItemLocation;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.templates.xml.jaxb.Item;
@@ -67,7 +66,7 @@ public abstract class ItemContainer {
      */
     public L2ItemInstance getItemByItemId(int itemId) {
         for (L2ItemInstance item : _items) {
-            if ((item != null) && (item.getItemId() == itemId)) {
+            if ((item != null) && (item.getId() == itemId)) {
                 return item;
             }
         }
@@ -85,7 +84,7 @@ public abstract class ItemContainer {
      */
     public L2ItemInstance getItemByItemId(int itemId, L2ItemInstance itemToIgnore) {
         for (L2ItemInstance item : _items) {
-            if ((item != null) && (item.getItemId() == itemId) && !item.equals(itemToIgnore)) {
+            if ((item != null) && (item.getId() == itemId) && !item.equals(itemToIgnore)) {
                 return item;
             }
         }
@@ -120,7 +119,7 @@ public abstract class ItemContainer {
         long count = 0;
 
         for (L2ItemInstance item : _items) {
-            if ((item.getItemId() == itemId) && ((item.getEnchantLevel() == enchantLevel) || (enchantLevel < 0))) {
+            if ((item.getId() == itemId) && ((item.getEnchantLevel() == enchantLevel) || (enchantLevel < 0))) {
                 // if (item.isAvailable((L2PcInstance)getOwner(), true) || item.getItem().getType2() == 3)//available or quest item
                 if (item.isStackable()) {
                     count = item.getCount();
@@ -143,12 +142,12 @@ public abstract class ItemContainer {
      * @return L2ItemInstance corresponding to the new item or the updated item in inventory
      */
     public L2ItemInstance addItem(String process, L2ItemInstance item, L2PcInstance actor, L2Object reference) {
-        L2ItemInstance olditem = getItemByItemId(item.getItemId());
+        L2ItemInstance olditem = getItemByItemId(item.getId());
 
         // If stackable item is found in inventory just add to current quantity
         if ((olditem != null) && olditem.isStackable()) {
             long count = item.getCount();
-            olditem.changeCount(process, count, actor, reference);
+            olditem.changeCount(process, count);
             olditem.setLastChange(L2ItemInstance.MODIFIED);
 
             // And destroys the item
@@ -157,7 +156,7 @@ public abstract class ItemContainer {
             item = olditem;
 
             // Updates database
-            if ((item.getItemId() == 57) && (count < (10000 * Config.RATE_DROP_ADENA))) {
+            if ((item.getId() == 57) && (count < (10000 * Config.RATE_DROP_ADENA))) {
                 // Small adena changes won't be saved to database allTemplates the time
                 if ((GameTimeController.getGameTicks() % 5) == 0) {
                     item.updateDatabase();
@@ -168,7 +167,7 @@ public abstract class ItemContainer {
         }
         // If item hasn't be found in inventory, create new one
         else {
-            item.setOwnerId(process, getOwnerId(), actor, reference);
+            item.setOwnerId(process, getOwnerId());
             item.setLocation(getBaseLocation());
             item.setLastChange((L2ItemInstance.ADDED));
 
@@ -198,7 +197,7 @@ public abstract class ItemContainer {
 
         // If stackable item is found in inventory just add to current quantity
         if ((item != null) && item.isStackable()) {
-            item.changeCount(process, count, actor, reference);
+            item.changeCount(process, count);
             item.setLastChange(L2ItemInstance.MODIFIED);
             // Updates database
             if ((itemId == 57) && (count < (10000 * Config.RATE_DROP_ADENA))) {
@@ -298,7 +297,7 @@ public abstract class ItemContainer {
         if (sourceitem == null) {
             return null;
         }
-        L2ItemInstance targetitem = sourceitem.isStackable() ? target.getItemByItemId(sourceitem.getItemId()) : null;
+        L2ItemInstance targetitem = sourceitem.isStackable() ? target.getItemByItemId(sourceitem.getId()) : null;
 
         synchronized (sourceitem) {
             // check if this item still present in this container
@@ -319,7 +318,7 @@ public abstract class ItemContainer {
             } else {
                 if (sourceitem.getCount() > count) // If possible, only update counts
                 {
-                    sourceitem.changeCount(process, -count, actor, reference);
+                    sourceitem.changeCount(process, -count);
                 } else
                 // Otherwise destroy old item
                 {
@@ -329,11 +328,11 @@ public abstract class ItemContainer {
 
                 if (targetitem != null) // If possible, only update counts
                 {
-                    targetitem.changeCount(process, count, actor, reference);
+                    targetitem.changeCount(process, count);
                 } else
                 // Otherwise add new item
                 {
-                    targetitem = target.addItem(process, sourceitem.getItemId(), count, actor, reference);
+                    targetitem = target.addItem(process, sourceitem.getId(), count, actor, reference);
                 }
             }
 
@@ -394,7 +393,7 @@ public abstract class ItemContainer {
         // Adjust item quantity
         if (item.getCount() > count) {
             synchronized (item) {
-                item.changeCount(process, -count, actor, reference);
+                item.changeCount(process, -count);
                 item.setLastChange(L2ItemInstance.MODIFIED);
 
                 item.updateDatabase();
@@ -425,7 +424,7 @@ public abstract class ItemContainer {
         synchronized (item) {
             // Adjust item quantity
             if (item.getCount() > count) {
-                item.changeCount(process, -count, actor, reference);
+                item.changeCount(process, -count);
                 item.setLastChange(L2ItemInstance.MODIFIED);
             } else {
                 return destroyItem(process, item, actor, reference);
@@ -454,7 +453,7 @@ public abstract class ItemContainer {
         long count = 0;
 
         for (L2ItemInstance item : _items) {
-            if (item.getItemId() == 57) {
+            if (item.getId() == 57) {
                 count = item.getCount();
                 return count;
             }
@@ -526,7 +525,7 @@ public abstract class ItemContainer {
             L2World.getInstance().storeObject(item);
 
             // If stackable item is found in inventory just add to current quantity
-            if (item.isStackable() && (getItemByItemId(item.getItemId()) != null)) {
+            if (item.isStackable() && (getItemByItemId(item.getId()) != null)) {
                 addItem("Restore", item, null, getOwner());
             } else {
                 addItem(item);

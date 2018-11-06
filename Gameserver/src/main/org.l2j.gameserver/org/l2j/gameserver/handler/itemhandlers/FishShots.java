@@ -65,7 +65,7 @@ public class FishShots implements IItemHandler
 			return;
 		}
 		
-		int FishshotId = item.getItemId();
+		int FishshotId = item.getId();
 		CrystalType grade = weaponItem.getCrystalInfo().getType();
 		long count = item.getCount();
 		

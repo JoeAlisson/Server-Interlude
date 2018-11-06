@@ -29,11 +29,11 @@ public class TradeStart extends L2GameServerPacket
 		writeShort(_itemList.length);
 		for (L2ItemInstance item : _itemList)// int i = 0; i < count; i++)
 		{
-			writeShort(item.getItem().getType().ordinal()); // item type1
+			writeShort(item.getType().ordinal()); // item type1
 			writeInt(item.getObjectId());
-			writeInt(item.getItemId());
+			writeInt(item.getId());
 			writeLong(item.getCount());
-			writeShort(item.getItem().getCommissionType().ordinal()); // item type2
+			writeShort(item.getCommissionType().ordinal()); // item type2
 			writeShort(0x00); // ?
 			
 			writeInt(0);// TODO item.getItem().getBodyPart().getId()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
