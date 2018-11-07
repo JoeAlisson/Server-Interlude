@@ -39,7 +39,6 @@ import org.l2j.gameserver.skills.effects.EffectCharge;
 import org.l2j.gameserver.skills.funcs.Func;
 import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -5592,18 +5591,6 @@ public abstract class L2Character extends L2Object {
      * @return the secondary weapon instance
      */
     public abstract L2ItemInstance getSecondaryWeaponInstance();
-
-    /**
-     * Return the secondary weapon item (always equiped in the left hand).<BR>
-     * <BR>
-     * <B><U> Overriden in </U> :</B><BR>
-     * <BR>
-     * <li>L2PcInstance</li><BR>
-     * <BR>
-     *
-     * @return the secondary weapon item
-     */
-    public abstract Weapon getSecondaryWeaponItem();
 
     /**
      * Manage hit process (called by Hit Task).<BR>

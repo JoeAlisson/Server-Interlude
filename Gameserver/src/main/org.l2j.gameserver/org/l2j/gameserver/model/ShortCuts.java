@@ -1,21 +1,3 @@
-/*
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.database.DatabaseAccess;
@@ -23,22 +5,13 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.CharacterShortcutsRepository;
 import org.l2j.gameserver.serverpackets.ExAutoSoulShot;
 import org.l2j.gameserver.serverpackets.ShortCutInit;
-import org.l2j.gameserver.templates.ItemType;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 
 import java.util.Map;
 import java.util.TreeMap;
 
-
-/**
- * This class ...
- * @version $Revision: 1.1.2.1.2.3 $ $Date: 2005/03/27 15:29:33 $
- */
 public class ShortCuts
 {
-	private static Logger _log = LoggerFactory.getLogger(ShortCuts.class.getName());
-	
 	private final L2PcInstance _owner;
 	private final Map<Integer, L2ShortCut> _shortCuts = new TreeMap<>();
 	
@@ -102,7 +75,7 @@ public class ShortCuts
 		{
 			L2ItemInstance item = _owner.getInventory().getItemByObjectId(old.getId());
 			
-			if ((item != null) && (item.getType() == ItemType.SHOT))
+			if ((item != null) && (item.getCommissionType() == CommissionType.SOULSHOT  || item.getCommissionType() == CommissionType.SPIRITSHOT))
 			{
 				_owner.removeAutoSoulShot(item.getId());
 				_owner.sendPacket(new ExAutoSoulShot(item.getId(), 0));

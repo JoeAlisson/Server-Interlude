@@ -9,7 +9,6 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.knownlist.BoatKnownList;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
 import org.l2j.gameserver.serverpackets.*;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -643,16 +642,6 @@ public class L2BoatInstance extends L2Character {
      */
     @Override
     public L2ItemInstance getSecondaryWeaponInstance() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    /*
-     * (non-Javadoc)
-     * @see org.l2j.gameserver.model.L2Character#getSecondaryWeaponItem()
-     */
-    @Override
-    public Weapon getSecondaryWeaponItem() {
         // TODO Auto-generated method stub
         return null;
     }

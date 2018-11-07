@@ -30,7 +30,6 @@ import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.ItemList;
 import org.l2j.gameserver.serverpackets.StatusUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.ItemType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -125,7 +124,7 @@ public final class SendWareHouseDepositList extends L2GameClientPacket
 				continue;
 			}
 			
-			if (((warehouse instanceof ClanWarehouse) && !item.isTradeable()) || (item.getType() == ItemType.QUEST))
+			if (((warehouse instanceof ClanWarehouse) && !item.isTradeable()) || (item.isQuestItem()))
 			{
 				return;
 			}

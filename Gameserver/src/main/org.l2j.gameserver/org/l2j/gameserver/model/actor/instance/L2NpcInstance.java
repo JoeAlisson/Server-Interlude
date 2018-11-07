@@ -32,17 +32,15 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
-import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 import java.text.DateFormat;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import static java.util.Objects.requireNonNullElse;
 import static org.l2j.gameserver.ai.Intention.AI_INTENTION_ACTIVE;
 import static org.l2j.gameserver.templates.NpcType.L2Auctioneer;
-import static java.util.Objects.requireNonNullElse;
 
 /**
  * This class represents a Non-Player-Character in the world. It can be a monster or a friendly character. It also uses a template to fetch some static values. The templates are hardcoded in the client, so we can rely on them.<BR>
@@ -1035,29 +1033,6 @@ public class L2NpcInstance extends L2Character {
     public L2ItemInstance getSecondaryWeaponInstance() {
         // regular NPCs dont have weapons instancies
         return null;
-    }
-
-    /**
-     * Return the weapon item equiped in the left hand of the L2NpcInstance or null.<BR>
-     * <BR>
-     */
-    @Override
-    public Weapon getSecondaryWeaponItem() {
-        // Get the weapon identifier equiped in the right hand of the L2NpcInstance
-        int weaponId = getTemplate().getLhand();
-
-        if (weaponId < 1) {
-            return null;
-        }
-
-        // Get the weapon item equiped in the right hand of the L2NpcInstance
-        ItemTemplate item = ItemTable.getInstance().getTemplate(getTemplate().getLhand());
-
-        if (!(item instanceof Weapon)) {
-            return null;
-        }
-
-        return (Weapon) item;
     }
 
     /**

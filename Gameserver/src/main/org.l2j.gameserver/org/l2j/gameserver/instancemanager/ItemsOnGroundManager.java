@@ -26,7 +26,7 @@ import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.entity.database.ItemsOnGround;
 import org.l2j.gameserver.model.entity.database.repository.ItemsOnGroundRepository;
-import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -106,8 +106,8 @@ public class ItemsOnGroundManager {
             // add to ItemsAutoDestroy only items not protected
             if (!Config.LIST_PROTECTED_ITEMS.contains(item.getId())) {
                 if (itemsOnGround.getDropTime() > -1) {
-                    if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (item.getType() != ItemType.HERB)) ||
-                            ((Config.HERB_AUTO_DESTROY_TIME > 0) && (item.getType() == ItemType.HERB))) {
+                    if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (item.getCommissionType() != CommissionType.HERB)) ||
+                            ((Config.HERB_AUTO_DESTROY_TIME > 0) && (item.getCommissionType() == CommissionType.HERB))) {
                         ItemsAutoDestroy.getInstance().addItem(item);
                     }
                 }

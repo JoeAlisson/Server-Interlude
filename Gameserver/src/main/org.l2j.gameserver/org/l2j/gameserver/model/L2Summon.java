@@ -422,22 +422,11 @@ public abstract class L2Summon extends L2PlayableInstance {
 	}
 	
 	@Override
-	public Weapon getActiveWeaponItem()
-	{
-		return null;
-	}
-	
-	@Override
 	public L2ItemInstance getSecondaryWeaponInstance()
 	{
 		return null;
 	}
-	
-	@Override
-	public Weapon getSecondaryWeaponItem()
-	{
-		return null;
-	}
+
 	
 	/**
 	 * Return the L2Party object of its L2PcInstance owner or null.<BR>

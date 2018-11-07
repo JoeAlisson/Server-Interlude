@@ -10,12 +10,11 @@ import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.actor.knownlist.DoorKnownList;
 import org.l2j.gameserver.model.actor.stat.DoorStat;
 import org.l2j.gameserver.model.actor.status.DoorStatus;
-import org.l2j.gameserver.model.entity.database.CharTemplate;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.entity.ClanHall;
+import org.l2j.gameserver.model.entity.database.CharTemplate;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.serverpackets.*;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -313,11 +312,6 @@ public class L2DoorInstance extends L2Character {
 
     @Override
     public L2ItemInstance getSecondaryWeaponInstance() {
-        return null;
-    }
-
-    @Override
-    public Weapon getSecondaryWeaponItem() {
         return null;
     }
 
