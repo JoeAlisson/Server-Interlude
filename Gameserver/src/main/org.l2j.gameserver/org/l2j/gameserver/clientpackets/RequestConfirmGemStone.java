@@ -43,7 +43,7 @@ public final class RequestConfirmGemStone extends L2GameClientPacket
 		}
 		
 		// Make sure the item is a gemstone
-		int gemstoneItemId = gemstoneItem.getItem().getId();
+		int gemstoneItemId = gemstoneItem.getId();
 		if ((gemstoneItemId != 2130) && (gemstoneItemId != 2131))
 		{
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.THIS_IS_NOT_A_SUITABLE_ITEM));
@@ -51,7 +51,7 @@ public final class RequestConfirmGemStone extends L2GameClientPacket
 		}
 		
 		// Check if the gemstoneCount is sufficant
-		CrystalType itemGrade = targetItem.getItem().getCrystalInfo().getType();
+		CrystalType itemGrade = targetItem.getCrystal();
 		switch (itemGrade)
 		{
 			case C:

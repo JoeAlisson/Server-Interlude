@@ -11,6 +11,8 @@ import org.l2j.gameserver.templates.xml.jaxb.ItemType;
 
 import java.nio.BufferUnderflowException;
 
+import static java.util.Objects.nonNull;
+
 public class MoveBackwardToLocation extends L2GameClientPacket
 {
 	// private static Logger logger = LoggerFactory.getLogger(MoveBackwardToLocation.class.getName());
@@ -90,7 +92,7 @@ public class MoveBackwardToLocation extends L2GameClientPacket
 		{
 			activeChar.sendPacket(new ActionFailed());
 		}
-		else if (activeChar.isAttackingNow() && (activeChar.getActiveWeaponItem() != null) && (activeChar.getActiveWeaponItem().getType() == ItemType.BOW))
+		else if (activeChar.isAttackingNow() && (nonNull(activeChar.getActiveWeaponInstance())) && (activeChar.getActiveWeaponInstance().getType() == ItemType.BOW))
 		{
 			activeChar.sendPacket(new ActionFailed());
 		}

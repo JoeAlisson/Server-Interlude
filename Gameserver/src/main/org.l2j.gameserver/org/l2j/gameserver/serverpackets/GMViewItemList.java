@@ -3,6 +3,8 @@ package org.l2j.gameserver.serverpackets;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 
+import static java.util.Objects.isNull;
+
 public class GMViewItemList extends L2GameServerPacket
 {
 	// private static Logger _log = LoggerFactory.getLogger(GMViewItemList.class.getName());
@@ -29,17 +31,17 @@ public class GMViewItemList extends L2GameServerPacket
 		
 		for (L2ItemInstance temp : _items)
 		{
-			if ((temp == null) || (temp.getItem() == null))
+			if (isNull(temp))
 			{
 				continue;
 			}
 			
-			writeShort(temp.getItem().getType().ordinal());
+			writeShort(temp.getType().ordinal());
 			
 			writeInt(temp.getObjectId());
 			writeInt(temp.getId());
 			writeLong(temp.getCount());
-			writeShort(temp.getItem().getCommissionType().ordinal());
+			writeShort(temp.getCommissionType().ordinal());
 			writeShort(temp.getCustomType1());
 			writeShort(temp.isEquipped() ? 0x01 : 0x00);
 			writeInt(0); // TODO temp.getItem().getBodyPart().getId());

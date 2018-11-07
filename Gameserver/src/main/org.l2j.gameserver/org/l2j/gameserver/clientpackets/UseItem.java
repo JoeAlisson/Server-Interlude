@@ -305,7 +305,7 @@ public final class UseItem extends L2GameClientPacket
 		}
 		else
 		{
-			Weapon weaponItem = activeChar.getActiveWeaponItem();
+			var weaponItem = activeChar.getActiveWeaponInstance();
 			int itemid = item.getId();
 			// logger.debug("item not equipable id:"+ item.getId());
 			if (itemid == 4393)

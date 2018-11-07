@@ -4,7 +4,6 @@ import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 public class ItemHelper {
 
@@ -276,48 +275,37 @@ public class ItemHelper {
         return slot;
     }
 
-    public static Weapon findFistsWeaponItem(int classId) {
-        Weapon weaponItem = null;
-        ItemTemplate temp = null;
+    public static L2ItemInstance findFistsWeaponItem(int classId) {
+        int itemId = 0;
         if ((classId >= 0x00) && (classId <= 0x09)) {
             // HUMAN FIGHTER fists
-            temp = ItemTable.getInstance().getTemplate(246);
-            weaponItem = (Weapon) temp;
+            itemId = 246;
         } else if ((classId >= 0x0a) && (classId <= 0x11)) {
             // HUMAN MAGE fists
-            temp = ItemTable.getInstance().getTemplate(251);
-            weaponItem = (Weapon) temp;
+            itemId = 251;
         } else if ((classId >= 0x12) && (classId <= 0x18)) {
             // elven FIGHTER fists
-            temp = ItemTable.getInstance().getTemplate(244);
-            weaponItem = (Weapon) temp;
+            itemId = 244;
         } else if ((classId >= 0x19) && (classId <= 0x1e)) {
             // elven MAGE fists
-            temp = ItemTable.getInstance().getTemplate(249);
-            weaponItem = (Weapon) temp;
+            itemId = 249;
         } else if ((classId >= 0x1f) && (classId <= 0x25)) {
             // dark elven FIGHTER fists
-            temp = ItemTable.getInstance().getTemplate(245);
-            weaponItem = (Weapon) temp;
+            itemId = 245;
         } else if ((classId >= 0x26) && (classId <= 0x2b)) {
             // dark elven MAGE fists
-            temp = ItemTable.getInstance().getTemplate(250);
-            weaponItem = (Weapon) temp;
+            itemId = 250;
         } else if ((classId >= 0x2c) && (classId <= 0x30)) {
             // ORC FIGHTER fists
-            temp = ItemTable.getInstance().getTemplate(248);
-            weaponItem = (Weapon) temp;
+            itemId = 248;
         } else if ((classId >= 0x31) && (classId <= 0x34)) {
             // ORC MAGE fists
-            temp = ItemTable.getInstance().getTemplate(252);
-            weaponItem = (Weapon) temp;
+            itemId = 252;
         } else if ((classId >= 0x35) && (classId <= 0x39)) {
             // dwarven fists
-            temp = ItemTable.getInstance().getTemplate(247);
-            weaponItem = (Weapon) temp;
+            itemId = 247;
         }
-
-        return weaponItem;
+        return ItemTable.getInstance().createDummyItem(itemId);
     }
 
 }

@@ -5,6 +5,7 @@ import org.l2j.gameserver.model.TradeList.TradeItem;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -81,7 +82,7 @@ public class PcInventory extends Inventory {
                     break;
                 }
             }
-            if (!isDuplicate && (!onlyAvailable || (item.getItem().getRestriction().isSellable() && item.isAvailable(getOwner(), false)))) {
+            if (!isDuplicate && (!onlyAvailable || (item.isSellable() && item.isAvailable(getOwner(), false)))) {
                 list.add(item);
             }
         }
@@ -117,7 +118,7 @@ public class PcInventory extends Inventory {
                     break;
                 }
             }
-            if (!isDuplicate && (!onlyAvailable || (item.getItem().getRestriction().isSellable() && item.isAvailable(getOwner(), false)))) {
+            if (!isDuplicate && (!onlyAvailable || (item.isSellable() && item.isAvailable(getOwner(), false)))) {
                 list.add(item);
             }
         }
@@ -546,7 +547,7 @@ public class PcInventory extends Inventory {
     public boolean validateCapacity(L2ItemInstance item) {
         int slots = 0;
 
-        if (!(item.isStackable() && (getItemByItemId(item.getId()) != null)) && (item.getType() != ItemType.HERB)) {
+        if (!(item.isStackable() && (getItemByItemId(item.getId()) != null)) && (item.getCommissionType() != CommissionType.HERB)) {
             slots++;
         }
 

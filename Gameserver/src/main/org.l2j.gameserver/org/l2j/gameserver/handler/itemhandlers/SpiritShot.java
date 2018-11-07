@@ -49,11 +49,10 @@ public class SpiritShot implements IItemHandler
 		
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		L2ItemInstance weaponInst = activeChar.getActiveWeaponInstance();
-		Weapon weaponItem = activeChar.getActiveWeaponItem();
 		int itemId = item.getId();
 		
 		// Check if Spiritshot can be used
-		if ((weaponInst == null) || (weaponItem.getShots() == 0))
+		if ((weaponInst == null) || (weaponInst.getShots() == 0))
 		{
 			if (!activeChar.getAutoSoulShot().containsKey(itemId))
 			{
@@ -69,7 +68,7 @@ public class SpiritShot implements IItemHandler
 		}
 		
 		// Check for correct grade
-		CrystalType weaponGrade = weaponItem.getCrystalInfo().getType();
+		CrystalType weaponGrade = weaponInst.getCrystal();
 		if (((weaponGrade == CrystalType.NONE) && (itemId != 5790) && (itemId != 2509)) || ((weaponGrade == CrystalType.D) && (itemId != 2510)) || ((weaponGrade == CrystalType.C) && (itemId != 2511)) || ((weaponGrade == CrystalType.B) && (itemId != 2512)) || ((weaponGrade == CrystalType.A) && (itemId != 2513)) || ((weaponGrade == CrystalType.S) && (itemId != 2514)))
 		{
 			if (!activeChar.getAutoSoulShot().containsKey(itemId))
@@ -80,7 +79,7 @@ public class SpiritShot implements IItemHandler
 		}
 		
 		// Consume Spiritshot if reader has enough of them
-		if (!activeChar.destroyItemWithoutTrace("Consume", item.getObjectId(), weaponItem.getShots(), null, false))
+		if (!activeChar.destroyItemWithoutTrace("Consume", item.getObjectId(), weaponInst.getShots(), null, false))
 		{
 			if (activeChar.getAutoSoulShot().containsKey(itemId))
 			{

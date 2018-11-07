@@ -51,6 +51,6 @@ public final class ConditionSlotItemType extends ConditionInventory
 		{
 			return false;
 		}
-		return (1 << item.getItem().getType().ordinal() & _mask) != 0;
+		return (1 << item.getType().ordinal() & _mask) != 0;
 	}
 }

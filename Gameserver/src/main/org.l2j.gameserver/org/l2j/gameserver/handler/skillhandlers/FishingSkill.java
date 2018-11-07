@@ -44,7 +44,7 @@ public class FishingSkill implements ISkillHandler
 			player.sendPacket(new ActionFailed());
 			return;
 		}
-		Weapon weaponItem = player.getActiveWeaponItem();
+		var weaponItem = player.getActiveWeaponInstance();
 		L2ItemInstance weaponInst = activeChar.getActiveWeaponInstance();
 		if ((weaponInst == null) || (weaponItem == null))
 		{
@@ -56,7 +56,7 @@ public class FishingSkill implements ISkillHandler
 		{
 			SS = 2;
 		}
-		double gradebonus = 1 + (weaponItem.getCrystalInfo().getType().ordinal() * 0.1);
+		double gradebonus = 1 + (weaponItem.getCrystal().ordinal() * 0.1);
 		int dmg = (int) (skill.getPower() * gradebonus * SS);
 		if (player.getSkillLevel(1315) <= (skill.getLevel() - 2)) // 1315 - Fish Expertise
 		{// Penalty

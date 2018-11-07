@@ -72,7 +72,7 @@ import static org.l2j.gameserver.templates.xml.jaxb.ItemType.MAGIC;
 public final class L2PcInstance extends L2PlayableInstance {
 
     private Character character; // TODO make final
-    private Weapon fistsWeaponItem; // Used when no weapon is equipped
+    private L2ItemInstance fistsWeaponItem; // Used when no weapon is equipped
     private boolean invisible;
     private int nameColor = 0xFFFFFF;
     private int titleColor = 0xFFFFFF;
@@ -281,7 +281,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      *
      * @return the fists weapon item
      */
-    public Weapon getFistsWeaponItem() {
+    public L2ItemInstance getFistsWeapon() {
         return fistsWeaponItem;
     }
 
@@ -4456,24 +4456,6 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Return the active weapon item (always equiped in the right hand).
-     *
-     * @return the active weapon item
-     *
-     * TODO private
-     */
-    @Override
-    public Weapon getActiveWeaponItem() {
-        L2ItemInstance weapon = getActiveWeaponInstance();
-
-        if (weapon == null) {
-            return getFistsWeaponItem();
-        }
-
-        return (Weapon) weapon.getItem();
-    }
-
-    /**
      * Gets the chest armor instance.
      *
      * @return the chest armor instance
@@ -4482,20 +4464,6 @@ public final class L2PcInstance extends L2PlayableInstance {
         return getInventory().getPaperdollItem(Inventory.PAPERDOLL_CHEST);
     }
 
-    /**
-     * Gets the active chest armor item.
-     *
-     * @return the active chest armor item
-     */
-    public Armor getActiveChestArmorItem() {
-        L2ItemInstance armor = getChestArmorInstance();
-
-        if (armor == null) {
-            return null;
-        }
-
-        return (Armor) armor.getItem();
-    }
 
     /**
      * Checks if is wearing heavy armor.
@@ -4714,28 +4682,6 @@ public final class L2PcInstance extends L2PlayableInstance {
     }
 
     /**
-     * Return the secondary weapon item (always equiped in the left hand) or the fists weapon.
-     *
-     * @return the secondary weapon item
-     */
-    @Override
-    public Weapon getSecondaryWeaponItem() {
-        L2ItemInstance weapon = getSecondaryWeaponInstance();
-
-        if (weapon == null) {
-            return getFistsWeaponItem();
-        }
-
-        ItemTemplate item = weapon.getItem();
-
-        if (item instanceof Weapon) {
-            return (Weapon) item;
-        }
-
-        return null;
-    }
-
-    /**
      * Kill the L2Character, Apply Death Penalty, Manage gain/loss Karma and Item Drop. <BR>
      * <B><U> Actions</U> :</B><BR>
      * <li>Reduce the Experience of the L2PcInstance in function of the calculated Death Penalty</li> <li>If necessary, unsummon the Pet of the killed L2PcInstance</li> <li>Manage Karma gain for attacker and Karam loss for the killed L2PcInstance</li> <li>If the killed L2PcInstance has Karma, manage
@@ -4887,7 +4833,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                     if (itemDrop.isAugmented() || // Dont drop augmented items
                             itemDrop.isShadowItem() || // Dont drop Shadow Items
                             (itemDrop.getId() == 57) || // Adena
-                            (itemDrop.getItem().isQuestItem()) || // Quest Items
+                            (itemDrop.isQuestItem()) || // Quest Items
                             nonDroppableList.contains(itemDrop.getId()) || // Item listed in the non droppable item list
                             nonDroppableListPet.contains(itemDrop.getId()) || // Item listed in the non droppable pet item list
                             ((getPet() != null) && (getPet().getControlItemId() == itemDrop.getId() // Control Item of active pet
@@ -4897,7 +4843,7 @@ public final class L2PcInstance extends L2PlayableInstance {
 
                     if (itemDrop.isEquipped()) {
                         // Set proper chance according to Item type of equipped Item
-                        itemDropPercent = itemDrop.getItem() instanceof Weapon ? dropEquipWeapon : dropEquip;
+                        itemDropPercent = itemDrop.isWeapon() ? dropEquipWeapon : dropEquip;
                         getInventory().unEquipItemInSlotAndRecord(itemDrop.getEquipSlot());
                     } else {
                         itemDropPercent = dropItem; // Item in inventory
@@ -5746,7 +5692,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 wpn.getAugmentation().removeBoni(this);
             }
 
-            L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(((Weapon)wpn.getItem()).getBodyPart());
+            L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(wpn.getBodyPart());
             InventoryUpdate iu = new InventoryUpdate();
             for (L2ItemInstance element : unequiped) {
                 iu.addModifiedItem(element);
@@ -5778,7 +5724,7 @@ public final class L2PcInstance extends L2PlayableInstance {
                 return false;
             }
 
-            L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(((Armor)sld.getItem()).getBodyPart());
+            L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(sld.getBodyPart());
             InventoryUpdate iu = new InventoryUpdate();
             for (L2ItemInstance element : unequiped) {
                 iu.addModifiedItem(element);
@@ -5812,8 +5758,8 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     @Override
     public boolean isUsingDualWeapon() {
-        Weapon weaponItem = getActiveWeaponItem();
-        if (weaponItem == null) {
+        var weaponItem = getActiveWeaponInstance();
+        if (isNull(weaponItem)) {
             return false;
         }
 

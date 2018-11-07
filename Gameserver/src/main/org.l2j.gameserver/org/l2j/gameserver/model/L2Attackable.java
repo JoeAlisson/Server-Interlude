@@ -39,6 +39,7 @@ import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 import org.l2j.gameserver.util.Util;
 
 import java.util.LinkedList;
@@ -1605,7 +1606,7 @@ public class L2Attackable extends L2NpcInstance {
 
             // Add drop to auto destroy item task
             if (!Config.LIST_PROTECTED_ITEMS.contains(item.getItemId())) {
-                if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (ditem.getType() != ItemType.HERB)) || ((Config.HERB_AUTO_DESTROY_TIME > 0) && (ditem.getType() == ItemType.HERB))) {
+                if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (ditem.getCommissionType() != CommissionType.HERB)) || ((Config.HERB_AUTO_DESTROY_TIME > 0) && (ditem.getCommissionType() == CommissionType.HERB.HERB))) {
                     ItemsAutoDestroy.getInstance().addItem(ditem);
                 }
             }
@@ -1906,16 +1907,16 @@ public class L2Attackable extends L2NpcInstance {
                         // Validate if the crystal has already leveled
                         if ((id != SoulCrystal.RED_NEW_CRYSTAL) && (id != SoulCrystal.GRN_NEW_CYRSTAL) && (id != SoulCrystal.BLU_NEW_CRYSTAL)) {
                             try {
-                                if (item.getItem().getName().contains("Grade")) {
+                                if (item.getName().contains("Grade")) {
                                     // Split the name of the crystal into 'name' & 'level'
-                                    crystalNFO = item.getItem().getName().trim().replace(" Grade ", "-").split("-");
+                                    crystalNFO = item.getName().trim().replace(" Grade ", "-").split("-");
                                     // Set Level to 13
                                     crystalLVL = 13;
                                     // Get Name
                                     crystalNME = crystalNFO[0].toLowerCase();
                                 } else {
                                     // Split the name of the crystal into 'name' & 'level'
-                                    crystalNFO = item.getItem().getName().trim().replace(" Stage ", "").split("-");
+                                    crystalNFO = item.getName().trim().replace(" Stage ", "").split("-");
                                     // Get Level
                                     crystalLVL = Integer.parseInt(crystalNFO[1].trim());
                                     // Get Name
@@ -1946,7 +1947,7 @@ public class L2Attackable extends L2NpcInstance {
                                 break;
                             }
                         } else {
-                            crystalNME = item.getItem().getName().toLowerCase().trim();
+                            crystalNME = item.getName().toLowerCase().trim();
                             crystalNEW = id + 1;
                         }
 

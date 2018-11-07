@@ -312,11 +312,6 @@ public class L2DoorInstance extends L2Character {
     }
 
     @Override
-    public Weapon getActiveWeaponItem() {
-        return null;
-    }
-
-    @Override
     public L2ItemInstance getSecondaryWeaponInstance() {
         return null;
     }

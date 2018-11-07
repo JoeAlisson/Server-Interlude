@@ -3,6 +3,8 @@ package org.l2j.gameserver.skills.conditions;
 import org.l2j.gameserver.skills.Env;
 import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
+import static java.util.Objects.isNull;
+
 /**
  * @author mkizub
  */
@@ -25,9 +27,9 @@ public class ConditionTargetUsesWeaponKind extends Condition
 			return false;
 		}
 		
-		Weapon item = env.target.getActiveWeaponItem();
+		var item = env.target.getActiveWeaponInstance();
 		
-		if (item == null)
+		if (isNull(item))
 		{
 			return false;
 		}

@@ -582,7 +582,7 @@ public class L2AttackableAI<T extends L2Attackable.AIAccessor> extends MovableAI
 				return;
 			}
 			
-			Weapon weapon = actor.getActiveWeaponItem();
+			var weapon = actor.getActiveWeaponInstance();
 			if ((weapon != null) && (weapon.getType() == ItemType.BOW))
 			{
 				// Micht: kepping this one otherwise we should do 2 sqrt

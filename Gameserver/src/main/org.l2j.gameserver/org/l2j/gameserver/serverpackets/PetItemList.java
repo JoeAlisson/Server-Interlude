@@ -20,7 +20,7 @@ public class PetItemList extends L2GameServerPacket
 			L2ItemInstance[] items = _activeChar.getInventory().getItems();
 			for (L2ItemInstance temp : items)
 			{
-				_log.debug("item:" + temp.getItem().getName() + " type1:" + temp.getItem().getType() + " type2:" + temp.getItem().getCommissionType());
+				_log.debug("item:" + temp.getName() + " type1:" + temp.getType() + " type2:" + temp.getCommissionType());
 			}
 		}
 	}
@@ -36,11 +36,11 @@ public class PetItemList extends L2GameServerPacket
 		
 		for (L2ItemInstance temp : items)
 		{
-			writeShort(temp.getItem().getType().ordinal()); // item type1
+			writeShort(temp.getType().ordinal()); // item type1
 			writeInt(temp.getObjectId());
 			writeInt(temp.getId());
 			writeLong(temp.getCount());
-			writeShort(temp.getItem().getCommissionType().ordinal()); // item type2
+			writeShort(temp.getCommissionType().ordinal()); // item type2
 			writeShort(0xff); // ?
 			if (temp.isEquipped())
 			{

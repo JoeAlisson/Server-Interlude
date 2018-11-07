@@ -636,15 +636,6 @@ public class L2BoatInstance extends L2Character {
         return null;
     }
 
-    /*
-     * (non-Javadoc)
-     * @see org.l2j.gameserver.model.L2Character#getActiveWeaponItem()
-     */
-    @Override
-    public Weapon getActiveWeaponItem() {
-        // TODO Auto-generated method stub
-        return null;
-    }
 
     /*
      * (non-Javadoc)

@@ -29,6 +29,8 @@ import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static java.util.Objects.nonNull;
+
 /**
  * Global calculations, can be modified by server admins
  */
@@ -1263,8 +1265,8 @@ public final class Formulas
 		// They were originally added in a late C4 rev (2289).
 		if (target instanceof L2PcInstance)
 		{
-			Armor armor = ((L2PcInstance) target).getActiveChestArmorItem();
-			if (armor != null)
+			var armor = ((L2PcInstance) target).getChestArmorInstance();
+			if (nonNull(armor))
 			{
 				if (((L2PcInstance) target).isWearingHeavyArmor())
 				{
@@ -1335,9 +1337,9 @@ public final class Formulas
 		}
 		
 		// defence modifier depending of the attacker weapon
-		Weapon weapon = attacker.getActiveWeaponItem();
+		var weapon = attacker.getActiveWeaponInstance();
 		Stats stat = null;
-		if (weapon != null)
+		if (nonNull(weapon))
 		{
 			switch (weapon.getType())
 			{
@@ -1629,8 +1631,8 @@ public final class Formulas
 		}
 		if (Config.ALT_GAME_CANCEL_BOW && target.isAttackingNow())
 		{
-			Weapon wpn = target.getActiveWeaponItem();
-			if ((wpn != null) && (wpn.getType() == ItemType.BOW))
+			var wpn = target.getActiveWeaponInstance();
+			if ((nonNull(wpn)) && (wpn.getType() == ItemType.BOW))
 			{
 				init = 15;
 			}
@@ -1739,7 +1741,7 @@ public final class Formulas
 	 */
 	public boolean calcShldUse(L2Character attacker, L2Character target)
 	{
-		Weapon at_weapon = attacker.getActiveWeaponItem();
+		var weapon = attacker.getActiveWeaponInstance();
 		double shldRate = target.calcStat(Stats.SHIELD_RATE, 0, attacker, null) * DEXbonus[target.getDexterity()];
 		if (shldRate == 0.0)
 		{
@@ -1754,7 +1756,7 @@ public final class Formulas
 			}
 		}
 		// if attacker use bow and target wear shield, shield block rate is multiplied by 1.3 (30%)
-		if ((at_weapon != null) && (at_weapon.getType() == ItemType.BOW))
+		if ((weapon != null) && (weapon.getType() == ItemType.BOW))
 		{
 			shldRate *= 1.3;
 		}

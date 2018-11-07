@@ -45,7 +45,7 @@ public final class RequestMoveToLocationInVehicle extends L2GameClientPacket
 		{
 			return;
 		}
-		else if (activeChar.isAttackingNow() && (activeChar.getActiveWeaponItem() != null) && (activeChar.getActiveWeaponItem().getType() == ItemType.BOW))
+		else if (activeChar.isAttackingNow() && (activeChar.getActiveWeaponInstance() != null) && (activeChar.getActiveWeaponInstance().getType() == ItemType.BOW))
 		{
 			activeChar.sendPacket(new ActionFailed());
 		}

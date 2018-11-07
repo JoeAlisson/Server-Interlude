@@ -71,8 +71,7 @@ public class BeastSoulShot implements IItemHandler
 		
 		if ((activePet instanceof L2PetInstance) && !(activePet instanceof L2BabyPetInstance))
 		{
-			weaponInst = ((L2PetInstance) activePet).getActiveWeaponInstance();
-			weaponItem = ((L2PetInstance) activePet).getActiveWeaponItem();
+			weaponInst = activePet.getActiveWeaponInstance();
 			
 			if (weaponInst == null)
 			{

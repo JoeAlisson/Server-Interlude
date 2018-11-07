@@ -11,8 +11,9 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ExAutoSoulShot;
 import org.l2j.gameserver.serverpackets.MagicSkillUser;
 import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
+
+import static java.util.Objects.isNull;
 
 /**
  * Beast SpiritShot Handler
@@ -70,14 +71,12 @@ public class BeastSpiritShot implements IItemHandler
 		int shotConsumption = 1;
 		
 		L2ItemInstance weaponInst = null;
-		Weapon weaponItem = null;
 		
 		if ((activePet instanceof L2PetInstance) && !(activePet instanceof L2BabyPetInstance))
 		{
 			weaponInst = ((L2PetInstance) activePet).getActiveWeaponInstance();
-			weaponItem = ((L2PetInstance) activePet).getActiveWeaponItem();
 			
-			if (weaponInst == null)
+			if (isNull(weaponInst))
 			{
 				activeOwner.sendPacket(new SystemMessage(SystemMessageId.CANNOT_USE_SPIRITSHOTS));
 				return;
@@ -90,7 +89,7 @@ public class BeastSpiritShot implements IItemHandler
 			}
 			
 			long shotCount = item.getCount();
-			shotConsumption = weaponItem.getShots();
+			shotConsumption = weaponInst.getShots();
 			if (shotConsumption == 0)
 			{
 				activeOwner.sendPacket(new SystemMessage(SystemMessageId.CANNOT_USE_SPIRITSHOTS));
@@ -138,7 +137,7 @@ public class BeastSpiritShot implements IItemHandler
 				activeOwner.sendPacket(new ExAutoSoulShot(itemId, 0));
 				
 				SystemMessage sm = new SystemMessage(SystemMessageId.AUTO_USE_OF_S1_CANCELLED);
-				sm.addString(item.getItem().getName());
+				sm.addString(item.getName());
 				activeOwner.sendPacket(sm);
 				return;
 			}

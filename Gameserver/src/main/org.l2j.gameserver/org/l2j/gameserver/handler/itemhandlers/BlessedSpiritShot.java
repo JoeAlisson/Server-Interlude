@@ -9,8 +9,9 @@ import org.l2j.gameserver.serverpackets.ExAutoSoulShot;
 import org.l2j.gameserver.serverpackets.MagicSkillUser;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
+
+import static java.util.Objects.isNull;
 
 public class BlessedSpiritShot implements IItemHandler
 {
@@ -49,7 +50,6 @@ public class BlessedSpiritShot implements IItemHandler
 		
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		L2ItemInstance weaponInst = activeChar.getActiveWeaponInstance();
-		Weapon weaponItem = activeChar.getActiveWeaponItem();
 		int itemId = item.getId();
 		
 		if (activeChar.isInOlympiadMode())
@@ -62,7 +62,7 @@ public class BlessedSpiritShot implements IItemHandler
 		}
 		
 		// Check if Blessed Spiritshot can be used
-		if ((weaponInst == null) || (weaponItem.getShots() == 0))
+		if ((isNull(weaponInst)) || (weaponInst.getShots() == 0))
 		{
 			if (!activeChar.getAutoSoulShot().containsKey(itemId))
 			{
@@ -78,7 +78,7 @@ public class BlessedSpiritShot implements IItemHandler
 		}
 		
 		// Check for correct grade
-		CrystalType weaponGrade = weaponItem.getCrystalInfo().getType();
+		CrystalType weaponGrade = weaponInst.getCrystal();
 		if (((weaponGrade == CrystalType.NONE) && (itemId != 3947)) || ((weaponGrade == CrystalType.D) && (itemId != 3948)) || ((weaponGrade == CrystalType.C) && (itemId != 3949)) || ((weaponGrade == CrystalType.B) && (itemId != 3950)) || ((weaponGrade == CrystalType.A) && (itemId != 3951)) || ((weaponGrade == CrystalType.S) && (itemId != 3952)))
 		{
 			if (!activeChar.getAutoSoulShot().containsKey(itemId))
@@ -89,7 +89,7 @@ public class BlessedSpiritShot implements IItemHandler
 		}
 		
 		// Consume Blessed Spiritshot if reader has enough of them
-		if (!activeChar.destroyItemWithoutTrace("Consume", item.getObjectId(), weaponItem.getShots(), null, false))
+		if (!activeChar.destroyItemWithoutTrace("Consume", item.getObjectId(), weaponInst.getShots(), null, false))
 		{
 			if (activeChar.getAutoSoulShot().containsKey(itemId))
 			{
@@ -97,7 +97,7 @@ public class BlessedSpiritShot implements IItemHandler
 				activeChar.sendPacket(new ExAutoSoulShot(itemId, 0));
 				
 				SystemMessage sm = new SystemMessage(SystemMessageId.AUTO_USE_OF_S1_CANCELLED);
-				sm.addString(item.getItem().getName());
+				sm.addString(item.getName());
 				activeChar.sendPacket(sm);
 			}
 			else

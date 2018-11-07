@@ -1028,29 +1028,6 @@ public class L2NpcInstance extends L2Character {
     }
 
     /**
-     * Return the weapon item equiped in the right hand of the L2NpcInstance or null.<BR>
-     * <BR>
-     */
-    @Override
-    public Weapon getActiveWeaponItem() {
-        // Get the weapon identifier equiped in the right hand of the L2NpcInstance
-        int weaponId = getTemplate().getRhand();
-
-        if (weaponId < 1) {
-            return null;
-        }
-
-        // Get the weapon item equiped in the right hand of the L2NpcInstance
-        ItemTemplate item = ItemTable.getInstance().getTemplate(getTemplate().getRhand());
-
-        if (!(item instanceof Weapon)) {
-            return null;
-        }
-
-        return (Weapon) item;
-    }
-
-    /**
      * Return null (regular NPCs don't have weapons instancies).<BR>
      * <BR>
      */

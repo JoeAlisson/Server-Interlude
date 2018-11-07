@@ -28,6 +28,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+import static java.util.Objects.nonNull;
+
 public abstract class L2Skill {
     protected static final Logger _log = LoggerFactory.getLogger(L2Skill.class.getName());
 
@@ -1021,16 +1023,16 @@ public abstract class L2Skill {
         if (weaponsAllowed == 0) {
             return true;
         }
-        if (activeChar.getActiveWeaponItem() != null) {
+        if (nonNull(activeChar.getActiveWeaponInstance())) {
             ItemType playerWeapon;
-            playerWeapon = activeChar.getActiveWeaponItem().getType();
+            playerWeapon = activeChar.getActiveWeaponInstance().getType();
             int mask = 1 << playerWeapon.ordinal();
             if ((mask & weaponsAllowed) != 0) {
                 return true;
             }
             // can be on the secondary weapon
-            if (activeChar.getSecondaryWeaponItem() != null) {
-                playerWeapon = activeChar.getSecondaryWeaponItem().getType();
+            if (nonNull(activeChar.getSecondaryWeaponInstance())) {
+                playerWeapon = activeChar.getSecondaryWeaponInstance().getType();
                 mask = 1 << playerWeapon.ordinal();
                 if ((mask & weaponsAllowed) != 0) {
                     return true;

@@ -28,15 +28,15 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 		
 		for (L2ItemInstance item : _items)
 		{
-			writeShort(item.getItem().getType().ordinal());
+			writeShort(item.getType().ordinal());
 			
 			writeInt(item.getObjectId());
 			writeInt(item.getId());
 			writeLong(item.getCount());
-			writeShort(item.getItem().getCommissionType().ordinal());
+			writeShort(item.getCommissionType().ordinal());
 			writeShort(item.getCustomType1());
 			
-			switch (item.getItem().getCommissionType())
+			switch (item.getCommissionType())
 			{
 				/* TODO case TYPE2_WEAPON:
 				{

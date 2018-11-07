@@ -277,29 +277,13 @@ public class L2PetInstance extends L2Summon
 	{
 		for (L2ItemInstance item : getInventory().getItems())
 		{
-			if ((item.getLocation() == ItemLocation.PET_EQUIP) && (item.getItem() instanceof Weapon))
+			if ((item.getLocation() == ItemLocation.PET_EQUIP) && (item.isWeapon()))
 			{
 				return item;
 			}
 		}
 		
 		return null;
-	}
-	
-	/**
-	 * Returns the pet's currently equipped weapon (if any).
-	 */
-	@Override
-	public Weapon getActiveWeaponItem()
-	{
-		L2ItemInstance weapon = getActiveWeaponInstance();
-		
-		if (weapon == null)
-		{
-			return null;
-		}
-		
-		return (Weapon) weapon.getItem();
 	}
 	
 	@Override
@@ -624,7 +608,7 @@ public class L2PetInstance extends L2Summon
 			for (int i = 0; (i < items.length); i++)
 			{
 				L2ItemInstance giveit = items[i];
-				if (((giveit.getItem().getWeight() * giveit.getCount()) + getOwner().getInventory().getTotalWeight()) < getOwner().getMaxLoad())
+				if (((giveit.getWeight() * giveit.getCount()) + getOwner().getInventory().getTotalWeight()) < getOwner().getMaxLoad())
 				{
 					// If the owner can carry it give it to them
 					giveItemToOwner(giveit);

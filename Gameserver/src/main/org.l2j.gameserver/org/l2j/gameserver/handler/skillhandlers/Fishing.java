@@ -16,6 +16,8 @@ import org.l2j.gameserver.templates.xml.jaxb.ItemType;
 import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Util;
 
+import static java.util.Objects.isNull;
+
 public class Fishing implements ISkillHandler
 {
 	// private static Logger _log = LoggerFactory.getLogger(SiegeFlag.class.getName());
@@ -122,8 +124,8 @@ public class Fishing implements ISkillHandler
 				return;
 			}
 		}
-		Weapon weaponItem = player.getActiveWeaponItem();
-		if (((weaponItem == null) || (weaponItem.getType() != ItemType.FISHINGROD)))
+		var weapon = player.getActiveWeaponInstance();
+		if (((isNull(weapon)) || (weapon.getType() != ItemType.FISHINGROD)))
 		{
 			// Fishing poles are not installed
 			player.sendPacket(new SystemMessage(SystemMessageId.FISHING_POLE_NOT_EQUIPPED));

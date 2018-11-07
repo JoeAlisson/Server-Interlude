@@ -13,6 +13,8 @@ import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
 import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
 
+import static java.util.Objects.isNull;
+
 public class SoulShots implements IItemHandler
 {
 	// All the item IDs that this handler knows.
@@ -50,12 +52,10 @@ public class SoulShots implements IItemHandler
 		
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		L2ItemInstance weaponInst = activeChar.getActiveWeaponInstance();
-		Weapon weaponItem = activeChar.getActiveWeaponItem();
 		int itemId = item.getId();
 		
 		// Check if Soulshot can be used
-		if ((weaponInst == null) || (weaponItem.getShots() == 0))
-		{
+		if ((isNull(weaponInst)) || (weaponInst.getShots() == 0)) {
 			if (!activeChar.getAutoSoulShot().containsKey(itemId))
 			{
 				activeChar.sendPacket(new SystemMessage(SystemMessageId.CANNOT_USE_SOULSHOTS));
@@ -64,7 +64,7 @@ public class SoulShots implements IItemHandler
 		}
 		
 		// Check for correct grade
-		CrystalType weaponGrade = weaponItem.getCrystalInfo().getType();
+		CrystalType weaponGrade = weaponInst.getCrystal();
 		if (((weaponGrade == CrystalType.NONE) && (itemId != 5789) && (itemId != 1835)) || ((weaponGrade == CrystalType.D) && (itemId != 1463)) || ((weaponGrade == CrystalType.C) && (itemId != 1464)) || ((weaponGrade == CrystalType.B) && (itemId != 1465)) || ((weaponGrade == CrystalType.A) && (itemId != 1466)) || ((weaponGrade == CrystalType.S) && (itemId != 1467)))
 		{
 			if (!activeChar.getAutoSoulShot().containsKey(itemId))
@@ -85,7 +85,7 @@ public class SoulShots implements IItemHandler
 			
 			// Consume Soulshots if reader has enough of them
 			int saSSCount = (int) activeChar.getStat().calcStat(Stats.SOULSHOT_COUNT, 0, null, null);
-			int SSCount = saSSCount == 0 ? weaponItem.getShots() : saSSCount;
+			int SSCount = saSSCount == 0 ? weaponInst.getShots() : saSSCount;
 			
 			if (!activeChar.destroyItemWithoutTrace("Consume", item.getObjectId(), SSCount, null, false))
 			{

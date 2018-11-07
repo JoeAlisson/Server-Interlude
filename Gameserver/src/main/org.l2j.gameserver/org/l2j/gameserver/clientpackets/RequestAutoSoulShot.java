@@ -91,7 +91,7 @@ public final class RequestAutoSoulShot extends L2GameClientPacket
 						}
 						else
 						{
-							if ((activeChar.getActiveWeaponItem() != activeChar.getFistsWeaponItem()) && (item.getCrystal() == activeChar.getActiveWeaponItem().getCrystalInfo().getType()))
+							if ((activeChar.getActiveWeaponInstance() != activeChar.getFistsWeapon()) && (item.getCrystal() == activeChar.getActiveWeaponInstance().getCrystal()))
 							{
 								if ((_itemId >= 3947) && (_itemId <= 3952) && activeChar.isInOlympiadMode())
 								{

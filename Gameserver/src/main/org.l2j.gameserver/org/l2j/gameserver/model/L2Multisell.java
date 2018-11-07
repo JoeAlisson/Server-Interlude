@@ -93,7 +93,7 @@ public class L2Multisell {
             for (L2ItemInstance item : items) {
                 // only do the matchup on equipable items that are not currently equipped
                 // so for each appropriate item, produce a set of entries for the multisell list.
-                if (!item.isWear() && ((item.getItem() instanceof Armor) || (item.getItem() instanceof Weapon))) {
+                if (!item.isWear() && (item.isArmor() || item.isWeapon())) {
                     enchantLevel = (listTemplate.getMaintainEnchantment() ? item.getEnchantLevel() : 0);
                     // loop through the entries to see which ones we wish to include
                     for (MultiSellEntry ent : listTemplate.getEntries()) {
@@ -156,8 +156,8 @@ public class L2Multisell {
             }
             // if it is an armor/weapon, modify the enchantment level appropriately, if necessary
             else if (maintainEnchantment) {
-                ItemTemplate tempItem = ItemTable.getInstance().createDummyItem(ing.getItemId()).getItem();
-                if ((tempItem instanceof Armor) || (tempItem instanceof Weapon)) {
+                var tempItem = ItemTable.getInstance().createDummyItem(ing.getItemId());
+                if (tempItem.isArmor() || tempItem.isWeapon()) {
                     newIngredient.setEnchantmentLevel(enchantLevel);
                 }
             }
@@ -177,8 +177,8 @@ public class L2Multisell {
             if (maintainEnchantment) {
                 // if it is an armor/weapon, modify the enchantment level appropriately
                 // (note, if maintain enchantment is "false" this modification will result to a +0)
-                ItemTemplate tempItem = ItemTable.getInstance().createDummyItem(ing.getItemId()).getItem();
-                if ((tempItem instanceof Armor) || (tempItem instanceof Weapon)) {
+                var tempItem = ItemTable.getInstance().createDummyItem(ing.getItemId());
+                if (tempItem.isArmor() || tempItem.isWeapon()) {
                     newIngredient.setEnchantmentLevel(enchantLevel);
                 }
             }

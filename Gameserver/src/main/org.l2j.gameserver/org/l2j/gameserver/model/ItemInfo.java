@@ -1,14 +1,12 @@
 package org.l2j.gameserver.model;
 
-import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
-
 public class ItemInfo
 {
 	/** Identifier of the L2ItemInstance */
 	private int _objectId;
 	
 	/** The ItemTemplate template of the L2ItemInstance */
-	private ItemTemplate _item;
+	private L2ItemInstance _item;
 	
 	/** The level of enchant on the L2ItemInstance */
 	private int _enchant;
@@ -50,7 +48,7 @@ public class ItemInfo
 		_objectId = item.getObjectId();
 		
 		// Get the ItemTemplate of the L2ItemInstance
-		_item = item.getItem();
+		_item = item;
 		
 		// Get the enchant level of the L2ItemInstance
 		_enchant = item.getEnchantLevel();
@@ -110,7 +108,7 @@ public class ItemInfo
 		_objectId = item.getObjectId();
 		
 		// Get the ItemTemplate of the L2ItemInstance
-		_item = item.getItem();
+		_item = item;
 		
 		// Get the enchant level of the L2ItemInstance
 		_enchant = item.getEnchantLevel();
@@ -147,7 +145,7 @@ public class ItemInfo
 		return _objectId;
 	}
 	
-	public ItemTemplate getItem()
+	public L2ItemInstance getItem()
 	{
 		return _item;
 	}

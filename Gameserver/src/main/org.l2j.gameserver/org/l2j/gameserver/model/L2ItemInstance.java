@@ -177,16 +177,22 @@ public final class L2ItemInstance extends L2Object {
 		this.count = count >= -1 ? count : 0;
 		storedInDb = false;
 	}
-	
-	/**
-	 * Returns the characteristics of the item
-	 * @return ItemTemplate
-     *
-     * TODO private
-	 */
-	public ItemTemplate getItem() {
-		return template;
-	}
+
+    public long getReuseDelay() {
+        return template.getReuseDelay();
+    }
+
+    public int getRandomDamage() {
+        return isWeapon() ? ((Weapon)template).getDamage().getRandom() : 0;
+    }
+
+	public int getMpConsume() {
+	    return isWeapon() ? ((Weapon)template).getConsume().getMp() : 0;
+    }
+
+	public final int getShots() {
+	    return isWeapon() ? ((Weapon) template).getShots() : 0;
+    }
 
 	public final boolean  isQuestItem() {
 	    return template.isQuestItem();
@@ -329,49 +335,17 @@ public final class L2ItemInstance extends L2Object {
 	public int getPriceToSell() {
 		return (isConsumable() ? (int) (priceSell * Config.RATE_CONSUMABLE_COST) : priceSell);
 	}
-	
-	/**
-	 * Sets the price of the item for selling <U><I>Remark :</I></U> If location and loc_data different from database, say datas not up-to-date
-	 * @param price : int designating the price
-	 */
-	public void setPriceToSell(int price)
-	{
-		priceSell = price;
-		storedInDb = false;
-	}
-	
-	/**
-	 * Returns the price of the item for buying
-	 * @return int
-	 */
+
 	public int getPriceToBuy()
 	{
 		return (isConsumable() ? (int) (priceBuy * Config.RATE_CONSUMABLE_COST) : priceBuy);
 	}
-	
-	/**
-	 * Sets the price of the item for buying <U><I>Remark :</I></U> If location and loc_data different from database, say datas not up-to-date
-	 * @param price : int
-	 */
-	public void setPriceToBuy(int price)
-	{
-		priceBuy = price;
-		storedInDb = false;
-	}
-	
-	/**
-	 * Returns the last change of the item
-	 * @return int
-	 */
+
 	public int getLastChange()
 	{
 		return lastChange;
 	}
-	
-	/**
-	 * Sets the last change of the item
-	 * @param lastChange : int
-	 */
+
 	public void setLastChange(int lastChange)
 	{
 		this.lastChange = lastChange;
@@ -412,14 +386,9 @@ public final class L2ItemInstance extends L2Object {
 			&& (player.getActiveEnchantItem() != this) // Not momentarily used enchant scroll
 			&& (allowAdena || (getId() != 57)) && ((player.getCurrentSkill() == null) || (player.getCurrentSkill().getSkill().getItemConsumeId() != getId())) && (isTradeable()));
 	}
-	
-	/*
-	 * (non-Javadoc)
-	 * @see org.l2j.gameserver.model.L2Object#onAction(org.l2j.gameserver.model.L2PcInstance) also check constraints: only soloing castle owners may pick up mercenary tickets of their castle
-	 */
+
 	@Override
-	public void onAction(L2PcInstance player)
-	{
+	public void onAction(L2PcInstance player) {
 		// this causes the validate position handler to do the pickup if the location is reached.
 		// mercenary tickets can only be picked up by the castle owner.
 		if (((template.getId() >= 3960) && (template.getId() <= 4021) && player.isInParty()) || ((template.getId() >= 3960) && (template.getId() <= 3969) && !player.isCastleLord(1)) || ((template.getId() >= 3973) && (template.getId() <= 3982) && !player.isCastleLord(2)) || ((template.getId() >= 3986) && (template.getId() <= 3995) && !player.isCastleLord(3)) || ((template.getId() >= 3999) && (template.getId() <= 4008) && !player.isCastleLord(4)) || ((template.getId() >= 4012) && (template.getId() <= 4021) && !player.isCastleLord(5)) || ((template.getId() >= 5205) && (template.getId() <= 5214) && !player.isCastleLord(6)) || ((template.getId() >= 6779) && (template.getId() <= 6788) && !player.isCastleLord(7)) || ((template.getId() >= 7973) && (template.getId() <= 7982) && !player.isCastleLord(8)) || ((template.getId() >= 7918) && (template.getId() <= 7927) && !player.isCastleLord(9)))
@@ -513,8 +482,9 @@ public final class L2ItemInstance extends L2Object {
 		augmentation.deleteAugmentationData();
 		augmentation = null;
 	}
-	
-	/**
+
+
+    /**
 	 * Used to decrease mana (mana means life time for shadow items)
 	 */
 	public class ScheduleConsumeManaTask implements Runnable

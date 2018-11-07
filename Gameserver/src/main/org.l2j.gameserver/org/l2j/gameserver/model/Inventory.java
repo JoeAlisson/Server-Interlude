@@ -13,6 +13,7 @@ import org.l2j.gameserver.templates.xml.jaxb.*;
 import java.util.LinkedList;
 import java.util.List;
 
+import static java.util.Objects.nonNull;
 import static org.l2j.gameserver.templates.xml.jaxb.BodyPart.*;
 
 /**
@@ -939,14 +940,7 @@ public abstract class Inventory extends ItemContainer {
             }
         }
 
-
-        BodyPart targetSlot = null;
-        if(item.getItem() instanceof  Weapon) {
-            targetSlot = ((Weapon) item.getItem()).getBodyPart();
-        } else if(item.getItem() instanceof Armor) {
-            targetSlot = ((Armor) item.getItem()).getBodyPart();
-        }
-
+        BodyPart targetSlot = item.getBodyPart();
         switch (targetSlot) {
             case TWO_HANDS: {
                 if (setPaperdollItem(PAPERDOLL_LHAND, null) != null) {
@@ -962,7 +956,7 @@ public abstract class Inventory extends ItemContainer {
                 break;
             }
             case LEFT_HAND: {
-                if (!(item.getItem() instanceof Item) || (item.getItem().getType() != ItemType.ARROW)) {
+                if ((item.getType() != ItemType.ARROW)) {
                     L2ItemInstance old1 = setPaperdollItem(PAPERDOLL_LRHAND, null);
 
                     if (old1 != null) {
@@ -1028,7 +1022,7 @@ public abstract class Inventory extends ItemContainer {
             case LEGS: {
                 // handle full armor
                 L2ItemInstance chest = getPaperdollItem(PAPERDOLL_CHEST);
-                if ((chest != null) && (((Armor)chest.getItem()).getBodyPart() == BodyPart.FULL_BODY)) {
+                if (nonNull(chest) && chest.getBodyPart() == BodyPart.FULL_BODY) {
                     setPaperdollItem(PAPERDOLL_CHEST, null);
                 }
 
@@ -1093,8 +1087,8 @@ public abstract class Inventory extends ItemContainer {
         int weight = 0;
 
         for (L2ItemInstance item : _items) {
-            if ((item != null) && (item.getItem() != null)) {
-                weight += item.getItem().getWeight() * item.getCount();
+            if (nonNull(item)) {
+                weight += item.getWeight() * item.getCount();
             }
         }
 

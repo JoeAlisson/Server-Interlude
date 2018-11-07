@@ -10,7 +10,6 @@ import org.l2j.gameserver.serverpackets.MagicSkillUser;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
 
 /**
@@ -52,9 +51,8 @@ public class FishShots implements IItemHandler
 		
 		L2PcInstance activeChar = (L2PcInstance) playable;
 		L2ItemInstance weaponInst = activeChar.getActiveWeaponInstance();
-		Weapon weaponItem = activeChar.getActiveWeaponItem();
 		
-		if ((weaponInst == null) || (weaponItem.getType() != ItemType.FISHINGROD))
+		if ((weaponInst == null) || (weaponInst.getType() != ItemType.FISHINGROD))
 		{
 			return;
 		}
@@ -66,7 +64,7 @@ public class FishShots implements IItemHandler
 		}
 		
 		int FishshotId = item.getId();
-		CrystalType grade = weaponItem.getCrystalInfo().getType();
+		CrystalType grade = weaponInst.getCrystal();
 		long count = item.getCount();
 		
 		if (((grade == CrystalType.NONE) && (FishshotId != 6535)) || ((grade == CrystalType.D) && (FishshotId != 6536)) || ((grade == CrystalType.C) && (FishshotId != 6537)) || ((grade == CrystalType.B) && (FishshotId != 6538)) || ((grade == CrystalType.A) && (FishshotId != 6539)) || ((grade == CrystalType.S) && (FishshotId != 6540)))
