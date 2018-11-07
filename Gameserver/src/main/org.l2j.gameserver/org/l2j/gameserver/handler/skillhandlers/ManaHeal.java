@@ -37,7 +37,7 @@ import org.l2j.gameserver.skills.Stats;
 
 public class ManaHeal implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(ManaHeal.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(ManaHeal.class.getName());
 	
 	/*
 	 * (non-Javadoc)

@@ -24,6 +24,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2SiegeSummonInstance;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.zone.L2ZoneType;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 
@@ -68,8 +69,8 @@ public class L2CastleZone extends L2ZoneType {
     @Override
     protected void onEnter(L2Character character) {
         if (_castle.getSiege().getIsInProgress()) {
-            character.setInsideZone(L2Character.ZONE_PVP, true);
-            character.setInsideZone(L2Character.ZONE_SIEGE, true);
+            character.setInsideZone(Zone.PVP, true);
+            character.setInsideZone(Zone.SIEGE, true);
 
             if (character instanceof L2PcInstance) {
                 ((L2PcInstance) character).sendPacket(new SystemMessage(SystemMessageId.ENTERED_COMBAT_ZONE));
@@ -80,8 +81,8 @@ public class L2CastleZone extends L2ZoneType {
     @Override
     protected void onExit(L2Character character) {
         if (_castle.getSiege().getIsInProgress()) {
-            character.setInsideZone(L2Character.ZONE_PVP, false);
-            character.setInsideZone(L2Character.ZONE_SIEGE, false);
+            character.setInsideZone(Zone.PVP, false);
+            character.setInsideZone(Zone.SIEGE, false);
 
             if (character instanceof L2PcInstance) {
                 ((L2PcInstance) character).sendPacket(new SystemMessage(SystemMessageId.LEFT_COMBAT_ZONE));
@@ -116,8 +117,8 @@ public class L2CastleZone extends L2ZoneType {
         } else {
             for (L2Character character : characterList.values()) {
                 try {
-                    character.setInsideZone(L2Character.ZONE_PVP, false);
-                    character.setInsideZone(L2Character.ZONE_SIEGE, false);
+                    character.setInsideZone(Zone.PVP, false);
+                    character.setInsideZone(Zone.SIEGE, false);
 
                     if (character instanceof L2PcInstance) {
                         ((L2PcInstance) character).sendPacket(new SystemMessage(SystemMessageId.LEFT_COMBAT_ZONE));

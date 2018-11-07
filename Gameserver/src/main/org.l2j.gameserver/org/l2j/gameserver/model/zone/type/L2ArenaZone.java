@@ -20,6 +20,7 @@ package org.l2j.gameserver.model.zone.type;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.zone.L2ZoneType;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 
@@ -64,7 +65,7 @@ public class L2ArenaZone extends L2ZoneType
 	@Override
 	protected void onEnter(L2Character character)
 	{
-		character.setInsideZone(L2Character.ZONE_PVP, true);
+		character.setInsideZone(Zone.PVP, true);
 		
 		if (character instanceof L2PcInstance)
 		{
@@ -75,7 +76,7 @@ public class L2ArenaZone extends L2ZoneType
 	@Override
 	protected void onExit(L2Character character)
 	{
-		character.setInsideZone(L2Character.ZONE_PVP, false);
+		character.setInsideZone(Zone.PVP, false);
 		
 		if (character instanceof L2PcInstance)
 		{

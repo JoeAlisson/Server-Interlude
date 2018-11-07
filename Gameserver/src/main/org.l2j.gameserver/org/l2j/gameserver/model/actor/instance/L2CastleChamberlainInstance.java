@@ -31,6 +31,8 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.util.Util;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
@@ -40,11 +42,11 @@ import java.util.StringTokenizer;
  * Castle Chamberlains implementation used for: - tax rate control - regional manor system control - castle treasure control - ...
  */
 public class L2CastleChamberlainInstance extends L2FolkInstance {
-    // private static Logger _log = LoggerFactory.getLogger(L2CastleChamberlainInstance.class.getName());
 
     protected static final int COND_ALL_FALSE = 0;
     protected static final int COND_BUSY_BECAUSE_OF_SIEGE = 1;
     protected static final int COND_OWNER = 2;
+    private static final Logger logger = LoggerFactory.getLogger(L2CastleChamberlainInstance.class);
 
     public L2CastleChamberlainInstance(int objectId, NpcTemplate template) {
         super(objectId, template);
@@ -187,7 +189,7 @@ public class L2CastleChamberlainInstance extends L2FolkInstance {
                 player.tempInvetoryDisable();
 
                 if (Config.DEBUG) {
-                    _log.debug("Showing chamberlain buylist");
+                    logger.debug("Showing chamberlain buylist");
                 }
 
                 int buy;
@@ -206,8 +208,8 @@ public class L2CastleChamberlainInstance extends L2FolkInstance {
                     BuyList bl = new BuyList(list, player.getAdena(), 0);
                     player.sendPacket(bl);
                 } else {
-                    _log.warn("reader: " + player.getName() + " attempting to buy from chamberlain that don't have buylist!");
-                    _log.warn("buylist id:" + buy);
+                    logger.warn("reader: " + player.getName() + " attempting to buy from chamberlain that don't have buylist!");
+                    logger.warn("buylist id:" + buy);
                 }
                 player.sendPacket(new ActionFailed());
             } else if (actualCommand.equalsIgnoreCase("manage_siege_defender")) {

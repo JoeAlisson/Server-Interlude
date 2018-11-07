@@ -32,7 +32,7 @@ import java.util.Map;
  * @author -Nemesiss-
  */
 public class WorldPathFinding extends PathFinding {
-    // private static Logger _log = LoggerFactory.getLogger(WorldPathFinding.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(WorldPathFinding.class.getName());
     private static WorldPathFinding _instance;
     @SuppressWarnings("unused")
     private static Map<Short, ByteBuffer> _pathNodes = new LinkedHashMap<>();

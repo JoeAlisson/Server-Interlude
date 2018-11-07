@@ -29,7 +29,7 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
  */
 public final class L2BossInstance extends L2MonsterInstance
 {
-	// protected static Logger _log = LoggerFactory.getLogger(L2BossInstance.class.getName());
+	// protected static Logger logger = LoggerFactory.getLogger(L2BossInstance.class.getName());
 	private boolean _teleportedToNest;
 	
 	private static final int BOSS_MAINTENANCE_INTERVAL = 10000;

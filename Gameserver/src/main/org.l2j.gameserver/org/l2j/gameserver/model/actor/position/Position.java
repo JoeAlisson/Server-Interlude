@@ -5,7 +5,6 @@ import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.L2WorldRegion;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.util.Point3D;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,8 +22,6 @@ public class Position {
     private volatile int y;
     private volatile int z;
     private int _heading = 0;
-
-
 
     public Position(L2Object activeObject) {
         this.activeObject = activeObject;

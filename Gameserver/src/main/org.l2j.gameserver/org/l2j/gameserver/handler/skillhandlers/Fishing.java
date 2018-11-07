@@ -20,7 +20,7 @@ import static java.util.Objects.isNull;
 
 public class Fishing implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(SiegeFlag.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(SiegeFlag.class.getName());
 	// protected SkillType[] _skillIds = {SkillType.FISHING};
 	private static final SkillType[] SKILL_IDS =
 	{

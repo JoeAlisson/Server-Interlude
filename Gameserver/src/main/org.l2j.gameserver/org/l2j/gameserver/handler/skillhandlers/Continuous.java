@@ -39,7 +39,7 @@ import org.l2j.gameserver.skills.Formulas;
 
 public class Continuous implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(Continuous.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(Continuous.class.getName());
 	
 	private static final SkillType[] SKILL_IDS =
 	{

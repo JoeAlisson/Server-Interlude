@@ -37,7 +37,7 @@ import org.l2j.gameserver.serverpackets.SystemMessage;
  */
 public class AdminDelete implements IAdminCommandHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(AdminDelete.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(AdminDelete.class.getName());
 	
 	private static final String[] ADMIN_COMMANDS =
 	{

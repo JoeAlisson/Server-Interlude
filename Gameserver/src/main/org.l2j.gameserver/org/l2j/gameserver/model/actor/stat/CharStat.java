@@ -29,7 +29,7 @@ public class CharStat {
 	 * <BR>
 	 * <B><U> Concept</U> :</B><BR>
 	 * <BR>
-	 * A L2Character owns a table of Calculators called <B>_calculators</B>. Each Calculator (a calculator per state)
+	 * A L2Character owns a table of Calculators called <B>calculators</B>. Each Calculator (a calculator per state)
      *  own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state
      *  (ex : REGENERATE_HP_RATE...) : <BR>
 	 * <BR>

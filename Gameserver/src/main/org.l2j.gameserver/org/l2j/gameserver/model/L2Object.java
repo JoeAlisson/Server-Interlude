@@ -109,6 +109,7 @@ public abstract class L2Object {
         }
         L2World.getInstance().removeVisibleObject(this, reg);
         L2World.getInstance().removeObject(this);
+        // TODO call onDecay here, no other way around
     }
 
     public final void setVisible(boolean value) {

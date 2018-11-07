@@ -29,7 +29,7 @@ import org.l2j.gameserver.skills.Env;
 public abstract class Condition implements ConditionListener
 {
 	
-	// private static final Logger _log = LoggerFactory.getLogger(Condition.class.getName());
+	// private static final Logger logger = LoggerFactory.getLogger(Condition.class.getName());
 	
 	private ConditionListener _listener;
 	private String _msg;

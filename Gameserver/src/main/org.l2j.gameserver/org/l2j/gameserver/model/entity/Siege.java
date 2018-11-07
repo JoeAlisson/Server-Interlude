@@ -39,6 +39,7 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.SiegeClan;
 import org.l2j.gameserver.model.entity.database.repository.CastleRepository;
 import org.l2j.gameserver.model.entity.database.repository.SiegeClanRepository;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.RelationChanged;
 import org.l2j.gameserver.serverpackets.SiegeInfo;
@@ -613,7 +614,7 @@ public class Siege {
 
         for (L2PcInstance player : L2World.getInstance().getAllPlayers()) {
             // quick check from reader states, which don't include siege number however
-            if (!player.isInsideZone(L2Character.ZONE_SIEGE) || (player.getSiegeState() != 0)) {
+            if (!player.isInsideZone(Zone.SIEGE) || (player.getSiegeState() != 0)) {
                 continue;
             }
             if (checkIfInZone(player.getX(), player.getY(), player.getZ())) {

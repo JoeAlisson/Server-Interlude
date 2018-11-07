@@ -41,7 +41,7 @@ import java.util.List;
  */
 
 public class Resurrect implements ISkillHandler {
-    // private static Logger _log = LoggerFactory.getLogger(Resurrect.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(Resurrect.class.getName());
 
     private static final SkillType[] SKILL_IDS =
             {

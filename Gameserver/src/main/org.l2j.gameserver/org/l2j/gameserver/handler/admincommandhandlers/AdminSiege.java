@@ -41,7 +41,7 @@ import java.util.StringTokenizer;
  * This class handles allTemplates siege commands: Todo: change the class name, and neaten it up
  */
 public class AdminSiege implements IAdminCommandHandler {
-    // private static Logger _log = LoggerFactory.getLogger(AdminSiege.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(AdminSiege.class.getName());
 
     private static final String[] ADMIN_COMMANDS =
             {

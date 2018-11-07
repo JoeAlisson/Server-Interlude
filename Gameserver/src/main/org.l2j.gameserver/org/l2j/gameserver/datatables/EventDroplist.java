@@ -31,7 +31,7 @@ import java.util.List;
  */
 public class EventDroplist {
 
-    // private static Logger _log = LoggerFactory.getLogger(EventDroplist.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(EventDroplist.class.getName());
 
     private static EventDroplist _instance;
 

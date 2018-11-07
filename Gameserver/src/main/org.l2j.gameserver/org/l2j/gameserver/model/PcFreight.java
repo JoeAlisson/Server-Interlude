@@ -24,7 +24,7 @@ import java.util.List;
 
 
 public class PcFreight extends ItemContainer {
-    // private static final Logger _log = LoggerFactory.getLogger(PcFreight.class.getName());
+    // private static final Logger logger = LoggerFactory.getLogger(PcFreight.class.getName());
 
     private final L2PcInstance _owner; // This is the L2PcInstance that owns this Freight;
     private int _activeLocationId;

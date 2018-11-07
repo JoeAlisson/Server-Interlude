@@ -31,7 +31,7 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
  */
 public final class L2MinionInstance extends L2MonsterInstance
 {
-	// private static Logger _log = LoggerFactory.getLogger(L2RaidMinionInstance.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(L2RaidMinionInstance.class.getName());
 	
 	/** The master L2Character whose depends this L2MinionInstance on */
 	private L2MonsterInstance _master;
@@ -41,7 +41,7 @@ public final class L2MinionInstance extends L2MonsterInstance
 	 * <BR>
 	 * <B><U> Actions</U> :</B><BR>
 	 * <BR>
-	 * <li>Call the L2Character constructor to set the _template of the L2MinionInstance (copy skills from template to object and link _calculators to NPC_STD_CALCULATOR)</li> <li>Set the name of the L2MinionInstance</li> <li>Create a RandomAnimation Task that will be launched after the calculated
+	 * <li>Call the L2Character constructor to set the _template of the L2MinionInstance (copy skills from template to object and link calculators to NPC_STD_CALCULATOR)</li> <li>Set the name of the L2MinionInstance</li> <li>Create a RandomAnimation Task that will be launched after the calculated
 	 * delay if the server allow it</li><BR>
 	 * <BR>
 	 * @param objectId Identifier of the object to initialized

@@ -22,7 +22,7 @@ import static java.util.Objects.nonNull;
  */
 public class StrSiegeAssault implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(StrSiegeAssault.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(StrSiegeAssault.class.getName());
 	private static final SkillType[] SKILL_IDS =
 	{
 		SkillType.STRSIEGEASSAULT

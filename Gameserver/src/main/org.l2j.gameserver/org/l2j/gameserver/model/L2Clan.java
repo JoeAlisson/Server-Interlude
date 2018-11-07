@@ -31,6 +31,7 @@ import org.l2j.gameserver.model.entity.database.Clan;
 import org.l2j.gameserver.model.entity.database.ClanSkills;
 import org.l2j.gameserver.model.entity.database.ClanSubpledges;
 import org.l2j.gameserver.model.entity.database.repository.*;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.util.Util;
@@ -1016,7 +1017,7 @@ public class L2Clan {
 
     public int getAvailablePledgeTypes(int pledgeType) {
         if (_subPledges.get(pledgeType) != null) {
-            // _log.warn("found sub-unit with id: "+pledgeType);
+            // logger.warn("found sub-unit with id: "+pledgeType);
             switch (pledgeType) {
                 case SUBUNIT_ACADEMY:
                     return 0;
@@ -1323,7 +1324,7 @@ public class L2Clan {
                 return false;
             }
         }
-        if (activeChar.isInsideZone(L2Character.ZONE_SIEGE) && target.isInsideZone(L2Character.ZONE_SIEGE)) {
+        if (activeChar.isInsideZone(Zone.SIEGE) && target.isInsideZone(Zone.SIEGE)) {
             activeChar.sendPacket(new SystemMessage(SystemMessageId.OPPOSING_CLAN_IS_PARTICIPATING_IN_SIEGE));
             return false;
         }
@@ -1439,7 +1440,7 @@ public class L2Clan {
             player.sendPacket(new SystemMessage(SystemMessageId.FEATURE_ONLY_FOR_ALLIANCE_LEADER));
             return;
         }
-        if (player.isInsideZone(L2Character.ZONE_SIEGE)) {
+        if (player.isInsideZone(Zone.SIEGE)) {
             player.sendPacket(new SystemMessage(SystemMessageId.CANNOT_DISSOLVE_ALLY_WHILE_IN_SIEGE));
             return;
         }

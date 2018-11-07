@@ -39,7 +39,7 @@ import java.util.concurrent.ScheduledFuture;
  */
 public class L2MonsterInstance extends L2Attackable
 {
-	// private static Logger _log = LoggerFactory.getLogger(L2MonsterInstance.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(L2MonsterInstance.class.getName());
 	
 	protected final MinionList _minionList;
 	
@@ -52,7 +52,7 @@ public class L2MonsterInstance extends L2Attackable
 	 * <BR>
 	 * <B><U> Actions</U> :</B><BR>
 	 * <BR>
-	 * <li>Call the L2Character constructor to set the _template of the L2MonsterInstance (copy skills from template to object and link _calculators to NPC_STD_CALCULATOR)</li> <li>Set the name of the L2MonsterInstance</li> <li>Create a RandomAnimation Task that will be launched after the calculated
+	 * <li>Call the L2Character constructor to set the _template of the L2MonsterInstance (copy skills from template to object and link calculators to NPC_STD_CALCULATOR)</li> <li>Set the name of the L2MonsterInstance</li> <li>Create a RandomAnimation Task that will be launched after the calculated
 	 * delay if the server allow it</li><BR>
 	 * <BR>
 	 * @param objectId Identifier of the object to initialized

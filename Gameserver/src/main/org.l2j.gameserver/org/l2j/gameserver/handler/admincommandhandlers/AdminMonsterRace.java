@@ -36,7 +36,7 @@ import org.l2j.gameserver.serverpackets.SystemMessage;
  */
 public class AdminMonsterRace implements IAdminCommandHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(AdminMonsterRace.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(AdminMonsterRace.class.getName());
 	
 	private static final String[] ADMIN_COMMANDS =
 	{

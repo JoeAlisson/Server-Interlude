@@ -62,7 +62,7 @@ public class EnterWorld extends L2GameClientPacket {
 		{
 			if (Config.DEBUG)
 			{
-				_log.warn("User already exist in OID map! User " + activeChar.getName() + " is character clone");
+				logger.warn("User already exist in OID map! User " + activeChar.getName() + " is character clone");
 				// activeChar.closeNetConnection();
 			}
 		}
@@ -300,7 +300,7 @@ public class EnterWorld extends L2GameClientPacket {
 			}
 		}
 		
-		if (!activeChar.isGM() && (activeChar.getSiegeState() < 2) && activeChar.isInsideZone(L2Character.ZONE_SIEGE))
+		if (!activeChar.isGM() && (activeChar.getSiegeState() < 2) && activeChar.isInsideZone(Zone.SIEGE))
 		{
 			// Attacker or spectator logging in to a siege zone. Actually should be checked for inside castle only?
 			activeChar.teleToLocation(MapRegionTable.TeleportWhereType.Town);

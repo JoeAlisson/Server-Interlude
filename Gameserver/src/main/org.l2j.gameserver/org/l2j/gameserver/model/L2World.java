@@ -19,7 +19,6 @@
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
-import org.l2j.gameserver.GmListTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
@@ -324,6 +323,7 @@ public final class L2World {
         // removeObject(object);
 
         if (oldRegion != null) {
+            // TODO remove from zones
             // Remove the object from the L2ObjectHashSet(L2Object) _visibleObjects of L2WorldRegion
             // If object is a L2PcInstance, remove it from the L2ObjectHashSet(L2PcInstance) _allPlayers of this L2WorldRegion
             oldRegion.removeVisibleObject(object);

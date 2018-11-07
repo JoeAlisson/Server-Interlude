@@ -24,6 +24,7 @@ import org.l2j.gameserver.model.Location;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.ClanHall;
 import org.l2j.gameserver.model.zone.L2ZoneType;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.serverpackets.ClanHallDecoration;
 
 /**
@@ -72,7 +73,7 @@ public class L2ClanHallZone extends L2ZoneType {
 		if (character instanceof L2PcInstance)
 		{
 			// Set as in clan hall
-			character.setInsideZone(L2Character.ZONE_CLANHALL, true);
+			character.setInsideZone(Zone.CLAN_HALL, true);
 			
 			ClanHall clanHall = ClanHallManager.getInstance().getClanHallById(_clanHallId);
 			if (clanHall == null)
@@ -98,7 +99,7 @@ public class L2ClanHallZone extends L2ZoneType {
 		if (character instanceof L2PcInstance)
 		{
 			// Unset clanhall zone
-			character.setInsideZone(L2Character.ZONE_CLANHALL, false);
+			character.setInsideZone(Zone.CLAN_HALL, false);
 			
 			// Send a message
 			if ((((L2PcInstance) character).getClanId() != 0) && (ClanHallManager.getInstance().getClanHallById(_clanHallId).getOwnerId() == ((L2PcInstance) character).getClanId()))

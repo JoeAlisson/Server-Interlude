@@ -33,7 +33,7 @@ import java.util.StringTokenizer;
  * @author Maktakien
  */
 public class AdminPForge implements IAdminCommandHandler {
-    // private static Logger _log = LoggerFactory.getLogger(AdminKick.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(AdminKick.class.getName());
     private static final String[] ADMIN_COMMANDS =
             {
                     "admin_forge",

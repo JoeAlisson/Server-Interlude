@@ -36,7 +36,7 @@ import org.l2j.gameserver.model.entity.Castle;
  */
 public class AdminDoorControl implements IAdminCommandHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(AdminDoorControl.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(AdminDoorControl.class.getName());
 	private static final int REQUIRED_LEVEL = Config.GM_DOOR;
 	private static DoorTable _doorTable;
 	private static final String[] ADMIN_COMMANDS =

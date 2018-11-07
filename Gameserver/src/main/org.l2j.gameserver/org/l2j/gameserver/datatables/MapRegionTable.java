@@ -29,13 +29,14 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.entity.ClanHall;
 import org.l2j.gameserver.model.entity.database.repository.MapRegionRepository;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.model.zone.type.L2ArenaZone;
 import org.l2j.gameserver.model.zone.type.L2ClanHallZone;
 
 import java.util.List;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 
 public class MapRegionTable {
@@ -300,7 +301,7 @@ public class MapRegionTable {
 			L2PcInstance player = ((L2PcInstance) activeChar);
 			
 			// If in Monster Derby Track
-			if (player.isInsideZone(L2Character.ZONE_MONSTERTRACK))
+			if (player.isInsideZone(Zone.MONSTER_TRACK))
 			{
 				return new Location(12661, 181687, -3560);
 			}

@@ -27,7 +27,7 @@ import org.l2j.gameserver.serverpackets.HennaEquipList;
  * @version $Revision$ $Date$
  */
 public class L2SymbolMakerInstance extends L2FolkInstance {
-    // private static Logger _log = LoggerFactory.getLogger(L2SymbolMakerInstance.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(L2SymbolMakerInstance.class.getName());
 
     @Override
     public void onBypassFeedback(L2PcInstance player, String command) {

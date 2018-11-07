@@ -207,7 +207,7 @@ public abstract class L2Effect {
             _currentTask = null;
             _periodfirsttime = newfirsttime;
             int duration = _period - _periodfirsttime;
-            // _log.warn("Period: "+_period+"-"+_periodfirsttime+"="+duration);
+            // logger.warn("Period: "+_period+"-"+_periodfirsttime+"="+duration);
             _currentTask = new EffectTask(duration * 1000, -1);
             _currentFuture = ThreadPoolManager.getInstance().scheduleEffect(_currentTask, duration * 1000);
         }

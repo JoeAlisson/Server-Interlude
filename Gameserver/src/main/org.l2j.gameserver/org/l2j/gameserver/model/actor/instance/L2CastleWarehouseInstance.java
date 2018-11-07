@@ -4,6 +4,8 @@ import org.l2j.gameserver.model.L2Clan;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -14,7 +16,8 @@ public class L2CastleWarehouseInstance extends L2FolkInstance
 	protected static final int COND_ALL_FALSE = 0;
 	protected static final int COND_BUSY_BECAUSE_OF_SIEGE = 1;
 	protected static final int COND_OWNER = 2;
-	
+	private static final Logger logger  = LoggerFactory.getLogger(L2CastleWarehouseInstance.class);
+
 	/**
 	 * @param objectId
 	 * @param template
@@ -95,7 +98,7 @@ public class L2CastleWarehouseInstance extends L2FolkInstance
 	{
 		if (player.getActiveEnchantItem() != null)
 		{
-			_log.info("Player " + player.getName() + " trying to use enchant exploit, ban this reader!");
+			logger.info("Player " + player.getName() + " trying to use enchant exploit, ban this reader!");
 			player.closeNetConnection();
 			return;
 		}

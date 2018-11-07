@@ -20,6 +20,7 @@ package org.l2j.gameserver.model.zone.type;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.zone.L2ZoneType;
+import org.l2j.gameserver.model.zone.Zone;
 
 /**
  * A no landing zone
@@ -35,7 +36,7 @@ public class L2NoLandingZone extends L2ZoneType {
 	{
 		if (character instanceof L2PcInstance)
 		{
-			character.setInsideZone(L2Character.ZONE_NOLANDING, true);
+			character.setInsideZone(Zone.NO_LANDING, true);
 		}
 	}
 	
@@ -44,7 +45,7 @@ public class L2NoLandingZone extends L2ZoneType {
 	{
 		if (character instanceof L2PcInstance)
 		{
-			character.setInsideZone(L2Character.ZONE_NOLANDING, false);
+			character.setInsideZone(Zone.NO_LANDING, false);
 		}
 	}
 	

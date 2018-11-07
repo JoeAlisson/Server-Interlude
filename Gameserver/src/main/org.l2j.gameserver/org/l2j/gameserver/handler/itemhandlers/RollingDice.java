@@ -20,10 +20,10 @@ package org.l2j.gameserver.handler.itemhandlers;
 
 import org.l2j.commons.util.Rnd;
 import org.l2j.gameserver.handler.IItemHandler;
-import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.Dice;
 import org.l2j.gameserver.serverpackets.SystemMessage;
@@ -80,7 +80,7 @@ public class RollingDice implements IItemHandler
 			sm.addNumber(number);
 			
 			activeChar.sendPacket(sm);
-			if (activeChar.isInsideZone(L2Character.ZONE_PEACE))
+			if (activeChar.isInsideZone(Zone.PEACE))
 			{
 				Broadcast.toKnownPlayers(activeChar, sm);
 			}

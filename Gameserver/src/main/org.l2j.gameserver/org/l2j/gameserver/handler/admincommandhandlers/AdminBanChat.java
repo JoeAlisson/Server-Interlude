@@ -34,7 +34,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
  */
 public class AdminBanChat implements IAdminCommandHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(AdminBan.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(AdminBan.class.getName());
 	private static final String[] ADMIN_COMMANDS =
 	{
 		"admin_banchat",

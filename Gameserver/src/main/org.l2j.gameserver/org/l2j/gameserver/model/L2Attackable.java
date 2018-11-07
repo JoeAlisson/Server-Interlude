@@ -38,9 +38,10 @@ import org.l2j.gameserver.serverpackets.CreatureSay;
 import org.l2j.gameserver.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Stats;
-import org.l2j.gameserver.templates.ItemType;
 import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 import org.l2j.gameserver.util.Util;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -60,7 +61,7 @@ import static org.l2j.gameserver.templates.NpcType.L2Monster;
  * @version $Revision: 1.24.2.3.2.16 $ $Date: 2005/04/11 19:11:21 $
  */
 public class L2Attackable extends L2NpcInstance {
-    // protected static Logger _log = LoggerFactory.getLogger(L2Attackable.class.getName());
+     protected static Logger logger = LoggerFactory.getLogger(L2Attackable.class);
 
     /**
      * This class contains allTemplates AggroInfo of the L2Attackable against the attacker L2Character.<BR>
@@ -315,7 +316,7 @@ public class L2Attackable extends L2NpcInstance {
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>Call the L2Character constructor to set the _template of the L2Attackable (copy skills from template to object and link _calculators to NPC_STD_CALCULATOR)</li> <li>Set the name of the L2Attackable</li> <li>Create a RandomAnimation Task that will be launched after the calculated delay if
+     * <li>Call the L2Character constructor to set the _template of the L2Attackable (copy skills from template to object and link calculators to NPC_STD_CALCULATOR)</li> <li>Set the name of the L2Attackable</li> <li>Create a RandomAnimation Task that will be launched after the calculated delay if
      * the server allow it</li><BR>
      * <BR>
      *
@@ -469,7 +470,7 @@ public class L2Attackable extends L2NpcInstance {
                 levelSoulCrystals(killer);
             }
         } catch (Exception e) {
-            _log.error( "", e);
+            logger.error( "", e);
         }
 
         // Notify the Quest Engine of the L2Attackable death if necessary
@@ -484,7 +485,7 @@ public class L2Attackable extends L2NpcInstance {
                 }
             }
         } catch (Exception e) {
-            _log.error( "", e);
+            logger.error( "", e);
         }
         setChampion(false);
         if (Config.L2JMOD_CHAMPION_ENABLE) {
@@ -772,7 +773,7 @@ public class L2Attackable extends L2NpcInstance {
             rewards = null;
 
         } catch (Exception e) {
-            _log.error( "", e);
+            logger.error( "", e);
         }
     }
 
@@ -844,7 +845,7 @@ public class L2Attackable extends L2NpcInstance {
                     }
                 }
             } catch (Exception e) {
-                _log.error( "", e);
+                logger.error( "", e);
             }
         }
     }
@@ -1072,7 +1073,7 @@ public class L2Attackable extends L2NpcInstance {
         if (itemCount > 0) {
             return new RewardItem(drop.getItemId(), itemCount);
         } else if ((itemCount == 0) && Config.DEBUG) {
-            _log.debug("Roll produced 0 items to drop...");
+            logger.debug("Roll produced 0 items to drop...");
         }
 
         return null;
@@ -1209,7 +1210,7 @@ public class L2Attackable extends L2NpcInstance {
             if (itemCount > 0) {
                 return new RewardItem(drop.getItemId(), itemCount);
             } else if ((itemCount == 0) && Config.DEBUG) {
-                _log.debug("Roll produced 0 items to drop...");
+                logger.debug("Roll produced 0 items to drop...");
             }
         }
         return null;
@@ -1217,7 +1218,7 @@ public class L2Attackable extends L2NpcInstance {
         /*
          * // Applies Drop rates if (drop.getId() == 57) dropChance *= Config.RATE_DROP_ADENA; else if (isSweep) dropChance *= Config.RATE_DROP_SPOIL; else dropChance *= Config.RATE_DROP_ITEMS; // Round drop chance dropChance = Math.round(dropChance); // Set our limits for chance of drop if
          * (dropChance < 1) dropChance = 1; // if (drop.getId() == 57 && dropChance > L2DropData.MAX_CHANCE) dropChance = L2DropData.MAX_CHANCE; // If item is adena, dont drop multiple time // Get min and max Item quantity that can be dropped in one time int minCount = drop.getMinDrop(); int
-         * maxCount = drop.getMaxDrop(); int itemCount = 0; if (itemCount > 0) return new RewardItem(drop.getId(), itemCount); else if (itemCount == 0 && Config.DEBUG) _log.debug("Roll produced 0 items to drop..."); return null;
+         * maxCount = drop.getMaxDrop(); int itemCount = 0; if (itemCount > 0) return new RewardItem(drop.getId(), itemCount); else if (itemCount == 0 && Config.DEBUG) logger.debug("Roll produced 0 items to drop..."); return null;
          */
     }
 
@@ -1304,7 +1305,7 @@ public class L2Attackable extends L2NpcInstance {
                         }
 
                         if (Config.DEBUG) {
-                            _log.debug("Item id to spoil: " + item.getItemId() + " amount: " + item.getCount());
+                            logger.debug("Item id to spoil: " + item.getItemId() + " amount: " + item.getCount());
                         }
                         sweepList.add(item);
                     }
@@ -1328,7 +1329,7 @@ public class L2Attackable extends L2NpcInstance {
 
                 if (item != null) {
                     if (Config.DEBUG) {
-                        _log.debug("Item id to drop: " + item.getItemId() + " amount: " + item.getCount());
+                        logger.debug("Item id to drop: " + item.getItemId() + " amount: " + item.getCount());
                     }
 
                     // Check if the autoLoot mode is active
@@ -1935,7 +1936,7 @@ public class L2Attackable extends L2NpcInstance {
                                     crystalNEW = id + 1;
                                 }
                             } catch (NumberFormatException nfe) {
-                                _log.warn( "An attempt to identify a soul crystal failed, " + "verify the names have not changed in etcitem " + "table.", nfe);
+                                logger.warn( "An attempt to identify a soul crystal failed, " + "verify the names have not changed in etcitem " + "table.", nfe);
 
                                 player.sendMessage("There has been an error handling your soul crystal." + " Please notify your server admin.");
 

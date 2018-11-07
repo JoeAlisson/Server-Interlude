@@ -6,6 +6,7 @@ import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.datatables.SkillTreeTable;
 import org.l2j.gameserver.model.actor.instance.*;
 import org.l2j.gameserver.model.base.PlayerClass;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.EtcStatusUpdate;
 import org.l2j.gameserver.serverpackets.SystemMessage;
@@ -1222,7 +1223,7 @@ public abstract class L2Skill {
             }
             case TARGET_AURA: {
                 int radius = getSkillRadius();
-                boolean srcInArena = (activeChar.isInsideZone(L2Character.ZONE_PVP) && !activeChar.isInsideZone(L2Character.ZONE_SIEGE));
+                boolean srcInArena = (activeChar.isInsideZone(Zone.PVP) && !activeChar.isInsideZone(Zone.SIEGE));
 
                 L2PcInstance src = null;
                 if (activeChar instanceof L2PcInstance) {
@@ -1251,7 +1252,7 @@ public abstract class L2Skill {
                                 if (((src.getParty() != null) && (((L2PcInstance) obj).getParty() != null)) && (src.getParty().getPartyLeaderOID() == ((L2PcInstance) obj).getParty().getPartyLeaderOID())) {
                                     continue;
                                 }
-                                if (!srcInArena && !(((L2Character) obj).isInsideZone(L2Character.ZONE_PVP) && !((L2Character) obj).isInsideZone(L2Character.ZONE_SIEGE))) {
+                                if (!srcInArena && !(((L2Character) obj).isInsideZone(Zone.PVP) && !((L2Character) obj).isInsideZone(Zone.SIEGE))) {
                                     if ((src.getClanId() != 0) && (src.getClanId() == ((L2PcInstance) obj).getClanId())) {
                                         continue;
                                     }
@@ -1268,7 +1269,7 @@ public abstract class L2Skill {
                                 if (((src.getParty() != null) && (trg.getParty() != null)) && (src.getParty().getPartyLeaderOID() == trg.getParty().getPartyLeaderOID())) {
                                     continue;
                                 }
-                                if (!srcInArena && !(((L2Character) obj).isInsideZone(L2Character.ZONE_PVP) && !((L2Character) obj).isInsideZone(L2Character.ZONE_SIEGE))) {
+                                if (!srcInArena && !(((L2Character) obj).isInsideZone(Zone.PVP) && !((L2Character) obj).isInsideZone(Zone.SIEGE))) {
                                     if ((src.getClanId() != 0) && (src.getClanId() == trg.getClanId())) {
                                         continue;
                                     }
@@ -1327,7 +1328,7 @@ public abstract class L2Skill {
 
                 int radius = getSkillRadius();
 
-                boolean srcInArena = (activeChar.isInsideZone(L2Character.ZONE_PVP) && !activeChar.isInsideZone(L2Character.ZONE_SIEGE));
+                boolean srcInArena = (activeChar.isInsideZone(Zone.PVP) && !activeChar.isInsideZone(Zone.SIEGE));
 
                 for (L2Object obj : activeChar.getKnownList().getKnownObjects().values()) {
                     if (obj == null) {
@@ -1362,11 +1363,11 @@ public abstract class L2Skill {
                                     continue;
                                 }
 
-                                if (trg.isInsideZone(L2Character.ZONE_PEACE)) {
+                                if (trg.isInsideZone(Zone.PEACE)) {
                                     continue;
                                 }
 
-                                if (!srcInArena && !(trg.isInsideZone(L2Character.ZONE_PVP) && !trg.isInsideZone(L2Character.ZONE_SIEGE))) {
+                                if (!srcInArena && !(trg.isInsideZone(Zone.PVP) && !trg.isInsideZone(Zone.SIEGE))) {
                                     if ((src.getAllianceId() == trg.getAllianceId()) && (src.getAllianceId() != 0)) {
                                         continue;
                                     }
@@ -1392,7 +1393,7 @@ public abstract class L2Skill {
                                     continue;
                                 }
 
-                                if (!srcInArena && !(trg.isInsideZone(L2Character.ZONE_PVP) && !trg.isInsideZone(L2Character.ZONE_SIEGE))) {
+                                if (!srcInArena && !(trg.isInsideZone(Zone.PVP) && !trg.isInsideZone(Zone.SIEGE))) {
                                     if ((src.getAllianceId() == trg.getAllianceId()) && (src.getAllianceId() != 0)) {
                                         continue;
                                     }
@@ -1408,7 +1409,7 @@ public abstract class L2Skill {
                                     }
                                 }
 
-                                if (((L2Summon) obj).isInsideZone(L2Character.ZONE_PEACE)) {
+                                if (((L2Summon) obj).isInsideZone(Zone.PEACE)) {
                                     continue;
                                 }
                             }
@@ -1587,7 +1588,7 @@ public abstract class L2Skill {
                                 }
                                 if (getSkillType() == SkillType.RESURRECT) {
                                     // check target is not in a active siege zone
-                                    if (((L2PcInstance) newTarget).isInsideZone(L2Character.ZONE_SIEGE)) {
+                                    if (((L2PcInstance) newTarget).isInsideZone(Zone.SIEGE)) {
                                         continue;
                                     }
                                 }
@@ -1657,7 +1658,7 @@ public abstract class L2Skill {
                                 }
                                 if (getSkillType() == SkillType.RESURRECT) {
                                     // check target is not in a active siege zone
-                                    if (newTarget.isInsideZone(L2Character.ZONE_SIEGE)) {
+                                    if (newTarget.isInsideZone(Zone.SIEGE)) {
                                         continue;
                                     }
                                 }
@@ -1713,7 +1714,7 @@ public abstract class L2Skill {
 
                         if (getSkillType() == SkillType.RESURRECT) {
                             // check target is not in a active siege zone
-                            if (target.isInsideZone(L2Character.ZONE_SIEGE)) {
+                            if (target.isInsideZone(Zone.SIEGE)) {
                                 condGood = false;
                                 player.sendPacket(new SystemMessage(SystemMessageId.CANNOT_BE_RESURRECTED_DURING_SIEGE));
                             }
@@ -1782,7 +1783,7 @@ public abstract class L2Skill {
                             };
                 }
 
-                boolean srcInArena = (activeChar.isInsideZone(L2Character.ZONE_PVP) && !activeChar.isInsideZone(L2Character.ZONE_SIEGE));
+                boolean srcInArena = (activeChar.isInsideZone(Zone.PVP) && !activeChar.isInsideZone(Zone.SIEGE));
                 L2PcInstance src = null;
                 if (activeChar instanceof L2PcInstance) {
                     src = (L2PcInstance) activeChar;
@@ -1814,11 +1815,11 @@ public abstract class L2Skill {
                                 continue;
                             }
 
-                            if (trg.isInsideZone(L2Character.ZONE_PEACE)) {
+                            if (trg.isInsideZone(Zone.PEACE)) {
                                 continue;
                             }
 
-                            if (!srcInArena && !(trg.isInsideZone(L2Character.ZONE_PVP) && !trg.isInsideZone(L2Character.ZONE_SIEGE))) {
+                            if (!srcInArena && !(trg.isInsideZone(Zone.PVP) && !trg.isInsideZone(Zone.SIEGE))) {
                                 if ((src.getAllianceId() == trg.getAllianceId()) && (src.getAllianceId() != 0)) {
                                     continue;
                                 }
@@ -1841,7 +1842,7 @@ public abstract class L2Skill {
                                 continue;
                             }
 
-                            if (!srcInArena && !(trg.isInsideZone(L2Character.ZONE_PVP) && !trg.isInsideZone(L2Character.ZONE_SIEGE))) {
+                            if (!srcInArena && !(trg.isInsideZone(Zone.PVP) && !trg.isInsideZone(Zone.SIEGE))) {
                                 if ((src.getAllianceId() == trg.getAllianceId()) && (src.getAllianceId() != 0)) {
                                     continue;
                                 }
@@ -1857,7 +1858,7 @@ public abstract class L2Skill {
                                 }
                             }
 
-                            if (((L2Summon) obj).isInsideZone(L2Character.ZONE_PEACE)) {
+                            if (((L2Summon) obj).isInsideZone(Zone.PEACE)) {
                                 continue;
                             }
                         }
@@ -1979,7 +1980,7 @@ public abstract class L2Skill {
             case TARGET_ENEMY_SUMMON: {
                 if ((target != null) && (target instanceof L2Summon)) {
                     L2Summon targetSummon = (L2Summon) target;
-                    if (((activeChar instanceof L2PcInstance) && (activeChar.getPet() != targetSummon) && !targetSummon.isDead() && ((targetSummon.getOwner().getPvpFlag() != 0) || (targetSummon.getOwner().getKarma() > 0))) || (targetSummon.getOwner().isInsideZone(L2Character.ZONE_PVP) && ((L2PcInstance) activeChar).isInsideZone(L2Character.ZONE_PVP))) {
+                    if (((activeChar instanceof L2PcInstance) && (activeChar.getPet() != targetSummon) && !targetSummon.isDead() && ((targetSummon.getOwner().getPvpFlag() != 0) || (targetSummon.getOwner().getKarma() > 0))) || (targetSummon.getOwner().isInsideZone(Zone.PVP) && ((L2PcInstance) activeChar).isInsideZone(Zone.PVP))) {
                         return new L2Character[]
                                 {
                                         targetSummon

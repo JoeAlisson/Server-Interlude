@@ -22,20 +22,23 @@ import org.l2j.gameserver.TradeController;
 import org.l2j.gameserver.ai.Intention;
 import org.l2j.gameserver.instancemanager.CastleManager;
 import org.l2j.gameserver.instancemanager.CastleManorManager;
-import org.l2j.gameserver.model.entity.database.SeedProduction;
 import org.l2j.gameserver.model.entity.database.MerchantItem;
 import org.l2j.gameserver.model.entity.database.MerchantShop;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
+import org.l2j.gameserver.model.entity.database.SeedProduction;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.StringTokenizer;
 
 
 public class L2ManorManagerInstance extends L2MerchantInstance {
+    private static final Logger logger = LoggerFactory.getLogger(L2ManorManagerInstance.class);
 
-    // private static Logger _log = LoggerFactory.getLogger(L2ManorManagerInstance.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(L2ManorManagerInstance.class.getName());
 
     public L2ManorManagerInstance(int objectId, NpcTemplate template) {
         super(objectId, template);
@@ -99,8 +102,8 @@ public class L2ManorManagerInstance extends L2MerchantInstance {
             BuyList bl = new BuyList(list, player.getAdena(), taxRate);
             player.sendPacket(bl);
         } else {
-            _log.info("possible client hacker: " + player.getName() + " attempting to buy from GM shop! < Ban him!");
-            _log.info("buylist id:" + val);
+            logger.info("possible client hacker: " + player.getName() + " attempting to buy from GM shop! < Ban him!");
+            logger.info("buylist id:" + val);
         }
 
         player.sendPacket(new ActionFailed());

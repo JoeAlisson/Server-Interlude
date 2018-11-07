@@ -29,6 +29,8 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.ActionFailed;
 import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
 import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.StringTokenizer;
 
@@ -43,8 +45,9 @@ public final class L2TeleporterInstance extends L2FolkInstance
 	private static final int COND_BUSY_BECAUSE_OF_SIEGE = 1;
 	private static final int COND_OWNER = 2;
 	private static final int COND_REGULAR = 3;
-	
-	/**
+    private static final Logger logger = LoggerFactory.getLogger(L2TeleporterInstance.class);
+
+    /**
 	 * @param objectId
 	 * @param template
 	 */
@@ -224,7 +227,7 @@ public final class L2TeleporterInstance extends L2FolkInstance
 			{
 				if (Config.DEBUG)
 				{
-					_log.debug("Teleporting reader " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
+					logger.debug("Teleporting reader " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
 				}
 				player.teleToLocation(list.getLocX(), list.getLocY(), list.getLocZ(), true);
 			}
@@ -232,14 +235,14 @@ public final class L2TeleporterInstance extends L2FolkInstance
 			{
 				if (Config.DEBUG)
 				{
-					_log.debug("Teleporting reader " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
+					logger.debug("Teleporting reader " + player.getName() + " to new location: " + list.getLocX() + ":" + list.getLocY() + ":" + list.getLocZ());
 				}
 				player.teleToLocation(list.getLocX(), list.getLocY(), list.getLocZ(), true);
 			}
 		}
 		else
 		{
-			_log.warn("No teleport destination with id:" + val);
+			logger.warn("No teleport destination with id:" + val);
 		}
 		player.sendPacket(new ActionFailed());
 	}

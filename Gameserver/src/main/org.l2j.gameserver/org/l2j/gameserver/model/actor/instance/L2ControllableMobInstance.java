@@ -23,7 +23,8 @@ import org.l2j.gameserver.ai.Intention;
 import org.l2j.gameserver.ai.L2ControllableMobAI;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author littlecrow
@@ -32,7 +33,8 @@ public class L2ControllableMobInstance extends L2MonsterInstance
 {
 	private boolean _isInvul;
 	private L2ControllableMobAI _aiBackup; // to save ai, avoiding beeing detached
-	
+	private static final Logger logger = LoggerFactory.getLogger(L2ControllableMobInstance.class);
+
 	public class ControllableAIAcessor extends AIAccessor
 	{
 
@@ -126,7 +128,7 @@ public class L2ControllableMobInstance extends L2MonsterInstance
 			// then overhit may be calculated
 			if (Config.DEBUG)
 			{
-				_log.debug("char is dead.");
+				logger.debug("char is dead.");
 			}
 			
 			stopMove(null);

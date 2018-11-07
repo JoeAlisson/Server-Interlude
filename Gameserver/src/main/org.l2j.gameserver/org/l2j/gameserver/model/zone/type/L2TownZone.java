@@ -21,6 +21,7 @@ import org.l2j.commons.Config;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.zone.L2ZoneType;
+import org.l2j.gameserver.model.zone.Zone;
 
 /**
  * A Town zone
@@ -106,7 +107,7 @@ public class L2TownZone extends L2ZoneType
 		
 		if (!_noPeace && (Config.ZONE_TOWN != 2))
 		{
-			character.setInsideZone(L2Character.ZONE_PEACE, true);
+			character.setInsideZone(Zone.PEACE, true);
 		}
 		
 	}
@@ -116,7 +117,7 @@ public class L2TownZone extends L2ZoneType
 	{
 		if (!_noPeace)
 		{
-			character.setInsideZone(L2Character.ZONE_PEACE, false);
+			character.setInsideZone(Zone.PEACE, false);
 		}
 		
 		// if (character instanceof L2PcInstance)

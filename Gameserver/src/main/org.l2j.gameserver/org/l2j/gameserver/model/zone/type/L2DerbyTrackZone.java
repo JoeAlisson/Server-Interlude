@@ -19,6 +19,7 @@ package org.l2j.gameserver.model.zone.type;
 
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
+import org.l2j.gameserver.model.zone.Zone;
 
 /**
  * The Monster Derby Track Zone
@@ -36,7 +37,7 @@ public class L2DerbyTrackZone extends L2PeaceZone
 	{
 		if (character instanceof L2PcInstance)
 		{
-			character.setInsideZone(L2Character.ZONE_MONSTERTRACK, true);
+			character.setInsideZone(Zone.MONSTER_TRACK, true);
 		}
 		super.onEnter(character);
 	}
@@ -46,7 +47,7 @@ public class L2DerbyTrackZone extends L2PeaceZone
 	{
 		if (character instanceof L2PcInstance)
 		{
-			character.setInsideZone(L2Character.ZONE_MONSTERTRACK, false);
+			character.setInsideZone(Zone.MONSTER_TRACK, false);
 		}
 		super.onExit(character);
 	}

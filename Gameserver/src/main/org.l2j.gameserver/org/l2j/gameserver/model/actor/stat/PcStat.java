@@ -6,6 +6,7 @@ import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.base.Experience;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.skills.Stats;
@@ -31,7 +32,7 @@ public class PcStat extends PlayableStat {
 	public boolean addExp(long value) {
 		L2PcInstance activeChar = getActiveChar();
 
-		if (!activeChar.isCursedWeaponEquiped() && (activeChar.getKarma() > 0) && (activeChar.isGM() || !activeChar.isInsideZone(L2Character.ZONE_PVP))) {
+		if (!activeChar.isCursedWeaponEquiped() && (activeChar.getKarma() > 0) && (activeChar.isGM() || !activeChar.isInsideZone(Zone.PVP))) {
 			int karmaLost = activeChar.calculateKarmaLost(value);
 			if (karmaLost > 0) {
 				activeChar.setKarma(activeChar.getKarma() - karmaLost);

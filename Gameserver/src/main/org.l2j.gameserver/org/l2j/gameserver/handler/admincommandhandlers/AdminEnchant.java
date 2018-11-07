@@ -38,7 +38,7 @@ import org.l2j.gameserver.serverpackets.UserInfo;
  */
 public class AdminEnchant implements IAdminCommandHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(AdminEnchant.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(AdminEnchant.class.getName());
 	private static final String[] ADMIN_COMMANDS =
 	{
 		"admin_seteh",// 6

@@ -25,6 +25,8 @@ import org.l2j.gameserver.model.entity.database.MerchantShop;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.serverpackets.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.StringTokenizer;
 
@@ -35,6 +37,8 @@ import java.util.StringTokenizer;
  * @version $Revision: 1.10.4.9 $ $Date: 2005/04/11 10:06:08 $
  */
 public class L2MerchantInstance extends L2FolkInstance {
+    private static final Logger logger = LoggerFactory.getLogger(L2MerchantInstance.class);
+
     /**
      * @param objectId
      * @param template
@@ -60,7 +64,7 @@ public class L2MerchantInstance extends L2FolkInstance {
         player.tempInvetoryDisable();
 
         if (Config.DEBUG) {
-            _log.debug("Showing wearlist");
+            logger.debug("Showing wearlist");
         }
 
         MerchantShop list = TradeController.getInstance().getBuyList(val);
@@ -69,7 +73,7 @@ public class L2MerchantInstance extends L2FolkInstance {
             WearList bl = new WearList(list, player.getAdena(), player.getExpertiseIndex());
             player.sendPacket(bl);
         } else {
-            _log.warn("no buylist with id:" + val);
+            logger.warn("no buylist with id:" + val);
             player.sendPacket(new ActionFailed());
         }
     }
@@ -84,7 +88,7 @@ public class L2MerchantInstance extends L2FolkInstance {
         player.tempInvetoryDisable();
 
         if (Config.DEBUG) {
-            _log.debug("Showing buylist");
+            logger.debug("Showing buylist");
         }
 
         MerchantShop list = TradeController.getInstance().getBuyList(val);
@@ -93,8 +97,8 @@ public class L2MerchantInstance extends L2FolkInstance {
             BuyList bl = new BuyList(list, player.getAdena(), taxRate);
             player.sendPacket(bl);
         } else {
-            _log.warn("possible client hacker: " + player.getName() + " attempting to buy from GM shop! < Ban him!");
-            _log.warn("buylist id:" + val);
+            logger.warn("possible client hacker: " + player.getName() + " attempting to buy from GM shop! < Ban him!");
+            logger.warn("buylist id:" + val);
         }
 
         player.sendPacket(new ActionFailed());
@@ -102,13 +106,13 @@ public class L2MerchantInstance extends L2FolkInstance {
 
     private void showSellWindow(L2PcInstance player) {
         if (Config.DEBUG) {
-            _log.debug("Showing selllist");
+            logger.debug("Showing selllist");
         }
 
         player.sendPacket(new SellList(player));
 
         if (Config.DEBUG) {
-            _log.debug("Showing sell window");
+            logger.debug("Showing sell window");
         }
 
         player.sendPacket(new ActionFailed());

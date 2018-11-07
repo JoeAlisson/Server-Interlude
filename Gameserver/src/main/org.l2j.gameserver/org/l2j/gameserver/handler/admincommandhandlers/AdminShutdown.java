@@ -36,7 +36,7 @@ import java.util.Calendar;
  */
 public class AdminShutdown implements IAdminCommandHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(AdminShutdown.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(AdminShutdown.class.getName());
 	
 	private static final String[] ADMIN_COMMANDS =
 	{

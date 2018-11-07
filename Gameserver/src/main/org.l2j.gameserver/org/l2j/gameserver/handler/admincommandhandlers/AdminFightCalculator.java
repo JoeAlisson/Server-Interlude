@@ -41,7 +41,7 @@ import java.util.StringTokenizer;
  * @version $Revision: 1.1.2.1 $ $Date: 2005/03/15 21:32:48 $
  */
 public class AdminFightCalculator implements IAdminCommandHandler {
-    // private static Logger _log = LoggerFactory.getLogger(AdminFightCalculator.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(AdminFightCalculator.class.getName());
     private static final String[] ADMIN_COMMANDS =
             {
                     "admin_fight_calculator",

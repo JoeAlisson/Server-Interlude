@@ -37,7 +37,7 @@ import org.l2j.gameserver.skills.Formulas;
 
 public class Mdam implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(Mdam.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(Mdam.class.getName());
 	
 	/*
 	 * (non-Javadoc)

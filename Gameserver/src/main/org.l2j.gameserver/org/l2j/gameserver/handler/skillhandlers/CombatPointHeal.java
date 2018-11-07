@@ -35,7 +35,7 @@ import org.l2j.gameserver.serverpackets.SystemMessage;
 
 public class CombatPointHeal implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(CombatPointHeal.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(CombatPointHeal.class.getName());
 	
 	/*
 	 * (non-Javadoc)

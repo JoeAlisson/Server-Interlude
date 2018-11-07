@@ -26,6 +26,8 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.quest.Quest;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -68,6 +70,7 @@ public final class L2ClassMasterInstance extends L2FolkInstance {
                     55,
                     57
             };
+    private static final Logger logger = LoggerFactory.getLogger(L2ClassMasterInstance.class);
 
     /**
      * @param objectId
@@ -100,7 +103,7 @@ public final class L2ClassMasterInstance extends L2FolkInstance {
             }
 
             if (Config.DEBUG) {
-                _log.debug("ClassMaster activated");
+                logger.debug("ClassMaster activated");
             }
 
             PlayerClass playerClass = player.getPlayerClass();
@@ -430,7 +433,7 @@ public final class L2ClassMasterInstance extends L2FolkInstance {
 
     private void changeClass(L2PcInstance player, int val) {
         if (Config.DEBUG) {
-            _log.debug("Changing class to PlayerClass:" + val);
+            logger.debug("Changing class to PlayerClass:" + val);
         }
         player.setClassId(val);
 

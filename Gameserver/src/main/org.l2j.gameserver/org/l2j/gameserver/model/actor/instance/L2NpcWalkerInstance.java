@@ -23,6 +23,8 @@ import org.l2j.gameserver.ai.L2NpcWalkerAI;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.serverpackets.CreatureSay;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
@@ -36,6 +38,8 @@ import java.util.Map;
  */
 public class L2NpcWalkerInstance extends L2NpcInstance
 {
+	private static final Logger logger = LoggerFactory.getLogger(L2NpcWalkerInstance.class);
+
 	/**
 	 * Constructor of L2NpcWalkerInstance (use L2Character and L2NpcInstance constructor).<BR>
 	 * <BR>
@@ -82,7 +86,7 @@ public class L2NpcWalkerInstance extends L2NpcInstance
 		{
 			if (Config.DEVELOPER)
 			{
-				_log.info("broadcastChat _players == null");
+				logger.info("broadcastChat _players == null");
 			}
 			return;
 		}

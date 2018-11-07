@@ -29,7 +29,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
  */
 public class AdminGeodata implements IAdminCommandHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(AdminKill.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(AdminKill.class.getName());
 	private static final String[] ADMIN_COMMANDS =
 	{
 		"admin_geo_z",

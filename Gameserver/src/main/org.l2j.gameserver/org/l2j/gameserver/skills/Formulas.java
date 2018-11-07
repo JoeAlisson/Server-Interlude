@@ -15,21 +15,22 @@ import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.base.CreatureRace;
 import org.l2j.gameserver.model.entity.ClanHall;
 import org.l2j.gameserver.model.entity.Siege;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.conditions.ConditionPlayerState;
 import org.l2j.gameserver.skills.conditions.ConditionPlayerState.CheckPlayerState;
 import org.l2j.gameserver.skills.conditions.ConditionUsingItemType;
-import org.l2j.gameserver.skills.funcs.Func;;
+import org.l2j.gameserver.skills.funcs.Func;
 import org.l2j.gameserver.templates.ClassTemplate;
-import org.l2j.gameserver.templates.xml.jaxb.Armor;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static java.util.Objects.nonNull;
+
+;
 
 /**
  * Global calculations, can be modified by server admins
@@ -984,7 +985,7 @@ public final class Formulas
 				}
 			}
 			
-			if (player.isInsideZone(L2Character.ZONE_CLANHALL) && (player.getClan() != null))
+			if (player.isInsideZone(Zone.CLAN_HALL) && (player.getClan() != null))
 			{
 				int clanHallIndex = player.getClan().getHasHideout();
 				if (clanHallIndex > 0)
@@ -1001,7 +1002,7 @@ public final class Formulas
 			}
 			
 			// Mother Tree effect is calculated at last
-			if (player.isInsideZone(L2Character.ZONE_MOTHERTREE))
+			if (player.isInsideZone(Zone.MOTHER_TREE))
 			{
 				hpRegenBonus += 2;
 			}
@@ -1058,12 +1059,12 @@ public final class Formulas
 			}
 			
 			// Mother Tree effect is calculated at last
-			if (player.isInsideZone(L2Character.ZONE_MOTHERTREE))
+			if (player.isInsideZone(Zone.MOTHER_TREE))
 			{
 				mpRegenBonus += 1;
 			}
 			
-			if (player.isInsideZone(L2Character.ZONE_CLANHALL) && (player.getClan() != null))
+			if (player.isInsideZone(Zone.CLAN_HALL) && (player.getClan() != null))
 			{
 				int clanHallIndex = player.getClan().getHasHideout();
 				if (clanHallIndex > 0)

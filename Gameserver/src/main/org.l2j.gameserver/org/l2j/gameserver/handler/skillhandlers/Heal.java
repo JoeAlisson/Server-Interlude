@@ -38,7 +38,7 @@ import org.l2j.gameserver.skills.Stats;
 public class Heal implements ISkillHandler
 {
 	// allTemplates the items ids that this handler knowns
-	// private static Logger _log = LoggerFactory.getLogger(Heal.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(Heal.class.getName());
 	
 	/*
 	 * (non-Javadoc)

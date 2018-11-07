@@ -137,19 +137,19 @@ public class GameServer {
         CursedWeaponsManager.getInstance();
 
         ItemHandler _itemHandler = ItemHandler.getInstance();
-        _log.info(getMessage(INFO_LOADED_HANDLERS, _itemHandler.size(), "ItemHandler"));
+        logger.info(getMessage(INFO_LOADED_HANDLERS, _itemHandler.size(), "ItemHandler"));
 
         SkillHandler _skillHandler = SkillHandler.getInstance();
-        _log.info(getMessage(INFO_LOADED_HANDLERS, _skillHandler.size(), "SkillHandler"));
+        logger.info(getMessage(INFO_LOADED_HANDLERS, _skillHandler.size(), "SkillHandler"));
 
         AdminCommandHandler _adminCommandHandler = AdminCommandHandler.getInstance();
-        _log.info(getMessage(INFO_LOADED_HANDLERS, _adminCommandHandler.size(), "AdminCommandHandler"));
+        logger.info(getMessage(INFO_LOADED_HANDLERS, _adminCommandHandler.size(), "AdminCommandHandler"));
 
         UserCommandHandler _userCommandHandler = UserCommandHandler.getInstance();
-        _log.info(getMessage(INFO_LOADED_HANDLERS, _userCommandHandler.size(), "UserCommandHandler"));
+        logger.info(getMessage(INFO_LOADED_HANDLERS, _userCommandHandler.size(), "UserCommandHandler"));
 
         VoicedCommandHandler _voicedCommandHandler = VoicedCommandHandler.getInstance();
-        _log.info(getMessage(INFO_LOADED_HANDLERS, _voicedCommandHandler.size(), "VoicedCommandHandler"));
+        logger.info(getMessage(INFO_LOADED_HANDLERS, _voicedCommandHandler.size(), "VoicedCommandHandler"));
 
         if (Config.L2JMOD_ALLOW_WEDDING) {
             CoupleManager.getInstance();
@@ -172,13 +172,13 @@ public class GameServer {
 
         ForumsBBSManager.getInstance();
 
-        _log.info(getMessage("info.object.id.free", IdFactory.getInstance().size()));
+        logger.info(getMessage("info.object.id.free", IdFactory.getInstance().size()));
 
         // initialize the dynamic extension loader
         try {
             DynamicExtension.getInstance();
         } catch (Exception ex) {
-            _log.warn(getMessage("error.dynamic.extension.not.loaded"), ex);
+            logger.warn(getMessage("error.dynamic.extension.not.loaded"), ex);
         }
 
         FloodProtector.getInstance();

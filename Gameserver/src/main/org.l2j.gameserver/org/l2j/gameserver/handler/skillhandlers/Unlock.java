@@ -35,7 +35,7 @@ import org.l2j.gameserver.skills.Formulas;
 
 public class Unlock implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(Unlock.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(Unlock.class.getName());
 	private static final SkillType[] SKILL_IDS =
 	{
 		SkillType.UNLOCK

@@ -27,6 +27,7 @@ import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2RaidBossInstance;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.util.Util;
@@ -38,7 +39,7 @@ import java.util.List;
  * @authors BiTi, Sami
  */
 public class SummonFriend implements ISkillHandler {
-    // private static Logger _log = LoggerFactory.getLogger(SummonFriend.class.getName());
+    // private static Logger logger = LoggerFactory.getLogger(SummonFriend.class.getName());
     private static final SkillType[] SKILL_IDS =
             {
                     SkillType.SUMMON_FRIEND
@@ -57,7 +58,7 @@ public class SummonFriend implements ISkillHandler {
         }
 
         // Checks summoner not in arenas, siege zones, jail
-        if (activePlayer.isInsideZone(L2Character.ZONE_PVP)) {
+        if (activePlayer.isInsideZone(Zone.PVP)) {
             activePlayer.sendPacket(new SystemMessage(SystemMessageId.YOU_CANNOT_SUMMON_IN_COMBAT));
             return;
         }
@@ -138,7 +139,7 @@ public class SummonFriend implements ISkillHandler {
                     }
 
                     // Check for the target's jail status, arenas and siege zones
-                    if (targetChar.isInsideZone(L2Character.ZONE_PVP)) {
+                    if (targetChar.isInsideZone(Zone.PVP)) {
                         activeChar.sendPacket(new SystemMessage(SystemMessageId.YOUR_TARGET_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING));
                         continue;
                     }

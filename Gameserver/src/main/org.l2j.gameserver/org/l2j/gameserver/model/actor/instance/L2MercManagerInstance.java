@@ -24,13 +24,15 @@ import org.l2j.gameserver.model.L2Clan;
 import org.l2j.gameserver.model.entity.database.MerchantShop;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.serverpackets.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.StringTokenizer;
 
 
 public final class L2MercManagerInstance extends L2FolkInstance
 {
-	// private static Logger _log = LoggerFactory.getLogger(L2MercManagerInstance.class.getName());
+	private static Logger logger = LoggerFactory.getLogger(L2MercManagerInstance.class.getName());
 	
 	private static final int COND_ALL_FALSE = 0;
 	private static final int COND_BUSY_BECAUSE_OF_SIEGE = 1;
@@ -124,7 +126,7 @@ public final class L2MercManagerInstance extends L2FolkInstance
 		player.tempInvetoryDisable();
 		if (Config.DEBUG)
 		{
-			_log.debug("Showing buylist");
+			logger.debug("Showing buylist");
 		}
 		MerchantShop list = TradeController.getInstance().getBuyList(val);
 		if ((list != null) && (list.getNpcId().equals(String.valueOf(getNpcId()))))
@@ -134,8 +136,8 @@ public final class L2MercManagerInstance extends L2FolkInstance
 		}
 		else
 		{
-			_log.warn("possible client hacker: " + player.getName() + " attempting to buy from GM shop! < Ban him!");
-			_log.warn("buylist id:" + val);
+			logger.warn("possible client hacker: " + player.getName() + " attempting to buy from GM shop! < Ban him!");
+			logger.warn("buylist id:" + val);
 		}
 	}
 	

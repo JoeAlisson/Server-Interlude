@@ -7,7 +7,7 @@ import static java.util.Objects.isNull;
 
 public class GMViewItemList extends L2GameServerPacket
 {
-	// private static Logger _log = LoggerFactory.getLogger(GMViewItemList.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(GMViewItemList.class.getName());
 	private static final String _S__AD_GMVIEWITEMLIST = "[S] 94 GMViewItemList";
 	private final L2ItemInstance[] _items;
 	private final L2PcInstance _cha;

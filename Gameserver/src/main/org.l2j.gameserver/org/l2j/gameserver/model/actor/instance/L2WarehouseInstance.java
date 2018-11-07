@@ -24,6 +24,8 @@ import org.l2j.gameserver.model.PcFreight;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
@@ -34,6 +36,8 @@ import java.util.Map;
  */
 public final class L2WarehouseInstance extends L2FolkInstance
 {
+	private static final Logger logger = LoggerFactory.getLogger(L2WarehouseInstance.class);
+
 	/**
 	 * @param objectId
 	 * @param template
@@ -71,7 +75,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 		
 		if (Config.DEBUG)
 		{
-			_log.debug("Showing stored items");
+			logger.debug("Showing stored items");
 		}
 		player.sendPacket(new WareHouseWithdrawalList(player, WareHouseWithdrawalList.PRIVATE));
 	}
@@ -83,7 +87,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 		player.tempInvetoryDisable();
 		if (Config.DEBUG)
 		{
-			_log.debug("Showing items to deposit");
+			logger.debug("Showing items to deposit");
 		}
 		
 		player.sendPacket(new WareHouseDepositList(player, WareHouseDepositList.PRIVATE));
@@ -104,7 +108,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 				player.tempInvetoryDisable();
 				if (Config.DEBUG)
 				{
-					_log.debug("Showing items to deposit - clan");
+					logger.debug("Showing items to deposit - clan");
 				}
 				
 				WareHouseDepositList dl = new WareHouseDepositList(player, WareHouseDepositList.CLAN);
@@ -131,7 +135,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 				player.setActiveWarehouse(player.getClan().getWarehouse());
 				if (Config.DEBUG)
 				{
-					_log.debug("Showing items to deposit - clan");
+					logger.debug("Showing items to deposit - clan");
 				}
 				player.sendPacket(new WareHouseWithdrawalList(player, WareHouseWithdrawalList.CLAN));
 			}
@@ -143,7 +147,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 		player.sendPacket(new ActionFailed());
 		if (Config.DEBUG)
 		{
-			_log.debug("Showing freightened items");
+			logger.debug("Showing freightened items");
 		}
 		
 		PcFreight freight = player.getFreight();
@@ -172,7 +176,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 		{
 			if (Config.DEBUG)
 			{
-				_log.debug("no items freightened");
+				logger.debug("no items freightened");
 			}
 		}
 	}
@@ -200,7 +204,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 			
 			if (Config.DEBUG)
 			{
-				_log.debug("Showing destination chars to freight - char src: " + player.getName());
+				logger.debug("Showing destination chars to freight - char src: " + player.getName());
 			}
 		}
 	}
@@ -214,7 +218,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 			// Something went wrong!
 			if (Config.DEBUG)
 			{
-				_log.warn("Error retrieving a target object for char " + player.getName() + " - using freight.");
+				logger.warn("Error retrieving a target object for char " + player.getName() + " - using freight.");
 			}
 			return;
 		}
@@ -234,7 +238,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 		
 		if (Config.DEBUG)
 		{
-			_log.debug("Showing items to freight");
+			logger.debug("Showing items to freight");
 		}
 		player.sendPacket(new WareHouseDepositList(player, WareHouseDepositList.FREIGHT));
 	}
@@ -245,7 +249,7 @@ public final class L2WarehouseInstance extends L2FolkInstance
 		// lil check to prevent enchant exploit
 		if (player.getActiveEnchantItem() != null)
 		{
-			_log.info("Player " + player.getName() + " trying to use enchant exploit, ban this reader!");
+			logger.info("Player " + player.getName() + " trying to use enchant exploit, ban this reader!");
 			player.closeNetConnection();
 			return;
 		}

@@ -28,6 +28,7 @@ import org.l2j.gameserver.model.entity.Duel;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
 import org.l2j.gameserver.model.quest.Quest;
 import org.l2j.gameserver.model.quest.QuestState;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.pathfinding.AbstractNodeLoc;
 import org.l2j.gameserver.pathfinding.geonodes.GeoPathFinding;
@@ -51,6 +52,7 @@ import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static org.l2j.gameserver.ai.Intention.AI_INTENTION_ATTACK;
 import static org.l2j.gameserver.ai.Intention.AI_INTENTION_FOLLOW;
+import static org.l2j.gameserver.templates.xml.jaxb.ItemType.BLUNT;
 
 /**
  * Mother class of allTemplates character objects of the world (PC, NPC...)<BR>
@@ -64,32 +66,13 @@ import static org.l2j.gameserver.ai.Intention.AI_INTENTION_FOLLOW;
  */
 public abstract class L2Character extends L2Object {
 
-    /**
-     * Constructor of L2Character.<BR>
-     * <BR>
-     * <B><U> Concept</U> :</B><BR>
-     * <BR>
-     * Each L2Character owns generic and static properties (ex : allTemplates Keltir have the same number of HP...). All of those properties are stored in a different template for each type of L2Character. Each template is loaded once in the server cache memory (reduce memory use). When a new instance of
-     * L2Character is spawned, server just create a link between the instance and the template This link is stored in <B>template</B><BR>
-     * <BR>
-     * <B><U> Actions</U> :</B><BR>
-     * <BR>
-     * <li>Set the template of the L2Character</li> <li>Set _overloaded to false (the charcater can take more items)</li><BR>
-     * <BR>
-     * <li>If L2Character is a L2NPCInstance, copy skills from template to object</li> <li>If L2Character is a L2NPCInstance, link _calculators to NPC_STD_CALCULATOR</li><BR>
-     * <BR>
-     * <li>If L2Character is NOT a L2NPCInstance, create an empty skills slot</li> <li>If L2Character is a L2PcInstance or L2Summon, copy basic Calculator set to object</li><BR>
-     * <BR>
-     *
-     * @param objectId Identifier of the object to initialized
-     * @param template The L2CharTemplate to apply to the object
-     */
+    protected CharTemplate template;
+
     public L2Character(int objectId, CharTemplate template) {
         super(objectId);
-        getKnownList();
-
         this.template = template;
 
+        getKnownList();
         initSkillsStat(template);
     }
 
@@ -114,410 +97,77 @@ public abstract class L2Character extends L2Object {
         return skill.getLevel();
     }
 
-    public final String getTitle() {
-        return title;
-    }
-
-    public int getStrength() {
-        return getStat().getSTR();
-    }
-
-    public int getDexterity() {
-        return getStat().getDEX();
-    }
-
-    public int getConstitution() {
-        return getStat().getCON();
-    }
-
-    public int getIntelligence() {
-        return getStat().getINT();
-    }
-
-    public int getWisdom() {
-        return getStat().getWIT();
-    }
-
-    public int getMentality() {
-        return getStat().getMEN();
-    }
-
-    public int getMaxHp() {
-        return getStat().getMaxHp();
-    }
-
-    public final double getCurrentHp() {
-        return getStatus().getCurrentHp();
-    }
-
-    public int getMaxMp() {
-        return getStat().getMaxMp();
-    }
-
-    public final double getCurrentMp() {
-        return getStatus().getCurrentMp();
-    }
-
-    public final double getCurrentCp() {
-        return getStatus().getCurrentCp();
-    }
-
-    public final int getMaxCp() {
-        return getStat().getMaxCp();
-    }
-
-    public int getPAtk(L2Character target) {
-        return getStat().getPAtk(target);
-    }
-
-    public int getPAtkSpd() {
-        return getStat().getPAtkSpd();
-    }
-
-    public int getPDef(L2Character target) {
-        return getStat().getPDef(target);
-    }
-
-    public int getEvasionRate(L2Character target) {
-        return getStat().getEvasionRate(target);
-    }
-
-    public int getAccuracy() {
-        return getStat().getAccuracy();
-    }
-
-    public int getCriticalHit(L2Character target, L2Skill skill) {
-        return getStat().getCriticalHit(target, skill);
-    }
-
-    public int getMAtk(L2Character target, L2Skill skill) {
-        return getStat().getMAtk(target, skill);
-    }
-
-    public int getMAtkSpd() {
-        return getStat().getMAtkSpd();
-    }
-
-    public int getMDef(L2Character target, L2Skill skill) {
-        return getStat().getMDef(target, skill);
-    }
-
-    public final int getMCriticalHit(L2Character target, L2Skill skill) {
-        return getStat().getMCriticalHit(target, skill);
-    }
-
-    public float getFireDefense() {
-        return template.getFireDefense();
-    }
-
-    public float getWaterDefense() {
-        return template.getWaterDefense();
-    }
-
-    public float getWindDefense() {
-        return template.getWindDefense();
-    }
-
-    public float getEarthDefense() {
-        return template.getEarthDefense();
-    }
-
-    public float getHolyDefense() {
-        return template.getHolyDefense();
-    }
-
-    public float getUnholyDefense() {
-        return template.getUnholyDefense();
-    }
-
-    public int getRunSpeed() {
-        return getStat().getRunSpeed();
-    }
-
-    public final boolean isRunning() {
-        return _isRunning;
-    }
-
-
-
-
-    // #############################################################################
-    /**
-     * The Constant _log.
-     */
-    protected static final Logger _log = LoggerFactory.getLogger(L2Character.class.getName());
-
-    /**
-     * The _attack by list.
-     */
-    private List<L2Character> _attackByList;
-
-    /**
-     * The _last skill cast.
-     */
-    private L2Skill _lastSkillCast;
-
-    /**
-     * The _is afraid.
-     */
-    private boolean _isAfraid = false; // Flee in a random direction
-
-    /**
-     * The _is confused.
-     */
-    private boolean _isConfused = false; // Attack anyone randomly
-
-    /**
-     * The _is fake death.
-     */
-    private boolean _isFakeDeath = false; // Fake death
-
-    /**
-     * The _is flying.
-     */
-    private boolean _isFlying = false; // Is flying Wyvern?
-
-    /**
-     * The _is muted.
-     */
-    private boolean _isMuted = false; // Cannot use magic
-
-    /**
-     * The _is physically muted.
-     */
-    private boolean _isPhysicallyMuted = false; // Cannot use physical skills
-
-    /**
-     * The _is killed already.
-     */
-    private boolean _isKilledAlready = false;
-
-    /**
-     * The _is immobilized.
-     */
-    private boolean _isImmobilized = false;
-
-    /**
-     * The _is overloaded.
-     */
-    private boolean _isOverloaded = false; // the char is carrying too much
-
-    /**
-     * The _is paralyzed.
-     */
-    private boolean _isParalyzed = false;
-
-    /**
-     * The _is riding.
-     */
-    private boolean _isRiding = false; // Is Riding strider?
-
-    /**
-     * The _is pending revive.
-     */
-    private boolean _isPendingRevive = false;
-
-    /**
-     * The _is rooted.
-     */
-    private boolean _isRooted = false; // Cannot move until root timed out
-
-    /**
-     * The _is running.
-     */
-    private boolean _isRunning = false;
-
-    /**
-     * The _is sleeping.
-     */
-    private boolean _isSleeping = false; // Cannot move/attack until sleep timed out or monster is attacked
-
-    /**
-     * The _is stunned.
-     */
-    private boolean _isStunned = false; // Cannot move/attack until stun timed out
-
-    /**
-     * The _is betrayed.
-     */
-    private boolean _isBetrayed = false; // Betrayed by own summon
-
-    /**
-     * The _is teleporting.
-     */
-    protected boolean _isTeleporting = false;
-
-    /**
-     * The _last buffer.
-     */
-    private L2Character _lastBuffer = null;
-
-    /**
-     * The _is invul.
-     */
-    protected boolean _isInvul = false;
-
-    /**
-     * The _last heal amount.
-     */
-    private int _lastHealAmount = 0;
-
-    /**
-     * The _stat.
-     */
-    private CharStat _stat;
-
-    /**
-     * The _status.
-     */
-    private CharStatus _status;
-
-    /**
-     * The template.
-     */
-    private CharTemplate template; // The link on the L2CharTemplate object containing generic and static properties of this L2Character type (ex : Max HP, Speed...)
-
-    /**
-     * The title.
-     */
+    private static final Logger logger = LoggerFactory.getLogger(L2Character.class);
+    private List<L2Character> attackByList;
+    private CharStat stat;
+    private CharStatus status;
     private String title;
-
-    /**
-     * The _ai class.
-     */
-    private String _aiClass = "default";
-
-    /**
-     * The _hp update inc check.
-     */
-    private double _hpUpdateIncCheck = .0;
-
-    /**
-     * The _hp update dec check.
-     */
-    private double _hpUpdateDecCheck = .0;
-
-    /**
-     * The _hp update interval.
-     */
-    private double _hpUpdateInterval = .0;
-
-    /**
-     * The _champion.
-     */
-    private boolean _champion = false;
-
-
-    protected Calculator[] _calculators;
+    protected Calculator[] calculators;
     protected  Map<Integer, L2Skill> skills;
 
-    /**
-     * Zone system.
-     */
-    public static final int ZONE_PVP = 1;
+    private boolean champion; // TODO move to Monster
+    private String aiClass = "default";
 
-    /**
-     * The Constant ZONE_PEACE.
-     */
-    public static final int ZONE_PEACE = 2;
+    private L2Skill lastSkillCast;
+    private L2Character lastBuffer;
+    private int lastHealAmount;
 
-    /**
-     * The Constant ZONE_SIEGE.
-     */
-    public static final int ZONE_SIEGE = 4;
+    private boolean isFakeDeath; // Fake death
+    private boolean isKilledAlready;
+    private boolean isFlying; // Is flying Wyvern?
+    protected boolean isTeleporting;
+    private boolean isOverloaded; // the char is carrying too much
+    private boolean isRiding; // Is Riding strider?
+    private boolean isPendingRevive;
+    protected boolean isInvul;
 
-    /**
-     * The Constant ZONE_MOTHERTREE.
-     */
-    public static final int ZONE_MOTHERTREE = 8;
+    private boolean isAfraid; // Flee in a random direction
+    private boolean isConfused; // Attack anyone randomly
+    private boolean isMuted; // Cannot use magic
+    private boolean isPhysicallyMuted; // Cannot use physical skills
+    private boolean isImmobilized;
+    private boolean isRooted; // Cannot move until root timed out
+    private boolean isRunning;
+    private boolean isSleeping; // Cannot move/attack until sleep timed out or monster is attacked
+    private boolean isStunned ; // Cannot move/attack until stun timed out
+    private boolean isParalyzed;
+    private boolean isBetrayed; // Betrayed by own summon
 
-    /**
-     * The Constant ZONE_CLANHALL.
-     */
-    public static final int ZONE_CLANHALL = 16;
+    private double hpUpdateIncCheck;
+    private double hpUpdateDecCheck;
+    private double hpUpdateInterval;
 
-    /**
-     * The Constant ZONE_UNUSED.
-     */
-    public static final int ZONE_UNUSED = 32;
+    private long zones = 0;
 
-    /**
-     * The Constant ZONE_NOLANDING.
-     */
-    public static final int ZONE_NOLANDING = 64;
-
-    /**
-     * The Constant ZONE_WATER.
-     */
-    public static final int ZONE_WATER = 128;
-
-    /**
-     * The Constant ZONE_JAIL.
-     */
-    public static final int ZONE_JAIL = 256;
-
-    /**
-     * The Constant ZONE_MONSTERTRACK.
-     */
-    public static final int ZONE_MONSTERTRACK = 512;
-
-    /**
-     * The _current zones.
-     */
-    private int _currentZones = 0;
-
-    /**
-     * Checks if is inside zone.
-     *
-     * @param zone the zone
-     * @return true, if is inside zone
-     */
-    public boolean isInsideZone(int zone) {
-        return ((_currentZones & zone) != 0);
+    public boolean isInsideZone(Zone zone) {
+        return ((zones & zone.getId()) != 0);
     }
 
-    /**
-     * Sets the inside zone.
-     *
-     * @param zone  the zone
-     * @param state the state
-     */
-    public void setInsideZone(int zone, boolean state) {
+    public void setInsideZone(Zone zone, boolean state) {
         if (state) {
-            _currentZones |= zone;
+            zones |= zone.getId();
         } else if (isInsideZone(zone)) {
-            _currentZones ^= zone;
+            zones ^= zone.getId();
         }
     }
 
     protected void initSkillsStat(CharTemplate template) {
-        // Initialize the FastMap skills to null
         skills = new ConcurrentHashMap<>();
 
-        // If L2Character is a L2PcInstance or a L2Summon, create the basic calculator set
-        _calculators = new Calculator[Stats.NUM_STATS];
+        // TODO move to Playable If L2Character is a L2PcInstance or a L2Summon, create the basic calculator set
+        calculators = new Calculator[Stats.NUM_STATS];
         Formulas.getInstance().addFuncsToNewCharacter(this);
     }
 
-    /**
-     * Inits the char status update values.
-     */
     protected void initCharStatusUpdateValues() {
-        _hpUpdateInterval = getMaxHp() / 352.0; // MAX_HP div MAX_HP_BAR_PX
-        _hpUpdateIncCheck = getMaxHp();
-        _hpUpdateDecCheck = getMaxHp() - _hpUpdateInterval;
+        hpUpdateInterval = getMaxHp() / 352.0;
+        hpUpdateIncCheck = getMaxHp();
+        hpUpdateDecCheck = getMaxHp() - hpUpdateInterval;
     }
 
-    /**
-     * Remove the L2Character from the world when the decay task is launched.<BR>
-     * <BR>
-     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T REMOVE the object from _allObjects of L2World </B></FONT><BR>
-     * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method DOESN'T SEND Server->Client packets to players</B></FONT><BR>
-     * <BR>
-     */
     public void onDecay() {
         L2WorldRegion reg = getWorldRegion();
-        if (reg != null) {
+        if (nonNull(reg)) {
             reg.removeFromZones(this);
         }
         decayMe();
@@ -529,24 +179,19 @@ public abstract class L2Character extends L2Object {
         revalidateZone();
     }
 
-    /**
-     * On teleported.
-     */
     public void onTeleported() {
         if (!isTeleporting()) {
             return;
         }
 
         spawnMe(getPosition().getX(), getPosition().getY(), getPosition().getZ());
-
         setIsTeleporting(false);
 
-        if (_isPendingRevive) {
+        if (isPendingRevive) {
             doRevive();
         }
 
-        // Modify the position of the pet if necessary
-        if (getPet() != null) {
+        if (nonNull(getPet())) {
             getPet().setFollowStatus(false);
             getPet().teleToLocation(getPosition().getX() + Rnd.get(-100, 100), getPosition().getY() + Rnd.get(-100, 100), getPosition().getZ(), false);
             getPet().setFollowStatus(true);
@@ -559,9 +204,10 @@ public abstract class L2Character extends L2Object {
      * <BR>
      *
      * @param player The L2Character that attcks this one
+     * TODO move to Monster
      */
     public void addAttackerToAttackByList(L2Character player) {
-        if ((player == null) || (player == this) || (getAttackByList() == null) || getAttackByList().contains(player)) {
+        if ((isNull(player)) || (player == this) || (isNull(getAttackByList())) || getAttackByList().contains(player)) {
             return;
         }
         getAttackByList().add(player);
@@ -578,25 +224,7 @@ public abstract class L2Character extends L2Object {
      * @param mov the mov
      */
     public final void broadcastPacket(L2GameServerPacket mov) {
-        if (!(mov instanceof CharInfo)) {
-            sendPacket(mov);
-        }
-
-        // if (Config.DEBUG) _log.debug("players to notify:" + knownPlayers.size() + " packet:"+mov.getType());
-
-        for (L2PcInstance player : getKnownList().getKnownPlayers().values()) {
-            try {
-                player.sendPacket(mov);
-                if ((mov instanceof CharInfo) && (this instanceof L2PcInstance)) {
-                    int relation = ((L2PcInstance) this).getRelation(player);
-                    if ((getKnownList().getKnownRelations().get(player.getObjectId()) != null) && (getKnownList().getKnownRelations().get(player.getObjectId()) != relation)) {
-                        player.sendPacket(new RelationChanged((L2PcInstance) this, relation, player.isAutoAttackable(this)));
-                    }
-                }
-                // if(Config.DEVELOPER && !isInsideRadius(reader, 3500, false, false)) _log.warn("broadcastPacket: Too far reader see event!");
-            } catch (NullPointerException e) {
-            }
-        }
+        broadcastPacket(mov, 0);
     }
 
     /**
@@ -615,11 +243,9 @@ public abstract class L2Character extends L2Object {
             sendPacket(mov);
         }
 
-        // if (Config.DEBUG) _log.debug("players to notify:" + knownPlayers.size() + " packet:"+mov.getType());
-
         for (L2PcInstance player : getKnownList().getKnownPlayers().values()) {
             try {
-                if (!isInsideRadius(player, radiusInKnownlist, false, false)) {
+                if (radiusInKnownlist != 0 && !isInsideRadius(player, radiusInKnownlist, false, false)) {
                     continue;
                 }
                 player.sendPacket(mov);
@@ -630,16 +256,11 @@ public abstract class L2Character extends L2Object {
                     }
                 }
             } catch (NullPointerException e) {
+                logger.error(e.getLocalizedMessage(), e);
             }
         }
     }
 
-    /**
-     * Returns true if hp update should be done, false if not.
-     *
-     * @param barPixels the bar pixels
-     * @return boolean
-     */
     protected boolean needHpUpdate(int barPixels) {
         double currentHp = getCurrentHp();
 
@@ -647,21 +268,19 @@ public abstract class L2Character extends L2Object {
             return true;
         }
 
-        if ((currentHp <= _hpUpdateDecCheck) || (currentHp >= _hpUpdateIncCheck)) {
+        if ((currentHp <= hpUpdateDecCheck) || (currentHp >= hpUpdateIncCheck)) {
             if (currentHp == getMaxHp()) {
-                _hpUpdateIncCheck = currentHp + 1;
-                _hpUpdateDecCheck = currentHp - _hpUpdateInterval;
+                hpUpdateIncCheck = currentHp + 1;
+                hpUpdateDecCheck = currentHp - hpUpdateInterval;
             } else {
-                double doubleMulti = currentHp / _hpUpdateInterval;
+                double doubleMulti = currentHp / hpUpdateInterval;
                 int intMulti = (int) doubleMulti;
 
-                _hpUpdateDecCheck = _hpUpdateInterval * (doubleMulti < intMulti ? intMulti-- : intMulti);
-                _hpUpdateIncCheck = _hpUpdateDecCheck + _hpUpdateInterval;
+                hpUpdateDecCheck = hpUpdateInterval * (doubleMulti < intMulti ? intMulti-- : intMulti);
+                hpUpdateIncCheck = hpUpdateDecCheck + hpUpdateInterval;
             }
-
             return true;
         }
-
         return false;
     }
 
@@ -689,7 +308,7 @@ public abstract class L2Character extends L2Object {
         }
 
         if (Config.DEBUG) {
-            _log.debug("Broadcast Status Update for " + getObjectId() + "(" + getName() + "). HP: " + getCurrentHp());
+            logger.debug("Broadcast Status Update for " + getObjectId() + "(" + getName() + "). HP: " + getCurrentHp());
         }
 
         // Create the Server->Client packet StatusUpdate with current HP and MP
@@ -705,21 +324,12 @@ public abstract class L2Character extends L2Object {
                 try {
                     temp.sendPacket(su);
                 } catch (NullPointerException e) {
+                    logger.error(e.getLocalizedMessage(),  e);
                 }
             }
         }
     }
 
-    /**
-     * Not Implemented.<BR>
-     * <BR>
-     * <B><U> Overriden in </U> :</B><BR>
-     * <BR>
-     * <li>L2PcInstance</li><BR>
-     * <BR>
-     *
-     * @param mov the mov
-     */
     public void sendPacket(L2GameServerPacket mov) {
         // default implementation
     }
@@ -759,9 +369,9 @@ public abstract class L2Character extends L2Object {
 
         z += 5;
 
-        if (Config.DEBUG) {
-            _log.debug("Teleporting to: " + x + ", " + y + ", " + z);
-        }
+
+        logger.debug("Teleporting to: " + x + ", " + y + ", " + z);
+
 
         // Send a Server->Client packet TeleportToLocationt to the L2Character AND to allTemplates L2PcInstance in the _KnownPlayers of the L2Character
         broadcastPacket(new TeleportToLocation(this, x, y, z));
@@ -776,28 +386,16 @@ public abstract class L2Character extends L2Object {
         }
     }
 
-    /**
-     * Tele to location.
-     *
-     * @param x the x
-     * @param y the y
-     * @param z the z
-     */
     public void teleToLocation(int x, int y, int z) {
         teleToLocation(x, y, z, false);
     }
 
-    /**
-     * Tele to location.
-     *
-     * @param loc               the loc
-     * @param allowRandomOffset the allow random offset
-     */
     public void teleToLocation(Location loc, boolean allowRandomOffset) {
         int x = loc.getX();
         int y = loc.getY();
         int z = loc.getZ();
 
+        // TODO move to L2PcInstance
         if ((this instanceof L2PcInstance) && DimensionalRiftManager.getInstance().checkIfInRiftZone(getX(), getY(), getZ(), true)) // true -> ignore waiting room :)
         {
             L2PcInstance player = (L2PcInstance) this;
@@ -813,11 +411,6 @@ public abstract class L2Character extends L2Object {
         teleToLocation(x, y, z, allowRandomOffset);
     }
 
-    /**
-     * Tele to location.
-     *
-     * @param teleportWhere the teleport where
-     */
     public void teleToLocation(TeleportWhereType teleportWhere) {
         teleToLocation(MapRegionTable.getInstance().getTeleToLocation(this, teleportWhere), true);
     }
@@ -838,12 +431,10 @@ public abstract class L2Character extends L2Object {
      * @param target The L2Character targeted
      */
     protected void doAttack(L2Character target) {
-        if (Config.DEBUG) {
-            _log.debug(getName() + " doAttack: target=" + target);
-        }
+        logger.debug("{} doAttack: target={}", getName(), target);
 
         if (isAlikeDead() || (target == null) || ((this instanceof L2NpcInstance) && target.isAlikeDead()) || ((this instanceof L2PcInstance) && target.isDead() && !target.isFakeDeath()) || !getKnownList().knowsObject(target) || ((this instanceof L2PcInstance) && isDead()) || ((target instanceof L2PcInstance) && (((L2PcInstance) target).getDuelState() == Duel.DUELSTATE_DEAD))) {
-            // If L2PcInstance is dead or the target is dead, the action is stoped
+            // If L2PcInstance is dead or the target is dead, the action is stopped
             getAI().setIntention(Intention.AI_INTENTION_ACTIVE);
 
             sendPacket(new ActionFailed());
@@ -854,6 +445,7 @@ public abstract class L2Character extends L2Object {
             return;
         }
 
+        // TODO move to L2PcInstance
         if (this instanceof L2PcInstance) {
             if (((L2PcInstance) this).inObserverMode()) {
                 sendPacket(new SystemMessage(SystemMessageId.OBSERVERS_CANNOT_PARTICIPATE));
@@ -879,13 +471,12 @@ public abstract class L2Character extends L2Object {
         // Get the active weapon instance (always equiped in the right hand)
         L2ItemInstance weapon = getActiveWeaponInstance();
 
-        if ((nonNull(weapon)) && (weapon.getType() == org.l2j.gameserver.templates.xml.jaxb.ItemType.BLUNT)) {
+        if ((nonNull(weapon)) && (weapon.getType() == BLUNT)) {
             // You can't make an attack with a fishing pole.
-            ((L2PcInstance) this).sendPacket(new SystemMessage(SystemMessageId.CANNOT_ATTACK_WITH_FISHING_POLE));
+            this.sendPacket(new SystemMessage(SystemMessageId.CANNOT_ATTACK_WITH_FISHING_POLE));
             getAI().setIntention(Intention.AI_INTENTION_IDLE);
 
-            ActionFailed af = new ActionFailed();
-            sendPacket(af);
+            sendPacket(new ActionFailed());
             return;
         }
 
@@ -900,6 +491,7 @@ public abstract class L2Character extends L2Object {
         // Check for a bow
         if ((nonNull(weapon) && (weapon.getType() == ItemType.BOW))) {
             // Check for arrows and MP
+            // TODO move To L2PcInstance
             if (this instanceof L2PcInstance) {
                 // Checking if target has moved to peace zone - only for reader-bow attacks at the moment
                 // Other melee is checked in movement code and for offensive spells a check is done every time
@@ -961,6 +553,7 @@ public abstract class L2Character extends L2Object {
             setCurrentCp(getCurrentCp() - 10);
         }
 
+        // TODO move to L2PcInstance
         // Recharge any active auto soulshot tasks for reader (or reader's summon if one exists).
         if (this instanceof L2PcInstance) {
             ((L2PcInstance) this).rechargeAutoSoulShot(true, false, false);
@@ -1223,8 +816,8 @@ public abstract class L2Character extends L2Object {
         }
 
         if (Config.DEBUG) {
-            _log.info("doAttackHitByPole: Max radius = " + maxRadius);
-            _log.info("doAttackHitByPole: Max angle = " + maxAngleDiff);
+            logger.info("doAttackHitByPole: Max radius = " + maxRadius);
+            logger.info("doAttackHitByPole: Max angle = " + maxAngleDiff);
         }
 
         // o1 x: 83420 y: 148158 (Giran)
@@ -1710,8 +1303,8 @@ public abstract class L2Character extends L2Object {
         if (!isTeleporting()) {
             setIsPendingRevive(false);
 
-            _status.setCurrentCp(getMaxCp() * Config.RESPAWN_RESTORE_CP);
-            _status.setCurrentHp(getMaxHp() * Config.RESPAWN_RESTORE_HP);
+            status.setCurrentCp(getMaxCp() * Config.RESPAWN_RESTORE_CP);
+            status.setCurrentHp(getMaxHp() * Config.RESPAWN_RESTORE_HP);
             // _Status.setMp(getMaxMp() * Config.RESPAWN_RESTORE_MP);
 
             // Start broadcast status
@@ -1834,10 +1427,10 @@ public abstract class L2Character extends L2Object {
      * @return the attack by list
      */
     public final List<L2Character> getAttackByList() {
-        if (_attackByList == null) {
-            _attackByList = new LinkedList<>();
+        if (attackByList == null) {
+            attackByList = new LinkedList<>();
         }
-        return _attackByList;
+        return attackByList;
     }
 
     /**
@@ -1846,7 +1439,7 @@ public abstract class L2Character extends L2Object {
      * @return the last skill cast
      */
     public final L2Skill getLastSkillCast() {
-        return _lastSkillCast;
+        return lastSkillCast;
     }
 
     /**
@@ -1855,7 +1448,7 @@ public abstract class L2Character extends L2Object {
      * @param skill the new last skill cast
      */
     public void setLastSkillCast(L2Skill skill) {
-        _lastSkillCast = skill;
+        lastSkillCast = skill;
     }
 
     /**
@@ -1864,7 +1457,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is afraid
      */
     public final boolean isAfraid() {
-        return _isAfraid;
+        return isAfraid;
     }
 
     /**
@@ -1873,7 +1466,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is afraid
      */
     public final void setIsAfraid(boolean value) {
-        _isAfraid = value;
+        isAfraid = value;
     }
 
     /**
@@ -1909,7 +1502,7 @@ public abstract class L2Character extends L2Object {
      * @return the calculators
      */
     public final Calculator[] getCalculators() {
-        return _calculators;
+        return calculators;
     }
 
     /**
@@ -1918,7 +1511,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is confused
      */
     public final boolean isConfused() {
-        return _isConfused;
+        return isConfused;
     }
 
     /**
@@ -1927,7 +1520,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is confused
      */
     public final void setIsConfused(boolean value) {
-        _isConfused = value;
+        isConfused = value;
     }
 
     /**
@@ -1945,7 +1538,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is fake death
      */
     public final boolean isFakeDeath() {
-        return _isFakeDeath;
+        return isFakeDeath;
     }
 
     /**
@@ -1954,7 +1547,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is fake death
      */
     public final void setIsFakeDeath(boolean value) {
-        _isFakeDeath = value;
+        isFakeDeath = value;
     }
 
     /**
@@ -1963,7 +1556,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is flying
      */
     public final boolean isFlying() {
-        return _isFlying;
+        return isFlying;
     }
 
     /**
@@ -1972,7 +1565,7 @@ public abstract class L2Character extends L2Object {
      * @param mode the new checks if is flying
      */
     public final void setIsFlying(boolean mode) {
-        _isFlying = mode;
+        isFlying = mode;
     }
 
     /**
@@ -1981,7 +1574,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is immobilized
      */
     public boolean isImobilised() {
-        return _isImmobilized;
+        return isImmobilized;
     }
 
     /**
@@ -1990,7 +1583,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is immobilized
      */
     public void setIsImobilised(boolean value) {
-        _isImmobilized = value;
+        isImmobilized = value;
     }
 
     /**
@@ -1999,7 +1592,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is killed already
      */
     public final boolean isKilledAlready() {
-        return _isKilledAlready;
+        return isKilledAlready;
     }
 
     /**
@@ -2008,7 +1601,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is killed already
      */
     public final void setIsKilledAlready(boolean value) {
-        _isKilledAlready = value;
+        isKilledAlready = value;
     }
 
     /**
@@ -2017,7 +1610,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is muted
      */
     public final boolean isMuted() {
-        return _isMuted;
+        return isMuted;
     }
 
     /**
@@ -2026,7 +1619,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is muted
      */
     public final void setIsMuted(boolean value) {
-        _isMuted = value;
+        isMuted = value;
     }
 
     /**
@@ -2035,7 +1628,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is physically muted
      */
     public final boolean isPsychicalMuted() {
-        return _isPhysicallyMuted;
+        return isPhysicallyMuted;
     }
 
     /**
@@ -2044,7 +1637,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is physically muted
      */
     public final void setIsPsychicalMuted(boolean value) {
-        _isPhysicallyMuted = value;
+        isPhysicallyMuted = value;
     }
 
     /**
@@ -2071,7 +1664,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is overloaded
      */
     public final boolean isOverloaded() {
-        return _isOverloaded;
+        return isOverloaded;
     }
 
     /**
@@ -2080,7 +1673,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is overloaded
      */
     public final void setIsOverloaded(boolean value) {
-        _isOverloaded = value;
+        isOverloaded = value;
     }
 
     /**
@@ -2089,7 +1682,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is paralyzed
      */
     public final boolean isParalyzed() {
-        return _isParalyzed;
+        return isParalyzed;
     }
 
     /**
@@ -2098,7 +1691,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is paralyzed
      */
     public final void setIsParalyzed(boolean value) {
-        _isParalyzed = value;
+        isParalyzed = value;
     }
 
     /**
@@ -2107,7 +1700,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is pending revive
      */
     public final boolean isPendingRevive() {
-        return isDead() && _isPendingRevive;
+        return isDead() && isPendingRevive;
     }
 
     /**
@@ -2116,7 +1709,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is pending revive
      */
     public final void setIsPendingRevive(boolean value) {
-        _isPendingRevive = value;
+        isPendingRevive = value;
     }
 
     /**
@@ -2139,7 +1732,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is riding
      */
     public final boolean isRiding() {
-        return _isRiding;
+        return isRiding;
     }
 
     /**
@@ -2148,7 +1741,7 @@ public abstract class L2Character extends L2Object {
      * @param mode the new checks if is riding
      */
     public final void setIsRiding(boolean mode) {
-        _isRiding = mode;
+        isRiding = mode;
     }
 
     /**
@@ -2157,7 +1750,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is rooted
      */
     public final boolean isRooted() {
-        return _isRooted;
+        return isRooted;
     }
 
     /**
@@ -2166,7 +1759,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is rooted
      */
     public final void setIsRooted(boolean value) {
-        _isRooted = value;
+        isRooted = value;
     }
 
     /**
@@ -2175,7 +1768,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is running
      */
     public final void setIsRunning(boolean value) {
-        _isRunning = value;
+        isRunning = value;
         broadcastPacket(new ChangeMoveType(this));
     }
 
@@ -2194,7 +1787,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is sleeping
      */
     public final boolean isSleeping() {
-        return _isSleeping;
+        return isSleeping;
     }
 
     /**
@@ -2203,7 +1796,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is sleeping
      */
     public final void setIsSleeping(boolean value) {
-        _isSleeping = value;
+        isSleeping = value;
     }
 
     /**
@@ -2212,7 +1805,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is stunned
      */
     public final boolean isStunned() {
-        return _isStunned;
+        return isStunned;
     }
 
     /**
@@ -2221,7 +1814,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is stunned
      */
     public final void setIsStunned(boolean value) {
-        _isStunned = value;
+        isStunned = value;
     }
 
     /**
@@ -2230,7 +1823,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is betrayed
      */
     public final boolean isBetrayed() {
-        return _isBetrayed;
+        return isBetrayed;
     }
 
     /**
@@ -2239,7 +1832,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is betrayed
      */
     public final void setIsBetrayed(boolean value) {
-        _isBetrayed = value;
+        isBetrayed = value;
     }
 
     /**
@@ -2248,7 +1841,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is teleporting
      */
     public final boolean isTeleporting() {
-        return _isTeleporting;
+        return isTeleporting;
     }
 
     /**
@@ -2257,7 +1850,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new checks if is teleporting
      */
     public final void setIsTeleporting(boolean value) {
-        _isTeleporting = value;
+        isTeleporting = value;
     }
 
     /**
@@ -2266,7 +1859,7 @@ public abstract class L2Character extends L2Object {
      * @param b the new checks if is invul
      */
     public void setIsInvul(boolean b) {
-        _isInvul = b;
+        isInvul = b;
     }
 
     /**
@@ -2275,7 +1868,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is invul
      */
     public boolean isInvul() {
-        return _isInvul || _isTeleporting;
+        return isInvul || isTeleporting;
     }
 
     /**
@@ -2293,10 +1886,10 @@ public abstract class L2Character extends L2Object {
      * @return the stat
      */
     public CharStat getStat() {
-        if (_stat == null) {
-            _stat = new CharStat(this);
+        if (stat == null) {
+            stat = new CharStat(this);
         }
-        return _stat;
+        return stat;
     }
 
     /**
@@ -2305,7 +1898,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new stat
      */
     public final void setStat(CharStat value) {
-        _stat = value;
+        stat = value;
     }
 
     /**
@@ -2314,10 +1907,10 @@ public abstract class L2Character extends L2Object {
      * @return the status
      */
     public CharStatus getStatus() {
-        if (_status == null) {
-            _status = new CharStatus(this);
+        if (status == null) {
+            status = new CharStatus(this);
         }
-        return _status;
+        return status;
     }
 
     /**
@@ -2326,7 +1919,7 @@ public abstract class L2Character extends L2Object {
      * @param value the new status
      */
     public final void setStatus(CharStatus value) {
-        _status = value;
+        status = value;
     }
 
     /**
@@ -2399,7 +1992,7 @@ public abstract class L2Character extends L2Object {
             try {
                 enableSkill(_skillId);
             } catch (Throwable e) {
-                _log.error( "", e);
+                logger.error( "", e);
             }
         }
     }
@@ -2469,7 +2062,7 @@ public abstract class L2Character extends L2Object {
             try {
                 onHitTimer(_hitTarget, _damage, _crit, _miss, _soulshot, _shld);
             } catch (Throwable e) {
-                _log.error(e.toString());
+                logger.error(e.toString());
             }
         }
     }
@@ -2531,7 +2124,7 @@ public abstract class L2Character extends L2Object {
                         break;
                 }
             } catch (Throwable e) {
-                _log.error( "", e);
+                logger.error( "", e);
                 enableAllSkills();
             }
         }
@@ -2582,7 +2175,7 @@ public abstract class L2Character extends L2Object {
             try {
                 _currPlayer.useMagic(_queuedSkill, _isCtrlPressed, _isShiftPressed);
             } catch (Throwable e) {
-                _log.error( "", e);
+                logger.error( "", e);
             }
         }
     }
@@ -2611,7 +2204,7 @@ public abstract class L2Character extends L2Object {
             try {
                 getAI().notifyEvent(_evt, null);
             } catch (Throwable t) {
-                _log.warn( "", t);
+                logger.warn( "", t);
             }
         }
     }
@@ -2631,11 +2224,11 @@ public abstract class L2Character extends L2Object {
         @Override
         public void run() {
             try {
-                // _log.debug("Checking pvp time: " + getlastPvpAttack());
+                // logger.debug("Checking pvp time: " + getlastPvpAttack());
                 // "lastattack: " _lastAttackTime "currenttime: "
                 // System.currentTimeMillis());
                 if (System.currentTimeMillis() > getPvpFlagLasts()) {
-                    // _log.debug("Stopping PvP");
+                    // logger.debug("Stopping PvP");
                     stopPvPFlag();
                 } else if (System.currentTimeMillis() > (getPvpFlagLasts() - 5000)) {
                     updatePvPFlag(2);
@@ -2645,7 +2238,7 @@ public abstract class L2Character extends L2Object {
                     // checkPvPFlag();
                 }
             } catch (Exception e) {
-                _log.warn( "error in pvp flag task:", e);
+                logger.warn( "error in pvp flag task:", e);
             }
         }
     }
@@ -4112,14 +3705,14 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * <B><U> Concept</U> :</B><BR>
      * <BR>
-     * A L2Character owns a table of Calculators called <B>_calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). To reduce cache memory use,
+     * A L2Character owns a table of Calculators called <B>calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). To reduce cache memory use,
      * L2NPCInstances who don't have skills share the same Calculator set called <B>NPC_STD_CALCULATOR</B>.<BR>
      * <BR>
-     * That's why, if a L2NPCInstance is under a skill/spell effect that modify one of its state, a copy of the NPC_STD_CALCULATOR must be create in its _calculators before addind new Func object.<BR>
+     * That's why, if a L2NPCInstance is under a skill/spell effect that modify one of its state, a copy of the NPC_STD_CALCULATOR must be create in its calculators before addind new Func object.<BR>
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>If _calculators is linked to NPC_STD_CALCULATOR, create a copy of NPC_STD_CALCULATOR in _calculators</li> <li>Add the Func object to _calculators</li><BR>
+     * <li>If calculators is linked to NPC_STD_CALCULATOR, create a copy of NPC_STD_CALCULATOR in calculators</li> <li>Add the Func object to calculators</li><BR>
      * <BR>
      *
      * @param f The Func object to add to the Calculator corresponding to the state affected
@@ -4130,13 +3723,13 @@ public abstract class L2Character extends L2Object {
         }
 
         // Check if Calculator set is linked to the standard Calculator set of NPC
-        if (_calculators == NPC_STD_CALCULATOR) {
+        if (calculators == NPC_STD_CALCULATOR) {
             // Create a copy of the standard NPC Calculator set
-            _calculators = new Calculator[Stats.NUM_STATS];
+            calculators = new Calculator[Stats.NUM_STATS];
 
             for (int i = 0; i < Stats.NUM_STATS; i++) {
                 if (NPC_STD_CALCULATOR[i] != null) {
-                    _calculators[i] = new Calculator(NPC_STD_CALCULATOR[i]);
+                    calculators[i] = new Calculator(NPC_STD_CALCULATOR[i]);
                 }
             }
         }
@@ -4144,12 +3737,12 @@ public abstract class L2Character extends L2Object {
         // Select the Calculator of the affected state in the Calculator set
         int stat = f.stat.ordinal();
 
-        if (_calculators[stat] == null) {
-            _calculators[stat] = new Calculator();
+        if (calculators[stat] == null) {
+            calculators[stat] = new Calculator();
         }
 
         // Add the Func to the calculator corresponding to the state
-        _calculators[stat].addFunc(f);
+        calculators[stat].addFunc(f);
 
     }
 
@@ -4158,7 +3751,7 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * <B><U> Concept</U> :</B><BR>
      * <BR>
-     * A L2Character owns a table of Calculators called <B>_calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). <BR>
+     * A L2Character owns a table of Calculators called <B>calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). <BR>
      * <BR>
      * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method is ONLY for L2PcInstance</B></FONT><BR>
      * <BR>
@@ -4185,16 +3778,16 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * <B><U> Concept</U> :</B><BR>
      * <BR>
-     * A L2Character owns a table of Calculators called <B>_calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). To reduce cache memory use,
+     * A L2Character owns a table of Calculators called <B>calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). To reduce cache memory use,
      * L2NPCInstances who don't have skills share the same Calculator set called <B>NPC_STD_CALCULATOR</B>.<BR>
      * <BR>
-     * That's why, if a L2NPCInstance is under a skill/spell effect that modify one of its state, a copy of the NPC_STD_CALCULATOR must be create in its _calculators before addind new Func object.<BR>
+     * That's why, if a L2NPCInstance is under a skill/spell effect that modify one of its state, a copy of the NPC_STD_CALCULATOR must be create in its calculators before addind new Func object.<BR>
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>Remove the Func object from _calculators</li><BR>
+     * <li>Remove the Func object from calculators</li><BR>
      * <BR>
-     * <li>If L2Character is a L2NPCInstance and _calculators is equal to NPC_STD_CALCULATOR, free cache memory and just create a link on NPC_STD_CALCULATOR in _calculators</li><BR>
+     * <li>If L2Character is a L2NPCInstance and calculators is equal to NPC_STD_CALCULATOR, free cache memory and just create a link on NPC_STD_CALCULATOR in calculators</li><BR>
      * <BR>
      *
      * @param f The Func object to remove from the Calculator corresponding to the state affected
@@ -4207,28 +3800,28 @@ public abstract class L2Character extends L2Object {
         // Select the Calculator of the affected state in the Calculator set
         int stat = f.stat.ordinal();
 
-        if (_calculators[stat] == null) {
+        if (calculators[stat] == null) {
             return;
         }
 
         // Remove the Func object from the Calculator
-        _calculators[stat].removeFunc(f);
+        calculators[stat].removeFunc(f);
 
-        if (_calculators[stat].size() == 0) {
-            _calculators[stat] = null;
+        if (calculators[stat].size() == 0) {
+            calculators[stat] = null;
         }
 
         // If possible, free the memory and just create a link on NPC_STD_CALCULATOR
         if (this instanceof L2NpcInstance) {
             int i = 0;
             for (; i < Stats.NUM_STATS; i++) {
-                if (!Calculator.equalsCals(_calculators[i], NPC_STD_CALCULATOR[i])) {
+                if (!Calculator.equalsCals(calculators[i], NPC_STD_CALCULATOR[i])) {
                     break;
                 }
             }
 
             if (i >= Stats.NUM_STATS) {
-                _calculators = NPC_STD_CALCULATOR;
+                calculators = NPC_STD_CALCULATOR;
             }
         }
     }
@@ -4238,7 +3831,7 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * <B><U> Concept</U> :</B><BR>
      * <BR>
-     * A L2Character owns a table of Calculators called <B>_calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). <BR>
+     * A L2Character owns a table of Calculators called <B>calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). <BR>
      * <BR>
      * <FONT COLOR=#FF0000><B> <U>Caution</U> : This method is ONLY for L2PcInstance</B></FONT><BR>
      * <BR>
@@ -4267,16 +3860,16 @@ public abstract class L2Character extends L2Object {
      * <BR>
      * <B><U> Concept</U> :</B><BR>
      * <BR>
-     * A L2Character owns a table of Calculators called <B>_calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). To reduce cache memory use,
+     * A L2Character owns a table of Calculators called <B>calculators</B>. Each Calculator (a calculator per state) own a table of Func object. A Func object is a mathematic function that permit to calculate the modifier of a state (ex : REGENERATE_HP_RATE...). To reduce cache memory use,
      * L2NPCInstances who don't have skills share the same Calculator set called <B>NPC_STD_CALCULATOR</B>.<BR>
      * <BR>
-     * That's why, if a L2NPCInstance is under a skill/spell effect that modify one of its state, a copy of the NPC_STD_CALCULATOR must be create in its _calculators before addind new Func object.<BR>
+     * That's why, if a L2NPCInstance is under a skill/spell effect that modify one of its state, a copy of the NPC_STD_CALCULATOR must be create in its calculators before addind new Func object.<BR>
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>Remove allTemplates Func objects of the selected owner from _calculators</li><BR>
+     * <li>Remove allTemplates Func objects of the selected owner from calculators</li><BR>
      * <BR>
-     * <li>If L2Character is a L2NPCInstance and _calculators is equal to NPC_STD_CALCULATOR, free cache memory and just create a link on NPC_STD_CALCULATOR in _calculators</li><BR>
+     * <li>If L2Character is a L2NPCInstance and calculators is equal to NPC_STD_CALCULATOR, free cache memory and just create a link on NPC_STD_CALCULATOR in calculators</li><BR>
      * <BR>
      * <B><U> Example of use </U> :</B><BR>
      * <BR>
@@ -4289,17 +3882,17 @@ public abstract class L2Character extends L2Object {
 
         List<Stats> modifiedStats = null;
         // Go through the Calculator set
-        for (int i = 0; i < _calculators.length; i++) {
-            if (_calculators[i] != null) {
+        for (int i = 0; i < calculators.length; i++) {
+            if (calculators[i] != null) {
                 // Delete allTemplates Func objects of the selected owner
                 if (modifiedStats != null) {
-                    modifiedStats.addAll(_calculators[i].removeOwner(owner));
+                    modifiedStats.addAll(calculators[i].removeOwner(owner));
                 } else {
-                    modifiedStats = _calculators[i].removeOwner(owner);
+                    modifiedStats = calculators[i].removeOwner(owner);
                 }
 
-                if (_calculators[i].size() == 0) {
-                    _calculators[i] = null;
+                if (calculators[i].size() == 0) {
+                    calculators[i] = null;
                 }
             }
         }
@@ -4308,13 +3901,13 @@ public abstract class L2Character extends L2Object {
         if (this instanceof L2NpcInstance) {
             int i = 0;
             for (; i < Stats.NUM_STATS; i++) {
-                if (!Calculator.equalsCals(_calculators[i], NPC_STD_CALCULATOR[i])) {
+                if (!Calculator.equalsCals(calculators[i], NPC_STD_CALCULATOR[i])) {
                     break;
                 }
             }
 
             if (i >= Stats.NUM_STATS) {
-                _calculators = NPC_STD_CALCULATOR;
+                calculators = NPC_STD_CALCULATOR;
             }
         }
 
@@ -4934,7 +4527,7 @@ public abstract class L2Character extends L2Object {
         double distance = Math.sqrt((dx * dx) + (dy * dy));
 
         if (Config.DEBUG) {
-            _log.debug("distance to target:" + distance);
+            logger.debug("distance to target:" + distance);
         }
 
         // Define movement angles needed
@@ -4968,7 +4561,7 @@ public abstract class L2Character extends L2Object {
                 y = curY;
 
                 if (Config.DEBUG) {
-                    _log.debug("already in range, no movement needed.");
+                    logger.debug("already in range, no movement needed.");
                 }
 
                 // Notify the AI that the L2Character is arrived at destination
@@ -5020,7 +4613,7 @@ public abstract class L2Character extends L2Object {
 
                 if ((curX < L2World.MAP_MIN_X) || (curX > L2World.MAP_MAX_X) || (curY < L2World.MAP_MIN_Y) || (curY > L2World.MAP_MAX_Y)) {
                     // Temporary fix for character outside world region errors
-                    _log.warn("Character " + getName() + " outside world area, in coordinates x:" + curX + " y:" + curY);
+                    logger.warn("Character " + getName() + " outside world area, in coordinates x:" + curX + " y:" + curY);
                     getAI().setIntention(Intention.AI_INTENTION_IDLE);
                     if (this instanceof L2PcInstance) {
                         ((L2PcInstance) this).deleteMe();
@@ -5132,7 +4725,7 @@ public abstract class L2Character extends L2Object {
         setHeading(heading);
 
         if (Config.DEBUG) {
-            _log.debug("dist:" + distance + "speed:" + speed + " ttt:" + m._ticksToMove + " dx:" + (int) m._xSpeedTicks + " dy:" + (int) m._ySpeedTicks + " heading:" + heading);
+            logger.debug("dist:" + distance + "speed:" + speed + " ttt:" + m._ticksToMove + " dx:" + (int) m._xSpeedTicks + " dy:" + (int) m._ySpeedTicks + " heading:" + heading);
         }
 
         m._xDestination = x;
@@ -5146,7 +4739,7 @@ public abstract class L2Character extends L2Object {
         m._zMoveFrom = curZ;
 
         if (Config.DEBUG) {
-            _log.debug("time to target:" + m._ticksToMove);
+            logger.debug("time to target:" + m._ticksToMove);
         }
 
         // Set the L2Character _move object to MoveData object
@@ -5235,7 +4828,7 @@ public abstract class L2Character extends L2Object {
         m._moveStartTime = GameTimeController.getGameTicks();
 
         if (Config.DEBUG) {
-            _log.debug("time to target:" + m._ticksToMove);
+            logger.debug("time to target:" + m._ticksToMove);
         }
 
         // Set the L2Character _move object to MoveData object
@@ -5465,7 +5058,7 @@ public abstract class L2Character extends L2Object {
     // stopMove();
     //
     // if (Config.DEBUG)
-    // _log.debug(this.getName() +":: target reached at: x "+getX()+" y "+getY()+ " z:" + getZ());
+    // logger.debug(this.getName() +":: target reached at: x "+getX()+" y "+getY()+ " z:" + getZ());
     //
     // if (getPawnTarget() != null)
     // {
@@ -5506,7 +5099,7 @@ public abstract class L2Character extends L2Object {
     // }
     // else
     // {
-    // _log.info("multiple attacks want to start in parallel. prevented.");
+    // logger.info("multiple attacks want to start in parallel. prevented.");
     // }
     // }
     //
@@ -5658,7 +5251,7 @@ public abstract class L2Character extends L2Object {
                     if (skill != null) {
                         skill.getEffects(target, this);
                     } else {
-                        _log.warn("Skill 4515 at level 99 is missing in DP.");
+                        logger.warn("Skill 4515 at level 99 is missing in DP.");
                     }
 
                     damage = 0; // prevents messing up drop calculation
@@ -5729,7 +5322,7 @@ public abstract class L2Character extends L2Object {
                             // Custom messages - nice but also more network load
                             /*
                              * if (this instanceof L2PcInstance) ((L2PcInstance)this).sendMessage("You absorbed " + absorbDamage + " damage."); else if (this instanceof L2Summon) ((L2Summon)this).getOwner().sendMessage("Summon absorbed " + absorbDamage + " damage."); else if (Config.DEBUG)
-                             * _log.info(getName() + " absorbed " + absorbDamage + " damage.");
+                             * logger.info(getName() + " absorbed " + absorbDamage + " damage.");
                              */
                         }
                     }
@@ -5938,10 +5531,10 @@ public abstract class L2Character extends L2Object {
         // TODO: ZONETODO: Are there things < L2Characters in peace zones that can be attacked? If not this could be cleaned up
 
         if ((attacker instanceof L2Character) && (target instanceof L2Character)) {
-            return (((L2Character) target).isInsideZone(ZONE_PEACE) || ((L2Character) attacker).isInsideZone(ZONE_PEACE));
+            return (((L2Character) target).isInsideZone(Zone.PEACE) || ((L2Character) attacker).isInsideZone(Zone.PEACE));
         }
         if (attacker instanceof L2Character) {
-            return ((TownManager.getInstance().getTown(target.getX(), target.getY(), target.getZ()) != null) || ((L2Character) attacker).isInsideZone(ZONE_PEACE));
+            return ((TownManager.getInstance().getTown(target.getX(), target.getY(), target.getZ()) != null) || ((L2Character) attacker).isInsideZone(Zone.PEACE));
         }
 
         return ((TownManager.getInstance().getTown(target.getX(), target.getY(), target.getZ()) != null) || (TownManager.getInstance().getTown(attacker.getX(), attacker.getY(), attacker.getZ()) != null));
@@ -5958,11 +5551,11 @@ public abstract class L2Character extends L2Object {
             return ((region != null) && (region.isActive()));
         } catch (Exception e) {
             if (this instanceof L2PcInstance) {
-                _log.warn("Player " + getName() + " at bad coords: (x: " + getX() + ", y: " + getY() + ", z: " + getZ() + ").");
+                logger.warn("Player " + getName() + " at bad coords: (x: " + getX() + ", y: " + getY() + ", z: " + getZ() + ").");
                 ((L2PcInstance) this).sendMessage("Error with your coordinates! Please reboot your game fully!");
                 ((L2PcInstance) this).teleToLocation(80753, 145481, -3532, false); // Near Giran luxury shop
             } else {
-                _log.warn("Object " + getName() + " at bad coords: (x: " + getX() + ", y: " + getY() + ", z: " + getZ() + ").");
+                logger.warn("Object " + getName() + " at bad coords: (x: " + getX() + ", y: " + getY() + ", z: " + getZ() + ").");
                 decayMe();
             }
             return false;
@@ -6313,7 +5906,7 @@ public abstract class L2Character extends L2Object {
                 // else
                 // {
                 // if (Config.DEBUG)
-                // _log.warn("Class cast bad: "+targets[i].getClass().toString());
+                // logger.warn("Class cast bad: "+targets[i].getClass().toString());
                 // }
             }
             if (targetList.isEmpty()) {
@@ -6610,7 +6203,7 @@ public abstract class L2Character extends L2Object {
      */
     public void disableAllSkills() {
         if (Config.DEBUG) {
-            _log.debug("allTemplates skills disabled");
+            logger.debug("allTemplates skills disabled");
         }
         _allSkillsDisabled = true;
     }
@@ -6621,7 +6214,7 @@ public abstract class L2Character extends L2Object {
      */
     public void enableAllSkills() {
         if (Config.DEBUG) {
-            _log.debug("allTemplates skills enabled");
+            logger.debug("allTemplates skills enabled");
         }
         _allSkillsDisabled = false;
     }
@@ -6657,7 +6250,7 @@ public abstract class L2Character extends L2Object {
                         if (tempSkill != null) {
                             tempSkill.getEffects(player, this);
                         } else {
-                            _log.warn("Skill 4515 at level 99 is missing in DP.");
+                            logger.warn("Skill 4515 at level 99 is missing in DP.");
                         }
                     }
 
@@ -6771,7 +6364,7 @@ public abstract class L2Character extends L2Object {
                 }
             }
         } catch (Exception e) {
-            _log.warn( "", e);
+            logger.warn( "", e);
         }
     }
 
@@ -6815,12 +6408,12 @@ public abstract class L2Character extends L2Object {
             }
             if (Math.abs(angleDiff) <= maxAngleDiff) {
                 if (Config.DEBUG) {
-                    _log.info("Char " + getName() + " is behind " + target.getName());
+                    logger.info("Char " + getName() + " is behind " + target.getName());
                 }
                 return true;
             }
         } else {
-            _log.debug("isBehindTarget's target not an L2 Character.");
+            logger.debug("isBehindTarget's target not an L2 Character.");
         }
         return false;
     }
@@ -6861,12 +6454,12 @@ public abstract class L2Character extends L2Object {
             }
             if (Math.abs(angleDiff) <= maxAngleDiff) {
                 if (Config.DEBUG) {
-                    _log.info("Char " + getName() + " is side " + target.getName());
+                    logger.info("Char " + getName() + " is side " + target.getName());
                 }
                 return true;
             }
         } else {
-            _log.debug("isSideTarget's target not an L2 Character.");
+            logger.debug("isSideTarget's target not an L2 Character.");
         }
         return false;
     }
@@ -6990,11 +6583,11 @@ public abstract class L2Character extends L2Object {
 
     // public void checkPvPFlag()
     // {
-    // if (Config.DEBUG) _log.debug("Checking PvpFlag");
+    // if (Config.DEBUG) logger.debug("Checking PvpFlag");
     // _PvPRegTask = ThreadPoolManager.getInstance().scheduleLowAtFixedRate(
     // new PvPFlag(), 1000, 5000);
     // _PvPRegActive = true;
-    // // _log.debug("PvP recheck");
+    // // logger.debug("PvP recheck");
     // }
     //
 
@@ -7330,7 +6923,7 @@ public abstract class L2Character extends L2Object {
      * @param aiClass the new ai class
      */
     public void setAiClass(String aiClass) {
-        _aiClass = aiClass;
+        this.aiClass = aiClass;
     }
 
     /**
@@ -7339,7 +6932,7 @@ public abstract class L2Character extends L2Object {
      * @return the ai class
      */
     public String getAiClass() {
-        return _aiClass;
+        return aiClass;
     }
 
     /**
@@ -7348,7 +6941,7 @@ public abstract class L2Character extends L2Object {
      * @return the last buffer
      */
     public L2Character getLastBuffer() {
-        return _lastBuffer;
+        return lastBuffer;
     }
 
     /**
@@ -7357,7 +6950,7 @@ public abstract class L2Character extends L2Object {
      * @param champ the new champion
      */
     public void setChampion(boolean champ) {
-        _champion = champ;
+        champion = champ;
     }
 
     /**
@@ -7366,7 +6959,7 @@ public abstract class L2Character extends L2Object {
      * @return true, if is champion
      */
     public boolean isChampion() {
-        return _champion;
+        return champion;
     }
 
     /**
@@ -7375,7 +6968,7 @@ public abstract class L2Character extends L2Object {
      * @return the last heal amount
      */
     public int getLastHealAmount() {
-        return _lastHealAmount;
+        return lastHealAmount;
     }
 
     /**
@@ -7384,7 +6977,7 @@ public abstract class L2Character extends L2Object {
      * @param buffer the new last buffer
      */
     public void setLastBuffer(L2Character buffer) {
-        _lastBuffer = buffer;
+        lastBuffer = buffer;
     }
 
     /**
@@ -7393,7 +6986,7 @@ public abstract class L2Character extends L2Object {
      * @param hp the new last heal amount
      */
     public void setLastHealAmount(int hp) {
-        _lastHealAmount = hp;
+        lastHealAmount = hp;
     }
 
     /**
@@ -7443,5 +7036,129 @@ public abstract class L2Character extends L2Object {
      * @param fb the new force buff
      */
     public void setForceBuff(ForceBuff fb) {
+    }
+
+    public final String getTitle() {
+        return title;
+    }
+
+    public int getStrength() {
+        return getStat().getSTR();
+    }
+
+    public int getDexterity() {
+        return getStat().getDEX();
+    }
+
+    public int getConstitution() {
+        return getStat().getCON();
+    }
+
+    public int getIntelligence() {
+        return getStat().getINT();
+    }
+
+    public int getWisdom() {
+        return getStat().getWIT();
+    }
+
+    public int getMentality() {
+        return getStat().getMEN();
+    }
+
+    public int getMaxHp() {
+        return getStat().getMaxHp();
+    }
+
+    public final double getCurrentHp() {
+        return getStatus().getCurrentHp();
+    }
+
+    public int getMaxMp() {
+        return getStat().getMaxMp();
+    }
+
+    public final double getCurrentMp() {
+        return getStatus().getCurrentMp();
+    }
+
+    public final double getCurrentCp() {
+        return getStatus().getCurrentCp();
+    }
+
+    public final int getMaxCp() {
+        return getStat().getMaxCp();
+    }
+
+    public int getPAtk(L2Character target) {
+        return getStat().getPAtk(target);
+    }
+
+    public int getPAtkSpd() {
+        return getStat().getPAtkSpd();
+    }
+
+    public int getPDef(L2Character target) {
+        return getStat().getPDef(target);
+    }
+
+    public int getEvasionRate(L2Character target) {
+        return getStat().getEvasionRate(target);
+    }
+
+    public int getAccuracy() {
+        return getStat().getAccuracy();
+    }
+
+    public int getCriticalHit(L2Character target, L2Skill skill) {
+        return getStat().getCriticalHit(target, skill);
+    }
+
+    public int getMAtk(L2Character target, L2Skill skill) {
+        return getStat().getMAtk(target, skill);
+    }
+
+    public int getMAtkSpd() {
+        return getStat().getMAtkSpd();
+    }
+
+    public int getMDef(L2Character target, L2Skill skill) {
+        return getStat().getMDef(target, skill);
+    }
+
+    public final int getMCriticalHit(L2Character target, L2Skill skill) {
+        return getStat().getMCriticalHit(target, skill);
+    }
+
+    public float getFireDefense() {
+        return template.getFireDefense();
+    }
+
+    public float getWaterDefense() {
+        return template.getWaterDefense();
+    }
+
+    public float getWindDefense() {
+        return template.getWindDefense();
+    }
+
+    public float getEarthDefense() {
+        return template.getEarthDefense();
+    }
+
+    public float getHolyDefense() {
+        return template.getHolyDefense();
+    }
+
+    public float getUnholyDefense() {
+        return template.getUnholyDefense();
+    }
+
+    public int getRunSpeed() {
+        return getStat().getRunSpeed();
+    }
+
+    public final boolean isRunning() {
+        return isRunning;
     }
 }

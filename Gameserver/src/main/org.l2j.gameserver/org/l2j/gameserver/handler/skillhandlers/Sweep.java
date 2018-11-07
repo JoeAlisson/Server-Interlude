@@ -34,7 +34,7 @@ import org.l2j.gameserver.serverpackets.SystemMessage;
  */
 public class Sweep implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(Sweep.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(Sweep.class.getName());
 	private static final SkillType[] SKILL_IDS =
 	{
 		SkillType.SWEEP

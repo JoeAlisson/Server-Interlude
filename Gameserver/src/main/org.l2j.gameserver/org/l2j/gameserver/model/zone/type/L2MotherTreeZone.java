@@ -20,6 +20,7 @@ package org.l2j.gameserver.model.zone.type;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.zone.L2ZoneType;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.xml.jaxb.Race;
@@ -51,7 +52,7 @@ public class L2MotherTreeZone extends L2ZoneType {
 				}
 			}
 			
-			player.setInsideZone(L2Character.ZONE_MOTHERTREE, true);
+			player.setInsideZone(Zone.MOTHER_TREE, true);
 			player.sendPacket(new SystemMessage(SystemMessageId.ENTER_SHADOW_MOTHER_TREE));
 		}
 	}
@@ -59,9 +60,9 @@ public class L2MotherTreeZone extends L2ZoneType {
 	@Override
 	protected void onExit(L2Character character)
 	{
-		if ((character instanceof L2PcInstance) && character.isInsideZone(L2Character.ZONE_MOTHERTREE))
+		if ((character instanceof L2PcInstance) && character.isInsideZone(Zone.MOTHER_TREE))
 		{
-			character.setInsideZone(L2Character.ZONE_MOTHERTREE, false);
+			character.setInsideZone(Zone.MOTHER_TREE, false);
 			((L2PcInstance) character).sendPacket(new SystemMessage(SystemMessageId.EXIT_SHADOW_MOTHER_TREE));
 		}
 	}

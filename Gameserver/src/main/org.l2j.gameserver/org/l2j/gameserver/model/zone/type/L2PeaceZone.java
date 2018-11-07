@@ -19,6 +19,7 @@ package org.l2j.gameserver.model.zone.type;
 
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.zone.L2ZoneType;
+import org.l2j.gameserver.model.zone.Zone;
 
 /**
  * A peaceful zone
@@ -33,7 +34,7 @@ public class L2PeaceZone extends L2ZoneType {
 	@Override
 	protected void onEnter(L2Character character)
 	{
-		character.setInsideZone(L2Character.ZONE_PEACE, true);
+		character.setInsideZone(Zone.PEACE, true);
 		
 		/*
 		 * if (character instanceof L2PcInstance) { ((L2PcInstance)character).sendMessage("You entered a peace zone!"); }
@@ -43,7 +44,7 @@ public class L2PeaceZone extends L2ZoneType {
 	@Override
 	protected void onExit(L2Character character)
 	{
-		character.setInsideZone(L2Character.ZONE_PEACE, false);
+		character.setInsideZone(Zone.PEACE, false);
 		
 		/*
 		 * if (character instanceof L2PcInstance) { ((L2PcInstance)character).sendMessage("You exited a peace zone!"); }

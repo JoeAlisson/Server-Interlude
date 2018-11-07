@@ -11,7 +11,7 @@ import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 public class FishingSkill implements ISkillHandler
 {
-	// private static Logger _log = LoggerFactory.getLogger(SiegeFlag.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(SiegeFlag.class.getName());
 	private static final SkillType[] SKILL_IDS =
 	{
 		SkillType.PUMPING,

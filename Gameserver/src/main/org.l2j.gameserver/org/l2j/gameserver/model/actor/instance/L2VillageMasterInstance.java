@@ -20,27 +20,28 @@ package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.Olympiad;
-import org.l2j.gameserver.datatables.PlayerTemplateTable;
 import org.l2j.gameserver.datatables.ClanTable;
+import org.l2j.gameserver.datatables.PlayerTemplateTable;
 import org.l2j.gameserver.datatables.SkillTreeTable;
 import org.l2j.gameserver.instancemanager.CastleManager;
 import org.l2j.gameserver.instancemanager.SiegeManager;
-import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Clan;
 import org.l2j.gameserver.model.L2Clan.SubPledge;
 import org.l2j.gameserver.model.L2ClanMember;
 import org.l2j.gameserver.model.base.ClassType;
-import org.l2j.gameserver.model.base.CreatureRace;
 import org.l2j.gameserver.model.base.PlayerClass;
 import org.l2j.gameserver.model.base.SubClass;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.entity.database.ClanSkillInfo;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.quest.QuestState;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.l2j.gameserver.util.Util;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Iterator;
 import java.util.List;
@@ -53,7 +54,7 @@ import java.util.Set;
  * @version $Revision: 1.4.2.3.2.8 $ $Date: 2005/03/29 23:15:15 $
  */
 public final class L2VillageMasterInstance extends L2FolkInstance {
-    // private static Logger _log = LoggerFactory.getLogger(L2VillageMasterInstance.class.getName());
+     private static Logger logger = LoggerFactory.getLogger(L2VillageMasterInstance.class);
 
     /**
      * @param objectId
@@ -382,7 +383,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
     // Private stuff
     public void dissolveClan(L2PcInstance player, int clanId) {
         if (Config.DEBUG) {
-            _log.debug(player.getObjectId() + "(" + player.getName() + ") requested dissolve a clan from " + getObjectId() + "(" + getName() + ")");
+            logger.debug(player.getObjectId() + "(" + player.getName() + ") requested dissolve a clan from " + getObjectId() + "(" + getName() + ")");
         }
 
         if (!player.isClanLeader()) {
@@ -408,7 +409,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
                 return;
             }
         }
-        if (player.isInsideZone(L2Character.ZONE_SIEGE)) {
+        if (player.isInsideZone(Zone.SIEGE)) {
             player.sendPacket(new SystemMessage(SystemMessageId.CANNOT_DISSOLVE_WHILE_IN_SIEGE));
             return;
         }
@@ -428,7 +429,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
 
     public void recoverClan(L2PcInstance player, int clanId) {
         if (Config.DEBUG) {
-            _log.debug(player.getObjectId() + "(" + player.getName() + ") requested recover a clan from " + getObjectId() + "(" + getName() + ")");
+            logger.debug(player.getObjectId() + "(" + player.getName() + ") requested recover a clan from " + getObjectId() + "(" + getName() + ")");
         }
 
         if (!player.isClanLeader()) {
@@ -443,7 +444,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
 
     public void changeClanLeader(L2PcInstance player, String target) {
         if (Config.DEBUG) {
-            _log.debug(player.getObjectId() + "(" + player.getName() + ") requested change a clan leader from " + getObjectId() + "(" + getName() + ")");
+            logger.debug(player.getObjectId() + "(" + player.getName() + ") requested change a clan leader from " + getObjectId() + "(" + getName() + ")");
         }
 
         if (!player.isClanLeader()) {
@@ -472,7 +473,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
 
     public void createSubPledge(L2PcInstance player, String clanName, String leaderName, int pledgeType, int minClanLvl) {
         // if (Config.DEBUG)
-        _log.debug(player.getObjectId() + "(" + player.getName() + ") requested sub clan creation from " + getObjectId() + "(" + getName() + ")");
+        logger.debug(player.getObjectId() + "(" + player.getName() + ") requested sub clan creation from " + getObjectId() + "(" + getName() + ")");
 
         if (!player.isClanLeader()) {
             player.sendPacket(new SystemMessage(SystemMessageId.YOU_ARE_NOT_AUTHORIZED_TO_DO_THAT));
@@ -553,7 +554,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
 
     public void assignSubPledgeLeader(L2PcInstance player, String clanName, String leaderName) {
         if (Config.DEBUG) {
-            _log.debug(player.getObjectId() + "(" + player.getName() + ") requested to assign sub clan" + clanName + "leader " + "(" + leaderName + ")");
+            logger.debug(player.getObjectId() + "(" + player.getName() + ") requested to assign sub clan" + clanName + "leader " + "(" + leaderName + ")");
         }
 
         if (!player.isClanLeader()) {
@@ -676,7 +677,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
      */
     public void showPledgeSkillList(L2PcInstance player) {
         if (Config.DEBUG) {
-            _log.debug("PledgeSkillList activated on: " + getObjectId());
+            logger.debug("PledgeSkillList activated on: " + getObjectId());
         }
         if (player.getClan() == null) {
             return;

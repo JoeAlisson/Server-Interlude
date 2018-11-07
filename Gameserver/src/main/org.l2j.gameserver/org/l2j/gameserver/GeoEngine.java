@@ -261,14 +261,14 @@ public class GeoEngine extends GeoData {
                     z += inc_z_directionx;
                     next_y += inc_y;
                     z += inc_z_directiony;
-                    // _log.warn("1: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("1: next_x:"+next_x+" next_y"+next_y);
                     if (!nLOS(x, y, (int) z, inc_x, inc_y, tz, false)) {
                         return false;
                     }
                 } else {
                     d += delta_A;
                     next_x += inc_x;
-                    // _log.warn("2: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("2: next_x:"+next_x+" next_y"+next_y);
                     z += inc_z_directionx;
                     if (!nLOS(x, y, (int) z, inc_x, 0, tz, false)) {
                         return false;
@@ -288,14 +288,14 @@ public class GeoEngine extends GeoData {
                     z += inc_z_directiony;
                     next_x += inc_x;
                     z += inc_z_directionx;
-                    // _log.warn("3: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("3: next_x:"+next_x+" next_y"+next_y);
                     if (!nLOS(x, y, (int) z, inc_x, inc_y, tz, false)) {
                         return false;
                     }
                 } else {
                     d += delta_A;
                     next_y += inc_y;
-                    // _log.warn("4: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("4: next_x:"+next_x+" next_y"+next_y);
                     z += inc_z_directiony;
                     if (!nLOS(x, y, (int) z, 0, inc_y, tz, false)) {
                         return false;
@@ -370,14 +370,14 @@ public class GeoEngine extends GeoData {
                     z += inc_z_directionx;
                     next_y += inc_y;
                     z += inc_z_directiony;
-                    // _log.warn("1: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("1: next_x:"+next_x+" next_y"+next_y);
                     if (!nLOS(x, y, (int) z, inc_x, inc_y, tz, true)) {
                         return false;
                     }
                 } else {
                     d += delta_A;
                     next_x += inc_x;
-                    // _log.warn("2: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("2: next_x:"+next_x+" next_y"+next_y);
                     z += inc_z_directionx;
                     if (!nLOS(x, y, (int) z, inc_x, 0, tz, true)) {
                         return false;
@@ -397,14 +397,14 @@ public class GeoEngine extends GeoData {
                     z += inc_z_directiony;
                     next_x += inc_x;
                     z += inc_z_directionx;
-                    // _log.warn("3: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("3: next_x:"+next_x+" next_y"+next_y);
                     if (!nLOS(x, y, (int) z, inc_x, inc_y, tz, true)) {
                         return false;
                     }
                 } else {
                     d += delta_A;
                     next_y += inc_y;
-                    // _log.warn("4: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("4: next_x:"+next_x+" next_y"+next_y);
                     z += inc_z_directiony;
                     if (!nLOS(x, y, (int) z, 0, inc_y, tz, true)) {
                         return false;
@@ -471,7 +471,7 @@ public class GeoEngine extends GeoData {
                     d += delta_B;
                     next_x += inc_x;
                     next_y += inc_y;
-                    // _log.warn("2: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("2: next_x:"+next_x+" next_y"+next_y);
                     tempz = nCanMoveNext(x, y, (int) z, next_x, next_y, tz);
                     if (tempz == Double.MIN_VALUE) {
                         return new Location((x << 4) + L2World.MAP_MIN_X, (y << 4) + L2World.MAP_MIN_Y, (int) z);
@@ -480,7 +480,7 @@ public class GeoEngine extends GeoData {
                 } else {
                     d += delta_A;
                     next_x += inc_x;
-                    // _log.warn("3: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("3: next_x:"+next_x+" next_y"+next_y);
                     tempz = nCanMoveNext(x, y, (int) z, next_x, next_y, tz);
                     if (tempz == Double.MIN_VALUE) {
                         return new Location((x << 4) + L2World.MAP_MIN_X, (y << 4) + L2World.MAP_MIN_Y, (int) z);
@@ -499,7 +499,7 @@ public class GeoEngine extends GeoData {
                     d += delta_B;
                     next_y += inc_y;
                     next_x += inc_x;
-                    // _log.warn("5: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("5: next_x:"+next_x+" next_y"+next_y);
                     tempz = nCanMoveNext(x, y, (int) z, next_x, next_y, tz);
                     if (tempz == Double.MIN_VALUE) {
                         return new Location((x << 4) + L2World.MAP_MIN_X, (y << 4) + L2World.MAP_MIN_Y, (int) z);
@@ -508,7 +508,7 @@ public class GeoEngine extends GeoData {
                 } else {
                     d += delta_A;
                     next_y += inc_y;
-                    // _log.warn("6: next_x:"+next_x+" next_y"+next_y);
+                    // logger.warn("6: next_x:"+next_x+" next_y"+next_y);
                     tempz = nCanMoveNext(x, y, (int) z, next_x, next_y, tz);
                     if (tempz == Double.MIN_VALUE) {
                         return new Location((x << 4) + L2World.MAP_MIN_X, (y << 4) + L2World.MAP_MIN_Y, (int) z);
@@ -902,7 +902,7 @@ public class GeoEngine extends GeoData {
                 offset--;
             }
             byte layers = geo.get(index);
-            // _log.warn("layers"+layers);
+            // logger.warn("layers"+layers);
             index++;
             short height = -1;
             if ((layers <= 0) || (layers > 125)) {

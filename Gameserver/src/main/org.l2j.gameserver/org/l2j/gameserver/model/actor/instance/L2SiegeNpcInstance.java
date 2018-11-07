@@ -32,7 +32,7 @@ import org.l2j.gameserver.serverpackets.ValidateLocation;
  */
 public class L2SiegeNpcInstance extends L2FolkInstance
 {
-	// private static Logger _log = LoggerFactory.getLogger(L2SiegeNpcInstance.class.getName());
+	// private static Logger logger = LoggerFactory.getLogger(L2SiegeNpcInstance.class.getName());
 	
 	public L2SiegeNpcInstance(int objectID, NpcTemplate template)
 	{

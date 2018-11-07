@@ -18,9 +18,9 @@ import org.l2j.commons.Config;
 import org.l2j.gameserver.GmListTable;
 import org.l2j.gameserver.datatables.MapRegionTable;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
-import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.Location;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
+import org.l2j.gameserver.model.zone.Zone;
 
 import java.util.StringTokenizer;
 
@@ -62,7 +62,7 @@ public class AdminZone implements IAdminCommandHandler
 		
 		if (actualCommand.equalsIgnoreCase("admin_zone_check"))
 		{
-			if (activeChar.isInsideZone(L2Character.ZONE_PVP))
+			if (activeChar.isInsideZone(Zone.PVP))
 			{
 				activeChar.sendMessage("This is a PvP zone.");
 			}
@@ -71,7 +71,7 @@ public class AdminZone implements IAdminCommandHandler
 				activeChar.sendMessage("This is NOT a PvP zone.");
 			}
 			
-			if (activeChar.isInsideZone(L2Character.ZONE_NOLANDING))
+			if (activeChar.isInsideZone(Zone.NO_LANDING))
 			{
 				activeChar.sendMessage("This is a no landing zone.");
 			}

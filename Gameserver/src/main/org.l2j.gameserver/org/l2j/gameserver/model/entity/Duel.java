@@ -21,9 +21,9 @@ package org.l2j.gameserver.model.entity;
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.ai.Intention;
 import org.l2j.gameserver.instancemanager.DuelManager;
-import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Effect;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.slf4j.Logger;
@@ -789,7 +789,7 @@ public class Duel {
             }
 
             // is one of the players in a Siege, Peace or PvP zone?
-            if (_playerA.isInsideZone(L2Character.ZONE_PEACE) || _playerB.isInsideZone(L2Character.ZONE_PEACE) || _playerA.isInsideZone(L2Character.ZONE_SIEGE) || _playerB.isInsideZone(L2Character.ZONE_SIEGE) || _playerA.isInsideZone(L2Character.ZONE_PVP) || _playerB.isInsideZone(L2Character.ZONE_PVP)) {
+            if (_playerA.isInsideZone(Zone.PEACE) || _playerB.isInsideZone(Zone.PEACE) || _playerA.isInsideZone(Zone.SIEGE) || _playerB.isInsideZone(Zone.SIEGE) || _playerA.isInsideZone(Zone.PVP) || _playerB.isInsideZone(Zone.PVP)) {
                 return DuelResultEnum.Canceled;
             }
         }

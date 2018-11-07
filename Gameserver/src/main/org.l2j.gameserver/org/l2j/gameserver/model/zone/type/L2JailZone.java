@@ -20,6 +20,7 @@ package org.l2j.gameserver.model.zone.type;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.zone.L2ZoneType;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.SystemMessage;
 
@@ -37,8 +38,8 @@ public class L2JailZone extends L2ZoneType {
 	{
 		if (character instanceof L2PcInstance)
 		{
-			character.setInsideZone(L2Character.ZONE_JAIL, true);
-			character.setInsideZone(L2Character.ZONE_PVP, true);
+			character.setInsideZone(Zone.JAIL, true);
+			character.setInsideZone(Zone.PVP, true);
 			((L2PcInstance) character).sendPacket(new SystemMessage(SystemMessageId.ENTERED_COMBAT_ZONE));
 		}
 	}
@@ -48,8 +49,8 @@ public class L2JailZone extends L2ZoneType {
 	{
 		if (character instanceof L2PcInstance)
 		{
-			character.setInsideZone(L2Character.ZONE_JAIL, false);
-			character.setInsideZone(L2Character.ZONE_PVP, false);
+			character.setInsideZone(Zone.JAIL, false);
+			character.setInsideZone(Zone.PVP, false);
 			((L2PcInstance) character).sendPacket(new SystemMessage(SystemMessageId.LEFT_COMBAT_ZONE));
 		}
 	}

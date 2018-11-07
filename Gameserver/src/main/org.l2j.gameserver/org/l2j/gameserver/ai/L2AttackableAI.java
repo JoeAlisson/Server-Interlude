@@ -9,8 +9,8 @@ import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.instancemanager.DimensionalRiftManager;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.actor.instance.*;
+import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 import java.util.concurrent.Future;
 
@@ -21,7 +21,7 @@ import static org.l2j.gameserver.ai.Intention.*;
  */
 public class L2AttackableAI<T extends L2Attackable.AIAccessor> extends MovableAI<T> implements Runnable
 {
-	// protected static final Logger _log = LoggerFactory.getLogger(L2AttackableAI.class.getName());
+	// protected static final Logger logger = LoggerFactory.getLogger(L2AttackableAI.class.getName());
 	
 	private static final int RANDOM_WALK_RATE = 30; // confirmed
 	// private static final int MAX_DRIFT_RANGE = 300;
@@ -210,7 +210,7 @@ public class L2AttackableAI<T extends L2Attackable.AIAccessor> extends MovableAI
 			
 			// depending on config, do not allow mobs to attack _new_ players in peacezones,
 			// unless they are already following those players from outside the peacezone.
-			if (!Config.ALT_MOB_AGRO_IN_PEACEZONE && target.isInsideZone(L2Character.ZONE_PEACE))
+			if (!Config.ALT_MOB_AGRO_IN_PEACEZONE && target.isInsideZone(Zone.PEACE))
 			{
 				return false;
 			}
@@ -481,7 +481,7 @@ public class L2AttackableAI<T extends L2Attackable.AIAccessor> extends MovableAI
 				z1 = actor.getZ();
 			}
 			
-			// _log.info("Curent pos ("+getX()+", "+getY()+"), moving to ("+x1+", "+y1+").");
+			// logger.info("Curent pos ("+getX()+", "+getY()+"), moving to ("+x1+", "+y1+").");
 			// Move the actor to Location (x,y,z) server side AND client side by sending Server->Client packet CharMoveToLocation (broadcast)
 			moveTo(x1, y1, z1);
 		}
@@ -577,7 +577,7 @@ public class L2AttackableAI<T extends L2Attackable.AIAccessor> extends MovableAI
 			}
 			catch (NullPointerException e)
 			{
-				// _log.warn("AttackableAI: Attack target is NULL.");
+				// logger.warn("AttackableAI: Attack target is NULL.");
 				setIntention(AI_INTENTION_ACTIVE);
 				return;
 			}

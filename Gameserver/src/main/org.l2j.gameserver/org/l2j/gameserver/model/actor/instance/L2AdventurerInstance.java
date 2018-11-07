@@ -23,7 +23,8 @@ import org.l2j.gameserver.model.L2Spawn;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.serverpackets.ExQuestInfo;
 import org.l2j.gameserver.serverpackets.RadarControl;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This class ...
@@ -32,7 +33,7 @@ import org.l2j.gameserver.serverpackets.RadarControl;
  */
 public class L2AdventurerInstance extends L2FolkInstance
 {
-	// private static Logger _log = LoggerFactory.getLogger(L2AdventurerInstance.class.getName());
+	private static Logger logger = LoggerFactory.getLogger(L2AdventurerInstance.class);
 	
 	public L2AdventurerInstance(int objectId, NpcTemplate template)
 	{
@@ -61,7 +62,7 @@ public class L2AdventurerInstance extends L2FolkInstance
 			}
 			catch (NumberFormatException e)
 			{
-				_log.warn("Invalid Bypass to Server command parameter.");
+				logger.warn("Invalid Bypass to Server command parameter.");
 			}
 		}
 		else if (command.startsWith("raidInfo"))

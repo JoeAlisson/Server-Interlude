@@ -32,6 +32,8 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.text.DateFormat;
 import java.util.LinkedList;
@@ -56,6 +58,7 @@ public class L2NpcInstance extends L2Character {
      * The interaction distance of the L2NpcInstance(is used as offset in MovetoLocation method)
      */
     public static final int INTERACTION_DISTANCE = 150;
+    private static final Logger logger = LoggerFactory.getLogger(L2NpcInstance.class);
 
     /**
      * The L2Spawn object that manage this L2NpcInstance
@@ -210,7 +213,7 @@ public class L2NpcInstance extends L2Character {
      * <BR>
      * <B><U> Actions</U> :</B><BR>
      * <BR>
-     * <li>Call the L2Character constructor to set the _template of the L2Character (copy skills from template to object and link _calculators to NPC_STD_CALCULATOR)</li> <li>Set the name of the L2Character</li> <li>Create a RandomAnimation Task that will be launched after the calculated delay if
+     * <li>Call the L2Character constructor to set the _template of the L2Character (copy skills from template to object and link calculators to NPC_STD_CALCULATOR)</li> <li>Set the name of the L2Character</li> <li>Create a RandomAnimation Task that will be launched after the calculated delay if
      * the server allow it</li><BR>
      * <BR>
      *
@@ -219,7 +222,7 @@ public class L2NpcInstance extends L2Character {
      */
     public L2NpcInstance(int objectId, NpcTemplate template) {
         // Call the L2Character constructor to set the _template of the L2Character, copy skills from template to object
-        // and link _calculators to NPC_STD_CALCULATOR
+        // and link calculators to NPC_STD_CALCULATOR
         super(objectId, template);
         getKnownList(); // init knownlist
         getStat(); // init stats
@@ -234,7 +237,7 @@ public class L2NpcInstance extends L2Character {
         _currentCollisionRadius = getTemplate().getCollisionRadius();
 
         if (template == null) {
-            _log.error("No template for NpcTemplate. Please check your datapack is setup correctly.");
+            logger.error("No template for NpcTemplate. Please check your datapack is setup correctly.");
             return;
         }
 
@@ -245,8 +248,8 @@ public class L2NpcInstance extends L2Character {
 
     @Override
     protected void initSkillsStat(CharTemplate template) {
-        // Copy the Standard Calcultors of the L2NPCInstance in _calculators
-        _calculators = NPC_STD_CALCULATOR;
+        // Copy the Standard Calcultors of the L2NPCInstance in calculators
+        calculators = NPC_STD_CALCULATOR;
 
         // Copy the skills of the L2NPCInstance from its template to the L2Character Instance
         // The skills list can be affected by spell effects so it's necessary to make a copy
@@ -596,7 +599,7 @@ public class L2NpcInstance extends L2Character {
         // Check if the L2PcInstance already target the L2NpcInstance
         if (this != player.getTarget()) {
             if (Config.DEBUG) {
-                _log.debug("new target selected:" + getObjectId());
+                logger.debug("new target selected:" + getObjectId());
             }
 
             // Set the target of the L2PcInstance reader
@@ -1185,9 +1188,9 @@ public class L2NpcInstance extends L2Character {
 
             if (Config.DEBUG) {
                 if (content != null) {
-                    _log.debug("Showing quest window for quest " + questId + " html path: " + path);
+                    logger.debug("Showing quest window for quest " + questId + " html path: " + path);
                 } else {
-                    _log.debug("File not exists for quest " + questId + " html path: " + path);
+                    logger.debug("File not exists for quest " + questId + " html path: " + path);
                 }
             }
         }
@@ -2068,14 +2071,14 @@ public class L2NpcInstance extends L2Character {
         try {
             decayMe();
         } catch (Throwable t) {
-            _log.error("deletedMe(): " + t);
+            logger.error("deletedMe(): " + t);
         }
 
         // Remove allTemplates L2Object from _knownObjects and _knownPlayer of the L2Character then cancel Attak or Cast and notify AI
         try {
             getKnownList().removeAllKnownObjects();
         } catch (Throwable t) {
-            _log.error("deletedMe(): " + t);
+            logger.error("deletedMe(): " + t);
         }
 
         // Remove L2Object object from _allObjects of L2World

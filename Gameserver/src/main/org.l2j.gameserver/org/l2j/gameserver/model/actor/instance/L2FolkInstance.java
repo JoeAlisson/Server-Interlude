@@ -11,6 +11,8 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.SkillInfo;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.Set;
@@ -18,6 +20,7 @@ import java.util.Set;
 
 public class L2FolkInstance extends L2NpcInstance {
     private final Set<PlayerClass> _classesToTeach;
+    private static final Logger logger = LoggerFactory.getLogger(L2FolkInstance.class);
 
     public L2FolkInstance(int objectId, NpcTemplate template) {
         super(objectId, template);
@@ -38,7 +41,7 @@ public class L2FolkInstance extends L2NpcInstance {
      */
     public void showSkillList(L2PcInstance player, PlayerClass playerClass) {
         if (Config.DEBUG) {
-            _log.debug("SkillList activated on: " + getObjectId());
+            logger.debug("SkillList activated on: " + getObjectId());
         }
 
         int npcId = getTemplate().getId();
@@ -110,7 +113,7 @@ public class L2FolkInstance extends L2NpcInstance {
      */
     public void showEnchantSkillList(L2PcInstance player, PlayerClass playerClass) {
         if (Config.DEBUG) {
-            _log.debug("EnchantSkillList activated on: " + getObjectId());
+            logger.debug("EnchantSkillList activated on: " + getObjectId());
         }
         int npcId = getTemplate().getId();
 
