@@ -183,16 +183,16 @@ public class L2DoormenInstance extends L2FolkInstance
 	public void showMessageWindow(L2PcInstance player)
 	{
 		player.sendPacket(new ActionFailed());
-		String filename = "data/html/doormen/" + getTemplate().getId() + "-no.htm";
+		String filename = "data/html/doormen/" + getNpcId() + "-no.htm";
 		
 		int condition = validateCondition(player);
 		if (condition == COND_BUSY_BECAUSE_OF_SIEGE)
 		{
-			filename = "data/html/doormen/" + getTemplate().getId() + "-busy.htm"; // Busy because of siege
+			filename = "data/html/doormen/" + getNpcId() + "-busy.htm"; // Busy because of siege
 		}
 		else if (condition == COND_CASTLE_OWNER)
 		{
-			filename = "data/html/doormen/" + getTemplate().getId() + ".htm"; // Owner message window
+			filename = "data/html/doormen/" + getNpcId() + ".htm"; // Owner message window
 		}
 		
 		// Prepare doormen for clan hall

@@ -31,7 +31,7 @@ import org.l2j.gameserver.serverpackets.NpcInfo;
 import org.l2j.gameserver.serverpackets.StopMove;
 import org.l2j.gameserver.util.Point3D;
 
-import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.concurrent.Future;
 
 import static org.l2j.gameserver.ai.Intention.AI_INTENTION_IDLE;
@@ -159,7 +159,7 @@ public final class L2TamedBeastInstance extends L2FeedableBeastInstance {
 
             // instead of calculating this value each time, let's get this now and pass it on
             int totalBuffsAvailable = 0;
-            for (L2Skill skill : getTemplate().getSkills().values()) {
+            for (L2Skill skill : ((NpcTemplate)template).getSkills().values()) {
                 // if the skill is a buff, check if the owner has it already [ owner.getEffect(L2Skill skill) ]
                 if (skill.getSkillType() == L2Skill.SkillType.BUFF) {
                     totalBuffsAvailable++;
@@ -230,7 +230,7 @@ public final class L2TamedBeastInstance extends L2FeedableBeastInstance {
         // if the owner has a lot of HP, then debuff the enemy with a random debuff among the available skills
         // use of more than one debuff at this moment is acceptable
         if (HPRatio >= 0.8) {
-            LinkedHashMap<Integer, L2Skill> skills = (LinkedHashMap<Integer, L2Skill>) getTemplate().getSkills();
+            Map<Integer, L2Skill> skills = ((NpcTemplate)template).getSkills();
 
             for (L2Skill skill : skills.values()) {
                 // if the skill is a debuff, check if the attacker has it already [ attacker.getEffect(L2Skill skill) ]
@@ -248,7 +248,7 @@ public final class L2TamedBeastInstance extends L2FeedableBeastInstance {
             }
 
             // if the owner has a lot of HP, then debuff the enemy with a random debuff among the available skills
-            LinkedHashMap<Integer, L2Skill> skills = (LinkedHashMap<Integer, L2Skill>) getTemplate().getSkills();
+            Map<Integer, L2Skill> skills = ((NpcTemplate)template).getSkills();
 
             for (L2Skill skill : skills.values()) {
                 // if the skill is a buff, check if the owner has it already [ owner.getEffect(L2Skill skill) ]
@@ -369,7 +369,7 @@ public final class L2TamedBeastInstance extends L2FeedableBeastInstance {
             L2Skill buffToGive = null;
 
             // get this npc's skills: getSkills()
-            LinkedHashMap<Integer, L2Skill> skills = (LinkedHashMap<Integer, L2Skill>) _tamedBeast.getTemplate().getSkills();
+            Map<Integer, L2Skill> skills = ((NpcTemplate)_tamedBeast.template).getSkills();
 
             for (L2Skill skill : skills.values()) {
                 // if the skill is a buff, check if the owner has it already [ owner.getEffect(L2Skill skill) ]

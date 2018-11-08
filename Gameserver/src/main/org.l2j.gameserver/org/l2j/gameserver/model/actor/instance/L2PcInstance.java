@@ -1526,6 +1526,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return the template
      */
     @Override
+    @Deprecated(forRemoval = true)
     public final ClassTemplate getTemplate() {
         return (ClassTemplate) super.getTemplate();
     }
@@ -1849,7 +1850,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         QuestState[] states = null;
 
         // Go through the QuestState of the L2PcInstance quests
-        for (Quest quest : npc.getTemplate().getEventQuests(Quest.QuestEventType.MOBGOTATTACKED)) {
+        for (Quest quest : npc.getEventQuests(Quest.QuestEventType.MOBGOTATTACKED)) {
             // Check if the Identifier of the L2Attackable attack is needed for the current quest
             if (getQuestState(quest.getName()) != null) {
                 // Copy the current L2PcInstance QuestState in the QuestState table
@@ -1878,7 +1879,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         QuestState[] states = null;
 
         // Go through the QuestState of the L2PcInstance quests
-        for (Quest quest : npc.getTemplate().getEventQuests(Quest.QuestEventType.MOBKILLED)) {
+        for (Quest quest : npc.getEventQuests(Quest.QuestEventType.MOBKILLED)) {
             // Check if the Identifier of the L2Attackable killed is needed for the current quest
             if (getQuestState(quest.getName()) != null) {
                 // Copy the current L2PcInstance QuestState in the QuestState table
@@ -2571,7 +2572,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @return the class id
      */
     public PlayerClass getPlayerClass() {
-        return PlayerClass.fromId(getTemplate().getId());
+        return PlayerClass.fromId(template.getId());
     }
 
     /**

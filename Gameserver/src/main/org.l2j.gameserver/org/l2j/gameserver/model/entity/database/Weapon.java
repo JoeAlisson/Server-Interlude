@@ -137,7 +137,7 @@ public class Weapon extends ItemTemplate {
                 }
 
                 if ((caster instanceof L2PcInstance) && (target instanceof L2NpcInstance)) {
-                    Quest[] quests = ((L2NpcInstance) target).getTemplate().getEventQuests(Quest.QuestEventType.MOB_TARGETED_BY_SKILL);
+                    Quest[] quests = ((L2NpcInstance) target).getEventQuests(Quest.QuestEventType.MOB_TARGETED_BY_SKILL);
                     if (quests != null) {
                         for (Quest quest : quests) {
                             quest.notifySkillUse((L2NpcInstance) target, (L2PcInstance) caster, skill);

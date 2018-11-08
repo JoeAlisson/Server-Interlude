@@ -50,7 +50,7 @@ public class L2SummonInstance extends L2Summon
 	public int lastShowntimeRemaining; // Following FbiAgent's example to avoid sending useless packets
 	
 	private Future<?> _summonLifeTask;
-	
+
 	public L2SummonInstance(int objectId, NpcTemplate template, L2PcInstance owner, L2Skill skill)
 	{
 		super(objectId, template, owner);
@@ -108,9 +108,8 @@ public class L2SummonInstance extends L2Summon
 	}
 	
 	@Override
-	public final int getLevel()
-	{
-		return (getTemplate() != null ? getTemplate().getLevel() : 0);
+	public final int getLevel() {
+		return (template != null ? ((NpcTemplate)template).getLevel() : 0);
 	}
 	
 	@Override
@@ -195,7 +194,7 @@ public class L2SummonInstance extends L2Summon
 		SystemMessage sm = new SystemMessage(SystemMessageId.SUMMON_RECEIVED_DAMAGE_S2_BY_S1);
 		if (attacker instanceof L2NpcInstance)
 		{
-			sm.addNpcName(((L2NpcInstance) attacker).getTemplate().getId());
+			sm.addNpcName(((L2NpcInstance) attacker).getNpcId());
 		}
 		else
 		{
@@ -215,7 +214,7 @@ public class L2SummonInstance extends L2Summon
 		
 		if (Config.DEBUG)
 		{
-			_log.warn("L2SummonInstance: " + getTemplate().getName() + " (" + getOwner().getName() + ") has been killed.");
+			_log.warn("L2SummonInstance: " + getName() + " (" + getOwner().getName() + ") has been killed.");
 		}
 		
 		if (_summonLifeTask != null)
@@ -248,7 +247,7 @@ public class L2SummonInstance extends L2Summon
 		{
 			if (Config.DEBUG)
 			{
-				_log.warn("L2SummonInstance: " + _summon.getTemplate().getName() + " (" + _activeChar.getName() + ") run task.");
+				_log.warn("L2SummonInstance: " + _summon.getName() + " (" + _activeChar.getName() + ") run task.");
 			}
 			
 			try
@@ -306,7 +305,7 @@ public class L2SummonInstance extends L2Summon
 	{
 		if (Config.DEBUG)
 		{
-			_log.warn("L2SummonInstance: " + getTemplate().getName() + " (" + owner.getName() + ") unsummoned.");
+			_log.warn("L2SummonInstance: " + getName() + " (" + owner.getName() + ") unsummoned.");
 		}
 		
 		if (_summonLifeTask != null)
@@ -329,7 +328,7 @@ public class L2SummonInstance extends L2Summon
 	{
 		if (Config.DEBUG)
 		{
-			_log.warn("L2SummonInstance: " + getTemplate().getName() + " (" + getOwner().getName() + ") consume.");
+			_log.warn("L2SummonInstance: " + getName() + " (" + getOwner().getName() + ") consume.");
 		}
 		
 		return getOwner().destroyItemByItemId(process, itemId, count, reference, sendMessage);

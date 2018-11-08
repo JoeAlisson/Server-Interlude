@@ -52,7 +52,7 @@ public class SellList extends L2GameServerPacket {
     protected final void writeImpl() {
         writeByte(0x10);
         writeLong(_money);
-        writeInt(_lease == null ? 0x00 : 1000000 + _lease.getTemplate().getId());
+        writeInt(_lease == null ? 0x00 : 1000000 + _lease.getNpcId());
 
         writeShort(_selllist.size());
 

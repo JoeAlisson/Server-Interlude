@@ -2,7 +2,6 @@ package org.l2j.gameserver.model.entity.database;
 
 import org.l2j.commons.database.annotation.Column;
 import org.l2j.commons.database.model.Entity;
-import org.l2j.gameserver.templates.xml.jaxb.ClassInfo;
 import org.l2j.gameserver.templates.xml.jaxb.PlayerTemplate;
 import org.springframework.data.annotation.Transient;
 
@@ -177,7 +176,7 @@ public abstract class CharTemplate extends Entity<Integer> {
         return dexterity;
     }
 
-    public short getIntellienge() { return intelligence;  }
+    public short getIntelligence() { return intelligence;  }
 
     public short getWitness() {
         return witness;

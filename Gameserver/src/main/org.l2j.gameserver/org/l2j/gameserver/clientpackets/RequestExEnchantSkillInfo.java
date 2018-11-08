@@ -81,7 +81,7 @@ public final class RequestExEnchantSkillInfo extends L2GameClientPacket
 			return;
 		}
 		
-		if (!trainer.getTemplate().canTeach(activeChar.getPlayerClass()))
+		if (!trainer.canTeach(activeChar.getPlayerClass()))
 		{
 			return; // cheater
 		}

@@ -152,7 +152,7 @@ public class SkillTreeTable {
     }
 
     public List<SkillInfo> getAvailableSkills(L2PcInstance cha, ClassTemplate playerClass) {
-        Collection<SkillInfo> skills = getSkillTrees().get(playerClass).values();
+        Collection<SkillInfo> skills = getSkillTrees().get((ClassTemplate) template).values();
         List<SkillInfo> result = new ArrayList<>(skills.size());
 
         L2Skill[] oldSkills = cha.getAllSkills();

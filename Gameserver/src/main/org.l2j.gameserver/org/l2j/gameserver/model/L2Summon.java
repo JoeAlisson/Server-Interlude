@@ -19,6 +19,8 @@ import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
 import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
+import java.util.Map;
+
 public abstract class L2Summon extends L2PlayableInstance {
 
 	protected int _pkKills;
@@ -38,7 +40,20 @@ public abstract class L2Summon extends L2PlayableInstance {
 	private final int _soulShotsPerHit = 1;
 	private final int _spiritShotsPerHit = 1;
 	protected boolean _showSummonAnimation;
-	
+
+	public Map<Integer, L2Skill> getSkills() {
+		return ((NpcTemplate)template).getSkills();
+	}
+
+	public int getNpcTemplateId() {
+		return ((NpcTemplate)template).getTemplateId();
+	}
+
+
+	public boolean isServerSideName() {
+		return ((NpcTemplate)template).isServerSideName();
+	}
+
 	public class AIAccessor extends L2Character.AIAccessor {
 		protected AIAccessor()
 		{
@@ -121,12 +136,6 @@ public abstract class L2Summon extends L2PlayableInstance {
 		return _ai;
 	}
 	
-	@Override
-	public NpcTemplate getTemplate()
-	{
-		return (NpcTemplate) super.getTemplate();
-	}
-	
 	// this defines the action buttons, 1 for Summon, 2 for Pets
 	public abstract int getSummonType();
 	
@@ -196,9 +205,8 @@ public abstract class L2Summon extends L2PlayableInstance {
 		return _owner;
 	}
 	
-	public final int getNpcId()
-	{
-		return getTemplate().getId();
+	public final int getNpcId() {
+		return template.getId();
 	}
 	
 	public void setPvpFlag(byte pvpFlag)

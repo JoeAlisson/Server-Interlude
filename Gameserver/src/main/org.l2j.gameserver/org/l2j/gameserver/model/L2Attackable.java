@@ -478,8 +478,8 @@ public class L2Attackable extends L2NpcInstance {
             if ((killer instanceof L2PcInstance) || (killer instanceof L2Summon)) {
                 L2PcInstance player = killer instanceof L2PcInstance ? (L2PcInstance) killer : ((L2Summon) killer).getOwner();
 
-                if (getTemplate().getEventQuests(Quest.QuestEventType.MOBKILLED) != null) {
-                    for (Quest quest : getTemplate().getEventQuests(Quest.QuestEventType.MOBKILLED)) {
+                if (((NpcTemplate)template).getEventQuests(Quest.QuestEventType.MOBKILLED) != null) {
+                    for (Quest quest : ((NpcTemplate)template).getEventQuests(Quest.QuestEventType.MOBKILLED)) {
                         quest.notifyKill(this, player, killer instanceof L2Summon);
                     }
                 }
@@ -838,8 +838,8 @@ public class L2Attackable extends L2NpcInstance {
                 if ((attacker instanceof L2PcInstance) || (attacker instanceof L2Summon)) {
                     L2PcInstance player = attacker instanceof L2PcInstance ? (L2PcInstance) attacker : ((L2Summon) attacker).getOwner();
 
-                    if (getTemplate().getEventQuests(Quest.QuestEventType.MOBGOTATTACKED) != null) {
-                        for (Quest quest : getTemplate().getEventQuests(Quest.QuestEventType.MOBGOTATTACKED)) {
+                    if (((NpcTemplate)template).getEventQuests(Quest.QuestEventType.MOBGOTATTACKED) != null) {
+                        for (Quest quest : ((NpcTemplate)template).getEventQuests(Quest.QuestEventType.MOBGOTATTACKED)) {
                             quest.notifyAttack(this, player, damage, attacker instanceof L2Summon);
                         }
                     }
@@ -1251,7 +1251,7 @@ public class L2Attackable extends L2NpcInstance {
     }
 
     public void doItemDrop(L2Character lastAttacker) {
-        doItemDrop(getTemplate(), lastAttacker);
+        doItemDrop((NpcTemplate)template, lastAttacker);
     }
 
     /**
@@ -1827,7 +1827,7 @@ public class L2Attackable extends L2NpcInstance {
         boolean doLevelup = true;
         boolean isBossMob = maxAbsorbLevel > 10 ? true : false;
 
-        NpcTemplate.AbsorbCrystalType absorbType = getTemplate().getAbsorbType();
+        NpcTemplate.AbsorbCrystalType absorbType = ((NpcTemplate)template).getAbsorbType();
 
         L2PcInstance killer = (attacker instanceof L2Summon) ? ((L2Summon) attacker).getOwner() : (L2PcInstance) attacker;
 
@@ -2174,7 +2174,7 @@ public class L2Attackable extends L2NpcInstance {
         _seedType = id;
         int count = 1;
 
-        Map<Integer, L2Skill> skills = getTemplate().getSkills();
+        Map<Integer, L2Skill> skills = ((NpcTemplate)template).getSkills();
 
         if (skills != null) {
             for (int skillId : skills.keySet()) {
@@ -2238,7 +2238,7 @@ public class L2Attackable extends L2NpcInstance {
     }
 
     private int getAbsorbLevel() {
-        return getTemplate().getAbsorbLevel();
+        return ((NpcTemplate)template).getAbsorbLevel();
     }
 
     /**

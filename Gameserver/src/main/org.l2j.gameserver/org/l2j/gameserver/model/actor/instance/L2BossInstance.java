@@ -90,7 +90,7 @@ public final class L2BossInstance extends L2MonsterInstance
 	@Override
 	public void reduceCurrentHp(double damage, L2Character attacker, boolean awake)
 	{
-		switch (getTemplate().getId())
+		switch (template.getId())
 		{
 			case 29014: // Orfen
 				if (((getCurrentHp() - damage) < (getMaxHp() / 2)) && !getTeleported())

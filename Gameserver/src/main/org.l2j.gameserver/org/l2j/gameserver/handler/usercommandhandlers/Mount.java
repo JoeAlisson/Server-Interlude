@@ -92,7 +92,7 @@ public class Mount implements IUserCommandHandler
 				{
 					return false;
 				}
-				Ride mount = new Ride(activeChar.getObjectId(), Ride.ACTION_MOUNT, pet.getTemplate().getId());
+				Ride mount = new Ride(activeChar.getObjectId(), Ride.ACTION_MOUNT, pet.getNpcId());
 				Broadcast.toSelfAndKnownPlayersInRadius(activeChar, mount, 810000/* 900 */);
 				activeChar.setMountType(mount.getMountType());
 				activeChar.setMountObjectID(pet.getControlItemId());

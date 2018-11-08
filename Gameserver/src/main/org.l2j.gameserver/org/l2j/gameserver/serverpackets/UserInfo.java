@@ -196,8 +196,8 @@ public class UserInfo extends L2GameServerPacket
 		L2Summon pet = _activeChar.getPet();
 		if ((_activeChar.getMountType() != 0) && (pet != null))
 		{
-			writeDouble(pet.getTemplate().getCollisionRadius());
-			writeDouble(pet.getTemplate().getCollisionHeight());
+			writeDouble(pet.getCollisionRadius());
+			writeDouble(pet.getCollisionHeight());
 		}
 		else
 		{

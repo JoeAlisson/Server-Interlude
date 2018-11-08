@@ -573,7 +573,7 @@ public class L2AttackableAI<T extends L2Attackable.AIAccessor> extends MovableAI
 				actor.setTarget(getAttackTarget());
 				skills = actor.getAllSkills();
 				dist2 = actor.getPlanDistanceSq(getAttackTarget().getX(), getAttackTarget().getY());
-				range = actor.getPhysicalAttackRange() + (int) actor.getTemplate().getCollisionRadius() + (int) getAttackTarget().getTemplate().getCollisionRadius();
+				range = actor.getPhysicalAttackRange() + (int) actor.getCollisionRadius() + (int) getAttackTarget().getCollisionRadius();
 			}
 			catch (NullPointerException e)
 			{

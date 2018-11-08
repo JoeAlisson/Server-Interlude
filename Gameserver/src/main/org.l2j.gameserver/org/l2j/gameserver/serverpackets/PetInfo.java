@@ -51,7 +51,7 @@ public class PetInfo extends L2GameServerPacket
 		writeByte(0xb1);
 		writeInt(_summon.getSummonType());
 		writeInt(_summon.getObjectId());
-		writeInt(_summon.getTemplate().getTemplateId() + 1000000);
+		writeInt(_summon.getNpcTemplateId() + 1000000);
 		writeInt(0); // 1=attackable
 		
 		writeInt(_x);
@@ -72,8 +72,8 @@ public class PetInfo extends L2GameServerPacket
 		
 		writeDouble(1/* _cha.getProperMultiplier() */);
 		writeDouble(1/* _cha.getAttackSpeedMultiplier() */);
-		writeDouble(_summon.getTemplate().getCollisionRadius());
-		writeDouble(_summon.getTemplate().getCollisionHeight());
+		writeDouble(_summon.getCollisionRadius());
+		writeDouble(_summon.getCollisionHeight());
 		writeInt(0); // right hand weapon
 		writeInt(0);
 		writeInt(0); // left hand weapon
@@ -112,7 +112,7 @@ public class PetInfo extends L2GameServerPacket
 		writeInt(_summon.getMAtkSpd());// casting speed
 		
 		writeInt(0);// c2 abnormal visual effect... bleed=1; poison=2; poison & bleed=3; flame=4;
-		int npcId = _summon.getTemplate().getId();
+		int npcId = _summon.getNpcId();
 		
 		if ((npcId >= 12526) && (npcId <= 12528))
 		{

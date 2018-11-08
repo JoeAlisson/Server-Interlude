@@ -23,11 +23,13 @@ import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.model.L2Attackable;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.actor.knownlist.MonsterKnownList;
+import org.l2j.gameserver.model.entity.database.Minions;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.util.MinionList;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ScheduledFuture;
 
 
@@ -97,7 +99,7 @@ public class L2MonsterInstance extends L2Attackable
 	@Override
 	public boolean isAggressive()
 	{
-		return (getTemplate().getAggro() > 0) && !isEventMob;
+		return (getAggro() > 0) && !isEventMob;
 	}
 	
 	@Override
@@ -105,7 +107,7 @@ public class L2MonsterInstance extends L2Attackable
 	{
 		super.onSpawn();
 		
-		if (getTemplate().getMinions() != null)
+		if (getMinions() != null)
 		{
 			try
 			{
@@ -127,7 +129,11 @@ public class L2MonsterInstance extends L2Attackable
 			}
 		}
 	}
-	
+
+	public Set<Minions> getMinions() {
+		return ((NpcTemplate)template).getMinions();
+	}
+
 	protected int getMaintenanceInterval()
 	{
 		return MONSTER_MAINTENANCE_INTERVAL;
@@ -293,4 +299,9 @@ public class L2MonsterInstance extends L2Attackable
 		}
 		_minionList.clearRespawnList();
 	}
+
+	public int getAggro() {
+		return ((NpcTemplate)template).getAggro();
+	}
+
 }

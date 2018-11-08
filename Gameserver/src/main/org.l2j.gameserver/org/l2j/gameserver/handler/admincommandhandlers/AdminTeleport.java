@@ -330,7 +330,7 @@ public class AdminTeleport implements IAdminCommandHandler {
         if ((obj != null) && (obj instanceof L2NpcInstance)) {
             L2NpcInstance target = (L2NpcInstance) obj;
 
-            int monsterTemplate = target.getTemplate().getId();
+            int monsterTemplate = target.getNpcId();
             NpcTemplate template1 = NpcTable.getInstance().getTemplate(monsterTemplate);
             if (template1 == null) {
                 activeChar.sendMessage("Incorrect monster template.");

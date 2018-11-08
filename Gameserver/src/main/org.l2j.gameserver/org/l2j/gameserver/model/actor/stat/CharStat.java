@@ -87,11 +87,11 @@ public class CharStat {
 	}
 
 	public final float getAttackSpeedMultiplier() {
-	    return isNull(activeChar) ? 1 : (float) (((1.1) * getPAtkSpd()) / activeChar.getTemplate().getPAtkSpd());
+	    return isNull(activeChar) ? 1 : (float) (((1.1) * getPAtkSpd()) / activeChar.getBasePAtkSpd());
 	}
 
 	public final int getCON() {
-	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_CON, activeChar.getTemplate().getConstitution(), null, null);
+	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_CON, activeChar.getBaseConstitution(), null, null);
 	}
 
 	public final double getCriticalDmg(L2Character target, double init) {
@@ -99,13 +99,13 @@ public class CharStat {
 	}
 
 	public int getCriticalHit(L2Character target, L2Skill skill) {
-		int criticalHit = isNull(activeChar) ? 1 : (int) calcStat(Stats.CRITICAL_RATE, activeChar.getTemplate().getCritRate(), target, skill);
+		int criticalHit = isNull(activeChar) ? 1 : (int) calcStat(Stats.CRITICAL_RATE, activeChar.getBaseCritRate(), target, skill);
 		// Set a cap of Critical Hit at 500
 		return min(500, criticalHit);
 	}
 
 	public final int getDEX() {
-		return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_DEX, activeChar.getTemplate().getDexterity(), null, null);
+		return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_DEX, activeChar.getBaseDexterity(), null, null);
 	}
 
 	public int getEvasionRate(L2Character target) {
@@ -113,7 +113,7 @@ public class CharStat {
 	}
 
 	public int getINT() {
-		return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_INT, activeChar.getTemplate().getIntellienge(), null, null);
+		return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_INT, activeChar.getBaseIntelligence(), null, null);
 	}
 
 	public final int getMagicalAttackRange(L2Skill skill) {
@@ -125,19 +125,19 @@ public class CharStat {
 			return 1;
 		}
 		
-		return activeChar.getTemplate().getAtkRange();
+		return activeChar.getBaseAtkRange();
 	}
 	
 	public final int getMaxCp() {
-	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.MAX_CP, activeChar.getTemplate().getCp(), null, null);
+	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.MAX_CP, activeChar.getBaseCp(), null, null);
 	}
 	
 	public int getMaxHp() {
-	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.MAX_HP, activeChar.getTemplate().getHp(), null, null);
+	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.MAX_HP, activeChar.getBaseHp(), null, null);
 	}
 	
 	public int getMaxMp() {
-	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.MAX_MP, activeChar.getTemplate().getMp(), null, null);
+	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.MAX_MP, activeChar.getBaseMp(), null, null);
 	}
 
 	public int getMAtk(L2Character target, L2Skill skill) {
@@ -151,53 +151,53 @@ public class CharStat {
 			bonusAtk = Config.L2JMOD_CHAMPION_ATK;
 		}
 
-		double attack = activeChar.getTemplate().getMAtk() * bonusAtk;
+		double attack = activeChar.getBaseMAtk() * bonusAtk;
 		// Get the skill type to calculate its effect in function of base stats of the L2Character target
 		Stats stat = isNull(skill) ? null : skill.getStat();
 		
 		if (nonNull(stat)) {
 			switch (stat) {
 				case AGGRESSION:
-					attack += activeChar.getTemplate().getAggression();
+					attack += activeChar.getAggression();
 					break;
 				case BLEED:
-					attack += activeChar.getTemplate().getBleed();
+					attack += activeChar.getBleed();
 					break;
 				case POISON:
-					attack += activeChar.getTemplate().getPoison();
+					attack += activeChar.getPoison();
 					break;
 				case STUN:
-					attack += activeChar.getTemplate().getStun();
+					attack += activeChar.getStun();
 					break;
 				case ROOT:
-					attack += activeChar.getTemplate().getRoot();
+					attack += activeChar.getRoot();
 					break;
 				case MOVEMENT:
-					attack += activeChar.getTemplate().getMovement();
+					attack += activeChar.getMovement();
 					break;
 				case CONFUSION:
-					attack += activeChar.getTemplate().getConfusion();
+					attack += activeChar.getConfusion();
 					break;
 				case SLEEP:
-					attack += activeChar.getTemplate().getSleep();
+					attack += activeChar.getSleep();
 					break;
 				case FIRE:
-					attack += activeChar.getTemplate().getFire();
+					attack += activeChar.getFire();
 					break;
 				case WIND:
-					attack += activeChar.getTemplate().getWind();
+					attack += activeChar.getWind();
 					break;
 				case WATER:
-					attack += activeChar.getTemplate().getWater();
+					attack += activeChar.getWater();
 					break;
 				case EARTH:
-					attack += activeChar.getTemplate().getEarth();
+					attack += activeChar.getEarth();
 					break;
 				case HOLY:
-					attack += activeChar.getTemplate().getHoly();
+					attack += activeChar.getHoly();
 					break;
 				case DARK:
-					attack += activeChar.getTemplate().getDark();
+					attack += activeChar.getDark();
 					break;
 			}
 		}
@@ -221,7 +221,7 @@ public class CharStat {
 		if (Config.L2JMOD_CHAMPION_ENABLE && activeChar.isChampion()) {
 			bonusSpdAtk = Config.L2JMOD_CHAMPION_SPD_ATK;
 		}
-		return (int) (calcStat(Stats.MAGIC_ATTACK_SPEED, activeChar.getTemplate().getMAtkSpd() * bonusSpdAtk, null, null) / activeChar.getArmourExpertisePenalty());
+		return (int) (calcStat(Stats.MAGIC_ATTACK_SPEED, activeChar.getBaseMAtkSpd() * bonusSpdAtk, null, null) / activeChar.getArmourExpertisePenalty());
 	}
 
 	public final int getMCriticalHit(L2Character target, L2Skill skill) {
@@ -234,7 +234,7 @@ public class CharStat {
 		}
 		
 		// Get the base MAtk of the L2Character
-		double defence = activeChar.getTemplate().getMDef();
+		double defence = activeChar.getBaseMDef();
 
 		// TODO move to Monster Stats
 		// Calculate modifier for Raid Bosses
@@ -247,11 +247,11 @@ public class CharStat {
 	}
 
 	public final int getMEN() {
-	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_MEN, activeChar.getTemplate().getMentality(), null, null);
+	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_MEN, activeChar.getBaseMentality(), null, null);
 	}
 	
 	public final float getMovementSpeedMultiplier() {
-	    return isNull(activeChar) ? 1 : (float) getRunSpeed() / activeChar.getTemplate().getRunSpd();
+	    return isNull(activeChar) ? 1 : (float) getRunSpeed() / activeChar.getBaseRunSpd();
 	}
 
 	public final float getMoveSpeed() {
@@ -262,7 +262,7 @@ public class CharStat {
 	}
 
 	public final double getMReuseRate(L2Skill skill) {
-	    return isNull(activeChar) ? 1 : calcStat(Stats.MAGIC_REUSE_RATE, activeChar.getTemplate().getMReuseRate(), null, skill);
+	    return isNull(activeChar) ? 1 : calcStat(Stats.MAGIC_REUSE_RATE, activeChar.getBaseMReuseRate(), null, skill);
 	}
 
 	public int getPAtk(L2Character target) {
@@ -274,7 +274,7 @@ public class CharStat {
 		if (Config.L2JMOD_CHAMPION_ENABLE && activeChar.isChampion()) {
 			bonusAtk = Config.L2JMOD_CHAMPION_ATK;
 		}
-		return (int) calcStat(Stats.PHYSIC_ATTACK, activeChar.getTemplate().getpAtk() * bonusAtk, target, null);
+		return (int) calcStat(Stats.PHYSIC_ATTACK, activeChar.getBasepAtk() * bonusAtk, target, null);
 	}
 
 	public final double getPAtkAnimals(L2Character target)
@@ -312,7 +312,7 @@ public class CharStat {
 		if (Config.L2JMOD_CHAMPION_ENABLE && activeChar.isChampion()) {
 			bonusAtk = Config.L2JMOD_CHAMPION_SPD_ATK;
 		}
-		return (int) (calcStat(Stats.PHYSIC_ATTACK_SPEED, activeChar.getTemplate().getPAtkSpd() * bonusAtk, null, null) / activeChar.getArmourExpertisePenalty());
+		return (int) (calcStat(Stats.PHYSIC_ATTACK_SPEED, activeChar.getBasePAtkSpd() * bonusAtk, null, null) / activeChar.getArmourExpertisePenalty());
 	}
 
 	public final double getPAtkUndead(L2Character target)
@@ -329,7 +329,7 @@ public class CharStat {
 		if (isNull(activeChar)) {
 			return 1;
 		}
-        int defense = activeChar.getTemplate().getpDef();
+        int defense = activeChar.getBasePDef();
 		// TODO move to Monsters stats
         if (activeChar.isRaid()) {
             defense *= Config.RAID_DEFENCE_MULTIPLIER;
@@ -339,7 +339,7 @@ public class CharStat {
 	}
 
 	public final int getPhysicalAttackRange() {
-	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.PHYSIC_ATTACK_RANGE, activeChar.getTemplate().getAtkRange(), null, null);
+	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.PHYSIC_ATTACK_RANGE, activeChar.getBaseAtkRange(), null, null);
 	}
 
 	public final double getReuseModifier(L2Character target)
@@ -352,7 +352,7 @@ public class CharStat {
 			return 1;
 		}
 
-		int val = (int) (calcStat(Stats.RUN_SPEED, activeChar.getTemplate().getRunSpd(), null, null) / activeChar.getArmourExpertisePenalty());
+		int val = (int) (calcStat(Stats.RUN_SPEED, activeChar.getBaseRunSpd(), null, null) / activeChar.getArmourExpertisePenalty());
 		// TODO split into others stats
 		if (activeChar.isFlying()) {
 			val += Config.WYVERN_SPEED;
@@ -368,7 +368,7 @@ public class CharStat {
 	}
 
 	public final int getSTR() {
-	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_STR, activeChar.getTemplate().getStrength(), null, null);
+	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_STR, activeChar.getBaseStrength(), null, null);
 	}
 
 	public final int getWalkSpeed() {
@@ -380,11 +380,11 @@ public class CharStat {
 		if (activeChar instanceof L2PcInstance) {
 			return (getRunSpeed() * 70) / 100;
 		}
-		return (int) calcStat(Stats.WALK_SPEED, activeChar.getTemplate().getWalkSpd(), null, null);
+		return (int) calcStat(Stats.WALK_SPEED, activeChar.getBaseWalkSpd(), null, null);
 	}
 
 	public final int getWIT() {
-	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_WIT, activeChar.getTemplate().getWitness(), null, null);
+	    return isNull(activeChar) ? 1 : (int) calcStat(Stats.STAT_WIT, activeChar.getBaseWitness(), null, null);
 	}
 
 	public final int getMpConsume(L2Skill skill) {

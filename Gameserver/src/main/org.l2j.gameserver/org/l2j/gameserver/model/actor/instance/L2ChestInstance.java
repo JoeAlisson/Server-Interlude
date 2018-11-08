@@ -77,7 +77,7 @@ public final class L2ChestInstance extends L2MonsterInstance
 	@Override
 	public void doItemDrop(NpcTemplate npcTemplate, L2Character lastAttacker)
 	{
-		int id = getTemplate().getId();
+		int id = template.getId();
 		
 		if (!_specialDrop)
 		{
@@ -120,7 +120,7 @@ public final class L2ChestInstance extends L2MonsterInstance
 		int trapSkillId = 0;
 		int rnd = Rnd.get(120);
 		
-		if (getTemplate().getLevel() >= 61)
+		if (getLevel() >= 61)
 		{
 			if (rnd >= 90)
 			{
@@ -139,7 +139,7 @@ public final class L2ChestInstance extends L2MonsterInstance
 				trapSkillId = 223;// sting
 			}
 		}
-		else if (getTemplate().getLevel() >= 41)
+		else if (getLevel() >= 41)
 		{
 			if (rnd >= 90)
 			{
@@ -158,7 +158,7 @@ public final class L2ChestInstance extends L2MonsterInstance
 				trapSkillId = 4118;// area paralysys
 			}
 		}
-		else if (getTemplate().getLevel() >= 21)
+		else if (getLevel() >= 21)
 		{
 			if (rnd >= 80)
 			{
@@ -203,7 +203,7 @@ public final class L2ChestInstance extends L2MonsterInstance
 	private boolean handleCast(L2Character player, int skillId)
 	{
 		int skillLevel = 1;
-		byte lvl = getTemplate().getLevel();
+		int lvl = getLevel();
 		if ((lvl > 20) && (lvl <= 40))
 		{
 			skillLevel = 3;

@@ -161,7 +161,7 @@ public class PcStatus extends PlayableStatus
 			
 			if (attacker instanceof L2NpcInstance)
 			{
-				int mobId = ((L2NpcInstance) attacker).getTemplate().getTemplateId();
+				int mobId = ((L2NpcInstance) attacker).getNpcTemplateId();
 				
 				if (Config.DEBUG)
 				{
@@ -172,7 +172,7 @@ public class PcStatus extends PlayableStatus
 			}
 			else if (attacker instanceof L2Summon)
 			{
-				int mobId = ((L2Summon) attacker).getTemplate().getTemplateId();
+				int mobId = ((L2Summon) attacker).getTemplateId();
 				
 				smsg.addNpcName(mobId);
 			}

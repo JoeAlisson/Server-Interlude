@@ -44,7 +44,7 @@ public class L2FolkInstance extends L2NpcInstance {
             logger.debug("SkillList activated on: " + getObjectId());
         }
 
-        int npcId = getTemplate().getId();
+        int npcId = getNpcId();
 
         if (_classesToTeach == null) {
             NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
@@ -58,7 +58,7 @@ public class L2FolkInstance extends L2NpcInstance {
             return;
         }
 
-        if (!getTemplate().canTeach(playerClass)) {
+        if (!canTeach(playerClass)) {
             NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
             StringBuilder sb = new StringBuilder();
             sb.append("<html><body>");
@@ -115,7 +115,7 @@ public class L2FolkInstance extends L2NpcInstance {
         if (Config.DEBUG) {
             logger.debug("EnchantSkillList activated on: " + getObjectId());
         }
-        int npcId = getTemplate().getId();
+        int npcId = getNpcId();
 
         if (_classesToTeach == null) {
             NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
@@ -129,7 +129,7 @@ public class L2FolkInstance extends L2NpcInstance {
             return;
         }
 
-        if (!getTemplate().canTeach(playerClass)) {
+        if (!canTeach(playerClass)) {
             NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
             StringBuilder sb = new StringBuilder();
             sb.append("<html><body>");
@@ -258,5 +258,9 @@ public class L2FolkInstance extends L2NpcInstance {
 
             super.onBypassFeedback(player, command);
         }
+    }
+
+    public boolean canTeach(PlayerClass classId) {
+        return ((NpcTemplate)template).canTeach(classId);
     }
 }

@@ -40,15 +40,15 @@ public class MonRaceInfo extends L2GameServerPacket
 		{
 			// System.out.println("MOnster "+(i+1)+" npcid "+_monsters[i].getNpcTemplate().getNpcId());
 			writeInt(_monsters[i].getObjectId()); // npcObjectID
-			writeInt(_monsters[i].getTemplate().getId() + 1000000); // npcID
+			writeInt(_monsters[i].getNpcId() + 1000000); // npcID
 			writeInt(14107); // origin X
 			writeInt(181875 + (58 * (7 - i))); // origin Y
 			writeInt(-3566); // origin Z
 			writeInt(12080); // end X
 			writeInt(181875 + (58 * (7 - i))); // end Y
 			writeInt(-3566); // end Z
-			writeDouble(_monsters[i].getTemplate().getCollisionHeight()); // coll. height
-			writeDouble(_monsters[i].getTemplate().getCollisionRadius()); // coll. radius
+			writeDouble(_monsters[i].getCollisionHeight()); // coll. height
+			writeDouble(_monsters[i].getCollisionRadius()); // coll. radius
 			writeInt(120); // ?? unknown
 			// *
 			for (int j = 0; j < 20; j++)

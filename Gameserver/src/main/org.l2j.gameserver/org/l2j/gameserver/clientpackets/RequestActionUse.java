@@ -277,7 +277,7 @@ public final class RequestActionUse extends L2GameClientPacket
 						{
 							return;
 						}
-						Ride mount = new Ride(activeChar.getObjectId(), Ride.ACTION_MOUNT, pet.getTemplate().getId());
+						Ride mount = new Ride(activeChar.getObjectId(), Ride.ACTION_MOUNT, pet.getTemplateId());
 						activeChar.broadcastPacket(mount);
 						activeChar.setMountType(mount.getMountType());
 						activeChar.setMountObjectID(pet.getControlItemId());
@@ -524,7 +524,7 @@ public final class RequestActionUse extends L2GameClientPacket
 		
 		if ((activeSummon != null) && !activeChar.isBetrayed())
 		{
-			Map<Integer, L2Skill> _skills = activeSummon.getTemplate().getSkills();
+			Map<Integer, L2Skill> _skills = activeSummon.getSkills();
 			
 			if (_skills == null)
 			{

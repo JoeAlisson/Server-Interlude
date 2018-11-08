@@ -89,7 +89,7 @@ public class RequestAquireSkillInfo extends L2GameClientPacket
 		
 		if (_skillType == 0)
 		{
-			if (!trainer.getTemplate().canTeach(activeChar.getSkillLearningClassId()))
+			if (!trainer.canTeach(activeChar.getSkillLearningClassId()))
 			{
 				return; // cheater
 			}

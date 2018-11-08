@@ -41,6 +41,6 @@ public class ConditionTargetRaceId extends Condition {
             return false;
         }
 
-        return (_raceIds.contains(((L2NpcInstance) env.target).getTemplate().getRace()));
+        return (_raceIds.contains(((L2NpcInstance) env.target).getRace().ordinal()));
     }
 }

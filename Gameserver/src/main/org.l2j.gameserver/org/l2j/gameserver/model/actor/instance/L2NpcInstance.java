@@ -20,6 +20,7 @@ import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.actor.knownlist.NpcKnownList;
 import org.l2j.gameserver.model.actor.stat.NpcStat;
 import org.l2j.gameserver.model.actor.status.NpcStatus;
+import org.l2j.gameserver.model.base.CreatureRace;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.entity.L2Event;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
@@ -32,6 +33,7 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
+import org.l2j.gameserver.templates.NpcType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -100,6 +102,30 @@ public class L2NpcInstance extends L2Character {
     private int _currentRHandId; // normally this shouldn't change from the template, but there exist exceptions
     private float _currentCollisionHeight; // used for npc grow effect skills
     private float _currentCollisionRadius; // used for npc grow effect skills
+
+    public int getTemplateId() {
+        return template.getId();
+    }
+
+    public Quest[] getEventQuests(Quest.QuestEventType eventType) {
+        return ((NpcTemplate)template).getEventQuests(eventType);
+    }
+
+    public int getNpcTemplateId() {
+        return ((NpcTemplate)template).getTemplateId();
+    }
+
+    public boolean isServerSideName() {
+        return ((NpcTemplate)template).isServerSideName();
+    }
+
+    public boolean isServerSideTitle() {
+        return ((NpcTemplate)template).isServerSideTitle();
+    }
+
+    public double getVulnerability(Stats stat) {
+        return ((NpcTemplate)template).getVulnerability(stat);
+    }
 
     /**
      * Task launching the function onRandomAnimation()
@@ -224,22 +250,21 @@ public class L2NpcInstance extends L2Character {
         // Call the L2Character constructor to set the _template of the L2Character, copy skills from template to object
         // and link calculators to NPC_STD_CALCULATOR
         super(objectId, template);
+        if (template == null) {
+            logger.error("No template for NpcTemplate. Please check your datapack is setup correctly.");
+            return;
+        }
         getKnownList(); // init knownlist
         getStat(); // init stats
         getStatus(); // init status
         initCharStatusUpdateValues();
 
         // initialize the "current" equipment
-        _currentLHandId = getTemplate().getLhand();
-        _currentRHandId = getTemplate().getRhand();
+        _currentLHandId = template.getLhand();
+        _currentRHandId = template.getRhand();
         // initialize the "current" collisions
-        _currentCollisionHeight = getTemplate().getCollisionHeight();
-        _currentCollisionRadius = getTemplate().getCollisionRadius();
-
-        if (template == null) {
-            logger.error("No template for NpcTemplate. Please check your datapack is setup correctly.");
-            return;
-        }
+        _currentCollisionHeight = template.getCollisionHeight();
+        _currentCollisionRadius = template.getCollisionRadius();
 
         // Set the name of the L2Character
         setName(template.getName());
@@ -287,21 +312,13 @@ public class L2NpcInstance extends L2Character {
     }
 
     /**
-     * Return the L2NpcTemplate of the L2NpcInstance.
-     */
-    @Override
-    public final NpcTemplate getTemplate() {
-        return (NpcTemplate) super.getTemplate();
-    }
-
-    /**
      * Return the generic Identifier of this L2NpcInstance contained in the L2NpcTemplate.<BR>
      * <BR>
      *
      * @return
      */
     public int getNpcId() {
-        return getTemplate().getId();
+        return template.getId();
     }
 
     @Override
@@ -320,7 +337,7 @@ public class L2NpcInstance extends L2Character {
      * @return
      */
     public final String getFactionId() {
-        return getTemplate().getFactionId();
+        return ((NpcTemplate)template).getFactionId();
     }
 
     /**
@@ -329,7 +346,7 @@ public class L2NpcInstance extends L2Character {
      */
     @Override
     public final int getLevel() {
-        return getTemplate().getLevel();
+        return ((NpcTemplate)template).getLevel();
     }
 
     /**
@@ -349,7 +366,7 @@ public class L2NpcInstance extends L2Character {
      * @return
      */
     public int getAggroRange() {
-        return getTemplate().getAggro();
+        return ((NpcTemplate)template).getAggro();
     }
 
     /**
@@ -359,7 +376,7 @@ public class L2NpcInstance extends L2Character {
      * @return
      */
     public int getFactionRange() {
-        return getTemplate().getFactionRange();
+        return ((NpcTemplate)template).getFactionRange();
     }
 
     /**
@@ -368,7 +385,7 @@ public class L2NpcInstance extends L2Character {
      */
     @Override
     public boolean isUndead() {
-        return getTemplate().isUndead();
+        return ((NpcTemplate)template).isUndead();
     }
 
     /**
@@ -654,7 +671,7 @@ public class L2NpcInstance extends L2Character {
                     if (isEventMob) {
                         L2Event.showEventHtml(player, String.valueOf(getObjectId()));
                     } else {
-                        Quest[] qlst = getTemplate().getEventQuests(Quest.QuestEventType.NPC_FIRST_TALK);
+                        Quest[] qlst = getEventQuests(Quest.QuestEventType.NPC_FIRST_TALK);
                         if ((qlst != null) && (qlst.length == 1)) {
                             qlst[0].notifyFirstTalk(this, player);
                         } else {
@@ -727,7 +744,7 @@ public class L2NpcInstance extends L2Character {
             }
 
             html1.append("<table border=\"0\" width=\"100%\">");
-            html1.append("<tr><td>Object ID</td><td>" + getObjectId() + "</td><td>NPC ID</td><td>" + getTemplate().getId() + "</td></tr>");
+            html1.append("<tr><td>Object ID</td><td>" + getObjectId() + "</td><td>NPC ID</td><td>" +  getNpcId() + "</td></tr>");
             html1.append("<tr><td>Castle</td><td>" + getCastle().getCastleId() + "</td><td>Coords</td><td>" + getX() + "," + getY() + "," + getZ() + "</td></tr>");
             html1.append("<tr><td>Level</td><td>" + getLevel() + "</td><td>Aggro</td><td>" + ((this instanceof L2Attackable) ? ((L2Attackable) this).getAggroRange() : 0) + "</td></tr>");
             html1.append("</table><br>");
@@ -749,9 +766,9 @@ public class L2NpcInstance extends L2Character {
             html1.append("<tr><td>INT</td><td>" + getIntelligence() + "</td><td>WIT</td><td>" + getWisdom() + "</td><td>MEN</td><td>" + getMentality() + "</td></tr>");
             html1.append("</table>");
 
-            html1.append("<br><center><table><tr><td><button value=\"Edit NPC\" action=\"bypass -h admin_edit_npc " + getTemplate().getId() + "\" width=100 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"><br1></td>");
+            html1.append("<br><center><table><tr><td><button value=\"Edit NPC\" action=\"bypass -h admin_edit_npc " + getNpcId() + "\" width=100 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"><br1></td>");
             html1.append("<td><button value=\"Kill\" action=\"bypass -h admin_kill\" width=40 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></td><br1></tr>");
-            html1.append("<tr><td><button value=\"Show DropList\" action=\"bypass -h admin_show_droplist " + getTemplate().getId() + "\" width=100 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></td></tr>");
+            html1.append("<tr><td><button value=\"Show DropList\" action=\"bypass -h admin_show_droplist " + getNpcId() + "\" width=100 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></td></tr>");
             html1.append("<td><button value=\"Delete\" action=\"bypass -h admin_delete\" width=40 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></td></tr>");
             html1.append("</table></center><br>");
             html1.append("</body></html>");
@@ -787,7 +804,7 @@ public class L2NpcInstance extends L2Character {
             html1.append("<tr><td>Accuracy</td><td>" + getAccuracy() + "</td><td>Evasion</td><td>" + getEvasionRate(null) + "</td></tr>");
             html1.append("<tr><td>Critical</td><td>" + getCriticalHit(null, null) + "</td><td>Speed</td><td>" + getRunSpeed() + "</td></tr>");
             html1.append("<tr><td>Atk.Speed</td><td>" + getPAtkSpd() + "</td><td>Cast.Speed</td><td>" + getMAtkSpd() + "</td></tr>");
-            html1.append("<tr><td>CreatureRace</td><td>" + getTemplate().getRace() + "</td><td></td><td></td></tr>");
+            html1.append("<tr><td>CreatureRace</td><td>" + getRace() + "</td><td></td><td></td></tr>");
             html1.append("</table>");
 
             html1.append("<br><center><font color=\"LEVEL\">[Basic Stats]</font></center>");
@@ -800,7 +817,7 @@ public class L2NpcInstance extends L2Character {
             html1.append("Rates legend: <font color=\"ff0000\">50%+</font> <font color=\"00ff00\">30%+</font> <font color=\"0000ff\">less than 30%</font>");
             html1.append("<table border=0 width=\"100%\">");
 
-            for (L2DropCategory cat : getTemplate().getDropCategories().values()) {
+            for (L2DropCategory cat : getDropCategories().values()) {
                 for (L2DropData drop : cat.getAllDrops()) {
                     String name = ItemTable.getInstance().getTemplate(drop.getItemId()).getName();
 
@@ -823,6 +840,14 @@ public class L2NpcInstance extends L2Character {
 
         // Send a Server->Client ActionFailed to the L2PcInstance in order to avoid that the client wait another packet
         player.sendPacket(new ActionFailed());
+    }
+
+    private Map<Integer, L2DropCategory> getDropCategories() {
+        return ((NpcTemplate)template).getDropCategories();
+    }
+
+    public CreatureRace getRace() {
+        return ((NpcTemplate)template).getRace();
     }
 
     /**
@@ -1157,7 +1182,7 @@ public class L2NpcInstance extends L2Character {
         } else {
             if (q != null) {
                 // check for start point
-                Quest[] qlst = getTemplate().getEventQuests(Quest.QuestEventType.QUEST_START);
+                Quest[] qlst = getEventQuests(Quest.QuestEventType.QUEST_START);
 
                 if ((qlst != null) && (qlst.length > 0)) {
                     for (Quest element : qlst) {
@@ -1214,8 +1239,8 @@ public class L2NpcInstance extends L2Character {
         // collect awaiting quests and start points
         List<Quest> options = new LinkedList<>();
 
-        QuestState[] awaits = player.getQuestsForTalk(getTemplate().getId());
-        Quest[] starts = getTemplate().getEventQuests(Quest.QuestEventType.QUEST_START);
+        QuestState[] awaits = player.getQuestsForTalk(getNpcId());
+        Quest[] starts = getEventQuests(Quest.QuestEventType.QUEST_START);
 
         // Quests are limited between 1 and 999 because those are the quests that are supported by the client.
         // By limitting them there, we are allowed to create custom quests at higher IDs without interfering
@@ -1268,7 +1293,7 @@ public class L2NpcInstance extends L2Character {
     // 24 - Previous winning numbers/Prize claim
     // >24 - check lottery ticket by item object id
     public void showLotoWindow(L2PcInstance player, int val) {
-        int npcId = getTemplate().getId();
+        int npcId = getNpcId();
         String filename;
         SystemMessage sm;
         NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
@@ -1623,11 +1648,11 @@ public class L2NpcInstance extends L2Character {
             }
         }
 
-        if ((L2Auctioneer.equals(getTemplate().getType())) && (val == 0)) {
+        if ((L2Auctioneer.equals(getType())) && (val == 0)) {
             return;
         }
 
-        int npcId = requireNonNullElse(getTemplate().getId(), 0);
+        int npcId = getNpcId();
 
         /* For use with Seven Signs implementation */
         String filename = SevenSigns.SEVEN_SIGNS_HTML_PATH;
@@ -1932,6 +1957,10 @@ public class L2NpcInstance extends L2Character {
         player.sendPacket(new ActionFailed());
     }
 
+    private NpcType getType() {
+        return ((NpcTemplate)template).getType();
+    }
+
     /**
      * Open a chat window on client with the text specified by the given file name and path,<BR>
      * relative to the datapack root. <BR>
@@ -1960,7 +1989,11 @@ public class L2NpcInstance extends L2Character {
      */
     public int getExpReward() {
         double rateXp = getStat().calcStat(Stats.MAX_HP, 1, this, null);
-        return (int) (getTemplate().getExp() * rateXp * Config.RATE_XP);
+        return (int) (getExp() * rateXp * Config.RATE_XP);
+    }
+
+    private int getExp() {
+        return ((NpcTemplate)template).getExp();
     }
 
     /**
@@ -1971,7 +2004,11 @@ public class L2NpcInstance extends L2Character {
      */
     public int getSpReward() {
         double rateSp = getStat().calcStat(Stats.MAX_HP, 1, this, null);
-        return (int) (getTemplate().getSp() * rateSp * Config.RATE_SP);
+        return (int) (getSp() * rateSp * Config.RATE_SP);
+    }
+
+    private int getSp() {
+        return ((NpcTemplate)template).getSp();
     }
 
     /**
@@ -1997,10 +2034,10 @@ public class L2NpcInstance extends L2Character {
 
         // normally this wouldn't really be needed, but for those few exceptions,
         // we do need to reset the weapons back to the initial templated weapon.
-        _currentLHandId = getTemplate().getLhand();
-        _currentRHandId = getTemplate().getRhand();
-        _currentCollisionHeight = getTemplate().getCollisionHeight();
-        _currentCollisionRadius = getTemplate().getCollisionRadius();
+        _currentLHandId = ((NpcTemplate)template).getLhand();
+        _currentRHandId = ((NpcTemplate)template).getRhand();
+        _currentCollisionHeight = getCollisionHeight();
+        _currentCollisionRadius = getCollisionRadius();
         DecayTaskManager.getInstance().addDecayTask(this);
         return true;
     }
@@ -2097,7 +2134,7 @@ public class L2NpcInstance extends L2Character {
 
     @Override
     public String toString() {
-        return getTemplate().getName();
+        return getName();
     }
 
     public boolean isDecayed() {

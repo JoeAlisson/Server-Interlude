@@ -43,7 +43,7 @@ public final class L2BabyPetInstance extends L2PetInstance {
         super(objectId, template, owner, control);
 
         // look through the skills that this template has and find the weak and strong heal.
-        LinkedHashMap<Integer, L2Skill> skills = (LinkedHashMap<Integer, L2Skill>) getTemplate().getSkills();
+        LinkedHashMap<Integer, L2Skill> skills = (LinkedHashMap<Integer, L2Skill>) template.getSkills();
         L2Skill skill1 = null;
         L2Skill skill2 = null;
 

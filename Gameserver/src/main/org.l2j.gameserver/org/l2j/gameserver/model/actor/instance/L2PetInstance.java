@@ -44,11 +44,10 @@ public class L2PetInstance extends L2Summon
 	private long _expBeforeDeath = 0;
 	private static final int FOOD_ITEM_CONSUME_COUNT = 5;
 	
-	public final PetsStats getPetData()
-	{
+	public final PetsStats getPetData() {
 		if (_data == null)
 		{
-			_data = L2PetDataTable.getInstance().getPetData(getTemplate().getId(), getStat().getLevel());
+			_data = L2PetDataTable.getInstance().getPetData(getNpcId(), getStat().getLevel());
 		}
 		
 		return _data;
@@ -58,8 +57,12 @@ public class L2PetInstance extends L2Summon
 	{
 		_data = petsStats;
 	}
-	
-	/**
+
+    public double getPoison() {
+        return template.getPoison();
+    }
+
+    /**
 	 * Manage Feeding Task.<BR>
 	 * <BR>
 	 * <B><U> Actions</U> :</B><BR>
@@ -104,7 +107,7 @@ public class L2PetInstance extends L2Summon
 					getOwner().sendMessage("Your pet is too hungry to stay summoned.");
 				}
 				
-				int foodId = L2PetDataTable.getFoodItemId(getTemplate().getId());
+				int foodId = L2PetDataTable.getFoodItemId(template.getId());
 				if (foodId == 0)
 				{
 					return;

@@ -717,7 +717,7 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
     }
 
     private final Race getVillageMasterRace() {
-        Set<PlayerClass> playerClasses = getTemplate().getTeachInfo();
+        Set<PlayerClass> playerClasses = getTeachInfo();
         if(playerClasses.contains(PlayerClass.FIGHTER) || playerClasses.contains(PlayerClass.MAGE)) {
             return Race.HUMAN;
         }
@@ -736,9 +736,13 @@ public final class L2VillageMasterInstance extends L2FolkInstance {
         return Race.DWARF;
     }
 
+    private Set<PlayerClass> getTeachInfo() {
+        return ((NpcTemplate)template).getTeachInfo();
+    }
+
     private final ClassType getVillageMasterTeachType() {
         // TODO verify if this works
-        Set<PlayerClass> playerClasses = getTemplate().getTeachInfo();
+        Set<PlayerClass> playerClasses = getTeachInfo();
         if(playerClasses.contains(PlayerClass.CLERIC) || playerClasses.contains(PlayerClass.ORACLE) || playerClasses.contains(PlayerClass.SHILLIEN_ORACLE)) {
             return ClassType.Priest;
         }

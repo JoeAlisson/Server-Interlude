@@ -149,7 +149,7 @@ public class MinionList {
         if ((master == null) || master.isAlikeDead()) {
             return;
         }
-        Set<Minions> minions = master.getTemplate().getMinions();
+        Set<Minions> minions = master.getMinions();
 
         synchronized (minionReferences) {
             int minionCount, minionId, minionsToSpawn;

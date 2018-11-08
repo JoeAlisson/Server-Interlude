@@ -1926,7 +1926,10 @@ public abstract class L2Character extends L2Object {
      * Gets the template.
      *
      * @return the template
+     *
+     * // TODO private
      */
+    @Deprecated(forRemoval = true)
     public CharTemplate getTemplate() {
         return template;
     }
@@ -1966,6 +1969,162 @@ public abstract class L2Character extends L2Object {
         if (isRunning()) {
             setIsRunning(false);
         }
+    }
+
+    public float getCollisionRadius() {
+        return template.getCollisionRadius();
+    }
+
+    public int getTemplateId() {
+        return template.getId();
+    }
+
+    public float getCollisionHeight() {
+        return template.getCollisionHeight();
+    }
+
+    public double getBasePAtkSpd() {
+        return template.getPAtkSpd();
+    }
+
+    public double getBaseConstitution() {
+        return template.getConstitution();
+    }
+
+    public double getBaseCritRate() {
+        return template.getCritRate();
+    }
+
+    public double getBaseDexterity() {
+        return template.getDexterity();
+    }
+
+    public double getBaseIntelligence() {
+        return template.getIntelligence();
+    }
+
+    public int getBaseAtkRange() {
+        return template.getAtkRange();
+    }
+
+    public double getBaseCp() {
+        return template.getCp();
+    }
+
+    public double getBaseHp() {
+        return template.getHp();
+    }
+
+    public double getBaseMp() {
+        return template.getMp();
+    }
+
+    public double getBaseMAtk() {
+        return template.getMAtk();
+    }
+
+    public double getAggression() {
+        return template.getAggression();
+    }
+
+    public double getBleed() {
+        return template.getBleed();
+    }
+
+    public double getPoison() {
+        return template.getPoison();
+    }
+
+    public double getStun() {
+        return template.getStun();
+    }
+
+    public double getRoot() {
+        return template.getRoot();
+    }
+
+    public double getMovement() {
+        return template.getMovement();
+    }
+
+    public double getConfusion() {
+        return template.getConfusion();
+    }
+
+    public double getSleep() {
+        return template.getSleep();
+    }
+
+    public double getFire() {
+        return template.getFire();
+    }
+
+    public double getWind() {
+        return template.getWind();
+    }
+
+    public double getWater() {
+        return template.getWater();
+    }
+
+    public double getEarth() {
+        return template.getEarth();
+    }
+
+    public double getHoly() {
+        return template.getHoly();
+    }
+
+    public double getDark() {
+        return template.getDark();
+    }
+
+    public double getBaseMAtkSpd() {
+        return template.getMAtkSpd();
+    }
+
+    public double getBaseMDef() {
+        return template.getMDef();
+    }
+
+    public double getBaseMentality() {
+        return template.getMentality();
+    }
+
+    public float getBaseRunSpd() {
+        return template.getRunSpd();
+    }
+
+    public double getBaseMReuseRate() {
+        return template.getMReuseRate();
+    }
+
+    public double getBasepAtk() {
+        return template.getpAtk();
+    }
+
+    public int getBasePDef() {
+        return template.getpDef();
+    }
+
+    public double getBaseStrength() {
+        return template.getStrength();
+    }
+
+    public double getBaseWalkSpd() {
+        return template.getWalkSpd();
+    }
+
+    public double getBaseWitness() {
+        return template.getWitness();
+    }
+
+    public int getClassLevel() {
+        return 0;
+    }
+
+    public double getBaseHpRegen() {
+        return template.getHpRegen();
     }
 
     /**
@@ -5222,13 +5381,13 @@ public abstract class L2Character extends L2Object {
                 SystemMessage sm = new SystemMessage(SystemMessageId.AVOIDED_S1S_ATTACK);
 
                 if (this instanceof L2Summon) {
-                    int mobId = ((L2Summon) this).getTemplate().getId();
+                    int mobId = ((L2Summon) this).getTemplateId();
                     sm.addNpcName(mobId);
                 } else {
                     sm.addString(getName());
                 }
 
-                ((L2PcInstance) target).sendPacket(sm);
+                 target.sendPacket(sm);
             }
         }
 
@@ -6303,7 +6462,7 @@ public abstract class L2Character extends L2Object {
                         L2PcInstance caster = (this instanceof L2PcInstance) ? (L2PcInstance) this : ((L2Summon) this).getOwner();
                         for (L2Object target : targets) {
                             if (target instanceof L2NpcInstance) {
-                                for (Quest quest : ((L2NpcInstance) target).getTemplate().getEventQuests(Quest.QuestEventType.MOB_TARGETED_BY_SKILL)) {
+                                for (Quest quest : ((L2NpcInstance) target).getEventQuests(Quest.QuestEventType.MOB_TARGETED_BY_SKILL)) {
                                     quest.notifySkillUse((L2NpcInstance) target, caster, skill);
                                 }
                             }
@@ -6340,8 +6499,8 @@ public abstract class L2Character extends L2Object {
                 for (L2Object target : targets) {
                     if (target instanceof L2NpcInstance) {
                         L2NpcInstance npc = (L2NpcInstance) target;
-                        if (npc.getTemplate().getEventQuests(Quest.QuestEventType.MOB_TARGETED_BY_SKILL) != null) {
-                            for (Quest quest : npc.getTemplate().getEventQuests(Quest.QuestEventType.MOB_TARGETED_BY_SKILL)) {
+                        if (npc.getEventQuests(Quest.QuestEventType.MOB_TARGETED_BY_SKILL) != null) {
+                            for (Quest quest : npc.getEventQuests(Quest.QuestEventType.MOB_TARGETED_BY_SKILL)) {
                                 quest.notifySkillUse(npc, caster, skill);
                             }
                         }

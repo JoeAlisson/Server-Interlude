@@ -702,8 +702,7 @@ public final class Formulas
 		@Override
 		public void calc(Env env)
 		{
-			ClassTemplate t = (ClassTemplate) env.player.getTemplate();
-			int lvl = env.player.getLevel() - t.getClassLevel();
+			int lvl = env.player.getLevel() - env.player.getClassLevel();
 			double hpmod = 1.5 * lvl;
 			double hpmax = (1.5 + hpmod) * lvl;
 			double hpmin = (1.5 * lvl) + hpmod;
@@ -750,8 +749,7 @@ public final class Formulas
 		@Override
 		public void calc(Env env)
 		{
-			ClassTemplate t = (ClassTemplate) env.player.getTemplate();
-			int lvl = env.player.getLevel() - t.getClassLevel();
+			int lvl = env.player.getLevel() - env.player.getClassLevel();
 			double cpmod = 3 * lvl;
 			double cpmax = (3 + cpmod) * lvl;
 			double cpmin = (3 * lvl) + cpmod;
@@ -798,8 +796,7 @@ public final class Formulas
 		@Override
 		public void calc(Env env)
 		{
-			ClassTemplate t = (ClassTemplate) env.player.getTemplate();
-			int lvl = env.player.getLevel() - t.getClassLevel();
+			int lvl = env.player.getLevel() - env.player.getClassLevel();
 			double mpmod = 4 * lvl;
 			double mpmax = (4 + mpmod) * lvl;
 			double mpmin = (4 * lvl) + mpmod;
@@ -955,7 +952,7 @@ public final class Formulas
 	 */
 	public final double calcHpRegen(L2Character cha)
 	{
-		double init = cha.getTemplate().getHpRegen();
+		double init = cha.getBaseHpRegen();
 		double hpRegenMultiplier = cha.isRaid() ? Config.RAID_HP_REGEN_MULTIPLIER : Config.HP_REGEN_MULTIPLIER;
 		double hpRegenBonus = 0;
 		
@@ -1253,7 +1250,7 @@ public final class Formulas
 		// get the natural vulnerability for the template
 		if (target instanceof L2NpcInstance)
 		{
-			damage *= ((L2NpcInstance) target).getTemplate().getVulnerability(Stats.DAGGER_WPN_VULN);
+			damage *= ((L2NpcInstance) target).getVulnerability(Stats.DAGGER_WPN_VULN);
 		}
 		// get the vulnerability for the instance due to skills (buffs, passives, toggles, etc)
 		damage = target.calcStat(Stats.DAGGER_WPN_VULN, damage, target, null);
@@ -1396,7 +1393,7 @@ public final class Formulas
 			if (target instanceof L2NpcInstance)
 			{
 				// get the natural vulnerability for the template
-				damage *= ((L2NpcInstance) target).getTemplate().getVulnerability(stat);
+				damage *= ((L2NpcInstance) target).getVulnerability(stat);
 			}
 		}
 		
@@ -1415,14 +1412,14 @@ public final class Formulas
 		if (attacker instanceof L2NpcInstance)
 		{
 			// Skill CreatureRace : Undead
-			if (((L2NpcInstance) attacker).getTemplate().getRace() == CreatureRace.UNDEAD)
+			if (((L2NpcInstance) attacker).getRace() == CreatureRace.UNDEAD)
 			{
 				damage /= attacker.getPDefUndead(target);
 			}
 		}
 		if (target instanceof L2NpcInstance)
 		{
-			switch (((L2NpcInstance) target).getTemplate().getRace())
+			switch (((L2NpcInstance) target).getRace())
 			{
 				case UNDEAD:
 					damage *= attacker.getPAtkUndead(target);
