@@ -37,8 +37,8 @@ public final class AuthLogin extends L2GameClientPacket {
     protected void runImpl() {
         SessionKey key = new SessionKey(authAccountId, authKey, sessionId, accountId);
         // avoid potential exploits
-        if (isNull(client.getAccountName())) {
-            client.setAccountName(account);
+        if (isNull(client.getAccount())) {
+            client.setAccount(account);
             var oldClient = AuthServerClient.getInstance().addGameServerLogin(account, client);
             if (nonNull(oldClient)) {
                 var loggedPlayer = oldClient.getActiveChar();

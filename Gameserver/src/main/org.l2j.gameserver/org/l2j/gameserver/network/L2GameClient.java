@@ -9,6 +9,7 @@ import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.L2Event;
 import org.l2j.gameserver.model.entity.database.Character;
+import org.l2j.gameserver.security.SecondFactorAuth;
 import org.l2j.gameserver.serverpackets.L2GameServerPacket;
 import org.l2j.gameserver.serverpackets.ServerClose;
 import org.l2j.gameserver.serverpackets.UserInfo;
@@ -25,17 +26,22 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.ReentrantLock;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 import static org.l2j.commons.util.Util.isNullOrEmpty;
 
-/**
- * Represents a client connected on Game Server
- *
- * @author KenM
- */
 public final class L2GameClient extends Client<Connection<L2GameClient>> {
 
     private static final Logger _log = LoggerFactory.getLogger(L2GameClient.class);
     private List<Character> characters;
+    private SecondFactorAuth secondFactorAuth;
+
+    public L2GameClient(Connection<L2GameClient> con) {
+        super(con);
+        state = GameClientState.CONNECTED;
+        _connectionStartTime = System.currentTimeMillis();
+        crypt = new GameCrypt();
+        _autoSaveInDB = ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new AutoSaveTask(), 300000L, 900000L);
+    }
 
     public Character getCharacterForSlot(int charslot) {
         if ((charslot < 0) || isNull(characters) || (charslot >= characters.size())) {
@@ -43,6 +49,37 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
             return null;
         }
         return characters.get(charslot);
+    }
+
+    public void setAccount(String account) {
+        this.account = account;
+        secondFactorAuth = new SecondFactorAuth(account);
+    }
+
+    public boolean isSecondFactorAuthed() {
+        return nonNull(secondFactorAuth) && secondFactorAuth.isAuthed();
+    }
+
+    public boolean hasSecondPassword() {
+        return nonNull(secondFactorAuth) && secondFactorAuth.hasPassword();
+    }
+
+    public boolean saveSecondFactorPassword(String password) {
+        if(hasSecondPassword()) {
+            _log.warn("{} forced save Second Factor Password", account);
+            closeNow();
+            return false;
+        }
+        return secondFactorAuth.save(account, password);
+    }
+
+    public boolean changeSecondFactorPassword(String password, String newPassword) {
+        if(!hasSecondPassword()) {
+            _log.warn("{} forced change Second Factor Password", account);
+            closeNow();
+            return false;
+        }
+        return secondFactorAuth.changePassword(password, newPassword);
     }
 
     public void setCharacters(List<Character> characters) {
@@ -60,6 +97,9 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     public void addCharacter(Character character) {
         characters.add(character);
     }
+
+
+
 
     // ###########################################
 
@@ -80,7 +120,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     public GameClientState state;
 
     // Info
-    public String accountName;
+    public String account;
     public SessionKey sessionId;
     public L2PcInstance activeChar;
     private final ReentrantLock _activeCharLock = new ReentrantLock();
@@ -97,14 +137,6 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     // Flood protection
     public byte packetsSentInSec = 0;
     public int packetsSentStartTick = 0;
-
-    public L2GameClient(Connection<L2GameClient> con) {
-        super(con);
-        state = GameClientState.CONNECTED;
-        _connectionStartTime = System.currentTimeMillis();
-        crypt = new GameCrypt();
-        _autoSaveInDB = ThreadPoolManager.getInstance().scheduleGeneralAtFixedRate(new AutoSaveTask(), 300000L, 900000L);
-    }
 
     public byte[] enableCrypt() {
         byte[] key = BlowFishKeygen.getRandomKey();
@@ -155,12 +187,8 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     public void setGameGuardOk(boolean val) {
     }
 
-    public void setAccountName(String pAccountName) {
-        accountName = pAccountName;
-    }
-
-    public String getAccountName() {
-        return accountName;
+    public String getAccount() {
+        return account;
     }
 
     public void setSessionId(SessionKey sk) {
@@ -277,7 +305,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
             } catch (Exception e1) {
                 _log.warn("Error while cleanup client.", e1);
             } finally {
-                AuthServerClient.getInstance().sendLogout(getAccountName());
+                AuthServerClient.getInstance().sendLogout(getAccount());
             }
         }
     }
@@ -293,9 +321,9 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
                 case CONNECTED:
                     return "[IP: " + (isNullOrEmpty(address) ? "disconnect" : address) + "]";
                 case AUTHED:
-                    return "[Account: " + getAccountName() + " - IP: " + (isNullOrEmpty(address) ? "disconnect" : address) + "]";
+                    return "[Account: " + getAccount() + " - IP: " + (isNullOrEmpty(address) ? "disconnect" : address) + "]";
                 case IN_GAME:
-                    return "[Character: " + (getActiveChar() == null ? "disconnect" : getActiveChar().getName()) + " - Account: " + getAccountName() + " - IP: " + (isNullOrEmpty(address) ? "disconnect" : address) + "]";
+                    return "[Character: " + (getActiveChar() == null ? "disconnect" : getActiveChar().getName()) + " - Account: " + getAccount() + " - IP: " + (isNullOrEmpty(address) ? "disconnect" : address) + "]";
                 default:
                     throw new IllegalStateException("Missing state on switch");
             }
@@ -346,7 +374,7 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
             } catch (Exception e1) {
                 _log.warn("error while disconnecting client", e1);
             } finally {
-                AuthServerClient.getInstance().sendLogout(getAccountName());
+                AuthServerClient.getInstance().sendLogout(getAccount());
             }
         }
     }

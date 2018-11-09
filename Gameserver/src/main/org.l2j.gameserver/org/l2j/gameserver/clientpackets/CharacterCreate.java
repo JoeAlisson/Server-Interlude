@@ -49,7 +49,7 @@ public final class CharacterCreate extends L2GameClientPacket {
             return;
         }
 
-        if ((CharNameTable.accountCharNumber(client.getAccountName()) >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT) && (Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT != 0)) {
+        if ((CharNameTable.accountCharNumber(client.getAccount()) >= Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT) && (Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT != 0)) {
             logger.debug("Max number of characters ({}) reached. Creation failed.", Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT);
             sendPacket(new CharCreateFail(CharCreateFail.REASON_TOO_MANY_CHARACTERS));
             return;
@@ -69,7 +69,7 @@ public final class CharacterCreate extends L2GameClientPacket {
             return;
         }
 
-        var character = PlayerFactory.create(template, getClient().getAccountName(), _name, _hairStyle, _hairColor, _face, _sex);
+        var character = PlayerFactory.create(template, getClient().getAccount(), _name, _hairStyle, _hairColor, _face, _sex);
         if (isNull(character)) {
             sendPacket(new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED));
             return;

@@ -1403,7 +1403,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      * @return the account name
      */
     public String getAccountName() {
-        return getClient().getAccountName();
+        return getClient().getAccount();
     }
 
     /**

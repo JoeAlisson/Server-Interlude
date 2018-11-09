@@ -51,7 +51,7 @@ public class CharSelectInfo extends L2GameServerPacket {
 
             writeString(character.getName());
             writeInt(character.getObjectId());
-            writeString(client.getAccountName());
+            writeString(client.getAccount());
             writeInt(client.getSessionId().sessionId);
             writeInt(character.getClanId());
             writeInt(0x00); // Builder Level ??

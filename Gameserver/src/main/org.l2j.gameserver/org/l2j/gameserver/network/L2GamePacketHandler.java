@@ -95,10 +95,10 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                             /*case 0xA7:
                                 msg = new RequestEx2ndPasswordVerify();
-                                break;
+                                break;*/
                             case 0xA8:
                                 msg = new RequestEx2ndPasswordReq();
-                                break;*/
+                                break;
                             case 0xA9:
                                 msg = new RequestCharacterNameCreatable();
                                 break;
