@@ -90,7 +90,7 @@ public class ValidatePosition extends L2GameClientPacket
 			
 			/*
 			 * if (Config.DEVELOPER && false) { int dxs = (_x - activeChar._lastClientPosition.x); int dys = (_y - activeChar._lastClientPosition.y); int dist = (int)Math.sqrt(dxs*dxs + dys*dys); int heading = dist > 0 ? (int)(Math.atan2(-dys/dist, -dxs/dist) * 10430.378350470452724949566316381) +
-			 * 32768 : 0; System.out.println("Client X:" + _x + ", Y:" + _y + ", Z:" + _z + ", H:" + _heading + ", Dist:" + activeChar.getLastClientDistance(_x, _y, _z)); System.out.println("Server X:" + realX + ", Y:" + realY + ", Z:" + realZ + ", H:" + activeChar.getHeading() + ", Dist:" +
+			 * 32768 : 0; System.out.println("Client X:" + _x + ", Y:" + _y + ", Z:" + _z + ", H:" + heading + ", Dist:" + activeChar.getLastClientDistance(_x, _y, _z)); System.out.println("Server X:" + realX + ", Y:" + realY + ", Z:" + realZ + ", H:" + activeChar.getHeading() + ", Dist:" +
 			 * activeChar.getLastServerDistance(realX, realY, realZ)); }
 			 */
 			
@@ -151,7 +151,7 @@ public class ValidatePosition extends L2GameClientPacket
 			}
 			int realHeading = activeChar.getHeading();
 			
-			// activeChar.setHeading(_heading);
+			// activeChar.setHeading(heading);
 			
 			// TODO: do we need to validate?
 			/*

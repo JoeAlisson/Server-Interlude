@@ -71,22 +71,22 @@ public class L2ControllableMobInstance extends L2MonsterInstance
 	@Override
 	public AI getAI()
 	{
-		if (_ai == null)
+		if (ai == null)
 		{
 			synchronized (this)
 			{
-				if ((_ai == null) && (_aiBackup == null))
+				if ((ai == null) && (_aiBackup == null))
 				{
-					_ai = new L2ControllableMobAI(new ControllableAIAcessor());
-					_aiBackup = (L2ControllableMobAI) _ai;
+					ai = new L2ControllableMobAI(new ControllableAIAcessor());
+					_aiBackup = (L2ControllableMobAI) ai;
 				}
 				else
 				{
-					_ai = _aiBackup;
+					ai = _aiBackup;
 				}
 			}
 		}
-		return _ai;
+		return ai;
 	}
 	
 	@Override
@@ -171,7 +171,7 @@ public class L2ControllableMobInstance extends L2MonsterInstance
 			{
 				_aiBackup.setIntention(Intention.AI_INTENTION_IDLE);
 				_aiBackup = null;
-				_ai = null;
+				ai = null;
 			}
 		}
 	}

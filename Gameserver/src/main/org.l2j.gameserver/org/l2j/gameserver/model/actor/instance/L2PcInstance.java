@@ -65,7 +65,7 @@ import static java.util.Objects.nonNull;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.templates.xml.jaxb.ItemType.*;
 
-public final class L2PcInstance extends L2PlayableInstance {
+public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
 
     private static final Logger logger = LoggerFactory.getLogger(L2PcInstance.class);
     
@@ -293,7 +293,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         _accountName = accountName;
 
         // Create an AI
-        _ai = new L2PlayerAI(new AIAccessor());
+        ai = new L2PlayerAI(new AIAccessor());
 
         // Create a L2Radar object
         _radar = new L2Radar(this);
@@ -356,7 +356,7 @@ public final class L2PcInstance extends L2PlayableInstance {
     private int _charId = 0x00030b7a;
 
     public String getClassName() {
-        return ((ClassTemplate)template).getName();
+        return template.getName();
     }
 
     /**
@@ -1534,15 +1534,15 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     @Override
     public AI getAI() {
-        if (_ai == null) {
+        if (ai == null) {
             synchronized (this) {
-                if (_ai == null) {
-                    _ai = new L2PlayerAI(new AIAccessor());
+                if (ai == null) {
+                    ai = new L2PlayerAI(new AIAccessor());
                 }
             }
         }
 
-        return _ai;
+        return ai;
     }
 
     /**
@@ -2767,7 +2767,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     public org.l2j.gameserver.templates.xml.jaxb.Race getRace() {
         if (!isSubClassActive()) {
-            return ((ClassTemplate)template).getRace();
+            return template.getRace();
         }
 
         var charTemp = PlayerTemplateTable.getInstance().getPlayerTemplate(_baseClass);
@@ -5750,9 +5750,9 @@ public final class L2PcInstance extends L2PlayableInstance {
             return false;
         }
 
-        if (weaponItem.getType() == org.l2j.gameserver.templates.xml.jaxb.ItemType.DUAL) {
+        if (weaponItem.getType() == DUAL) {
             return true;
-        } else if (weaponItem.getType() == org.l2j.gameserver.templates.xml.jaxb.ItemType.DUALFIST) {
+        } else if (weaponItem.getType() == DUALFIST) {
             return true;
         } else if (weaponItem.getId() == 248) {
             return true;
@@ -9220,44 +9220,44 @@ public final class L2PcInstance extends L2PlayableInstance {
         }
 
         // Get movement data
-        MoveData m = _move;
+        MoveData m = move;
 
-        if (_move == null) {
+        if (move == null) {
             return true;
         }
 
         if (!isVisible()) {
-            _move = null;
+            move = null;
             return true;
         }
 
         // Check if the position has alreday be calculated
-        if (m._moveTimestamp == 0) {
-            m._moveTimestamp = m._moveStartTime;
+        if (m.moveTimestamp == 0) {
+            m.moveTimestamp = m.moveStartTime;
         }
 
         // Check if the position has alreday be calculated
-        if (m._moveTimestamp == gameTicks) {
+        if (m.moveTimestamp == gameTicks) {
             return false;
         }
 
-        double dx = m._xDestination - getX();
-        double dy = m._yDestination - getY();
-        double dz = m._zDestination - getZ();
-        int distPassed = ((int) getStat().getMoveSpeed() * (gameTicks - m._moveTimestamp)) / GameTimeController.TICKS_PER_SECOND;
+        double dx = m.xDestination - getX();
+        double dy = m.yDestination - getY();
+        double dz = m.zDestination - getZ();
+        int distPassed = ((int) getStat().getMoveSpeed() * (gameTicks - m.moveTimestamp)) / GameTimeController.TICKS_PER_SECOND;
         double distFraction = (distPassed) / Math.sqrt((dx * dx) + (dy * dy) + (dz * dz));
-        // if (Config.DEVELOPER) System.out.println("Move Ticks:" + (gameTicks - m._moveTimestamp) + ", distPassed:" + distPassed + ", distFraction:" + distFraction);
+        // if (Config.DEVELOPER) System.out.println("Move Ticks:" + (gameTicks - m.moveTimestamp) + ", distPassed:" + distPassed + ", distFraction:" + distFraction);
 
         if (distFraction > 1) {
             // Set the position of the L2Character to the destination
-            super.setPosition(m._xDestination, m._yDestination, m._zDestination);
+            super.setPosition(m.xDestination, m.yDestination, m.zDestination);
         } else {
             // Set the position of the L2Character to estimated after parcial move
             super.setPosition(getX() + (int) ((dx * distFraction) + 0.5), getY() + (int) ((dy * distFraction) + 0.5), getZ() + (int) (dz * distFraction));
         }
 
         // Set the timer of last position update to now
-        m._moveTimestamp = gameTicks;
+        m.moveTimestamp = gameTicks;
 
         revalidateZone(false);
 

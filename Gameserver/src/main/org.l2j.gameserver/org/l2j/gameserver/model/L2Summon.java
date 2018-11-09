@@ -17,11 +17,10 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 import java.util.Map;
 
-public abstract class L2Summon extends L2PlayableInstance {
+public abstract class L2Summon extends L2PlayableInstance<NpcTemplate> {
 
 	protected int _pkKills;
 	private byte _pvpFlag;
@@ -42,16 +41,16 @@ public abstract class L2Summon extends L2PlayableInstance {
 	protected boolean _showSummonAnimation;
 
 	public Map<Integer, L2Skill> getSkills() {
-		return ((NpcTemplate)template).getSkills();
+		return template.getSkills();
 	}
 
 	public int getNpcTemplateId() {
-		return ((NpcTemplate)template).getTemplateId();
+		return template.getTemplateId();
 	}
 
 
 	public boolean isServerSideName() {
-		return ((NpcTemplate)template).isServerSideName();
+		return template.isServerSideName();
 	}
 
 	public class AIAccessor extends L2Character.AIAccessor {
@@ -84,7 +83,7 @@ public abstract class L2Summon extends L2PlayableInstance {
 		
 		_showSummonAnimation = true;
 		_owner = owner;
-		_ai = new L2SummonAI(new AIAccessor());
+		ai = new L2SummonAI(new AIAccessor());
 		
 		setPositionInvisible(owner.getX() + 50, owner.getY() + 100, owner.getZ() + 100);
 	}
@@ -122,18 +121,18 @@ public abstract class L2Summon extends L2PlayableInstance {
 	@Override
 	public AI getAI()
 	{
-		if (_ai == null)
+		if (ai == null)
 		{
 			synchronized (this)
 			{
-				if (_ai == null)
+				if (ai == null)
 				{
-					_ai = new L2SummonAI(new AIAccessor());
+					ai = new L2SummonAI(new AIAccessor());
 				}
 			}
 		}
 		
-		return _ai;
+		return ai;
 	}
 	
 	// this defines the action buttons, 1 for Summon, 2 for Pets
@@ -288,11 +287,6 @@ public abstract class L2Summon extends L2PlayableInstance {
 		return true;
 	}
 	
-	public void stopDecay()
-	{
-		DecayTaskManager.getInstance().cancelDecayTask(this);
-	}
-	
 	@Override
 	public void onDecay()
 	{
@@ -342,20 +336,6 @@ public abstract class L2Summon extends L2PlayableInstance {
 		}
 	}
 	
-	public int getAttackRange()
-	{
-		return _attackRange;
-	}
-	
-	public void setAttackRange(int range)
-	{
-		if (range < 36)
-		{
-			range = 36;
-		}
-		_attackRange = range;
-	}
-	
 	public void setFollowStatus(boolean state)
 	{
 		_follow = state;
@@ -395,10 +375,6 @@ public abstract class L2Summon extends L2PlayableInstance {
 		return 0;
 	}
 	
-	public Weapon getActiveWeapon() {
-		return null;
-	}
-	
 	public PetInventory getInventory()
 	{
 		return null;
@@ -431,11 +407,7 @@ public abstract class L2Summon extends L2PlayableInstance {
 		return null;
 	}
 
-	
-	/**
-	 * Return the L2Party object of its L2PcInstance owner or null.<BR>
-	 * <BR>
-	 */
+
 	@Override
 	public L2Party getParty()
 	{
@@ -445,11 +417,7 @@ public abstract class L2Summon extends L2PlayableInstance {
 		}
 		return _owner.getParty();
 	}
-	
-	/**
-	 * Return True if the L2Character has a Party in progress.<BR>
-	 * <BR>
-	 */
+
 	@Override
 	public boolean isInParty()
 	{
@@ -459,52 +427,24 @@ public abstract class L2Summon extends L2PlayableInstance {
 		}
 		return _owner.getParty() != null;
 	}
-	
-	/**
-	 * Check if the active L2Skill can be casted.<BR>
-	 * <BR>
-	 * <B><U> Actions</U> :</B><BR>
-	 * <BR>
-	 * <li>Check if the target is correct</li> <li>Check if the target is in the skill cast range</li> <li>Check if the summon owns enough HP and MP to cast the skill</li> <li>Check if allTemplates skills are enabled and this skill is enabled</li><BR>
-	 * <BR>
-	 * <li>Check if the skill is active</li><BR>
-	 * <BR>
-	 * <li>Notify the AI with AI_INTENTION_CAST and target</li><BR>
-	 * <BR>
-	 * @param skill The L2Skill to use
-	 * @param forceUse used to force ATTACK on players
-	 * @param dontMove used to prevent movement, if not in range
-	 */
-	public void useMagic(L2Skill skill, boolean forceUse, boolean dontMove)
-	{
-		if ((skill == null) || isDead())
-		{
+
+	public void useMagic(L2Skill skill, boolean forceUse, boolean dontMove) {
+		if ((skill == null) || isDead()) {
 			return;
 		}
-		
-		// Check if the skill is active
-		if (skill.isPassive())
-		{
+
+		if (skill.isPassive()) {
 			// just ignore the passive skill request. why does the client send it anyway ??
 			return;
 		}
-		
-		// ************************************* Check Casting in Progress *******************************************
-		
-		// If a skill is currently being used
-		if (isCastingNow())
-		{
+
+		if (isCastingNow()){
 			return;
 		}
-		
-		// ************************************* Check Target *******************************************
-		
-		// Get the target for the skill
+
 		L2Object target = null;
 		
-		switch (skill.getTargetType())
-		{
-		// OWNER_PET should be cast even if no target has been found
+		switch (skill.getTargetType()) {
 			case TARGET_OWNER_PET:
 				target = getOwner();
 				break;
@@ -515,7 +455,6 @@ public abstract class L2Summon extends L2PlayableInstance {
 				target = this;
 				break;
 			default:
-				// Get the first target of the list
 				target = skill.getFirstOfTargetList(this);
 				break;
 		}
@@ -529,10 +468,7 @@ public abstract class L2Summon extends L2PlayableInstance {
 			}
 			return;
 		}
-		
-		// ************************************* Check skill availability *******************************************
-		
-		// Check if this skill is enabled (ex : reuse time)
+
 		if (isSkillDisabled(skill.getId()) && (getOwner() != null) && (getOwner().getAccessLevel() < Config.GM_PEACEATTACK))
 		{
 			SystemMessage sm = new SystemMessage(SystemMessageId.SKILL_NOT_AVAILABLE);
@@ -540,57 +476,44 @@ public abstract class L2Summon extends L2PlayableInstance {
 			getOwner().sendPacket(sm);
 			return;
 		}
-		
-		// Check if allTemplates skills are disabled
+
 		if (isAllSkillsDisabled() && (getOwner() != null) && (getOwner().getAccessLevel() < Config.GM_PEACEATTACK))
 		{
 			return;
 		}
 		
-		// ************************************* Check Consumables *******************************************
-		
-		// Check if the summon has enough MP
+
 		if (getCurrentMp() < (getStat().getMpConsume(skill) + getStat().getMpInitialConsume(skill)))
 		{
-			// Send a System Message to the caster
 			if (getOwner() != null)
 			{
 				getOwner().sendPacket(new SystemMessage(SystemMessageId.NOT_ENOUGH_MP));
 			}
 			return;
 		}
-		
-		// Check if the summon has enough HP
+
 		if (getCurrentHp() <= skill.getHpConsume())
 		{
-			// Send a System Message to the caster
 			if (getOwner() != null)
 			{
 				getOwner().sendPacket(new SystemMessage(SystemMessageId.NOT_ENOUGH_HP));
 			}
 			return;
 		}
-		
-		// ************************************* Check Summon State *******************************************
-		
-		// Check if this is offensive magic skill
-		if (skill.isOffensive())
-		{
+
+		if (skill.isOffensive()) {
 			if (isInsidePeaceZone(this, target) && (getOwner() != null) && (getOwner().getAccessLevel() < Config.GM_PEACEATTACK))
 			{
-				// If summon or target is in a peace zone, send a system message TARGET_IN_PEACEZONE
 				sendPacket(new SystemMessage(SystemMessageId.TARGET_IN_PEACEZONE));
 				return;
 			}
 			
 			if ((getOwner() != null) && getOwner().isInOlympiadMode() && !getOwner().isOlympiadStart())
 			{
-				// if L2PcInstance is in Olympia and the match isn't already start, send a Server->Client packet ActionFailed
 				sendPacket(new ActionFailed());
 				return;
 			}
-			
-			// Check if the target is attackable
+
 			if (target instanceof L2DoorInstance)
 			{
 				if (!((L2DoorInstance) target).isAttackable(getOwner()))
@@ -604,36 +527,29 @@ public abstract class L2Summon extends L2PlayableInstance {
 				{
 					return;
 				}
-				
-				// Check if a Forced ATTACK is in progress on non-attackable target
+
 				if (!target.isAutoAttackable(this) && !forceUse && (skill.getTargetType() != SkillTargetType.TARGET_AURA) && (skill.getTargetType() != SkillTargetType.TARGET_CLAN) && (skill.getTargetType() != SkillTargetType.TARGET_ALLY) && (skill.getTargetType() != SkillTargetType.TARGET_PARTY) && (skill.getTargetType() != SkillTargetType.TARGET_SELF))
 				{
 					return;
 				}
 			}
 		}
-		
-		// Notify the AI with AI_INTENTION_CAST and target
 		getAI().setIntention(Intention.AI_INTENTION_CAST, skill, target);
 	}
 	
 	@Override
-	public void setIsImobilised(boolean value)
-	{
+	public void setIsImobilised(boolean value) {
 		super.setIsImobilised(value);
 		
 		if (value)
 		{
 			_previousFollowStatus = getFollowStatus();
-			// if imobilized temporarly disable follow mode
-			if (_previousFollowStatus)
-			{
+			if (_previousFollowStatus) {
 				setFollowStatus(false);
 			}
 		}
 		else
 		{
-			// if not more imobilized restore previous follow mode
 			setFollowStatus(_previousFollowStatus);
 		}
 	}
@@ -642,25 +558,20 @@ public abstract class L2Summon extends L2PlayableInstance {
 	{
 		_owner = newOwner;
 	}
-	
-	/**
-	 * @return Returns the showSummonAnimation.
-	 */
+
 	public boolean isShowSummonAnimation()
 	{
 		return _showSummonAnimation;
 	}
-	
-	/**
-	 * @param showSummonAnimation The showSummonAnimation to set.
-	 */
+
 	public void setShowSummonAnimation(boolean showSummonAnimation)
 	{
 		_showSummonAnimation = showSummonAnimation;
 	}
 	
 	/**
-	 * Servitors' skills automatically change their level based on the servitor's level. Until level 70, the servitor gets 1 lv of skill per 10 levels. After that, it is 1 skill level per 5 servitor levels. If the resulting skill level doesn't exist use the max that does exist!
+	 * Servitors' skills automatically change their level based on the servitor's level.
+	 * Until level 70, the servitor gets 1 lv of skill per 10 levels. After that, it is 1 skill level per 5 servitor levels. If the resulting skill level doesn't exist use the max that does exist!
 	 * @see org.l2j.gameserver.model.L2Character#doCast(org.l2j.gameserver.model.L2Skill)
 	 */
 	@Override
@@ -668,21 +579,18 @@ public abstract class L2Summon extends L2PlayableInstance {
 	{
 		int petLevel = getLevel();
 		int skillLevel = petLevel / 10;
-		if (petLevel >= 70)
-		{
+		if (petLevel >= 70){
 			skillLevel += (petLevel - 65) / 10;
 		}
 		
 		// adjust the level for servitors less than lv 10
-		if (skillLevel < 1)
-		{
+		if (skillLevel < 1) {
 			skillLevel = 1;
 		}
 		
 		L2Skill skillToCast = SkillTable.getInstance().getInfo(skill.getId(), skillLevel);
 		
-		if (skillToCast != null)
-		{
+		if (skillToCast != null) {
 			super.doCast(skillToCast);
 		}
 		else

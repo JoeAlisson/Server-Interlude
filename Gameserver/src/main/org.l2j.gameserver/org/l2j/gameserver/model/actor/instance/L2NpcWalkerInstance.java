@@ -59,7 +59,7 @@ public class L2NpcWalkerInstance extends L2NpcInstance
 	@Override
 	public void setAI(AI newAI)
 	{
-		if (_ai == null)
+		if (ai == null)
 		{
 			super.setAI(newAI);
 		}

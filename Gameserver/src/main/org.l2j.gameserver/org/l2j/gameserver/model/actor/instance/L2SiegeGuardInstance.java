@@ -66,12 +66,12 @@ public final class L2SiegeGuardInstance extends L2Attackable
 	{
 		synchronized (this)
 		{
-			if (_ai == null)
+			if (ai == null)
 			{
-				_ai = new L2SiegeGuardAI(new AIAccessor());
+				ai = new L2SiegeGuardAI(new AIAccessor());
 			}
 		}
-		return _ai;
+		return ai;
 	}
 	
 	/**

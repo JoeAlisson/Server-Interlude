@@ -11,23 +11,14 @@ import org.l2j.gameserver.model.actor.status.PlayableStatus;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
 
 import static java.util.Objects.isNull;
+import static java.util.Objects.nonNull;
 
-public abstract class L2PlayableInstance extends L2Character {
+public abstract class L2PlayableInstance<T extends CharTemplate> extends L2Character<T> {
 	
 	private boolean _isNoblesseBlessed = false; // for Noblesse Blessing skill, restores buffs after death
 	private boolean _getCharmOfLuck = false; // Charm of Luck - During a Raid/Boss war, decreased chance for death penalty
 
-	/**
-	 * Constructor of L2PlayableInstance (use L2Character constructor).<BR>
-	 * <BR>
-	 * <B><U> Actions</U> :</B><BR>
-	 * <BR>
-	 * <li>Call the L2Character constructor to create an empty skills slot and link copy basic Calculator set to this L2PlayableInstance</li><BR>
-	 * <BR>
-	 * @param objectId Identifier of the object to initialized
-	 * @param template The L2CharTemplate to apply to the L2PlayableInstance
-	 */
-	public L2PlayableInstance(int objectId, CharTemplate template) {
+	public L2PlayableInstance(int objectId, T template) {
 		super(objectId, template);
 		getStat(); // init stats
 		getStatus(); // init status
@@ -42,47 +33,37 @@ public abstract class L2PlayableInstance extends L2Character {
 	}
 	
 	@Override
-	public PlayableStat getStat()
-	{
-		if ((super.getStat() == null) || !(super.getStat() instanceof PlayableStat))
-		{
+	public PlayableStat getStat() {
+		if ((super.getStat() == null) || !(super.getStat() instanceof PlayableStat)) {
 			setStat(new PlayableStat(this));
 		}
 		return (PlayableStat) super.getStat();
 	}
 	
 	@Override
-	public PlayableStatus getStatus()
-	{
-		if ((super.getStatus() == null) || !(super.getStatus() instanceof PlayableStatus))
-		{
+	public PlayableStatus getStatus() {
+		if ((super.getStatus() == null) || !(super.getStatus() instanceof PlayableStatus)) {
 			setStatus(new PlayableStatus(this));
 		}
 		return (PlayableStatus) super.getStatus();
 	}
 	
 	@Override
-	public boolean doDie(L2Character killer)
-	{
-		if (!super.doDie(killer))
-		{
+	public boolean doDie(L2Character killer) {
+		if (!super.doDie(killer)) {
 			return false;
 		}
 		
-		if (killer != null)
-		{
+		if (nonNull(killer)){
 			L2PcInstance player = null;
-			if (killer instanceof L2PcInstance)
-			{
+			if (killer instanceof L2PcInstance) {
 				player = (L2PcInstance) killer;
 			}
-			else if (killer instanceof L2Summon)
-			{
+			else if (killer instanceof L2Summon) {
 				player = ((L2Summon) killer).getOwner();
 			}
 			
-			if (player != null)
-			{
+			if (player != null) {
 				player.onKillUpdatePvPKarma(this);
 			}
 		}

@@ -21,50 +21,36 @@ import java.util.StringTokenizer;
 /**
  * @author Maktakien
  */
-public class L2BoatInstance extends L2Character {
+public class L2BoatInstance extends L2Character<CharTemplate> {
     protected static final Logger _logBoat = LoggerFactory.getLogger(L2BoatInstance.class);
 
     private class L2BoatTrajet {
         private Map<Integer, L2BoatPoint> _path;
 
-        public int idWaypoint1;
-        public int idWTicket1;
-        public int ntx1;
-        public int nty1;
-        public int ntz1;
+        int idWaypoint1;
+        int idWTicket1;
+        int ntx1;
+        int nty1;
+        int ntz1;
         public int max;
-        public String boatName;
-        public String npc1;
-        public String sysmess10_1;
-        public String sysmess5_1;
-        public String sysmess1_1;
-        public String sysmessb_1;
-        public String sysmess0_1;
+        String boatName;
+        String npc1;
+        String sysmess10_1;
+        String sysmess5_1;
+        String sysmess1_1;
+        String sysmessb_1;
+        String sysmess0_1;
 
         protected class L2BoatPoint {
-            public int speed1;
-            public int speed2;
+            int speed1;
+            int speed2;
             public int x;
             public int y;
             public int z;
             public int time;
         }
 
-        /**
-         * @param pIdWaypoint1
-         * @param pIdWTicket1
-         * @param pNtx1
-         * @param pNty1
-         * @param pNtz1
-         * @param pNpc1
-         * @param pSysmess10_1
-         * @param pSysmess5_1
-         * @param pSysmess1_1
-         * @param pSysmess0_1
-         * @param pSysmessb_1
-         * @param pBoatname
-         */
-        public L2BoatTrajet(int pIdWaypoint1, int pIdWTicket1, int pNtx1, int pNty1, int pNtz1, String pNpc1, String pSysmess10_1, String pSysmess5_1, String pSysmess1_1, String pSysmess0_1, String pSysmessb_1, String pBoatname) {
+        L2BoatTrajet(int pIdWaypoint1, int pIdWTicket1, int pNtx1, int pNty1, int pNtz1, String pNpc1, String pSysmess10_1, String pSysmess5_1, String pSysmess1_1, String pSysmess0_1, String pSysmessb_1, String pBoatname) {
             idWaypoint1 = pIdWaypoint1;
             idWTicket1 = pIdWTicket1;
             ntx1 = pNtx1;
@@ -80,14 +66,10 @@ public class L2BoatInstance extends L2Character {
             loadBoatPath();
         }
 
-        /**
-         * @param line
-         */
-        public void parseLine(String line) {
-            // L2BoatPath bp = new L2BoatPath();
+        void parseLine(String line) {
             _path = new LinkedHashMap<>();
             StringTokenizer st = new StringTokenizer(line, ";");
-            Integer.parseInt(st.nextToken());
+            st.nextToken();
             max = Integer.parseInt(st.nextToken());
             for (int i = 0; i < max; i++) {
                 L2BoatPoint bp = new L2BoatPoint();
@@ -99,7 +81,6 @@ public class L2BoatInstance extends L2Character {
                 bp.time = Integer.parseInt(st.nextToken());
                 _path.put(i, bp);
             }
-            return;
         }
 
         private void loadBoatPath() {
@@ -116,11 +97,11 @@ public class L2BoatInstance extends L2Character {
                     parseLine(line);
                     return;
                 }
-                _logBoat.warn("No path for boat " + boatName + " !!!");
+                _logBoat.warn("No path for boat {}!!!", boatName);
             } catch (FileNotFoundException e) {
                 _logBoat.warn("boatpath.csv is missing in data folder");
             } catch (Exception e) {
-                _logBoat.warn("error while creating boat table " + e);
+                _logBoat.warn("error while creating boat table {}", e);
             } finally {
                 try {
                     lnr.close();
@@ -129,11 +110,6 @@ public class L2BoatInstance extends L2Character {
             }
         }
 
-        /**
-         * @param state
-         * @param _boat
-         * @return
-         */
         public int state(int state, L2BoatInstance _boat) {
             if (state < max) {
                 L2BoatPoint bp = _path.get(state);
@@ -153,7 +129,7 @@ public class L2BoatInstance extends L2Character {
                 // _boat.getPlayerTemplate().baseRunSpd = bp.speed1;
                 _boat.moveToLocation(bp.x, bp.y, bp.z, (float) bp.speed1);
                 Collection<L2PcInstance> knownPlayers = _boat.getKnownList().getKnownPlayers().values();
-                if ((knownPlayers == null) || knownPlayers.isEmpty()) {
+                if (knownPlayers.isEmpty()) {
                     return bp.time;
                 }
                 for (L2PcInstance player : knownPlayers) {
@@ -170,40 +146,29 @@ public class L2BoatInstance extends L2Character {
     }
 
     private final String _name;
-    protected L2BoatTrajet _t1;
-    protected L2BoatTrajet _t2;
-    protected int _cycle = 0;
-    protected VehicleDeparture _vd = null;
+    private L2BoatTrajet _t1;
+    private L2BoatTrajet _t2;
+    private int _cycle = 0;
+    private VehicleDeparture _vd = null;
     private Map<Integer, L2PcInstance> _inboat;
 
     public L2BoatInstance(int objectId, CharTemplate template, String name) {
         super(objectId, template);
         super.setKnownList(new BoatKnownList(this));
-        /*
-         * super.setStat(new DoorStat(new L2DoorInstance[] {this})); super.setStatus(new DoorStatus(new L2DoorInstance[] {this}));
-         */
         _name = name;
     }
 
-    /**
-     * @param x
-     * @param y
-     * @param z
-     * @param speed
-     */
-    public void moveToLocation(int x, int y, int z, float speed) {
+    private void moveToLocation(int x, int y, int z, float speed) {
         final int curX = getX();
         final int curY = getY();
         final int curZ = getZ();
 
-        // Calculate distance (dx,dy) between current position and destination
         final int dx = (x - curX);
         final int dy = (y - curY);
         double distance = Math.sqrt((dx * dx) + (dy * dy));
 
-        if (Config.DEBUG) {
-            _logBoat.debug("distance to target:" + distance);
-        }
+        _logBoat.debug("distance to target:" + distance);
+
 
         // Define movement angles needed
         // ^
@@ -223,10 +188,10 @@ public class L2BoatInstance extends L2Character {
         MoveData m = new MoveData();
 
         // Caclulate the Nb of ticks between the current position and the destination
-        m._ticksToMove = (int) ((GameTimeController.TICKS_PER_SECOND * distance) / speed);
+        m.ticksToMove = (int) ((GameTimeController.TICKS_PER_SECOND * distance) / speed);
 
         // Calculate the xspeed and yspeed in unit/ticks in function of the movement speed
-        m._xSpeedTicks = (float) ((cos * speed) / GameTimeController.TICKS_PER_SECOND);
+        m.xSpeedTicks = (float) ((cos * speed) / GameTimeController.TICKS_PER_SECOND);
         m._ySpeedTicks = (float) ((sin * speed) / GameTimeController.TICKS_PER_SECOND);
 
         // Calculate and set the heading of the L2Character
@@ -234,34 +199,28 @@ public class L2BoatInstance extends L2Character {
         heading += 32768;
         getPosition().setHeading(heading);
 
-        if (Config.DEBUG) {
-            _logBoat.debug("dist:" + distance + "speed:" + speed + " ttt:" + m._ticksToMove + " dx:" + (int) m._xSpeedTicks + " dy:" + (int) m._ySpeedTicks + " heading:" + heading);
-        }
+        _logBoat.debug("dist:" + distance + "speed:" + speed + " ttt:" + m.ticksToMove + " dx:" + (int) m.xSpeedTicks + " dy:" + (int) m._ySpeedTicks + " heading:" + heading);
 
-        m._xDestination = x;
-        m._yDestination = y;
-        m._zDestination = z; // this is what was requested from client
-        m._heading = 0;
 
-        m._moveStartTime = GameTimeController.getGameTicks();
-        m._xMoveFrom = curX;
-        m._yMoveFrom = curY;
-        m._zMoveFrom = curZ;
+        m.xDestination = x;
+        m.yDestination = y;
+        m.zDestination = z; // this is what was requested from client
+        m.heading = 0;
+
+        m.moveStartTime = GameTimeController.getGameTicks();
+        m.xMoveFrom = curX;
+        m.yMoveFrom = curY;
+        m.zMoveFrom = curZ;
 
         // If necessary set Nb ticks needed to a min value to ensure small distancies movements
-        if (m._ticksToMove < 1) {
-            m._ticksToMove = 1;
+        if (m.ticksToMove < 1) {
+            m.ticksToMove = 1;
         }
 
-        if (Config.DEBUG) {
-            _logBoat.debug("time to target:" + m._ticksToMove);
-        }
+        _logBoat.debug("time to target:" + m.ticksToMove);
 
-        // Set the L2Character _move object to MoveData object
-        _move = m;
+        move = m;
 
-        // Add the L2Character to movingObjects of the GameTimeController
-        // The GameTimeController manage objects movement
         GameTimeController.getInstance().registerMovingObject(this);
     }
 
@@ -269,10 +228,6 @@ public class L2BoatInstance extends L2Character {
         private final int _state;
         private final L2BoatInstance _boat;
 
-        /**
-         * @param i
-         * @param instance
-         */
         public BoatCaptain(int i, L2BoatInstance instance) {
             _state = i;
             _boat = instance;
@@ -309,11 +264,8 @@ public class L2BoatInstance extends L2Character {
         private int _state;
         private final L2BoatInstance _boat;
 
-        /**
-         * @param i
-         * @param instance
-         */
-        public Boatrun(int i, L2BoatInstance instance) {
+
+        Boatrun(int i, L2BoatInstance instance) {
             _state = i;
             _boat = instance;
         }
@@ -359,24 +311,17 @@ public class L2BoatInstance extends L2Character {
         }
     }
 
-    public int _runstate = 0;
+    private int _runstate = 0;
 
-    /**
-     *
-     */
     public void evtArrived() {
 
         if (_runstate != 0) {
-            // _runstate++;
             Boatrun bc = new Boatrun(_runstate, this);
             ThreadPoolManager.getInstance().scheduleGeneral(bc, 10);
             _runstate = 0;
         }
     }
 
-    /**
-     * @param activeChar
-     */
     public void sendVehicleDeparture(L2PcInstance activeChar) {
         if (_vd != null) {
             activeChar.sendPacket(_vd);
@@ -387,7 +332,7 @@ public class L2BoatInstance extends L2Character {
         return _vd;
     }
 
-    public void beginCycle() {
+    private void beginCycle() {
         say(10);
         BoatCaptain bc = new BoatCaptain(1, this);
         ThreadPoolManager.getInstance().scheduleGeneral(bc, 300000);
@@ -395,7 +340,7 @@ public class L2BoatInstance extends L2Character {
 
     private int lastx = -1;
     private int lasty = -1;
-    protected boolean needOnVehicleCheckLocation = false;
+    private boolean needOnVehicleCheckLocation = false;
 
     public void updatePeopleInTheBoat(int x, int y, int z) {
 
