@@ -346,7 +346,7 @@ public class AdminEditChar implements IAdminCommandHandler {
         adminReply.replace("%pages%", replyMSG.toString());
         replyMSG.delete(0, replyMSG.length());
         for (int i = CharactersStart; i < CharactersEnd; i++) { // Add reader info into new Table row
-            replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_info " + players[i].getName() + "\">" + players[i].getName() + "</a></td><td width=110>" + players[i].getTemplate().getName() + "</td><td width=40>" + players[i].getLevel() + "</td></tr>");
+            replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_info " + players[i].getName() + "\">" + players[i].getName() + "</a></td><td width=110>" + players[i].getClassName() + "</td><td width=40>" + players[i].getLevel() + "</td></tr>");
         }
         adminReply.replace("%players%", replyMSG.toString());
         activeChar.sendPacket(adminReply);
@@ -548,7 +548,7 @@ public class AdminEditChar implements IAdminCommandHandler {
             name = player.getName();
             if (name.toLowerCase().contains(CharacterToFind.toLowerCase())) {
                 CharactersFound = CharactersFound + 1;
-                replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_list " + name + "\">" + name + "</a></td><td width=110>" + player.getTemplate().getName() + "</td><td width=40>" + player.getLevel() + "</td></tr>");
+                replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_list " + name + "\">" + name + "</a></td><td width=110>" + player.getClassName() + "</td><td width=40>" + player.getLevel() + "</td></tr>");
             }
             if (CharactersFound > 20) {
                 break;
@@ -592,7 +592,7 @@ public class AdminEditChar implements IAdminCommandHandler {
             if (ip.equals(IpAdress)) {
                 name = player.getName();
                 CharactersFound = CharactersFound + 1;
-                replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_list " + name + "\">" + name + "</a></td><td width=110>" + player.getTemplate().getName() + "</td><td width=40>" + player.getLevel() + "</td></tr>");
+                replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_list " + name + "\">" + name + "</a></td><td width=110>" + player.getClassName() + "</td><td width=40>" + player.getLevel() + "</td></tr>");
             }
             if (CharactersFound > 20) {
                 break;

@@ -87,12 +87,12 @@ public class ClassTemplate extends CharTemplate {
         return  1 + PlayerTemplateTable.getInstance().getClassTemplate(parent).getClassLevel();
     }
 
-    public double getCollisionRadius(byte sex) {
+    public float getCollisionRadius(byte sex) {
         var collision = playerTemplate.getCollision();
         return sex == 1 ? collision.getFemaleRadius() : collision.getMaleRadius();
     }
 
-    public double getCollisionHeight(byte sex) {
+    public float getCollisionHeight(byte sex) {
         var collision = playerTemplate.getCollision();
         return sex == 1 ? collision.getFemaleHeight() : collision.getMaleHeight();
     }

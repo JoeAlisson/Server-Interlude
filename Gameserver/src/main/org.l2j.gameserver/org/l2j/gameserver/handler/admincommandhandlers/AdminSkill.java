@@ -160,7 +160,7 @@ public class AdminSkill implements IAdminCommandHandler {
         boolean countUnlearnable = true;
         int unLearnable = 0;
         int skillCounter = 0;
-        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(player, player.getTemplate());
+        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(player);
         while (skills.size() > unLearnable) {
             for (SkillInfo s : skills) {
                 L2Skill sk = SkillTable.getInstance().getInfo(s.getId(), s.getLevel());
@@ -176,7 +176,7 @@ public class AdminSkill implements IAdminCommandHandler {
                 player.addSkill(sk, true);
             }
             countUnlearnable = false;
-            skills = SkillTreeTable.getInstance().getAvailableSkills(player, player.getTemplate());
+            skills = SkillTreeTable.getInstance().getAvailableSkills(player);
         }
         // Notify reader and admin
         player.sendMessage("A GM gave you " + skillCounter + " skills.");
@@ -230,7 +230,7 @@ public class AdminSkill implements IAdminCommandHandler {
         replyMSG.append("</tr></table>");
         replyMSG.append("<br><br>");
         replyMSG.append("<center>Editing <font color=\"LEVEL\">" + player.getName() + "</font></center>");
-        replyMSG.append("<br><table width=270><tr><td>Lv: " + player.getLevel() + " " + player.getTemplate().getName() + "</td></tr></table>");
+        replyMSG.append("<br><table width=270><tr><td>Lv: " + player.getLevel() + " " + player.getClassName() + "</td></tr></table>");
         replyMSG.append("<br><table width=270><tr><td>Note: Dont forget that modifying players skills can</td></tr>");
         replyMSG.append("<tr><td>ruin the game...</td></tr></table>");
         replyMSG.append("<br><center>Click on the skill you wish to remove:</center>");

@@ -201,8 +201,8 @@ public class CharInfo extends L2GameServerPacket {
 			writeInt(_flyWalkSpd);
 			writeDouble(_activeChar.getMovementSpeedMultiplier()); // _activeChar.getProperMultiplier()
 			writeDouble(_activeChar.getAttackSpeedMultiplier()); // _activeChar.getAttackSpeedMultiplier()
-			writeDouble(_activeChar.getBaseTemplate().getCollisionRadius());
-			writeDouble(_activeChar.getBaseTemplate().getCollisionHeight());
+			writeDouble(_activeChar.getCollisionRadius());
+			writeDouble(_activeChar.getCollisionHeight());
 			
 			writeInt(_activeChar.getHairStyle());
 			writeInt(_activeChar.getHairColor());

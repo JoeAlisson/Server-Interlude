@@ -58,10 +58,6 @@ public class L2PetInstance extends L2Summon
 		_data = petsStats;
 	}
 
-    public double getPoison() {
-        return template.getPoison();
-    }
-
     /**
 	 * Manage Feeding Task.<BR>
 	 * <BR>

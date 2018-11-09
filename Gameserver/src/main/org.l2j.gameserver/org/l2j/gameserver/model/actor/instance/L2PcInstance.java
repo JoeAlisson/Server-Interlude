@@ -113,11 +113,11 @@ public final class L2PcInstance extends L2PlayableInstance {
         return getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND);
     }
 
-    public double getCollisionRadius() {
+    public float getCollisionRadius() {
         return getBaseTemplate().getCollisionRadius(getSex());
     }
 
-    public double getCollisionHeight() {
+    public float getCollisionHeight() {
         return getBaseTemplate().getCollisionHeight(getSex());
     }
 
@@ -354,6 +354,10 @@ public final class L2PcInstance extends L2PlayableInstance {
     protected int _classIndex = 0;
     private Map<Integer, SubClass> _subClasses;
     private int _charId = 0x00030b7a;
+
+    public String getClassName() {
+        return ((ClassTemplate)template).getName();
+    }
 
     /**
      * The Class AIAccessor.
@@ -1510,25 +1514,8 @@ public final class L2PcInstance extends L2PlayableInstance {
         return (PcStatus) super.getStatus();
     }
 
-
-    /**
-     * Return the base L2PcTemplate link to the L2PcInstance.
-     *
-     * @return the base template
-     */
-    public final ClassTemplate getBaseTemplate() {
+    private ClassTemplate getBaseTemplate() {
         return PlayerTemplateTable.getInstance().getClassTemplate(_baseClass);
-    }
-
-    /**
-     * Return the L2PcTemplate link to the L2PcInstance.
-     *
-     * @return the template
-     */
-    @Override
-    @Deprecated(forRemoval = true)
-    public final ClassTemplate getTemplate() {
-        return (ClassTemplate) super.getTemplate();
     }
 
     /**
@@ -1537,7 +1524,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      * @param newclass the new template
      */
     public void setTemplate(PlayerClass newclass) {
-        super.setTemplate(PlayerTemplateTable.getInstance().getClassTemplate(newclass.getId()));
+        template = PlayerTemplateTable.getInstance().getClassTemplate(newclass.getId());
     }
 
     /**
@@ -2741,7 +2728,7 @@ public final class L2PcInstance extends L2PlayableInstance {
         int skillCounter = 0;
 
         // Get available skills
-        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(this, getTemplate());
+        List<SkillInfo> skills = SkillTreeTable.getInstance().getAvailableSkills(this);
         while (skills.size()> unLearnable) {
             for (SkillInfo s : skills) {
                 L2Skill sk = SkillTable.getInstance().getInfo(s.getId(), s.getLevel());
@@ -2758,7 +2745,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             }
 
             // Get new available skills
-            skills = SkillTreeTable.getInstance().getAvailableSkills(this, getTemplate());
+            skills = SkillTreeTable.getInstance().getAvailableSkills(this);
         }
 
         sendMessage("You have learned " + skillCounter + " new skills.");
@@ -2780,7 +2767,7 @@ public final class L2PcInstance extends L2PlayableInstance {
      */
     public org.l2j.gameserver.templates.xml.jaxb.Race getRace() {
         if (!isSubClassActive()) {
-            return getTemplate().getRace();
+            return ((ClassTemplate)template).getRace();
         }
 
         var charTemp = PlayerTemplateTable.getInstance().getPlayerTemplate(_baseClass);
@@ -7208,7 +7195,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             // Check if the target is in the skill cast range
             if (dontMove) {
                 // Calculate the distance between the L2PcInstance and the target
-                if ((skill.getCastRange() > 0) && !isInsideRadius(target, skill.getCastRange() + (int) getTemplate().getCollisionRadius(), false, false)) {
+                if ((skill.getCastRange() > 0) && !isInsideRadius(target, skill.getCastRange() + (int) template.getCollisionRadius(), false, false)) {
                     // Send a System Message to the caster
                     sendPacket(new SystemMessage(SystemMessageId.TARGET_TOO_FAR));
 
@@ -8748,8 +8735,7 @@ public final class L2PcInstance extends L2PlayableInstance {
             throw new Error();
         }
 
-        // Set the template of the L2PcInstance
-        setTemplate(t);
+        template = t;
     }
 
     /**

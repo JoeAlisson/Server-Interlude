@@ -22,7 +22,7 @@ public class SkillTreeTable {
     private static Logger _log = LoggerFactory.getLogger(SkillTreeTable.class.getName());
     private static SkillTreeTable INSTANCE;
 
-    private Map<ClassTemplate, Map<Integer, SkillInfo>> _skillTrees;
+    private Map<Integer, Map<Integer, SkillInfo>> _skillTrees;
     private List<FishingSkill> _fishingSkillTrees; // allTemplates common skills (teached by Fisherman)
     private List<FishingSkill> _expandDwarfCraftSkillTrees; // list of special skill for DWARF (expand DWARF craft) learned by class teacher
     private List<ClanSkillInfo> clanSkillTrees; // pledge skill list
@@ -51,7 +51,7 @@ public class SkillTreeTable {
             Map<Integer, SkillInfo> map = new HashMap<>();
 
             if (nonNull(classTemplate.getParent())) {
-                Map<Integer, SkillInfo> parentMap = getSkillTrees().get(classTemplate.getParent());
+                Map<Integer, SkillInfo> parentMap = getSkillTrees().get(classTemplate.getParent().getId());
                 map.putAll(parentMap);
             }
 
@@ -61,7 +61,7 @@ public class SkillTreeTable {
                 map.put(SkillTable.getSkillHashCode(id, lvl), skill);
             });
 
-            getSkillTrees().put(classTemplate, map);
+            getSkillTrees().put(classTemplate.getId(), map);
             count += map.size();
 
             _log.debug("SkillTreeTable: skill tree for class {} has {} skills.", classTemplate.getId(), map.size());
@@ -144,7 +144,7 @@ public class SkillTreeTable {
     }
 
 
-    private Map<ClassTemplate, Map<Integer, SkillInfo>> getSkillTrees() {
+    private Map<Integer, Map<Integer, SkillInfo>> getSkillTrees() {
         if (_skillTrees == null) {
             _skillTrees = new HashMap<>();
         }
@@ -152,7 +152,7 @@ public class SkillTreeTable {
     }
 
     public List<SkillInfo> getAvailableSkills(L2PcInstance cha, ClassTemplate playerClass) {
-        Collection<SkillInfo> skills = getSkillTrees().get((ClassTemplate) template).values();
+        Collection<SkillInfo> skills = getSkillTrees().get(cha.getTemplateId()).values();
         List<SkillInfo> result = new ArrayList<>(skills.size());
 
         L2Skill[] oldSkills = cha.getAllSkills();

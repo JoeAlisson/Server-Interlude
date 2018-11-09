@@ -95,7 +95,7 @@ public class RegionBBSManager extends BaseBBSManager {
             } else if (player.getLevel() >= 20) {
                 levelApprox = "medium";
             }
-            htmlCode.append("<table border=0><tr><td>" + player.getName() + " (" + sex + " " + player.getTemplate().getName() + "):</td></tr>");
+            htmlCode.append("<table border=0><tr><td>" + player.getName() + " (" + sex + " " + player.getClassName() + "):</td></tr>");
             htmlCode.append("<tr><td>Level: " + levelApprox + "</td></tr>");
             htmlCode.append("<tr><td><br></td></tr>");
 

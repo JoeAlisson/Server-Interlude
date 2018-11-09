@@ -103,10 +103,6 @@ public class L2NpcInstance extends L2Character {
     private float _currentCollisionHeight; // used for npc grow effect skills
     private float _currentCollisionRadius; // used for npc grow effect skills
 
-    public int getTemplateId() {
-        return template.getId();
-    }
-
     public Quest[] getEventQuests(Quest.QuestEventType eventType) {
         return ((NpcTemplate)template).getEventQuests(eventType);
     }

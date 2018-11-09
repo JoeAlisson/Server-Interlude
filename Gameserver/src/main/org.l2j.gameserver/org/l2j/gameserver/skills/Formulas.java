@@ -1038,7 +1038,7 @@ public final class Formulas
 	 */
 	public final double calcMpRegen(L2Character cha)
 	{
-		double init = cha.getTemplate().getMpRegen();
+		double init = cha.getBaseMpRegen();
 		double mpRegenMultiplier = cha.isRaid() ? Config.RAID_MP_REGEN_MULTIPLIER : Config.MP_REGEN_MULTIPLIER;
 		double mpRegenBonus = 0;
 		
@@ -1111,7 +1111,7 @@ public final class Formulas
 	 */
 	public final double calcCpRegen(L2Character cha)
 	{
-		double init = cha.getTemplate().getHpRegen();
+		double init = cha.getBaseHpRegen();
 		double cpRegenMultiplier = Config.CP_REGEN_MULTIPLIER;
 		double cpRegenBonus = 0;
 		
@@ -1797,46 +1797,46 @@ public final class Formulas
 				switch (stat)
 				{
 					case AGGRESSION:
-						multiplier *= target.getTemplate().getAggressionVuln();
+						multiplier *= target.getAggressionVuln();
 						break;
 					case BLEED:
-						multiplier *= target.getTemplate().getBleedVuln();
+						multiplier *= target.getBleedVuln();
 						break;
 					case POISON:
-						multiplier *= target.getTemplate().getPoisonVuln();
+						multiplier *= target.getPoisonVuln();
 						break;
 					case STUN:
-						multiplier *= target.getTemplate().getStunVuln();
+						multiplier *= target.getStunVuln();
 						break;
 					case ROOT:
-						multiplier *= target.getTemplate().getRootVuln();
+						multiplier *= target.getRootVuln();
 						break;
 					case MOVEMENT:
-						multiplier *= target.getTemplate().getMovementVuln();
+						multiplier *= target.getMovementVuln();
 						break;
 					case CONFUSION:
-						multiplier *= target.getTemplate().getConfusionVuln();
+						multiplier *= target.getConfusionVuln();
 						break;
 					case SLEEP:
-						multiplier *= target.getTemplate().getSleepVuln();
+						multiplier *= target.getSleepVuln();
 						break;
 					case FIRE:
-						multiplier *= target.getTemplate().getFireDefense();
+						multiplier *= target.getFireDefense();
 						break;
 					case WIND:
-						multiplier *= target.getTemplate().getWindDefense();
+						multiplier *= target.getWindDefense();
 						break;
 					case WATER:
-						multiplier *= target.getTemplate().getWaterDefense();
+						multiplier *= target.getWaterDefense();
 						break;
 					case EARTH:
-						multiplier *= target.getTemplate().getEarthDefense();
+						multiplier *= target.getEarthDefense();
 						break;
 					case HOLY:
-						multiplier *= target.getTemplate().getHolyDefense();
+						multiplier *= target.getHolyDefense();
 						break;
 					case DARK:
-						multiplier *= target.getTemplate().getUnholyDefense();
+						multiplier *= target.getUnholyDefense();
 						break;
 				}
 			}
