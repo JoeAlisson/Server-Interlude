@@ -20,7 +20,7 @@ package org.l2j.gameserver.handler.usercommandhandlers;
 import org.l2j.gameserver.handler.IUserCommandHandler;
 import org.l2j.gameserver.model.L2CommandChannel;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

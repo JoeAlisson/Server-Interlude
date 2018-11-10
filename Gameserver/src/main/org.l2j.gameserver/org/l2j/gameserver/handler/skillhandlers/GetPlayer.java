@@ -25,7 +25,7 @@ import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.ValidateLocation;
+import org.l2j.gameserver.network.serverpackets.ValidateLocation;
 
 
 /*

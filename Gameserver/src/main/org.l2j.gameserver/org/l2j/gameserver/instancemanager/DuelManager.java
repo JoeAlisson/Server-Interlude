@@ -20,7 +20,7 @@ package org.l2j.gameserver.instancemanager;
 import org.l2j.gameserver.model.L2Effect;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.Duel;
-import org.l2j.gameserver.serverpackets.L2GameServerPacket;
+import org.l2j.gameserver.network.serverpackets.L2GameServerPacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

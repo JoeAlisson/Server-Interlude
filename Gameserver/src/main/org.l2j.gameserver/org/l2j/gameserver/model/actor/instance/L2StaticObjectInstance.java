@@ -5,10 +5,10 @@ import org.l2j.gameserver.cache.HtmCache;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.actor.knownlist.NullKnownList;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.MyTargetSelected;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
-import org.l2j.gameserver.serverpackets.ShowTownMap;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.MyTargetSelected;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.network.serverpackets.ShowTownMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

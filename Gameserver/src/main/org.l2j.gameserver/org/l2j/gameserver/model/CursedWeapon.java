@@ -13,7 +13,7 @@ import org.l2j.gameserver.model.entity.database.repository.CharacterRepository;
 import org.l2j.gameserver.model.entity.database.repository.CursedWeaponRepository;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

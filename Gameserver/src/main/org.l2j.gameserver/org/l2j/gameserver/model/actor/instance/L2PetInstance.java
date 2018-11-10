@@ -14,14 +14,14 @@ import org.l2j.gameserver.model.entity.database.Pets;
 import org.l2j.gameserver.model.entity.database.PetsStats;
 import org.l2j.gameserver.model.entity.database.repository.PetsRepository;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.Future;
 
-import static org.l2j.gameserver.templates.NpcType.L2BabyPet;
+import static org.l2j.gameserver.templates.base.NpcType.L2BabyPet;
 
 public class L2PetInstance extends L2Summon
 {

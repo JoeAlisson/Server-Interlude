@@ -29,9 +29,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
 import static java.util.Objects.requireNonNullElse;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 /**
  * @author evill33t

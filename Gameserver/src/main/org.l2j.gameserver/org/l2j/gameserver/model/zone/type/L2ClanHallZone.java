@@ -25,7 +25,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.ClanHall;
 import org.l2j.gameserver.model.zone.L2ZoneType;
 import org.l2j.gameserver.model.zone.Zone;
-import org.l2j.gameserver.serverpackets.ClanHallDecoration;
+import org.l2j.gameserver.network.serverpackets.ClanHallDecoration;
 
 /**
  * A clan hall zone

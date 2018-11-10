@@ -20,7 +20,7 @@ package org.l2j.gameserver.skills;
 
 import org.l2j.gameserver.Item;
 import org.l2j.gameserver.model.entity.database.ItemTemplate;
-import org.l2j.gameserver.templates.*;
+import org.l2j.gameserver.templates.base.StatsSet;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 

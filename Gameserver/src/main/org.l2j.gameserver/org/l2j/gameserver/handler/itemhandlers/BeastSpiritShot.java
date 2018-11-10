@@ -8,9 +8,9 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ExAutoSoulShot;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.ExAutoSoulShot;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.util.Broadcast;
 
 import static java.util.Objects.isNull;

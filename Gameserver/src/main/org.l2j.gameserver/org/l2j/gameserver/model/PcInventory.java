@@ -4,7 +4,6 @@ import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.model.TradeList.TradeItem;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
-import org.l2j.gameserver.templates.ItemType;
 import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 
 import java.util.LinkedList;

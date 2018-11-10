@@ -2,13 +2,7 @@ package org.l2j.gameserver.model.actor.knownlist;
 
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Object;
-import org.l2j.gameserver.model.actor.instance.L2MonsterInstance;
-import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.util.Util;
-
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class CharKnownList extends KnownList {
 

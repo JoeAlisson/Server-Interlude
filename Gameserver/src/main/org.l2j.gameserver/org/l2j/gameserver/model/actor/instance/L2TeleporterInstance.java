@@ -26,9 +26,9 @@ import org.l2j.gameserver.instancemanager.TownManager;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.Teleport;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

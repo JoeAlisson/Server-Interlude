@@ -7,19 +7,17 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.Character;
 import org.l2j.gameserver.model.entity.database.Items;
 import org.l2j.gameserver.model.entity.database.repository.*;
-import org.l2j.gameserver.templates.ClassTemplate;
+import org.l2j.gameserver.templates.base.ClassTemplate;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static java.lang.System.currentTimeMillis;
-import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
-import static java.util.Objects.requireNonNullElse;
+import static java.util.Objects.*;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.model.ItemLocation.INVENTORY;
 import static org.l2j.gameserver.model.ItemLocation.PAPERDOLL;
-import static org.l2j.gameserver.templates.ItemConstants.ADENA;
+import static org.l2j.gameserver.templates.base.ItemConstants.ADENA;
 
 public class PlayerFactory {
 

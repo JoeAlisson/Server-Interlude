@@ -5,7 +5,7 @@ import org.l2j.commons.database.annotation.Table;
 import org.l2j.commons.database.model.Entity;
 import org.l2j.gameserver.datatables.NpcTable;
 import org.l2j.gameserver.model.L2Spawn;
-import org.l2j.gameserver.templates.ISpawn;
+import org.l2j.gameserver.templates.base.ISpawn;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 

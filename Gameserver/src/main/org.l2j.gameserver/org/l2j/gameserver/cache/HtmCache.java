@@ -31,8 +31,8 @@ import java.nio.file.Files;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.l2j.commons.util.FilterUtils.htmlFilter;
 import static java.util.Objects.isNull;
+import static org.l2j.commons.util.FilterUtils.htmlFilter;
 
 /**
  * @author Layane

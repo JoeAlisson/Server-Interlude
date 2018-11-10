@@ -19,12 +19,12 @@
 package org.l2j.gameserver.skills.effects;
 
 import org.l2j.gameserver.ai.Intention;
-import org.l2j.gameserver.model.L2Position;
 import org.l2j.gameserver.model.L2Effect;
+import org.l2j.gameserver.model.L2Position;
 import org.l2j.gameserver.model.actor.instance.L2FolkInstance;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2SiegeSummonInstance;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Env;
 
 

@@ -21,8 +21,8 @@ package org.l2j.gameserver;
 import org.l2j.commons.Config;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.L2GameServerPacket;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.L2GameServerPacket;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

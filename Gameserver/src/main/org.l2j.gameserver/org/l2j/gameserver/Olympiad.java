@@ -12,10 +12,10 @@ import org.l2j.gameserver.model.entity.Heroes;
 import org.l2j.gameserver.model.entity.database.Nobles;
 import org.l2j.gameserver.model.entity.database.repository.OlympiadNoblesRepository;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ExOlympiadUserInfoSpectator;
-import org.l2j.gameserver.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.ExOlympiadUserInfoSpectator;
+import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

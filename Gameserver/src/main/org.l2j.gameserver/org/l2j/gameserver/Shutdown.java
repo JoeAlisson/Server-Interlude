@@ -20,12 +20,12 @@ package org.l2j.gameserver;
 
 import org.l2j.commons.Config;
 import org.l2j.commons.database.DatabaseAccess;
-import org.l2j.gameserver.gameserverpackets.ServerStatus;
 import org.l2j.gameserver.instancemanager.*;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.L2GameClient;
-import org.l2j.gameserver.serverpackets.ServerClose;
+import org.l2j.gameserver.network.gameserverpackets.ServerStatus;
+import org.l2j.gameserver.network.serverpackets.ServerClose;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

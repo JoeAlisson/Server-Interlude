@@ -5,12 +5,11 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ExAutoSoulShot;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.ExAutoSoulShot;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.Broadcast;
 
 import static java.util.Objects.isNull;

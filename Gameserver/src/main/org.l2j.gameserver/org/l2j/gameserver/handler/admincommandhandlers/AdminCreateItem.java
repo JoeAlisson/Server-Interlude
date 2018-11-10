@@ -5,7 +5,7 @@ import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.GMAudit;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemList;
 import org.l2j.gameserver.templates.xml.jaxb.Item;
 import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 

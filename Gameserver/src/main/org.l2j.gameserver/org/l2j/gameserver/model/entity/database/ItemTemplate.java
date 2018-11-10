@@ -11,10 +11,10 @@ import org.l2j.gameserver.skills.Env;
 import org.l2j.gameserver.skills.effects.EffectTemplate;
 import org.l2j.gameserver.skills.funcs.Func;
 import org.l2j.gameserver.skills.funcs.FuncTemplate;
-import org.l2j.gameserver.templates.BodyPart;
-import org.l2j.gameserver.templates.CrystalType;
-import org.l2j.gameserver.templates.ItemType;
-import org.l2j.gameserver.templates.ItemTypeGroup;
+import org.l2j.gameserver.templates.base.BodyPart;
+import org.l2j.gameserver.templates.base.CrystalType;
+import org.l2j.gameserver.templates.base.ItemType;
+import org.l2j.gameserver.templates.base.ItemTypeGroup;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 

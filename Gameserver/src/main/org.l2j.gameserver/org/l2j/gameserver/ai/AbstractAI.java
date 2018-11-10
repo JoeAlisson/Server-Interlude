@@ -19,13 +19,14 @@
 package org.l2j.gameserver.ai;
 
 import org.l2j.gameserver.ai.accessor.AIAccessor;
-import org.l2j.gameserver.model.*;
+import org.l2j.gameserver.model.L2Character;
+import org.l2j.gameserver.model.L2Object;
+import org.l2j.gameserver.model.L2Position;
+import org.l2j.gameserver.model.L2Skill;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static org.l2j.gameserver.ai.Intention.AI_INTENTION_ATTACK;
-import static org.l2j.gameserver.ai.Intention.AI_INTENTION_FOLLOW;
-import static org.l2j.gameserver.ai.Intention.AI_INTENTION_IDLE;
+import static org.l2j.gameserver.ai.Intention.*;
 
 /**
  * Mother class of allTemplates objects AI in the world.

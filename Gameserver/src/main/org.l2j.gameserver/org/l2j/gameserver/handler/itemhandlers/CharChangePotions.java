@@ -23,9 +23,9 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
-import org.l2j.gameserver.serverpackets.UserInfo;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.UserInfo;
 
 
 /**

@@ -22,8 +22,8 @@ import org.l2j.commons.Config;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.Ride;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.Ride;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

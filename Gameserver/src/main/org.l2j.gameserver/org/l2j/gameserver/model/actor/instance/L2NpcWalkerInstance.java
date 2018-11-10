@@ -22,7 +22,7 @@ import org.l2j.gameserver.ai.AI;
 import org.l2j.gameserver.ai.L2NpcWalkerAI;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.CreatureSay;
+import org.l2j.gameserver.network.serverpackets.CreatureSay;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

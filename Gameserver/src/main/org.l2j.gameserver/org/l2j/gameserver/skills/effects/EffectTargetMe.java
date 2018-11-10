@@ -19,7 +19,7 @@ package org.l2j.gameserver.skills.effects;
 
 import org.l2j.gameserver.model.L2Effect;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.MyTargetSelected;
+import org.l2j.gameserver.network.serverpackets.MyTargetSelected;
 import org.l2j.gameserver.skills.Env;
 
 

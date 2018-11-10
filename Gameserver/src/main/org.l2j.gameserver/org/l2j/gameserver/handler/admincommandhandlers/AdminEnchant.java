@@ -26,10 +26,10 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.CharInfo;
-import org.l2j.gameserver.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.serverpackets.UserInfo;
+import org.l2j.gameserver.network.serverpackets.CharInfo;
+import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.UserInfo;
 
 
 /**

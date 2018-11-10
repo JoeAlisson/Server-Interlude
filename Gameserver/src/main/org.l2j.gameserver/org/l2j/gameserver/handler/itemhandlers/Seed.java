@@ -28,8 +28,8 @@ import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.actor.instance.*;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

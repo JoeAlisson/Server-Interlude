@@ -20,7 +20,7 @@ package org.l2j.gameserver.datatables;
 
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.skills.SkillsEngine;
-import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.base.ItemType;
 
 import java.util.HashMap;
 import java.util.Map;

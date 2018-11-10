@@ -19,8 +19,8 @@
 package org.l2j.gameserver.handler.skillhandlers;
 
 import org.l2j.gameserver.datatables.NpcTable;
-import org.l2j.gameserver.handler.ISkillHandler;
 import org.l2j.gameserver.factory.IdFactory;
+import org.l2j.gameserver.handler.ISkillHandler;
 import org.l2j.gameserver.instancemanager.CastleManager;
 import org.l2j.gameserver.instancemanager.SiegeManager;
 import org.l2j.gameserver.model.L2Character;
@@ -31,7 +31,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2SiegeFlagInstance;
 import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

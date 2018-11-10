@@ -18,16 +18,16 @@
  */
 package org.l2j.gameserver.model.entity;
 
-import org.l2j.gameserver.clientpackets.Say2;
 import org.l2j.gameserver.datatables.NpcTable;
 import org.l2j.gameserver.datatables.SpawnTable;
 import org.l2j.gameserver.model.L2Spawn;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.CreatureSay;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.network.clientpackets.Say2;
+import org.l2j.gameserver.network.serverpackets.CreatureSay;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2j.gameserver.util.EventData;
 
 import java.io.*;

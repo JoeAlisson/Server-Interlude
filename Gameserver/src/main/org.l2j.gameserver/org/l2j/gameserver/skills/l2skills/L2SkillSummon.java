@@ -31,11 +31,11 @@ import org.l2j.gameserver.model.actor.instance.L2SummonInstance;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.PetInfo;
-import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.network.serverpackets.PetInfo;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.base.StatsSet;
 
-import static org.l2j.gameserver.templates.NpcType.L2SiegeSummon;
+import static org.l2j.gameserver.templates.base.NpcType.L2SiegeSummon;
 
 
 public class L2SkillSummon extends L2Skill

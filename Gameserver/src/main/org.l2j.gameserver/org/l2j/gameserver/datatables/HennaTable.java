@@ -27,8 +27,8 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 import static java.util.Objects.isNull;
+import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 
 public class HennaTable {
     private static Logger _log = LoggerFactory.getLogger(HennaTable.class.getName());

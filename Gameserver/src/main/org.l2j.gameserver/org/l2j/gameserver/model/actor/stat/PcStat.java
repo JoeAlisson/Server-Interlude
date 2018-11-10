@@ -8,7 +8,7 @@ import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.skills.Stats;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -180,7 +180,7 @@ public class PcStat extends PlayableStat {
 		su.addAttribute(StatusUpdate.MAX_HP, getMaxHp());
 		su.addAttribute(StatusUpdate.MAX_MP, getMaxMp());
 		getActiveChar().sendPacket(su);
-		
+
 		// Update the overloaded status of the L2PcInstance
 		getActiveChar().refreshOverloaded();
 		// Update the expertise status of the L2PcInstance

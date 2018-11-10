@@ -19,15 +19,15 @@
 package org.l2j.gameserver;
 
 import org.l2j.commons.Config;
+import org.l2j.commons.util.DateRange;
 import org.l2j.gameserver.cache.HtmCache;
-import org.l2j.gameserver.clientpackets.Say2;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.commons.util.DateRange;
-import org.l2j.gameserver.serverpackets.CreatureSay;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.clientpackets.Say2;
+import org.l2j.gameserver.network.serverpackets.CreatureSay;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

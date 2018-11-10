@@ -10,15 +10,18 @@ import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.base.CreatureRace;
 import org.l2j.gameserver.model.base.PlayerClass;
 import org.l2j.gameserver.model.quest.Quest;
-import org.l2j.gameserver.templates.SkillConstants;
 import org.l2j.gameserver.skills.Stats;
-import org.l2j.gameserver.templates.NpcType;
+import org.l2j.gameserver.templates.base.NpcType;
+import org.l2j.gameserver.templates.base.SkillConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 
-import java.util.*;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.Objects.isNull;

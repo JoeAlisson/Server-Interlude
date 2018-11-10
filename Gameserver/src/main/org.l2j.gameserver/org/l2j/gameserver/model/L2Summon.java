@@ -15,7 +15,7 @@ import org.l2j.gameserver.model.actor.status.SummonStatus;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
 
 import java.util.Map;

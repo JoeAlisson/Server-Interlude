@@ -24,8 +24,8 @@ import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.StatusUpdate;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.StatusUpdate;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

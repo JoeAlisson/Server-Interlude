@@ -33,7 +33,7 @@ import org.l2j.gameserver.model.entity.database.ClanSubpledges;
 import org.l2j.gameserver.model.entity.database.repository.*;
 import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

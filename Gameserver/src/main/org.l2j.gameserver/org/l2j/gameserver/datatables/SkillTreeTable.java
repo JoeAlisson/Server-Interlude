@@ -4,12 +4,15 @@ import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.base.PlayerClass;
-import org.l2j.gameserver.model.entity.database.*;
+import org.l2j.gameserver.model.entity.database.ClanSkillInfo;
+import org.l2j.gameserver.model.entity.database.EnchantSkillInfo;
+import org.l2j.gameserver.model.entity.database.FishingSkill;
+import org.l2j.gameserver.model.entity.database.SkillInfo;
 import org.l2j.gameserver.model.entity.database.repository.EnchantSkillTreesRepository;
 import org.l2j.gameserver.model.entity.database.repository.FishingSkillTreeRepository;
 import org.l2j.gameserver.model.entity.database.repository.PledgeSkillTreesRepository;
 import org.l2j.gameserver.model.entity.database.repository.SkillTreeRepository;
-import org.l2j.gameserver.templates.ClassTemplate;
+import org.l2j.gameserver.templates.base.ClassTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

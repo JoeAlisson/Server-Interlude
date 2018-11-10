@@ -20,10 +20,10 @@ package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.cache.HtmCache;
-import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.TvTEvent;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.model.entity.database.NpcTemplate;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 
 
 public class L2TvTEventNpcInstance extends L2NpcInstance

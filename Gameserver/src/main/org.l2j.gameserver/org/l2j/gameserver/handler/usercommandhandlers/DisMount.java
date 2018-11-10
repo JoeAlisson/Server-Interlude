@@ -22,7 +22,7 @@ package org.l2j.gameserver.handler.usercommandhandlers;
 import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.handler.IUserCommandHandler;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.Ride;
+import org.l2j.gameserver.network.serverpackets.Ride;
 import org.l2j.gameserver.util.Broadcast;
 
 

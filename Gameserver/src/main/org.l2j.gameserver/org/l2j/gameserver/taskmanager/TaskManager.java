@@ -28,9 +28,9 @@ import java.text.DateFormat;
 import java.util.*;
 import java.util.concurrent.ScheduledFuture;
 
+import static java.util.Objects.isNull;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.taskmanager.TaskTypes.*;
-import static java.util.Objects.isNull;
 
 
 /**

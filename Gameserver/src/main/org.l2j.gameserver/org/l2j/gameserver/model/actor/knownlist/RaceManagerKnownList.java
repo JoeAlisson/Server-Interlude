@@ -22,7 +22,7 @@ import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2RaceManagerInstance;
-import org.l2j.gameserver.serverpackets.DeleteObject;
+import org.l2j.gameserver.network.serverpackets.DeleteObject;
 
 
 public class RaceManagerKnownList extends NpcKnownList

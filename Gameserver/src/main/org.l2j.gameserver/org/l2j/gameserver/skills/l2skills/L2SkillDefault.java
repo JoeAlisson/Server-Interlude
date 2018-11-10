@@ -21,9 +21,9 @@ import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.base.StatsSet;
 
 
 public class L2SkillDefault extends L2Skill

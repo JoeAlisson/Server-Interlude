@@ -37,8 +37,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.nonNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public class Auction {
     protected static final Logger _log = LoggerFactory.getLogger(Auction.class.getName());

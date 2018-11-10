@@ -21,7 +21,7 @@ import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
 
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;

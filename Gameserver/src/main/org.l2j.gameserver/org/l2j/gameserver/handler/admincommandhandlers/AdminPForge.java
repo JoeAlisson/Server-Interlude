@@ -21,8 +21,8 @@ package org.l2j.gameserver.handler.admincommandhandlers;
 import org.l2j.commons.Config;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.AdminForgePacket;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.network.serverpackets.AdminForgePacket;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 
 import java.util.StringTokenizer;
 

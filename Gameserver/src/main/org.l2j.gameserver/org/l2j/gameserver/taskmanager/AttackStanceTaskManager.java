@@ -27,7 +27,7 @@ package org.l2j.gameserver.taskmanager;
 
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.model.L2Character;
-import org.l2j.gameserver.serverpackets.AutoAttackStopPacket;
+import org.l2j.gameserver.network.serverpackets.AutoAttackStopPacket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

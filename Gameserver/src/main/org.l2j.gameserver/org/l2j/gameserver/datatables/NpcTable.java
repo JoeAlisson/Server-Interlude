@@ -27,10 +27,10 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static org.l2j.gameserver.templates.NpcType.L2Monster;
-import static org.l2j.gameserver.templates.NpcType.L2Npc;
-import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 import static java.util.Objects.isNull;
+import static org.l2j.gameserver.templates.base.NpcType.L2Monster;
+import static org.l2j.gameserver.templates.base.NpcType.L2Npc;
+import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 
 public class NpcTable {
     private static Logger _log = LoggerFactory.getLogger(NpcTable.class);

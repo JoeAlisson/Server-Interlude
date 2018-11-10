@@ -25,9 +25,9 @@ import org.l2j.gameserver.model.actor.instance.L2PenaltyMonsterInstance;
 import org.l2j.gameserver.model.entity.database.Fish;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ExFishingHpRegen;
-import org.l2j.gameserver.serverpackets.ExFishingStartCombat;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.ExFishingHpRegen;
+import org.l2j.gameserver.network.serverpackets.ExFishingStartCombat;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 import java.util.concurrent.Future;
 

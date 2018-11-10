@@ -30,10 +30,10 @@ import org.l2j.gameserver.model.quest.QuestState;
 import org.l2j.gameserver.model.zone.type.L2TownZone;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
-import org.l2j.gameserver.templates.NpcType;
+import org.l2j.gameserver.templates.base.NpcType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,7 +45,7 @@ import java.util.Map;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static org.l2j.gameserver.ai.Intention.AI_INTENTION_ACTIVE;
-import static org.l2j.gameserver.templates.NpcType.L2Auctioneer;
+import static org.l2j.gameserver.templates.base.NpcType.L2Auctioneer;
 
 /**
  * This class represents a Non-Player-Character in the world. It can be a monster or a friendly character. It also uses a template to fetch some static values. The templates are hardcoded in the client, so we can rely on them.<BR>

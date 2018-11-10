@@ -20,10 +20,10 @@ package org.l2j.gameserver.model;
 import org.l2j.gameserver.model.actor.instance.L2BossInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2RaidBossInstance;
-import org.l2j.gameserver.serverpackets.ExCloseMPCC;
-import org.l2j.gameserver.serverpackets.ExOpenMPCC;
-import org.l2j.gameserver.serverpackets.L2GameServerPacket;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.ExCloseMPCC;
+import org.l2j.gameserver.network.serverpackets.ExOpenMPCC;
+import org.l2j.gameserver.network.serverpackets.L2GameServerPacket;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -26,10 +26,10 @@ import org.l2j.gameserver.instancemanager.ClanHallManager;
 import org.l2j.gameserver.model.L2Clan;
 import org.l2j.gameserver.model.entity.Auction;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.MyTargetSelected;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
-import org.l2j.gameserver.serverpackets.ValidateLocation;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.MyTargetSelected;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.network.serverpackets.ValidateLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

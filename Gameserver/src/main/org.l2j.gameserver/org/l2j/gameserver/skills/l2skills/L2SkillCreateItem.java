@@ -25,9 +25,9 @@ import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.ItemList;
-import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
+import org.l2j.gameserver.templates.base.StatsSet;
 
 
 /**

@@ -11,9 +11,9 @@ import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.quest.Quest;
-import org.l2j.gameserver.templates.BodyPart;
-import org.l2j.gameserver.templates.ItemType;
-import org.l2j.gameserver.templates.ItemTypeGroup;
+import org.l2j.gameserver.templates.base.BodyPart;
+import org.l2j.gameserver.templates.base.ItemType;
+import org.l2j.gameserver.templates.base.ItemTypeGroup;
 import org.springframework.data.annotation.Transient;
 
 import java.io.IOException;

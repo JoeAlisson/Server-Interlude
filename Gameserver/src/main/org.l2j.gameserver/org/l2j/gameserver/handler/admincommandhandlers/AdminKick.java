@@ -24,7 +24,7 @@ import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.GMAudit;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.LeaveWorld;
+import org.l2j.gameserver.network.serverpackets.LeaveWorld;
 
 import java.util.StringTokenizer;
 

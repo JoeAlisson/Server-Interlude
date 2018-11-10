@@ -8,8 +8,11 @@ import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.ArmorSet;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
-import org.l2j.gameserver.templates.xml.jaxb.*;
+import org.l2j.gameserver.templates.base.PaperDoll;
+import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
+import org.l2j.gameserver.templates.xml.jaxb.ItemType;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,6 +25,22 @@ import static org.l2j.gameserver.templates.xml.jaxb.BodyPart.*;
  * @version $Revision: 1.13.2.9.2.12 $ $Date: 2005/03/29 23:15:15 $ rewritten 23.2.2006 by Advi
  */
 public abstract class Inventory extends ItemContainer {
+
+    private final L2ItemInstance[] _paperdoll;
+
+    protected Inventory() {
+        _paperdoll = new L2ItemInstance[PaperDoll.values().length];
+        _paperdollListeners = new ArrayList<>(4);
+        addPaperdollListener(new ArmorSetListener());
+        addPaperdollListener(new BowListener());
+        addPaperdollListener(new ItemPassiveSkillsListener());
+        addPaperdollListener(new StatsListener());
+    }
+
+    public L2ItemInstance getPaperdollItem(PaperDoll paperDoll) {
+        return _paperdoll[paperDoll.ordinal()];
+    }
+    // ===================================================
 
     public interface PaperdollListener {
         public void notifyEquiped(int slot, L2ItemInstance inst);
@@ -65,8 +84,6 @@ public abstract class Inventory extends ItemContainer {
 
     // Speed percentage mods
     public static final double MAX_ARMOR_WEIGHT = 12000;
-
-    private final L2ItemInstance[] _paperdoll;
     private final List<PaperdollListener> _paperdollListeners;
 
     // protected to be accessed from child classes only
@@ -416,15 +433,7 @@ public abstract class Inventory extends ItemContainer {
     /**
      * Constructor of the inventory
      */
-    protected Inventory() {
-        _paperdoll = new L2ItemInstance[0x12];
-        _paperdollListeners = new LinkedList<>();
-        addPaperdollListener(new ArmorSetListener());
-        addPaperdollListener(new BowListener());
-        addPaperdollListener(new ItemPassiveSkillsListener());
-        addPaperdollListener(new StatsListener());
-        // addPaperdollListener(new FormalWearListener());
-    }
+
 
     protected abstract ItemLocation getEquipLocation();
 

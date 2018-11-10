@@ -29,7 +29,7 @@ import org.l2j.gameserver.model.actor.instance.L2RaidBossInstance;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.RaidbossSpawn;
 import org.l2j.gameserver.model.entity.database.repository.RaidBossSpawnListRepository;
-import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.templates.base.StatsSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,9 +40,9 @@ import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
-import static org.l2j.gameserver.templates.NpcType.L2RaidBoss;
 import static java.util.Objects.isNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
+import static org.l2j.gameserver.templates.base.NpcType.L2RaidBoss;
 
 /**
  * @author godson

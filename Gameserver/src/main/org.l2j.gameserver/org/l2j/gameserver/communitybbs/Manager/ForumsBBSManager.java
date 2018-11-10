@@ -29,8 +29,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public class ForumsBBSManager extends BaseBBSManager {
     private static Logger _log = LoggerFactory.getLogger(ForumsBBSManager.class.getName());

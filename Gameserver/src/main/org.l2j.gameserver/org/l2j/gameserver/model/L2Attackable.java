@@ -23,7 +23,6 @@ import org.l2j.commons.util.Rnd;
 import org.l2j.gameserver.ItemsAutoDestroy;
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.ai.*;
-import org.l2j.gameserver.clientpackets.Say2;
 import org.l2j.gameserver.datatables.EventDroplist;
 import org.l2j.gameserver.datatables.EventDroplist.DateDrop;
 import org.l2j.gameserver.datatables.ItemTable;
@@ -34,9 +33,10 @@ import org.l2j.gameserver.model.base.SoulCrystal;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.quest.Quest;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.CreatureSay;
-import org.l2j.gameserver.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.clientpackets.Say2;
+import org.l2j.gameserver.network.serverpackets.CreatureSay;
+import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 import org.l2j.gameserver.util.Util;
@@ -48,7 +48,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static org.l2j.gameserver.templates.NpcType.L2Monster;
+import static org.l2j.gameserver.templates.base.NpcType.L2Monster;
 
 
 /**

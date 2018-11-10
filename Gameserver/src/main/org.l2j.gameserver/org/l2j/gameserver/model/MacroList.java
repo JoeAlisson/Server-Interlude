@@ -23,7 +23,7 @@ import org.l2j.gameserver.model.L2Macro.L2MacroCmd;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.CharacterMacroses;
 import org.l2j.gameserver.model.entity.database.repository.CharacterMacrosesRepository;
-import org.l2j.gameserver.serverpackets.SendMacroList;
+import org.l2j.gameserver.network.serverpackets.SendMacroList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -34,8 +34,8 @@ import org.l2j.gameserver.model.entity.database.repository.ClanHallFunctionRepos
 import org.l2j.gameserver.model.entity.database.repository.ClanHallRepository;
 import org.l2j.gameserver.model.zone.type.L2ClanHallZone;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.PledgeShowInfoUpdate;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.PledgeShowInfoUpdate;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

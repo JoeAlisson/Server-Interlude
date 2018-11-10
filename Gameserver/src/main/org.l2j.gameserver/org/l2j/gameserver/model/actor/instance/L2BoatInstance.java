@@ -3,12 +3,12 @@ package org.l2j.gameserver.model.actor.instance;
 import org.l2j.commons.Config;
 import org.l2j.gameserver.GameTimeController;
 import org.l2j.gameserver.ThreadPoolManager;
-import org.l2j.gameserver.clientpackets.Say2;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.knownlist.BoatKnownList;
 import org.l2j.gameserver.model.entity.database.CharTemplate;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.clientpackets.Say2;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

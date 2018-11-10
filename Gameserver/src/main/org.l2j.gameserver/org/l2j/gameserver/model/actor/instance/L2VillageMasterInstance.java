@@ -37,7 +37,7 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.quest.QuestState;
 import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;

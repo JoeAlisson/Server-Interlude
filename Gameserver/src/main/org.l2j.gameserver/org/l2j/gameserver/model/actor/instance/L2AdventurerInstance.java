@@ -21,8 +21,8 @@ package org.l2j.gameserver.model.actor.instance;
 import org.l2j.gameserver.instancemanager.RaidBossSpawnManager;
 import org.l2j.gameserver.model.L2Spawn;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.ExQuestInfo;
-import org.l2j.gameserver.serverpackets.RadarControl;
+import org.l2j.gameserver.network.serverpackets.ExQuestInfo;
+import org.l2j.gameserver.network.serverpackets.RadarControl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

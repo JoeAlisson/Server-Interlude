@@ -23,7 +23,7 @@ import org.l2j.gameserver.model.L2Clan;
 import org.l2j.gameserver.model.PcFreight;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

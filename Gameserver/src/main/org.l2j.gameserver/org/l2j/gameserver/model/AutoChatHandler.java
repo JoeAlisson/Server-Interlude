@@ -28,7 +28,7 @@ import org.l2j.gameserver.model.actor.instance.L2SiegeGuardInstance;
 import org.l2j.gameserver.model.entity.database.AutoChat;
 import org.l2j.gameserver.model.entity.database.AutoChatText;
 import org.l2j.gameserver.model.entity.database.repository.AutoChatRepository;
-import org.l2j.gameserver.serverpackets.CreatureSay;
+import org.l2j.gameserver.network.serverpackets.CreatureSay;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,9 +36,9 @@ import java.util.*;
 import java.util.concurrent.ScheduledFuture;
 import java.util.stream.Collectors;
 
+import static java.util.Objects.isNull;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.util.GameserverMessages.getMessage;
-import static java.util.Objects.isNull;
 
 
 /**

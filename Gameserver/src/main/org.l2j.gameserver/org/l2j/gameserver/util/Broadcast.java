@@ -18,9 +18,9 @@ import org.l2j.commons.Config;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.CharInfo;
-import org.l2j.gameserver.serverpackets.L2GameServerPacket;
-import org.l2j.gameserver.serverpackets.RelationChanged;
+import org.l2j.gameserver.network.serverpackets.CharInfo;
+import org.l2j.gameserver.network.serverpackets.L2GameServerPacket;
+import org.l2j.gameserver.network.serverpackets.RelationChanged;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

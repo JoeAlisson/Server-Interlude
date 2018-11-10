@@ -21,9 +21,9 @@ package org.l2j.gameserver.model.actor.instance;
 import org.l2j.gameserver.ai.Intention;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.MyTargetSelected;
-import org.l2j.gameserver.serverpackets.ValidateLocation;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.MyTargetSelected;
+import org.l2j.gameserver.network.serverpackets.ValidateLocation;
 
 
 /**

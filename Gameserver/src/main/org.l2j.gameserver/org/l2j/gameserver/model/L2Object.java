@@ -4,7 +4,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.knownlist.KnownList;
 import org.l2j.gameserver.model.actor.position.Position;
 import org.l2j.gameserver.network.L2GameClient;
-import org.l2j.gameserver.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;

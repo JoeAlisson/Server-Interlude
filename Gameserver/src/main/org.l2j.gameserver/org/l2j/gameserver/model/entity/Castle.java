@@ -43,7 +43,7 @@ import org.l2j.gameserver.model.entity.database.repository.CastleManorProduction
 import org.l2j.gameserver.model.entity.database.repository.CastleRepository;
 import org.l2j.gameserver.model.entity.database.repository.ClanRepository;
 import org.l2j.gameserver.model.zone.type.L2CastleZone;
-import org.l2j.gameserver.serverpackets.PledgeShowInfoUpdate;
+import org.l2j.gameserver.network.serverpackets.PledgeShowInfoUpdate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

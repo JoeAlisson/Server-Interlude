@@ -26,8 +26,8 @@ import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

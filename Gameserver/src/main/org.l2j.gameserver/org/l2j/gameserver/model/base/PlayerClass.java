@@ -7,9 +7,7 @@ import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.Set;
 
-import static org.l2j.gameserver.model.base.ClassType.Fighter;
-import static org.l2j.gameserver.model.base.ClassType.Mystic;
-import static org.l2j.gameserver.model.base.ClassType.Priest;
+import static org.l2j.gameserver.model.base.ClassType.*;
 
 public enum PlayerClass {
 	FIGHTER(0x00, Fighter, Race.HUMAN, null),

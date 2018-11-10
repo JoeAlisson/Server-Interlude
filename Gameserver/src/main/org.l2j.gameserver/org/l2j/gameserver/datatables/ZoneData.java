@@ -40,8 +40,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.util.List;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 /**
  *

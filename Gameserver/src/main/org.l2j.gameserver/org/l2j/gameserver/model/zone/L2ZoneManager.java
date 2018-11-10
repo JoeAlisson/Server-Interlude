@@ -4,7 +4,6 @@ import org.l2j.gameserver.model.L2Character;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
 
 import static java.util.Objects.nonNull;
 

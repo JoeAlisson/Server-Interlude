@@ -27,7 +27,7 @@ import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.Spawn;
-import org.l2j.gameserver.templates.ISpawn;
+import org.l2j.gameserver.templates.base.ISpawn;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,10 +35,10 @@ import java.lang.reflect.Constructor;
 import java.util.LinkedList;
 import java.util.List;
 
-import static org.l2j.gameserver.templates.NpcType.L2Minion;
-import static org.l2j.gameserver.templates.NpcType.L2Pet;
 import static java.util.Objects.isNull;
 import static java.util.Objects.requireNonNullElse;
+import static org.l2j.gameserver.templates.base.NpcType.L2Minion;
+import static org.l2j.gameserver.templates.base.NpcType.L2Pet;
 
 /**
  * This class manages the entity and respawn of a group of L2NpcInstance that are in the same are and have the same type. <B><U> Concept</U> :</B><BR>

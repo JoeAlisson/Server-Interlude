@@ -24,7 +24,7 @@ import org.l2j.gameserver.instancemanager.CastleManager;
 import org.l2j.gameserver.instancemanager.CastleManorManager;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.Castle;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 
 import java.util.LinkedList;
 import java.util.StringTokenizer;

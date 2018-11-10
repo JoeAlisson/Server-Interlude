@@ -17,8 +17,8 @@ import org.slf4j.LoggerFactory;
 import javax.xml.bind.JAXBException;
 import java.util.concurrent.ScheduledFuture;
 
-import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 import static java.util.Objects.isNull;
+import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 
 public class ItemTable {
     private static Logger _log = LoggerFactory.getLogger(ItemTable.class);

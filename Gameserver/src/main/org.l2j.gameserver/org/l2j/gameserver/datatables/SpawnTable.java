@@ -30,9 +30,9 @@ import org.slf4j.LoggerFactory;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public class SpawnTable {
     private static Logger _log = LoggerFactory.getLogger(SpawnTable.class.getName());

@@ -25,7 +25,7 @@ import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Spawn;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

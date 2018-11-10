@@ -24,8 +24,8 @@ import org.l2j.gameserver.model.entity.database.repository.PetStatsRepository;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public class L2PetDataTable {
 

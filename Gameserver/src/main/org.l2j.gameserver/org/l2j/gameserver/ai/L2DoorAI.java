@@ -19,9 +19,9 @@
 package org.l2j.gameserver.ai;
 
 import org.l2j.gameserver.ThreadPoolManager;
-import org.l2j.gameserver.model.L2Position;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Object;
+import org.l2j.gameserver.model.L2Position;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.actor.instance.L2DoorInstance;
 import org.l2j.gameserver.model.actor.instance.L2DoorInstance.AIAccessor;

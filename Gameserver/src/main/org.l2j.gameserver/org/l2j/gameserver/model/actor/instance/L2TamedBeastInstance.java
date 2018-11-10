@@ -27,8 +27,8 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.NpcInfo;
-import org.l2j.gameserver.serverpackets.StopMove;
+import org.l2j.gameserver.network.serverpackets.NpcInfo;
+import org.l2j.gameserver.network.serverpackets.StopMove;
 import org.l2j.gameserver.util.Point3D;
 
 import java.util.Map;

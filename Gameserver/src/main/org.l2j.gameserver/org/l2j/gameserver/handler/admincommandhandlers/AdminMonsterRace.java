@@ -24,10 +24,10 @@ import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.DeleteObject;
-import org.l2j.gameserver.serverpackets.MonRaceInfo;
-import org.l2j.gameserver.serverpackets.PlaySound;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.DeleteObject;
+import org.l2j.gameserver.network.serverpackets.MonRaceInfo;
+import org.l2j.gameserver.network.serverpackets.PlaySound;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

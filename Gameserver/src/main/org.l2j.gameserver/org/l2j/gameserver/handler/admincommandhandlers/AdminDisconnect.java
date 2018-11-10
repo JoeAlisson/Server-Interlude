@@ -25,8 +25,8 @@ import org.l2j.gameserver.model.GMAudit;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.LeaveWorld;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.LeaveWorld;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
 /**

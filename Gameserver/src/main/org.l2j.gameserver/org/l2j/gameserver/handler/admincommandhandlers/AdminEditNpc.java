@@ -18,7 +18,7 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.repository.DropListRepository;
 import org.l2j.gameserver.model.entity.database.repository.MerchantBuyListRepository;
 import org.l2j.gameserver.model.entity.database.repository.NpcRepository;
-import org.l2j.gameserver.serverpackets.NpcHtmlMessage;
+import org.l2j.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

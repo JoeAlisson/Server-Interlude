@@ -19,12 +19,12 @@ package org.l2j.gameserver.model.actor.instance;
 
 import org.l2j.commons.util.Rnd;
 import org.l2j.gameserver.ai.Event;
-import org.l2j.gameserver.clientpackets.Say2;
 import org.l2j.gameserver.datatables.SpawnTable;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Spawn;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.CreatureSay;
+import org.l2j.gameserver.network.clientpackets.Say2;
+import org.l2j.gameserver.network.serverpackets.CreatureSay;
 
 
 public class L2PenaltyMonsterInstance extends L2MonsterInstance

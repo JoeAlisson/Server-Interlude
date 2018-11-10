@@ -26,7 +26,7 @@ import org.l2j.gameserver.handler.SkillHandler;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.L2Party;
 import org.l2j.gameserver.model.L2Skill;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

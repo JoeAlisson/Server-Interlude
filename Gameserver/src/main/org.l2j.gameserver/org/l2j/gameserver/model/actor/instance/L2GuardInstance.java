@@ -26,10 +26,10 @@ import org.l2j.gameserver.ai.L2AttackableAI;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.actor.knownlist.GuardKnownList;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.ActionFailed;
-import org.l2j.gameserver.serverpackets.MyTargetSelected;
-import org.l2j.gameserver.serverpackets.SocialAction;
-import org.l2j.gameserver.serverpackets.ValidateLocation;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.MyTargetSelected;
+import org.l2j.gameserver.network.serverpackets.SocialAction;
+import org.l2j.gameserver.network.serverpackets.ValidateLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

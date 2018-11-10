@@ -21,7 +21,7 @@ package org.l2j.gameserver.skills.conditions;
 import org.l2j.gameserver.model.Inventory;
 import org.l2j.gameserver.model.entity.database.Armor;
 import org.l2j.gameserver.skills.Env;
-import org.l2j.gameserver.templates.BodyPart;
+import org.l2j.gameserver.templates.base.BodyPart;
 
 
 /**

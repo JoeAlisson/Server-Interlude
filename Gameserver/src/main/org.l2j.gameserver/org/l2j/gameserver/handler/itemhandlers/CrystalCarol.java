@@ -22,7 +22,7 @@ import org.l2j.gameserver.handler.IItemHandler;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
-import org.l2j.gameserver.serverpackets.MagicSkillUser;
+import org.l2j.gameserver.network.serverpackets.MagicSkillUser;
 
 
 /**

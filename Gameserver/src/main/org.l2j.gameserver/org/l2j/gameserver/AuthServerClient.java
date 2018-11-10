@@ -5,14 +5,14 @@ import org.l2j.commons.crypt.NewCrypt;
 import org.l2j.commons.util.Rnd;
 import org.l2j.commons.util.Util;
 import org.l2j.gameserver.factory.PlayerFactory;
-import org.l2j.gameserver.gameserverpackets.*;
-import org.l2j.gameserver.loginserverpackets.*;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.CharacterRepository;
 import org.l2j.gameserver.network.L2GameClient;
-import org.l2j.gameserver.serverpackets.CharSelectInfo;
-import org.l2j.gameserver.serverpackets.LoginResult;
+import org.l2j.gameserver.network.gameserverpackets.*;
+import org.l2j.gameserver.network.loginserverpackets.*;
+import org.l2j.gameserver.network.serverpackets.CharSelectInfo;
+import org.l2j.gameserver.network.serverpackets.LoginResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -32,15 +32,12 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Collectors;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
-import static org.l2j.gameserver.network.L2GameClient.GameClientState.AUTHED;
-import static org.l2j.gameserver.serverpackets.LoginResult.ACCESS_FAILED_TRY_LATER;
-import static org.l2j.gameserver.serverpackets.LoginResult.FAILED;
-import static org.l2j.gameserver.serverpackets.LoginResult.SUCCESS;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
+import static org.l2j.gameserver.network.L2GameClient.GameClientState.AUTHED;
+import static org.l2j.gameserver.network.serverpackets.LoginResult.*;
 
 public class AuthServerClient extends Thread {
 

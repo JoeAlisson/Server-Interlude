@@ -36,8 +36,8 @@ import java.util.*;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 
 /**

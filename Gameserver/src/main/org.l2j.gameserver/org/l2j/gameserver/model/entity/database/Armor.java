@@ -4,9 +4,9 @@ import org.l2j.commons.database.annotation.Column;
 import org.l2j.commons.database.annotation.Table;
 import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.model.L2Skill;
-import org.l2j.gameserver.templates.BodyPart;
-import org.l2j.gameserver.templates.ItemType;
-import org.l2j.gameserver.templates.ItemTypeGroup;
+import org.l2j.gameserver.templates.base.BodyPart;
+import org.l2j.gameserver.templates.base.ItemType;
+import org.l2j.gameserver.templates.base.ItemTypeGroup;
 import org.springframework.data.annotation.Transient;
 
 import static java.util.Objects.isNull;

@@ -21,10 +21,10 @@ import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.datatables.NpcTable;
 import org.l2j.gameserver.model.L2Spawn;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
+import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.entity.database.CastleSiegeGuard;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.repository.CastleSiegeGuardRepository;
-import org.l2j.gameserver.model.entity.Castle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

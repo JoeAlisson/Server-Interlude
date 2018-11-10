@@ -26,7 +26,7 @@ import org.l2j.gameserver.model.entity.Castle;
 import org.l2j.gameserver.model.zone.L2ZoneType;
 import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 import java.util.LinkedList;
 import java.util.List;

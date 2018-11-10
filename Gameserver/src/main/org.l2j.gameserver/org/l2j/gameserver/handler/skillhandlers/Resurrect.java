@@ -26,7 +26,7 @@ import org.l2j.gameserver.model.L2Skill.SkillTargetType;
 import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Formulas;
 import org.l2j.gameserver.taskmanager.DecayTaskManager;
 

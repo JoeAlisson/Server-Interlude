@@ -27,8 +27,8 @@ import org.l2j.gameserver.model.entity.database.NpcTemplate;
 
 import java.lang.reflect.Constructor;
 
-import static org.l2j.gameserver.templates.NpcType.L2Minion;
-import static org.l2j.gameserver.templates.NpcType.L2Pet;
+import static org.l2j.gameserver.templates.base.NpcType.L2Minion;
+import static org.l2j.gameserver.templates.base.NpcType.L2Pet;
 
 /**
  * @author littlecrow A special spawn implementation to spawn controllable mob

@@ -6,9 +6,9 @@ import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.actor.instance.L2PetInstance;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.PetInfo;
-import org.l2j.gameserver.serverpackets.StatusUpdate;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.PetInfo;
+import org.l2j.gameserver.network.serverpackets.StatusUpdate;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Stats;
 
 import static java.util.Objects.isNull;

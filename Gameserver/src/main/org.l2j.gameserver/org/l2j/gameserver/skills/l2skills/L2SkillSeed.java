@@ -22,7 +22,7 @@ import org.l2j.gameserver.model.L2Effect;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.skills.effects.EffectSeed;
-import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.templates.base.StatsSet;
 
 
 public class L2SkillSeed extends L2Skill

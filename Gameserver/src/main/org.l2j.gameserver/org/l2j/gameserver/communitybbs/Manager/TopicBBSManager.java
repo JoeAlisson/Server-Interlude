@@ -23,7 +23,7 @@ import org.l2j.gameserver.communitybbs.BB.Post;
 import org.l2j.gameserver.communitybbs.BB.Topic;
 import org.l2j.gameserver.datatables.ClanTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.ShowBoard;
+import org.l2j.gameserver.network.serverpackets.ShowBoard;
 
 import java.text.DateFormat;
 import java.util.*;

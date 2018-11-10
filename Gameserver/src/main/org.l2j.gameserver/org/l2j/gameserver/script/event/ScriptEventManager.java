@@ -34,8 +34,8 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
 
-import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 import static java.util.Objects.isNull;
+import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 
 public class ScriptEventManager {
 

@@ -29,7 +29,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2SummonInstance;
 import org.l2j.gameserver.model.actor.stat.CharStat;
 import org.l2j.gameserver.model.entity.Duel;
-import org.l2j.gameserver.serverpackets.ActionFailed;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
 import org.l2j.gameserver.skills.Formulas;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

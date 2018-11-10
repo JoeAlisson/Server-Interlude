@@ -21,7 +21,7 @@ package org.l2j.gameserver.skills;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.skills.conditions.Condition;
-import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.templates.base.StatsSet;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;

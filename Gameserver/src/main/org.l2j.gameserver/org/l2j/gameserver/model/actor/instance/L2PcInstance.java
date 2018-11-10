@@ -39,11 +39,12 @@ import org.l2j.gameserver.model.quest.QuestState;
 import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.skills.Formulas;
 import org.l2j.gameserver.skills.Stats;
-import org.l2j.gameserver.templates.ClassTemplate;
-import org.l2j.gameserver.templates.ItemType;
+import org.l2j.gameserver.templates.base.ClassTemplate;
+import org.l2j.gameserver.templates.base.ItemType;
+import org.l2j.gameserver.templates.base.PaperDoll;
 import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.l2j.gameserver.util.Broadcast;
@@ -302,6 +303,10 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         return _inventoryDisable;
     }
 
+    public L2ItemInstance getItemOnPaperDoll(PaperDoll slot) {
+        return inventory.getPaperdollItem(slot);
+    }
+
     // ####################################################################################
 
     private L2Clan clan;
@@ -329,7 +334,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         _radar = new L2Radar(this);
 
         // Retrieve from the database allTemplates skills of this L2PcInstance and add them to skills
-        // Retrieve from the database allTemplates items of this L2PcInstance and add them to _inventory
+        // Retrieve from the database allTemplates items of this L2PcInstance and add them to inventory
         getInventory().restore();
         if (!Config.WAREHOUSE_CACHE) {
             getWarehouse();
@@ -701,7 +706,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      */
     private final List<Integer> _recomChars = new LinkedList<>();
 
-    private final PcInventory _inventory = new PcInventory(this);
+    private final PcInventory inventory = new PcInventory(this);
 
     /**
      * The _warehouse.
@@ -1037,7 +1042,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
     private L2ItemInstance _activeEnchantItem = null;
 
     /**
-     * The _inventory disable.
+     * The inventory disable.
      */
     protected boolean _inventoryDisable = false;
 
@@ -2259,7 +2264,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      * @return the current load
      */
     public int getCurrentLoad() {
-        return _inventory.getTotalWeight();
+        return inventory.getTotalWeight();
     }
 
     /**
@@ -2917,12 +2922,12 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
     }
 
     /**
-     * Return the PcInventory Inventory of the L2PcInstance contained in _inventory.
+     * Return the PcInventory Inventory of the L2PcInstance contained in inventory.
      *
      * @return the inventory
      */
     public PcInventory getInventory() {
-        return _inventory;
+        return inventory;
     }
 
     /**
@@ -3109,7 +3114,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      * @return the adena
      */
     public long getAdena() {
-        return _inventory.getAdena();
+        return inventory.getAdena();
     }
 
     /**
@@ -3118,7 +3123,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      * @return the ancient adena
      */
     public long getAncientAdena() {
-        return _inventory.getAncientAdena();
+        return inventory.getAncientAdena();
     }
 
     /**
@@ -3137,12 +3142,12 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         }
 
         if (count > 0) {
-            _inventory.addAdena(process, count, this, reference);
+            inventory.addAdena(process, count, this, reference);
 
             // Send update packet
             if (!Config.FORCE_INVENTORY_UPDATE) {
                 InventoryUpdate iu = new InventoryUpdate();
-                iu.addItem(_inventory.getAdenaInstance());
+                iu.addItem(inventory.getAdenaInstance());
                 sendPacket(iu);
             } else {
                 sendPacket(new ItemList(this, false));
@@ -3168,8 +3173,8 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         }
 
         if (count > 0) {
-            L2ItemInstance adenaItem = _inventory.getAdenaInstance();
-            _inventory.reduceAdena(process, count, this, reference);
+            L2ItemInstance adenaItem = inventory.getAdenaInstance();
+            inventory.reduceAdena(process, count, this, reference);
 
             // Send update packet
             if (!Config.FORCE_INVENTORY_UPDATE) {
@@ -3207,11 +3212,11 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         }
 
         if (count > 0) {
-            _inventory.addAncientAdena(process, count, this, reference);
+            inventory.addAncientAdena(process, count, this, reference);
 
             if (!Config.FORCE_INVENTORY_UPDATE) {
                 InventoryUpdate iu = new InventoryUpdate();
-                iu.addItem(_inventory.getAncientAdenaInstance());
+                iu.addItem(inventory.getAncientAdenaInstance());
                 sendPacket(iu);
             } else {
                 sendPacket(new ItemList(this, false));
@@ -3238,8 +3243,8 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         }
 
         if (count > 0) {
-            L2ItemInstance ancientAdenaItem = _inventory.getAncientAdenaInstance();
-            _inventory.reduceAncientAdena(process, count, this, reference);
+            L2ItemInstance ancientAdenaItem = inventory.getAncientAdenaInstance();
+            inventory.reduceAncientAdena(process, count, this, reference);
 
             if (!Config.FORCE_INVENTORY_UPDATE) {
                 InventoryUpdate iu = new InventoryUpdate();
@@ -3290,7 +3295,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             }
 
             // Add the item to inventory
-            L2ItemInstance newitem = _inventory.addItem(process, item, this, reference);
+            L2ItemInstance newitem = inventory.addItem(process, item, this, reference);
 
             // Send inventory update packet
             if (!Config.FORCE_INVENTORY_UPDATE) {
@@ -3312,7 +3317,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             }
 
             // If over capacity, trop the item
-            if (!isGM() && !_inventory.validateCapacity(0)) {
+            if (!isGM() && !inventory.validateCapacity(0)) {
                 dropItem("InvDrop", newitem, null, true);
             }
         }
@@ -3375,7 +3380,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 }
             } else {
                 // Add the item to inventory
-                L2ItemInstance item = _inventory.addItem(process, itemId, count, this, reference);
+                L2ItemInstance item = inventory.addItem(process, itemId, count, this, reference);
 
                 // Send inventory update packet
                 if (!Config.FORCE_INVENTORY_UPDATE) {
@@ -3397,7 +3402,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 }
 
                 // If over capacity, drop the item
-                if (!isGM() && !_inventory.validateCapacity(0)) {
+                if (!isGM() && !inventory.validateCapacity(0)) {
                     dropItem("InvDrop", item, null, true);
                 }
             }
@@ -3415,7 +3420,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      */
     public boolean destroyItem(String process, L2ItemInstance item, L2Object reference, boolean sendMessage) {
         long oldCount = item.getCount();
-        item = _inventory.destroyItem(process, item, this, reference);
+        item = inventory.destroyItem(process, item, this, reference);
 
         if (item == null) {
             if (sendMessage) {
@@ -3462,9 +3467,9 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      */
     @Override
     public boolean destroyItem(String process, int objectId, long count, L2Object reference, boolean sendMessage) {
-        L2ItemInstance item = _inventory.getItemByObjectId(objectId);
+        L2ItemInstance item = inventory.getItemByObjectId(objectId);
 
-        if ((item == null) || (item.getCount() < count) || (_inventory.destroyItem(process, objectId, count, this, reference) == null)) {
+        if ((item == null) || (item.getCount() < count) || (inventory.destroyItem(process, objectId, count, this, reference) == null)) {
             if (sendMessage) {
                 sendPacket(new SystemMessage(SystemMessageId.NOT_ENOUGH_ITEMS));
             }
@@ -3508,7 +3513,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      * @return boolean informing if the action was successfull
      */
     public boolean destroyItemWithoutTrace(String process, int objectId, int count, L2Object reference, boolean sendMessage) {
-        L2ItemInstance item = _inventory.getItemByObjectId(objectId);
+        L2ItemInstance item = inventory.getItemByObjectId(objectId);
 
         if ((item == null) || (item.getCount() < count)) {
             if (sendMessage) {
@@ -3527,11 +3532,11 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 if ((GameTimeController.getGameTicks() % 10) == 0) {
                     item.updateDatabase();
                 }
-                _inventory.refreshWeight();
+                inventory.refreshWeight();
             }
         } else {
             // Destroy entire item and save to database
-            _inventory.destroyItem(process, item, this, reference);
+            inventory.destroyItem(process, item, this, reference);
         }
 
         // Send inventory update packet
@@ -3571,9 +3576,9 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      */
     @Override
     public boolean destroyItemByItemId(String process, int itemId, long count, L2Object reference, boolean sendMessage) {
-        L2ItemInstance item = _inventory.getItemByItemId(itemId);
+        L2ItemInstance item = inventory.getItemByItemId(itemId);
 
-        if ((item == null) || (item.getCount() < count) || (_inventory.destroyItemByItemId(process, itemId, count, this, reference) == null)) {
+        if ((item == null) || (item.getCount() < count) || (inventory.destroyItemByItemId(process, itemId, count, this, reference) == null)) {
             if (sendMessage) {
                 sendPacket(new SystemMessage(SystemMessageId.NOT_ENOUGH_ITEMS));
             }
@@ -3623,7 +3628,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                     getInventory().unEquipItemInSlotAndRecord(item.getEquipSlot());
                 }
 
-                if (_inventory.destroyItem(process, item, this, reference) == null) {
+                if (inventory.destroyItem(process, item, this, reference) == null) {
                     logger.warn("Player " + getName() + " can't destroy weared item: " + item.getName() + "[ " + item.getObjectId() + " ]");
                     continue;
                 }
@@ -3740,7 +3745,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      * @return boolean informing if the action was successfull
      */
     public boolean dropItem(String process, L2ItemInstance item, L2Object reference, boolean sendMessage) {
-        item = _inventory.dropItem(process, item, this, reference);
+        item = inventory.dropItem(process, item, this, reference);
 
         if (item == null) {
             if (sendMessage) {
@@ -3805,8 +3810,8 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
      * @return L2ItemInstance corresponding to the new item or the updated item in inventory
      */
     public L2ItemInstance dropItem(String process, int objectId, int count, int x, int y, int z, L2Object reference, boolean sendMessage) {
-        L2ItemInstance invitem = _inventory.getItemByObjectId(objectId);
-        L2ItemInstance item = _inventory.dropItem(process, objectId, count, this, reference);
+        L2ItemInstance invitem = inventory.getItemByObjectId(objectId);
+        L2ItemInstance item = inventory.dropItem(process, objectId, count, this, reference);
 
         if (item == null) {
             if (sendMessage) {
@@ -4333,7 +4338,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 return;
             }
 
-            if (((isInParty() && (getParty().getLootDistribution() == L2Party.ITEM_LOOTER)) || !isInParty()) && !_inventory.validateCapacity(target)) {
+            if (((isInParty() && (getParty().getLootDistribution() == L2Party.ITEM_LOOTER)) || !isInParty()) && !inventory.validateCapacity(target)) {
                 sendPacket(new ActionFailed());
                 sendPacket(new SystemMessage(SystemMessageId.SLOTS_FULL));
                 return;

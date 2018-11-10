@@ -20,9 +20,9 @@ package org.l2j.gameserver.skills.l2skills;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Formulas;
-import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.templates.base.StatsSet;
 
 
 public class L2SkillElemental extends L2Skill

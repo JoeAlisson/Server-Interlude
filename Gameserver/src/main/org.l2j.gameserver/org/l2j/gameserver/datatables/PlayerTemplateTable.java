@@ -1,7 +1,7 @@
 package org.l2j.gameserver.datatables;
 
 import org.l2j.gameserver.model.base.PlayerClass;
-import org.l2j.gameserver.templates.ClassTemplate;
+import org.l2j.gameserver.templates.base.ClassTemplate;
 import org.l2j.gameserver.templates.xml.jaxb.ClassInfo;
 import org.l2j.gameserver.templates.xml.jaxb.PlayerTemplate;
 import org.l2j.gameserver.templates.xml.reader.ClassInfoReader;
@@ -62,7 +62,7 @@ public class PlayerTemplateTable {
             template = addToClassTemplate(reader, reader.getClassInfo(classInfo.getParent()));
         }
         if(isNull(template)) {
-            System.out.println(template);
+            logger.warn("Null template");
         }
         if(!templates.containsKey(classInfo.getClassId()) && nonNull(template)) {
             templates.put(classInfo.getClassId(), new ClassTemplate(template, classInfo));

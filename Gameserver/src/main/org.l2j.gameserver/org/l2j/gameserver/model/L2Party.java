@@ -29,7 +29,7 @@ import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
 import org.l2j.gameserver.model.actor.instance.L2SummonInstance;
 import org.l2j.gameserver.model.entity.DimensionalRift;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.util.Util;
 

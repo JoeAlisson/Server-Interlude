@@ -19,7 +19,7 @@ package org.l2j.gameserver.taskmanager.tasks;
 
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.UserInfo;
+import org.l2j.gameserver.network.serverpackets.UserInfo;
 import org.l2j.gameserver.taskmanager.Task;
 import org.l2j.gameserver.taskmanager.TaskManager;
 import org.l2j.gameserver.taskmanager.TaskManager.ExecutedTask;

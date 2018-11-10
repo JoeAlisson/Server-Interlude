@@ -28,9 +28,9 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static org.l2j.gameserver.util.GameserverMessages.getMessage;
 
 /**
  * @author Steuf

@@ -18,7 +18,7 @@ import org.l2j.gameserver.datatables.HennaTreeTable;
 import org.l2j.gameserver.model.L2Character;
 import org.l2j.gameserver.model.entity.database.Henna;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
-import org.l2j.gameserver.serverpackets.HennaEquipList;
+import org.l2j.gameserver.network.serverpackets.HennaEquipList;
 
 
 /**

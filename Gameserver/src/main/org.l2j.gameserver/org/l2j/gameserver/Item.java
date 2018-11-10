@@ -15,7 +15,7 @@
 package org.l2j.gameserver;
 
 import org.l2j.gameserver.model.entity.database.ItemTemplate;
-import org.l2j.gameserver.templates.StatsSet;
+import org.l2j.gameserver.templates.base.StatsSet;
 
 
 /**

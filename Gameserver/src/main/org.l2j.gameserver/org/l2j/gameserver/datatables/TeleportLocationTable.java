@@ -26,8 +26,8 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static java.util.Objects.isNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public class TeleportLocationTable {
     private static Logger _log = LoggerFactory.getLogger(TeleportLocationTable.class);

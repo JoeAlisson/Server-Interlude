@@ -29,7 +29,7 @@ import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.model.entity.database.Wedding;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 
 
 public class L2WeddingManagerInstance extends L2NpcInstance

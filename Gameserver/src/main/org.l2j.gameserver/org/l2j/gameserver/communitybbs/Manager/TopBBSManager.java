@@ -20,7 +20,7 @@ package org.l2j.gameserver.communitybbs.Manager;
 
 import org.l2j.gameserver.cache.HtmCache;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.serverpackets.ShowBoard;
+import org.l2j.gameserver.network.serverpackets.ShowBoard;
 
 import java.util.StringTokenizer;
 

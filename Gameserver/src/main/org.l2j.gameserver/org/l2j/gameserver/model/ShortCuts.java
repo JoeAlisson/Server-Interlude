@@ -3,8 +3,8 @@ package org.l2j.gameserver.model;
 import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.CharacterShortcutsRepository;
-import org.l2j.gameserver.serverpackets.ExAutoSoulShot;
-import org.l2j.gameserver.serverpackets.ShortCutInit;
+import org.l2j.gameserver.network.serverpackets.ExAutoSoulShot;
+import org.l2j.gameserver.network.serverpackets.ShortCutInit;
 import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
 
 import java.util.Map;

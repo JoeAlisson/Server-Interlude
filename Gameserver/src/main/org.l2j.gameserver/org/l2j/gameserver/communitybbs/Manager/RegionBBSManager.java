@@ -20,15 +20,15 @@ package org.l2j.gameserver.communitybbs.Manager;
 
 import org.l2j.commons.Config;
 import org.l2j.gameserver.GameServer;
-import org.l2j.gameserver.clientpackets.Say2;
 import org.l2j.gameserver.model.BlockList;
 import org.l2j.gameserver.model.L2World;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.CreatureSay;
-import org.l2j.gameserver.serverpackets.ShowBoard;
-import org.l2j.gameserver.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.clientpackets.Say2;
+import org.l2j.gameserver.network.serverpackets.CreatureSay;
+import org.l2j.gameserver.network.serverpackets.ShowBoard;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,7 +36,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 import static java.util.Objects.nonNull;
-import static org.l2j.commons.util.Util.*;
+import static org.l2j.commons.util.Util.formatDateTime;
 
 
 public class RegionBBSManager extends BaseBBSManager {

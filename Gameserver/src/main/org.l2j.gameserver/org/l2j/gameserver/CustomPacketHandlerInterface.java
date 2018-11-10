@@ -25,8 +25,8 @@
  */
 package org.l2j.gameserver;
 
-import org.l2j.gameserver.clientpackets.L2GameClientPacket;
 import org.l2j.gameserver.network.L2GameClient;
+import org.l2j.gameserver.network.clientpackets.L2GameClientPacket;
 
 import java.nio.ByteBuffer;
 

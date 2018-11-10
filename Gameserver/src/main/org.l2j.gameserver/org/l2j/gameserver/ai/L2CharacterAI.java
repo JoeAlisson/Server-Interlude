@@ -24,7 +24,7 @@ import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.Universe;
 import org.l2j.gameserver.model.*;
 import org.l2j.gameserver.model.actor.instance.*;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 import org.l2j.gameserver.taskmanager.AttackStanceTaskManager;
 
 import java.util.concurrent.Future;

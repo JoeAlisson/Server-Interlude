@@ -41,10 +41,10 @@ import org.l2j.gameserver.model.entity.database.repository.CastleRepository;
 import org.l2j.gameserver.model.entity.database.repository.SiegeClanRepository;
 import org.l2j.gameserver.model.zone.Zone;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.RelationChanged;
-import org.l2j.gameserver.serverpackets.SiegeInfo;
-import org.l2j.gameserver.serverpackets.SystemMessage;
-import org.l2j.gameserver.serverpackets.UserInfo;
+import org.l2j.gameserver.network.serverpackets.RelationChanged;
+import org.l2j.gameserver.network.serverpackets.SiegeInfo;
+import org.l2j.gameserver.network.serverpackets.SystemMessage;
+import org.l2j.gameserver.network.serverpackets.UserInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -21,7 +21,7 @@ import org.l2j.gameserver.ai.Intention;
 import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 
 
 public class L2WyvernManagerInstance extends L2CastleChamberlainInstance

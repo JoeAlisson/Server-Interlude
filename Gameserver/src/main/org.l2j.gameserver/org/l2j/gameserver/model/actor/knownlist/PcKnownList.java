@@ -6,7 +6,7 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Summon;
 import org.l2j.gameserver.model.actor.instance.*;
-import org.l2j.gameserver.serverpackets.*;
+import org.l2j.gameserver.network.serverpackets.*;
 
 public class PcKnownList extends PlayableKnownList {
 

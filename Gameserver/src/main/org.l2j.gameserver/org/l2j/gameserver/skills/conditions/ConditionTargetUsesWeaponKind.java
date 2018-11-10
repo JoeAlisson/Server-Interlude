@@ -1,7 +1,6 @@
 package org.l2j.gameserver.skills.conditions;
 
 import org.l2j.gameserver.skills.Env;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 import static java.util.Objects.isNull;
 

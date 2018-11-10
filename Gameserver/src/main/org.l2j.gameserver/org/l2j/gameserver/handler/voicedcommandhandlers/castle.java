@@ -23,7 +23,7 @@ import org.l2j.gameserver.instancemanager.CastleManager;
 import org.l2j.gameserver.model.actor.instance.L2DoorInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.Castle;
-import org.l2j.gameserver.serverpackets.Ride;
+import org.l2j.gameserver.network.serverpackets.Ride;
 
 
 /**
