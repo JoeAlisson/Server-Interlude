@@ -3,6 +3,7 @@ package org.l2j.gameserver.model.entity.database;
 import org.l2j.commons.database.annotation.Column;
 import org.l2j.commons.database.annotation.Table;
 import org.l2j.commons.database.model.Entity;
+import org.springframework.data.annotation.Id;
 
 @Table("account_info")
 public class AccountInfo extends Entity<String> {
@@ -17,6 +18,7 @@ public class AccountInfo extends Entity<String> {
         this.password = password;
     }
 
+    @Id
     @Override
     public String getId() {
         return id;

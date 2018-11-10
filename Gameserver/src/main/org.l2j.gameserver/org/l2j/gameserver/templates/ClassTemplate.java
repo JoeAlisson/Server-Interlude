@@ -34,25 +34,46 @@ public class ClassTemplate extends CharTemplate {
         return classId;
     }
 
-    public long getHp(int level) {
+    public float getHp(int level) {
         if(level < this.level) {
             return PlayerTemplateTable.getInstance().getClassTemplate(parent).getHp(level);
         }
-        return Math.round(levelInfo.get(level).getHp());
+        return levelInfo.get(level).getHp();
     }
 
-    public long getCp(int level) {
+    public float getCp(int level) {
         if(level < this.level) {
             return PlayerTemplateTable.getInstance().getClassTemplate(parent).getCp(level);
         }
-        return Math.round(levelInfo.get(level).getCp());
+        return levelInfo.get(level).getCp();
     }
 
-    public long getMp(int level) {
+    public float getMp(int level) {
         if(level < this.level) {
             return PlayerTemplateTable.getInstance().getClassTemplate(parent).getMp(level);
         }
-        return Math.round(levelInfo.get(level).getMp());
+        return levelInfo.get(level).getMp();
+    }
+
+    public float getHpRegen(int level) {
+        if(level < this.level) {
+            return PlayerTemplateTable.getInstance().getClassTemplate(parent).getHpRegen(level);
+        }
+        return levelInfo.get(level).getHpRegen();
+    }
+
+    public float getMpRegen(int level) {
+        if(level < this.level) {
+            return PlayerTemplateTable.getInstance().getClassTemplate(parent).getMpRegen(level);
+        }
+        return levelInfo.get(level).getMpRegen();
+    }
+
+    public float getCpRegen(int level) {
+        if(level < this.level) {
+            return PlayerTemplateTable.getInstance().getClassTemplate(parent).getMpRegen(level);
+        }
+        return levelInfo.get(level).getCpRegen();
     }
 
     public Location getRandomStartingLocation() {

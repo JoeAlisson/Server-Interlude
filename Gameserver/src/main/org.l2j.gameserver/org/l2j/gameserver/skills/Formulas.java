@@ -1111,7 +1111,7 @@ public final class Formulas
 	 */
 	public final double calcCpRegen(L2Character cha)
 	{
-		double init = cha.getBaseHpRegen();
+		double init = cha.getBaseCpRegen();
 		double cpRegenMultiplier = Config.CP_REGEN_MULTIPLIER;
 		double cpRegenBonus = 0;
 		

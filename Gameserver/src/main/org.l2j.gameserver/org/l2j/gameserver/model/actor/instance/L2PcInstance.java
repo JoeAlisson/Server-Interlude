@@ -113,6 +113,36 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         return getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND);
     }
 
+    @Override
+    public double getBaseHp() {
+        return template.getHp(getLevel());
+    }
+
+    @Override
+    public double getBaseCp() {
+        return template.getCp(getLevel());
+    }
+
+    @Override
+    public double getBaseMp() {
+        return template.getMp(getLevel());
+    }
+
+    @Override
+    public double getBaseHpRegen() {
+        return template.getHpRegen(getLevel());
+    }
+
+    @Override
+    public double getBaseMpRegen() {
+        return template.getMpRegen(getLevel());
+    }
+
+    @Override
+    public double getBaseCpRegen() {
+        return template.getCpRegen(getLevel());
+    }
+
     public float getCollisionRadius() {
         return getBaseTemplate().getCollisionRadius(getSex());
     }

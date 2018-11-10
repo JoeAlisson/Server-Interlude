@@ -1359,6 +1359,10 @@ public abstract class L2Character<T extends CharTemplate> extends L2Object {
         return template.getMp();
     }
 
+    public double getBaseCpRegen() {
+        return template.getHpRegen();
+    }
+
     public double getBaseMAtk() {
         return template.getMAtk();
     }

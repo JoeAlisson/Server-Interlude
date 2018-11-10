@@ -10,34 +10,33 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.serverpackets.*;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
-import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 import org.l2j.gameserver.util.FloodProtector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 
-public final class UseItem extends L2GameClientPacket
-{
-	private static Logger _log = LoggerFactory.getLogger(UseItem.class.getName());
-	private static final String _C__14_USEITEM = "[C] 14 UseItem";
+import static java.util.Objects.isNull;
+
+public final class UseItem extends L2GameClientPacket {
+
+	private static Logger _log = LoggerFactory.getLogger(UseItem.class);
 	
-	private int _objectId;
+	private int objectId;
+	private boolean usingCtrl;
+
 	
 	@Override
-	protected void readImpl()
-	{
-		_objectId = readInt();
+	protected void readImpl() {
+		objectId = readInt();
+		usingCtrl = readInt() == 1;
 	}
 	
 	@Override
-	protected void runImpl()
-	{
+	protected void runImpl() {
+		L2PcInstance activeChar = client.getActiveChar();
 		
-		L2PcInstance activeChar = getClient().getActiveChar();
-		
-		if (activeChar == null)
-		{
+		if (isNull(activeChar)) {
 			return;
 		}
 		
@@ -53,20 +52,15 @@ public final class UseItem extends L2GameClientPacket
 			activeChar.sendPacket(new ActionFailed());
 			return;
 		}
+
+		L2ItemInstance item = activeChar.getInventory().getItemByObjectId(objectId);
 		
-		// NOTE: disabled due to deadlocks
-		// synchronized (activeChar.getInventory())
-		// {
-		L2ItemInstance item = activeChar.getInventory().getItemByObjectId(_objectId);
-		
-		if (item == null)
-		{
+		if (isNull(item)) {
+		    sendPacket(new ActionFailed());
 			return;
 		}
 		
-		if (item.isWear())
-		{
-			// No unequipping wear-items
+		if (item.isWear()) {
 			return;
 		}
 		
@@ -123,7 +117,7 @@ public final class UseItem extends L2GameClientPacket
 
 		if (Config.DEBUG)
 		{
-			_log.debug(activeChar.getObjectId() + ": use item " + _objectId);
+			_log.debug(activeChar.getObjectId() + ": use item " + objectId);
 		}
 		
 		if (item.isEquipable())
@@ -335,13 +329,5 @@ public final class UseItem extends L2GameClientPacket
 				}
 			}
 		}
-		// }
 	}
-	
-	@Override
-	public String getType()
-	{
-		return _C__14_USEITEM;
-	}
-	
 }
