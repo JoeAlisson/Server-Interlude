@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon magic="true" id="6719" name="Monster Only (Ketra Orc Chieftain)" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_monster_i00">
+    <weapon magic="true" id="6719" name="Monster Only (Ketra Orc Chieftain)" type="BLUNT" subType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_monster_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>956000</price>
         <restriction freightable="false"/>

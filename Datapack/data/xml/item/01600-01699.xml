@@ -9,7 +9,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1666" name="Recipe: Wooden Arrow" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="1666" name="Recipe: Wooden Arrow" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -19,7 +19,7 @@
         <weight>30</weight>
         <recipeId>1</recipeId>
     </item>
-    <item stackable="true" id="1667" name="Spellbook: Summon Shadow" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1667" name="Spellbook: Summon Shadow" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -27,7 +27,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1668" name="Spellbook: Summon Mew the Cat" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1668" name="Spellbook: Summon Mew the Cat" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -35,7 +35,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1669" name="Spellbook: Summon Boxer the Unicorn" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1669" name="Spellbook: Summon Boxer the Unicorn" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -43,7 +43,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1670" name="Spellbook: Summon Mirage the Unicorn" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1670" name="Spellbook: Summon Mirage the Unicorn" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -51,7 +51,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1671" name="Spellbook: Summon Silhouette" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1671" name="Spellbook: Summon Silhouette" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -539,7 +539,7 @@
         <time>-1</time>
         <weight>10</weight>
     </item>
-    <weapon id="1660" name="Cursed Maingauche" type="DAGGER" commissionType="DAGGER" icon="icon.t00">
+    <weapon id="1660" name="Cursed Maingauche" type="DAGGER" subType="DAGGER" icon="icon.t00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>

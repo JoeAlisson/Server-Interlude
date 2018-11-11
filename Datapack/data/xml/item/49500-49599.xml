@@ -90,7 +90,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="49509" name="Ring of Core" additionalName="15-day" commissionType="RING" icon="icon.accessory_ring_of_core_i00">
+    <armor id="49509" name="Ring of Core" additionalName="15-day" subType="RING" icon="icon.accessory_ring_of_core_i00">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -375,7 +375,7 @@
         <weight>0</weight>
         <skill id="39059"/>
     </item>
-    <item stackable="true" id="49542" name="Improved Scroll of Resurrection" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
+    <item stackable="true" id="49542" name="Improved Scroll of Resurrection" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -632,7 +632,7 @@
         <weight>2340</weight>
         <consume shot="1"/>
     </weapon>
-    <armor id="49574" name="Enhanced Queen Ant's Ring" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i02">
+    <armor id="49574" name="Enhanced Queen Ant's Ring" subType="RING" icon="icon.accessory_ring_of_queen_ant_i02">
         <bodyPart>FINGER</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -642,7 +642,7 @@
         <weight>150</weight>
         <skill id="3562" level="2"/>
         </armor>
-    <armor id="49575" name="Enhanced Orfen's Earring" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i02">
+    <armor id="49575" name="Enhanced Orfen's Earring" subType="EARRING" icon="icon.accessory_earring_of_orfen_i02">
         <bodyPart>EAR</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -652,7 +652,7 @@
         <weight>150</weight>
         <skill id="3560" level="2"/>
         </armor>
-    <armor id="49576" name="Enhanced Ring of Core" commissionType="RING" icon="icon.accessory_ring_of_core_i02">
+    <armor id="49576" name="Enhanced Ring of Core" subType="RING" icon="icon.accessory_ring_of_core_i02">
         <bodyPart>FINGER</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -662,7 +662,7 @@
         <weight>150</weight>
         <skill id="3563" level="2"/>
         </armor>
-    <armor id="49577" name="Refined Queen Ant's Ring" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
+    <armor id="49577" name="Refined Queen Ant's Ring" subType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
         <bodyPart>FINGER</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -672,7 +672,7 @@
         <weight>150</weight>
         <skill id="3562" level="3"/>
         </armor>
-    <armor id="49578" name="Refined Orfen's Earring" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
+    <armor id="49578" name="Refined Orfen's Earring" subType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
         <bodyPart>EAR</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -682,7 +682,7 @@
         <weight>150</weight>
         <skill id="3560" level="3"/>
         </armor>
-    <armor id="49579" name="Refined Ring of Core" commissionType="RING" icon="icon.accessory_ring_of_core_i03">
+    <armor id="49579" name="Refined Ring of Core" subType="RING" icon="icon.accessory_ring_of_core_i03">
         <bodyPart>FINGER</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -693,7 +693,7 @@
         <skill id="3563" level="3"/>
         <skill id="35016"/>
         </armor>
-    <armor id="49580" name="Baium's Ring" commissionType="RING" icon="icon.accessory_ring_of_baium_i00">
+    <armor id="49580" name="Baium's Ring" subType="RING" icon="icon.accessory_ring_of_baium_i00">
         <bodyPart>FINGER</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -703,7 +703,7 @@
         <weight>150</weight>
         <skill id="3561"/>
         </armor>
-    <armor id="49581" name="Reinforced Baium's Ring" commissionType="RING" icon="icon.accessory_ring_of_baium_i02">
+    <armor id="49581" name="Reinforced Baium's Ring" subType="RING" icon="icon.accessory_ring_of_baium_i02">
         <bodyPart>FINGER</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -713,7 +713,7 @@
         <weight>150</weight>
         <skill id="3561" level="2"/>
         </armor>
-    <armor id="49582" name="Refined Baium's Ring" commissionType="RING" icon="icon.accessory_ring_of_baium_i03">
+    <armor id="49582" name="Refined Baium's Ring" subType="RING" icon="icon.accessory_ring_of_baium_i03">
         <bodyPart>FINGER</bodyPart>
         <price>100000</price>
         <restriction freightable="false"/>
@@ -793,7 +793,7 @@
         <time>43200</time>
         <weight>0</weight>
     </item>
-    <armor id="49591" name="Refined Queen Ant's Ring" additionalName="30-day" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
+    <armor id="49591" name="Refined Queen Ant's Ring" additionalName="30-day" subType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -803,7 +803,7 @@
         <weight>150</weight>
         <skill id="3562" level="3"/>
         </armor>
-    <armor id="49592" name="Refined Orfen's Earring" additionalName="30-day" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
+    <armor id="49592" name="Refined Orfen's Earring" additionalName="30-day" subType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
         <bodyPart>EAR</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
@@ -813,7 +813,7 @@
         <weight>150</weight>
         <skill id="3560" level="3"/>
         </armor>
-    <armor id="49593" name="Refined Ring of Core" additionalName="30-day" commissionType="RING" icon="icon.accessory_ring_of_core_i03">
+    <armor id="49593" name="Refined Ring of Core" additionalName="30-day" subType="RING" icon="icon.accessory_ring_of_core_i03">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>

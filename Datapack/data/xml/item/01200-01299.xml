@@ -112,7 +112,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1294" name="Spellbook: Defense Aura" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
+    <item stackable="true" id="1294" name="Spellbook: Defense Aura" subType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
         <price>75</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>

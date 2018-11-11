@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon magic="true" id="7712" name="Club of Nature" additionalName="Magic Regeneration" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_club_of_nature_i01">
+    <weapon magic="true" id="7712" name="Club of Nature" additionalName="Magic Regeneration" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_club_of_nature_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -13,7 +13,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7713" name="Mace of Underworld" additionalName="Empower" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_mace_of_underworld_i01">
+    <weapon magic="true" id="7713" name="Mace of Underworld" additionalName="Empower" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_mace_of_underworld_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -26,7 +26,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7714" name="Mace of Underworld" additionalName="Acumen" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_mace_of_underworld_i01">
+    <weapon magic="true" id="7714" name="Mace of Underworld" additionalName="Acumen" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_mace_of_underworld_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -39,7 +39,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7715" name="Mace of Underworld" additionalName="Magic Regeneration" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_mace_of_underworld_i01">
+    <weapon magic="true" id="7715" name="Mace of Underworld" additionalName="Magic Regeneration" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_mace_of_underworld_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -52,7 +52,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7716" name="Inferno Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_inferno_staff_i01">
+    <weapon magic="true" id="7716" name="Inferno Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_inferno_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -65,7 +65,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7717" name="Inferno Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_inferno_staff_i01">
+    <weapon magic="true" id="7717" name="Inferno Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_inferno_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -78,7 +78,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7718" name="Inferno Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_inferno_staff_i01">
+    <weapon magic="true" id="7718" name="Inferno Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_inferno_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -91,7 +91,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="7719" name="Poleaxe" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_poleaxe_i01">
+    <weapon id="7719" name="Poleaxe" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_poleaxe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -105,7 +105,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="7720" name="Poleaxe" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_poleaxe_i01">
+    <weapon id="7720" name="Poleaxe" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_poleaxe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -118,7 +118,7 @@
         <damage distance="80" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="7721" name="Poleaxe" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_poleaxe_i01">
+    <weapon id="7721" name="Poleaxe" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_poleaxe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -131,7 +131,7 @@
         <damage distance="66" width="180"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7722" name="Sword of Valhalla" additionalName="Empower" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_valhalla_i01">
+    <weapon magic="true" id="7722" name="Sword of Valhalla" additionalName="Empower" type="SWORD" subType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_valhalla_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -144,7 +144,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7723" name="Sword of Valhalla" additionalName="Acumen" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_valhalla_i01">
+    <weapon magic="true" id="7723" name="Sword of Valhalla" additionalName="Acumen" type="SWORD" subType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_valhalla_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -157,7 +157,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7724" name="Sword of Valhalla" additionalName="Magic Regeneration" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_valhalla_i01">
+    <weapon magic="true" id="7724" name="Sword of Valhalla" additionalName="Magic Regeneration" type="SWORD" subType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_sword_of_valhalla_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -170,7 +170,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7701" name="Stick of Faith" additionalName="Empower" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_faith_i01">
+    <weapon magic="true" id="7701" name="Stick of Faith" additionalName="Empower" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_faith_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -183,7 +183,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7702" name="Stick of Faith" additionalName="Acumen" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_faith_i01">
+    <weapon magic="true" id="7702" name="Stick of Faith" additionalName="Acumen" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_faith_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -196,7 +196,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7703" name="Stick of Faith" additionalName="Magic Regeneration" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_faith_i01">
+    <weapon magic="true" id="7703" name="Stick of Faith" additionalName="Magic Regeneration" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_faith_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -209,7 +209,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7704" name="Stick of Eternity" additionalName="Empower" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_eternity_i01">
+    <weapon magic="true" id="7704" name="Stick of Eternity" additionalName="Empower" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_eternity_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -222,7 +222,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7705" name="Stick of Eternity" additionalName="Acumen" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_eternity_i01">
+    <weapon magic="true" id="7705" name="Stick of Eternity" additionalName="Acumen" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_eternity_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -235,7 +235,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7706" name="Stick of Eternity" additionalName="Magic Regeneration" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_eternity_i01">
+    <weapon magic="true" id="7706" name="Stick of Eternity" additionalName="Magic Regeneration" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_stick_of_eternity_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -248,7 +248,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7707" name="Nirvana Axe" additionalName="Empower" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_nirvana_axe_i01">
+    <weapon magic="true" id="7707" name="Nirvana Axe" additionalName="Empower" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_nirvana_axe_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -261,7 +261,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7708" name="Nirvana Axe" additionalName="Acumen" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_nirvana_axe_i01">
+    <weapon magic="true" id="7708" name="Nirvana Axe" additionalName="Acumen" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_nirvana_axe_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -274,7 +274,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7709" name="Nirvana Axe" additionalName="Magic Regeneration" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_nirvana_axe_i01">
+    <weapon magic="true" id="7709" name="Nirvana Axe" additionalName="Magic Regeneration" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_nirvana_axe_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -287,7 +287,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7710" name="Club of Nature" additionalName="Empower" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_club_of_nature_i01">
+    <weapon magic="true" id="7710" name="Club of Nature" additionalName="Empower" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_club_of_nature_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -300,7 +300,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="7711" name="Club of Nature" additionalName="Acumen" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_club_of_nature_i01">
+    <weapon magic="true" id="7711" name="Club of Nature" additionalName="Acumen" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_club_of_nature_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>

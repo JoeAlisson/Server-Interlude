@@ -182,7 +182,7 @@
         <time>-1</time>
         <weight>20</weight>
     </item>
-    <armor id="29978" name="Bracelet of Duty - Lv. 1" commissionType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_01">
+    <armor id="29978" name="Bracelet of Duty - Lv. 1" subType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_01">
         <bodyPart>RIGHT_BRACELET</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
@@ -192,7 +192,7 @@
         <weight>150</weight>
         <skill id="55248"/>
         </armor>
-    <armor id="29979" name="Bracelet of Duty - Lv. 2" commissionType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_02">
+    <armor id="29979" name="Bracelet of Duty - Lv. 2" subType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_02">
         <bodyPart>RIGHT_BRACELET</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
@@ -202,7 +202,7 @@
         <weight>150</weight>
         <skill id="55249"/>
         </armor>
-    <armor id="29980" name="Bracelet of Duty - Lv. 3" commissionType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_03">
+    <armor id="29980" name="Bracelet of Duty - Lv. 3" subType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_03">
         <bodyPart>RIGHT_BRACELET</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
@@ -212,7 +212,7 @@
         <weight>150</weight>
         <skill id="55250"/>
         </armor>
-    <armor id="29981" name="Bracelet of Duty - Lv. 4" commissionType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_04">
+    <armor id="29981" name="Bracelet of Duty - Lv. 4" subType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_04">
         <bodyPart>RIGHT_BRACELET</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>
@@ -222,7 +222,7 @@
         <weight>150</weight>
         <skill id="55251"/>
         </armor>
-    <armor id="29982" name="Bracelet of Duty - Lv. 5" commissionType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_05">
+    <armor id="29982" name="Bracelet of Duty - Lv. 5" subType="BRACELET" icon="BranchIcon.Icon.g_pledge_bracelet_05">
         <bodyPart>RIGHT_BRACELET</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false" destroyable="false"/>

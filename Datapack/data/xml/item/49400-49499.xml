@@ -606,7 +606,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="49477" name="Queen Ant's Ring" additionalName="15-day" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i00">
+    <armor id="49477" name="Queen Ant's Ring" additionalName="15-day" subType="RING" icon="icon.accessory_ring_of_queen_ant_i00">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -739,7 +739,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="49493" name="Orfen's Earring" additionalName="15-day" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i00">
+    <armor id="49493" name="Orfen's Earring" additionalName="15-day" subType="EARRING" icon="icon.accessory_earring_of_orfen_i00">
         <bodyPart>EAR</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>

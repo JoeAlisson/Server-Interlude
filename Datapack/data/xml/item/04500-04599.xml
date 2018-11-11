@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <item stackable="true" id="4500" name="Greater Dye of INT (Int + 1 Wit - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4500" name="Greater Dye of INT (Int + 1 Wit - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>21000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -8,7 +8,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4501" name="Greater Dye of MEN (Men + 1 Int - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4501" name="Greater Dye of MEN (Men + 1 Int - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>21000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -16,7 +16,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4502" name="Greater Dye of MEN (Men + 1 Wit - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4502" name="Greater Dye of MEN (Men + 1 Wit - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>21000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -24,7 +24,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4503" name="Greater Dye of WIT (Wit + 1 Int - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4503" name="Greater Dye of WIT (Wit + 1 Int - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>21000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -32,7 +32,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4504" name="Greater Dye of WIT (Wit + 1 Men - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4504" name="Greater Dye of WIT (Wit + 1 Men - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>21000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -40,7 +40,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4505" name="Greater Dye of STR (STR + 2 CON - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4505" name="Greater Dye of STR (STR + 2 CON - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -48,7 +48,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4506" name="Greater Dye of STR (STR + 2 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4506" name="Greater Dye of STR (STR + 2 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -56,7 +56,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4507" name="Greater Dye of CON (Con + 2 Str - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4507" name="Greater Dye of CON (Con + 2 Str - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -64,7 +64,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4508" name="Greater Dye of CON (Con + 2 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4508" name="Greater Dye of CON (Con + 2 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -72,7 +72,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4509" name="Greater Dye of DEX (Dex + 2 Str - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4509" name="Greater Dye of DEX (Dex + 2 Str - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -80,7 +80,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4510" name="Greater Dye of DEX (Dex + 2 CON - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4510" name="Greater Dye of DEX (Dex + 2 CON - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -88,7 +88,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4511" name="Greater Dye of INT (Int + 2 Men - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4511" name="Greater Dye of INT (Int + 2 Men - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -96,7 +96,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4512" name="Greater Dye of INT (Int + 2 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4512" name="Greater Dye of INT (Int + 2 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -104,7 +104,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4513" name="Greater Dye of MEN (Men + 2 Int - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4513" name="Greater Dye of MEN (Men + 2 Int - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -112,7 +112,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4514" name="Greater Dye of MEN (Men + 2 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4514" name="Greater Dye of MEN (Men + 2 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -120,7 +120,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4515" name="Greater Dye of WIT (Wit + 2 Int - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4515" name="Greater Dye of WIT (Wit + 2 Int - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -128,7 +128,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4516" name="Greater Dye of WIT (Wit + 2 Men - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4516" name="Greater Dye of WIT (Wit + 2 Men - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>24600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -136,7 +136,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4517" name="Greater Dye of STR (STR + 2 CON - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4517" name="Greater Dye of STR (STR + 2 CON - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -144,7 +144,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4518" name="Greater Dye of STR (STR + 2 DEX - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4518" name="Greater Dye of STR (STR + 2 DEX - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -152,7 +152,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4519" name="Greater Dye of CON (Con + 2 Str - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4519" name="Greater Dye of CON (Con + 2 Str - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -160,7 +160,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4520" name="Greater Dye of CON (Con + 2 DEX - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4520" name="Greater Dye of CON (Con + 2 DEX - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -168,7 +168,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4521" name="Greater Dye of DEX (Dex + 2 Str - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4521" name="Greater Dye of DEX (Dex + 2 Str - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -176,7 +176,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4522" name="Greater Dye of DEX (Dex + 2 CON - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4522" name="Greater Dye of DEX (Dex + 2 CON - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -184,7 +184,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4523" name="Greater Dye of INT (Int + 2 Men - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4523" name="Greater Dye of INT (Int + 2 Men - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -192,7 +192,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4524" name="Greater Dye of INT (Int + 2 Wit - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4524" name="Greater Dye of INT (Int + 2 Wit - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -200,7 +200,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4525" name="Greater Dye of MEN (Men + 2 Int - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4525" name="Greater Dye of MEN (Men + 2 Int - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -208,7 +208,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4526" name="Greater Dye of MEN (Men + 2 Wit - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4526" name="Greater Dye of MEN (Men + 2 Wit - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -216,7 +216,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4527" name="Greater Dye of WIT (Wit + 2 Int - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4527" name="Greater Dye of WIT (Wit + 2 Int - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -224,7 +224,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4528" name="Greater Dye of WIT (Wit + 2 Men - 3)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4528" name="Greater Dye of WIT (Wit + 2 Men - 3)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>27000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -232,7 +232,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4529" name="Greater Dye of STR (STR + 3 CON - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4529" name="Greater Dye of STR (STR + 3 CON - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -240,7 +240,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4530" name="Greater Dye of STR (STR + 3 DEX - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4530" name="Greater Dye of STR (STR + 3 DEX - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -248,7 +248,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4531" name="Greater Dye of CON (Con + 3 Str - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4531" name="Greater Dye of CON (Con + 3 Str - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -256,7 +256,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4532" name="Greater Dye of CON (Con + 3 DEX - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4532" name="Greater Dye of CON (Con + 3 DEX - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -264,7 +264,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4533" name="Greater Dye of DEX (Dex + 3 Str - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4533" name="Greater Dye of DEX (Dex + 3 Str - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -272,7 +272,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4534" name="Greater Dye of DEX (Dex + 3 CON - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4534" name="Greater Dye of DEX (Dex + 3 CON - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -280,7 +280,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4535" name="Greater Dye of INT (Int + 3 Men - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4535" name="Greater Dye of INT (Int + 3 Men - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -288,7 +288,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4536" name="Greater Dye of INT (Int + 3 Wit - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4536" name="Greater Dye of INT (Int + 3 Wit - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -296,7 +296,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4537" name="Greater Dye of MEN (Men + 3 Int - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4537" name="Greater Dye of MEN (Men + 3 Int - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -304,7 +304,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4538" name="Greater Dye of MEN (Men + 3 Wit - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4538" name="Greater Dye of MEN (Men + 3 Wit - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -312,7 +312,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4539" name="Greater Dye of WIT (Wit + 3 Int - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4539" name="Greater Dye of WIT (Wit + 3 Int - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -320,7 +320,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4540" name="Greater Dye of WIT (Wit + 3 Men - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4540" name="Greater Dye of WIT (Wit + 3 Men - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -328,7 +328,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4541" name="Greater Dye of STR (STR + 3 CON - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4541" name="Greater Dye of STR (STR + 3 CON - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -336,7 +336,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4542" name="Greater Dye of STR (STR + 3 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4542" name="Greater Dye of STR (STR + 3 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -344,7 +344,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4543" name="Greater Dye of CON (Con + 3 Str - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4543" name="Greater Dye of CON (Con + 3 Str - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -352,7 +352,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4544" name="Greater Dye of CON (Con + 3 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4544" name="Greater Dye of CON (Con + 3 DEX - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -360,7 +360,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4545" name="Greater Dye of DEX (Dex + 3 Str - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4545" name="Greater Dye of DEX (Dex + 3 Str - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -368,7 +368,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4546" name="Greater Dye of DEX (Dex + 3 CON - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4546" name="Greater Dye of DEX (Dex + 3 CON - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -376,7 +376,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4547" name="Greater Dye of INT (Int + 3 Men - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4547" name="Greater Dye of INT (Int + 3 Men - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -384,7 +384,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4548" name="Greater Dye of INT (Int + 3 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4548" name="Greater Dye of INT (Int + 3 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -392,7 +392,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4549" name="Greater Dye of MEN (Men + 3 Int - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4549" name="Greater Dye of MEN (Men + 3 Int - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -400,7 +400,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4550" name="Greater Dye of MEN (Men + 3 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4550" name="Greater Dye of MEN (Men + 3 Wit - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -408,7 +408,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4551" name="Greater Dye of WIT (Wit + 3 Int - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4551" name="Greater Dye of WIT (Wit + 3 Int - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -416,7 +416,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4552" name="Greater Dye of WIT (Wit + 3 Men - 4)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4552" name="Greater Dye of WIT (Wit + 3 Men - 4)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -424,7 +424,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4553" name="Greater Dye of STR (STR + 1 CON - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i02">
+    <item stackable="true" id="4553" name="Greater Dye of STR (STR + 1 CON - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -432,7 +432,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4554" name="Greater Dye of STR (STR + 1 DEX - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i02">
+    <item stackable="true" id="4554" name="Greater Dye of STR (STR + 1 DEX - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -440,7 +440,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4555" name="Greater Dye of CON (Con + 1 Str - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i02">
+    <item stackable="true" id="4555" name="Greater Dye of CON (Con + 1 Str - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -448,7 +448,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4556" name="Greater Dye of CON (Con + 1 DEX - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i02">
+    <item stackable="true" id="4556" name="Greater Dye of CON (Con + 1 DEX - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -456,7 +456,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4557" name="Greater Dye of DEX (Dex + 1 Str - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i02">
+    <item stackable="true" id="4557" name="Greater Dye of DEX (Dex + 1 Str - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -464,7 +464,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4558" name="Greater Dye of DEX (Dex + 1 CON - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i02">
+    <item stackable="true" id="4558" name="Greater Dye of DEX (Dex + 1 CON - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -472,7 +472,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4559" name="Greater Dye of INT (Int + 1 Men - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i02">
+    <item stackable="true" id="4559" name="Greater Dye of INT (Int + 1 Men - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -480,7 +480,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4560" name="Greater Dye of INT (Int + 1 Wit - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i02">
+    <item stackable="true" id="4560" name="Greater Dye of INT (Int + 1 Wit - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -488,7 +488,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4561" name="Greater Dye of MEN (Men + 1 Int - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i02">
+    <item stackable="true" id="4561" name="Greater Dye of MEN (Men + 1 Int - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -496,7 +496,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4562" name="Greater Dye of MEN (Men + 1 Wit - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i02">
+    <item stackable="true" id="4562" name="Greater Dye of MEN (Men + 1 Wit - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -504,7 +504,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4563" name="Greater Dye of WIT (Wit + 1 Int - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i02">
+    <item stackable="true" id="4563" name="Greater Dye of WIT (Wit + 1 Int - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -512,7 +512,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4564" name="Greater Dye of WIT (Wit + 1 Men - 1)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i02">
+    <item stackable="true" id="4564" name="Greater Dye of WIT (Wit + 1 Men - 1)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i02">
         <price>50000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -520,7 +520,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4565" name="Greater Dye of STR (STR + 4 CON - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4565" name="Greater Dye of STR (STR + 4 CON - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -528,7 +528,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4566" name="Greater Dye of STR (STR + 4 DEX - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4566" name="Greater Dye of STR (STR + 4 DEX - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -536,7 +536,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4567" name="Greater Dye of CON (Con + 4 Str - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4567" name="Greater Dye of CON (Con + 4 Str - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -544,7 +544,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4568" name="Greater Dye of CON (Con + 4 DEX - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4568" name="Greater Dye of CON (Con + 4 DEX - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -552,7 +552,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4569" name="Greater Dye of DEX (Dex + 4 Str - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4569" name="Greater Dye of DEX (Dex + 4 Str - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -560,7 +560,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4570" name="Greater Dye of DEX (Dex + 4 CON - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4570" name="Greater Dye of DEX (Dex + 4 CON - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -568,7 +568,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4571" name="Greater Dye of INT (Int + 4 Men - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4571" name="Greater Dye of INT (Int + 4 Men - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -576,7 +576,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4572" name="Greater Dye of INT (Int + 4 Wit - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4572" name="Greater Dye of INT (Int + 4 Wit - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -584,7 +584,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4573" name="Greater Dye of MEN (Men + 4 Int - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4573" name="Greater Dye of MEN (Men + 4 Int - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -592,7 +592,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4574" name="Greater Dye of MEN (Men + 4 Wit - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4574" name="Greater Dye of MEN (Men + 4 Wit - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -600,7 +600,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4575" name="Greater Dye of WIT (Wit + 4 Int - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4575" name="Greater Dye of WIT (Wit + 4 Int - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -608,7 +608,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4576" name="Greater Dye of WIT (Wit + 4 Men - 6)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4576" name="Greater Dye of WIT (Wit + 4 Men - 6)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -616,7 +616,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4577" name="Greater Dye of STR (STR + 4 CON - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4577" name="Greater Dye of STR (STR + 4 CON - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -624,7 +624,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4578" name="Greater Dye of STR (STR + 4 DEX - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i01">
+    <item stackable="true" id="4578" name="Greater Dye of STR (STR + 4 DEX - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -632,7 +632,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4579" name="Greater Dye of CON (Con + 4 Str - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4579" name="Greater Dye of CON (Con + 4 Str - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -640,7 +640,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4580" name="Greater Dye of CON (Con + 4 DEX - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i01">
+    <item stackable="true" id="4580" name="Greater Dye of CON (Con + 4 DEX - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -648,7 +648,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4581" name="Greater Dye of DEX (Dex + 4 Str - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4581" name="Greater Dye of DEX (Dex + 4 Str - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -656,7 +656,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4582" name="Greater Dye of DEX (Dex + 4 CON - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i01">
+    <item stackable="true" id="4582" name="Greater Dye of DEX (Dex + 4 CON - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -664,7 +664,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4583" name="Greater Dye of INT (Int + 4 Men - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4583" name="Greater Dye of INT (Int + 4 Men - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -672,7 +672,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4584" name="Greater Dye of INT (Int + 4 Wit - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i01">
+    <item stackable="true" id="4584" name="Greater Dye of INT (Int + 4 Wit - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -680,7 +680,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4585" name="Greater Dye of MEN (Men + 4 Int - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4585" name="Greater Dye of MEN (Men + 4 Int - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -688,7 +688,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4586" name="Greater Dye of MEN (Men + 4 Wit - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i01">
+    <item stackable="true" id="4586" name="Greater Dye of MEN (Men + 4 Wit - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -696,7 +696,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4587" name="Greater Dye of WIT (Wit + 4 Int - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4587" name="Greater Dye of WIT (Wit + 4 Int - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -704,7 +704,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4588" name="Greater Dye of WIT (Wit + 4 Men - 5)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i01">
+    <item stackable="true" id="4588" name="Greater Dye of WIT (Wit + 4 Men - 5)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i01">
         <price>36000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -712,7 +712,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4589" name="Greater Dye of STR (STR + 2 CON - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i02">
+    <item stackable="true" id="4589" name="Greater Dye of STR (STR + 2 CON - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -720,7 +720,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4590" name="Greater Dye of STR (STR + 2 DEX - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_str_hena_i02">
+    <item stackable="true" id="4590" name="Greater Dye of STR (STR + 2 DEX - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_str_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -728,7 +728,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4591" name="Greater Dye of CON (Con + 2 Str - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i02">
+    <item stackable="true" id="4591" name="Greater Dye of CON (Con + 2 Str - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -736,7 +736,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4592" name="Greater Dye of CON (Con + 2 DEX - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_con_hena_i02">
+    <item stackable="true" id="4592" name="Greater Dye of CON (Con + 2 DEX - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_con_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -744,7 +744,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4593" name="Greater Dye of DEX (Dex + 2 Str - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i02">
+    <item stackable="true" id="4593" name="Greater Dye of DEX (Dex + 2 Str - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -752,7 +752,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4594" name="Greater Dye of DEX (Dex + 2 CON - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_dex_hena_i02">
+    <item stackable="true" id="4594" name="Greater Dye of DEX (Dex + 2 CON - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_dex_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -760,7 +760,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4595" name="Greater Dye of INT (Int + 2 Men - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i02">
+    <item stackable="true" id="4595" name="Greater Dye of INT (Int + 2 Men - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -768,7 +768,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4596" name="Greater Dye of INT (Int + 2 Wit - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_int_hena_i02">
+    <item stackable="true" id="4596" name="Greater Dye of INT (Int + 2 Wit - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_int_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -776,7 +776,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4597" name="Greater Dye of MEN (Men + 2 Int - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i02">
+    <item stackable="true" id="4597" name="Greater Dye of MEN (Men + 2 Int - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -784,7 +784,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4598" name="Greater Dye of MEN (Men + 2 Wit - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_men_hena_i02">
+    <item stackable="true" id="4598" name="Greater Dye of MEN (Men + 2 Wit - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_men_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -792,7 +792,7 @@
         <time>-1</time>
         <weight>150</weight>
     </item>
-    <item stackable="true" id="4599" name="Greater Dye of WIT (Wit + 2 Int - 2)" additionalName="2nd Class Transfer" type="DYE" commissionType="DYES" icon="icon.etc_wit_hena_i02">
+    <item stackable="true" id="4599" name="Greater Dye of WIT (Wit + 2 Int - 2)" additionalName="2nd Class Transfer" type="DYE" subType="DYES" icon="icon.etc_wit_hena_i02">
         <price>60000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>

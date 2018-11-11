@@ -5,7 +5,7 @@ import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.StatusUpdate;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.xml.jaxb.Item;
@@ -586,13 +586,13 @@ public class TradeList {
             if (ownerIU != null) {
                 _owner.sendPacket(ownerIU);
             } else {
-                _owner.sendPacket(new ItemList(_owner, false));
+                _owner.sendPacket(new ItemListPacket(_owner, false));
             }
 
             if (partnerIU != null) {
                 _partner.sendPacket(partnerIU);
             } else {
-                _partner.sendPacket(new ItemList(_partner, false));
+                _partner.sendPacket(new ItemListPacket(_partner, false));
             }
 
             // Update current load as well

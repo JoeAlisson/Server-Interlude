@@ -8,7 +8,7 @@
         <weight>0</weight>
     </item>
     <armor id="34925" name="Cloak of Light" icon="icon.amor_goodness_cloak">
-        <bodyPart>BACK</bodyPart>
+        <bodyPart>CLOAK</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
@@ -23,7 +23,7 @@
         <skill id="19039"/>
         </armor>
     <armor id="34926" name="Cloak of Darkness" icon="icon.amor_evilness_cloak">
-        <bodyPart>BACK</bodyPart>
+        <bodyPart>CLOAK</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>

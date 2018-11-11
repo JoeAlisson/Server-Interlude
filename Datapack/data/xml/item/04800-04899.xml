@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon magic="true" id="4864" name="Heavy Doom Hammer" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_hammer_i01">
+    <weapon magic="true" id="4864" name="Heavy Doom Hammer" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_hammer_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -13,7 +13,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4865" name="Heavy Doom Hammer" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_hammer_i01">
+    <weapon magic="true" id="4865" name="Heavy Doom Hammer" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_hammer_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -26,7 +26,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4866" name="Heavy Doom Hammer" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_hammer_i01">
+    <weapon magic="true" id="4866" name="Heavy Doom Hammer" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_hammer_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -39,7 +39,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4867" name="Crystal Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_staff_i01">
+    <weapon magic="true" id="4867" name="Crystal Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -52,7 +52,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4868" name="Crystal Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_staff_i01">
+    <weapon magic="true" id="4868" name="Crystal Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -65,7 +65,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4869" name="Crystal Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_staff_i01">
+    <weapon magic="true" id="4869" name="Crystal Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -78,7 +78,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4870" name="Heavy Doom Axe" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_axe_i01">
+    <weapon magic="true" id="4870" name="Heavy Doom Axe" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -91,7 +91,7 @@
         <damage distance="56" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4871" name="Heavy Doom Axe" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_axe_i01">
+    <weapon magic="true" id="4871" name="Heavy Doom Axe" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -104,7 +104,7 @@
         <damage distance="56" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4872" name="Heavy Doom Axe" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_axe_i01">
+    <weapon magic="true" id="4872" name="Heavy Doom Axe" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_heavy_doom_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -117,7 +117,7 @@
         <damage distance="56" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4873" name="Cursed Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_cursed_staff_i01">
+    <weapon magic="true" id="4873" name="Cursed Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_cursed_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -130,7 +130,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4874" name="Cursed Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_cursed_staff_i01">
+    <weapon magic="true" id="4874" name="Cursed Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_cursed_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -143,7 +143,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4875" name="Cursed Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_cursed_staff_i01">
+    <weapon magic="true" id="4875" name="Cursed Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_cursed_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -156,7 +156,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4876" name="Paradia Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paradia_staff_i01">
+    <weapon magic="true" id="4876" name="Paradia Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paradia_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -169,7 +169,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4877" name="Paradia Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paradia_staff_i01">
+    <weapon magic="true" id="4877" name="Paradia Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paradia_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -182,7 +182,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4878" name="Paradia Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paradia_staff_i01">
+    <weapon magic="true" id="4878" name="Paradia Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paradia_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -195,7 +195,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4879" name="Pa'agrio Hammer" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_hammer_i01">
+    <weapon magic="true" id="4879" name="Pa'agrio Hammer" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_hammer_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -208,7 +208,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4880" name="Pa'agrio Hammer" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_hammer_i01">
+    <weapon magic="true" id="4880" name="Pa'agrio Hammer" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_hammer_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -221,7 +221,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4881" name="Pa'agrio Hammer" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_hammer_i01">
+    <weapon magic="true" id="4881" name="Pa'agrio Hammer" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_hammer_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -234,7 +234,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4882" name="Sage's Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sages_staff_i01">
+    <weapon magic="true" id="4882" name="Sage's Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sages_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -247,7 +247,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4883" name="Sage's Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sages_staff_i01">
+    <weapon magic="true" id="4883" name="Sage's Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sages_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -260,7 +260,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4884" name="Sage's Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sages_staff_i01">
+    <weapon magic="true" id="4884" name="Sage's Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sages_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -273,7 +273,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4885" name="Pa'agrio Axe" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_axe_i01">
+    <weapon magic="true" id="4885" name="Pa'agrio Axe" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -286,7 +286,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4886" name="Pa'agrio Axe" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_axe_i01">
+    <weapon magic="true" id="4886" name="Pa'agrio Axe" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -299,7 +299,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4887" name="Pa'agrio Axe" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_axe_i01">
+    <weapon magic="true" id="4887" name="Pa'agrio Axe" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_paagrio_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -312,7 +312,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4888" name="Deadman's Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_deadmans_staff_i01">
+    <weapon magic="true" id="4888" name="Deadman's Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_deadmans_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -325,7 +325,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4889" name="Deadman's Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_deadmans_staff_i01">
+    <weapon magic="true" id="4889" name="Deadman's Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_deadmans_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -338,7 +338,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4890" name="Deadman's Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_deadmans_staff_i01">
+    <weapon magic="true" id="4890" name="Deadman's Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_deadmans_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -351,7 +351,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4891" name="Ghoul's Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_ghouls_staff_i01">
+    <weapon magic="true" id="4891" name="Ghoul's Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_ghouls_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -364,7 +364,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4892" name="Ghoul's Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_ghouls_staff_i01">
+    <weapon magic="true" id="4892" name="Ghoul's Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_ghouls_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -377,7 +377,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4893" name="Ghoul's Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_ghouls_staff_i01">
+    <weapon magic="true" id="4893" name="Ghoul's Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_ghouls_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -390,7 +390,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4894" name="Demon's Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_demons_staff_i01">
+    <weapon magic="true" id="4894" name="Demon's Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_demons_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -403,7 +403,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4895" name="Demon's Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_demons_staff_i01">
+    <weapon magic="true" id="4895" name="Demon's Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_demons_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -416,7 +416,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4896" name="Demon's Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_demons_staff_i01">
+    <weapon magic="true" id="4896" name="Demon's Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_demons_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -429,7 +429,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4897" name="Spirit's Staff" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sprites_staff_i01">
+    <weapon magic="true" id="4897" name="Spirit's Staff" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sprites_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -442,7 +442,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4898" name="Spirit's Staff" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sprites_staff_i01">
+    <weapon magic="true" id="4898" name="Spirit's Staff" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sprites_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -455,7 +455,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4899" name="Spirit's Staff" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sprites_staff_i01">
+    <weapon magic="true" id="4899" name="Spirit's Staff" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_sprites_staff_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -468,7 +468,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4800" name="Fist" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_knuckle_dust_i01">
+    <weapon id="4800" name="Fist" additionalName="Critical Damage" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_knuckle_dust_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -481,7 +481,7 @@
         <damage distance="32" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4801" name="Arthro Nail" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_arthro_nail_i01">
+    <weapon id="4801" name="Arthro Nail" additionalName="Focus" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_arthro_nail_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -494,7 +494,7 @@
         <damage distance="52" width="90"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4802" name="Arthro Nail" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_arthro_nail_i01">
+    <weapon id="4802" name="Arthro Nail" additionalName="Haste" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_arthro_nail_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -507,7 +507,7 @@
         <damage distance="52" width="90"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4803" name="Arthro Nail" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_arthro_nail_i01">
+    <weapon id="4803" name="Arthro Nail" additionalName="Critical Damage" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_arthro_nail_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -520,7 +520,7 @@
         <damage distance="52" width="90"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4804" name="Bellion Cestus" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_bellion_cestus_i01">
+    <weapon id="4804" name="Bellion Cestus" additionalName="Focus" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_bellion_cestus_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -533,7 +533,7 @@
         <damage distance="32" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4805" name="Bellion Cestus" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_bellion_cestus_i01">
+    <weapon id="4805" name="Bellion Cestus" additionalName="Haste" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_bellion_cestus_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -546,7 +546,7 @@
         <damage distance="32" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4806" name="Bellion Cestus" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_bellion_cestus_i01">
+    <weapon id="4806" name="Bellion Cestus" additionalName="Critical Damage" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_bellion_cestus_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -559,7 +559,7 @@
         <damage distance="32" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4810" name="Crystallized Ice Bow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_crystallized_ice_bow_i01">
+    <weapon id="4810" name="Crystallized Ice Bow" additionalName="Focus" type="BOW" subType="BOW" icon="icon.weapon_crystallized_ice_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -572,7 +572,7 @@
         <damage distance="10"/>
         <consume mp="2" shot="1"/>
     </weapon>
-    <weapon id="4811" name="Crystallized Ice Bow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_crystallized_ice_bow_i01">
+    <weapon id="4811" name="Crystallized Ice Bow" additionalName="Haste" type="BOW" subType="BOW" icon="icon.weapon_crystallized_ice_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -585,7 +585,7 @@
         <damage distance="10"/>
         <consume mp="2" shot="1"/>
     </weapon>
-    <weapon id="4812" name="Crystallized Ice Bow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_crystallized_ice_bow_i01">
+    <weapon id="4812" name="Crystallized Ice Bow" additionalName="Critical Damage" type="BOW" subType="BOW" icon="icon.weapon_crystallized_ice_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -597,7 +597,7 @@
         <damage distance="10"/>
         <consume mp="2" shot="1"/>
     </weapon>
-    <weapon id="4813" name="Elemental Bow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_elemental_bow_i01">
+    <weapon id="4813" name="Elemental Bow" additionalName="Focus" type="BOW" subType="BOW" icon="icon.weapon_elemental_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -610,7 +610,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4814" name="Elemental Bow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_elemental_bow_i01">
+    <weapon id="4814" name="Elemental Bow" additionalName="Haste" type="BOW" subType="BOW" icon="icon.weapon_elemental_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -622,7 +622,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4815" name="Elemental Bow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_elemental_bow_i01">
+    <weapon id="4815" name="Elemental Bow" additionalName="Critical Damage" type="BOW" subType="BOW" icon="icon.weapon_elemental_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -634,7 +634,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4816" name="Noble Elven Bow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_noble_elven_bow_i01">
+    <weapon id="4816" name="Noble Elven Bow" additionalName="Focus" type="BOW" subType="BOW" icon="icon.weapon_noble_elven_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -647,7 +647,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4817" name="Noble Elven Bow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_noble_elven_bow_i01">
+    <weapon id="4817" name="Noble Elven Bow" additionalName="Haste" type="BOW" subType="BOW" icon="icon.weapon_noble_elven_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -659,7 +659,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4818" name="Noble Elven Bow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_noble_elven_bow_i01">
+    <weapon id="4818" name="Noble Elven Bow" additionalName="Critical Damage" type="BOW" subType="BOW" icon="icon.weapon_noble_elven_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -671,7 +671,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4819" name="Akat Longbow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_akat_long_bow_i01">
+    <weapon id="4819" name="Akat Longbow" additionalName="Focus" type="BOW" subType="BOW" icon="icon.weapon_akat_long_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -684,7 +684,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4820" name="Akat Longbow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_akat_long_bow_i01">
+    <weapon id="4820" name="Akat Longbow" additionalName="Haste" type="BOW" subType="BOW" icon="icon.weapon_akat_long_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -697,7 +697,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4821" name="Akat Longbow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_akat_long_bow_i01">
+    <weapon id="4821" name="Akat Longbow" additionalName="Critical Damage" type="BOW" subType="BOW" icon="icon.weapon_akat_long_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4300000</price>
         <restriction freightable="false"/>
@@ -709,7 +709,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4822" name="Eminence Bow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_eminence_bow_i01">
+    <weapon id="4822" name="Eminence Bow" additionalName="Focus" type="BOW" subType="BOW" icon="icon.weapon_eminence_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -722,7 +722,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="2"/>
     </weapon>
-    <weapon id="4823" name="Eminence Bow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_eminence_bow_i01">
+    <weapon id="4823" name="Eminence Bow" additionalName="Haste" type="BOW" subType="BOW" icon="icon.weapon_eminence_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -734,7 +734,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="2"/>
     </weapon>
-    <weapon id="4824" name="Eminence Bow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_eminence_bow_i01">
+    <weapon id="4824" name="Eminence Bow" additionalName="Critical Damage" type="BOW" subType="BOW" icon="icon.weapon_eminence_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -746,7 +746,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="2"/>
     </weapon>
-    <weapon id="4825" name="Dark Elven Longbow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_dark_elven_long_bow_i01">
+    <weapon id="4825" name="Dark Elven Longbow" additionalName="Focus" type="BOW" subType="BOW" icon="icon.weapon_dark_elven_long_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -759,7 +759,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4826" name="Dark Elven Longbow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_dark_elven_long_bow_i01">
+    <weapon id="4826" name="Dark Elven Longbow" additionalName="Haste" type="BOW" subType="BOW" icon="icon.weapon_dark_elven_long_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -772,7 +772,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4827" name="Dark Elven Longbow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_dark_elven_long_bow_i01">
+    <weapon id="4827" name="Dark Elven Longbow" additionalName="Critical Damage" type="BOW" subType="BOW" icon="icon.weapon_dark_elven_long_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -784,7 +784,7 @@
         <damage distance="10"/>
         <consume mp="3" shot="1"/>
     </weapon>
-    <weapon id="4828" name="Bow of Peril" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_hazard_bow_i01">
+    <weapon id="4828" name="Bow of Peril" additionalName="Focus" type="BOW" subType="BOW" icon="icon.weapon_hazard_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -797,7 +797,7 @@
         <damage distance="10"/>
         <consume mp="4" shot="1"/>
     </weapon>
-    <weapon id="4829" name="Bow of Peril" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_hazard_bow_i01">
+    <weapon id="4829" name="Bow of Peril" additionalName="Haste" type="BOW" subType="BOW" icon="icon.weapon_hazard_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -809,7 +809,7 @@
         <damage distance="10"/>
         <consume mp="4" shot="1"/>
     </weapon>
-    <weapon id="4830" name="Bow of Peril" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_hazard_bow_i01">
+    <weapon id="4830" name="Bow of Peril" additionalName="Critical Damage" type="BOW" subType="BOW" icon="icon.weapon_hazard_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -821,7 +821,7 @@
         <damage distance="10"/>
         <consume mp="4" shot="1"/>
     </weapon>
-    <weapon id="4834" name="Scythe" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_scythe_i01">
+    <weapon id="4834" name="Scythe" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_scythe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -834,7 +834,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4835" name="Scythe" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_scythe_i01">
+    <weapon id="4835" name="Scythe" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_scythe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -848,7 +848,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4836" name="Scythe" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_scythe_i01">
+    <weapon id="4836" name="Scythe" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_scythe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -862,7 +862,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4837" name="Orcish Glaive" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_orcish_glaive_i01">
+    <weapon id="4837" name="Orcish Glaive" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_orcish_glaive_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -875,7 +875,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4838" name="Orcish Glaive" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_orcish_glaive_i01">
+    <weapon id="4838" name="Orcish Glaive" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_orcish_glaive_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -889,7 +889,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4839" name="Orcish Glaive" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_orcish_glaive_i01">
+    <weapon id="4839" name="Orcish Glaive" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_orcish_glaive_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -902,7 +902,7 @@
         <damage distance="80" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4840" name="Body Slasher" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_body_slasher_i01">
+    <weapon id="4840" name="Body Slasher" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_body_slasher_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -916,7 +916,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4841" name="Body Slasher" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_body_slasher_i01">
+    <weapon id="4841" name="Body Slasher" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_body_slasher_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -929,7 +929,7 @@
         <damage distance="80" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4842" name="Body Slasher" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_body_slasher_i01">
+    <weapon id="4842" name="Body Slasher" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_body_slasher_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -942,7 +942,7 @@
         <damage distance="66" width="180"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4843" name="Bec de Corbin" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_bech_de_corbin_i01">
+    <weapon id="4843" name="Bec de Corbin" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_bech_de_corbin_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -956,7 +956,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4844" name="Bec de Corbin" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_bech_de_corbin_i01">
+    <weapon id="4844" name="Bec de Corbin" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_bech_de_corbin_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -969,7 +969,7 @@
         <damage distance="80" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4845" name="Bec de Corbin" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_bech_de_corbin_i01">
+    <weapon id="4845" name="Bec de Corbin" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_bech_de_corbin_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -983,7 +983,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4846" name="scorpion" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_scorpion_i01">
+    <weapon id="4846" name="scorpion" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_scorpion_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -996,7 +996,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4847" name="scorpion" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_scorpion_i01">
+    <weapon id="4847" name="scorpion" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_scorpion_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -1010,7 +1010,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4848" name="scorpion" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_scorpion_i01">
+    <weapon id="4848" name="scorpion" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_scorpion_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -1023,7 +1023,7 @@
         <damage distance="80" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4849" name="Widow Maker" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_widow_maker_i01">
+    <weapon id="4849" name="Widow Maker" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_widow_maker_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -1037,7 +1037,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4850" name="Widow Maker" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_widow_maker_i01">
+    <weapon id="4850" name="Widow Maker" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_widow_maker_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -1050,7 +1050,7 @@
         <damage distance="80" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4851" name="Widow Maker" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_widow_maker_i01">
+    <weapon id="4851" name="Widow Maker" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_widow_maker_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -1063,7 +1063,7 @@
         <damage distance="66" width="180"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4852" name="Orcish Poleaxe" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_orcish_poleaxe_i01">
+    <weapon id="4852" name="Orcish Poleaxe" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_orcish_poleaxe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -1077,7 +1077,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4853" name="Orcish Poleaxe" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_orcish_poleaxe_i01">
+    <weapon id="4853" name="Orcish Poleaxe" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_orcish_poleaxe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -1090,7 +1090,7 @@
         <damage distance="80" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4854" name="Orcish Poleaxe" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_orcish_poleaxe_i01">
+    <weapon id="4854" name="Orcish Poleaxe" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_orcish_poleaxe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -1103,7 +1103,7 @@
         <damage distance="66" width="180"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4855" name="Great Axe" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_great_axe_i01">
+    <weapon id="4855" name="Great Axe" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_great_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -1116,7 +1116,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4856" name="Great Axe" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_great_axe_i01">
+    <weapon id="4856" name="Great Axe" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_great_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -1130,7 +1130,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4857" name="Great Axe" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_great_axe_i01">
+    <weapon id="4857" name="Great Axe" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_great_axe_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -1144,7 +1144,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4858" name="Lance" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_lancia_i01">
+    <weapon id="4858" name="Lance" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_lancia_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -1157,7 +1157,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4859" name="Lance" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_lancia_i01">
+    <weapon id="4859" name="Lance" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_lancia_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -1171,7 +1171,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="4860" name="Lance" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_lancia_i01">
+    <weapon id="4860" name="Lance" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_lancia_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>

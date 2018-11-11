@@ -48,7 +48,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="70307" name="Mysterious Blessed Soulshot (D-grade)" additionalName="Event" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
+    <item stackable="true" id="70307" name="Mysterious Blessed Soulshot (D-grade)" additionalName="Event" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <crystalInfo type="D"/>
@@ -59,7 +59,7 @@
         <weight>0</weight>
         <skill id="55385"/>
     </item>
-    <item stackable="true" id="70306" name="Blessed Mysterious Soulshot (No-grade)" additionalName="Event" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_white_i00">
+    <item stackable="true" id="70306" name="Blessed Mysterious Soulshot (No-grade)" additionalName="Event" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_white_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <handler>BLESSED_SOUL_SHOT</handler>
@@ -69,7 +69,7 @@
         <weight>0</weight>
         <skill id="55384"/>
     </item>
-    <item stackable="true" id="70309" name="Mysterious Blessed Soulshot (B-grade)" additionalName="Event" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_red_i00">
+    <item stackable="true" id="70309" name="Mysterious Blessed Soulshot (B-grade)" additionalName="Event" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_red_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <crystalInfo type="B"/>
@@ -80,7 +80,7 @@
         <weight>0</weight>
         <skill id="55387"/>
     </item>
-    <item stackable="true" id="70308" name="Mysterious Blessed Soulshot (C-grade)" additionalName="Event" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_green_i00">
+    <item stackable="true" id="70308" name="Mysterious Blessed Soulshot (C-grade)" additionalName="Event" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_green_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <crystalInfo type="C"/>
@@ -99,7 +99,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="70310" name="Mysterious Blessed Soulshot (A-grade)" additionalName="Event" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
+    <item stackable="true" id="70310" name="Mysterious Blessed Soulshot (A-grade)" additionalName="Event" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <crystalInfo type="A"/>
@@ -241,7 +241,7 @@
         <weight>0</weight>
     </item>
     <armor id="70329" name="Tryout Glorious Cloak" additionalName="30 days" icon="icon.vesper_cloack_i00">
-        <bodyPart>BACK</bodyPart>
+        <bodyPart>CLOAK</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <questItem>false</questItem>
@@ -283,7 +283,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="70332" name="Olympiad Warrior's Belt" additionalName="Event" type="LIGHT" icon="icon.belt_i03">
+    <armor id="70332" name="Olympiad Warrior's Belt" additionalName="Event" type="LIGHT" subType="BELT" icon="icon.belt_i03">
         <bodyPart>WAIST</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>

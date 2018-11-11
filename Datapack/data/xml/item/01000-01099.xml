@@ -184,7 +184,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item id="1047" name="Spellbook: Light" commissionType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
+    <item id="1047" name="Spellbook: Light" subType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -192,7 +192,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1048" name="Spellbook: Might" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1048" name="Spellbook: Might" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -200,7 +200,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1049" name="Spellbook: Ice Bolt" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="1049" name="Spellbook: Ice Bolt" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -208,7 +208,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1050" name="Spellbook: Battle Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="1050" name="Spellbook: Battle Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -216,7 +216,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1051" name="Spellbook: Vampiric Touch" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="1051" name="Spellbook: Vampiric Touch" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -224,7 +224,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1052" name="Spellbook: Flame Strike" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="1052" name="Spellbook: Flame Strike" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -232,7 +232,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1053" name="Spellbook: Cure Poison" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="1053" name="Spellbook: Cure Poison" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -240,7 +240,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1054" name="Spellbook: Group Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="1054" name="Spellbook: Group Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -248,7 +248,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1055" name="Spellbook: Curse Poison" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="1055" name="Spellbook: Curse Poison" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -256,7 +256,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1056" name="Spellbook: Curse Weakness" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="1056" name="Spellbook: Curse Weakness" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -264,7 +264,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item id="1057" name="Spellbook: Summon Meal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item id="1057" name="Spellbook: Summon Meal" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -272,7 +272,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1058" name="Spellbook: Shield" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1058" name="Spellbook: Shield" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -280,7 +280,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item id="1059" name="Spellbook: Know Enemy" commissionType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
+    <item id="1059" name="Spellbook: Know Enemy" subType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -288,7 +288,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1060" name="Healing Potion" type="POTION" commissionType="POTION" icon="icon.etc_lesser_potion_red_i00">
+    <item stackable="true" id="1060" name="Healing Potion" type="POTION" subType="POTION" icon="icon.etc_lesser_potion_red_i00">
         <price>90</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -303,7 +303,7 @@
         </condition>
         <skill id="2031"/>
     </item>
-    <item stackable="true" id="1061" name="Major Healing Potion" type="POTION" commissionType="POTION" icon="icon.etc_potion_scarlet_i00">
+    <item stackable="true" id="1061" name="Major Healing Potion" type="POTION" subType="POTION" icon="icon.etc_potion_scarlet_i00">
         <price>330</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -366,7 +366,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1073" name="Healing Potion (Novice)" type="POTION" commissionType="POTION" icon="icon.etc_potion_red_i00">
+    <item stackable="true" id="1073" name="Healing Potion (Novice)" type="POTION" subType="POTION" icon="icon.etc_potion_red_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -528,7 +528,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1095" name="Spellbook: Attack Aura" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+    <item stackable="true" id="1095" name="Spellbook: Attack Aura" subType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
         <price>75</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -536,7 +536,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1096" name="Spellbook: Elemental Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
+    <item stackable="true" id="1096" name="Spellbook: Elemental Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_efighter_i00">
         <price>550</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -544,7 +544,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1097" name="Spellbook: Drain HP" commissionType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
+    <item stackable="true" id="1097" name="Spellbook: Drain HP" subType="SPELLBOOK" icon="icon.etc_spell_books_defighter_i00">
         <price>7461</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -552,7 +552,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1098" name="Spellbook: Wind Walk" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1098" name="Spellbook: Wind Walk" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -560,7 +560,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1099" name="Spellbook: Wind Shackle" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="1099" name="Spellbook: Wind Shackle" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>500</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -568,7 +568,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <armor id="1000" name="Fist010" commissionType="GLOVES" icon="icon.item_normal07">
+    <armor id="1000" name="Fist010" subType="GLOVES" icon="icon.item_normal07">
         <bodyPart>GLOVES</bodyPart>
         <price>37</price>
         <restriction freightable="false"/>

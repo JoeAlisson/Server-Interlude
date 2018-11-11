@@ -5,7 +5,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.CharacterShortcutsRepository;
 import org.l2j.gameserver.network.serverpackets.ExAutoSoulShot;
 import org.l2j.gameserver.network.serverpackets.ShortCutInit;
-import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.SubType;
 
 import java.util.Map;
 import java.util.TreeMap;
@@ -75,7 +75,7 @@ public class ShortCuts
 		{
 			L2ItemInstance item = _owner.getInventory().getItemByObjectId(old.getId());
 			
-			if ((item != null) && (item.getCommissionType() == CommissionType.SOULSHOT  || item.getCommissionType() == CommissionType.SPIRITSHOT))
+			if ((item != null) && (item.getCommissionType() == SubType.SOULSHOT  || item.getCommissionType() == SubType.SPIRITSHOT))
 			{
 				_owner.removeAutoSoulShot(item.getId());
 				_owner.sendPacket(new ExAutoSoulShot(item.getId(), 0));

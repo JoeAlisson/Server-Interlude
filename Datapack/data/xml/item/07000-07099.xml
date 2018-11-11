@@ -72,7 +72,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <weapon id="7058" name="Souvenir Darbuka" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_chrono_darbuka_i00">
+    <weapon id="7058" name="Souvenir Darbuka" type="BLUNT" subType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_chrono_darbuka_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>0</price>
         <restriction dropable="false" freightable="false"/>

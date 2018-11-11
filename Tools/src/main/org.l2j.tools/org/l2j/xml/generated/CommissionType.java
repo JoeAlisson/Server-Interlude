@@ -13,12 +13,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java de CommissionType.
+ * <p>Classe Java de SubType.
  * 
  * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * <p>
  * <pre>
- * &lt;simpleType name="CommissionType"&gt;
+ * &lt;simpleType name="SubType"&gt;
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
  *     &lt;enumeration value="HAIR_ACCESSORY"/&gt;
  *     &lt;enumeration value="TWO_HAND_SWORD"/&gt;

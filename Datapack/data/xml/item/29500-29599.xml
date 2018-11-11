@@ -666,7 +666,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="29575" name="Queen Ant's Ring" additionalName="30-day" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i00">
+    <armor id="29575" name="Queen Ant's Ring" additionalName="30-day" subType="RING" icon="icon.accessory_ring_of_queen_ant_i00">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
@@ -676,7 +676,7 @@
         <weight>150</weight>
         <skill id="3562"/>
         </armor>
-    <armor id="29576" name="Orfen's Earring" additionalName="30-day" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i00">
+    <armor id="29576" name="Orfen's Earring" additionalName="30-day" subType="EARRING" icon="icon.accessory_earring_of_orfen_i00">
         <bodyPart>EAR</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
@@ -686,7 +686,7 @@
         <weight>150</weight>
         <skill id="3560"/>
         </armor>
-    <armor id="29577" name="Ring of Core" additionalName="30-day" commissionType="RING" icon="icon.accessory_ring_of_core_i00">
+    <armor id="29577" name="Ring of Core" additionalName="30-day" subType="RING" icon="icon.accessory_ring_of_core_i00">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>

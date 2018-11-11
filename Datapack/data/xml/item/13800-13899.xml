@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <armor id="13894" name="Rag Belt" type="LIGHT" icon="icon.armor_belt_i00">
+    <armor id="13894" name="Rag Belt" type="LIGHT" subType="BELT" icon="icon.armor_belt_i00">
         <bodyPart>WAIST</bodyPart>
         <price>45100</price>
         <crystalInfo type="C"/>
@@ -9,7 +9,7 @@
         <time>-1</time>
         <weight>500</weight>
         </armor>
-    <armor id="13895" name="Leather Belt" type="LIGHT" icon="icon.armor_belt_i01">
+    <armor id="13895" name="Leather Belt" type="LIGHT" subType="BELT" icon="icon.armor_belt_i01">
         <bodyPart>WAIST</bodyPart>
         <price>165000</price>
         <crystalInfo type="B"/>
@@ -18,7 +18,7 @@
         <time>-1</time>
         <weight>480</weight>
         </armor>
-    <armor id="13896" name="Iron Belt" type="LIGHT" icon="icon.armor_belt_i02">
+    <armor id="13896" name="Iron Belt" type="LIGHT" subType="BELT" icon="icon.armor_belt_i02">
         <bodyPart>WAIST</bodyPart>
         <price>371300</price>
         <crystalInfo type="A"/>
@@ -27,7 +27,7 @@
         <time>-1</time>
         <weight>460</weight>
         </armor>
-    <armor id="13897" name="Mithril Belt" type="LIGHT" icon="icon.armor_belt_i03">
+    <armor id="13897" name="Mithril Belt" type="LIGHT" subType="BELT" icon="icon.armor_belt_i03">
         <bodyPart>WAIST</bodyPart>
         <price>1917000</price>
         <crystalInfo type="S"/>

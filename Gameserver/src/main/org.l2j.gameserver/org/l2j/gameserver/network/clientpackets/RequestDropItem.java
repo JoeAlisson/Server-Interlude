@@ -26,7 +26,7 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
 import org.l2j.gameserver.util.IllegalPlayerAction;
@@ -179,7 +179,7 @@ public final class RequestDropItem extends L2GameClientPacket
 			activeChar.sendPacket(iu);
 			activeChar.broadcastUserInfo();
 			
-			ItemList il = new ItemList(activeChar, true);
+			ItemListPacket il = new ItemListPacket(activeChar, true);
 			activeChar.sendPacket(il);
 		}
 		

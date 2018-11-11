@@ -23,7 +23,7 @@ import org.l2j.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2j.gameserver.model.ItemLocation;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.L2World;
-import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.SubType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -75,7 +75,7 @@ public class ItemsAutoDestroy {
             if ((item == null) || (item.getDropTime() == 0) || (item.getLocation() != ItemLocation.VOID)) {
                 _items.remove(item);
             } else {
-                if (item.getCommissionType() == CommissionType.HERB) {
+                if (item.getCommissionType() == SubType.HERB) {
                     if ((curtime - item.getDropTime()) > Config.HERB_AUTO_DESTROY_TIME) {
                         L2World.getInstance().removeVisibleObject(item, item.getWorldRegion());
                         L2World.getInstance().removeObject(item);

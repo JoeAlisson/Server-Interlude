@@ -368,7 +368,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 				}
 				else
 				{
-					activeChar.sendPacket(new ItemList(activeChar, true));
+					activeChar.sendPacket(new ItemListPacket(activeChar, true));
 				}
 				
 				StatusUpdate su = new StatusUpdate(activeChar.getObjectId());
@@ -394,7 +394,7 @@ public final class RequestEnchantItem extends L2GameClientPacket
 		su = null;
 		
 		activeChar.sendPacket(new EnchantResult(item.getEnchantLevel())); // FIXME i'm really not sure about this...
-		activeChar.sendPacket(new ItemList(activeChar, false)); // TODO update only the enchanted item
+		activeChar.sendPacket(new ItemListPacket(activeChar, false)); // TODO update only the enchanted item
 		activeChar.broadcastUserInfo();
 	}
 	

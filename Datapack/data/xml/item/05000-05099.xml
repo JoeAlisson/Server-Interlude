@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <item stackable="true" id="5000" name="Recipe: Damascus Sword (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5000" name="Recipe: Damascus Sword (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>262000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -10,7 +10,7 @@
         <weight>30</weight>
         <recipeId>458</recipeId>
     </item>
-    <item stackable="true" id="5001" name="Recipe: Lance (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5001" name="Recipe: Lance (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>262000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -20,7 +20,7 @@
         <weight>30</weight>
         <recipeId>460</recipeId>
     </item>
-    <item stackable="true" id="5002" name="Recipe: Deadman's Glory (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5002" name="Recipe: Deadman's Glory (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>262000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -30,7 +30,7 @@
         <weight>30</weight>
         <recipeId>462</recipeId>
     </item>
-    <item stackable="true" id="5003" name="Recipe: Art of Battle Axe (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5003" name="Recipe: Art of Battle Axe (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>262000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -40,7 +40,7 @@
         <weight>30</weight>
         <recipeId>464</recipeId>
     </item>
-    <item stackable="true" id="5004" name="Recipe: Staff of Evil Spirits (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5004" name="Recipe: Staff of Evil Spirits (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>262000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -50,7 +50,7 @@
         <weight>30</weight>
         <recipeId>466</recipeId>
     </item>
-    <item stackable="true" id="5005" name="Recipe: Demon's Dagger (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5005" name="Recipe: Demon's Dagger (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>262000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -60,7 +60,7 @@
         <weight>30</weight>
         <recipeId>468</recipeId>
     </item>
-    <item stackable="true" id="5006" name="Recipe: Bellion Cestus (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5006" name="Recipe: Bellion Cestus (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>262000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -70,7 +70,7 @@
         <weight>30</weight>
         <recipeId>470</recipeId>
     </item>
-    <item stackable="true" id="5007" name="Recipe: Bow of Peril (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5007" name="Recipe: Bow of Peril (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>262000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -80,7 +80,7 @@
         <weight>30</weight>
         <recipeId>472</recipeId>
     </item>
-    <item stackable="true" id="5008" name="Recipe: Pata (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="5008" name="Recipe: Pata (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>156600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -124,7 +124,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="5013" name="Spellbook: Elemental Assault" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="5013" name="Spellbook: Elemental Assault" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -132,7 +132,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="5014" name="Spellbook: Elemental Symphony" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="5014" name="Spellbook: Elemental Symphony" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -140,7 +140,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="5015" name="Spellbook: Elemental Storm" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="5015" name="Spellbook: Elemental Storm" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>

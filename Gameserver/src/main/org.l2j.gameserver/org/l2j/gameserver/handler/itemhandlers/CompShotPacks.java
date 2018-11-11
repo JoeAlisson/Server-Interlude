@@ -23,7 +23,7 @@ import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
@@ -107,7 +107,7 @@ public class CompShotPacks implements IItemHandler
 		sm.addNumber(amount);
 		activeChar.sendPacket(sm);
 		
-		ItemList playerUI = new ItemList(activeChar, false);
+		ItemListPacket playerUI = new ItemListPacket(activeChar, false);
 		activeChar.sendPacket(playerUI);
 	}
 	

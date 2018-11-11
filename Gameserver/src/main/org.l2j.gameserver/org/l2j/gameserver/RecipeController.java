@@ -484,7 +484,7 @@ public class RecipeController {
             updateCurLoad();
             _activeMakers.remove(_player);
             _player.isInCraftMode(false);
-            _target.sendPacket(new ItemList(_target, false));
+            _target.sendPacket(new ItemListPacket(_target, false));
         }
 
         private void updateMakeInfo(boolean success) {

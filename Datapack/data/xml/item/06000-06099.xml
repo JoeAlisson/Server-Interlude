@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <item stackable="true" id="6035" name="Magic Haste Potion" type="POTION" commissionType="POTION" icon="icon.etc_potion_of_acumen2_i00">
+    <item stackable="true" id="6035" name="Magic Haste Potion" type="POTION" subType="POTION" icon="icon.etc_potion_of_acumen2_i00">
         <price>2400</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -10,7 +10,7 @@
         <weight>20</weight>
         <skill id="2169"/>
     </item>
-    <item stackable="true" id="6036" name="Greater Magic Haste Potion" type="POTION" commissionType="POTION" icon="icon.etc_potion_of_acumen3_i00">
+    <item stackable="true" id="6036" name="Greater Magic Haste Potion" type="POTION" subType="POTION" icon="icon.etc_potion_of_acumen3_i00">
         <price>3400</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -25,7 +25,7 @@
         </condition>
         <skill id="2169" level="2"/>
     </item>
-    <item stackable="true" id="6037" name="Scroll: Cancel Sleep" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_piece_of_paper_white_i00">
+    <item stackable="true" id="6037" name="Scroll: Cancel Sleep" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_piece_of_paper_white_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>

@@ -7,9 +7,10 @@ import org.l2j.gameserver.model.base.Experience;
 import org.l2j.gameserver.model.entity.Heroes;
 import org.l2j.gameserver.model.entity.database.repository.AugmentationsRepository;
 import org.l2j.gameserver.model.entity.database.repository.CharacterSubclassesRepository;
+import org.l2j.gameserver.templates.base.PaperDoll;
 
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
-import static org.l2j.gameserver.factory.ItemHelper.*;
+import static org.l2j.gameserver.templates.base.PaperDoll.*;
 
 public class CharSelectInfo extends L2GameServerPacket {
 
@@ -107,58 +108,27 @@ public class CharSelectInfo extends L2GameServerPacket {
             writeInt(0x00); // Unk
 
             var paperdoll = PcInventory.restoreVisibleInventory(character.getObjectId());
+            for (PaperDoll slot : PaperDoll.values()) {
+                writeInt(paperdoll[slot.getMask()][1]);
+            }
 
-            writeInt(paperdoll[PAPERDOLL_UNDERWEAR][1]);
-            writeInt(paperdoll[PAPERDOLL_LEFT_EAR][1]);
-            writeInt(paperdoll[PAPERDOLL_RIGHT_EAR][1]);
-            writeInt(paperdoll[PAPERDOLL_NECK][1]);
-            writeInt(paperdoll[PAPERDOLL_LEFT_FINGER][1]);
-            writeInt(paperdoll[PAPERDOLL_RIGHT_FINGER][1]);
-            writeInt(paperdoll[PAPERDOLL_HEAD][1]);
-            writeInt(paperdoll[PAPERDOLL_RIGHT_HAND][1]);
-            writeInt(paperdoll[PAPERDOLL_LEFT_HAND][1]);
-            writeInt(paperdoll[PAPERDOLL_GLOVES][1]);
-            writeInt(paperdoll[PAPERDOLL_CHEST][1]);
-            writeInt(paperdoll[PAPERDOLL_LEGS][1]);
-            writeInt(paperdoll[PAPERDOLL_FEET][1]);
-            writeInt(paperdoll[PAPERDOLL_BACK][1]);
-            writeInt(paperdoll[PAPERDOLL_TWO_HANDS][1]);
-            writeInt(paperdoll[PAPERDOLL_HAIR][1]);
-            writeInt(paperdoll[PAPERDOLL_HAIR_DOWN][1]);
-            writeInt(paperdoll[PAPERDOLL_RIGHT_BRACELET][1]);
-            writeInt(paperdoll[PAPERDOLL_LEFT_BRACELET][1]);
-            writeInt(paperdoll[PAPERDOLL_DECO1][1]);
-            writeInt(paperdoll[PAPERDOLL_DECO2][1]);
-            writeInt(paperdoll[PAPERDOLL_DECO3][1]);
-            writeInt(paperdoll[PAPERDOLL_DECO4][1]);
-            writeInt(paperdoll[PAPERDOLL_DECO5][1]);
-            writeInt(paperdoll[PAPERDOLL_DECO6][1]);
-            writeInt(paperdoll[PAPERDOLL_WAIST][1]);
-            writeInt(paperdoll[PAPERDOLL_BROOCH][1]);
-            writeInt(paperdoll[PAPERDOLL_JEWEL1][1]);
-            writeInt(paperdoll[PAPERDOLL_JEWEL2][1]);
-            writeInt(paperdoll[PAPERDOLL_JEWEL3][1]);
-            writeInt(paperdoll[PAPERDOLL_JEWEL4][1]);
-            writeInt(paperdoll[PAPERDOLL_JEWEL5][1]);
-            writeInt(paperdoll[PAPERDOLL_JEWEL6][1]);
+            writeInt(paperdoll[RIGHT_HAND.getMask()][1]); // Visible Itens
+            writeInt(paperdoll[LEFT_HAND.getMask()][1]);
+            writeInt(paperdoll[GLOVES.getMask()][1]);
+            writeInt(paperdoll[CHEST.getMask()][1]);
+            writeInt(paperdoll[LEGS.getMask()][1]);
+            writeInt(paperdoll[FEET.getMask()][1]);
+            writeInt(paperdoll[TWO_HANDS.getMask()][1]);
+            writeInt(paperdoll[HAIR.getMask()][1]);
+            writeInt(paperdoll[HAIR_DOWN.getMask()][1]);
 
-            writeInt(paperdoll[PAPERDOLL_RIGHT_HAND][1]); // Visible Itens
-            writeInt(paperdoll[PAPERDOLL_LEFT_HAND][1]);
-            writeInt(paperdoll[PAPERDOLL_GLOVES][1]);
-            writeInt(paperdoll[PAPERDOLL_CHEST][1]);
-            writeInt(paperdoll[PAPERDOLL_LEGS][1]);
-            writeInt(paperdoll[PAPERDOLL_FEET][1]);
-            writeInt(paperdoll[PAPERDOLL_TWO_HANDS][1]);
-            writeInt(paperdoll[PAPERDOLL_HAIR][1]);
-            writeInt(paperdoll[PAPERDOLL_HAIR_DOWN][1]);
+            writeShort(paperdoll[CHEST.getMask()][2]);
+            writeShort(paperdoll[LEGS.getMask()][2]);
+            writeShort(paperdoll[HEAD.getMask()][2]);
+            writeShort(paperdoll[GLOVES.getMask()][2]);
+            writeShort(paperdoll[FEET.getMask()][2]);
 
-            writeShort(paperdoll[PAPERDOLL_CHEST][2]);
-            writeShort(paperdoll[PAPERDOLL_LEGS][2]);
-            writeShort(paperdoll[PAPERDOLL_HEAD][2]);
-            writeShort(paperdoll[PAPERDOLL_GLOVES][2]);
-            writeShort(paperdoll[PAPERDOLL_FEET][2]);
-
-            writeInt(paperdoll[PAPERDOLL_HAIR][1] > 0 ? character.getSex() : character.getHairStyle());
+            writeInt(paperdoll[HAIR.getMask()][1] > 0 ? character.getSex() : character.getHairStyle());
             writeInt(character.getHairColor());
             writeInt(character.getFace());
 
@@ -176,14 +146,14 @@ public class CharSelectInfo extends L2GameServerPacket {
             writeInt(character.getClassId());
             writeInt(i == activeId ? 0x01 : 0x00);
 
-            var enchantEffect = paperdoll[PAPERDOLL_RIGHT_HAND][2];
+            var enchantEffect = paperdoll[RIGHT_HAND.getMask()][2];
             if (enchantEffect <= 0) {
-                enchantEffect = paperdoll[PAPERDOLL_TWO_HANDS][2];
+                enchantEffect = paperdoll[TWO_HANDS.getMask()][2];
             }
 
             writeByte(enchantEffect > 127 ? 127 : enchantEffect);
 
-            int weaponObjId = paperdoll[PAPERDOLL_TWO_HANDS][0];
+            int weaponObjId = paperdoll[TWO_HANDS.getMask()][0];
             if (weaponObjId < 1) {
                 weaponObjId = paperdoll[Inventory.PAPERDOLL_RHAND][0];
             }

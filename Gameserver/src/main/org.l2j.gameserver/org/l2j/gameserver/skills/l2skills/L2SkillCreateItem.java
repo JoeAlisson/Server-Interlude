@@ -25,7 +25,7 @@ import org.l2j.gameserver.model.L2Object;
 import org.l2j.gameserver.model.L2Skill;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.base.StatsSet;
 
@@ -97,7 +97,7 @@ public class L2SkillCreateItem extends L2Skill
 			smsg.addItemName(item.getId());
 			activeChar.sendPacket(smsg);
 		}
-		ItemList il = new ItemList(activeChar, false);
+		ItemListPacket il = new ItemListPacket(activeChar, false);
 		activeChar.sendPacket(il);
 	}
 }

@@ -45,7 +45,7 @@ public class MultiSellList extends L2GameServerPacket
 				{
 					writeShort(i.getItemId());
 					writeInt(0);
-					writeShort(ItemTable.getInstance().getTemplate(i.getItemId()).getCommissionType().ordinal());
+					writeShort(ItemTable.getInstance().getTemplate(i.getItemId()).getSubType().ordinal());
 					writeInt(i.getItemCount());
 					writeShort(i.getEnchantmentLevel()); // enchtant lvl
 					writeInt(0x00); // C6
@@ -58,7 +58,7 @@ public class MultiSellList extends L2GameServerPacket
 					int typeE = 65535;
 					if (items != 65336)
 					{
-						typeE = ItemTable.getInstance().getTemplate(i.getItemId()).getCommissionType().ordinal();
+						typeE = ItemTable.getInstance().getTemplate(i.getItemId()).getSubType().ordinal();
 					}
 					writeShort(items); // ID
 					writeShort(typeE);

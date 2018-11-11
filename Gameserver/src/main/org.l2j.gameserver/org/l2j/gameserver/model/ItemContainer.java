@@ -120,7 +120,7 @@ public abstract class ItemContainer {
 
         for (L2ItemInstance item : _items) {
             if ((item.getId() == itemId) && ((item.getEnchantLevel() == enchantLevel) || (enchantLevel < 0))) {
-                // if (item.isAvailable((L2PcInstance)getOwner(), true) || item.getItem().getType2() == 3)//available or quest item
+                // if (item.isAvailable((L2PcInstance)getOwner(), true) || item.getItem().getSubType() == 3)//available or quest item
                 if (item.isStackable()) {
                     count = item.getCount();
                 } else {

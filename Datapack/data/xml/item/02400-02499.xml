@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <armor id="2432" name="Dwarven Chain Boots" commissionType="FEET" icon="icon.armor_t60_b_i00">
+    <armor id="2432" name="Dwarven Chain Boots" subType="FEET" icon="icon.armor_t60_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>126000</price>
         <restriction freightable="false"/>
@@ -10,7 +10,7 @@
         <time>-1</time>
         <weight>1210</weight>
         </armor>
-    <armor id="2433" name="Boots of Seal" commissionType="FEET" icon="icon.armor_t44_b_i00">
+    <armor id="2433" name="Boots of Seal" subType="FEET" icon="icon.armor_t44_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>126000</price>
         <restriction freightable="false"/>
@@ -20,7 +20,7 @@
         <time>-1</time>
         <weight>1220</weight>
         </armor>
-    <armor id="2434" name="Rind Leather Boots" commissionType="FEET" icon="icon.armor_t49_b_i00">
+    <armor id="2434" name="Rind Leather Boots" subType="FEET" icon="icon.armor_t49_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>161000</price>
         <restriction freightable="false"/>
@@ -30,7 +30,7 @@
         <time>-1</time>
         <weight>1220</weight>
         </armor>
-    <armor id="2435" name="Demon's Boots" commissionType="FEET" icon="icon.armor_t54_b_i00">
+    <armor id="2435" name="Demon's Boots" subType="FEET" icon="icon.armor_t54_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>245000</price>
         <restriction freightable="false"/>
@@ -40,7 +40,7 @@
         <time>-1</time>
         <weight>1220</weight>
         </armor>
-    <armor id="2436" name="Theca Leather Boots" commissionType="FEET" icon="icon.armor_t63_b_i00">
+    <armor id="2436" name="Theca Leather Boots" subType="FEET" icon="icon.armor_t63_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>275000</price>
         <restriction freightable="false"/>
@@ -50,7 +50,7 @@
         <time>-1</time>
         <weight>1210</weight>
         </armor>
-    <armor id="2437" name="Drake Leather Boots" commissionType="FEET" icon="icon.armor_t45_b_i00">
+    <armor id="2437" name="Drake Leather Boots" subType="FEET" icon="icon.armor_t45_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>358000</price>
         <restriction freightable="false"/>
@@ -60,7 +60,7 @@
         <time>-1</time>
         <weight>1210</weight>
         </armor>
-    <armor id="2438" name="Full Plate Boots" commissionType="FEET" icon="icon.armor_t62_b_i00">
+    <armor id="2438" name="Full Plate Boots" subType="FEET" icon="icon.armor_t62_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>358000</price>
         <restriction freightable="false"/>
@@ -70,7 +70,7 @@
         <time>-1</time>
         <weight>1200</weight>
         </armor>
-    <armor id="2439" name="Sealed Blue Wolf Boots" commissionType="FEET" icon="icon.armor_t68_b_i02">
+    <armor id="2439" name="Sealed Blue Wolf Boots" subType="FEET" icon="icon.armor_t68_b_i02">
         <bodyPart>FEET</bodyPart>
         <price>804000</price>
         <restriction freightable="false"/>
@@ -80,7 +80,7 @@
         <time>-1</time>
         <weight>1130</weight>
         </armor>
-    <armor id="2440" name="Boots of Nightmare" commissionType="FEET" icon="icon.armor_t45_b_i00">
+    <armor id="2440" name="Boots of Nightmare" subType="FEET" icon="icon.armor_t45_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>1355000</price>
         <restriction freightable="false"/>
@@ -90,7 +90,7 @@
         <time>-1</time>
         <weight>1110</weight>
         </armor>
-    <armor id="2446" name="Reinforced Leather Gloves" commissionType="GLOVES" icon="icon.armor_t13_g_i00">
+    <armor id="2446" name="Reinforced Leather Gloves" subType="GLOVES" icon="icon.armor_t13_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>50800</price>
         <restriction freightable="false"/>
@@ -100,7 +100,7 @@
         <time>-1</time>
         <weight>640</weight>
         </armor>
-    <armor id="2447" name="Gloves of Knowledge" commissionType="GLOVES" icon="icon.armor_t41_g_i00">
+    <armor id="2447" name="Gloves of Knowledge" subType="GLOVES" icon="icon.armor_t41_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>50800</price>
         <restriction freightable="false"/>
@@ -110,7 +110,7 @@
         <time>-1</time>
         <weight>640</weight>
         </armor>
-    <armor id="2448" name="Manticore Skin Gloves" commissionType="GLOVES" icon="icon.armor_t42_g_i00">
+    <armor id="2448" name="Manticore Skin Gloves" subType="GLOVES" icon="icon.armor_t42_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>74700</price>
         <restriction freightable="false"/>
@@ -120,7 +120,7 @@
         <time>-1</time>
         <weight>630</weight>
         </armor>
-    <armor id="2449" name="Brigandine Gauntlets" commissionType="GLOVES" icon="icon.armor_t43_g_i00">
+    <armor id="2449" name="Brigandine Gauntlets" subType="GLOVES" icon="icon.armor_t43_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>74700</price>
         <restriction freightable="false"/>
@@ -130,7 +130,7 @@
         <time>-1</time>
         <weight>630</weight>
         </armor>
-    <armor id="2450" name="Elven Mithril Gloves" commissionType="GLOVES" icon="icon.armor_t51_g_i00">
+    <armor id="2450" name="Elven Mithril Gloves" subType="GLOVES" icon="icon.armor_t51_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>74700</price>
         <restriction freightable="false"/>
@@ -140,7 +140,7 @@
         <time>-1</time>
         <weight>640</weight>
         </armor>
-    <armor id="2451" name="Sage's Worn Gloves" commissionType="GLOVES" icon="icon.armor_t44_g_i00">
+    <armor id="2451" name="Sage's Worn Gloves" subType="GLOVES" icon="icon.armor_t44_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>97800</price>
         <restriction freightable="false"/>
@@ -150,7 +150,7 @@
         <time>-1</time>
         <weight>630</weight>
         </armor>
-    <armor id="2452" name="Reinforced Mithril Gloves" commissionType="GLOVES" icon="icon.armor_t47_g_i00">
+    <armor id="2452" name="Reinforced Mithril Gloves" subType="GLOVES" icon="icon.armor_t47_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>126000</price>
         <restriction freightable="false"/>
@@ -160,7 +160,7 @@
         <time>-1</time>
         <weight>620</weight>
         </armor>
-    <armor id="2453" name="Chain Gloves" commissionType="GLOVES" icon="icon.armor_t48_g_i00">
+    <armor id="2453" name="Chain Gloves" subType="GLOVES" icon="icon.armor_t48_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>126000</price>
         <restriction freightable="false"/>
@@ -170,7 +170,7 @@
         <time>-1</time>
         <weight>620</weight>
         </armor>
-    <armor id="2454" name="Karmian Gloves" commissionType="GLOVES" icon="icon.armor_t53_g_i00">
+    <armor id="2454" name="Karmian Gloves" subType="GLOVES" icon="icon.armor_t53_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>126000</price>
         <restriction freightable="false"/>
@@ -180,7 +180,7 @@
         <time>-1</time>
         <weight>620</weight>
         </armor>
-    <armor id="2455" name="Plated Leather Gloves" commissionType="GLOVES" icon="icon.armor_t47_g_i00">
+    <armor id="2455" name="Plated Leather Gloves" subType="GLOVES" icon="icon.armor_t47_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>149000</price>
         <restriction freightable="false"/>
@@ -190,7 +190,7 @@
         <time>-1</time>
         <weight>610</weight>
         </armor>
-    <armor id="2456" name="Dwarven Chain Gloves" commissionType="GLOVES" icon="icon.armor_t60_g_i00">
+    <armor id="2456" name="Dwarven Chain Gloves" subType="GLOVES" icon="icon.armor_t60_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>161000</price>
         <restriction freightable="false"/>
@@ -200,7 +200,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <armor id="2457" name="Gloves of Seal" commissionType="GLOVES" icon="icon.armor_t44_g_i00">
+    <armor id="2457" name="Gloves of Seal" subType="GLOVES" icon="icon.armor_t44_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>161000</price>
         <restriction freightable="false"/>
@@ -210,7 +210,7 @@
         <time>-1</time>
         <weight>620</weight>
         </armor>
-    <armor id="2458" name="Rind Leather Gloves" commissionType="GLOVES" icon="icon.armor_t49_g_i00">
+    <armor id="2458" name="Rind Leather Gloves" subType="GLOVES" icon="icon.armor_t49_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>161000</price>
         <restriction freightable="false"/>
@@ -220,7 +220,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <armor id="2459" name="Demon's Gloves" commissionType="GLOVES" icon="icon.armor_t54_g_i00">
+    <armor id="2459" name="Demon's Gloves" subType="GLOVES" icon="icon.armor_t54_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>245000</price>
         <restriction freightable="false"/>
@@ -230,7 +230,7 @@
         <time>-1</time>
         <weight>610</weight>
         </armor>
-    <armor id="2460" name="Theca Leather Gloves" commissionType="GLOVES" icon="icon.armor_t63_g_i00">
+    <armor id="2460" name="Theca Leather Gloves" subType="GLOVES" icon="icon.armor_t63_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>275000</price>
         <restriction freightable="false"/>
@@ -240,7 +240,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <armor id="2461" name="Drake Leather Gloves" commissionType="GLOVES" icon="icon.armor_t45_g_i00">
+    <armor id="2461" name="Drake Leather Gloves" subType="GLOVES" icon="icon.armor_t45_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>358000</price>
         <restriction freightable="false"/>
@@ -250,7 +250,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <armor id="2462" name="Full Plate Gauntlets" commissionType="GLOVES" icon="icon.armor_t62_g_i00">
+    <armor id="2462" name="Full Plate Gauntlets" subType="GLOVES" icon="icon.armor_t62_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>358000</price>
         <restriction freightable="false"/>
@@ -260,7 +260,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <armor id="2463" name="Divine Gloves" commissionType="GLOVES" icon="icon.armor_t57_g_i00">
+    <armor id="2463" name="Divine Gloves" subType="GLOVES" icon="icon.armor_t57_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>358000</price>
         <restriction freightable="false"/>
@@ -270,7 +270,7 @@
         <time>-1</time>
         <weight>610</weight>
         </armor>
-    <armor id="2464" name="Sealed Avadon Gloves" commissionType="GLOVES" icon="icon.armor_t66_g_i02">
+    <armor id="2464" name="Sealed Avadon Gloves" subType="GLOVES" icon="icon.armor_t66_g_i02">
         <bodyPart>GLOVES</bodyPart>
         <price>519000</price>
         <restriction freightable="false"/>
@@ -280,7 +280,7 @@
         <time>-1</time>
         <weight>590</weight>
         </armor>
-    <armor id="2465" name="Chain Gloves of Silence" commissionType="GLOVES" icon="icon.armor_t65_g_i00">
+    <armor id="2465" name="Chain Gloves of Silence" subType="GLOVES" icon="icon.armor_t65_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>519000</price>
         <restriction freightable="false"/>
@@ -290,7 +290,7 @@
         <time>-1</time>
         <weight>590</weight>
         </armor>
-    <armor id="2466" name="Guardian's Gloves" commissionType="GLOVES" icon="icon.armor_t67_g_i00">
+    <armor id="2466" name="Guardian's Gloves" subType="GLOVES" icon="icon.armor_t67_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>399100</price>
         <restriction freightable="false"/>
@@ -300,7 +300,7 @@
         <time>-1</time>
         <weight>590</weight>
         </armor>
-    <armor id="2468" name="Blessed Gloves" commissionType="GLOVES" icon="icon.armor_t67_g_i00">
+    <armor id="2468" name="Blessed Gloves" subType="GLOVES" icon="icon.armor_t67_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>358000</price>
         <restriction freightable="false"/>
@@ -310,7 +310,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <armor id="2472" name="Dark Crystal Gloves" commissionType="GLOVES" icon="icon.armor_t15_g_i00">
+    <armor id="2472" name="Dark Crystal Gloves" subType="GLOVES" icon="icon.armor_t15_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>890000</price>
         <restriction freightable="false"/>
@@ -320,7 +320,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2475" name="Sealed Doom Gloves" commissionType="GLOVES" icon="icon.armor_t71_g_i02">
+    <armor id="2475" name="Sealed Doom Gloves" subType="GLOVES" icon="icon.armor_t71_g_i02">
         <bodyPart>GLOVES</bodyPart>
         <price>804000</price>
         <restriction freightable="false"/>
@@ -330,7 +330,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2478" name="Tallum Gloves" commissionType="GLOVES" icon="icon.armor_t77_g_i02">
+    <armor id="2478" name="Tallum Gloves" subType="GLOVES" icon="icon.armor_t77_g_i02">
         <bodyPart>GLOVES</bodyPart>
         <price>890000</price>
         <restriction freightable="false"/>
@@ -340,7 +340,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2479" name="Gauntlets of Nightmare" commissionType="GLOVES" icon="icon.armor_t45_g_i00">
+    <armor id="2479" name="Gauntlets of Nightmare" subType="GLOVES" icon="icon.armor_t45_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>1355000</price>
         <restriction freightable="false"/>
@@ -350,7 +350,7 @@
         <time>-1</time>
         <weight>550</weight>
         </armor>
-    <armor id="2480" name="Elemental Gloves" commissionType="GLOVES" icon="icon.armor_t71_g_i00">
+    <armor id="2480" name="Elemental Gloves" subType="GLOVES" icon="icon.armor_t71_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>804000</price>
         <restriction freightable="false"/>
@@ -360,7 +360,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2481" name="Gloves of Grace" commissionType="GLOVES" icon="icon.armor_t71_g_i00">
+    <armor id="2481" name="Gloves of Grace" subType="GLOVES" icon="icon.armor_t71_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>804000</price>
         <restriction freightable="false"/>
@@ -370,7 +370,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2482" name="Majestic Gauntlets" commissionType="GLOVES" icon="icon.armor_t15_g_i00">
+    <armor id="2482" name="Majestic Gauntlets" subType="GLOVES" icon="icon.armor_t15_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>1355000</price>
         <restriction freightable="false"/>
@@ -380,7 +380,7 @@
         <time>-1</time>
         <weight>540</weight>
         </armor>
-    <armor id="2485" name="Implosion Gauntlets" commissionType="GLOVES" icon="icon.armor_t68_g_i00">
+    <armor id="2485" name="Implosion Gauntlets" subType="GLOVES" icon="icon.armor_t68_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>804000</price>
         <restriction freightable="false"/>
@@ -390,7 +390,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2486" name="Paradia Gloves" commissionType="GLOVES" icon="icon.armor_t68_g_i00">
+    <armor id="2486" name="Paradia Gloves" subType="GLOVES" icon="icon.armor_t68_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>804000</price>
         <restriction freightable="false"/>
@@ -400,7 +400,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2487" name="Sealed Blue Wolf Gloves" commissionType="GLOVES" icon="icon.armor_t68_g_i02">
+    <armor id="2487" name="Sealed Blue Wolf Gloves" subType="GLOVES" icon="icon.armor_t68_g_i02">
         <bodyPart>GLOVES</bodyPart>
         <price>804000</price>
         <restriction freightable="false"/>
@@ -410,7 +410,7 @@
         <time>-1</time>
         <weight>590</weight>
         </armor>
-    <armor id="2493" name="Brigandine Shield" commissionType="SHIELD" icon="icon.shield_brigandine_shield_i00">
+    <armor id="2493" name="Brigandine Shield" subType="SHIELD" icon="icon.shield_brigandine_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>78400</price>
         <restriction freightable="false"/>
@@ -420,7 +420,7 @@
         <time>-1</time>
         <weight>1320</weight>
         </armor>
-    <armor id="2494" name="Plate Shield" commissionType="SHIELD" icon="icon.shield_plate_shield_i00">
+    <armor id="2494" name="Plate Shield" subType="SHIELD" icon="icon.shield_plate_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>103000</price>
         <restriction freightable="false"/>
@@ -430,7 +430,7 @@
         <time>-1</time>
         <weight>1310</weight>
         </armor>
-    <armor id="2495" name="Chain Shield" commissionType="SHIELD" icon="icon.shield_chain_shield_i00">
+    <armor id="2495" name="Chain Shield" subType="SHIELD" icon="icon.shield_chain_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>133000</price>
         <restriction freightable="false"/>
@@ -440,7 +440,7 @@
         <time>-1</time>
         <weight>1280</weight>
         </armor>
-    <armor id="2496" name="Dwarven Chain Shield" commissionType="SHIELD" icon="icon.shield_dwarven_chain_shield_i00">
+    <armor id="2496" name="Dwarven Chain Shield" subType="SHIELD" icon="icon.shield_dwarven_chain_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>156000</price>
         <restriction freightable="false"/>
@@ -450,7 +450,7 @@
         <time>-1</time>
         <weight>1280</weight>
         </armor>
-    <armor id="2497" name="Full Plate Shield" commissionType="SHIELD" icon="icon.shield_full_plate_shield_i00">
+    <armor id="2497" name="Full Plate Shield" subType="SHIELD" icon="icon.shield_full_plate_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>375000</price>
         <restriction freightable="false"/>
@@ -460,7 +460,7 @@
         <time>-1</time>
         <weight>1220</weight>
         </armor>
-    <armor id="2498" name="Shield of Nightmare" commissionType="SHIELD" icon="icon.shield_shield_of_nightmare_i00">
+    <armor id="2498" name="Shield of Nightmare" subType="SHIELD" icon="icon.shield_shield_of_nightmare_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>1422000</price>
         <restriction freightable="false"/>
@@ -470,7 +470,7 @@
         <time>-1</time>
         <weight>1180</weight>
         </armor>
-    <weapon id="2499" name="Elven Long Sword" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_elven_long_sword_i00">
+    <weapon id="2499" name="Elven Long Sword" type="SWORD" subType="ONE_HAND_SWORD" icon="icon.weapon_elven_long_sword_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>1800000</price>
         <restriction freightable="false"/>
@@ -482,7 +482,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <armor id="2400" name="Tallum Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t79_u_i00">
+    <armor id="2400" name="Tallum Tunic" type="MAGIC" subType="ARMOR_TOP" icon="icon.armor_t79_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>2671000</price>
         <restriction freightable="false"/>
@@ -492,7 +492,7 @@
         <time>-1</time>
         <weight>1860</weight>
         </armor>
-    <armor id="2401" name="Mithril Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_elven_hose_i00">
+    <armor id="2401" name="Mithril Stockings" type="MAGIC" subType="ARMOR_PANTS" icon="icon.armor_elven_hose_i00">
         <bodyPart>LEGS</bodyPart>
         <price>140000</price>
         <restriction freightable="false"/>
@@ -502,7 +502,7 @@
         <time>-1</time>
         <weight>2400</weight>
         </armor>
-    <armor id="2402" name="Stockings of Zubei" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t56_l_i00">
+    <armor id="2402" name="Stockings of Zubei" type="MAGIC" subType="ARMOR_PANTS" icon="icon.armor_t56_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>973000</price>
         <restriction freightable="false"/>
@@ -512,7 +512,7 @@
         <time>-1</time>
         <weight>940</weight>
         </armor>
-    <armor id="2403" name="Blue Wolf Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t70_l_i00">
+    <armor id="2403" name="Blue Wolf Stockings" type="MAGIC" subType="ARMOR_PANTS" icon="icon.armor_t70_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>1510000</price>
         <restriction freightable="false"/>
@@ -522,7 +522,7 @@
         <time>-1</time>
         <weight>920</weight>
         </armor>
-    <armor id="2404" name="Stockings of Doom" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t73_l_i00">
+    <armor id="2404" name="Stockings of Doom" type="MAGIC" subType="ARMOR_PANTS" icon="icon.armor_t73_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>1510000</price>
         <restriction freightable="false"/>
@@ -532,7 +532,7 @@
         <time>-1</time>
         <weight>910</weight>
         </armor>
-    <armor id="2405" name="Tallum Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t79_l_i00">
+    <armor id="2405" name="Tallum Stockings" type="MAGIC" subType="ARMOR_PANTS" icon="icon.armor_t79_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>1670000</price>
         <restriction freightable="false"/>
@@ -542,7 +542,7 @@
         <time>-1</time>
         <weight>920</weight>
         </armor>
-    <armor id="2406" name="Avadon Robe" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t59_ul_i00">
+    <armor id="2406" name="Avadon Robe" type="MAGIC" subType="FULL_BODY" icon="icon.armor_t59_ul_i00">
         <bodyPart>ONE_PIECE</bodyPart>
         <price>2280000</price>
         <restriction freightable="false"/>
@@ -552,7 +552,7 @@
         <time>-1</time>
         <weight>2540</weight>
         </armor>
-    <armor id="2407" name="Dark Crystal Robe" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t76_ul_i00">
+    <armor id="2407" name="Dark Crystal Robe" type="MAGIC" subType="FULL_BODY" icon="icon.armor_t76_ul_i00">
         <bodyPart>ONE_PIECE</bodyPart>
         <price>4341000</price>
         <restriction freightable="false"/>
@@ -562,7 +562,7 @@
         <time>-1</time>
         <weight>2450</weight>
         </armor>
-    <armor id="2408" name="Robe of Nightmare" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t82_ul_i00">
+    <armor id="2408" name="Robe of Nightmare" type="MAGIC" subType="FULL_BODY" icon="icon.armor_t82_ul_i00">
         <bodyPart>ONE_PIECE</bodyPart>
         <price>6603000</price>
         <restriction freightable="false"/>
@@ -572,7 +572,7 @@
         <time>-1</time>
         <weight>2300</weight>
         </armor>
-    <armor id="2409" name="Majestic Robe" type="MAGIC" commissionType="FULL_BODY" icon="icon.armor_t85_ul_i00">
+    <armor id="2409" name="Majestic Robe" type="MAGIC" subType="FULL_BODY" icon="icon.armor_t85_ul_i00">
         <bodyPart>ONE_PIECE</bodyPart>
         <price>6603000</price>
         <restriction freightable="false"/>
@@ -582,7 +582,7 @@
         <time>-1</time>
         <weight>2330</weight>
         </armor>
-    <armor id="2411" name="Brigandine Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2411" name="Brigandine Helmet" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>112000</price>
         <restriction freightable="false"/>
@@ -592,7 +592,7 @@
         <time>-1</time>
         <weight>630</weight>
         </armor>
-    <armor id="2412" name="Plate Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2412" name="Plate Helmet" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>147000</price>
         <restriction freightable="false"/>
@@ -602,7 +602,7 @@
         <time>-1</time>
         <weight>630</weight>
         </armor>
-    <armor id="2413" name="Chain Hood" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2413" name="Chain Hood" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>189000</price>
         <restriction freightable="false"/>
@@ -612,7 +612,7 @@
         <time>-1</time>
         <weight>620</weight>
         </armor>
-    <armor id="2414" name="Full Plate Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2414" name="Full Plate Helmet" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>536000</price>
         <restriction freightable="false"/>
@@ -622,7 +622,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <armor id="2415" name="Avadon Circlet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2415" name="Avadon Circlet" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>778000</price>
         <restriction freightable="false"/>
@@ -632,7 +632,7 @@
         <time>-1</time>
         <weight>590</weight>
         </armor>
-    <armor id="2416" name="Blue Wolf Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2416" name="Blue Wolf Helmet" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>1210000</price>
         <restriction freightable="false"/>
@@ -642,7 +642,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2417" name="Doom Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2417" name="Doom Helmet" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>1210000</price>
         <restriction freightable="false"/>
@@ -652,7 +652,7 @@
         <time>-1</time>
         <weight>580</weight>
         </armor>
-    <armor id="2418" name="Helm of Nightmare" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2418" name="Helm of Nightmare" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>2032000</price>
         <restriction freightable="false"/>
@@ -662,7 +662,7 @@
         <time>-1</time>
         <weight>560</weight>
         </armor>
-    <armor id="2419" name="Majestic Circlet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="2419" name="Majestic Circlet" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>2032000</price>
         <restriction freightable="false"/>
@@ -672,7 +672,7 @@
         <time>-1</time>
         <weight>550</weight>
         </armor>
-    <armor id="2422" name="Reinforced Leather Boots" commissionType="FEET" icon="icon.armor_t13_b_i00">
+    <armor id="2422" name="Reinforced Leather Boots" subType="FEET" icon="icon.armor_t13_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>50800</price>
         <restriction freightable="false"/>
@@ -682,7 +682,7 @@
         <time>-1</time>
         <weight>1280</weight>
         </armor>
-    <armor id="2423" name="Boots of Knowledge" commissionType="FEET" icon="icon.armor_t41_b_i00">
+    <armor id="2423" name="Boots of Knowledge" subType="FEET" icon="icon.armor_t41_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>50800</price>
         <restriction freightable="false"/>
@@ -692,7 +692,7 @@
         <time>-1</time>
         <weight>1270</weight>
         </armor>
-    <armor id="2424" name="Manticore Skin Boots" commissionType="FEET" icon="icon.armor_t42_b_i00">
+    <armor id="2424" name="Manticore Skin Boots" subType="FEET" icon="icon.armor_t42_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>74700</price>
         <restriction freightable="false"/>
@@ -702,7 +702,7 @@
         <time>-1</time>
         <weight>1260</weight>
         </armor>
-    <armor id="2425" name="Brigandine Boots" commissionType="FEET" icon="icon.armor_t43_b_i00">
+    <armor id="2425" name="Brigandine Boots" subType="FEET" icon="icon.armor_t43_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>74700</price>
         <restriction freightable="false"/>
@@ -712,7 +712,7 @@
         <time>-1</time>
         <weight>1250</weight>
         </armor>
-    <armor id="2426" name="Elven Mithril Boots" commissionType="FEET" icon="icon.armor_t51_b_i00">
+    <armor id="2426" name="Elven Mithril Boots" subType="FEET" icon="icon.armor_t51_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>74700</price>
         <restriction freightable="false"/>
@@ -722,7 +722,7 @@
         <time>-1</time>
         <weight>1250</weight>
         </armor>
-    <armor id="2427" name="Salamander Skin Boots" commissionType="FEET" icon="icon.armor_t45_b_i00">
+    <armor id="2427" name="Salamander Skin Boots" subType="FEET" icon="icon.armor_t45_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>97800</price>
         <restriction freightable="false"/>
@@ -732,7 +732,7 @@
         <time>-1</time>
         <weight>1230</weight>
         </armor>
-    <armor id="2428" name="Plate Boots" commissionType="FEET" icon="icon.armor_t46_b_i00">
+    <armor id="2428" name="Plate Boots" subType="FEET" icon="icon.armor_t46_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>97800</price>
         <restriction freightable="false"/>
@@ -742,7 +742,7 @@
         <time>-1</time>
         <weight>1240</weight>
         </armor>
-    <armor id="2429" name="Chain Boots" commissionType="FEET" icon="icon.armor_t48_b_i00">
+    <armor id="2429" name="Chain Boots" subType="FEET" icon="icon.armor_t48_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>126000</price>
         <restriction freightable="false"/>
@@ -752,7 +752,7 @@
         <time>-1</time>
         <weight>1220</weight>
         </armor>
-    <armor id="2430" name="Karmian Boots" commissionType="FEET" icon="icon.armor_t53_b_i00">
+    <armor id="2430" name="Karmian Boots" subType="FEET" icon="icon.armor_t53_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>126000</price>
         <restriction freightable="false"/>
@@ -762,7 +762,7 @@
         <time>-1</time>
         <weight>1230</weight>
         </armor>
-    <armor id="2431" name="Plated Leather Boots" commissionType="FEET" icon="icon.armor_t47_b_i00">
+    <armor id="2431" name="Plated Leather Boots" subType="FEET" icon="icon.armor_t47_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>126000</price>
         <restriction freightable="false"/>

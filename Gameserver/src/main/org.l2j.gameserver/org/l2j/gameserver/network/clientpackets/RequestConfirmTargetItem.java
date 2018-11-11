@@ -6,7 +6,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.ExConfirmVariationItem;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.SubType;
 import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
 
 /**
@@ -43,7 +43,7 @@ public final class RequestConfirmTargetItem extends L2GameClientPacket
 		
 		// check if the item is augmentable
 		CrystalType itemGrade = item.getCrystal();
-		CommissionType itemType = item.getCommissionType();
+		SubType itemType = item.getCommissionType();
 
 		if (item.isAugmented())
 		{

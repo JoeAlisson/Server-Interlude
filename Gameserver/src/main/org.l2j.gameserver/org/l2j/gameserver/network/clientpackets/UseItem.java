@@ -311,7 +311,7 @@ public final class UseItem extends L2GameClientPacket {
 				activeChar.getInventory().setPaperdollItem(Inventory.PAPERDOLL_LHAND, item);
 				activeChar.broadcastUserInfo();
 				// Send a Server->Client packet ItemList to this L2PcINstance to update left hand equipement
-				ItemList il = new ItemList(activeChar, false);
+				ItemListPacket il = new ItemListPacket(activeChar, false);
 				sendPacket(il);
 				return;
 			}

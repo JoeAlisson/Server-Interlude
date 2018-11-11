@@ -499,7 +499,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="3429" name="Spellbook: Greater Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="3429" name="Spellbook: Greater Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -507,7 +507,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3430" name="Spellbook: Greater Battle Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="3430" name="Spellbook: Greater Battle Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -515,7 +515,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3431" name="Spellbook: Greater Group Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="3431" name="Spellbook: Greater Group Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -523,7 +523,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3432" name="Spellbook: Remedy" commissionType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
+    <item stackable="true" id="3432" name="Spellbook: Remedy" subType="SPELLBOOK" icon="icon.etc_spell_books_hfighter_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>

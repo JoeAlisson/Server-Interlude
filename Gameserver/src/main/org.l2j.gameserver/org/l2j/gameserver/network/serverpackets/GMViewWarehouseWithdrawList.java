@@ -64,7 +64,7 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 			
 			writeInt(item.getObjectId());
 			
-			/*switch (item.getItem().getType2())
+			/*switch (item.getItem().getSubType())
 			{
 				case TYPE2_WEAPON:
 				{

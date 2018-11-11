@@ -4,7 +4,7 @@ import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.model.TradeList.TradeItem;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
-import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.SubType;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -546,7 +546,7 @@ public class PcInventory extends Inventory {
     public boolean validateCapacity(L2ItemInstance item) {
         int slots = 0;
 
-        if (!(item.isStackable() && (getItemByItemId(item.getId()) != null)) && (item.getCommissionType() != CommissionType.HERB)) {
+        if (!(item.isStackable() && (getItemByItemId(item.getId()) != null)) && (item.getCommissionType() != SubType.HERB)) {
             slots++;
         }
 

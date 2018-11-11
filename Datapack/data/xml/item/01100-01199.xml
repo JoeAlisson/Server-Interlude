@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <item stackable="true" id="1152" name="Spellbook: Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="1152" name="Spellbook: Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -390,7 +390,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="1100" name="Cotton Tunic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t50_u_i00">
+    <armor id="1100" name="Cotton Tunic" type="MAGIC" subType="ARMOR_TOP" icon="icon.armor_t50_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>2430</price>
         <restriction freightable="false"/>
@@ -399,7 +399,7 @@
         <time>-1</time>
         <weight>2120</weight>
         </armor>
-    <armor id="1101" name="Tunic of Devotion" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t55_u_i00">
+    <armor id="1101" name="Tunic of Devotion" type="MAGIC" subType="ARMOR_TOP" icon="icon.armor_t55_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>20300</price>
         <restriction freightable="false"/>
@@ -408,7 +408,7 @@
         <time>-1</time>
         <weight>2090</weight>
         </armor>
-    <armor id="1102" name="Tunic of Magic" type="MAGIC" commissionType="ARMOR_TOP" icon="icon.armor_t58_u_i00">
+    <armor id="1102" name="Tunic of Magic" type="MAGIC" subType="ARMOR_TOP" icon="icon.armor_t58_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>36900</price>
         <restriction freightable="false"/>
@@ -417,7 +417,7 @@
         <time>-1</time>
         <weight>2080</weight>
         </armor>
-    <armor id="1103" name="Cotton Stockings" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t50_l_i00">
+    <armor id="1103" name="Cotton Stockings" type="MAGIC" subType="ARMOR_PANTS" icon="icon.armor_t50_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>1520</price>
         <restriction freightable="false"/>
@@ -426,7 +426,7 @@
         <time>-1</time>
         <weight>1060</weight>
         </armor>
-    <armor id="1104" name="Stockings of Devotion" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t55_l_i00">
+    <armor id="1104" name="Stockings of Devotion" type="MAGIC" subType="ARMOR_PANTS" icon="icon.armor_t55_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>12700</price>
         <restriction freightable="false"/>
@@ -435,7 +435,7 @@
         <time>-1</time>
         <weight>1040</weight>
         </armor>
-    <armor id="1105" name="Stockings of Magic" type="MAGIC" commissionType="ARMOR_PANTS" icon="icon.armor_t58_l_i00">
+    <armor id="1105" name="Stockings of Magic" type="MAGIC" subType="ARMOR_PANTS" icon="icon.armor_t58_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>23000</price>
         <restriction freightable="false"/>
@@ -516,7 +516,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="1119" name="Short Leather Gloves" commissionType="GLOVES" icon="icon.armor_t04_g_i00">
+    <armor id="1119" name="Short Leather Gloves" subType="GLOVES" icon="icon.armor_t04_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>607</price>
         <restriction freightable="false"/>
@@ -525,7 +525,7 @@
         <time>-1</time>
         <weight>660</weight>
         </armor>
-    <armor id="1120" name="Pa'agrio Hand" commissionType="GLOVES" icon="icon.armor_short_leather_gloves_i00">
+    <armor id="1120" name="Pa'agrio Hand" subType="GLOVES" icon="icon.armor_short_leather_gloves_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>123900</price>
         <restriction freightable="false"/>
@@ -535,7 +535,7 @@
         <time>-1</time>
         <weight>1600</weight>
         </armor>
-    <armor id="1121" name="Apprentice's Shoes" commissionType="FEET" icon="icon.armor_t01_b_i00">
+    <armor id="1121" name="Apprentice's Shoes" subType="FEET" icon="icon.armor_t01_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>7</price>
         <restriction freightable="false"/>
@@ -544,7 +544,7 @@
         <time>-1</time>
         <weight>1320</weight>
         </armor>
-    <armor id="1122" name="Cotton Shoes" commissionType="FEET" icon="icon.armor_t50_b_i00">
+    <armor id="1122" name="Cotton Shoes" subType="FEET" icon="icon.armor_t50_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>607</price>
         <restriction freightable="false"/>
@@ -553,7 +553,7 @@
         <time>-1</time>
         <weight>1320</weight>
         </armor>
-    <armor id="1123" name="Blue Buckskin Boots" commissionType="FEET" icon="icon.armor_t18_b_i00">
+    <armor id="1123" name="Blue Buckskin Boots" subType="FEET" icon="icon.armor_t18_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>33300</price>
         <restriction freightable="false"/>
@@ -563,7 +563,7 @@
         <time>-1</time>
         <weight>1300</weight>
         </armor>
-    <armor id="1124" name="Boots of Strength" commissionType="FEET" icon="icon.armor_t40_b_i00">
+    <armor id="1124" name="Boots of Strength" subType="FEET" icon="icon.armor_t40_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>74700</price>
         <restriction freightable="false"/>
@@ -573,7 +573,7 @@
         <time>-1</time>
         <weight>1250</weight>
         </armor>
-    <armor id="1125" name="Assault Boots" commissionType="FEET" icon="icon.armor_t44_b_i00">
+    <armor id="1125" name="Assault Boots" subType="FEET" icon="icon.armor_t44_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>97800</price>
         <restriction freightable="false"/>
@@ -583,7 +583,7 @@
         <time>-1</time>
         <weight>1240</weight>
         </armor>
-    <armor id="1126" name="Crimson Boots" commissionType="FEET" icon="icon.armor_t57_b_i00">
+    <armor id="1126" name="Crimson Boots" subType="FEET" icon="icon.armor_t57_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>161000</price>
         <restriction freightable="false"/>
@@ -593,7 +593,7 @@
         <time>-1</time>
         <weight>1210</weight>
         </armor>
-    <armor id="1127" name="Forgotten Boots" commissionType="FEET" icon="icon.armor_iron_boots_i00">
+    <armor id="1127" name="Forgotten Boots" subType="FEET" icon="icon.armor_iron_boots_i00">
         <bodyPart>FEET</bodyPart>
         <price>245000</price>
         <restriction freightable="false"/>
@@ -603,7 +603,7 @@
         <time>-1</time>
         <weight>4000</weight>
         </armor>
-    <armor id="1128" name="Adamantite Boots" commissionType="FEET" icon="icon.armor_iron_boots_i00">
+    <armor id="1128" name="Adamantite Boots" subType="FEET" icon="icon.armor_iron_boots_i00">
         <bodyPart>FEET</bodyPart>
         <price>358000</price>
         <restriction freightable="false"/>
@@ -613,7 +613,7 @@
         <time>-1</time>
         <weight>4000</weight>
         </armor>
-    <armor id="1129" name="Crude Leather Shoes" commissionType="FEET" icon="icon.armor_t04_b_i00">
+    <armor id="1129" name="Crude Leather Shoes" subType="FEET" icon="icon.armor_t04_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>607</price>
         <restriction freightable="false"/>
@@ -718,7 +718,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <weapon id="1142" name="Rusted Bronze Sword" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_broad_sword_i00">
+    <weapon id="1142" name="Rusted Bronze Sword" type="SWORD" subType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_broad_sword_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -771,7 +771,7 @@
         <time>-1</time>
         <weight>1750</weight>
         </armor>
-    <armor id="1148" name="Durable Leather Helmet" commissionType="HELMET" icon="icon.armor_leather_helmet_i00">
+    <armor id="1148" name="Durable Leather Helmet" subType="HELMET" icon="icon.armor_leather_helmet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>18400</price>
         <restriction freightable="false"/>
@@ -780,7 +780,7 @@
         <time>-1</time>
         <weight>640</weight>
         </armor>
-    <armor id="1149" name="Shining Circlet" commissionType="HELMET" icon="icon.armor_circlet_i00">
+    <armor id="1149" name="Shining Circlet" subType="HELMET" icon="icon.armor_circlet_i00">
         <bodyPart>HEAD</bodyPart>
         <price>368000</price>
         <restriction freightable="false"/>
@@ -790,7 +790,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <item stackable="true" id="1150" name="Spellbook: Wind Strike" commissionType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
+    <item stackable="true" id="1150" name="Spellbook: Wind Strike" subType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
         <price>50</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -798,7 +798,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1151" name="Spellbook: Self Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
+    <item stackable="true" id="1151" name="Spellbook: Self Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
         <price>50</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>

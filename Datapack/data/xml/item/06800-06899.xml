@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <armor id="6835" name="Circlet of Dion" commissionType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap1_i02">
+    <armor id="6835" name="Circlet of Dion" subType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap1_i02">
         <bodyPart>HAIR</bodyPart>
         <price>500000</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -15,7 +15,7 @@
         </condition>
         <skill id="3633"/>
         </armor>
-    <armor id="6837" name="Circlet of Oren" commissionType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap1_i04">
+    <armor id="6837" name="Circlet of Oren" subType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap1_i04">
         <bodyPart>HAIR</bodyPart>
         <price>500000</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -30,7 +30,7 @@
         </condition>
         <skill id="3633"/>
         </armor>
-    <armor id="6838" name="Circlet of Gludio" commissionType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap1_i05">
+    <armor id="6838" name="Circlet of Gludio" subType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap1_i05">
         <bodyPart>HAIR</bodyPart>
         <price>500000</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -45,7 +45,7 @@
         </condition>
         <skill id="3633"/>
         </armor>
-    <armor id="6839" name="Circlet of Giran" commissionType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap1_i06">
+    <armor id="6839" name="Circlet of Giran" subType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap1_i06">
         <bodyPart>HAIR</bodyPart>
         <price>500000</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -60,7 +60,7 @@
         </condition>
         <skill id="3633"/>
         </armor>
-    <armor id="6840" name="Circlet of Adena" commissionType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap2_i07">
+    <armor id="6840" name="Circlet of Adena" subType="HAIR_ACCESSORY" icon="icon.accessory_pledge_cap2_i07">
         <bodyPart>HAIR</bodyPart>
         <price>500000</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -75,7 +75,7 @@
         </condition>
         <skill id="3633" level="2"/>
         </armor>
-    <armor id="6841" name="Lord's Crown" commissionType="HAIR_ACCESSORY" icon="icon.accessory_crown_i00">
+    <armor id="6841" name="Lord's Crown" subType="HAIR_ACCESSORY" icon="icon.accessory_crown_i00">
         <bodyPart>HAIR</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -90,7 +90,7 @@
         </condition>
         <skill id="3632"/>
         </armor>
-    <armor id="6842" name="Wings of Destiny Circlet" commissionType="HAIR_ACCESSORY" icon="icon.accessory_hero_cap_i00">
+    <armor id="6842" name="Wings of Destiny Circlet" subType="HAIR_ACCESSORY" icon="icon.accessory_hero_cap_i00">
         <bodyPart>HAIR</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -102,7 +102,7 @@
             <state state="IS_HERO"/>
         </condition>
         </armor>
-    <armor id="6843" name="Cat Ears" commissionType="HAIR_ACCESSORY" icon="icon.accessory_cat_ear_i00">
+    <armor id="6843" name="Cat Ears" subType="HAIR_ACCESSORY" icon="icon.accessory_cat_ear_i00">
         <bodyPart>HAIR_DOWN</bodyPart>
         <price>500000</price>
         <restriction freightable="false"/>

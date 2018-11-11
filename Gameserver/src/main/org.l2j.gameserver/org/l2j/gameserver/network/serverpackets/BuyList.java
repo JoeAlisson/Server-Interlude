@@ -52,7 +52,7 @@ public final class BuyList extends L2GameServerPacket  {
 				{
 					writeInt(item.getCount());
 				}
-				writeShort(template.getCommissionType().ordinal()); // item type2
+				writeShort(template.getSubType().ordinal()); // item type2
 				writeShort(0x00); // ?
 				
 				if (!template.isQuestItem())

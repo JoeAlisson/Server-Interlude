@@ -208,7 +208,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="49026" name="Scroll: PK (No-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+    <item stackable="true" id="49026" name="Scroll: PK (No-grade)" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
         <price>0</price>
         <restriction sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -226,7 +226,7 @@
         </condition>
         <skill id="39020"/>
     </item>
-    <item stackable="true" id="49027" name="Scroll: PK (D-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+    <item stackable="true" id="49027" name="Scroll: PK (D-grade)" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
         <price>0</price>
         <restriction sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -244,7 +244,7 @@
         </condition>
         <skill id="39021"/>
     </item>
-    <item stackable="true" id="49028" name="Scroll: PK (C-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+    <item stackable="true" id="49028" name="Scroll: PK (C-grade)" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
         <price>0</price>
         <restriction sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -262,7 +262,7 @@
         </condition>
         <skill id="39022"/>
     </item>
-    <item stackable="true" id="49029" name="Scroll: PK (B-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+    <item stackable="true" id="49029" name="Scroll: PK (B-grade)" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
         <price>0</price>
         <restriction sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -280,7 +280,7 @@
         </condition>
         <skill id="39023"/>
     </item>
-    <item stackable="true" id="49030" name="Scroll: PK (A-grade)" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
+    <item stackable="true" id="49030" name="Scroll: PK (A-grade)" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_ev_draco_pk_count_down">
         <price>0</price>
         <restriction sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -298,7 +298,7 @@
         </condition>
         <skill id="39024"/>
     </item>
-    <armor id="49031" name="Ring of Heir" commissionType="RING" icon="icon.event_classic_ring">
+    <armor id="49031" name="Ring of Heir" subType="RING" icon="icon.event_classic_ring">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -342,7 +342,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="49036" name="Newbie Wind Walk Potion" type="POTION" commissionType="POTION" icon="icon.etc_potion_green_i00">
+    <item stackable="true" id="49036" name="Newbie Wind Walk Potion" type="POTION" subType="POTION" icon="icon.etc_potion_green_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -791,7 +791,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="49089" name="Teleport: Entrance to Cruma Tower" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="49089" name="Teleport: Entrance to Cruma Tower" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -806,7 +806,7 @@
         </condition>
         <skill id="32044"/>
     </item>
-    <item stackable="true" id="49090" name="Teleport: Entrance to Dragon Valley" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="49090" name="Teleport: Entrance to Dragon Valley" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -821,7 +821,7 @@
         </condition>
         <skill id="32045"/>
     </item>
-    <item stackable="true" id="49091" name="Teleport: Dragon Valley Bridge" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="49091" name="Teleport: Dragon Valley Bridge" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -836,7 +836,7 @@
         </condition>
         <skill id="32046"/>
     </item>
-    <item id="49092" name="Teleport: Talking Island Village" commissionType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
+    <item id="49092" name="Teleport: Talking Island Village" subType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -851,7 +851,7 @@
         </condition>
         <skill id="32031"/>
     </item>
-    <item id="49093" name="Teleport: Elven Village" commissionType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
+    <item id="49093" name="Teleport: Elven Village" subType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -866,7 +866,7 @@
         </condition>
         <skill id="32032"/>
     </item>
-    <item id="49094" name="Teleport: Dark Elf Village" commissionType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
+    <item id="49094" name="Teleport: Dark Elf Village" subType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -881,7 +881,7 @@
         </condition>
         <skill id="32033"/>
     </item>
-    <item id="49095" name="Teleport: Orc Village" commissionType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
+    <item id="49095" name="Teleport: Orc Village" subType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -896,7 +896,7 @@
         </condition>
         <skill id="32034"/>
     </item>
-    <item id="49096" name="Teleport: Dwarven Village" commissionType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
+    <item id="49096" name="Teleport: Dwarven Village" subType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -911,7 +911,7 @@
         </condition>
         <skill id="32035"/>
     </item>
-    <item id="49097" name="Teleport: Gludin" commissionType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
+    <item id="49097" name="Teleport: Gludin" subType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -926,7 +926,7 @@
         </condition>
         <skill id="32036"/>
     </item>
-    <item id="49098" name="Teleport: Gludio" commissionType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
+    <item id="49098" name="Teleport: Gludio" subType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -941,7 +941,7 @@
         </condition>
         <skill id="32037"/>
     </item>
-    <item id="49099" name="Teleport: Dion" commissionType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
+    <item id="49099" name="Teleport: Dion" subType="SCROLL_OTHER" icon="icon.etc_capture_stone_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>

@@ -43,7 +43,7 @@ public class WearList extends L2GameServerPacket {
 		for (MerchantItem item : wearList) {
 		    ItemTemplate template = ItemTable.getInstance().getTemplate(item.getItemId());
             writeInt(item.getItemId());
-            writeShort(template.getCommissionType().ordinal()); // item type2
+            writeShort(template.getSubType().ordinal()); // item type2
 
             if (!template.isQuestItem()) {
                 writeShort(0); // TODO template.getBodyPart().getId()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand

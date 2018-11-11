@@ -26,7 +26,7 @@ import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.StatusUpdate;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.slf4j.Logger;
@@ -180,7 +180,7 @@ public final class RequestPackageSend extends L2GameClientPacket {
         if (playerIU != null) {
             player.sendPacket(playerIU);
         } else {
-            player.sendPacket(new ItemList(player, false));
+            player.sendPacket(new ItemListPacket(player, false));
         }
 
         // Update current load status on reader

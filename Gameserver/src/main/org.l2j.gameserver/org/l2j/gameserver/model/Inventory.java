@@ -770,7 +770,7 @@ public abstract class Inventory extends ItemContainer {
                 slot = LEGS;
                 break;
             case PAPERDOLL_BACK:
-                slot = BACK;
+                slot = CLOAK;
                 break;
             case PAPERDOLL_FEET:
                 slot = FEET;
@@ -888,7 +888,7 @@ public abstract class Inventory extends ItemContainer {
             case LEGS:
                 pdollSlot = PAPERDOLL_LEGS;
                 break;
-            case BACK:
+            case CLOAK:
                 pdollSlot = PAPERDOLL_BACK;
                 break;
             case FEET:
@@ -1080,7 +1080,7 @@ public abstract class Inventory extends ItemContainer {
             case UNDERWEAR:
                 setPaperdollItem(PAPERDOLL_PENDANT, item);
                 break;
-            case BACK:
+            case CLOAK:
                 setPaperdollItem(PAPERDOLL_BACK, item);
                 break;
             default:

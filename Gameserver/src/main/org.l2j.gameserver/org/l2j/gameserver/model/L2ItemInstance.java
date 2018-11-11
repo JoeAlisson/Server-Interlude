@@ -99,6 +99,7 @@ public final class L2ItemInstance extends L2Object {
         count = 1;
         location = ItemLocation.VOID;
         mana = template.getTime();
+        type2 = ItemHelper.getSubType(template);
     }
 
     public final void pickupMe(L2Character player) {
@@ -127,7 +128,11 @@ public final class L2ItemInstance extends L2Object {
         storedInDb = false;
     }
 
-	public void setOwnerId(String process, int owner_id) {
+    public int getSubType() {
+	    return type2;
+    }
+
+    public void setOwnerId(String process, int owner_id) {
 		setOwnerId(owner_id);
 		
 		if (Config.LOG_ITEMS) {
@@ -605,8 +610,8 @@ public final class L2ItemInstance extends L2Object {
     }
 
     public final boolean isJewel() {
-        return isArmor() && (template.getCommissionType() == CommissionType.RING  || template.getCommissionType() == CommissionType.EARRING
-                || template.getCommissionType() == CommissionType.NECKLACE  || template.getCommissionType() == CommissionType.BRACELET);
+        return isArmor() && (template.getSubType() == SubType.RING  || template.getSubType() == SubType.EARRING
+                || template.getSubType() == SubType.NECKLACE  || template.getSubType() == SubType.BRACELET);
     }
 
     public final boolean isArmor() {
@@ -617,8 +622,8 @@ public final class L2ItemInstance extends L2Object {
         return template instanceof Weapon;
     }
 
-    public CommissionType getCommissionType() {
-        return template.getCommissionType();
+    public SubType getCommissionType() {
+        return template.getSubType();
     }
 
     public int getWeight() {
@@ -795,7 +800,7 @@ public final class L2ItemInstance extends L2Object {
     }
 
     private boolean isConsumable() {
-        switch (template.getCommissionType()) {
+        switch (template.getSubType()) {
             case SOULSHOT:
             case POTION:
             case SPIRITSHOT:

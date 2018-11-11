@@ -10,7 +10,7 @@ import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.zone.type.L2FishingZone;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.xml.jaxb.ItemType;
 import org.l2j.gameserver.util.Util;
@@ -143,7 +143,7 @@ public class Fishing implements ISkillHandler
 		if ((lure2 == null) || (lure2.getCount() < 1)) // Not enough bait.
 		{
 			player.sendPacket(new SystemMessage(SystemMessageId.NOT_ENOUGH_BAIT));
-			player.sendPacket(new ItemList(player, false));
+			player.sendPacket(new ItemListPacket(player, false));
 		}
 		else
 		// Has enough bait, consume 1 and update inventory. Start fishing follows.

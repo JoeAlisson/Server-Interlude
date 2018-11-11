@@ -494,7 +494,7 @@ public final class QuestState {
                 getPlayer().sendPacket(smsg);
             }
         }
-        getPlayer().sendPacket(new ItemList(getPlayer(), false));
+        getPlayer().sendPacket(new ItemListPacket(getPlayer(), false));
 
         StatusUpdate su = new StatusUpdate(getPlayer().getObjectId());
         su.addAttribute(StatusUpdate.CUR_LOAD, getPlayer().getCurrentLoad());

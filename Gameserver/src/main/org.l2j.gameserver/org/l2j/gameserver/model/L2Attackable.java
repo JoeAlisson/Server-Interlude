@@ -38,7 +38,7 @@ import org.l2j.gameserver.network.serverpackets.CreatureSay;
 import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.skills.Stats;
-import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.SubType;
 import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -1607,7 +1607,7 @@ public class L2Attackable extends L2NpcInstance {
 
             // Add drop to auto destroy item task
             if (!Config.LIST_PROTECTED_ITEMS.contains(item.getItemId())) {
-                if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (ditem.getCommissionType() != CommissionType.HERB)) || ((Config.HERB_AUTO_DESTROY_TIME > 0) && (ditem.getCommissionType() == CommissionType.HERB.HERB))) {
+                if (((Config.AUTODESTROY_ITEM_AFTER > 0) && (ditem.getCommissionType() != SubType.HERB)) || ((Config.HERB_AUTO_DESTROY_TIME > 0) && (ditem.getCommissionType() == SubType.HERB.HERB))) {
                     ItemsAutoDestroy.getInstance().addItem(ditem);
                 }
             }

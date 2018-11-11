@@ -552,7 +552,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="29149" name="Teleport: Talking Island Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="29149" name="Teleport: Talking Island Village" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -567,7 +567,7 @@
         </condition>
         <skill id="32031"/>
     </item>
-    <item stackable="true" id="29150" name="Teleport: Elven Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="29150" name="Teleport: Elven Village" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -582,7 +582,7 @@
         </condition>
         <skill id="32032"/>
     </item>
-    <item stackable="true" id="29151" name="Teleport: Dark Elf Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="29151" name="Teleport: Dark Elf Village" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -597,7 +597,7 @@
         </condition>
         <skill id="32033"/>
     </item>
-    <item stackable="true" id="29152" name="Teleport: Orc Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="29152" name="Teleport: Orc Village" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -612,7 +612,7 @@
         </condition>
         <skill id="32034"/>
     </item>
-    <item stackable="true" id="29153" name="Teleport: Dwarven Village" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="29153" name="Teleport: Dwarven Village" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -627,7 +627,7 @@
         </condition>
         <skill id="32035"/>
     </item>
-    <item stackable="true" id="29154" name="Teleport: Gludin" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="29154" name="Teleport: Gludin" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -642,7 +642,7 @@
         </condition>
         <skill id="32036"/>
     </item>
-    <item stackable="true" id="29155" name="Teleport: Gludio" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="29155" name="Teleport: Gludio" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>0</price>
         <restriction freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>

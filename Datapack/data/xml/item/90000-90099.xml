@@ -153,7 +153,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="90021" name="Warrior’s Talisman - Attack" additionalName="30-day" icon="icon.r90_sp_talisman_dr_mp_active">
+    <armor id="90021" name="Warrior’s Talisman - Attack" subType="BELT" additionalName="30-day" icon="icon.r90_sp_talisman_dr_mp_active">
         <bodyPart>WAIST</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
@@ -178,7 +178,7 @@
         <time>-1</time>
         <weight>500</weight>
         </armor>
-    <armor id="90022" name="Warrior’s Talisman - Defense" additionalName="30-day" icon="icon.r99_talisman_pd_up_passive">
+    <armor id="90022" name="Warrior’s Talisman - Defense" subType="BELT" additionalName="30-day" icon="icon.r99_talisman_pd_up_passive">
         <bodyPart>WAIST</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
@@ -195,7 +195,7 @@
         <time>-1</time>
         <weight>500</weight>
         </armor>
-    <armor id="90024" name="Rag Belt" type="LIGHT" icon="icon.belt_i01">
+    <armor id="90024" name="Rag Belt" subType="BELT" type="LIGHT" icon="icon.belt_i01">
         <bodyPart>WAIST</bodyPart>
         <price>0</price>
         <restriction sellable="false"/>
@@ -204,7 +204,7 @@
         <time>-1</time>
         <weight>500</weight>
         </armor>
-    <armor id="90027" name="Mithril Belt" type="LIGHT" icon="icon.belt_i04">
+    <armor id="90027" name="Mithril Belt" subType="BELT" type="LIGHT" icon="icon.belt_i04">
         <bodyPart>WAIST</bodyPart>
         <price>0</price>
         <restriction sellable="false"/>
@@ -213,7 +213,7 @@
         <time>-1</time>
         <weight>500</weight>
         </armor>
-    <armor id="90026" name="Iron Belt" type="LIGHT" icon="icon.belt_i03">
+    <armor id="90026" name="Iron Belt" type="LIGHT" subType="BELT" icon="icon.belt_i03">
         <bodyPart>WAIST</bodyPart>
         <price>0</price>
         <restriction sellable="false"/>

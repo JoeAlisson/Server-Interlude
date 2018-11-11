@@ -2,7 +2,7 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.06 às 03:44:38 PM BRT 
+// Gerado em: 2018.11.11 às 07:52:07 AM BRT 
 //
 
 
@@ -40,7 +40,7 @@ import java.util.List;
  *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="additionalName" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="type" type="{http://la2j.org}ItemType" default="NONE" /&gt;
- *       &lt;attribute name="commissionType" type="{http://la2j.org}CommissionType" default="OTHER_ITEM" /&gt;
+ *       &lt;attribute name="subType" type="{http://la2j.org}SubType" default="OTHER_ITEM" /&gt;
  *       &lt;attribute name="icon" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -99,8 +99,8 @@ public abstract class ItemTemplate {
     protected String additionalName;
     @XmlAttribute(name = "type")
     protected ItemType type;
-    @XmlAttribute(name = "commissionType")
-    protected CommissionType commissionType;
+    @XmlAttribute(name = "subType")
+    protected SubType subType;
     @XmlAttribute(name = "icon")
     protected String icon;
 
@@ -455,31 +455,31 @@ public abstract class ItemTemplate {
     }
 
     /**
-     * Obtém o valor da propriedade commissionType.
+     * Obtém o valor da propriedade subType.
      * 
      * @return
      *     possible object is
-     *     {@link CommissionType }
+     *     {@link SubType }
      *     
      */
-    public CommissionType getCommissionType() {
-        if (commissionType == null) {
-            return CommissionType.OTHER_ITEM;
+    public SubType getSubType() {
+        if (subType == null) {
+            return SubType.OTHER_ITEM;
         } else {
-            return commissionType;
+            return subType;
         }
     }
 
     /**
-     * Define o valor da propriedade commissionType.
+     * Define o valor da propriedade subType.
      * 
      * @param value
      *     allowed object is
-     *     {@link CommissionType }
+     *     {@link SubType }
      *     
      */
-    public void setCommissionType(CommissionType value) {
-        this.commissionType = value;
+    public void setSubType(SubType value) {
+        this.subType = value;
     }
 
     /**

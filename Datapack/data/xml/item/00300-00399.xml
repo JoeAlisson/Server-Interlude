@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <armor id="384" name="Wolf Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
+    <armor id="384" name="Wolf Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
         <bodyPart>LEGS</bodyPart>
         <price>2010000</price>
         <restriction freightable="false"/>
@@ -10,7 +10,7 @@
         <time>-1</time>
         <weight>2560</weight>
         </armor>
-    <armor id="385" name="Gaiters of Victory" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
+    <armor id="385" name="Gaiters of Victory" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
         <bodyPart>LEGS</bodyPart>
         <price>2010000</price>
         <restriction freightable="false"/>
@@ -20,7 +20,7 @@
         <time>-1</time>
         <weight>2240</weight>
         </armor>
-    <armor id="386" name="Gaiters of Valor" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
+    <armor id="386" name="Gaiters of Valor" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
         <bodyPart>LEGS</bodyPart>
         <price>2890000</price>
         <restriction freightable="false"/>
@@ -30,7 +30,7 @@
         <time>-1</time>
         <weight>2240</weight>
         </armor>
-    <armor id="387" name="Elven Crystal Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
+    <armor id="387" name="Elven Crystal Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_plate_gaiters_i00">
         <bodyPart>LEGS</bodyPart>
         <price>2010000</price>
         <restriction freightable="false"/>
@@ -40,7 +40,7 @@
         <time>-1</time>
         <weight>2240</weight>
         </armor>
-    <armor id="388" name="Dark Crystal Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t74_l_i00">
+    <armor id="388" name="Dark Crystal Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t74_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>2226000</price>
         <restriction freightable="false"/>
@@ -50,7 +50,7 @@
         <time>-1</time>
         <weight>3320</weight>
         </armor>
-    <armor id="390" name="Cotton Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t07_u_i00">
+    <armor id="390" name="Cotton Shirt" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t07_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>20300</price>
         <restriction freightable="false"/>
@@ -59,7 +59,7 @@
         <time>-1</time>
         <weight>4770</weight>
         </armor>
-    <armor id="391" name="Puma Skin Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t09_u_i00">
+    <armor id="391" name="Puma Skin Shirt" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t09_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>62600</price>
         <restriction freightable="false"/>
@@ -69,7 +69,7 @@
         <time>-1</time>
         <weight>4700</weight>
         </armor>
-    <armor id="392" name="Lion Skin Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t18_u_i00">
+    <armor id="392" name="Lion Skin Shirt" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t18_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>99900</price>
         <restriction freightable="false"/>
@@ -79,7 +79,7 @@
         <time>-1</time>
         <weight>4580</weight>
         </armor>
-    <armor id="393" name="Mithril Banded Mail" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t10_u_i00">
+    <armor id="393" name="Mithril Banded Mail" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t10_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>152000</price>
         <restriction freightable="false"/>
@@ -89,7 +89,7 @@
         <time>-1</time>
         <weight>4570</weight>
         </armor>
-    <armor id="394" name="Reinforced Leather Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t13_u_i00">
+    <armor id="394" name="Reinforced Leather Shirt" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t13_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>152000</price>
         <restriction freightable="false"/>
@@ -99,7 +99,7 @@
         <time>-1</time>
         <weight>4570</weight>
         </armor>
-    <armor id="395" name="Manticore Skin Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t42_u_i00">
+    <armor id="395" name="Manticore Skin Shirt" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t42_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>224000</price>
         <restriction freightable="false"/>
@@ -109,7 +109,7 @@
         <time>-1</time>
         <weight>4520</weight>
         </armor>
-    <armor id="396" name="Salamander Skin Mail" type="LIGHT" commissionType="FULL_BODY" icon="icon.armor_t45_ul_i00">
+    <armor id="396" name="Salamander Skin Mail" type="LIGHT" subType="FULL_BODY" icon="icon.armor_t45_ul_i00">
         <bodyPart>ONE_PIECE</bodyPart>
         <price>429000</price>
         <restriction freightable="false"/>
@@ -119,7 +119,7 @@
         <time>-1</time>
         <weight>6100</weight>
         </armor>
-    <armor id="397" name="Reinforced Mithril Shirt" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t47_u_i00">
+    <armor id="397" name="Reinforced Mithril Shirt" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t47_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>379000</price>
         <restriction freightable="false"/>
@@ -129,7 +129,7 @@
         <time>-1</time>
         <weight>4470</weight>
         </armor>
-    <armor id="398" name="Plated Leather Armor" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t47_u_i00">
+    <armor id="398" name="Plated Leather Armor" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t47_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>446000</price>
         <restriction freightable="false"/>
@@ -139,7 +139,7 @@
         <time>-1</time>
         <weight>4450</weight>
         </armor>
-    <armor id="399" name="Rind Leather Armor" type="LIGHT" commissionType="ARMOR_TOP" icon="icon.armor_t49_u_i00">
+    <armor id="399" name="Rind Leather Armor" type="LIGHT" subType="ARMOR_TOP" icon="icon.armor_t49_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>483000</price>
         <restriction freightable="false"/>
@@ -149,7 +149,7 @@
         <time>-1</time>
         <weight>4420</weight>
         </armor>
-    <weapon id="300" name="Great Axe" type="POLE" commissionType="SPEAR" icon="icon.weapon_great_axe_i00">
+    <weapon id="300" name="Great Axe" type="POLE" subType="SPEAR" icon="icon.weapon_great_axe_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -162,7 +162,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="301" name="scorpion" type="POLE" commissionType="SPEAR" icon="icon.weapon_scorpion_i00">
+    <weapon id="301" name="scorpion" type="POLE" subType="SPEAR" icon="icon.weapon_scorpion_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -175,7 +175,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="302" name="Body Slasher" type="POLE" commissionType="SPEAR" icon="icon.weapon_body_slasher_i00">
+    <weapon id="302" name="Body Slasher" type="POLE" subType="SPEAR" icon="icon.weapon_body_slasher_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -188,7 +188,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="303" name="Widow Maker" type="POLE" commissionType="SPEAR" icon="icon.weapon_widow_maker_i00">
+    <weapon id="303" name="Widow Maker" type="POLE" subType="SPEAR" icon="icon.weapon_widow_maker_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -201,7 +201,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="305" name="Tallum Glaive" type="POLE" commissionType="SPEAR" icon="icon.weapon_tallum_glaive_i00">
+    <weapon id="305" name="Tallum Glaive" type="POLE" subType="SPEAR" icon="icon.weapon_tallum_glaive_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>20741000</price>
         <restriction freightable="false"/>
@@ -214,7 +214,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="308" name="Buffalo's Horn" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_buffalo_horn_i00">
+    <weapon magic="true" id="308" name="Buffalo's Horn" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_buffalo_horn_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>768</price>
         <restriction freightable="false"/>
@@ -225,7 +225,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="309" name="Tears of Eva" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_tears_of_eva_i00">
+    <weapon magic="true" id="309" name="Tears of Eva" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_tears_of_eva_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>136000</price>
         <restriction freightable="false"/>
@@ -236,7 +236,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="310" name="Relic of the Saints" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+    <weapon magic="true" id="310" name="Relic of the Saints" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>136000</price>
         <restriction freightable="false"/>
@@ -247,7 +247,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="311" name="Crucifix of Blessing" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_crucifix_of_blessing_i00">
+    <weapon magic="true" id="311" name="Crucifix of Blessing" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_crucifix_of_blessing_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>244000</price>
         <restriction freightable="false"/>
@@ -258,7 +258,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="312" name="Branch of Life" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_branch_of_life_i00">
+    <weapon magic="true" id="312" name="Branch of Life" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_branch_of_life_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>409000</price>
         <restriction freightable="false"/>
@@ -270,7 +270,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="313" name="Temptation of Abyss" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_temptation_of_abyss_i00">
+    <weapon magic="true" id="313" name="Temptation of Abyss" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_temptation_of_abyss_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>409000</price>
         <restriction freightable="false"/>
@@ -282,7 +282,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="314" name="Proof of Revenge" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_proof_of_revenge_i00">
+    <weapon magic="true" id="314" name="Proof of Revenge" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_proof_of_revenge_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>409000</price>
         <restriction freightable="false"/>
@@ -294,7 +294,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="315" name="Divine Tome" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_divine_tome_i00">
+    <weapon magic="true" id="315" name="Divine Tome" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_divine_tome_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>644000</price>
         <restriction freightable="false"/>
@@ -306,7 +306,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="316" name="Sage's Blood" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_blood_of_saints_i00">
+    <weapon magic="true" id="316" name="Sage's Blood" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_blood_of_saints_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>967000</price>
         <restriction freightable="false"/>
@@ -318,7 +318,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="317" name="Tome of Blood" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_tome_of_blood_i00">
+    <weapon magic="true" id="317" name="Tome of Blood" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_tome_of_blood_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>967000</price>
         <restriction freightable="false"/>
@@ -330,7 +330,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="318" name="Crucifix of Blood" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_crucifix_of_blood_i00">
+    <weapon magic="true" id="318" name="Crucifix of Blood" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_crucifix_of_blood_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -342,7 +342,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="319" name="Eye of Infinity" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+    <weapon magic="true" id="319" name="Eye of Infinity" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -354,7 +354,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="320" name="Blue Crystal Skull" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+    <weapon magic="true" id="320" name="Blue Crystal Skull" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>1520000</price>
         <restriction freightable="false"/>
@@ -366,7 +366,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="321" name="Demon's Fangs" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_demon_fangs_i00">
+    <weapon magic="true" id="321" name="Demon's Fangs" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_demon_fangs_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>1520000</price>
         <restriction freightable="false"/>
@@ -378,7 +378,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="322" name="Vajra Wand" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+    <weapon magic="true" id="322" name="Vajra Wand" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>1800000</price>
         <restriction freightable="false"/>
@@ -390,7 +390,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="323" name="Ancient Reagent" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
+    <weapon magic="true" id="323" name="Ancient Reagent" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_apprentices_spellbook_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>1800000</price>
         <restriction freightable="false"/>
@@ -402,7 +402,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="325" name="Horn of Glory" type="SWORD" commissionType="OTHER_WEAPON" icon="icon.weapon_horn_of_glory_i00">
+    <weapon magic="true" id="325" name="Horn of Glory" type="SWORD" subType="OTHER_WEAPON" icon="icon.weapon_horn_of_glory_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -414,7 +414,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <armor id="347" name="Ring Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t12_u_i00">
+    <armor id="347" name="Ring Breastplate" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t12_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>83500</price>
         <restriction freightable="false"/>
@@ -424,7 +424,7 @@
         <time>-1</time>
         <weight>8820</weight>
         </armor>
-    <armor id="348" name="Scale Mail" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t08_u_i00">
+    <armor id="348" name="Scale Mail" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t08_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>133000</price>
         <restriction freightable="false"/>
@@ -434,7 +434,7 @@
         <time>-1</time>
         <weight>8720</weight>
         </armor>
-    <armor id="349" name="Compound Scale Mail" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t20_u_i00">
+    <armor id="349" name="Compound Scale Mail" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t20_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>183000</price>
         <restriction freightable="false"/>
@@ -444,7 +444,7 @@
         <time>-1</time>
         <weight>8620</weight>
         </armor>
-    <armor id="350" name="Dwarven Scale Mail" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t15_u_i00">
+    <armor id="350" name="Dwarven Scale Mail" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t15_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>183000</price>
         <restriction freightable="false"/>
@@ -454,7 +454,7 @@
         <time>-1</time>
         <weight>8540</weight>
         </armor>
-    <armor id="351" name="Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t40_u_i00">
+    <armor id="351" name="Breastplate" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t40_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>203000</price>
         <restriction freightable="false"/>
@@ -464,7 +464,7 @@
         <time>-1</time>
         <weight>8420</weight>
         </armor>
-    <armor id="352" name="Brigandine" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t43_u_i00">
+    <armor id="352" name="Brigandine" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t43_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>299000</price>
         <restriction freightable="false"/>
@@ -474,7 +474,7 @@
         <time>-1</time>
         <weight>8320</weight>
         </armor>
-    <armor id="353" name="Half Plate Armor" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t46_u_i00">
+    <armor id="353" name="Half Plate Armor" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t46_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>391000</price>
         <restriction freightable="false"/>
@@ -484,7 +484,7 @@
         <time>-1</time>
         <weight>8220</weight>
         </armor>
-    <armor id="354" name="Chain Mail Shirt" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t48_u_i00">
+    <armor id="354" name="Chain Mail Shirt" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t48_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>505000</price>
         <restriction freightable="false"/>
@@ -494,7 +494,7 @@
         <time>-1</time>
         <weight>8120</weight>
         </armor>
-    <armor id="355" name="Dwarven Chain Mail Shirt" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t60_u_i00">
+    <armor id="355" name="Dwarven Chain Mail Shirt" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t60_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>644000</price>
         <restriction freightable="false"/>
@@ -504,7 +504,7 @@
         <time>-1</time>
         <weight>8070</weight>
         </armor>
-    <armor id="356" name="Full Plate Armor" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t62_ul_i00">
+    <armor id="356" name="Full Plate Armor" type="HEAVY" subType="FULL_BODY" icon="icon.armor_t62_ul_i00">
         <bodyPart>ONE_PIECE</bodyPart>
         <price>2090000</price>
         <restriction freightable="false"/>
@@ -514,7 +514,7 @@
         <time>-1</time>
         <weight>10480</weight>
         </armor>
-    <armor id="357" name="Zubei's Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t64_u_i00">
+    <armor id="357" name="Zubei's Breastplate" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t64_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>2080000</price>
         <restriction freightable="false"/>
@@ -524,7 +524,7 @@
         <time>-1</time>
         <weight>7970</weight>
         </armor>
-    <armor id="358" name="Blue Wolf Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t68_u_i00">
+    <armor id="358" name="Blue Wolf Breastplate" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t68_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>3220000</price>
         <restriction freightable="false"/>
@@ -534,7 +534,7 @@
         <time>-1</time>
         <weight>7820</weight>
         </armor>
-    <armor id="360" name="Armor of Victory" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
+    <armor id="360" name="Armor of Victory" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
         <bodyPart>CHEST</bodyPart>
         <price>3220000</price>
         <restriction freightable="false"/>
@@ -544,7 +544,7 @@
         <time>-1</time>
         <weight>3360</weight>
         </armor>
-    <armor id="361" name="Breastplate of Valor" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
+    <armor id="361" name="Breastplate of Valor" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
         <bodyPart>CHEST</bodyPart>
         <price>4630000</price>
         <restriction freightable="false"/>
@@ -554,7 +554,7 @@
         <time>-1</time>
         <weight>3360</weight>
         </armor>
-    <armor id="364" name="Elven Crystal Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
+    <armor id="364" name="Elven Crystal Breastplate" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_dwarven_scale_mail_i00">
         <bodyPart>CHEST</bodyPart>
         <price>3220000</price>
         <restriction freightable="false"/>
@@ -564,7 +564,7 @@
         <time>-1</time>
         <weight>2400</weight>
         </armor>
-    <armor id="365" name="Dark Crystal Breastplate" type="HEAVY" commissionType="ARMOR_TOP" icon="icon.armor_t74_u_i00">
+    <armor id="365" name="Dark Crystal Breastplate" type="HEAVY" subType="ARMOR_TOP" icon="icon.armor_t74_u_i00">
         <bodyPart>CHEST</bodyPart>
         <price>3562000</price>
         <restriction freightable="false"/>
@@ -574,7 +574,7 @@
         <time>-1</time>
         <weight>7700</weight>
         </armor>
-    <armor id="374" name="Armor of Nightmare" type="HEAVY" commissionType="FULL_BODY" icon="icon.armor_t80_ul_i00">
+    <armor id="374" name="Armor of Nightmare" type="HEAVY" subType="FULL_BODY" icon="icon.armor_t80_ul_i00">
         <bodyPart>ONE_PIECE</bodyPart>
         <price>8804000</price>
         <restriction freightable="false"/>
@@ -584,7 +584,7 @@
         <time>-1</time>
         <weight>9580</weight>
         </armor>
-    <armor id="376" name="Iron Plate Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t12_l_i00">
+    <armor id="376" name="Iron Plate Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t12_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>52200</price>
         <restriction freightable="false"/>
@@ -594,7 +594,7 @@
         <time>-1</time>
         <weight>3820</weight>
         </armor>
-    <armor id="377" name="Scale Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t08_l_i00">
+    <armor id="377" name="Scale Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t08_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>83300</price>
         <restriction freightable="false"/>
@@ -604,7 +604,7 @@
         <time>-1</time>
         <weight>3860</weight>
         </armor>
-    <armor id="378" name="Compound Scale Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t20_l_i00">
+    <armor id="378" name="Compound Scale Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t20_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>127000</price>
         <restriction freightable="false"/>
@@ -614,7 +614,7 @@
         <time>-1</time>
         <weight>3770</weight>
         </armor>
-    <armor id="379" name="Dwarven Scale Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t15_l_i00">
+    <armor id="379" name="Dwarven Scale Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t15_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>127000</price>
         <restriction freightable="false"/>
@@ -624,7 +624,7 @@
         <time>-1</time>
         <weight>3840</weight>
         </armor>
-    <armor id="380" name="Plate Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t46_l_i00">
+    <armor id="380" name="Plate Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t46_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>244000</price>
         <restriction freightable="false"/>
@@ -634,7 +634,7 @@
         <time>-1</time>
         <weight>3770</weight>
         </armor>
-    <armor id="381" name="Chain Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t48_l_i00">
+    <armor id="381" name="Chain Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t48_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>316000</price>
         <restriction freightable="false"/>
@@ -644,7 +644,7 @@
         <time>-1</time>
         <weight>3680</weight>
         </armor>
-    <armor id="382" name="Dwarven Chain Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t60_l_i00">
+    <armor id="382" name="Dwarven Chain Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t60_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>403000</price>
         <restriction freightable="false"/>
@@ -654,7 +654,7 @@
         <time>-1</time>
         <weight>3620</weight>
         </armor>
-    <armor id="383" name="Zubei's Gaiters" type="HEAVY" commissionType="ARMOR_PANTS" icon="icon.armor_t64_l_i00">
+    <armor id="383" name="Zubei's Gaiters" type="HEAVY" subType="ARMOR_PANTS" icon="icon.armor_t64_l_i00">
         <bodyPart>LEGS</bodyPart>
         <price>1300000</price>
         <restriction freightable="false"/>

@@ -594,7 +594,7 @@ public class AdminEventEngine implements IAdminCommandHandler {
 
     private void createItem(L2PcInstance activeChar, L2PcInstance player, int id, int num) {
         player.getInventory().addItem("Event", id, num, player, activeChar);
-        ItemList il = new ItemList(player, true);
+        ItemListPacket il = new ItemListPacket(player, true);
         player.sendPacket(il);
 
         NpcHtmlMessage adminReply = new NpcHtmlMessage(5);

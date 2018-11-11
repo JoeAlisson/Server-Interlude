@@ -165,7 +165,7 @@
         <weight>0</weight>
         <skill id="55317"/>
     </item>
-    <armor id="70221" name="Refined Orfen's Earring" additionalName="7-day" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
+    <armor id="70221" name="Refined Orfen's Earring" additionalName="7-day" subType="EARRING" icon="icon.accessory_earring_of_orfen_i03">
         <bodyPart>EAR</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -175,7 +175,7 @@
         <weight>150</weight>
         <skill id="3560" level="3"/>
         </armor>
-    <armor id="70220" name="Refined Queen Ant's Ring" additionalName="7-day" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
+    <armor id="70220" name="Refined Queen Ant's Ring" additionalName="7-day" subType="RING" icon="icon.accessory_ring_of_queen_ant_i03">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
@@ -193,7 +193,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="70222" name="Refined Ring of Core" additionalName="7-day" commissionType="RING" icon="icon.accessory_ring_of_core_i03">
+    <armor id="70222" name="Refined Ring of Core" additionalName="7-day" subType="RING" icon="icon.accessory_ring_of_core_i03">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>

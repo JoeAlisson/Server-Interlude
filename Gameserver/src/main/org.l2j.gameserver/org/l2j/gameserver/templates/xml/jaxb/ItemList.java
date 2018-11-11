@@ -2,16 +2,20 @@
 // Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.1-b171012.0423 
 // Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2018.11.06 às 03:44:38 PM BRT 
+// Gerado em: 2018.11.11 às 07:52:07 AM BRT 
 //
 
 
 package org.l2j.gameserver.templates.xml.jaxb;
 
-import javax.xml.bind.JAXBElement;
-import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElementRef;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 
 /**
@@ -62,8 +66,8 @@ public class ItemList {
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link Armor }{@code >}
-     * {@link JAXBElement }{@code <}{@link Weapon }{@code >}
      * {@link JAXBElement }{@code <}{@link Item }{@code >}
+     * {@link JAXBElement }{@code <}{@link Weapon }{@code >}
      * {@link JAXBElement }{@code <}{@link ItemTemplate }{@code >}
      * 
      * 

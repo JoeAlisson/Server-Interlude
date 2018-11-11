@@ -288,7 +288,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="3926" name="Scroll: Guidance" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3926" name="Scroll: Guidance" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -303,7 +303,7 @@
         </condition>
         <skill id="2050"/>
     </item>
-    <item stackable="true" id="3927" name="Scroll: Death Whisper" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3927" name="Scroll: Death Whisper" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -318,7 +318,7 @@
         </condition>
         <skill id="2051"/>
     </item>
-    <item stackable="true" id="3928" name="Scroll: Focus" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3928" name="Scroll: Focus" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -333,7 +333,7 @@
         </condition>
         <skill id="2052"/>
     </item>
-    <item stackable="true" id="3929" name="Scroll: Acumen" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3929" name="Scroll: Acumen" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -348,7 +348,7 @@
         </condition>
         <skill id="2053"/>
     </item>
-    <item stackable="true" id="3930" name="Scroll: Haste" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3930" name="Scroll: Haste" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -363,7 +363,7 @@
         </condition>
         <skill id="2054"/>
     </item>
-    <item stackable="true" id="3931" name="Scroll: Agility" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3931" name="Scroll: Agility" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -378,7 +378,7 @@
         </condition>
         <skill id="2055"/>
     </item>
-    <item stackable="true" id="3932" name="Scroll: Empower" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3932" name="Scroll: Empower" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -393,7 +393,7 @@
         </condition>
         <skill id="2056"/>
     </item>
-    <item stackable="true" id="3933" name="Scroll: Might" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3933" name="Scroll: Might" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -408,7 +408,7 @@
         </condition>
         <skill id="2057"/>
     </item>
-    <item stackable="true" id="3934" name="Scroll: Wind Walk" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3934" name="Scroll: Wind Walk" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -423,7 +423,7 @@
         </condition>
         <skill id="2058"/>
     </item>
-    <item stackable="true" id="3935" name="Scroll: Shield" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="3935" name="Scroll: Shield" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -438,7 +438,7 @@
         </condition>
         <skill id="2059"/>
     </item>
-    <item stackable="true" id="3936" name="Blessed Scroll of Resurrection" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
+    <item stackable="true" id="3936" name="Blessed Scroll of Resurrection" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
         <price>400000</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -448,7 +448,7 @@
         <weight>120</weight>
         <skill id="2049"/>
     </item>
-    <weapon id="3937" name="Monster Only (Lesser Giant)" type="POLE" commissionType="SPEAR" icon="icon.weapon_monster_i00">
+    <weapon id="3937" name="Monster Only (Lesser Giant)" type="POLE" subType="SPEAR" icon="icon.weapon_monster_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>400000</price>
         <restriction freightable="false"/>
@@ -461,7 +461,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="3938" name="Monster Only (Lesser Giant Wizard's Weapon)" type="POLE" commissionType="SPEAR" icon="icon.weapon_monster_i00">
+    <weapon id="3938" name="Monster Only (Lesser Giant Wizard's Weapon)" type="POLE" subType="SPEAR" icon="icon.weapon_monster_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>400000</price>
         <restriction freightable="false"/>
@@ -474,7 +474,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="3939" name="Monster Only (Bensh)" type="POLE" commissionType="SPEAR" icon="icon.weapon_monster_i00">
+    <weapon id="3939" name="Monster Only (Bensh)" type="POLE" subType="SPEAR" icon="icon.weapon_monster_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>400000</price>
         <restriction freightable="false"/>
@@ -487,7 +487,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <item stackable="true" id="3940" name="Blueprint: Summon Siege Golem" commissionType="SPELLBOOK" icon="icon.etc_plan_i00">
+    <item stackable="true" id="3940" name="Blueprint: Summon Siege Golem" subType="SPELLBOOK" icon="icon.etc_plan_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -495,7 +495,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3941" name="Spellbook: Mass Resurrection" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="3941" name="Spellbook: Mass Resurrection" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>4600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -503,7 +503,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3942" name="Spellbook: Party Return" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="3942" name="Spellbook: Party Return" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -511,7 +511,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3943" name="Amulet: Pa'agrio's Heart" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3943" name="Amulet: Pa'agrio's Heart" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3850</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -519,7 +519,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3944" name="Spellbook: Light" commissionType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
+    <item stackable="true" id="3944" name="Spellbook: Light" subType="SPELLBOOK" icon="icon.etc_spell_books_blue_i00">
         <price>43681</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -527,7 +527,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3947" name="Blessed Spiritshot (No-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_white_i01">
+    <item stackable="true" id="3947" name="Blessed Spiritshot (No-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_white_i01">
         <price>35</price>
         <restriction freightable="false"/>
         <handler>BLESSED_SPIRIT_SHOT</handler>
@@ -537,7 +537,7 @@
         <weight>4</weight>
         <skill id="2061"/>
     </item>
-    <item stackable="true" id="3948" name="Blessed Spiritshot (D-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_blue_i01">
+    <item stackable="true" id="3948" name="Blessed Spiritshot (D-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_blue_i01">
         <price>45</price>
         <restriction freightable="false"/>
         <crystalInfo type="D"/>
@@ -548,7 +548,7 @@
         <weight>4</weight>
         <skill id="2160"/>
     </item>
-    <item stackable="true" id="3949" name="Blessed Spiritshot (C-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_green_i01">
+    <item stackable="true" id="3949" name="Blessed Spiritshot (C-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_green_i01">
         <price>90</price>
         <restriction freightable="false"/>
         <crystalInfo type="C"/>
@@ -559,7 +559,7 @@
         <weight>2</weight>
         <skill id="2161"/>
     </item>
-    <item stackable="true" id="3950" name="Blessed Spiritshot (B-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_red_i01">
+    <item stackable="true" id="3950" name="Blessed Spiritshot (B-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_red_i01">
         <price>245</price>
         <restriction freightable="false"/>
         <crystalInfo type="B"/>
@@ -570,7 +570,7 @@
         <weight>2</weight>
         <skill id="2162"/>
     </item>
-    <item stackable="true" id="3951" name="Blessed Spiritshot (A-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_silver_i01">
+    <item stackable="true" id="3951" name="Blessed Spiritshot (A-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_silver_i01">
         <price>290</price>
         <restriction freightable="false"/>
         <crystalInfo type="A"/>
@@ -581,7 +581,7 @@
         <weight>1</weight>
         <skill id="2163"/>
     </item>
-    <item stackable="true" id="3953" name="Recipe: Blessed Spiritshot (D-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="3953" name="Recipe: Blessed Spiritshot (D-grade)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>5000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -591,7 +591,7 @@
         <weight>30</weight>
         <recipeId>323</recipeId>
     </item>
-    <item stackable="true" id="3954" name="Recipe: Blessed Spiritshot (C-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="3954" name="Recipe: Blessed Spiritshot (C-grade)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>60000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -601,7 +601,7 @@
         <weight>30</weight>
         <recipeId>324</recipeId>
     </item>
-    <item stackable="true" id="3955" name="Recipe: Blessed Spiritshot (B-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="3955" name="Recipe: Blessed Spiritshot (B-grade)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -611,7 +611,7 @@
         <weight>30</weight>
         <recipeId>325</recipeId>
     </item>
-    <item stackable="true" id="3956" name="Recipe: Blessed Spiritshot (A-grade)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+    <item stackable="true" id="3956" name="Recipe: Blessed Spiritshot (A-grade)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_violet_i00">
         <price>150000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -621,7 +621,7 @@
         <weight>30</weight>
         <recipeId>326</recipeId>
     </item>
-    <item stackable="true" id="3958" name="Blessed Scroll of Escape" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i01">
+    <item stackable="true" id="3958" name="Blessed Scroll of Escape" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i01">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -631,7 +631,7 @@
         <weight>120</weight>
         <skill id="2036" level="2"/>
     </item>
-    <item stackable="true" id="3959" name="Blessed Scroll of Resurrection" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
+    <item stackable="true" id="3959" name="Blessed Scroll of Resurrection" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_resurrection_i01">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>

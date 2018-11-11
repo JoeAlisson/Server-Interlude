@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon id="8800" name="Naga Storm" additionalName="Focus" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_naga_storm_i01">
+    <weapon id="8800" name="Naga Storm" additionalName="Focus" type="DAGGER" subType="DAGGER" icon="icon.weapon_naga_storm_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -13,7 +13,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="8801" name="Naga Storm" additionalName="Haste" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_naga_storm_i01">
+    <weapon id="8801" name="Naga Storm" additionalName="Haste" type="DAGGER" subType="DAGGER" icon="icon.weapon_naga_storm_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -26,7 +26,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="8802" name="Naga Storm" additionalName="Mortal Strike" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_naga_storm_i01">
+    <weapon id="8802" name="Naga Storm" additionalName="Mortal Strike" type="DAGGER" subType="DAGGER" icon="icon.weapon_naga_storm_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -39,7 +39,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="8803" name="Tiphon's Spear" additionalName="Focus" type="POLE" commissionType="SPEAR" icon="icon.weapon_tiphon_spear_i01">
+    <weapon id="8803" name="Tiphon's Spear" additionalName="Focus" type="POLE" subType="SPEAR" icon="icon.weapon_tiphon_spear_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -53,7 +53,7 @@
         <damage distance="66" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="8804" name="Tiphon's Spear" additionalName="Haste" type="POLE" commissionType="SPEAR" icon="icon.weapon_tiphon_spear_i01">
+    <weapon id="8804" name="Tiphon's Spear" additionalName="Haste" type="POLE" subType="SPEAR" icon="icon.weapon_tiphon_spear_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -74,7 +74,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <weapon id="8805" name="Tiphon's Spear" additionalName="Critical Stun" type="POLE" commissionType="SPEAR" icon="icon.weapon_tiphon_spear_i01">
+    <weapon id="8805" name="Tiphon's Spear" additionalName="Critical Stun" type="POLE" subType="SPEAR" icon="icon.weapon_tiphon_spear_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -87,7 +87,7 @@
         <damage distance="66" width="180"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="8806" name="Shyeed's Bow" additionalName="Focus" type="BOW" commissionType="BOW" icon="icon.weapon_shyid_bow_i01">
+    <weapon id="8806" name="Shyeed's Bow" additionalName="Focus" type="BOW" subType="BOW" icon="icon.weapon_shyid_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -100,7 +100,7 @@
         <damage distance="10"/>
         <consume mp="5" shot="1"/>
     </weapon>
-    <weapon id="8807" name="Shyeed's Bow" additionalName="Haste" type="BOW" commissionType="BOW" icon="icon.weapon_shyid_bow_i01">
+    <weapon id="8807" name="Shyeed's Bow" additionalName="Haste" type="BOW" subType="BOW" icon="icon.weapon_shyid_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -124,7 +124,7 @@
             <level min="20"/>
         </condition>
     </item>
-    <weapon id="8808" name="Shyeed's Bow" additionalName="Critical Damage" type="BOW" commissionType="BOW" icon="icon.weapon_shyid_bow_i01">
+    <weapon id="8808" name="Shyeed's Bow" additionalName="Critical Damage" type="BOW" subType="BOW" icon="icon.weapon_shyid_bow_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -145,7 +145,7 @@
         <time>-1</time>
         <weight>20</weight>
     </item>
-    <weapon id="8809" name="Sobekk's Hurricane" additionalName="Focus" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_sobekk_hurricane_i01">
+    <weapon id="8809" name="Sobekk's Hurricane" additionalName="Focus" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_sobekk_hurricane_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -158,7 +158,7 @@
         <damage distance="32" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="8810" name="Sobekk's Hurricane" additionalName="Haste" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_sobekk_hurricane_i01">
+    <weapon id="8810" name="Sobekk's Hurricane" additionalName="Haste" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_sobekk_hurricane_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -171,7 +171,7 @@
         <damage distance="32" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="8811" name="Sobekk's Hurricane" additionalName="Critical Damage" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_sobekk_hurricane_i01">
+    <weapon id="8811" name="Sobekk's Hurricane" additionalName="Critical Damage" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_sobekk_hurricane_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -185,7 +185,7 @@
         <damage distance="32" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8812" name="Themis' Tongue" additionalName="Empower" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_tongue_of_themis_i01">
+    <weapon magic="true" id="8812" name="Themis' Tongue" additionalName="Empower" type="SWORD" subType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_tongue_of_themis_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -198,7 +198,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8813" name="Themis' Tongue" additionalName="Acumen" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_tongue_of_themis_i01">
+    <weapon magic="true" id="8813" name="Themis' Tongue" additionalName="Acumen" type="SWORD" subType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_tongue_of_themis_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -212,7 +212,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8814" name="Themis' Tongue" additionalName="Magic Regeneration" type="SWORD" commissionType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_tongue_of_themis_i01">
+    <weapon magic="true" id="8814" name="Themis' Tongue" additionalName="Magic Regeneration" type="SWORD" subType="ONE_HAND_MAGIC_SWORD" icon="icon.weapon_tongue_of_themis_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -226,7 +226,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8815" name="Cabrio's Hand" additionalName="Empower" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_hand_of_cabrio_i01">
+    <weapon magic="true" id="8815" name="Cabrio's Hand" additionalName="Empower" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_hand_of_cabrio_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -239,7 +239,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8816" name="Cabrio's Hand" additionalName="Acumen" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_hand_of_cabrio_i01">
+    <weapon magic="true" id="8816" name="Cabrio's Hand" additionalName="Acumen" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_hand_of_cabrio_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -252,7 +252,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8817" name="Cabrio's Hand" additionalName="Magic Regeneration" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_hand_of_cabrio_i01">
+    <weapon magic="true" id="8817" name="Cabrio's Hand" additionalName="Magic Regeneration" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_hand_of_cabrio_i01">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -266,7 +266,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8818" name="Daimon Crystal" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_of_deamon_i01">
+    <weapon magic="true" id="8818" name="Daimon Crystal" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_of_deamon_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -279,7 +279,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8819" name="Daimon Crystal" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_of_deamon_i01">
+    <weapon magic="true" id="8819" name="Daimon Crystal" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_of_deamon_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -292,7 +292,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="8820" name="Daimon Crystal" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_of_deamon_i01">
+    <weapon magic="true" id="8820" name="Daimon Crystal" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_crystal_of_deamon_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>
@@ -306,7 +306,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <item stackable="true" id="8890" name="Spellbook: Summon Attractive Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="8890" name="Spellbook: Summon Attractive Cubic" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>200000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -314,7 +314,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="8891" name="Spellbook: Aura Flash" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="8891" name="Spellbook: Aura Flash" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>

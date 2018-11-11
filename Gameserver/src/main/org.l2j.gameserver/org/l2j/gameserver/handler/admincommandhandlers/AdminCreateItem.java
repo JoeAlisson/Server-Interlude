@@ -5,7 +5,7 @@ import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.handler.IAdminCommandHandler;
 import org.l2j.gameserver.model.GMAudit;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.templates.xml.jaxb.Item;
 import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
 
@@ -100,7 +100,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 		
 		activeChar.getInventory().addItem("Admin", id, num, activeChar, null);
 		
-		ItemList il = new ItemList(activeChar, true);
+		ItemListPacket il = new ItemListPacket(activeChar, true);
 		activeChar.sendPacket(il);
 		
 		activeChar.sendMessage("You have spawned " + num + " item(s) number " + id + " in your inventory.");

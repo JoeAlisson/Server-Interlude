@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <item stackable="true" id="3100" name="Spellbook: Guidance" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="3100" name="Spellbook: Guidance" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -8,7 +8,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3101" name="Spellbook: Death Whisper" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="3101" name="Spellbook: Death Whisper" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -16,7 +16,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3102" name="Spellbook: Blessed Shield" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="3102" name="Spellbook: Blessed Shield" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -24,7 +24,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3103" name="Amulet: Pa'agrio's Wisdom" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3103" name="Amulet: Pa'agrio's Wisdom" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -32,7 +32,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3104" name="Amulet: Pa'agrio's Glory" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3104" name="Amulet: Pa'agrio's Glory" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -40,7 +40,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3105" name="Amulet: Seal of Winter" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3105" name="Amulet: Seal of Winter" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -48,7 +48,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3106" name="Amulet: Seal of Flame" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3106" name="Amulet: Seal of Flame" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>4600</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -56,7 +56,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3107" name="Amulet: Seal of Gloom" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3107" name="Amulet: Seal of Gloom" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3850</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -64,7 +64,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3108" name="Amulet: Seal of Mirage" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3108" name="Amulet: Seal of Mirage" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3850</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -72,7 +72,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3109" name="Amulet: Seal of Silence" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3109" name="Amulet: Seal of Silence" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -80,7 +80,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3110" name="Amulet: Seal of Scourge" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3110" name="Amulet: Seal of Scourge" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -88,7 +88,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3111" name="Amulet: Seal of Suspension" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3111" name="Amulet: Seal of Suspension" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -96,7 +96,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3112" name="Amulet: Pa'agrio's Vision" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3112" name="Amulet: Pa'agrio's Vision" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3850</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -104,7 +104,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3113" name="Amulet: Pa'agrio's Protection" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3113" name="Amulet: Pa'agrio's Protection" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -112,7 +112,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3114" name="Amulet: Steal Essence" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3114" name="Amulet: Steal Essence" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -120,7 +120,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3115" name="Amulet: Freezing Flame" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3115" name="Amulet: Freezing Flame" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -128,7 +128,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3116" name="Amulet: Chant of Fury" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3116" name="Amulet: Chant of Fury" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -136,7 +136,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3117" name="Amulet: Chant of Evasion" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3117" name="Amulet: Chant of Evasion" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -144,7 +144,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="3118" name="Amulet: Chant of Rage" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="3118" name="Amulet: Chant of Rage" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>

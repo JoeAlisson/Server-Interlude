@@ -147,7 +147,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <armor id="90132" name="Monster Arena Belt" additionalName="7-day" type="LIGHT" icon="icon.belt_of_tiat">
+    <armor id="90132" name="Monster Arena Belt" subType="BELT" additionalName="7-day" type="LIGHT" icon="icon.belt_of_tiat">
         <bodyPart>WAIST</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>

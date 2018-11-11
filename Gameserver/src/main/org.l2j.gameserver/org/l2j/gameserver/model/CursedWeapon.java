@@ -100,7 +100,7 @@ public class CursedWeapon
 				}
 				else
 				{
-					player.sendPacket(new ItemList(player, true));
+					player.sendPacket(new ItemListPacket(player, true));
 				}
 				
 				player.broadcastUserInfo();
@@ -143,7 +143,7 @@ public class CursedWeapon
 				}
 				else
 				{
-					player.sendPacket(new ItemList(player, true));
+					player.sendPacket(new ItemListPacket(player, true));
 				}
 				
 				player.broadcastUserInfo();
@@ -390,7 +390,7 @@ public class CursedWeapon
 		}
 		else
 		{
-			this.player.sendPacket(new ItemList(this.player, false));
+			this.player.sendPacket(new ItemListPacket(this.player, false));
 		}
 		
 		// Refresh reader stats

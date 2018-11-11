@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <item stackable="true" id="2176" name="Recipe: Leather Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2176" name="Recipe: Leather Boots" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>418</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -10,7 +10,7 @@
         <weight>30</weight>
         <recipeId>69</recipeId>
     </item>
-    <item stackable="true" id="2177" name="Recipe: Bone Helmet" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2177" name="Recipe: Bone Helmet" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>626</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -20,7 +20,7 @@
         <weight>30</weight>
         <recipeId>70</recipeId>
     </item>
-    <item stackable="true" id="2178" name="Recipe: Dark Stockings" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2178" name="Recipe: Dark Stockings" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -30,7 +30,7 @@
         <weight>30</weight>
         <recipeId>71</recipeId>
     </item>
-    <item stackable="true" id="2179" name="Recipe: Quality Leather Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2179" name="Recipe: Quality Leather Gloves" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>418</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -40,7 +40,7 @@
         <weight>30</weight>
         <recipeId>72</recipeId>
     </item>
-    <item stackable="true" id="2180" name="Recipe: Scale Mail" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2180" name="Recipe: Scale Mail" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2660</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -50,7 +50,7 @@
         <weight>30</weight>
         <recipeId>73</recipeId>
     </item>
-    <item stackable="true" id="2181" name="Recipe: White Tunic" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2181" name="Recipe: White Tunic" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1998</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -60,7 +60,7 @@
         <weight>30</weight>
         <recipeId>74</recipeId>
     </item>
-    <item stackable="true" id="2182" name="Recipe: Scale Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2182" name="Recipe: Scale Gaiters" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1666</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -70,7 +70,7 @@
         <weight>30</weight>
         <recipeId>75</recipeId>
     </item>
-    <item stackable="true" id="2183" name="Recipe: Mithril Banded Mail" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2183" name="Recipe: Mithril Banded Mail" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>3040</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -80,7 +80,7 @@
         <weight>30</weight>
         <recipeId>76</recipeId>
     </item>
-    <item stackable="true" id="2184" name="Recipe: Mithril Banded Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2184" name="Recipe: Mithril Banded Gaiters" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1904</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -90,7 +90,7 @@
         <weight>30</weight>
         <recipeId>77</recipeId>
     </item>
-    <item stackable="true" id="2185" name="Recipe: Iron Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2185" name="Recipe: Iron Boots" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1016</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -100,7 +100,7 @@
         <weight>30</weight>
         <recipeId>78</recipeId>
     </item>
-    <item stackable="true" id="2186" name="Recipe: Brigandine" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2186" name="Recipe: Brigandine" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>5980</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -110,7 +110,7 @@
         <weight>30</weight>
         <recipeId>79</recipeId>
     </item>
-    <item stackable="true" id="2187" name="Recipe: Manticore Skin Shirt" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2187" name="Recipe: Manticore Skin Shirt" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>4480</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -120,7 +120,7 @@
         <weight>30</weight>
         <recipeId>80</recipeId>
     </item>
-    <item stackable="true" id="2188" name="Recipe: Manticore Skin Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2188" name="Recipe: Manticore Skin Gaiters" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2800</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -130,7 +130,7 @@
         <weight>30</weight>
         <recipeId>81</recipeId>
     </item>
-    <item stackable="true" id="2189" name="Recipe: Mithril Tunic" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2189" name="Recipe: Mithril Tunic" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>4480</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -140,7 +140,7 @@
         <weight>30</weight>
         <recipeId>82</recipeId>
     </item>
-    <item stackable="true" id="2190" name="Recipe: Mithril Stockings" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2190" name="Recipe: Mithril Stockings" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2800</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -150,7 +150,7 @@
         <weight>30</weight>
         <recipeId>83</recipeId>
     </item>
-    <item stackable="true" id="2191" name="Recipe: RIP Gauntlets" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2191" name="Recipe: RIP Gauntlets" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1494</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -160,7 +160,7 @@
         <weight>30</weight>
         <recipeId>84</recipeId>
     </item>
-    <item stackable="true" id="2192" name="Recipe: Kite Shield" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2192" name="Recipe: Kite Shield" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1568</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -170,7 +170,7 @@
         <weight>30</weight>
         <recipeId>85</recipeId>
     </item>
-    <item stackable="true" id="2193" name="Recipe: Boots of Strength" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2193" name="Recipe: Boots of Strength" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1494</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -180,7 +180,7 @@
         <weight>30</weight>
         <recipeId>86</recipeId>
     </item>
-    <item stackable="true" id="2194" name="Recipe: Mithril Gloves" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2194" name="Recipe: Mithril Gloves" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1956</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -190,7 +190,7 @@
         <weight>30</weight>
         <recipeId>87</recipeId>
     </item>
-    <item stackable="true" id="2195" name="Recipe: Half Plate Armor" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2195" name="Recipe: Half Plate Armor" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>7820</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -200,7 +200,7 @@
         <weight>30</weight>
         <recipeId>88</recipeId>
     </item>
-    <item stackable="true" id="2196" name="Recipe: Plate Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2196" name="Recipe: Plate Gaiters" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>4880</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -210,7 +210,7 @@
         <weight>30</weight>
         <recipeId>89</recipeId>
     </item>
-    <item stackable="true" id="2197" name="Recipe: Salamander Skin Mail" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2197" name="Recipe: Salamander Skin Mail" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>9540</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -220,7 +220,7 @@
         <weight>30</weight>
         <recipeId>90</recipeId>
     </item>
-    <item stackable="true" id="2198" name="Recipe: Sage's Rags" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2198" name="Recipe: Sage's Rags" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>9540</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -230,7 +230,7 @@
         <weight>30</weight>
         <recipeId>91</recipeId>
     </item>
-    <item stackable="true" id="2199" name="Recipe: Karmian Stockings" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2199" name="Recipe: Karmian Stockings" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>4740</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -240,7 +240,7 @@
         <weight>30</weight>
         <recipeId>92</recipeId>
     </item>
-    <item stackable="true" id="2100" name="Paradia Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2100" name="Paradia Staff Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>35480</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -248,7 +248,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2101" name="Inferno Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2101" name="Inferno Staff Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>35480</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -256,7 +256,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2102" name="Pa'agrio Hammer Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2102" name="Pa'agrio Hammer Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>36800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -264,7 +264,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2103" name="Sage's Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2103" name="Sage's Staff Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>35480</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -272,7 +272,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2104" name="Club of Nature Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2104" name="Club of Nature Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>35480</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -280,7 +280,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2105" name="Mace of Underworld Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2105" name="Mace of Underworld Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>37340</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -288,7 +288,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2106" name="Grace Dagger Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2106" name="Grace Dagger Edge" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>36700</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -296,7 +296,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2107" name="Dark Screamer Edge" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2107" name="Dark Screamer Edge" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>36700</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -304,7 +304,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2108" name="Fisted Blade Piece" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2108" name="Fisted Blade Piece" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>37340</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -312,7 +312,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2109" name="Akat Longbow Shaft" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
+    <item stackable="true" id="2109" name="Akat Longbow Shaft" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
         <price>35670</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -320,7 +320,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2112" name="Pa'agrio Axe Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2112" name="Pa'agrio Axe Blade" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>41300</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -328,7 +328,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2113" name="Scorpion Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2113" name="Scorpion Blade" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>41300</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -336,7 +336,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2114" name="Widowmaker Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2114" name="Widowmaker Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>41300</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -344,7 +344,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2115" name="Samurai Long Sword Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2115" name="Samurai Long Sword Blade" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>43655</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -352,7 +352,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2116" name="Deadman's Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2116" name="Deadman's Staff Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>42509</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -360,7 +360,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2117" name="Ghoul's Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2117" name="Ghoul's Staff Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>42509</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -368,7 +368,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2118" name="Demon's Staff Head" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
+    <item stackable="true" id="2118" name="Demon's Staff Head" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_squares_gray_i00">
         <price>42509</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -376,7 +376,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2119" name="Crystal Dagger Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2119" name="Crystal Dagger Blade" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>43891</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -384,7 +384,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2120" name="Great Pata Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2120" name="Great Pata Blade" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>41636</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -392,7 +392,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2121" name="Eminence Bow Shaft" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
+    <item stackable="true" id="2121" name="Eminence Bow Shaft" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_branch_gold_i00">
         <price>43491</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -400,7 +400,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2122" name="Orcish Poleaxe Blade" type="MATERIAL" commissionType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
+    <item stackable="true" id="2122" name="Orcish Poleaxe Blade" type="MATERIAL" subType="MAJOR_CRAFTING_INGREDIENTS" icon="icon.etc_sword_body_i00">
         <price>43818</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -408,7 +408,7 @@
         <time>-1</time>
         <weight>60</weight>
     </item>
-    <item stackable="true" id="2130" name="Gemstone (D-grade)" type="MATERIAL" commissionType="GEMSTONE" icon="icon.etc_crystal_ball_violet_i00">
+    <item stackable="true" id="2130" name="Gemstone (D-grade)" type="MATERIAL" subType="GEMSTONE" icon="icon.etc_crystal_ball_violet_i00">
         <price>1000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -416,7 +416,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="2131" name="Gemstone (C-grade)" type="MATERIAL" commissionType="GEMSTONE" icon="icon.etc_crystal_ball_green_i00">
+    <item stackable="true" id="2131" name="Gemstone (C-grade)" type="MATERIAL" subType="GEMSTONE" icon="icon.etc_crystal_ball_green_i00">
         <price>3000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -424,7 +424,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="2132" name="Gemstone (B-grade)" type="MATERIAL" commissionType="GEMSTONE" icon="icon.etc_bead_green_i00">
+    <item stackable="true" id="2132" name="Gemstone (B-grade)" type="MATERIAL" subType="GEMSTONE" icon="icon.etc_bead_green_i00">
         <price>10000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -432,7 +432,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="2133" name="Gemstone (A-grade)" type="MATERIAL" commissionType="GEMSTONE" icon="icon.etc_bead_red_i00">
+    <item stackable="true" id="2133" name="Gemstone (A-grade)" type="MATERIAL" subType="GEMSTONE" icon="icon.etc_bead_red_i00">
         <price>30000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -440,7 +440,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="2135" name="Recipe: Durable Braid" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2135" name="Recipe: Durable Braid" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>680</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -450,7 +450,7 @@
         <weight>30</weight>
         <recipeId>28</recipeId>
     </item>
-    <item stackable="true" id="2136" name="Recipe: Cokes" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2136" name="Recipe: Cokes" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>680</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -460,7 +460,7 @@
         <weight>30</weight>
         <recipeId>29</recipeId>
     </item>
-    <item stackable="true" id="2137" name="Recipe: Steel" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2137" name="Recipe: Steel" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>680</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -470,7 +470,7 @@
         <weight>30</weight>
         <recipeId>30</recipeId>
     </item>
-    <item stackable="true" id="2138" name="Recipe: Coarse Bone Powder" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2138" name="Recipe: Coarse Bone Powder" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>680</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -480,7 +480,7 @@
         <weight>30</weight>
         <recipeId>31</recipeId>
     </item>
-    <item stackable="true" id="2139" name="Recipe: Steel Mold" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2139" name="Recipe: Steel Mold" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>1000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -490,7 +490,7 @@
         <weight>30</weight>
         <recipeId>32</recipeId>
     </item>
-    <item stackable="true" id="2140" name="Recipe: High-grade Suede" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2140" name="Recipe: High-grade Suede" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>1000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -500,7 +500,7 @@
         <weight>30</weight>
         <recipeId>33</recipeId>
     </item>
-    <item stackable="true" id="2141" name="Recipe: Silver Mold" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2141" name="Recipe: Silver Mold" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>1000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -510,7 +510,7 @@
         <weight>30</weight>
         <recipeId>34</recipeId>
     </item>
-    <item stackable="true" id="2142" name="Recipe: Varnish of Purity" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2142" name="Recipe: Varnish of Purity" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>1000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -520,7 +520,7 @@
         <weight>30</weight>
         <recipeId>35</recipeId>
     </item>
-    <item stackable="true" id="2143" name="Recipe: Synthetic Cokes" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2143" name="Recipe: Synthetic Cokes" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>1000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -530,7 +530,7 @@
         <weight>30</weight>
         <recipeId>36</recipeId>
     </item>
-    <item stackable="true" id="2144" name="Recipe: Synthetic Braid" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2144" name="Recipe: Synthetic Braid" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>1000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -540,7 +540,7 @@
         <weight>30</weight>
         <recipeId>37</recipeId>
     </item>
-    <item stackable="true" id="2145" name="Recipe: Mithril Alloy" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2145" name="Recipe: Mithril Alloy" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2800</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -550,7 +550,7 @@
         <weight>30</weight>
         <recipeId>38</recipeId>
     </item>
-    <item stackable="true" id="2146" name="Recipe: Artisan's frame" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2146" name="Recipe: Artisan's frame" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2800</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -560,7 +560,7 @@
         <weight>30</weight>
         <recipeId>39</recipeId>
     </item>
-    <item stackable="true" id="2147" name="Recipe: Blacksmith' frame" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2147" name="Recipe: Blacksmith' frame" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2800</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -570,7 +570,7 @@
         <weight>30</weight>
         <recipeId>40</recipeId>
     </item>
-    <item stackable="true" id="2148" name="Recipe: Crafted Leather" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2148" name="Recipe: Crafted Leather" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2800</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -580,7 +580,7 @@
         <weight>30</weight>
         <recipeId>41</recipeId>
     </item>
-    <item stackable="true" id="2149" name="Recipe: Metallic Fiber" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2149" name="Recipe: Metallic Fiber" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2800</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -590,7 +590,7 @@
         <weight>30</weight>
         <recipeId>42</recipeId>
     </item>
-    <item stackable="true" id="2150" name="Recipe: Blue Diamond Necklace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2150" name="Recipe: Blue Diamond Necklace" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>426</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -600,7 +600,7 @@
         <weight>30</weight>
         <recipeId>43</recipeId>
     </item>
-    <item stackable="true" id="2151" name="Recipe: Necklace of Devotion" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2151" name="Recipe: Necklace of Devotion" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>718</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -610,7 +610,7 @@
         <weight>30</weight>
         <recipeId>44</recipeId>
     </item>
-    <item stackable="true" id="2152" name="Recipe: Magic Necklace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2152" name="Recipe: Magic Necklace" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1136</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -620,7 +620,7 @@
         <weight>30</weight>
         <recipeId>45</recipeId>
     </item>
-    <item stackable="true" id="2153" name="Recipe: Tiger's Eye" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2153" name="Recipe: Tiger's Eye" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1286</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -630,7 +630,7 @@
         <weight>30</weight>
         <recipeId>46</recipeId>
     </item>
-    <item stackable="true" id="2154" name="Recipe: Elven Earring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2154" name="Recipe: Elven Earring" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1868</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -640,7 +640,7 @@
         <weight>30</weight>
         <recipeId>47</recipeId>
     </item>
-    <item stackable="true" id="2155" name="Recipe: Elven Ring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2155" name="Recipe: Elven Ring" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1246</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -650,7 +650,7 @@
         <weight>30</weight>
         <recipeId>48</recipeId>
     </item>
-    <item stackable="true" id="2156" name="Recipe: Elven Necklace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2156" name="Recipe: Elven Necklace" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2500</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -660,7 +660,7 @@
         <weight>30</weight>
         <recipeId>49</recipeId>
     </item>
-    <item stackable="true" id="2157" name="Recipe: Onyx Beast's Eye Earring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2157" name="Recipe: Onyx Beast's Eye Earring" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>2420</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -670,7 +670,7 @@
         <weight>30</weight>
         <recipeId>50</recipeId>
     </item>
-    <item stackable="true" id="2158" name="Recipe: Mithril Ring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2158" name="Recipe: Mithril Ring" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>1616</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -680,7 +680,7 @@
         <weight>30</weight>
         <recipeId>51</recipeId>
     </item>
-    <item stackable="true" id="2159" name="Recipe: Dark Necklace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="2159" name="Recipe: Dark Necklace" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>3240</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -690,7 +690,7 @@
         <weight>30</weight>
         <recipeId>52</recipeId>
     </item>
-    <item stackable="true" id="2160" name="Recipe: Moonstone Earring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2160" name="Recipe: Moonstone Earring" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>3100</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -700,7 +700,7 @@
         <weight>30</weight>
         <recipeId>53</recipeId>
     </item>
-    <item stackable="true" id="2161" name="Recipe: Aquastone Ring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2161" name="Recipe: Aquastone Ring" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>2060</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -710,7 +710,7 @@
         <weight>30</weight>
         <recipeId>54</recipeId>
     </item>
-    <item stackable="true" id="2162" name="Recipe: Aquastone Necklace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2162" name="Recipe: Aquastone Necklace" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>4140</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -720,7 +720,7 @@
         <weight>30</weight>
         <recipeId>55</recipeId>
     </item>
-    <item stackable="true" id="2163" name="Recipe: Earring of Protection" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2163" name="Recipe: Earring of Protection" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>3920</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -730,7 +730,7 @@
         <weight>30</weight>
         <recipeId>56</recipeId>
     </item>
-    <item stackable="true" id="2164" name="Recipe: Ring of Protection" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2164" name="Recipe: Ring of Protection" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>2600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -740,7 +740,7 @@
         <weight>30</weight>
         <recipeId>57</recipeId>
     </item>
-    <item stackable="true" id="2165" name="Recipe: Necklace of Protection" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2165" name="Recipe: Necklace of Protection" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>5220</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -750,7 +750,7 @@
         <weight>30</weight>
         <recipeId>58</recipeId>
     </item>
-    <item stackable="true" id="2166" name="Recipe: Earring of Seal" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2166" name="Recipe: Earring of Seal" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>5900</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -760,7 +760,7 @@
         <weight>30</weight>
         <recipeId>59</recipeId>
     </item>
-    <item stackable="true" id="2167" name="Recipe: Ring of Ages" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2167" name="Recipe: Ring of Ages" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>3920</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -770,7 +770,7 @@
         <weight>30</weight>
         <recipeId>60</recipeId>
     </item>
-    <item stackable="true" id="2168" name="Recipe: Necklace of Mermaid" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2168" name="Recipe: Necklace of Mermaid" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>7860</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -780,7 +780,7 @@
         <weight>30</weight>
         <recipeId>61</recipeId>
     </item>
-    <item stackable="true" id="2169" name="Recipe: Necklace of Seal" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2169" name="Recipe: Necklace of Seal" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>11300</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -790,7 +790,7 @@
         <weight>30</weight>
         <recipeId>62</recipeId>
     </item>
-    <item stackable="true" id="2170" name="Recipe: Nassen's Earring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_yellow_i00">
+    <item stackable="true" id="2170" name="Recipe: Nassen's Earring" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_yellow_i00">
         <price>8480</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -800,7 +800,7 @@
         <weight>30</weight>
         <recipeId>63</recipeId>
     </item>
-    <item stackable="true" id="2171" name="Recipe: Sage's Ring" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="2171" name="Recipe: Sage's Ring" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>5640</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -810,7 +810,7 @@
         <weight>30</weight>
         <recipeId>64</recipeId>
     </item>
-    <item stackable="true" id="2172" name="Recipe: Sage's Necklace" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="2172" name="Recipe: Sage's Necklace" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>11300</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -820,7 +820,7 @@
         <weight>30</weight>
         <recipeId>65</recipeId>
     </item>
-    <item stackable="true" id="2173" name="Recipe: Durable Leather Shirt" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2173" name="Recipe: Durable Leather Shirt" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>738</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -830,7 +830,7 @@
         <weight>30</weight>
         <recipeId>66</recipeId>
     </item>
-    <item stackable="true" id="2174" name="Recipe: Durable Leather Gaiters" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2174" name="Recipe: Durable Leather Gaiters" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>460</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -840,7 +840,7 @@
         <weight>30</weight>
         <recipeId>67</recipeId>
     </item>
-    <item stackable="true" id="2175" name="Recipe: Boots" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_white_i00">
+    <item stackable="true" id="2175" name="Recipe: Boots" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_white_i00">
         <price>246</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>

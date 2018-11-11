@@ -28,7 +28,7 @@ import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.PetInfo;
 import org.l2j.gameserver.network.serverpackets.PetItemList;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
-import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.SubType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -95,25 +95,25 @@ public final class RequestPetUseItem extends L2GameClientPacket
 		if (item.isEquipable())
 		{
 			if (L2PetDataTable.isWolf(pet.getNpcId()) && // wolf
-			item.getCommissionType() == CommissionType.PET_EQUIPMENT)
+			item.getCommissionType() == SubType.PET_EQUIPMENT)
 			{
 				useItem(pet, item, activeChar);
 				return;
 			}
 			else if (L2PetDataTable.isHatchling(pet.getNpcId()) && // hatchlings
-					item.getCommissionType() == CommissionType.PET_EQUIPMENT)
+					item.getCommissionType() == SubType.PET_EQUIPMENT)
 			{
 				useItem(pet, item, activeChar);
 				return;
 			}
 			else if (L2PetDataTable.isStrider(pet.getNpcId()) && // striders
-					item.getCommissionType() == CommissionType.PET_EQUIPMENT)
+					item.getCommissionType() == SubType.PET_EQUIPMENT)
 			{
 				useItem(pet, item, activeChar);
 				return;
 			}
 			else if (L2PetDataTable.isBaby(pet.getNpcId()) && // baby pets (buffalo, cougar, kookaboora)
-					item.getCommissionType() == CommissionType.PET_EQUIPMENT)
+					item.getCommissionType() == SubType.PET_EQUIPMENT)
 			{
 				useItem(pet, item, activeChar);
 				return;

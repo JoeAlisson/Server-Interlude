@@ -12,50 +12,46 @@ import org.slf4j.LoggerFactory;
  *
  * @version $Revision: 1.4.2.1.2.4 $ $Date: 2005/03/27 15:29:57 $
  */
-public class ItemList extends L2GameServerPacket {
-    private static Logger _log = LoggerFactory.getLogger(ItemList.class.getName());
+public class ItemListPacket extends L2GameServerPacket {
+    private static Logger _log = LoggerFactory.getLogger(ItemListPacket.class.getName());
     private final L2ItemInstance[] _items;
-    private final boolean _showWindow;
+    private final boolean showWindow;
 
-    public ItemList(L2PcInstance cha, boolean showWindow) {
+    public ItemListPacket(L2PcInstance cha, boolean showWindow) {
         _items = cha.getInventory().getItems();
-        _showWindow = showWindow;
+        this.showWindow = showWindow;
     }
 
-    public ItemList(L2ItemInstance[] items, boolean showWindow) {
+    public ItemListPacket(L2ItemInstance[] items, boolean showWindow) {
         _items = items;
-        _showWindow = showWindow;
+        this.showWindow = showWindow;
     }
 
     @Override
     protected final void writeImpl() {
         writeByte(0x11);
-        writeShort(_showWindow ? 0x01 : 0x00);
+        writeShort(showWindow);
 
         int count = _items.length;
         writeShort(count);
 
         for (L2ItemInstance temp : _items) {
-            if ((temp == null)) {
-                continue;
-            }
-
             writeByte(0); // TODO implements flag
             writeInt(temp.getObjectId());
             writeInt(temp.getId());
             writeByte(temp.isEquipped() ? -1 : temp.getEquipSlot());
             writeLong(temp.getCount());
-            writeByte(temp.getCommissionType().ordinal()); // item type2
-            writeByte(temp.getCustomType1()); // item type3
-            writeShort(temp.isEquipped() ? 0x01 : 0x00);
+            writeByte(temp.getSubType()); // item type2
+            writeByte(0); // TODO Race Ticket Type
+            writeShort(temp.isEquipped());
             writeLong(temp.getSlotId());
             writeByte(temp.getEnchantLevel()); // enchant level
-            writeByte(temp.getCustomType2()); // item type3
+            writeByte(0); //  TODO Race Ticket Price
             writeInt((int)temp.getMana()); // Shadow time
-            writeInt((int) temp.getMana()); // temporal Life time
-            writeByte(true); // non blocked
+            writeInt((int) temp.getMana()); // TODO temporal Life time
+            writeByte(true); // non blocked TODO check condition
 
-            /*if((flags & IS_AUGMENTED) == IS_AUGMENTED)
+            /* TODO implement if((flags & IS_AUGMENTED) == IS_AUGMENTED)
             {
                 writeD(item.getVariation1Id());
                 writeD(item.getVariation2Id());
@@ -90,14 +86,14 @@ public class ItemList extends L2GameServerPacket {
                 for(Ensoul ensoul : specialEnsouls)
                     writeD(ensoul.getId());
             }*/
+        }
 
-            writeShort(0); // TODO implements locked
+        writeShort(0); // TODO implements locked
             /*if(_lockItems.length > 0)
             {
                 writeC(_lockType.ordinal());
                 for(int i : _lockItems)
                     writeD(i);
             }*/
-        }
     }
 }

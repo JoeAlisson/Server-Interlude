@@ -19,7 +19,7 @@
 package org.l2j.gameserver.network.clientpackets;
 
 import org.l2j.gameserver.network.serverpackets.ActionFailed;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 
 import static java.util.Objects.isNull;
 
@@ -44,7 +44,7 @@ public final class RequestItemList extends L2GameClientPacket
 		if (isNull(player) ||  player.isInvetoryDisabled()) {
 		    sendPacket(new ActionFailed());
 		} else {
-            ItemList il = new ItemList(player, true);
+            ItemListPacket il = new ItemListPacket(player, true);
             sendPacket(il);
         }
 	}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon id="8938" name="Tallum Blade*Damascus" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="8938" name="Tallum Blade*Damascus" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>26968400</price>
         <restriction freightable="false"/>

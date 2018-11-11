@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <armor id="641" name="Dark Crystal Shield" commissionType="SHIELD" icon="icon.shield_dark_crystal_shield_i00">
+    <armor id="641" name="Dark Crystal Shield" subType="SHIELD" icon="icon.shield_dark_crystal_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>935000</price>
         <restriction freightable="false"/>
@@ -10,7 +10,7 @@
         <time>-1</time>
         <weight>1190</weight>
         </armor>
-    <armor id="600" name="Sealed Avadon Boots" commissionType="FEET" icon="icon.armor_t66_b_i02">
+    <armor id="600" name="Sealed Avadon Boots" subType="FEET" icon="icon.armor_t66_b_i02">
         <bodyPart>FEET</bodyPart>
         <price>519000</price>
         <restriction freightable="false"/>
@@ -20,7 +20,7 @@
         <time>-1</time>
         <weight>1170</weight>
         </armor>
-    <armor id="601" name="Sealed Doom Boots" commissionType="FEET" icon="icon.armor_t71_b_i02">
+    <armor id="601" name="Sealed Doom Boots" subType="FEET" icon="icon.armor_t71_b_i02">
         <bodyPart>FEET</bodyPart>
         <price>804000</price>
         <restriction freightable="false"/>
@@ -30,7 +30,7 @@
         <time>-1</time>
         <weight>1130</weight>
         </armor>
-    <armor id="603" name="Divine Boots" commissionType="FEET" icon="icon.armor_t67_b_i00">
+    <armor id="603" name="Divine Boots" subType="FEET" icon="icon.armor_t67_b_i00">
         <bodyPart>FEET</bodyPart>
         <price>358000</price>
         <restriction freightable="false"/>
@@ -40,7 +40,7 @@
         <time>-1</time>
         <weight>1200</weight>
         </armor>
-    <armor id="604" name="Quality Leather Gloves" commissionType="GLOVES" icon="icon.armor_t09_g_i00">
+    <armor id="604" name="Quality Leather Gloves" subType="GLOVES" icon="icon.armor_t09_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>20900</price>
         <restriction freightable="false"/>
@@ -50,7 +50,7 @@
         <time>-1</time>
         <weight>650</weight>
         </armor>
-    <armor id="605" name="Leather Gauntlets" commissionType="GLOVES" icon="icon.armor_t18_g_i00">
+    <armor id="605" name="Leather Gauntlets" subType="GLOVES" icon="icon.armor_t18_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>33300</price>
         <restriction freightable="false"/>
@@ -60,7 +60,7 @@
         <time>-1</time>
         <weight>640</weight>
         </armor>
-    <armor id="606" name="Rip Gauntlets" commissionType="GLOVES" icon="icon.armor_t40_g_i00">
+    <armor id="606" name="Rip Gauntlets" subType="GLOVES" icon="icon.armor_t40_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>74700</price>
         <restriction freightable="false"/>
@@ -70,7 +70,7 @@
         <time>-1</time>
         <weight>630</weight>
         </armor>
-    <armor id="607" name="Ogre Power Gauntlets" commissionType="GLOVES" icon="icon.armor_t45_g_i00">
+    <armor id="607" name="Ogre Power Gauntlets" subType="GLOVES" icon="icon.armor_t45_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>97800</price>
         <restriction freightable="false"/>
@@ -80,7 +80,7 @@
         <time>-1</time>
         <weight>620</weight>
         </armor>
-    <armor id="608" name="Mithril Gauntlets" commissionType="GLOVES" icon="icon.armor_t61_g_i00">
+    <armor id="608" name="Mithril Gauntlets" subType="GLOVES" icon="icon.armor_t61_g_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>245000</price>
         <restriction freightable="false"/>
@@ -90,7 +90,7 @@
         <time>-1</time>
         <weight>600</weight>
         </armor>
-    <armor id="609" name="Gauntlets of Ghost" commissionType="GLOVES" icon="icon.armor_gauntlet_i00">
+    <armor id="609" name="Gauntlets of Ghost" subType="GLOVES" icon="icon.armor_gauntlet_i00">
         <bodyPart>GLOVES</bodyPart>
         <price>275100</price>
         <restriction freightable="false"/>
@@ -100,7 +100,7 @@
         <time>-1</time>
         <weight>1920</weight>
         </armor>
-    <armor id="673" name="Avadon Shield" commissionType="SHIELD" icon="icon.shield_avadon_shield_i00">
+    <armor id="673" name="Avadon Shield" subType="SHIELD" icon="icon.shield_avadon_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>545000</price>
         <restriction freightable="false"/>
@@ -110,7 +110,7 @@
         <time>-1</time>
         <weight>1210</weight>
         </armor>
-    <armor id="612" name="Sealed Zubei's Gauntlets" commissionType="GLOVES" icon="icon.armor_t64_g_i02">
+    <armor id="612" name="Sealed Zubei's Gauntlets" subType="GLOVES" icon="icon.armor_t64_g_i02">
         <bodyPart>GLOVES</bodyPart>
         <price>519000</price>
         <restriction freightable="false"/>
@@ -144,7 +144,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="625" name="Bone Shield" commissionType="SHIELD" icon="icon.shield_bone_shield_i00">
+    <armor id="625" name="Bone Shield" subType="SHIELD" icon="icon.shield_bone_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>12900</price>
         <restriction freightable="false"/>
@@ -161,7 +161,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="626" name="Bronze Shield" commissionType="SHIELD" icon="icon.shield_bronze_shield_i00">
+    <armor id="626" name="Bronze Shield" subType="SHIELD" icon="icon.shield_bronze_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>21900</price>
         <restriction freightable="false"/>
@@ -179,7 +179,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="627" name="Aspis" commissionType="SHIELD" icon="icon.shield_aspis_i00">
+    <armor id="627" name="Aspis" subType="SHIELD" icon="icon.shield_aspis_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>35000</price>
         <restriction freightable="false"/>
@@ -197,7 +197,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="628" name="Hoplon" commissionType="SHIELD" icon="icon.shield_hoplon_i00">
+    <armor id="628" name="Hoplon" subType="SHIELD" icon="icon.shield_hoplon_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>53300</price>
         <restriction freightable="false"/>
@@ -215,7 +215,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="629" name="Kite Shield" commissionType="SHIELD" icon="icon.shield_kite_shield_i00">
+    <armor id="629" name="Kite Shield" subType="SHIELD" icon="icon.shield_kite_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>78400</price>
         <restriction freightable="false"/>
@@ -233,7 +233,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="630" name="Square Shield" commissionType="SHIELD" icon="icon.shield_square_shield_i00">
+    <armor id="630" name="Square Shield" subType="SHIELD" icon="icon.shield_square_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>103000</price>
         <restriction freightable="false"/>
@@ -251,7 +251,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="631" name="Eldarake" commissionType="SHIELD" icon="icon.shield_eldarake_i00">
+    <armor id="631" name="Eldarake" subType="SHIELD" icon="icon.shield_eldarake_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>133000</price>
         <restriction freightable="false"/>
@@ -269,7 +269,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="632" name="Knight's Shield" commissionType="SHIELD" icon="icon.shield_knight_shield_i00">
+    <armor id="632" name="Knight's Shield" subType="SHIELD" icon="icon.shield_knight_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>169000</price>
         <restriction freightable="false"/>
@@ -287,7 +287,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="633" name="Zubei's Shield" commissionType="SHIELD" icon="icon.shield_shrnoens_shield_i00">
+    <armor id="633" name="Zubei's Shield" subType="SHIELD" icon="icon.shield_shrnoens_shield_i00">
         <bodyPart>LEFT_HAND</bodyPart>
         <price>545000</price>
         <restriction freightable="false"/>

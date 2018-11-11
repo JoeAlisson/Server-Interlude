@@ -501,7 +501,7 @@
         <time>10080</time>
         <weight>0</weight>
         </armor>
-    <item stackable="true" id="70103" name="Adventurer’s Potion - Casting Spd." type="POTION" commissionType="POTION" icon="icon.etc_potion_of_acumen2_i00">
+    <item stackable="true" id="70103" name="Adventurer’s Potion - Casting Spd." type="POTION" subType="POTION" icon="icon.etc_potion_of_acumen2_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -516,7 +516,7 @@
         </condition>
         <skill id="55236"/>
     </item>
-    <item stackable="true" id="70102" name="Adventurer’s Potion - Atk. Spd." type="POTION" commissionType="POTION" icon="icon.etc_reagent_green_i00">
+    <item stackable="true" id="70102" name="Adventurer’s Potion - Atk. Spd." type="POTION" subType="POTION" icon="icon.etc_reagent_green_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -531,7 +531,7 @@
         </condition>
         <skill id="55235"/>
     </item>
-    <item stackable="true" id="70105" name="Scroll of Mana" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="70105" name="Scroll of Mana" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -541,7 +541,7 @@
         <weight>5</weight>
         <skill id="55241"/>
     </item>
-    <item stackable="true" id="70104" name="Scroll: Vampiric Rage" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="70104" name="Scroll: Vampiric Rage" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -551,7 +551,7 @@
         <weight>5</weight>
         <skill id="55237"/>
     </item>
-    <item stackable="true" id="70107" name="Scroll: Berserker Spirit" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="70107" name="Scroll: Berserker Spirit" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -593,7 +593,7 @@
         <weight>0</weight>
         <skill id="55094"/>
         </armor>
-    <item stackable="true" id="70111" name="Scroll: Dance of the Mystic" type="SCROLL" commissionType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_dance_scroll_i00">
+    <item stackable="true" id="70111" name="Scroll: Dance of the Mystic" type="SCROLL" subType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_dance_scroll_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -603,7 +603,7 @@
         <weight>5</weight>
         <skill id="273"/>
     </item>
-    <item stackable="true" id="70110" name="Scroll: Dance of the Warrior" type="SCROLL" commissionType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_dance_scroll_i00">
+    <item stackable="true" id="70110" name="Scroll: Dance of the Warrior" type="SCROLL" subType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_dance_scroll_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -613,7 +613,7 @@
         <weight>5</weight>
         <skill id="271"/>
     </item>
-    <item stackable="true" id="70113" name="Scroll of Escape: Town of Aden" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
+    <item stackable="true" id="70113" name="Scroll of Escape: Town of Aden" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i04">
         <price>35000</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -628,7 +628,7 @@
         </condition>
         <skill id="2213" level="12"/>
     </item>
-    <armor id="70112" name="Refined Romantic Chapeau - Special Trait" additionalName="7-day" commissionType="HAIR_ACCESSORY" icon="icon.accessory_archer_hat2_i00">
+    <armor id="70112" name="Refined Romantic Chapeau - Special Trait" additionalName="7-day" subType="HAIR_ACCESSORY" icon="icon.accessory_archer_hat2_i00">
         <bodyPart>FULL_HAIR</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>

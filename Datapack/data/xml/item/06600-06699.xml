@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <armor id="6660" name="Queen Ant's Ring" commissionType="RING" icon="icon.accessory_ring_of_queen_ant_i00">
+    <armor id="6660" name="Queen Ant's Ring" subType="RING" icon="icon.accessory_ring_of_queen_ant_i00">
         <bodyPart>FINGER</bodyPart>
         <price>100</price>
         <restriction freightable="false"/>
@@ -10,7 +10,7 @@
         <weight>150</weight>
         <skill id="3562"/>
         </armor>
-    <armor id="6661" name="Orfen's Earring" commissionType="EARRING" icon="icon.accessory_earring_of_orfen_i00">
+    <armor id="6661" name="Orfen's Earring" subType="EARRING" icon="icon.accessory_earring_of_orfen_i00">
         <bodyPart>EAR</bodyPart>
         <price>100</price>
         <restriction freightable="false"/>
@@ -20,7 +20,7 @@
         <weight>150</weight>
         <skill id="3560"/>
         </armor>
-    <armor id="6662" name="Ring of Core" commissionType="RING" icon="icon.accessory_ring_of_core_i00">
+    <armor id="6662" name="Ring of Core" subType="RING" icon="icon.accessory_ring_of_core_i00">
         <bodyPart>FINGER</bodyPart>
         <price>100</price>
         <restriction freightable="false"/>
@@ -30,7 +30,7 @@
         <weight>150</weight>
         <skill id="3563"/>
         </armor>
-    <weapon id="6611" name="Infinity Sword" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_the_sword_of_hero_i00">
+    <weapon id="6611" name="Infinity Sword" type="SWORD" subType="ONE_HAND_SWORD" icon="icon.weapon_the_sword_of_hero_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -46,7 +46,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="6612" name="Infinity Slasher" type="SWORD" commissionType="TWO_HAND_SWORD" icon="icon.weapon_the_two_handed_sword_of_hero_i00">
+    <weapon id="6612" name="Infinity Slasher" type="SWORD" subType="TWO_HAND_SWORD" icon="icon.weapon_the_two_handed_sword_of_hero_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -62,7 +62,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="6613" name="Infinity Axe" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_the_axe_of_hero_i00">
+    <weapon id="6613" name="Infinity Axe" type="BLUNT" subType="BLUNT_WEAPON" icon="icon.weapon_the_axe_of_hero_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -79,7 +79,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <item stackable="true" id="6645" name="Beast Soulshot" type="SOULSHOT" commissionType="PET_SUPPLIES" icon="icon.etc_beast_soul_shot_i00">
+    <item stackable="true" id="6645" name="Beast Soulshot" type="SOULSHOT" subType="PET_SUPPLIES" icon="icon.etc_beast_soul_shot_i00">
         <price>20</price>
         <restriction freightable="false"/>
         <handler>BEAST_SOUL_SHOT</handler>
@@ -89,7 +89,7 @@
         <weight>1</weight>
         <skill id="2033"/>
     </item>
-    <weapon id="6614" name="Infinity Rod" type="BLUNT" commissionType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_the_mace_of_hero_i00">
+    <weapon id="6614" name="Infinity Rod" type="BLUNT" subType="ONE_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_the_mace_of_hero_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -105,7 +105,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <item stackable="true" id="6646" name="Beast Spiritshot" type="SOULSHOT" commissionType="PET_SUPPLIES" icon="icon.etc_beast_spirit_shot_i00">
+    <item stackable="true" id="6646" name="Beast Spiritshot" type="SOULSHOT" subType="PET_SUPPLIES" icon="icon.etc_beast_spirit_shot_i00">
         <price>50</price>
         <restriction freightable="false"/>
         <handler>BEAST_SPIRIT_SHOT</handler>
@@ -115,7 +115,7 @@
         <weight>1</weight>
         <skill id="2008"/>
     </item>
-    <item stackable="true" id="6647" name="Blessed Beast Spiritshot" type="SOULSHOT" commissionType="PET_SUPPLIES" icon="icon.etc_blessed_beast_spirit_shot_i00">
+    <item stackable="true" id="6647" name="Blessed Beast Spiritshot" type="SOULSHOT" subType="PET_SUPPLIES" icon="icon.etc_blessed_beast_spirit_shot_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <handler>BEAST_SPIRIT_SHOT</handler>
@@ -125,7 +125,7 @@
         <weight>1</weight>
         <skill id="2009"/>
     </item>
-    <weapon id="6616" name="Infinity Scepter" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_the_staff_of_hero_i00">
+    <weapon id="6616" name="Infinity Scepter" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_the_staff_of_hero_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -141,7 +141,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="6617" name="Infinity Dagger" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_the_dagger_of_hero_i00">
+    <weapon id="6617" name="Infinity Dagger" type="DAGGER" subType="DAGGER" icon="icon.weapon_the_dagger_of_hero_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -157,7 +157,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="6618" name="Infinity Fighter" type="DUALFIST" commissionType="FIST_WEAPON" icon="icon.weapon_the_fist_of_hero_i00">
+    <weapon id="6618" name="Infinity Fighter" type="DUALFIST" subType="FIST_WEAPON" icon="icon.weapon_the_fist_of_hero_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -173,7 +173,7 @@
         <damage distance="32" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="6619" name="Infinity Bow" type="BOW" commissionType="BOW" icon="icon.weapon_the_bow_of_hero_i00">
+    <weapon id="6619" name="Infinity Bow" type="BOW" subType="BOW" icon="icon.weapon_the_bow_of_hero_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -189,7 +189,7 @@
         <damage distance="10"/>
         <consume mp="6" shot="1"/>
     </weapon>
-    <weapon id="6620" name="Infinity Dualsword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_the_dualsword_of_hero_i00">
+    <weapon id="6620" name="Infinity Dualsword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_the_dualsword_of_hero_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>
@@ -205,7 +205,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="6621" name="Infinity Spear" type="POLE" commissionType="SPEAR" icon="icon.weapon_the_pole_of_hero_i00">
+    <weapon id="6621" name="Infinity Spear" type="POLE" subType="SPEAR" icon="icon.weapon_the_pole_of_hero_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false" destroyable="false"/>

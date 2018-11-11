@@ -27,7 +27,7 @@ import org.l2j.gameserver.model.actor.instance.L2MonsterInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -138,7 +138,7 @@ public class Harvest implements ISkillHandler
 							}
 							else
 							{
-								_activeChar.sendPacket(new ItemList(_activeChar, false));
+								_activeChar.sendPacket(new ItemListPacket(_activeChar, false));
 							}
 						}
 					}

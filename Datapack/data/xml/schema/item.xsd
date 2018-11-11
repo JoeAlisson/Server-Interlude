@@ -37,7 +37,7 @@
         <xs:attribute name="name" type="xs:string" use="required"/>
         <xs:attribute name="additionalName" type="xs:string"/>
         <xs:attribute name="type" type="ItemType" default="NONE"/>
-        <xs:attribute name="commissionType" type="CommissionType" default="OTHER_ITEM"/>
+        <xs:attribute name="subType" type="SubType" default="OTHER_ITEM"/>
         <xs:attribute name="icon" type="xs:string"/>
     </xs:complexType>
     

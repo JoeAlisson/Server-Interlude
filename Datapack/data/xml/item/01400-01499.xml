@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <item stackable="true" id="1408" name="Spellbook: Mighty Servitor" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1408" name="Spellbook: Mighty Servitor" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>2450</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -8,7 +8,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1409" name="Spellbook: Slow" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="1409" name="Spellbook: Slow" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>43681</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -16,7 +16,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1410" name="Spellbook: Poisonous Cloud" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="1410" name="Spellbook: Poisonous Cloud" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -24,7 +24,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1411" name="Spellbook: Aura Burn" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="1411" name="Spellbook: Aura Burn" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -32,7 +32,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1412" name="Spellbook: Water Resistance" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1412" name="Spellbook: Water Resistance" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>2450</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -40,7 +40,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1413" name="Spellbook: Wind Resistance" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1413" name="Spellbook: Wind Resistance" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>2450</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -48,7 +48,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1414" name="Spellbook: Fire Resistance" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1414" name="Spellbook: Fire Resistance" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>1800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -56,7 +56,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1415" name="Spellbook: Dryad Root" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1415" name="Spellbook: Dryad Root" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>10603</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -64,7 +64,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1416" name="Spellbook: Curse Chaos" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="1416" name="Spellbook: Curse Chaos" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>43681</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -72,7 +72,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1417" name="Spellbook: Surrender to Earth" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="1417" name="Spellbook: Surrender to Earth" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -80,7 +80,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1418" name="Spellbook: Surrender to Poison" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="1418" name="Spellbook: Surrender to Poison" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -368,7 +368,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1458" name="Crystal (D-grade)" commissionType="CRYSTAL" icon="icon.etc_crystal_blue_i00">
+    <item stackable="true" id="1458" name="Crystal (D-grade)" subType="CRYSTAL" icon="icon.etc_crystal_blue_i00">
         <price>650</price>
         <restriction freightable="false"/>
         <crystalInfo type="D"/>
@@ -377,7 +377,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1459" name="Crystal (C-grade)" commissionType="CRYSTAL" icon="icon.etc_crystal_green_i00">
+    <item stackable="true" id="1459" name="Crystal (C-grade)" subType="CRYSTAL" icon="icon.etc_crystal_green_i00">
         <price>3000</price>
         <restriction freightable="false"/>
         <crystalInfo type="C"/>
@@ -386,7 +386,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1460" name="Crystal (B-grade)" commissionType="CRYSTAL" icon="icon.etc_crystal_red_i00">
+    <item stackable="true" id="1460" name="Crystal (B-grade)" subType="CRYSTAL" icon="icon.etc_crystal_red_i00">
         <price>9000</price>
         <restriction freightable="false"/>
         <crystalInfo type="B"/>
@@ -395,7 +395,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1461" name="Crystal (A-grade)" commissionType="CRYSTAL" icon="icon.etc_crystal_silver_i00">
+    <item stackable="true" id="1461" name="Crystal (A-grade)" subType="CRYSTAL" icon="icon.etc_crystal_silver_i00">
         <price>12500</price>
         <restriction freightable="false"/>
         <crystalInfo type="A"/>
@@ -404,7 +404,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1463" name="Soulshot (D-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_blue_i00">
+    <item stackable="true" id="1463" name="Soulshot (D-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_spirit_bullet_blue_i00">
         <price>10</price>
         <restriction freightable="false"/>
         <crystalInfo type="D"/>
@@ -415,7 +415,7 @@
         <weight>2</weight>
         <skill id="2150"/>
     </item>
-    <item stackable="true" id="1464" name="Soulshot (C-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_green_i00">
+    <item stackable="true" id="1464" name="Soulshot (C-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_spirit_bullet_green_i00">
         <price>15</price>
         <restriction freightable="false"/>
         <crystalInfo type="C"/>
@@ -426,7 +426,7 @@
         <weight>2</weight>
         <skill id="2151"/>
     </item>
-    <item stackable="true" id="1465" name="Soulshot (B-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_red_i00">
+    <item stackable="true" id="1465" name="Soulshot (B-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_spirit_bullet_red_i00">
         <price>50</price>
         <restriction freightable="false"/>
         <crystalInfo type="B"/>
@@ -437,7 +437,7 @@
         <weight>1</weight>
         <skill id="2152"/>
     </item>
-    <item stackable="true" id="1466" name="Soulshot (A-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_spirit_bullet_silver_i00">
+    <item stackable="true" id="1466" name="Soulshot (A-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_spirit_bullet_silver_i00">
         <price>80</price>
         <restriction freightable="false"/>
         <crystalInfo type="A"/>
@@ -448,7 +448,7 @@
         <weight>1</weight>
         <skill id="2153"/>
     </item>
-    <weapon id="1471" name="Silenos Blowgun" type="DAGGER" commissionType="DAGGER" icon="icon.weapon_monster_i00">
+    <weapon id="1471" name="Silenos Blowgun" type="DAGGER" subType="DAGGER" icon="icon.weapon_monster_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>80</price>
         <restriction freightable="false"/>
@@ -460,7 +460,7 @@
         <damage distance="300" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="1472" name="Dreadbane" type="POLE" commissionType="SPEAR" icon="icon.weapon_monster_i00">
+    <weapon id="1472" name="Dreadbane" type="POLE" subType="SPEAR" icon="icon.weapon_monster_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>80</price>
         <restriction freightable="false"/>
@@ -689,7 +689,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="1400" name="Spellbook: Surrender to Fire" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="1400" name="Spellbook: Surrender to Fire" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -697,7 +697,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1401" name="Spellbook: Acumen" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1401" name="Spellbook: Acumen" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>7461</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -705,7 +705,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1402" name="Spellbook: Agility" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="1402" name="Spellbook: Agility" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -713,7 +713,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1403" name="Spellbook: Summon Kat the Cat" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1403" name="Spellbook: Summon Kat the Cat" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -721,7 +721,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1404" name="Spellbook: Servitor Recharge" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1404" name="Spellbook: Servitor Recharge" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -729,7 +729,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1405" name="Spellbook: Servitor Heal" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1405" name="Spellbook: Servitor Heal" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -737,7 +737,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1406" name="Spellbook: Servitor Wind Walk" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1406" name="Spellbook: Servitor Wind Walk" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>2450</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -745,7 +745,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="1407" name="Spellbook: Servitor Magic Boost" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="1407" name="Spellbook: Servitor Magic Boost" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>2450</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>

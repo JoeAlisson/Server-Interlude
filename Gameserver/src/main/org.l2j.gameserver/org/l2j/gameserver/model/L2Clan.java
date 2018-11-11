@@ -1613,7 +1613,7 @@ public class L2Clan {
         su.addAttribute(StatusUpdate.SP, player.getSkillPoints());
         player.sendPacket(su);
 
-        ItemList il = new ItemList(player, false);
+        ItemListPacket il = new ItemListPacket(player, false);
         player.sendPacket(il);
 
         changeLevel(getLevel() + 1);

@@ -28,36 +28,35 @@
     <xs:simpleType name="BodyPart">
         <xs:restriction base="xs:string">
             <xs:enumeration value="NONE"/>
+            <xs:enumeration value="UNDERWEAR"/>
+            <xs:enumeration value="RIGHT_EAR"/>
+            <xs:enumeration value="LEFT_EAR"/>
+            <xs:enumeration value="NECK"/>
+            <xs:enumeration value="RIGHT_FINGER"/>
+            <xs:enumeration value="LEFT_FINGER"/>
             <xs:enumeration value="HEAD"/>
             <xs:enumeration value="RIGHT_HAND"/>
-            <xs:enumeration value="LEFT_BRACELET"/>
-            <xs:enumeration value="FULL_HAIR"/>
-            <xs:enumeration value="LEFT_EAR"/>
-            <xs:enumeration value="RIGHT_EAR"/>
-            <xs:enumeration value="EAR"/>
-            <xs:enumeration value="UNDERWEAR"/>
-            <xs:enumeration value="FULL_BODY"/>
-            <xs:enumeration value="HAIR_DOWN"/>
-            <xs:enumeration value="TWO_HANDS"/>
-            <xs:enumeration value="HAIR"/>
-            <xs:enumeration value="RIGHT_HAND"/>
+            <xs:enumeration value="LEFT_HAND"/>
+            <xs:enumeration value="GLOVES"/>
             <xs:enumeration value="CHEST"/>
             <xs:enumeration value="LEGS"/>
-            <xs:enumeration value="GLOVES"/>
             <xs:enumeration value="FEET"/>
-            <xs:enumeration value="LEFT_HAND"/>
-            <xs:enumeration value="BROOCH_JEWEL"/>
-            <xs:enumeration value="LEFT_FINGER"/>
-            <xs:enumeration value="RIGHT_FINGER"/>
-            <xs:enumeration value="FINGER"/>
-            <xs:enumeration value="NECK"/>
-            <xs:enumeration value="TALISMAN"/>
-            <xs:enumeration value="DECO"/>
-            <xs:enumeration value="BROOCH"/>
-            <xs:enumeration value="WAIST"/>
-            <xs:enumeration value="ONE_PIECE"/>
-            <xs:enumeration value="BACK"/>
+            <xs:enumeration value="CLOAK"/>
+            <xs:enumeration value="TWO_HANDS"/>
+            <xs:enumeration value="HAIR"/>
+            <xs:enumeration value="HAIR_DOWN"/>
             <xs:enumeration value="RIGHT_BRACELET"/>
+            <xs:enumeration value="LEFT_BRACELET"/>
+            <xs:enumeration value="DECO"/>
+            <xs:enumeration value="WAIST"/>
+            <xs:enumeration value="BROOCH_JEWEL"/>
+            <xs:enumeration value="TALISMAN"/>
+            <xs:enumeration value="FULL_HAIR"/>
+            <xs:enumeration value="EAR"/>
+            <xs:enumeration value="FULL_BODY"/>
+            <xs:enumeration value="FINGER"/>
+            <xs:enumeration value="BROOCH"/>
+            <xs:enumeration value="ONE_PIECE"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -70,12 +69,12 @@
             <xs:enumeration value="DAGGER"/>
             <xs:enumeration value="POLE"/>
             <xs:enumeration value="RAPIER"/>
-            <xs:enumeration value="FISHINGROD"/>
             <xs:enumeration value="CROSSBOW"/>
             <xs:enumeration value="TWOHANDCROSSBOW"/>
             <xs:enumeration value="DUALFIST"/>
             <xs:enumeration value="DUALDAGGER"/>
             <xs:enumeration value="DUALBLUNT"/>
+            <xs:enumeration value="FISHINGROD"/>
             <xs:enumeration value="ETC"/>
             <xs:enumeration value="LIGHT"/>
             <xs:enumeration value="HEAVY"/>
@@ -102,48 +101,54 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="CommissionType">
+    <xs:simpleType name="SubType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="HAIR_ACCESSORY"/>
             <xs:enumeration value="TWO_HAND_SWORD"/>
-            <xs:enumeration value="OTHER_ITEM"/>
-            <xs:enumeration value="SPELLBOOK"/>
-            <xs:enumeration value="POTION"/>
             <xs:enumeration value="SPEAR"/>
             <xs:enumeration value="DUALSWORD"/>
             <xs:enumeration value="ONE_HAND_MAGIC_BLUNT_WEAPON"/>
-            <xs:enumeration value="RECIPE"/>
             <xs:enumeration value="TWO_HAND_MAGIC_BLUNT_WEAPON"/>
-            <xs:enumeration value="MAJOR_CRAFTING_INGREDIENTS"/>
             <xs:enumeration value="ONE_HAND_MAGIC_SWORD"/>
             <xs:enumeration value="TWO_HAND_BLUNT_WEAPON"/>
-            <xs:enumeration value="SCROLL_OTHER"/>
+            <xs:enumeration value="ONE_HAND_SWORD"/>
+            <xs:enumeration value="BLUNT_WEAPON"/>
+            <xs:enumeration value="FIST_WEAPON"/>
+            <xs:enumeration value="DAGGER"/>
+            <xs:enumeration value="BOW"/>
+            <xs:enumeration value="OTHER_WEAPON"/>
+
+            <xs:enumeration value="ARMOR_TOP"/>
+            <xs:enumeration value="FULL_BODY"/>
+            <xs:enumeration value="ARMOR_PANTS"/>
+            <xs:enumeration value="HELMET"/>
+            <xs:enumeration value="FEET"/>
+            <xs:enumeration value="SHIELD"/>
+            <xs:enumeration value="GLOVES"/>
+
+            <xs:enumeration value="HAIR_ACCESSORY"/>
             <xs:enumeration value="RING"/>
             <xs:enumeration value="EARRING"/>
             <xs:enumeration value="NECKLACE"/>
             <xs:enumeration value="BRACELET"/>
-            <xs:enumeration value="ARMOR_TOP"/>
-            <xs:enumeration value="ONE_HAND_SWORD"/>
+            <xs:enumeration value="BELT"/>
+
+            <xs:enumeration value="POTION"/>
             <xs:enumeration value="SOULSHOT"/>
-            <xs:enumeration value="BLUNT_WEAPON"/>
-            <xs:enumeration value="FULL_BODY"/>
-            <xs:enumeration value="ARMOR_PANTS"/>
-            <xs:enumeration value="GEMSTONE"/>
-            <xs:enumeration value="DAGGER"/>
-            <xs:enumeration value="HELMET"/>
-            <xs:enumeration value="FIST_WEAPON"/>
-            <xs:enumeration value="GLOVES"/>
-            <xs:enumeration value="PET_EQUIPMENT"/>
-            <xs:enumeration value="BOW"/>
             <xs:enumeration value="SPIRITSHOT"/>
-            <xs:enumeration value="FEET"/>
-            <xs:enumeration value="SHIELD"/>
-            <xs:enumeration value="PET_SUPPLIES"/>
-            <xs:enumeration value="DYES"/>
-            <xs:enumeration value="OTHER_WEAPON"/>
+            <xs:enumeration value="SCROLL_OTHER"/>
             <xs:enumeration value="SCROLL_ENCHANT_WEAPON"/>
-            <xs:enumeration value="SOUL_CRYSTAL"/>
             <xs:enumeration value="SCROLL_ENCHANT_ARMOR"/>
+
+            <xs:enumeration value="PET_EQUIPMENT"/>
+            <xs:enumeration value="PET_SUPPLIES"/>
+
+            <xs:enumeration value="OTHER_ITEM"/>
+            <xs:enumeration value="RECIPE"/>
+            <xs:enumeration value="MAJOR_CRAFTING_INGREDIENTS"/>
+            <xs:enumeration value="SPELLBOOK"/>
+            <xs:enumeration value="GEMSTONE"/>
+            <xs:enumeration value="DYES"/>
+            <xs:enumeration value="SOUL_CRYSTAL"/>
             <xs:enumeration value="CRYSTAL"/>
             <xs:enumeration value="HERB"/>
         </xs:restriction>

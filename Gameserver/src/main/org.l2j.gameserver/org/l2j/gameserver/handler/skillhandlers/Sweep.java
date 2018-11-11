@@ -25,7 +25,7 @@ import org.l2j.gameserver.model.L2Skill.SkillType;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 
@@ -116,7 +116,7 @@ public class Sweep implements ISkillHandler
 				}
 				else
 				{
-					player.sendPacket(new ItemList(player, false));
+					player.sendPacket(new ItemListPacket(player, false));
 				}
 			}
 		}

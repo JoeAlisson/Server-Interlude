@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon magic="true" id="4900" name="Staff of Evil Spirits" additionalName="Empower" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_staff_of_evil_sprit_i01">
+    <weapon magic="true" id="4900" name="Staff of Evil Spirits" additionalName="Empower" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_staff_of_evil_sprit_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -13,7 +13,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4901" name="Staff of Evil Spirits" additionalName="Acumen" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_staff_of_evil_sprit_i01">
+    <weapon magic="true" id="4901" name="Staff of Evil Spirits" additionalName="Acumen" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_staff_of_evil_sprit_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -26,7 +26,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon magic="true" id="4902" name="Staff of Evil Spirits" additionalName="Magic Regeneration" type="BLUNT" commissionType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_staff_of_evil_sprit_i01">
+    <weapon magic="true" id="4902" name="Staff of Evil Spirits" additionalName="Magic Regeneration" type="BLUNT" subType="TWO_HAND_MAGIC_BLUNT_WEAPON" icon="icon.weapon_staff_of_evil_sprit_i01">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -39,7 +39,7 @@
         <damage distance="46" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <item stackable="true" id="4906" name="Spellbook: Solar Spark" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4906" name="Spellbook: Solar Spark" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -47,7 +47,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4907" name="Spellbook: Solar Flare" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4907" name="Spellbook: Solar Flare" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -55,7 +55,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4908" name="Spellbook: Shadow Spark" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4908" name="Spellbook: Shadow Spark" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>1250</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -63,7 +63,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4909" name="Spellbook: Shadow Flare" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4909" name="Spellbook: Shadow Flare" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -71,7 +71,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4910" name="Spellbook: Vampiric Rage" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="4910" name="Spellbook: Vampiric Rage" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>1800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -79,7 +79,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4911" name="Spellbook: Curse Disease" commissionType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
+    <item stackable="true" id="4911" name="Spellbook: Curse Disease" subType="SPELLBOOK" icon="icon.etc_spell_books_black_i00">
         <price>6750</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -87,7 +87,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4912" name="Spellbook: Benediction" commissionType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
+    <item stackable="true" id="4912" name="Spellbook: Benediction" subType="SPELLBOOK" icon="icon.etc_spell_books_white_i00">
         <price>200000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -95,7 +95,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4913" name="Spellbook: Word of Fear" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="4913" name="Spellbook: Word of Fear" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>3850</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -103,7 +103,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4914" name="Spellbook: Eva's Serenade" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="4914" name="Spellbook: Eva's Serenade" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>3850</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -111,7 +111,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4915" name="Blueprint: Summon Wild Hog Cannon" commissionType="SPELLBOOK" icon="icon.etc_plan_i00">
+    <item stackable="true" id="4915" name="Blueprint: Summon Wild Hog Cannon" subType="SPELLBOOK" icon="icon.etc_plan_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -119,7 +119,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4916" name="Spellbook: Energy Bolt" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4916" name="Spellbook: Energy Bolt" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>800</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -127,7 +127,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4917" name="Spellbook: Aura Bolt" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4917" name="Spellbook: Aura Bolt" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -135,7 +135,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4918" name="Spellbook: Summon Kai the Cat" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="4918" name="Spellbook: Summon Kai the Cat" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -143,7 +143,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4919" name="Spellbook: Summon Merrow the Unicorn" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="4919" name="Spellbook: Summon Merrow the Unicorn" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -151,7 +151,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4920" name="Spellbook: Summon Soulless" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="4920" name="Spellbook: Summon Soulless" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>3200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -159,7 +159,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4921" name="Blueprint: Summon Big Boom" commissionType="SPELLBOOK" icon="icon.etc_plan_i00">
+    <item stackable="true" id="4921" name="Blueprint: Summon Big Boom" subType="SPELLBOOK" icon="icon.etc_plan_i00">
         <price>6750</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -167,7 +167,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4922" name="Spellbook: Summon Binding Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="4922" name="Spellbook: Summon Binding Cubic" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -175,7 +175,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4923" name="Spellbook: Summon Aqua Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="4923" name="Spellbook: Summon Aqua Cubic" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -183,7 +183,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4924" name="Spellbook: Summon Spark Cubic" commissionType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
+    <item stackable="true" id="4924" name="Spellbook: Summon Spark Cubic" subType="SPELLBOOK" icon="icon.etc_spell_books_summon_i00">
         <price>100000</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -191,7 +191,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4925" name="Amulet: Pa'agrio's Haste" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="4925" name="Amulet: Pa'agrio's Haste" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>6750</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -199,7 +199,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4926" name="Amulet: Soul Guard" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="4926" name="Amulet: Soul Guard" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>3850</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -207,7 +207,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4927" name="Amulet: Chant of Revenge" commissionType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
+    <item stackable="true" id="4927" name="Amulet: Chant of Revenge" subType="SPELLBOOK" icon="icon.etc_orcish_talisman_i00">
         <price>7700</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -215,7 +215,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4928" name="Spellbook: Seed of Fire" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="4928" name="Spellbook: Seed of Fire" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -223,7 +223,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4929" name="Spellbook: Seed of Water" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="4929" name="Spellbook: Seed of Water" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -231,7 +231,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4930" name="Spellbook: Seed of Wind" commissionType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
+    <item stackable="true" id="4930" name="Spellbook: Seed of Wind" subType="SPELLBOOK" icon="icon.etc_spell_books_assistance_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -239,7 +239,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4931" name="Spellbook: Aura Symphony" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4931" name="Spellbook: Aura Symphony" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -247,7 +247,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4932" name="Spellbook: Inferno" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4932" name="Spellbook: Inferno" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -255,7 +255,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4933" name="Spellbook: Blizzard" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4933" name="Spellbook: Blizzard" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -263,7 +263,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4934" name="Spellbook: Demon Wind" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4934" name="Spellbook: Demon Wind" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -271,7 +271,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4935" name="Spellbook: Elemental Symphony" commissionType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
+    <item stackable="true" id="4935" name="Spellbook: Elemental Symphony" subType="SPELLBOOK" icon="icon.etc_spell_books_element_i00">
         <price>7200</price>
         <restriction freightable="false"/>
         <questItem>false</questItem>
@@ -279,7 +279,7 @@
         <time>-1</time>
         <weight>120</weight>
     </item>
-    <item stackable="true" id="4936" name="Recipe: Avadon Shield (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4936" name="Recipe: Avadon Shield (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10900</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -289,7 +289,7 @@
         <weight>30</weight>
         <recipeId>478</recipeId>
     </item>
-    <item stackable="true" id="4937" name="Recipe: Adamantite Earring (70%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4937" name="Recipe: Adamantite Earring (70%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>12120</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -299,7 +299,7 @@
         <weight>30</weight>
         <recipeId>328</recipeId>
     </item>
-    <item stackable="true" id="4938" name="Recipe: Adamantite Ring (70%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4938" name="Recipe: Adamantite Ring (70%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>8080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -309,7 +309,7 @@
         <weight>30</weight>
         <recipeId>330</recipeId>
     </item>
-    <item stackable="true" id="4939" name="Recipe: Adamantite Necklace (70%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4939" name="Recipe: Adamantite Necklace (70%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16160</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -319,7 +319,7 @@
         <weight>30</weight>
         <recipeId>332</recipeId>
     </item>
-    <item stackable="true" id="4940" name="Recipe: Zubei's Breastplate (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4940" name="Recipe: Zubei's Breastplate (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>41600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -329,7 +329,7 @@
         <weight>30</weight>
         <recipeId>341</recipeId>
     </item>
-    <item stackable="true" id="4941" name="Recipe: Zubei's Gaiters (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4941" name="Recipe: Zubei's Gaiters (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>26000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -339,7 +339,7 @@
         <weight>30</weight>
         <recipeId>343</recipeId>
     </item>
-    <item stackable="true" id="4942" name="Recipe: Boots of Silence (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4942" name="Recipe: Boots of Silence (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -349,7 +349,7 @@
         <weight>30</weight>
         <recipeId>347</recipeId>
     </item>
-    <item stackable="true" id="4943" name="Recipe: Guardian's Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4943" name="Recipe: Guardian's Boots (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -359,7 +359,7 @@
         <weight>30</weight>
         <recipeId>349</recipeId>
     </item>
-    <item stackable="true" id="4944" name="Recipe: Avadon Breastplate (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4944" name="Recipe: Avadon Breastplate (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>41600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -369,7 +369,7 @@
         <weight>30</weight>
         <recipeId>357</recipeId>
     </item>
-    <item stackable="true" id="4945" name="Recipe: Avadon Gaiters (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4945" name="Recipe: Avadon Gaiters (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>26000</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -379,7 +379,7 @@
         <weight>30</weight>
         <recipeId>359</recipeId>
     </item>
-    <item stackable="true" id="4946" name="Recipe: Zubei's Leather Shirt (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4946" name="Recipe: Zubei's Leather Shirt (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>31200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -389,7 +389,7 @@
         <weight>30</weight>
         <recipeId>361</recipeId>
     </item>
-    <item stackable="true" id="4947" name="Recipe: Zubei's Leather Gaiters (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4947" name="Recipe: Zubei's Leather Gaiters (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>19460</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -399,7 +399,7 @@
         <weight>30</weight>
         <recipeId>363</recipeId>
     </item>
-    <item stackable="true" id="4948" name="Recipe: Avadon Leather Armor (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4948" name="Recipe: Avadon Leather Armor (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>45600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -409,7 +409,7 @@
         <weight>30</weight>
         <recipeId>365</recipeId>
     </item>
-    <item stackable="true" id="4949" name="Recipe: Tunic of Zubei (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4949" name="Recipe: Tunic of Zubei (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>31200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -419,7 +419,7 @@
         <weight>30</weight>
         <recipeId>367</recipeId>
     </item>
-    <item stackable="true" id="4950" name="Recipe: Stockings of Zubei (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4950" name="Recipe: Stockings of Zubei (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>19460</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -429,7 +429,7 @@
         <weight>30</weight>
         <recipeId>369</recipeId>
     </item>
-    <item stackable="true" id="4951" name="Recipe: Avadon Robe (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4951" name="Recipe: Avadon Robe (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>45600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -439,7 +439,7 @@
         <weight>30</weight>
         <recipeId>371</recipeId>
     </item>
-    <item stackable="true" id="4952" name="Recipe: Avadon Circlet (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4952" name="Recipe: Avadon Circlet (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>15560</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -449,7 +449,7 @@
         <weight>30</weight>
         <recipeId>373</recipeId>
     </item>
-    <item stackable="true" id="4953" name="Recipe: Sealed Avadon Gloves (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4953" name="Recipe: Sealed Avadon Gloves (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -459,7 +459,7 @@
         <weight>30</weight>
         <recipeId>375</recipeId>
     </item>
-    <item stackable="true" id="4954" name="Recipe: Chain Gloves of Silence (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4954" name="Recipe: Chain Gloves of Silence (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -469,7 +469,7 @@
         <weight>30</weight>
         <recipeId>377</recipeId>
     </item>
-    <item stackable="true" id="4955" name="Recipe: Guardian's Gloves (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4955" name="Recipe: Guardian's Gloves (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -479,7 +479,7 @@
         <weight>30</weight>
         <recipeId>379</recipeId>
     </item>
-    <item stackable="true" id="4956" name="Recipe: Gloves of Blessing (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4956" name="Recipe: Gloves of Blessing (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -489,7 +489,7 @@
         <weight>30</weight>
         <recipeId>381</recipeId>
     </item>
-    <item stackable="true" id="4957" name="Recipe: Boots of Blessing (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4957" name="Recipe: Boots of Blessing (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -499,7 +499,7 @@
         <weight>30</weight>
         <recipeId>387</recipeId>
     </item>
-    <item stackable="true" id="4958" name="Recipe: Sealed Zubei's Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4958" name="Recipe: Sealed Zubei's Boots (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -509,7 +509,7 @@
         <weight>30</weight>
         <recipeId>423</recipeId>
     </item>
-    <item stackable="true" id="4959" name="Recipe: Sealed Avadon Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4959" name="Recipe: Sealed Avadon Boots (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -519,7 +519,7 @@
         <weight>30</weight>
         <recipeId>425</recipeId>
     </item>
-    <item stackable="true" id="4960" name="Recipe: Sealed Zubei's Gauntlets (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4960" name="Recipe: Sealed Zubei's Gauntlets (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10380</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -529,7 +529,7 @@
         <weight>30</weight>
         <recipeId>429</recipeId>
     </item>
-    <item stackable="true" id="4961" name="Recipe: Zubei's Shield (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4961" name="Recipe: Zubei's Shield (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>10900</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -539,7 +539,7 @@
         <weight>30</weight>
         <recipeId>431</recipeId>
     </item>
-    <item stackable="true" id="4962" name="Recipe: Zubei's Helmet (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4962" name="Recipe: Zubei's Helmet (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>15560</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -549,7 +549,7 @@
         <weight>30</weight>
         <recipeId>433</recipeId>
     </item>
-    <item stackable="true" id="4963" name="Recipe: Great Sword (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4963" name="Recipe: Great Sword (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -559,7 +559,7 @@
         <weight>30</weight>
         <recipeId>438</recipeId>
     </item>
-    <item stackable="true" id="4964" name="Recipe: Heavy War Axe (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4964" name="Recipe: Heavy War Axe (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -569,7 +569,7 @@
         <weight>30</weight>
         <recipeId>440</recipeId>
     </item>
-    <item stackable="true" id="4965" name="Recipe: Spirit's Staff (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4965" name="Recipe: Spirit's Staff (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -579,7 +579,7 @@
         <weight>30</weight>
         <recipeId>442</recipeId>
     </item>
-    <item stackable="true" id="4966" name="Recipe: Keshanberk (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4966" name="Recipe: Keshanberk (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -589,7 +589,7 @@
         <weight>30</weight>
         <recipeId>444</recipeId>
     </item>
-    <item stackable="true" id="4967" name="Recipe: Sword of Valhalla (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4967" name="Recipe: Sword of Valhalla (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -599,7 +599,7 @@
         <weight>30</weight>
         <recipeId>446</recipeId>
     </item>
-    <item stackable="true" id="4968" name="Recipe: Kris (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4968" name="Recipe: Kris (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -609,7 +609,7 @@
         <weight>30</weight>
         <recipeId>448</recipeId>
     </item>
-    <item stackable="true" id="4969" name="Recipe: Twilight Knife (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4969" name="Recipe: Twilight Knife (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -619,7 +619,7 @@
         <weight>30</weight>
         <recipeId>450</recipeId>
     </item>
-    <item stackable="true" id="4970" name="Recipe: Arthro Nail (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4970" name="Recipe: Arthro Nail (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -629,7 +629,7 @@
         <weight>30</weight>
         <recipeId>452</recipeId>
     </item>
-    <item stackable="true" id="4971" name="Recipe: Dark Elven Longbow (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4971" name="Recipe: Dark Elven Longbow (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -639,7 +639,7 @@
         <weight>30</weight>
         <recipeId>454</recipeId>
     </item>
-    <item stackable="true" id="4972" name="Recipe: Great Axe (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4972" name="Recipe: Great Axe (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>173600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -649,7 +649,7 @@
         <weight>30</weight>
         <recipeId>456</recipeId>
     </item>
-    <item stackable="true" id="4973" name="Recipe: Black Ore Earring (70%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4973" name="Recipe: Black Ore Earring (70%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>18480</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -659,7 +659,7 @@
         <weight>30</weight>
         <recipeId>334</recipeId>
     </item>
-    <item stackable="true" id="4974" name="Recipe: Black Ore Ring (70%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4974" name="Recipe: Black Ore Ring (70%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>12320</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -669,7 +669,7 @@
         <weight>30</weight>
         <recipeId>336</recipeId>
     </item>
-    <item stackable="true" id="4975" name="Recipe: Black Ore Necklace (70%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4975" name="Recipe: Black Ore Necklace (70%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>24600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -679,7 +679,7 @@
         <weight>30</weight>
         <recipeId>338</recipeId>
     </item>
-    <item stackable="true" id="4976" name="Recipe: Implosion Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4976" name="Recipe: Implosion Boots (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -689,7 +689,7 @@
         <weight>30</weight>
         <recipeId>345</recipeId>
     </item>
-    <item stackable="true" id="4977" name="Recipe: Paradia Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4977" name="Recipe: Paradia Boots (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -699,7 +699,7 @@
         <weight>30</weight>
         <recipeId>351</recipeId>
     </item>
-    <item stackable="true" id="4978" name="Recipe: Elemental Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4978" name="Recipe: Elemental Boots (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -709,7 +709,7 @@
         <weight>30</weight>
         <recipeId>353</recipeId>
     </item>
-    <item stackable="true" id="4979" name="Recipe: Boots of Grace (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4979" name="Recipe: Boots of Grace (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -719,7 +719,7 @@
         <weight>30</weight>
         <recipeId>355</recipeId>
     </item>
-    <item stackable="true" id="4980" name="Recipe: Doom Shield (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4980" name="Recipe: Doom Shield (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16900</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -729,7 +729,7 @@
         <weight>30</weight>
         <recipeId>383</recipeId>
     </item>
-    <item stackable="true" id="4981" name="Recipe: Blue Wolf Breastplate (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4981" name="Recipe: Blue Wolf Breastplate (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>64400</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -739,7 +739,7 @@
         <weight>30</weight>
         <recipeId>385</recipeId>
     </item>
-    <item stackable="true" id="4982" name="Recipe: Blue Wolf Gaiters (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4982" name="Recipe: Blue Wolf Gaiters (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>40200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -749,7 +749,7 @@
         <weight>30</weight>
         <recipeId>389</recipeId>
     </item>
-    <item stackable="true" id="4983" name="Recipe: Doom Plate Armor (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4983" name="Recipe: Doom Plate Armor (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>94200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -759,7 +759,7 @@
         <weight>30</weight>
         <recipeId>391</recipeId>
     </item>
-    <item stackable="true" id="4984" name="Recipe: Blue Wolf Leather Armor (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4984" name="Recipe: Blue Wolf Leather Armor (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>70600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -769,7 +769,7 @@
         <weight>30</weight>
         <recipeId>393</recipeId>
     </item>
-    <item stackable="true" id="4985" name="Recipe: Leather Armor of Doom (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4985" name="Recipe: Leather Armor of Doom (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>70600</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -779,7 +779,7 @@
         <weight>30</weight>
         <recipeId>395</recipeId>
     </item>
-    <item stackable="true" id="4986" name="Recipe: Blue Wolf Tunic (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4986" name="Recipe: Blue Wolf Tunic (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>48200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -789,7 +789,7 @@
         <weight>30</weight>
         <recipeId>397</recipeId>
     </item>
-    <item stackable="true" id="4987" name="Recipe: Tunic of Doom (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4987" name="Recipe: Tunic of Doom (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>48200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -799,7 +799,7 @@
         <weight>30</weight>
         <recipeId>399</recipeId>
     </item>
-    <item stackable="true" id="4988" name="Recipe: Blue Wolf Stockings (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4988" name="Recipe: Blue Wolf Stockings (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>30200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -809,7 +809,7 @@
         <weight>30</weight>
         <recipeId>401</recipeId>
     </item>
-    <item stackable="true" id="4989" name="Recipe: Stockings of Doom (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4989" name="Recipe: Stockings of Doom (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>30200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -819,7 +819,7 @@
         <weight>30</weight>
         <recipeId>403</recipeId>
     </item>
-    <item stackable="true" id="4990" name="Recipe: Blue Wolf Helmet (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4990" name="Recipe: Blue Wolf Helmet (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>24200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -829,7 +829,7 @@
         <weight>30</weight>
         <recipeId>405</recipeId>
     </item>
-    <item stackable="true" id="4991" name="Recipe: Doom Helmet (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4991" name="Recipe: Doom Helmet (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>24200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -839,7 +839,7 @@
         <weight>30</weight>
         <recipeId>407</recipeId>
     </item>
-    <item stackable="true" id="4992" name="Recipe: Sealed Blue Wolf Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4992" name="Recipe: Sealed Blue Wolf Boots (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -849,7 +849,7 @@
         <weight>30</weight>
         <recipeId>409</recipeId>
     </item>
-    <item stackable="true" id="4993" name="Recipe: Sealed Doom Gloves (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4993" name="Recipe: Sealed Doom Gloves (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -859,7 +859,7 @@
         <weight>30</weight>
         <recipeId>411</recipeId>
     </item>
-    <item stackable="true" id="4994" name="Recipe: Elemental Gloves (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4994" name="Recipe: Elemental Gloves (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -869,7 +869,7 @@
         <weight>30</weight>
         <recipeId>413</recipeId>
     </item>
-    <item stackable="true" id="4995" name="Recipe: Gloves of Grace (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4995" name="Recipe: Gloves of Grace (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -879,7 +879,7 @@
         <weight>30</weight>
         <recipeId>415</recipeId>
     </item>
-    <item stackable="true" id="4996" name="Recipe: Implosion Gauntlets (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4996" name="Recipe: Implosion Gauntlets (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -889,7 +889,7 @@
         <weight>30</weight>
         <recipeId>417</recipeId>
     </item>
-    <item stackable="true" id="4997" name="Recipe: Paradia Gloves (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4997" name="Recipe: Paradia Gloves (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -899,7 +899,7 @@
         <weight>30</weight>
         <recipeId>419</recipeId>
     </item>
-    <item stackable="true" id="4998" name="Recipe: Sealed Blue Wolf Gloves (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4998" name="Recipe: Sealed Blue Wolf Gloves (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -909,7 +909,7 @@
         <weight>30</weight>
         <recipeId>421</recipeId>
     </item>
-    <item stackable="true" id="4999" name="Recipe: Sealed Doom Boots (60%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_red_i00">
+    <item stackable="true" id="4999" name="Recipe: Sealed Doom Boots (60%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_red_i00">
         <price>16080</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>

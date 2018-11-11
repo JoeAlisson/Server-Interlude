@@ -22,7 +22,7 @@ import org.l2j.gameserver.instancemanager.SiegeManager;
 import org.l2j.gameserver.model.entity.database.NpcTemplate;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.ActionFailed;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
 
 import java.util.StringTokenizer;
@@ -98,7 +98,7 @@ public final class L2ObservationInstance extends L2FolkInstance
 		{
 			// enter mode
 			player.enterObserverMode(x, y, z);
-			ItemList il = new ItemList(player, false);
+			ItemListPacket il = new ItemListPacket(player, false);
 			player.sendPacket(il);
 		}
 		player.sendPacket(new ActionFailed());

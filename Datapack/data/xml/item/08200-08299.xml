@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <item stackable="true" id="8294" name="Recipe: Steel Sword" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="8294" name="Recipe: Steel Sword" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>8180</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>
@@ -10,7 +10,7 @@
         <weight>30</weight>
         <recipeId>783</recipeId>
     </item>
-    <item stackable="true" id="8299" name="Recipe: Infernal Master (100%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_violet_i00">
+    <item stackable="true" id="8299" name="Recipe: Infernal Master (100%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_violet_i00">
         <price>73200</price>
         <restriction freightable="false"/>
         <handler>RECIPE</handler>

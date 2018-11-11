@@ -45,7 +45,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="additionalName" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *       &lt;attribute name="type" type="{http://la2j.org}ItemType" default="NONE" /&gt;
- *       &lt;attribute name="commissionType" type="{http://la2j.org}CommissionType" /&gt;
+ *       &lt;attribute name="subType" type="{http://la2j.org}SubType" /&gt;
  *       &lt;attribute name="icon" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -100,7 +100,7 @@ public abstract class ItemTemplate {
     protected String additionalName;
     @XmlAttribute(name = "type")
     protected ItemType type;
-    @XmlAttribute(name = "commissionType")
+    @XmlAttribute(name = "subType")
     protected CommissionType commissionType;
     @XmlAttribute(name = "icon")
     protected String icon;
@@ -432,7 +432,7 @@ public abstract class ItemTemplate {
     }
 
     /**
-     * Obtém o valor da propriedade commissionType.
+     * Obtém o valor da propriedade subType.
      * 
      * @return
      *     possible object is
@@ -444,7 +444,7 @@ public abstract class ItemTemplate {
     }
 
     /**
-     * Define o valor da propriedade commissionType.
+     * Define o valor da propriedade subType.
      * 
      * @param value
      *     allowed object is

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon id="2560" name="Elven Long Sword*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2560" name="Elven Long Sword*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>3820000</price>
         <restriction freightable="false"/>
@@ -13,7 +13,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2561" name="StormBringer*StormBringer" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2561" name="StormBringer*StormBringer" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>4780000</price>
         <restriction freightable="false"/>
@@ -26,7 +26,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2562" name="StormBringer*Shamshir" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2562" name="StormBringer*Shamshir" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>5280000</price>
         <restriction freightable="false"/>
@@ -39,7 +39,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2563" name="StormBringer*Katana" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2563" name="StormBringer*Katana" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>5280000</price>
         <restriction freightable="false"/>
@@ -52,7 +52,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2564" name="StormBringer*Spirit Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2564" name="StormBringer*Spirit Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>5280000</price>
         <restriction freightable="false"/>
@@ -65,7 +65,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2565" name="StormBringer*Raid Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2565" name="StormBringer*Raid Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>5280000</price>
         <restriction freightable="false"/>
@@ -78,7 +78,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2566" name="StormBringer*Caliburs" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2566" name="StormBringer*Caliburs" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6980000</price>
         <restriction freightable="false"/>
@@ -91,7 +91,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2567" name="StormBringer*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2567" name="StormBringer*Ultimate Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6980000</price>
         <restriction freightable="false"/>
@@ -104,7 +104,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2568" name="StormBringer*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2568" name="StormBringer*Sword of Delusion" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6980000</price>
         <restriction freightable="false"/>
@@ -117,7 +117,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2569" name="StormBringer*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2569" name="StormBringer*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6980000</price>
         <restriction freightable="false"/>
@@ -130,7 +130,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2570" name="StormBringer*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2570" name="StormBringer*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6980000</price>
         <restriction freightable="false"/>
@@ -143,7 +143,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2571" name="StormBringer*Samurai Long sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2571" name="StormBringer*Samurai Long sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -156,7 +156,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2572" name="Shamshir*Shamshir" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2572" name="Shamshir*Shamshir" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -169,7 +169,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2573" name="Shamshir*Katana" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2573" name="Shamshir*Katana" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -182,7 +182,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2574" name="Shamshir*Spirit Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2574" name="Shamshir*Spirit Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -195,7 +195,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2575" name="Shamshir*Raid Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2575" name="Shamshir*Raid Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -208,7 +208,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2576" name="Shamshir*Caliburs" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2576" name="Shamshir*Caliburs" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -221,7 +221,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2577" name="Shamshir*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2577" name="Shamshir*Ultimate Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -234,7 +234,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2578" name="Shamshir*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2578" name="Shamshir*Sword of Delusion" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -247,7 +247,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2579" name="Shamshir*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2579" name="Shamshir*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -260,7 +260,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2580" name="Shamshir*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2580" name="Shamshir*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -273,7 +273,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2581" name="Shamshir*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2581" name="Shamshir*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>9550000</price>
         <restriction freightable="false"/>
@@ -286,7 +286,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2582" name="Katana*Katana" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2582" name="Katana*Katana" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -299,7 +299,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2583" name="Katana*Spirit Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2583" name="Katana*Spirit Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -312,7 +312,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2584" name="Katana*Raid Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2584" name="Katana*Raid Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -325,7 +325,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2585" name="Katana*Caliburs" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2585" name="Katana*Caliburs" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -338,7 +338,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2586" name="Katana*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2586" name="Katana*Ultimate Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -351,7 +351,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2587" name="Katana*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2587" name="Katana*Sword of Delusion" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -364,7 +364,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2588" name="Katana*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2588" name="Katana*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -377,7 +377,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2589" name="Katana*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2589" name="Katana*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -390,7 +390,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2590" name="Katana*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2590" name="Katana*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>9550000</price>
         <restriction freightable="false"/>
@@ -403,7 +403,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2591" name="Spirit Sword*Spirit Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2591" name="Spirit Sword*Spirit Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -416,7 +416,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2592" name="Spirit Sword*Raid Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2592" name="Spirit Sword*Raid Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -429,7 +429,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2593" name="Spirit Sword*Caliburs" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2593" name="Spirit Sword*Caliburs" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -442,7 +442,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2594" name="Spirit Sword*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2594" name="Spirit Sword*Ultimate Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -455,7 +455,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2595" name="Spirit Sword*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2595" name="Spirit Sword*Sword of Delusion" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -468,7 +468,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2596" name="Spirit Sword*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2596" name="Spirit Sword*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -481,7 +481,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2597" name="Spirit Sword*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2597" name="Spirit Sword*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -494,7 +494,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2598" name="Spirit Sword*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2598" name="Spirit Sword*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>9550000</price>
         <restriction freightable="false"/>
@@ -507,7 +507,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2599" name="Raid Sword*Raid Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2599" name="Raid Sword*Raid Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -520,7 +520,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2500" name="Dark Legion's Edge" type="SWORD" commissionType="ONE_HAND_SWORD" icon="icon.weapon_dark_legions_edge_i00">
+    <weapon id="2500" name="Dark Legion's Edge" type="SWORD" subType="ONE_HAND_SWORD" icon="icon.weapon_dark_legions_edge_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>20741000</price>
         <restriction freightable="false"/>
@@ -532,7 +532,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2501" name="Bone Club" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_club_i00">
+    <weapon id="2501" name="Bone Club" type="BLUNT" subType="BLUNT_WEAPON" icon="icon.weapon_club_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>136000</price>
         <restriction freightable="false"/>
@@ -543,7 +543,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2502" name="Dwarven War Hammer" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_dwarven_warhammer_i00">
+    <weapon id="2502" name="Dwarven War Hammer" type="BLUNT" subType="BLUNT_WEAPON" icon="icon.weapon_dwarven_warhammer_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -555,7 +555,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2503" name="Yaksa Mace" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_yaksa_mace_i00">
+    <weapon id="2503" name="Yaksa Mace" type="BLUNT" subType="BLUNT_WEAPON" icon="icon.weapon_yaksa_mace_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>6130000</price>
         <restriction freightable="false"/>
@@ -567,7 +567,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2504" name="Meteor Shower" type="BLUNT" commissionType="BLUNT_WEAPON" icon="icon.weapon_meteor_shower_i00">
+    <weapon id="2504" name="Meteor Shower" type="BLUNT" subType="BLUNT_WEAPON" icon="icon.weapon_meteor_shower_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>14098000</price>
         <restriction freightable="false"/>
@@ -579,7 +579,7 @@
         <damage distance="40" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2507" name="Lizardspear" type="DAGGER" commissionType="PET_EQUIPMENT" icon="icon.weapon_doomed_dagger_i00">
+    <weapon id="2507" name="Lizardspear" type="DAGGER" subType="PET_EQUIPMENT" icon="icon.weapon_doomed_dagger_i00">
         <bodyPart>RIGHT_HAND</bodyPart>
         <price>409000</price>
         <restriction freightable="false"/>
@@ -599,7 +599,7 @@
         <time>-1</time>
         <weight>3</weight>
     </item>
-    <item stackable="true" id="2509" name="Spiritshot (No-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_white_i00">
+    <item stackable="true" id="2509" name="Spiritshot (No-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_white_i00">
         <price>15</price>
         <restriction freightable="false"/>
         <handler>SPIRIT_SHOT</handler>
@@ -609,7 +609,7 @@
         <weight>4</weight>
         <skill id="2047"/>
     </item>
-    <item stackable="true" id="2510" name="Spiritshot (D-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_blue_i00">
+    <item stackable="true" id="2510" name="Spiritshot (D-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_blue_i00">
         <price>18</price>
         <restriction freightable="false"/>
         <crystalInfo type="D"/>
@@ -620,7 +620,7 @@
         <weight>4</weight>
         <skill id="2155"/>
     </item>
-    <item stackable="true" id="2511" name="Spiritshot (C-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_green_i00">
+    <item stackable="true" id="2511" name="Spiritshot (C-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_green_i00">
         <price>35</price>
         <restriction freightable="false"/>
         <crystalInfo type="C"/>
@@ -631,7 +631,7 @@
         <weight>2</weight>
         <skill id="2156"/>
     </item>
-    <item stackable="true" id="2512" name="Spiritshot (B-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_red_i00">
+    <item stackable="true" id="2512" name="Spiritshot (B-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_red_i00">
         <price>100</price>
         <restriction freightable="false"/>
         <crystalInfo type="B"/>
@@ -642,7 +642,7 @@
         <weight>2</weight>
         <skill id="2157"/>
     </item>
-    <item stackable="true" id="2513" name="Spiritshot (A-grade)" type="SOULSHOT" commissionType="SPIRITSHOT" icon="icon.etc_spell_shot_silver_i00">
+    <item stackable="true" id="2513" name="Spiritshot (A-grade)" type="SOULSHOT" subType="SPIRITSHOT" icon="icon.etc_spell_shot_silver_i00">
         <price>120</price>
         <restriction freightable="false"/>
         <crystalInfo type="A"/>
@@ -653,7 +653,7 @@
         <weight>1</weight>
         <skill id="2158"/>
     </item>
-    <weapon id="2516" name="Saber*Saber" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2516" name="Saber*Saber" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>877000</price>
         <restriction freightable="false"/>
@@ -665,7 +665,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2517" name="Saber*Bastard Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2517" name="Saber*Bastard Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1060000</price>
         <restriction freightable="false"/>
@@ -677,7 +677,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2518" name="Saber*Spinebone Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2518" name="Saber*Spinebone Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1060000</price>
         <restriction freightable="false"/>
@@ -689,7 +689,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2519" name="Saber*Artisan's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2519" name="Saber*Artisan's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1060000</price>
         <restriction freightable="false"/>
@@ -701,7 +701,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2520" name="Saber*Knight's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2520" name="Saber*Knight's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1060000</price>
         <restriction freightable="false"/>
@@ -713,7 +713,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2521" name="Saber*Crimson Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2521" name="Saber*Crimson Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -725,7 +725,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2522" name="Saber*Elven Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2522" name="Saber*Elven Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -737,7 +737,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2523" name="Saber*Sword of Revolution" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2523" name="Saber*Sword of Revolution" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1960000</price>
         <restriction freightable="false"/>
@@ -749,7 +749,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2524" name="Saber*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2524" name="Saber*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2290000</price>
         <restriction freightable="false"/>
@@ -761,7 +761,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2525" name="Bastard Sword*Bastard Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2525" name="Bastard Sword*Bastard Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -773,7 +773,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2526" name="Bastard Sword*Spinebone Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2526" name="Bastard Sword*Spinebone Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -785,7 +785,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2527" name="Bastard Sword*Artisan's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2527" name="Bastard Sword*Artisan's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -797,7 +797,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2528" name="Bastard Sword*Knight's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2528" name="Bastard Sword*Knight's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -809,7 +809,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2529" name="Bastard Sword*Crimson Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2529" name="Bastard Sword*Crimson Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1660000</price>
         <restriction freightable="false"/>
@@ -821,7 +821,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2530" name="Bastard Sword*Elven Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2530" name="Bastard Sword*Elven Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1660000</price>
         <restriction freightable="false"/>
@@ -833,7 +833,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2531" name="Bastard Sword*Sword of Revolution" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2531" name="Bastard Sword*Sword of Revolution" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2120000</price>
         <restriction freightable="false"/>
@@ -845,7 +845,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2532" name="Bastard Sword*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2532" name="Bastard Sword*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2470000</price>
         <restriction freightable="false"/>
@@ -857,7 +857,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2533" name="Spinebone Sword*Spinebone Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2533" name="Spinebone Sword*Spinebone Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -869,7 +869,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2534" name="Spinebone Sword*Artisan's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2534" name="Spinebone Sword*Artisan's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -881,7 +881,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2535" name="Spinebone Sword*Knight's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2535" name="Spinebone Sword*Knight's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -893,7 +893,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2536" name="Spinebone Sword*Crimson Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2536" name="Spinebone Sword*Crimson Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1660000</price>
         <restriction freightable="false"/>
@@ -905,7 +905,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2537" name="Spinebone Sword*Elven Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2537" name="Spinebone Sword*Elven Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1660000</price>
         <restriction freightable="false"/>
@@ -917,7 +917,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2538" name="Spinebone Sword*Sword of Revolution" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2538" name="Spinebone Sword*Sword of Revolution" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2120000</price>
         <restriction freightable="false"/>
@@ -929,7 +929,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2539" name="Spinebone Sword*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2539" name="Spinebone Sword*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2470000</price>
         <restriction freightable="false"/>
@@ -941,7 +941,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2540" name="Artisan's Sword*Artisan's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2540" name="Artisan's Sword*Artisan's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -953,7 +953,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2541" name="Artisan's Sword*Knight's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2541" name="Artisan's Sword*Knight's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -965,7 +965,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2542" name="Artisan's Sword*Crimson Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2542" name="Artisan's Sword*Crimson Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1660000</price>
         <restriction freightable="false"/>
@@ -977,7 +977,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2543" name="Artisan's Sword*Elven Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2543" name="Artisan's Sword*Elven Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1660000</price>
         <restriction freightable="false"/>
@@ -989,7 +989,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2544" name="Artisan's Sword*Sword of Revolution" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2544" name="Artisan's Sword*Sword of Revolution" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2120000</price>
         <restriction freightable="false"/>
@@ -1001,7 +1001,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2545" name="Artisan's Sword*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2545" name="Artisan's Sword*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2470000</price>
         <restriction freightable="false"/>
@@ -1013,7 +1013,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2546" name="Knight's Sword*Knight's Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2546" name="Knight's Sword*Knight's Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1400000</price>
         <restriction freightable="false"/>
@@ -1025,7 +1025,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2547" name="Knight's Sword*Crimson Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2547" name="Knight's Sword*Crimson Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1660000</price>
         <restriction freightable="false"/>
@@ -1037,7 +1037,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2548" name="Knight's Sword*Elven Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2548" name="Knight's Sword*Elven Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1660000</price>
         <restriction freightable="false"/>
@@ -1049,7 +1049,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2549" name="Knight's Sword*Sword of Revolution" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2549" name="Knight's Sword*Sword of Revolution" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2120000</price>
         <restriction freightable="false"/>
@@ -1061,7 +1061,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2550" name="Knight's Sword*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2550" name="Knight's Sword*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2470000</price>
         <restriction freightable="false"/>
@@ -1073,7 +1073,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2551" name="Crimson Sword*Crimson Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2551" name="Crimson Sword*Crimson Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1960000</price>
         <restriction freightable="false"/>
@@ -1085,7 +1085,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2552" name="Crimson Sword*Elven Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2552" name="Crimson Sword*Elven Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1960000</price>
         <restriction freightable="false"/>
@@ -1097,7 +1097,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2553" name="Crimson Sword*Sword of Revolution" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2553" name="Crimson Sword*Sword of Revolution" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2470000</price>
         <restriction freightable="false"/>
@@ -1109,7 +1109,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2554" name="Crimson Sword*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2554" name="Crimson Sword*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -1122,7 +1122,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2555" name="Elven Sword*Elven Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2555" name="Elven Sword*Elven Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>1960000</price>
         <restriction freightable="false"/>
@@ -1134,7 +1134,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2556" name="Elven Sword*Sword of Revolution" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2556" name="Elven Sword*Sword of Revolution" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2470000</price>
         <restriction freightable="false"/>
@@ -1146,7 +1146,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2557" name="Elven Sword*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2557" name="Elven Sword*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -1159,7 +1159,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2558" name="Sword of Revolution*Sword of Revolution" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2558" name="Sword of Revolution*Sword of Revolution" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>2870000</price>
         <restriction freightable="false"/>
@@ -1172,7 +1172,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2559" name="Sword of Revolution*Elven Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2559" name="Sword of Revolution*Elven Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>3340000</price>
         <restriction freightable="false"/>

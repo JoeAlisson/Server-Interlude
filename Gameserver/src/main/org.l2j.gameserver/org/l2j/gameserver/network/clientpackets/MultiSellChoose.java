@@ -12,7 +12,7 @@ import org.l2j.gameserver.model.PcInventory;
 import org.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.network.serverpackets.ItemList;
+import org.l2j.gameserver.network.serverpackets.ItemListPacket;
 import org.l2j.gameserver.network.serverpackets.PledgeShowInfoUpdate;
 import org.l2j.gameserver.network.serverpackets.StatusUpdate;
 import org.l2j.gameserver.network.serverpackets.SystemMessage;
@@ -263,7 +263,7 @@ public class MultiSellChoose extends L2GameClientPacket {
                 sm = null;
             }
         }
-        player.sendPacket(new ItemList(player, false));
+        player.sendPacket(new ItemListPacket(player, false));
 
         StatusUpdate su = new StatusUpdate(player.getObjectId());
         su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());

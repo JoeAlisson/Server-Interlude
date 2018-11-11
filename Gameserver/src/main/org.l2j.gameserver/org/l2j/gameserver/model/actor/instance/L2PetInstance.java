@@ -623,7 +623,7 @@ public class L2PetInstance extends L2Summon
 		{
 			getInventory().transferItem("PetTransfer", item.getObjectId(), item.getCount(), getOwner().getInventory(), getOwner(), this);
 			PetInventoryUpdate petiu = new PetInventoryUpdate();
-			ItemList PlayerUI = new ItemList(getOwner(), false);
+			ItemListPacket PlayerUI = new ItemListPacket(getOwner(), false);
 			petiu.addRemovedItem(item);
 			getOwner().sendPacket(petiu);
 			getOwner().sendPacket(PlayerUI);

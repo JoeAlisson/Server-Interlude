@@ -64,7 +64,7 @@ public class EquipUpdate extends L2GameServerPacket {
 			case FEET:
 				bodypart = 0x0c;
 				break;
-			case BACK:
+			case CLOAK:
 				bodypart = 0x0d;
 				break;
             case TWO_HANDS:

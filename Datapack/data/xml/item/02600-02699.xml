@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon id="2600" name="Raid Sword*Caliburs" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2600" name="Raid Sword*Caliburs" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -13,7 +13,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2601" name="Raid Sword*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2601" name="Raid Sword*Ultimate Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -26,7 +26,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2602" name="Raid Sword*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2602" name="Raid Sword*Sword of Delusion" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -39,7 +39,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2603" name="Raid Sword*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2603" name="Raid Sword*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -52,7 +52,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2604" name="Raid Sword*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2604" name="Raid Sword*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>7830000</price>
         <restriction freightable="false"/>
@@ -65,7 +65,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2605" name="Raid Sword*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2605" name="Raid Sword*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>9550000</price>
         <restriction freightable="false"/>
@@ -78,7 +78,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2606" name="Caliburs*Caliburs" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2606" name="Caliburs*Caliburs" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -91,7 +91,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2607" name="Caliburs*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2607" name="Caliburs*Ultimate Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -104,7 +104,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2608" name="Caliburs*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2608" name="Caliburs*Sword of Delusion" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -117,7 +117,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2609" name="Caliburs*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2609" name="Caliburs*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -130,7 +130,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2610" name="Caliburs*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2610" name="Caliburs*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -143,7 +143,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2611" name="Caliburs*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2611" name="Caliburs*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>11300000</price>
         <restriction freightable="false"/>
@@ -156,7 +156,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2612" name="Ultimate Sword*Ultimate Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2612" name="Ultimate Sword*Ultimate Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -169,7 +169,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2613" name="Ultimate Sword*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2613" name="Ultimate Sword*Sword of Delusion" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -182,7 +182,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2614" name="Ultimate Sword*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2614" name="Ultimate Sword*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -195,7 +195,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2615" name="Ultimate Sword*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2615" name="Ultimate Sword*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -208,7 +208,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2616" name="Ultimate Sword*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2616" name="Ultimate Sword*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>11300000</price>
         <restriction freightable="false"/>
@@ -221,7 +221,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2617" name="Sword of Delusion*Sword of Delusion" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2617" name="Sword of Delusion*Sword of Delusion" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -234,7 +234,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2618" name="Sword of Delusion*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2618" name="Sword of Delusion*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -247,7 +247,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2619" name="Sword of Delusion*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2619" name="Sword of Delusion*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -260,7 +260,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2620" name="Sword of Delusion*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2620" name="Sword of Delusion*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>11300000</price>
         <restriction freightable="false"/>
@@ -273,7 +273,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2621" name="Sword of Nightmare*Sword of Nightmare" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2621" name="Sword of Nightmare*Sword of Nightmare" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -286,7 +286,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2622" name="Sword of Nightmare*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2622" name="Sword of Nightmare*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -299,7 +299,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2623" name="Sword of Nightmare*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2623" name="Sword of Nightmare*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>11300000</price>
         <restriction freightable="false"/>
@@ -312,7 +312,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2624" name="Tsurugi*Tsurugi" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2624" name="Tsurugi*Tsurugi" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -325,7 +325,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2625" name="Tsurugi*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2625" name="Tsurugi*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>11300000</price>
         <restriction freightable="false"/>
@@ -338,7 +338,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="2626" name="Samurai Long Sword*Samurai Long Sword" type="DUAL" commissionType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
+    <weapon id="2626" name="Samurai Long Sword*Samurai Long Sword" type="DUAL" subType="DUALSWORD" icon="icon.weapon_dual_sword_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>

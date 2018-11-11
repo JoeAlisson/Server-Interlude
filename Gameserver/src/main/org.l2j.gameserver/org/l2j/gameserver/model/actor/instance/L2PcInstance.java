@@ -45,7 +45,7 @@ import org.l2j.gameserver.skills.Stats;
 import org.l2j.gameserver.templates.base.ClassTemplate;
 import org.l2j.gameserver.templates.base.ItemType;
 import org.l2j.gameserver.templates.base.PaperDoll;
-import org.l2j.gameserver.templates.xml.jaxb.CommissionType;
+import org.l2j.gameserver.templates.xml.jaxb.SubType;
 import org.l2j.gameserver.templates.xml.jaxb.Race;
 import org.l2j.gameserver.util.Broadcast;
 import org.l2j.gameserver.util.FloodProtector;
@@ -3150,7 +3150,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 iu.addItem(inventory.getAdenaInstance());
                 sendPacket(iu);
             } else {
-                sendPacket(new ItemList(this, false));
+                sendPacket(new ItemListPacket(this, false));
             }
         }
     }
@@ -3182,7 +3182,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 iu.addItem(adenaItem);
                 sendPacket(iu);
             } else {
-                sendPacket(new ItemList(this, false));
+                sendPacket(new ItemListPacket(this, false));
             }
 
             if (sendMessage) {
@@ -3219,7 +3219,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 iu.addItem(inventory.getAncientAdenaInstance());
                 sendPacket(iu);
             } else {
-                sendPacket(new ItemList(this, false));
+                sendPacket(new ItemListPacket(this, false));
             }
         }
     }
@@ -3251,7 +3251,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 iu.addItem(ancientAdenaItem);
                 sendPacket(iu);
             } else {
-                sendPacket(new ItemList(this, false));
+                sendPacket(new ItemListPacket(this, false));
             }
 
             if (sendMessage) {
@@ -3303,7 +3303,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 playerIU.addItem(newitem);
                 sendPacket(playerIU);
             } else {
-                sendPacket(new ItemList(this, false));
+                sendPacket(new ItemListPacket(this, false));
             }
 
             // Update current load as well
@@ -3335,7 +3335,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
     public void addItem(String process, int itemId, int count, L2Object reference, boolean sendMessage) {
         if (count > 0) {
             // Sends message to client if requested
-            if (sendMessage && ((!isCastingNow() && (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() == CommissionType.HERB)) || (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() != CommissionType.HERB.HERB))) {
+            if (sendMessage && ((!isCastingNow() && (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() == SubType.HERB)) || (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() != SubType.HERB.HERB))) {
                 if (count > 1) {
                     if (process.equalsIgnoreCase("sweep") || process.equalsIgnoreCase("Quest")) {
                         SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
@@ -3361,7 +3361,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 }
             }
             // Auto use herbs - autoloot
-            if (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() == CommissionType.HERB) // If item is herb dont add it to iv :]
+            if (ItemTable.getInstance().createDummyItem(itemId).getCommissionType() == SubType.HERB) // If item is herb dont add it to iv :]
             {
                 if (!isCastingNow()) {
                     L2ItemInstance herb = new L2ItemInstance(_charId, itemId);
@@ -3388,7 +3388,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                     playerIU.addItem(item);
                     sendPacket(playerIU);
                 } else {
-                    sendPacket(new ItemList(this, false));
+                    sendPacket(new ItemListPacket(this, false));
                 }
 
                 // Update current load as well
@@ -3436,7 +3436,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             playerIU.addItem(item);
             sendPacket(playerIU);
         } else {
-            sendPacket(new ItemList(this, false));
+            sendPacket(new ItemListPacket(this, false));
         }
 
         // Update current load as well
@@ -3483,7 +3483,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             playerIU.addItem(item);
             sendPacket(playerIU);
         } else {
-            sendPacket(new ItemList(this, false));
+            sendPacket(new ItemListPacket(this, false));
         }
 
         // Update current load as well
@@ -3545,7 +3545,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             playerIU.addItem(item);
             sendPacket(playerIU);
         } else {
-            sendPacket(new ItemList(this, false));
+            sendPacket(new ItemListPacket(this, false));
         }
 
         // Update current load as well
@@ -3592,7 +3592,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             playerIU.addItem(item);
             sendPacket(playerIU);
         } else {
-            sendPacket(new ItemList(this, false));
+            sendPacket(new ItemListPacket(this, false));
         }
 
         // Update current load as well
@@ -3647,7 +3647,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         sendPacket(su);
 
         // Send the ItemList Server->Client Packet to the reader in order to refresh its Inventory
-        ItemList il = new ItemList(getInventory().getItems(), true);
+        ItemListPacket il = new ItemListPacket(getInventory().getItems(), true);
         sendPacket(il);
 
         // Send a Server->Client packet UserInfo to this L2PcInstance and CharInfo to allTemplates L2PcInstance in its _KnownPlayers
@@ -3690,7 +3690,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
 
             sendPacket(playerIU);
         } else {
-            sendPacket(new ItemList(this, false));
+            sendPacket(new ItemListPacket(this, false));
         }
 
         // Update current load as well
@@ -3713,7 +3713,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
 
                 targetPlayer.sendPacket(playerIU);
             } else {
-                targetPlayer.sendPacket(new ItemList(targetPlayer, false));
+                targetPlayer.sendPacket(new ItemListPacket(targetPlayer, false));
             }
 
             // Update current load as well
@@ -3778,7 +3778,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             playerIU.addItem(item);
             sendPacket(playerIU);
         } else {
-            sendPacket(new ItemList(this, false));
+            sendPacket(new ItemListPacket(this, false));
         }
 
         // Update current load as well
@@ -3844,7 +3844,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             playerIU.addItem(invitem);
             sendPacket(playerIU);
         } else {
-            sendPacket(new ItemList(this, false));
+            sendPacket(new ItemListPacket(this, false));
         }
 
         // Update current load as well
@@ -4377,7 +4377,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
         }
 
         // Auto use herbs - pick up
-        if (target.getCommissionType() == CommissionType.HERB) {
+        if (target.getCommissionType() == SubType.HERB) {
             IItemHandler handler = ItemHandler.getInstance().getItemHandler(target.getId());
             if (handler == null) {
                 logger.debug("No item handler registered for item ID " + target.getId() + ".");
@@ -5648,14 +5648,14 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             if (Config.DEBUG) {
                 logger.debug("removed arrows count");
             }
-            sendPacket(new ItemList(this, false));
+            sendPacket(new ItemListPacket(this, false));
         } else {
             if (!Config.FORCE_INVENTORY_UPDATE) {
                 InventoryUpdate iu = new InventoryUpdate();
                 iu.addModifiedItem(arrows);
                 sendPacket(iu);
             } else {
-                sendPacket(new ItemList(this, false));
+                sendPacket(new ItemListPacket(this, false));
             }
         }
     }
@@ -5677,7 +5677,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 getInventory().setPaperdollItem(Inventory.PAPERDOLL_LHAND, _arrowItem);
 
                 // Send a Server->Client packet ItemList to this L2PcINstance to update left hand equipement
-                ItemList il = new ItemList(this, false);
+                ItemListPacket il = new ItemListPacket(this, false);
                 sendPacket(il);
             }
         } else {

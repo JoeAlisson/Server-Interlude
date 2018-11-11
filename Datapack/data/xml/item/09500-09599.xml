@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <armor id="9589" name="Iron Bracelet" commissionType="BRACELET" icon="icon.etc_rbracelet_c_i00">
+    <armor id="9589" name="Iron Bracelet" subType="BRACELET" icon="icon.etc_rbracelet_c_i00">
         <bodyPart>RIGHT_BRACELET</bodyPart>
         <price>1080000</price>
         <restriction freightable="false"/>
@@ -11,7 +11,7 @@
         <weight>150</weight>
         <skill id="3322"/>
         </armor>
-    <armor id="9590" name="Bronze Bracelet" commissionType="BRACELET" icon="icon.etc_rbracelet_b_i01">
+    <armor id="9590" name="Bronze Bracelet" subType="BRACELET" icon="icon.etc_rbracelet_b_i01">
         <bodyPart>RIGHT_BRACELET</bodyPart>
         <price>5400000</price>
         <restriction freightable="false"/>
@@ -22,7 +22,7 @@
         <weight>150</weight>
         <skill id="3323"/>
         </armor>
-    <armor id="9591" name="Steel Bracelet" commissionType="BRACELET" icon="icon.etc_rbracelet_a_i02">
+    <armor id="9591" name="Steel Bracelet" subType="BRACELET" icon="icon.etc_rbracelet_a_i02">
         <bodyPart>RIGHT_BRACELET</bodyPart>
         <price>27000000</price>
         <restriction freightable="false"/>

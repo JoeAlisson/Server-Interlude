@@ -8,7 +8,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="845" name="Cat's Eye" commissionType="EARRING" icon="icon.accessary_catseye_earing_i00">
+    <armor id="845" name="Cat's Eye" subType="EARRING" icon="icon.accessary_catseye_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>8890</price>
         <restriction freightable="false"/>
@@ -17,7 +17,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="846" name="Coral Earring" commissionType="EARRING" icon="icon.accessary_coral_earing_i00">
+    <armor id="846" name="Coral Earring" subType="EARRING" icon="icon.accessary_coral_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>16000</price>
         <restriction freightable="false"/>
@@ -26,7 +26,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="847" name="Red Crescent" commissionType="EARRING" icon="icon.accessary_red_cresent_earing_i00">
+    <armor id="847" name="Red Crescent" subType="EARRING" icon="icon.accessary_red_cresent_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>26900</price>
         <restriction freightable="false"/>
@@ -36,7 +36,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="848" name="Earring of Magic" commissionType="EARRING" icon="icon.accessary_enchanted_earing_i00">
+    <armor id="848" name="Earring of Magic" subType="EARRING" icon="icon.accessary_enchanted_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>42600</price>
         <restriction freightable="false"/>
@@ -46,7 +46,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="849" name="Tiger's Eye" commissionType="EARRING" icon="icon.accessary_tigerseye_earing_i00">
+    <armor id="849" name="Tiger's Eye" subType="EARRING" icon="icon.accessary_tigerseye_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>64300</price>
         <restriction freightable="false"/>
@@ -56,7 +56,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="850" name="Elven Earring" commissionType="EARRING" icon="icon.accessary_elven_earing_i00">
+    <armor id="850" name="Elven Earring" subType="EARRING" icon="icon.accessary_elven_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>93400</price>
         <restriction freightable="false"/>
@@ -66,7 +66,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="851" name="Onyx Beast's Eye Earring" commissionType="EARRING" icon="icon.accessary_onyxbeastseye_earing_i00">
+    <armor id="851" name="Onyx Beast's Eye Earring" subType="EARRING" icon="icon.accessary_onyxbeastseye_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>121000</price>
         <restriction freightable="false"/>
@@ -76,7 +76,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="852" name="Moonstone Earring" commissionType="EARRING" icon="icon.accessary_moonstone_earing_i00">
+    <armor id="852" name="Moonstone Earring" subType="EARRING" icon="icon.accessary_moonstone_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>155000</price>
         <restriction freightable="false"/>
@@ -86,7 +86,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="853" name="Earring of Protection" commissionType="EARRING" icon="icon.accessary_earing_of_protection_i00">
+    <armor id="853" name="Earring of Protection" subType="EARRING" icon="icon.accessary_earing_of_protection_i00">
         <bodyPart>EAR</bodyPart>
         <price>196000</price>
         <restriction freightable="false"/>
@@ -96,7 +96,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="854" name="Earring of Seal" commissionType="EARRING" icon="icon.accessary_earing_of_binding_i00">
+    <armor id="854" name="Earring of Seal" subType="EARRING" icon="icon.accessary_earing_of_binding_i00">
         <bodyPart>EAR</bodyPart>
         <price>295000</price>
         <restriction freightable="false"/>
@@ -106,7 +106,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="855" name="Nassen's Earring" commissionType="EARRING" icon="icon.accessary_nassens_earing_i00">
+    <armor id="855" name="Nassen's Earring" subType="EARRING" icon="icon.accessary_nassens_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>424000</price>
         <restriction freightable="false"/>
@@ -116,7 +116,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="856" name="Adamantite Earring" commissionType="EARRING" icon="icon.accessary_adamantite_earing_i00">
+    <armor id="856" name="Adamantite Earring" subType="EARRING" icon="icon.accessary_adamantite_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>606000</price>
         <restriction freightable="false"/>
@@ -126,7 +126,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="857" name="Holy Earring" commissionType="EARRING" icon="icon.accessary_blessed_earing_i00">
+    <armor id="857" name="Holy Earring" subType="EARRING" icon="icon.accessary_blessed_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>424000</price>
         <restriction freightable="false"/>
@@ -136,7 +136,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="859" name="Earring of Mana" commissionType="EARRING" icon="icon.accessary_earing_of_mana_i00">
+    <armor id="859" name="Earring of Mana" subType="EARRING" icon="icon.accessary_earing_of_mana_i00">
         <bodyPart>EAR</bodyPart>
         <price>606000</price>
         <restriction freightable="false"/>
@@ -146,7 +146,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="860" name="Sage's Earring" commissionType="EARRING" icon="icon.accessary_sages_earing_i00">
+    <armor id="860" name="Sage's Earring" subType="EARRING" icon="icon.accessary_sages_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>924000</price>
         <restriction freightable="false"/>
@@ -156,7 +156,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="862" name="Majestic Earring" commissionType="EARRING" icon="icon.accessary_inferno_earing_i00">
+    <armor id="862" name="Majestic Earring" subType="EARRING" icon="icon.accessary_inferno_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>1498000</price>
         <restriction freightable="false"/>
@@ -166,7 +166,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="864" name="Black Ore Earring" commissionType="EARRING" icon="icon.accessary_earing_of_black_ore_i00">
+    <armor id="864" name="Black Ore Earring" subType="EARRING" icon="icon.accessary_earing_of_black_ore_i00">
         <bodyPart>EAR</bodyPart>
         <price>924000</price>
         <restriction freightable="false"/>
@@ -176,7 +176,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="869" name="Earring of Grace" commissionType="EARRING" icon="icon.accessary_earing_of_grace_i00">
+    <armor id="869" name="Earring of Grace" subType="EARRING" icon="icon.accessary_earing_of_grace_i00">
         <bodyPart>EAR</bodyPart>
         <price>606000</price>
         <restriction freightable="false"/>
@@ -186,7 +186,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="871" name="Phoenix Earring" commissionType="EARRING" icon="icon.accessary_phoenixs_earing_i00">
+    <armor id="871" name="Phoenix Earring" subType="EARRING" icon="icon.accessary_phoenixs_earing_i00">
         <bodyPart>EAR</bodyPart>
         <price>1005000</price>
         <restriction freightable="false"/>
@@ -204,7 +204,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="874" name="Earring of Blessing" commissionType="EARRING" icon="icon.accessary_earing_of_blessing_i00">
+    <armor id="874" name="Earring of Blessing" subType="EARRING" icon="icon.accessary_earing_of_blessing_i00">
         <bodyPart>EAR</bodyPart>
         <price>606000</price>
         <restriction freightable="false"/>
@@ -214,7 +214,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="875" name="Ring of Knowledge" commissionType="RING" icon="icon.accessary_ring_of_knowledge_i00">
+    <armor id="875" name="Ring of Knowledge" subType="RING" icon="icon.accessary_ring_of_knowledge_i00">
         <bodyPart>FINGER</bodyPart>
         <price>540</price>
         <restriction freightable="false"/>
@@ -223,7 +223,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="876" name="Ring of Anguish" commissionType="RING" icon="icon.accessary_ring_of_anguish_i00">
+    <armor id="876" name="Ring of Anguish" subType="RING" icon="icon.accessary_ring_of_anguish_i00">
         <bodyPart>FINGER</bodyPart>
         <price>2340</price>
         <restriction freightable="false"/>
@@ -232,7 +232,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="877" name="Ring of Wisdom" commissionType="RING" icon="icon.accessary_ring_of_wisdom_i00">
+    <armor id="877" name="Ring of Wisdom" subType="RING" icon="icon.accessary_ring_of_wisdom_i00">
         <bodyPart>FINGER</bodyPart>
         <price>5920</price>
         <restriction freightable="false"/>
@@ -241,7 +241,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="878" name="Blue Coral Ring" commissionType="RING" icon="icon.accessary_blue_coral_ring_i00">
+    <armor id="878" name="Blue Coral Ring" subType="RING" icon="icon.accessary_blue_coral_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>10700</price>
         <restriction freightable="false"/>
@@ -250,7 +250,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="879" name="Ring of Magic" commissionType="RING" icon="icon.accessary_enchanted_ring_i00">
+    <armor id="879" name="Ring of Magic" subType="RING" icon="icon.accessary_enchanted_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>28400</price>
         <restriction freightable="false"/>
@@ -260,7 +260,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="880" name="Black Pearl Ring" commissionType="RING" icon="icon.accessary_black_pearl_ring_i00">
+    <armor id="880" name="Black Pearl Ring" subType="RING" icon="icon.accessary_black_pearl_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>42800</price>
         <restriction freightable="false"/>
@@ -270,7 +270,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="881" name="Elven Ring" commissionType="RING" icon="icon.accessary_elven_ring_i00">
+    <armor id="881" name="Elven Ring" subType="RING" icon="icon.accessary_elven_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>62300</price>
         <restriction freightable="false"/>
@@ -280,7 +280,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="882" name="Mithril Ring" commissionType="RING" icon="icon.accessary_mithril_ring_i00">
+    <armor id="882" name="Mithril Ring" subType="RING" icon="icon.accessary_mithril_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>80800</price>
         <restriction freightable="false"/>
@@ -290,7 +290,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="883" name="Aquastone Ring" commissionType="RING" icon="icon.accessary_aquastone_ring_i00">
+    <armor id="883" name="Aquastone Ring" subType="RING" icon="icon.accessary_aquastone_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>103000</price>
         <restriction freightable="false"/>
@@ -300,7 +300,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="884" name="Ring of Protection" commissionType="RING" icon="icon.accessary_ring_of_protection_i00">
+    <armor id="884" name="Ring of Protection" subType="RING" icon="icon.accessary_ring_of_protection_i00">
         <bodyPart>FINGER</bodyPart>
         <price>130000</price>
         <restriction freightable="false"/>
@@ -310,7 +310,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="885" name="Ring of Ages" commissionType="RING" icon="icon.accessary_ring_of_ages_i00">
+    <armor id="885" name="Ring of Ages" subType="RING" icon="icon.accessary_ring_of_ages_i00">
         <bodyPart>FINGER</bodyPart>
         <price>196000</price>
         <restriction freightable="false"/>
@@ -320,7 +320,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="886" name="Ring of Seal" commissionType="RING" icon="icon.accessary_ring_of_binding_i00">
+    <armor id="886" name="Ring of Seal" subType="RING" icon="icon.accessary_ring_of_binding_i00">
         <bodyPart>FINGER</bodyPart>
         <price>282000</price>
         <restriction freightable="false"/>
@@ -330,7 +330,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="887" name="Adamantite Ring" commissionType="RING" icon="icon.accessary_adamantite_ring_i00">
+    <armor id="887" name="Adamantite Ring" subType="RING" icon="icon.accessary_adamantite_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>404000</price>
         <restriction freightable="false"/>
@@ -340,7 +340,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="888" name="Blessed Ring" commissionType="RING" icon="icon.accessary_blessed_ring_i00">
+    <armor id="888" name="Blessed Ring" subType="RING" icon="icon.accessary_blessed_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>282000</price>
         <restriction freightable="false"/>
@@ -350,7 +350,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="890" name="Ring of Devotion" commissionType="RING" icon="icon.accessary_ring_of_devotion_i00">
+    <armor id="890" name="Ring of Devotion" subType="RING" icon="icon.accessary_ring_of_devotion_i00">
         <bodyPart>FINGER</bodyPart>
         <price>18000</price>
         <restriction freightable="false"/>
@@ -360,7 +360,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="891" name="Sage's Ring" commissionType="RING" icon="icon.accessary_sages_ring_i00">
+    <armor id="891" name="Sage's Ring" subType="RING" icon="icon.accessary_sages_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>616000</price>
         <restriction freightable="false"/>
@@ -370,7 +370,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="893" name="Majestic Ring" commissionType="RING" icon="icon.accessary_inferno_ring_i00">
+    <armor id="893" name="Majestic Ring" subType="RING" icon="icon.accessary_inferno_ring_i00">
         <bodyPart>FINGER</bodyPart>
         <price>999000</price>
         <restriction freightable="false"/>
@@ -380,7 +380,7 @@
         <time>-1</time>
         <weight>150</weight>
         </armor>
-    <armor id="895" name="Black Ore Ring" commissionType="RING" icon="icon.accessary_ring_of_black_ore_i00">
+    <armor id="895" name="Black Ore Ring" subType="RING" icon="icon.accessary_ring_of_black_ore_i00">
         <bodyPart>FINGER</bodyPart>
         <price>616000</price>
         <restriction freightable="false"/>

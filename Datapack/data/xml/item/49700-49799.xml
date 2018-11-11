@@ -375,7 +375,7 @@
         <weight>0</weight>
         <skill id="39148"/>
     </item>
-    <item stackable="true" id="49739" name="Blessed Soulshot (No-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_white_i00">
+    <item stackable="true" id="49739" name="Blessed Soulshot (No-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_white_i00">
         <price>0</price>
         <handler>SOUL_SHOT</handler>
         <questItem>false</questItem>
@@ -384,7 +384,7 @@
         <weight>3</weight>
         <skill id="8915"/>
     </item>
-    <item stackable="true" id="49740" name="Blessed Soulshot (D-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
+    <item stackable="true" id="49740" name="Blessed Soulshot (D-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
         <price>0</price>
         <crystalInfo type="D"/>
         <handler>SOUL_SHOT</handler>
@@ -394,7 +394,7 @@
         <weight>2</weight>
         <skill id="8916"/>
     </item>
-    <item stackable="true" id="49741" name="Blessed Soulshot (C-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_green_i00">
+    <item stackable="true" id="49741" name="Blessed Soulshot (C-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_green_i00">
         <price>0</price>
         <crystalInfo type="C"/>
         <handler>SOUL_SHOT</handler>
@@ -404,7 +404,7 @@
         <weight>2</weight>
         <skill id="8917"/>
     </item>
-    <item stackable="true" id="49742" name="Blessed Soulshot (B-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_red_i00">
+    <item stackable="true" id="49742" name="Blessed Soulshot (B-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_red_i00">
         <price>0</price>
         <crystalInfo type="B"/>
         <handler>SOUL_SHOT</handler>
@@ -414,7 +414,7 @@
         <weight>1</weight>
         <skill id="8918"/>
     </item>
-    <item stackable="true" id="49743" name="Blessed Soulshot (A-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
+    <item stackable="true" id="49743" name="Blessed Soulshot (A-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
         <price>0</price>
         <crystalInfo type="A"/>
         <handler>SOUL_SHOT</handler>
@@ -424,7 +424,7 @@
         <weight>1</weight>
         <skill id="8919"/>
     </item>
-    <item stackable="true" id="49744" name="Blessed Mysterious Soulshot (No-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_white_i00">
+    <item stackable="true" id="49744" name="Blessed Mysterious Soulshot (No-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_white_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <handler>BLESSED_SOUL_SHOT</handler>
@@ -434,7 +434,7 @@
         <weight>0</weight>
         <skill id="8910"/>
     </item>
-    <item stackable="true" id="49745" name="Mysterious Blessed Soulshot (D-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
+    <item stackable="true" id="49745" name="Mysterious Blessed Soulshot (D-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_blue_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <crystalInfo type="D"/>
@@ -445,7 +445,7 @@
         <weight>0</weight>
         <skill id="8911"/>
     </item>
-    <item stackable="true" id="49746" name="Mysterious Blessed Soulshot (C-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_green_i00">
+    <item stackable="true" id="49746" name="Mysterious Blessed Soulshot (C-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_green_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <crystalInfo type="C"/>
@@ -456,7 +456,7 @@
         <weight>0</weight>
         <skill id="8912"/>
     </item>
-    <item stackable="true" id="49747" name="Mysterious Blessed Soulshot (B-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_red_i00">
+    <item stackable="true" id="49747" name="Mysterious Blessed Soulshot (B-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_red_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <crystalInfo type="B"/>
@@ -467,7 +467,7 @@
         <weight>0</weight>
         <skill id="8913"/>
     </item>
-    <item stackable="true" id="49748" name="Mysterious Blessed Soulshot (A-grade)" type="SOULSHOT" commissionType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
+    <item stackable="true" id="49748" name="Mysterious Blessed Soulshot (A-grade)" type="SOULSHOT" subType="SOULSHOT" icon="icon.etc_bless_spirit_bullet_silver_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" sellable="false"/>
         <crystalInfo type="A"/>

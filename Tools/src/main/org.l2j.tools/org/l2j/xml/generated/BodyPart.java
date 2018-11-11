@@ -44,7 +44,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="BROOCH"/&gt;
  *     &lt;enumeration value="WAIST"/&gt;
  *     &lt;enumeration value="ONE_PIECE"/&gt;
- *     &lt;enumeration value="BACK"/&gt;
+ *     &lt;enumeration value="CLOAK"/&gt;
  *     &lt;enumeration value="RIGHT_BRACELET"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;

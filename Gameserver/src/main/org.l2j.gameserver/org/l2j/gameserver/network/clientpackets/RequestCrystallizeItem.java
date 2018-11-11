@@ -205,7 +205,7 @@ public final class RequestCrystallizeItem extends L2GameClientPacket
 		}
 		else
 		{
-			activeChar.sendPacket(new ItemList(activeChar, false));
+			activeChar.sendPacket(new ItemListPacket(activeChar, false));
 		}
 		
 		// status & user info

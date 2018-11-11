@@ -714,7 +714,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <item stackable="true" id="3838" name="Recipe: Giant's Powerstone (25%)" type="RECIPE" commissionType="RECIPE" icon="icon.etc_recipe_blue_i00">
+    <item stackable="true" id="3838" name="Recipe: Giant's Powerstone (25%)" type="RECIPE" subType="RECIPE" icon="icon.etc_recipe_blue_i00">
         <price>0</price>
         <restriction dropable="false" freightable="false"/>
         <handler>RECIPE</handler>

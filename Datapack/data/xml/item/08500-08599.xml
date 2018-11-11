@@ -8,7 +8,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="8560" name="Teddy Bear Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_bear_cap_i00">
+    <armor id="8560" name="Teddy Bear Hat" subType="HAIR_ACCESSORY" icon="icon.accessory_bear_cap_i00">
         <bodyPart>FULL_HAIR</bodyPart>
         <price>2000000</price>
         <restriction freightable="false"/>
@@ -25,7 +25,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="8561" name="Piggy Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_pig_cap_i00">
+    <armor id="8561" name="Piggy Hat" subType="HAIR_ACCESSORY" icon="icon.accessory_pig_cap_i00">
         <bodyPart>FULL_HAIR</bodyPart>
         <price>2000000</price>
         <restriction freightable="false"/>
@@ -42,7 +42,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="8562" name="Jester Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_jester_cap_i00">
+    <armor id="8562" name="Jester Hat" subType="HAIR_ACCESSORY" icon="icon.accessory_jester_cap_i00">
         <bodyPart>FULL_HAIR</bodyPart>
         <price>2000000</price>
         <restriction freightable="false"/>
@@ -51,7 +51,7 @@
         <time>-1</time>
         <weight>10</weight>
         </armor>
-    <armor id="8563" name="Wizard Hat" commissionType="HAIR_ACCESSORY" icon="icon.accessory_magic_cap_i00">
+    <armor id="8563" name="Wizard Hat" subType="HAIR_ACCESSORY" icon="icon.accessory_magic_cap_i00">
         <bodyPart>FULL_HAIR</bodyPart>
         <price>2000000</price>
         <restriction freightable="false"/>
@@ -60,7 +60,7 @@
         <time>-1</time>
         <weight>10</weight>
         </armor>
-    <armor id="8564" name="Dapper Cap" commissionType="HAIR_ACCESSORY" icon="icon.accessory_dandy_cap_i00">
+    <armor id="8564" name="Dapper Cap" subType="HAIR_ACCESSORY" icon="icon.accessory_dandy_cap_i00">
         <bodyPart>FULL_HAIR</bodyPart>
         <price>2000000</price>
         <restriction freightable="false"/>
@@ -69,7 +69,7 @@
         <time>-1</time>
         <weight>10</weight>
         </armor>
-    <armor id="8569" name="Half Face Mask" commissionType="HAIR_ACCESSORY" icon="icon.accessory_half_face_i00">
+    <armor id="8569" name="Half Face Mask" subType="HAIR_ACCESSORY" icon="icon.accessory_half_face_i00">
         <bodyPart>HAIR</bodyPart>
         <price>500000</price>
         <restriction freightable="false"/>
@@ -86,7 +86,7 @@
         <time>-1</time>
         <weight>0</weight>
     </item>
-    <armor id="8559" name="Coronet" commissionType="HAIR_ACCESSORY" icon="icon.accessory_flower_cap_i00">
+    <armor id="8559" name="Coronet" subType="HAIR_ACCESSORY" icon="icon.accessory_flower_cap_i00">
         <bodyPart>FULL_HAIR</bodyPart>
         <price>0</price>
         <restriction freightable="false"/>

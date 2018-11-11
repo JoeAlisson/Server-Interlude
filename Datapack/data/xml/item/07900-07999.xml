@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <itemList xmlns="http://la2j.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://la2j.org ../schema/item.xsd">
-    <weapon id="7900" name="Ice Storm Hammer" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_ice_storm_hammer_i00">
+    <weapon id="7900" name="Ice Storm Hammer" type="BLUNT" subType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_ice_storm_hammer_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>8680000</price>
         <restriction freightable="false"/>
@@ -12,7 +12,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="7901" name="Star Buster" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_star_buster_i00">
+    <weapon id="7901" name="Star Buster" type="BLUNT" subType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_star_buster_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>13100000</price>
         <restriction freightable="false"/>
@@ -24,7 +24,7 @@
         <damage distance="44" width="120"/>
         <consume shot="1"/>
     </weapon>
-    <weapon id="7902" name="Doom Crusher" type="BLUNT" commissionType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_doom_crusher_i00">
+    <weapon id="7902" name="Doom Crusher" type="BLUNT" subType="TWO_HAND_BLUNT_WEAPON" icon="icon.weapon_doom_crusher_i00">
         <bodyPart>TWO_HANDS</bodyPart>
         <price>20741000</price>
         <restriction freightable="false"/>

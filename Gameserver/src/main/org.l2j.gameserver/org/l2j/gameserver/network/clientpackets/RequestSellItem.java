@@ -166,7 +166,7 @@ public final class RequestSellItem extends L2GameClientPacket
 		StatusUpdate su = new StatusUpdate(player.getObjectId());
 		su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
 		player.sendPacket(su);
-		player.sendPacket(new ItemList(player, true));
+		player.sendPacket(new ItemListPacket(player, true));
 	}
 	
 	/*

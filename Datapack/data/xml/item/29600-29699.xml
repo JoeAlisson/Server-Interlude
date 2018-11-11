@@ -581,7 +581,7 @@
         <weight>0</weight>
         <skill id="55000" level="4"/>
     </item>
-    <item stackable="true" id="29651" name="Healing Potion" additionalName="Event" type="POTION" commissionType="POTION" icon="icon.etc_lesser_potion_red_i00">
+    <item stackable="true" id="29651" name="Healing Potion" additionalName="Event" type="POTION" subType="POTION" icon="icon.etc_lesser_potion_red_i00">
         <price>0</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -596,7 +596,7 @@
         </condition>
         <skill id="2031"/>
     </item>
-    <item stackable="true" id="29652" name="Major Healing Potion" additionalName="Event" type="POTION" commissionType="POTION" icon="icon.etc_lesser_potion_red_i00">
+    <item stackable="true" id="29652" name="Major Healing Potion" additionalName="Event" type="POTION" subType="POTION" icon="icon.etc_lesser_potion_red_i00">
         <price>330</price>
         <restriction freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -611,7 +611,7 @@
         </condition>
         <skill id="2032"/>
     </item>
-    <item stackable="true" id="29653" name="Haste Potion" type="POTION" commissionType="POTION" icon="icon.etc_reagent_green_i00">
+    <item stackable="true" id="29653" name="Haste Potion" type="POTION" subType="POTION" icon="icon.etc_reagent_green_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -626,7 +626,7 @@
         </condition>
         <skill id="2012"/>
     </item>
-    <item stackable="true" id="29654" name="1st Class Buff Scroll" type="SCROLL" commissionType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i00">
+    <item stackable="true" id="29654" name="1st Class Buff Scroll" type="SCROLL" subType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i00">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -636,7 +636,7 @@
         <weight>5</weight>
         <skill id="55055"/>
     </item>
-    <item stackable="true" id="29655" name="2nd Class Buff Scroll" type="SCROLL" commissionType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i01">
+    <item stackable="true" id="29655" name="2nd Class Buff Scroll" type="SCROLL" subType="SCROLL_OTHER" icon="BranchIcon.Icon.etc_g_bm_buff_scroll_i01">
         <price>0</price>
         <restriction dropable="false" tradeable="false" freightable="false" sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -839,7 +839,7 @@
         <weight>5</weight>
         <skill id="55064"/>
     </item>
-    <item stackable="true" id="29673" name="Scroll: Castle Berserker Spirit" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="29673" name="Scroll: Castle Berserker Spirit" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -849,7 +849,7 @@
         <weight>120</weight>
         <skill id="55065"/>
     </item>
-    <item stackable="true" id="29674" name="Scroll: Castle Death Whisper" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="29674" name="Scroll: Castle Death Whisper" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -859,7 +859,7 @@
         <weight>120</weight>
         <skill id="55066"/>
     </item>
-    <item stackable="true" id="29675" name="Blessed Castle Scroll of Escape" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i01">
+    <item stackable="true" id="29675" name="Blessed Castle Scroll of Escape" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_of_return_i01">
         <price>0</price>
         <restriction dropable="false" tradeable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -869,7 +869,7 @@
         <weight>120</weight>
         <skill id="55067"/>
     </item>
-    <item stackable="true" id="29676" name="Scroll: Castle Blessing" type="SCROLL" commissionType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
+    <item stackable="true" id="29676" name="Scroll: Castle Blessing" type="SCROLL" subType="SCROLL_OTHER" icon="icon.etc_scroll_white_i00">
         <price>0</price>
         <restriction sellable="false"/>
         <handler>ITEM_SKILL</handler>
@@ -879,7 +879,7 @@
         <weight>120</weight>
         <skill id="55068"/>
     </item>
-    <armor id="29677" name="Castle Ring (10-day)" commissionType="RING" icon="icon.ev_11th_rare_acc_ring">
+    <armor id="29677" name="Castle Ring (10-day)" subType="RING" icon="icon.ev_11th_rare_acc_ring">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false"/>
@@ -890,7 +890,7 @@
         <weight>150</weight>
         <skill id="55069"/>
         </armor>
-    <armor id="29678" name="Castle Ring" commissionType="RING" icon="icon.ev_11th_rare_acc_ring">
+    <armor id="29678" name="Castle Ring" subType="RING" icon="icon.ev_11th_rare_acc_ring">
         <bodyPart>FINGER</bodyPart>
         <price>0</price>
         <handler>ITEM_SKILL</handler>
@@ -900,7 +900,7 @@
         <weight>150</weight>
         <skill id="55069"/>
         </armor>
-    <armor id="29679" name="Castle Earring (10-day)" commissionType="EARRING" icon="icon.ev_11th_rare_acc_earing">
+    <armor id="29679" name="Castle Earring (10-day)" subType="EARRING" icon="icon.ev_11th_rare_acc_earing">
         <bodyPart>EAR</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false"/>
@@ -911,7 +911,7 @@
         <weight>150</weight>
         <skill id="55070"/>
         </armor>
-    <armor id="29680" name="Castle Earring" commissionType="EARRING" icon="icon.ev_11th_rare_acc_earing">
+    <armor id="29680" name="Castle Earring" subType="EARRING" icon="icon.ev_11th_rare_acc_earing">
         <bodyPart>EAR</bodyPart>
         <price>0</price>
         <handler>ITEM_SKILL</handler>
@@ -921,7 +921,7 @@
         <weight>150</weight>
         <skill id="55070"/>
         </armor>
-    <armor id="29681" name="Castle Necklace (10-day)" commissionType="NECKLACE" icon="icon.ev_11th_rare_acc_necklace">
+    <armor id="29681" name="Castle Necklace (10-day)" subType="NECKLACE" icon="icon.ev_11th_rare_acc_necklace">
         <bodyPart>NECK</bodyPart>
         <price>0</price>
         <restriction dropable="false" tradeable="false"/>
@@ -932,7 +932,7 @@
         <weight>150</weight>
         <skill id="55071"/>
         </armor>
-    <armor id="29682" name="Castle Necklace" commissionType="NECKLACE" icon="icon.ev_11th_rare_acc_necklace">
+    <armor id="29682" name="Castle Necklace" subType="NECKLACE" icon="icon.ev_11th_rare_acc_necklace">
         <bodyPart>NECK</bodyPart>
         <price>0</price>
         <handler>ITEM_SKILL</handler>
