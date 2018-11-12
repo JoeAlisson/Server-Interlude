@@ -12,6 +12,8 @@ import org.l2j.gameserver.network.serverpackets.SystemMessage;
 import org.l2j.gameserver.templates.xml.jaxb.CrystalType;
 import org.l2j.gameserver.util.Util;
 
+import java.util.Objects;
+
 /**
  * Format:(ch) dddd
  * @author -Wooden-
@@ -45,7 +47,8 @@ public final class RequestRefine extends L2GameClientPacket
 		L2ItemInstance refinerItem = (L2ItemInstance) L2World.getInstance().findObject(_refinerItemObjId);
 		L2ItemInstance gemstoneItem = (L2ItemInstance) L2World.getInstance().findObject(_gemstoneItemObjId);
 		
-		if ((targetItem == null) || (refinerItem == null) || (gemstoneItem == null) || (targetItem.getOwnerId() != activeChar.getObjectId()) || (refinerItem.getOwnerId() != activeChar.getObjectId()) || (gemstoneItem.getOwnerId() != activeChar.getObjectId()) || (activeChar.getLevel() < 46)) // must
+		if ((targetItem == null) || (refinerItem == null) || (gemstoneItem == null) ||
+				(!Objects.equals(targetItem.getOwner(), activeChar) || (!Objects.equals(refinerItem.getOwner(), activeChar) || (!Objects.equals(gemstoneItem.getOwner(), activeChar) || (activeChar.getLevel() < 46))))) // must
 																																																																									// be
 																																																																									// lvl
 																																																																									// 46

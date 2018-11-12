@@ -31,12 +31,23 @@ import org.l2j.gameserver.model.actor.instance.L2PlayableInstance;
 
 public interface IItemHandler
 {
+
 	/**
 	 * Launch task associated to the item.
 	 * @param playable
 	 * @param item : L2ItemInstance designating the item to use
 	 */
-	public void useItem(L2PlayableInstance playable, L2ItemInstance item);
+	default void useItem(L2PlayableInstance playable, L2ItemInstance item, boolean withCtrl) {
+		useItem(playable, item);
+	}
+	/**
+	 * Launch task associated to the item.
+	 * @param playable
+	 * @param item : L2ItemInstance designating the item to use
+	 */
+	default void useItem(L2PlayableInstance playable, L2ItemInstance item) {
+
+    }
 	
 	/**
 	 * Returns the list of item IDs corresponding to the type of item.<BR>

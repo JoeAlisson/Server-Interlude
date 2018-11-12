@@ -15,6 +15,8 @@ import org.l2j.gameserver.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Objects;
+
 public final class RequestEnchantItem extends L2GameClientPacket
 {
 	protected static final Logger _log = LoggerFactory.getLogger(Inventory.class.getName());
@@ -250,9 +252,8 @@ public final class RequestEnchantItem extends L2GameClientPacket
 		if (Rnd.get(100) < chance)
 		{
 			synchronized (item)
-			{
-				if ((item.getOwnerId() != activeChar.getObjectId() // has just lost the item
-				) || ((item.getEnchantLevel() >= maxEnchantLevel) && (maxEnchantLevel != 0)))
+			{	// has just lost the item
+				if ((Objects.equals(item.getOwner(), activeChar) || ((item.getEnchantLevel() >= maxEnchantLevel) && (maxEnchantLevel != 0))))
 				{
 					activeChar.sendPacket(new SystemMessage(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITION));
 					return;

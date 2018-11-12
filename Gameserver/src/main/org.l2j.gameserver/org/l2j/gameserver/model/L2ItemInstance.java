@@ -9,9 +9,7 @@ import org.l2j.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2j.gameserver.instancemanager.MercTicketManager;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.actor.knownlist.NullKnownList;
-import org.l2j.gameserver.model.entity.database.Augmentation;
-import org.l2j.gameserver.model.entity.database.Items;
-import org.l2j.gameserver.model.entity.database.repository.AugmentationsRepository;
+import org.l2j.gameserver.model.entity.database.ItemEntity;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.network.SystemMessageId;
 import org.l2j.gameserver.network.serverpackets.*;
@@ -22,13 +20,53 @@ import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.concurrent.ScheduledFuture;
 
 import static java.util.Objects.*;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public final class L2ItemInstance extends L2Object {
+
+    private final ItemTemplate template;
+    private ItemEntity entity;
+
+    private boolean existsInDb;
+    private boolean storedInDb;
+    private L2PcInstance owner;
+
+    public L2ItemInstance(int objectId, int itemId)  {
+        this(objectId,  ItemTable.getInstance().getTemplate(itemId));
+    }
+
+    public L2ItemInstance(int objectId, ItemTemplate item) {
+        super(objectId);
+        if(isNull(item)) {
+            ItemHelper.releaseId(objectId);
+            throw new IllegalArgumentException("Error creating item Template not found: ObjectId:" + objectId);
+        }
+        template = item;
+        setKnownList(new NullKnownList(this));
+        entity = new ItemEntity();
+        entity.setCount(1);
+        entity.setLocation(ItemLocation.VOID);
+        entity.setMana(template.getTime());
+        entity.setSubType(ItemHelper.getSubType(template));
+    }
+
+    public L2ItemInstance(ItemTemplate template, ItemEntity entity) {
+        super(entity.getObjectId());
+        if(isNull(template)) {
+            throw new IllegalArgumentException("Error creating item Template not found: ObjectId: " + objectId);
+        }
+        this.template = template;
+        this.entity = entity;
+        this.existsInDb = true;
+        this.storedInDb = true;
+
+    }
+
+
+    // ################################################################
 
     private static final Logger logger = LoggerFactory.getLogger(L2ItemInstance.class);
     private static final Logger loggerItems = LoggerFactory.getLogger("item");
@@ -45,15 +83,11 @@ public final class L2ItemInstance extends L2Object {
     public static final int REMOVED = 3;
     public static final int MODIFIED = 2;
 
-    private int ownerId;
-    private long count;
     // TODO move to template Or something else
     private int initCount;
     // TODO move to template Or something else
     private int time;
     private boolean decrease = false;
-    private final ItemTemplate template;
-    private ItemLocation location;
     private int locData;
     private int enchantLevel;
     // TODO move to template Or something else
@@ -62,12 +96,9 @@ public final class L2ItemInstance extends L2Object {
     private int priceBuy;
     private boolean wear;
     private L2Augmentation augmentation;
-
-    private long mana;
     private boolean consumingMana;
 
     private int type1;
-    private int type2;
 
     private long dropTime;
 
@@ -78,29 +109,7 @@ public final class L2ItemInstance extends L2Object {
     private boolean _protected;
 
     private int lastChange = 2; // 1 ??, 2 modified, 3 removed
-    private boolean existsInDb; // if a record exists in DB.
-    private boolean storedInDb; // if DB data is up-to-date.
-
     private ScheduledFuture<?> itemLootSchedule;
-
-	public L2ItemInstance(int objectId, int itemId)  {
-	    this(objectId,  ItemTable.getInstance().getTemplate(itemId));
-	}
-
-    public L2ItemInstance(int objectId, ItemTemplate item) {
-        super(objectId);
-        if(isNull(item)) {
-            ItemHelper.releaseId(objectId);
-            throw new IllegalArgumentException("Error creating item Template not found: ObjectId:" + objectId);
-        }
-        setKnownList(new NullKnownList(this));
-
-        template = item;
-        count = 1;
-        location = ItemLocation.VOID;
-        mana = template.getTime();
-        type2 = ItemHelper.getSubType(template);
-    }
 
     public final void pickupMe(L2Character player) {
         L2WorldRegion oldRegion = getPosition().getWorldRegion();
@@ -120,34 +129,31 @@ public final class L2ItemInstance extends L2Object {
     }
 
     public void setLocation(ItemLocation loc, int locData) {
-        if ((loc == this.location) && (locData == this.locData)) {
+        if ((loc == entity.getLocation()) && (locData == entity.getLocData())) {
             return;
         }
-        this.location = loc;
-        this.locData = locData;
+        entity.setLocation(loc);
+        entity.setLocData(locData);
         storedInDb = false;
     }
 
-    public int getSubType() {
-	    return type2;
-    }
-
-    public void setOwnerId(String process, int owner_id) {
-		setOwnerId(owner_id);
+    public void setOwner(String process, L2PcInstance owner) {
+		setOwner(owner);
 		
 		if (Config.LOG_ITEMS) {
-			loggerItems.info("CHANGE: {}", process);
+			loggerItems.info("CHANGE Item Owner: {} reason {}", owner, process);
 		}
 	}
 
-	public void setOwnerId(int ownerId) {
-		if (ownerId == this.ownerId) {
-			return;
-		}
-		
-		this.ownerId = ownerId;
-		storedInDb = false;
-	}
+	public void setOwner(L2PcInstance owner) {
+        if(owner == this.owner) {
+            return;
+        }
+        this.owner = owner;
+        entity.setOwnerId(isNull(owner) ? 0 : owner.getObjectId());
+        storedInDb = false;
+    }
+
 
 	public void changeCount(String process, long count) {
 	    if(!changeCount(count)) {
@@ -157,27 +163,19 @@ public final class L2ItemInstance extends L2Object {
 	}
 
 	public boolean changeCount(long count) {
-		if (count == 0) {
-			return false;
-		}
-		if ((count > 0) && (this.count > (Long.MAX_VALUE - count))) {
-			this.count = Long.MAX_VALUE;
-		} else  {
-			this.count += count;
-		}
-
-		if (this.count < 0) {
-			this.count = 0;
-		}
+        if (count == 0) {
+            return false;
+        }
+        entity.changeCount(count);
 		storedInDb = false;
 		return true;
 	}
 
 	public void setCount(long count) {
-		if (this.count == count) {
-			return;
-		}
-		this.count = count >= -1 ? count : 0;
+        if(entity.getCount() == count) {
+            return;
+        }
+        entity.setCount(count >= -1 ? count : 0);
 		storedInDb = false;
 	}
 
@@ -255,7 +253,17 @@ public final class L2ItemInstance extends L2Object {
 		augmentation = null;
 	}
 
-	public class ScheduleConsumeManaTask implements Runnable {
+    public void delete() {
+        getRepository(ItemRepository.class).delete(entity);
+        existsInDb = false;
+        storedInDb = false;
+    }
+
+    public L2PcInstance getOwner() {
+        return owner;
+    }
+
+    public class ScheduleConsumeManaTask implements Runnable {
 		private final L2ItemInstance shadowItem;
 		
 		public ScheduleConsumeManaTask(L2ItemInstance item)
@@ -276,42 +284,34 @@ public final class L2ItemInstance extends L2Object {
 		}
 	}
 
-	public boolean isShadowItem()
-	{
-		return (mana >= 0);
+	public boolean isShadowItem() {
+		return (entity.getManaLeft() >= 0);
 	}
 
-	public void setMana(int mana)
-	{
-		this.mana = mana;
-	}
-
-	public long getMana()
-	{
-		return mana;
+	public long getMana() {
+		return entity.getManaLeft();
 	}
 
 	public void decreaseMana(boolean resetConsumingMana) {
 		if (!isShadowItem()) {
 			return;
 		}
-		
-		if (mana > 0) {
-			mana--;
-		}
-		
-		if (storedInDb) {
-			storedInDb = false;
-		}
+
+		var currentMana = entity.getManaLeft();
+
+		if(currentMana > 0) {
+		    entity.setMana(--currentMana);
+        }
+
+        storedInDb = false;
 
 		if (resetConsumingMana) {
 			consumingMana = false;
 		}
-		
-		L2PcInstance player = ((L2PcInstance) L2World.getInstance().findObject(getOwnerId()));
-		if (nonNull(player )) {
+
+		if (nonNull(owner)) {
 			SystemMessage sm = null;
-			switch ((int) mana) {
+			switch ((int)currentMana) {
 				case 10:
 					sm = new SystemMessage(SystemMessageId.S1S_REMAINING_MANA_IS_NOW_10);
 					break;
@@ -328,33 +328,33 @@ public final class L2ItemInstance extends L2Object {
 
 			if(nonNull(sm)) {
                 sm.addString(getName());
-                player.sendPacket(sm);
+                owner.sendPacket(sm);
             }
 			
-			if (mana == 0) { // The life time has expired
+			if (currentMana == 0) { // The life time has expired
 				if (isEquipped()) {
-					L2ItemInstance[] unequiped = player.getInventory().unEquipItemInSlotAndRecord(getEquipSlot());
+					L2ItemInstance[] unequiped = owner.getInventory().unEquipItemInSlotAndRecord(getEquipSlot());
 					InventoryUpdate iu = new InventoryUpdate();
 					for (L2ItemInstance element : unequiped) {
-						player.checkSSMatch(null, element);
+						owner.checkSSMatch(null, element);
 						iu.addModifiedItem(element);
 					}
-					player.sendPacket(iu);
+					owner.sendPacket(iu);
 				} else if (getLocation() != ItemLocation.WAREHOUSE) {
 					// destroy
-					player.getInventory().destroyItem("L2ItemInstance", this, player, null);
+					owner.getInventory().destroyItem("L2ItemInstance", this, owner, null);
 					
 					// send update
 					InventoryUpdate iu = new InventoryUpdate();
 					iu.addRemovedItem(this);
-					player.sendPacket(iu);
+					owner.sendPacket(iu);
 					
-					StatusUpdate su = new StatusUpdate(player.getObjectId());
-					su.addAttribute(StatusUpdate.CUR_LOAD, player.getCurrentLoad());
-					player.sendPacket(su);
+					StatusUpdate su = new StatusUpdate(owner.getObjectId());
+					su.addAttribute(StatusUpdate.CUR_LOAD, owner.getCurrentLoad());
+					owner.sendPacket(su);
 					
 				}  else  {
-					player.getWarehouse().destroyItem("L2ItemInstance", this, player, null);
+					owner.getWarehouse().destroyItem("L2ItemInstance", this, owner, null);
 				}
 				
 				// delete from world
@@ -367,13 +367,13 @@ public final class L2ItemInstance extends L2Object {
 				if (getLocation() != ItemLocation.WAREHOUSE) {
 					InventoryUpdate iu = new InventoryUpdate();
 					iu.addModifiedItem(this);
-					player.sendPacket(iu);
+					owner.sendPacket(iu);
 				}
 			}
 		}
 	}
 	
-	private void scheduleConsumeManaTask() {
+	public void scheduleConsumeManaTask() {
 		consumingMana = true;
 		ThreadPoolManager.getInstance().scheduleGeneral(new ScheduleConsumeManaTask(this), MANA_CONSUMPTION_RATE);
 	}
@@ -394,82 +394,26 @@ public final class L2ItemInstance extends L2Object {
 		}
 
 		if (existsInDb) {
-			if ((ownerId == 0) || (location == ItemLocation.VOID) || ((count == 0) && (location != ItemLocation.LEASE))) {
+		    var location = entity.getLocation();
+			if (isNull(owner) || (location == ItemLocation.VOID) || ((entity.getCount() == 0) && (location != ItemLocation.LEASE))) {
 				removeFromDb();
 			} else {
 				updateInDb();
 			}
 		}
 		else {
-			if ((count == 0) && (location != ItemLocation.LEASE)) {
+		    var location = entity.getLocation();
+			if ((entity.getCount() == 0) && (location != ItemLocation.LEASE)) {
 				return;
 			}
-			if ((location == ItemLocation.VOID) || (ownerId == 0)) {
+			if ((location == ItemLocation.VOID) || (isNull(owner))) {
 				return;
 			}
 			insertIntoDb();
 		}
 	}
 
-	public static L2ItemInstance restoreFromDb(Items items) {
-        int owner_id = items.getOwnerId();
-        int item_id = items.getItemId();
-        int objectId = items.getId();
-        long count = items.getCount();
-        ItemLocation loc = ItemLocation.valueOf(items.getLoc());
-        int loc_data = items.getLocData();
-        int enchant_level = items.getEnchantLevel();
-        int custom_type1 = items.getCustomType1();
-        int custom_type2 = items.getCustomType2();
-        int price_sell = items.getPriceSell();
-        int price_buy = items.getPriceBuy();
-        int manaLeft = items.getManaLeft();
 
-        ItemTemplate item = ItemTable.getInstance().getTemplate(item_id);
-        if (item == null) {
-            logger.error("Item item_id={} not known, object_id={}", item_id, objectId);
-            return null;
-        }
-
-        L2ItemInstance inst = new L2ItemInstance(objectId, item);
-        inst.existsInDb = true;
-        inst.storedInDb = true;
-        inst.ownerId = owner_id;
-        inst.count = count;
-        inst.enchantLevel = enchant_level;
-        inst.type1 = custom_type1;
-        inst.type2 = custom_type2;
-        inst.location = loc;
-        inst.locData = loc_data;
-        inst.priceSell = price_sell;
-        inst.priceBuy = price_buy;
-
-        // Setup life time for shadow weapons
-        inst.mana = manaLeft;
-
-        // consume 1 mana
-        if ((inst.mana > 0) && (inst.getLocation() == ItemLocation.PAPERDOLL)) {
-            inst.decreaseMana(false);
-        }
-
-        // if mana left is 0 delete this item
-        if (inst.mana == 0) {
-            inst.removeFromDb();
-            return null;
-        }
-        else if ((inst.mana > 0) && (inst.getLocation() == ItemLocation.PAPERDOLL)) {
-            inst.scheduleConsumeManaTask();
-        }
-
-        AugmentationsRepository repository = getRepository(AugmentationsRepository.class);
-        Optional<Augmentation> optionalAugmentation =  repository.findById(objectId);
-        if(optionalAugmentation.isPresent()) {
-            Augmentation augmentation = optionalAugmentation.get();
-            inst.augmentation = new L2Augmentation(inst, augmentation.getAttributes(), augmentation.getSkill(), augmentation.getLevel(), false );
-        }
-
-        return inst;
-	}
 
 	public final void dropMe(L2Character dropper, int x, int y, int z) {
 
@@ -501,9 +445,8 @@ public final class L2ItemInstance extends L2Object {
 		if (wear || storedInDb) {
 			return;
 		}
-        getRepository(ItemRepository.class).updateById(getObjectId(), ownerId, getCount(), location.name(), locData, getEnchantLevel(), priceSell,
-                priceBuy, getCustomType1(), getCustomType2(), getMana());
 
+        getRepository(ItemRepository.class).save(entity);
         existsInDb = true;
         storedInDb = true;
 	}
@@ -512,10 +455,7 @@ public final class L2ItemInstance extends L2Object {
 		if (wear) {
 			return;
 		}
-
-        Items item = new Items(getObjectId(), ownerId, template.getId(), getCount(), location.name(), locData, getEnchantLevel(),
-                priceSell, priceBuy, type1, type2, mana);
-        getRepository(ItemRepository.class).save(item);
+        getRepository(ItemRepository.class).save(entity);
         existsInDb = true;
         storedInDb = true;
 
@@ -635,11 +575,11 @@ public final class L2ItemInstance extends L2Object {
     }
 
     public boolean isEquipped() {
-        return (location == ItemLocation.PAPERDOLL) || (location == ItemLocation.PET_EQUIP);
+        return (entity.getLocation() == ItemLocation.PAPERDOLL) || (entity.getLocation() == ItemLocation.PET_EQUIP);
     }
 
     public boolean isEquipable() {
-        return template instanceof Item && nonNull(template.getBodyPart());
+        return !(template instanceof Item) && nonNull(template.getBodyPart());
     }
 
     public int getSlotId() {
@@ -654,20 +594,16 @@ public final class L2ItemInstance extends L2Object {
         return locData;
     }
 
-    public int getOwnerId() {
-        return ownerId;
-    }
-
     public void setLocation(ItemLocation loc) {
         setLocation(loc, 0);
     }
 
     public ItemLocation getLocation() {
-        return location;
+        return entity.getLocation();
     }
 
     public long getCount() {
-        return count;
+        return entity.getCount();
     }
 
     public int getCustomType1()
@@ -675,9 +611,9 @@ public final class L2ItemInstance extends L2Object {
         return type1;
     }
 
-    public int getCustomType2()
+    public int getSubType()
     {
-        return type2;
+        return entity.getSubType();
     }
 
     public void setCustomType1(int newtype)
@@ -687,7 +623,7 @@ public final class L2ItemInstance extends L2Object {
 
     public void setCustomType2(int newtype)
     {
-        type2 = newtype;
+        entity.setSubType(newtype);
     }
 
     public void setDropTime(long time)

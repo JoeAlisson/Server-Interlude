@@ -1,24 +1,5 @@
-/* This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
- */
-
 package org.l2j.gameserver.model;
 
-import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.datatables.AugmentationData;
 import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -32,6 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 /**
  * Used to store an augmentation and its boni
@@ -39,6 +21,13 @@ import java.util.List;
  * @author durgus
  */
 public final class L2Augmentation {
+
+    public L2Augmentation(L2ItemInstance item, Augmentation augmentation) {
+        this(item, augmentation.getAttributes(), augmentation.getSkill(), augmentation.getLevel(), false);
+    }
+
+    // ######################################
+
     private static final Logger _log = LoggerFactory.getLogger(L2Augmentation.class.getName());
 
     private final L2ItemInstance _item;
@@ -112,7 +101,7 @@ public final class L2Augmentation {
 
     private void saveAugmentationData() {
         Augmentation augmentation = new Augmentation(_item.getObjectId(), _effectsId, _skill);
-        AugmentationsRepository repository = DatabaseAccess.getRepository(AugmentationsRepository.class);
+        AugmentationsRepository repository = getRepository(AugmentationsRepository.class);
         repository.save(augmentation);
     }
 
@@ -120,9 +109,7 @@ public final class L2Augmentation {
         if (!_item.isAugmented()) {
             return;
         }
-
-        AugmentationsRepository repository = DatabaseAccess.getRepository(AugmentationsRepository.class);
-        repository.deleteById(_item.getObjectId());
+        getRepository(AugmentationsRepository.class).deleteById(_item.getObjectId());
     }
 
     /**

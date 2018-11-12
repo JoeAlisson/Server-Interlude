@@ -81,7 +81,7 @@ public class Spoil implements ISkillHandler
 				if (spoil)
 				{
 					target.setSpoil(true);
-					target.setIsSpoiledBy(activeChar.getObjectId());
+					target.setIsSpoiledBy((L2PcInstance) activeChar);
 					activeChar.sendPacket(new SystemMessage(SystemMessageId.SPOIL_SUCCESS));
 				}
 				else

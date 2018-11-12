@@ -1,12 +1,20 @@
 package org.l2j.gameserver.factory;
 
 import org.l2j.gameserver.datatables.ItemTable;
+import org.l2j.gameserver.model.ItemLocation;
+import org.l2j.gameserver.model.L2Augmentation;
 import org.l2j.gameserver.model.L2ItemInstance;
+import org.l2j.gameserver.model.entity.database.ItemEntity;
+import org.l2j.gameserver.model.entity.database.repository.AugmentationsRepository;
 import org.l2j.gameserver.templates.base.PaperDoll;
-import org.l2j.gameserver.templates.xml.jaxb.*;
+import org.l2j.gameserver.templates.xml.jaxb.Armor;
+import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
+import org.l2j.gameserver.templates.xml.jaxb.ItemTemplate;
+import org.l2j.gameserver.templates.xml.jaxb.Weapon;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 
 public class ItemHelper {
 
@@ -29,17 +37,48 @@ public class ItemHelper {
         IdFactory.getInstance().releaseId(objectId);
     }
 
+    public static L2ItemInstance load(ItemEntity itemEntity) {
+        var template = ItemTable.getInstance().getTemplate(itemEntity.getItemId());
+        L2ItemInstance item = new L2ItemInstance(template, itemEntity);
+        var location = item.getLocation();
+        var mana = item.getMana();
+
+        if(mana == 0) {
+            delete(item);
+            return null;
+        }
+
+        if(mana > 0 && location == ItemLocation.PAPERDOLL) {
+            item.scheduleConsumeManaTask();
+        }
+
+        var optAugmentation = getRepository(AugmentationsRepository.class).findById(item.getObjectId());
+        optAugmentation.ifPresent(augmentation -> item.setAugmentation(new L2Augmentation(item, augmentation)));
+        return item;
+    }
+
+    public static void delete(L2ItemInstance item) {
+        if(isNull(item) || item.isWear()) {
+            return;
+        }
+
+        if(item.isAugmented()) {
+            getRepository(AugmentationsRepository.class).deleteById(item.getObjectId());
+        }
+        item.delete();
+    }
+
     public static int getItemPaperDoll(ItemTemplate template) {
         var paperDoll = bodyPartToPaperdoll(template.getBodyPart());
-        if(nonNull(paperDoll)) {
-            return  paperDoll.getMask();
+        if (nonNull(paperDoll)) {
+            return paperDoll.getMask();
         }
         return 0;
     }
 
     private static PaperDoll bodyPartToPaperdoll(BodyPart bodyPart) {
         PaperDoll paperdoll = null;
-        switch (bodyPart){
+        switch (bodyPart) {
             case NONE:
                 break;
             case EAR:
@@ -73,15 +112,15 @@ public class ItemHelper {
     }
 
     private static int bodyPartToSlotId(BodyPart bodyPart) {
-        if(isNull(bodyPart)) {
+        if (isNull(bodyPart)) {
             return 0;
         }
         int slot = 0;
-        switch (bodyPart){
+        switch (bodyPart) {
             case NONE:
                 break;
             case ONE_PIECE:
-                slot = SLOT_ONE_PIECE;;
+                slot = SLOT_ONE_PIECE;
                 break;
             case FULL_BODY:
                 slot = SLOT_FULL_BODY;
@@ -126,11 +165,11 @@ public class ItemHelper {
     }
 
     public static int getSubType(ItemTemplate template) {
-        if(template instanceof Weapon) {
+        if (template instanceof Weapon) {
             return SUBTYPE_WEAPON;
         }
 
-        if(template instanceof Armor) {
+        if (template instanceof Armor) {
             switch (template.getBodyPart()) {
                 case BROOCH_JEWEL:
                 case RIGHT_BRACELET:
@@ -152,7 +191,7 @@ public class ItemHelper {
         switch (template.getSubType()) {
             case PET_EQUIPMENT:
             case PET_SUPPLIES:
-                return  SUBTYPE_PET;
+                return SUBTYPE_PET;
             case POTION:
             case HERB:
             case BOW:

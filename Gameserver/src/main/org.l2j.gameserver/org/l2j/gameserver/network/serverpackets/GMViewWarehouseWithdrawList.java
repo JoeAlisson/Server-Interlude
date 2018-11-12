@@ -3,9 +3,11 @@ package org.l2j.gameserver.network.serverpackets;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 
+import java.util.Collection;
+
 public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 {
-	private final L2ItemInstance[] _items;
+	private final Collection<L2ItemInstance> items;
 	private final String _playerName;
 	private final L2PcInstance _activeChar;
 	private final long _money;
@@ -13,7 +15,7 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 	public GMViewWarehouseWithdrawList(L2PcInstance cha)
 	{
 		_activeChar = cha;
-		_items = _activeChar.getWarehouse().getItems();
+		items = _activeChar.getWarehouse().getItems();
 		_playerName = _activeChar.getName();
 		_money = _activeChar.getAdena();
 	}
@@ -24,9 +26,9 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 		writeByte(0x95);
 		writeString(_playerName);
 		writeLong(_money);
-		writeShort(_items.length);
+		writeShort(items.size());
 		
-		for (L2ItemInstance item : _items)
+		for (L2ItemInstance item : items)
 		{
 			writeShort(item.getType().ordinal());
 			

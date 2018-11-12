@@ -67,6 +67,6 @@ public final class ClanWarehouse extends Warehouse
 	@Override
 	public boolean validateCapacity(int slots)
 	{
-		return ((_items.size() + slots) <= Config.WAREHOUSE_SLOTS_CLAN);
+		return ((items.size() + slots) <= Config.WAREHOUSE_SLOTS_CLAN);
 	}
 }

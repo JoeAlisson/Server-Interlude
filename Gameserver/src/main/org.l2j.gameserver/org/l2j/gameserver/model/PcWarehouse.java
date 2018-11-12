@@ -61,6 +61,6 @@ public class PcWarehouse extends Warehouse
 	@Override
 	public boolean validateCapacity(int slots)
 	{
-		return ((_items.size() + slots) <= _owner.GetWareHouseLimit());
+		return ((items.size() + slots) <= _owner.GetWareHouseLimit());
 	}
 }

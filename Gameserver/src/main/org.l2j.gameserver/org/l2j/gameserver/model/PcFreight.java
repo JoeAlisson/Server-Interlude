@@ -19,6 +19,7 @@ package org.l2j.gameserver.model;
 
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -59,7 +60,7 @@ public class PcFreight extends ItemContainer {
     @Override
     public int getSize() {
         int size = 0;
-        for (L2ItemInstance item : _items) {
+        for (L2ItemInstance item : items.values()) {
             if ((item.getEquipSlot() == 0) || (_activeLocationId == 0) || (item.getEquipSlot() == _activeLocationId)) {
                 size++;
             }
@@ -73,15 +74,15 @@ public class PcFreight extends ItemContainer {
      * @return L2ItemInstance : items in inventory
      */
     @Override
-    public L2ItemInstance[] getItems() {
+    public Collection<L2ItemInstance> getItems() {
         List<L2ItemInstance> list = new LinkedList<>();
-        for (L2ItemInstance item : _items) {
+        for (L2ItemInstance item : items.values()) {
             if ((item.getEquipSlot() == 0) || (item.getEquipSlot() == _activeLocationId)) {
                 list.add(item);
             }
         }
 
-        return list.toArray(new L2ItemInstance[list.size()]);
+        return list;
     }
 
     /**
@@ -92,7 +93,7 @@ public class PcFreight extends ItemContainer {
      */
     @Override
     public L2ItemInstance getItemByItemId(int itemId) {
-        for (L2ItemInstance item : _items) {
+        for (L2ItemInstance item : items.values()) {
             if ((item.getId() == itemId) && ((item.getEquipSlot() == 0) || (_activeLocationId == 0) || (item.getEquipSlot() == _activeLocationId))) {
                 return item;
             }

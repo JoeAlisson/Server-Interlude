@@ -76,7 +76,7 @@ public class L2NpcInstance extends L2Character<NpcTemplate> {
     public boolean isEventMob = false;
     private boolean isInTown = false;
 
-    private int isSpoiledBy = 0;
+    private L2PcInstance spoiledBy;
 
     private RandomAnimationTask _rAniTask = null;
     private int currentLHandId; // normally this shouldn't change from the template, but there exist exceptions
@@ -300,12 +300,12 @@ public class L2NpcInstance extends L2Character<NpcTemplate> {
         this.isSpoil = isSpoil;
     }
 
-    public final int getIsSpoiledBy() {
-        return isSpoiledBy;
+    public final L2PcInstance getSpoiledBy() {
+        return spoiledBy;
     }
 
-    public final void setIsSpoiledBy(int value) {
-        isSpoiledBy = value;
+    public final void setIsSpoiledBy(L2PcInstance value) {
+        spoiledBy = value;
     }
 
     public final boolean isBusy() {
@@ -1067,7 +1067,7 @@ public class L2NpcInstance extends L2Character<NpcTemplate> {
                 }
                 if ((item.getId() == 4442) && (item.getCustomType1() < lotonumber)) {
                     message = message + "<a action=\"bypass -h npc_%objectId%_Loto " + item.getObjectId() + "\">" + item.getCustomType1() + " Event Number ";
-                    int[] numbers = Lottery.getInstance().decodeNumbers(item.getEnchantLevel(), item.getCustomType2());
+                    int[] numbers = Lottery.getInstance().decodeNumbers(item.getEnchantLevel(), item.getSubType());
                     for (int i = 0; i < 5; i++) {
                         message += numbers[i] + " ";
                     }

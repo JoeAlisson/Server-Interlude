@@ -5,7 +5,7 @@ import org.l2j.gameserver.datatables.ClanTable;
 import org.l2j.gameserver.datatables.PlayerTemplateTable;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.Character;
-import org.l2j.gameserver.model.entity.database.Items;
+import org.l2j.gameserver.model.entity.database.ItemEntity;
 import org.l2j.gameserver.model.entity.database.repository.*;
 import org.l2j.gameserver.templates.base.ClassTemplate;
 
@@ -75,7 +75,7 @@ public class PlayerFactory {
         }
     }
 
-    private static void createItem(int objectId, int id, int count, boolean equipped) {
+    private static void createItem(int ownerId, int id, int count, boolean equipped) {
         var item = ItemHelper.create(id);
         if (count > 1) {
             item.setCount(count);
@@ -86,7 +86,7 @@ public class PlayerFactory {
         } else {
             item.setLocation(INVENTORY);
         }
-        var modelItem = new Items(item.getObjectId(), objectId, item.getId(), item.getCount(), item.getLocation().name(), item.getEquipSlot(), item.getEnchantLevel(), item.getPriceToSell(), item.getPriceToBuy(), item.getCustomType1(), item.getCustomType2(), item.getMana());
+        var modelItem = new ItemEntity(item.getObjectId(), ownerId, item.getId(), item.getCount(), item.getLocation().name(), item.getEquipSlot(), item.getEnchantLevel(), item.getPriceToSell(), item.getPriceToBuy(), item.getCustomType1(), item.getSubType(), item.getMana());
         getRepository(ItemRepository.class).save(modelItem);
     }
 

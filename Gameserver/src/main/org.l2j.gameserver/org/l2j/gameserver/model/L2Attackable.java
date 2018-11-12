@@ -1892,7 +1892,7 @@ public class L2Attackable extends L2NpcInstance {
             }
             crystalQTY = 0;
 
-            L2ItemInstance[] inv = player.getInventory().getItems();
+            var inv = player.getInventory().getItems();
             for (L2ItemInstance item : inv) {
                 int itemId = item.getId();
                 for (int id : SoulCrystal.SoulCrystalTable) {

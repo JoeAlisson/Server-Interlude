@@ -1,20 +1,10 @@
 package org.l2j.gameserver.network.clientpackets;
 
-import org.l2j.commons.Config;
-import org.l2j.gameserver.handler.IItemHandler;
-import org.l2j.gameserver.handler.ItemHandler;
-import org.l2j.gameserver.model.Inventory;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
-import org.l2j.gameserver.network.SystemMessageId;
-import org.l2j.gameserver.network.serverpackets.*;
-import org.l2j.gameserver.templates.xml.jaxb.BodyPart;
-import org.l2j.gameserver.templates.xml.jaxb.ItemType;
-import org.l2j.gameserver.util.FloodProtector;
+import org.l2j.gameserver.network.serverpackets.ActionFailed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Arrays;
 
 import static java.util.Objects.isNull;
 
@@ -39,9 +29,22 @@ public final class UseItem extends L2GameClientPacket {
 		if (isNull(activeChar)) {
 			return;
 		}
+
+        L2ItemInstance item = activeChar.getItem(objectId);
+        if (isNull(item)) {
+            sendPacket(new ActionFailed());
+            return;
+        }
+
+        if(item.isEquipable()) {
+            if(item.isEquipped()) {
+                activeChar.unEquipItem(item);
+            }
+
+        }
 		
 		// Flood protect UseItem
-		if (!FloodProtector.getInstance().tryPerformAction(activeChar.getObjectId(), FloodProtector.PROTECTED_USEITEM))
+		/*if (!FloodProtector.getInstance().tryPerformAction(activeChar.getObjectId(), FloodProtector.PROTECTED_USEITEM))
 		{
 			return;
 		}
@@ -51,20 +54,15 @@ public final class UseItem extends L2GameClientPacket {
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.CANNOT_TRADE_DISCARD_DROP_ITEM_WHILE_IN_SHOPMODE));
 			activeChar.sendPacket(new ActionFailed());
 			return;
-		}
+		}*/
+		
 
-		L2ItemInstance item = activeChar.getInventory().getItemByObjectId(objectId);
-		
-		if (isNull(item)) {
-		    sendPacket(new ActionFailed());
-			return;
-		}
-		
+		/*
 		if (item.isWear()) {
 			return;
 		}
 		
-		int itemId = item.getId();
+		int itemId = item.getId();*/
 		/*
 		 * Alt game - Karma punishment // SOE 736 Scroll of Escape 1538 Blessed Scroll of Escape 1829 Scroll of Escape: Clan Hall 1830 Scroll of Escape: Castle 3958 L2Day - Blessed Scroll of Escape 5858 Blessed Scroll of Escape: Clan Hall 5859 Blessed Scroll of Escape: Castle 6663 Scroll of Escape:
 		 * Orc Village 6664 Scroll of Escape: Silenos Village 7117 Scroll of Escape to Talking Island 7118 Scroll of Escape to Elven Village 7119 Scroll of Escape to Dark Elf Village 7120 Scroll of Escape to Orc Village 7121 Scroll of Escape to Dwarven Village 7122 Scroll of Escape to Gludin Village
@@ -73,7 +71,7 @@ public final class UseItem extends L2GameClientPacket {
 		 * Island 7555 Scroll of Escape to Elven Village 7556 Scroll of Escape to Dark Elf Village 7557 Scroll of Escape to Orc Village 7558 Scroll of Escape to Dwarven Village 7559 Scroll of Escape to Giran Castle Town 7618 Scroll of Escape - Ketra Orc Village 7619 Scroll of Escape - Varka Silenos
 		 * Village
 		 */
-		if (!Config.ALT_GAME_KARMA_PLAYER_CAN_TELEPORT && (activeChar.getKarma() > 0) && ((itemId == 736) || (itemId == 1538) || (itemId == 1829) || (itemId == 1830) || (itemId == 3958) || (itemId == 5858) || (itemId == 5859) || (itemId == 6663) || (itemId == 6664) || ((itemId >= 7117) && (itemId <= 7135)) || ((itemId >= 7554) && (itemId <= 7559)) || (itemId == 7618) || (itemId == 7619)))
+		/*if (!Config.ALT_GAME_KARMA_PLAYER_CAN_TELEPORT && (activeChar.getKarma() > 0) && ((itemId == 736) || (itemId == 1538) || (itemId == 1829) || (itemId == 1830) || (itemId == 3958) || (itemId == 5858) || (itemId == 5859) || (itemId == 6663) || (itemId == 6664) || ((itemId >= 7117) && (itemId <= 7135)) || ((itemId >= 7554) && (itemId <= 7559)) || (itemId == 7618) || (itemId == 7619)))
 		{
 			return;
 		}
@@ -115,10 +113,9 @@ public final class UseItem extends L2GameClientPacket {
 		}
 */
 
-		if (Config.DEBUG)
-		{
-			_log.debug(activeChar.getObjectId() + ": use item " + objectId);
-		}
+
+		/*_log.debug("{} : use item {}", activeChar.getObjectId(), objectId);
+
 		
 		if (item.isEquipable())
 		{
@@ -136,10 +133,10 @@ public final class UseItem extends L2GameClientPacket {
 			{
 				return;
 			}
-			/*
+			*//*
 			 * Since c5 you can equip weapon again // Don't allow weapon/shield equipment if wearing formal wear if (activeChar.isWearingFormalWear() && (bodyPart == ItemTemplate.SLOT_LR_HAND || bodyPart == ItemTemplate.SLOT_L_HAND || bodyPart == ItemTemplate.SLOT_R_HAND)) { SystemMessage sm = new
 			 * SystemMessage(SystemMessageId.CANNOT_USE_ITEMS_SKILLS_WITH_FORMALWEAR); activeChar.sendPacket(sm); return; }
-			 */
+			 *//*
 			
 			// Don't allow weapon/shield equipment if a cursed weapon is equiped
 			if (activeChar.isCursedWeaponEquiped() && ( ((bodyPart == BodyPart.TWO_HANDS) || (bodyPart == BodyPart.LEFT_HAND) || (bodyPart == BodyPart.RIGHT_HAND)) || (itemId == 6408))) // Don't allow to put formal wear
@@ -328,6 +325,6 @@ public final class UseItem extends L2GameClientPacket {
 					handler.useItem(activeChar, item);
 				}
 			}
-		}
+		}*/
 	}
 }

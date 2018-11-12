@@ -423,7 +423,7 @@ public class L2PetInstance extends L2Summon
 				return;
 			}
 			
-			if ((target.getOwnerId() != 0) && (target.getOwnerId() != getOwner().getObjectId()) && !getOwner().isInLooterParty(target.getOwnerId()))
+			if (!getOwner().equals(target.getOwner()) && !getOwner().isInLooterParty(target.getOwner()))
 			{
 				getOwner().sendPacket(new ActionFailed());
 				
@@ -449,8 +449,7 @@ public class L2PetInstance extends L2Summon
 				
 				return;
 			}
-			if ((target.getItemLootSchedule() != null) && ((target.getOwnerId() == getOwner().getObjectId()) || getOwner().isInLooterParty(target.getOwnerId())))
-			{
+			if ((target.getItemLootSchedule() != null) && (getOwner().equals(target.getOwner()) ) || getOwner().isInLooterParty(target.getOwner())) {
 				target.resetOwnerTimer();
 			}
 			
@@ -595,10 +594,8 @@ public class L2PetInstance extends L2Summon
 		try
 		{
 			Inventory petInventory = getInventory();
-			L2ItemInstance[] items = petInventory.getItems();
-			for (int i = 0; (i < items.length); i++)
-			{
-				L2ItemInstance giveit = items[i];
+			var items = petInventory.getItems();
+			for(var giveit : items) {
 				if (((giveit.getWeight() * giveit.getCount()) + getOwner().getInventory().getTotalWeight()) < getOwner().getMaxLoad())
 				{
 					// If the owner can carry it give it to them
@@ -675,11 +672,10 @@ public class L2PetInstance extends L2Summon
 	{
 		try
 		{
-			L2ItemInstance[] items = getInventory().getItems();
-			for (int i = 0; (i < items.length); i++)
-			{
-				dropItemHere(items[i]);
-			}
+			var items = getInventory().getItems();
+            for (L2ItemInstance item : items) {
+                dropItemHere(item);
+            }
 		}
 		catch (Exception e)
 		{

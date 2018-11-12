@@ -3,13 +3,13 @@ package org.l2j.gameserver.network.serverpackets;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 
+import java.util.Collection;
+
 import static java.util.Objects.isNull;
 
 public class GMViewItemList extends L2GameServerPacket
 {
-	// private static Logger logger = LoggerFactory.getLogger(GMViewItemList.class.getName());
-	private static final String _S__AD_GMVIEWITEMLIST = "[S] 94 GMViewItemList";
-	private final L2ItemInstance[] _items;
+	private final Collection<L2ItemInstance> _items;
 	private final L2PcInstance _cha;
 	private final String _playerName;
 	
@@ -27,7 +27,7 @@ public class GMViewItemList extends L2GameServerPacket
 		writeString(_playerName);
 		writeInt(_cha.getInventoryLimit()); // inventory limit
 		writeShort(0x01); // show window ??
-		writeShort(_items.length);
+		writeShort(_items.size());
 		
 		for (L2ItemInstance temp : _items)
 		{
@@ -46,7 +46,7 @@ public class GMViewItemList extends L2GameServerPacket
 			writeShort(temp.isEquipped() ? 0x01 : 0x00);
 			writeInt(0); // TODO temp.getItem().getBodyPart().getId());
 			writeShort(temp.getEnchantLevel());
-			writeShort(temp.getCustomType2());
+			writeShort(temp.getSubType());
 			if (temp.isAugmented())
 			{
 				writeInt(temp.getAugmentation().getAugmentationId());

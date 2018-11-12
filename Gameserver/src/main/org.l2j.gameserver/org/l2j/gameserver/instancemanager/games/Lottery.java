@@ -25,7 +25,7 @@ import org.l2j.gameserver.Announcements;
 import org.l2j.gameserver.ThreadPoolManager;
 import org.l2j.gameserver.model.L2ItemInstance;
 import org.l2j.gameserver.model.entity.database.Games;
-import org.l2j.gameserver.model.entity.database.Items;
+import org.l2j.gameserver.model.entity.database.ItemEntity;
 import org.l2j.gameserver.model.entity.database.repository.GameRepository;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.l2j.gameserver.network.SystemMessageId;
@@ -267,9 +267,9 @@ public class Lottery {
 
 
             ItemRepository itemRepository = DatabaseAccess.getRepository(ItemRepository.class);
-            for (Items items : itemRepository.findByItemAndCustomType(4442, getId())) {
-                int curenchant = items.getEnchantLevel() & enchant;
-                int curtype2 = items.getCustomType2() & type2;
+            for (ItemEntity itemEntity : itemRepository.findByItemAndCustomType(4442, getId())) {
+                int curenchant = itemEntity.getEnchantLevel() & enchant;
+                int curtype2 = itemEntity.getSubType() & type2;
 
                 if ((curenchant == 0) && (curtype2 == 0))  {
                     continue;
@@ -408,7 +408,7 @@ public class Lottery {
 	
 	public int[] checkTicket(L2ItemInstance item)
 	{
-		return checkTicket(item.getCustomType1(), item.getEnchantLevel(), item.getCustomType2());
+		return checkTicket(item.getCustomType1(), item.getEnchantLevel(), item.getSubType());
 	}
 	
 	public int[] checkTicket(int id, int enchant, int type2) {

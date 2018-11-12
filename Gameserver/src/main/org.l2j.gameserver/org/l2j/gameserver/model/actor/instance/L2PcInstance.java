@@ -64,6 +64,7 @@ import static java.lang.Math.min;
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
 import static org.l2j.commons.database.DatabaseAccess.getRepository;
+import static org.l2j.gameserver.templates.base.ItemConstants.ANCIENT_ADENA;
 import static org.l2j.gameserver.templates.xml.jaxb.ItemType.*;
 
 public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
@@ -112,6 +113,14 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
     @Override
     public L2ItemInstance getActiveWeaponInstance() {
         return getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND);
+    }
+
+    public L2ItemInstance getItem(int objectId) {
+        return inventory.getItemByObjectId(objectId);
+    }
+
+    public void unEquipItem(L2ItemInstance item) {
+        return;
     }
 
     @Override
@@ -3206,7 +3215,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
     public void addAncientAdena(String process, long count, L2Object reference, boolean sendMessage) {
         if (sendMessage) {
             SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
-            sm.addItemName(PcInventory.ANCIENT_ADENA_ID);
+            sm.addItemName(ANCIENT_ADENA);
             sm.addNumber(count);
             sendPacket(sm);
         }
@@ -3257,7 +3266,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
             if (sendMessage) {
                 SystemMessage sm = new SystemMessage(SystemMessageId.DISSAPEARED_ITEM);
                 sm.addNumber(count);
-                sm.addItemName(PcInventory.ANCIENT_ADENA_ID);
+                sm.addItemName(ANCIENT_ADENA);
                 sendPacket(sm);
             }
         }
@@ -3879,8 +3888,8 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
 
         L2ItemInstance item = getInventory().getItemByObjectId(objectId);
 
-        if ((item == null) || (item.getOwnerId() != getObjectId())) {
-            logger.debug(getObjectId() + ": reader tried to " + action + " item he is not owner of");
+        if (isNull(item) || !this.equals(item.getOwner())) {
+            logger.debug(getObjectId() + ": player tried to " + action + " item he is not owner of");
             return null;
         }
 
@@ -4344,7 +4353,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                 return;
             }
 
-            if ((target.getOwnerId() != 0) && (target.getOwnerId() != getObjectId()) && !isInLooterParty(target.getOwnerId())) {
+            if (!this.equals(target.getOwner()) && !isInLooterParty(target.getOwner())) {
                 sendPacket(new ActionFailed());
 
                 if (target.getId() == 57) {
@@ -4364,7 +4373,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
 
                 return;
             }
-            if ((target.getItemLootSchedule() != null) && ((target.getOwnerId() == getObjectId()) || isInLooterParty(target.getOwnerId()))) {
+            if ((target.getItemLootSchedule() != null) && (( this.equals(target.getOwner())) || isInLooterParty(target.getOwner()))) {
                 target.resetOwnerTimer();
             }
 
@@ -7265,7 +7274,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
 
         // Check if the skill is Sweep type and if conditions not apply
         if ((sklType == SkillType.SWEEP) && (target instanceof L2Attackable)) {
-            int spoilerId = ((L2Attackable) target).getIsSpoiledBy();
+            var spoiler = ((L2Attackable) target).getSpoiledBy();
 
             if (((L2Attackable) target).isDead()) {
                 if (!((L2Attackable) target).isSpoil()) {
@@ -7277,7 +7286,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
                     return;
                 }
 
-                if ((getObjectId() != spoilerId) && !isInLooterParty(spoilerId)) {
+                if (!this.equals(spoiler) && !isInLooterParty(spoiler)) {
                     // Send a System Message to the L2PcInstance
                     sendPacket(new SystemMessage(SystemMessageId.SWEEP_NOT_ALLOWED));
 
@@ -7350,15 +7359,8 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
 
     }
 
-    /**
-     * Checks if is in looter party.
-     *
-     * @param LooterId the looter id
-     * @return true, if is in looter party
-     */
-    public boolean isInLooterParty(int LooterId) {
-        L2PcInstance looter = (L2PcInstance) L2World.getInstance().findObject(LooterId);
 
+    public boolean isInLooterParty(L2PcInstance looter) {
         // if L2PcInstance is in a CommandChannel
         if (isInParty() && getParty().isInCommandChannel() && (looter != null)) {
             return getParty().getCommandChannel().getMembers().contains(looter);
@@ -9544,7 +9546,7 @@ public final class L2PcInstance extends L2PlayableInstance<ClassTemplate> {
     public boolean validateItemManipulation(int objectId, String action) {
         L2ItemInstance item = getInventory().getItemByObjectId(objectId);
 
-        if ((item == null) || (item.getOwnerId() != getObjectId())) {
+        if (isNull(item) || !this.equals(item.getOwner())) {
             logger.debug(getObjectId() + ": reader tried to " + action + " item he is not owner of");
             return false;
         }

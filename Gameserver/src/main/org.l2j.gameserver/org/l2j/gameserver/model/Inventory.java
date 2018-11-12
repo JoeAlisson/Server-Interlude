@@ -1,10 +1,10 @@
 package org.l2j.gameserver.model;
 
 import org.l2j.commons.Config;
-import org.l2j.commons.database.DatabaseAccess;
 import org.l2j.gameserver.datatables.ArmorSetsTable;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.datatables.SkillTable;
+import org.l2j.gameserver.factory.ItemHelper;
 import org.l2j.gameserver.model.actor.instance.L2PcInstance;
 import org.l2j.gameserver.model.entity.database.ArmorSet;
 import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
@@ -16,7 +16,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
+import static org.l2j.commons.database.DatabaseAccess.getRepository;
 import static org.l2j.gameserver.templates.xml.jaxb.BodyPart.*;
 
 /**
@@ -35,6 +37,39 @@ public abstract class Inventory extends ItemContainer {
         addPaperdollListener(new BowListener());
         addPaperdollListener(new ItemPassiveSkillsListener());
         addPaperdollListener(new StatsListener());
+    }
+
+    @Override
+    public void restore() {
+
+        getRepository(ItemRepository.class).findAllByOwnerAndLocations(getOwner().getObjectId(), getBaseLocation().name(), getEquipLocation().name()).forEach(itemModel -> {
+            L2ItemInstance item = ItemHelper.load(itemModel);
+            if (isNull(item)) {
+                return;
+            }
+
+            if (getOwner() instanceof L2PcInstance) {
+                L2PcInstance player = (L2PcInstance) getOwner();
+
+                if (!player.isGM()) {
+                    if (!player.isHero()) {
+                        int itemId = item.getId();
+                        if (((itemId >= 6611) && (itemId <= 6621)) || (itemId == 6842)) {
+                            item.setLocation(ItemLocation.INVENTORY);
+                        }
+                    }
+                }
+            }
+
+            L2World.getInstance().storeObject(item);
+
+            // If stackable item is found in inventory just add to current quantity
+            if (item.isStackable() && (getItemByItemId(item.getId()) != null)) {
+                addItem("Restore", item, null, getOwner());
+            } else {
+                addItem(item);
+            }
+        });
     }
 
     public L2ItemInstance getPaperdollItem(PaperDoll paperDoll) {
@@ -306,7 +341,7 @@ public abstract class Inventory extends ItemContainer {
                         player.addSkill(skill, false);
                         player.sendSkillList();
                     } else {
-                        _log.warn("Inventory.ArmorSetListener: Incorrect skill: " + armorSet.getSkillId() + ".");
+                        logger.warn("Inventory.ArmorSetListener: Incorrect skill: " + armorSet.getSkillId() + ".");
                     }
 
                     if (armorSet.containShield(player)) // has shield from set
@@ -316,7 +351,7 @@ public abstract class Inventory extends ItemContainer {
                             player.addSkill(skills, false);
                             player.sendSkillList();
                         } else {
-                            _log.warn("Inventory.ArmorSetListener: Incorrect skill: " + armorSet.getShieldSkillId() + ".");
+                            logger.warn("Inventory.ArmorSetListener: Incorrect skill: " + armorSet.getShieldSkillId() + ".");
                         }
                     }
                     if (armorSet.isEnchanted6(player)) // has allTemplates parts of set enchanted to 6 or more
@@ -328,7 +363,7 @@ public abstract class Inventory extends ItemContainer {
                                 player.addSkill(skille, false);
                                 player.sendSkillList();
                             } else {
-                                _log.warn("Inventory.ArmorSetListener: Incorrect skill: " + armorSet.getEnchant6Skill() + ".");
+                                logger.warn("Inventory.ArmorSetListener: Incorrect skill: " + armorSet.getEnchant6Skill() + ".");
                             }
                         }
                     }
@@ -340,7 +375,7 @@ public abstract class Inventory extends ItemContainer {
                         player.addSkill(skills, false);
                         player.sendSkillList();
                     } else {
-                        _log.warn("Inventory.ArmorSetListener: Incorrect skill: " + armorSet.getShieldSkillId() + ".");
+                        logger.warn("Inventory.ArmorSetListener: Incorrect skill: " + armorSet.getShieldSkillId() + ".");
                     }
                 }
             }
@@ -399,7 +434,7 @@ public abstract class Inventory extends ItemContainer {
                     if (skill != null) {
                         player.removeSkill(skill);
                     } else {
-                        _log.warn("Inventory.ArmorSetListener: Incorrect skill: " + removeSkillId1 + ".");
+                        logger.warn("Inventory.ArmorSetListener: Incorrect skill: " + removeSkillId1 + ".");
                     }
                 }
                 if (removeSkillId2 != 0) {
@@ -407,7 +442,7 @@ public abstract class Inventory extends ItemContainer {
                     if (skill != null) {
                         player.removeSkill(skill);
                     } else {
-                        _log.warn("Inventory.ArmorSetListener: Incorrect skill: " + removeSkillId2 + ".");
+                        logger.warn("Inventory.ArmorSetListener: Incorrect skill: " + removeSkillId2 + ".");
                     }
                 }
                 if (removeSkillId3 != 0) {
@@ -415,7 +450,7 @@ public abstract class Inventory extends ItemContainer {
                     if (skill != null) {
                         player.removeSkill(skill);
                     } else {
-                        _log.warn("Inventory.ArmorSetListener: Incorrect skill: " + removeSkillId3 + ".");
+                        logger.warn("Inventory.ArmorSetListener: Incorrect skill: " + removeSkillId3 + ".");
                     }
                 }
                 player.sendSkillList();
@@ -457,12 +492,12 @@ public abstract class Inventory extends ItemContainer {
      */
     public L2ItemInstance dropItem(String process, L2ItemInstance item, L2PcInstance actor, L2Object reference) {
         synchronized (item) {
-            if (!_items.contains(item)) {
+            if (!items.containsValue(item)) {
                 return null;
             }
 
             removeItem(item);
-            item.setOwnerId(process, 0);
+            item.setOwner(process, null);
             item.setLocation(ItemLocation.VOID);
             item.setLastChange(L2ItemInstance.REMOVED);
 
@@ -838,7 +873,7 @@ public abstract class Inventory extends ItemContainer {
      */
     private void unEquipItemInBodySlot(BodyPart slot) {
         if (Config.DEBUG) {
-            _log.debug("--- unequip body slot:" + slot);
+            logger.debug("--- unequip body slot:" + slot);
         }
         int pdollSlot = -1;
 
@@ -1084,7 +1119,7 @@ public abstract class Inventory extends ItemContainer {
                 setPaperdollItem(PAPERDOLL_BACK, item);
                 break;
             default:
-                _log.warn("unknown body slot:" + targetSlot);
+                logger.warn("unknown body slot:" + targetSlot);
         }
     }
 
@@ -1095,7 +1130,7 @@ public abstract class Inventory extends ItemContainer {
     protected void refreshWeight() {
         int weight = 0;
 
-        for (L2ItemInstance item : _items) {
+        for (L2ItemInstance item : items.values()) {
             if (nonNull(item)) {
                 weight += item.getWeight() * item.getCount();
             }
@@ -1147,39 +1182,6 @@ public abstract class Inventory extends ItemContainer {
 
         // Get the L2ItemInstance corresponding to the item identifier and return it
         return getItemByItemId(arrowsId);
-    }
-
-    @Override
-    public void restore() {
-        ItemRepository repository = DatabaseAccess.getRepository(ItemRepository.class);
-        repository.findAllByOwnerAndLocations(getOwner().getObjectId(), getBaseLocation().name(), getEquipLocation().name()).forEach(items -> {
-            L2ItemInstance item = L2ItemInstance.restoreFromDb(items);
-            if (item == null) {
-                return;
-            }
-
-            if (getOwner() instanceof L2PcInstance) {
-                L2PcInstance player = (L2PcInstance) getOwner();
-
-                if (!player.isGM()) {
-                    if (!player.isHero()) {
-                        int itemId = item.getId();
-                        if (((itemId >= 6611) && (itemId <= 6621)) || (itemId == 6842)) {
-                            item.setLocation(ItemLocation.INVENTORY);
-                        }
-                    }
-                }
-            }
-
-            L2World.getInstance().storeObject(item);
-
-            // If stackable item is found in inventory just add to current quantity
-            if (item.isStackable() && (getItemByItemId(item.getId()) != null)) {
-                addItem("Restore", item, null, getOwner());
-            } else {
-                addItem(item);
-            }
-        });
     }
 
     /**

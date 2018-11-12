@@ -78,14 +78,14 @@ public class ItemTable {
             // if in CommandChannel and was killing a World/RaidBoss
             if (((reference != null) && (reference instanceof L2BossInstance)) || (reference instanceof L2RaidBossInstance)) {
                 if ((((L2Attackable) reference).getFirstCommandChannelAttacked() != null) && ((L2Attackable) reference).getFirstCommandChannelAttacked().meetRaidWarCondition(reference)) {
-                    item.setOwnerId(((L2Attackable) reference).getFirstCommandChannelAttacked().getChannelLeader().getObjectId());
+                    item.setOwner(((L2Attackable) reference).getFirstCommandChannelAttacked().getChannelLeader());
                     delay = 300000;
                 } else {
                     delay = 15000;
-                    item.setOwnerId(actor.getObjectId());
+                    item.setOwner(actor);
                 }
             } else {
-                item.setOwnerId(actor.getObjectId());
+                item.setOwner(actor);
                 delay = 15000;
             }
             itemLootShedule = ThreadPoolManager.getInstance().scheduleGeneral(new resetOwner(item), delay);
@@ -149,7 +149,7 @@ public class ItemTable {
     public void destroyItem(String process, L2ItemInstance item, L2PcInstance actor, L2Object reference) {
         synchronized (item) {
             item.setCount(0);
-            item.setOwnerId(0);
+            item.setOwner(null);
             item.setLocation(ItemLocation.VOID);
             item.setLastChange(L2ItemInstance.REMOVED);
 
@@ -185,7 +185,7 @@ public class ItemTable {
 
         @Override
         public void run() {
-            _item.setOwnerId(0);
+            _item.setOwner(null);
             _item.setItemLootSchedule(null);
         }
     }

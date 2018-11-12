@@ -68,7 +68,7 @@ public class ItemInfo
 		
 		// Get custom item types (used loto, race tickets)
 		_type1 = item.getCustomType1();
-		_type2 = item.getCustomType2();
+		_type2 = item.getSubType();
 		
 		// Verify if the L2ItemInstance is equipped
 		_equipped = item.isEquipped() ? 1 : 0;
@@ -128,7 +128,7 @@ public class ItemInfo
 		
 		// Get custom item types (used loto, race tickets)
 		_type1 = item.getCustomType1();
-		_type2 = item.getCustomType2();
+		_type2 = item.getSubType();
 		
 		// Verify if the L2ItemInstance is equipped
 		_equipped = item.isEquipped() ? 1 : 0;

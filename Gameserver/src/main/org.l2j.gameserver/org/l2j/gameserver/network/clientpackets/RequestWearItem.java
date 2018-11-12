@@ -64,7 +64,7 @@ public final class RequestWearItem extends L2GameClientPacket
 	}
 	
 	/**
-	 * Decrypt the RequestWearItem Client->Server Packet and Create _items table containing allTemplates ItemID to Wear.<BR>
+	 * Decrypt the RequestWearItem Client->Server Packet and Create items table containing allTemplates ItemID to Wear.<BR>
 	 * <BR>
 	 */
 	@Override
@@ -85,10 +85,10 @@ public final class RequestWearItem extends L2GameClientPacket
 			_count = 0; // prevent too long lists
 		}
 		
-		// Create _items table that will contain allTemplates ItemID to Wear
+		// Create items table that will contain allTemplates ItemID to Wear
 		_items = new int[_count];
 		
-		// Fill _items table with allTemplates ItemID to Wear
+		// Fill items table with allTemplates ItemID to Wear
 		for (int i = 0; i < _count; i++)
 		{
 			int itemId = readInt();

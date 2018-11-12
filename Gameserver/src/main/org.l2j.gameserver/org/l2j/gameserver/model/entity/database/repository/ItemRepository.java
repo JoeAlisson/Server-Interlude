@@ -1,6 +1,6 @@
 package org.l2j.gameserver.model.entity.database.repository;
 
-import org.l2j.gameserver.model.entity.database.Items;
+import org.l2j.gameserver.model.entity.database.ItemEntity;
 import org.springframework.data.jdbc.repository.query.Modifying;
 import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -8,13 +8,13 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.Optional;
 
-public interface ItemRepository extends CrudRepository<Items, Integer> {
+public interface ItemRepository extends CrudRepository<ItemEntity, Integer> {
 
     @Query("SELECT * FROM items WHERE owner_id=:owner AND (loc=:loc1 OR loc=:loc2)")
-    Iterable<Items> findAllByOwnerAndLocations(@Param("owner") int ownerObjectId, @Param("loc1") String loc1, @Param("loc2") String loc2);
+    Iterable<ItemEntity> findAllByOwnerAndLocations(@Param("owner") int ownerObjectId, @Param("loc1") String loc1, @Param("loc2") String loc2);
 
     @Query("SELECT * FROM items WHERE owner_id=:owner AND loc=:loc")
-    Iterable<Items> findAllByOwnerAndLocation(@Param("owner") int ownerObjectId, @Param("loc") String loc);
+    Iterable<ItemEntity> findAllByOwnerAndLocation(@Param("owner") int ownerObjectId, @Param("loc") String loc);
 
     @Query("SELECT owner_id FROM items WHERE item_id=:item")
     Optional<Integer> findOwnerIdByItem(@Param("item") int itemId);
@@ -24,7 +24,7 @@ public interface ItemRepository extends CrudRepository<Items, Integer> {
     int deleteByOwnerAndItem(@Param("owner") int ownerId, @Param("item") int itemId);
 
     @Query("SELECT * FROM items WHERE item_id=:item AND custom_type1=:customType")
-    Iterable<Items> findByItemAndCustomType(@Param("item") int itemId, @Param("customType") int customType);
+    Iterable<ItemEntity> findByItemAndCustomType(@Param("item") int itemId, @Param("customType") int customType);
 
     @Modifying
     @Query("UPDATE items SET loc=:loc WHERE owner_id=:owner")
