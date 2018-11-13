@@ -38,7 +38,7 @@ public class SecondFactorAuth {
     }
 
     public boolean save(String account, String password) {
-        if(validate(password)) {
+        if(!validate(password)) {
             return false;
         }
 
@@ -72,5 +72,24 @@ public class SecondFactorAuth {
 
     private boolean validate(String password) {
         return pattern.matcher(password).matches();
+    }
+
+    public int verifyPassword(String password) {
+        try {
+            var result = validate(password) && hash(password).equals(accountInfo.getPassword());
+            var attemps = accountInfo.getAttemps();
+            if(!result) {
+                accountInfo.setAttemps(++attemps);
+            } else {
+                attemps = 0;
+                authed = true;
+                accountInfo.setAttemps(attemps);
+            }
+            getRepository(AccountInfoRepository.class).save(accountInfo);
+            return attemps;
+        } catch (NoSuchAlgorithmException e) {
+            logger.error(e.getLocalizedMessage(), e);
+            return 0;
+        }
     }
 }

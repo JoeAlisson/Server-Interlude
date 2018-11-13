@@ -12,14 +12,17 @@ public class AccountInfo extends Entity<String> {
     private String id;
     @Column("2nd_password")
     private String password;
+    private int attemps;
+
+    public AccountInfo() { }
 
     public AccountInfo(String account, String password) {
         this.id = account;
         this.password = password;
     }
 
-    @Id
     @Override
+    @Id
     public String getId() {
         return id;
     }
@@ -32,4 +35,11 @@ public class AccountInfo extends Entity<String> {
         this.password = password;
     }
 
+    public void setAttemps(int attemps) {
+        this.attemps = attemps;
+    }
+
+    public int getAttemps() {
+        return attemps;
+    }
 }

@@ -82,6 +82,15 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
         return secondFactorAuth.changePassword(password, newPassword);
     }
 
+    public int verifySecondFactorPassword(String password) {
+        if(!hasSecondPassword()) {
+            _log.warn("{} forced verify Second Factor Password", account);
+            closeNow();
+            return 0;
+        }
+        return secondFactorAuth.verifyPassword(password);
+    }
+
     public void setCharacters(List<Character> characters) {
         this.characters = characters;
     }
@@ -97,8 +106,6 @@ public final class L2GameClient extends Client<Connection<L2GameClient>> {
     public void addCharacter(Character character) {
         characters.add(character);
     }
-
-
 
 
     // ###########################################
