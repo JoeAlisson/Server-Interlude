@@ -40,6 +40,7 @@ public final class RequestItemList extends L2GameClientPacket
 	
 	@Override
 	protected void runImpl() {
+		// TODO send only if is updatable
 		var player = client.getActiveChar();
 		if (isNull(player) ||  player.isInvetoryDisabled()) {
 		    sendPacket(new ActionFailed());

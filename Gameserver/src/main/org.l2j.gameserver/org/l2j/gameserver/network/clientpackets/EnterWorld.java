@@ -53,8 +53,9 @@ public class EnterWorld extends L2GameClientPacket {
         sendPacket(new EtcStatusUpdate(activeChar));*/
         sendPacket(new UserInfoPacket(activeChar));
         sendPacket(new ExUserInfoEquipSlot());
-		activeChar.spawnMe(activeChar.getX(), activeChar.getY(), activeChar.getZ());
+		activeChar.spawnMe();
         sendPacket(new SystemMessage(SystemMessageId.WELCOME_TO_THE_WORLD_OF_LINEAGE_II));
+        sendPacket(new ExBasicActionList());
 /*
 
 		// Register in flood protector

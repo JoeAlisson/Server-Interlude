@@ -128,7 +128,7 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                 }
                 break;
             case IN_GAME:
-                switch (opcode) {
+                    switch (opcode) {
                     case 0x00:
                         msg = new Logout();
                         break;
@@ -959,7 +959,7 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 msg = new RequestAllCastleInfo();
                                 break; */
                             case 0x3A:
-                               // msg = new RequestAllFortressInfo();
+                                msg = new RequestAllFortressInfo();
                                 break;
                             /*case 0x3B:
                                 msg = new RequestAllAgitInfo();
@@ -1487,11 +1487,11 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                             case 0xC7:
                                 //msg = new RequestShapeShiftingItem();
-                                break;
+                                break;*/
                             case 0xC8:
                                 //msg = new NCGuardSendDataToServer();
                                 break;
-                            case 0xC9:
+                          /*  case 0xC9:
                                 //msg = new RequestEventKalieToken();
                                 break;
                             case 0xCA:
@@ -1511,11 +1511,11 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                             case 0xCF:
                                 //msg = new RequestBR_AddBasketProductInfo();
-                                break;
+                                break;*/
                             case 0xD0:
                                 //msg = new RequestBR_DeleteBasketProductInfo();
                                 break;
-                            case 0xD1:
+                         /*   case 0xD1:
                                 msg = new RequestBR_NewIConCashBtnWnd();
                                 break;
                             case 0xD2:
