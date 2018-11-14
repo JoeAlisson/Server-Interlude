@@ -954,10 +954,10 @@ public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, C
                                 break;
                             case 0x38:
                                 msg = new RequestExChangeName();
-                                break;
+                                break;*/
                             case 0x39:
                                 msg = new RequestAllCastleInfo();
-                                break; */
+                                break;
                             case 0x3A:
                                 msg = new RequestAllFortressInfo();
                                 break;

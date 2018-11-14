@@ -75,7 +75,11 @@ public abstract class Client<T extends Connection<?>> {
     }
 
     private void write(WritablePacket<? extends Client<T>> packet) {
-        write(packet, false);
+        try {
+            write(packet, false);
+        } catch (Exception e) {
+            tryWriteNextPacket();
+        }
     }
 
     public void close(WritablePacket<? extends Client<T>> packet) {

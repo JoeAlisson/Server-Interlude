@@ -42,8 +42,10 @@ public class MyTargetSelected extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeByte(0xa6);
+		writeByte(0xB9);
+		writeInt(0x01); // success
 		writeInt(_objectId);
 		writeShort(_color);
+		writeInt(0x00); //TODO action menu 0x03
 	}
 }

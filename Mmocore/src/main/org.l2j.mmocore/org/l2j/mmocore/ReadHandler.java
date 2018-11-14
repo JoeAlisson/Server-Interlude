@@ -55,22 +55,27 @@ class ReadHandler<T extends Client<Connection<T>>> implements CompletionHandler<
             return;
         }
 
-        if(dataSize > 0) {
-            parseAndExecutePacket(client, buffer, dataSize);
-        }
-
-        if(!buffer.hasRemaining()) {
-            buffer.clear();
-        } else {
-            logger.debug("Still data on packet. Trying to read");
-            int remaining = buffer.remaining();
-            buffer.compact();
-            if(remaining >= HEADER_SIZE) {
-                completed(remaining, client);
-                return;
+        try {
+            if (dataSize > 0) {
+                parseAndExecutePacket(client, buffer, dataSize);
             }
+        }catch (Exception e) {
+            logger.error(e.getLocalizedMessage(), e);
+            buffer.clear();
+        } finally {
+            if(!buffer.hasRemaining()) {
+                buffer.clear();
+            } else {
+                logger.debug("Still data on packet. Trying to read");
+                int remaining = buffer.remaining();
+                buffer.compact();
+                if(remaining >= HEADER_SIZE) {
+                    completed(remaining, client);
+                    return;
+                }
+            }
+            connection.read();
         }
-        connection.read();
     }
 
     private void parseAndExecutePacket(T client, ByteBuffer buffer, int dataSize) {

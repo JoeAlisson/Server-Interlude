@@ -6,6 +6,7 @@ import org.l2j.commons.status.Status;
 import org.l2j.gameserver.datatables.ItemTable;
 import org.l2j.gameserver.datatables.SkillTable;
 import org.l2j.gameserver.datatables.SkillTreeTable;
+import org.l2j.gameserver.datatables.ZoneData;
 import org.l2j.gameserver.factory.IdFactory;
 import org.l2j.gameserver.network.L2GameClient;
 import org.l2j.gameserver.network.L2GamePacketHandler;
@@ -79,7 +80,6 @@ public class GameServer {
         ClanTable.getInstance();
 
         ClanHallManager.getInstance(); // Load clan hall data before zone data
-        ZoneData.getInstance();
 
         CastleManager.getInstance();
         SiegeManager.getInstance();
@@ -205,6 +205,8 @@ public class GameServer {
 
         SkillTable.getInstance();
         SkillTreeTable.getInstance();
+
+        ZoneData.getInstance(); // ClanHall has strong dependency on it
     }
 
     private InetSocketAddress getInetSocketAddress() {

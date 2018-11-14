@@ -30,7 +30,7 @@ import org.l2j.gameserver.model.entity.database.repository.ItemRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.Objects.isNull;
@@ -162,7 +162,7 @@ public class CastleManager {
 
     public final List<Castle> getCastles() {
         if (_castles == null) {
-            _castles = new LinkedList<>();
+            _castles = new ArrayList<>();
         }
         return _castles;
     }
